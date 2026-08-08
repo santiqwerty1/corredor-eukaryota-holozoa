@@ -24,7 +24,7 @@ if git remote get-url origin >/dev/null 2>&1; then
   echo "El remoto origin ya existe: $(git remote get-url origin)"
 else
   if gh repo view "$TARGET" >/dev/null 2>&1; then
-    git remote add origin "git@github.com:${TARGET}.git"
+    git remote add origin "https://github.com/${TARGET}.git"
   else
     gh repo create "$TARGET" "--${VISIBILITY}" --source . --remote origin
   fi
