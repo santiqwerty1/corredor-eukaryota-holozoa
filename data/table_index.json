@@ -1,0 +1,2048 @@
+{
+  "schema_version": 1,
+  "source_master": "archive/maestro_provisional_v5_pre_migracion.md",
+  "claim_id_migration": "C-0001…C-0999 se normalizó a C-001…C-999; C-1000 en adelante se conservó.",
+  "tables": [
+    {
+      "id": "claims-00",
+      "category": "claims",
+      "section": "0",
+      "title": "0.3. Registro de afirmaciones de la sección 0",
+      "heading_path": [
+        "0. Convenciones probatorias y taxonómicas",
+        "0.3. Registro de afirmaciones de la sección 0"
+      ],
+      "csv_path": "data/afirmaciones/00.csv",
+      "row_count": 10,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 75,
+      "source_end_line": 86,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-01-2-1-2-por-que-el-modelo-cambia-el-arbol",
+      "category": "summary",
+      "section": "2",
+      "title": "2.1.2. Por qué el modelo cambia el árbol",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.1. Tres dominios, eocitos y dos dominios",
+        "2.1.2. Por qué el modelo cambia el árbol"
+      ],
+      "csv_path": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "row_count": 6,
+      "column_count": 6,
+      "columns": [
+        "estudio y matriz",
+        "modelo o prueba",
+        "resultado publicado",
+        "soporte transcrito",
+        "interpretación limitada",
+        "filas"
+      ],
+      "source_start_line": 155,
+      "source_end_line": 162,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-02-2-2-1-quimica-de-membrana",
+      "category": "summary",
+      "section": "2",
+      "title": "2.2.1. Química de membrana",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.2. Bacteria, Archaea y la divisoria lipídica",
+        "2.2.1. Química de membrana"
+      ],
+      "csv_path": "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv",
+      "row_count": 3,
+      "column_count": 6,
+      "columns": [
+        "conjunto celular",
+        "estereoisómero del glicerol",
+        "cadenas hidrófobas",
+        "enlace principal",
+        "relación con el problema",
+        "filas"
+      ],
+      "source_start_line": 190,
+      "source_end_line": 194,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-03-2-2-3-soluciones-propuestas-y-estado-del-problema",
+      "category": "summary",
+      "section": "2",
+      "title": "2.2.3. Soluciones propuestas y estado del problema",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.2. Bacteria, Archaea y la divisoria lipídica",
+        "2.2.3. Soluciones propuestas y estado del problema"
+      ],
+      "csv_path": "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv",
+      "row_count": 3,
+      "column_count": 6,
+      "columns": [
+        "propuesta",
+        "montaje mínimo",
+        "qué la apoya",
+        "qué no resuelve",
+        "estado",
+        "filas"
+      ],
+      "source_start_line": 208,
+      "source_end_line": 212,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada",
+      "category": "summary",
+      "section": "2",
+      "title": "2.4.2. Divisiones nombradas y clase de evidencia localizada",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.4. Asgardarchaeota como conjunto de actores",
+        "2.4.2. Divisiones nombradas y clase de evidencia localizada"
+      ],
+      "csv_path": "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv",
+      "row_count": 19,
+      "column_count": 6,
+      "columns": [
+        "clase o nombre relacionado",
+        "marca",
+        "evidencia celular localizada",
+        "ecología o metabolismo localizado",
+        "estado en esta sesión",
+        "filas"
+      ],
+      "source_start_line": 246,
+      "source_end_line": 266,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion",
+      "category": "summary",
+      "section": "2",
+      "title": "2.7. Proteínas de firma eucariota: detección y función",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.7. Proteínas de firma eucariota: detección y función"
+      ],
+      "csv_path": "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv",
+      "row_count": 7,
+      "column_count": 6,
+      "columns": [
+        "sistema",
+        "detección por secuencia",
+        "caracterización funcional localizada",
+        "observación en célula asgard nativa",
+        "límite",
+        "filas"
+      ],
+      "source_start_line": 324,
+      "source_end_line": 332,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto",
+      "category": "summary",
+      "section": "2",
+      "title": "2.8.2. El grupo vivo más próximo no está resuelto",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.8. El simbionte alfa-proteobacteriano",
+        "2.8.2. El grupo vivo más próximo no está resuelto"
+      ],
+      "csv_path": "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv",
+      "row_count": 4,
+      "column_count": 5,
+      "columns": [
+        "estudio",
+        "muestreo o modelo destacado",
+        "topología",
+        "qué excluye o no excluye",
+        "filas"
+      ],
+      "source_start_line": 346,
+      "source_end_line": 351,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-02",
+      "category": "claims",
+      "section": "2",
+      "title": "2.10. Registro de afirmaciones de la sección 2",
+      "heading_path": [
+        "2. El punto de partida: dos dominios o tres",
+        "2.10. Registro de afirmaciones de la sección 2"
+      ],
+      "csv_path": "data/afirmaciones/02.csv",
+      "row_count": 139,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 372,
+      "source_end_line": 512,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-08-3-1-1-etiquetas-y-alcance",
+      "category": "summary",
+      "section": "3",
+      "title": "3.1.1. Etiquetas y alcance",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.1. Poblaciones ancestrales y extremos del intervalo",
+        "3.1.1. Etiquetas y alcance"
+      ],
+      "csv_path": "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv",
+      "row_count": 7,
+      "column_count": 4,
+      "columns": [
+        "etiqueta",
+        "término original",
+        "uso operacional en esta parte",
+        "filas"
+      ],
+      "source_start_line": 554,
+      "source_end_line": 562,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia",
+      "category": "summary",
+      "section": "3",
+      "title": "3.2.7. Matriz de caracteres y método de inferencia",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.2. Reconstrucción de LECA",
+        "3.2.7. Matriz de caracteres y método de inferencia"
+      ],
+      "csv_path": "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv",
+      "row_count": 11,
+      "column_count": 4,
+      "columns": [
+        "carácter atribuido a LECA",
+        "método o criterio",
+        "resolución y límite",
+        "filas"
+      ],
+      "source_start_line": 730,
+      "source_end_line": 742,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia",
+      "category": "summary",
+      "section": "3",
+      "title": "3.3. Orden de los eventos: mitocondria y fagotrofia",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.3. Orden de los eventos: mitocondria y fagotrofia"
+      ],
+      "csv_path": "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv",
+      "row_count": 6,
+      "column_count": 4,
+      "columns": [
+        "posición",
+        "base inferencial",
+        "fuentes",
+        "filas"
+      ],
+      "source_start_line": 770,
+      "source_end_line": 777,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-11-3-4-7-comparacion-del-montaje-inicial",
+      "category": "summary",
+      "section": "3",
+      "title": "3.4.7. Comparación del montaje inicial",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.4. Modelos rivales de eucariogénesis",
+        "3.4.7. Comparación del montaje inicial"
+      ],
+      "csv_path": "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv",
+      "row_count": 6,
+      "column_count": 9,
+      "columns": [
+        "clave",
+        "modelo",
+        "participantes",
+        "intercambio y dirección",
+        "ambiente",
+        "geometría y orden",
+        "apoyo",
+        "compromiso principal",
+        "fila inicial"
+      ],
+      "source_start_line": 926,
+      "source_end_line": 933,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-12-3-5-5-comparacion-de-los-modelos-nucleares",
+      "category": "summary",
+      "section": "3",
+      "title": "3.5.5. Comparación de los modelos nucleares",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.5. Origen del núcleo como problema separado",
+        "3.5.5. Comparación de los modelos nucleares"
+      ],
+      "csv_path": "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv",
+      "row_count": 4,
+      "column_count": 7,
+      "columns": [
+        "clave",
+        "modelo",
+        "supuesto central",
+        "mecanismo",
+        "apoyo principal",
+        "compromiso",
+        "filas"
+      ],
+      "source_start_line": 1007,
+      "source_end_line": 1012,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-13-3-7-matriz-de-compatibilidad",
+      "category": "summary",
+      "section": "3",
+      "title": "3.7. Matriz de compatibilidad",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.7. Matriz de compatibilidad"
+      ],
+      "csv_path": "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv",
+      "row_count": 55,
+      "column_count": 6,
+      "columns": [
+        "modelo A",
+        "modelo B",
+        "relación",
+        "punto exacto",
+        "observación que los distinguiría",
+        "fila"
+      ],
+      "source_start_line": 1049,
+      "source_end_line": 1105,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-03",
+      "category": "claims",
+      "section": "3",
+      "title": "3.9. Registro de afirmaciones",
+      "heading_path": [
+        "3. Eucariogénesis",
+        "3.9. Registro de afirmaciones"
+      ],
+      "csv_path": "data/afirmaciones/03.csv",
+      "row_count": 255,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 1141,
+      "source_end_line": 1397,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-15-4-2-8-comparacion-de-las-raices",
+      "category": "summary",
+      "section": "4",
+      "title": "4.2.8. Comparación de las raíces",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.2. Hipótesis de raíz que no deben fundirse",
+        "4.2.8. Comparación de las raíces"
+      ],
+      "csv_path": "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv",
+      "row_count": 7,
+      "column_count": 6,
+      "columns": [
+        "hipótesis",
+        "marcadores",
+        "método principal",
+        "primera divergencia",
+        "relación con las otras",
+        "filas"
+      ],
+      "source_start_line": 1532,
+      "source_end_line": 1540,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-16-4-6-1-eukaryota",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.1. Eukaryota",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.1. Eukaryota"
+      ],
+      "csv_path": "data/tablas/04/table-16-4-6-1-eukaryota.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1710,
+      "source_end_line": 1712,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-17-4-6-2-amorphea",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.2. Amorphea",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.2. Amorphea"
+      ],
+      "csv_path": "data/tablas/04/table-17-4-6-2-amorphea.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1716,
+      "source_end_line": 1718,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-18-4-6-3-amoebozoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.3. Amoebozoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.3. Amoebozoa"
+      ],
+      "csv_path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1722,
+      "source_end_line": 1724,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-19-4-6-4-obazoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.4. Obazoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.4. Obazoa"
+      ],
+      "csv_path": "data/tablas/04/table-19-4-6-4-obazoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1728,
+      "source_end_line": 1730,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-20-4-6-5-apusomonadida",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.5. Apusomonadida",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.5. Apusomonadida"
+      ],
+      "csv_path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1734,
+      "source_end_line": 1736,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-21-4-6-6-breviatea",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.6. Breviatea",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.6. Breviatea"
+      ],
+      "csv_path": "data/tablas/04/table-21-4-6-6-breviatea.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1740,
+      "source_end_line": 1742,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-22-4-6-7-opisthokonta",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.7. Opisthokonta",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.7. Opisthokonta"
+      ],
+      "csv_path": "data/tablas/04/table-22-4-6-7-opisthokonta.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1746,
+      "source_end_line": 1748,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-23-4-6-8-holomycota",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.8. Holomycota",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.8. Holomycota"
+      ],
+      "csv_path": "data/tablas/04/table-23-4-6-8-holomycota.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1752,
+      "source_end_line": 1754,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-24-4-6-9-holozoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.9. Holozoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.9. Holozoa"
+      ],
+      "csv_path": "data/tablas/04/table-24-4-6-9-holozoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1758,
+      "source_end_line": 1760,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-25-4-6-10-ichthyosporea",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.10. Ichthyosporea",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.10. Ichthyosporea"
+      ],
+      "csv_path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1764,
+      "source_end_line": 1766,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.11. Pluriformea sensu Hehenberger et al. 2017",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.11. Pluriformea sensu Hehenberger et al. 2017"
+      ],
+      "csv_path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1770,
+      "source_end_line": 1772,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-27-4-6-12-corallochytrea",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.12. Corallochytrea",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.12. Corallochytrea"
+      ],
+      "csv_path": "data/tablas/04/table-27-4-6-12-corallochytrea.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1776,
+      "source_end_line": 1778,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-28-4-6-13-filasterea",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.13. Filasterea",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.13. Filasterea"
+      ],
+      "csv_path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1782,
+      "source_end_line": 1784,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-29-4-6-14-filozoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.14. Filozoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.14. Filozoa"
+      ],
+      "csv_path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1788,
+      "source_end_line": 1790,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.15. Choanozoa sensu stricto ≈ Apoikozoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.15. Choanozoa sensu stricto ≈ Apoikozoa"
+      ],
+      "csv_path": "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1794,
+      "source_end_line": 1796,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-31-4-6-16-choanoflagellata",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.16. Choanoflagellata",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.16. Choanoflagellata"
+      ],
+      "csv_path": "data/tablas/04/table-31-4-6-16-choanoflagellata.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1800,
+      "source_end_line": 1802,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-32-4-6-17-metazoa",
+      "category": "node",
+      "section": "4",
+      "title": "4.6.17. Metazoa",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.6. Corredor filogenético y tablas por nodo",
+        "4.6.17. Metazoa"
+      ],
+      "csv_path": "data/tablas/04/table-32-4-6-17-metazoa.csv",
+      "row_count": 1,
+      "column_count": 10,
+      "columns": [
+        "nodo",
+        "qué linajes quedan dentro",
+        "qué linaje queda fuera (grupo hermano)",
+        "caracteres morfológicos o ultraestructurales propuestos como sinapomorfía, con fuente",
+        "caracteres moleculares o genómicos propuestos (fusiones génicas, inserciones y deleciones raras, sintenia, dominios proteicos), con fuente",
+        "tipo de evidencia que sostiene el nodo",
+        "soporte cuantitativo transcrito literalmente",
+        "edad estimada con intervalo",
+        "método de la estimación",
+        "# de la fila del registro que sostiene cada celda sustantiva"
+      ],
+      "source_start_line": 1806,
+      "source_end_line": 1808,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-04",
+      "category": "claims",
+      "section": "4",
+      "title": "4.10. Registro de afirmaciones de la sección 4",
+      "heading_path": [
+        "4. La raíz eucariota y la forma de Amorphea",
+        "4.10. Registro de afirmaciones de la sección 4"
+      ],
+      "csv_path": "data/afirmaciones/04.csv",
+      "row_count": 262,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 1898,
+      "source_end_line": 2161,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo",
+      "category": "summary",
+      "section": "5",
+      "title": "5.8. Asignación fósil más antigua localizada por nodo",
+      "heading_path": [
+        "5. El registro material: fósiles y biomarcadores",
+        "5.8. Asignación fósil más antigua localizada por nodo"
+      ],
+      "csv_path": "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv",
+      "row_count": 9,
+      "column_count": 6,
+      "columns": [
+        "nodo",
+        "fósil más antiguo localizado",
+        "edad",
+        "método y clase de evidencia",
+        "filas",
+        "estado de asignación"
+      ],
+      "source_start_line": 2295,
+      "source_end_line": 2305,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-05",
+      "category": "claims",
+      "section": "5",
+      "title": "5.9. Registro de afirmaciones de la sección 5",
+      "heading_path": [
+        "5. El registro material: fósiles y biomarcadores",
+        "5.9. Registro de afirmaciones de la sección 5"
+      ],
+      "csv_path": "data/afirmaciones/05.csv",
+      "row_count": 56,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 2309,
+      "source_end_line": 2366,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-36-6-1-estimaciones-publicadas",
+      "category": "summary",
+      "section": "6",
+      "title": "6.1. Estimaciones publicadas",
+      "heading_path": [
+        "6. Tiempo: relojes moleculares y desacuerdo con las rocas",
+        "6.1. Estimaciones publicadas"
+      ],
+      "csv_path": "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv",
+      "row_count": 10,
+      "column_count": 6,
+      "columns": [
+        "estudio",
+        "magnitud",
+        "intervalo publicado",
+        "modelo o enfoque",
+        "calibración",
+        "filas"
+      ],
+      "source_start_line": 2410,
+      "source_end_line": 2421,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-06",
+      "category": "claims",
+      "section": "6",
+      "title": "6.5. Registro de afirmaciones de la sección 6",
+      "heading_path": [
+        "6. Tiempo: relojes moleculares y desacuerdo con las rocas",
+        "6.5. Registro de afirmaciones de la sección 6"
+      ],
+      "csv_path": "data/afirmaciones/06.csv",
+      "row_count": 29,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 2453,
+      "source_end_line": 2483,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas",
+      "category": "summary",
+      "section": "7",
+      "title": "7.1. Oxígeno: cronología, proxies y discrepancias cuantitativas",
+      "heading_path": [
+        "7. Ambiente",
+        "7.1. Oxígeno: cronología, proxies y discrepancias cuantitativas"
+      ],
+      "csv_path": "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv",
+      "row_count": 5,
+      "column_count": 6,
+      "columns": [
+        "intervalo u organismo",
+        "valor",
+        "proxy o método",
+        "observado/inferido",
+        "fuente",
+        "fila"
+      ],
+      "source_start_line": 2521,
+      "source_end_line": 2527,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-07",
+      "category": "claims",
+      "section": "7",
+      "title": "7.6. Registro de afirmaciones de la sección 7",
+      "heading_path": [
+        "7. Ambiente",
+        "7.6. Registro de afirmaciones de la sección 7"
+      ],
+      "csv_path": "data/afirmaciones/07.csv",
+      "row_count": 43,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 2595,
+      "source_end_line": 2639,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa",
+      "category": "summary",
+      "section": "8",
+      "title": "8.3. Depredadores holozoos, Obazoa, Holomycota y Amoebozoa",
+      "heading_path": [
+        "8. Ecología y trofismo",
+        "8.3. Depredadores holozoos, Obazoa, Holomycota y Amoebozoa"
+      ],
+      "csv_path": "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv",
+      "row_count": 16,
+      "column_count": 7,
+      "columns": [
+        "organismo",
+        "ecología documentada",
+        "alimentación",
+        "hospedador o socio",
+        "ciclo/forma",
+        "aporte al corredor",
+        "filas"
+      ],
+      "source_start_line": 2755,
+      "source_end_line": 2772,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-08",
+      "category": "claims",
+      "section": "8",
+      "title": "8.7. Registro de afirmaciones de la sección 8",
+      "heading_path": [
+        "8. Ecología y trofismo",
+        "8.7. Registro de afirmaciones de la sección 8"
+      ],
+      "csv_path": "data/afirmaciones/08.csv",
+      "row_count": 81,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 2840,
+      "source_end_line": 2922,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-42-9-1-1-tipologia-cerrada",
+      "category": "summary",
+      "section": "9",
+      "title": "9.1.1. Tipología cerrada",
+      "heading_path": [
+        "9. Asociación: el catálogo de desenlaces",
+        "9.1. Tipología cerrada y numerada de desenlaces",
+        "9.1.1. Tipología cerrada"
+      ],
+      "csv_path": "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv",
+      "row_count": 11,
+      "column_count": 6,
+      "columns": [
+        "n.º",
+        "desenlace",
+        "caso documentado",
+        "qué mantiene o limita el estado",
+        "transmisión o heredabilidad",
+        "#"
+      ],
+      "source_start_line": 2976,
+      "source_end_line": 2988,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-43-9-4-1-fichas-comparativas-por-grado-de-integracion",
+      "category": "summary",
+      "section": "9",
+      "title": "9.4.1. Fichas comparativas por grado de integración",
+      "heading_path": [
+        "9. Asociación: el catálogo de desenlaces",
+        "9.4. Endosimbiosis en curso o comparativamente recientes",
+        "9.4.1. Fichas comparativas por grado de integración"
+      ],
+      "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "row_count": 19,
+      "column_count": 10,
+      "columns": [
+        "caso",
+        "hospedador",
+        "socio",
+        "qué aporta",
+        "antigüedad estimada",
+        "transmisión",
+        "genoma o reducción",
+        "EGT o importación",
+        "estado",
+        "filas"
+      ],
+      "source_start_line": 3156,
+      "source_end_line": 3176,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-44-9-7-1-correlatos-publicados",
+      "category": "summary",
+      "section": "9",
+      "title": "9.7.1. Correlatos publicados",
+      "heading_path": [
+        "9. Asociación: el catálogo de desenlaces",
+        "9.7. Correlatos de dependencia, persistencia y ruptura",
+        "9.7.1. Correlatos publicados"
+      ],
+      "csv_path": "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv",
+      "row_count": 6,
+      "column_count": 4,
+      "columns": [
+        "condición",
+        "desenlace asociado",
+        "tipo de apoyo",
+        "filas"
+      ],
+      "source_start_line": 3304,
+      "source_end_line": 3311,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-45-9-8-1-gradiente-funcional-comparado",
+      "category": "summary",
+      "section": "9",
+      "title": "9.8.1. Gradiente funcional comparado",
+      "heading_path": [
+        "9. Asociación: el catálogo de desenlaces",
+        "9.8. Pérdida y degradación de la mitocondria",
+        "9.8.1. Gradiente funcional comparado"
+      ],
+      "csv_path": "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv",
+      "row_count": 8,
+      "column_count": 5,
+      "columns": [
+        "estado",
+        "funciones conservadas o perdidas",
+        "rendimiento energético localizado",
+        "ambiente o asociación",
+        "filas"
+      ],
+      "source_start_line": 3387,
+      "source_end_line": 3396,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-09",
+      "category": "claims",
+      "section": "9",
+      "title": "9.12. Registro de afirmaciones de la sección 9",
+      "heading_path": [
+        "9. Asociación: el catálogo de desenlaces",
+        "9.12. Registro de afirmaciones de la sección 9"
+      ],
+      "csv_path": "data/afirmaciones/09.csv",
+      "row_count": 251,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 3522,
+      "source_end_line": 3774,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-47-10-1-tabla-consolidada-de-rasgos-con-coste",
+      "category": "summary",
+      "section": "10",
+      "title": "10.1. Tabla consolidada de rasgos con coste",
+      "heading_path": [
+        "10. Rasgos con costo",
+        "10.1. Tabla consolidada de rasgos con coste"
+      ],
+      "csv_path": "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv",
+      "row_count": 21,
+      "column_count": 9,
+      "columns": [
+        "rasgo",
+        "qué habilita",
+        "dependencias previas que exige",
+        "cifra de coste publicada",
+        "unidad exacta",
+        "organismo, condición experimental o modelo del que procede",
+        "si es medida o estimada por los autores",
+        "fuente y localizador",
+        "compensación documentada"
+      ],
+      "source_start_line": 3804,
+      "source_end_line": 3826,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-10",
+      "category": "claims",
+      "section": "10",
+      "title": "10.12. Registro de afirmaciones de la sección 10",
+      "heading_path": [
+        "10. Rasgos con costo",
+        "10.12. Registro de afirmaciones de la sección 10"
+      ],
+      "csv_path": "data/afirmaciones/10.csv",
+      "row_count": 135,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 4100,
+      "source_end_line": 4236,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-49-11-11-vista-comparativa-de-clases-de-evidencia",
+      "category": "summary",
+      "section": "11",
+      "title": "11.11. Vista comparativa de clases de evidencia",
+      "heading_path": [
+        "11. Sexo, meiosis y ciclo vital",
+        "11.11. Vista comparativa de clases de evidencia"
+      ],
+      "csv_path": "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv",
+      "row_count": 8,
+      "column_count": 5,
+      "columns": [
+        "organismo o nodo",
+        "evidencia",
+        "clase",
+        "conclusión limitada",
+        "filas"
+      ],
+      "source_start_line": 4523,
+      "source_end_line": 4532,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-11",
+      "category": "claims",
+      "section": "11",
+      "title": "11.12. Registro de afirmaciones de la sección 11",
+      "heading_path": [
+        "11. Sexo, meiosis y ciclo vital",
+        "11.12. Registro de afirmaciones de la sección 11"
+      ],
+      "csv_path": "data/afirmaciones/11.csv",
+      "row_count": 116,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 4538,
+      "source_end_line": 4655,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-51-12-1-1-vista-comparativa-de-rutas",
+      "category": "summary",
+      "section": "12",
+      "title": "12.1.1. Vista comparativa de rutas",
+      "heading_path": [
+        "12. Multicelularidad y el repertorio preanimal",
+        "12.1. Rutas celulares y definiciones operativas",
+        "12.1.1. Vista comparativa de rutas"
+      ],
+      "csv_path": "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv",
+      "row_count": 4,
+      "column_count": 7,
+      "columns": [
+        "ruta",
+        "unidad inicial",
+        "mecanismo de ensamblaje",
+        "relación genética esperada",
+        "ejemplos documentados en esta entrega",
+        "señal o condición localizada",
+        "#"
+      ],
+      "source_start_line": 4693,
+      "source_end_line": 4698,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado",
+      "category": "summary",
+      "section": "12",
+      "title": "12.6.1. Costes y compensaciones cuantificados o no localizados",
+      "heading_path": [
+        "12. Multicelularidad y el repertorio preanimal",
+        "12.6. Evolución experimental de multicelularidad en levadura",
+        "12.6.1. Costes y compensaciones cuantificados o no localizados"
+      ],
+      "csv_path": "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv",
+      "row_count": 7,
+      "column_count": 7,
+      "columns": [
+        "sistema",
+        "beneficio o compensación observada",
+        "cifra de coste publicada localizada",
+        "unidad",
+        "condición",
+        "fuente",
+        "#"
+      ],
+      "source_start_line": 4844,
+      "source_end_line": 4852,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-53-12-7-1-tabla-comparativa-de-genomas",
+      "category": "summary",
+      "section": "12",
+      "title": "12.7.1. Tabla comparativa de genomas",
+      "heading_path": [
+        "12. Multicelularidad y el repertorio preanimal",
+        "12.7. Genomas de referencia y arquitectura génica",
+        "12.7.1. Tabla comparativa de genomas"
+      ],
+      "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+      "row_count": 8,
+      "column_count": 7,
+      "columns": [
+        "organismo",
+        "tamaño del genoma publicado",
+        "genes publicados",
+        "densidad o promedio de intrones",
+        "versión o método",
+        "fuente",
+        "#"
+      ],
+      "source_start_line": 4882,
+      "source_end_line": 4891,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-54-12-10-1-repertorio-funcional-localizado",
+      "category": "summary",
+      "section": "12",
+      "title": "12.10.1. Repertorio funcional localizado",
+      "heading_path": [
+        "12. Multicelularidad y el repertorio preanimal",
+        "12.10. Regulación transcripcional preanimal",
+        "12.10.1. Repertorio funcional localizado"
+      ],
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "row_count": 12,
+      "column_count": 5,
+      "columns": [
+        "familia o sistema",
+        "presencia preanimal localizada",
+        "ausencia, discontinuidad o límite",
+        "interpretación permitida",
+        "#"
+      ],
+      "source_start_line": 4949,
+      "source_end_line": 4962,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-12",
+      "category": "claims",
+      "section": "12",
+      "title": "12.13. Registro de afirmaciones de la sección 12",
+      "heading_path": [
+        "12. Multicelularidad y el repertorio preanimal",
+        "12.13. Registro de afirmaciones de la sección 12"
+      ],
+      "csv_path": "data/afirmaciones/12.csv",
+      "row_count": 126,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 5002,
+      "source_end_line": 5129,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-56-14-8-1-codigos",
+      "category": "summary",
+      "section": "14",
+      "title": "14.8.1. Códigos",
+      "heading_path": [
+        "14. Nombres y nomenclatura",
+        "14.8. Vistas de resumen",
+        "14.8.1. Códigos"
+      ],
+      "csv_path": "data/tablas/14/table-56-14-8-1-codigos.csv",
+      "row_count": 5,
+      "column_count": 5,
+      "columns": [
+        "código o recurso",
+        "ámbito",
+        "qué puede establecer",
+        "qué no establece",
+        "filas"
+      ],
+      "source_start_line": 5687,
+      "source_end_line": 5693,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-57-14-8-2-nombres-rivales-o-solapados",
+      "category": "summary",
+      "section": "14",
+      "title": "14.8.2. Nombres rivales o solapados",
+      "heading_path": [
+        "14. Nombres y nomenclatura",
+        "14.8. Vistas de resumen",
+        "14.8.2. Nombres rivales o solapados"
+      ],
+      "csv_path": "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv",
+      "row_count": 10,
+      "column_count": 5,
+      "columns": [
+        "nombres",
+        "relación",
+        "motivo",
+        "etiqueta preferida",
+        "filas"
+      ],
+      "source_start_line": 5697,
+      "source_end_line": 5708,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-58-14-8-3-terminos-problematicos-y-reemplazos",
+      "category": "summary",
+      "section": "14",
+      "title": "14.8.3. Términos problemáticos y reemplazos",
+      "heading_path": [
+        "14. Nombres y nomenclatura",
+        "14.8. Vistas de resumen",
+        "14.8.3. Términos problemáticos y reemplazos"
+      ],
+      "csv_path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "row_count": 20,
+      "column_count": 4,
+      "columns": [
+        "término",
+        "estado",
+        "reemplazo o uso acotado",
+        "filas"
+      ],
+      "source_start_line": 5712,
+      "source_end_line": 5733,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-14",
+      "category": "claims",
+      "section": "14",
+      "title": "14.9. Registro de afirmaciones de la sección 14",
+      "heading_path": [
+        "14. Nombres y nomenclatura",
+        "14.9. Registro de afirmaciones de la sección 14"
+      ],
+      "csv_path": "data/afirmaciones/14.csv",
+      "row_count": 216,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 5737,
+      "source_end_line": 5954,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-1",
+      "category": "negative",
+      "section": "15",
+      "title": "15.1. Punto de partida y participantes celulares",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.1. Punto de partida y participantes celulares"
+      ],
+      "csv_path": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
+      "row_count": 9,
+      "column_count": 6,
+      "columns": [
+        "clave",
+        "estado",
+        "hueco",
+        "términos exactos o n/a",
+        "resultado",
+        "filas relacionadas"
+      ],
+      "source_start_line": 5966,
+      "source_end_line": 5976,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-2",
+      "category": "negative",
+      "section": "15",
+      "title": "15.2. Eucariogénesis",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.2. Eucariogénesis"
+      ],
+      "csv_path": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+      "row_count": 10,
+      "column_count": 6,
+      "columns": [
+        "clave",
+        "estado",
+        "hueco",
+        "términos exactos",
+        "resultado",
+        "filas o fuente"
+      ],
+      "source_start_line": 5990,
+      "source_end_line": 6001,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-3",
+      "category": "negative",
+      "section": "15",
+      "title": "15.3. Raíz eucariota y corredor filogenético",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.3. Raíz eucariota y corredor filogenético"
+      ],
+      "csv_path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+      "row_count": 17,
+      "column_count": 4,
+      "columns": [
+        "clave",
+        "etiqueta",
+        "hueco",
+        "términos exactos o fundamento"
+      ],
+      "source_start_line": 6005,
+      "source_end_line": 6023,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-63-15-4-registro-material-tiempo-ambiente-y-ecologia",
+      "category": "summary",
+      "section": "15",
+      "title": "15.4. Registro material, tiempo, ambiente y ecología",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.4. Registro material, tiempo, ambiente y ecología"
+      ],
+      "csv_path": "data/tablas/15/table-63-15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "row_count": 17,
+      "column_count": 4,
+      "columns": [
+        "etiqueta",
+        "hueco",
+        "términos exactos",
+        "consecuencia documental"
+      ],
+      "source_start_line": 6029,
+      "source_end_line": 6047,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "negative-15-5",
+      "category": "negative",
+      "section": "15",
+      "title": "15.5. Asociación, integración y transferencia",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.5. Asociación, integración y transferencia"
+      ],
+      "csv_path": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "row_count": 12,
+      "column_count": 5,
+      "columns": [
+        "clave",
+        "etiqueta",
+        "hueco",
+        "términos exactos",
+        "resultado o motivo"
+      ],
+      "source_start_line": 6053,
+      "source_end_line": 6066,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-6",
+      "category": "negative",
+      "section": "15",
+      "title": "15.6. Rasgos con costo y controversia energética",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.6. Rasgos con costo y controversia energética"
+      ],
+      "csv_path": "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv",
+      "row_count": 10,
+      "column_count": 5,
+      "columns": [
+        "clave",
+        "etiqueta",
+        "hueco",
+        "términos exactos",
+        "resultado o motivo"
+      ],
+      "source_start_line": 6072,
+      "source_end_line": 6083,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-7",
+      "category": "negative",
+      "section": "15",
+      "title": "15.7. Sexo, meiosis y ciclo vital",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.7. Sexo, meiosis y ciclo vital"
+      ],
+      "csv_path": "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv",
+      "row_count": 10,
+      "column_count": 5,
+      "columns": [
+        "clave",
+        "estado",
+        "elemento",
+        "términos exactos buscados",
+        "resultado"
+      ],
+      "source_start_line": 6089,
+      "source_end_line": 6100,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-8",
+      "category": "negative",
+      "section": "15",
+      "title": "15.8. Nombres y nomenclatura",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.8. Nombres y nomenclatura"
+      ],
+      "csv_path": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "row_count": 8,
+      "column_count": 4,
+      "columns": [
+        "clave",
+        "etiqueta",
+        "hueco",
+        "términos exactos o fundamento"
+      ],
+      "source_start_line": 6106,
+      "source_end_line": 6115,
+      "readable_policy": "link"
+    },
+    {
+      "id": "negative-15-9",
+      "category": "negative",
+      "section": "15",
+      "title": "15.9. Multicelularidad y repertorio preanimal",
+      "heading_path": [
+        "15. Búsquedas negativas y huecos provisionales",
+        "15.9. Multicelularidad y repertorio preanimal"
+      ],
+      "csv_path": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "row_count": 14,
+      "column_count": 5,
+      "columns": [
+        "clave",
+        "estado",
+        "hueco",
+        "términos exactos utilizados",
+        "resultado y motivo"
+      ],
+      "source_start_line": 6120,
+      "source_end_line": 6135,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-a",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice A. Fuentes",
+      "heading_path": [
+        "Apéndice A. Fuentes"
+      ],
+      "csv_path": "data/apendices/A_fuentes.csv",
+      "row_count": 446,
+      "column_count": 9,
+      "columns": [
+        "clave",
+        "autores",
+        "año",
+        "título",
+        "publicación o repositorio",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI",
+        "tipo",
+        "notas de calidad",
+        "fecha de consulta"
+      ],
+      "source_start_line": 6143,
+      "source_end_line": 6590,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-b",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice B. Entidades",
+      "heading_path": [
+        "Apéndice B. Entidades"
+      ],
+      "csv_path": "data/apendices/B_entidades.csv",
+      "row_count": 1518,
+      "column_count": 5,
+      "columns": [
+        "etiqueta preferida",
+        "tipo",
+        "sinónimos y grafías alternativas",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila",
+        "# de la fila del registro donde aparece por primera vez"
+      ],
+      "source_start_line": 6598,
+      "source_end_line": 8117,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-c",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice C. Eventos",
+      "heading_path": [
+        "Apéndice C. Eventos"
+      ],
+      "csv_path": "data/apendices/C_eventos.csv",
+      "row_count": 106,
+      "column_count": 8,
+      "columns": [
+        "clave",
+        "tipo",
+        "participantes con su papel",
+        "entidad resultante si la hay",
+        "intervalo temporal",
+        "# de las filas que lo sostienen",
+        "qué fuente lo describe como evento",
+        "desenlace"
+      ],
+      "source_start_line": 8125,
+      "source_end_line": 8232,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-d",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice D. Fechas",
+      "heading_path": [
+        "Apéndice D. Fechas"
+      ],
+      "csv_path": "data/apendices/D_fechas.csv",
+      "row_count": 258,
+      "column_count": 10,
+      "columns": [
+        "a qué se aplica",
+        "límite más antiguo",
+        "límite más reciente",
+        "unidad explícita",
+        "incertidumbre tal como la da la fuente",
+        "tipo",
+        "método y calibración",
+        "observado o inferido",
+        "fuente con localizador",
+        "# de la fila que la sostiene"
+      ],
+      "source_start_line": 8240,
+      "source_end_line": 8499,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-e",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice E. Hipótesis",
+      "heading_path": [
+        "Apéndice E. Hipótesis"
+      ],
+      "csv_path": "data/apendices/E_hipotesis.csv",
+      "row_count": 81,
+      "column_count": 8,
+      "columns": [
+        "clave",
+        "qué sostiene en una frase",
+        "supuestos que da por buenos",
+        "# de las filas que la componen",
+        "fuentes a favor",
+        "fuentes en contra",
+        "con qué otras hipótesis es incompatible y en qué punto exacto",
+        "qué observación la falsaría"
+      ],
+      "source_start_line": 8507,
+      "source_end_line": 8589,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-f",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice F. Magnitudes",
+      "heading_path": [
+        "Apéndice F. Magnitudes"
+      ],
+      "csv_path": "data/apendices/F_magnitudes.csv",
+      "row_count": 446,
+      "column_count": 9,
+      "columns": [
+        "magnitud",
+        "valor tal como lo publica la fuente",
+        "unidad original",
+        "organismo, nodo o intervalo al que se aplica",
+        "método o proxy",
+        "incertidumbre publicada",
+        "observado o inferido",
+        "fuente con localizador",
+        "#"
+      ],
+      "source_start_line": 8597,
+      "source_end_line": 9044,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-g",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice G. Material no encajado",
+      "heading_path": [
+        "Apéndice G. Material no encajado"
+      ],
+      "csv_path": "data/apendices/G_material_no_encajado.csv",
+      "row_count": 30,
+      "column_count": 5,
+      "columns": [
+        "material",
+        "afirmación o estado",
+        "fuente y localizador",
+        "sección propuesta",
+        "#"
+      ],
+      "source_start_line": 9052,
+      "source_end_line": 9083,
+      "readable_policy": "link"
+    },
+    {
+      "id": "appendix-h",
+      "category": "appendix",
+      "section": "17",
+      "title": "Apéndice H. Recuento de control",
+      "heading_path": [
+        "Apéndice H. Recuento de control"
+      ],
+      "csv_path": "data/apendices/H_recuento_control.csv",
+      "row_count": 20,
+      "column_count": 2,
+      "columns": [
+        "control",
+        "valor"
+      ],
+      "source_start_line": 9087,
+      "source_end_line": 9108,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-77-19-mapa-provisional-de-las-seis-preguntas-de-cierre",
+      "category": "summary",
+      "section": "19",
+      "title": "19. Mapa provisional de las seis preguntas de cierre",
+      "heading_path": [
+        "19. Mapa provisional de las seis preguntas de cierre"
+      ],
+      "csv_path": "data/tablas/19/table-77-19-mapa-provisional-de-las-seis-preguntas-de-cierre.csv",
+      "row_count": 6,
+      "column_count": 3,
+      "columns": [
+        "pregunta",
+        "secciones con material integrado",
+        "estado provisional"
+      ],
+      "source_start_line": 9112,
+      "source_end_line": 9119,
+      "readable_policy": "inline"
+    }
+  ]
+}

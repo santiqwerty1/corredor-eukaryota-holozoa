@@ -1,0 +1,7 @@
+"estudio y matriz","modelo o prueba","resultado publicado","soporte transcrito","interpretación limitada","filas"
+"Williams et al. 2020; matriz original de 35 genes","LG+G4+F","dos dominios tuvo mejor log-verosimilitud que tres dominios","−684701.2 frente a −684716.1","La diferencia de ajuste no equivale por sí sola a rechazo del árbol alternativo.","C-022–C-023"
+"Williams et al. 2020; misma matriz","prueba AU bajo LG+G4+F","ninguna topología fue rechazada","0.771 frente a 0.229","El modelo homogéneo dejó una diferencia no decisiva.","C-024"
+"Williams et al. 2020; misma matriz","LG+C60+G4+F","rechazo de tres dominios","AU = 0.036","Una mezcla de perfiles cambió el resultado de la prueba.","C-025"
+"Williams et al. 2020","CAT+GTR+G4","dos dominios","apoyo posterior máximo","El resultado depende de un modelo sitio-heterogéneo.","C-026"
+"Williams et al. 2020","CAT con recodificación SR4","dos dominios","PP = 0.98","La recodificación de aminoácidos (*amino-acid recoding*) fue una prueba contra sesgo composicional.","C-027"
+"Williams et al. 2020; matrices ampliadas","21 proteínas universales; 43 arqueano-eucariotas; 125 genomas","Eukaryota dentro de Asgard","máximo para la asociación con Heimdallarchaeia; LC3 PP = 0.95","La división asgard concreta fue modificada por estudios posteriores.","C-028–C-030"
