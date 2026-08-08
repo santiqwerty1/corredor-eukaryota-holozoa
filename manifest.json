@@ -650,8 +650,8 @@
     },
     {
       "path": "scripts/publish_github.sh",
-      "bytes": 910,
-      "sha256": "141cac9ab63170347a41e36067d6235f24d162ba6fc1ae0943fdf74188b03551"
+      "bytes": 914,
+      "sha256": "b66f0d7c371959a74d8136fe1cd2278569283f2a3f62e111ffd1b2b8c403f2e4"
     },
     {
       "path": "scripts/render.py",
