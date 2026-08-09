@@ -60,11 +60,21 @@ Después de la migración:
 - los informes y `exports/` se regeneran;
 - la instantánea de `archive/` queda solo para auditoría histórica.
 
-## Verificación
+## Verificación histórica
+
+La auditoría de migración reconstruye la instantánea v5 para comprobar la
+procedencia y posición de las 78 tablas heredadas. No exige igualdad de contenido
+después de las correcciones bibliográficas, ampliaciones y renumeraciones; las 13
+tablas creadas después de la migración se cuentan y se validan como tablas nativas.
 
 ```bash
-python scripts/render.py
-python scripts/validate.py
+python3 scripts/audit_migration.py
+```
+
+Para el corpus científico actual, la comprobación operativa es:
+
+```bash
+make verify
 ```
 
 El informe autocontenido no se compara byte a byte con el original porque el renderizador normaliza el espaciado de tablas y el formato de los identificadores. La validación compara filas, columnas, referencias y contenido canónico.

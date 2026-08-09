@@ -1,0 +1,167 @@
+{
+  "anchors": {
+    "archived_master": {
+      "path": "archive/maestro_provisional_v5_pre_migracion.md",
+      "sha256": "24c5495d85641d03a24c084a51a9b0b5887edf60d6698f94f19775c09c28cfe3"
+    },
+    "prompt": {
+      "path": "docs/C01-PROMPT-INVESTIGACION.md",
+      "sha256": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
+    }
+  },
+  "artifacts": {
+    "data/table_lineage.csv": {
+      "bytes": 37319,
+      "sha256": "9ebf7202cdbabdb40efee4fe7e8d3a3d61f8913971693277e882e110813bed5a"
+    },
+    "docs/auditorias/AUDITORIA-COMPLETA-2026-08-08.md": {
+      "bytes": 5819,
+      "sha256": "56c9ddae0faa3854af47aed20fc18acaafc95d5ef4a959e4a48625a4a0376de3"
+    },
+    "docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md": {
+      "bytes": 25685,
+      "sha256": "cbf11fe303510d3f6c2dc0068a5a416728c729ed72be5bd6df08e8637c2e0eaf"
+    },
+    "docs/auditorias/delta_apendices_2026-08-08.csv": {
+      "bytes": 951170,
+      "sha256": "122c73c9579eb2c4531e4e564c17b71d530b2db36f2a2c71649ba8fe52430a23"
+    },
+    "docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv": {
+      "bytes": 44531,
+      "sha256": "b5f794a84ba12442dd1befe251549e0cc78f045397b9b6cd2667c2125fa049a0"
+    },
+    "docs/auditorias/matriz_afirmaciones_2026-08-08.csv": {
+      "bytes": 2672295,
+      "sha256": "48859d0c4364928f25f9f9316b4a9136b99198fcd56677e466c3e972b1d55728"
+    },
+    "docs/auditorias/matriz_fuentes_2026-08-08.csv": {
+      "bytes": 1033501,
+      "sha256": "497fbde2d69c7079a469bceb58da02309d03eec602e779e24f999577fcef72c2"
+    },
+    "docs/auditorias/matriz_requisitos_2026-08-08.csv": {
+      "bytes": 1061323,
+      "sha256": "9633c1ba775c9afe894dfb7f44dcda54016d277cd330e482dd67bd9031aa236b"
+    },
+    "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": {
+      "bytes": 1442207,
+      "sha256": "d3225fa7460162cbfd45598d308f32e7156e08bc3900a956635ecba054442f73"
+    },
+    "docs/auditorias/registro_busquedas_2026-08-08.csv": {
+      "bytes": 328003,
+      "sha256": "2653ecc91e14edfa4f05660d3e56305c6cfdef19acfa9c572f62610d18e74698"
+    },
+    "docs/auditorias/revision_busquedas_negativas_2026-08-08.csv": {
+      "bytes": 63623,
+      "sha256": "4721d8449ffb121da42b672e1eccdfd67f95c27d3350c3611546cc444c1db6ef"
+    },
+    "docs/auditorias/segunda_revision_2026-08-08.csv": {
+      "bytes": 758461,
+      "sha256": "8f21ac8e1859538042ace4ed649625f73213c92f927f8aaf51e189826d28f82c"
+    }
+  },
+  "audit_id": "research-audit-2026-08-08",
+  "commands": [
+    {
+      "name": "make verify (workspace)"
+    },
+    {
+      "name": "python3 scripts/audit_migration.py"
+    },
+    {
+      "name": "git diff --check"
+    },
+    {
+      "name": "make verify (isolated copy)"
+    },
+    {
+      "name": "double render idempotence"
+    }
+  ],
+  "counts": {
+    "after": {
+      "claims": 1937,
+      "dates": 212,
+      "entities": 1491,
+      "events": 109,
+      "hypotheses": 81,
+      "magnitudes": 553,
+      "negative_active": 68,
+      "negative_historical": 106,
+      "sources": 517,
+      "tables": 91
+    },
+    "before": {
+      "claims": 1840,
+      "dates": 282,
+      "entities": 1536,
+      "events": 111,
+      "hypotheses": 81,
+      "magnitudes": 556,
+      "negative_active": 68,
+      "negative_historical": 106,
+      "sources": 525,
+      "tables": 90
+    }
+  },
+  "cutoff": "2026-08-08",
+  "documented_delta": {
+    "dates_added_or_reconciled_in_final_pass": 24,
+    "dates_final_without_claim": 0,
+    "dates_removed_character": "metadatos de publicación o fechas internas de corte; no eran estimaciones científicas",
+    "dates_removed_without_claim": 107
+  },
+  "frozen_aggregates": {
+    "claims_audit_rows_sha256": "35cb63c30c32a8eeb86f053226f7b49f7da8bb5d7ebd9706f8008d0399cdffd2",
+    "claims_corpus_rows_sha256": "ed8685528ddd5051f333327fb649f5e2657e36c95190cad08b0a805fcc7fd579",
+    "requirements_audit_rows_sha256": "506b24d365410826099f6f5cff433bbf865f4eacb880c43b9ea2acdba0217680",
+    "searches_audit_rows_sha256": "29d14eaac34cc7ba8e56150c7eb8a48ab6a1812993351aa1d39a20fd7b13964a",
+    "sources_audit_rows_sha256": "35debf215af3681c63535060f9cc3ff07b4b17283c7bb50f2852394ba3973c5c",
+    "sources_corpus_rows_sha256": "a1d29920d13d1c308c01797c9f3e6c59322ec628eb312f05973b9a66b71f5cf2"
+  },
+  "inputs": {
+    "builder": {
+      "path": "scripts/build_audit_deliverables.py",
+      "sha256": "8bc4c02ec1ebe04b035006c7308cdba5477a1b6a7e67b662bcb9c48338cda9fd"
+    },
+    "claim_origin_maps": {
+      "/tmp/temp_claim_origins_9001_9020.csv": "37093d380ce33db4f8c7cea52dcf5157437daec299a65589f3566f1d46a59eeb",
+      "/tmp/temp_claim_origins_9100_9131.csv": "5cce232bd5975bfabb6ffb9681c3ea2bf5477ed0e8b47a609dc4dcaee31de090"
+    },
+    "removed_sources": {
+      "path": "/tmp/removed_sources_destination.csv",
+      "sha256": "09bf83f948806ea872df1761ecb3d13945e8d7752072cf44e30e7c82eb363e36"
+    }
+  },
+  "limitations": [
+    "El constructor no consulta la red ni inspecciona pasajes.",
+    "NO_VERIFICABLE no equivale a falso.",
+    "Los comandos se documentan sin autoatribuir un resultado.",
+    "La auditoría científica final no está cerrada mientras haya revisiones independientes pendientes."
+  ],
+  "second_review": {
+    "closed": 0,
+    "corrected_failures": 0,
+    "pending": 2060,
+    "rows": 2060,
+    "selection": "SHA256(research-audit-2026-08-08\\x1festrato\\x1fclave), ceil(15 %) por estrato; censo 100 % P0/P1; expansión al 100 % si la muestra detecta un fallo"
+  },
+  "snapshot": {
+    "external_path": "/tmp/corredor-eukaryota-auditoria-20260808/",
+    "frozen_file_sha256": {
+      "audit_claims_001_914.csv": "ba4416eeca1334886d29c99b63b37b4c861262ba003279ce696d6e973d17d0e4",
+      "audit_claims_915_1840.csv": "58754cbbbb763405ec28baa0f05ac880b74c1c9ef22b760b951cd79a334c7752",
+      "audit_requirements.csv": "f77c61a77064c7914b9bdcc8b2620f068839a3ef920f3193ad088a29948e2681",
+      "audit_searches.csv": "f25c158020ef3cc778e34f070021a802454f7d9c707f36b1e4af1271d0d43a37",
+      "audit_sources.csv": "ebc6f2080757e608a45af75b2b3decf20b6594e0ed047ecd3be429c920e2af53"
+    },
+    "frozen_findings_manifest_sha256": "2d2c2537edbe86f3f19a548b5d6bcbfddca8107cd25c7a674f1c1c68c3bd0661",
+    "head": "a3ce4e6685a4e287a5fbd478d4657e475e10de3c"
+  },
+  "verdict": "REVISION_INDEPENDIENTE_PENDIENTE",
+  "versions": {
+    "git": "git version 2.39.5",
+    "make": "GNU Make 4.3",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "python": "3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]"
+  }
+}

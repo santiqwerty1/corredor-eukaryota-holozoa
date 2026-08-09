@@ -6,7 +6,8 @@
 santiqwerty1/corredor-eukaryota-holozoa
 ```
 
-Se recomienda crearlo inicialmente como **privado**. El corpus todavía contiene secciones pendientes y una auditoría semántica final no ejecutada.
+Se recomienda crearlo inicialmente como **privado**. La publicación debe ocurrir
+solo desde un estado cerrado que pase `make verify`.
 
 ## Publicación con GitHub CLI
 
@@ -16,7 +17,8 @@ Desde la raíz de esta copia local:
 ./scripts/publish_github.sh
 ```
 
-El script ejecuta las validaciones, comprueba que el árbol esté limpio, crea el repositorio privado si no existe y publica `main`.
+El script ejecuta `make verify`, comprueba que el árbol esté limpio, crea el
+repositorio privado si no existe y publica `main`.
 
 La forma manual equivalente es:
 
@@ -45,16 +47,7 @@ Después del primer push:
 - trabajar mediante ramas `research/...`, `data/...` o `docs/...`;
 - usar pull requests para cambios de fuentes, esquemas o renumeración global.
 
-## Primera rama posterior
+## Cambios posteriores
 
-La siguiente ampliación científica debería realizarse en:
-
-```text
-research/seccion-13-escalas-tasas-recuentos
-```
-
-La sección 13 debe añadirse antes de la sección 14 y después renumerarse con:
-
-```bash
-python scripts/renumber.py
-```
+Toda ampliación científica posterior debe registrar su nueva fecha de corte,
+actualizar las matrices de auditoría afectadas y volver a pasar `make verify`.

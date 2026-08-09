@@ -13,7 +13,7 @@
         "0.3. Registro de afirmaciones de la sección 0"
       ],
       "csv_path": "data/afirmaciones/00.csv",
-      "row_count": 10,
+      "row_count": 12,
       "column_count": 12,
       "columns": [
         "#",
@@ -31,6 +31,36 @@
       ],
       "source_start_line": 75,
       "source_end_line": 86,
+      "readable_policy": "link"
+    },
+    {
+      "id": "claims-01",
+      "category": "claims",
+      "section": "1",
+      "title": "1.1. Registro de afirmaciones de la sección 1",
+      "heading_path": [
+        "1. Alcance del corpus",
+        "1.1. Registro de afirmaciones de la sección 1"
+      ],
+      "csv_path": "data/afirmaciones/01.csv",
+      "row_count": 4,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
       "readable_policy": "link"
     },
     {
@@ -70,13 +100,10 @@
       ],
       "csv_path": "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv",
       "row_count": 3,
-      "column_count": 6,
+      "column_count": 3,
       "columns": [
         "conjunto celular",
-        "estereoisómero del glicerol",
-        "cadenas hidrófobas",
-        "enlace principal",
-        "relación con el problema",
+        "química de membrana coordinada",
         "filas"
       ],
       "source_start_line": 190,
@@ -191,7 +218,7 @@
         "2.10. Registro de afirmaciones de la sección 2"
       ],
       "csv_path": "data/afirmaciones/02.csv",
-      "row_count": 139,
+      "row_count": 156,
       "column_count": 12,
       "columns": [
         "#",
@@ -267,7 +294,7 @@
         "3.3. Orden de los eventos: mitocondria y fagotrofia"
       ],
       "csv_path": "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv",
-      "row_count": 6,
+      "row_count": 7,
       "column_count": 4,
       "columns": [
         "posición",
@@ -301,7 +328,7 @@
         "geometría y orden",
         "apoyo",
         "compromiso principal",
-        "fila inicial"
+        "filas por celda"
       ],
       "source_start_line": 926,
       "source_end_line": 933,
@@ -367,7 +394,7 @@
         "3.9. Registro de afirmaciones"
       ],
       "csv_path": "data/afirmaciones/03.csv",
-      "row_count": 255,
+      "row_count": 258,
       "column_count": 12,
       "columns": [
         "#",
@@ -915,7 +942,7 @@
         "4.10. Registro de afirmaciones de la sección 4"
       ],
       "csv_path": "data/afirmaciones/04.csv",
-      "row_count": 262,
+      "row_count": 263,
       "column_count": 12,
       "columns": [
         "#",
@@ -936,6 +963,30 @@
       "readable_policy": "link"
     },
     {
+      "id": "table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar",
+      "category": "summary",
+      "section": "5",
+      "title": "5.4. Evidencia de interacción en perforaciones del Grupo Chuar",
+      "heading_path": [
+        "5. El registro material: fósiles y biomarcadores",
+        "5.4. Evidencia de interacción en perforaciones del Grupo Chuar"
+      ],
+      "csv_path": "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv",
+      "row_count": 1,
+      "column_count": 6,
+      "columns": [
+        "interacción observada",
+        "magnitud publicada",
+        "interpretación biológica",
+        "alternativas evaluadas",
+        "identidad del productor",
+        "filas y fuentes"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
       "id": "table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo",
       "category": "summary",
       "section": "5",
@@ -945,7 +996,7 @@
         "5.8. Asignación fósil más antigua localizada por nodo"
       ],
       "csv_path": "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv",
-      "row_count": 9,
+      "row_count": 17,
       "column_count": 6,
       "columns": [
         "nodo",
@@ -969,7 +1020,7 @@
         "5.9. Registro de afirmaciones de la sección 5"
       ],
       "csv_path": "data/afirmaciones/05.csv",
-      "row_count": 56,
+      "row_count": 63,
       "column_count": 12,
       "columns": [
         "#",
@@ -999,7 +1050,7 @@
         "6.1. Estimaciones publicadas"
       ],
       "csv_path": "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv",
-      "row_count": 10,
+      "row_count": 15,
       "column_count": 6,
       "columns": [
         "estudio",
@@ -1023,7 +1074,7 @@
         "6.5. Registro de afirmaciones de la sección 6"
       ],
       "csv_path": "data/afirmaciones/06.csv",
-      "row_count": 29,
+      "row_count": 36,
       "column_count": 12,
       "columns": [
         "#",
@@ -1053,7 +1104,7 @@
         "7.1. Oxígeno: cronología, proxies y discrepancias cuantitativas"
       ],
       "csv_path": "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv",
-      "row_count": 5,
+      "row_count": 10,
       "column_count": 6,
       "columns": [
         "intervalo u organismo",
@@ -1068,6 +1119,56 @@
       "readable_policy": "inline"
     },
     {
+      "id": "table-38b-7-2-redox-y-aceptores",
+      "category": "summary",
+      "section": "7",
+      "title": "7.2. Química redox del océano y aceptores de electrones",
+      "heading_path": [
+        "7. Ambiente",
+        "7.2. Química redox del océano"
+      ],
+      "csv_path": "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv",
+      "row_count": 7,
+      "column_count": 7,
+      "columns": [
+        "escenario",
+        "proxy o condición",
+        "magnitud o secuencia",
+        "qué representa",
+        "límite",
+        "fuente",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-38c-7-4-episodios-globales",
+      "category": "summary",
+      "section": "7",
+      "title": "7.4. Episodios ambientales globales",
+      "heading_path": [
+        "7. Ambiente",
+        "7.4. «Aburrido millardo» y glaciaciones"
+      ],
+      "csv_path": "data/tablas/07/table-38c-7-4-episodios-globales.csv",
+      "row_count": 5,
+      "column_count": 7,
+      "columns": [
+        "episodio",
+        "edad o magnitud conservada",
+        "método o proxy",
+        "observado/inferido",
+        "incertidumbre y límite",
+        "fuente",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
       "id": "claims-07",
       "category": "claims",
       "section": "7",
@@ -1077,7 +1178,7 @@
         "7.6. Registro de afirmaciones de la sección 7"
       ],
       "csv_path": "data/afirmaciones/07.csv",
-      "row_count": 43,
+      "row_count": 58,
       "column_count": 12,
       "columns": [
         "#",
@@ -1107,7 +1208,7 @@
         "8.3. Depredadores holozoos, Obazoa, Holomycota y Amoebozoa"
       ],
       "csv_path": "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv",
-      "row_count": 16,
+      "row_count": 26,
       "column_count": 7,
       "columns": [
         "organismo",
@@ -1123,6 +1224,31 @@
       "readable_policy": "inline"
     },
     {
+      "id": "table-40b-8-5-virus-gigantes",
+      "category": "summary",
+      "section": "8",
+      "title": "8.5. Magnitudes de virus gigantes",
+      "heading_path": [
+        "8. Ecología y trofismo",
+        "8.5. Virus y elementos móviles"
+      ],
+      "csv_path": "data/tablas/08/table-40b-8-5-virus-gigantes.csv",
+      "row_count": 4,
+      "column_count": 7,
+      "columns": [
+        "virus",
+        "hospedador o sistema",
+        "tamaño de partícula publicado",
+        "tamaño de genoma publicado",
+        "anotación publicada",
+        "límite",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
       "id": "claims-08",
       "category": "claims",
       "section": "8",
@@ -1132,7 +1258,7 @@
         "8.7. Registro de afirmaciones de la sección 8"
       ],
       "csv_path": "data/afirmaciones/08.csv",
-      "row_count": 81,
+      "row_count": 121,
       "column_count": 12,
       "columns": [
         "#",
@@ -1217,7 +1343,7 @@
         "9.7.1. Correlatos publicados"
       ],
       "csv_path": "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv",
-      "row_count": 6,
+      "row_count": 7,
       "column_count": 4,
       "columns": [
         "condición",
@@ -1293,7 +1419,7 @@
         "10.1. Tabla consolidada de rasgos con coste"
       ],
       "csv_path": "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv",
-      "row_count": 21,
+      "row_count": 22,
       "column_count": 9,
       "columns": [
         "rasgo",
@@ -1320,7 +1446,7 @@
         "10.12. Registro de afirmaciones de la sección 10"
       ],
       "csv_path": "data/afirmaciones/10.csv",
-      "row_count": 135,
+      "row_count": 137,
       "column_count": 12,
       "columns": [
         "#",
@@ -1373,7 +1499,7 @@
         "11.12. Registro de afirmaciones de la sección 11"
       ],
       "csv_path": "data/afirmaciones/11.csv",
-      "row_count": 116,
+      "row_count": 122,
       "column_count": 12,
       "columns": [
         "#",
@@ -1430,7 +1556,7 @@
         "12.6.1. Costes y compensaciones cuantificados o no localizados"
       ],
       "csv_path": "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv",
-      "row_count": 7,
+      "row_count": 9,
       "column_count": 7,
       "columns": [
         "sistema",
@@ -1505,7 +1631,7 @@
         "12.13. Registro de afirmaciones de la sección 12"
       ],
       "csv_path": "data/afirmaciones/12.csv",
-      "row_count": 126,
+      "row_count": 135,
       "column_count": 12,
       "columns": [
         "#",
@@ -1523,6 +1649,134 @@
       ],
       "source_start_line": 5002,
       "source_end_line": 5129,
+      "readable_policy": "link"
+    },
+    {
+      "id": "table-55a-13-3-escalas-de-division-y-ambiente",
+      "category": "summary",
+      "section": "13",
+      "title": "13.3. Escalas de división y ambiente",
+      "heading_path": [
+        "13. Escalas, tasas y recuentos",
+        "13.3. Tiempos de generación y división"
+      ],
+      "csv_path": "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv",
+      "row_count": 12,
+      "column_count": 7,
+      "columns": [
+        "clase",
+        "caso",
+        "valor publicado",
+        "unidad",
+        "condiciones, método o límites",
+        "interpretación permitida",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-55b-13-4-tasas-de-mutacion-directas",
+      "category": "summary",
+      "section": "13",
+      "title": "13.4. Tasas de mutación directas",
+      "heading_path": [
+        "13. Escalas, tasas y recuentos",
+        "13.4. Tasas de mutación por generación y sitio"
+      ],
+      "csv_path": "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv",
+      "row_count": 8,
+      "column_count": 7,
+      "columns": [
+        "organismo y compartimento",
+        "clase mutacional",
+        "tasa por sitio o nucleótido y generación",
+        "incertidumbre publicada",
+        "diseño mínimo",
+        "límite de comparación",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-55c-13-6-cronologia-de-endosimbiosis-e-integracion",
+      "category": "summary",
+      "section": "13",
+      "title": "13.6. Cronología de endosimbiosis e integración",
+      "heading_path": [
+        "13. Escalas, tasas y recuentos",
+        "13.6. Tiempo desde endosimbiosis hasta integración observada"
+      ],
+      "csv_path": "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv",
+      "row_count": 6,
+      "column_count": 6,
+      "columns": [
+        "caso",
+        "edad o límite recuperado",
+        "qué fecha realmente",
+        "estado de integración observado",
+        "qué no puede calcularse",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-55d-13-9-recuentos-de-origenes-y-perdidas",
+      "category": "summary",
+      "section": "13",
+      "title": "13.9. Recuentos de orígenes y pérdidas",
+      "heading_path": [
+        "13. Escalas, tasas y recuentos",
+        "13.9. Recuentos de orígenes y pérdidas"
+      ],
+      "csv_path": "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv",
+      "row_count": 10,
+      "column_count": 6,
+      "columns": [
+        "proceso",
+        "recuento o rango recuperado",
+        "criterio y autor",
+        "estado",
+        "límite principal",
+        "filas"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-13",
+      "category": "claims",
+      "section": "13",
+      "title": "13.11. Registro de afirmaciones de la sección 13",
+      "heading_path": [
+        "13. Escalas, tasas y recuentos",
+        "13.11. Registro de afirmaciones de la sección 13"
+      ],
+      "csv_path": "data/afirmaciones/13.csv",
+      "row_count": 63,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
       "readable_policy": "link"
     },
     {
@@ -1606,7 +1860,7 @@
         "14.9. Registro de afirmaciones de la sección 14"
       ],
       "csv_path": "data/afirmaciones/14.csv",
-      "row_count": 216,
+      "row_count": 218,
       "column_count": 12,
       "columns": [
         "#",
@@ -1627,16 +1881,120 @@
       "readable_policy": "link"
     },
     {
+      "id": "table-59-15-1-mapa-del-terreno-probatorio",
+      "category": "summary",
+      "section": "15",
+      "title": "15.1. Mapa del terreno probatorio",
+      "heading_path": [
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.1. Mapa del terreno probatorio"
+      ],
+      "csv_path": "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv",
+      "row_count": 7,
+      "column_count": 7,
+      "columns": [
+        "clase de evidencia",
+        "qué puede responder",
+        "qué no puede responder por sí sola",
+        "resolución temporal",
+        "resolución taxonómica",
+        "modos de fallo o límites",
+        "filas y fuentes"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-60-15-2-evidencia-retirada-refutada-o-reinterpretada",
+      "category": "summary",
+      "section": "15",
+      "title": "15.2. Evidencia retirada, refutada o reinterpretada",
+      "heading_path": [
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.2. Evidencia retirada, refutada o reinterpretada"
+      ],
+      "csv_path": "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv",
+      "row_count": 6,
+      "column_count": 6,
+      "columns": [
+        "caso",
+        "afirmación o uso anterior",
+        "revisión posterior",
+        "estado probatorio actual",
+        "qué se aprendió",
+        "filas y fuentes"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "table-61-15-3-nodos-fechas-y-relaciones-debiles",
+      "category": "summary",
+      "section": "15",
+      "title": "15.3. Nodos, fechas y relaciones con soporte insuficiente",
+      "heading_path": [
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.3. Nodos, fechas y relaciones con soporte insuficiente"
+      ],
+      "csv_path": "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv",
+      "row_count": 6,
+      "column_count": 6,
+      "columns": [
+        "objeto",
+        "qué permanece débil",
+        "causa documentada",
+        "qué dato discriminaría mejor",
+        "qué no depende de resolverlo",
+        "filas y fuentes"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "inline"
+    },
+    {
+      "id": "claims-15",
+      "category": "claims",
+      "section": "15",
+      "title": "15.5. Registro de afirmaciones de la sección 15",
+      "heading_path": [
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.5. Registro de afirmaciones de la sección 15"
+      ],
+      "csv_path": "data/afirmaciones/15.csv",
+      "row_count": 55,
+      "column_count": 12,
+      "columns": [
+        "#",
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Atribución",
+        "Fuente",
+        "Aceptación",
+        "Fuerza",
+        "Motivo",
+        "Resolución",
+        "Vigencia"
+      ],
+      "source_start_line": 0,
+      "source_end_line": 0,
+      "readable_policy": "link"
+    },
+    {
       "id": "negative-15-1",
       "category": "negative",
       "section": "15",
-      "title": "15.1. Punto de partida y participantes celulares",
+      "title": "15.4.1. Punto de partida y participantes celulares",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.1. Punto de partida y participantes celulares"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.1. Punto de partida y participantes celulares"
       ],
       "csv_path": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
-      "row_count": 9,
+      "row_count": 7,
       "column_count": 6,
       "columns": [
         "clave",
@@ -1654,13 +2012,14 @@
       "id": "negative-15-2",
       "category": "negative",
       "section": "15",
-      "title": "15.2. Eucariogénesis",
+      "title": "15.4.2. Eucariogénesis",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.2. Eucariogénesis"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.2. Eucariogénesis"
       ],
       "csv_path": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
-      "row_count": 10,
+      "row_count": 7,
       "column_count": 6,
       "columns": [
         "clave",
@@ -1678,13 +2037,14 @@
       "id": "negative-15-3",
       "category": "negative",
       "section": "15",
-      "title": "15.3. Raíz eucariota y corredor filogenético",
+      "title": "15.4.3. Raíz eucariota y corredor filogenético",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.3. Raíz eucariota y corredor filogenético"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.3. Raíz eucariota y corredor filogenético"
       ],
       "csv_path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
-      "row_count": 17,
+      "row_count": 7,
       "column_count": 4,
       "columns": [
         "clave",
@@ -1697,38 +2057,42 @@
       "readable_policy": "link"
     },
     {
-      "id": "table-63-15-4-registro-material-tiempo-ambiente-y-ecologia",
-      "category": "summary",
+      "id": "negative-15-4",
+      "category": "negative",
       "section": "15",
-      "title": "15.4. Registro material, tiempo, ambiente y ecología",
+      "title": "15.4.4. Registro material, tiempo, ambiente y ecología",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.4. Registro material, tiempo, ambiente y ecología"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.4. Registro material, tiempo, ambiente y ecología"
       ],
-      "csv_path": "data/tablas/15/table-63-15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
-      "row_count": 17,
-      "column_count": 4,
+      "csv_path": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "row_count": 12,
+      "column_count": 6,
       "columns": [
-        "etiqueta",
+        "clave",
+        "estado",
         "hueco",
         "términos exactos",
-        "consecuencia documental"
+        "resultado",
+        "filas relacionadas"
       ],
       "source_start_line": 6029,
       "source_end_line": 6047,
-      "readable_policy": "inline"
+      "readable_policy": "link"
     },
     {
       "id": "negative-15-5",
       "category": "negative",
       "section": "15",
-      "title": "15.5. Asociación, integración y transferencia",
+      "title": "15.4.5. Asociación, integración y transferencia",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.5. Asociación, integración y transferencia"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.5. Asociación, integración y transferencia"
       ],
       "csv_path": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
-      "row_count": 12,
+      "row_count": 10,
       "column_count": 5,
       "columns": [
         "clave",
@@ -1745,10 +2109,11 @@
       "id": "negative-15-6",
       "category": "negative",
       "section": "15",
-      "title": "15.6. Rasgos con costo y controversia energética",
+      "title": "15.4.6. Rasgos con costo y controversia energética",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.6. Rasgos con costo y controversia energética"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.6. Rasgos con costo y controversia energética"
       ],
       "csv_path": "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv",
       "row_count": 10,
@@ -1768,13 +2133,14 @@
       "id": "negative-15-7",
       "category": "negative",
       "section": "15",
-      "title": "15.7. Sexo, meiosis y ciclo vital",
+      "title": "15.4.7. Sexo, meiosis y ciclo vital",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.7. Sexo, meiosis y ciclo vital"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.7. Sexo, meiosis y ciclo vital"
       ],
       "csv_path": "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv",
-      "row_count": 10,
+      "row_count": 9,
       "column_count": 5,
       "columns": [
         "clave",
@@ -1791,13 +2157,14 @@
       "id": "negative-15-8",
       "category": "negative",
       "section": "15",
-      "title": "15.8. Nombres y nomenclatura",
+      "title": "15.4.8. Nombres y nomenclatura",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.8. Nombres y nomenclatura"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.8. Nombres y nomenclatura"
       ],
       "csv_path": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
-      "row_count": 8,
+      "row_count": 2,
       "column_count": 4,
       "columns": [
         "clave",
@@ -1813,13 +2180,14 @@
       "id": "negative-15-9",
       "category": "negative",
       "section": "15",
-      "title": "15.9. Multicelularidad y repertorio preanimal",
+      "title": "15.4.9. Multicelularidad y repertorio preanimal",
       "heading_path": [
-        "15. Búsquedas negativas y huecos provisionales",
-        "15.9. Multicelularidad y repertorio preanimal"
+        "15. Lo que no se sabe, y cómo lo sabemos",
+        "15.4. Búsquedas negativas consolidadas",
+        "15.4.9. Multicelularidad y repertorio preanimal"
       ],
       "csv_path": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
-      "row_count": 14,
+      "row_count": 4,
       "column_count": 5,
       "columns": [
         "clave",
@@ -1836,12 +2204,12 @@
       "id": "appendix-a",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice A. Fuentes",
+      "title": "17.A. Apéndice A. Fuentes",
       "heading_path": [
-        "Apéndice A. Fuentes"
+        "17.A. Apéndice A. Fuentes"
       ],
       "csv_path": "data/apendices/A_fuentes.csv",
-      "row_count": 446,
+      "row_count": 523,
       "column_count": 9,
       "columns": [
         "clave",
@@ -1862,12 +2230,12 @@
       "id": "appendix-b",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice B. Entidades",
+      "title": "17.B. Apéndice B. Entidades",
       "heading_path": [
-        "Apéndice B. Entidades"
+        "17.B. Apéndice B. Entidades"
       ],
       "csv_path": "data/apendices/B_entidades.csv",
-      "row_count": 1518,
+      "row_count": 1500,
       "column_count": 5,
       "columns": [
         "etiqueta preferida",
@@ -1884,12 +2252,12 @@
       "id": "appendix-c",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice C. Eventos",
+      "title": "17.C. Apéndice C. Eventos",
       "heading_path": [
-        "Apéndice C. Eventos"
+        "17.C. Apéndice C. Eventos"
       ],
       "csv_path": "data/apendices/C_eventos.csv",
-      "row_count": 106,
+      "row_count": 109,
       "column_count": 8,
       "columns": [
         "clave",
@@ -1909,12 +2277,12 @@
       "id": "appendix-d",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice D. Fechas",
+      "title": "17.D. Apéndice D. Fechas",
       "heading_path": [
-        "Apéndice D. Fechas"
+        "17.D. Apéndice D. Fechas"
       ],
       "csv_path": "data/apendices/D_fechas.csv",
-      "row_count": 258,
+      "row_count": 215,
       "column_count": 10,
       "columns": [
         "a qué se aplica",
@@ -1936,9 +2304,9 @@
       "id": "appendix-e",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice E. Hipótesis",
+      "title": "17.E. Apéndice E. Hipótesis",
       "heading_path": [
-        "Apéndice E. Hipótesis"
+        "17.E. Apéndice E. Hipótesis"
       ],
       "csv_path": "data/apendices/E_hipotesis.csv",
       "row_count": 81,
@@ -1961,12 +2329,12 @@
       "id": "appendix-f",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice F. Magnitudes",
+      "title": "17.F. Apéndice F. Magnitudes",
       "heading_path": [
-        "Apéndice F. Magnitudes"
+        "17.F. Apéndice F. Magnitudes"
       ],
       "csv_path": "data/apendices/F_magnitudes.csv",
-      "row_count": 446,
+      "row_count": 562,
       "column_count": 9,
       "columns": [
         "magnitud",
@@ -1987,12 +2355,12 @@
       "id": "appendix-g",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice G. Material no encajado",
+      "title": "17.G. Apéndice G. Material no encajado",
       "heading_path": [
-        "Apéndice G. Material no encajado"
+        "17.G. Apéndice G. Material no encajado"
       ],
       "csv_path": "data/apendices/G_material_no_encajado.csv",
-      "row_count": 30,
+      "row_count": 23,
       "column_count": 5,
       "columns": [
         "material",
@@ -2009,12 +2377,12 @@
       "id": "appendix-h",
       "category": "appendix",
       "section": "17",
-      "title": "Apéndice H. Recuento de control",
+      "title": "17.H. Apéndice H. Recuento de control",
       "heading_path": [
-        "Apéndice H. Recuento de control"
+        "17.H. Apéndice H. Recuento de control"
       ],
       "csv_path": "data/apendices/H_recuento_control.csv",
-      "row_count": 20,
+      "row_count": 25,
       "column_count": 2,
       "columns": [
         "control",
@@ -2025,20 +2393,20 @@
       "readable_policy": "link"
     },
     {
-      "id": "table-77-19-mapa-provisional-de-las-seis-preguntas-de-cierre",
+      "id": "table-77-19-respuestas-a-las-seis-preguntas-de-cierre",
       "category": "summary",
       "section": "19",
-      "title": "19. Mapa provisional de las seis preguntas de cierre",
+      "title": "19. Respuestas a las seis preguntas de cierre",
       "heading_path": [
-        "19. Mapa provisional de las seis preguntas de cierre"
+        "19. Respuestas a las seis preguntas de cierre"
       ],
-      "csv_path": "data/tablas/19/table-77-19-mapa-provisional-de-las-seis-preguntas-de-cierre.csv",
+      "csv_path": "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv",
       "row_count": 6,
       "column_count": 3,
       "columns": [
         "pregunta",
         "secciones con material integrado",
-        "estado provisional"
+        "respuesta breve con citas"
       ],
       "source_start_line": 9112,
       "source_end_line": 9119,

@@ -14,6 +14,9 @@ from corpus_io import (
     ROOT,
     build_manifest,
     claim_entries,
+    combined_export_payloads,
+    control_csv_payload,
+    csv_text,
     load_index,
     negative_entries,
     read_csv,
@@ -39,6 +42,12 @@ ALLOWED = {
 SOURCE_TYPES = {
     "investigación primaria", "revisión", "base de datos taxonómica",
     "preprint", "capítulo o libro", "tesis", "divulgación o blog", "otro",
+}
+
+NEGATIVE_STATES = {
+    "LA LITERATURA DECLARA QUE NO SE SABE",
+    "NO LOCALIZADO EN ESTA SESIÓN",
+    "NO BUSCADO",
 }
 
 
@@ -166,11 +175,40 @@ def main() -> int:
     for entry in negative_entries(index):
         header, rows = read_csv(ROOT / entry["csv_path"])
         key_pos = header.index("clave")
+        normalized_header = [name.casefold() for name in header]
+        state_pos = next(
+            (pos for pos, name in enumerate(normalized_header)
+             if name in {"estado", "etiqueta"}),
+            None,
+        )
+        terms_pos = next(
+            (pos for pos, name in enumerate(normalized_header)
+             if "términ" in name or "termin" in name or "fundamento" in name),
+            None,
+        )
+        if state_pos is None:
+            errors.append(f"Búsquedas sin columna de estado: {entry['csv_path']}")
+            continue
         for row in rows:
             key = row[key_pos]
+            if not re.fullmatch(r"BN-\d{3}", key):
+                errors.append(f"Clave BN inválida: {key}")
             if key in negative_ids:
                 errors.append(f"Clave BN duplicada: {key}")
             negative_ids.add(key)
+            state = row[state_pos]
+            if state not in NEGATIVE_STATES:
+                errors.append(f"Estado de búsqueda inválido en {key}: {state}")
+            if state == "NO LOCALIZADO EN ESTA SESIÓN":
+                if terms_pos is None or row[terms_pos].strip() == "n/a":
+                    errors.append(f"Búsqueda no localizada sin términos exactos: {key}")
+            if state == "LA LITERATURA DECLARA QUE NO SE SABE":
+                if not re.search(r"\bS\d{2,3}\b", " ".join(row)):
+                    errors.append(f"Ausencia declarada sin fuente local: {key}")
+            if state == "NO BUSCADO":
+                detail = [value.strip() for value in row[3:] if value.strip() != "n/a"]
+                if not detail:
+                    errors.append(f"NO BUSCADO sin motivo: {key}")
 
     # Tipos de fuente y duplicados bibliográficos.
     type_pos = source_header.index("tipo")
@@ -229,14 +267,24 @@ def main() -> int:
     if not manifest_path.exists() or manifest_path.read_text(encoding="utf-8") != expected_manifest:
         errors.append("manifest.json desactualizado.")
 
-    for required in (
-        ROOT / "exports" / "afirmaciones.csv",
-        ROOT / "exports" / "busquedas_negativas.csv",
-        ROOT / "exports" / "tablas_nodales.csv",
-        ROOT / "exports" / "catalogo_tablas.csv",
+    for relative, (header, rows) in combined_export_payloads(index).items():
+        export_path = ROOT / relative
+        expected = csv_text(header, rows)
+        if not export_path.exists():
+            errors.append(f"Falta exportación combinada: {relative}")
+        elif export_path.read_text(encoding="utf-8") != expected:
+            errors.append(f"Exportación combinada desactualizada: {relative}")
+
+    control_path, control_header, expected_control_rows = control_csv_payload(index)
+    actual_control_header, actual_control_rows = read_csv(control_path)
+    if (
+        actual_control_header != control_header
+        or actual_control_rows != expected_control_rows
     ):
-        if not required.exists():
-            errors.append(f"Falta exportación combinada: {required.relative_to(ROOT)}")
+        errors.append(
+            "Apéndice H desactualizado: "
+            f"{control_path.relative_to(ROOT)}"
+        )
 
     if errors:
         print(f"VALIDACIÓN FALLIDA: {len(errors)} problema(s)")

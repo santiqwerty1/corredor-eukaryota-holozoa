@@ -1,4 +1,4 @@
-"conjunto celular","estereoisómero del glicerol","cadenas hidrófobas","enlace principal","relación con el problema","filas"
-"Archaea típica","glicerol-1-fosfato","isoprenoides","éter","Es la química esperable para el linaje hospedador arqueano no identificado por comparación con arqueas actuales.","C-044"
-"Bacteria típica","glicerol-3-fosfato","ácidos grasos","éster","Es la química predominante en bacterias.","C-045"
-"Eukaryota moderno","glicerol-3-fosfato","ácidos grasos","éster","La membrana eucariota se parece en este eje a la bacteriana, no a la arqueana típica.","C-046"
+"conjunto celular","química de membrana coordinada","filas"
+"Archaea típica","isoprenoides–éter–glicerol-1-fosfato","C-052"
+"Bacteria típica","ácidos grasos–éster–glicerol-3-fosfato","C-053"
+"Eukaryota moderno","ácidos grasos–éster–glicerol-3-fosfato, predominantemente del tipo bacteriano","C-054"

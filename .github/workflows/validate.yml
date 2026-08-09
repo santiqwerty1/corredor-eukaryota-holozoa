@@ -19,11 +19,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Comprobar archivos generados
-        run: python scripts/render.py --check
-
-      - name: Auditar migración
-        run: python scripts/audit_migration.py
-
-      - name: Validar corpus
-        run: python scripts/validate.py
+      - name: Ejecutar la puerta determinista completa
+        run: make verify

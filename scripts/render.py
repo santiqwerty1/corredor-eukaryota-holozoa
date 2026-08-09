@@ -67,7 +67,7 @@ def main() -> int:
         print("Archivos generados desactualizados:")
         for failure in failures:
             print(f"  - {failure}")
-        print("Ejecuta: python scripts/render.py")
+        print("Ejecuta: python3 scripts/render.py")
         return 1
 
     print("Archivos generados actualizados.")

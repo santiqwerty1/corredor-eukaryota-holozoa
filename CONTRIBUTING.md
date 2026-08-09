@@ -18,13 +18,13 @@ La unidad de trabajo es una afirmación con evidencia. La narrativa explica; los
 4. Añadir la fuente, entidad, evento, fecha, hipótesis o magnitud a su apéndice cuando corresponda.
 5. Ejecutar:
    ```bash
-   python scripts/renumber.py
+   python3 scripts/renumber.py
    ```
    si cambió el orden global.
-6. Ejecutar:
+6. Regenerar y ejecutar la puerta de calidad completa:
    ```bash
-   python scripts/render.py
-   python scripts/validate.py
+   python3 scripts/render.py
+   make verify
    ```
 
 ## Fuentes

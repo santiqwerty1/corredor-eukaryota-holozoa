@@ -13,7 +13,7 @@
 
 ## 2. Fuente de verdad
 
-Los archivos de `data/` son canónicos. Los archivos de `exports/` son derivados y se regeneran con `python scripts/render.py`.
+Los archivos de `data/` son canónicos. Los archivos de `exports/` son derivados y se regeneran con `python3 scripts/render.py`.
 
 ### 2.1. Afirmaciones
 
@@ -47,6 +47,17 @@ Los bloques originales conservan su esquema en `data/busquedas_negativas/`.
 clave · sección · estado · hueco · términos exactos o motivo · resultado o motivo · filas relacionadas
 ```
 
+La auditoría del 2026-08-08 conserva la disposición y la evidencia de las 106
+claves presentes antes de la revisión, incluidas las que luego fueron resueltas,
+fusionadas o retiradas por alcance. La síntesis está en la
+[revisión de búsquedas negativas](docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md)
+y el detalle fila por fila en su
+[matriz CSV](docs/auditorias/revision_busquedas_negativas_2026-08-08.csv). La
+[matriz de trazabilidad del contenido](docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv)
+y el
+[mapa de claves](docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv)
+completan los entregables reproducibles de cierre.
+
 ### 2.4. Tablas de síntesis
 
 Cada tabla narrativa tiene su propio CSV en `data/tablas/`. El índice `data/table_index.json` registra:
@@ -68,7 +79,7 @@ La migración normalizó `C-0001…C-0999` a `C-001…C-999`. Desde `C-1000`, el
 - Hipótesis: `H01…`
 - Búsquedas negativas: `BN-001…`
 
-Al insertar filas en una sección intermedia, ejecutar `python scripts/renumber.py`.
+Al insertar filas en una sección intermedia, ejecutar `python3 scripts/renumber.py`.
 
 ## 4. Valores cerrados
 
@@ -116,9 +127,15 @@ Al insertar filas en una sección intermedia, ejecutar `python scripts/renumber.
 ## 5. Regeneración y control
 
 ```bash
-python scripts/render.py
-python scripts/validate.py
+python3 scripts/render.py
+make verify
 ```
+
+`make verify` ejecuta la puerta determinista completa sin modificar archivos;
+`make check` es un alias. Incluye la reconstrucción histórica de las tablas
+heredadas, la auditoría científica integral, el linaje de todas las tablas y las
+pruebas de mutación. La misma orden repite la puerta en una copia aislada y
+comprueba la identidad de dos renderizados consecutivos.
 
 La validación comprueba, entre otras cosas:
 
@@ -130,3 +147,5 @@ La validación comprueba, entre otras cosas:
 - duplicados bibliográficos;
 - dependencias de síntesis;
 - sincronización de informes, exportaciones y manifest.
+- densidad mínima de dos fuentes resueltas por subapartado científico de nivel 2;
+- localizadores, referencias cruzadas, magnitudes y marcadores de cierre final.

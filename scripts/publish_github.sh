@@ -11,11 +11,9 @@ if ! command -v gh >/dev/null 2>&1; then
 fi
 
 gh auth status
-python3 scripts/render.py --check
-python3 scripts/audit_migration.py
-python3 scripts/validate.py
+make verify
 
-if ! git diff --quiet || ! git diff --cached --quiet; then
+if [[ -n "$(git status --porcelain)" ]]; then
   echo "El árbol de trabajo tiene cambios sin confirmar." >&2
   exit 1
 fi

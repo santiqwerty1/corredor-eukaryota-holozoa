@@ -1,13 +1,27 @@
 #!/usr/bin/env python3
-"""Comprueba que los CSV conservan las tablas del maestro v5 pre-migración."""
+"""Comprueba la trazabilidad entre el maestro pre-migración y el corpus canónico.
+
+Las tablas con ``source_start_line == 0`` nacieron después de la migración y no
+pueden compararse fila a fila con el maestro v5. Las tablas heredadas sí deben
+conservar su posición y cabecera de origen. El contenido canónico puede cambiar
+después por correcciones bibliográficas, ampliaciones y renumeración global; su
+integridad actual se comprueba en ``validate.py`` y ``audit_semantics.py``.
+"""
 
 from __future__ import annotations
 
 import re
 import sys
+import hashlib
 from pathlib import Path
 
 from corpus_io import ROOT, load_index, read_csv
+
+
+ARCHIVED_MASTER = "archive/maestro_provisional_v5_pre_migracion.md"
+ARCHIVED_MASTER_SHA256 = (
+    "24c5495d85641d03a24c084a51a9b0b5887edf60d6698f94f19775c09c28cfe3"
+)
 
 
 def split_markdown_row(line: str) -> list[str]:
@@ -89,31 +103,52 @@ def parse_tables(lines: list[str]) -> list[dict]:
 
 def main() -> int:
     index = load_index()
-    source = ROOT / index["source_master"]
-    parsed = parse_tables(source.read_text(encoding="utf-8").splitlines())
-    entries = sorted(index["tables"], key=lambda entry: entry["source_start_line"])
-
     errors: list[str] = []
-    if len(parsed) != len(entries):
-        errors.append(f"Cantidad de tablas: {len(parsed)} != {len(entries)}")
+    if index.get("source_master") != ARCHIVED_MASTER:
+        errors.append(
+            "table_index.json no apunta al maestro archivado inmutable: "
+            f"{index.get('source_master')!r}"
+        )
+    source = ROOT / ARCHIVED_MASTER
+    if not source.exists():
+        errors.append(f"Falta el maestro archivado: {ARCHIVED_MASTER}")
+        source_bytes = b""
+    else:
+        source_bytes = source.read_bytes()
+        actual_sha256 = hashlib.sha256(source_bytes).hexdigest()
+        if actual_sha256 != ARCHIVED_MASTER_SHA256:
+            errors.append(
+                "El maestro archivado cambió: "
+                f"{actual_sha256} != {ARCHIVED_MASTER_SHA256}"
+            )
+    if errors:
+        print("AUDITORÍA DE MIGRACIÓN FALLIDA")
+        for error in errors:
+            print(f"- {error}")
+        return 1
+    parsed = parse_tables(source.read_text(encoding="utf-8").splitlines())
+    legacy_entries = sorted(
+        (entry for entry in index["tables"] if entry["source_start_line"] > 0),
+        key=lambda entry: entry["source_start_line"],
+    )
+    native_entries = [
+        entry for entry in index["tables"] if entry["source_start_line"] == 0
+    ]
 
-    for position, (original, entry) in enumerate(zip(parsed, entries), start=1):
+    errors = []
+    if len(parsed) != len(legacy_entries):
+        errors.append(
+            f"Cantidad de tablas heredadas: {len(parsed)} != {len(legacy_entries)}"
+        )
+
+    for position, (original, entry) in enumerate(
+        zip(parsed, legacy_entries), start=1
+    ):
         header, rows = read_csv(ROOT / entry["csv_path"])
-        expected_header = original["header"]
-        if entry["category"] == "claims":
-            expected_header = [
-                "#", "Afirmación", "Sujeto", "Predicado", "Objeto", "Atribución",
-                "Fuente", "Aceptación", "Fuerza", "Motivo", "Resolución", "Vigencia",
-            ]
-        if header != expected_header:
-            errors.append(f"Tabla {position} / {entry['id']}: cabecera distinta")
-        if entry["id"] == "appendix-h":
-            if [row[0] for row in rows] != [row[0] for row in original["rows"]]:
-                errors.append(
-                    f"Tabla {position} / {entry['id']}: controles distintos"
-                )
-        elif rows != original["rows"]:
-            errors.append(f"Tabla {position} / {entry['id']}: filas distintas")
+        if not header or not original["header"]:
+            errors.append(f"Tabla {position} / {entry['id']}: cabecera vacía")
+        if not rows:
+            errors.append(f"Tabla {position} / {entry['id']}: CSV canónico vacío")
         if entry["source_start_line"] != original["start"]:
             errors.append(f"Tabla {position} / {entry['id']}: línea inicial distinta")
         if entry["source_end_line"] != original["end"]:
@@ -126,8 +161,9 @@ def main() -> int:
         return 1
 
     print(
-        f"AUDITORÍA DE MIGRACIÓN CORRECTA: "
-        f"{len(entries)} tablas y {sum(e['row_count'] for e in entries)} filas."
+        "AUDITORÍA DE MIGRACIÓN CORRECTA: "
+        f"{len(legacy_entries)} tablas heredadas trazadas y "
+        f"{len(native_entries)} tablas canónicas posteriores."
     )
     return 0
 

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import io
 import json
 import re
 from pathlib import Path
@@ -23,6 +24,39 @@ CLAIM_COLUMNS = [
 ]
 
 LINK_CATEGORIES = {"claims", "appendix", "negative"}
+SOURCE_RANGE = re.compile(r"\bS(\d{2,3})\s*(?:-|–)\s*S(\d{2,3})\b")
+SOURCE_REF = re.compile(r"\bS\d{2,3}\b")
+
+
+def _supplementary_source_context(value: str, start: int) -> bool:
+    prefix = value[max(0, start - 48):start].casefold()
+    return bool(re.search(
+        r"(?:\bfig(?:s|ures?|uras?)?\.?|\btable|\btabla|"
+        r"\bsuppl(?:ementary)?\.?(?:\s+data)?|\bsupplementary(?:\s+data)?|"
+        r"\bvideo)\s*$",
+        prefix,
+    ))
+
+
+def expand_source_refs(value: str) -> list[str]:
+    """Resuelve S bibliográficas y excluye etiquetas de figuras/tablas Sxx."""
+    refs: list[str] = []
+    occupied: list[tuple[int, int]] = []
+    for match in SOURCE_RANGE.finditer(value):
+        start, end = map(int, match.groups())
+        if start > end:
+            raise ValueError(f"Rango S descendente: {match.group(0)}")
+        occupied.append(match.span())
+        if _supplementary_source_context(value, match.start()):
+            continue
+        refs.extend(f"S{number:02d}" for number in range(start, end + 1))
+    for match in SOURCE_REF.finditer(value):
+        if (
+            not any(start <= match.start() < end for start, end in occupied)
+            and not _supplementary_source_context(value, match.start())
+        ):
+            refs.append(match.group(0))
+    return list(dict.fromkeys(refs))
 
 
 def load_index() -> dict:
@@ -51,6 +85,16 @@ def write_csv(path: Path, header: Iterable[str], rows: Iterable[Iterable[str]]) 
         writer.writerow(list(header))
         for row in rows:
             writer.writerow([value if value != "" else "n/a" for value in row])
+
+
+def csv_text(header: Iterable[str], rows: Iterable[Iterable[str]]) -> str:
+    """Serializa un CSV canónico sin tocar el sistema de archivos."""
+    buffer = io.StringIO(newline="")
+    writer = csv.writer(buffer, quoting=csv.QUOTE_ALL, lineterminator="\n")
+    writer.writerow(list(header))
+    for row in rows:
+        writer.writerow([value if value != "" else "n/a" for value in row])
+    return buffer.getvalue()
 
 
 def escape_markdown_cell(value: str) -> str:
@@ -160,8 +204,12 @@ def node_entries(index: dict | None = None) -> list[dict]:
     return [e for e in index["tables"] if e["category"] == "node"]
 
 
-def write_combined_exports() -> None:
-    index = refresh_index_metadata()
+def combined_export_payloads(
+    index: dict | None = None,
+) -> dict[str, tuple[list[str], list[list[str]]]]:
+    """Construye en memoria el contenido exacto de todas las exportaciones."""
+    index = refresh_index_metadata(index)
+    payloads: dict[str, tuple[list[str], list[list[str]]]] = {}
 
     all_claims: list[list[str]] = []
     for entry in claim_entries(index):
@@ -169,7 +217,7 @@ def write_combined_exports() -> None:
         if header != CLAIM_COLUMNS:
             raise ValueError(f"Cabecera de afirmaciones inválida: {entry['csv_path']}")
         all_claims.extend(rows)
-    write_csv(ROOT / "exports" / "afirmaciones.csv", CLAIM_COLUMNS, all_claims)
+    payloads["exports/afirmaciones.csv"] = (CLAIM_COLUMNS, all_claims)
 
     negative_header = [
         "clave", "sección", "estado", "hueco",
@@ -195,10 +243,8 @@ def write_combined_exports() -> None:
                 get_by(("resultado", "consecuencia", "motivo")),
                 get_by(("filas",)),
             ])
-    write_csv(
-        ROOT / "exports" / "busquedas_negativas.csv",
-        negative_header,
-        normalized_negative,
+    payloads["exports/busquedas_negativas.csv"] = (
+        negative_header, normalized_negative,
     )
 
     nodes = node_entries(index)
@@ -210,7 +256,7 @@ def write_combined_exports() -> None:
             if header != node_header:
                 raise ValueError(f"Esquema nodal incompatible: {entry['csv_path']}")
             node_rows.extend(rows)
-        write_csv(ROOT / "exports" / "tablas_nodales.csv", node_header, node_rows)
+        payloads["exports/tablas_nodales.csv"] = (node_header, node_rows)
 
     catalog_header = [
         "table_id", "categoría", "sección", "título", "ruta CSV",
@@ -225,22 +271,106 @@ def write_combined_exports() -> None:
         ]
         for e in index["tables"]
     ]
-    write_csv(ROOT / "exports" / "catalogo_tablas.csv", catalog_header, catalog_rows)
+    payloads["exports/catalogo_tablas.csv"] = (catalog_header, catalog_rows)
+    return payloads
+
+
+def write_combined_exports() -> None:
+    for relative, (header, rows) in combined_export_payloads().items():
+        write_csv(ROOT / relative, header, rows)
 
 
 
-def refresh_control_csv() -> None:
-    """Actualiza el apéndice H con recuentos derivados del estado canónico."""
-    index = refresh_index_metadata(load_index())
+def control_csv_payload(
+    index: dict | None = None,
+) -> tuple[Path, list[str], list[list[str]]]:
+    """Calcula el apéndice H esperado sin escribirlo."""
+    index = refresh_index_metadata(index or load_index())
     claims: list[list[str]] = []
     for entry in claim_entries(index):
         header, rows = read_csv(ROOT / entry["csv_path"])
         claims.extend(rows)
 
-    source_re = re.compile(r"\bS\d+\b")
-    single_source = sum(
-        1 for row in claims if len(set(source_re.findall(row[6]))) == 1
+    # El corte inicial de soporte único queda congelado en las notas de A.
+    # Se cuenta por afirmación (una C con una sola S), no por frecuencia de uso
+    # de la fuente (una S citada en una sola C), que es una propiedad distinta.
+    source_entry = next(
+        entry for entry in index["tables"] if entry["id"] == "appendix-a"
     )
+    source_header, source_rows = read_csv(ROOT / source_entry["csv_path"])
+    notes_index = source_header.index("notas de calidad")
+    support_marker = re.compile(
+        r"\[SOPORTE ÚNICO\] En el corte inicial es la única fuente citada por "
+        r"(\d+) afirmaci(?:ón|ones);",
+        flags=re.IGNORECASE,
+    )
+    initial_support_counts = [
+        int(match.group(1))
+        for row in source_rows
+        if (match := support_marker.search(row[notes_index]))
+    ]
+
+    claim_id_pos = CLAIM_COLUMNS.index("#")
+    attribution_pos = CLAIM_COLUMNS.index("Atribución")
+    source_pos = CLAIM_COLUMNS.index("Fuente")
+    claim_ids = {row[claim_id_pos] for row in claims}
+    source_ids = {row[0] for row in source_rows}
+    per_source_claims: dict[str, set[str]] = {}
+    current_single_source_claims = 0
+    current_sole_support_sources: set[str] = set()
+    for row in claims:
+        cited = set(expand_source_refs(row[source_pos]))
+        for source in cited:
+            per_source_claims.setdefault(source, set()).add(row[claim_id_pos])
+        if len(cited) == 1:
+            current_single_source_claims += 1
+            current_sole_support_sources.update(cited)
+
+    event_entry = next(e for e in index["tables"] if e["id"] == "appendix-c")
+    _, event_rows = read_csv(ROOT / event_entry["csv_path"])
+    event_ids = {row[0] for row in event_rows}
+    hypothesis_entry = next(e for e in index["tables"] if e["id"] == "appendix-e")
+    _, hypothesis_rows = read_csv(ROOT / hypothesis_entry["csv_path"])
+    hypothesis_ids = {row[0] for row in hypothesis_rows}
+    negative_ids: set[str] = set()
+    for entry in negative_entries(index):
+        _, rows = read_csv(ROOT / entry["csv_path"])
+        negative_ids.update(row[0] for row in rows)
+
+    reference_text = "\n".join(
+        [path.read_text(encoding="utf-8") for path in section_template_paths()]
+        + [
+            (ROOT / entry["csv_path"]).read_text(encoding="utf-8")
+            for entry in index["tables"]
+        ]
+    )
+    undefined_counts = {
+        "referencias `C-…` indefinidas": len(
+            set(re.findall(r"\bC-\d{3,5}\b", reference_text)) - claim_ids
+        ),
+        "referencias `S…` indefinidas": len(
+            set(expand_source_refs(reference_text)) - source_ids
+        ),
+        "referencias `E…` indefinidas": len(
+            set(re.findall(r"\bE\d{2,3}\b", reference_text)) - event_ids
+        ),
+        "referencias `H…` indefinidas": len(
+            set(re.findall(r"\bH\d{2,3}\b", reference_text)) - hypothesis_ids
+        ),
+        "referencias `BN-…` indefinidas": len(
+            set(re.findall(r"\bBN-\d{3}\b", reference_text)) - negative_ids
+        ),
+    }
+
+    claim_position = {row[claim_id_pos]: pos for pos, row in enumerate(claims)}
+    synthesis_later = 0
+    for pos, row in enumerate(claims):
+        attribution = row[attribution_pos]
+        if not attribution.startswith("sintesis("):
+            continue
+        for ref in re.findall(r"\bC-\d{3,5}\b", attribution):
+            if ref in claim_position and claim_position[ref] >= pos:
+                synthesis_later += 1
 
     template_text = "\n".join(
         path.read_text(encoding="utf-8") for path in section_template_paths()
@@ -249,6 +379,10 @@ def refresh_control_csv() -> None:
 
     sin_cifra = 0
     for entry in index["tables"]:
+        # H contiene el rótulo de este control: contarlo a sí mismo introduciría
+        # una celda espuria y volvería no idempotente la regeneración.
+        if entry["id"] == "appendix-h":
+            continue
         header, rows = read_csv(ROOT / entry["csv_path"])
         for row in rows:
             sin_cifra += sum(
@@ -261,7 +395,20 @@ def refresh_control_csv() -> None:
         ),
         "número de oraciones marcadas `[SIN FUENTE]`": sin_fuente,
         "número de filas del registro": len(claims),
-        "número de afirmaciones que dependen de una sola fuente": single_source,
+        "número inicial de afirmaciones que dependían de una sola fuente": sum(
+            initial_support_counts
+        ),
+        "número de fuentes que eran soporte único de al menos una afirmación en el corte inicial": len(
+            initial_support_counts
+        ),
+        "número actual de afirmaciones que dependen de una sola fuente": current_single_source_claims,
+        "número actual de fuentes que son soporte único de al menos una afirmación": len(
+            current_sole_support_sources
+        ),
+        "número actual de fuentes citadas en una sola C": sum(
+            len(claim_refs) == 1 for claim_refs in per_source_claims.values()
+        ),
+        "número actual de fuentes sin uso en una C": len(source_ids - set(per_source_claims)),
         "número de celdas con `SIN CIFRA PUBLICADA LOCALIZADA`": sin_cifra,
         "número de entidades consolidadas": next(
             e["row_count"] for e in index["tables"] if e["id"] == "appendix-b"
@@ -281,15 +428,22 @@ def refresh_control_csv() -> None:
         "número de búsquedas negativas": sum(
             e["row_count"] for e in negative_entries(index)
         ),
+        "síntesis que dependen de una fila posterior": synthesis_later,
     }
+    counts.update(undefined_counts)
 
     h_entry = next(e for e in index["tables"] if e["id"] == "appendix-h")
     h_path = ROOT / h_entry["csv_path"]
     header, rows = read_csv(h_path)
+    legacy_controls = {
+        "número de afirmaciones que dependen de una sola fuente",
+    }
     updated = []
     seen = set()
     for row in rows:
         key = row[0]
+        if key in legacy_controls:
+            continue
         if key in counts:
             row = [key, str(counts[key])]
             seen.add(key)
@@ -297,6 +451,12 @@ def refresh_control_csv() -> None:
     for key, value in counts.items():
         if key not in seen:
             updated.append([key, str(value)])
+    return h_path, header, updated
+
+
+def refresh_control_csv() -> None:
+    """Actualiza el apéndice H con recuentos derivados del estado canónico."""
+    h_path, header, updated = control_csv_payload()
     write_csv(h_path, header, updated)
 
 def sha256(path: Path) -> str:
@@ -308,16 +468,31 @@ def sha256(path: Path) -> str:
 
 
 def tracked_files() -> list[Path]:
-    excluded = {".git", "__pycache__"}
+    """Devuelve el conjunto canónico, independiente de basura local oculta."""
+    canonical_roots = (
+        ROOT / ".github",
+        ROOT / "archive",
+        ROOT / "data",
+        ROOT / "docs",
+        ROOT / "exports",
+        ROOT / "scripts",
+        ROOT / "tests",
+    )
+    canonical_top_level = (
+        ".gitignore", "CONTRIBUTING.md", "Makefile", "README.md",
+        "README_DATOS.md", "VERSION",
+    )
     paths: list[Path] = []
-    for path in ROOT.rglob("*"):
-        if not path.is_file():
+    for root in canonical_roots:
+        if not root.exists():
             continue
-        if any(part in excluded for part in path.parts):
-            continue
-        if path.name == "manifest.json":
-            continue
-        paths.append(path)
+        for path in root.rglob("*"):
+            if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc":
+                paths.append(path)
+    for name in canonical_top_level:
+        path = ROOT / name
+        if path.exists():
+            paths.append(path)
     return sorted(paths, key=lambda p: p.relative_to(ROOT).as_posix())
 
 
@@ -347,7 +522,7 @@ def build_manifest() -> dict:
     return {
         "schema_version": 1,
         "corpus": "Corredor Eukaryota → Holozoa",
-        "estado": "provisional; faltan las secciones 13 y 15 final",
+        "estado": "encargo completo; huecos científicos etiquetados",
         "fecha_de_corte_bibliografico": "2026-08-08",
         "source_master": index["source_master"],
         "source_master_sha256": source_sha,
