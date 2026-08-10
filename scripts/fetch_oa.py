@@ -558,6 +558,8 @@ def main() -> int:
                     help="resolver el acceso sin descargar nada")
     ap.add_argument("--limite", type=int, default=0,
                     help="procesar sólo las primeras N fuentes (para probar)")
+    ap.add_argument("--solo-pdf", action="store_true",
+                    help="no acompañar los PDF con su texto completo en XML")
     ap.add_argument("--core-key", default="",
                     help="clave de CORE (gratuita en core.ac.uk/services/api); sin ella se omite esa fuente")
     ap.add_argument("--rehacer-resolucion", action="store_true",
@@ -707,6 +709,20 @@ def main() -> int:
                                 detalle += f"; {len(vistos) - 1} alternativas sin éxito"
                         if resultado != "descargado":
                             fichero = ""
+            # PDF y XML no se estorban: los localizadores del corpus citan
+            # páginas y figuras («S57 p. 296», «S38 fig. 5»), que sólo existen en
+            # el PDF, y a la vez piden buscar dentro del texto, que es lo que el
+            # XML permite sin capa de OCR. Se guardan los dos cuando los hay.
+            if (not args.solo_pdf and resultado in ("descargado", "ya estaba")
+                    and f["doi"] and fichero.endswith(".pdf")):
+                rx = (args.destino / fichero).with_suffix(".xml")
+                if not rx.exists():
+                    tc = texto_completo_epmc(f["doi"])
+                    if tc:
+                        rx.write_bytes(tc[0])
+                        detalle += f" + {len(tc[0]) // 1024} KB de XML"
+                    time.sleep(PAUSA_API)
+
             marcar(resultado)
             filas.append([f["clave"], f["año"], f["titulo"], f["doi"], acceso, via,
                           url, fichero, resultado, detalle])
