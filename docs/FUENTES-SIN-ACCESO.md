@@ -1,6 +1,6 @@
 # Fuentes sin texto completo
 
-De las **14** fuentes del apéndice A se obtuvieron **5** por vía de acceso abierto. Las **9** restantes están aquí, con la razón de cada una.
+De las **12** fuentes del apéndice A se obtuvieron **0** por vía de acceso abierto. Las **12** restantes están aquí, con la razón de cada una.
 
 Generado por `scripts/fetch_oa.py` el 2026-08-10. Para regenerarlo sin volver a descargar nada:
 
@@ -18,26 +18,6 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 |---|---|---|---|---|---|
 | `S09` | 2013 | Williams et al. | An archaeal origin of eukaryotes supports only two primary domains of life | Nature | [10.1038/nature12779](https://doi.org/10.1038/nature12779) |
 
-## El servidor del editor rechazó la descarga · 3
-
-El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
-
-| Clave | Año | Autores | Título | Publicación | DOI |
-|---|---|---|---|---|---|
-| `S01` | 2019 | Adl, S. M. et al. | Revisions to the Classification, Nomenclature, and Diversity of Eukaryotes | Journal of Eukaryotic Microbiology | [10.1111/jeu.12691](https://doi.org/10.1111/jeu.12691) |
-| `S04` | 2013 | Guillou, L. et al. | The Protist Ribosomal Reference database (PR2): a catalog of unicellular euk | Nucleic Acids Research 41:D597–D60 | [10.1093/nar/gks1160](https://doi.org/10.1093/nar/gks1160) |
-| `S05` | 2017 | Berney, C. et al. | UniEuk: Time to Speak a Common Language in Protistology! | Journal of Eukaryotic Microbiology | [10.1111/jeu.12414](https://doi.org/10.1111/jeu.12414) |
-
-## El enlace no devolvió un PDF · 3
-
-La respuesta fue una página web, no un artículo: el enlace lleva a la ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y busca el enlace de descarga en la propia página.
-
-| Clave | Año | Autores | Título | Publicación | DOI |
-|---|---|---|---|---|---|
-| `S07` | 1984 | Lake et al. | Eocytes: a new ribosome structure indicates a kingdom with a close relations | Proceedings of the National Academ | [10.1073/pnas.81.12.3786](https://doi.org/10.1073/pnas.81.12.3786) |
-| `S08` | 2008 | Cox et al. | The archaebacterial origin of eukaryotes | Proceedings of the National Academ | [10.1073/pnas.0810647105](https://doi.org/10.1073/pnas.0810647105) |
-| `S10` | 2020 | Williams et al. | Phylogenomics provides robust support for a two-domains tree of life | Nature Ecology & Evolution | [10.1038/s41559-019-1040-x](https://doi.org/10.1038/s41559-019-1040-x) |
-
 ## Declarada abierta, pero sin PDF enlazado · 1
 
 El catálogo la marca como abierta y no da la dirección del fichero. El DOI suele llevar a la versión legible.
@@ -53,6 +33,18 @@ O no declara DOI —sólo una URL—, o ningún catálogo abierto reconoce ese D
 | Clave | Año | Autores | Título | Publicación | DOI |
 |---|---|---|---|---|---|
 | `S02` | 2026 | International Commission on Stratigrap | International Chronostratigraphic Chart, version 2026/06 | International Commission on Strati | https://stratigraphy.org/chart/ |
+
+## no intentado · 9
+
+- `S01` Revisions to the Classification, Nomenclature, and Diversity of Eukaryotes
+- `S03` EukProt: a database of genome-scale predicted proteins across the diversity of e
+- `S04` The Protist Ribosomal Reference database (PR2): a catalog of unicellular eukaryo
+- `S05` UniEuk: Time to Speak a Common Language in Protistology!
+- `S07` Eocytes: a new ribosome structure indicates a kingdom with a close relationship 
+- `S08` The archaebacterial origin of eukaryotes
+- `S10` Phylogenomics provides robust support for a two-domains tree of life
+- `S11` Lokiarchaea are close relatives of Euryarchaeota, not bridging the gap between p
+- `S12` Asgard archaea are the closest prokaryotic relatives of eukaryotes
 
 ## Cómo conseguirlas
 

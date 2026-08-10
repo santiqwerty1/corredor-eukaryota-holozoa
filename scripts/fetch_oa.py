@@ -45,6 +45,12 @@ APENDICE_A = ROOT / "data" / "apendices" / "A_fuentes.csv"
 INFORME = ROOT / "exports" / "acceso_fuentes.csv"
 LISTADO = ROOT / "docs" / "FUENTES-SIN-ACCESO.md"
 DESTINO = ROOT / "fuentes_pdf"
+# La resolución cuesta cientos de consultas; se guarda junto a los PDF, que
+# también están fuera del control de versiones.
+CACHE = DESTINO / ".resolucion.json"
+# Cada cuántas fuentes se vuelca lo hecho. Una pasada completa son horas: si
+# se interrumpe, lo trabajado hasta ese punto tiene que quedar en disco.
+CHECKPOINT = 10
 
 OPENALEX = "https://api.openalex.org/works"
 EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
@@ -302,6 +308,30 @@ def escribir_listado(filas: list[list[str]], fuentes: list[dict]) -> int:
     return total
 
 
+def volcar(filas: list[list[str]], fuentes: list[dict]) -> None:
+    """Escribe informe y listado con lo hecho hasta ahora."""
+    INFORME.parent.mkdir(parents=True, exist_ok=True)
+    with INFORME.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(CABECERA_INFORME)
+        w.writerows(filas)
+    escribir_listado(filas, fuentes)
+
+
+def cargar_cache() -> dict[str, dict]:
+    if not CACHE.exists():
+        return {}
+    try:
+        return json.loads(CACHE.read_text(encoding="utf-8"))
+    except Exception:                                  # noqa: BLE001
+        return {}
+
+
+def guardar_cache(oa: dict[str, dict]) -> None:
+    CACHE.parent.mkdir(parents=True, exist_ok=True)
+    CACHE.write_text(json.dumps(oa, ensure_ascii=False), encoding="utf-8")
+
+
 def leer_informe() -> list[list[str]]:
     with INFORME.open(encoding="utf-8", newline="") as fh:
         return list(csv.reader(fh))[1:]
@@ -316,6 +346,8 @@ def main() -> int:
                     help="resolver el acceso sin descargar nada")
     ap.add_argument("--limite", type=int, default=0,
                     help="procesar sólo las primeras N fuentes (para probar)")
+    ap.add_argument("--rehacer-resolucion", action="store_true",
+                    help="ignorar la resolución cacheada y volver a preguntar a los catálogos")
     ap.add_argument("--solo-listado", action="store_true",
                     help="rehacer docs/FUENTES-SIN-ACCESO.md desde el informe ya existente, sin red")
     ap.add_argument("--destino", type=Path, default=DESTINO)
@@ -334,11 +366,21 @@ def main() -> int:
     con_doi = [f for f in fuentes if f["doi"]]
     print(f"{len(fuentes)} fuentes en el apéndice A · {len(con_doi)} con DOI", file=sys.stderr)
 
-    print("resolviendo en OpenAlex…", file=sys.stderr)
-    oa = resolver_openalex([f["doi"] for f in con_doi], args.mailto)
+    oa = {} if args.rehacer_resolucion else cargar_cache()
+    if oa:
+        print(f"resolución reutilizada de {CACHE.relative_to(ROOT)} "
+              f"({len(oa)} fuentes; --rehacer-resolucion para consultar de nuevo)",
+              file=sys.stderr)
+    faltan_res = [f["doi"] for f in con_doi if f["doi"] not in oa]
+    if faltan_res:
+        print(f"resolviendo {len(faltan_res)} en OpenAlex…", file=sys.stderr)
+        oa.update(resolver_openalex(faltan_res, args.mailto))
+        guardar_cache(oa)
 
     # A las que OpenAlex no da por abiertas se les pregunta a Europe PMC.
-    pendientes = [f for f in con_doi if not oa.get(f["doi"], {}).get("abierto")]
+    pendientes = [f for f in con_doi
+                  if not oa.get(f["doi"], {}).get("abierto")
+                  and not oa.get(f["doi"], {}).get("epmc_consultado")]
     if pendientes:
         print(f"consultando Europe PMC por {len(pendientes)} fuentes sin OA en OpenAlex…",
               file=sys.stderr)
@@ -346,78 +388,88 @@ def main() -> int:
             alt = resolver_europepmc(f["doi"])
             if alt:
                 oa[f["doi"]] = alt
+            else:
+                oa.setdefault(f["doi"], {"abierto": False, "estado": "", "pdf": "", "via": ""})
+                oa[f["doi"]]["epmc_consultado"] = True
             if i % 25 == 0:
                 print(f"  {i}/{len(pendientes)}", file=sys.stderr)
+                guardar_cache(oa)
             time.sleep(PAUSA_API)
+        guardar_cache(oa)
 
     filas, cuenta = [], {}
     def marcar(k): cuenta[k] = cuenta.get(k, 0) + 1
+    interrumpido = False
 
-    for f in fuentes:
-        info = oa.get(f["doi"], {}) if f["doi"] else {}
-        fichero = resultado = detalle = ""
-        if not f["doi"]:
-            acceso, via, url = "sin doi", "", f["url"]
-            resultado, detalle = "no resoluble", "la fuente no declara DOI; sólo URL"
-        elif not info:
-            acceso, via, url = "desconocido", "", ""
-            resultado, detalle = "no resoluble", "ningún catálogo abierto reconoce este DOI"
-        elif not info.get("abierto"):
-            acceso, via, url = "cerrado", info.get("via", ""), ""
-            resultado, detalle = "cerrada", "sin versión de acceso abierto declarada"
-        else:
-            acceso, via, url = info.get("estado", "abierto"), info.get("via", ""), info.get("pdf", "")
-            if not url:
-                resultado, detalle = "sin url", "declarada abierta pero sin PDF enlazado"
-            elif args.solo_informe:
-                resultado, detalle = "no intentado", "modo --solo-informe"
+    try:
+        for n_f, f in enumerate(fuentes, 1):
+            info = oa.get(f["doi"], {}) if f["doi"] else {}
+            fichero = resultado = detalle = ""
+            if not f["doi"]:
+                acceso, via, url = "sin doi", "", f["url"]
+                resultado, detalle = "no resoluble", "la fuente no declara DOI; sólo URL"
+            elif not info:
+                acceso, via, url = "desconocido", "", ""
+                resultado, detalle = "no resoluble", "ningún catálogo abierto reconoce este DOI"
+            elif not info.get("abierto"):
+                acceso, via, url = "cerrado", info.get("via", ""), ""
+                resultado, detalle = "cerrada", "sin versión de acceso abierto declarada"
             else:
-                fichero = nombre_fichero(f)
-                ruta = args.destino / fichero
-                if ruta.exists() and ruta.stat().st_size > 8192:
-                    resultado, detalle = "ya estaba", f"{ruta.stat().st_size // 1024} KB"
+                acceso, via, url = info.get("estado", "abierto"), info.get("via", ""), info.get("pdf", "")
+                if not url:
+                    resultado, detalle = "sin url", "declarada abierta pero sin PDF enlazado"
+                elif args.solo_informe:
+                    resultado, detalle = "no intentado", "modo --solo-informe"
                 else:
-                    resultado, detalle = descargar(url, ruta)
-                    time.sleep(PAUSA_DESCARGA)
-                    # El enlace «mejor» de OpenAlex apunta a veces a la página
-                    # del artículo, no al PDF, y algunos editores rechazan a los
-                    # clientes automáticos. Europe PMC sirve el mismo trabajo por
-                    # otra vía legal, así que se prueba antes de darlo por perdido.
-                    if resultado != "descargado" and info.get("via") != "europepmc":
-                        alt = resolver_europepmc(f["doi"])
-                        if alt and alt.get("pdf"):
-                            r2, d2 = descargar(alt["pdf"], ruta)
-                            time.sleep(PAUSA_DESCARGA)
-                            if r2 == "descargado":
-                                resultado, detalle = r2, d2 + " (vía Europe PMC)"
-                                via, url = "europepmc", alt["pdf"]
-                            else:
-                                detalle += f"; Europe PMC tampoco ({d2})"
-                    if resultado != "descargado":
-                        fichero = ""
-        marcar(resultado)
-        filas.append([f["clave"], f["año"], f["titulo"], f["doi"], acceso, via,
-                      url, fichero, resultado, detalle])
-        if resultado in ("descargado", "rechazado", "error"):
-            print(f"  {f['clave']:6} {resultado:11} {detalle}", file=sys.stderr)
+                    fichero = nombre_fichero(f)
+                    ruta = args.destino / fichero
+                    if ruta.exists() and ruta.stat().st_size > 8192:
+                        resultado, detalle = "ya estaba", f"{ruta.stat().st_size // 1024} KB"
+                    else:
+                        resultado, detalle = descargar(url, ruta)
+                        time.sleep(PAUSA_DESCARGA)
+                        # El enlace «mejor» de OpenAlex apunta a veces a la página
+                        # del artículo, no al PDF, y algunos editores rechazan a los
+                        # clientes automáticos. Europe PMC sirve el mismo trabajo por
+                        # otra vía legal, así que se prueba antes de darlo por perdido.
+                        if resultado != "descargado" and info.get("via") != "europepmc":
+                            alt = resolver_europepmc(f["doi"])
+                            if alt and alt.get("pdf"):
+                                r2, d2 = descargar(alt["pdf"], ruta)
+                                time.sleep(PAUSA_DESCARGA)
+                                if r2 == "descargado":
+                                    resultado, detalle = r2, d2 + " (vía Europe PMC)"
+                                    via, url = "europepmc", alt["pdf"]
+                                else:
+                                    detalle += f"; Europe PMC tampoco ({d2})"
+                        if resultado != "descargado":
+                            fichero = ""
+            marcar(resultado)
+            filas.append([f["clave"], f["año"], f["titulo"], f["doi"], acceso, via,
+                          url, fichero, resultado, detalle])
+            if resultado in ("descargado", "rechazado", "error"):
+                print(f"  {f['clave']:6} {resultado:11} {detalle}", file=sys.stderr)
+            if n_f % CHECKPOINT == 0:
+                volcar(filas, fuentes)
+    except KeyboardInterrupt:
+        interrumpido = True
+        print("\n\ninterrumpido: se vuelca lo hecho hasta aquí", file=sys.stderr)
 
-    INFORME.parent.mkdir(parents=True, exist_ok=True)
-    with INFORME.open("w", encoding="utf-8", newline="") as fh:
-        w = csv.writer(fh)
-        w.writerow(CABECERA_INFORME)
-        w.writerows(filas)
-
-    sin_acceso = escribir_listado(filas, fuentes)
+    volcar(filas, fuentes)
+    sin_acceso = sum(1 for x in filas if x[8] not in ("descargado", "ya estaba"))
 
     print("\n" + "=" * 62, file=sys.stderr)
     print(f"informe: {INFORME.relative_to(ROOT)}", file=sys.stderr)
     print(f"listado: {LISTADO.relative_to(ROOT)} · {sin_acceso} sin texto completo", file=sys.stderr)
     for k in sorted(cuenta, key=lambda x: -cuenta[x]):
         print(f"  {cuenta[k]:5}  {k}", file=sys.stderr)
-    faltan = sum(v for k, v in cuenta.items() if k not in ("descargado", "ya estaba"))
-    print(f"\n{faltan} fuentes siguen sin texto completo, y el informe dice por qué "
+    print(f"\n{sin_acceso} fuentes siguen sin texto completo, y el informe dice por qué "
           f"una a una.\nNo hay huecos silenciosos: ésa es la regla del corpus.",
           file=sys.stderr)
+    if interrumpido:
+        print(f"\nQuedaron {len(fuentes) - len(filas)} sin procesar. Volver a lanzarlo "
+              "reutiliza la resolución y los PDF ya bajados.", file=sys.stderr)
+        return 130
     return 0
 
 
