@@ -4,9 +4,9 @@
 El corpus cita 523 fuentes y de muchas sólo se pudo leer el resumen. Este script
 busca cuáles de ellas son legalmente accesibles y trae el PDF.
 
-**Qué hace y qué no.** Consulta OpenAlex y Europe PMC —dos catálogos abiertos—
-para preguntar por cada DOI si existe una versión de acceso abierto, y descarga
-únicamente lo que esos catálogos declaran abierto. No accede a repositorios
+**Qué hace y qué no.** Pregunta por cada DOI a cinco catálogos abiertos
+—OpenAlex, Unpaywall, Europe PMC, arXiv y OpenAIRE, más CORE si se da su clave—
+y descarga únicamente lo que esos catálogos declaran abierto. No accede a repositorios
 piratas, no sortea muros de pago y no toca las fuentes cerradas: esas se listan
 en el informe como lo que son, un hueco declarado.
 
@@ -24,6 +24,7 @@ Uso:
     python3 scripts/fetch_oa.py --mailto tu@correo            # resolver y descargar
     python3 scripts/fetch_oa.py --mailto tu@correo --solo-informe
     python3 scripts/fetch_oa.py --mailto tu@correo --limite 20
+    python3 scripts/fetch_oa.py --mailto tu@correo --core-key CLAVE
 """
 
 from __future__ import annotations
@@ -158,6 +159,99 @@ def resolver_europepmc(doi: str) -> dict | None:
         "pdf": f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextPDF",
         "via": "europepmc",
     }
+
+
+def candidatos_unpaywall(doi: str, mailto: str) -> list[tuple[str, str]]:
+    """Unpaywall conoce depósitos que OpenAlex no enlaza.
+
+    Verificado: para 10.1038/nature14447 OpenAlex no ofrecía ninguna ubicación
+    con PDF y Unpaywall lo encontró en el repositorio de Wageningen. Los
+    repositorios van primero: sirven el fichero sin negociar con un editor que
+    a menudo rechaza a los clientes automáticos.
+    """
+    url = f"https://api.unpaywall.org/v2/{urllib.parse.quote(doi)}?email={urllib.parse.quote(mailto)}"
+    try:
+        d = _pedir(url, timeout=25)
+    except Exception:                                  # noqa: BLE001
+        return []
+    locs = [l for l in (d.get("oa_locations") or []) if l]
+    locs.sort(key=lambda l: 0 if l.get("host_type") == "repository" else 1)
+    salida = []
+    for l in locs:
+        for u in (l.get("url_for_pdf"), l.get("url")):
+            if u:
+                salida.append((u, f"unpaywall/{l.get('host_type') or 'oa'}"))
+    return salida
+
+
+def candidatos_arxiv(titulo: str) -> list[tuple[str, str]]:
+    """arXiv y bioRxiv alojan versiones de autor de muchos trabajos."""
+    if not titulo:
+        return []
+    q = urllib.parse.quote(f'ti:"{titulo[:110]}"')
+    try:
+        req = urllib.request.Request(
+            f"https://export.arxiv.org/api/query?search_query={q}&max_results=1",
+            headers={"User-Agent": AGENTE})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            xml = r.read().decode("utf-8", "replace")
+    except Exception:                                  # noqa: BLE001
+        return []
+    m = re.search(r"<id>(https?://arxiv\.org/abs/([^<]+))</id>", xml)
+    if not m:
+        return []
+    # Sólo se acepta si el título coincide de verdad: la búsqueda de arXiv es
+    # laxa y devolver el PDF equivocado sería peor que no devolver ninguno.
+    mt = re.search(r"<entry>.*?<title>(.*?)</title>", xml, re.S)
+    if mt:
+        norm = lambda s: re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+        if norm(mt.group(1))[:60] != norm(titulo)[:60]:
+            return []
+    return [(f"https://arxiv.org/pdf/{m.group(2)}", "arxiv")]
+
+
+def candidatos_openaire(doi: str) -> list[tuple[str, str]]:
+    """OpenAIRE agrega repositorios europeos que los demás no indexan."""
+    url = ("https://api.openaire.eu/search/publications?format=json&size=1&doi="
+           + urllib.parse.quote(doi))
+    try:
+        d = _pedir(url, timeout=30)
+    except Exception:                                  # noqa: BLE001
+        return []
+    urls: list[tuple[str, str]] = []
+    def buscar(o):
+        if isinstance(o, dict):
+            for v in o.values():
+                buscar(v)
+        elif isinstance(o, list):
+            for v in o:
+                buscar(v)
+        elif isinstance(o, str) and o.startswith("http") and (
+                o.lower().endswith(".pdf") or "/download/" in o.lower()):
+            urls.append((o, "openaire"))
+    buscar(d)
+    return urls[:3]
+
+
+def candidatos_core(doi: str, clave: str) -> list[tuple[str, str]]:
+    """CORE exige clave gratuita (core.ac.uk/services/api). Sin ella se omite."""
+    if not clave:
+        return []
+    try:
+        req = urllib.request.Request(
+            "https://api.core.ac.uk/v3/search/works?limit=1&q="
+            + urllib.parse.quote(f'doi:"{doi}"'),
+            headers={"Authorization": f"Bearer {clave}", "User-Agent": AGENTE})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.load(r)
+    except Exception:                                  # noqa: BLE001
+        return []
+    salida = []
+    for w in (d.get("results") or [])[:1]:
+        for u in (w.get("downloadUrl"), *[l.get("downloadUrl") for l in (w.get("sourceFulltextUrls") or []) if isinstance(l, dict)]):
+            if u:
+                salida.append((u, "core"))
+    return salida
 
 
 def nombre_fichero(f: dict) -> str:
@@ -346,6 +440,8 @@ def main() -> int:
                     help="resolver el acceso sin descargar nada")
     ap.add_argument("--limite", type=int, default=0,
                     help="procesar sólo las primeras N fuentes (para probar)")
+    ap.add_argument("--core-key", default="",
+                    help="clave de CORE (gratuita en core.ac.uk/services/api); sin ella se omite esa fuente")
     ap.add_argument("--rehacer-resolucion", action="store_true",
                     help="ignorar la resolución cacheada y volver a preguntar a los catálogos")
     ap.add_argument("--solo-listado", action="store_true",
@@ -426,22 +522,37 @@ def main() -> int:
                     if ruta.exists() and ruta.stat().st_size > 8192:
                         resultado, detalle = "ya estaba", f"{ruta.stat().st_size // 1024} KB"
                     else:
+                        # Cadena de candidatos. La ubicación de OpenAlex va
+                        # primero; si falla, se pregunta al resto de catálogos
+                        # abiertos. Muchos editores rechazan a los clientes
+                        # automáticos, pero el mismo trabajo suele estar
+                        # depositado en un repositorio que sí lo sirve: para
+                        # 10.1038/nature14447, OpenAlex no ofrecía ninguna
+                        # ubicación con PDF y Unpaywall lo encontró en el
+                        # repositorio de Wageningen.
                         resultado, detalle = descargar(url, ruta)
                         time.sleep(PAUSA_DESCARGA)
-                        # El enlace «mejor» de OpenAlex apunta a veces a la página
-                        # del artículo, no al PDF, y algunos editores rechazan a los
-                        # clientes automáticos. Europe PMC sirve el mismo trabajo por
-                        # otra vía legal, así que se prueba antes de darlo por perdido.
-                        if resultado != "descargado" and info.get("via") != "europepmc":
+                        if resultado != "descargado":
+                            extra = candidatos_unpaywall(f["doi"], args.mailto)
                             alt = resolver_europepmc(f["doi"])
                             if alt and alt.get("pdf"):
-                                r2, d2 = descargar(alt["pdf"], ruta)
+                                extra.append((alt["pdf"], "europepmc"))
+                            extra += candidatos_arxiv(f["titulo"])
+                            extra += candidatos_openaire(f["doi"])
+                            extra += candidatos_core(f["doi"], args.core_key)
+                            vistos, logrado = {url}, False
+                            for u, origen in extra:
+                                if u in vistos:
+                                    continue
+                                vistos.add(u)
+                                r2, d2 = descargar(u, ruta)
                                 time.sleep(PAUSA_DESCARGA)
                                 if r2 == "descargado":
-                                    resultado, detalle = r2, d2 + " (vía Europe PMC)"
-                                    via, url = "europepmc", alt["pdf"]
-                                else:
-                                    detalle += f"; Europe PMC tampoco ({d2})"
+                                    resultado, detalle = r2, f"{d2} (vía {origen})"
+                                    via, url, logrado = origen, u, True
+                                    break
+                            if not logrado:
+                                detalle += f"; {len(vistos) - 1} alternativas sin éxito"
                         if resultado != "descargado":
                             fichero = ""
             marcar(resultado)
