@@ -201,6 +201,21 @@
                 </sc-for>
               </div>
             </div>
+            <sc-for list="{{ claimPasajes }}" as="cp" hint-placeholder-count="1">
+              <div style="margin-top:var(--space-6);">
+                <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:var(--space-2);">Lo que dice {{ cp.fuente }}</div>
+                <div style="font:11px ui-monospace,monospace;color:var(--color-neutral-500);margin-bottom:var(--space-2);">{{ cp.loc }}</div>
+                <p style="margin:0 0 var(--space-2);font-size:12px;line-height:1.55;color:var(--color-neutral-300);max-height:16em;overflow:auto;">{{ cp.pasaje }}</p>
+                <div style="font-size:10.5px;color:var(--color-neutral-500);">{{ cp.detalle }}</div>
+              </div>
+            </sc-for>
+            <sc-if value="{{ claimSinPasaje }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:var(--space-6);font-size:11.5px;color:var(--color-neutral-500);line-height:1.5;">
+                Sin pasaje recuperado todavía. Eso no dice nada sobre la afirmación:
+                o su fuente aún no se ha descargado, o el localizador señala una figura
+                o una página, que no viven en el texto. La vista Pasajes lo detalla.
+              </div>
+            </sc-if>
           </aside>
         </sc-if>
       </div>
@@ -272,6 +287,11 @@
           <select class="input" value="{{ conGroup }}" onChange="{{ onConGroup }}" style="width:auto;">
             <sc-for list="{{ conGroupOpts }}" as="go" hint-placeholder-count="3"><option value="{{ go.v }}">{{ go.label }}</option></sc-for>
           </select>
+          <select class="input" value="{{ conOrden }}" onChange="{{ onConOrden }}" style="width:auto;">
+            <sc-for list="{{ conOrdenOpts }}" as="oo" hint-placeholder-count="3"><option value="{{ oo.v }}">{{ oo.label }}</option></sc-for>
+          </select>
+          <button class="btn btn-secondary" onClick="{{ onConOrdenDir }}" style="font-size:12px;">{{ conOrdenDirLabel }}</button>
+          <button class="btn btn-secondary" onClick="{{ onConModo }}" title="{{ conModoLabel }}" style="font-size:12px;">Y / O: {{ conModo }}</button>
         </div>
         <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-3);">
           <sc-for list="{{ conds }}" as="cd" hint-placeholder-count="1">
@@ -280,13 +300,16 @@
                 <sc-for list="{{ cd.fieldOpts }}" as="fo" hint-placeholder-count="4"><option value="{{ fo }}">{{ fo }}</option></sc-for>
               </select>
               <select class="input" value="{{ cd.op }}" onChange="{{ cd.onOp }}" style="width:auto;">
-                <option value="contiene">contiene</option><option value="no contiene">no contiene</option><option value="es">es</option><option value="no es">no es</option><option value="empieza por">empieza por</option><option value="regex">regex</option>
+                <option value="contiene">contiene</option><option value="no contiene">no contiene</option><option value="es">es</option><option value="no es">no es</option><option value="empieza por">empieza por</option><option value="termina en">termina en</option><option value="regex">regex</option><option value="vacío">vacío</option><option value="no vacío">no vacío</option><option value="&gt;">&gt;</option><option value="&lt;">&lt;</option><option value="&gt;=">&gt;=</option><option value="&lt;=">&lt;=</option>
               </select>
               <input class="input" value="{{ cd.v }}" onChange="{{ cd.onV }}" placeholder="valor…" style="width:260px;">
               <button class="btn btn-icon btn-ghost" onClick="{{ cd.onDel }}" aria-label="Quitar condición"><i class="ph ph-x"></i></button>
             </div>
           </sc-for>
         </div>
+        <sc-if value="{{ conHayMas }}" hint-placeholder-val="{{ false }}">
+          <button class="btn btn-secondary" onClick="{{ onConTodas }}" style="font-size:12px;margin-bottom:var(--space-4);">{{ conTodasLabel }}</button>
+        </sc-if>
         <button class="btn btn-ghost" onClick="{{ addCond }}" style="margin-bottom:var(--space-6);"><i class="ph ph-plus" style="margin-right:6px;"></i>Añadir condición</button>
         <sc-if value="{{ conShowGroups }}" hint-placeholder-val="{{ false }}">
           <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);max-width:720px;margin-bottom:var(--space-6);">
@@ -875,7 +898,20 @@ class Component extends DCLogic {
     };
     const defs = {
       afirmaciones: { label: 'Afirmaciones (1 952)', get: () => ({ fields: ['id', 'sec', 'texto', 'sujeto', 'pred', 'obj', 'atrib', 'fuente', 'acept', 'fuerza', 'motivo', 'resol', 'vig'], rows: this.state.allClaims }) },
-      negativas: { label: 'Búsquedas negativas (68)', get: () => ({ fields: ['id', 'bloque', 'estado', 'hueco', 'resultado', 'refs'], rows: this.state.allBn }) }
+      negativas: { label: 'Búsquedas negativas (68)', get: () => ({ fields: ['id', 'bloque', 'estado', 'hueco', 'resultado', 'refs'], rows: this.state.allBn }) },
+      // Lo que produce el tooling también es consultable: si no, para cruzar
+      // «afirmaciones de fuente única cuya fuente no se pudo descargar» habría
+      // que abrir dos vistas y comparar a ojo.
+      acceso: { label: 'Acceso a fuentes', get: () => ({
+        fields: ['clave', 'año', 'título', 'doi', 'acceso', 'via', 'fichero', 'resultado', 'detalle', 'citas', 'fuente_unica'],
+        rows: (this.state.acceso || []).map(r => ({
+          clave: r[0], 'año': r[1], 'título': r[2], doi: r[3], acceso: r[4], via: r[5],
+          fichero: r[7], resultado: r[8], detalle: r[9], citas: r[13] || '0', fuente_unica: r[14] || '0' })) }) },
+      pasajes: { label: 'Pasajes extraídos', get: () => ({
+        fields: ['afirmacion', 'texto', 'fuente', 'localizador', 'tipo', 'pasaje', 'estado', 'detalle'],
+        rows: (this.state.pasajes || []).map(r => ({
+          afirmacion: r[0], texto: r[1], fuente: r[2], localizador: r[3], tipo: r[4],
+          pasaje: r[5], estado: r[6], detalle: r[7] })) }) }
     };
     for (const k of Object.keys(this.apxCfg)) {
       defs['apx' + k] = { label: 'Apéndice ' + k, get: () => ({ fields: this.apxCfg[k].head, rows: apxRows(k) }) };
@@ -886,12 +922,24 @@ class Component extends DCLogic {
     const raw = String(row[c.f] ?? '');
     const s = raw.toLowerCase(), v = (c.v || '').toLowerCase();
     if (c.op === 'regex') { try { return new RegExp(c.v, 'i').test(raw); } catch (e) { return false; } }
+    // Estos dos no dependen del valor escrito, así que van antes del atajo.
+    if (c.op === 'vacío') return raw.trim() === '';
+    if (c.op === 'no vacío') return raw.trim() !== '';
     if (!v) return true;
     if (c.op === 'contiene') return s.includes(v);
     if (c.op === 'no contiene') return !s.includes(v);
     if (c.op === 'es') return s === v;
     if (c.op === 'no es') return s !== v;
     if (c.op === 'empieza por') return s.startsWith(v);
+    if (c.op === 'termina en') return s.endsWith(v);
+    // Comparaciones numéricas: útiles sobre citas, años y recuentos, donde
+    // «mayor que» es la pregunta natural y «contiene» no sirve de nada.
+    if (c.op === '>' || c.op === '<' || c.op === '>=' || c.op === '<=') {
+      const a = parseFloat(String(raw).replace(',', '.').replace(/[^\d.\-]/g, ''));
+      const b = parseFloat(String(c.v).replace(',', '.'));
+      if (isNaN(a) || isNaN(b)) return false;
+      return c.op === '>' ? a > b : c.op === '<' ? a < b : c.op === '>=' ? a >= b : a <= b;
+    }
     return true;
   }
   consultaVals() {
@@ -909,7 +957,24 @@ class Component extends DCLogic {
       onV: (e) => updCond(i, { v: e.target.value }),
       onDel: () => this.setState(s => ({ conds: s.conds.filter((_, j) => j !== i) }))
     }));
-    const filtered = rows.filter(r => st.conds.every(c => this.condMatch(c, r)));
+    // Y u O: con sólo «Y» no se puede preguntar «de esta sección o de esta
+    // otra», que es media de las preguntas reales.
+    const modo = st.conModo || 'Y';
+    const filtrar = (r) => modo === 'O'
+      ? st.conds.some(c => (c.v || c.op === 'vacío' || c.op === 'no vacío') && this.condMatch(c, r))
+      : st.conds.every(c => this.condMatch(c, r));
+    let filtered = rows.filter(filtrar);
+    if (st.conOrden) {
+      const campo = st.conOrden, desc = !!st.conOrdenDesc;
+      const num = (x) => { const v = parseFloat(String(x).replace(',', '.').replace(/[^\d.\-]/g, '')); return isNaN(v) ? null : v; };
+      filtered = filtered.slice().sort((a, b) => {
+        const x = a[campo] ?? '', y = b[campo] ?? '';
+        const nx = num(x), ny = num(y);
+        const c = (nx !== null && ny !== null) ? nx - ny
+          : String(x).localeCompare(String(y), 'es', { numeric: true });
+        return desc ? -c : c;
+      });
+    }
     const conGroupOpts = [{ v: '', label: 'Agrupar por: nada' }].concat(ds.fields.map(f => ({ v: f, label: 'Agrupar por: ' + f })));
     let conGroups = [];
     if (st.conGroup) {
@@ -919,15 +984,30 @@ class Component extends DCLogic {
       const max = arr.length ? arr[0][1] : 1;
       conGroups = arr.map(([label, n]) => ({ label, n, barStyle: 'width:' + Math.max(2, Math.round(n / max * 100)) + '%;height:100%;border-radius:3px;background:var(--color-accent-700);' }));
     }
-    const conRows = (st.conGroup ? [] : filtered.slice(0, 30)).map(r => ({
+    const tope = st.conTodas ? filtered.length : 30;
+    const conRows = (st.conGroup ? [] : filtered.slice(0, tope)).map(r => ({
       fields: ds.fields.map(k => ({ k, v: String(r[k] ?? '').slice(0, 300) })).filter(f => f.v !== '').map(x => ({ k: x.k, segs: this.segs(x.v) }))
     }));
     const conMeta = loaded
-      ? filtered.length + ' resultados de ' + rows.length + ' filas · condiciones en Y · ' + (st.conGroup ? 'recuento agrupado' : 'mostrando ' + conRows.length)
+      ? filtered.length + ' resultados de ' + rows.length + ' filas · condiciones en ' + modo
+        + (st.conOrden ? ' · ordenado por ' + st.conOrden + (st.conOrdenDesc ? ' ↓' : ' ↑') : '')
+        + ' · ' + (st.conGroup ? 'recuento agrupado' : 'mostrando ' + conRows.length)
       : 'cargando el dataset…';
     return {
       conDs: st.conDs, conDsOpts, conGroup: st.conGroup, conGroupOpts, conds, conMeta, conGroups, conRows,
       conShowGroups: !!st.conGroup && conGroups.length > 0,
+      conModo: modo,
+      onConModo: () => this.setState({ conModo: modo === 'Y' ? 'O' : 'Y' }),
+      conModoLabel: 'condiciones en ' + modo + ' · pulsa para cambiar',
+      conOrdenOpts: [{ v: '', label: 'Orden: el del fichero' }]
+        .concat(ds.fields.map(f => ({ v: f, label: 'Orden: ' + f }))),
+      conOrden: st.conOrden || '',
+      onConOrden: (e) => this.setState({ conOrden: e.target.value }),
+      onConOrdenDir: () => this.setState({ conOrdenDesc: !st.conOrdenDesc }),
+      conOrdenDirLabel: st.conOrdenDesc ? '↓ descendente' : '↑ ascendente',
+      conTodasLabel: st.conTodas ? 'Mostrar sólo 30' : ('Ver las ' + filtered.length),
+      onConTodas: () => this.setState({ conTodas: !st.conTodas }),
+      conHayMas: !st.conGroup && filtered.length > 30,
       onConDs: (e) => { const k = e.target.value; const d = this.consultaDatasets()[k].get(); this.setState({ conDs: k, conGroup: '', conds: [{ f: d.fields[0], op: 'contiene', v: '' }] }); },
       onConGroup: (e) => this.setState({ conGroup: e.target.value }),
       addCond: () => this.setState(s => ({ conds: s.conds.concat([{ f: ds.fields[0], op: 'contiene', v: '' }]) }))
@@ -1598,6 +1678,16 @@ class Component extends DCLogic {
       rows, countLine, secOpts, wide, headStyle,
       claim: claim ? { ...claim, fuerzaLabel: 'fuerza\u00a0' + claim.fuerza, aceptClass: this.aceptClass(claim.acept), fuenteSegs: this.segs(claim.fuente), atribSegs: this.segs(claim.atrib) } : null,
       claimOpen: !!claim, claimRefs,
+      // El pasaje pertenece aquí. Al abrir una afirmación la pregunta siguiente
+      // es «¿y qué dice esa fuente?», y hasta ahora había que irse a otra vista
+      // a buscar el identificador a mano.
+      claimPasajes: claim ? (st.pasajes || [])
+        .filter(r => r[0] === claim.id && r[5])
+        .slice(0, 4)
+        .map(r => ({ fuente: r[2], loc: (r[3] || '').trim(),
+                     pasaje: (r[5] || '').slice(0, 700), detalle: r[7] || '' })) : [],
+      claimSinPasaje: claim && (st.pasajes || []).some(r => r[0] === claim.id)
+        && !(st.pasajes || []).some(r => r[0] === claim.id && r[5]),
       closeDetail: () => this.setState({ selId: null }),
       openRef, openEnt: this.openEnt,
       bn, bloques, bnSubLine,
