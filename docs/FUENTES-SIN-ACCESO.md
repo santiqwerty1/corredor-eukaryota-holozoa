@@ -1,6 +1,6 @@
 # Fuentes sin texto completo
 
-De las **80** fuentes del apéndice A se obtuvieron **54** por vía de acceso abierto. Las **26** restantes están aquí, con la razón de cada una.
+De las **140** fuentes del apéndice A se obtuvieron **80** por vía de acceso abierto. Las **60** restantes están aquí, con la razón de cada una.
 
 Generado por `scripts/fetch_oa.py` el 2026-08-10. Para regenerarlo sin volver a descargar nada:
 
@@ -10,13 +10,20 @@ python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
 
 > Ninguna de estas fuentes se ha retirado del corpus ni se ha marcado como dudosa: no haber podido descargar el PDF no dice nada sobre la afirmación que sostiene. Esta lista es un encargo pendiente, no un defecto del corpus.
 
-## Sin versión de acceso abierto · 10
+## Sin versión de acceso abierto · 25
 
 Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbibliotecario, acceso institucional, o escribir a quien firma la correspondencia — muchos autores envían su propio PDF si se les pide.
 
 | Clave | Año | Autores | Título | Publicación | DOI |
 |---|---|---|---|---|---|
 | `S09` | 2013 | Williams et al. | An archaeal origin of eukaryotes supports only two primary domains of life | Nature | [10.1038/nature12779](https://doi.org/10.1038/nature12779) |
+| `S102` | 2025 | Williamson et al. | A robustly rooted tree of eukaryotes reveals their excavate ancestry | Nature | [10.1038/s41586-025-08709-5](https://doi.org/10.1038/s41586-025-08709-5) |
+| `S113` | 2013 | Heiss, Walker y Simpson | The microtubular cytoskeleton of the apusomonad Thecamonas, a sister lineage | Protist | [10.1016/j.protis.2013.05.005](https://doi.org/10.1016/j.protis.2013.05.005) |
+| `S114` | 2013 | Heiss, Aaron A.; Walker, Giselle; Simp | The flagellar apparatus of Breviata anathema, a eukaryote without a clear su | European Journal of Protistology | [10.1016/j.ejop.2013.01.001](https://doi.org/10.1016/j.ejop.2013.01.001) |
+| `S116` | 2002 | Stechmann y Cavalier-Smith | Rooting the eukaryote tree by using a derived gene fusion | Science | [10.1126/science.1071196](https://doi.org/10.1126/science.1071196) |
+| `S118` | 2005 | Richards y Cavalier-Smith | Myosin domain evolution and the primary divergence of eukaryotes | Nature | [10.1038/nature03949](https://doi.org/10.1038/nature03949) |
+| `S123` | 2000 | Rokas y Holland | Rare genomic changes as a tool for phylogenetics | Trends in Ecology & Evolution | [10.1016/s0169-5347(00)01967-4](https://doi.org/10.1016/s0169-5347(00)01967-4) |
+| `S125` | 2013 | Cavalier-Smith | Early evolution of eukaryote feeding modes, cell structural diversity, and c | European Journal of Protistology | [10.1016/j.ejop.2012.06.001](https://doi.org/10.1016/j.ejop.2012.06.001) |
 | `S27` | 2026 | Appler et al. | Oxygen metabolism in descendants of the archaeal-eukaryotic ancestor | Nature | [10.1038/s41586-026-10128-z](https://doi.org/10.1038/s41586-026-10128-z) |
 | `S31` | 2020 | Cai et al. | Diverse Asgard archaea including the novel phylum Gerdarchaeota participate  | Science China Life Sciences | [10.1007/s11427-020-1679-1](https://doi.org/10.1007/s11427-020-1679-1) |
 | `S39` | 2018 | Akıl y Robinson | Genomes of Asgard archaea encode profilins that regulate actin | Nature | [10.1038/s41586-018-0548-6](https://doi.org/10.1038/s41586-018-0548-6) |
@@ -26,13 +33,35 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S65` | 2012 | Elias et al. | Sculpting the endomembrane system in deep time: high resolution phylogenetic | Journal of Cell Science | [10.1242/jcs.101378](https://doi.org/10.1242/jcs.101378) |
 | `S70` | 2006 | Jékely y Arendt | Evolution of intraflagellar transport from coated vesicles and autogenous or | BioEssays | [10.1002/bies.20369](https://doi.org/10.1002/bies.20369) |
 | `S77` | 2005 | Ramesh, M. A.; Malik, S.-B.; Logsdon,  | A phylogenomic inventory of meiotic genes: evidence for sex in Giardia and a | Current Biology 15:185–191 | [10.1016/j.cub.2005.01.003](https://doi.org/10.1016/j.cub.2005.01.003) |
+| `S85` | 1998 | Martin y Müller | The hydrogen hypothesis for the first eukaryote | Nature | [10.1038/32096](https://doi.org/10.1038/32096) |
+| `S86` | 1998 | Moreira y López-García | Symbiosis between methanogenic archaea and delta-proteobacteria as the origi | Journal of Molecular Evolution | [10.1007/pl00006408](https://doi.org/10.1007/pl00006408) |
+| `S89` | 2002 | Cavalier-Smith | The phagotrophic origin of eukaryotes and phylogenetic classification of Pro | International Journal of Systemati | [10.1099/00207713-52-2-297](https://doi.org/10.1099/00207713-52-2-297) |
+| `S91` | 2006 | Martin y Koonin | Introns and the origin of nucleus–cytosol compartmentalization | Nature | [10.1038/nature04531](https://doi.org/10.1038/nature04531) |
+| `S92` | 2001 | Bell | Viral eukaryogenesis: was the ancestor of the nucleus a complex DNA virus? | Journal of Molecular Evolution | [10.1007/s002390010215](https://doi.org/10.1007/s002390010215) |
+| `S93` | 2001 | Takemura | Poxviruses and the origin of the eukaryotic nucleus | Journal of Molecular Evolution | [10.1007/s002390010171](https://doi.org/10.1007/s002390010171) |
+| `S96` | 1975 | Cavalier-Smith | The origin of nuclei and of eukaryotic cells | Nature | [10.1038/256463a0](https://doi.org/10.1038/256463a0) |
+| `S98` | 2018 | Beck, Martin; Mosalaganti, Shyamal; Ko | From the resolution revolution to evolution: structural insights into the ev | Current Opinion in Structural Biol | [10.1016/j.sbi.2018.07.012](https://doi.org/10.1016/j.sbi.2018.07.012) |
 
-## El servidor del editor rechazó la descarga · 9
+## El servidor del editor rechazó la descarga · 26
 
 El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
 
 | Clave | Año | Autores | Título | Publicación | DOI |
 |---|---|---|---|---|---|
+| `S103` | 2023 | Al Jewari y Baldauf | An excavate root for the eukaryote Tree of Life | Science Advances | [10.1126/sciadv.ade4973](https://doi.org/10.1126/sciadv.ade4973) |
+| `S104` | 2022 | Al Jewari y Baldauf | Conflict over the eukaryote root resides in strong outliers, mosaics and mis | Systematic Biology | [10.1093/sysbio/syac029](https://doi.org/10.1093/sysbio/syac029) |
+| `S105` | 2015 | Derelle et al. | Bacterial proteins pinpoint a single eukaryotic root | Proceedings of the National Academ | [10.1073/pnas.1420657112](https://doi.org/10.1073/pnas.1420657112) |
+| `S106` | 2014 | He et al. | An alternative root for the eukaryote tree of life | Current Biology | [10.1016/j.cub.2014.01.036](https://doi.org/10.1016/j.cub.2014.01.036) |
+| `S111` | 2013 | Brown et al. | Phylogenomics demonstrates that breviate flagellates are related to opisthok | Proceedings of the Royal Society B | [10.1098/rspb.2013.1755](https://doi.org/10.1098/rspb.2013.1755) |
+| `S112` | 2017 | Kang et al. | Between a Pod and a Hard Test: The Deep Evolution of Amoebozoa | Molecular Biology and Evolution | [10.1093/molbev/msx162](https://doi.org/10.1093/molbev/msx162) |
+| `S117` | 2014 | Maguire et al. | Complex Patterns of Gene Fission in the Eukaryotic Folate Biosynthesis Pathw | Genome Biology and Evolution | [10.1093/gbe/evu213](https://doi.org/10.1093/gbe/evu213) |
+| `S121` | 2003 | Rogozin et al. | Remarkable interkingdom conservation of intron positions and massive, lineag | Current Biology | [10.1016/s0960-9822(03)00558-x](https://doi.org/10.1016/s0960-9822(03)00558-x) |
+| `S124` | 2012 | Adl et al. | The Revised Classification of Eukaryotes | Journal of Eukaryotic Microbiology | [10.1111/j.1550-7408.2012.00644.x](https://doi.org/10.1111/j.1550-7408.2012.00644.x) |
+| `S129` | 2017 | Hehenberger, E. et al. | Novel Predators Reshape Holozoan Phylogeny and Reveal the Presence of a Two- | Current Biology 27 | [10.1016/j.cub.2017.06.006](https://doi.org/10.1016/j.cub.2017.06.006) |
+| `S135` | 2017 | Budd y Jensen | The origin of the animals and a “Savannah” hypothesis for early bilaterian e | Biological Reviews | [10.1111/brv.12239](https://doi.org/10.1111/brv.12239) |
+| `S137` | 2020 | Burki et al. | The New Tree of Eukaryotes | Trends in Ecology & Evolution | [10.1016/j.tree.2019.08.008](https://doi.org/10.1016/j.tree.2019.08.008) |
+| `S138` | 2009 | Roger y Simpson | Evolution: revisiting the root of the eukaryote tree | Current Biology | [10.1016/j.cub.2008.12.032](https://doi.org/10.1016/j.cub.2008.12.032) |
+| `S139` | 2011 | Parfrey, L. W. et al. | Estimating the timing of early eukaryotic diversification with multigene mol | Proceedings of the National Academ | [10.1073/pnas.1110633108](https://doi.org/10.1073/pnas.1110633108) |
 | `S35` | 2024 | Imachi et al. | Promethearchaeum syntrophicum gen. nov., sp. nov., an anaerobic, obligately  | International Journal of Systemati | [10.1099/ijsem.0.006435](https://doi.org/10.1099/ijsem.0.006435) |
 | `S49` | 2023 | Geiger et al. | Multiple approaches of cellular metabolism define the bacterial ancestry of  | Science Advances | [10.1126/sciadv.adh0066](https://doi.org/10.1126/sciadv.adh0066) |
 | `S60` | 2013 | Koumandou et al. | Molecular paleontology and complexity in the last eukaryotic common ancestor | Critical Reviews in Biochemistry a | [10.3109/10409238.2013.821444](https://doi.org/10.3109/10409238.2013.821444) |
@@ -42,8 +71,11 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S76` | 2021 | Skejo et al. | Evidence for a syncytial origin of eukaryotes from ancestral state reconstru | Genome Biology and Evolution | [10.1093/gbe/evab096](https://doi.org/10.1093/gbe/evab096) |
 | `S78` | 2015 | Speijer, D.; Lukeš, J.; Eliáš, M. | Sex is a ubiquitous, ancient, and inherent attribute of eukaryotic life | Proceedings of the National Academ | [10.1073/pnas.1501725112](https://doi.org/10.1073/pnas.1501725112) |
 | `S79` | 2022 | Bremer et al. | Ancestral State Reconstructions Trace Mitochondria But Not Phagocytosis to t | Genome Biology and Evolution | [10.1093/gbe/evac079](https://doi.org/10.1093/gbe/evac079) |
+| `S81` | 2021 | Tria et al. | Gene duplications trace mitochondria to the onset of eukaryote complexity | Genome Biology and Evolution | [10.1093/gbe/evab055](https://doi.org/10.1093/gbe/evab055) |
+| `S83` | 2017 | Martin et al. | Late mitochondrial origin is an artefact | Genome Biology and Evolution | [10.1093/gbe/evx027](https://doi.org/10.1093/gbe/evx027) |
+| `S84` | 2017 | Martin, W. F.; Tielens, A. G. M.; Ment | The Physiology of Phagocytosis in the Context of Mitochondrial Origin | Microbiology and Molecular Biology | [10.1128/mmbr.00008-17](https://doi.org/10.1128/mmbr.00008-17) |
 
-## El enlace no devolvió un PDF · 4
+## El enlace no devolvió un PDF · 6
 
 La respuesta fue una página web, no un artículo: el enlace lleva a la ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y busca el enlace de descarga en la propia página.
 
@@ -53,6 +85,8 @@ La respuesta fue una página web, no un artículo: el enlace lleva a la ficha de
 | `S24` | 2021 | Liu et al. | Expanded diversity of Asgard archaea and their relationships with eukaryotes | Nature | [10.1038/s41586-021-03494-3](https://doi.org/10.1038/s41586-021-03494-3) |
 | `S46` | 2018 | Martijn et al. | Deep mitochondrial origin outside the sampled alphaproteobacteria | Nature | [10.1038/s41586-018-0059-5](https://doi.org/10.1038/s41586-018-0059-5) |
 | `S71` | 2013 | van Dam et al. | Evolution of modular intraflagellar transport from a coatomer-like progenito | Proceedings of the National Academ | [10.1073/pnas.1221011110](https://doi.org/10.1073/pnas.1221011110) |
+| `S82` | 2016 | Pittis y Gabaldón | Late acquisition of mitochondria by a host with chimaeric prokaryotic ancest | Nature | [10.1038/nature16941](https://doi.org/10.1038/nature16941) |
+| `S99` | 2022 | Field et al. | Coatomer in the universe of cellular complexity | Molecular Biology of the Cell | [10.1091/mbc.e19-01-0012](https://doi.org/10.1091/mbc.e19-01-0012) |
 
 ## Declarada abierta, pero sin PDF enlazado · 1
 

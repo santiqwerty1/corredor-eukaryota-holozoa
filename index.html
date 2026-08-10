@@ -501,6 +501,54 @@
       </div>
     </sc-if>
 
+    <sc-if value="{{ isAcceso }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1180px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Acceso al texto de las fuentes</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);max-width:700px;text-wrap:pretty;">{{ accMeta }}</p>
+        <sc-if value="{{ accHay }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-6);">
+            <sc-for list="{{ accTiles }}" as="it" hint-placeholder-count="5">
+              <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-4) var(--space-6);min-width:120px;">
+                <div style="white-space:nowrap;font:500 20px var(--font-heading);color:var(--color-accent-200);">{{ it.v }}</div>
+                <div style="font-size:10.5px;color:var(--color-neutral-400);margin-top:var(--space-1);line-height:1.35;max-width:150px;">{{ it.t }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-4);">
+            <sc-for list="{{ accBtns }}" as="it" hint-placeholder-count="4">
+              <button onClick="{{ it.onClick }}" style="{{ it.style }}">{{ it.label }}</button>
+            </sc-for>
+          </div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);overflow:hidden;">
+            <table class="table" style="margin:0;">
+              <thead><tr>
+                <th style="width:52px;">Clave</th>
+                <th style="width:52px;text-align:right;">Cita</th>
+                <th style="width:52px;text-align:right;">Única</th>
+                <th>Título</th>
+                <th style="width:150px;">Estado</th>
+                <th style="width:180px;">Detalle</th>
+              </tr></thead>
+              <tbody>
+                <sc-for list="{{ accRows }}" as="it" hint-placeholder-count="8">
+                  <tr>
+                    <td style="font-family:ui-monospace,monospace;font-size:11px;color:var(--color-accent-300);">{{ it.clave }}</td>
+                    <td style="text-align:right;font-variant-numeric:tabular-nums;">{{ it.citas }}</td>
+                    <td style="text-align:right;font-variant-numeric:tabular-nums;">{{ it.unica }}</td>
+                    <td style="font-size:12.5px;">{{ it.titulo }}<br><a href="{{ it.href }}" target="_blank" rel="noopener" style="font-family:ui-monospace,monospace;font-size:10.5px;">{{ it.doi }}</a></td>
+                    <td style="font-size:11.5px;">{{ it.estado }}<br><span style="{{ it.identStyle }}">{{ it.ident }}</span></td>
+                    <td style="font-size:11px;color:var(--color-neutral-400);">{{ it.detalle }}</td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin:var(--space-4) 0 0;font-size:11px;color:var(--color-neutral-500);">{{ accNota }}</p>
+          <p style="margin:var(--space-6) 0 0;font-size:11.5px;color:var(--color-neutral-400);max-width:700px;text-wrap:pretty;">Las bloqueadas por el servidor suelen abrirse pinchando su DOI en el navegador: el rechazo era al cliente automático, no a ti. Lo que se consiga a mano se deja en <span style="font-family:ui-monospace,monospace;color:var(--color-accent-300);">fuentes_pdf/</span> y la siguiente ejecución lo da por obtenido. Ninguna afirmación queda en entredicho porque su fuente no se pudiera descargar: eso no dice nada sobre lo que la afirmación sostiene.</p>
+        </sc-if>
+      </div>
+    </sc-if>
+
     <sc-if value="{{ isCalidad }}" hint-placeholder-val="{{ false }}">
       <div style="padding:var(--space-8) 36px 48px;max-width:1080px;">
         <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Calidad probatoria del registro</h1>
@@ -557,7 +605,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;vistaInicial&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;resumen&quot;,&quot;afirmaciones&quot;,&quot;huecos&quot;,&quot;apendices&quot;,&quot;lectura&quot;],&quot;default&quot;:&quot;resumen&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;resaltarUnicaFuente&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;columnasSemanticas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;}}">
 class Component extends DCLogic {
-  state = { pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
+  state = { acceso: null, accFiltro: 'todas', pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
 
   componentDidMount() {
     // El pie declara la procedencia del corpus: se lee del manifiesto y de
@@ -589,6 +637,11 @@ class Component extends DCLogic {
       this.setState({ allBn: bn });
     }).catch(() => {});
     this.loadApx('A'); this.loadApx('D'); this.loadApx('E');
+    // Informe de acceso: puede no existir todavía —se genera con fetch_oa.py—,
+    // así que su ausencia no es un error, es un estado que la vista explica.
+    fetch('exports/acceso_fuentes.csv').then(r => r.ok ? r.text() : null).then(x => {
+      if (x) this.setState({ acceso: this.parseCSV(x).slice(1) });
+    }).catch(() => {});
     this.loadSec('3');
   }
   componentWillUnmount() { window.removeEventListener('resize', this._onRes); }
@@ -1088,6 +1141,68 @@ class Component extends DCLogic {
       pubClose: () => this.setState({ cYear: null })
     };
   }
+  accesoVals() {
+    const st = this.state;
+    const filas = st.acceso || [];
+    if (!filas.length) {
+      return { accMeta: st.acceso ? 'El informe está vacío.'
+        : 'Todavía no hay informe de acceso. Se genera con `make fetch-oa MAILTO=tu@correo`.',
+        accTiles: [], accRows: [], accBtns: [], accHay: false };
+    }
+    // Columnas del informe: 0 clave, 2 título, 3 doi, 4 acceso, 5 vía, 8 resultado,
+    // 9 detalle, 12 identidad, 13 citas, 14 fuente única.
+    const num = (x) => parseInt(x || '0', 10) || 0;
+    const logrado = (r) => r[8] === 'descargado' || r[8] === 'ya estaba';
+    const con = filas.filter(logrado);
+    const sin = filas.filter(r => !logrado(r));
+    const citasSin = sin.reduce((a, r) => a + num(r[13]), 0);
+    const unicaSin = sin.reduce((a, r) => a + num(r[14]), 0);
+    const tile = (v, t) => ({ v, t });
+    // Los recuentos de impacto los añade una versión posterior de fetch_oa.py.
+    // Si el informe es anterior, la columna viene vacía: decir «sostienen 0
+    // afirmaciones» sería afirmar algo falso, así que se calla el dato.
+    const hayImpacto = filas.some(r => num(r[13]) > 0);
+    const accTiles = [
+      tile(String(filas.length), 'fuentes en el apéndice A'),
+      tile(String(con.length), 'con texto completo'),
+      tile(String(sin.length), 'sin texto completo'),
+    ].concat(hayImpacto ? [
+      tile(String(citasSin), 'afirmaciones que dependen de ellas'),
+      tile(String(unicaSin), 'de las cuales sin otra fuente'),
+    ] : []);
+    const grupos = {};
+    for (const r of sin) grupos[r[8]] = (grupos[r[8]] || 0) + 1;
+    const seg = (a) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' +
+      (a ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);'
+         : 'background:var(--color-surface);color:var(--color-neutral-400);');
+    const accBtns = [['todas', 'Sin texto (' + sin.length + ')'], ['con', 'Obtenidas (' + con.length + ')']]
+      .concat(Object.keys(grupos).sort().map(k => [k, k + ' (' + grupos[k] + ')']))
+      .map(([v, label]) => ({ label, onClick: () => this.setState({ accFiltro: v }),
+                              style: seg(st.accFiltro === v) }));
+    let vis = st.accFiltro === 'con' ? con
+      : st.accFiltro === 'todas' ? sin : sin.filter(r => r[8] === st.accFiltro);
+    // Por impacto: la que sostiene cuarenta afirmaciones antes que la que sostiene una.
+    vis = vis.slice().sort((a, b) => num(b[13]) - num(a[13]) || num(b[14]) - num(a[14]));
+    const accRows = vis.slice(0, 120).map(r => ({
+      clave: r[0], titulo: (r[2] || '').slice(0, 96), citas: num(r[13]) || '·',
+      unica: num(r[14]) || '·', estado: r[8], detalle: (r[9] || '').slice(0, 80),
+      via: r[5] || '', ident: r[12] || '',
+      doi: r[3], href: r[3] ? 'https://doi.org/' + r[3] : '',
+      identStyle: 'font-size:10.5px;' + (/NO COINCIDE/.test(r[12] || '')
+        ? 'color:var(--color-accent-200);font-weight:600;' : 'color:var(--color-neutral-500);'),
+    }));
+    return {
+      accHay: true, accTiles, accBtns, accRows,
+      accMeta: con.length + ' de ' + filas.length + ' fuentes tienen texto completo.'
+        + (hayImpacto
+            ? ' Las ' + sin.length + ' restantes sostienen ' + citasSin + ' afirmaciones, '
+              + unicaSin + ' de ellas sin ninguna otra fuente: por eso la lista va por '
+              + 'impacto y no por clave.'
+            : ' Este informe es anterior al recuento de impacto; regenéralo con '
+              + 'fetch_oa.py para ordenar la lista por cuánto sostiene cada fuente.'),
+      accNota: vis.length > 120 ? 'mostrando las 120 primeras de ' + vis.length : '',
+    };
+  }
   calidadVals() {
     const claims = this.state.allClaims || [];
     const ACEPT = ['consenso amplio', 'aceptación mayoritaria', 'aceptación mixta', 'posición minoritaria', 'no evaluado'];
@@ -1130,7 +1245,8 @@ class Component extends DCLogic {
       { id: 'cronologia', icon: 'ph-clock-countdown', label: 'Cronología' },
       { id: 'calidad', icon: 'ph-scales', label: 'Calidad' },
       { id: 'apendices', icon: 'ph-folders', label: 'Apéndices' },
-      { id: 'lectura', icon: 'ph-article', label: 'Lectura' }
+      { id: 'lectura', icon: 'ph-article', label: 'Lectura' },
+      { id: 'acceso', icon: 'ph-file-arrow-down', label: 'Acceso' }
     ].map(n => ({
       ...n,
       ariaCurrent: view === n.id ? 'page' : null,
@@ -1240,6 +1356,7 @@ class Component extends DCLogic {
       isApend: view === 'apendices', isLectura: view === 'lectura', isConsultas: view === 'consultas',
       ...this.navBtnsVals(),
       pieCorte: st.pieCorte, pieVersion: st.pieVersion, pieEstado: st.pieEstado,
+      isAcceso: view === 'acceso', ...this.accesoVals(),
       // Calculada sobre el registro, no copiada. Si el recuento de control
       // discrepa, se dice: un número que no cuadra es información, no ruido.
       unicaFuente: (() => {
