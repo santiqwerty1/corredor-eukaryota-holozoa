@@ -15,6 +15,10 @@
     html,body{margin:0;padding:0;background:#161826;color:#e9e9ed;}
     a{color:var(--color-accent-300);} a:hover{color:var(--color-accent-200);}
     select.input option{background:#232532;color:#e9e9ed;}
+    /* El título de la tabla existe para quien la escucha, no para quien la
+       ve: arriba ya está el mismo recuento en el encabezado. */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+      overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
   </style>
 </helmet>
 <div style="display:flex;height:100vh;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow:hidden;">
@@ -137,22 +141,35 @@
               <option value="todas">Fuerza: todas</option><option value="alta">alta</option><option value="media">media</option><option value="baja">baja</option><option value="desconocida">desconocida</option>
             </select>
           </div>
-          <div style="{{ headStyle }}">
-            <span>#</span><span>Afirmación</span><span>Aceptación</span><sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span>Fuerza</span><span>Resolución</span><span>Vigencia</span></sc-if>
-          </div>
-          <div style="height:1px;flex:none;background:linear-gradient(90deg,transparent,var(--color-neutral-700) 48px,var(--color-neutral-700) calc(100% - 48px),transparent);"></div>
-          <div style="flex:1;overflow-y:auto;padding-bottom:var(--space-8);">
+          <!-- Tabla de verdad, no rejilla de divs: un lector de pantalla anuncia
+               «columna Aceptación, valor consenso amplio» en vez de leer celdas
+               sueltas sin saber de qué son. El display:grid se conserva en las
+               filas, así que el aspecto no cambia. -->
+          <table style="display:block;width:100%;border-collapse:collapse;flex:1;display:flex;flex-direction:column;min-height:0;">
+            <caption class="sr-only">{{ countLine }}</caption>
+            <thead style="display:block;flex:none;background:linear-gradient(90deg,transparent,var(--color-neutral-700) 48px,var(--color-neutral-700) calc(100% - 48px),transparent) no-repeat bottom / 100% 1px;">
+              <tr style="{{ headStyle }}">
+                <th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">#</th>
+                <th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">Afirmación</th>
+                <th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">Aceptación</th>
+                <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">Fuerza</th>
+                <th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">Resolución</th>
+                <th scope="col" style="text-align:left;font:inherit;font-weight:inherit;padding:0;">Vigencia</th></sc-if>
+              </tr>
+            </thead>
+          <tbody style="display:block;flex:1;overflow-y:auto;padding-bottom:var(--space-8);min-height:0;">
             <sc-for list="{{ rows }}" as="r" hint-placeholder-count="6">
-              <div onClick="{{ r.onClick }}" onKeyDown="{{ r.onKey }}" tabindex="0" role="button" aria-label="{{ r.aria }}" style="{{ r.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 7%,transparent);">
-                <span style="font:500 11.5px ui-monospace,monospace;color:var(--color-accent-300);">{{ r.id }}</span>
-                <span style="font-size:12.5px;line-height:1.5;color:var(--color-neutral-200);">{{ r.texto }}<sc-if value="{{ r.showSem }}" hint-placeholder-val="{{ false }}"><span style="display:block;margin-top:var(--space-1);font:11px ui-monospace,monospace;color:var(--color-neutral-400);">{{ r.sujeto }} · {{ r.pred }} · {{ r.obj }}</span></sc-if></span>
-                <span><span class="{{ r.aceptClass }}" style="font-size:10px;white-space:nowrap;">{{ r.acept }}</span></span>
-                <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span style="display:flex;align-items:center;gap:var(--space-2);font-size:11.5px;color:var(--color-neutral-300);"><span style="{{ r.dotStyle }}"></span>{{ r.fuerza }}</span>
-                <span style="font-size:11.5px;color:var(--color-neutral-300);">{{ r.resol }}</span>
-                <span style="font-size:11.5px;color:var(--color-neutral-400);">{{ r.vig }}</span></sc-if>
-              </div>
+              <tr onClick="{{ r.onClick }}" onKeyDown="{{ r.onKey }}" tabindex="0" aria-label="{{ r.aria }}" style="{{ r.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 7%,transparent);">
+                <td style="font:500 11.5px ui-monospace,monospace;color:var(--color-accent-300);padding:0;">{{ r.id }}</td>
+                <td style="font-size:12.5px;line-height:1.5;color:var(--color-neutral-200);padding:0;">{{ r.texto }}<sc-if value="{{ r.showSem }}" hint-placeholder-val="{{ false }}"><span style="display:block;margin-top:var(--space-1);font:11px ui-monospace,monospace;color:var(--color-neutral-400);">{{ r.sujeto }} · {{ r.pred }} · {{ r.obj }}</span></sc-if></td>
+                <td style="padding:0;"><span class="{{ r.aceptClass }}" style="font-size:10px;white-space:nowrap;">{{ r.acept }}</span></td>
+                <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><td style="display:flex;align-items:center;gap:var(--space-2);font-size:11.5px;color:var(--color-neutral-300);padding:0;"><span style="{{ r.dotStyle }}"></span>{{ r.fuerza }}</td>
+                <td style="font-size:11.5px;color:var(--color-neutral-300);padding:0;">{{ r.resol }}</td>
+                <td style="font-size:11.5px;color:var(--color-neutral-400);padding:0;">{{ r.vig }}</td></sc-if>
+              </tr>
             </sc-for>
-          </div>
+          </tbody>
+          </table>
         </div>
         <sc-if value="{{ claimOpen }}" hint-placeholder-val="{{ false }}">
           <aside style="width:340px;flex:none;overflow-y:auto;background:var(--color-surface);box-shadow:var(--shadow-sm);padding:var(--space-8) var(--space-8) var(--space-8) var(--space-8);display:flex;flex-direction:column;gap:var(--space-6);">
@@ -511,6 +528,44 @@
       </div>
     </sc-if>
 
+    <sc-if value="{{ isPasajes }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1180px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Pasajes que sostienen cada afirmación</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);max-width:720px;text-wrap:pretty;">{{ pasMeta }}</p>
+        <sc-if value="{{ pasHay }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-6);">
+            <sc-for list="{{ pasTiles }}" as="it" hint-placeholder-count="3">
+              <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-4) var(--space-6);min-width:120px;">
+                <div style="white-space:nowrap;font:500 20px var(--font-heading);color:var(--color-accent-200);">{{ it.v }}</div>
+                <div style="font-size:10.5px;color:var(--color-neutral-400);margin-top:var(--space-1);line-height:1.35;max-width:150px;">{{ it.t }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;align-items:center;margin-bottom:var(--space-4);">
+            <sc-for list="{{ pasBtns }}" as="it" hint-placeholder-count="4">
+              <button onClick="{{ it.onClick }}" style="{{ it.style }}">{{ it.label }}</button>
+            </sc-for>
+            <input class="input" value="{{ pasQ }}" onInput="{{ onPasQ }}" placeholder="Filtrar por afirmación o fuente…" aria-label="Filtrar pasajes" style="max-width:280px;margin-left:auto;">
+          </div>
+          <sc-for list="{{ pasRows }}" as="pr" hint-placeholder-count="4">
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:var(--space-6);background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-3);">
+              <div>
+                <div style="font:500 11.5px ui-monospace,monospace;color:var(--color-accent-300);margin-bottom:var(--space-2);">{{ pr.id }} · fuente {{ pr.fuente }}</div>
+                <p style="margin:0 0 var(--space-3);font-size:13px;line-height:1.55;color:var(--color-neutral-200);">{{ pr.texto }}</p>
+                <div style="font:11px ui-monospace,monospace;color:var(--color-neutral-500);">{{ pr.loc }}</div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-500);margin-bottom:var(--space-2);">lo que dice la fuente</div>
+                <p style="margin:0 0 var(--space-2);font-size:12.5px;line-height:1.55;color:var(--color-neutral-300);max-height:13em;overflow:auto;">{{ pr.pasaje }}</p>
+                <div style="font-size:10.5px;color:var(--color-neutral-500);">{{ pr.detalle }}</div>
+              </div>
+            </div>
+          </sc-for>
+          <p style="margin:var(--space-4) 0 0;font-size:11px;color:var(--color-neutral-500);">{{ pasNota }}</p>
+        </sc-if>
+      </div>
+    </sc-if>
+
     <sc-if value="{{ isAcceso }}" hint-placeholder-val="{{ false }}">
       <div style="padding:var(--space-8) 36px 48px;max-width:1180px;">
         <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Acceso al texto de las fuentes</h1>
@@ -615,7 +670,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;vistaInicial&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;resumen&quot;,&quot;afirmaciones&quot;,&quot;huecos&quot;,&quot;apendices&quot;,&quot;lectura&quot;],&quot;default&quot;:&quot;resumen&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;resaltarUnicaFuente&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;columnasSemanticas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;}}">
 class Component extends DCLogic {
-  state = { acceso: null, accFiltro: 'todas', pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
+  state = { acceso: null, accFiltro: 'todas', pasajes: null, pasFiltro: 'recortado', pasQ: '', pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
 
   componentDidMount() {
     // El pie declara la procedencia del corpus: se lee del manifiesto y de
@@ -658,6 +713,9 @@ class Component extends DCLogic {
     // así que su ausencia no es un error, es un estado que la vista explica.
     fetch('exports/acceso_fuentes.csv').then(r => r.ok ? r.text() : null).then(x => {
       if (x) this.setState({ acceso: this.parseCSV(x).slice(1) });
+    }).catch(() => {});
+    fetch('exports/pasajes.csv').then(r => r.ok ? r.text() : null).then(x => {
+      if (x) this.setState({ pasajes: this.parseCSV(x).slice(1) });
     }).catch(() => {});
     this.loadSec('3');
   }
@@ -1240,6 +1298,51 @@ class Component extends DCLogic {
       pubClose: () => this.setState({ cYear: null })
     };
   }
+  pasajesVals() {
+    const st = this.state;
+    const filas = st.pasajes || [];
+    if (!filas.length) {
+      return { pasHay: false, pasRows: [], pasBtns: [], pasTiles: [],
+        pasMeta: st.pasajes ? 'El informe de pasajes está vacío.'
+          : 'Todavía no hay pasajes extraídos. Se generan con `python3 scripts/extraer_pasajes.py`.' };
+    }
+    // Columnas: 0 afirmación, 1 texto, 2 fuente, 3 localizador, 4 tipo,
+    // 5 pasaje, 6 estado, 7 detalle.
+    const cuenta = {};
+    for (const r of filas) cuenta[r[6]] = (cuenta[r[6]] || 0) + 1;
+    const conPasaje = (cuenta['recortado'] || 0) + (cuenta['por concepto'] || 0);
+    const seg = (a) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);'
+      + (a ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);'
+           : 'background:var(--color-surface);color:var(--color-neutral-400);');
+    const pasBtns = Object.keys(cuenta).sort((a, b) => cuenta[b] - cuenta[a]).map(k => ({
+      label: k + ' (' + cuenta[k] + ')',
+      onClick: () => this.setState({ pasFiltro: k }),
+      style: seg(st.pasFiltro === k),
+    }));
+    const q = (st.pasQ || '').toLowerCase();
+    const vis = filas.filter(r => r[6] === st.pasFiltro
+      && (!q || (r[0] + ' ' + r[1] + ' ' + r[2]).toLowerCase().includes(q)));
+    return {
+      pasHay: true,
+      pasMeta: conPasaje + ' de ' + filas.length + ' localizadores tienen ya su pasaje delante. '
+        + 'El script recorta y presenta: decidir si el pasaje sostiene la afirmación es tuyo (§27.12). '
+        + 'Un pasaje ausente no es un defecto de la afirmación, es un localizador que no se pudo resolver.',
+      pasTiles: [
+        { v: String(filas.length), t: 'localizadores' },
+        { v: String(conPasaje), t: 'con pasaje delante' },
+        { v: String(cuenta['sin texto'] || 0), t: 'esperan el texto de su fuente' },
+      ],
+      pasBtns,
+      pasQ: st.pasQ,
+      onPasQ: (e) => this.setState({ pasQ: e.target.value }),
+      pasNota: vis.length > 60 ? 'mostrando 60 de ' + vis.length : '',
+      pasRows: vis.slice(0, 60).map(r => ({
+        id: r[0], texto: (r[1] || '').slice(0, 300), fuente: r[2],
+        loc: (r[3] || '').trim(), pasaje: (r[5] || '').slice(0, 900) || '— sin pasaje —',
+        detalle: r[7] || '',
+      })),
+    };
+  }
   accesoVals() {
     const st = this.state;
     const filas = st.acceso || [];
@@ -1345,7 +1448,8 @@ class Component extends DCLogic {
       { id: 'calidad', icon: 'ph-scales', label: 'Calidad' },
       { id: 'apendices', icon: 'ph-folders', label: 'Apéndices' },
       { id: 'lectura', icon: 'ph-article', label: 'Lectura' },
-      { id: 'acceso', icon: 'ph-file-arrow-down', label: 'Acceso' }
+      { id: 'acceso', icon: 'ph-file-arrow-down', label: 'Acceso' },
+      { id: 'pasajes', icon: 'ph-quotes', label: 'Pasajes' }
     ].map(n => ({
       ...n,
       ariaCurrent: view === n.id ? 'page' : null,
@@ -1380,7 +1484,11 @@ class Component extends DCLogic {
       onKey: (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.setState({ selId: c.id }); }
       },
-      aria: 'Afirmación ' + c.id + (highlight && this.isSingle(c) ? ', depende de una sola fuente' : ''),
+      // Sin role="button" la fila conserva su semántica de fila —que es lo que
+      // interesa: el lector anuncia «columna Aceptación, consenso amplio»—, así
+      // que la posibilidad de abrirla se dice en la etiqueta.
+      aria: 'Afirmación ' + c.id + (highlight && this.isSingle(c) ? ', depende de una sola fuente' : '')
+        + '. Intro para ver su detalle',
       style: 'display:grid;grid-template-columns:' + gridCols + ';gap:var(--space-4);align-items:start;padding:var(--space-4);cursor:pointer;border-radius:var(--radius-sm);border-bottom:1px solid var(--color-neutral-800);' +
         (st.selId === c.id ? 'background:color-mix(in oklab,var(--color-accent) 10%,transparent);' : '') +
         (highlight && this.isSingle(c) ? 'box-shadow:inset 3px 0 0 var(--color-accent);' : '')
@@ -1463,6 +1571,7 @@ class Component extends DCLogic {
       ...this.navBtnsVals(),
       pieCorte: st.pieCorte, pieVersion: st.pieVersion, pieEstado: st.pieEstado,
       isAcceso: view === 'acceso', ...this.accesoVals(),
+      isPasajes: view === 'pasajes', ...this.pasajesVals(),
       // Calculada sobre el registro, no copiada. Si el recuento de control
       // discrepa, se dice: un número que no cuadra es información, no ruido.
       unicaFuente: (() => {
