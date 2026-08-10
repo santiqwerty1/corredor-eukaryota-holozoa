@@ -64,6 +64,33 @@ PATRONES = [
 ]
 
 
+# El corpus escribe sus punteros semánticos en español y los artículos están en
+# inglés: buscar «clasificación» en un texto inglés no encuentra nada nunca. La
+# equivalencia se declara aquí, y se buscan ambas formas.
+CONCEPTOS = {
+    "clasificación": ("classification", "taxonomy", "taxonomic"),
+    "clasificacion": ("classification", "taxonomy"),
+    "filogenia": ("phylogeny", "phylogenetic", "phylogenomic"),
+    "descripción": ("description", "described", "diagnosis"),
+    "descripcion": ("description", "described"),
+    "definición": ("definition", "defined", "we define"),
+    "definicion": ("definition", "defined"),
+    "nomenclatura": ("nomenclature", "nomenclatural", "naming"),
+    "revisión": ("revision", "review", "revised"),
+    "revision": ("revision", "review"),
+    "propuesta": ("propose", "proposal", "we propose"),
+    "historia": ("history", "historical", "originally"),
+    "método": ("method", "methods"), "metodo": ("method", "methods"),
+    "muestreo": ("sampling", "sampled"),
+    "edad": ("age", "dated", "dating"),
+    "datación": ("dating", "age estimate"), "datacion": ("dating", "age estimate"),
+    "topología": ("topology", "tree"), "topologia": ("topology", "tree"),
+    "raíz": ("root", "rooting"), "raiz": ("root", "rooting"),
+    "genoma": ("genome", "genomic"),
+    "ecología": ("ecology", "ecological"), "ecologia": ("ecology", "ecological"),
+}
+
+
 def texto_de_xml(ruta: Path) -> tuple[str, dict[str, str]]:
     """Devuelve el cuerpo en texto plano y sus secciones por rótulo."""
     bruto = ruta.read_text(encoding="utf-8", errors="replace")
@@ -76,6 +103,9 @@ def texto_de_xml(ruta: Path) -> tuple[str, dict[str, str]]:
     res = re.search(r"<abstract\b[^>]*>(.*?)</abstract>", bruto, re.S | re.I)
     if res:
         secciones["resumen"] = secciones["abstract"] = _limpiar(res.group(1))
+    tit = re.search(r"<article-title>(.*?)</article-title>", bruto, re.S | re.I)
+    if tit:
+        secciones["__titulo__"] = _limpiar(tit.group(1))
     return _limpiar(bruto), secciones
 
 
@@ -192,7 +222,19 @@ def recortar(texto: str, secciones: dict[str, str], tipo: str,
         # Se devuelven los párrafos donde más pesa el concepto pedido. Es una
         # ayuda para encontrar, no un veredicto: el rótulo del estado lo dice.
         pedido = (grupos[0] or "").lower()
+        # «tesis general» pide la idea del trabajo entero: el resumen es su sitio.
+        if re.search(r"tesis general|tesis del|idea general", pedido):
+            for nombre in ("abstract", "resumen"):
+                if secciones.get(nombre):
+                    return secciones[nombre][:1800], "recortado", (
+                        "«tesis general» se resuelve con el resumen, que es donde el "
+                        "trabajo enuncia su idea")
+        if re.search(r"^t[ií]tulo|\btitle\b", pedido) and secciones.get("__titulo__"):
+            return secciones["__titulo__"], "recortado", "título del artículo"
         palabras = [w for w in re.findall(r"[\wÁ-ÿ]{4,}", pedido)][:6]
+        # A cada palabra española se le añaden sus equivalentes en inglés.
+        for w in list(palabras):
+            palabras.extend(CONCEPTOS.get(w, ()))
         if not palabras or not texto:
             return "", "no localizado", f"nada que buscar en «{pedido}»"
         parrafos = [s.strip() for s in re.split(r"(?<=[.!?])\s+(?=[A-ZÁ-Ü])", texto)
