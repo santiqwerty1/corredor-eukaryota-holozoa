@@ -5,3 +5,7 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
+
+# PDFs de fuentes en acceso abierto: se obtienen con scripts/fetch_oa.py.
+# No se versionan: sus licencias son heterogéneas y este repo es CC BY 4.0.
+fuentes_pdf/
