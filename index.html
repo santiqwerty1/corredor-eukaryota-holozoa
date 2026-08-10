@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-2350752f-03f0-4a19-9ab0-e9cdccf2815a/styles.css">
+  <script src="_ds/nocturne-2350752f-03f0-4a19-9ab0-e9cdccf2815a/_ds_bundle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <style>
+    html,body{margin:0;padding:0;background:#161826;color:#e9e9ed;}
+    a{color:var(--color-accent-300);} a:hover{color:var(--color-accent-200);}
+    select.input option{background:#232532;color:#e9e9ed;}
+  </style>
+</helmet>
+<div style="display:flex;height:100vh;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow:hidden;">
+  <aside style="width:236px;flex:none;display:flex;flex-direction:column;padding:var(--space-8) var(--space-6);gap:var(--space-6);position:relative;overflow-y:auto;">
+    <div style="position:absolute;top:0;right:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,var(--color-neutral-800) 48px,var(--color-neutral-800) calc(100% - 48px),transparent);"></div>
+    <div>
+      <div style="font:500 10.5px var(--font-heading);letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:var(--space-2);">Corpus de investigación</div>
+      <div style="font:500 16px/1.3 var(--font-heading);">Corredor Eukaryota → Holozoa</div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:var(--space-1);">
+      <sc-for list="{{ nav }}" as="it" hint-placeholder-count="5">
+        <button onClick="{{ it.onClick }}" style="{{ it.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 10%,transparent);color:var(--color-accent-200);"><i class="ph {{ it.icon }}" style="font-size:16px;"></i>{{ it.label }}</button>
+      </sc-for>
+    </nav>
+    <div style="display:flex;gap:var(--space-2);">
+      <sc-for list="{{ navBtns }}" as="nb" hint-placeholder-count="4">
+        <button onClick="{{ nb.onClick }}" title="{{ nb.title }}" style="{{ nb.style }}" style-hover="color:var(--color-accent-200);"><i class="ph {{ nb.icon }}"></i></button>
+      </sc-for>
+    </div>
+    <div style="margin-top:auto;display:flex;flex-direction:column;gap:var(--space-2);font-size:11px;color:var(--color-neutral-400);line-height:1.5;">
+      <div style="height:1px;background:linear-gradient(90deg,transparent,var(--color-neutral-800) 24px,var(--color-neutral-800) calc(100% - 24px),transparent);margin-bottom:var(--space-2);"></div>
+      <div>Corte bibliográfico<br><span style="color:var(--color-neutral-300);">{{ pieCorte }}</span></div>
+      <div>Base de conocimiento:<br><a href="https://santiqwerty1.github.io/eslabon-perdido/" style="text-decoration:none;">eslabon-perdido →</a></div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;"><span class="tag tag-accent" style="white-space:nowrap;">{{ pieVersion }}</span><span class="tag tag-outline" style="white-space:nowrap;">{{ pieEstado }}</span></div>
+    </div>
+  </aside>
+
+  <main style="flex:1;overflow-y:auto;min-width:0;">
+
+    <sc-if value="{{ isResumen }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1180px;">
+        <div style="font:500 10.5px var(--font-heading);letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:var(--space-3);">Resumen del corpus</div>
+        <h1 style="font:500 27px/1.25 var(--font-heading);margin:0 0 var(--space-3);">Del tallo de Eukaryota al nodo coanoflagelados + animales</h1>
+        <p style="margin:0 0 var(--space-8);max-width:640px;font-size:13.5px;line-height:1.6;color:var(--color-neutral-300);text-wrap:pretty;">1 952 afirmaciones con procedencia probatoria, vocabularios cerrados y búsquedas negativas declaradas. Encargo completo en la versión 0.6.0-research-audit; cada cifra procede del recuento de control del repositorio.</p>
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:var(--space-4);margin-bottom:var(--space-4);">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);color:var(--color-accent-200);">1 952</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">afirmaciones</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">523</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">fuentes distintas</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">1 500</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">entidades</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">109</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">eventos</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">81</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">hipótesis</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">68</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">búsquedas negativas activas</div></div>
+        </div>
+        <div style="display:flex;gap:var(--space-6);font-size:11.5px;color:var(--color-neutral-400);margin-bottom:var(--space-8);flex-wrap:wrap;">
+          <span><span style="color:var(--color-accent-300);font-weight:500;">1 196</span> afirmaciones dependen de una sola fuente</span>
+          <span><span style="color:var(--color-neutral-200);font-weight:500;">0</span> oraciones sin fuente</span>
+          <span><span style="color:var(--color-neutral-200);font-weight:500;">31</span> celdas «SIN CIFRA PUBLICADA LOCALIZADA»</span>
+          <span><span style="color:var(--color-neutral-200);font-weight:500;">215</span> fechas consolidadas</span>
+          <span><span style="color:var(--color-neutral-200);font-weight:500;">38</span> búsquedas negativas retiradas en la revisión histórica</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:var(--space-6);align-items:start;">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+            <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-6);">Afirmaciones por sección</div>
+            <div style="display:flex;flex-direction:column;gap:var(--space-3);font-size:11.5px;">
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">0 · Convenciones</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:5%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">12</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">1 · Alcance del corpus</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:2%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">4</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">2 · ¿Dos dominios o tres?</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:59%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">156</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">3 · Eucariogénesis</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:98%;height:100%;border-radius:3px;background:var(--color-accent-500,var(--color-accent));opacity:.85;"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">258</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">4 · Raíz eucariota</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:100%;height:100%;border-radius:3px;background:var(--color-accent-500,var(--color-accent));opacity:.85;"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">263</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">5 · Registro material</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:24%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">63</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">6 · Relojes moleculares</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:14%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">36</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">7 · Ambiente</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:22%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">58</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">8 · Ecología y trofismo</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:46%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">121</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">9 · Asociación</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:95%;height:100%;border-radius:3px;background:var(--color-accent-500,var(--color-accent));opacity:.85;"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">251</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">10 · Rasgos con costo</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:52%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">137</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">11 · Sexo y meiosis</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:46%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">122</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">12 · Multicelularidad</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:51%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">135</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">13 · Escalas y tasas</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:24%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">63</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">14 · Nomenclatura</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:83%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">218</span></div>
+              <div onClick="{{ openSecRow }}" title="ver las afirmaciones de esta sección" style="display:grid;grid-template-columns:150px 1fr 40px;gap:var(--space-4);align-items:center;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;margin:-2px -4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><span style="color:var(--color-neutral-300);">15 · Búsquedas negativas</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="width:21%;height:100%;border-radius:3px;background:var(--color-accent-700);"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">55</span></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-6);">
+            <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+              <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-2);">Cronología de los dos tallos</div>
+              <div style="font-size:11px;color:var(--color-neutral-400);margin-bottom:var(--space-4);">Kay et al. 2026 · S58 · C-193–C-195</div>
+              <svg viewBox="0 0 840 148" style="width:100%;height:auto;display:block;">
+                <line x1="20" y1="118" x2="820" y2="118" stroke="var(--color-neutral-700)" stroke-width="1"></line>
+                <line x1="114" y1="114" x2="114" y2="122" stroke="var(--color-neutral-600)"></line><text x="114" y="138" text-anchor="middle" font-size="11" fill="var(--color-neutral-400)">3.0 Ga</text>
+                <line x1="349" y1="114" x2="349" y2="122" stroke="var(--color-neutral-600)"></line><text x="349" y="138" text-anchor="middle" font-size="11" fill="var(--color-neutral-400)">2.5 Ga</text>
+                <line x1="585" y1="114" x2="585" y2="122" stroke="var(--color-neutral-600)"></line><text x="585" y="138" text-anchor="middle" font-size="11" fill="var(--color-neutral-400)">2.0 Ga</text>
+                <line x1="820" y1="114" x2="820" y2="122" stroke="var(--color-neutral-600)"></line><text x="820" y="138" text-anchor="middle" font-size="11" fill="var(--color-neutral-400)">1.5 Ga</text>
+                <rect x="91" y="16" width="122" height="16" rx="4" fill="var(--color-accent-800)" stroke="var(--color-accent)" stroke-width="1"></rect>
+                <text x="221" y="28" font-size="11.5" fill="var(--color-neutral-200)">nFECA · 3.05–2.79 Ga</text>
+                <rect x="411" y="50" width="113" height="16" rx="4" fill="var(--color-accent-800)" stroke="var(--color-accent)" stroke-width="1"></rect>
+                <text x="532" y="62" font-size="11.5" fill="var(--color-neutral-200)">mFECA · 2.37–2.13 Ga</text>
+                <rect x="679" y="84" width="61" height="16" rx="4" fill="var(--color-accent-800)" stroke="var(--color-accent)" stroke-width="1"></rect>
+                <text x="672" y="96" text-anchor="end" font-size="11.5" fill="var(--color-neutral-200)">radiación de LECA · 1.80–1.67 Ga</text>
+              </svg>
+            </div>
+            <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+              <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-4);">Cierre del encargo · v0.6.0-research-audit</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-3);font-size:12px;color:var(--color-neutral-300);">
+                <div style="display:flex;gap:var(--space-3);align-items:baseline;"><i class="ph ph-check-circle" style="color:var(--color-accent-300);font-size:13px;position:relative;top:1px;"></i>Secciones 0–15 completas y cierre de las seis preguntas</div>
+                <div style="display:flex;gap:var(--space-3);align-items:baseline;"><i class="ph ph-check-circle" style="color:var(--color-accent-300);font-size:13px;position:relative;top:1px;"></i>106 búsquedas negativas históricas auditadas: 68 activas · 38 retiradas</div>
+                <div style="display:flex;gap:var(--space-3);align-items:baseline;"><i class="ph ph-list-numbers" style="color:var(--color-accent-300);font-size:13px;position:relative;top:1px;"></i>Agenda posterior: 22 P0 · 23 P1 · 23 P2, con criterios de éxito y detención</div>
+                <div style="display:flex;gap:var(--space-3);align-items:baseline;"><i class="ph ph-shield-check" style="color:var(--color-accent-300);font-size:13px;position:relative;top:1px;"></i>Auditorías reproducibles en docs/auditorias · puerta única make verify</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isAfirm }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;height:100%;min-height:0;">
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;padding:var(--space-8) 36px 0;">
+          <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-6);">
+            <h1 style="font:500 21px var(--font-heading);margin:0;">Registro de afirmaciones</h1>
+            <span style="font-size:11.5px;color:var(--color-neutral-400);">{{ countLine }}</span>
+          </div>
+          <div style="display:flex;gap:var(--space-3);margin-bottom:var(--space-6);flex-wrap:wrap;">
+            <input class="input" placeholder="Buscar texto, sujeto o identificador…" value="{{ q }}" onChange="{{ onQ }}" style="width:300px;">
+            <select class="input" value="{{ fS }}" onChange="{{ onFS }}" style="width:auto;">
+              <sc-for list="{{ secOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o.v }}">{{ o.label }}</option></sc-for>
+            </select>
+            <select class="input" value="{{ fA }}" onChange="{{ onFA }}" style="width:auto;">
+              <option value="todas">Aceptación: todas</option><option value="consenso amplio">consenso amplio</option><option value="aceptación mayoritaria">aceptación mayoritaria</option><option value="aceptación mixta">aceptación mixta</option><option value="posición minoritaria">posición minoritaria</option><option value="no evaluado">no evaluado</option>
+            </select>
+            <select class="input" value="{{ fF }}" onChange="{{ onFF }}" style="width:auto;">
+              <option value="todas">Fuerza: todas</option><option value="alta">alta</option><option value="media">media</option><option value="baja">baja</option><option value="desconocida">desconocida</option>
+            </select>
+          </div>
+          <div style="{{ headStyle }}">
+            <span>#</span><span>Afirmación</span><span>Aceptación</span><sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span>Fuerza</span><span>Resolución</span><span>Vigencia</span></sc-if>
+          </div>
+          <div style="height:1px;flex:none;background:linear-gradient(90deg,transparent,var(--color-neutral-700) 48px,var(--color-neutral-700) calc(100% - 48px),transparent);"></div>
+          <div style="flex:1;overflow-y:auto;padding-bottom:var(--space-8);">
+            <sc-for list="{{ rows }}" as="r" hint-placeholder-count="6">
+              <div onClick="{{ r.onClick }}" style="{{ r.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 7%,transparent);">
+                <span style="font:500 11.5px ui-monospace,monospace;color:var(--color-accent-300);">{{ r.id }}</span>
+                <span style="font-size:12.5px;line-height:1.5;color:var(--color-neutral-200);">{{ r.texto }}<sc-if value="{{ r.showSem }}" hint-placeholder-val="{{ false }}"><span style="display:block;margin-top:var(--space-1);font:11px ui-monospace,monospace;color:var(--color-neutral-400);">{{ r.sujeto }} · {{ r.pred }} · {{ r.obj }}</span></sc-if></span>
+                <span><span class="{{ r.aceptClass }}" style="font-size:10px;white-space:nowrap;">{{ r.acept }}</span></span>
+                <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span style="display:flex;align-items:center;gap:var(--space-2);font-size:11.5px;color:var(--color-neutral-300);"><span style="{{ r.dotStyle }}"></span>{{ r.fuerza }}</span>
+                <span style="font-size:11.5px;color:var(--color-neutral-300);">{{ r.resol }}</span>
+                <span style="font-size:11.5px;color:var(--color-neutral-400);">{{ r.vig }}</span></sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <sc-if value="{{ claimOpen }}" hint-placeholder-val="{{ false }}">
+          <aside style="width:340px;flex:none;overflow-y:auto;background:var(--color-surface);box-shadow:var(--shadow-sm);padding:var(--space-8) var(--space-8) var(--space-8) var(--space-8);display:flex;flex-direction:column;gap:var(--space-6);">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span style="font:500 14px ui-monospace,monospace;color:var(--color-accent-300);">{{ claim.id }}</span>
+              <button class="btn btn-icon btn-ghost" onClick="{{ closeDetail }}" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+            </div>
+            <p style="margin:0;font-size:13.5px;line-height:1.6;text-wrap:pretty;">{{ claim.texto }}</p>
+            <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
+              <span class="{{ claim.aceptClass }}">{{ claim.acept }}</span>
+              <span class="tag tag-outline" style="white-space:nowrap;">{{ claim.fuerzaLabel }}</span>
+              <span class="tag tag-neutral">{{ claim.vig }}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:92px 1fr;gap:var(--space-3) var(--space-4);font-size:12px;line-height:1.5;">
+              <span style="color:var(--color-neutral-400);">Sujeto</span><span>{{ claim.sujeto }}</span>
+              <span style="color:var(--color-neutral-400);">Predicado</span><span style="font:11.5px ui-monospace,monospace;color:var(--color-accent-200);">{{ claim.pred }}</span>
+              <span style="color:var(--color-neutral-400);">Objeto</span><span>{{ claim.obj }}</span>
+              <span style="color:var(--color-neutral-400);">Atribución</span><span><sc-for list="{{ claim.atribSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+              <span style="color:var(--color-neutral-400);">Fuente</span><span><sc-for list="{{ claim.fuenteSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+              <span style="color:var(--color-neutral-400);">Motivo</span><span style="color:var(--color-neutral-300);">{{ claim.motivo }}</span>
+              <span style="color:var(--color-neutral-400);">Resolución</span><span>{{ claim.resol }}</span>
+              <span style="color:var(--color-neutral-400);">Sección</span><span>{{ claim.sec }}</span>
+            </div>
+            <div>
+              <div style="font:500 10.5px var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:var(--space-3);">Referencias cruzadas</div>
+              <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
+                <sc-for list="{{ claimRefs }}" as="ref" hint-placeholder-count="2">
+                  <button onClick="{{ ref.onClick }}" style="{{ ref.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 16%,transparent);">{{ ref.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+          </aside>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isHuecos }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1080px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Búsquedas negativas y huecos</h1>
+        <p style="margin:0 0 var(--space-8);font-size:12.5px;color:var(--color-neutral-400);">{{ bnSubLine }}</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);max-width:760px;margin-bottom:var(--space-8);">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);color:var(--color-accent-200);">68</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);line-height:1.4;">activas tras la revisión de 2026-08-08</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);">38</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);line-height:1.4;">retiradas con disposición y evidencia conservadas</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);">22 · 23 · 23</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);line-height:1.4;">agenda posterior P0 · P1 · P2</div></div>
+        </div>
+        <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-6);">
+          <sc-for list="{{ bloques }}" as="bl" hint-placeholder-count="6">
+            <button onClick="{{ bl.onClick }}" style="{{ bl.style }}" style-hover="color:var(--color-accent-200);">{{ bl.label }}<span style="margin-left:6px;font-size:9.5px;opacity:.7;">{{ bl.n }}</span></button>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+          <sc-for list="{{ bn }}" as="b" hint-placeholder-count="4">
+            <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);display:grid;grid-template-columns:76px 1fr;gap:var(--space-4);">
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);align-items:flex-start;">
+                <span style="font:500 11.5px ui-monospace,monospace;color:var(--color-accent-300);">{{ b.id }}</span>
+              </div>
+              <div style="min-width:0;">
+                <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-2);">
+                  <span style="font:500 13px var(--font-heading);">{{ b.hueco }}</span>
+                  <span class="{{ b.estadoClass }}" style="font-size:9.5px;white-space:nowrap;">{{ b.estado }}</span>
+                </div>
+                <p style="margin:0 0 var(--space-2);font-size:12px;line-height:1.55;color:var(--color-neutral-300);text-wrap:pretty;">{{ b.resultado }}</p>
+                <span style="display:inline-flex;gap:4px;flex-wrap:wrap;"><sc-for list="{{ b.refChips }}" as="bc" hint-placeholder-count="2"><span data-ref="{{ bc.id }}" onClick="{{ openRef }}" style="{{ bc.style }}">{{ bc.id }}</span></sc-for></span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isApend }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1080px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-6);">Apéndices A–H</h1>
+        <div style="display:flex;gap:var(--space-1);flex-wrap:wrap;margin-bottom:var(--space-8);">
+          <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="8">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}" style-hover="color:var(--color-accent-200);">{{ t.label }}<span style="margin-left:6px;font-size:10px;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">{{ t.n }}</span></button>
+          </sc-for>
+        </div>
+        <div style="font-size:11.5px;color:var(--color-neutral-400);margin-bottom:var(--space-4);">{{ apxMeta }} · clic en una fila para desplegarla completa</div>
+        <table class="table" style="width:100%;font-size:12px;">
+          <thead><tr><sc-for list="{{ apxHead }}" as="hh" hint-placeholder-count="3"><th>{{ hh }}</th></sc-for></tr></thead>
+          <tbody>
+            <sc-for list="{{ apxRows }}" as="row" hint-placeholder-count="6">
+              <tr onClick="{{ row.onClick }}" style="{{ row.style }}"><sc-for list="{{ row.cells }}" as="cell" hint-placeholder-count="3"><td style="{{ cell.s }}">{{ cell.t }}</td></sc-for></tr>
+              <tr style="{{ row.dStyle }}"><td colSpan="9" style="padding:var(--space-4) var(--space-6);background:color-mix(in oklab,var(--color-accent) 5%,transparent);"><div style="display:grid;grid-template-columns:170px 1fr;gap:var(--space-2) var(--space-4);font-size:11.5px;line-height:1.55;"><sc-for list="{{ row.fields }}" as="af" hint-placeholder-count="4"><span style="color:var(--color-neutral-400);font-family:ui-monospace,monospace;font-size:10px;">{{ af.k }}</span><span style="color:var(--color-neutral-200);word-break:break-word;"><sc-for list="{{ af.segs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span></sc-for></div></td></tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isConsultas }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1120px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Consultas sobre el corpus</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);">{{ conMeta }}</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-4);">
+          <select class="input" value="{{ conDs }}" onChange="{{ onConDs }}" style="width:auto;">
+            <sc-for list="{{ conDsOpts }}" as="dso" hint-placeholder-count="3"><option value="{{ dso.v }}">{{ dso.label }}</option></sc-for>
+          </select>
+          <select class="input" value="{{ conGroup }}" onChange="{{ onConGroup }}" style="width:auto;">
+            <sc-for list="{{ conGroupOpts }}" as="go" hint-placeholder-count="3"><option value="{{ go.v }}">{{ go.label }}</option></sc-for>
+          </select>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-3);">
+          <sc-for list="{{ conds }}" as="cd" hint-placeholder-count="1">
+            <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;align-items:center;">
+              <select class="input" value="{{ cd.f }}" onChange="{{ cd.onF }}" style="width:auto;">
+                <sc-for list="{{ cd.fieldOpts }}" as="fo" hint-placeholder-count="4"><option value="{{ fo }}">{{ fo }}</option></sc-for>
+              </select>
+              <select class="input" value="{{ cd.op }}" onChange="{{ cd.onOp }}" style="width:auto;">
+                <option value="contiene">contiene</option><option value="no contiene">no contiene</option><option value="es">es</option><option value="no es">no es</option><option value="empieza por">empieza por</option><option value="regex">regex</option>
+              </select>
+              <input class="input" value="{{ cd.v }}" onChange="{{ cd.onV }}" placeholder="valor…" style="width:260px;">
+              <button class="btn btn-icon btn-ghost" onClick="{{ cd.onDel }}" aria-label="Quitar condición"><i class="ph ph-x"></i></button>
+            </div>
+          </sc-for>
+        </div>
+        <button class="btn btn-ghost" onClick="{{ addCond }}" style="margin-bottom:var(--space-6);"><i class="ph ph-plus" style="margin-right:6px;"></i>Añadir condición</button>
+        <sc-if value="{{ conShowGroups }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);max-width:720px;margin-bottom:var(--space-6);">
+            <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-4);">Recuento por «{{ conGroup }}»</div>
+            <div style="display:flex;flex-direction:column;gap:var(--space-3);font-size:11.5px;">
+              <sc-for list="{{ conGroups }}" as="gg" hint-placeholder-count="4">
+                <div style="display:grid;grid-template-columns:minmax(120px,240px) 1fr 48px;gap:var(--space-4);align-items:center;"><span style="color:var(--color-neutral-300);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ gg.label }}</span><div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="{{ gg.barStyle }}"></div></div><span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">{{ gg.n }}</span></div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+          <sc-for list="{{ conRows }}" as="cr" hint-placeholder-count="3">
+            <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+              <div style="display:grid;grid-template-columns:110px 1fr;gap:3px var(--space-4);font-size:11.5px;line-height:1.5;">
+                <sc-for list="{{ cr.fields }}" as="fl" hint-placeholder-count="4">
+                  <span style="color:var(--color-neutral-500);font-family:ui-monospace,monospace;font-size:10px;">{{ fl.k }}</span><span style="color:var(--color-neutral-200);min-width:0;"><sc-for list="{{ fl.segs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isFuentes }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1080px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Fuentes y riesgo probatorio</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);max-width:640px;text-wrap:pretty;">Qué fuentes sostienen el corpus y cuántas afirmaciones dependen de una sola de ellas. Cifras del recuento de control; ranking calculado sobre el registro completo.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--space-4);margin-bottom:var(--space-8);max-width:860px;">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);">523</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);">fuentes distintas</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);color:var(--color-accent-200);">428</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);">soporte único de ≥1 afirmación</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);">83</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);">citadas en una sola C</div></div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 22px var(--font-heading);">10</div><div style="font-size:11px;color:var(--color-neutral-400);margin-top:var(--space-1);">sin uso en una C</div></div>
+        </div>
+        <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-4);">
+          <button onClick="{{ onRankCitas }}" style="{{ rankCitasStyle }}" style-hover="color:var(--color-accent-200);">Más citadas</button>
+          <button onClick="{{ onRankSolo }}" style="{{ rankSoloStyle }}" style-hover="color:var(--color-accent-200);">Más afirmaciones de fuente única</button>
+        </div>
+        <div style="font-size:11px;color:var(--color-neutral-400);margin-bottom:var(--space-3);">{{ fMeta }}</div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+          <sc-for list="{{ fRows }}" as="fr" hint-placeholder-count="8">
+            <div onClick="{{ fr.onClick }}" style="{{ fr.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 6%,transparent);">
+              <div style="display:grid;grid-template-columns:54px minmax(200px,1.2fr) 1fr 56px 56px;gap:var(--space-4);align-items:center;">
+                <span style="font:500 11px ui-monospace,monospace;color:var(--color-accent-300);">{{ fr.clave }}</span>
+                <span style="font-size:11.5px;color:var(--color-neutral-300);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ fr.ref }}</span>
+                <div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="{{ fr.barStyle }}"></div></div>
+                <span style="text-align:right;font-size:11.5px;color:var(--color-neutral-300);font-variant-numeric:tabular-nums;" title="afirmaciones que la citan">{{ fr.nC }}</span>
+                <span style="text-align:right;font-size:11.5px;color:var(--color-accent-300);font-variant-numeric:tabular-nums;" title="afirmaciones donde es la única fuente">{{ fr.nSolo }}</span>
+              </div>
+              <sc-if value="{{ fr.open }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:var(--space-4);border-top:1px solid var(--color-neutral-800);padding-top:var(--space-4);">
+                  <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-3);text-wrap:pretty;">{{ fr.dTitulo }}</div>
+                  <div style="display:grid;grid-template-columns:96px 1fr;gap:var(--space-2) var(--space-4);font-size:11.5px;line-height:1.55;margin-bottom:var(--space-4);">
+                    <span style="color:var(--color-neutral-400);">publicación</span><span>{{ fr.dPub }}</span>
+                    <span style="color:var(--color-neutral-400);">DOI / URL</span><span><sc-for list="{{ fr.dDoiSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                    <span style="color:var(--color-neutral-400);">tipo</span><span><span class="tag tag-outline" style="font-size:9.5px;">{{ fr.dTipo }}</span></span>
+                    <span style="color:var(--color-neutral-400);">notas de calidad</span><span style="color:var(--color-neutral-300);">{{ fr.dNotas }}</span>
+                    <span style="color:var(--color-neutral-400);">consulta</span><span>{{ fr.dConsulta }}</span>
+                  </div>
+                  <div style="font:500 10.5px var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:var(--space-3);">{{ fr.citasTitle }}</div>
+                  <div style="display:flex;flex-direction:column;gap:var(--space-2);max-height:240px;overflow-y:auto;">
+                    <sc-for list="{{ fr.citas }}" as="fc" hint-placeholder-count="3">
+                      <div onClick="{{ fc.onClick }}" style="display:grid;grid-template-columns:56px 1fr;gap:var(--space-3);font-size:11.5px;cursor:pointer;border-radius:var(--radius-sm);padding:2px 4px;" style-hover="background:color-mix(in oklab,var(--color-accent) 10%,transparent);">
+                        <span style="font:500 10.5px ui-monospace,monospace;color:var(--color-accent-300);">{{ fc.id }}</span>
+                        <span style="color:var(--color-neutral-300);">{{ fc.texto }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <div style="margin-top:var(--space-3);font-size:10.5px;color:var(--color-neutral-500);">columnas: citas totales · afirmaciones donde es la única fuente</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isHipotesis }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1120px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Hipótesis: compatibilidades e incompatibilidades</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);max-width:660px;text-wrap:pretty;">{{ hMeta }} Trazo discontinuo = incompatibilidad declarada; punteado = compatibilidad parcial declarada. Dos variantes para comparar: grafo y matriz.</p>
+        <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-6);">
+          <sc-for list="{{ hViewBtns }}" as="hb" hint-placeholder-count="3"><button onClick="{{ hb.onClick }}" style="{{ hb.style }}" style-hover="color:var(--color-accent-200);">{{ hb.label }}</button></sc-for>
+        </div>
+        <sc-if value="{{ hShowGraph }}" hint-placeholder-val="{{ true }}">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-6);">
+            <svg viewBox="0 0 800 460" style="width:100%;max-width:820px;height:auto;display:block;margin:0 auto;">
+              <sc-for list="{{ hEdges }}" as="he" hint-placeholder-count="4"><line x1="{{ he.x1 }}" y1="{{ he.y1 }}" x2="{{ he.x2 }}" y2="{{ he.y2 }}" stroke="{{ he.stroke }}" stroke-width="1.3" stroke-dasharray="{{ he.dash }}"></line></sc-for>
+              <sc-for list="{{ hNodes }}" as="hn" hint-placeholder-count="6">
+                <g transform="translate({{ hn.x }},{{ hn.y }})" onClick="{{ hn.onClick }}" style="cursor:pointer;">
+                  <circle r="{{ hn.r }}" fill="var(--color-neutral-800)" stroke="{{ hn.stroke }}" stroke-width="1.5"></circle>
+                  <text y="4" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="var(--color-neutral-100)">{{ hn.label }}</text>
+                </g>
+              </sc-for>
+            </svg>
+            <div style="font-size:10.5px;color:var(--color-neutral-500);text-align:center;">radio = fuentes a favor · clic en un nodo para ver la ficha</div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hShowMatrix }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-6);overflow-x:auto;">
+            <div style="{{ hMatrixGrid }}">
+              <sc-for list="{{ hMatrixCells }}" as="mc" hint-placeholder-count="10">
+                <div style="{{ mc.style }}" title="{{ mc.title }}" onClick="{{ mc.onClick }}">{{ mc.t }}</div>
+              </sc-for>
+            </div>
+            <div style="margin-top:var(--space-4);display:flex;gap:var(--space-6);font-size:10.5px;color:var(--color-neutral-400);"><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:color-mix(in oklab,var(--color-accent) 45%,transparent);vertical-align:-1px;"></span> incompatibles</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;border:1px dotted var(--color-neutral-400);vertical-align:-1px;"></span> compatibilidad parcial declarada</span></div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hShowLista }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-6);">
+            <sc-for list="{{ hLista }}" as="hl" hint-placeholder-count="10">
+              <div onClick="{{ hl.onClick }}" style="{{ hl.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 6%,transparent);">
+                <div style="display:grid;grid-template-columns:56px 1fr 170px;gap:var(--space-3);align-items:baseline;">
+                  <span style="font:500 11px ui-monospace,monospace;color:var(--color-accent-300);">{{ hl.clave }}</span>
+                  <span style="font-size:12px;color:var(--color-neutral-200);">{{ hl.sostiene }}</span>
+                  <span style="text-align:right;font-size:10.5px;color:var(--color-neutral-400);white-space:nowrap;">{{ hl.balance }}</span>
+                </div>
+                <sc-if value="{{ hl.open }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin-top:var(--space-3);border-top:1px solid var(--color-neutral-800);padding-top:var(--space-3);display:grid;grid-template-columns:96px 1fr;gap:var(--space-2) var(--space-4);font-size:11.5px;line-height:1.6;">
+                    <span style="color:var(--color-neutral-400);">sostiene</span><span>{{ hl.sostieneFull }}</span>
+                    <span style="color:var(--color-accent-300);">a favor</span><span><sc-for list="{{ hl.favorSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                    <span style="color:var(--color-neutral-400);">en contra</span><span style="color:var(--color-neutral-400);"><sc-for list="{{ hl.contraSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                    <span style="color:var(--color-neutral-400);">incompatible</span><span><sc-for list="{{ hl.incompatSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hSelOpen }}" hint-placeholder-val="{{ false }}">
+          <div data-scroll-target="hip" style="background:var(--color-surface);box-shadow:var(--shadow-md);border-radius:var(--radius-md);padding:var(--space-6);max-width:760px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-3);">
+              <span style="font:500 13px ui-monospace,monospace;color:var(--color-accent-300);">{{ hSel.clave }}</span>
+              <button class="btn btn-icon btn-ghost" onClick="{{ hClose }}" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+            </div>
+            <p style="margin:0 0 var(--space-4);font-size:13px;line-height:1.6;text-wrap:pretty;">{{ hSel.sostiene }}</p>
+            <div style="display:grid;grid-template-columns:96px 1fr;gap:var(--space-2) var(--space-4);font-size:11.5px;line-height:1.55;">
+              <span style="color:var(--color-accent-300);">a favor</span><span style="font-size:11px;color:var(--color-neutral-300);"><sc-for list="{{ hSel.favorSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+              <span style="color:var(--color-neutral-400);">en contra</span><span style="font-size:11px;color:var(--color-neutral-400);"><sc-for list="{{ hSel.contraSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+              <span style="color:var(--color-neutral-400);">incompatible</span><span style="font-size:11px;color:var(--color-neutral-300);"><sc-for list="{{ hSel.incompatSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isCronologia }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1120px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Cronología del apéndice D</h1>
+        <p style="margin:0 0 var(--space-6);font-size:12.5px;color:var(--color-neutral-400);max-width:660px;text-wrap:pretty;">{{ cronoMeta }} Cada barra es un intervalo tal como lo da la fuente: el ancho es la incertidumbre, nunca se promedia. Borde continuo = observado; discontinuo = inferido o modelado.</p>
+        <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-6);">
+          <sc-for list="{{ cronoBtns }}" as="cbn" hint-placeholder-count="3"><button onClick="{{ cbn.onClick }}" style="{{ cbn.style }}" style-hover="color:var(--color-accent-200);">{{ cbn.label }}</button></sc-for>
+        </div>
+        <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-6);">
+          <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4);">
+            <div style="font:500 13px var(--font-heading);">Edades geológicas · Ga y Ma antes del presente</div>
+            <input class="input" value="{{ cQ }}" onChange="{{ onCQ }}" placeholder="Filtrar por descripción…" style="width:240px;margin-left:auto;">
+          </div>
+          <div style="display:grid;grid-template-columns:250px 1fr;gap:var(--space-4);font-size:10px;color:var(--color-neutral-500);margin-bottom:var(--space-1);">
+            <span style="text-align:right;color:var(--color-neutral-600);">{{ cronoCount }}</span>
+            <div style="position:relative;height:14px;">
+              <span style="position:absolute;left:0;">4 000 Ma</span><span style="position:absolute;left:25%;transform:translateX(-50%);">3 000</span><span style="position:absolute;left:50%;transform:translateX(-50%);">2 000</span><span style="position:absolute;left:75%;transform:translateX(-50%);">1 000</span><span style="position:absolute;right:0;">0</span>
+            </div>
+          </div>
+          <div style="max-height:460px;overflow-y:auto;display:flex;flex-direction:column;">
+            <sc-for list="{{ cronoRows }}" as="cr" hint-placeholder-count="12">
+              <div onClick="{{ cr.onClick }}" title="{{ cr.title }}" style="{{ cr.rowStyle }}" style-hover="background:color-mix(in oklab,var(--color-accent) 7%,transparent);">
+                <div style="display:grid;grid-template-columns:250px 1fr;gap:var(--space-4);align-items:center;height:22px;">
+                  <span style="font-size:10.5px;color:var(--color-neutral-300);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ cr.label }}</span>
+                  <div style="position:relative;height:100%;background-image:linear-gradient(90deg,var(--color-neutral-800) 1px,transparent 1px);background-size:25.02% 100%;">
+                    <div style="{{ cr.barStyle }}"></div>
+                  </div>
+                </div>
+                <sc-if value="{{ cr.open }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding:var(--space-3) var(--space-2) var(--space-4);display:grid;grid-template-columns:110px 1fr;gap:var(--space-2) var(--space-4);font-size:11.5px;line-height:1.5;">
+                    <span style="color:var(--color-neutral-400);">se aplica a</span><span>{{ cr.label }}</span>
+                    <span style="color:var(--color-neutral-400);">intervalo</span><span style="font-family:ui-monospace,monospace;">{{ cr.dIntervalo }}</span>
+                    <span style="color:var(--color-neutral-400);">método</span><span>{{ cr.dMetodo }}</span>
+                    <span style="color:var(--color-neutral-400);">obs. o inf.</span><span>{{ cr.dObs }}</span>
+                    <span style="color:var(--color-neutral-400);">fuente</span><span style="color:var(--color-neutral-400);"><sc-for list="{{ cr.fuenteSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);max-width:900px;">
+          <div style="display:flex;align-items:baseline;gap:var(--space-3);margin-bottom:var(--space-4);">
+            <div style="font:500 13px var(--font-heading);">Publicaciones · años CE</div>
+            <span style="font-size:11px;color:var(--color-neutral-500);">{{ pubMeta }}</span>
+          </div>
+          <div style="display:flex;align-items:flex-end;gap:2px;height:100px;overflow:hidden;">
+            <sc-for list="{{ pubBars }}" as="pb" hint-placeholder-count="10">
+              <div style="{{ pb.style }}" title="{{ pb.title }}" onClick="{{ pb.onClick }}" style-hover="background:color-mix(in oklab,var(--color-accent) 8%,transparent);"><div style="{{ pb.bar }}"></div></div>
+            </sc-for>
+          </div>
+          <div style="position:relative;height:16px;margin-top:var(--space-1);font-size:10px;color:var(--color-neutral-500);">
+            <sc-for list="{{ pubTicks }}" as="pt" hint-placeholder-count="4"><span style="{{ pt.style }}">{{ pt.label }}</span></sc-for>
+          </div>
+          <sc-if value="{{ pubSelOpen }}" hint-placeholder-val="{{ false }}">
+            <div data-scroll-target="pub" style="margin-top:var(--space-4);border-top:1px solid var(--color-neutral-800);padding-top:var(--space-4);">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-3);">
+                <span style="font:500 12.5px var(--font-heading);">{{ pubSelTitle }}</span>
+                <button class="btn btn-icon btn-ghost" onClick="{{ pubClose }}" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);max-height:220px;overflow-y:auto;">
+                <sc-for list="{{ pubList }}" as="pl" hint-placeholder-count="3">
+                  <div onClick="{{ pl.onClick }}" style="{{ pl.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 6%,transparent);">
+                    <div style="display:grid;grid-template-columns:1fr 150px;gap:var(--space-4);font-size:11.5px;align-items:baseline;">
+                      <span style="color:var(--color-neutral-200);">{{ pl.label }}</span>
+                      <span style="text-align:right;"><sc-for list="{{ pl.fuenteSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                    </div>
+                    <sc-if value="{{ pl.open }}" hint-placeholder-val="{{ false }}">
+                      <div style="margin-top:var(--space-2);border-top:1px solid var(--color-neutral-800);padding-top:var(--space-3);display:grid;grid-template-columns:110px 1fr;gap:var(--space-2) var(--space-4);font-size:11px;line-height:1.55;">
+                        <span style="color:var(--color-neutral-400);">tipo</span><span>{{ pl.dTipo }}</span>
+                        <span style="color:var(--color-neutral-400);">método</span><span>{{ pl.dMetodo }}</span>
+                        <span style="color:var(--color-neutral-400);">obs. o inf.</span><span>{{ pl.dObs }}</span>
+                        <span style="color:var(--color-neutral-400);">fuente completa</span><span><sc-for list="{{ pl.dFuenteSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                        <span style="color:var(--color-neutral-400);">fila del registro</span><span><sc-for list="{{ pl.dFilaSegs }}" as="sg" hint-placeholder-count="1"><span data-ref="{{ sg.ref }}" onClick="{{ openEnt }}" style="{{ sg.style }}">{{ sg.v }}</span></sc-for></span>
+                      </div>
+                    </sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isCalidad }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 48px;max-width:1080px;">
+        <h1 style="font:500 21px var(--font-heading);margin:0 0 var(--space-2);">Calidad probatoria del registro</h1>
+        <p style="margin:0 0 var(--space-8);font-size:12.5px;color:var(--color-neutral-400);max-width:660px;text-wrap:pretty;">{{ calMeta }} Los ejes no se promedian: aceptación mide recepción, fuerza mide evidencia. Que convivan valores dispares es información.</p>
+        <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:var(--space-6);align-items:start;">
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+            <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-4);">Aceptación × fuerza</div>
+            <div style="display:grid;grid-template-columns:170px repeat(4,1fr);gap:3px;font-size:10.5px;">
+              <sc-for list="{{ calCells }}" as="cc" hint-placeholder-count="10">
+                <div style="{{ cc.style }}" title="{{ cc.title }}">{{ cc.t }}</div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);">
+            <div style="font:500 13px var(--font-heading);margin-bottom:var(--space-2);">Fuente única por sección</div>
+            <div style="font-size:11px;color:var(--color-neutral-400);margin-bottom:var(--space-4);">proporción de afirmaciones que dependen de una sola fuente</div>
+            <div style="display:flex;flex-direction:column;gap:var(--space-3);font-size:11px;">
+              <sc-for list="{{ calSecs }}" as="cs" hint-placeholder-count="8">
+                <div style="display:grid;grid-template-columns:132px 1fr 44px;gap:var(--space-3);align-items:center;">
+                  <span style="color:var(--color-neutral-300);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ cs.label }}</span>
+                  <div style="height:6px;border-radius:3px;background:var(--color-neutral-800);"><div style="{{ cs.barStyle }}"></div></div>
+                  <span style="text-align:right;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">{{ cs.pct }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isLectura }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:var(--space-8) 36px 64px;">
+        <div style="display:grid;grid-template-columns:250px minmax(0,720px);gap:var(--space-8);align-items:start;">
+          <div style="display:flex;flex-direction:column;gap:var(--space-1);position:sticky;top:var(--space-8);">
+            <div style="font:500 10.5px var(--font-heading);letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:var(--space-3);">Índice · docs/secciones</div>
+            <sc-for list="{{ lecIndex }}" as="li" hint-placeholder-count="8">
+              <button onClick="{{ li.onClick }}" style="{{ li.style }}" style-hover="color:var(--color-accent-200);"><span>{{ li.label }}</span><span style="font:10px ui-monospace,monospace;color:var(--color-neutral-500);">{{ li.n }}</span></button>
+            </sc-for>
+            <div style="margin-top:var(--space-3);font-size:10.5px;color:var(--color-neutral-500);line-height:1.5;">Las secciones atenuadas no están cargadas en la maqueta.</div>
+          </div>
+          <div style="min-width:0;">
+            <div style="font:500 10.5px var(--font-heading);letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:var(--space-3);">{{ lecKicker }}</div>
+            <sc-for list="{{ lecBlocks }}" as="b" hint-placeholder-count="8">
+              <div style="{{ b.style }}">{{ b.text }}<sc-if value="{{ b.hasRefs }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;gap:4px;flex-wrap:wrap;margin-left:8px;vertical-align:baseline;"><sc-for list="{{ b.refs }}" as="rf" hint-placeholder-count="2"><span data-ref="{{ rf.id }}" onClick="{{ openRef }}" style="{{ rf.style }}">{{ rf.id }}</span></sc-for></span></sc-if></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;vistaInicial&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;resumen&quot;,&quot;afirmaciones&quot;,&quot;huecos&quot;,&quot;apendices&quot;,&quot;lectura&quot;],&quot;default&quot;:&quot;resumen&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;resaltarUnicaFuente&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;columnasSemanticas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;}}">
+class Component extends DCLogic {
+  state = { pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
+
+  componentDidMount() {
+    // El pie declara la procedencia del corpus: se lee del manifiesto y de
+    // VERSION en vez de quedar embebido, para que no se pudra al crecer el repo.
+    fetch('manifest.json').then(r => r.ok ? r.json() : null).then(m => {
+      if (!m) return;
+      const st = {};
+      if (m.fecha_de_corte_bibliografico) {
+        const [y, mo, d] = m.fecha_de_corte_bibliografico.split('-');
+        const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        st.pieCorte = parseInt(d,10) + ' de ' + (meses[parseInt(mo,10)-1]||mo) + ' de ' + y;
+      }
+      if (m.estado) st.pieEstado = String(m.estado).split(';')[0];
+      this.setState(st);
+    }).catch(() => {});
+    fetch('VERSION').then(r => r.ok ? r.text() : null).then(v => {
+      if (v) this.setState({ pieVersion: v.trim().split('-')[0] });
+    }).catch(() => {});
+    this._onRes = () => this.setState({ winW: window.innerWidth });
+    window.addEventListener('resize', this._onRes);
+    fetch('exports/afirmaciones.csv').then(r => { if (!r.ok) throw new Error('afirmaciones.csv: ' + r.status); return r.text(); }).then(t => {
+      const rows = this.parseCSV(t).slice(1);
+      const claims = rows.filter(r => r.length >= 12).map(r => ({ id: r[0], sec: this.secOf(r[0]), texto: r[1], sujeto: r[2], pred: r[3], obj: r[4], atrib: r[5], fuente: r[6], acept: r[7], fuerza: r[8], motivo: r[9], resol: r[10], vig: r[11] }));
+      this.setState({ allClaims: claims });
+    }).catch(() => {});
+    fetch('exports/busquedas_negativas.csv').then(r => { if (!r.ok) throw new Error('busquedas_negativas.csv: ' + r.status); return r.text(); }).then(t => {
+      const rows = this.parseCSV(t).slice(1);
+      const bn = rows.filter(r => r.length >= 7).map(r => ({ id: r[0], bloque: r[1], estado: r[2], hueco: r[3], resultado: r[5], refs: r[6] }));
+      this.setState({ allBn: bn });
+    }).catch(() => {});
+    this.loadApx('A'); this.loadApx('D'); this.loadApx('E');
+    this.loadSec('3');
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._onRes); }
+
+  NAV_KEYS = ['view', 'selId', 'fSel', 'hSel', 'hView', 'cronoSel', 'cYear', 'cPub', 'tab', 'apxSel', 'bloque', 'lecSec', 'fS', 'fA', 'fF', 'cFilt', 'fRank', 'conDs', 'conGroup'];
+  _undo = []; _redo = []; _navving = false;
+  componentDidUpdate(prevProps, prevState) {
+    if (this._navving) { this._navving = false; return; }
+    if (!prevState) return;
+    if (this.NAV_KEYS.some(k => prevState[k] !== this.state[k])) {
+      const snap = {}; for (const k of this.NAV_KEYS) snap[k] = prevState[k];
+      this._undo.push(snap); if (this._undo.length > 60) this._undo.shift();
+      this._redo = [];
+      this.forceUpdate();
+    }
+  }
+  _snapNow() { const s = {}; for (const k of this.NAV_KEYS) s[k] = this.state[k]; return s; }
+  navBack = () => { const s = this._undo.pop(); if (!s) return; this._redo.push(this._snapNow()); this._navving = true; this.setState(s); this.resetScroll(); };
+  navFwd = () => { const s = this._redo.pop(); if (!s) return; this._undo.push(this._snapNow()); this._navving = true; this.setState(s); this.resetScroll(); };
+  navRoot = () => { this.setState({ view: 'resumen', selId: null, fSel: null, hSel: null, cronoSel: null, cYear: null, cPub: null, apxSel: null }); this.resetScroll(); };
+  navUp = () => {
+    const st = this.state;
+    const view = st.view ?? this.props.vistaInicial ?? 'resumen';
+    if (view === 'afirmaciones' && st.selId) return this.setState({ selId: null });
+    if (view === 'fuentes' && st.fSel) return this.setState({ fSel: null });
+    if (view === 'hipotesis' && st.hSel) return this.setState({ hSel: null });
+    if (view === 'cronologia' && (st.cPub !== null)) return this.setState({ cPub: null });
+    if (view === 'cronologia' && (st.cronoSel !== null || st.cYear !== null)) return this.setState({ cronoSel: null, cYear: null });
+    if (view === 'apendices' && st.apxSel !== null) return this.setState({ apxSel: null });
+    this.navRoot();
+  };
+  navBtnsVals() {
+    const btn = (icon, title, onClick, enabled) => ({
+      icon, title, onClick,
+      style: 'flex:1;display:flex;align-items:center;justify-content:center;padding:6px 0;border:none;border-radius:var(--radius-md);font-size:14px;background:var(--color-bg);box-shadow:var(--shadow-sm);' +
+        (enabled ? 'cursor:pointer;color:var(--color-neutral-300);' : 'cursor:default;color:var(--color-neutral-700);')
+    });
+    return { navBtns: [
+      btn('ph-arrow-left', 'Atrás', this.navBack, this._undo.length > 0),
+      btn('ph-arrow-right', 'Adelante', this.navFwd, this._redo.length > 0),
+      btn('ph-arrow-elbow-left-up', 'Subir (cerrar el detalle)', this.navUp, true),
+      btn('ph-house', 'Raíz', this.navRoot, true)
+    ] };
+  }
+
+  parseCSV(t) {
+    const rows = []; let row = [], cur = '', inQ = false;
+    for (let i = 0; i < t.length; i++) {
+      const ch = t[i];
+      if (inQ) {
+        if (ch === '"') { if (t[i + 1] === '"') { cur += '"'; i++; } else inQ = false; }
+        else cur += ch;
+      } else {
+        if (ch === '"') inQ = true;
+        else if (ch === ',') { row.push(cur); cur = ''; }
+        else if (ch === '\n') { row.push(cur); if (row.length > 1 || row[0] !== '') rows.push(row); row = []; cur = ''; }
+        else if (ch !== '\r') cur += ch;
+      }
+    }
+    if (cur !== '' || row.length) { row.push(cur); if (row.length > 1 || row[0] !== '') rows.push(row); }
+    return rows;
+  }
+
+  SEC_COUNTS = [['0',12],['1',4],['2',156],['3',258],['4',263],['5',63],['6',36],['7',58],['8',121],['9',251],['10',137],['11',122],['12',135],['13',63],['14',218],['15',55]];
+  secOf(id) {
+    const n = parseInt(id.slice(2), 10); let acc = 0;
+    for (const [s, c] of this.SEC_COUNTS) { acc += c; if (n <= acc) return s; }
+    return '15';
+  }
+
+  apxCfg = {
+    A: { file: 'data/apendices/A_fuentes.csv', total: '523 fuentes distintas', head: ['clave', 'autores', 'año', 'título', 'publicación', 'tipo'], cols: [[0,'mono'],[1,''],[2,'muted'],[3,''],[4,'muted'],[6,'muted']] },
+    B: { file: 'data/apendices/B_entidades.csv', total: '1 500 entidades consolidadas', head: ['etiqueta preferida', 'tipo', 'sinónimos y grafías', 'marcas', 'primera fila'], cols: [[0,'strong'],[1,'muted'],[2,'muted'],[3,''],[4,'mono']] },
+    C: { file: 'data/apendices/C_eventos.csv', total: '109 eventos consolidados', head: ['clave', 'tipo', 'participantes con su papel', 'intervalo', 'desenlace'], cols: [[0,'mono'],[1,''],[2,'muted'],[4,'muted'],[7,'']] },
+    D: { file: 'data/apendices/D_fechas.csv', total: '215 fechas consolidadas', head: ['a qué se aplica', 'límite antiguo', 'límite reciente', 'unidad', 'tipo', 'obs. o inf.'], cols: [[0,''],[1,'mono'],[2,'mono'],[3,'muted'],[5,'muted'],[7,'']] },
+    E: { file: 'data/apendices/E_hipotesis.csv', total: '81 hipótesis consolidadas', head: ['clave', 'qué sostiene', 'a favor', 'en contra', 'incompatibilidades'], cols: [[0,'mono'],[1,''],[4,'muted'],[5,'muted'],[6,'muted']] },
+    F: { file: 'data/apendices/F_magnitudes.csv', total: '562 magnitudes consolidadas', head: ['magnitud', 'valor', 'unidad', 'se aplica a', 'obs. o inf.', 'fila'], cols: [[0,''],[1,'strong'],[2,'muted'],[3,'muted'],[6,''],[8,'mono']] },
+    G: { file: 'data/apendices/G_material_no_encajado.csv', total: 'material no encajado en el esquema principal', head: ['material', 'afirmación o estado', 'fuente', 'sección propuesta'], cols: [[0,'strong'],[1,''],[2,'muted'],[3,'muted']] },
+    H: { file: 'data/apendices/H_recuento_control.csv', total: 'recuento de control · se actualiza al regenerar', head: ['control', 'valor'], cols: [[0,''],[1,'strongmono']] }
+  };
+  loadApx(k) {
+    if (this.state.apx[k]) return;
+    const cfg = this.apxCfg[k];
+    fetch(cfg.file).then(r => r.text()).then(t => {
+      const rows = this.parseCSV(t).slice(1);
+      this.setState(s => ({ apx: { ...s.apx, [k]: rows } }));
+    }).catch(() => {});
+  }
+  cellStyle(k) {
+    if (k === 'mono') return 'font-family:ui-monospace,monospace;color:var(--color-accent-300);white-space:nowrap;';
+    if (k === 'strongmono') return 'text-align:right;font-family:ui-monospace,monospace;color:var(--color-accent-200);';
+    if (k === 'strong') return 'font-weight:500;';
+    if (k === 'muted') return 'color:var(--color-neutral-400);';
+    return '';
+  }
+
+  aceptClass(a) {
+    if (a === 'consenso amplio') return 'tag tag-accent';
+    if (a === 'aceptación mayoritaria') return 'tag tag-accent-2';
+    if (a === 'no evaluado') return 'tag tag-neutral';
+    return 'tag tag-outline';
+  }
+  dotStyle(fz) {
+    const c = fz === 'alta' ? 'var(--color-accent)' : fz === 'media' ? 'var(--color-neutral-400)' : 'var(--color-neutral-600)';
+    return 'flex:none;width:7px;height:7px;border-radius:50%;background:' + c + ';';
+  }
+  estadoClass(e) {
+    if (e === 'LA LITERATURA DECLARA QUE NO SE SABE') return 'tag tag-accent';
+    if (e === 'NO BUSCADO') return 'tag tag-neutral';
+    return 'tag tag-outline';
+  }
+  isSingle(c) { return (c.fuente.match(/S\d+/g) || []).filter((v, i, a) => a.indexOf(v) === i).length === 1; }
+  scrollToSel(marker) {
+    setTimeout(() => {
+      const main = document.querySelector('main');
+      const el = main && main.querySelector('[data-scroll-target="' + marker + '"]');
+      if (!el || !main) return;
+      const mr = main.getBoundingClientRect(), er = el.getBoundingClientRect();
+      if (er.top < mr.top + 8 || er.bottom > mr.bottom - 8) main.scrollTop += er.top - mr.top - 72;
+    }, 130);
+  }
+  entStyle() { return 'cursor:pointer;font:10px ui-monospace,monospace;color:var(--color-accent-300);background:color-mix(in oklab,var(--color-accent) 12%,transparent);padding:1px 6px;border-radius:var(--radius-sm);white-space:nowrap;'; }
+  segs(text) {
+    const out = []; const re = /(https?:\/\/[^\s;,)"']+|C-\d{3,4}|S\d{2,3}|BN-\d{3}|H\d{2,3})/g;
+    const s = String(text ?? ''); let last = 0, m;
+    while ((m = re.exec(s))) {
+      if (m.index > last) out.push({ v: s.slice(last, m.index), ref: '', style: '' });
+      out.push({ v: m[0], ref: m[0], style: /^http/.test(m[0]) ? 'cursor:pointer;font:10.5px ui-monospace,monospace;color:var(--color-accent-300);text-decoration:underline;word-break:break-all;' : this.entStyle() });
+      last = m.index + m[0].length;
+    }
+    if (last < s.length) out.push({ v: s.slice(last), ref: '', style: '' });
+    return out;
+  }
+  openEntId(id) {
+    if (!id) return;
+    if (/^https?:/.test(id)) { window.open(id, '_blank', 'noopener'); return; }
+    if (/^C-/.test(id)) { if ((this.state.allClaims || []).some(c => c.id === id)) { this.setState({ view: 'afirmaciones', selId: id }); this.resetScroll(); } }
+    else if (/^S\d/.test(id)) { this.loadApx('A'); this.setState({ view: 'fuentes', fSel: id }); this.resetScroll(); }
+    else if (/^BN-/.test(id)) { const b = (this.state.allBn || []).find(x => x.id === id); this.setState({ view: 'huecos', bloque: b ? b.bloque : this.state.bloque }); this.resetScroll(); }
+    else if (/^H\d/.test(id)) { this.loadApx('E'); this.setState({ view: 'hipotesis', hSel: id }); this.resetScroll(); }
+  }
+  openEnt = (e) => { e.stopPropagation(); this.openEntId(e.currentTarget.dataset.ref); };
+  resetScroll() { const m = document.querySelector('main'); if (m) m.scrollTop = 0; }
+
+  consultaDatasets() {
+    const apxRows = (k) => {
+      const raw = this.state.apx[k], cfg = this.apxCfg[k];
+      if (!raw) { this.loadApx(k); return null; }
+      return raw.map(r => Object.fromEntries(cfg.cols.map((cc, j) => [cfg.head[j], r[cc[0]] ?? ''])));
+    };
+    const defs = {
+      afirmaciones: { label: 'Afirmaciones (1 952)', get: () => ({ fields: ['id', 'sec', 'texto', 'sujeto', 'pred', 'obj', 'atrib', 'fuente', 'acept', 'fuerza', 'motivo', 'resol', 'vig'], rows: this.state.allClaims }) },
+      negativas: { label: 'Búsquedas negativas (68)', get: () => ({ fields: ['id', 'bloque', 'estado', 'hueco', 'resultado', 'refs'], rows: this.state.allBn }) }
+    };
+    for (const k of Object.keys(this.apxCfg)) {
+      defs['apx' + k] = { label: 'Apéndice ' + k, get: () => ({ fields: this.apxCfg[k].head, rows: apxRows(k) }) };
+    }
+    return defs;
+  }
+  condMatch(c, row) {
+    const raw = String(row[c.f] ?? '');
+    const s = raw.toLowerCase(), v = (c.v || '').toLowerCase();
+    if (c.op === 'regex') { try { return new RegExp(c.v, 'i').test(raw); } catch (e) { return false; } }
+    if (!v) return true;
+    if (c.op === 'contiene') return s.includes(v);
+    if (c.op === 'no contiene') return !s.includes(v);
+    if (c.op === 'es') return s === v;
+    if (c.op === 'no es') return s !== v;
+    if (c.op === 'empieza por') return s.startsWith(v);
+    return true;
+  }
+  consultaVals() {
+    const st = this.state;
+    const defs = this.consultaDatasets();
+    const conDsOpts = Object.keys(defs).map(v => ({ v, label: defs[v].label }));
+    const ds = defs[st.conDs].get();
+    const loaded = !!ds.rows;
+    const rows = ds.rows || [];
+    const updCond = (i, patch) => this.setState(s => ({ conds: s.conds.map((c, j) => j === i ? { ...c, ...patch } : c) }));
+    const conds = st.conds.map((c, i) => ({
+      ...c, fieldOpts: ds.fields,
+      onF: (e) => updCond(i, { f: e.target.value }),
+      onOp: (e) => updCond(i, { op: e.target.value }),
+      onV: (e) => updCond(i, { v: e.target.value }),
+      onDel: () => this.setState(s => ({ conds: s.conds.filter((_, j) => j !== i) }))
+    }));
+    const filtered = rows.filter(r => st.conds.every(c => this.condMatch(c, r)));
+    const conGroupOpts = [{ v: '', label: 'Agrupar por: nada' }].concat(ds.fields.map(f => ({ v: f, label: 'Agrupar por: ' + f })));
+    let conGroups = [];
+    if (st.conGroup) {
+      const m = new Map();
+      for (const r of filtered) { const k = String(r[st.conGroup] ?? '').slice(0, 80) || '(vacío)'; m.set(k, (m.get(k) || 0) + 1); }
+      const arr = [...m.entries()].sort((a, b) => b[1] - a[1]).slice(0, 14);
+      const max = arr.length ? arr[0][1] : 1;
+      conGroups = arr.map(([label, n]) => ({ label, n, barStyle: 'width:' + Math.max(2, Math.round(n / max * 100)) + '%;height:100%;border-radius:3px;background:var(--color-accent-700);' }));
+    }
+    const conRows = (st.conGroup ? [] : filtered.slice(0, 30)).map(r => ({
+      fields: ds.fields.map(k => ({ k, v: String(r[k] ?? '').slice(0, 300) })).filter(f => f.v !== '').map(x => ({ k: x.k, segs: this.segs(x.v) }))
+    }));
+    const conMeta = loaded
+      ? filtered.length + ' resultados de ' + rows.length + ' filas · condiciones en Y · ' + (st.conGroup ? 'recuento agrupado' : 'mostrando ' + conRows.length)
+      : 'cargando el dataset…';
+    return {
+      conDs: st.conDs, conDsOpts, conGroup: st.conGroup, conGroupOpts, conds, conMeta, conGroups, conRows,
+      conShowGroups: !!st.conGroup && conGroups.length > 0,
+      onConDs: (e) => { const k = e.target.value; const d = this.consultaDatasets()[k].get(); this.setState({ conDs: k, conGroup: '', conds: [{ f: d.fields[0], op: 'contiene', v: '' }] }); },
+      onConGroup: (e) => this.setState({ conGroup: e.target.value }),
+      addCond: () => this.setState(s => ({ conds: s.conds.concat([{ f: ds.fields[0], op: 'contiene', v: '' }]) }))
+    };
+  }
+  SEC_LABELS = { '0': 'Convenciones', '1': 'Alcance', '2': '¿Dos dominios o tres?', '3': 'Eucariogénesis', '4': 'Raíz eucariota', '5': 'Registro material', '6': 'Relojes moleculares', '7': 'Ambiente', '8': 'Ecología y trofismo', '9': 'Asociación', '10': 'Rasgos con costo', '11': 'Sexo y meiosis', '12': 'Multicelularidad', '13': 'Escalas y tasas', '14': 'Nomenclatura', '15': 'Lo que no se sabe' };
+  LEC_FILES = { '2': '003-02-2-el-punto-de-partida-dos-dominios-o-tres', '3': '004-03-3-eucariogenesis', '5': '006-05-5-el-registro-material-fosiles-y-biomarcadores', '9': '010-09-9-asociacion-el-catalogo-de-desenlaces', '13': '014-13-13-escalas-tasas-y-recuentos', '15': '016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos' };
+
+  loadSec(k) {
+    if (this.state.lecCache[k] || !this.LEC_FILES[k]) return;
+    fetch('docs/secciones/' + this.LEC_FILES[k] + '.md').then(r => r.text()).then(t => {
+      this.setState(s => ({ lecCache: { ...s.lecCache, [k]: this.parseMd(t) } }));
+    }).catch(() => {});
+  }
+  parseMd(t) {
+    const blocks = [];
+    const S = {
+      h1: 'font:500 24px var(--font-heading);margin:0 0 18px;',
+      h2: 'font:500 17px var(--font-heading);margin:28px 0 10px;',
+      h3: 'font:500 14px var(--font-heading);color:var(--color-neutral-200);margin:22px 0 8px;',
+      h4: 'font:500 12.5px var(--font-heading);color:var(--color-neutral-300);margin:18px 0 6px;',
+      p: 'font-size:13.5px;line-height:1.7;color:var(--color-neutral-200);margin:0 0 10px;text-wrap:pretty;',
+      marker: 'font:10.5px ui-monospace,monospace;color:var(--color-neutral-500);background:var(--color-bg);border:1px dashed var(--color-neutral-700);border-radius:var(--radius-sm);padding:6px 10px;margin:8px 0 14px;display:inline-block;',
+      table: 'font:10.5px/1.5 ui-monospace,monospace;color:var(--color-neutral-400);background:var(--color-bg);border-radius:var(--radius-sm);padding:10px;margin:0 0 12px;white-space:pre-wrap;word-break:break-word;'
+    };
+    const clean = (s) => s.replace(/\*\*?/g, '').replace(/`/g, '');
+    const lines = t.split('\n');
+    let para = [], tbl = [];
+    const refStyle = 'cursor:pointer;font:10px ui-monospace,monospace;color:var(--color-accent-300);background:color-mix(in oklab,var(--color-accent) 12%,transparent);padding:1px 5px;border-radius:var(--radius-sm);white-space:nowrap;';
+    const flushP = () => {
+      if (!para.length) return;
+      let text = clean(para.join(' ')).trim();
+      let refs = [];
+      const m = text.match(/\[([^\[\]]{2,200})\]\s*$/);
+      if (m) {
+        const ids = m[1].match(/(C-\d{3,4}|S\d{2,3}|BN-\d{3})/g) || [];
+        if (ids.length) { refs = ids.filter((v, i, a) => a.indexOf(v) === i).map(id => ({ id, style: refStyle })); text = text.slice(0, m.index).trim(); }
+      }
+      blocks.push({ style: S.p, text, refs, hasRefs: refs.length > 0 });
+      para = [];
+    };
+    const flushT = () => { if (tbl.length) { blocks.push({ style: S.table, text: tbl.join('\n'), refs: [], hasRefs: false }); tbl = []; } };
+    for (const raw of lines) {
+      const l = raw.trimEnd();
+      const tm = l.match(/^<!--\s*TABLE:([^\s]+)\s*-->/);
+      if (tm) { flushP(); flushT(); blocks.push({ style: S.marker, text: 'tabla · ' + tm[1], refs: [], hasRefs: false }); continue; }
+      if (l.startsWith('<!--')) continue;
+      if (l.startsWith('|')) { flushP(); tbl.push(l); continue; }
+      flushT();
+      if (l.startsWith('#### ')) { flushP(); blocks.push({ style: S.h4, text: clean(l.slice(5)), refs: [], hasRefs: false }); }
+      else if (l.startsWith('### ')) { flushP(); blocks.push({ style: S.h3, text: clean(l.slice(4)), refs: [], hasRefs: false }); }
+      else if (l.startsWith('## ')) { flushP(); blocks.push({ style: S.h2, text: clean(l.slice(3)), refs: [], hasRefs: false }); }
+      else if (l.startsWith('# ')) { flushP(); blocks.push({ style: S.h1, text: clean(l.slice(2)), refs: [], hasRefs: false }); }
+      else if (!l.trim()) flushP();
+      else para.push(l);
+    }
+    flushP(); flushT();
+    return blocks;
+  }
+  lecturaVals(openRef) {
+    const st = this.state;
+    const chip = (active, avail) => 'display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);border:none;padding:6px 10px;border-radius:var(--radius-md);text-align:left;width:100%;font:400 11.5px var(--font-body);' +
+      (avail ? 'cursor:pointer;' : 'cursor:default;opacity:.4;') +
+      (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:transparent;color:var(--color-neutral-300);');
+    const lecIndex = this.SEC_COUNTS.map(([k, n]) => ({
+      label: k + ' · ' + this.SEC_LABELS[k],
+      n: String(n),
+      onClick: this.LEC_FILES[k] ? (() => { this.setState({ lecSec: k }); this.loadSec(k); }) : (() => {}),
+      style: chip(st.lecSec === k, !!this.LEC_FILES[k])
+    }));
+    const blocks = st.lecCache[st.lecSec];
+    const lecBlocks = (blocks || [{ style: 'font-size:12.5px;color:var(--color-neutral-400);', text: 'Cargando la sección…', refs: [], hasRefs: false }]).map(b => ({ ...b }));
+    return { lecIndex, lecBlocks, openRef, lecKicker: 'Sección ' + st.lecSec + ' · docs/secciones/' + (this.LEC_FILES[st.lecSec] || '') + '.md' };
+  }
+  fuentesVals() {
+    const st = this.state;
+    const claims = st.allClaims || [];
+    const cites = {}, solo = {};
+    for (const c of claims) {
+      const refs = (c.fuente.match(/S\d+/g) || []).filter((v, i, a) => a.indexOf(v) === i);
+      for (const r of refs) cites[r] = (cites[r] || 0) + 1;
+      if (refs.length === 1) solo[refs[0]] = (solo[refs[0]] || 0) + 1;
+    }
+    const metaRow = {};
+    for (const r of (st.apx.A || [])) metaRow[r[0]] = r;
+    const byKey = st.fRank === 'solo' ? solo : cites;
+    const keys = Object.keys(byKey).sort((a, b) => byKey[b] - byKey[a]).slice(0, 18);
+    if (st.fSel && !keys.includes(st.fSel)) keys.unshift(st.fSel);
+    const max = keys.length ? byKey[keys[0]] || 1 : 1;
+    const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
+    return {
+      fRows: keys.map(k => {
+        const open = st.fSel === k;
+        const row = metaRow[k];
+        const citas = open ? claims.filter(c => (c.fuente.match(/S\d+/g) || []).includes(k)) : [];
+        return {
+          clave: k, ref: row ? row[1] + ' (' + row[2] + '). ' + row[3] : '—',
+          nC: cites[k] || 0, nSolo: solo[k] || 0, open,
+          onClick: () => this.setState({ fSel: open ? null : k }),
+          style: 'display:flex;flex-direction:column;padding:var(--space-3) var(--space-4);background:var(--color-surface);border-radius:var(--radius-md);cursor:pointer;' + (open ? 'box-shadow:0 0 0 1px var(--color-accent);' : 'box-shadow:var(--shadow-sm);'),
+          barStyle: 'width:' + Math.max(2, Math.round(byKey[k] / max * 100)) + '%;height:100%;border-radius:3px;background:var(--color-accent-700);',
+          dTitulo: row ? row[3] : '(sin fila en el apéndice A cargado)',
+          dPub: row ? row[4] : '—', dDoiSegs: open ? this.segs(row ? row[5] : '—') : [], dTipo: row ? row[6] : '—',
+          dNotas: row ? (row[7] || '').slice(0, 420) : '—', dConsulta: row ? row[8] : '—',
+          citasTitle: citas.length + (citas.length === 1 ? ' afirmación la cita' : ' afirmaciones la citan') + (citas.length > 40 ? ' · mostrando 40' : ''),
+          citas: citas.slice(0, 40).map(c => ({
+            id: c.id, texto: c.texto.length > 150 ? c.texto.slice(0, 150) + '…' : c.texto,
+            onClick: (e) => { e.stopPropagation(); this.setState({ view: 'afirmaciones', selId: c.id }); this.resetScroll(); }
+          }))
+        };
+      }),
+      fMeta: claims.length ? 'top 18 de ' + Object.keys(cites).length + ' fuentes citadas · calculado sobre ' + claims.length + ' afirmaciones · clic en una fila para desplegar su ficha' : 'cargando el registro…',
+      onRankCitas: () => this.setState({ fRank: 'citas' }),
+      onRankSolo: () => this.setState({ fRank: 'solo' }),
+      rankCitasStyle: seg(st.fRank === 'citas'), rankSoloStyle: seg(st.fRank === 'solo')
+    };
+  }
+  hipotesisData() {
+    const raw = this.state.apx.E || [];
+    const hs = raw.map(r => ({ clave: r[0], sostiene: r[1] || '', favor: r[4] || '', contra: r[5] || '', incompat: r[6] || '' }));
+    const idx = Object.fromEntries(hs.map(h => [h.clave, h]));
+    const edges = new Map();
+    for (const h of hs) {
+      for (const segTxt of h.incompat.split(/[;.]/)) {
+        const refs = (segTxt.match(/H\d{2,3}/g) || []).filter(r => idx[r] && r !== h.clave);
+        const kind = /incompatible/i.test(segTxt) ? 'inc' : (/compatible/i.test(segTxt) ? 'comp' : 'inc');
+        for (const r of refs) {
+          const key = [h.clave, r].sort().join('-');
+          if (!edges.has(key) || kind === 'inc') edges.set(key, { a: key.split('-H')[0], pair: key, kind });
+        }
+      }
+    }
+    const deg = {};
+    for (const key of edges.keys()) { const [a, b] = key.split(/-(?=H)/); deg[a] = (deg[a] || 0) + 1; deg[b] = (deg[b] || 0) + 1; }
+    const nodes = Object.keys(deg).sort((a, b) => deg[b] - deg[a]).slice(0, 16).sort();
+    return { hs, idx, edges, nodes };
+  }
+  hipotesisVals() {
+    const st = this.state;
+    const { hs, idx, edges, nodes } = this.hipotesisData();
+    const loaded = hs.length > 0;
+    const pos = {};
+    const cx = 400, cy = 230, R = 180;
+    nodes.forEach((n, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / nodes.length; pos[n] = { x: Math.round(cx + R * Math.cos(a)), y: Math.round(cy + R * Math.sin(a)) }; });
+    const favCount = (h) => ((idx[h] || {}).favor.match(/S\d+/g) || []).length;
+    const hEdges = [];
+    for (const [key, e] of edges) {
+      const [a, b] = key.split(/-(?=H)/);
+      if (!pos[a] || !pos[b]) continue;
+      hEdges.push({ x1: pos[a].x, y1: pos[a].y, x2: pos[b].x, y2: pos[b].y, stroke: e.kind === 'inc' ? 'var(--color-accent)' : 'var(--color-neutral-500)', dash: e.kind === 'inc' ? '7 5' : '1 4' });
+    }
+    const hNodes = nodes.map(n => ({
+      x: pos[n].x, y: pos[n].y, label: n, r: 16 + Math.min(10, favCount(n) * 2),
+      stroke: st.hSel === n ? 'var(--color-accent)' : 'var(--color-neutral-400)',
+      onClick: () => { this.setState({ hSel: n }); this.scrollToSel('hip'); }
+    }));
+    const cellBase = 'display:flex;align-items:center;justify-content:center;height:26px;border-radius:3px;font:10px ui-monospace,monospace;';
+    const hMatrixCells = [];
+    hMatrixCells.push({ t: '', style: cellBase, title: '', onClick: () => {} });
+    for (const c of nodes) hMatrixCells.push({ t: c, style: cellBase + 'color:var(--color-neutral-400);', title: c, onClick: () => { this.setState({ hSel: c }); this.scrollToSel('hip'); } });
+    for (const r of nodes) {
+      hMatrixCells.push({ t: r, style: cellBase + 'color:var(--color-neutral-400);cursor:pointer;', title: r, onClick: () => { this.setState({ hSel: r }); this.scrollToSel('hip'); } });
+      for (const c of nodes) {
+        const key = [r, c].sort().join('-');
+        const e = r !== c && edges.get(key);
+        let s = cellBase + 'cursor:pointer;';
+        if (r === c) s += 'background:var(--color-neutral-800);';
+        else if (e && e.kind === 'inc') s += 'background:color-mix(in oklab,var(--color-accent) 45%,transparent);';
+        else if (e) s += 'border:1px dotted var(--color-neutral-400);';
+        else s += 'background:color-mix(in oklab,var(--color-neutral-800) 40%,transparent);';
+        hMatrixCells.push({ t: '', style: s, title: r + ' × ' + c + (e ? (e.kind === 'inc' ? ' · incompatibles' : ' · compatibilidad parcial') : ''), onClick: () => { this.setState({ hSel: r }); this.scrollToSel('hip'); } });
+      }
+    }
+    const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
+    const hViewBtns = [['lista', 'Lista'], ['grafo', 'Grafo'], ['matriz', 'Matriz'], ['ambas', 'Grafo y matriz']].map(([v, label]) => ({ label, onClick: () => this.setState({ hView: v }), style: seg(st.hView === v) }));
+    const hLista = st.hView === 'lista' ? hs.map(h => {
+      const open = st.hSel === h.clave;
+      const nF = (h.favor.match(/S\d+/g) || []).length, nC = (h.contra.match(/S\d+/g) || []).length;
+      return {
+        clave: h.clave, open,
+        sostiene: h.sostiene.length > 170 ? h.sostiene.slice(0, 170) + '…' : h.sostiene,
+        sostieneFull: h.sostiene,
+        balance: nF + ' a favor · ' + nC + ' en contra',
+        favorSegs: open ? this.segs(h.favor) : [], contraSegs: open ? this.segs(h.contra) : [], incompatSegs: open ? this.segs(h.incompat || '—') : [],
+        onClick: () => this.setState({ hSel: open ? null : h.clave }),
+        style: 'display:flex;flex-direction:column;padding:var(--space-3) var(--space-4);cursor:pointer;border-radius:var(--radius-md);background:var(--color-surface);' + (open ? 'box-shadow:0 0 0 1px var(--color-accent);' : 'box-shadow:var(--shadow-sm);')
+      };
+    }) : [];
+    return {
+      hMeta: loaded ? hs.length + ' hipótesis en el apéndice E; se muestran las ' + nodes.length + ' con relaciones declaradas.' : 'Cargando el apéndice E…',
+      hViewBtns, hEdges, hNodes, hMatrixCells,
+      hMatrixGrid: 'display:grid;grid-template-columns:repeat(' + (nodes.length + 1) + ',minmax(30px,1fr));gap:3px;min-width:' + ((nodes.length + 1) * 34) + 'px;',
+      hShowGraph: st.hView === 'grafo' || st.hView === 'ambas', hShowMatrix: st.hView === 'matriz' || st.hView === 'ambas', hShowLista: st.hView === 'lista', hLista,
+      hSel: st.hSel && idx[st.hSel] ? { ...idx[st.hSel], favorSegs: this.segs(idx[st.hSel].favor), contraSegs: this.segs(idx[st.hSel].contra), incompatSegs: this.segs(idx[st.hSel].incompat) } : null, hSelOpen: !!st.hSel && !!idx[st.hSel] && st.hView !== 'lista',
+      hClose: () => this.setState({ hSel: null })
+    };
+  }
+  cronoVals() {
+    const st = this.state;
+    const raw = this.state.apx.D || [];
+    const num = (s) => { const m = String(s).replace(',', '.').match(/-?\d+(\.\d+)?/); return m ? parseFloat(m[0]) : null; };
+    const toMa = (v, u) => v === null ? null : (/ga/i.test(u) ? v * 1000 : (/ma|millon/i.test(u) ? v : null));
+    const q = st.cQ.toLowerCase();
+    const all = [], pubs = [];
+    let nObs = 0, nInf = 0;
+    for (const r of raw) {
+      const u = r[3] || '';
+      const a = toMa(num(r[1]), u), b = toMa(num(r[2]), u);
+      if (a !== null) {
+        const obs = /observad/i.test(r[7] || '') ? 'observado' : 'inferido';
+        if (obs === 'observado') nObs++; else nInf++;
+        if ((st.cFilt === 'todos' || st.cFilt === obs) && (!q || String(r[0]).toLowerCase().includes(q)))
+          all.push({ aplica: r[0], a, b: b === null ? a : b, obs, metodo: r[6] || '', fuente: r[8] || '', intervalo: (r[1] || '') + ' – ' + (r[2] || '') + ' ' + u });
+      } else if (/año/i.test(u) || /publicaci/i.test(r[5] || '')) {
+        const y = num(r[1]); if (y && y > 1700 && y < 2100) pubs.push({ y, label: r[0], fuente: r[8] || '', metodo: r[6] || '', obs: r[7] || '', tipo: r[5] || '', fila: r[9] || '' });
+      }
+    }
+    all.sort((x, y) => y.a - x.a);
+    const MAX = 4000;
+    const cronoRows = all.map((it, i) => {
+      const left = Math.max(0, (1 - Math.min(it.a, MAX) / MAX) * 100);
+      const right = Math.max(left, (1 - Math.max(0, it.b) / MAX) * 100);
+      const isPoint = (right - left) < 0.45;
+      const barStyle = isPoint
+        ? 'position:absolute;left:' + Math.min(left, 99).toFixed(2) + '%;top:7px;width:8px;height:8px;border-radius:50%;margin-left:-4px;' +
+          (it.obs === 'observado' ? 'background:var(--color-accent);' : 'background:transparent;border:1.5px dashed var(--color-accent-300);')
+        : 'position:absolute;left:' + left.toFixed(2) + '%;width:' + (right - left).toFixed(2) + '%;top:7px;height:8px;border-radius:3px;' +
+          (it.obs === 'observado' ? 'background:var(--color-accent-700);border:1px solid var(--color-accent);' : 'background:color-mix(in oklab,var(--color-accent) 8%,transparent);border:1px dashed var(--color-accent-300);');
+      const open = st.cronoSel === i;
+      return {
+        label: it.aplica, title: it.aplica + ' · ' + it.intervalo + ' · ' + it.obs,
+        onClick: () => this.setState({ cronoSel: open ? null : i }),
+        barStyle, open,
+        dIntervalo: it.intervalo, dMetodo: it.metodo || '—', dObs: it.obs, fuenteSegs: open ? this.segs(it.fuente || '—') : [],
+        rowStyle: 'display:flex;flex-direction:column;flex:none;cursor:pointer;border-radius:var(--radius-sm);padding:0 2px;' +
+          (open ? 'background:color-mix(in oklab,var(--color-accent) 10%,transparent);' : '')
+      };
+    });
+    const decs = {};
+    for (const p of pubs) { const d = Math.floor(p.y / 10) * 10; decs[d] = (decs[d] || 0) + 1; }
+    const dks = Object.keys(decs).map(Number).sort((a, b) => a - b);
+    const dmin = dks[0] || 0, dmax = dks[dks.length - 1] || 0, dmaxN = Math.max(1, ...Object.values(decs));
+    const pubBars = [];
+    for (let d = dmin; d <= dmax; d += 10) {
+      const n = decs[d] || 0;
+      const selD = st.cYear === d;
+      pubBars.push({
+        title: d + '–' + (d + 9) + ': ' + n + (n === 1 ? ' publicación' : ' publicaciones'),
+        onClick: () => { this.setState({ cYear: n ? d : null, cPub: null }); if (n) this.scrollToSel('pub'); },
+        style: 'flex:1;min-width:6px;max-width:48px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;border-radius:var(--radius-sm);cursor:' + (n ? 'pointer' : 'default') + ';' + (selD ? 'background:color-mix(in oklab,var(--color-accent) 10%,transparent);' : ''),
+        bar: 'border-radius:2px 2px 0 0;height:' + Math.max(3, Math.round(n / dmaxN * 100)) + '%;background:' + (selD ? 'var(--color-accent)' : (n ? 'var(--color-accent-700)' : 'var(--color-neutral-800)')) + ';'
+      });
+    }
+    const nDec = (dmax - dmin) / 10 + 1;
+    const pubTicks = [];
+    for (let d = dmin; d <= dmax; d += (nDec > 12 ? 30 : 10)) {
+      pubTicks.push({ label: String(d), style: 'position:absolute;left:' + (((d - dmin) / Math.max(10, dmax - dmin)) * 100).toFixed(1) + '%;' });
+    }
+    const pubList = st.cYear !== null && st.cYear !== undefined && st.cYear !== false
+      ? pubs.filter(p => p.y >= st.cYear && p.y < st.cYear + 10).sort((a, b) => a.y - b.y).map((p, pi) => {
+          const open = st.cPub === pi;
+          return {
+            label: p.y + ' — ' + p.label, open,
+            fuenteSegs: this.segs((p.fuente || '—').split(';')[0]),
+            onClick: () => this.setState({ cPub: open ? null : pi }),
+            style: 'display:flex;flex-direction:column;cursor:pointer;border-radius:var(--radius-sm);padding:3px 6px;' + (open ? 'background:color-mix(in oklab,var(--color-accent) 8%,transparent);' : ''),
+            dMetodo: p.metodo || '—', dObs: p.obs || '—', dTipo: p.tipo || '—',
+            dFuenteSegs: open ? this.segs(p.fuente || '—') : [],
+            dFilaSegs: open ? this.segs(p.fila || '—') : []
+          };
+        })
+      : [];
+    const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
+    return {
+      cronoMeta: raw.length ? raw.length + ' fechas en el apéndice D: ' + (nObs + nInf) + ' edades geológicas y ' + pubs.length + ' años de publicación.' : 'Cargando el apéndice D…',
+      cronoBtns: [['todos', 'Todas (' + (nObs + nInf) + ')'], ['observado', 'Observadas (' + nObs + ')'], ['inferido', 'Inferidas o modeladas (' + nInf + ')']].map(([v, label]) => ({ label, onClick: () => this.setState({ cFilt: v, cronoSel: null }), style: seg(st.cFilt === v) })),
+      cronoRows, cronoCount: cronoRows.length + ' intervalos',
+      cQ: st.cQ, onCQ: (e) => this.setState({ cQ: e.target.value, cronoSel: null }),
+      pubBars, pubTicks, pubList,
+      pubMeta: pubs.length + ' fechas de publicación · ' + dmin + '–' + (dmax + 9) + ' · por década, clic para listar',
+      pubSelOpen: pubList.length > 0, pubSelTitle: pubList.length ? st.cYear + '–' + (st.cYear + 9) + ' · ' + pubList.length + (pubList.length === 1 ? ' publicación' : ' publicaciones') : '',
+      pubClose: () => this.setState({ cYear: null })
+    };
+  }
+  calidadVals() {
+    const claims = this.state.allClaims || [];
+    const ACEPT = ['consenso amplio', 'aceptación mayoritaria', 'aceptación mixta', 'posición minoritaria', 'no evaluado'];
+    const FUER = ['alta', 'media', 'baja', 'desconocida'];
+    const grid = {};
+    for (const c of claims) grid[c.acept + '|' + c.fuerza] = (grid[c.acept + '|' + c.fuerza] || 0) + 1;
+    const max = Math.max(1, ...Object.values(grid));
+    const cellBase = 'display:flex;align-items:center;justify-content:center;height:34px;border-radius:3px;font-variant-numeric:tabular-nums;';
+    const calCells = [{ t: '', style: cellBase, title: '' }];
+    for (const fz of FUER) calCells.push({ t: fz, style: cellBase + 'color:var(--color-neutral-400);', title: 'fuerza ' + fz });
+    for (const a of ACEPT) {
+      calCells.push({ t: a, style: cellBase + 'justify-content:flex-start;color:var(--color-neutral-300);', title: a });
+      for (const fz of FUER) {
+        const n = grid[a + '|' + fz] || 0;
+        calCells.push({ t: n ? String(n) : '', title: a + ' × ' + fz + ': ' + n, style: cellBase + 'background:color-mix(in oklab,var(--color-accent) ' + Math.round(n / max * 48) + '%,transparent);color:var(--color-neutral-100);' });
+      }
+    }
+    const calSecs = this.SEC_COUNTS.map(([k]) => {
+      const rows = claims.filter(c => c.sec === k);
+      const nS = rows.filter(c => this.isSingle(c)).length;
+      const pct = rows.length ? Math.round(nS / rows.length * 100) : 0;
+      return { label: k + ' · ' + this.SEC_LABELS[k], pct: pct + '%', barStyle: 'width:' + pct + '%;height:100%;border-radius:3px;background:var(--color-accent-700);' };
+    });
+    return { calCells, calSecs, calMeta: claims.length ? 'Calculado en vivo sobre las ' + claims.length + ' afirmaciones del registro combinado.' : 'Cargando el registro…' };
+  }
+
+  renderVals() {
+    const st = this.state;
+    const view = st.view ?? this.props.vistaInicial ?? 'resumen';
+    const showSem = this.props.columnasSemanticas ?? false;
+    const highlight = this.props.resaltarUnicaFuente ?? false;
+    const setView = (v) => { this.setState({ view: v }); this.resetScroll(); };
+    const nav = [
+      { id: 'resumen', icon: 'ph-squares-four', label: 'Resumen' },
+      { id: 'afirmaciones', icon: 'ph-rows', label: 'Afirmaciones' },
+      { id: 'huecos', icon: 'ph-circle-dashed', label: 'Huecos' },
+      { id: 'consultas', icon: 'ph-funnel', label: 'Consultas' },
+      { id: 'fuentes', icon: 'ph-books', label: 'Fuentes' },
+      { id: 'hipotesis', icon: 'ph-git-fork', label: 'Hipótesis' },
+      { id: 'cronologia', icon: 'ph-clock-countdown', label: 'Cronología' },
+      { id: 'calidad', icon: 'ph-scales', label: 'Calidad' },
+      { id: 'apendices', icon: 'ph-folders', label: 'Apéndices' },
+      { id: 'lectura', icon: 'ph-article', label: 'Lectura' }
+    ].map(n => ({
+      ...n,
+      onClick: () => setView(n.id),
+      style: 'display:flex;align-items:center;gap:10px;padding:7px 11px;border:none;border-radius:var(--radius-md);font:500 12.5px var(--font-body);text-align:left;cursor:pointer;width:100%;' +
+        (view === n.id
+          ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);box-shadow:inset 2px 0 0 var(--color-accent);'
+          : 'background:transparent;color:var(--color-neutral-300);')
+    }));
+
+    const claims = st.allClaims || [];
+    const q = st.q.toLowerCase();
+    const filtered = claims.filter(c =>
+      (st.fS === 'todas' || c.sec === st.fS) &&
+      (st.fA === 'todas' || c.acept === st.fA) &&
+      (st.fF === 'todas' || c.fuerza === st.fF) &&
+      (!q || (c.texto + ' ' + c.id + ' ' + c.sujeto + ' ' + c.obj).toLowerCase().includes(q))
+    );
+    const panelOpen = !!st.selId;
+    const tableW = st.winW - 236 - 72 - (panelOpen ? 340 : 0);
+    const wide = tableW >= 780;
+    const gridCols = wide ? '64px 1fr 158px 84px 150px 78px' : '52px 1fr 140px';
+    const headStyle = 'display:grid;grid-template-columns:' + gridCols + ';gap:var(--space-4);padding:0 var(--space-4) var(--space-3);font:500 10.5px var(--font-heading);letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-400);';
+    const rows = filtered.slice(0, 80).map(c => ({
+      ...c, showSem,
+      aceptClass: this.aceptClass(c.acept),
+      dotStyle: this.dotStyle(c.fuerza),
+      onClick: () => this.setState({ selId: c.id }),
+      style: 'display:grid;grid-template-columns:' + gridCols + ';gap:var(--space-4);align-items:start;padding:var(--space-4);cursor:pointer;border-radius:var(--radius-sm);border-bottom:1px solid var(--color-neutral-800);' +
+        (st.selId === c.id ? 'background:color-mix(in oklab,var(--color-accent) 10%,transparent);' : '') +
+        (highlight && this.isSingle(c) ? 'box-shadow:inset 3px 0 0 var(--color-accent);' : '')
+    }));
+    const countLine = st.allClaims
+      ? (filtered.length + ' de ' + claims.length + ' afirmaciones' + (filtered.length > rows.length ? ' · mostrando las primeras ' + rows.length : ''))
+      : 'cargando el registro completo desde exports/afirmaciones.csv…';
+    const secOpts = [{ v: 'todas', label: 'Sección: todas' }].concat(this.SEC_COUNTS.map(sc => ({ v: sc[0], label: 'Sección ' + sc[0] })));
+
+    const claim = claims.find(c => c.id === st.selId) || null;
+    const openRef = this.openEnt;
+    const refStyle = (clickable) => 'border:none;cursor:' + (clickable ? 'pointer' : 'default') + ';font:10.5px ui-monospace,monospace;padding:3px 8px;border-radius:var(--radius-sm);background:color-mix(in oklab,var(--color-accent) 10%,transparent);color:var(--color-accent-300);';
+    const claimRefs = claim
+      ? ((claim.atrib + ' ' + claim.fuente).match(/(S\d+|BN-\d{3}|C-\d{3,4})/g) || [])
+          .filter((v, i, a) => a.indexOf(v) === i && v !== claim.id)
+          .map(label => ({ label, style: refStyle(true), onClick: () => this.openEntId(label) }))
+      : [];
+    if (claim && claimRefs.length === 0) claimRefs.push({ label: 'sin referencias externas', style: 'border:none;font:10.5px ui-monospace,monospace;padding:3px 8px;border-radius:var(--radius-sm);background:transparent;color:var(--color-neutral-500);', onClick: () => {} });
+
+    const allBn = st.allBn || [];
+    const bloqueNames = [];
+    for (const b of allBn) if (!bloqueNames.includes(b.bloque)) bloqueNames.push(b.bloque);
+    const selBloque = st.bloque ?? bloqueNames[0];
+    const bloques = bloqueNames.map(name => ({
+      label: name.replace(/^15\.4?\.?/, '').replace(/^\d+\.\s*/, '').trim() || name,
+      n: allBn.filter(b => b.bloque === name).length,
+      onClick: () => this.setState({ bloque: name }),
+      style: 'border:none;cursor:pointer;padding:4px 10px;border-radius:var(--radius-md);font:500 11px var(--font-body);text-align:left;' +
+        (name === selBloque
+          ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);'
+          : 'background:var(--color-surface);color:var(--color-neutral-400);')
+    }));
+    const refChipStyle = (clickable) => 'font:10px ui-monospace,monospace;padding:1px 6px;border-radius:var(--radius-sm);white-space:nowrap;' + (clickable ? 'cursor:pointer;color:var(--color-accent-300);background:color-mix(in oklab,var(--color-accent) 12%,transparent);' : 'color:var(--color-neutral-500);background:var(--color-bg);');
+    const bn = allBn.filter(b => b.bloque === selBloque).map(b => ({
+      ...b, estadoClass: this.estadoClass(b.estado),
+      refChips: ((b.refs || '').match(/(C-\d{3,4}|S\d{2,3}|BN-\d{3})/g) || []).filter((v, i, a) => a.indexOf(v) === i).map(id => ({ id, style: refChipStyle(!id.startsWith('BN')) }))
+    }));
+    const bnSubLine = st.allBn
+      ? allBn.length + ' activas tras la revisión histórica de 106 · bloque seleccionado: ' + bn.length + ' filas'
+      : 'cargando exports/busquedas_negativas.csv…';
+
+    const tabDefs = [
+      { k: 'A', label: 'A · Fuentes', n: '523' }, { k: 'B', label: 'B · Entidades', n: '1 500' },
+      { k: 'C', label: 'C · Eventos', n: '109' }, { k: 'D', label: 'D · Fechas', n: '215' },
+      { k: 'E', label: 'E · Hipótesis', n: '81' }, { k: 'F', label: 'F · Magnitudes', n: '562' },
+      { k: 'G', label: 'G · No encajado', n: '23' }, { k: 'H', label: 'H · Recuento', n: '25' }
+    ];
+    const tabs = tabDefs.map(t => ({
+      ...t,
+      onClick: () => { this.setState({ tab: t.k, apxSel: null }); this.loadApx(t.k); },
+      style: 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' +
+        (st.tab === t.k
+          ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);'
+          : 'background:transparent;color:var(--color-neutral-400);')
+    }));
+    const cfg = this.apxCfg[st.tab];
+    const raw = st.apx[st.tab];
+    const apxRows = raw ? raw.slice(0, 40).map((r, ri) => {
+      const open = st.apxSel === ri;
+      return {
+        onClick: () => this.setState({ apxSel: open ? null : ri }),
+        style: 'cursor:pointer;' + (open ? 'background:color-mix(in oklab,var(--color-accent) 8%,transparent);' : ''),
+        dStyle: open ? '' : 'display:none;',
+        fields: open ? cfg.cols.map((cc, j) => ({ k: cfg.head[j], v: r[cc[0]] ?? '' })).filter(x => x.v !== '').map(x => ({ k: x.k, segs: this.segs(x.v) })) : [],
+        cells: cfg.cols.map(cc => {
+          let t = r[cc[0]] ?? '';
+          if (t.length > 220) t = t.slice(0, 220) + '…';
+          return { t, s: this.cellStyle(cc[1]) };
+        })
+      };
+    }) : [];
+    const apxMeta = raw
+      ? cfg.total + ' · mostrando ' + apxRows.length + ' de ' + raw.length + ' filas de ' + cfg.file
+      : 'cargando ' + cfg.file + '…';
+
+    return {
+      nav,
+      isResumen: view === 'resumen', isAfirm: view === 'afirmaciones', isHuecos: view === 'huecos',
+      isApend: view === 'apendices', isLectura: view === 'lectura', isConsultas: view === 'consultas',
+      ...this.navBtnsVals(),
+      pieCorte: st.pieCorte, pieVersion: st.pieVersion, pieEstado: st.pieEstado,
+      isFuentes: view === 'fuentes', isHipotesis: view === 'hipotesis', isCronologia: view === 'cronologia', isCalidad: view === 'calidad',
+      ...this.consultaVals(), ...this.fuentesVals(), ...this.hipotesisVals(), ...this.cronoVals(), ...this.calidadVals(), ...this.lecturaVals(openRef),
+      q: st.q, fA: st.fA, fF: st.fF, fS: st.fS,
+      onQ: (e) => this.setState({ q: e.target.value }),
+      onFA: (e) => this.setState({ fA: e.target.value }),
+      onFF: (e) => this.setState({ fF: e.target.value }),
+      onFS: (e) => this.setState({ fS: e.target.value }),
+      rows, countLine, secOpts, wide, headStyle,
+      claim: claim ? { ...claim, fuerzaLabel: 'fuerza\u00a0' + claim.fuerza, aceptClass: this.aceptClass(claim.acept), fuenteSegs: this.segs(claim.fuente), atribSegs: this.segs(claim.atrib) } : null,
+      claimOpen: !!claim, claimRefs,
+      closeDetail: () => this.setState({ selId: null }),
+      openRef, openEnt: this.openEnt,
+      bn, bloques, bnSubLine,
+      tabs, apxHead: cfg.head, apxRows, apxMeta,
+      openSecRow: (e) => { const m = e.currentTarget.textContent.trim().match(/^(\d+)/); if (m) { this.setState({ view: 'afirmaciones', fS: m[1], selId: null }); this.resetScroll(); } }
+    };
+  }
+}
+</script>
+</body>
+</html>
