@@ -1,6 +1,6 @@
 # Fuentes sin texto completo
 
-De las **500** fuentes del apéndice A se obtuvieron **267** por vía de acceso abierto. Las **233** restantes están aquí, con la razón de cada una.
+De las **523** fuentes del apéndice A se obtuvieron **279** por vía de acceso abierto. Las **244** restantes están aquí, con la razón de cada una.
 
 Generado por `scripts/fetch_oa.py` el 2026-08-10. Para regenerarlo sin volver a descargar nada:
 
@@ -12,7 +12,7 @@ python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
 
 ## Por dónde empezar
 
-Estas **20** sostienen **335** de las 1133 citas pendientes —el 29 %—. Conseguirlas a mano rinde más que las otras 213 juntas.
+Estas **20** sostienen **335** de las 1145 citas pendientes —el 29 %—. Conseguirlas a mano rinde más que las otras 224 juntas.
 
 | Clave | Cita | Única | Título | DOI |
 |---|---:|---:|---|---|
@@ -37,7 +37,7 @@ Estas **20** sostienen **335** de las 1133 citas pendientes —el 29 %—. Conse
 | `S378` | 12 | 5 | International Code of Zoological Nomenclature, Fourth Edition | — |
 | `S93` | 12 | 1 | Poxviruses and the origin of the eukaryotic nucleus | [10.1007/s002390010171](https://doi.org/10.1007/s002390010171) |
 
-## Sin versión de acceso abierto · 117
+## Sin versión de acceso abierto · 121
 
 Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbibliotecario, acceso institucional, o escribir a quien firma la correspondencia — muchos autores envían su propio PDF si se les pide.
 
@@ -153,15 +153,19 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S502` | 1 | 1 | 2026 | Farrell, Ú. C. et al. | The Sedimentary Geochemistry and Paleoenvironments Project Phase | [10.1016/j.chemgeo.2025.123148](https://doi.org/10.1016/j.chemgeo.2025.123148) |
 | `S503` | 1 | 1 | 2023 | Xu, D. et al. | Extensive sea-floor oxygenation during the early Mesoproterozoic | [10.1016/j.gca.2023.06.007](https://doi.org/10.1016/j.gca.2023.06.007) |
 | `S540` | 1 | 1 | 2003 | Wächtershäuser, Günter | From pre-cells to E. coli—A tale of two lipids | [10.1046/j.1365-2958.2003.03267.x](https://doi.org/10.1046/j.1365-2958.2003.03267.x) |
+| `S557` | 1 | 1 | 2016 | Tang, D.; Shi, X.; Wang, X.; Jia | Extremely low oxygen concentration in mid-Proterozoic shallow se | [10.1016/j.precamres.2016.02.005](https://doi.org/10.1016/j.precamres.2016.02.005) |
+| `S558` | 1 | 1 | 2014 | Hardisty, D. S.; Lu, Z.; Planavs | An iodine record of Paleoproterozoic surface ocean oxygenation | [10.1130/g35439.1](https://doi.org/10.1130/g35439.1) |
 | `S146` | 1 | 0 | 1993 | Wainright et al. | Monophyletic origins of the Metazoa: an evolutionary link with f | [10.1126/science.8469985](https://doi.org/10.1126/science.8469985) |
 | `S284` | 1 | 0 | 2002 | Taylor, Douglas R.; Zeyl, Cliffo | Conflicting levels of selection in the accumulation of mitochond | [10.1073/pnas.072660299](https://doi.org/10.1073/pnas.072660299) |
 | `S440` | 1 | 0 | 2012 | Suga, Hiroshi et al. | Genomic Survey of Premetazoans Shows Deep Conservation of Cytopl | [10.1126/scisignal.2002733](https://doi.org/10.1126/scisignal.2002733) |
 | `S485` | 1 | 0 | 2019 | Wang, Dapeng | IntronDB: a database for eukaryotic intron features | [10.1093/bioinformatics/btz242](https://doi.org/10.1093/bioinformatics/btz242) |
 | `S54` | 1 | 0 | 1997 | Forterre | Archaea: what can we learn from their sequences? | [10.1016/s0959-437x(97)80038-x](https://doi.org/10.1016/s0959-437x(97)80038-x) |
 | `S70` | 1 | 0 | 2006 | Jékely y Arendt | Evolution of intraflagellar transport from coated vesicles and a | [10.1002/bies.20369](https://doi.org/10.1002/bies.20369) |
+| `S516` | 0 | 0 | 2022 | Clavé, C. et al. | Physiological costs of facultative endosymbionts in aphids asses | [10.1111/1365-2435.14157](https://doi.org/10.1111/1365-2435.14157) |
+| `S520` | 0 | 0 | 2019 | Husnik, F.; Keeling, P. J. | The fate of obligate endosymbionts: reduction, integration, or e | [10.1016/j.gde.2019.07.014](https://doi.org/10.1016/j.gde.2019.07.014) |
 | `S544` | 0 | 0 | 1996 | Cavalier-Smith, Thomas; Allsopp, | Corallochytrium, an enigmatic non-flagellate protozoan related t | [10.1016/s0932-4739(96)80053-8](https://doi.org/10.1016/s0932-4739(96)80053-8) |
 
-## El servidor del editor rechazó la descarga · 75
+## El servidor del editor rechazó la descarga · 79
 
 El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
 
@@ -233,17 +237,21 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S144` | 2 | 0 | 2012 | Torruella et al. | Phylogenetic relationships within the Opisthokonta based on phyl | [10.1093/molbev/msr185](https://doi.org/10.1093/molbev/msr185) |
 | `S318` | 2 | 0 | 2015 | Koonin, E. V. | Energetics and population genetics at the root of eukaryotic cel | [10.1073/pnas.1520869112](https://doi.org/10.1073/pnas.1520869112) |
 | `S321` | 2 | 0 | 2012 | Sung, W., et al. | Drift-barrier hypothesis and mutation-rate evolution | [10.1073/pnas.1216223109](https://doi.org/10.1073/pnas.1216223109) |
+| `S517` | 2 | 0 | 2016 | Weinstein, S. B.; Kuris, A. M. | Independent origins of parasitism in Animalia | [10.1098/rsbl.2016.0324](https://doi.org/10.1098/rsbl.2016.0324) |
 | `S216` | 1 | 1 | 1999 | Wilhelm, S. W. y Suttle, C. A. | Viruses and nutrient cycles in the sea | [10.2307/1313569](https://doi.org/10.2307/1313569) |
 | `S338` | 1 | 1 | 2014 | Govern, C. C. y ten Wolde, P. R. | Optimal resource allocation in cellular sensing systems | [10.1073/pnas.1411524111](https://doi.org/10.1073/pnas.1411524111) |
 | `S481` | 1 | 1 | 1990 | McDade, Lucinda A. | Hybrids and Phylogenetic Systematics I. Patterns of Character Ex | [10.1111/j.1558-5646.1990.tb03856.x](https://doi.org/10.1111/j.1558-5646.1990.tb03856.x) |
 | `S506` | 1 | 1 | 2004 | Šimek, K. et al. | Role of diatom-attached choanoflagellates of the genus Salpingoe | [10.3354/ame036257](https://doi.org/10.3354/ame036257) |
+| `S554` | 1 | 1 | 2018 | Bellefroid, E. J.; Hood, A. v. S | Constraints on Paleoproterozoic atmospheric oxygen levels | [10.1073/pnas.1806216115](https://doi.org/10.1073/pnas.1806216115) |
 | `S145` | 1 | 0 | 2014 | Cavalier-Smith et al. | Multigene eukaryote phylogeny reveals the likely protozoan ances | [10.1016/j.ympev.2014.08.012](https://doi.org/10.1016/j.ympev.2014.08.012) |
 | `S196` | 1 | 0 | 2010 | Macdonald, F. A. et al. | Calibrating the Cryogenian | [10.1126/science.1183325](https://doi.org/10.1126/science.1183325) |
 | `S374` | 1 | 0 | 2007 | Cooper, M. A.; Adam, R. D.; Woro | Population genetics provides evidence for recombination in Giard | [10.1016/j.cub.2007.10.020](https://doi.org/10.1016/j.cub.2007.10.020) |
 | `S418` | 1 | 0 | 2013 | Burkhardt | Lamarck, Evolution, and the Inheritance of Acquired Characters | [10.1534/genetics.113.151852](https://doi.org/10.1534/genetics.113.151852) |
 | `S469` | 1 | 0 | 1999 | Kocan, R. et al. | Pathogenicity of Ichthyophonus hoferi for laboratory-reared Paci | [10.3354/dao035023](https://doi.org/10.3354/dao035023) |
+| `S514` | 0 | 0 | 2012 | Müller, M. et al. | Biochemistry and Evolution of Anaerobic Energy Metabolism in Euk | [10.1128/mmbr.05024-11](https://doi.org/10.1128/mmbr.05024-11) |
+| `S521` | 0 | 0 | 2020 | Masson, F.; Lemaitre, B. | Growing Ungrowable Bacteria: Overview and Perspectives on Insect | [10.1128/mmbr.00089-20](https://doi.org/10.1128/mmbr.00089-20) |
 
-## El enlace no devolvió un PDF · 33
+## El enlace no devolvió un PDF · 35
 
 La respuesta fue una página web, no un artículo: el enlace lleva a la ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y busca el enlace de descarga en la propia página.
 
@@ -262,6 +270,7 @@ La respuesta fue una página web, no un artículo: el enlace lleva a la ficha de
 | `S250` | 5 | 1 | 2020 | Nomura et al. | Fine Structure Observation of Feeding Behavior, Nephroselmis spp | https://pubmed.ncbi.nlm.nih.gov/32088560/ |
 | `S24` | 5 | 0 | 2021 | Liu et al. | Expanded diversity of Asgard archaea and their relationships wit | [10.1038/s41586-021-03494-3](https://doi.org/10.1038/s41586-021-03494-3) |
 | `S386` | 5 | 0 | 1999 | Scamardella | Not plants or animals: a brief history of the origin of Kingdoms | https://pubmed.ncbi.nlm.nih.gov/10943416/ |
+| `S547` | 4 | 4 | 2026 | Lechte, Maxwell A.; Riedman, Lei | Early fossil eukaryotes were benthic aerobes | [10.1038/s41586-026-10533-4](https://doi.org/10.1038/s41586-026-10533-4) |
 | `S258` | 4 | 2 | 2006 | Gilson et al. | Complete nucleotide sequence of the chlorarachniophyte nucleomor | https://pmc.ncbi.nlm.nih.gov/articles/PMC1480447/ |
 | `S364` | 4 | 2 | 2002 | Bulmer, M. G.; Parker, G. A. | The evolution of anisogamy: a game-theoretic approach | [10.1098/rspb.2002.2161](https://doi.org/10.1098/rspb.2002.2161) |
 | `S255` | 3 | 2 | 2024 | Garric et al. | Impaired photoacclimation in a kleptoplastidic dinoflagellate re | [10.1016/j.cub.2024.05.066](https://doi.org/10.1016/j.cub.2024.05.066) |
@@ -272,6 +281,7 @@ La respuesta fue una página web, no un artículo: el enlace lleva a la ficha de
 | `S187` | 2 | 2 | 2011 | Planavsky, N. J. et al. | Widespread iron-rich conditions in the mid-Proterozoic ocean | [10.1038/nature10327](https://doi.org/10.1038/nature10327) |
 | `S220` | 2 | 2 | 2014 | Swarts, D. C. et al. | DNA-guided DNA interference by a prokaryotic Argonaute | [10.1038/nature12971](https://doi.org/10.1038/nature12971) |
 | `S464` | 2 | 2 | 1977 | Thauer, R. K.; Jungermann, K.; D | Energy conservation in chemotrophic anaerobic bacteria | [10.1128/br.41.1.100-180.1977](https://doi.org/10.1128/br.41.1.100-180.1977) |
+| `S512` | 2 | 2 | 2026 | Forni, G. et al. | Large-scale phylogenomics reveals convergent genome evolution ac | [10.1016/j.ympev.2026.108532](https://doi.org/10.1016/j.ympev.2026.108532) |
 | `S257` | 2 | 1 | 2021 | Maeda et al. | Chloroplast acquisition without the gene transfer in kleptoplast | https://elifesciences.org/articles/60176 |
 | `S274` | 2 | 1 | 2009 | Mi-ichi et al. | Mitosomes in Entamoeba histolytica contain a sulfate activation  | [10.1073/pnas.0907106106](https://doi.org/10.1073/pnas.0907106106) |
 | `S531` | 2 | 1 | 2025 | Wollweber, Florian et al. | Microtubules in Asgard archaea | [10.1016/j.cell.2025.02.027](https://doi.org/10.1016/j.cell.2025.02.027) |
@@ -292,7 +302,7 @@ El catálogo la marca como abierta y no da la dirección del fichero. El DOI sue
 | `S06` | 5 | 2 | 1990 | Woese, Kandler y Wheelis | Towards a natural system of organisms: proposal for the domains  | [10.1073/pnas.87.12.4576](https://doi.org/10.1073/pnas.87.12.4576) |
 | `S504` | 1 | 1 | 2024 | Tang, Q. et al. | Quantifying the global biodiversity of Proterozoic eukaryotes | [10.1126/science.adm9137](https://doi.org/10.1126/science.adm9137) |
 
-## recurso web · 6
+## recurso web · 7
 
 - `S02` International Chronostratigraphic Chart, version 2026/06
 - `S50` Asgardarchaeota: nomenclatural record and child taxa
@@ -300,6 +310,7 @@ El catálogo la marca como abierta y no da la dirección del fichero. El DOI sue
 - `S384` RegNum: Phylogenetic Nomenclature Database
 - `S442` Thecamonas trahens ATCC 50062 genome assembly GCA_000142905.1
 - `S482` Frequently Asked Questions
+- `S519` Thecamonas trahens Larsen and Patterson, ATCC 50062
 
 ## Cómo conseguirlas
 

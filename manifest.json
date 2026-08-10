@@ -544,9 +544,14 @@
       "sha256": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
     },
     {
+      "path": "docs/ENCARGO-AUDITOR-FUENTES.md",
+      "bytes": 4301,
+      "sha256": "15f10ce4ac7cd5b52cee1453e067927cb05a6bfddbab0f7d8edaafb9340d733c"
+    },
+    {
       "path": "docs/FUENTES-SIN-ACCESO.md",
-      "bytes": 3501,
-      "sha256": "e3320898418598b575d214a5a6a6bb3dbc6f121792f1d6b2d309aeed4197f108"
+      "bytes": 48794,
+      "sha256": "5d16a2a5a7a15c1333761800871eac869f2521400dffec0e4fd28062e57778cc"
     },
     {
       "path": "docs/GITHUB_SETUP.md",
@@ -1865,8 +1870,8 @@
     },
     {
       "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
-      "bytes": 1196883,
-      "sha256": "a37c0326ea5c0b3b1c307640dde1489a22fbaa9af9d2884ac35a3ac54f8055b8"
+      "bytes": 1196991,
+      "sha256": "63223f8648af54e6b4b6ac684f0fd03a99af80893e84db965cba5e88099423c3"
     },
     {
       "path": "docs/auditorias/registro_busquedas_2026-08-08.csv",
@@ -1884,6 +1889,11 @@
       "sha256": "8f21ac8e1859538042ace4ed649625f73213c92f927f8aaf51e189826d28f82c"
     },
     {
+      "path": "docs/fuentes-por-conseguir.html",
+      "bytes": 80660,
+      "sha256": "01cc0c97dbfb2b82aad7c827d48d8c5d1bf6e77aea8649f87c7243c0ba3a65a2"
+    },
+    {
       "path": "docs/informe.md",
       "bytes": 467509,
       "sha256": "0de81aa210bdf7443656e03faa0ab2053a644825fdd8203e75a4ebfdd59ae064"
@@ -1897,6 +1907,11 @@
       "path": "docs/order.txt",
       "bytes": 1502,
       "sha256": "a530b3b2b2385cc2d9b876bce0a8bd8eec22205b7cc487166644806958ddcf6a"
+    },
+    {
+      "path": "docs/revision-pasajes.html",
+      "bytes": 2262463,
+      "sha256": "11f36a4cccf888dc601e25acd23ed9ad6273263bf1898f63b3e699609299dc9b"
     },
     {
       "path": "docs/secciones/000-preambulo.md",
@@ -2030,8 +2045,8 @@
     },
     {
       "path": "exports/acceso_fuentes.csv",
-      "bytes": 2736,
-      "sha256": "72d1a3ccc3991a42f6175c4b57b9523b0313df6a33165d660693b0bb2a8e9b56"
+      "bytes": 156980,
+      "sha256": "e51b404803b69b961e628c72486dc2fc49327c14ebd924f3f577507733da5ffc"
     },
     {
       "path": "exports/afirmaciones.csv",
@@ -2047,6 +2062,11 @@
       "path": "exports/catalogo_tablas.csv",
       "bytes": 16339,
       "sha256": "6e0401dadadf73824222d0ed261f7c14420daed065d17e0af8ebea602301fed0"
+    },
+    {
+      "path": "exports/pasajes.csv",
+      "bytes": 1645362,
+      "sha256": "3899aef81f2009cf7de944cdcafae7611056862f90ba9680cd3c4f7cccc786eb"
     },
     {
       "path": "exports/tablas_nodales.csv",
@@ -2114,9 +2134,14 @@
       "sha256": "e87030394f961580f0ff34972d9ceb68564f139db5728d1639e2f9b408d22af3"
     },
     {
+      "path": "scripts/extraer_pasajes.py",
+      "bytes": 19617,
+      "sha256": "6d2d6d4d97565fc1c1cc75af7b179b58fdb73a71dca11ccd772aafb8675bc14d"
+    },
+    {
       "path": "scripts/fetch_oa.py",
-      "bytes": 21745,
-      "sha256": "6d389999398d512c08cfc0d38aac95e89ce5999641532eea2ecf2be6df4ba5ed"
+      "bytes": 48983,
+      "sha256": "9a1009412b61420dba171ba5117c233827bc6eadf7e7cf1ebe9a0cb53132e198"
     },
     {
       "path": "scripts/publish_github.sh",
