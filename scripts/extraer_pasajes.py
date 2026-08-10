@@ -85,6 +85,27 @@ def _limpiar(x: str) -> str:
     return re.sub(r"\s+", " ", x).strip()
 
 
+def trozo_de(localizador: str, clave: str) -> str:
+    """La parte del localizador que habla de ESTA fuente.
+
+    Un localizador como «S275 resumen; S276 resultados» nombra dos sitios
+    distintos en dos trabajos distintos. Tratarlo entero para cada fuente
+    recortaba de S276 también su resumen, que nadie había citado: el pasaje
+    salía más ancho que la cita, y un pasaje que no es el citado no sirve para
+    comprobar nada.
+    """
+    trozos = [s for s in re.split(r"[;·]", localizador or "") if s.strip()]
+    propios = [s for s in trozos if re.search(r"\b" + clave + r"\b", s)]
+    if not propios:
+        return localizador or ""
+    # Si el trozo es sólo la clave, la descripción puede venir en el siguiente.
+    salida = []
+    for s in propios:
+        resto = re.sub(r"\b" + clave + r"\b", " ", s).strip(" ,.:")
+        salida.append(s if resto else s)
+    return "; ".join(salida)
+
+
 def tipo_de(localizador: str) -> tuple[str, tuple]:
     """El primer patrón que case manda; para «apartado» se devuelven todas las
     secciones citadas, porque «resumen; resultados» son dos sitios, no uno."""
@@ -286,7 +307,8 @@ def main() -> int:
         for clave in dict.fromkeys(re.findall(r"\bS\d{2,3}\b", loc)):
             if args.clave and clave != args.clave:
                 continue
-            tipo, grupos = tipo_de(loc)
+            propio = trozo_de(loc, clave)
+            tipo, grupos = tipo_de(propio)
             if clave not in xmls:
                 salida.append([r[0], r[1], clave, loc, tipo, "", "sin texto",
                                "no hay XML de esta fuente"])
@@ -296,7 +318,8 @@ def main() -> int:
                 cache[clave] = texto_de_xml(xmls[clave])
             texto, secciones = cache[clave]
             pasaje, estado, detalle = recortar(texto, secciones, tipo, grupos)
-            salida.append([r[0], r[1], clave, loc, tipo, pasaje, estado, detalle])
+            salida.append([r[0], r[1], clave, propio if propio != loc else loc,
+                           tipo, pasaje, estado, detalle])
             cuenta[estado] = cuenta.get(estado, 0) + 1
         if args.limite and len(salida) >= args.limite:
             break
