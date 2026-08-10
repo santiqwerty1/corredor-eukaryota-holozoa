@@ -292,7 +292,20 @@
           </select>
           <button class="btn btn-secondary" onClick="{{ onConOrdenDir }}" style="font-size:12px;">{{ conOrdenDirLabel }}</button>
           <button class="btn btn-secondary" onClick="{{ onConModo }}" title="{{ conModoLabel }}" style="font-size:12px;">Y / O: {{ conModo }}</button>
+          <sc-if value="{{ conShowMetrica }}" hint-placeholder-val="{{ false }}">
+            <select class="input" value="{{ conMetrica }}" onChange="{{ onConMetrica }}" style="width:auto;">
+              <sc-for list="{{ conMetricaOpts }}" as="mo" hint-placeholder-count="2"><option value="{{ mo.v }}">{{ mo.label }}</option></sc-for>
+            </select>
+          </sc-if>
+          <sc-if value="{{ conShowCampoM }}" hint-placeholder-val="{{ false }}">
+            <select class="input" value="{{ conCampoM }}" onChange="{{ onConCampoM }}" style="width:auto;">
+              <sc-for list="{{ conCampoMOpts }}" as="cm" hint-placeholder-count="2"><option value="{{ cm.v }}">{{ cm.label }}</option></sc-for>
+            </select>
+          </sc-if>
         </div>
+        <sc-if value="{{ conShowGroups }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0 0 var(--space-3);font-size:11.5px;color:var(--color-neutral-400);">{{ conAgg }}</p>
+        </sc-if>
         <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-3);">
           <sc-for list="{{ conds }}" as="cd" hint-placeholder-count="1">
             <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;align-items:center;">
@@ -916,6 +929,59 @@ class Component extends DCLogic {
     for (const k of Object.keys(this.apxCfg)) {
       defs['apx' + k] = { label: 'Apéndice ' + k, get: () => ({ fields: this.apxCfg[k].head, rows: apxRows(k) }) };
     }
+
+    // Cruces con nombre en vez de un constructor genérico de joins. Las uniones
+    // útiles de este corpus son cuatro y se conocen; una interfaz que permita
+    // cualquier unión es complejidad que nadie va a usar y hay que mantener.
+    const clavesDe = (s) => (String(s || '').match(/\bS\d{2,3}\b/g) || []);
+    defs.xFuente = { label: '× Afirmaciones con su fuente', get: () => {
+      const cl = this.state.allClaims, ap = apxRows('A');
+      if (!cl || !ap) return { fields: [], rows: null };
+      const porClave = Object.fromEntries(ap.map(r => [r[this.apxCfg.A.head[0]], r]));
+      const filas = [];
+      for (const c of cl) for (const k of clavesDe(c.fuente)) {
+        const f = porClave[k] || {};
+        filas.push({ afirmacion: c.id, sec: c.sec, texto: c.texto, acept: c.acept,
+          fuerza: c.fuerza, vig: c.vig, clave: k,
+          autores: f[this.apxCfg.A.head[1]] || '', 'año': f[this.apxCfg.A.head[2]] || '',
+          titulo: f[this.apxCfg.A.head[3]] || '', publicacion: f[this.apxCfg.A.head[4]] || '',
+          tipo_fuente: f[this.apxCfg.A.head[5]] || '' });
+      }
+      return { fields: ['afirmacion', 'sec', 'texto', 'acept', 'fuerza', 'vig', 'clave', 'autores', 'año', 'titulo', 'publicacion', 'tipo_fuente'], rows: filas };
+    } };
+    defs.xPasaje = { label: '× Afirmaciones con su pasaje', get: () => {
+      const cl = this.state.allClaims, pa = this.state.pasajes;
+      if (!cl || !pa) return { fields: [], rows: null };
+      const porId = Object.fromEntries(cl.map(c => [c.id, c]));
+      return { fields: ['afirmacion', 'sec', 'texto', 'acept', 'fuerza', 'fuente', 'localizador', 'estado', 'pasaje'],
+        rows: pa.map(r => { const c = porId[r[0]] || {}; return {
+          afirmacion: r[0], sec: c.sec || '', texto: r[1], acept: c.acept || '',
+          fuerza: c.fuerza || '', fuente: r[2], localizador: r[3], estado: r[6], pasaje: r[5] }; }) };
+    } };
+    defs.xAcceso = { label: '× Fuentes con su acceso', get: () => {
+      const ap = apxRows('A'), ac = this.state.acceso;
+      if (!ap || !ac) return { fields: [], rows: null };
+      const porClave = Object.fromEntries(ac.map(r => [r[0], r]));
+      return { fields: ['clave', 'año', 'titulo', 'tipo_fuente', 'acceso', 'resultado', 'fichero', 'citas', 'fuente_unica'],
+        rows: ap.map(r => { const k = r[this.apxCfg.A.head[0]], a = porClave[k] || []; return {
+          clave: k, 'año': r[this.apxCfg.A.head[2]] || '', titulo: r[this.apxCfg.A.head[3]] || '',
+          tipo_fuente: r[this.apxCfg.A.head[5]] || '', acceso: a[4] || '', resultado: a[8] || '',
+          fichero: a[7] || '', citas: a[13] || '0', fuente_unica: a[14] || '0' }; }) };
+    } };
+    defs.xFecha = { label: '× Fechas con su afirmación', get: () => {
+      // Se lee el CSV crudo del apéndice D y no apxCfg: la configuración de la
+      // vista sólo declara seis columnas y el cruce necesita dos que no están
+      // ahí —la fuente con localizador y la fila que sostiene la fecha—.
+      const raw = this.state.apx.D, cl = this.state.allClaims;
+      if (!raw) { this.loadApx('D'); return { fields: [], rows: null }; }
+      if (!cl) return { fields: [], rows: null };
+      const porId = Object.fromEntries(cl.map(c => [c.id, c]));
+      return { fields: ['aplica', 'antiguo', 'reciente', 'unidad', 'tipo', 'observado', 'fuente', 'afirmacion', 'texto', 'acept', 'sec'],
+        rows: raw.map(r => { const ref = String(r[9] || '').match(/C-\d{3,4}/); const c = ref ? (porId[ref[0]] || {}) : {}; return {
+          aplica: r[0], antiguo: r[1], reciente: r[2], unidad: r[3], tipo: r[5],
+          observado: r[7], fuente: r[8], afirmacion: ref ? ref[0] : '',
+          texto: c.texto || '', acept: c.acept || '', sec: c.sec || '' }; }) };
+    } };
     return defs;
   }
   condMatch(c, row) {
@@ -976,13 +1042,57 @@ class Component extends DCLogic {
       });
     }
     const conGroupOpts = [{ v: '', label: 'Agrupar por: nada' }].concat(ds.fields.map(f => ({ v: f, label: 'Agrupar por: ' + f })));
-    let conGroups = [];
+    // Los ejes epistémicos no se promedian. §10 rechazó de entrada un
+    // `epistemic_status` único «porque mezclaba preguntas diferentes», y una
+    // media sobre aceptación o fuerza reintroduce ese error por la puerta de
+    // atrás. Lo mismo con los límites de un intervalo, donde el ancho ES la
+    // incertidumbre. Sobre esos campos la media no se ofrece.
+    const NO_PROMEDIABLE = /acept|fuerza|resol|vig|estado|antiguo|reciente|límite|limite/i;
+    const numDe = (x) => { const v = parseFloat(String(x ?? '').replace(',', '.').replace(/[^\d.\-]/g, '')); return isNaN(v) ? null : v; };
+    // Para agregar, el campo tiene que SER un número, no contenerlo: «C-1805» y
+    // «S56» llevan dígitos y promediarlos no significa nada.
+    const esNumero = (x) => /^\s*-?\d+(?:[.,]\d+)?\s*$/.test(String(x ?? ''));
+    const camposNum = ds.fields.filter(f => {
+      let vistos = 0, nums = 0;
+      for (const r of filtered.slice(0, 200)) { const v = r[f]; if (v === '' || v == null) continue; vistos++; if (esNumero(v)) nums++; }
+      return vistos >= 3 && nums / vistos > 0.8;
+    });
+    const metrica = st.conMetrica || 'recuento';
+    const campoM = st.conCampoM || (camposNum[0] || '');
+    let conGroups = [], conAgg = '';
     if (st.conGroup) {
       const m = new Map();
-      for (const r of filtered) { const k = String(r[st.conGroup] ?? '').slice(0, 80) || '(vacío)'; m.set(k, (m.get(k) || 0) + 1); }
-      const arr = [...m.entries()].sort((a, b) => b[1] - a[1]).slice(0, 14);
-      const max = arr.length ? arr[0][1] : 1;
-      conGroups = arr.map(([label, n]) => ({ label, n, barStyle: 'width:' + Math.max(2, Math.round(n / max * 100)) + '%;height:100%;border-radius:3px;background:var(--color-accent-700);' }));
+      for (const r of filtered) {
+        const k = String(r[st.conGroup] ?? '').slice(0, 80) || '(vacío)';
+        const prev = m.get(k) || { n: 0, suma: 0, min: null, max: null, conNum: 0 };
+        prev.n += 1;
+        const v = metrica === 'recuento' ? null : numDe(r[campoM]);
+        if (v !== null) {
+          prev.suma += v; prev.conNum += 1;
+          prev.min = prev.min === null ? v : Math.min(prev.min, v);
+          prev.max = prev.max === null ? v : Math.max(prev.max, v);
+        }
+        m.set(k, prev);
+      }
+      const valor = (g) => metrica === 'recuento' ? g.n
+        : metrica === 'suma' ? g.suma
+        : metrica === 'mínimo' ? (g.min ?? 0)
+        : metrica === 'máximo' ? (g.max ?? 0)
+        : g.conNum ? g.suma / g.conNum : 0;
+      const arr = [...m.entries()].map(([label, g]) => [label, valor(g), g])
+        .sort((a, b) => b[1] - a[1]).slice(0, 14);
+      const max = arr.length ? Math.max(...arr.map(x => Math.abs(x[1]))) || 1 : 1;
+      const fmt = (x) => Number.isInteger(x) ? String(x) : x.toFixed(2);
+      conGroups = arr.map(([label, v, g]) => ({
+        label, n: fmt(v) + (metrica === 'recuento' ? '' : ' · ' + g.n + ' filas'),
+        barStyle: 'width:' + Math.max(2, Math.round(Math.abs(v) / max * 100)) + '%;height:100%;border-radius:3px;background:var(--color-accent-700);' }));
+      const total = filtered.reduce((a, r) => a + (numDe(r[campoM]) ?? 0), 0);
+      const conN = filtered.filter(r => numDe(r[campoM]) !== null).length;
+      conAgg = metrica === 'recuento'
+        ? filtered.length + ' filas en ' + m.size + ' grupos'
+        : metrica + ' de «' + campoM + '» · total ' + fmt(total)
+          + (metrica === 'promedio' && conN ? ' · media global ' + (total / conN).toFixed(2) : '')
+          + ' · ' + conN + ' filas con valor numérico';
     }
     const tope = st.conTodas ? filtered.length : 30;
     const conRows = (st.conGroup ? [] : filtered.slice(0, tope)).map(r => ({
@@ -997,6 +1107,20 @@ class Component extends DCLogic {
       conDs: st.conDs, conDsOpts, conGroup: st.conGroup, conGroupOpts, conds, conMeta, conGroups, conRows,
       conShowGroups: !!st.conGroup && conGroups.length > 0,
       conModo: modo,
+      conMetrica: metrica, conAgg,
+      conMetricaOpts: [{ v: 'recuento', label: 'Métrica: recuento' }].concat(
+        camposNum.length ? ['suma', 'mínimo', 'máximo'].map(k => ({ v: k, label: 'Métrica: ' + k })) : [],
+        // El promedio sólo aparece si hay algún campo donde promediar signifique
+        // algo: ni ejes epistémicos ni límites de intervalo.
+        camposNum.some(f => !NO_PROMEDIABLE.test(f)) ? [{ v: 'promedio', label: 'Métrica: promedio' }] : []),
+      onConMetrica: (e) => this.setState({ conMetrica: e.target.value }),
+      conCampoM: campoM,
+      conCampoMOpts: camposNum
+        .filter(f => metrica !== 'promedio' || !NO_PROMEDIABLE.test(f))
+        .map(f => ({ v: f, label: 'sobre: ' + f })),
+      onConCampoM: (e) => this.setState({ conCampoM: e.target.value }),
+      conShowMetrica: !!st.conGroup,
+      conShowCampoM: !!st.conGroup && metrica !== 'recuento' && camposNum.length > 0,
       onConModo: () => this.setState({ conModo: modo === 'Y' ? 'O' : 'Y' }),
       conModoLabel: 'condiciones en ' + modo + ' · pulsa para cambiar',
       conOrdenOpts: [{ v: '', label: 'Orden: el del fichero' }]
