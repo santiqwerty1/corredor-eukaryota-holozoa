@@ -161,6 +161,82 @@ def resolver_europepmc(doi: str) -> dict | None:
     }
 
 
+# Qué anfitriones sirven el fichero y cuáles devuelven una página. Medido sobre
+# las fuentes que fallaron: europepmc sirvió el 100 % de sus intentos, mientras
+# que las webs de editor devuelven 403 y los repositorios, la ficha del depósito.
+# El orden de intento sale de aquí, no de qué catálogo dio el enlace.
+PREFERENCIA_ANFITRION = [
+    (("europepmc.org", "ncbi.nlm.nih.gov/pmc", "pmc.ncbi.nlm.nih.gov"), 0),
+    (("arxiv.org", "biorxiv.org", "zenodo.org", "osf.io"), 1),
+    ((".edu", ".ac.", "pure.", "repository", "repositorio", "dspace", "hal."), 2),
+]
+EDITORES = ("wiley.com", "oup.com", "sciencedirect", "springer", "nature.com",
+            "tandfonline", "cell.com", "pnas.org", "sagepub", "cambridge.org")
+
+
+def orden_anfitrion(url: str) -> int:
+    u = url.lower()
+    for claves, peso in PREFERENCIA_ANFITRION:
+        if any(k in u for k in claves):
+            return peso
+    if any(e in u for e in EDITORES):
+        return 9          # casi siempre 403 para un cliente automático
+    return 5
+
+
+def candidatos_semanticscholar(doi: str) -> list[tuple[str, str]]:
+    """Semantic Scholar mantiene su propio índice de PDF abiertos.
+
+    Es el que más aporta con diferencia: en la muestra de diagnóstico encontró
+    enlace para las seis fuentes que habían fallado por todas las demás vías.
+    """
+    try:
+        d = _pedir("https://api.semanticscholar.org/graph/v1/paper/DOI:"
+                   + urllib.parse.quote(doi) + "?fields=openAccessPdf", timeout=25)
+    except Exception:                                  # noqa: BLE001
+        return []
+    u = (d.get("openAccessPdf") or {}).get("url")
+    return [(u, "semanticscholar")] if u else []
+
+
+def candidatos_crossref(doi: str) -> list[tuple[str, str]]:
+    """Crossref publica los enlaces que los editores declaran para minería de
+    texto. Son la vía que el propio editor ofrece a las herramientas."""
+    try:
+        d = _pedir("https://api.crossref.org/works/" + urllib.parse.quote(doi), timeout=25)
+    except Exception:                                  # noqa: BLE001
+        return []
+    return [(l["URL"], "crossref/tdm")
+            for l in (d.get("message", {}).get("link") or [])
+            if l.get("URL") and "pdf" in (l.get("content-type") or "").lower()]
+
+
+def candidatos_de_pagina(html: bytes, base: str) -> list[tuple[str, str]]:
+    """`citation_pdf_url` de la página que se recibió en vez del artículo.
+
+    Las páginas de artículo llevan esa etiqueta justamente para que las
+    herramientas encuentren el fichero; Google Scholar se apoya en ella. Como el
+    HTML ya está descargado, extraerla no cuesta una petición más.
+    """
+    try:
+        txt = html[:400_000].decode("utf-8", "replace")
+    except Exception:                                  # noqa: BLE001
+        return []
+    pats = [r'<meta[^>]+name=["\']citation_pdf_url["\'][^>]+content=["\']([^"\']+)',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']citation_pdf_url']
+    for pat in pats:
+        m = re.search(pat, txt, re.I)
+        if m:
+            return [(urllib.parse.urljoin(base, m.group(1)), "citation_pdf_url")]
+    # Sin la etiqueta, los enlaces a fichero de la propia página. Varios
+    # repositorios Pure no declaran citation_pdf_url y cuelgan el PDF de un
+    # /files/ corriente. Se limita a tres para no convertir esto en un rastreo.
+    hrefs = re.findall(r'href=["\']([^"\']+)["\']', txt, re.I)
+    fich = [urllib.parse.urljoin(base, h) for h in dict.fromkeys(hrefs)
+            if h.lower().endswith(".pdf") or "/files/" in h.lower()]
+    return [(u, "enlace-de-la-pagina") for u in fich[:3]]
+
+
 def candidatos_unpaywall(doi: str, mailto: str) -> list[tuple[str, str]]:
     """Unpaywall conoce depósitos que OpenAlex no enlaza.
 
@@ -267,6 +343,10 @@ def nombre_fichero(f: dict) -> str:
     return f"{f['clave']} [{f['año'] or 's.f.'}] {t}.pdf".replace("/", "-")
 
 
+# El último cuerpo no-PDF recibido, para extraerle su citation_pdf_url.
+_ULTIMO_CUERPO: list[bytes] = [b""]
+
+
 def descargar(url: str, destino: Path) -> tuple[str, str]:
     """Devuelve (resultado, detalle). Rechaza lo que no sea un PDF de verdad.
 
@@ -284,6 +364,7 @@ def descargar(url: str, destino: Path) -> tuple[str, str]:
     if not cuerpo.startswith(b"%PDF"):
         cabeza = cuerpo[:200].lower()
         que = "HTML" if b"<html" in cabeza or b"<!doctype" in cabeza else "desconocido"
+        _ULTIMO_CUERPO[0] = cuerpo
         return "rechazado", f"la respuesta no es un PDF ({que}, {len(cuerpo)} bytes)"
     if len(cuerpo) < 8192:
         return "rechazado", f"PDF sospechosamente pequeño ({len(cuerpo)} bytes)"
@@ -533,16 +614,25 @@ def main() -> int:
                         resultado, detalle = descargar(url, ruta)
                         time.sleep(PAUSA_DESCARGA)
                         if resultado != "descargado":
-                            extra = candidatos_unpaywall(f["doi"], args.mailto)
+                            extra = []
+                            if resultado == "rechazado":
+                                extra += candidatos_de_pagina(_ULTIMO_CUERPO[0], url)
+                            extra += candidatos_semanticscholar(f["doi"])
+                            extra += candidatos_unpaywall(f["doi"], args.mailto)
                             alt = resolver_europepmc(f["doi"])
                             if alt and alt.get("pdf"):
                                 extra.append((alt["pdf"], "europepmc"))
                             extra += candidatos_arxiv(f["titulo"])
+                            extra += candidatos_crossref(f["doi"])
                             extra += candidatos_openaire(f["doi"])
                             extra += candidatos_core(f["doi"], args.core_key)
+                            # Se prueba por anfitrión, no por catálogo: da igual
+                            # quién diera el enlace, importa quién lo sirve.
+                            cola = sorted(extra, key=lambda c: orden_anfitrion(c[0]))
                             vistos, logrado = {url}, False
-                            for u, origen in extra:
-                                if u in vistos:
+                            while cola:
+                                u, origen = cola.pop(0)
+                                if u in vistos or len(vistos) > 14:
                                     continue
                                 vistos.add(u)
                                 r2, d2 = descargar(u, ruta)
@@ -551,6 +641,13 @@ def main() -> int:
                                     resultado, detalle = r2, f"{d2} (vía {origen})"
                                     via, url, logrado = origen, u, True
                                     break
+                                if r2 == "rechazado":
+                                    # Los repositorios y PMC devuelven la ficha del
+                                    # depósito, y esa ficha declara dónde está el
+                                    # PDF. Se sigue un nivel, sin volver atrás.
+                                    for u2, _ in candidatos_de_pagina(_ULTIMO_CUERPO[0], u):
+                                        if u2 not in vistos:
+                                            cola.insert(0, (u2, f"{origen}→pdf_url"))
                             if not logrado:
                                 detalle += f"; {len(vistos) - 1} alternativas sin éxito"
                         if resultado != "descargado":
