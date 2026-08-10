@@ -1,6 +1,6 @@
 # Fuentes sin texto completo
 
-De las **140** fuentes del apéndice A se obtuvieron **80** por vía de acceso abierto. Las **60** restantes están aquí, con la razón de cada una.
+De las **180** fuentes del apéndice A se obtuvieron **98** por vía de acceso abierto. Las **82** restantes están aquí, con la razón de cada una.
 
 Generado por `scripts/fetch_oa.py` el 2026-08-10. Para regenerarlo sin volver a descargar nada:
 
@@ -10,7 +10,7 @@ python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
 
 > Ninguna de estas fuentes se ha retirado del corpus ni se ha marcado como dudosa: no haber podido descargar el PDF no dice nada sobre la afirmación que sostiene. Esta lista es un encargo pendiente, no un defecto del corpus.
 
-## Sin versión de acceso abierto · 25
+## Sin versión de acceso abierto · 39
 
 Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbibliotecario, acceso institucional, o escribir a quien firma la correspondencia — muchos autores envían su propio PDF si se les pide.
 
@@ -24,6 +24,20 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S118` | 2005 | Richards y Cavalier-Smith | Myosin domain evolution and the primary divergence of eukaryotes | Nature | [10.1038/nature03949](https://doi.org/10.1038/nature03949) |
 | `S123` | 2000 | Rokas y Holland | Rare genomic changes as a tool for phylogenetics | Trends in Ecology & Evolution | [10.1016/s0169-5347(00)01967-4](https://doi.org/10.1016/s0169-5347(00)01967-4) |
 | `S125` | 2013 | Cavalier-Smith | Early evolution of eukaryote feeding modes, cell structural diversity, and c | European Journal of Protistology | [10.1016/j.ejop.2012.06.001](https://doi.org/10.1016/j.ejop.2012.06.001) |
+| `S146` | 1993 | Wainright et al. | Monophyletic origins of the Metazoa: an evolutionary link with fungi | Science | [10.1126/science.8469985](https://doi.org/10.1126/science.8469985) |
+| `S151` | 2004 | Javaux, E. J.; Knoll, A. H.; Walter, M | TEM evidence for eukaryotic diversity in mid-Proterozoic oceans | Geobiology 2:121–132 | [10.1111/j.1472-4677.2004.00027.x](https://doi.org/10.1111/j.1472-4677.2004.00027.x) |
+| `S155` | 1992 | Han, T.-M. y Runnegar, B. | Megascopic eukaryotic algae from the 2.1-billion-year-old Negaunee Iron-Form | Science 257:232–235 | [10.1126/science.1631544](https://doi.org/10.1126/science.1631544) |
+| `S157` | 2003 | Porter, S. M.; Meisterfeld, R.; Knoll, | Vase-shaped microfossils from the Neoproterozoic Chuar Group, Grand Canyon:  | Journal of Paleontology 77:409–429 | [10.1666/0022-3360(2003)077%3c0409:vmftnc%3e2.0.co;2](https://doi.org/10.1666/0022-3360(2003)077%3c0409:vmftnc%3e2.0.co;2) |
+| `S159` | 2000 | Butterfield, N. J. | Bangiomorpha pubescens n. gen., n. sp.: implications for the evolution of se | Paleobiology 26:386–404 | [10.1666/0094-8373(2000)026%3c0386:bpngns%3e2.0.co;2](https://doi.org/10.1666/0094-8373(2000)026%3c0386:bpngns%3e2.0.co;2) |
+| `S160` | 2018 | Gibson, T. M. et al. | Precise age of Bangiomorpha pubescens dates the origin of eukaryotic photosy | Geology 46:135–138 | [10.1130/g39829.1](https://doi.org/10.1130/g39829.1) |
+| `S163` | 2011 | Huldtgren, T. et al. | Fossilized nuclei and germination structures identify Ediacaran ‘animal embr | Science 334:1696–1699 | [10.1126/science.1209537](https://doi.org/10.1126/science.1209537) |
+| `S166` | 2014 | Chen, L. et al. | Cell differentiation and germ–soma separation in Ediacaran animal embryo-lik | Nature 516:238–241 | [10.1038/nature13766](https://doi.org/10.1038/nature13766) |
+| `S168` | 2005 | Condon, D. et al. | U-Pb Ages from the Neoproterozoic Doushantuo Formation, China | Science 308:95–98 | [10.1126/science.1107765](https://doi.org/10.1126/science.1107765) |
+| `S169` | 2017 | Zhou, C. et al. | A new SIMS zircon U–Pb date from the Ediacaran Doushantuo Formation: age con | Geological Magazine 154:1193–1201 | [10.1017/s0016756816001175](https://doi.org/10.1017/s0016756816001175) |
+| `S170` | 2008 | Rasmussen, B. et al. | Reassessing the first appearance of eukaryotes and cyanobacteria | Nature 455:1101–1104 | [10.1038/nature07381](https://doi.org/10.1038/nature07381) |
+| `S172` | 2009 | Love, G. D. et al. | Fossil steroids record the appearance of Demospongiae during the Cryogenian  | Nature 457:718–721 | [10.1038/nature07673](https://doi.org/10.1038/nature07673) |
+| `S182` | 2014 | Planavsky, N. J. et al. | Low Mid-Proterozoic atmospheric oxygen levels and the delayed rise of animal | Science 346:635–638 | [10.1126/science.1258410](https://doi.org/10.1126/science.1258410) |
+| `S186` | 1998 | Canfield, D. E. | A new model for Proterozoic ocean chemistry | Nature 396:450–453 | [10.1038/24839](https://doi.org/10.1038/24839) |
 | `S27` | 2026 | Appler et al. | Oxygen metabolism in descendants of the archaeal-eukaryotic ancestor | Nature | [10.1038/s41586-026-10128-z](https://doi.org/10.1038/s41586-026-10128-z) |
 | `S31` | 2020 | Cai et al. | Diverse Asgard archaea including the novel phylum Gerdarchaeota participate  | Science China Life Sciences | [10.1007/s11427-020-1679-1](https://doi.org/10.1007/s11427-020-1679-1) |
 | `S39` | 2018 | Akıl y Robinson | Genomes of Asgard archaea encode profilins that regulate actin | Nature | [10.1038/s41586-018-0548-6](https://doi.org/10.1038/s41586-018-0548-6) |
@@ -42,7 +56,7 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S96` | 1975 | Cavalier-Smith | The origin of nuclei and of eukaryotic cells | Nature | [10.1038/256463a0](https://doi.org/10.1038/256463a0) |
 | `S98` | 2018 | Beck, Martin; Mosalaganti, Shyamal; Ko | From the resolution revolution to evolution: structural insights into the ev | Current Opinion in Structural Biol | [10.1016/j.sbi.2018.07.012](https://doi.org/10.1016/j.sbi.2018.07.012) |
 
-## El servidor del editor rechazó la descarga · 26
+## El servidor del editor rechazó la descarga · 33
 
 El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
 
@@ -62,6 +76,13 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S137` | 2020 | Burki et al. | The New Tree of Eukaryotes | Trends in Ecology & Evolution | [10.1016/j.tree.2019.08.008](https://doi.org/10.1016/j.tree.2019.08.008) |
 | `S138` | 2009 | Roger y Simpson | Evolution: revisiting the root of the eukaryote tree | Current Biology | [10.1016/j.cub.2008.12.032](https://doi.org/10.1016/j.cub.2008.12.032) |
 | `S139` | 2011 | Parfrey, L. W. et al. | Estimating the timing of early eukaryotic diversification with multigene mol | Proceedings of the National Academ | [10.1073/pnas.1110633108](https://doi.org/10.1073/pnas.1110633108) |
+| `S144` | 2012 | Torruella et al. | Phylogenetic relationships within the Opisthokonta based on phylogenomic ana | Molecular Biology and Evolution | [10.1093/molbev/msr185](https://doi.org/10.1093/molbev/msr185) |
+| `S145` | 2014 | Cavalier-Smith et al. | Multigene eukaryote phylogeny reveals the likely protozoan ancestors of opis | Molecular Phylogenetics and Evolut | [10.1016/j.ympev.2014.08.012](https://doi.org/10.1016/j.ympev.2014.08.012) |
+| `S152` | 2006 | Knoll, A. H. et al. | Eukaryotic organisms in Proterozoic oceans | Philosophical Transactions of the  | [10.1098/rstb.2006.1843](https://doi.org/10.1098/rstb.2006.1843) |
+| `S154` | 2024 | Miao, L. et al. | 1.63-billion-year-old multicellular eukaryotes from the Chuanlinggou Formati | Science Advances 10:eadk3208 | [10.1126/sciadv.adk3208](https://doi.org/10.1126/sciadv.adk3208) |
+| `S158` | 2016 | Porter, S. M. | Tiny vampires in ancient seas: evidence for predation via perforation in fos | Proceedings of the Royal Society B | [10.1098/rspb.2016.0221](https://doi.org/10.1098/rspb.2016.0221) |
+| `S165` | 2020 | Yin, Z. et al. | Developmental biology of Helicoforamina reveals holozoan affinity, cryptic d | Science Advances | [10.1126/sciadv.abb0083](https://doi.org/10.1126/sciadv.abb0083) |
+| `S176` | 2011 | Waldbauer, J. R. et al. | Microaerobic steroid biosynthesis and the molecular fossil record of Archean | Proceedings of the National Academ | [10.1073/pnas.1104160108](https://doi.org/10.1073/pnas.1104160108) |
 | `S35` | 2024 | Imachi et al. | Promethearchaeum syntrophicum gen. nov., sp. nov., an anaerobic, obligately  | International Journal of Systemati | [10.1099/ijsem.0.006435](https://doi.org/10.1099/ijsem.0.006435) |
 | `S49` | 2023 | Geiger et al. | Multiple approaches of cellular metabolism define the bacterial ancestry of  | Science Advances | [10.1126/sciadv.adh0066](https://doi.org/10.1126/sciadv.adh0066) |
 | `S60` | 2013 | Koumandou et al. | Molecular paleontology and complexity in the last eukaryotic common ancestor | Critical Reviews in Biochemistry a | [10.3109/10409238.2013.821444](https://doi.org/10.3109/10409238.2013.821444) |
@@ -75,12 +96,13 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S83` | 2017 | Martin et al. | Late mitochondrial origin is an artefact | Genome Biology and Evolution | [10.1093/gbe/evx027](https://doi.org/10.1093/gbe/evx027) |
 | `S84` | 2017 | Martin, W. F.; Tielens, A. G. M.; Ment | The Physiology of Phagocytosis in the Context of Mitochondrial Origin | Microbiology and Molecular Biology | [10.1128/mmbr.00008-17](https://doi.org/10.1128/mmbr.00008-17) |
 
-## El enlace no devolvió un PDF · 6
+## El enlace no devolvió un PDF · 7
 
 La respuesta fue una página web, no un artículo: el enlace lleva a la ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y busca el enlace de descarga en la propia página.
 
 | Clave | Año | Autores | Título | Publicación | DOI |
 |---|---|---|---|---|---|
+| `S178` | 2020 | Porter, S. M. | Insights into eukaryogenesis from the fossil record | Interface Focus 10:20190105 | [10.1098/rsfs.2019.0105](https://doi.org/10.1098/rsfs.2019.0105) |
 | `S22` | 2015 | Spang et al. | Complex archaea that bridge the gap between prokaryotes and eukaryotes | Nature | [10.1038/nature14447](https://doi.org/10.1038/nature14447) |
 | `S24` | 2021 | Liu et al. | Expanded diversity of Asgard archaea and their relationships with eukaryotes | Nature | [10.1038/s41586-021-03494-3](https://doi.org/10.1038/s41586-021-03494-3) |
 | `S46` | 2018 | Martijn et al. | Deep mitochondrial origin outside the sampled alphaproteobacteria | Nature | [10.1038/s41586-018-0059-5](https://doi.org/10.1038/s41586-018-0059-5) |

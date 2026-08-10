@@ -40,8 +40,9 @@ EXPORT = ROOT / "exports" / "afirmaciones.csv"
 FUENTES = ROOT / "fuentes_pdf"
 SALIDA = ROOT / "exports" / "pasajes.csv"
 
-CABECERA = ["afirmacion", "clave_fuente", "localizador", "tipo_localizador",
-            "pasaje", "estado", "detalle"]
+CABECERA = ["afirmacion", "texto_afirmacion", "clave_fuente", "localizador",
+            "tipo_localizador", "pasaje", "estado", "detalle"]
+REVISION = ROOT / "docs" / "revision-pasajes.html"
 
 # Cómo se nombra en el corpus el sitio donde mirar. El tipo importa: un
 # localizador de línea se resuelve contando, uno de sección se resuelve
@@ -199,6 +200,70 @@ def recortar(texto: str, secciones: dict[str, str], tipo: str,
     return "", "sin tipo", "no se reconoce la forma del localizador"
 
 
+def escribir_revision(salida: list[list]) -> None:
+    """Afirmación y pasaje enfrentados, para revisar en tandas.
+
+    Comprobar mil localizadores abriendo mil artículos no lo hace nadie. Con la
+    afirmación a la izquierda y lo que dice la fuente a la derecha, el juicio
+    —que sigue siendo humano, §27.12— cuesta segundos en vez de minutos.
+    """
+    ORDEN = {"recortado": 0, "por concepto": 1, "no localizado": 2,
+             "no resoluble en texto": 3, "sin texto": 4, "sin tipo": 5}
+    filas = sorted(salida, key=lambda r: (ORDEN.get(r[6], 9), r[0]))
+    esc = lambda s: (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    cuenta: dict[str, int] = {}
+    for r in filas:
+        cuenta[r[6]] = cuenta.get(r[6], 0) + 1
+    tarjetas = []
+    for r in filas:
+        pasaje = esc(r[5])[:2000] or "<em>sin pasaje</em>"
+        tarjetas.append(f"""<article data-estado="{esc(r[6])}">
+ <div class=izq><div class=id>{esc(r[0])} · <span class=src>{esc(r[2])}</span></div>
+  <p class=afi>{esc(r[1])[:420]}</p>
+  <div class=loc>{esc(r[3])}</div></div>
+ <div class=der><div class="est e-{esc(r[6]).replace(' ', '-')}">{esc(r[6])}</div>
+  <p class=pas>{pasaje}</p>
+  <div class=det>{esc(r[7])}</div></div>
+</article>""")
+    botones = "".join(f'<button data-f="{esc(k)}">{esc(k)} ({v})</button>'
+                      for k, v in sorted(cuenta.items(), key=lambda x: -x[1]))
+    html = f"""<!doctype html><meta charset="utf-8">
+<title>Revisión de pasajes</title>
+<style>
+ body{{font:15px/1.55 system-ui,sans-serif;margin:0;padding:1.5rem;background:#fbfbfd;color:#1a1a1f}}
+ h1{{font-size:20px;margin:0 0 .3rem}} .nota{{color:#555;max-width:70ch;margin:0 0 1rem}}
+ nav{{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;position:sticky;top:0;
+   background:#fbfbfd;padding:.5rem 0;border-bottom:1px solid #e3e3e8;z-index:2}}
+ button{{border:1px solid #d0d0d8;background:#fff;border-radius:6px;padding:5px 11px;
+   font:inherit;font-size:13px;cursor:pointer}} button[aria-pressed=true]{{background:#1a1a1f;color:#fff}}
+ article{{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:1.2rem;
+   background:#fff;border:1px solid #e3e3e8;border-radius:9px;padding:.9rem 1.1rem;margin-bottom:.7rem}}
+ .id{{font:600 12px ui-monospace,monospace;color:#5a5a6a}} .src{{color:#7a6ad0}}
+ .afi{{margin:.35rem 0;font-size:14px}} .loc{{font:12px ui-monospace,monospace;color:#7a7a8a}}
+ .pas{{margin:.35rem 0;font-size:13.5px;color:#2a2a35;max-height:15em;overflow:auto}}
+ .det{{font-size:11.5px;color:#7a7a8a}}
+ .est{{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;background:#eee}}
+ .e-recortado{{background:#d8f0dc}} .e-por-concepto{{background:#e5e2fb}}
+ .e-no-localizado,.e-sin-texto{{background:#f6e3d8}}
+ @media(max-width:820px){{article{{grid-template-columns:1fr}}}}
+</style>
+<h1>Revisión de pasajes</h1>
+<p class=nota><strong>{len(filas)}</strong> localizadores. A la izquierda lo que afirma el
+corpus; a la derecha lo que dice la fuente en el sitio que la propia afirmación señala.
+El script recorta y presenta: <strong>decidir si el pasaje sostiene la afirmación es
+tuyo</strong>. Un pasaje ausente no es un defecto de la afirmación, es un localizador que
+no se pudo resolver, y el rótulo dice por qué.</p>
+<nav><button data-f="" aria-pressed="true">todos ({len(filas)})</button>{botones}</nav>
+{chr(10).join(tarjetas)}
+<script>
+ const arts=[...document.querySelectorAll('article')],bs=[...document.querySelectorAll('nav button')];
+ bs.forEach(b=>b.onclick=()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f; arts.forEach(a=>a.style.display=(!f||a.dataset.estado===f)?'':'none');}});
+</script>"""
+    REVISION.parent.mkdir(parents=True, exist_ok=True)
+    REVISION.write_text(html, encoding="utf-8")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Extrae los pasajes que citan las afirmaciones")
     ap.add_argument("--clave", help="procesar sólo esta fuente (p. ej. S56)")
@@ -223,7 +288,7 @@ def main() -> int:
                 continue
             tipo, grupos = tipo_de(loc)
             if clave not in xmls:
-                salida.append([r[0], clave, loc, tipo, "", "sin texto",
+                salida.append([r[0], r[1], clave, loc, tipo, "", "sin texto",
                                "no hay XML de esta fuente"])
                 cuenta["sin texto"] = cuenta.get("sin texto", 0) + 1
                 continue
@@ -231,7 +296,7 @@ def main() -> int:
                 cache[clave] = texto_de_xml(xmls[clave])
             texto, secciones = cache[clave]
             pasaje, estado, detalle = recortar(texto, secciones, tipo, grupos)
-            salida.append([r[0], clave, loc, tipo, pasaje, estado, detalle])
+            salida.append([r[0], r[1], clave, loc, tipo, pasaje, estado, detalle])
             cuenta[estado] = cuenta.get(estado, 0) + 1
         if args.limite and len(salida) >= args.limite:
             break
@@ -242,7 +307,10 @@ def main() -> int:
         w.writerow(CABECERA)
         w.writerows(salida)
 
+    escribir_revision(salida)
     print(f"\n{SALIDA.relative_to(ROOT)} · {len(salida)} localizadores", file=sys.stderr)
+    print(f"{REVISION.relative_to(ROOT)} · para revisar enfrentando afirmación y pasaje",
+          file=sys.stderr)
     for k in sorted(cuenta, key=lambda x: -cuenta[x]):
         print(f"  {cuenta[k]:6}  {k}", file=sys.stderr)
     util = cuenta.get("recortado", 0) + cuenta.get("por concepto", 0)

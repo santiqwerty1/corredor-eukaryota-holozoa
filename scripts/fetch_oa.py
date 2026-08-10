@@ -176,6 +176,7 @@ def leer_apendice_a() -> list[dict]:
             "url": (bruto or "").strip(),
             "autores": f[1].strip() if len(f) > 1 else "",
             "publicacion": f[4].strip() if len(f) > 4 else "",
+            "tipo": f[6].strip() if len(f) > 6 else "",
         })
     return fuentes
 
@@ -288,6 +289,51 @@ def texto_completo_epmc(doi: str) -> tuple[bytes, str] | None:
     if b"<article" not in cuerpo[:4000]:
         return None
     return cuerpo, pmcid
+
+
+# Una base de datos taxonómica o una carta cronoestratigráfica no son artículos:
+# el recurso ES la página. Pedirles un fichero descargable y anotarlas como
+# «no resoluble» las clasifica mal, porque no han fallado.
+TIPOS_RECURSO = ("base de datos taxonómica", "otro")
+PISTAS_RECURSO = ("stratigraphy.org", "registry.", "/names/", "iczn.org",
+                  "/the-code", "database", "portal", "/chart")
+
+
+def es_recurso_web(url: str, tipo: str) -> bool:
+    u = (url or "").lower()
+    if any(k in u for k in PISTAS_RECURSO):
+        return True
+    return (tipo or "").strip().lower() == "base de datos taxonómica"
+
+
+def texto_completo_por_url(url: str) -> tuple[bytes, str] | None:
+    """Las fuentes sin DOI que apuntan a PMC o PubMed sí son recuperables: el
+    identificador está en la propia dirección."""
+    u = url or ""
+    m = re.search(r"(PMC\d+)", u, re.I)
+    if m:
+        try:
+            cuerpo = _pedir("https://www.ebi.ac.uk/europepmc/webservices/rest/"
+                            f"{m.group(1).upper()}/fullTextXML", timeout=40, binario=True)
+            if b"<article" in cuerpo[:4000]:
+                return cuerpo, m.group(1).upper()
+        except Exception:                              # noqa: BLE001
+            pass
+    m = re.search(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)", u, re.I)
+    if m:
+        try:
+            d = _pedir(f"{EUROPEPMC}?query=EXT_ID:{m.group(1)}%20AND%20SRC:MED"
+                       "&format=json&pageSize=1&resultType=core", timeout=25)
+            res = (d.get("resultList") or {}).get("result") or []
+            if res and res[0].get("pmcid") and res[0].get("inEPMC") == "Y":
+                pmcid = res[0]["pmcid"]
+                cuerpo = _pedir("https://www.ebi.ac.uk/europepmc/webservices/rest/"
+                                f"{pmcid}/fullTextXML", timeout=40, binario=True)
+                if b"<article" in cuerpo[:4000]:
+                    return cuerpo, pmcid
+        except Exception:                              # noqa: BLE001
+            pass
+    return None
 
 
 def candidatos_semanticscholar(doi: str) -> list[tuple[str, str]]:
@@ -768,7 +814,45 @@ def main() -> int:
             fichero = resultado = detalle = ""
             if not f["doi"]:
                 acceso, via, url = "sin doi", "", f["url"]
-                resultado, detalle = "no resoluble", "la fuente no declara DOI; sólo URL"
+                if es_recurso_web(f["url"], f.get("tipo", "")):
+                    # No ha fallado: es que el recurso vive en la web y punto.
+                    acceso = "recurso web"
+                    resultado, detalle = "recurso web", (
+                        "el recurso es la propia página, no un documento descargable")
+                elif args.solo_informe or not f["url"]:
+                    resultado, detalle = "no resoluble", "la fuente no declara DOI; sólo URL"
+                else:
+                    fichero = nombre_fichero(f)
+                    ruta = args.destino / fichero
+                    ya = next((q for q in (ruta, ruta.with_suffix(".xml"))
+                               if q.exists() and q.stat().st_size > 8192), None)
+                    if ya:
+                        fichero = ya.name
+                        resultado, detalle = "ya estaba", f"{ya.stat().st_size // 1024} KB"
+                    else:
+                        # El identificador puede estar en la propia dirección.
+                        tc = texto_completo_por_url(f["url"])
+                        if tc:
+                            rx = ruta.with_suffix(".xml")
+                            rx.parent.mkdir(parents=True, exist_ok=True)
+                            rx.write_bytes(tc[0])
+                            fichero, via = rx.name, "europepmc/xml"
+                            resultado = "descargado"
+                            detalle = f"{len(tc[0]) // 1024} KB de texto completo en XML ({tc[1]})"
+                        else:
+                            # Sin DOI no hay catálogo al que preguntar, pero la
+                            # URL declarada sigue siendo un candidato legítimo.
+                            resultado, detalle = descargar(f["url"], ruta)
+                            time.sleep(PAUSA_DESCARGA)
+                            if resultado == "rechazado":
+                                for u2, o2 in candidatos_de_pagina(_ULTIMO_CUERPO[0], f["url"])[:2]:
+                                    r2, d2 = descargar(u2, ruta)
+                                    time.sleep(PAUSA_DESCARGA)
+                                    if r2 == "descargado":
+                                        resultado, detalle, via, url = r2, d2, o2, u2
+                                        break
+                            if resultado != "descargado":
+                                fichero = ""
             elif not info:
                 acceso, via, url = "desconocido", "", ""
                 resultado, detalle = "no resoluble", "ningún catálogo abierto reconoce este DOI"

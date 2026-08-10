@@ -532,7 +532,7 @@
               <tbody>
                 <sc-for list="{{ accRows }}" as="it" hint-placeholder-count="8">
                   <tr>
-                    <td style="font-family:ui-monospace,monospace;font-size:11px;color:var(--color-accent-300);">{{ it.clave }}</td>
+                    <td style="font-family:ui-monospace,monospace;font-size:11px;color:var(--color-accent-300);"><abbr title="clave de la fuente en el apéndice A">{{ it.clave }}</abbr></td>
                     <td style="text-align:right;font-variant-numeric:tabular-nums;">{{ it.citas }}</td>
                     <td style="text-align:right;font-variant-numeric:tabular-nums;">{{ it.unica }}</td>
                     <td style="font-size:12.5px;">{{ it.titulo }}<br><a href="{{ it.href }}" target="_blank" rel="noopener" style="font-family:ui-monospace,monospace;font-size:10.5px;">{{ it.doi }}</a></td>
@@ -610,6 +610,13 @@ class Component extends DCLogic {
   componentDidMount() {
     // El pie declara la procedencia del corpus: se lee del manifiesto y de
     // VERSION en vez de quedar embebido, para que no se pudra al crecer el repo.
+    // El mapa afirmación→sección sale del índice de tablas del corpus: una
+    // tabla embebida coincide hoy y deja de coincidir en cuanto crece una sección.
+    fetch('data/table_index.json').then(r => r.ok ? r.json() : null).then(ix => {
+      if (!ix || !ix.tables) return;
+      const cl = ix.tables.filter(x => x.category === 'claims' && x.row_count);
+      if (cl.length) this.SEC_COUNTS = cl.map(x => [String(x.section), x.row_count]);
+    }).catch(() => {});
     fetch('manifest.json').then(r => r.ok ? r.json() : null).then(m => {
       if (!m) return;
       const st = {};
@@ -709,6 +716,8 @@ class Component extends DCLogic {
     return rows;
   }
 
+  // Reserva: si data/table_index.json no carga, se usa este recuento, que era
+  // el vigente al escribirlo. La fuente de verdad es el índice, no esto.
   SEC_COUNTS = [['0',12],['1',4],['2',156],['3',258],['4',263],['5',63],['6',36],['7',58],['8',121],['9',251],['10',137],['11',122],['12',135],['13',63],['14',218],['15',55]];
   secOf(id) {
     const n = parseInt(id.slice(2), 10); let acc = 0;
