@@ -43,6 +43,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 APENDICE_A = ROOT / "data" / "apendices" / "A_fuentes.csv"
 INFORME = ROOT / "exports" / "acceso_fuentes.csv"
+LISTADO = ROOT / "docs" / "FUENTES-SIN-ACCESO.md"
 DESTINO = ROOT / "fuentes_pdf"
 
 OPENALEX = "https://api.openalex.org/works"
@@ -90,6 +91,8 @@ def leer_apendice_a() -> list[dict]:
             "titulo": f[3].strip() if len(f) > 3 else "",
             "doi": m.group(0).rstrip(".").lower() if m else "",
             "url": (bruto or "").strip(),
+            "autores": f[1].strip() if len(f) > 1 else "",
+            "publicacion": f[4].strip() if len(f) > 4 else "",
         })
     return fuentes
 
@@ -190,6 +193,120 @@ def descargar(url: str, destino: Path) -> tuple[str, str]:
     return "descargado", f"{len(cuerpo) // 1024} KB"
 
 
+RAZONES: dict[str, tuple[str, str]] = {
+    "cerrada": ("Sin versión de acceso abierto",
+                "Ningún catálogo declara una versión abierta. Vía habitual: préstamo "
+                "interbibliotecario, acceso institucional, o escribir a quien firma la "
+                "correspondencia — muchos autores envían su propio PDF si se les pide."),
+    "error": ("El servidor del editor rechazó la descarga",
+              "El catálogo las da por abiertas, pero el servidor responde con un error "
+              "(casi siempre 403) a un cliente automático. **Suelen abrirse sin problema "
+              "desde un navegador**: prueba el enlace del DOI directamente."),
+    "rechazado": ("El enlace no devolvió un PDF",
+                  "La respuesta fue una página web, no un artículo: el enlace lleva a la "
+                  "ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y "
+                  "busca el enlace de descarga en la propia página."),
+    "sin url": ("Declarada abierta, pero sin PDF enlazado",
+                "El catálogo la marca como abierta y no da la dirección del fichero. "
+                "El DOI suele llevar a la versión legible."),
+    "no resoluble": ("No identificable automáticamente",
+                     "O no declara DOI —sólo una URL—, o ningún catálogo abierto reconoce "
+                     "ese DOI. Hay que ir a mano por la referencia."),
+}
+
+
+def escribir_listado(filas: list[list[str]], fuentes: list[dict]) -> int:
+    """Deja en un documento legible las fuentes que no se pudieron obtener.
+
+    El CSV sirve para procesar; esto sirve para trabajar: agrupa por la razón
+    del fallo, dice qué hacer con cada grupo y da de cada fuente lo que hace
+    falta para pedirla —autores, revista y DOI pinchable—.
+    """
+    meta = {f["clave"]: f for f in fuentes}
+    idx = {n: i for i, n in enumerate(CABECERA_INFORME)}
+    grupos: dict[str, list[list[str]]] = {}
+    for fila in filas:
+        r = fila[idx["resultado"]]
+        if r in ("descargado", "ya estaba"):
+            continue
+        grupos.setdefault(r, []).append(fila)
+
+    total = sum(len(v) for v in grupos.values())
+    obtenidas = len(filas) - total
+    hoy = time.strftime("%Y-%m-%d")
+
+    out = [
+        "# Fuentes sin texto completo",
+        "",
+        f"De las **{len(filas)}** fuentes del apéndice A se obtuvieron **{obtenidas}** "
+        f"por vía de acceso abierto. Las **{total}** restantes están aquí, con la razón "
+        "de cada una.",
+        "",
+        "Generado por `scripts/fetch_oa.py` el " + hoy + ". Para regenerarlo sin volver "
+        "a descargar nada:",
+        "",
+        "```bash",
+        "python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado",
+        "```",
+        "",
+        "> Ninguna de estas fuentes se ha retirado del corpus ni se ha marcado como "
+        "dudosa: no haber podido descargar el PDF no dice nada sobre la afirmación que "
+        "sostiene. Esta lista es un encargo pendiente, no un defecto del corpus.",
+        "",
+    ]
+    for clave in ("cerrada", "error", "rechazado", "sin url", "no resoluble"):
+        filas_g = grupos.get(clave)
+        if not filas_g:
+            continue
+        titulo, consejo = RAZONES.get(clave, (clave, ""))
+        out += [f"## {titulo} · {len(filas_g)}", "", consejo, "",
+                "| Clave | Año | Autores | Título | Publicación | DOI |",
+                "|---|---|---|---|---|---|"]
+        for fila in sorted(filas_g, key=lambda x: x[idx["clave"]]):
+            m = meta.get(fila[idx["clave"]], {})
+            doi = fila[idx["doi"]]
+            enlace = f"[{doi}](https://doi.org/{doi})" if doi else (m.get("url") or "—")
+            esc = lambda s: (s or "").replace("|", "\\|")
+            out.append(
+                f"| `{fila[idx['clave']]}` | {fila[idx['año']] or '—'} "
+                f"| {esc(m.get('autores', ''))[:38]} | {esc(fila[idx['título']])[:76]} "
+                f"| {esc(m.get('publicacion', ''))[:34]} | {enlace} |")
+        out.append("")
+
+    otros = [k for k in grupos if k not in RAZONES]
+    for k in otros:
+        out += [f"## {k} · {len(grupos[k])}", ""]
+        for fila in grupos[k]:
+            out.append(f"- `{fila[idx['clave']]}` {fila[idx['título']][:80]}")
+        out.append("")
+
+    out += [
+        "## Cómo conseguirlas",
+        "",
+        "1. **Prueba el DOI en el navegador.** Buena parte de las bloqueadas por el "
+        "editor se abren sin más: el rechazo era al cliente automático, no a ti.",
+        "2. **Préstamo interbibliotecario.** Si tienes afiliación, es la vía normal y "
+        "suele tardar días.",
+        "3. **Escribe a quien firma la correspondencia.** Funciona más de lo que parece; "
+        "los autores pueden compartir su manuscrito aceptado.",
+        "4. **Busca el manuscrito del autor.** Muchas revistas permiten depositarlo en un "
+        "repositorio institucional aunque la versión publicada sea de pago.",
+        "",
+        "Cuando consigas alguna, déjala en `fuentes_pdf/` con el mismo nombre que usa el "
+        "script —`CLAVE [AÑO] Título.pdf`— y la próxima ejecución la dará por obtenida "
+        "en vez de volver a intentarlo.",
+        "",
+    ]
+    LISTADO.parent.mkdir(parents=True, exist_ok=True)
+    LISTADO.write_text("\n".join(out), encoding="utf-8")
+    return total
+
+
+def leer_informe() -> list[list[str]]:
+    with INFORME.open(encoding="utf-8", newline="") as fh:
+        return list(csv.reader(fh))[1:]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description="Descarga las fuentes del apéndice A que están en acceso abierto")
@@ -199,10 +316,19 @@ def main() -> int:
                     help="resolver el acceso sin descargar nada")
     ap.add_argument("--limite", type=int, default=0,
                     help="procesar sólo las primeras N fuentes (para probar)")
+    ap.add_argument("--solo-listado", action="store_true",
+                    help="rehacer docs/FUENTES-SIN-ACCESO.md desde el informe ya existente, sin red")
     ap.add_argument("--destino", type=Path, default=DESTINO)
     args = ap.parse_args()
 
     fuentes = leer_apendice_a()
+    if args.solo_listado:
+        if not INFORME.exists():
+            print(f"no existe {INFORME}: ejecuta antes una pasada completa", file=sys.stderr)
+            return 1
+        n = escribir_listado(leer_informe(), fuentes)
+        print(f"{LISTADO.relative_to(ROOT)} · {n} fuentes sin texto completo", file=sys.stderr)
+        return 0
     if args.limite:
         fuentes = fuentes[:args.limite]
     con_doi = [f for f in fuentes if f["doi"]]
@@ -281,8 +407,11 @@ def main() -> int:
         w.writerow(CABECERA_INFORME)
         w.writerows(filas)
 
+    sin_acceso = escribir_listado(filas, fuentes)
+
     print("\n" + "=" * 62, file=sys.stderr)
     print(f"informe: {INFORME.relative_to(ROOT)}", file=sys.stderr)
+    print(f"listado: {LISTADO.relative_to(ROOT)} · {sin_acceso} sin texto completo", file=sys.stderr)
     for k in sorted(cuenta, key=lambda x: -cuenta[x]):
         print(f"  {cuenta[k]:5}  {k}", file=sys.stderr)
     faltan = sum(v for k, v in cuenta.items() if k not in ("descargado", "ya estaba"))
