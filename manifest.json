@@ -25,8 +25,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 61,
-      "sha256": "5b38a53f81e7cca1d8194d981ab0a6ac8a38f49bd0a54a551107a546943cf9c0"
+      "bytes": 226,
+      "sha256": "39067af097ecb98be8f65e4e2cebbeeb0b6d8b1b97d1a5fa709984b10906754c"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -35,8 +35,8 @@
     },
     {
       "path": "Makefile",
-      "bytes": 944,
-      "sha256": "2154e1d619118621ff1f95f508f7384a3f113238a01373c9cb1e4a505e7bfb39"
+      "bytes": 1292,
+      "sha256": "65c1aa60c7bfaa55e0f2272f7ae5b304cad0a2433863fb227bdbec93c0a04f9b"
     },
     {
       "path": "README.md",
@@ -542,6 +542,11 @@
       "path": "docs/C01-PROMPT-INVESTIGACION.md",
       "bytes": 68802,
       "sha256": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
+    },
+    {
+      "path": "docs/FUENTES-SIN-ACCESO.md",
+      "bytes": 3501,
+      "sha256": "e3320898418598b575d214a5a6a6bb3dbc6f121792f1d6b2d309aeed4197f108"
     },
     {
       "path": "docs/GITHUB_SETUP.md",
@@ -2024,6 +2029,11 @@
       "sha256": "a2493e1b16a8d7578e5366ff8d4cd3ab9d46fba182bfc612558295f58b834782"
     },
     {
+      "path": "exports/acceso_fuentes.csv",
+      "bytes": 2736,
+      "sha256": "72d1a3ccc3991a42f6175c4b57b9523b0313df6a33165d660693b0bb2a8e9b56"
+    },
+    {
       "path": "exports/afirmaciones.csv",
       "bytes": 829811,
       "sha256": "150fcff1ba1970e18fb1351045bab235c82f9357a73b481de5c611e206d650a4"
@@ -2102,6 +2112,11 @@
       "path": "scripts/corpus_io.py",
       "bytes": 20524,
       "sha256": "e87030394f961580f0ff34972d9ceb68564f139db5728d1639e2f9b408d22af3"
+    },
+    {
+      "path": "scripts/fetch_oa.py",
+      "bytes": 21745,
+      "sha256": "6d389999398d512c08cfc0d38aac95e89ce5999641532eea2ecf2be6df4ba5ed"
     },
     {
       "path": "scripts/publish_github.sh",
