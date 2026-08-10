@@ -357,16 +357,26 @@
         </div>
         <sc-if value="{{ hShowGraph }}" hint-placeholder-val="{{ true }}">
           <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-6);">
-            <svg viewBox="0 0 800 460" style="width:100%;max-width:820px;height:auto;display:block;margin:0 auto;">
+            <div style="position:relative;max-width:820px;margin:0 auto;">
+            <svg viewBox="0 0 800 460" style="width:100%;height:auto;display:block;">
               <sc-for list="{{ hEdges }}" as="he" hint-placeholder-count="4"><path style="{{ he.dStyle }}" fill="none" stroke="{{ he.stroke }}" stroke-width="1.3" stroke-dasharray="{{ he.dash }}"></line></sc-for>
               <sc-for list="{{ hNodes }}" as="hn" hint-placeholder-count="6">
                 <g onClick="{{ hn.onClick }}" style="{{ hn.gStyle }}">
                   <circle r="1" fill="var(--color-neutral-800)" stroke="{{ hn.stroke }}" stroke-width="{{ hn.sw }}" style="{{ hn.rStyle }}"></circle>
-                  <text y="4" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="var(--color-neutral-100)">{{ hn.label }}</text>
+                  <title>{{ hn.titulo }}</title>
                 </g>
               </sc-for>
             </svg>
-            <div style="font-size:10.5px;color:var(--color-neutral-500);text-align:center;">radio = fuentes a favor · clic en un nodo para ver la ficha</div>
+              <!-- Las etiquetas van en HTML sobre el SVG porque el runtime
+                   envuelve toda interpolación en un <span>, y un <span> dentro
+                   de un <text> de SVG no dibuja glifo alguno: los rótulos
+                   existían en el DOM con caja de 0×0. En porcentaje del
+                   viewBox, así que siguen al grafo al redimensionar. -->
+              <sc-for list="{{ hNodes }}" as="hn" hint-placeholder-count="6">
+                <button onClick="{{ hn.onClick }}" title="{{ hn.titulo }}" style="{{ hn.lblStyle }}">{{ hn.label }}</button>
+              </sc-for>
+            </div>
+            <div style="font-size:10.5px;color:var(--color-neutral-500);text-align:center;">radio = fuentes a favor · clic en un nodo para ver su ficha · el trazo de la arista distingue incompatibilidad de compatibilidad parcial</div>
           </div>
         </sc-if>
         <sc-if value="{{ hShowMatrix }}" hint-placeholder-val="{{ false }}">
@@ -1014,6 +1024,16 @@ class Component extends DCLogic {
       if (!pos[a] || !pos[b]) continue;
       hEdges.push({ dStyle: 'd:path("M' + pos[a].x + ' ' + pos[a].y + 'L' + pos[b].x + ' ' + pos[b].y + '");', stroke: e.kind === 'inc' ? 'var(--color-accent)' : 'var(--color-neutral-500)', dash: e.kind === 'inc' ? '7 5' : '1 4' });
     }
+    // Al seleccionar una hipótesis se atenúa lo que no se relaciona con ella:
+    // el grafo pasa de decorativo a responder «¿con qué choca ésta?».
+    const vecinos = new Set();
+    if (st.hSel) {
+      for (const key of edges.keys()) {
+        const [a, b] = key.split(/-(?=H)/);
+        if (a === st.hSel) vecinos.add(b);
+        if (b === st.hSel) vecinos.add(a);
+      }
+    }
     const hNodes = nodes.map(n => ({
       x: pos[n].x, y: pos[n].y, label: n, r: 16 + Math.min(10, favCount(n) * 2),
       // El radio va por CSS y no como atributo: el navegador valida la
@@ -1021,7 +1041,14 @@ class Component extends DCLogic {
       // geométrico con {{ }} deja un error en consola. `r` es una propiedad
       // CSS válida en SVG2, así que el trazo se ajusta con ella.
       rStyle: 'r:' + (16 + Math.min(10, favCount(n) * 2)) + 'px;',
-      gStyle: 'cursor:pointer;transform:translate(' + pos[n].x + 'px,' + pos[n].y + 'px);',
+      gStyle: 'cursor:pointer;transform:translate(' + pos[n].x + 'px,' + pos[n].y + 'px);'
+        + (st.hSel && st.hSel !== n && !vecinos.has(n) ? 'opacity:.28;' : ''),
+      titulo: n + ' · ' + ((idx[n] || {}).sostiene || 'sin descripción'),
+      lblStyle: 'position:absolute;left:' + (pos[n].x / 800 * 100).toFixed(3) + '%;top:'
+        + (pos[n].y / 460 * 100).toFixed(3) + '%;transform:translate(-50%,-50%);'
+        + 'background:none;border:none;padding:0;cursor:pointer;font:11px ui-monospace,monospace;'
+        + 'color:var(--color-neutral-100);white-space:nowrap;'
+        + (st.hSel && st.hSel !== n && !vecinos.has(n) ? 'opacity:.28;' : ''),
       sw: '1.5',
       stroke: st.hSel === n ? 'var(--color-accent)' : 'var(--color-neutral-400)',
       onClick: () => { this.setState({ hSel: n }); this.scrollToSel('hip'); }
