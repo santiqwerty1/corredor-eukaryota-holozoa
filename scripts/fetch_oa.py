@@ -4,9 +4,16 @@
 El corpus cita 523 fuentes y de muchas sólo se pudo leer el resumen. Este script
 busca cuáles de ellas son legalmente accesibles y trae el PDF.
 
-**Qué hace y qué no.** Pregunta por cada DOI a cinco catálogos abiertos
-—OpenAlex, Unpaywall, Europe PMC, arXiv y OpenAIRE, más CORE si se da su clave—
-y descarga únicamente lo que esos catálogos declaran abierto. No accede a repositorios
+**Qué hace y qué no.** Pregunta por cada DOI a los catálogos abiertos
+—OpenAlex, Semantic Scholar, Unpaywall, Europe PMC, Crossref, arXiv y OpenAIRE,
+más CORE si se da su clave— y obtiene únicamente lo que esos catálogos declaran
+abierto.
+
+**No todo tiene que ser un PDF.** Lo que se busca es el texto completo, y el
+formato mejor depende de para qué. Si Europe PMC ofrece el XML JATS del
+artículo, se guarda ése: está estructurado, se busca sin capa de OCR y permite
+comprobar un localizador como «S56 líneas 318–321» sin abrir nada. El PDF es
+cómodo de leer; el XML es verificable, que es lo que pide una auditoría. No accede a repositorios
 piratas, no sortea muros de pago y no toca las fuentes cerradas: esas se listan
 en el informe como lo que son, un hueco declarado.
 
@@ -182,6 +189,36 @@ def orden_anfitrion(url: str) -> int:
     if any(e in u for e in EDITORES):
         return 9          # casi siempre 403 para un cliente automático
     return 5
+
+
+def texto_completo_epmc(doi: str) -> tuple[bytes, str] | None:
+    """El texto completo en XML JATS, cuando Europe PMC lo tiene.
+
+    Un PDF es cómodo de leer; el XML es **verificable**: está estructurado, se
+    busca sin capa de OCR y permite comprobar un localizador como «S56 líneas
+    318–321» sin abrir nada. Para el trabajo de auditoría es el formato mejor,
+    no el peor, así que se intenta antes que el PDF.
+    """
+    try:
+        d = _pedir(f"{EUROPEPMC}?query={urllib.parse.quote('DOI:' + doi)}"
+                   "&format=json&pageSize=1&resultType=core", timeout=25)
+    except Exception:                                  # noqa: BLE001
+        return None
+    res = (d.get("resultList") or {}).get("result") or []
+    if not res:
+        return None
+    w = res[0]
+    pmcid = w.get("pmcid")
+    if not pmcid or w.get("inEPMC") != "Y":
+        return None
+    try:
+        cuerpo = _pedir(f"https://www.ebi.ac.uk/europepmc/webservices/rest/"
+                        f"{pmcid}/fullTextXML", timeout=40, binario=True)
+    except Exception:                                  # noqa: BLE001
+        return None
+    if b"<article" not in cuerpo[:4000]:
+        return None
+    return cuerpo, pmcid
 
 
 def candidatos_semanticscholar(doi: str) -> list[tuple[str, str]]:
@@ -600,8 +637,11 @@ def main() -> int:
                 else:
                     fichero = nombre_fichero(f)
                     ruta = args.destino / fichero
-                    if ruta.exists() and ruta.stat().st_size > 8192:
-                        resultado, detalle = "ya estaba", f"{ruta.stat().st_size // 1024} KB"
+                    ya = next((q for q in (ruta, ruta.with_suffix(".xml"))
+                               if q.exists() and q.stat().st_size > 8192), None)
+                    if ya:
+                        fichero = ya.name
+                        resultado, detalle = "ya estaba", f"{ya.stat().st_size // 1024} KB"
                     else:
                         # Cadena de candidatos. La ubicación de OpenAlex va
                         # primero; si falla, se pregunta al resto de catálogos
@@ -613,6 +653,21 @@ def main() -> int:
                         # repositorio de Wageningen.
                         resultado, detalle = descargar(url, ruta)
                         time.sleep(PAUSA_DESCARGA)
+                        if resultado != "descargado":
+                            # Antes de dar por perdida la fuente: el texto
+                            # completo en XML sirve igual —mejor, de hecho— para
+                            # comprobar qué dice realmente la fuente.
+                            tc = texto_completo_epmc(f["doi"])
+                            if tc:
+                                rx = ruta.with_suffix(".xml")
+                                rx.parent.mkdir(parents=True, exist_ok=True)
+                                rx.write_bytes(tc[0])
+                                fichero = rx.name
+                                via, url = "europepmc/xml", (
+                                    "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+                                    f"{tc[1]}/fullTextXML")
+                                resultado = "descargado"
+                                detalle = f"{len(tc[0]) // 1024} KB de texto completo en XML (JATS)"
                         if resultado != "descargado":
                             extra = []
                             if resultado == "rechazado":
