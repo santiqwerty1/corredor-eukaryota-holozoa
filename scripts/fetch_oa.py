@@ -38,6 +38,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -60,6 +61,10 @@ CACHE = DESTINO / ".resolucion.json"
 # se interrumpe, lo trabajado hasta ese punto tiene que quedar en disco.
 CHECKPOINT = 10
 
+# Recuento de uso por fuente; se rellena al arrancar.
+USOS: dict[str, int] = {}
+UNICA: dict[str, int] = {}
+
 OPENALEX = "https://api.openalex.org/works"
 EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 LOTE = 50  # tope de la API de OpenAlex por consulta
@@ -74,7 +79,71 @@ PAUSA_DESCARGA = 1.0
 CABECERA_INFORME = [
     "clave", "año", "título", "doi", "acceso", "vía", "url_pdf",
     "fichero", "resultado", "detalle",
+    # Procedencia de la propia descarga: un repositorio que exige rastrear cada
+    # afirmación hasta su fuente debe poder demostrar también que el fichero
+    # que guarda hoy es el que trajo aquel día, y de dónde.
+    "sha256", "obtenido_el", "identidad",
+    # Cuánto sostiene la fuente: para decidir a cuáles merece la pena ir a mano.
+    "afirmaciones_que_la_citan", "de_las_cuales_fuente_unica",
 ]
+
+
+def impacto_por_fuente() -> tuple[dict[str, int], dict[str, int]]:
+    """Cuántas afirmaciones sostiene cada fuente, y cuántas en solitario.
+
+    Perseguir las fuentes que faltan por orden alfabético trata igual a la que
+    respalda una afirmación y a la que respalda cuarenta. Este recuento ordena
+    el trabajo manual por lo que de verdad está en juego.
+    """
+    export = ROOT / "exports" / "afirmaciones.csv"
+    usos: dict[str, int] = {}
+    unica: dict[str, int] = {}
+    if not export.exists():
+        return usos, unica
+    with export.open(encoding="utf-8", newline="") as fh:
+        for fila in list(csv.reader(fh))[1:]:
+            if len(fila) < 7:
+                continue
+            claves = list(dict.fromkeys(re.findall(r"\bS\d{2,3}\b", fila[6] or "")))
+            for k in claves:
+                usos[k] = usos.get(k, 0) + 1
+            if len(claves) == 1:
+                unica[claves[0]] = unica.get(claves[0], 0) + 1
+    return usos, unica
+
+
+def verificar_identidad(ruta: Path, doi: str, titulo: str) -> tuple[str, str]:
+    """¿El fichero es el trabajo que dice ser?
+
+    Descargar algo no es descargar lo correcto: un repositorio puede devolver
+    otro documento y la búsqueda por título de arXiv puede acertar un trabajo
+    parecido. Se comprueba lo que se puede comprobar y **no se afirma más**: si
+    no hay metadatos legibles, el veredicto es «sin comprobar», nunca «correcto».
+    """
+    try:
+        bruto = ruta.read_bytes()
+    except Exception:                                  # noqa: BLE001
+        return "sin comprobar", "no se pudo leer"
+
+    if ruta.suffix == ".xml":
+        txt = bruto[:200_000].decode("utf-8", "replace")
+        m = re.search(r'<article-id[^>]*pub-id-type="doi"[^>]*>([^<]+)', txt, re.I)
+        if m:
+            return ("coincide", "DOI del XML") if m.group(1).strip().lower() == doi.lower() \
+                else ("NO COINCIDE", f"el XML declara {m.group(1).strip()}")
+        return "sin comprobar", "el XML no declara DOI"
+
+    # En un PDF los metadatos XMP suelen viajar sin comprimir; ahí se busca.
+    cabeza = bruto[:600_000] + bruto[-200_000:]
+    txt = cabeza.decode("latin-1", "replace")
+    if doi and doi.lower() in txt.lower():
+        return "coincide", "el DOI aparece en el fichero"
+    palabras = [w for w in re.findall(r"[A-Za-zÁ-ÿ]{5,}", titulo or "")][:6]
+    if palabras:
+        hallado = sum(1 for w in palabras if w.lower() in txt.lower())
+        if hallado >= max(2, len(palabras) // 2):
+            return "coincide", f"{hallado}/{len(palabras)} palabras del título"
+    return "sin comprobar", "sin metadatos legibles"
 
 
 def _pedir(url: str, timeout: int = 40, binario: bool = False):
@@ -478,17 +547,20 @@ def escribir_listado(filas: list[list[str]], fuentes: list[dict]) -> int:
             continue
         titulo, consejo = RAZONES.get(clave, (clave, ""))
         out += [f"## {titulo} · {len(filas_g)}", "", consejo, "",
-                "| Clave | Año | Autores | Título | Publicación | DOI |",
-                "|---|---|---|---|---|---|"]
-        for fila in sorted(filas_g, key=lambda x: x[idx["clave"]]):
+                "| Clave | Cita | Única | Año | Autores | Título | DOI |",
+                "|---|---:|---:|---|---|---|---|"]
+        # Por impacto, no por clave: la que sostiene cuarenta afirmaciones y la
+        # que sostiene una no merecen el mismo sitio en la cola.
+        for fila in sorted(filas_g, key=lambda x: (-int(x[13] or 0), -int(x[14] or 0),
+                                                   x[idx["clave"]])):
             m = meta.get(fila[idx["clave"]], {})
             doi = fila[idx["doi"]]
             enlace = f"[{doi}](https://doi.org/{doi})" if doi else (m.get("url") or "—")
             esc = lambda s: (s or "").replace("|", "\\|")
             out.append(
-                f"| `{fila[idx['clave']]}` | {fila[idx['año']] or '—'} "
-                f"| {esc(m.get('autores', ''))[:38]} | {esc(fila[idx['título']])[:76]} "
-                f"| {esc(m.get('publicacion', ''))[:34]} | {enlace} |")
+                f"| `{fila[idx['clave']]}` | {fila[13] or '0'} | {fila[14] or '0'} "
+                f"| {fila[idx['año']] or '—'} | {esc(m.get('autores', ''))[:32]} "
+                f"| {esc(fila[idx['título']])[:64]} | {enlace} |")
         out.append("")
 
     otros = [k for k in grupos if k not in RAZONES]
@@ -515,9 +587,80 @@ def escribir_listado(filas: list[list[str]], fuentes: list[dict]) -> int:
         "en vez de volver a intentarlo.",
         "",
     ]
+    # Encabezado de prioridad: veinte líneas que valen más que las otras
+    # cuatrocientas, porque concentran la mayor parte de lo que está en juego.
+    pend = sorted((f for g in grupos.values() for f in g),
+                  key=lambda x: -int(x[13] or 0))
+    top = [f for f in pend if int(f[13] or 0) > 0][:20]
+    if top:
+        citas_top = sum(int(f[13] or 0) for f in top)
+        citas_tot = sum(int(f[13] or 0) for f in pend) or 1
+        cab = [
+            "## Por dónde empezar", "",
+            f"Estas **{len(top)}** sostienen **{citas_top}** de las {citas_tot} citas "
+            f"pendientes —el {100 * citas_top // citas_tot} %—. Conseguirlas a mano "
+            "rinde más que las otras " + str(len(pend) - len(top)) + " juntas.", "",
+            "| Clave | Cita | Única | Título | DOI |", "|---|---:|---:|---|---|",
+        ]
+        for f in top:
+            d = f[idx["doi"]]
+            cab.append(f"| `{f[idx['clave']]}` | {f[13]} | {f[14]} "
+                       f"| {(f[idx['título']] or '').replace('|', '-')[:62]} "
+                       f"| {'[' + d + '](https://doi.org/' + d + ')' if d else '—'} |")
+        cab.append("")
+        # va tras la nota introductoria, antes de los grupos por causa
+        corte = next((i for i, l in enumerate(out) if l.startswith("## ")), len(out))
+        out[corte:corte] = cab
+
     LISTADO.parent.mkdir(parents=True, exist_ok=True)
     LISTADO.write_text("\n".join(out), encoding="utf-8")
+    escribir_pagina_rescate(pend, meta, idx)
     return total
+
+
+def escribir_pagina_rescate(pend: list[list[str]], meta: dict, idx: dict) -> None:
+    """Una página con los enlaces, para el rescate manual en el navegador.
+
+    Muchas de las que fallan son fuentes que el catálogo da por abiertas y cuyo
+    servidor rechaza a los clientes automáticos: **se abren pinchando el DOI**.
+    Esta página las pone en orden de impacto para que esa sesión de clics
+    empiece por lo que más sostiene.
+    """
+    filas_html = []
+    for f in sorted(pend, key=lambda x: -int(x[13] or 0)):
+        d, m = f[idx["doi"]], meta.get(f[idx["clave"]], {})
+        enl = f'<a href="https://doi.org/{d}" target="_blank" rel="noopener">{d}</a>' if d \
+            else (f'<a href="{m.get("url", "")}" target="_blank" rel="noopener">enlace</a>'
+                  if m.get("url") else "—")
+        esc = lambda s: (s or "").replace("&", "&amp;").replace("<", "&lt;")
+        filas_html.append(
+            f"<tr><td><code>{f[idx['clave']]}</code></td><td class=n>{f[13] or 0}</td>"
+            f"<td class=n>{f[14] or 0}</td><td>{esc(f[idx['título']])[:110]}</td>"
+            f"<td>{esc(m.get('publicacion', ''))[:40]}</td>"
+            f"<td>{esc(f[idx['resultado']])}</td><td>{enl}</td></tr>")
+    html = f"""<!doctype html><meta charset="utf-8">
+<title>Fuentes por conseguir a mano</title>
+<style>
+ body{{font:15px/1.5 system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem}}
+ table{{border-collapse:collapse;width:100%;font-size:13.5px}}
+ th,td{{padding:6px 8px;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}}
+ th{{position:sticky;top:0;background:#fff;border-bottom:2px solid #333}}
+ .n{{text-align:right;font-variant-numeric:tabular-nums}}
+ tr:hover{{background:#f6f6f6}} code{{background:#f0f0f0;padding:1px 4px;border-radius:3px}}
+ p.nota{{color:#555}}
+</style>
+<h1>Fuentes por conseguir a mano</h1>
+<p class=nota><strong>{len(pend)}</strong> fuentes sin texto completo, ordenadas por
+cuántas afirmaciones sostienen. Muchas responden 403 a un cliente automático pero
+<strong>se abren con normalidad en el navegador</strong>: empieza por arriba.
+Cuando consigas una, guárdala en <code>fuentes_pdf/</code> como
+<code>CLAVE [AÑO] Título.pdf</code> y la próxima ejecución la dará por obtenida.</p>
+<table><thead><tr><th>Clave</th><th class=n>Cita</th><th class=n>Única</th>
+<th>Título</th><th>Publicación</th><th>Motivo</th><th>Abrir</th></tr></thead>
+<tbody>
+{chr(10).join(filas_html)}
+</tbody></table>"""
+    (ROOT / "docs" / "fuentes-por-conseguir.html").write_text(html, encoding="utf-8")
 
 
 def volcar(filas: list[list[str]], fuentes: list[dict]) -> None:
@@ -569,6 +712,8 @@ def main() -> int:
     ap.add_argument("--destino", type=Path, default=DESTINO)
     args = ap.parse_args()
 
+    global USOS, UNICA
+    USOS, UNICA = impacto_por_fuente()
     fuentes = leer_apendice_a()
     if args.solo_listado:
         if not INFORME.exists():
@@ -723,9 +868,22 @@ def main() -> int:
                         detalle += f" + {len(tc[0]) // 1024} KB de XML"
                     time.sleep(PAUSA_API)
 
+            huella = obtenido = identidad = ""
+            if fichero:
+                q = args.destino / fichero
+                if q.exists():
+                    huella = hashlib.sha256(q.read_bytes()).hexdigest()[:16]
+                    obtenido = time.strftime("%Y-%m-%d")
+                    est, por = verificar_identidad(q, f["doi"], f["titulo"])
+                    identidad = est if est == "coincide" else f"{est} ({por})"
+                    if est == "NO COINCIDE":
+                        print(f"  {f['clave']:6} AVISO identidad: {por}", file=sys.stderr)
+
             marcar(resultado)
             filas.append([f["clave"], f["año"], f["titulo"], f["doi"], acceso, via,
-                          url, fichero, resultado, detalle])
+                          url, fichero, resultado, detalle,
+                          huella, obtenido, identidad,
+                          str(USOS.get(f["clave"], 0)), str(UNICA.get(f["clave"], 0))])
             if resultado in ("descargado", "rechazado", "error"):
                 print(f"  {f['clave']:6} {resultado:11} {detalle}", file=sys.stderr)
             if n_f % CHECKPOINT == 0:
