@@ -26,7 +26,7 @@
     </div>
     <nav style="display:flex;flex-direction:column;gap:var(--space-1);">
       <sc-for list="{{ nav }}" as="it" hint-placeholder-count="5">
-        <button onClick="{{ it.onClick }}" style="{{ it.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 10%,transparent);color:var(--color-accent-200);"><i class="ph {{ it.icon }}" style="font-size:16px;"></i>{{ it.label }}</button>
+        <button onClick="{{ it.onClick }}" aria-current="{{ it.ariaCurrent }}" style="{{ it.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 10%,transparent);color:var(--color-accent-200);"><i class="ph {{ it.icon }}" style="font-size:16px;" aria-hidden="true"></i>{{ it.label }}</button>
       </sc-for>
     </nav>
     <div style="display:flex;gap:var(--space-2);">
@@ -58,7 +58,7 @@
           <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);padding:var(--space-6);"><div style="white-space:nowrap;font:500 24px var(--font-heading);">68</div><div style="font-size:11.5px;color:var(--color-neutral-400);margin-top:var(--space-1);">búsquedas negativas activas</div></div>
         </div>
         <div style="display:flex;gap:var(--space-6);font-size:11.5px;color:var(--color-neutral-400);margin-bottom:var(--space-8);flex-wrap:wrap;">
-          <span><span style="color:var(--color-accent-300);font-weight:500;">1 196</span> afirmaciones dependen de una sola fuente</span>
+          <span><span style="color:var(--color-accent-300);font-weight:500;">{{ unicaFuente }}</span> afirmaciones dependen de una sola fuente{{ unicaFuenteNota }}</span>
           <span><span style="color:var(--color-neutral-200);font-weight:500;">0</span> oraciones sin fuente</span>
           <span><span style="color:var(--color-neutral-200);font-weight:500;">31</span> celdas «SIN CIFRA PUBLICADA LOCALIZADA»</span>
           <span><span style="color:var(--color-neutral-200);font-weight:500;">215</span> fechas consolidadas</span>
@@ -595,12 +595,16 @@ class Component extends DCLogic {
 
   NAV_KEYS = ['view', 'selId', 'fSel', 'hSel', 'hView', 'cronoSel', 'cYear', 'cPub', 'tab', 'apxSel', 'bloque', 'lecSec', 'fS', 'fA', 'fF', 'cFilt', 'fRank', 'conDs', 'conGroup'];
   _undo = []; _redo = []; _navving = false;
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate() {
+    // El runtime llama componentDidUpdate(prevProps) —sin prevState, a
+    // diferencia de React—, así que la instantánea anterior la guardamos aquí.
+    const ahora = this._snapNow();
+    const prev = this._lastSnap;
+    this._lastSnap = ahora;
     if (this._navving) { this._navving = false; return; }
-    if (!prevState) return;
-    if (this.NAV_KEYS.some(k => prevState[k] !== this.state[k])) {
-      const snap = {}; for (const k of this.NAV_KEYS) snap[k] = prevState[k];
-      this._undo.push(snap); if (this._undo.length > 60) this._undo.shift();
+    if (!prev) return;
+    if (this.NAV_KEYS.some(k => prev[k] !== ahora[k])) {
+      this._undo.push(prev); if (this._undo.length > 60) this._undo.shift();
       this._redo = [];
       this.forceUpdate();
     }
@@ -700,7 +704,7 @@ class Component extends DCLogic {
     if (e === 'NO BUSCADO') return 'tag tag-neutral';
     return 'tag tag-outline';
   }
-  isSingle(c) { return (c.fuente.match(/S\d+/g) || []).filter((v, i, a) => a.indexOf(v) === i).length === 1; }
+  isSingle(c) { return (c.fuente.match(/\bS\d{2,3}\b/g) || []).filter((v, i, a) => a.indexOf(v) === i).length === 1; }
   scrollToSel(marker) {
     setTimeout(() => {
       const main = document.querySelector('main');
@@ -873,7 +877,7 @@ class Component extends DCLogic {
     const claims = st.allClaims || [];
     const cites = {}, solo = {};
     for (const c of claims) {
-      const refs = (c.fuente.match(/S\d+/g) || []).filter((v, i, a) => a.indexOf(v) === i);
+      const refs = (c.fuente.match(/\bS\d{2,3}\b/g) || []).filter((v, i, a) => a.indexOf(v) === i);
       for (const r of refs) cites[r] = (cites[r] || 0) + 1;
       if (refs.length === 1) solo[refs[0]] = (solo[refs[0]] || 0) + 1;
     }
@@ -882,13 +886,16 @@ class Component extends DCLogic {
     const byKey = st.fRank === 'solo' ? solo : cites;
     const keys = Object.keys(byKey).sort((a, b) => byKey[b] - byKey[a]).slice(0, 18);
     if (st.fSel && !keys.includes(st.fSel)) keys.unshift(st.fSel);
-    const max = keys.length ? byKey[keys[0]] || 1 : 1;
+    // El máximo se toma de TODAS las filas visibles, no de keys[0]: al abrir
+    // una fuente que no está en el top, se antepone a la lista y tomarla como
+    // referencia desbordaba el resto de barras fuera de su carril.
+    const max = Math.max(1, ...keys.map(k => byKey[k] || 0));
     const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
     return {
       fRows: keys.map(k => {
         const open = st.fSel === k;
         const row = metaRow[k];
-        const citas = open ? claims.filter(c => (c.fuente.match(/S\d+/g) || []).includes(k)) : [];
+        const citas = open ? claims.filter(c => (c.fuente.match(/\bS\d{2,3}\b/g) || []).includes(k)) : [];
         return {
           clave: k, ref: row ? row[1] + ' (' + row[2] + '). ' + row[3] : '—',
           nC: cites[k] || 0, nSolo: solo[k] || 0, open,
@@ -905,7 +912,7 @@ class Component extends DCLogic {
           }))
         };
       }),
-      fMeta: claims.length ? 'top 18 de ' + Object.keys(cites).length + ' fuentes citadas · calculado sobre ' + claims.length + ' afirmaciones · clic en una fila para desplegar su ficha' : 'cargando el registro…',
+      fMeta: claims.length ? 'top 18 de ' + Object.keys(cites).length + ' fuentes citadas · calculado sobre ' + claims.length + ' afirmaciones · clic en una fila para desplegar su ficha · columnas: afirmaciones que la citan / de las cuales es fuente única' : 'cargando el registro…',
       onRankCitas: () => this.setState({ fRank: 'citas' }),
       onRankSolo: () => this.setState({ fRank: 'solo' }),
       rankCitasStyle: seg(st.fRank === 'citas'), rankSoloStyle: seg(st.fRank === 'solo')
@@ -938,7 +945,7 @@ class Component extends DCLogic {
     const pos = {};
     const cx = 400, cy = 230, R = 180;
     nodes.forEach((n, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / nodes.length; pos[n] = { x: Math.round(cx + R * Math.cos(a)), y: Math.round(cy + R * Math.sin(a)) }; });
-    const favCount = (h) => ((idx[h] || {}).favor.match(/S\d+/g) || []).length;
+    const favCount = (h) => ((idx[h] || {}).favor.match(/\bS\d{2,3}\b/g) || []).length;
     const hEdges = [];
     for (const [key, e] of edges) {
       const [a, b] = key.split(/-(?=H)/);
@@ -971,7 +978,7 @@ class Component extends DCLogic {
     const hViewBtns = [['lista', 'Lista'], ['grafo', 'Grafo'], ['matriz', 'Matriz'], ['ambas', 'Grafo y matriz']].map(([v, label]) => ({ label, onClick: () => this.setState({ hView: v }), style: seg(st.hView === v) }));
     const hLista = st.hView === 'lista' ? hs.map(h => {
       const open = st.hSel === h.clave;
-      const nF = (h.favor.match(/S\d+/g) || []).length, nC = (h.contra.match(/S\d+/g) || []).length;
+      const nF = (h.favor.match(/\bS\d{2,3}\b/g) || []).length, nC = (h.contra.match(/\bS\d{2,3}\b/g) || []).length;
       return {
         clave: h.clave, open,
         sostiene: h.sostiene.length > 170 ? h.sostiene.slice(0, 170) + '…' : h.sostiene,
@@ -995,7 +1002,7 @@ class Component extends DCLogic {
     const st = this.state;
     const raw = this.state.apx.D || [];
     const num = (s) => { const m = String(s).replace(',', '.').match(/-?\d+(\.\d+)?/); return m ? parseFloat(m[0]) : null; };
-    const toMa = (v, u) => v === null ? null : (/ga/i.test(u) ? v * 1000 : (/ma|millon/i.test(u) ? v : null));
+    const toMa = (v, u) => v === null ? null : (/\bga\b|gyr|giga/i.test(u) ? v * 1000 : (/\bma\b|millon|myr/i.test(u) ? v : null));
     const q = st.cQ.toLowerCase();
     const all = [], pubs = [];
     let nObs = 0, nInf = 0;
@@ -1006,7 +1013,7 @@ class Component extends DCLogic {
         const obs = /observad/i.test(r[7] || '') ? 'observado' : 'inferido';
         if (obs === 'observado') nObs++; else nInf++;
         if ((st.cFilt === 'todos' || st.cFilt === obs) && (!q || String(r[0]).toLowerCase().includes(q)))
-          all.push({ aplica: r[0], a, b: b === null ? a : b, obs, metodo: r[6] || '', fuente: r[8] || '', intervalo: (r[1] || '') + ' – ' + (r[2] || '') + ' ' + u });
+          all.push({ aplica: String(r[0] || '').replace(/\*([^*\n]+)\*/g, '$1'), a, b: b === null ? a : b, obs, metodo: r[6] || '', fuente: r[8] || '', intervalo: (r[1] || '') + ' – ' + (r[2] || '') + ' ' + u });
       } else if (/año/i.test(u) || /publicaci/i.test(r[5] || '')) {
         const y = num(r[1]); if (y && y > 1700 && y < 2100) pubs.push({ y, label: r[0], fuente: r[8] || '', metodo: r[6] || '', obs: r[7] || '', tipo: r[5] || '', fila: r[9] || '' });
       }
@@ -1068,7 +1075,10 @@ class Component extends DCLogic {
       : [];
     const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
     return {
-      cronoMeta: raw.length ? raw.length + ' fechas en el apéndice D: ' + (nObs + nInf) + ' edades geológicas y ' + pubs.length + ' años de publicación.' : 'Cargando el apéndice D…',
+      cronoMeta: raw.length ? raw.length + ' fechas en el apéndice D: ' + (nObs + nInf) + ' edades geológicas y ' + pubs.length + ' años de publicación'
+        + (raw.length - (nObs + nInf) - pubs.length > 0
+            ? '; las ' + (raw.length - (nObs + nInf) - pubs.length) + ' restantes son duraciones de laboratorio (minutos, horas, días) o fechas sin valor publicado, y no caben en un eje de Ga.'
+            : '.') : 'Cargando el apéndice D…',
       cronoBtns: [['todos', 'Todas (' + (nObs + nInf) + ')'], ['observado', 'Observadas (' + nObs + ')'], ['inferido', 'Inferidas o modeladas (' + nInf + ')']].map(([v, label]) => ({ label, onClick: () => this.setState({ cFilt: v, cronoSel: null }), style: seg(st.cFilt === v) })),
       cronoRows, cronoCount: cronoRows.length + ' intervalos',
       cQ: st.cQ, onCQ: (e) => this.setState({ cQ: e.target.value, cronoSel: null }),
@@ -1123,6 +1133,7 @@ class Component extends DCLogic {
       { id: 'lectura', icon: 'ph-article', label: 'Lectura' }
     ].map(n => ({
       ...n,
+      ariaCurrent: view === n.id ? 'page' : null,
       onClick: () => setView(n.id),
       style: 'display:flex;align-items:center;gap:10px;padding:7px 11px;border:none;border-radius:var(--radius-md);font:500 12.5px var(--font-body);text-align:left;cursor:pointer;width:100%;' +
         (view === n.id
@@ -1161,7 +1172,7 @@ class Component extends DCLogic {
     const openRef = this.openEnt;
     const refStyle = (clickable) => 'border:none;cursor:' + (clickable ? 'pointer' : 'default') + ';font:10.5px ui-monospace,monospace;padding:3px 8px;border-radius:var(--radius-sm);background:color-mix(in oklab,var(--color-accent) 10%,transparent);color:var(--color-accent-300);';
     const claimRefs = claim
-      ? ((claim.atrib + ' ' + claim.fuente).match(/(S\d+|BN-\d{3}|C-\d{3,4})/g) || [])
+      ? ((claim.atrib + ' ' + claim.fuente).match(/(\bS\d{2,3}\b|BN-\d{3}|C-\d{3,4})/g) || [])
           .filter((v, i, a) => a.indexOf(v) === i && v !== claim.id)
           .map(label => ({ label, style: refStyle(true), onClick: () => this.openEntId(label) }))
       : [];
@@ -1229,6 +1240,22 @@ class Component extends DCLogic {
       isApend: view === 'apendices', isLectura: view === 'lectura', isConsultas: view === 'consultas',
       ...this.navBtnsVals(),
       pieCorte: st.pieCorte, pieVersion: st.pieVersion, pieEstado: st.pieEstado,
+      // Calculada sobre el registro, no copiada. Si el recuento de control
+      // discrepa, se dice: un número que no cuadra es información, no ruido.
+      unicaFuente: (() => {
+        const cl = st.allClaims || [];
+        if (!cl.length) return '…';
+        const miles = (x) => String(x).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        const nCalc = cl.filter(c => this.isSingle(c)).length;
+        const control = 1196;
+        return miles(nCalc);
+      })(),
+      unicaFuenteNota: (() => {
+        const cl = st.allClaims || [];
+        if (!cl.length) return '';
+        const nCalc = cl.filter(c => this.isSingle(c)).length;
+        return nCalc === 1196 ? '' : ' · el recuento de control declara 1 196';
+      })(),
       isFuentes: view === 'fuentes', isHipotesis: view === 'hipotesis', isCronologia: view === 'cronologia', isCalidad: view === 'calidad',
       ...this.consultaVals(), ...this.fuentesVals(), ...this.hipotesisVals(), ...this.cronoVals(), ...this.calidadVals(), ...this.lecturaVals(openRef),
       q: st.q, fA: st.fA, fF: st.fF, fS: st.fS,
