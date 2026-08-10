@@ -721,6 +721,39 @@ class Component extends DCLogic {
     fetch('manifest.json').then(r => r.ok ? r.json() : null).then(m => {
       if (!m) return;
       const st = {};
+      // Las secciones legibles salen del manifiesto: la lista fija heredada de
+      // la maqueta ofrecía seis de las veintiséis que el corpus tiene, así que
+      // veinte secciones eran inalcanzables desde el visor.
+      const secs = (m.files || []).map(f => f.path || '')
+        .filter(x => /^docs\/secciones\/.+\.md$/.test(x))
+        .map(x => x.replace(/^docs\/secciones\//, '').replace(/\.md$/, ''));
+      if (secs.length) {
+        const mapa = {}, etiquetas = {};
+        for (const s of secs) {
+          // 004-03-3-eucariogenesis → clave «3»; 000-preambulo → «pre»
+          const mm = s.match(/^\d+-(?:\d+)-(\d+)-(.+)$/);
+          if (mm) {
+            mapa[mm[1]] = s;
+            etiquetas[mm[1]] = mm[2].replace(/-/g, ' ');
+          } else if (/^000-/.test(s)) {
+            mapa['pre'] = s; etiquetas['pre'] = 'preámbulo';
+          } else {
+            // Las secciones de apéndice se nombran distinto —017-17-apendice-a-…—
+            // y también son prosa que se lee, aunque la vista Apéndices muestre
+            // sus tablas.
+            const ma = s.match(/-apendice-([a-h])-/i);
+            if (ma) {
+              const k = ma[1].toUpperCase();
+              mapa[k] = s;
+              etiquetas[k] = 'apéndice ' + k;
+            }
+          }
+        }
+        if (Object.keys(mapa).length) {
+          this.LEC_FILES = mapa;
+          this.SEC_LABELS_AUTO = etiquetas;
+        }
+      }
       if (m.fecha_de_corte_bibliografico) {
         const [y, mo, d] = m.fecha_de_corte_bibliografico.split('-');
         const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
@@ -1138,6 +1171,7 @@ class Component extends DCLogic {
     };
   }
   SEC_LABELS = { '0': 'Convenciones', '1': 'Alcance', '2': '¿Dos dominios o tres?', '3': 'Eucariogénesis', '4': 'Raíz eucariota', '5': 'Registro material', '6': 'Relojes moleculares', '7': 'Ambiente', '8': 'Ecología y trofismo', '9': 'Asociación', '10': 'Rasgos con costo', '11': 'Sexo y meiosis', '12': 'Multicelularidad', '13': 'Escalas y tasas', '14': 'Nomenclatura', '15': 'Lo que no se sabe' };
+  // Reserva mientras carga el manifiesto, del que salen las secciones reales.
   LEC_FILES = { '2': '003-02-2-el-punto-de-partida-dos-dominios-o-tres', '3': '004-03-3-eucariogenesis', '5': '006-05-5-el-registro-material-fosiles-y-biomarcadores', '9': '010-09-9-asociacion-el-catalogo-de-desenlaces', '13': '014-13-13-escalas-tasas-y-recuentos', '15': '016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos' };
 
   loadSec(k) {
@@ -1196,9 +1230,16 @@ class Component extends DCLogic {
     const chip = (active, avail) => 'display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);border:none;padding:6px 10px;border-radius:var(--radius-md);text-align:left;width:100%;font:400 11.5px var(--font-body);' +
       (avail ? 'cursor:pointer;' : 'cursor:default;opacity:.4;') +
       (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:transparent;color:var(--color-neutral-300);');
-    const lecIndex = this.SEC_COUNTS.map(([k, n]) => ({
-      label: k + ' · ' + this.SEC_LABELS[k],
-      n: String(n),
+    // El índice recorre las secciones que existen, no las que la maqueta
+    // eligió: SEC_COUNTS sólo tiene las que llevan afirmaciones, y el preámbulo
+    // y las de apéndice también se leen.
+    const claves = Object.keys(this.LEC_FILES);
+    const porCuenta = Object.fromEntries(this.SEC_COUNTS);
+    // pre primero, luego las numeradas, y los apéndices al final por su letra.
+    const orden = (k) => k === 'pre' ? -1 : (/^[A-H]$/.test(k) ? 100 + k.charCodeAt(0) : parseInt(k, 10));
+    const lecIndex = claves.sort((a, b) => orden(a) - orden(b)).map(k => ({
+      label: k + ' · ' + (this.SEC_LABELS[k] || (this.SEC_LABELS_AUTO || {})[k] || ''),
+      n: porCuenta[k] != null ? String(porCuenta[k]) : '',
       onClick: this.LEC_FILES[k] ? (() => { this.setState({ lecSec: k }); this.loadSec(k); }) : (() => {}),
       style: chip(st.lecSec === k, !!this.LEC_FILES[k])
     }));
