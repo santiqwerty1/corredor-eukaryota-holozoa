@@ -306,6 +306,25 @@ def es_recurso_web(url: str, tipo: str) -> bool:
     return (tipo or "").strip().lower() == "base de datos taxonómica"
 
 
+def guardar_acceso_directo(f: dict, destino: Path) -> str:
+    """Un recurso web también se guarda: como acceso directo a su dirección.
+
+    Que el recurso viva en la web no es razón para que la carpeta no lo tenga.
+    Se escribe un .url —formato de texto plano, que Windows abre como acceso
+    directo y cualquier editor deja leer— junto a los artículos, de modo que la
+    carpeta contenga **todas** las fuentes y no sólo las descargables.
+    """
+    nombre = nombre_fichero(f).replace(".pdf", ".url")
+    ruta = destino / nombre
+    destino.mkdir(parents=True, exist_ok=True)
+    ruta.write_text(
+        "[InternetShortcut]\n"
+        f"URL={f['url']}\n"
+        f"; {f['clave']} · {f['titulo']}\n",
+        encoding="utf-8")
+    return nombre
+
+
 def texto_completo_por_url(url: str) -> tuple[bytes, str] | None:
     """Las fuentes sin DOI que apuntan a PMC o PubMed sí son recuperables: el
     identificador está en la propia dirección."""
@@ -816,9 +835,12 @@ def main() -> int:
                 acceso, via, url = "sin doi", "", f["url"]
                 if es_recurso_web(f["url"], f.get("tipo", "")):
                     # No ha fallado: es que el recurso vive en la web y punto.
+                    # Aun así queda en la carpeta, como acceso directo.
                     acceso = "recurso web"
+                    fichero = "" if args.solo_informe else guardar_acceso_directo(f, args.destino)
                     resultado, detalle = "recurso web", (
-                        "el recurso es la propia página, no un documento descargable")
+                        "el recurso es la propia página, no un documento descargable; "
+                        "se guarda un acceso directo")
                 elif args.solo_informe or not f["url"]:
                     resultado, detalle = "no resoluble", "la fuente no declara DOI; sólo URL"
                 else:
