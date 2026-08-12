@@ -263,7 +263,12 @@
             <button onClick="{{ t.onClick }}" style="{{ t.style }}" style-hover="color:var(--color-accent-200);">{{ t.label }}<span style="margin-left:6px;font-size:10px;color:var(--color-neutral-400);font-variant-numeric:tabular-nums;">{{ t.n }}</span></button>
           </sc-for>
         </div>
-        <div style="font-size:11.5px;color:var(--color-neutral-400);margin-bottom:var(--space-4);">{{ apxMeta }} · clic en una fila para desplegarla completa</div>
+        <div style="display:flex;gap:var(--space-3);align-items:center;margin-bottom:var(--space-4);">
+          <span style="font-size:11.5px;color:var(--color-neutral-400);">{{ apxMeta }} · clic en una fila para desplegarla completa</span>
+          <sc-if value="{{ apxHayMas }}" hint-placeholder-val="{{ false }}">
+            <button class="btn btn-secondary" onClick="{{ onApxTodas }}" style="font-size:12px;margin-left:auto;">{{ apxTodasLabel }}</button>
+          </sc-if>
+        </div>
         <table class="table" style="width:100%;font-size:12px;">
           <thead><tr><sc-for list="{{ apxHead }}" as="hh" hint-placeholder-count="3"><th>{{ hh }}</th></sc-for></tr></thead>
           <tbody>
@@ -362,7 +367,12 @@
           <button onClick="{{ onRankCitas }}" style="{{ rankCitasStyle }}" style-hover="color:var(--color-accent-200);">Más citadas</button>
           <button onClick="{{ onRankSolo }}" style="{{ rankSoloStyle }}" style-hover="color:var(--color-accent-200);">Más afirmaciones de fuente única</button>
         </div>
-        <div style="font-size:11px;color:var(--color-neutral-400);margin-bottom:var(--space-3);">{{ fMeta }}</div>
+        <div style="display:flex;gap:var(--space-3);align-items:center;margin-bottom:var(--space-3);">
+          <span style="font-size:11.5px;color:var(--color-neutral-400);">{{ fMeta }}</span>
+          <sc-if value="{{ fuHayMas }}" hint-placeholder-val="{{ false }}">
+            <button class="btn btn-secondary" onClick="{{ onFuTodas }}" style="font-size:12px;margin-left:auto;">{{ fuTodasLabel }}</button>
+          </sc-if>
+        </div>
         <div style="display:flex;flex-direction:column;gap:var(--space-2);">
           <sc-for list="{{ fRows }}" as="fr" hint-placeholder-count="8">
             <div onClick="{{ fr.onClick }}" style="{{ fr.style }}" style-hover="background:color-mix(in oklab,var(--color-accent) 6%,transparent);">
@@ -597,7 +607,12 @@
               </div>
             </div>
           </sc-for>
-          <p style="margin:var(--space-4) 0 0;font-size:11px;color:var(--color-neutral-500);">{{ pasNota }}</p>
+          <div style="display:flex;gap:var(--space-3);align-items:center;margin-top:var(--space-4);">
+            <sc-if value="{{ pasHayMas }}" hint-placeholder-val="{{ false }}">
+              <button class="btn btn-secondary" onClick="{{ onPasTodas }}" style="font-size:12px;">{{ pasTodasLabel }}</button>
+            </sc-if>
+            <p style="margin:0;font-size:11px;color:var(--color-neutral-500);">{{ pasNota }}</p>
+          </div>
         </sc-if>
       </div>
     </sc-if>
@@ -619,6 +634,9 @@
             <sc-for list="{{ accBtns }}" as="it" hint-placeholder-count="4">
               <button onClick="{{ it.onClick }}" style="{{ it.style }}">{{ it.label }}</button>
             </sc-for>
+            <select class="input" value="{{ accOrden }}" onChange="{{ onAccOrden }}" aria-label="Ordenar fuentes" style="width:auto;margin-left:auto;">
+              <sc-for list="{{ accOrdenOpts }}" as="ao" hint-placeholder-count="3"><option value="{{ ao.v }}">{{ ao.label }}</option></sc-for>
+            </select>
           </div>
           <div style="background:var(--color-surface);box-shadow:var(--shadow-sm);border-radius:var(--radius-md);overflow:hidden;">
             <table class="table" style="margin:0;">
@@ -644,7 +662,12 @@
               </tbody>
             </table>
           </div>
-          <p style="margin:var(--space-4) 0 0;font-size:11px;color:var(--color-neutral-500);">{{ accNota }}</p>
+          <div style="display:flex;gap:var(--space-3);align-items:center;margin-top:var(--space-4);">
+            <sc-if value="{{ accHayMas }}" hint-placeholder-val="{{ false }}">
+              <button class="btn btn-secondary" onClick="{{ onAccTodas }}" style="font-size:12px;">{{ accTodasLabel }}</button>
+            </sc-if>
+            <p style="margin:0;font-size:11px;color:var(--color-neutral-500);">{{ accNota }}</p>
+          </div>
           <p style="margin:var(--space-6) 0 0;font-size:11.5px;color:var(--color-neutral-400);max-width:700px;text-wrap:pretty;">Las bloqueadas por el servidor suelen abrirse pinchando su DOI en el navegador: el rechazo era al cliente automático, no a ti. Lo que se consiga a mano se deja en <span style="font-family:ui-monospace,monospace;color:var(--color-accent-300);">fuentes_pdf/</span> y la siguiente ejecución lo da por obtenido. Ninguna afirmación queda en entredicho porque su fuente no se pudiera descargar: eso no dice nada sobre lo que la afirmación sostiene.</p>
         </sc-if>
       </div>
@@ -706,7 +729,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;vistaInicial&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;resumen&quot;,&quot;afirmaciones&quot;,&quot;huecos&quot;,&quot;apendices&quot;,&quot;lectura&quot;],&quot;default&quot;:&quot;resumen&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;resaltarUnicaFuente&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;},&quot;columnasSemanticas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamiento&quot;}}">
 class Component extends DCLogic {
-  state = { acceso: null, accFiltro: 'todas', pasajes: null, pasFiltro: 'recortado', pasQ: '', pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
+  state = { acceso: null, accFiltro: 'todas', accTodas: false, accOrden: 'citas', pasajes: null, pasFiltro: 'recortado', pasQ: '', pasTodas: false, fuTodas: false, apxTodas: false, pieCorte: '8 de agosto de 2026', pieVersion: '0.6.0', pieEstado: 'encargo completo', view: null, tab: 'A', selId: null, q: '', fA: 'todas', fF: 'todas', fS: 'todas', winW: window.innerWidth, allClaims: null, allBn: null, bloque: null, apx: {}, fSel: null, apxSel: null, conDs: 'afirmaciones', conds: [{ f: 'texto', op: 'contiene', v: '' }], conGroup: '', fRank: 'citas', hView: 'ambas', hSel: null, cFilt: 'todos', cronoSel: null, cQ: '', cYear: null, cPub: null, lecSec: '3', lecCache: {} };
 
   componentDidMount() {
     // El pie declara la procedencia del corpus: se lee del manifiesto y de
@@ -1259,7 +1282,8 @@ class Component extends DCLogic {
     const metaRow = {};
     for (const r of (st.apx.A || [])) metaRow[r[0]] = r;
     const byKey = st.fRank === 'solo' ? solo : cites;
-    const keys = Object.keys(byKey).sort((a, b) => byKey[b] - byKey[a]).slice(0, 18);
+    const ordenadas = Object.keys(byKey).sort((a, b) => byKey[b] - byKey[a]);
+    const keys = st.fuTodas ? ordenadas : ordenadas.slice(0, 18);
     if (st.fSel && !keys.includes(st.fSel)) keys.unshift(st.fSel);
     // El máximo se toma de TODAS las filas visibles, no de keys[0]: al abrir
     // una fuente que no está en el top, se antepone a la lista y tomarla como
@@ -1267,6 +1291,9 @@ class Component extends DCLogic {
     const max = Math.max(1, ...keys.map(k => byKey[k] || 0));
     const seg = (active) => 'border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-md);font:500 12px var(--font-body);' + (active ? 'background:color-mix(in oklab,var(--color-accent) 14%,transparent);color:var(--color-accent-200);' : 'background:var(--color-surface);color:var(--color-neutral-400);');
     return {
+      fuTodasLabel: st.fuTodas ? 'Mostrar sólo el top 18' : ('Ver las ' + ordenadas.length),
+      onFuTodas: () => this.setState({ fuTodas: !st.fuTodas }),
+      fuHayMas: ordenadas.length > 18,
       fRows: keys.map(k => {
         const open = st.fSel === k;
         const row = metaRow[k];
@@ -1287,7 +1314,7 @@ class Component extends DCLogic {
           }))
         };
       }),
-      fMeta: claims.length ? 'top 18 de ' + Object.keys(cites).length + ' fuentes citadas · calculado sobre ' + claims.length + ' afirmaciones · clic en una fila para desplegar su ficha · columnas: afirmaciones que la citan / de las cuales es fuente única' : 'cargando el registro…',
+      fMeta: claims.length ? (st.fuTodas ? 'las ' : 'top 18 de ') + Object.keys(cites).length + ' fuentes citadas · calculado sobre ' + claims.length + ' afirmaciones · clic en una fila para desplegar su ficha · columnas: afirmaciones que la citan / de las cuales es fuente única' : 'cargando el registro…',
       onRankCitas: () => this.setState({ fRank: 'citas' }),
       onRankSolo: () => this.setState({ fRank: 'solo' }),
       rankCitasStyle: seg(st.fRank === 'citas'), rankSoloStyle: seg(st.fRank === 'solo')
@@ -1580,8 +1607,11 @@ class Component extends DCLogic {
       pasBtns,
       pasQ: st.pasQ,
       onPasQ: (e) => this.setState({ pasQ: e.target.value }),
-      pasNota: vis.length > 60 ? 'mostrando 60 de ' + vis.length : '',
-      pasRows: vis.slice(0, 60).map(r => ({
+      pasNota: (!st.pasTodas && vis.length > 60) ? 'mostrando 60 de ' + vis.length : '',
+      pasTodasLabel: st.pasTodas ? 'Mostrar sólo 60' : ('Ver los ' + vis.length),
+      onPasTodas: () => this.setState({ pasTodas: !st.pasTodas }),
+      pasHayMas: vis.length > 60,
+      pasRows: vis.slice(0, st.pasTodas ? vis.length : 60).map(r => ({
         id: r[0], texto: (r[1] || '').slice(0, 300), fuente: r[2],
         loc: (r[3] || '').trim(), pasaje: (r[5] || '').slice(0, 900) || '— sin pasaje —',
         detalle: r[7] || '',
@@ -1629,8 +1659,16 @@ class Component extends DCLogic {
     let vis = st.accFiltro === 'con' ? con
       : st.accFiltro === 'todas' ? sin : sin.filter(r => r[8] === st.accFiltro);
     // Por impacto: la que sostiene cuarenta afirmaciones antes que la que sostiene una.
-    vis = vis.slice().sort((a, b) => num(b[13]) - num(a[13]) || num(b[14]) - num(a[14]));
-    const accRows = vis.slice(0, 120).map(r => ({
+    // El orden lo elige quien mira: por impacto para decidir a qué ir a mano,
+    // por año para ver si lo que falta es viejo, por clave para buscar una.
+    const ordAcc = st.accOrden || 'citas';
+    const cmp = { citas: (a, b) => num(b[13]) - num(a[13]) || num(b[14]) - num(a[14]),
+      unica: (a, b) => num(b[14]) - num(a[14]) || num(b[13]) - num(a[13]),
+      'año': (a, b) => num(b[1]) - num(a[1]),
+      clave: (a, b) => String(a[0]).localeCompare(String(b[0]), 'es', { numeric: true }),
+      titulo: (a, b) => String(a[2]).localeCompare(String(b[2]), 'es') };
+    vis = vis.slice().sort(cmp[ordAcc] || cmp.citas);
+    const accRows = vis.slice(0, st.accTodas ? vis.length : 120).map(r => ({
       clave: r[0], titulo: (r[2] || '').slice(0, 96), citas: num(r[13]) || '·',
       unica: num(r[14]) || '·', estado: r[8], detalle: (r[9] || '').slice(0, 80),
       via: r[5] || '', ident: r[12] || '',
@@ -1647,7 +1685,15 @@ class Component extends DCLogic {
               + 'impacto y no por clave.'
             : ' Este informe es anterior al recuento de impacto; regenéralo con '
               + 'fetch_oa.py para ordenar la lista por cuánto sostiene cada fuente.'),
-      accNota: vis.length > 120 ? 'mostrando las 120 primeras de ' + vis.length : '',
+      accNota: (!st.accTodas && vis.length > 120) ? 'mostrando las 120 primeras de ' + vis.length : '',
+      accOrden: ordAcc,
+      accOrdenOpts: [['citas', 'Orden: citas que sostiene'], ['unica', 'Orden: citas sin otra fuente'],
+        ['año', 'Orden: año'], ['clave', 'Orden: clave'], ['titulo', 'Orden: título']]
+        .map(([v, label]) => ({ v, label })),
+      onAccOrden: (e) => this.setState({ accOrden: e.target.value }),
+      accTodasLabel: st.accTodas ? 'Mostrar sólo 120' : ('Ver las ' + vis.length),
+      onAccTodas: () => this.setState({ accTodas: !st.accTodas }),
+      accHayMas: vis.length > 120,
     };
   }
   calidadVals() {
@@ -1791,7 +1837,8 @@ class Component extends DCLogic {
     }));
     const cfg = this.apxCfg[st.tab];
     const raw = st.apx[st.tab];
-    const apxRows = raw ? raw.slice(0, 40).map((r, ri) => {
+    const apxTope = st.apxTodas ? (raw || []).length : 40;
+    const apxRows = raw ? raw.slice(0, apxTope).map((r, ri) => {
       const open = st.apxSel === ri;
       return {
         onClick: () => this.setState({ apxSel: open ? null : ri }),
@@ -1808,6 +1855,8 @@ class Component extends DCLogic {
     const apxMeta = raw
       ? cfg.total + ' · mostrando ' + apxRows.length + ' de ' + raw.length + ' filas de ' + cfg.file
       : 'cargando ' + cfg.file + '…';
+    const apxTotal = (raw || []).length;
+    const apxTodasLabel = st.apxTodas ? 'Mostrar sólo 40' : ('Ver las ' + apxTotal + ' filas');
 
     return {
       nav,
@@ -1856,7 +1905,9 @@ class Component extends DCLogic {
       closeDetail: () => this.setState({ selId: null }),
       openRef, openEnt: this.openEnt,
       bn, bloques, bnSubLine,
-      tabs, apxHead: cfg.head, apxRows, apxMeta,
+      tabs, apxHead: cfg.head, apxRows, apxMeta, apxTodasLabel,
+      onApxTodas: () => this.setState({ apxTodas: !st.apxTodas }),
+      apxHayMas: apxTotal > 40,
       openSecRow: (e) => { const m = e.currentTarget.textContent.trim().match(/^(\d+)/); if (m) { this.setState({ view: 'afirmaciones', fS: m[1], selId: null }); this.resetScroll(); } }
     };
   }
