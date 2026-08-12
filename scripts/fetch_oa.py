@@ -22,7 +22,7 @@ escrito, fuente a fuente, si hay versión abierta, por qué vía, y si no la hay
 la razón. Una fuente que no se pudo obtener nunca desaparece en silencio: ése es
 el mismo principio que gobierna las búsquedas negativas del corpus.
 
-**Los PDF no se versionan.** Van a `fuentes_pdf/`, que está en .gitignore. Sus
+**Los PDF no se versionan.** Van a `fuentes/`, que está en .gitignore. Sus
 licencias son heterogéneas —«bronze» significa legible en la web del editor,
 sin licencia abierta explícita— y mezclarlos con un repositorio CC BY 4.0
 rompería la frontera de licencias del proyecto.
@@ -53,7 +53,7 @@ ROOT = Path(__file__).resolve().parents[1]
 APENDICE_A = ROOT / "data" / "apendices" / "A_fuentes.csv"
 INFORME = ROOT / "exports" / "acceso_fuentes.csv"
 LISTADO = ROOT / "docs" / "FUENTES-SIN-ACCESO.md"
-DESTINO = ROOT / "fuentes_pdf"
+DESTINO = ROOT / "fuentes"
 # La resolución cuesta cientos de consultas; se guarda junto a los PDF, que
 # también están fuera del control de versiones.
 CACHE = DESTINO / ".resolucion.json"
@@ -660,7 +660,7 @@ def escribir_listado(filas: list[list[str]], fuentes: list[dict]) -> int:
         "4. **Busca el manuscrito del autor.** Muchas revistas permiten depositarlo en un "
         "repositorio institucional aunque la versión publicada sea de pago.",
         "",
-        "Cuando consigas alguna, déjala en `fuentes_pdf/` con el mismo nombre que usa el "
+        "Cuando consigas alguna, déjala en `fuentes/` con el mismo nombre que usa el "
         "script —`CLAVE [AÑO] Título.pdf`— y la próxima ejecución la dará por obtenida "
         "en vez de volver a intentarlo.",
         "",
@@ -731,7 +731,7 @@ def escribir_pagina_rescate(pend: list[list[str]], meta: dict, idx: dict) -> Non
 <p class=nota><strong>{len(pend)}</strong> fuentes sin texto completo, ordenadas por
 cuántas afirmaciones sostienen. Muchas responden 403 a un cliente automático pero
 <strong>se abren con normalidad en el navegador</strong>: empieza por arriba.
-Cuando consigas una, guárdala en <code>fuentes_pdf/</code> como
+Cuando consigas una, guárdala en <code>fuentes/</code> como
 <code>CLAVE [AÑO] Título.pdf</code> y la próxima ejecución la dará por obtenida.</p>
 <table><thead><tr><th>Clave</th><th class=n>Cita</th><th class=n>Única</th>
 <th>Título</th><th>Publicación</th><th>Motivo</th><th>Abrir</th></tr></thead>

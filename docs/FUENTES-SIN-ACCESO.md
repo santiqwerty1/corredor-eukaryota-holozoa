@@ -2,7 +2,7 @@
 
 De las **523** fuentes del apéndice A se obtuvieron **279** por vía de acceso abierto. Las **244** restantes están aquí, con la razón de cada una.
 
-Generado por `scripts/fetch_oa.py` el 2026-08-10. Para regenerarlo sin volver a descargar nada:
+Generado por `scripts/fetch_oa.py` el 2026-08-12. Para regenerarlo sin volver a descargar nada:
 
 ```bash
 python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
@@ -319,4 +319,4 @@ El catálogo la marca como abierta y no da la dirección del fichero. El DOI sue
 3. **Escribe a quien firma la correspondencia.** Funciona más de lo que parece; los autores pueden compartir su manuscrito aceptado.
 4. **Busca el manuscrito del autor.** Muchas revistas permiten depositarlo en un repositorio institucional aunque la versión publicada sea de pago.
 
-Cuando consigas alguna, déjala en `fuentes_pdf/` con el mismo nombre que usa el script —`CLAVE [AÑO] Título.pdf`— y la próxima ejecución la dará por obtenida en vez de volver a intentarlo.
+Cuando consigas alguna, déjala en `fuentes/` con el mismo nombre que usa el script —`CLAVE [AÑO] Título.pdf`— y la próxima ejecución la dará por obtenida en vez de volver a intentarlo.

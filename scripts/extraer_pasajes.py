@@ -37,7 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPORT = ROOT / "exports" / "afirmaciones.csv"
-FUENTES = ROOT / "fuentes_pdf"
+FUENTES = ROOT / "fuentes"
 SALIDA = ROOT / "exports" / "pasajes.csv"
 
 CABECERA = ["afirmacion", "texto_afirmacion", "clave_fuente", "localizador",

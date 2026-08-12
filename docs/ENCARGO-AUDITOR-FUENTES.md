@@ -10,7 +10,7 @@ verificar contra la fuente en vez de contra el resumen.
 
 > El repositorio incluye ahora los PDF de las fuentes en acceso abierto,
 > descargados legalmente de los catálogos abiertos (OpenAlex, Unpaywall,
-> Europe PMC, arXiv, OpenAIRE). Están en `fuentes_pdf/`, fuera del control de
+> Europe PMC, arXiv, OpenAIRE). Están en `fuentes/`, fuera del control de
 > versiones, con el nombre `CLAVE [AÑO] Título.pdf` —por ejemplo
 > `S056 [2024] Reconstructing the last common ancestor.pdf`—, de modo que cada
 > fichero se rastrea hasta su fila del apéndice A por la clave.
@@ -69,21 +69,55 @@ verificar contra la fuente en vez de contra el resumen.
 
 ## Estado de la descarga
 
-Primera pasada completa sobre las 523 fuentes:
+Tras tres pasadas sobre las 523 fuentes del apéndice A:
 
-| Resultado | Fuentes |
+| | |
 |---|---|
-| descargado | 110 |
-| error del servidor (casi todo 403) | 178 |
-| sin versión abierta | 117 |
-| la respuesta no era un PDF | 80 |
-| sin DOI o no reconocida | 36 |
-| declarada abierta sin PDF enlazado | 2 |
+| **Con texto completo o recurso** | **286 (54 %)** |
+| PDF | 232 |
+| XML JATS (texto completo) | 187 |
+| Accesos directos a recursos web | 7 |
 
-El grupo de **403** merece atención del lector humano: son fuentes que los
-catálogos dan por abiertas y cuyo servidor rechaza a los clientes automáticos.
-**Suelen abrirse pinchando el DOI en un navegador.** El script no suplanta a un
-navegador para evitarlo, así que ese rescate es manual y barato.
+**No todo es PDF, y el XML suele ser mejor.** Está estructurado, se busca sin
+capa de OCR y permite comprobar un localizador sin abrir nada. Muchas fuentes
+tienen ambos: el PDF conserva páginas y figuras —que los localizadores citan—, y
+el XML permite buscar dentro del texto.
 
-Cuando consigas una fuente por tu cuenta, déjala en `fuentes_pdf/` con el mismo
+Cada fichero obtenido lleva su huella `sha256` y su fecha en el informe, y un
+veredicto de identidad: **203 comprobadas, 83 sin comprobar, ninguna
+discrepancia**. «Sin comprobar» significa que no había metadatos legibles, no
+que haya sospecha.
+
+### Lo que falta, por lo que está en juego
+
+Las 237 fuentes sin texto sostienen **1 120 citas, de las cuales 409 no tienen
+ninguna otra fuente**. El listado va ordenado por ese impacto, no por clave.
+
+| Motivo | Fuentes |
+|---|---|
+| sin versión abierta declarada | 121 |
+| el servidor rechazó al cliente automático (403) | 80 |
+| la respuesta no era un fichero, sino la ficha web | 34 |
+| sin DOI o no reconocida por ningún catálogo | 25 |
+| declarada abierta sin fichero enlazado | 2 |
+
+El grupo de **403 es fruta madura**: son fuentes que los catálogos dan por
+abiertas y cuyo servidor rechaza a los clientes automáticos. **Suelen abrirse
+pinchando el DOI en un navegador.** El script no suplanta a un navegador para
+evitarlo, así que ese rescate es manual y barato. Las tres que más pesan —S129,
+S137 y S84— suman 81 citas entre ellas.
+
+Cuando consigas una fuente por tu cuenta, déjala en `fuentes/` con el mismo
 patrón de nombre y la siguiente ejecución la dará por obtenida.
+
+### Los pasajes ya extraídos
+
+`exports/pasajes.csv` recorta, de cada localizador, el fragmento que la propia
+afirmación señala: **558 de 2 820 localizadores ya tienen su pasaje delante**, y
+la cifra sube conforme llegan más textos. `docs/revision-pasajes.html` los
+enfrenta a la afirmación para revisarlos en tandas, y el visor los muestra en la
+ficha de cada afirmación y en su propia vista.
+
+El script recorta y presenta; **decidir si el pasaje sostiene la afirmación
+sigue siendo tuyo** (§27.12). Un pasaje ausente no es un defecto de la
+afirmación: es un localizador que no se pudo resolver, y el informe dice por qué.

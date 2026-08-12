@@ -25,8 +25,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 226,
-      "sha256": "39067af097ecb98be8f65e4e2cebbeeb0b6d8b1b97d1a5fa709984b10906754c"
+      "bytes": 222,
+      "sha256": "c09b92af2f8abf0607080782a3fb01eda971416281cd01c2122317bd7f0de279"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -545,13 +545,13 @@
     },
     {
       "path": "docs/ENCARGO-AUDITOR-FUENTES.md",
-      "bytes": 4301,
-      "sha256": "15f10ce4ac7cd5b52cee1453e067927cb05a6bfddbab0f7d8edaafb9340d733c"
+      "bytes": 5937,
+      "sha256": "47616cc65341243ceb8f3831d259e16a5c99e96384176cdd90ee6f66161e8f8d"
     },
     {
       "path": "docs/FUENTES-SIN-ACCESO.md",
-      "bytes": 48794,
-      "sha256": "5d16a2a5a7a15c1333761800871eac869f2521400dffec0e4fd28062e57778cc"
+      "bytes": 48790,
+      "sha256": "ce3867a00009de4c96bae81c13789dca8f5e47c4fe8bc842c11742a9ce941490"
     },
     {
       "path": "docs/GITHUB_SETUP.md",
@@ -1890,8 +1890,8 @@
     },
     {
       "path": "docs/fuentes-por-conseguir.html",
-      "bytes": 80660,
-      "sha256": "01cc0c97dbfb2b82aad7c827d48d8c5d1bf6e77aea8649f87c7243c0ba3a65a2"
+      "bytes": 80652,
+      "sha256": "501c839169a1bd5ec21316b9434f55435676c424cb29e5682cd4b6dc25a1ebb9"
     },
     {
       "path": "docs/informe.md",
@@ -1910,8 +1910,8 @@
     },
     {
       "path": "docs/revision-pasajes.html",
-      "bytes": 2262463,
-      "sha256": "11f36a4cccf888dc601e25acd23ed9ad6273263bf1898f63b3e699609299dc9b"
+      "bytes": 2270532,
+      "sha256": "13b5c488f92f19dafa8fdbd472c435cf20e1710ca9c038fe6c305fc76b79ce97"
     },
     {
       "path": "docs/secciones/000-preambulo.md",
@@ -2045,8 +2045,8 @@
     },
     {
       "path": "exports/acceso_fuentes.csv",
-      "bytes": 156980,
-      "sha256": "e51b404803b69b961e628c72486dc2fc49327c14ebd924f3f577507733da5ffc"
+      "bytes": 152261,
+      "sha256": "e20ca3050812297b32f21e32f7fd6920d02c220def63eb4c81133484596efeec"
     },
     {
       "path": "exports/afirmaciones.csv",
@@ -2065,8 +2065,8 @@
     },
     {
       "path": "exports/pasajes.csv",
-      "bytes": 1645362,
-      "sha256": "3899aef81f2009cf7de944cdcafae7611056862f90ba9680cd3c4f7cccc786eb"
+      "bytes": 1653531,
+      "sha256": "5bdfe314984b9e7fde0ea38e4e3ab580096770a1d3c6ef6e2c4bdcd57c8bb253"
     },
     {
       "path": "exports/tablas_nodales.csv",
@@ -2135,13 +2135,13 @@
     },
     {
       "path": "scripts/extraer_pasajes.py",
-      "bytes": 19617,
-      "sha256": "6d2d6d4d97565fc1c1cc75af7b179b58fdb73a71dca11ccd772aafb8675bc14d"
+      "bytes": 19613,
+      "sha256": "80f670a4b5c1b9a372ba710faba5fa053fcad8706fc6dd9f4302ffdd21ff32f8"
     },
     {
       "path": "scripts/fetch_oa.py",
-      "bytes": 48983,
-      "sha256": "9a1009412b61420dba171ba5117c233827bc6eadf7e7cf1ebe9a0cb53132e198"
+      "bytes": 49900,
+      "sha256": "c02f1b02192ff722c21e0bfad9f770398cc0ada43f2485c002c905b170527866"
     },
     {
       "path": "scripts/publish_github.sh",
