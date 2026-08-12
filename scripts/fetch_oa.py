@@ -128,10 +128,23 @@ def verificar_identidad(ruta: Path, doi: str, titulo: str) -> tuple[str, str]:
     if ruta.suffix == ".xml":
         txt = bruto[:200_000].decode("utf-8", "replace")
         m = re.search(r'<article-id[^>]*pub-id-type="doi"[^>]*>([^<]+)', txt, re.I)
-        if m:
+        if m and doi:
             return ("coincide", "DOI del XML") if m.group(1).strip().lower() == doi.lower() \
                 else ("NO COINCIDE", f"el XML declara {m.group(1).strip()}")
-        return "sin comprobar", "el XML no declara DOI"
+        # Sin DOI esperado no hay discrepancia que declarar: estas fuentes se
+        # recuperaron por su URL de PMC y el apéndice A no les da DOI. Afirmar
+        # «NO COINCIDE» contra una cadena vacía es el error inverso al que esta
+        # comprobación existe para evitar. Se contrasta el título.
+        mt = re.search(r"<article-title[^>]*>(.*?)</article-title>", txt, re.S | re.I)
+        if mt and titulo:
+            limpio = re.sub(r"<[^>]+>", " ", mt.group(1))
+            palabras = [w.lower() for w in re.findall(r"[A-Za-zÁ-ÿ]{5,}", titulo)][:6]
+            if palabras:
+                hallado = sum(1 for w in palabras if w in limpio.lower())
+                if hallado >= max(2, len(palabras) // 2):
+                    return "coincide", f"título del XML ({hallado}/{len(palabras)} palabras)"
+                return "NO COINCIDE", f"el XML se titula «{limpio.strip()[:60]}»"
+        return "sin comprobar", "sin DOI esperado ni título contrastable"
 
     # En un PDF los metadatos XMP suelen viajar sin comprimir; ahí se busca.
     cabeza = bruto[:600_000] + bruto[-200_000:]

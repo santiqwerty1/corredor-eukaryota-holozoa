@@ -165,7 +165,7 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S520` | 0 | 0 | 2019 | Husnik, F.; Keeling, P. J. | The fate of obligate endosymbionts: reduction, integration, or e | [10.1016/j.gde.2019.07.014](https://doi.org/10.1016/j.gde.2019.07.014) |
 | `S544` | 0 | 0 | 1996 | Cavalier-Smith, Thomas; Allsopp, | Corallochytrium, an enigmatic non-flagellate protozoan related t | [10.1016/s0932-4739(96)80053-8](https://doi.org/10.1016/s0932-4739(96)80053-8) |
 
-## El servidor del editor rechazó la descarga · 79
+## El servidor del editor rechazó la descarga · 80
 
 El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
 
@@ -175,6 +175,7 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S137` | 26 | 2 | 2020 | Burki et al. | The New Tree of Eukaryotes | [10.1016/j.tree.2019.08.008](https://doi.org/10.1016/j.tree.2019.08.008) |
 | `S84` | 25 | 1 | 2017 | Martin, W. F.; Tielens, A. G. M. | The Physiology of Phagocytosis in the Context of Mitochondrial O | [10.1128/mmbr.00008-17](https://doi.org/10.1128/mmbr.00008-17) |
 | `S111` | 16 | 5 | 2013 | Brown et al. | Phylogenomics demonstrates that breviate flagellates are related | [10.1098/rspb.2013.1755](https://doi.org/10.1098/rspb.2013.1755) |
+| `S71` | 14 | 3 | 2013 | van Dam et al. | Evolution of modular intraflagellar transport from a coatomer-li | [10.1073/pnas.1221011110](https://doi.org/10.1073/pnas.1221011110) |
 | `S152` | 13 | 3 | 2006 | Knoll, A. H. et al. | Eukaryotic organisms in Proterozoic oceans | [10.1098/rstb.2006.1843](https://doi.org/10.1098/rstb.2006.1843) |
 | `S158` | 11 | 7 | 2016 | Porter, S. M. | Tiny vampires in ancient seas: evidence for predation via perfor | [10.1098/rspb.2016.0221](https://doi.org/10.1098/rspb.2016.0221) |
 | `S349` | 11 | 3 | 2013 | Levin, T. C.; King, N. | Evidence for Sex and Recombination in the Choanoflagellate Salpi | [10.1016/j.cub.2013.08.061](https://doi.org/10.1016/j.cub.2013.08.061) |
@@ -251,13 +252,12 @@ El catálogo las da por abiertas, pero el servidor responde con un error (casi s
 | `S514` | 0 | 0 | 2012 | Müller, M. et al. | Biochemistry and Evolution of Anaerobic Energy Metabolism in Euk | [10.1128/mmbr.05024-11](https://doi.org/10.1128/mmbr.05024-11) |
 | `S521` | 0 | 0 | 2020 | Masson, F.; Lemaitre, B. | Growing Ungrowable Bacteria: Overview and Perspectives on Insect | [10.1128/mmbr.00089-20](https://doi.org/10.1128/mmbr.00089-20) |
 
-## El enlace no devolvió un PDF · 35
+## El enlace no devolvió un PDF · 34
 
 La respuesta fue una página web, no un artículo: el enlace lleva a la ficha del trabajo y el PDF está detrás de otro clic. Abre el DOI y busca el enlace de descarga en la propia página.
 
 | Clave | Cita | Única | Año | Autores | Título | DOI |
 |---|---:|---:|---|---|---|---|
-| `S71` | 14 | 3 | 2013 | van Dam et al. | Evolution of modular intraflagellar transport from a coatomer-li | [10.1073/pnas.1221011110](https://doi.org/10.1073/pnas.1221011110) |
 | `S178` | 11 | 1 | 2020 | Porter, S. M. | Insights into eukaryogenesis from the fossil record | [10.1098/rsfs.2019.0105](https://doi.org/10.1098/rsfs.2019.0105) |
 | `S200` | 9 | 5 | 2011 | Dayel, M. J. et al. | Cell differentiation and morphogenesis in the colony-forming cho | [10.1016/j.ydbio.2011.06.003](https://doi.org/10.1016/j.ydbio.2011.06.003) |
 | `S379` | 9 | 3 | 2025 | Editorial Committee of the Madri | International Code of Nomenclature for algae, fungi, and plants  | https://www.iaptglobal.org/_functions/code/madrid |
