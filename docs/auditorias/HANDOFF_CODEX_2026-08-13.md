@@ -130,9 +130,3 @@ El commit congelado `a3ce4e6685a4e287a5fbd478d4657e475e10de3c` sí existe en Git
 6. Regenerar matrices, artefactos de controles, informe reproducible, exportaciones y manifiesto con los builders del repositorio.
 7. Encargar la segunda revisión a agentes distintos de quienes hicieron las correcciones; cubrir la población y las expansiones exigidas, con huellas live.
 8. Ejecutar `make verify`, comprobar determinismo/idempotencia en copia aislada, revisar el diff y solo entonces hacer el commit/push final.
-
-## Objetivo sugerido en Codex
-
-```text
-/goal Implementa íntegramente el plan pendiente de corredor-eukaryota-holozoa. Lee primero docs/C01-PROMPT-INVESTIGACION.md y docs/auditorias/HANDOFF_CODEX_2026-08-13.md. Usa el repositorio vivo como fuente autoritativa. No reduzcas el alcance, no debilites validadores, no autoapruebes revisiones y no conviertas falta de evidencia en inferencia. Termina solo cuando todos los controles y segundas revisiones estén cerrados con evidencia independiente, los derivados estén regenerados y make verify pase de forma determinista, idempotente y aislada.
-```
