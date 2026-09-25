@@ -57,6 +57,12 @@ resumen:
 | `audit_requirement_controls.py --verify-artifacts` | 294 incidencias: 210 controles manuales sin adjudicar y artefactos sin rematerializar |
 | `audit_full.py` | 12.574 hallazgos, casi todos segunda revisión pendiente y huellas desactualizadas |
 | S420 | retirada del apéndice A pero citada todavía en la matriz de fuentes y en R-0288–R-0320 |
+| `renumber.py` | `--dry-run` pasa, pero la renumeración real se niega en cuanto algún `#` tiene que cambiar: recorre `docs/auditorias/` y toma por referencias indefinidas las 112 claves anteriores a la renumeración (`C-9001`–`C-9919`) que el mapa de claves y la matriz de afirmaciones conservan a propósito |
+
+Lo de `renumber.py` bloquea insertar una afirmación en una sección intermedia,
+que es justo lo que hará la auditoría. La salida no es traducir esas claves: son
+historia y el mapa existe para conservarlas. Hay que excluir de la reescritura
+las columnas de clave inicial de los entregables de auditoría.
 
 Por eso `make verify` falla y la CI está en rojo desde, como mínimo, el 10 de
 agosto: la puerta incluye esas dos auditorías y **no se ha debilitado para que
