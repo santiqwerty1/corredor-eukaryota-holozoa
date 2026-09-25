@@ -6,7 +6,7 @@ Corpus de investigación en español sobre el corredor evolutivo comprendido ent
 
 **Versión del corpus:** `0.6.0-research-audit`.
 
-**Estado:** encargo completo. Los huecos científicos permanecen identificados con las etiquetas probatorias exigidas.
+**Estado:** encargo completo. Los huecos científicos permanecen identificados con las etiquetas probatorias exigidas. La auditoría de cierre sigue abierta: su estado está en [`docs/STATUS.md`](docs/STATUS.md).
 
 ## Arquitectura
 
