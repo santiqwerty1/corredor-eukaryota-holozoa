@@ -64,6 +64,12 @@ que es justo lo que hará la auditoría. La salida no es traducir esas claves: s
 historia y el mapa existe para conservarlas. Hay que excluir de la reescritura
 las columnas de clave inicial de los entregables de auditoría.
 
+Y hay un segundo problema detrás del primero: `renumber.py` reescribe los CSV del
+índice de tablas, la prosa y `docs/auditorias/`, pero no `data/auditoria/`.
+Probado en una copia aislada, apartando las matrices que lo bloquean: tras
+renumerar, `mapeo_celdas_afirmaciones.csv` y `requisitos_disposiciones.csv`
+siguen citando los números viejos, que ya son otras afirmaciones.
+
 Por eso `make verify` falla y la CI está en rojo desde, como mínimo, el 10 de
 agosto: la puerta incluye esas dos auditorías y **no se ha debilitado para que
 pase**. Es el estado esperado mientras la auditoría siga abierta.
