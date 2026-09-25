@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4402,
-      "sha256": "b8fcae2d5d6b2af5f25108fd7a30a65f58fbe845022f39088c380b98e72891e6"
+      "bytes": 4496,
+      "sha256": "b1c1d361089d7517382812acc73e2b85bae75307eabeeffaf8b12283812fb031"
     },
     {
       "path": "README_DATOS.md",
@@ -565,13 +565,18 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 2092,
-      "sha256": "0472dc2f9a30e372e496038b7a0c9563b1299179cca229f2cadcf08eeef08a22"
+      "bytes": 5295,
+      "sha256": "3006593336447c65698b900839e46e718c456ea7e8050207dfb6d63ffb17c597"
     },
     {
       "path": "docs/auditorias/AUDITORIA-COMPLETA-2026-08-08.md",
       "bytes": 5819,
       "sha256": "56c9ddae0faa3854af47aed20fc18acaafc95d5ef4a959e4a48625a4a0376de3"
+    },
+    {
+      "path": "docs/auditorias/HANDOFF_CODEX_2026-08-13.md",
+      "bytes": 8333,
+      "sha256": "dd1ff0dc92cd7c9194693e2bb0b325d2e0fef1fcfcfe9b03c4dca119f749bbd3"
     },
     {
       "path": "docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md",
