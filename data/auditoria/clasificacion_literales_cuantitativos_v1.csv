@@ -1,0 +1,99 @@
+id_requisito,clasificacion,justificacion_literal
+R-0009,REGLA_CUANTITATIVA,Prohibición general de inventar cifras; no solicita una magnitud científica concreta.
+R-0010,REGLA_CUANTITATIVA,Regla terminal para toda magnitud no publicada y fundamento de este censo.
+R-0011,REGLA_CUANTITATIVA,Prohíbe estimar interpolar redondear o proponer órdenes de magnitud editoriales.
+R-0012,REGLA_CUANTITATIVA,Exige huecos declarados y trazabilidad de fuente para toda cifra utilizada.
+R-0031,CONTEXTO_NO_MAGNITUD,La palabra intervalo define el tallo FECA–LECA y no pide aquí medirlo.
+R-0052,MAGNITUD_PEDIDA,Solicita literalmente soporte cuantitativo y el diseño analítico que lo produjo.
+R-0058,MAGNITUD_PEDIDA,Solicita proporciones publicadas de afinidad arqueana y bacteriana del genoma.
+R-0070,MAGNITUD_PEDIDA,Solicita la duración propuesta para el tallo eucariota además de su diversidad.
+R-0094,CONTEXTO_NO_MAGNITUD,Cuánto se sostiene introduce la evaluación probatoria y no exige por sí solo una cifra.
+R-0104,MAGNITUD_PEDIDA,Solicita edad y método de datación por formación y candidato fósil.
+R-0110,MAGNITUD_PEDIDA,Solicita el tamaño publicado de perforaciones interpretadas como depredación.
+R-0111,MAGNITUD_PEDIDA,Solicita la edad publicada de Bangiomorpha y su tratamiento como calibración.
+R-0118,REGLA_CUANTITATIVA,Plantilla transversal de método e incertidumbre por ítem; sus valores se censan por requisito científico.
+R-0120,MAGNITUD_PEDIDA,Solicita intervalos de edad publicados para LECA y cada nodo del corredor.
+R-0121,MAGNITUD_PEDIDA,Solicita el solapamiento publicado entre estimaciones de varios estudios.
+R-0128,REGLA_CUANTITATIVA,Prohíbe promediar o escoger estimaciones incompatibles y no pide un valor nuevo.
+R-0129,REGLA_CUANTITATIVA,Regla de presentación nominal de cada rango método calibración y muestreo.
+R-0130,REGLA_CUANTITATIVA,Regla editorial para declarar un orden de magnitud sin calcular un consenso.
+R-0131,REGLA_CUANTITATIVA,Regla terminal para ausencia de consenso que prohíbe fabricar una cifra intermedia.
+R-0132,REGLA_CUANTITATIVA,Rollup de ambiente cuyos valores terminales se desglosan en los requisitos científicos hijos.
+R-0134,MAGNITUD_PEDIDA,Solicita cronología y niveles publicados de oxígeno en episodios nombrados.
+R-0135,MAGNITUD_PEDIDA,Solicita cifras de oxígeno por eón proxy y discrepancia cuantitativa.
+R-0136,CONTEXTO_NO_MAGNITUD,Qué cuesta enumera consecuencias oxidativas sin pedir aquí una cifra o unidad.
+R-0137,MAGNITUD_PEDIDA,Solicita umbrales fisiológicos publicados de oxígeno para procesos concretos.
+R-0138,REGLA_CUANTITATIVA,Subcampo que exige valor y autoría para los umbrales solicitados en R-0137.
+R-0141,MAGNITUD_PEDIDA,Solicita fracciones y profundidades por estado redox a lo largo del intervalo.
+R-0142,CONTEXTO_NO_MAGNITUD,Solicita una ordenación cualitativa de aceptores por rendimiento y no una cifra absoluta.
+R-0145,MAGNITUD_PEDIDA,Solicita edades e incertidumbres de glaciaciones y excursiones isotópicas.
+R-0146,MAGNITUD_PEDIDA,Solicita temperatura publicada y estabilidad térmica del intervalo.
+R-0151,MAGNITUD_PEDIDA,Solicita las escalas de distancia publicadas para estructura geográfica microbiana.
+R-0152,MAGNITUD_PEDIDA,Solicita estimaciones publicadas de abundancia o densidad celular proterozoica.
+R-0159,MAGNITUD_PEDIDA,Solicita distribuciones de tamaño vinculadas a evidencia indirecta de depredación.
+R-0160,MAGNITUD_PEDIDA,Solicita edad y método por cada caso de marca interpretada como depredación.
+R-0161,CONTEXTO_NO_MAGNITUD,Relaciona causalmente depredación con tamaño sin pedir un valor o rango concreto aquí.
+R-0163,MAGNITUD_PEDIDA,Solicita tamaños relaciones depredador-presa tasas de ingestión y aclaramiento y costes.
+R-0164,MAGNITUD_PEDIDA,Solicita tamaños de microfósiles publicados con su margen de error.
+R-0166,CONTEXTO_NO_MAGNITUD,El tamaño de genomas virales forma parte del tema y no es una petición cuantitativa nominal.
+R-0169,CONTEXTO_NO_MAGNITUD,Pocas generaciones delimita respuestas reversibles pero R-0170 pide sus tiempos concretos.
+R-0170,MAGNITUD_PEDIDA,Solicita latencia de respuesta y coste por cada caso organismal documentado.
+R-0200,MAGNITUD_PEDIDA,Solicita antigüedad de asociación y comparación de tamaño genómico por cada caso.
+R-0205,MAGNITUD_PEDIDA,Solicita rendimiento energético conservado para cada estadio de reducción mitocondrial.
+R-0209,MAGNITUD_PEDIDA,Solicita el número de genes transferidos al núcleo y su dirección.
+R-0212,MAGNITUD_PEDIDA,Solicita número y tiempo de pérdidas génicas junto con la forma de la curva.
+R-0220,MAGNITUD_PEDIDA,Solicita cifras publicadas para dos posiciones rivales sobre transferencia horizontal.
+R-0224,REGLA_CUANTITATIVA,Regla de reparto entre secciones para evitar duplicación de las mismas cifras.
+R-0226,MAGNITUD_PEDIDA,Solicita costes publicados para cada innovación celular enumerada nominalmente.
+R-0227,REGLA_CUANTITATIVA,Esquema obligatorio de tabla que exige cifra unidad organismo método y localizador.
+R-0228,REGLA_CUANTITATIVA,Regla literal del marcador de hueco para cifra y unidad no localizadas.
+R-0229,REGLA_CUANTITATIVA,Prohibición de vacío analogía o estimación propia en una celda cuantitativa.
+R-0233,REGLA_CUANTITATIVA,Rollup de la controversia cuyas dos posiciones terminales son R-0234 y R-0235.
+R-0234,MAGNITUD_PEDIDA,Solicita energía disponible por gen y órdenes de magnitud de la posición de barrera.
+R-0235,MAGNITUD_PEDIDA,Solicita la fracción de presupuesto que cuesta un gen en la posición contraria.
+R-0237,CONTEXTO_NO_MAGNITUD,Presenta el marco de Ne; los valores numéricos se solicitan expresamente en R-0238.
+R-0238,MAGNITUD_PEDIDA,Solicita valores de Ne y magnitudes de selección frente a deriva por grupo.
+R-0250,MAGNITUD_PEDIDA,Solicita costes del sexo en protistas y distingue el coste doble de otros componentes.
+R-0257,MAGNITUD_PEDIDA,Solicita el coste de mantener estados multicelulares en los linajes considerados.
+R-0261,MAGNITUD_PEDIDA,Afirma tres orígenes independientes cuya cifra necesita soporte publicado o hueco.
+R-0264,MAGNITUD_PEDIDA,Solicita generaciones medidas y compensaciones cuantificadas en evolución experimental.
+R-0266,MAGNITUD_PEDIDA,Solicita tamaño genómico número de genes y densidad de intrones por ocho taxones.
+R-0271,REGLA_CUANTITATIVA,Rollup de duración y tasa cuyos objetos terminales se desglosan en R-0273–R-0278.
+R-0272,REGLA_CUANTITATIVA,Regla de hueco y ordenación cualitativa cuando no hay cifra publicada.
+R-0273,MAGNITUD_PEDIDA,Solicita duración publicada del tallo FECA–LECA.
+R-0274,MAGNITUD_PEDIDA,Solicita tiempos de generación y tasas de división con condiciones de cultivo.
+R-0275,MAGNITUD_PEDIDA,Solicita tasas de mutación por sitio y generación para comparandos definidos.
+R-0276,MAGNITUD_PEDIDA,Solicita duración de glaciaciones transiciones redox y aburrido millardo.
+R-0277,MAGNITUD_PEDIDA,Solicita tiempo transcurrido desde asociación hasta integración por endosimbiosis.
+R-0278,MAGNITUD_PEDIDA,Solicita número y rango de genes codificantes del genoma mitocondrial.
+R-0281,REGLA_CUANTITATIVA,Rollup de recuentos independientes cuyos procesos se desglosan en requisitos hijos.
+R-0280,REGLA_CUANTITATIVA,Introduce el censo de recuentos y prohíbe deducir frecuencia del silencio narrativo.
+R-0283,MAGNITUD_PEDIDA,Solicita número de linajes con pérdidas reducciones o degradaciones mitocondriales.
+R-0284,MAGNITUD_PEDIDA,Solicita orígenes y pérdidas reconocidos de fagotrofia a escala eucariota.
+R-0285,MAGNITUD_PEDIDA,Solicita orígenes independientes de multicelularidad clonal cenocítica y agregativa.
+R-0286,MAGNITUD_PEDIDA,Solicita frecuencia publicada de parasitismo intracelular y simbiosis obligada.
+R-0287,REGLA_CUANTITATIVA,Regla para conservar rango y autoría cuando el recuento esté disputado.
+R-0294,CONTEXTO_NO_MAGNITUD,Rango formal significa categoría nomenclatural y no intervalo ni magnitud numérica.
+R-0322,CONTEXTO_NO_MAGNITUD,Resolución temporal y taxonómica puede ser cualitativa y no exige una cifra literal aquí.
+R-0359,REGLA_CUANTITATIVA,Exige localizador para cifra intervalo soporte o carácter concreto en una C.
+R-0374,REGLA_CUANTITATIVA,Prohíbe mezclar promediar o convertir grados de aceptación en porcentajes.
+R-0387,REGLA_CUANTITATIVA,Exige declarar tamaños de matriz y diseño filogenético al citar una relación.
+R-0390,REGLA_CUANTITATIVA,Exige transcribir literalmente soportes intervalos y márgenes publicados.
+R-0391,REGLA_CUANTITATIVA,Prohíbe convertir medidas a escala común o inventar porcentajes de confianza.
+R-0392,REGLA_CUANTITATIVA,Encabezado de la regla transversal de densidad probatoria del documento.
+R-0393,REGLA_CUANTITATIVA,Exige localizador narrativo para toda oración con fecha cifra o atribución sustantiva.
+R-0395,REGLA_CUANTITATIVA,Exige ordenación cualitativa documentada cuando falta una cifra absoluta.
+R-0396,REGLA_CUANTITATIVA,Define comparación cualitativa con fuente y prohíbe presentarla como medida.
+R-0397,REGLA_CUANTITATIVA,Declara inválida toda cifra plausible que carezca de fuente verificable.
+R-0413,CONTEXTO_NO_MAGNITUD,Magnitud ambiental es un tipo de entidad exigido por el censo de entidades.
+R-0419,REGLA_CUANTITATIVA,Esquema del apéndice de eventos que incluye un campo temporal trazable.
+R-0429,REGLA_CUANTITATIVA,Esquema del apéndice de fechas con límites unidades incertidumbre y fuente.
+R-0431,REGLA_CUANTITATIVA,Exige nombres cronoestratigráficos además de cifras geocronológicas.
+R-0432,REGLA_CUANTITATIVA,Regla de conservación del valor original cuando exista conversión de unidad.
+R-0433,REGLA_CUANTITATIVA,Prohíbe intervalos sin unidad explícita y alerta de ambigüedad Ma frente a Ga.
+R-0438,REGLA_CUANTITATIVA,Define el apéndice agregado de magnitudes pero no su universo científico.
+R-0439,REGLA_CUANTITATIVA,Esquema de columnas del apéndice F; este censo no lo usa como fuente de alcance.
+R-0445,REGLA_CUANTITATIVA,Encabezado del bloque de recuentos estructurales derivados del corpus.
+R-0446,REGLA_CUANTITATIVA,Recuentos estructurales finales derivados del corpus y no magnitudes científicas publicadas.
+R-0453,REGLA_CUANTITATIVA,Plantilla nodal que exige soporte y edad pero cuyos valores se censan por requisito científico.
+R-0469,CONTEXTO_NO_MAGNITUD,Mayor densidad es una comparación editorial de cobertura y no una medición publicada.

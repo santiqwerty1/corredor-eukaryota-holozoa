@@ -154,7 +154,7 @@ Microscopía mostró invaginaciones por las que Perkinsela incorpora material ci
 
 El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas. [C-1041; S241 resumen; expresa]
 
-Perkinsela demuestra que una asociación obligada puede conservar dos núcleos eucariotas y dos linajes mitocondriales distintos. [C-1042; S240; S241; sintesis(C-1038, C-1039, C-1041)]
+El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos. [C-1042; sintesis(C-1038, C-1039, C-1041)]
 
 ## 9.4. Endosimbiosis en curso o comparativamente recientes
 
@@ -215,6 +215,46 @@ El cuerpo esferoidal de Epithemia turgida conserva un genoma cianobacteriano red
 Los cuerpos esferoidales muestran que la fijación de nitrógeno puede mantenerse después de perder la fotosíntesis del simbionte. [C-1070; S251; S252; sintesis(C-1068, C-1069)]
 
 ### 9.4.1. Fichas comparativas por grado de integración
+
+Las diecinueve fichas siguientes están ordenadas desde asociaciones externas hasta dependencias heredadas o anidadas. Cada párrafo empieza por el mecanismo y remite a una sola fila de la tabla; los campos científicos completos no se duplican en dos redacciones. El censo estructural conjunto con la ficha de *Blastocystis* se registra en C-1957. [C-986; C-1070; C-1957]
+
+**Mecanismo del corredor: sintrofía externa.** [C-986; C-993–C-1006] Caso: *Lenisia limosa*–*Arcobacter*. [C-986; C-993–C-1006] La ficha nominal única es la primera fila de la tabla y enlaza C-986 y C-993–C-1006.
+
+**Mecanismo del corredor: consorcio extracelular con transferencia de electrones.** [C-1007–C-1013] Caso: ANME–SRB. [C-1007–C-1013] La ficha nominal única es la segunda fila y enlaza C-1007–C-1013.
+
+**Mecanismo del corredor: endosimbiosis metabólica.** [C-1014–C-1021] Caso: *Pelomyxa*–metanógenos. [C-1014–C-1021] La ficha nominal única es la tercera fila y enlaza C-1014–C-1021.
+
+**Mecanismo del corredor: adquisiciones múltiples con transmisión variable.** [C-1022–C-1027] Caso: ciliados anaerobios–metanógenos. [C-1022–C-1027] La ficha nominal única es la cuarta fila y enlaza C-1022–C-1027.
+
+**Mecanismo del corredor: control hospedador de la división endosimbionte.** [C-1028–C-1035] Caso: *Angomonas deanei*–*Kinetoplastibacterium*. [C-1028–C-1035] La ficha nominal única es la quinta fila y enlaza C-1028–C-1035.
+
+**Mecanismo del corredor: endosimbiosis eucariota obligada.** [C-1036–C-1042] Caso: *Paramoeba*–*Perkinsela*. [C-1036–C-1042] La ficha nominal única es la sexta fila y enlaza C-1036–C-1042.
+
+**Mecanismo del corredor: orgánulo fotosintético con EGT e importación.** [C-1043–C-1053] Caso: *Paulinella chromatophora*–cromatóforo. [C-1043–C-1053] La ficha nominal única es la séptima fila y enlaza C-1043–C-1053.
+
+**Mecanismo del corredor: orgánulo fijador de nitrógeno propuesto.** [C-1054–C-1061; C-1638–C-1639] Caso: *Braarudosphaera bigelowii*–UCYN-A. [C-1054–C-1061; C-1638–C-1639] La ficha nominal única es la octava fila y enlaza C-1054–C-1061 y C-1638–C-1639.
+
+**Mecanismo del corredor: transmisión vertical incompleta con readquisición.** [C-1062–C-1071] Caso: *Hatena arenicola*–*Nephroselmis*. [C-1062–C-1071] La ficha nominal única es la novena fila y enlaza C-1062–C-1071.
+
+**Mecanismo del corredor: especialización fijadora de nitrógeno tras pérdida fotosintética.** [C-1068–C-1070; C-1637] Caso: *Rhopalodia*/*Epithemia*–cuerpo esferoidal. [C-1068–C-1070; C-1637] La ficha nominal única es la décima fila y enlaza C-1068–C-1070 y C-1637.
+
+**Mecanismo del corredor: adquisición trófica reiterada de orgánulos y núcleo.** [C-1072–C-1074] Caso: *Mesodinium rubrum*–criptófita. [C-1072–C-1074] La ficha nominal única es la undécima fila y enlaza C-1072–C-1074.
+
+**Mecanismo del corredor: kleptoplastia vía presa intermediaria.** [C-1075–C-1077] Caso: *Dinophysis*–plastos criptófitos. [C-1075–C-1077] La ficha nominal única es la duodécima fila y enlaza C-1075–C-1077.
+
+**Mecanismo del corredor: kleptoplastia animal sin HGT nuclear extensa.** [C-1078–C-1081] Caso: *Elysia*/*Plakobranchus*–plastos. [C-1078–C-1081] La ficha nominal única es la decimotercera fila y enlaza C-1078–C-1081.
+
+**Mecanismo del corredor: endosimbiosis secundaria con núcleo reducido retenido.** [C-990; C-1082–C-1087] Caso: criptófitos/cloraracniófitos–nucleomorfo. [C-990; C-1082–C-1087] La ficha nominal única es la decimocuarta fila y enlaza C-990 y C-1082–C-1087.
+
+**Mecanismo del corredor: endosimbiosis terciaria con núcleo y mitocondrias retenidos.** [C-1206–C-1212] Caso: dinotomos–endosimbionte diatomeo. [C-1206–C-1212] La ficha nominal única es la decimoquinta fila y enlaza C-1206–C-1212.
+
+**Mecanismo del corredor: reemplazo terciario por plasto haptófito.** [C-1211; C-1213–C-1214] Caso: kareniáceos–plasto haptófito. [C-1211; C-1213–C-1214] La ficha nominal única es la decimosexta fila y enlaza C-1211 y C-1213–C-1214.
+
+**Mecanismo del corredor: endosimbiosis anidada con reemplazo.** [C-1089–C-1095] Caso: *Tremblaya*–*Moranella*–piojo harinoso. [C-1089–C-1095] La ficha nominal única es la decimoséptima fila y enlaza C-1089–C-1095.
+
+**Mecanismo del corredor: dependencia nutricional con transmisión materna.** [C-1096–C-1102] Caso: áfido–*Buchnera aphidicola*. [C-1096–C-1102] La ficha nominal única es la decimoctava fila y enlaza C-1096–C-1102.
+
+**Mecanismo del corredor: transmisión materna con saltos horizontales y desenlaces variables.** [C-1103–C-1107] Caso: hospedadores–*Wolbachia*. [C-1103–C-1107] La ficha nominal única es la decimonovena fila y enlaza C-1103–C-1107.
 
 <!-- TABLE:table-43-9-4-1-fichas-comparativas-por-grado-de-integracion -->
 

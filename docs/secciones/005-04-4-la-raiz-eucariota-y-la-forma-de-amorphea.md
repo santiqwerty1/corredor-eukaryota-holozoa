@@ -17,7 +17,7 @@ No existe un grupo externo celular próximo a Eukaryota que conserve suficientes
 
 Las divergencias profundas del árbol eucariota acumulan sustituciones múltiples y saturación. [C-433; S102 resumen; S137 §Phylogenomic artefacts]
 
-La atracción de ramas largas puede agrupar linajes de evolución rápida por artefacto. [C-434; S102 resumen; S104 tesis general]
+La atracción de ramas largas (*long-branch attraction*) puede agrupar linajes de evolución rápida por artefacto. [C-434; S102 resumen; S104 tesis general]
 
 La heterogeneidad composicional y la heterogeneidad de tasas entre sitios pueden cambiar la topología recuperada. [C-435; S102 figs. 1–2; S104 tesis general]
 
@@ -378,10 +378,22 @@ Sandin et al. compararon 32 árboles con 77 calibraciones y 100 réplicas de Tre
 
 ## 4.7. Tres raíces incompatibles dentro de Holozoa unicelular
 
+**H32 — Pluriformea-sister; fuente S126, Results y fig. 4.** [C-656]
+
 ```text
-H32 Pluriformea-sister:      (Pluriformea, (Ichthyosporea, Filozoa)) [C-656]
-H33 Teretosporea-sister:     ((Pluriformea, Ichthyosporea), Filozoa) [C-657]
-H34 Ichthyosporea-sister:    (Ichthyosporea, (Pluriformea, Filozoa)) [C-659; C-660]
+(Pluriformea, (Ichthyosporea, Filozoa)) [C-656; S126 Results; fig. 4]
+```
+
+**H33 — Teretosporea-sister; fuente S126, Results, fig. 4, fig. 5E y S1 Data.** [C-657–C-658; C-662–C-665]
+
+```text
+((Pluriformea, Ichthyosporea), Filozoa) [C-657–C-658; C-662–C-665; S126 Results; figs. 4 y 5E]
+```
+
+**H34 — Ichthyosporea-sister; fuente S126, Results y fig. 5C.** [C-659–C-660]
+
+```text
+(Ichthyosporea, (Pluriformea, Filozoa)) [C-659–C-660; S126 Results; fig. 5C]
 ```
 
 Liu et al. reunieron 348 taxones pertenecientes a 33 linajes principales de Opisthokonta. [C-648; S126 Results; S3 table]

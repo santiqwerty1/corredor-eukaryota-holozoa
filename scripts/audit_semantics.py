@@ -289,7 +289,7 @@ def audit_h2_source_density(
     tables = table_map()
     for path in sorted((ROOT / "docs" / "secciones").glob("*.md")):
         top = re.search(r"^# (\d+)\.", path.read_text(encoding="utf-8"), re.MULTILINE)
-        if not top or not 2 <= int(top.group(1)) <= 15:
+        if not top or not 0 <= int(top.group(1)) <= 15:
             continue
         text = path.read_text(encoding="utf-8")
         headings = list(H2.finditer(text))

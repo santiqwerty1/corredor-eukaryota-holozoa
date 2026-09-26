@@ -1,8 +1,8 @@
 # Fuentes sin texto completo
 
-De las **523** fuentes del apéndice A se obtuvieron **279** por vía de acceso abierto. Las **244** restantes están aquí, con la razón de cada una.
+De las **524** fuentes del apéndice A se obtuvieron **279** por vía de acceso abierto. Las **245** restantes están aquí, con la razón de cada una.
 
-Generado por `scripts/fetch_oa.py` el 2026-08-12. Para regenerarlo sin volver a descargar nada:
+Generado por `scripts/fetch_oa.py` el 2026-08-13. Para regenerarlo sin volver a descargar nada:
 
 ```bash
 python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
@@ -12,7 +12,7 @@ python3 scripts/fetch_oa.py --mailto tu@correo --solo-listado
 
 ## Por dónde empezar
 
-Estas **20** sostienen **335** de las 1145 citas pendientes —el 29 %—. Conseguirlas a mano rinde más que las otras 224 juntas.
+Estas **20** sostienen **335** de las 1148 citas pendientes —el 29 %—. Conseguirlas a mano rinde más que las otras 225 juntas.
 
 | Clave | Cita | Única | Título | DOI |
 |---|---:|---:|---|---|
@@ -37,7 +37,7 @@ Estas **20** sostienen **335** de las 1145 citas pendientes —el 29 %—. Conse
 | `S378` | 12 | 5 | International Code of Zoological Nomenclature, Fourth Edition | — |
 | `S93` | 12 | 1 | Poxviruses and the origin of the eukaryotic nucleus | [10.1007/s002390010171](https://doi.org/10.1007/s002390010171) |
 
-## Sin versión de acceso abierto · 121
+## Sin versión de acceso abierto · 120
 
 Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbibliotecario, acceso institucional, o escribir a quien firma la correspondencia — muchos autores envían su propio PDF si se les pide.
 
@@ -63,7 +63,6 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S204` | 8 | 6 | 2019 | Brunet, T. et al. | Light-regulated collective contractility in a multicellular choa | [10.1126/science.aay2346](https://doi.org/10.1126/science.aay2346) |
 | `S215` | 8 | 4 | 2000 | Strassmann, J. E. et al. | Altruism and social cheating in the social amoeba Dictyostelium  | [10.1038/35050087](https://doi.org/10.1038/35050087) |
 | `S246` | 8 | 4 | 2024 | Coale et al. | Nitrogen-fixing organelle in a marine alga | [10.1126/science.adk1075](https://doi.org/10.1126/science.adk1075) |
-| `S381` | 8 | 3 | 2020 | Cantino y de Queiroz | International Code of Phylogenetic Nomenclature (PhyloCode), ver | [10.1201/9780429446320](https://doi.org/10.1201/9780429446320) |
 | `S231` | 8 | 2 | 2017 | Gutiérrez et al. | Identification of Pelomyxa palustris Endosymbionts | [10.1016/j.protis.2017.06.001](https://doi.org/10.1016/j.protis.2017.06.001) |
 | `S159` | 7 | 5 | 2000 | Butterfield, N. J. | Bangiomorpha pubescens n. gen., n. sp.: implications for the evo | [10.1666/0094-8373(2000)026%3c0386:bpngns%3e2.0.co;2](https://doi.org/10.1666/0094-8373(2000)026%3c0386:bpngns%3e2.0.co;2) |
 | `S393` | 7 | 4 | 2005 | Sapp | The Prokaryote-Eukaryote Dichotomy: Meanings and Mythology | [10.1128/mmbr.69.2.292-305.2005](https://doi.org/10.1128/mmbr.69.2.292-305.2005) |
@@ -165,13 +164,12 @@ Ningún catálogo declara una versión abierta. Vía habitual: préstamo interbi
 | `S520` | 0 | 0 | 2019 | Husnik, F.; Keeling, P. J. | The fate of obligate endosymbionts: reduction, integration, or e | [10.1016/j.gde.2019.07.014](https://doi.org/10.1016/j.gde.2019.07.014) |
 | `S544` | 0 | 0 | 1996 | Cavalier-Smith, Thomas; Allsopp, | Corallochytrium, an enigmatic non-flagellate protozoan related t | [10.1016/s0932-4739(96)80053-8](https://doi.org/10.1016/s0932-4739(96)80053-8) |
 
-## El servidor del editor rechazó la descarga · 80
+## El servidor del editor rechazó la descarga · 79
 
 El catálogo las da por abiertas, pero el servidor responde con un error (casi siempre 403) a un cliente automático. **Suelen abrirse sin problema desde un navegador**: prueba el enlace del DOI directamente.
 
 | Clave | Cita | Única | Año | Autores | Título | DOI |
 |---|---:|---:|---|---|---|---|
-| `S129` | 30 | 9 | 2017 | Hehenberger, E. et al. | Novel Predators Reshape Holozoan Phylogeny and Reveal the Presen | [10.1016/j.cub.2017.06.006](https://doi.org/10.1016/j.cub.2017.06.006) |
 | `S137` | 26 | 2 | 2020 | Burki et al. | The New Tree of Eukaryotes | [10.1016/j.tree.2019.08.008](https://doi.org/10.1016/j.tree.2019.08.008) |
 | `S84` | 25 | 1 | 2017 | Martin, W. F.; Tielens, A. G. M. | The Physiology of Phagocytosis in the Context of Mitochondrial O | [10.1128/mmbr.00008-17](https://doi.org/10.1128/mmbr.00008-17) |
 | `S111` | 16 | 5 | 2013 | Brown et al. | Phylogenomics demonstrates that breviate flagellates are related | [10.1098/rspb.2013.1755](https://doi.org/10.1098/rspb.2013.1755) |
@@ -311,6 +309,12 @@ El catálogo la marca como abierta y no da la dirección del fichero. El DOI sue
 - `S442` Thecamonas trahens ATCC 50062 genome assembly GCA_000142905.1
 - `S482` Frequently Asked Questions
 - `S519` Thecamonas trahens Larsen and Patterson, ATCC 50062
+
+## descargada · 3
+
+- `S129` Novel Predators Reshape Holozoan Phylogeny and Reveal the Presence of a Two-Comp
+- `S381` International Code of Phylogenetic Nomenclature (PhyloCode), version 6
+- `S559` Minimum information about a single amplified genome (MISAG) and a metagenome-ass
 
 ## Cómo conseguirlas
 

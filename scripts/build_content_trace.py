@@ -49,12 +49,69 @@ EDITORIAL_PREFIXES = (
     "El árbol siguiente es una vista parcial",
     "Las ramas eucariotas externas no se despliegan",
 )
+EDITORIAL_SENTENCES = frozenset({
+    # Reglas contractuales del encargo: describen cómo se construye y lee el
+    # corpus, no sostienen una proposición científica sobre sus objetos.
+    "No se inventan nombres, fechas, taxones, relaciones ni cifras.",
+    "Una cifra se transcribe únicamente cuando una fuente recuperada en esta "
+    "sesión la publica con su unidad, denominador y localizador; no se estima, "
+    "interpola, redondea ni sustituye por un «orden de magnitud razonable».",
+    "Si la magnitud pedida no tiene un valor publicado localizado, la respuesta "
+    "literal es **«no hay valor publicado»**, seguida del alcance de la búsqueda "
+    "y de la razón por la cual las fuentes recuperadas no proporcionan esa magnitud.",
+    "Un hueco declarado y reproducible es un resultado utilizable; una cifra "
+    "plausible sin fuente no lo es.",
+    "Solo se citan trabajos recuperados en la sesión y enlazados en el Apéndice A.",
+    "No se cita de memoria ni se reconstruye un DOI: cuando el DOI no pudo "
+    "resolverse contra el recurso recuperado, se consigna **«DOI no verificado»** "
+    "y se conserva la URL efectivamente recuperada.",
+    "Un trabajo relevante conocido pero no recuperado no entra en la bibliografía; "
+    "se registra, si corresponde, como **«trabajo conocido no recuperado»** dentro "
+    "de un hueco reproducible.",
+    "Entre una referencia que no resuelve y un hueco declarado se conserva el hueco.",
+    "Estas reglas son contractuales, no prueba retroactiva de que cada recuperación "
+    "se haya ejecutado: la evidencia de recuperación debe seguir resolviendo a una "
+    "fuente, un pasaje y un localizador concretos.",
+    "En los apéndices, `n/a` significa exclusivamente **no aplicable**.",
+    "Cuando el campo sí aplica pero la fuente recuperada no aporta el dato, se "
+    "escribe literalmente **«no consta en la fuente recuperada»**; expresiones como "
+    "«duración no localizada», «origen no localizado» o «sin unidad publicada» no "
+    "sustituyen esa fórmula.",
+    "La distinción impide convertir una ausencia de evidencia en un valor o en una inferencia.",
+    "En su primera glosa se conservan juntos el término español y el inglés: "
+    "atracción de ramas largas (*long-branch attraction*), reloj molecular relajado "
+    "bayesiano (*Bayesian relaxed molecular clock*) y transferencia génica "
+    "endosimbiótica (*endosymbiotic gene transfer*, EGT).",
+    "Las menciones posteriores pueden usar la forma ya definida sin volver a traducirla.",
+    # Notas editoriales de alcance, referencias cruzadas y estructura del corpus.
+    "La comparación nominal conservada para Alphaproteobacteria no debe confundirse "
+    "con una monografía interna del clado.",
+    "Ese componente queda declarado como hueco, no se rellena extrapolando desde "
+    "Iodidimonadales. [BN-114]",
+    "Los falsadores nominales de H18–H21 se conservan exclusivamente en el Apéndice E.",
+    "Los falsadores de H12–H22 no se reproducen en este capítulo: su registro "
+    "nominal y versionado está exclusivamente en el Apéndice E.",
+    "Cada fila de la tabla distingue el material observado de su adjudicación al "
+    "nodo y de la incertidumbre corona–tallo.",
+    "El censo termina exactamente en Metazoa, que es el extremo solicitado del "
+    "corredor Eukaryota → Holozoa → Metazoa.",
+    "Las diecinueve fichas siguientes están ordenadas desde asociaciones externas "
+    "hasta dependencias heredadas o anidadas.",
+    "Cada párrafo empieza por el mecanismo y remite a una sola fila de la tabla; "
+    "los campos científicos completos no se duplican en dos redacciones.",
+    "Los pares que el encargo escribió con barra o con ≈ se tratan aquí como "
+    "conjeturas de trabajo, no como datos.",
+    "La barra no crea sinonimia: la tabla 57 clasifica cada par como sinonimia "
+    "aproximada, preferencia de autor o conflicto real de contenido.",
+})
 EMPTY_VALUES = {"", "n/a", "—", "-"}
 METADATA_COLUMNS = re.compile(
     r"^(?:#(?: de la fila del registro.*)?|n[.º°o]*|"
     r"fila(?:s)?(?: y fuentes?| por celda)?|"
+    r"filas y fuente local|evidencia o hueco|"
     r"fuente(?:s)?(?: y localizador)?|clave|"
     r"referencias?|citas?|marca|id(?:entificador)?|afirmaciones?|"
+    r"id_vista|id_afirmacion_canonica|ruta_canonica|sha256_fila_canonica|"
     r"secciones? con material integrado)$",
     re.IGNORECASE,
 )
@@ -153,7 +210,10 @@ def lexical_tokens(text: str) -> tuple[str, ...]:
 
 
 def editorial_sentence(text: str) -> bool:
-    stripped = normalized_content(text).strip(" -*_`[]()")
+    normalized = normalized_content(text)
+    if normalized in EDITORIAL_SENTENCES:
+        return True
+    stripped = normalized.strip(" -*_`[]()")
     if not stripped:
         return True
     if any(stripped.startswith(prefix) for prefix in EDITORIAL_PREFIXES):
@@ -495,6 +555,13 @@ def cell_manifest_errors(
             errors.append(f"Celda REVISADA sin C: {location}")
         if status == "SIN_TRAZABILIDAD" and refs:
             errors.append(f"Celda SIN_TRAZABILIDAD con C: {location}")
+        if (
+            status == "SIN_TRAZABILIDAD"
+            and entry["base_semantica"] != "BN_literal_o_límite_sin_C"
+        ):
+            errors.append(
+                f"Celda SIN_TRAZABILIDAD sin base BN/límite explícita: {location}"
+            )
         if cell.own_refs:
             if not set(cell.own_refs).issubset(refs):
                 errors.append(
@@ -660,6 +727,38 @@ def internal_invariant_errors() -> list[str]:
         for piece in pieces
     ):
         errors.append(f"La prueba de segmentación dejó un fragmento espurio: {pieces!r}")
+    if not all(editorial_sentence(text) for text in EDITORIAL_SENTENCES):
+        errors.append("Una oración editorial contractual dejó de ser reconocida")
+    scientific_mutations = (
+        "No se observaron taxones ni relaciones en el experimento.",
+        "Cada fila de la tabla demuestra una relación filogenética.",
+        "La barra no crea monofilia en el clado publicado.",
+        "La reducción secundaria de la cadena respiratoria mitocondrial bajo "
+        "anaerobiosis es el mecanismo que ilustra Blastocystis.",
+    )
+    misclassified = tuple(
+        text for text in scientific_mutations if editorial_sentence(text)
+    )
+    if misclassified:
+        errors.append(
+            "Oraciones científicas clasificadas como editoriales: "
+            f"{misclassified!r}"
+        )
+    unreviewed_cell = Segment(
+        "celda", "data/tablas/prueba.csv", "fila 3", "valor",
+        "valor no localizado", (), "SIN_TRAZABILIDAD",
+    )
+    scientific_prose = Segment(
+        "prosa", "docs/secciones/prueba.md", "L1", "n/a",
+        "Una afirmación científica sin C.", (),
+        "manifiesto_explicito_limite_sin_C",
+    )
+    for sample_segment in (unreviewed_cell, scientific_prose):
+        if not validate_payload(csv_bytes([sample_segment])):
+            errors.append(
+                "La traza aceptó un segmento sin C: "
+                f"{sample_segment.kind}:{sample_segment.locator}"
+            )
     return errors
 
 

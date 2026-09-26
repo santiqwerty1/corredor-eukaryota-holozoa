@@ -104,6 +104,8 @@ Pygsuia biforma usa rodoquinona en un orgánulo relacionado con la mitocondria b
 
 El gen rquA de Pygsuia biforma fue adquirido por transferencia génica horizontal según su filogenia. [C-895; S211 filogenia; discusión]
 
+La reducción secundaria de la cadena respiratoria mitocondrial bajo anaerobiosis es el mecanismo del corredor que ilustra *Blastocystis*. [C-1123; C-1154; C-1953; C-1957] El pasaje primario recuperado de S270 compara su orgánulo con la mitocondria productora de H₂ de *Nyctotherus ovalis* y registra que los orgánulos de *Blastocystis* y *Proteromonas lacertae* carecen de los componentes genómicos estudiados de los complejos III, IV y V. [C-1953; S270 Results and Discussion; tabla 1] Esta comparación documenta un desenlace posible de reducción mitocondrial; no sitúa a *Blastocystis* dentro del corredor ni demuestra que esas ausencias caracterizaran a su ancestro común con Holozoa. [C-1123; C-1154; C-1953]
+
 Fonticula alba forma cuerpos fructíferos por agregación de células previamente independientes. [C-896; S213 resultados y discusión]
 
 Fonticula alba, Capsaspora owczarzaki y Dictyostelium discoideum forman estructuras multicelulares mediante agregación de células previamente separadas y ocupan linajes distintos en la filogenia disponible; por ello, sus vías agregativas se interpretan como orígenes independientes, con incertidumbre sobre los estados ancestrales. [C-871; C-896, C-899; C-897–C-898; S206 discusión; S213 filogenia; S215 introducción]
@@ -134,6 +136,8 @@ En el caso cuantificado de *Rhizophydium planktonicum*, la zoospora móvil de 2�
 
 <!-- TABLE:table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa -->
 
+<!-- TABLE:table-40a-8-3-censo-morfologia-genoma-cultivo -->
+
 ## 8.4. Depredación observada, hipótesis causal y magnitudes tróficas
 
 Las perforaciones del Grupo Chuar constituyen observación fósil de daño compatible con depredación, pero no identifican al depredador. [C-905; S158 resultados y discusión]
@@ -142,9 +146,13 @@ La ornamentación y las paredes resistentes de algunos acritarcos han sido inter
 
 La hipótesis de una escalada depredador–presa proterozoica predice aumento de tamaño, ornamentación y blindaje junto con señales de ataque. [C-907; S158 discusión; S178 §ecology]
 
-Si no se observa covariación temporal sostenida entre daño, tamaño y estructuras defensivas, la predicción de escalada de C-907 queda debilitada. [C-908; sintesis(C-907)]
+La ausencia de covariación temporal sostenida entre daño, tamaño y estructuras defensivas sería un criterio lógico que debilitaría la predicción de escalada de C-907; no se registra aquí como contraprueba observada. [C-908; sintesis(C-907)]
 
 La campaña Q-0175 no localizó «principio de recorte» o «pruning principle» como término científico estable aplicado a fagotrofia, depredación o eucariogénesis. [C-1945] Sí localizó por separado el modelo fagotrófico autógeno, la crítica fisiológica a una fagotrofia anterior a la mitocondria y la hipótesis de escalada depredador–presa; no se tratan como sinónimos. [C-1945; C-273; C-300; C-418; C-907–C-908; Q-0175]
+
+**Ficha de la propuesta de escalada depredador–presa (H48).** Predicción: covariación temporal de daño, aumento de tamaño y estructuras defensivas. [C-907] Apoyo: perforaciones del Grupo Chuar y ornamentación interpretada como defensa, separando observación de función inferida. [C-905–C-906; S158 Results y Discussion; S152 Discussion] Falsador: se conserva exclusivamente en H48 del Apéndice E; no se duplica aquí. El «principio de recorte» no recibe una ficha equivalente porque Q-0175 no localizó una propuesta científica estable bajo ese nombre; fabricar predicción, apoyo o falsador para el rótulo convertiría ausencia en inferencia. [C-1945; Q-0175]
+
+**Ficha de la propuesta fagotrófica autógena (H15).** Predicción: la maquinaria fagocítica funcional debe preceder a la endosimbiosis mitocondrial. [C-300–C-301] Apoyo: cronologías de duplicaciones compatibles con parte de la complejidad celular premitocondrial, sin convertir compatibilidad en observación. [C-303; S58 figs. 3–5] Falsador: una cronología robusta que situara esa maquinaria después de la endosimbiosis; se conserva nominalmente en H15 del Apéndice E. [H15; C-304] La afirmación general de que la fagotrofia define y habilita el estilo de vida eucariota no recibe una tríada causal separada: C-256 y C-418 declaran que maquinaria endocítica no demuestra ingestión nutritiva, y C-273 mantiene sin resolver su orden respecto de la mitocondria. [C-256; C-273; C-418]
 
 Hansen y colaboradores encontraron una relación lineal depredador:presa óptima de aproximadamente 3:1 para flagelados distintos de dinoflagelados en su compilación. [C-909; S224 resumen]
 
@@ -200,6 +208,13 @@ La Argonaute de Thermus thermophilus usa guías de ADN para interferir con ADN i
 
 La homología entre Argonautas procariotas y eucariotas no implica que el sistema completo de ARN de interferencia existiera en procariotas. [C-925; S220 discusión]
 
+La clasificación homología/analogía se conserva por nivel, no por parecido general. [C-337–C-338; C-918–C-925]
+
+- cGAS-like bacteriano y cGAS–STING eucariota: homología documentada de componentes; no homología demostrada de las vías completas. [C-918; C-920–C-921; S218 Results y Discussion]
+- viperinas: ascendencia de familia proteica bacteriana/arqueana interpretada para la viperina eucariota y función antiviral en procariotas; no se transfiere por ello la arquitectura completa de defensa. [C-922–C-923; S219 Results y Discussion]
+- Argonautas: homología de la familia y función de interferencia con ADN invasor en *Thermus*; el sistema eucariota completo de ARN de interferencia no se adjudica al procariota. [C-924–C-925; S220 Results y Discussion]
+- semejanzas virus gigante–núcleo: correspondencias de genes o funciones candidatas cuya dirección de transferencia no está resuelta; no se califican como homología del compartimento nuclear completo. [C-337–C-338; S94–S95]
+
 Koonin propuso que intrones de grupo II transferidos desde el progenitor mitocondrial dieron origen a intrones espliceosomales y contribuyeron a la emergencia del spliceosoma y el núcleo. [C-926; S221 resumen, Results y Conclusion]
 
 En el mismo escenario, Koonin propuso que la invasión de intrones contribuyó a la emergencia de cromosomas lineales y telomerasa. [C-927] La conexión es una hipótesis evolutiva explícita, no una cadena causal observada ni el único modelo publicado. [C-927; S221 resumen y Results]
@@ -213,6 +228,16 @@ La reversibilidad está demostrada directamente para la inversión lumínica de 
 En *Capsaspora*, la agregación comenzó hacia 20 min, todos los agregados se habían desarmado después de unas 26 h y la reintroducción de suero produjo reagregación hacia 10 min. [C-930; C-931; C-932] Esta cinética del protocolo de inanición no hace comparables la retirada de RIF-1, EroS y condiciones de agregación. [C-930; C-931; C-932; S427 resultados; figs. 1–2; BN-101]
 
 La búsqueda BN-083 no localizó costes energéticos directos, en unidades comunes, para rosetas de *Salpingoeca*, agregados de *Capsaspora* o coenocitos de *Sphaeroforma*; el resultado no demuestra inexistencia universal. [C-933; BN-083]
+
+La comparación nominal de respuestas transitorias conserva todos los campos pedidos sin completarlos por analogía. [C-855–C-881; C-928–C-933]
+
+- Rosetas de *Salpingoeca rosetta*: señal RIF-1 y combinación RIF-2/lisofosfatidiletanolaminas/IOR-1; tiempo de inicio no localizado; reversión tras retirar RIF no localizada en BN-101; coste directo no localizado en BN-083; linaje Choanoflagellata. [C-855–C-859]
+- Apareamiento de *S. rosetta*: EroS de *Vibrio fischeri*; enjambrazón desde 15 min y enjambres dentro de 30 min; retorno basal tras retirar EroS no localizado en BN-101; coste por episodio no localizado en BN-060; linaje Choanoflagellata. [C-860–C-865]
+- Inversión de *Choanoeca flexa*: transición luz→oscuridad, vía rodopsina–fosfodiesterasa/cGMP; aproximadamente 30 s; reversión demostrada; coste directo no localizado en BN-083; linaje Choanoflagellata. [C-866–C-869; C-929]
+- Agregación de *Capsaspora*: inanición en el protocolo de S427; inicio hacia 20 min, desagregación completa tras unas 26 h y reagregación hacia 10 min al reañadir suero; los protocolos de retirada no son comparables; coste directo no localizado en BN-083; linaje Filasterea. [C-870–C-875; C-930–C-933; BN-101]
+- Celularización de *Sphaeroforma*: señal de disparo no localizada; divisiones nucleares cada 11–12 h y celularización dependiente de actomiosina; reversión tras retirada no localizada; coste directo no localizado en BN-083; linaje Ichthyosporea. [C-878–C-881; BN-118]
+
+La tabla de organismos documenta modos tróficos observados en representantes, no una reconstrucción ancestral para cada nodo. [C-971] BN-118 no localizó cuándo apareció o se perdió cada modo en todos los nodos Eukaryota→Metazoa. Por tanto, no se asigna bacterivoría, depredación, parasitismo u osmotrofia a un ancestro nodal por simple presencia en descendientes. [C-969–C-971; BN-118]
 
 *Ichthyophonus*, *Abeoforma*, *Pirum*, *Entamoeba*, *Pelomyxa* y *Mastigamoeba* no constituyen una categoría ecológica única: incluyen patógenos, aislados de relación incierta con invertebrados, fagótrofos parasíticos y amebas anaerobias libres o endosimbióticas. [C-969; C-934–C-936; C-952, C-954–C-955; S468–S471; S475]
 

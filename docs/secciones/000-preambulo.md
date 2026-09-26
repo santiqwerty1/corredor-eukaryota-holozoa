@@ -1,4 +1,4 @@
-# Corredor Eukaryota → Holozoa
+# 0.0.0. Preámbulo del corredor Eukaryota → Holozoa
 
 **Fecha de corte bibliográfico: 8 de agosto de 2026.**
 

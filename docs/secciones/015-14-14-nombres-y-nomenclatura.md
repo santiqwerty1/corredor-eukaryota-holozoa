@@ -181,6 +181,8 @@ En cada ítem, la corona se ancla en representantes vivientes, el grupo total a�
 
 ## 14.5. Historia y competencia de nombres del corredor
 
+Los pares que el encargo escribió con barra o con ≈ se tratan aquí como conjeturas de trabajo, no como datos. La barra no crea sinonimia: la tabla 57 clasifica cada par como sinonimia aproximada, preferencia de autor o conflicto real de contenido. Cuando la equivalencia propuesta es falsa —por ejemplo, Holozoa/Filozoa, Sulcozoa/Obazoa o Pluriformea/Corallochytrea— se declara explícitamente el conflicto de circunscripción en vez de conservar la conjetura como hecho. [C-1748–C-1749; C-1757–C-1760; C-1771–C-1776]
+
 ### 14.5.1. Eucarya, Eukarya y Eukaryota
 
 Woese, Kandler y Wheelis usaron Eucarya para uno de sus tres dominios en 1990. [C-1737; S06 título; fig. 1]
@@ -491,9 +493,9 @@ El origen bacteriano de mitocondrias es un componente aceptado de la teoría end
 
 Gray identificó como consenso vigente un origen endosimbiótico primario del plasto a partir de una cianobacteria en el ancestro de Archaeplastida. [C-1858; S411 p. 1286]
 
-La propuesta de un origen espiroquetal de cilios y cuerpos basales no obtuvo apoyo comparable. [C-1859; S411 evaluación histórica]
+Gray evaluó que no hay evidencia que apoye el origen endosimbiótico propuesto para el aparato mitótico y flagelar eucariota. [C-1859; S411 texto principal, párrafo que comienza «Although a discussion...»]
 
-Aceptar el origen endosimbiótico de mitocondrias y plastos no implica aceptar todos los componentes de la formulación histórica. [C-1860; S410; S411]
+El apoyo localizado para los orígenes endosimbióticos de mitocondrias y plastos no se traslada al componente espiroquetal, que Gray evaluó por separado como carente de evidencia de apoyo. [C-1860; S410; S411 texto principal y p. 1286; C-1859]
 
 Endosimbiosis seriada conserva uso legítimo si se enumeran los episodios concretos y su estado probatorio. [C-1861; S410; S411]
 
@@ -590,6 +592,8 @@ La auditoría de tipos, protólogos, combinaciones y prioridad de cada género o
 ### 14.8.1. Códigos
 
 <!-- TABLE:table-56-14-8-1-codigos -->
+
+<!-- TABLE:table-56a-14-8-1-codigos-por-nodo -->
 
 ### 14.8.2. Nombres rivales o solapados
 

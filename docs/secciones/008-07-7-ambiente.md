@@ -112,7 +112,11 @@ La biota de protosteroides cuestiona que el «aburrido millardo» fuera ecológi
 
 La glaciación Sturtiana comenzó alrededor de 717 Ma y terminó alrededor de 659 Ma en la cronología criogénica recuperada. [C-823; S196 resultados; S197 fig. 2]
 
+La duración publicada del crono glacial Sturtiano es de 57,0–59,0 millones de años. [C-2570; S197 §Timing of the Cryochrons]
+
 La terminación de la glaciación Marinoana está datada en 635.2 ± 0.6 Ma en la sucesión de Doushantuo. [C-824; S168 resumen]
+
+La duración publicada del crono glacial Marinoano está acotada entre 3,0 y 15,2 millones de años. [C-2571; S197 §Timing of the Cryochrons]
 
 El inicio de la glaciación Marinoana está menos constreñido que su final y fue situado en las fuentes recuperadas después de aproximadamente 659 Ma y antes de aproximadamente 639 Ma. [C-825; S198 introducción y resultados]
 
@@ -128,7 +132,7 @@ La termometría de isótopos agrupados de Li y colaboradores estima 26,9 ± 0,4 
 
 ## 7.5. Hábitat, estructura espacial y densidad
 
-La hipótesis del hidrógeno requiere un entorno anaerobio porque postula transferencia de H₂ entre un simbionte bacteriano y un hospedador arqueano metanógeno. [C-828; S141 §eukaryogenesis context]
+La hipótesis del hidrógeno requiere un entorno anaerobio porque postula transferencia de H₂ entre un simbionte bacteriano y un linaje hospedador arqueano no identificado metanógeno. [C-828; S141 §eukaryogenesis context]
 
 Los modelos aerobios y anaerobios de eucariogénesis exigen ambientes metabólicos distintos, pero ninguno identifica por sí solo una localidad de origen. [C-850]
 

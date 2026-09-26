@@ -1,0 +1,15 @@
+{
+  "commit_evidencia_versionada": "af7e799e2d096a48f24afd31d7745e19cebf374d",
+  "commit_pre_auditoria": "a3ce4e6685a4e287a5fbd478d4657e475e10de3c",
+  "conteos": {
+    "afirmaciones": 1840,
+    "busquedas": 165,
+    "fuentes": 525,
+    "fuentes_retiradas": 14,
+    "historia_bn": 106,
+    "origenes_temporales": 93,
+    "requisitos": 483
+  },
+  "limitacion": "Las filas C conservan los campos iniciales aún publicados y la huella completa original; los campos no publicados no se infieren.",
+  "metodo": "reconstruccion_desde_git_y_huellas_versionadas"
+}

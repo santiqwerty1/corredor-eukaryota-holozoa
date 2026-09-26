@@ -26,6 +26,8 @@ No existe una conversión universal entre ATP invertido y coeficiente de selecci
 
 La tabla siguiente conserva los encabezados exigidos y no convierte ni promedia unidades. [C-1233; C-1234]
 
+El reparto con la sección 9 es exclusivo: mecanismo y evidencia primaria permanecen en la sección 9; aquí solo se conserva el balance cuantitativo de coste y beneficio, y las menciones mecanísticas de las columnas «qué habilita» y «dependencias» funcionan como referencias cruzadas, no como una segunda redacción probatoria. [C-1233; C-1234] Las filas sin cifra remiten al mecanismo por C y mantienen el marcador obligatorio en lugar de duplicar la explicación. [C-1233; C-1234]
+
 <!-- TABLE:table-47-10-1-tabla-consolidada-de-rasgos-con-coste -->
 
 La tabla de costes conserva la unidad y el denominador originales de cada fuente. [C-1233; n/a]
@@ -294,7 +296,7 @@ Que una modificación pueda fijarse por deriva no demuestra que sea selectivamen
 
 Schavemaker y Lynch plantearon como cuestión abierta cómo se traduce la inversión energética en rasgos celulares en aptitud. [C-1352; S307 p. 95, Future Issues, punto 1]
 
-Los rasgos celulares se adquieren mediante estados intermedios cuyos tamaños mutacionales fenotípicos rara vez están cuantificados. [C-1353; S307 Future Issues 3]
+Los rasgos celulares no aparecen completos o de forma todo-o-nada, sino que avanzan incrementalmente; analizar sus costos y beneficios requiere conocer el tamaño fenotípico de los pasos mutacionales. [C-1353; S307 p. 95, Future Issues, punto 3]
 
 Un presupuesto integrado de la forma sanguínea de Trypanosoma brucei estimó 6,0 × 10^11 ATP por célula y ciclo de 5,3 h y dejó aproximadamente 5,5 % para procesos sin coste disponible. [C-1354] Solo se conservan esas cifras publicadas; la fracción asignada reconstruida en una versión anterior se retiró. Es un control de consistencia de un protista moderno, no un desglose exhaustivo de los rasgos del corredor. [C-1354; S341 resumen, tablas 11–13, fig. 1 y discusión; S487 p. 1, texto principal de la corrección]
 

@@ -35,7 +35,12 @@ from typing import Iterable, Sequence
 ROOT = Path(__file__).resolve().parents[1]
 CUTOFF = "2026-08-08"
 AUDIT_ID = "research-audit-2026-08-08"
-DEFAULT_SNAPSHOT = Path("/tmp/corredor-eukaryota-auditoria-20260808")
+REVIEW_CLOSURE_DATE = "2026-08-13"
+BASELINE_COMMIT = "a3ce4e6685a4e287a5fbd478d4657e475e10de3c"
+EVIDENCE_COMMIT = "af7e799e2d096a48f24afd31d7745e19cebf374d"
+DEFAULT_RECONSTRUCTED_INPUTS = Path(
+    "data/auditoria/entradas_congeladas_reconstruidas"
+)
 
 PROMPT_RELATIVE = Path("docs/C01-PROMPT-INVESTIGACION.md")
 ARCHIVE_RELATIVE = Path("archive/maestro_provisional_v5_pre_migracion.md")
@@ -108,6 +113,10 @@ REQUIREMENT_CONTROL_ARTIFACT_COLUMNS = [
     "id_requisito", "alcance_o_censo", "comando_o_consulta",
     "resultado_control", "evidencia",
 ]
+VERIFIED_CONTROL_RESULTS = {
+    "CERO_FALLOS",
+    "CONFORME_REVISION_MANUAL",
+}
 SEARCH_MATRIX_COLUMNS = [
     "id_busqueda", "fecha", "bloque", "clave_bn", "prioridad", "objetivo",
     "consulta_exacta", "servicio", "fuentes_evaluadas", "resultado",
@@ -120,6 +129,7 @@ SECOND_REVIEW_COLUMNS = [
     "fecha", "evidencia", "accion", "estado_cierre",
     "huella_objeto_sha256",
 ]
+REQUIREMENT_REVIEW_TYPE = "CENSO_REQUISITO_100_PCT"
 APPENDIX_DELTA_COLUMNS = [
     "id_delta", "apendice", "fila_inicial", "fila_final",
     "identificador_inicial", "identificador_final", "estado_inicial",
@@ -200,7 +210,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico NUEVA S35/Prometheoarchaeum",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Verificar en S35 el tiempo de crecimiento completo y el rendimiento celular de Prometheoarchaeum syntrophicum.",
         "consulta_exacta": "`site:nature.com/articles Imachi Prometheoarchaeum syntrophicum complete growth approximately three months 6.7 10^6`; `site:pmc.ncbi.nlm.nih.gov Imachi Prometheoarchaeum syntrophicum 6.7 × 10^6 three months`; `\"6.7 × 10^6\" \"Prometheoarchaeum\"`; `\"complete growth\" \"Prometheoarchaeum syntrophicum\" three months`",
         "servicio": "web search/open/find; S35 PMC",
@@ -217,7 +227,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico NUEVA S118/miosinas",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar el pasaje primario para las 37 combinaciones de dominios de miosina.",
         "consulta_exacta": "`myosin 37 domain combinations phylogenetic distribution primary paper`",
         "servicio": "web search/open/find; Nature",
@@ -234,7 +244,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico NUEVA S122/corrección F",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Verificar la atribución del dato de tres inserciones en enolasa de animales y hongos.",
         "consulta_exacta": "`site:pnas.org/doi 10.1073/pnas.90.24.11558 three enolase gaps animals fungi`; `\"Animals and fungi are each other's closest relatives\" \"enolase\" three gaps`; `PMC 11558 1993 Baldauf Palmer enolase gaps`",
         "servicio": "web search/open/find; PubMed; PNAS/PMC",
@@ -251,11 +261,14 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico HISTORIA/nomenclatura",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Cerrar con pasajes verificables las fechas históricas de Protozoa, Protista y la terminología procaryote/eucaryote.",
         "consulta_exacta": "`Scamardella 1999 Not plants or animals Protozoa 1818 Protista 1866 full text`; `Rothschild 1989 Protozoa Protista Protoctista Goldfuss 1818 Haeckel 1866`; `Goldfuss 1818 Protozoa original publication`; `Georg Goldfuss Protozoa 1818 Ueber die Entwicklungsstufen des Thieres bibliographic`; `Sapp 2005 prokaryote eukaryote dichotomy PMC 1925 Chatton 1937 1938 full text`; `\"Chatton first used\" \"1925\" \"1938\" Sapp`; `Adl 2019 Revisions classification Amorphea Choanozoa Apoikozoa PMC`; `site:pmc.ncbi.nlm.nih.gov \"Revisions to the Classification\" \"Choanozoa\" \"Apoikozoa\"`",
         "servicio": "web search/open/find; PMC; editor; repositorio institucional",
-        "fuentes_evaluadas": "S01, S386, S393, S418, S419, S420, S422 y nueva S551.",
+        "fuentes_evaluadas": (
+            "S01, S386, S393, S418, S419, S422 y nueva S551; S420 quedó "
+            "retirada del catálogo final por no sostener ninguna C."
+        ),
         "resultado": "Se verificó Protista 1866; se distinguió aparición de Protozoa en 1817 de su sistematización como primera clase en 1818; se corrigió el compendio de Chatton a 1938 y se documentó 1937 como error repetido.",
         "accion_inicial": "NO_APLICA: búsqueda posterior a la congelación de Q-0001–Q-0165.",
         "cambio_realizado": "Se corrigieron C-1688, C-1704, C-9118, la narrativa y las filas D históricas; se añadió S551 como fuente institucional y se completaron localizadores exactos.",
@@ -268,7 +281,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico MAGNITUDES/localizadores",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Recuperar los pasajes exactos para 300–750 nm en Promethearchaeum, 3 × 0,4 µm en el aislado de Pelomyxa y hasta 10 % de secuencias de inserción en Wolbachia.",
         "consulta_exacta": "`\"Promethearchaeum syntrophicum\" \"300–750\" nm`; `\"Promethearchaeum syntrophicum\" \"300-750 nm\"`; `\"Isolation of a Methanogenic Endosymbiont\" \"3\" \"0.4\" Pelomyxa`; `\"Pelomyxa palustris\" \"3 × 0.4\" methanogenic endosymbiont`; `site:pmc.ncbi.nlm.nih.gov/articles/PMC8192442 \"10%\" insertion sequences Wolbachia`; `\"Living in the endosymbiotic world of Wolbachia\" \"10%\"`",
         "servicio": "web search/open/find; PMC; PubMed; editor",
@@ -285,7 +298,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico FÓSILES/Amorphea",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar el fósil más antiguo asignable directamente a Amorphea mediante una sinapomorfía diagnóstica del nodo.",
         "consulta_exacta": "`\"Amorphea\" fossil diagnostic synapomorphy oldest fossil`; `site:pubmed.ncbi.nlm.nih.gov Amorphea fossil record`",
         "servicio": "web search/open; PMC; literatura primaria y clasificación oficial recuperada",
@@ -302,7 +315,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico FÓSILES/Obazoa",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar el fósil más antiguo asignable directamente a Obazoa mediante una sinapomorfía diagnóstica del nodo.",
         "consulta_exacta": "`\"Obazoa\" fossil diagnostic synapomorphy oldest fossil`; `site:pubmed.ncbi.nlm.nih.gov Obazoa fossil record`",
         "servicio": "web search/open; PMC; literatura primaria y filogenómica recuperada",
@@ -319,7 +332,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico ECOLOGÍA/virus proterozoicos",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar una tasa publicada de mortalidad viral aplicable a comunidades eucariotas proterozoicas.",
         "consulta_exacta": "`Proterozoic eukaryotes virus infection fossil evidence mortality rate quantitative`; `Precambrian viruses eukaryotic fossil infection mortality rate`; `paleovirology Proterozoic eukaryotes giant viruses fossil record`",
         "servicio": "web search/open; Crossref; PubMed; editor",
@@ -336,7 +349,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico AMBIENTE/hábitats ancestrales",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar una reconstrucción publicada y comparable del hábitat ancestral para cada nodo de Amorphea a Metazoa.",
         "consulta_exacta": "`ancestral habitat reconstruction Amorphea Obazoa Opisthokonta Holozoa Filozoa Choanoflagellata marine freshwater soil phylogeny`; `\"ancestral habitat\" Holozoa Filozoa Choanoflagellata`; `\"ancestral habitat reconstruction\" Obazoa Amorphea`; `eukaryote phylogeny ancestral environment Opisthokonta Holozoa habitat transitions`",
         "servicio": "web search/open; PMC; Nature Ecology & Evolution; literatura primaria/filogenómica",
@@ -353,7 +366,7 @@ ADDITIONAL_SEARCHES = [
         "fecha": CUTOFF,
         "bloque": "cierre científico ECOLOGÍA/depredación causal",
         "clave_bn": "n/a",
-        "prioridad": "NUEVA",
+        "prioridad": "P1",
         "objetivo": "Localizar el término exacto «principio de recorte» o «pruning principle» aplicado a fagotrofia, depredación o eucariogénesis y distinguirlo de propuestas próximas.",
         "consulta_exacta": "`\"pruning principle\" phagotrophy eukaryotes predation`; `\"principle of pruning\" eukaryote phagotrophy`; `\"phagotrophy\" \"eukaryotic lifestyle\" predation Proterozoic`; `\"pruning\" \"phagocytosis\" evolution`; `\"principio de recorte\" fagotrofia`; `\"principio del recorte\" eucariota depredación`",
         "servicio": "web search/open; PMC; ASM; Biology Direct; literatura primaria y revisiones recuperadas",
@@ -390,6 +403,14 @@ def canonical_row_bytes(row: dict[str, str]) -> bytes:
 
 def row_fingerprint(row: dict[str, str]) -> str:
     return sha256_bytes(canonical_row_bytes(row))
+
+
+def initial_fingerprint(row: dict[str, str]) -> str:
+    """Devuelve la huella original preservada por la reconstrucción."""
+    preserved = row.get("huella_fila_original_sha256")
+    if preserved:
+        return preserved
+    return row_fingerprint(row)
 
 
 def aggregate_fingerprints(
@@ -555,6 +576,21 @@ def load_and_validate_frozen(snapshot: Path) -> dict[str, list[dict[str, str]]]:
             "Los agregados de filas congeladas no coinciden: "
             f"{aggregates} != {FROZEN_AGGREGATES}"
         )
+    corpus_aggregates = {
+        "claims_corpus_rows_sha256": sha256_bytes("".join(
+            f"{row['clave_inicial']}\x1f{row['huella_corpus_inicial_sha256']}\n"
+            for row in claims
+        ).encode("utf-8")),
+        "sources_corpus_rows_sha256": sha256_bytes("".join(
+            f"{row['clave_inicial']}\x1f{row['huella_corpus_inicial_sha256']}\n"
+            for row in sources
+        ).encode("utf-8")),
+    }
+    if corpus_aggregates != FROZEN_CORPUS_AGGREGATES:
+        raise BuildError(
+            "Las huellas preservadas del corpus inicial no reproducen sus "
+            f"agregados: {corpus_aggregates} != {FROZEN_CORPUS_AGGREGATES}"
+        )
     baseline_claims, _ = load_claims(snapshot / "worktree")
     baseline_sources = load_sources(snapshot / "worktree")
     corpus_aggregates = {
@@ -578,6 +614,87 @@ def load_and_validate_frozen(snapshot: Path) -> dict[str, list[dict[str, str]]]:
         "requirements": requirements,
         "searches": searches,
     }
+
+
+def aggregate_preserved_fingerprints(
+    rows: Sequence[dict[str, str]], keys: Sequence[str],
+) -> str:
+    if len(rows) != len(keys):
+        raise BuildError("Filas reconstruidas y claves tienen longitudes distintas")
+    payload = "".join(
+        f"{key}\x1f{initial_fingerprint(row)}\n"
+        for key, row in zip(keys, rows)
+    )
+    return sha256_bytes(payload.encode("utf-8"))
+
+
+def load_and_validate_reconstructed(
+    inputs: Path,
+) -> dict[str, list[dict[str, str]]]:
+    """Valida la reconstrucción versionada sin completar campos ausentes."""
+    files = {
+        "claims": "afirmaciones_iniciales.csv",
+        "sources": "fuentes_iniciales.csv",
+        "requirements": "requisitos_iniciales.csv",
+        "searches": "busquedas_iniciales.csv",
+        "history": "historia_bn_inicial.csv",
+    }
+    result = {name: read_dicts(inputs / filename)[1] for name, filename in files.items()}
+    provenance = json.loads((inputs / "proveniencia.json").read_text(encoding="utf-8"))
+    if (
+        provenance.get("metodo") != "reconstruccion_desde_git_y_huellas_versionadas"
+        or provenance.get("commit_evidencia_versionada") != EVIDENCE_COMMIT
+        or provenance.get("commit_pre_auditoria") != BASELINE_COMMIT
+    ):
+        raise BuildError("Proveniencia reconstruida ausente o ligada a otro commit")
+    claims = result["claims"]
+    sources = result["sources"]
+    requirements = result["requirements"]
+    searches = result["searches"]
+    if [row["clave_inicial"] for row in claims] != [
+        canonical_claim(number) for number in range(1, 1841)
+    ]:
+        raise BuildError("La reconstrucción C no conserva C-001…C-1840")
+    if len(sources) != 525 or len({row["clave_inicial"] for row in sources}) != 525:
+        raise BuildError("La reconstrucción S no conserva 525 claves únicas")
+    if len(requirements) != 483 or len(searches) != 165:
+        raise BuildError("La reconstrucción no conserva 483 R y 165 Q")
+    aggregates = {
+        "claims": aggregate_preserved_fingerprints(
+            claims, [row["clave_inicial"] for row in claims]
+        ),
+        "sources": aggregate_preserved_fingerprints(
+            sources, [row["clave_inicial"] for row in sources]
+        ),
+        "requirements": aggregate_preserved_fingerprints(
+            requirements,
+            [f"R-{number:04d}" for number in range(1, len(requirements) + 1)],
+        ),
+        "searches": aggregate_preserved_fingerprints(
+            searches,
+            [f"Q-{number:04d}" for number in range(1, len(searches) + 1)],
+        ),
+    }
+    if aggregates != FROZEN_AGGREGATES:
+        raise BuildError(
+            "Las huellas originales preservadas no reproducen los agregados "
+            f"congelados: {aggregates} != {FROZEN_AGGREGATES}"
+        )
+    for name in ("sources", "requirements", "searches"):
+        for row in result[name]:
+            expected = row["huella_fila_original_sha256"]
+            reconstructed = {
+                key: value for key, value in row.items()
+                if key not in {
+                    "huella_fila_original_sha256",
+                    "huella_corpus_inicial_sha256",
+                }
+            }
+            if row_fingerprint(reconstructed) != expected:
+                raise BuildError(
+                    f"{name}: una fila reconstruida contradice su huella original"
+                )
+    return result
 
 
 def load_key_map(path: Path) -> tuple[list[dict[str, str]], dict[str, str]]:
@@ -675,16 +792,16 @@ def final_claim_axes(rows: Sequence[dict[str, str]]) -> dict[str, str]:
 
 
 def build_claim_matrix(
-    frozen_rows: list[dict[str, str]], baseline_root: Path, root: Path,
+    frozen_rows: list[dict[str, str]], root: Path,
     key_rows: list[dict[str, str]], key_map: dict[str, str],
     origins: dict[str, str],
 ) -> list[dict[str, str]]:
-    baseline_rows, _ = load_claims(baseline_root)
     current_rows, current_sections = load_claims(root)
-    baseline = {row["#"]: row for row in baseline_rows}
     current = {row["#"]: row for row in current_rows}
-    if set(baseline) != {canonical_claim(number) for number in range(1, 1841)}:
-        raise BuildError("El worktree congelado no contiene exactamente 1.840 C")
+    if {row["clave_inicial"] for row in frozen_rows} != {
+        canonical_claim(number) for number in range(1, 1841)
+    }:
+        raise BuildError("La reconstrucción no contiene exactamente 1.840 C")
     if Counter(row["clave_final"] for row in key_rows) != Counter(current.keys()):
         raise BuildError("El mapa de claves no cubre exactamente el registro C final")
 
@@ -701,11 +818,19 @@ def build_claim_matrix(
             # manifiesto de división: su propia clave temporal documenta el alta.
             if re.fullmatch(r"C-9\d{3}", before):
                 origin = "NUEVA"
+            elif (
+                before == after
+                and re.fullmatch(r"C-\d{4,5}", before)
+                and int(before.split("-")[1]) >= 1953
+            ):
+                # Altas creadas después del checkpoint: conservan la clave viva
+                # y se declaran nuevas, sin atribuirles un origen histórico.
+                origin = "NUEVA"
             else:
                 raise BuildError(f"Falta origen documentado para {before}")
         if origin == "NUEVA":
             new_destinations.append((before, after))
-        elif origin in baseline:
+        elif origin in {row["clave_inicial"] for row in frozen_rows}:
             destinations[origin].append(after)
         else:
             raise BuildError(f"Origen temporal inexistente: {before} -> {origin}")
@@ -717,7 +842,7 @@ def build_claim_matrix(
             f"{sorted(override_finals - set(current), key=natural_key)}"
         )
     for initial in SEMANTIC_DESTINATION_OVERRIDES:
-        if initial not in baseline:
+        if initial not in {row["clave_inicial"] for row in frozen_rows}:
             raise BuildError(f"Origen semántico inicial inexistente: {initial}")
     for initial in list(destinations):
         destinations[initial] = [
@@ -744,7 +869,7 @@ def build_claim_matrix(
         changed = (
             not finals
             or len(finals) != 1
-            or claim_fingerprint(baseline[claim_id])
+            or initial["huella_corpus_inicial_sha256"]
             != claim_fingerprint({**final_rows[0], "#": claim_id})
         )
         if not finals:
@@ -794,8 +919,8 @@ def build_claim_matrix(
                 if any(claim_is_hole(row) for row in final_rows)
                 else "CERRADO"
             ),
-            "huella_inicial_sha256": row_fingerprint(initial),
-            "huella_corpus_inicial_sha256": claim_fingerprint(baseline[claim_id]),
+            "huella_inicial_sha256": initial_fingerprint(initial),
+            "huella_corpus_inicial_sha256": initial["huella_corpus_inicial_sha256"],
             "huella_final_sha256": final_hash,
         })
 
@@ -867,20 +992,19 @@ def final_editorial_status(row: dict[str, str] | None) -> str:
 
 
 def build_source_matrix(
-    frozen_rows: list[dict[str, str]], baseline_root: Path, root: Path,
+    frozen_rows: list[dict[str, str]], root: Path,
     claims: Sequence[dict[str, str]], removed_sources_path: Path,
 ) -> list[dict[str, str]]:
-    baseline = {row["clave"]: row for row in load_sources(baseline_root)}
     current = {row["clave"]: row for row in load_sources(root)}
     frozen = {row["clave_inicial"]: row for row in frozen_rows}
-    if set(baseline) != set(frozen) or len(baseline) != 525:
-        raise BuildError("A inicial y matriz S congelada no coinciden en 525 claves")
+    if len(frozen) != 525:
+        raise BuildError("La reconstrucción S no conserva 525 claves")
 
     removed: dict[str, dict[str, str]] = {}
     if removed_sources_path.exists():
         _, removed_rows = read_dicts(removed_sources_path)
         removed = {row["clave"]: row for row in removed_rows}
-    expected_removed = set(baseline) - set(current)
+    expected_removed = set(frozen) - set(current)
     if set(removed) != expected_removed:
         raise BuildError(
             "El registro de fuentes retiradas no coincide con A inicial-final: "
@@ -901,7 +1025,6 @@ def build_source_matrix(
     # Preserve the frozen audit order: the aggregate anchors both identity and
     # order, and the initial A catalogue intentionally contains late inserts.
     for source_id in (row["clave_inicial"] for row in frozen_rows):
-        initial_a = baseline[source_id]
         initial = frozen[source_id]
         final = current.get(source_id)
         if final is None:
@@ -923,7 +1046,10 @@ def build_source_matrix(
             unique = "NO"
         else:
             covered[source_id] += 1
-            changed = source_fingerprint(initial_a) != source_fingerprint(final)
+            changed = (
+                initial["huella_corpus_inicial_sha256"]
+                != source_fingerprint(final)
+            )
             verdict = (
                 "CONFORME"
                 if initial["veredicto"] == "CONFORME" and not changed
@@ -984,12 +1110,12 @@ def build_source_matrix(
                 else "CERRADO"
             ),
             "fecha_verificacion": initial["fecha_verificacion"],
-            "huella_inicial_sha256": row_fingerprint(initial),
-            "huella_corpus_inicial_sha256": source_fingerprint(initial_a),
+            "huella_inicial_sha256": initial_fingerprint(initial),
+            "huella_corpus_inicial_sha256": initial["huella_corpus_inicial_sha256"],
             "huella_final_sha256": final_hash,
         })
 
-    for source_id in sorted(set(current) - set(baseline), key=natural_key):
+    for source_id in sorted(set(current) - set(frozen), key=natural_key):
         final = current[source_id]
         covered[source_id] += 1
         usage = f"{len(cited_by[source_id])} afirmaciones finales"
@@ -1316,9 +1442,10 @@ def load_requirement_dispositions(
                     raise BuildError(
                         f"{requirement_id}: CONTROL_VERIFICADO sin prueba completa"
                     )
-                if row["resultado_control"] != "CERO_FALLOS":
+                if row["resultado_control"] not in VERIFIED_CONTROL_RESULTS:
                     raise BuildError(
-                        f"{requirement_id}: solo CERO_FALLOS permite verificar un control"
+                        f"{requirement_id}: resultado incompatible con control verificado: "
+                        f"{row['resultado_control']}"
                     )
                 if not re.fullmatch(r"[0-9a-f]{64}", row["huella_control_sha256"]):
                     raise BuildError(f"{requirement_id}: huella de control inválida")
@@ -1458,9 +1585,10 @@ def build_requirement_matrix(
         sources = explicit_refs(disposition["_sources"])
         negative = explicit_refs(disposition["_negative"])
         searches = explicit_refs(disposition["_searches"])
-        gap_destinations = explicit_refs([
-            *disposition["_negative"], *disposition["_searches"],
-        ])
+        # El campo busqueda_negativa solo admite claves BN. Las Q quedan en la
+        # evidencia, donde siguen siendo destinos auditables sin violar el
+        # vocabulario de la matriz congelada.
+        gap_destinations = negative
         kind = str(disposition["tipo"])
         if kind == "PADRE":
             child_states = "; ".join(
@@ -1478,7 +1606,8 @@ def build_requirement_matrix(
             )
             suffix = f"; destinos auditados: {destinations}" if destinations else ""
             mapping_evidence = (
-                f"control {disposition['estado_disposicion']} "
+                f"control estructural verificable: "
+                f"{disposition['estado_disposicion']} "
                 f"{disposition['control_o_rollup']}; artefacto="
                 f"{disposition['artefacto_control']}; alcance="
                 f"{disposition['alcance_o_censo']}; comando/consulta="
@@ -1512,7 +1641,7 @@ def build_requirement_matrix(
             "accion": str(disposition["accion"]),
             "evidencia_inicial": initial["evidencia"],
             "evidencia": f"Ancla literal {anchor}; {mapping_evidence}.",
-            "huella_inicial_sha256": row_fingerprint(initial),
+            "huella_inicial_sha256": initial_fingerprint(initial),
         })
     return result
 
@@ -1540,6 +1669,8 @@ def bn_priority(key: str, active_bn: set[str]) -> str:
         return "P1"
     if key in P2_BN:
         return "P2"
+    if int(key.split("-")[1]) > 113:
+        return "P1"
     raise BuildError(f"BN activa sin prioridad: {key}")
 
 
@@ -1578,15 +1709,21 @@ def negative_delta(
 
 
 def build_negative_history(
-    snapshot: Path, baseline_bn: dict[str, dict[str, str]],
-    current_bn: dict[str, dict[str, str]],
+    initial_rows: Sequence[dict[str, str]], current_bn: dict[str, dict[str, str]],
 ) -> tuple[list[dict[str, str]], list[str]]:
-    path = snapshot / "worktree/docs/auditorias/revision_busquedas_negativas_2026-08-08.csv"
-    initial_rows = read_dicts(path)[1]
     active = set(current_bn)
-    if len(initial_rows) != 106 or len(active) != 68:
-        raise BuildError("Historia BN debe conservar 106 filas y 68 activas")
-    if Counter(bn_priority(key, active) for key in active) != Counter(
+    if len(initial_rows) != 106:
+        raise BuildError("Historia BN debe conservar 106 filas iniciales")
+    original_active = {
+        row["clave_original"] for row in initial_rows
+        if row["prioridad_base"] in {"P0", "P1", "P2"}
+    }
+    if not original_active <= active:
+        raise BuildError(
+            "Una BN activa del inventario original desapareció sin disposición: "
+            f"{sorted(original_active - active)}"
+        )
+    if Counter(row["prioridad_base"] for row in initial_rows if row["clave_original"] in original_active) != Counter(
         {"P0": 22, "P1": 23, "P2": 23}
     ):
         raise BuildError("Prioridades BN activas distintas de 22/23/23")
@@ -1595,46 +1732,39 @@ def build_negative_history(
     explicit_deltas: list[str] = []
     for initial in initial_rows:
         key = initial["clave_original"]
-        row = dict(initial)
-        changed_history: list[str] = []
-        if key in HISTORY_RESULT_OVERRIDES:
-            previous = row["resultado_documentado"]
-            row["resultado_documentado"] = HISTORY_RESULT_OVERRIDES[key]
-            changed_history.append(
-                "resultado_documentado corregido; "
-                f"valor_inicial_sha256={sha256_bytes((previous + chr(10)).encode('utf-8'))}; "
-                "se retiró un valor central no publicado o un complemento "
-                "aritmético y se conservaron solo magnitudes publicadas"
+        row = {
+            column: initial[column] for column in (
+                "clave_original", "bloque_original", "disposición_final",
+                "resultado_documentado", "evidencia_principal",
+                "destino_canónico",
             )
-        if key in HISTORY_EVIDENCE_OVERRIDES:
-            previous = row["evidencia_principal"]
-            row["evidencia_principal"] = HISTORY_EVIDENCE_OVERRIDES[key]
-            changed_history.append(
-                "evidencia_principal corregida; "
-                f"valor_inicial_sha256={sha256_bytes((previous + chr(10)).encode('utf-8'))}; "
-                "se acotó la evidencia a la magnitud o clase de medición publicada"
-            )
-        priority = bn_priority(key, active)
-        canonical = negative_delta(key, baseline_bn, current_bn)
-        history_delta = (
-            "CORRECCION_EXPLICITA: " + " | ".join(changed_history)
-            if changed_history else "SIN_CAMBIO_EN_LA_FILA_HISTORICA"
+        }
+        priority = initial["prioridad_base"]
+        preserved_delta = initial["delta_preservado"]
+        history_delta = re.split(
+            r"; (?=(?:SIN_CAMBIO|CAMBIO|ALTA|RETIRADA)_CANONIC)",
+            preserved_delta, maxsplit=1,
+        )[0]
+        canonical_parts = re.split(
+            r"; (?=(?:SIN_CAMBIO|CAMBIO|ALTA|RETIRADA)_CANONIC)",
+            preserved_delta, maxsplit=1,
         )
+        canonical = canonical_parts[1] if len(canonical_parts) == 2 else "SIN_CAMBIO_CANONICO"
         delta = f"{history_delta}; {canonical}"
-        if changed_history or canonical != "SIN_CAMBIO_CANONICO":
+        if history_delta != "SIN_CAMBIO_EN_LA_FILA_HISTORICA" or canonical != "SIN_CAMBIO_CANONICO":
             explicit_deltas.append(f"- **{key}:** {delta}")
         row.update({
             "prioridad_final": priority,
-            "desencadenante": bn_trigger(priority),
+            "desencadenante": initial["desencadenante_base"],
             "delta_auditoria_2026_08_08": delta,
-            "huella_inicial_sha256": row_fingerprint(initial),
+            "huella_inicial_sha256": initial_fingerprint(initial),
         })
         result.append(row)
     return result, explicit_deltas
 
 
-def history_markdown(snapshot: Path, delta_lines: Sequence[str]) -> bytes:
-    path = snapshot / "worktree/docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md"
+def history_markdown(root: Path, delta_lines: Sequence[str]) -> bytes:
+    path = root / "docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md"
     text = path.read_text(encoding="utf-8")
     cleaned_lines: list[str] = []
     for line in text.splitlines():
@@ -1658,7 +1788,10 @@ def history_markdown(snapshot: Path, delta_lines: Sequence[str]) -> bytes:
         text = text.split(marker, 1)[0].rstrip() + "\n"
     text += marker
     text += (
-        "\nLos cambios siguientes se registran contra la instantánea externa; "
+        "\nLos cambios siguientes conservan las huellas iniciales recuperadas "
+        f"del commit de evidencia `{EVIDENCE_COMMIT}`; el commit preauditoría "
+        f"`{BASELINE_COMMIT}` se registra como sustrato, no como copia exacta "
+        "del inventario congelado; "
         "`NO_VERIFICABLE` o un resultado negativo no se reinterpretan como "
         "falsedad. Las huellas completas están en el CSV enriquecido.\n\n"
     )
@@ -1668,8 +1801,8 @@ def history_markdown(snapshot: Path, delta_lines: Sequence[str]) -> bytes:
 
 def build_search_matrix(
     frozen_rows: list[dict[str, str]], active_bn: set[str],
-    history: dict[str, dict[str, str]], baseline_bn: dict[str, dict[str, str]],
-    current_bn: dict[str, dict[str, str]], key_map: dict[str, str],
+    history: dict[str, dict[str, str]], current_bn: dict[str, dict[str, str]],
+    key_map: dict[str, str],
 ) -> list[dict[str, str]]:
     if len(frozen_rows) != FROZEN_SEARCH_COUNT:
         raise BuildError(
@@ -1690,7 +1823,7 @@ def build_search_matrix(
             )
             change = delta
             evidence = (
-                f"Fila congelada {row_fingerprint(initial)}; historia BN y fila "
+                f"Fila congelada {initial_fingerprint(initial)}; historia BN y fila "
                 "canónica comparadas por huella."
             )
         else:
@@ -1707,7 +1840,7 @@ def build_search_matrix(
             trigger = "NO_APLICA: búsqueda ejecutada en el corte de auditoría."
             state = "CERRADO"
             evidence = (
-                f"Fila congelada {row_fingerprint(initial)}; no se atribuye una "
+                f"Fila congelada {initial_fingerprint(initial)}; no se atribuye una "
                 "consulta adicional a la registrada."
             )
         result.append({
@@ -1726,7 +1859,7 @@ def build_search_matrix(
             "desencadenante": trigger,
             "evidencia_final": evidence,
             "estado_registro": state,
-            "huella_inicial_sha256": row_fingerprint(initial),
+            "huella_inicial_sha256": initial_fingerprint(initial),
         })
     for offset, row in enumerate(ADDITIONAL_SEARCHES, len(result) + 1):
         mapped = {
@@ -1736,6 +1869,53 @@ def build_search_matrix(
             for column, value in row.items()
         }
         result.append({"id_busqueda": f"Q-{offset:04d}", **mapped})
+    for key in sorted(active_bn - set(history), key=natural_key):
+        row = current_bn[key]
+        def value(*columns: str, fallback: str = "") -> str:
+            return next(
+                (row[column] for column in columns if row.get(column, "").strip()),
+                fallback,
+            )
+        result.append({
+            "id_busqueda": f"Q-{len(result) + 1:04d}",
+            "fecha": REVIEW_CLOSURE_DATE,
+            "bloque": f"alta de control manual {key}",
+            "clave_bn": key,
+            "prioridad": "P1",
+            "objetivo": value("hueco", "elemento"),
+            "consulta_exacta": value(
+                "términos exactos o n/a", "términos exactos",
+                "términos exactos utilizados", "términos exactos buscados",
+                "términos exactos o fundamento",
+            ),
+            "servicio": "corpus vivo; consulta exacta reproducible declarada en la fila BN",
+            "fuentes_evaluadas": value(
+                "filas relacionadas", "filas o fuente",
+                fallback=(
+                    f"{key}: no se incorporó una fuente positiva; el resultado "
+                    "negativo enumera lo recuperado y lo que falta."
+                ),
+            ),
+            # Algunos esquemas BN conservan consulta y resultado juntos en un
+            # fundamento literal. Reutilizar ese texto es una transcripción del
+            # registro vivo, no una inferencia desde el hueco.
+            "resultado": value(
+                "resultado", "resultado y motivo", "resultado o motivo",
+                "términos exactos o fundamento",
+            ),
+            "accion_inicial": "NO_APLICA: alta posterior al inventario Q congelado.",
+            "cambio_realizado": "ALTA_CANONICA_DOCUMENTADA",
+            "desencadenante": (
+                "Nueva evidencia primaria que responda al hueco literal o "
+                "amplíe el censo indicado."
+            ),
+            "evidencia_final": (
+                f"{key}; sha256_fila_bn={row_fingerprint(row)}; "
+                "no se convierte el resultado negativo en una inferencia positiva."
+            ),
+            "estado_registro": "HUECO_CIENTIFICO_ETIQUETADO",
+            "huella_inicial_sha256": "NO_APLICA",
+        })
     return result
 
 
@@ -1782,73 +1962,106 @@ def appendix_human_id(letter: str, row: dict[str, str]) -> str:
 
 
 def build_appendix_delta(
-    baseline_root: Path, root: Path,
+    reconstructed_inputs: Path, root: Path,
 ) -> tuple[list[dict[str, str]], dict[str, Counter[str]]]:
-    initial_paths = appendix_paths(baseline_root)
     final_paths = appendix_paths(root)
+    base_delta = read_dicts(reconstructed_inputs / "delta_apendices_base.csv")[1]
     result: list[dict[str, str]] = []
     counts: dict[str, Counter[str]] = {}
     serial = 0
     for letter in "BCDEFG":
-        initial_rows = read_dicts(initial_paths[letter])[1]
         final_rows = read_dicts(final_paths[letter])[1]
         queues: defaultdict[str, deque[int]] = defaultdict(deque)
+        human_queues: defaultdict[str, list[int]] = defaultdict(list)
         for index, row in enumerate(final_rows):
             queues[appendix_identity(letter, row)].append(index)
+            human_queues[appendix_human_id(letter, row)].append(index)
         used_final: set[int] = set()
         per_appendix: Counter[str] = Counter()
-        for initial_index, initial in enumerate(initial_rows):
+        lineage = [row for row in base_delta if row["apendice"] == letter]
+        for previous in lineage:
             serial += 1
-            identity = appendix_identity(letter, initial)
-            # Las 107 filas D sin C eran metadatos editoriales/fechas internas,
-            # no observaciones o estimaciones científicas. Se retiran aunque
-            # algún texto coincida accidentalmente con una fila científica.
-            forced_retirement = (
-                letter == "D"
-                and not CLAIM_REF.search(initial["# de la fila que la sostiene"])
-            )
-            final_index = None
-            if not forced_retirement and queues[identity]:
-                final_index = queues[identity].popleft()
-                used_final.add(final_index)
-            if final_index is None:
-                action = "RETIRADA"
-                if forced_retirement:
-                    destination = (
-                        "Instantánea externa; era metadato de publicación o fecha "
-                        "interna de corte sin C, no una estimación científica."
-                    )
-                else:
-                    destination = (
-                        "Instantánea externa y linaje de auditoría; retirada o "
-                        "consolidada sin reasignar silenciosamente la fila."
-                    )
-                final = None
+            if previous["estado_final"] == "RETIRADA":
+                row = dict(previous)
+                row["id_delta"] = f"DA-{serial:05d}"
+                result.append(row)
+                per_appendix["RETIRADA"] += 1
+                continue
+            final_candidates = [
+                (appendix_identity(letter, final_rows[index]), index)
+                for index in human_queues[previous["identificador_final"]]
+                if index not in used_final
+            ]
+            exact = [
+                candidate for candidate in final_candidates
+                if row_fingerprint(final_rows[candidate[1]])
+                == previous["huella_final_sha256"]
+            ]
+            if len(exact) == 1:
+                final_candidates = exact
+            elif len(final_candidates) > 1 and previous["fila_final"] != "NO_APLICA":
+                prior_position = int(previous["fila_final"]) - 2
+                positional = [
+                    candidate for candidate in final_candidates
+                    if candidate[1] == prior_position
+                ]
+                if len(positional) == 1:
+                    final_candidates = positional
+            if len(final_candidates) > 1:
+                raise BuildError(
+                    f"Linaje {previous['id_delta']} con destino vivo ambiguo "
+                    f"en apéndice {letter}: candidatos={final_candidates}"
+                )
+            if not final_candidates:
+                result.append({
+                    "id_delta": f"DA-{serial:05d}",
+                    "apendice": letter,
+                    "fila_inicial": previous["fila_inicial"],
+                    "fila_final": "NO_APLICA",
+                    "identificador_inicial": previous["identificador_inicial"],
+                    "identificador_final": "NO_APLICA",
+                    "estado_inicial": previous["estado_inicial"],
+                    "estado_final": "RETIRADA",
+                    "accion": "RETIRADA",
+                    "destino": (
+                        "La fila final del puente versionado ya no aparece en el "
+                        "corpus vivo; se conserva su identificador y huella previa."
+                    ),
+                    "huella_inicial_sha256": previous["huella_inicial_sha256"],
+                    "huella_final_sha256": "NO_APLICA",
+                })
+                per_appendix["RETIRADA"] += 1
+                continue
+            identity, final_index = final_candidates[0]
+            used_final.add(final_index)
+            final = final_rows[final_index]
+            final_hash = row_fingerprint(final)
+            if previous["estado_inicial"] == "AUSENTE":
+                action = "ALTA"
+                destination = "Fila nueva respecto del corte inicial; huella final fijada."
+            elif previous["huella_inicial_sha256"] == final_hash:
+                action = "SIN_CAMBIO"
+                destination = "Misma fila final, identidad y contenido conservados."
             else:
-                final = final_rows[final_index]
-                if initial == final:
-                    action = "SIN_CAMBIO"
-                    destination = "Misma fila final, identidad y contenido conservados."
-                else:
-                    action = "ACTUALIZADA"
-                    destination = (
-                        "Fila final emparejada por identidad de dominio; cambios "
-                        "fijados por huellas inicial/final."
-                    )
+                action = "ACTUALIZADA"
+                destination = (
+                    "Fila final emparejada mediante el puente versionado y la "
+                    "identidad de dominio; cambios fijados por huellas."
+                )
             per_appendix[action] += 1
             result.append({
                 "id_delta": f"DA-{serial:05d}",
                 "apendice": letter,
-                "fila_inicial": str(initial_index + 2),
-                "fila_final": str(final_index + 2) if final_index is not None else "NO_APLICA",
-                "identificador_inicial": appendix_human_id(letter, initial),
-                "identificador_final": appendix_human_id(letter, final) if final else "NO_APLICA",
-                "estado_inicial": "PRESENTE",
-                "estado_final": "RETIRADA" if final is None else "PRESENTE",
+                "fila_inicial": previous["fila_inicial"],
+                "fila_final": str(final_index + 2),
+                "identificador_inicial": previous["identificador_inicial"],
+                "identificador_final": appendix_human_id(letter, final),
+                "estado_inicial": previous["estado_inicial"],
+                "estado_final": "PRESENTE",
                 "accion": action,
                 "destino": destination,
-                "huella_inicial_sha256": row_fingerprint(initial),
-                "huella_final_sha256": row_fingerprint(final) if final else "NO_APLICA",
+                "huella_inicial_sha256": previous["huella_inicial_sha256"],
+                "huella_final_sha256": final_hash,
             })
         for final_index, final in enumerate(final_rows):
             if final_index in used_final:
@@ -1871,23 +2084,20 @@ def build_appendix_delta(
             })
         counts[letter] = per_appendix
 
-    initial_d = read_dicts(initial_paths["D"])[1]
     final_d = read_dicts(final_paths["D"])[1]
-    initial_d_without_c = sum(
-        not CLAIM_REF.search(row["# de la fila que la sostiene"])
-        for row in initial_d
-    )
     final_d_without_c = sum(
         not CLAIM_REF.search(row["# de la fila que la sostiene"])
         for row in final_d
     )
     if (
-        len(initial_d), initial_d_without_c, len(final_d), final_d_without_c,
-    ) != (282, 107, 215, 0):
+        sum(
+            row["apendice"] == "D" and row["estado_inicial"] == "PRESENTE"
+            for row in result
+        ), len(final_d), final_d_without_c,
+    ) != (282, len(final_d), 0):
         raise BuildError(
-            "Delta D inesperado; se esperaba 282/107 sin C -> 215/0 sin C, "
-            f"obtenido {len(initial_d)}/{initial_d_without_c} -> "
-            f"{len(final_d)}/{final_d_without_c}"
+            "Delta D inesperado; se esperaban 282 filas iniciales y cero "
+            f"filas finales sin C; obtenido final={len(final_d)}/sin_C={final_d_without_c}"
         )
     forced_d = sum(
         row["apendice"] == "D"
@@ -1915,10 +2125,10 @@ def deterministic_sample(
 def valid_review_date(value: str) -> bool:
     try:
         parsed = date.fromisoformat(value)
-        cutoff = date.fromisoformat(CUTOFF)
+        closure = date.fromisoformat(REVIEW_CLOSURE_DATE)
     except ValueError:
         return False
-    return parsed <= cutoff
+    return parsed == closure
 
 
 def valid_review_identity(row: dict[str, str]) -> bool:
@@ -2053,7 +2263,7 @@ def build_second_review(
         )
     for row in requirement_matrix:
         rows.append(pending_review_row(
-            "REQUISITO", row["id_requisito"], "CENSO_REQUISITO_100_PCT",
+            "REQUISITO", row["id_requisito"], REQUIREMENT_REVIEW_TYPE,
             "CENSO_100_PCT", row_fingerprint(row),
         ))
 
@@ -2170,7 +2380,7 @@ def report_markdown(
         "",
         "## Metodología",
         "",
-        "La auditoría cubre el encargo literal de las secciones 0–18, las 1.840 afirmaciones y 525 fuentes iniciales, las tablas y los apéndices A–H, las 106 búsquedas negativas históricas y las 68 activas. El estado inicial se toma exclusivamente de la instantánea externa congelada; cada fila se fija con SHA-256 antes de mapearla al corpus final.",
+        "La auditoría cubre el encargo literal de las secciones 0–18, las 1.840 afirmaciones y 525 fuentes iniciales, las tablas y los apéndices A–H, las 106 búsquedas negativas históricas y el conjunto activo. El estado inicial se reconstruye exclusivamente desde campos y huellas ya versionados; ningún campo ausente se completa por inferencia.",
         "",
         f"Ancla del prompt: `{PROMPT_SHA256}`. Manifiesto de hallazgos congelados: `{SNAPSHOT_FINDINGS_MANIFEST_SHA256}`.",
         "",
@@ -2239,7 +2449,7 @@ def report_markdown(
 
 
 def build_reproducible_json(
-    root: Path, snapshot: Path, payloads: dict[str, bytes],
+    root: Path, reconstructed_inputs: Path, payloads: dict[str, bytes],
     after: dict[str, int], review: list[dict[str, str]],
     origin_paths: Sequence[Path], removed_sources_path: Path,
 ) -> bytes:
@@ -2258,9 +2468,6 @@ def build_reproducible_json(
         artifact_hashes[relative] = {
             "sha256": sha256_file(path), "bytes": path.stat().st_size,
         }
-    baseline_head = (
-        snapshot / "metadata/git-head.txt"
-    ).read_text(encoding="utf-8").strip()
     pending = sum(row["estado_cierre"] != "CERRADO" for row in review)
     data = {
         "audit_id": AUDIT_ID,
@@ -2276,11 +2483,19 @@ def build_reproducible_json(
                 "path": ARCHIVE_RELATIVE.as_posix(), "sha256": ARCHIVE_SHA256,
             },
         },
-        "snapshot": {
-            "external_path": str(snapshot).rstrip("/") + "/",
-            "head": baseline_head,
-            "frozen_findings_manifest_sha256": SNAPSHOT_FINDINGS_MANIFEST_SHA256,
-            "frozen_file_sha256": FROZEN_FILE_SHA256,
+        "historical_inputs": {
+            "method": "reconstruccion_desde_git_y_huellas_versionadas",
+            "evidence_commit": EVIDENCE_COMMIT,
+            "pre_audit_commit": BASELINE_COMMIT,
+            "path": reconstructed_inputs.relative_to(root).as_posix(),
+            "files": {
+                path.relative_to(root).as_posix(): sha256_file(path)
+                for path in sorted(reconstructed_inputs.rglob("*")) if path.is_file()
+            },
+            "limitation": (
+                "Los campos iniciales no publicados no se infieren; cada fila "
+                "queda ligada a la huella original preservada."
+            ),
         },
         "frozen_aggregates": {
             "claims_audit_rows_sha256": FROZEN_AGGREGATES["claims"],
@@ -2360,14 +2575,17 @@ def build_reproducible_json(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
-    parser.add_argument("--snapshot-root", type=Path, default=DEFAULT_SNAPSHOT)
+    parser.add_argument(
+        "--reconstructed-inputs", type=Path,
+        default=DEFAULT_RECONSTRUCTED_INPUTS,
+    )
     parser.add_argument(
         "--claim-origin-map", type=Path, action="append", dest="origin_maps",
         help="Mapa clave_temporal,origen; puede repetirse.",
     )
     parser.add_argument(
         "--removed-sources", type=Path,
-        default=Path("/tmp/removed_sources_destination.csv"),
+        help="Registro reconstruido de fuentes retiradas.",
     )
     parser.add_argument(
         "--second-review-evidence", "--review-results", type=Path,
@@ -2380,19 +2598,29 @@ def parse_args() -> argparse.Namespace:
         "--require-complete-review", action="store_true",
         help="Falla antes de escribir si queda alguna segunda revisión abierta.",
     )
+    parser.add_argument(
+        "--check", action="store_true",
+        help="Compara todos los derivados sin escribirlos.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     root = args.root.resolve()
-    snapshot = args.snapshot_root.resolve()
+    reconstructed_inputs = (
+        args.reconstructed_inputs
+        if args.reconstructed_inputs.is_absolute()
+        else root / args.reconstructed_inputs
+    ).resolve()
     origin_paths = args.origin_maps or [
-        Path("/tmp/temp_claim_origins_9001_9020.csv"),
-        Path("/tmp/temp_claim_origins_9100_9131.csv"),
+        reconstructed_inputs / "origenes_afirmaciones_temporales.csv",
     ]
     origin_paths = [path.resolve() for path in origin_paths]
-    removed_sources_path = args.removed_sources.resolve()
+    removed_sources_path = (
+        args.removed_sources.resolve() if args.removed_sources
+        else reconstructed_inputs / "fuentes_retiradas.csv"
+    )
     output_dir = root / "docs/auditorias"
     paths = {
         "claims": output_dir / "matriz_afirmaciones_2026-08-08.csv",
@@ -2410,38 +2638,39 @@ def main() -> int:
     try:
         validate_file_hash(root / PROMPT_RELATIVE, PROMPT_SHA256, "Prompt")
         validate_file_hash(root / ARCHIVE_RELATIVE, ARCHIVE_SHA256, "Maestro archivado")
-        frozen = load_and_validate_frozen(snapshot)
-        baseline_root = snapshot / "worktree"
+        completed = subprocess.run(
+            [sys.executable, "scripts/reconstruct_audit_inputs.py", "--check"],
+            cwd=root, text=True, stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT, check=False,
+        )
+        if completed.returncode:
+            raise BuildError(completed.stdout.strip())
+        frozen = load_and_validate_reconstructed(reconstructed_inputs)
         key_rows, key_map = load_key_map(
             root / "docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv"
         )
         origins = load_origin_maps(origin_paths)
         current_claims, _ = load_claims(root)
-        current_sources = load_sources(root)
-        baseline_bn = load_negative_rows(baseline_root)
         current_bn = load_negative_rows(root)
         active_bn = set(current_bn)
-
         claim_matrix = build_claim_matrix(
-            frozen["claims"], baseline_root, root, key_rows, key_map, origins
+            frozen["claims"], root, key_rows, key_map, origins
         )
         source_matrix = build_source_matrix(
-            frozen["sources"], baseline_root, root, current_claims,
-            removed_sources_path,
+            frozen["sources"], root, current_claims, removed_sources_path,
+        )
+        history_rows, history_delta_lines = build_negative_history(
+            frozen["history"], current_bn
+        )
+        appendix_delta, appendix_delta_counts = build_appendix_delta(
+            reconstructed_inputs, root
         )
         requirement_matrix = build_requirement_matrix(
             frozen["requirements"], root, active_bn,
         )
-        history_rows, history_delta_lines = build_negative_history(
-            snapshot, baseline_bn, current_bn
-        )
         history_by_id = {row["clave_original"]: row for row in history_rows}
         search_matrix = build_search_matrix(
-            frozen["searches"], active_bn, history_by_id, baseline_bn,
-            current_bn, key_map
-        )
-        appendix_delta, appendix_delta_counts = build_appendix_delta(
-            baseline_root, root
+            frozen["searches"], active_bn, history_by_id, current_bn, key_map
         )
 
         review_evidence = args.second_review_evidence
@@ -2477,7 +2706,7 @@ def main() -> int:
                 list(history_rows[0]), history_rows
             ),
             paths["history_md"].relative_to(root).as_posix(): history_markdown(
-                snapshot, history_delta_lines
+                root, history_delta_lines
             ),
             paths["appendix_delta"].relative_to(root).as_posix(): csv_payload(
                 APPENDIX_DELTA_COLUMNS, appendix_delta
@@ -2491,13 +2720,24 @@ def main() -> int:
             review, after, appendix_delta_counts,
         )
         json_payload = build_reproducible_json(
-            root, snapshot, payloads, after, review, origin_paths,
+            root, reconstructed_inputs, payloads, after, review, origin_paths,
             removed_sources_path,
         )
 
-        for relative, payload in payloads.items():
-            atomic_write(root / relative, payload)
-        atomic_write(paths["json"], json_payload)
+        all_payloads = {**payloads, paths["json"].relative_to(root).as_posix(): json_payload}
+        if args.check:
+            stale = [
+                relative for relative, payload in all_payloads.items()
+                if not (root / relative).exists()
+                or (root / relative).read_bytes() != payload
+            ]
+            if stale:
+                raise BuildError(
+                    "Derivados de auditoría desactualizados: " + ", ".join(stale)
+                )
+        else:
+            for relative, payload in all_payloads.items():
+                atomic_write(root / relative, payload)
     except (BuildError, KeyError, ValueError, OSError, json.JSONDecodeError) as error:
         print(f"ERROR: {error}", file=sys.stderr)
         return 1
@@ -2507,7 +2747,7 @@ def main() -> int:
         f"{len(claim_matrix)} filas C, {len(source_matrix)} filas S, "
         f"{len(requirement_matrix)} requisitos, {len(search_matrix)} búsquedas, "
         f"{len(review)} objetos de segunda revisión "
-        f"({len(pending)} pendientes)."
+        f"({len(pending)} pendientes); modo={'check' if args.check else 'escritura'}."
     )
     return 0
 

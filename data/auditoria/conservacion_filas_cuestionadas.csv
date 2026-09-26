@@ -1,0 +1,2 @@
+"ruta","clave","commit_evidencia","sha256_fila_evidencia","sha256_fila_viva","resultado"
+"data/afirmaciones/02.csv","C-018","af7e799e2d096a48f24afd31d7745e19cebf374d","4101674621fbb6503d67f17bf19ff467f6b723adb5cac459f0b9120df60560ea","4101674621fbb6503d67f17bf19ff467f6b723adb5cac459f0b9120df60560ea","IDENTICA_BYTE_A_BYTE"

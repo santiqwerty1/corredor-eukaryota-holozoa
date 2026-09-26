@@ -40,7 +40,7 @@ class RequirementControlTests(unittest.TestCase):
             "localizadores_evidencia": "data/table_index.json",
             "revisor": "Fermat / revisión independiente",
             "declaracion_independencia": controls.INDEPENDENCE_DECLARATION,
-            "fecha_revision": "2026-08-08",
+            "fecha_revision": "2026-08-13",
         })
         return result, row
 
@@ -101,6 +101,14 @@ class RequirementControlTests(unittest.TestCase):
             self.corpus, result, self.literals[result.requirement_id], row,
         )
         self.assertTrue(any("alcance live desactualizada" in error for error in errors))
+
+    def test_manual_review_uses_actual_closure_date_not_bibliographic_cutoff(self) -> None:
+        result, row = self.valid_manual_row()
+        row["fecha_revision"] = "2026-08-08"
+        errors = controls.validate_manual_review(
+            self.corpus, result, self.literals[result.requirement_id], row,
+        )
+        self.assertTrue(any("distinta del cierre" in error for error in errors))
 
     def test_bare_manual_attestation_is_rejected(self) -> None:
         result, row = self.valid_manual_row()
@@ -228,6 +236,24 @@ class RequirementControlTests(unittest.TestCase):
             result = controls.Result("R-0002", "LITERAL_PROMPT_COMPLETO")
             controls.check_teleology_candidates(corpus, result)
         self.assertTrue(any("candidatos no clasificados" in error for error in result.errors))
+
+    def test_nomenclatural_table_context_does_not_make_superior_teleological(self) -> None:
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            relative = "data/tablas/14/table-56-14-8-1-codigos.csv"
+            path = root / relative
+            path.parent.mkdir(parents=True)
+            path.write_text(
+                "codigo,limite\nICZN,el corredor superior no es una jerarquía uniforme\n",
+                encoding="utf-8",
+            )
+            corpus = SimpleNamespace(
+                root=root, section_paths=[], claim_paths={},
+                index={"tables": [{"csv_path": relative}]}, appendix_paths={},
+            )
+            result = controls.Result("R-0002", "LITERAL_PROMPT_COMPLETO")
+            controls.check_teleology_candidates(corpus, result)
+        self.assertFalse(result.errors)
 
     def test_trivial_motive_mutation_is_rejected(self) -> None:
         claim_id = next(iter(self.corpus.claims))

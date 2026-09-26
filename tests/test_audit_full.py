@@ -120,6 +120,37 @@ class AuditFullMutationTests(unittest.TestCase):
         audit_full.audit_claims(context, findings)
         self.assertIn("AF400", {finding.code for finding in findings})
 
+    def test_explicit_rejection_of_editorial_derivation_is_not_a_derivation(self) -> None:
+        context = self._claim_context([
+            self._row("C-001", obj="estadístico publicado; no promedio propio"),
+        ])
+        findings: list[audit_full.Finding] = []
+        audit_full.audit_claims(context, findings)
+        self.assertNotIn("AF400", {finding.code for finding in findings})
+
+    def test_bidirectionality_accepts_explicit_cell_manifest_reference(self) -> None:
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        root = Path(temporary.name)
+        (root / "data/auditoria").mkdir(parents=True)
+        (root / "docs").mkdir(parents=True)
+        (root / "data/table_index.json").write_text(
+            json.dumps({"tables": []}), encoding="utf-8",
+        )
+        (root / "docs/order.txt").write_text("", encoding="utf-8")
+        (root / "data/auditoria/mapeo_celdas_afirmaciones.csv").write_text(
+            "ruta,fila,columna,sha256_contenido,contenido,afirmaciones,base,estado,nota\n"
+            "tabla.csv,2,campo,hash,valor,C-001,cotejo,REVISADA,nota\n",
+            encoding="utf-8",
+        )
+        findings: list[audit_full.Finding] = []
+        audit_full.audit_claim_bidirectionality(
+            audit_full.AuditContext(root), findings, {"C-001", "C-002"},
+        )
+        missing = {finding.key for finding in findings if finding.code == "AF140"}
+        self.assertNotIn("C-001", missing)
+        self.assertIn("C-002", missing)
+
     def test_claim_fingerprint_changes_with_semantics(self) -> None:
         first = dict(zip(audit_full.CLAIM_COLUMNS, self._row("C-001")))
         second = dict(first)
@@ -174,6 +205,11 @@ class AuditFullMutationTests(unittest.TestCase):
         self.assertFalse(audit_full.valid_iso_date("2026-02-30"))
         self.assertFalse(audit_full.valid_iso_date("2026-08-09"))
         self.assertFalse(audit_full.valid_iso_date("08/08/2026"))
+
+    def test_review_closure_date_accepts_only_the_literal_later_close(self) -> None:
+        self.assertTrue(audit_full.valid_review_closure_date("2026-08-13"))
+        self.assertFalse(audit_full.valid_review_closure_date("2026-08-08"))
+        self.assertFalse(audit_full.valid_review_closure_date("2026-02-30"))
 
     def test_stratified_sample_is_stable_and_uses_ceiling(self) -> None:
         keys = {f"C-{number:03d}" for number in range(1, 8)}
@@ -534,7 +570,9 @@ class AuditFullMutationTests(unittest.TestCase):
 
         findings: list[audit_full.Finding] = []
         audit_full.audit_second_review(audit_full.AuditContext(root), findings)
-        self.assertIn("AF758", {finding.code for finding in findings})
+        codes = {finding.code for finding in findings}
+        self.assertIn("AF755", codes)
+        self.assertNotIn("AF758", codes)
 
 
 if __name__ == "__main__":

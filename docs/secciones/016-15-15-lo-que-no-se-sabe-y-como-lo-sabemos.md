@@ -94,9 +94,9 @@ Ninguna clase de evidencia del corpus resuelve por sí sola topología, edad, fi
 
 ## 15.4. Búsquedas negativas consolidadas
 
-El registro canónico contiene 68 búsquedas negativas activas y cada una porta exactamente una de las tres etiquetas exigidas. [C-1931] La auditoría separada conserva las 106 claves originales y la disposición de las 38 retiradas. [C-1931; registro canónico de búsquedas negativas; auditoría del 2026-08-08]
+El registro canónico contiene 497 búsquedas negativas activas y cada una porta exactamente una de las dos etiquetas exigidas. [C-1931] La auditoría separada conserva las 106 claves originales y la disposición de las 38 retiradas. [C-1931; registro canónico de búsquedas negativas; auditoría del 2026-08-08]
 
-Doce filas están marcadas `LA LITERATURA DECLARA QUE NO SE SABE`, 56 están marcadas `NO LOCALIZADO EN ESTA SESIÓN` y ninguna está marcada `NO BUSCADO`. [C-1932; C-1933; C-1934] Las exclusiones de alcance ya no inflan el denominador científico. [C-1932; C-1933; C-1934; registro canónico de búsquedas negativas]
+Doce filas están marcadas `LA LITERATURA DECLARA QUE NO SE SABE`, 485 están marcadas `NO LOCALIZADO EN ESTA SESIÓN` y ninguna está marcada `NO BUSCADO`. [C-1932; C-1933; C-1934] Las exclusiones de alcance ya no inflan el denominador científico. [C-1932; C-1933; C-1934; registro canónico de búsquedas negativas]
 
 `NO LOCALIZADO EN ESTA SESIÓN` registra un resultado de búsqueda y no demuestra inexistencia en toda la literatura. [C-1935; glosa de alcance del registro]
 
@@ -140,7 +140,45 @@ Las filas conservan los términos exactos usados o, cuando no hubo búsqueda, el
 
 <!-- TABLE:negative-15-9 -->
 
-## 15.5. Registro de afirmaciones de la sección 15
+## 15.5. Controles canónicos y evidencia positiva conservada
+
+La reducción genómica separa el genoma del endosimbionte alfaproteobacteriano ancestral, inferido con miles de genes codificantes, del genoma mitocondrial de LECA reconstruido con al menos 69 proteínas, sin fijar el orden de cada pérdida o transferencia. [C-1961; S281 resumen e Introduction]
+
+El control de conservación comprueba que C-018 permanece byte-idéntica a la fila conservada en el commit de evidencia y no usa esa igualdad como dictamen de verdad. [C-1962; data/auditoria/conservacion_filas_cuestionadas.csv]
+
+El censo del Apéndice G fija por huella sus 23 filas y exige C vigentes y destinos explícitos, con la única exclusión literal de la topología interna de Metazoa. [C-1963; data/auditoria/integracion_material_g.csv]
+
+El control de densidad cuenta 523 fuentes distintas: 15,38 veces las 34 de la referencia de escala indicada por el encargo y más de seis veces el umbral explícito de 80. [C-1964; data/auditoria/densidad_referencia.csv]
+
+El censo de procedencia enumera cada C viva, su archivo y huella, atribución, fuentes declaradas, referencias inter-C, artefactos y estado de acceso, pero no certifica el contenido de los pasajes. [C-1965; data/auditoria/procedencia_afirmaciones_v1.csv]
+
+El censo de magnitudes copia todas las filas de F y las clasifica mecánicamente por la celda y las atribuciones enlazadas, sin certificar que el valor sea publicado ni que el pasaje lo sostenga. [C-1966; data/auditoria/magnitudes_requeridas_v1.csv]
+
+Geiger et al. compararon veinte taxones alfa-proteobacterianos con los siete criterios discriminatorios consignados en su tabla 2; las celdas vacías se conservan como «no consta», no como ausencia. [C-1967; S49 tabla 2 y leyenda]
+
+La tabla 3 del mismo trabajo comparó catorce sistemas metabólicos o celulares, su distribución alfa-proteobacteriana y el estado de *Iodidimonas*, sin convertir presencia en parentesco ni ecología medida. [C-1968; S49 tabla 3 y leyenda]
+
+Las tablas canónicas de topologías y fósiles separan los campos exigidos y distinguen «no consta en la fuente» de `n/a`, con C, S o BN aplicable por celda. [C-1970]
+
+BN-117 conserva como hueco la falta de un vector metodológico homogéneo para cada estimación de reloj, sin calcular solapamientos ni completar un estudio con otro. [C-1984; BN-117]
+
+BN-118 cubre nominalmente las 26 entradas organismales de las tablas 40 y 40a y mantiene como no localizadas las combinaciones de ecología, alimentación, ciclo, genoma y cultivo que no recuperó. [C-1985; BN-118]
+
+Las tablas 2 y 3 de S49 y BN-114 no aportan una ficha ecológica representativa para cada unidad alfa-proteobacteriana censada; las cuatro coberturas positivas permanecen separadas. [C-1986; S49 tablas 2–3; BN-114]
+
+BN-134 localiza antigüedad de inicio y tamaño genómico solo para subconjuntos de la tabla 43, no para cada asociación bajo un método homogéneo. [C-1987; BN-134]
+
+La vista de códigos distingue entradas formales de Phylonyms, consultas RegNum sin resultado para siete nombres y nodos no censados; ninguno de esos estados prueba ausencia en la literatura. [C-1991; S383 introducción; S384 consultas del 2026-08-08]
+
+BN-140 conserva una matriz funcional incompleta bajo muestreo y criterio heterogéneos; las presencias y ausencias publicadas retienen sus C específicas. [C-1992; BN-140]
+
+BN-141 no localizó edad, método, incertidumbre y oponente nominal homogéneos para cada asignación fósil nodal, y no completa los campos por inferencia. [C-1993; BN-141]
+
+BN-142 no localizó autor y fecha inequívocos para cada término de la tabla 58 y mantiene separados `NO BUSCADO` y `NO APLICA`. [C-1994; BN-142]
+
+Al retirar negaciones universales, el registro conserva cuatro observaciones positivas acotadas: heterogeneidad de formas y locomoción en Amoebozoa muestreados, recuperación filogenómica de Obazoa, diversidad de estados flagelados y filopodiales en holozoos muestreados, y paredes o estadios multinucleados revisados en Ichthyosporea. [C-529; C-537; C-578; C-586; S112 Results y fig. 3; S111 resumen, Results y fig. 2; S130 Results y fig. 1; S133 §§Diversity y Life cycles]
+
+## 15.6. Registro de afirmaciones de la sección 15
 
 <!-- TABLE:claims-15 -->
 

@@ -200,7 +200,7 @@ Bernabeu et al. reconstruyeron mitocondrias aerobias, metabolismo de hemo y agru
 
 Bernabeu et al. no reconstruyeron piruvato:ferredoxina oxidorreductasa, hidrogenasa [FeFe] ni biosíntesis de rodoquinona en su LECA consensuado. [C-258; S59 Results: energy metabolism]
 
-Bernabeu et al. interpretaron su reconstrucción como más compatible con un LECA aerobio que con uno anaerobio productor de hidrógeno. [C-259; S59 Discussion]
+La combinación de funciones aerobias reconstruidas y funciones anaerobias no reconstruidas en ese análisis es compatible con un LECA aerobio, pero no demuestra su hábitat ni excluye anaerobiosis facultativa. [C-257–C-259]
 
 La reconstrucción funcional de Bernabeu et al. no elimina la posibilidad de anaerobiosis facultativa o de pérdidas tempranas no recuperables. [C-260; S59 Discussion: limitations; S57 pp. 301–303]
 
@@ -246,7 +246,7 @@ La hipótesis del hidrógeno supone un linaje hospedador arqueano no identificad
 
 La hipótesis del hidrógeno supone un simbionte alfaproteobacteriano ancestral no muestreado facultativamente anaerobio. [C-276; S85 modelo y fig. 1]
 
-En la hipótesis del hidrógeno, el simbionte libera H₂ y CO₂ durante heterotrofia anaerobia y el hospedador consume esos productos. [C-277; S85 modelo metabólico]
+En la hipótesis del hidrógeno, el simbionte libera H₂ y CO₂ durante heterotrofia anaerobia y el linaje hospedador arqueano no identificado consume esos productos. [C-277; S85 modelo metabólico]
 
 La hipótesis del hidrógeno requiere anoxia o condiciones con respiración limitada durante el montaje inicial. [C-278; S85 modelo; Discussion]
 
@@ -258,7 +258,7 @@ La ausencia de evidencia de metanogénesis en los asgard más próximos muestrea
 
 ```text
 simbionte alfa facultativo [C-276]
-  heterotrofia anaerobia: H₂ + CO₂  ─────▶  hospedador arqueano metanógeno [C-275; C-277]
+  heterotrofia anaerobia: H₂ + CO₂  ─────▶  linaje hospedador arqueano no identificado metanógeno [C-275; C-277]
   anoxia o respiración limitada durante el montaje; asociación antes de fagotrofia plena [C-278–C-279]
 ```
 Esquema separado del modelo; todas sus relaciones están registradas en las filas C-274–C-281. Fuente principal: S85.
@@ -279,7 +279,7 @@ La hipótesis sintrófica revisada incorpora una alfa-proteobacteria facultativa
 
 La hipótesis sintrófica revisada sitúa el montaje inicial en tapetes microbianos del Paleoproterozoico con gradientes de oxígeno, sulfuro e hidrógeno. [C-288; S87 fig. 2; §Ecological setting]
 
-La hipótesis sintrófica revisada invierte el hospedador respecto de modelos con hospedador arqueano, al asignar el compartimento envolvente principal a una bacteria sulfatorreductora. [C-289; S87 modelo; S56 líneas 312–317]
+La hipótesis sintrófica revisada invierte el hospedador respecto de modelos con linaje hospedador arqueano no identificado, al asignar el compartimento envolvente principal a una bacteria sulfatorreductora. [C-289; S87 modelo; S56 líneas 312–317]
 
 El repertorio génico eucariota reconstruido combina componentes de ascendencia arqueana y bacteriana. [C-290] Esa naturaleza quimérica y la existencia de consorcios metabólicos modernos son compatibles con sintrofía, pero no identifican el montaje tripartito específico. [C-290; C-291; S87 Discussion; S56 líneas 312–316]
 
@@ -340,7 +340,7 @@ Esquema separado del modelo; todas sus relaciones están registradas en las fila
 
 Spang et al. propusieron el modelo de flujo inverso en 2019. [C-306; S90 título y modelo]
 
-El modelo de flujo inverso supone un hospedador asgard organoheterótrofo que libera equivalentes reductores o H₂ hacia un socio bacteriano. [C-307; S90 fig. 5; Discussion]
+El modelo de flujo inverso supone un `linaje hospedador arqueano no identificado`, organoheterótrofo en el modelo, que libera equivalentes reductores o H₂ hacia un socio bacteriano. [C-307; S90 fig. 5; Discussion]
 
 La dirección del intercambio en flujo inverso es opuesta a la hipótesis del hidrógeno original. [C-308; S90 Discussion; S85 modelo]
 
@@ -351,7 +351,7 @@ Las reconstrucciones de metabolismo organoheterótrofo en varios asgard respalda
 La identidad y fisiología del socio bacteriano del flujo inverso no están resueltas por los genomas asgard. [C-311; S90 Discussion]
 
 ```text
-hospedador Asgard organoheterótrofo ── equivalentes reductores/H₂ ──▶ socio bacteriano [C-307–C-308]
+linaje hospedador arqueano no identificado ── equivalentes reductores/H₂ ──▶ socio bacteriano [C-307–C-308]
 asociación anaerobia próxima ──▶ integración [C-309]
 ```
 Esquema separado del modelo; todas sus relaciones están registradas en las filas C-306–C-311. Fuente principal: S90.
@@ -397,7 +397,7 @@ La hipótesis de invasión de intrones supone que intrones de grupo II procedent
 
 La hipótesis de invasión de intrones propone que intrones de grupo II dieron origen a intrones espliceosomales y componentes de su maquinaria. [C-325; S91 modelo; Discussion]
 
-La hipótesis de invasión de intrones supone que el empalme de pre-ARNm era más lento que la traducción. [C-326; S91 modelo cinético]
+La hipótesis de invasión de intrones propone cualitativamente que el empalme de pre-ARNm era más lento que la traducción; no se localizó un valor absoluto ni una razón cuantitativa en S91. [C-326; S91 modelo cinético sin localizar con mayor precisión]
 
 En la hipótesis de invasión de intrones, la envoltura nuclear separa transcripción y empalme de la traducción y reduce la síntesis de proteínas aberrantes. [C-327; S91 fig. 1; Discussion]
 
@@ -411,7 +411,7 @@ Fuente o fuentes principales: S91; S68.
 
 Bell propuso en 2001 una hipótesis viral para el origen del núcleo eucariota. [C-330; S92 título y modelo]
 
-La hipótesis viral de Bell supone una infección persistente de un hospedador arqueano por un virus complejo de ADN. [C-331; S92 modelo]
+La hipótesis viral de Bell supone una infección persistente de un linaje hospedador arqueano no identificado por un virus complejo de ADN. [C-331; S92 modelo]
 
 La hipótesis viral atribuye al compartimento viral contribuciones a cromosomas lineales, separación de transcripción y traducción y procesamiento de ARNm. [C-332; S92 Discussion; S94 secciones 2–4]
 
@@ -447,7 +447,7 @@ Fuente o fuentes principales: S96.
 
 El submodelo nuclear inside-out deriva la envoltura nuclear de la membrana del cuerpo celular arqueano ancestral y el retículo de espacios entre protrusiones. [C-344; S88 fig. 1; §Nucleus]
 
-El submodelo nuclear inside-out predice que la inserción de poros durante interfase ocurre desde el lado citoplasmático por un mecanismo compatible con crecimiento hacia afuera. [C-345; S88 Predictions]
+El submodelo nuclear inside-out predice inserción interfasal de poros desde el lado citoplasmático y crecimiento de membrana hacia afuera. [C-345; S88 Predictions]
 
 El submodelo nuclear inside-out es compatible con una contribución viral de genes individuales sin aceptar que el compartimento nuclear completo descienda de un virus. [C-346; S88; S94, S95]
 
@@ -458,6 +458,8 @@ Fuente o fuentes principales: S88.
 ### 3.5.5. Comparación de los modelos nucleares
 
 <!-- TABLE:table-12-3-5-5-comparacion-de-los-modelos-nucleares -->
+
+Los falsadores nominales de H18–H21 se conservan exclusivamente en el Apéndice E. Esta sección presenta predicciones, apoyo y compromisos, pero no duplica ni reformula allí los criterios de falsación. [C-323–C-347]
 
 ## 3.6. Hipótesis del protocoatómero
 
@@ -481,6 +483,8 @@ La hipótesis del protocoatómero no especifica si la mitocondria se adquirió a
 
 La hipótesis del protocoatómero es compatible con más de una geometría de origen nuclear porque establece homología molecular sin fijar orientación de membranas. [C-357; S97, S98, S99]
 
+**Ficha de montaje H22.** Alcance de la propuesta: H22 formula una ascendencia arquitectónica común de coatómeros y poro, no una ficha recuperada de asociación celular. [C-348–C-351] Participantes, socio taxonómico, intercambio metabólico, dirección de intercambio y ambiente: **no hay valor publicado localizado** en S97 y S99 para esos campos; la inspección negativa se registra en BN-115 y no se transforma en la afirmación de que tales participantes o intercambios no existieran. [BN-115] Geometría y roles: duplicación y divergencia del módulo β-propeller–α-solenoid hacia COPI, COPII, clatrina y poro nuclear, con módulos IFT/BBSome relacionados. [C-350–C-355] Predicción: esas cubiertas deben conservar una homología estructural profunda y una historia de duplicación común, aunque la secuencia se haya erosionado. [C-350–C-353] Apoyo: comparación de siete proteínas y arquitectura compartida; compromiso: convergencia alternativa, señal de secuencia incompleta, orden mitocondrial y orientación de membrana no resueltos. [C-349–C-357; S97 Results y Discussion; S98 §Evolution; S99 §§2–4]
+
 ```text
 módulo ancestral β-propeller + α-solenoid [C-350–C-351]
       ├─ COPI / COPII [C-351]
@@ -491,6 +495,8 @@ módulo ancestral β-propeller + α-solenoid [C-350–C-351]
 Relaciones registradas: C-348–C-357. El diagrama expresa una hipótesis de homología y duplicación, no el orden completo de eucariogénesis. [C-351; C-355; C-356; C-357]
 
 ## 3.7. Matriz de compatibilidad
+
+Los falsadores de H12–H22 no se reproducen en este capítulo: su registro nominal y versionado está exclusivamente en el Apéndice E. La matriz siguiente conserva solo compatibilidad y observaciones discriminantes. [C-1954]
 
 La comparación se limita a la parte explícita de cada modelo porque las hipótesis responden preguntas parcialmente distintas; no convierte compatibilidad parcial en una síntesis histórica única. [C-427]
 

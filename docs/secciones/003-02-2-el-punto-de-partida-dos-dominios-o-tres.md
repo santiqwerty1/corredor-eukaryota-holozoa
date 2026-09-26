@@ -202,9 +202,21 @@ La etiqueta `simbionte alfaproteobacteriano ancestral no muestreado` evita ident
 
 <!-- TABLE:table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto -->
 
+<!-- TABLE:table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria -->
+
+La comparación nominal conservada para Alphaproteobacteria no debe confundirse con una lista de candidatos mitocondriales. [C-160; C-1973–C-1982] El estudio S49 reunió 314 genomas en 15 linajes desde Rickettsiales de divergencia temprana hasta Rhodobacterales de divergencia tardía; para Rhodospirillales usó alrededor de 60 taxones y para Rhizobiales representantes de todas las familias principales. [C-1973; C-1978–C-1979; S49 Methods §Taxonomic sampling] En los linajes menos diversos de su repositorio —Pelagibacterales, Sphingomonadales, Caulobacterales y Rhodobacterales— muestreó ramas profundas y géneros principales, una limitación del diseño que no se convierte en escasez ecológica universal. [C-1980; S49 Methods §Taxonomic sampling]
+
+El eje ecológico positivo no se deriva de los nombres. [C-1974–C-1976; C-1978] MarineAlpha reúne HIMB59, MAG relacionados y bacterias marinas TMED109/TMED127; los nuevos clados próximos a Sneathiellales son MAG marinos; Methylocystaceae se documenta como metanótrofa; e Iodidimonadales reúne cultivos y MAG de un nicho hidrotermal anóxico próximos a MAG de zonas marinas con gradiente de oxígeno. [C-1974–C-1976; C-1978; S49 Results §§Distribution of genes for ceramide; Selection of candidate bacteria; Methods §Taxonomic sampling] Para los otros linajes, la matriz dice `no consta` cuando los pasajes locales no aportan una ecología representativa y no lo convierte en ausencia.
+
+El eje metabólico separa perfiles en lugar de adjudicar un metabolismo único a la clase. [C-1981] Sneathiellales y clados marinos próximos, Kordiimonadales, Rhizobiales, Sphingomonadales y Caulobacterales tuvieron puntuaciones aerobias comparables a las mitocondriales; MarineProteo1, MarineAlpha, Rickettsiales, Holosporales, Pelagibacterales y Rhodobacterales tuvieron puntuaciones menores. [C-1981; S49 Results §Distribution of aerobic traits; fig. 2; tabla S4] Iodidimonadales combina ese eje aerobio con M16B–ISP, dos tipos de cardiolipina sintasa y rasgos anaerobios, mientras los nuevos clados marinos concentran OFOR; ninguna de esas combinaciones se transforma en parentesco demostrado. [C-1975; C-1977; C-158; S49 Results; tabla 2]
+
+La matriz representativa conserva juntos diversidad interna, ecología, metabolismo y posición filogenética para doce unidades, pero acota cada nivel de evidencia: hábitat de procedencia de MAG, metabolismo inferido de genomas y topología de proteínas no equivalen a fisiología cultivada ni a reconstrucción directa de la protomitocondria. [C-1973–C-1982]
+
 Martijn et al. recuperaron una divergencia anterior a los grupos alfa muestreados. [C-150–C-151; S46 fig. 1] Fan et al. recuperaron inserción dentro de Alpha IIb. [C-152–C-153; S47 figs. 1–4] Muñoz-Gómez et al., con 108 proteínas y MAM60+GFmix, volvieron a recuperar una posición hermana de las alfa-proteobacterias conocidas. [C-154–C-156; S48 resumen; fig. 2]
 
 Geiger et al. identificaron a Iodidimonadales como candidato funcional por combinación metabólica. [C-157; S49 Results] Esa semejanza no es una prueba de hermandad filogenética. [C-158; S49 Discussion]
+
+La comparación metabólica de S49 no se limita a Iodidimonadales: distribuye 20 rasgos aerobios entre linajes alfa-proteobacterianos nombrados y distingue perfiles comparables con mitocondrias aerobias de otros con puntuaciones menores. [C-1956; S49 Results and Discussion §Distribution of aerobic traits in mitochondria and alphaproteobacterial lineages; fig. 2; tabla S4] Ese eje amplía la diversidad interna y metabólica documentada, pero no aporta por sí solo fichas ecológicas completas para todo Alphaproteobacteria. [C-1956; BN-114]
 
 Los trabajos discrepan sobre una inserción interna o externa respecto de los grupos alfa vivientes muestreados. [C-159; S46, S47, S48] No existe una familia viviente única aceptada como el pariente más próximo. [C-160; S46, S47, S48, S49] La etiqueta estable es `linaje alfaproteobacteriano más próximo a la mitocondria no resuelto`.
 

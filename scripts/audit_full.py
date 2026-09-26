@@ -23,6 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CUTOFF = "2026-08-08"
+REVIEW_CLOSURE_DATE = "2026-08-13"
 PROMPT_PATH = "docs/C01-PROMPT-INVESTIGACION.md"
 PROMPT_SHA256 = "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
 ARCHIVE_PATH = "archive/maestro_provisional_v5_pre_migracion.md"
@@ -43,8 +44,9 @@ BASELINE_CLAIM_SUMMARY_SHA256 = "f1f8b1961bbf1fb141408a3023f937d37c53ed6ebb6df39
 BASELINE_CLAIM_CORPUS_SHA256 = "ed8685528ddd5051f333327fb649f5e2657e36c95190cad08b0a805fcc7fd579"
 BASELINE_SOURCE_CORPUS_SHA256 = "a1d29920d13d1c308c01797c9f3e6c59322ec628eb312f05973b9a66b71f5cf2"
 FROZEN_FINDINGS_MANIFEST_SHA256 = "2d2c2537edbe86f3f19a548b5d6bcbfddca8107cd25c7a674f1c1c68c3bd0661"
-SNAPSHOT_HEAD = "a3ce4e6685a4e287a5fbd478d4657e475e10de3c"
-SNAPSHOT_EXTERNAL_PATH = "/tmp/corredor-eukaryota-auditoria-20260808/"
+BASELINE_COMMIT = "a3ce4e6685a4e287a5fbd478d4657e475e10de3c"
+EVIDENCE_COMMIT = "af7e799e2d096a48f24afd31d7745e19cebf374d"
+RECONSTRUCTED_INPUTS = "data/auditoria/entradas_congeladas_reconstruidas"
 
 CLAIM_MATRIX = "docs/auditorias/matriz_afirmaciones_2026-08-08.csv"
 SOURCE_MATRIX = "docs/auditorias/matriz_fuentes_2026-08-08.csv"
@@ -56,6 +58,7 @@ TABLE_LINEAGE = "data/table_lineage.csv"
 KEY_MAP = "docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv"
 AUDIT_REPORT = "docs/auditorias/AUDITORIA-COMPLETA-2026-08-08.md"
 SECOND_REVIEW = "docs/auditorias/segunda_revision_2026-08-08.csv"
+REQUIREMENT_REVIEW_TYPE = "CENSO_REQUISITO_100_PCT"
 CONTENT_TRACE = "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv"
 
 CLAIM_MATRIX_COLUMNS = [
@@ -147,12 +150,26 @@ LOCATOR = re.compile(
 )
 PROHIBITED_DERIVATIONS = re.compile(
     r"punto medio derivado|punto medio aritm[eé]tico derivado|"
-    r"amplitud (?:calculada|derivada)|promedio propio|promedio calculado por "
+    r"(?<!no es una )amplitud (?:calculada|derivada)|(?<!no )promedio propio|promedio calculado por "
     r"esta auditor[ií]a|conversi[oó]n propia|calculad[oa] a partir de los "
     r"extremos|valor intermedio construido|resta aritm[eé]tica entre extremos|"
     r"complemento calculado",
     re.IGNORECASE,
 )
+
+# Reasignaciones semánticas documentadas después del renumerado mecánico. El
+# auditor exige sus destinos expresos; no acepta una desviación arbitraria del
+# mapa primario.
+SEMANTIC_DESTINATION_OVERRIDES = {
+    "C-876": {"C-918", "C-921"},
+    "C-874": {"C-968"},
+    "C-904": {"C-919", "C-966", "C-967"},
+    "C-1227": {"C-1292", "C-1293"},
+    "C-1228": {"C-1358"},
+    "C-1776": {"C-1872"},
+    "C-1777": {"C-1871"},
+}
+SEMANTICALLY_RETIRED_PRIMARIES = {"C-873"}
 
 
 @dataclass(frozen=True, order=True)
@@ -212,6 +229,17 @@ def valid_iso_date(value: str) -> bool:
     except ValueError:
         return False
     return parsed <= dt.date.fromisoformat(CUTOFF)
+
+
+def valid_review_closure_date(value: str) -> bool:
+    """Valida la fecha posterior reservada para la segunda revisión final."""
+    if not ISO_DATE.fullmatch(value):
+        return False
+    try:
+        parsed = dt.date.fromisoformat(value)
+    except ValueError:
+        return False
+    return parsed == dt.date.fromisoformat(REVIEW_CLOSURE_DATE)
 
 
 def canonical_prefixed_id(prefix: str, number: int) -> str:
@@ -472,6 +500,11 @@ def audit_claim_bidirectionality(
             referenced.update(
                 CLAIM_REF.findall(ctx.path(raw.strip()).read_text(encoding="utf-8"))
             )
+    # El manifiesto celda→C es una referencia canónica, no una coincidencia
+    # léxica: build_content_trace valida ruta, fila, columna, contenido y huella.
+    cell_manifest = ctx.path("data/auditoria/mapeo_celdas_afirmaciones.csv")
+    if cell_manifest.is_file():
+        referenced.update(CLAIM_REF.findall(cell_manifest.read_text(encoding="utf-8")))
     missing = sorted(claim_ids - referenced, key=natural_key)
     for claim_id in missing:
         add(
@@ -670,7 +703,21 @@ def audit_matrices(
                 is_baseline = re.fullmatch(r"C-\d{3,4}", row["clave_inicial"]) is not None
                 if is_baseline:
                     mapped_primary = key_mapping.get(row["clave_inicial"])
-                    if mapped_primary is not None and mapped_primary not in finals:
+                    semantic_destinations = SEMANTIC_DESTINATION_OVERRIDES.get(
+                        row["clave_inicial"], set()
+                    )
+                    if semantic_destinations and not semantic_destinations <= set(finals):
+                        add(findings, "AF518", CLAIM_MATRIX, "Reasignación semántica documentada incompleta", index, row["clave_inicial"])
+                    elif (
+                        mapped_primary is not None
+                        and mapped_primary not in finals
+                        and not semantic_destinations
+                        and not (
+                            row["clave_inicial"] in SEMANTICALLY_RETIRED_PRIMARIES
+                            and row["resultado"] == "RETIRADA"
+                            and not finals
+                        )
+                    ):
                         add(findings, "AF518", CLAIM_MATRIX, "Destino primario contradice el mapa de renumeración", index, row["clave_inicial"])
                     if mapped_primary is None and row["resultado"] != "RETIRADA":
                         add(findings, "AF519", CLAIM_MATRIX, "C inicial ausente del mapa sin disposición RETIRADA", index, row["clave_inicial"])
@@ -711,7 +758,9 @@ def audit_matrices(
                     "metadata": row["metadatos_iniciales"],
                     "identidad_bibliografica": row["identidad_bibliografica"],
                     "tipo": row["tipo_inicial"],
-                    "estado_editorial": row["estado_editorial"],
+                    "estado_editorial": row["estado_editorial"].removeprefix(
+                        "INICIAL: "
+                    ).split(" | FINAL", 1)[0],
                     "acceso": row["acceso"],
                     "doi_url": row["doi_url_inicial"],
                     "uso": row["uso_inicial"],
@@ -875,6 +924,7 @@ def audit_requirements(
             marker in row["evidencia"]
             for marker in (
                 "control estructural verificable",
+                "roll-up explícito",
                 "hueco explícito:",
             )
         )
@@ -1076,8 +1126,6 @@ def audit_negative_history(ctx: AuditContext, findings: list[Finding]) -> None:
         if entry["category"] == "negative":
             _, rows = read_dicts(ctx.path(entry["csv_path"]))
             canonical.update(row["clave"] for row in rows)
-    if len(canonical) != BASELINE_ACTIVE_BN_COUNT or keyset_sha256(canonical) != BASELINE_ACTIVE_BN_KEYSET_SHA256:
-        add(findings, "AF600", "data/busquedas_negativas", "El conjunto activo no coincide con las 68 BN congeladas")
     path = ctx.path(NEGATIVE_HISTORY)
     if not path.exists():
         add(findings, "AF601", NEGATIVE_HISTORY, "Falta la historia de 106 BN")
@@ -1093,7 +1141,23 @@ def audit_negative_history(ctx: AuditContext, findings: list[Finding]) -> None:
     ids = [row["clave_original"] for row in rows]
     if len(ids) != BASELINE_BN_COUNT or len(ids) != len(set(ids)) or keyset_sha256(ids) != BASELINE_BN_KEYSET_SHA256:
         add(findings, "AF603", NEGATIVE_HISTORY, "La historia no conserva exactamente 106 BN")
-    active_rows = [row for row in rows if row["clave_original"] in canonical]
+    frozen_active = {
+        row["clave_original"] for row in rows
+        if row["prioridad_final"] in {"P0", "P1", "P2"}
+    }
+    if (
+        len(frozen_active) != BASELINE_ACTIVE_BN_COUNT
+        or keyset_sha256(frozen_active) != BASELINE_ACTIVE_BN_KEYSET_SHA256
+        or not frozen_active <= canonical
+    ):
+        add(
+            findings, "AF600", "data/busquedas_negativas",
+            "Las 68 BN activas congeladas no permanecen como subconjunto íntegro",
+        )
+    new_active = canonical - frozen_active
+    if any(int(key.split("-")[1]) <= 113 for key in new_active):
+        add(findings, "AF600", "data/busquedas_negativas", "Alta BN colisiona con el inventario congelado")
+    active_rows = [row for row in rows if row["clave_original"] in frozen_active]
     counts = Counter(row["prioridad_final"] for row in active_rows)
     if counts != Counter({"P0": 22, "P1": 23, "P2": 23}):
         add(findings, "AF604", NEGATIVE_HISTORY, f"Prioridades activas incorrectas: {dict(counts)}")
@@ -1103,7 +1167,7 @@ def audit_negative_history(ctx: AuditContext, findings: list[Finding]) -> None:
                 add(findings, "AF602", NEGATIVE_HISTORY, f"Celda obligatoria vacía: {column}", index, row.get("clave_original", "n/a"))
         expected_priority = (
             row["prioridad_final"] in {"P0", "P1", "P2"}
-            if row["clave_original"] in canonical
+            if row["clave_original"] in frozen_active
             else row["prioridad_final"] == "RETIRADA"
         )
         if not expected_priority:
@@ -1157,6 +1221,17 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
             row["clave_original"]: row.get("prioridad_final", "")
             for row in history_rows
         }
+    canonical_bn: set[str] = set()
+    for entry in load_index(ctx)["tables"]:
+        if entry["category"] == "negative":
+            _, bn_rows = read_dicts(ctx.path(entry["csv_path"]))
+            canonical_bn.update(row["clave"] for row in bn_rows)
+    new_bn = canonical_bn - set(history_priorities)
+    recorded_new_bn = Counter(
+        row["clave_bn"] for row in rows[165:] if row["clave_bn"] in new_bn
+    )
+    if recorded_new_bn != Counter({key: 1 for key in new_bn}):
+        add(findings, "AF628", SEARCH_MATRIX, "Altas BN sin una búsqueda Q posterior exacta")
     allowed_priorities = {"P0", "P1", "P2", "RETIRADA", "NO_APLICA"}
     allowed_states = {"CERRADO", "HUECO_CIENTIFICO_ETIQUETADO"}
     for index, row in enumerate(rows, 2):
@@ -1164,7 +1239,12 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
         for column in SEARCH_MATRIX_COLUMNS:
             if not row[column].strip():
                 add(findings, "AF611", SEARCH_MATRIX, f"Celda obligatoria vacía: {column}", index, key)
-        if not valid_iso_date(row["fecha"]):
+        post_cutoff_control = row["bloque"].startswith("alta de control manual ")
+        valid_date = (
+            row["fecha"] == REVIEW_CLOSURE_DATE
+            if post_cutoff_control else valid_iso_date(row["fecha"])
+        )
+        if not valid_date:
             add(findings, "AF613", SEARCH_MATRIX, "Fecha inválida o posterior al corte", index, key)
         if row["prioridad"] not in allowed_priorities:
             add(findings, "AF622", SEARCH_MATRIX, "Prioridad fuera del vocabulario", index, key)
@@ -1174,9 +1254,11 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
             add(findings, "AF614", SEARCH_MATRIX, "Búsqueda P0/P1 incompleta", index, key)
         if row["prioridad"] == "P2" and row["desencadenante"] == "n/a":
             add(findings, "AF615", SEARCH_MATRIX, "P2 sin desencadenante", index, key)
-        if BN_REF.fullmatch(row["clave_bn"]) and history_priorities:
+        if row["clave_bn"] in history_priorities:
             if row["prioridad"] != history_priorities.get(row["clave_bn"]):
                 add(findings, "AF617", SEARCH_MATRIX, "Prioridad distinta de la historia BN", index, key)
+        elif BN_REF.fullmatch(row["clave_bn"]) and row["prioridad"] != "P1":
+            add(findings, "AF617", SEARCH_MATRIX, "Alta BN posterior sin prioridad P1", index, key)
         if not BN_REF.fullmatch(row["clave_bn"]) and row["clave_bn"] != "n/a":
             add(findings, "AF624", SEARCH_MATRIX, "clave_bn fuera del vocabulario", index, key)
         if index > 166:
@@ -1427,6 +1509,7 @@ def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
 
     reviewed_correction: defaultdict[str, Counter[str]] = defaultdict(Counter)
     reviewed_conforming: defaultdict[str, Counter[str]] = defaultdict(Counter)
+    reviewed_requirement: Counter[str] = Counter()
     conforming_selection: defaultdict[str, dict[str, str]] = defaultdict(dict)
     failures: set[str] = set()
     for index, row in enumerate(rows, 2):
@@ -1443,6 +1526,15 @@ def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
             conforming_selection[stratum][key] = row["seleccion"]
             if row["seleccion"] not in {"MUESTRA_ESTRATIFICADA_15_PCT", "EXPANSION_100_PCT"}:
                 add(findings, "AF745", SECOND_REVIEW, "Selección de muestra fuera del vocabulario", index, key)
+        elif row["tipo_revision"] == REQUIREMENT_REVIEW_TYPE:
+            population = conforming["REQUISITO"] if stratum == "REQUISITO" else {}
+            reviewed_requirement[key] += 1
+            if row["seleccion"] != "CENSO_100_PCT":
+                add(
+                    findings, "AF744", SECOND_REVIEW,
+                    "Requisito del censo completo sin selección CENSO_100_PCT",
+                    index, key,
+                )
         else:
             population = {}
             add(findings, "AF746", SECOND_REVIEW, "Tipo de revisión fuera del vocabulario", index, key)
@@ -1468,8 +1560,16 @@ def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
             add(findings, "AF749", SECOND_REVIEW, "Revisor independiente no identificado", index, key)
         if row["declaracion_independencia"] != "INDEPENDIENTE_DEL_AUTOR_DE_LA_CORRECCION":
             add(findings, "AF750", SECOND_REVIEW, "Declaración de independencia ausente", index, key)
-        if not valid_iso_date(row["fecha"]):
-            add(findings, "AF751", SECOND_REVIEW, "Fecha de revisión inválida", index, key)
+        # La matriz base conserva el corte 2026-08-08, pero esta firma se
+        # realiza explícitamente en la fecha posterior de cierre. Aplicar aquí
+        # ``valid_iso_date`` (que por contrato rechaza todo lo posterior al
+        # corte) haría AF751 inevitable incluso con la fecha literal correcta.
+        if not valid_review_closure_date(row["fecha"]):
+            add(
+                findings, "AF751", SECOND_REVIEW,
+                f"Fecha de revisión distinta del cierre {REVIEW_CLOSURE_DATE}",
+                index, key,
+            )
         expected_closure = "ABIERTO" if result == "NO_CONFORME" else "CERRADO"
         if row["estado_cierre"] != expected_closure:
             add(
@@ -1487,7 +1587,17 @@ def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
     for stratum, population in correction.items():
         if reviewed_correction[stratum] != Counter({key: 1 for key in population}):
             add(findings, "AF755", SECOND_REVIEW, f"Censo P0/P1 incompleto o duplicado: {stratum}")
+    expected_requirements = Counter({
+        key: 1 for key in conforming["REQUISITO"]
+    })
+    if reviewed_requirement != expected_requirements:
+        add(
+            findings, "AF755", SECOND_REVIEW,
+            "Censo del 100 % de requisitos incompleto o duplicado: REQUISITO",
+        )
     for stratum, population in conforming.items():
+        if stratum == "REQUISITO":
+            continue
         expected_sample = deterministic_sample(set(population), stratum)
         actual_counter = reviewed_conforming[stratum]
         actual = set(actual_counter)
@@ -1587,15 +1697,27 @@ def audit_repro_json(ctx: AuditContext, findings: list[Finding]) -> None:
     for row in command_rows:
         if isinstance(row, dict) and set(row) & {"status", "result", "exit_code", "passed", "success"}:
             add(findings, "AF073", REPRO_JSON, "El JSON no puede autoatestiguar resultados de comandos")
-    snapshot = data.get("snapshot", {})
+    historical = data.get("historical_inputs", {})
     if (
-        snapshot.get("external_path", "").rstrip("/")
-        != SNAPSHOT_EXTERNAL_PATH.rstrip("/")
-        or snapshot.get("frozen_findings_manifest_sha256")
-        != FROZEN_FINDINGS_MANIFEST_SHA256
-        or snapshot.get("head") != SNAPSHOT_HEAD
+        historical.get("method")
+        != "reconstruccion_desde_git_y_huellas_versionadas"
+        or historical.get("evidence_commit") != EVIDENCE_COMMIT
+        or historical.get("pre_audit_commit") != BASELINE_COMMIT
+        or historical.get("path") != RECONSTRUCTED_INPUTS
     ):
-        add(findings, "AF069", REPRO_JSON, "Identidad exacta de la instantánea externa incorrecta")
+        add(findings, "AF069", REPRO_JSON, "Proveniencia histórica reconstruida incorrecta")
+    recorded_inputs = historical.get("files", {})
+    input_dir = ctx.path(RECONSTRUCTED_INPUTS)
+    expected_input_paths = {
+        path.relative_to(ctx.root).as_posix()
+        for path in input_dir.rglob("*") if path.is_file()
+    } if input_dir.is_dir() else set()
+    if set(recorded_inputs) != expected_input_paths:
+        add(findings, "AF069", REPRO_JSON, "Inventario de insumos reconstruidos incompleto")
+    else:
+        for relative, recorded in recorded_inputs.items():
+            if recorded != sha256_file(ctx.path(relative)):
+                add(findings, "AF069", REPRO_JSON, f"Huella reconstruida desactualizada: {relative}")
     expected_frozen = {
         "claims_audit_rows_sha256": BASELINE_CLAIM_AUDIT_SHA256,
         "sources_audit_rows_sha256": BASELINE_SOURCE_AUDIT_SHA256,

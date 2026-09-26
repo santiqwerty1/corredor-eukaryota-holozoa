@@ -6,6 +6,8 @@ La rapidez relativa solo puede compararse tras especificar inicio, final, unidad
 
 En esta sección se conserva la unidad original. Una duplicación de población no se trata como división nuclear; una tasa por genoma no se mezcla con una tasa por sitio; una divergencia de dos simbiontes no se presenta como fecha de inicio de la asociación. [C-1620; C-1627; C-1639]
 
+La trazabilidad de conversiones queda explícita en el apéndice D: cuando S87 publica el nombre «Paleoproterozoico», la fila conserva ese término en el objeto y atribuye los límites 2500–1600 Ma a la tabla cronoestratigráfica S02; de igual modo, la fila de Capas Blancas conserva «Cenomaniano–Turoniano» junto a los límites de S02. [appendix-d; C-288; C-785; S02; S87 §Ecological setting; S500 contexto geológico] El apéndice F transcribe valor y unidad original en columnas separadas; las comparaciones sintéticas, como C-802, permanecen fuera de F y remiten a sus cuatro magnitudes publicadas C-798–C-801. [appendix-f; C-798–C-802]
+
 Los valores de cultivo y los tiempos geológicos se mantienen separados porque miden niveles y condiciones distintos; ninguna de esas mediciones es una constante universal del clado. [C-1620; C-1630; C-1634; C-1646]
 
 
@@ -13,11 +15,13 @@ Los valores de cultivo y los tiempos geológicos se mantienen separados porque m
 
 Kay et al. distinguen un primer ancestro común eucariota nuclear (nuclear first eukaryotic common ancestor, nFECA) y un primer ancestro común eucariota mitocondrial (mitochondrial first eukaryotic common ancestor, mFECA). [C-192] En su análisis MCMCTree, nFECA quedó entre 3.05 y 2.79 Ga y mFECA entre 2.37 y 2.13 Ga. [C-192–C-194; S58 líneas 91–96; fig. 1]
 
+Como fuente científica independiente, Richards et al. definen FECA como el primer descendiente del lado eucariota de la separación Eukaryota–Asgard y advierten que esa definición no implica que FECA poseyera ya los rasgos de LECA. [C-184–C-185; S56 líneas 318–322]
+
 El mismo estudio obtuvo una duración mediana aproximada de 1.1 Gyr para nFECA–LECA y de 0.6 Gyr para mFECA–LECA. [C-196; C-197] Son diferencias entre nodos fechados, no capas observadas ni dos estimaciones intercambiables del mismo inicio. [C-196–C-197; S58 línea 92]
 
 El análisis empleó 135 árboles génicos fechados —95 de ascendencia arqueana y 40 de ascendencia bacteriana—, 18 calibraciones fósiles y restricciones cruzadas entre duplicaciones y árbol de especies. [C-198–C-199; S58 Methods; fig. 1c]
 
-No existe una duración de consenso para FECA–LECA. [C-419] La identidad de nFECA y mFECA cambia si aparecen genomas más próximos, cambia la topología o cambia la interpretación de las duplicaciones; tampoco existe una medición directa independiente de reloj molecular. [C-202; C-419; C-429; S58 línea 91; BN-011]
+No existe una duración de consenso para FECA–LECA. [C-419; S56 líneas 306 y 321–324; S58 líneas 91–93] La identidad de nFECA y mFECA cambia si aparecen genomas más próximos, cambia la topología o cambia la interpretación de las duplicaciones; tampoco existe una medición directa independiente de reloj molecular. [C-202; C-419; C-429; S56 líneas 322–324; S58 línea 91; BN-011]
 
 
 ## 13.3. Tiempos de generación y división

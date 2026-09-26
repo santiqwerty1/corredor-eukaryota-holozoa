@@ -16,6 +16,20 @@ test:
 	$(PYTHON) -m unittest discover -s tests -p 'test_*.py'
 
 verify-core:
+	$(PYTHON) scripts/reconstruct_audit_inputs.py --check
+	$(PYTHON) scripts/sync_claim_key_map.py
+	$(PYTHON) scripts/check_preserved_rows.py
+	$(PYTHON) scripts/build_material_g_trace.py
+	$(PYTHON) scripts/check_density_reference.py
+	$(PYTHON) scripts/check_required_evidence_fields.py
+	$(PYTHON) scripts/remediate_trace_residuals.py
+	$(PYTHON) scripts/build_atomic_cell_claims.py
+	$(PYTHON) scripts/build_claim_provenance.py
+	$(PYTHON) scripts/build_magnitude_census.py
+	$(PYTHON) scripts/build_requirement_magnitude_census.py
+	$(PYTHON) scripts/check_semantic_claim_census.py
+	$(PYTHON) scripts/build_section19_claims.py
+	$(PYTHON) scripts/sync_requirement_closures.py --check
 	$(PYTHON) scripts/render.py --check
 	$(PYTHON) scripts/validate.py
 	$(PYTHON) scripts/audit_migration.py
@@ -23,6 +37,7 @@ verify-core:
 	$(PYTHON) scripts/build_content_trace.py --check
 	$(PYTHON) scripts/audit_semantics.py
 	$(PYTHON) scripts/audit_requirement_controls.py --root . --verify-artifacts
+	$(PYTHON) scripts/build_audit_deliverables.py --check --require-complete-review
 	$(PYTHON) scripts/audit_full.py
 	$(MAKE) test
 

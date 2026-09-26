@@ -34,11 +34,15 @@ En 262 microfósiles medidos de *Qingshania magnifica*, el diámetro transversal
 
 Miao y colaboradores interpretaron Qingshania magnifica como un eucariota multicelular, sin asignarlo con seguridad a un grupo corona viviente. [C-707; S154 discusión]
 
+En *Qingshania*, el argumento a favor de afinidad eucariota es la continuidad filamentosa y el tamaño del material medido; el contraargumento es la ausencia de caracteres diagnósticos de un clado viviente. [C-706–C-707] Por ello se conserva como eucariota multicelular de posición interna incierta: no se adjudica a Eukaryota corona ni a un tallo concreto. [C-706–C-707; S154 Results y Discussion]
+
 ## 5.3. Candidatos antiguos y discutidos
 
 Grypania spiralis fue interpretada como un alga eucariota macroscópica en la Formación de Hierro Negaunee de aproximadamente 2.1 Ga. [C-708; S155 resumen]
 
 Knoll y colaboradores consideraron muy probable el origen eucariota de Grypania spiralis, pero indicaron que sus relaciones filogenéticas no estaban bien restringidas. [C-709; S152 p. 1025, §3; fig. 2i]
+
+En *Grypania*, el argumento a favor es la interpretación publicada de la morfología helicoidal macroscópica como eucariota; el contraargumento conservado es que esa morfología no excluye estructuras no eucariotas ni pseudofósiles. [C-708–C-709] La conclusión «origen eucariota muy probable» no resuelve una posición corona–tallo dentro de Eukaryota. [C-708–C-709; S155 resumen; S152 p. 1025, §3]
 
 Rafatazmia chitrakootensis fue descrita en la Dolomía Tirohan de la cuenca Vindhyan y se le atribuyó una edad aproximada de 1.6 Ga. [C-710; S156 resumen y §Geological setting]
 
@@ -51,6 +55,8 @@ La asignación de Rafatazmia chitrakootensis a Rhodophyta corona es cuestionada 
 Los microfósiles con forma de vasija del Grupo Chuar fueron comparados con amebas testadas modernas y se interpretan habitualmente dentro de Amoebozoa o su grupo total. [C-713; S157 resumen y discusión]
 
 Las unidades portadoras de perforaciones estudiadas por Porter en el Grupo Chuar se sitúan entre 780 y 740 Ma. [C-714; S158 título; §Geological setting]
+
+La fuente S158 sitúa los afloramientos del Grupo Chuar sobre unos 15 km² del este del Grand Canyon y acota el grupo entre aproximadamente 782 Ma, mediante U–Pb de circones detríticos de la Formación Nankoweap subyacente, y 742 ± 6 Ma, mediante U–Pb de circones de una ceniza del techo. [C-1960; S158 §Background and methods] Esos límites no datan individualmente cada perforación ni identifican la formación de cada espécimen. [C-1960; BN-116]
 
 Porter midió perforaciones circulares de 0.1–3.4 µm en siete especies de microfósiles orgánicos del Grupo Chuar. [C-715; S158 resultados; tabla 1]
 
@@ -65,6 +71,8 @@ No se ha identificado taxonómicamente al organismo que produjo las perforacione
 La evidencia de interacción se mantiene separada de la fila nodal de Amoebozoa: tamaño, interpretación, alternativas e identidad del productor ocupan celdas propias y remiten a C-715–C-719. [C-715–C-719; S158 resultados, tabla 1 y discusión]
 
 <!-- TABLE:table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar -->
+
+La ficha separa la observación —perforaciones y diámetros— de la inferencia de depredación. [C-715–C-716] Registra el sitio regional y el vector geocronológico que S158 publica para el Grupo Chuar, pero mantiene como huecos la formación y la datación individuales de cada espécimen; no las reconstruye desde memoria. [C-714–C-719; C-1960; S158 §Background and methods; BN-116]
 
 ## 5.5. Fósiles con relevancia directa para el corredor
 
@@ -138,9 +146,17 @@ El umbral de 7 nM de O₂ para una levadura no puede convertirse directamente en
 
 La tabla censa exactamente los 17 nodos desarrollados en las tablas nodales y separa una asignación positiva o candidata de un hueco explícito; un fósil anidado en un subclado no se convierte por ello en diagnóstico ni calibración del nodo superior. [C-713; C-723; C-726; C-729; C-785]
 
-Las búsquedas específicas Q-0171 y Q-0172 no localizaron fósiles con sinapomorfías diagnósticas directas para Amorphea ni para Obazoa. [C-755; C-756] Para Apusomonadida, Breviatea, Ichthyosporea, Pluriformea *sensu* Hehenberger et al. 2017, Corallochytrea y Filasterea solo se registra una ausencia documental del corpus al corte, que no demuestra inexistencia paleontológica ni sustituye una búsqueda específica. [C-1947–C-1952] Choanoflagellata conserva el material putativo de la Formación Capas Blancas, mientras que los candidatos de Weng’an no se promueven a Metazoa porque sus interpretaciones compiten y su posición sigue sin resolverse. [C-732–C-739; C-785]
+Las búsquedas específicas Q-0171 y Q-0172 no localizaron fósiles con sinapomorfías diagnósticas directas para Amorphea ni para Obazoa. [C-755; C-756] La búsqueda bibliográfica nominal BN-116 no localizó una asignación fósil diagnóstica específica para Apusomonadida, Breviatea, Ichthyosporea, Pluriformea *sensu* Hehenberger et al. 2017, Corallochytrea o Filasterea; el resultado se limita a la consulta registrada y no demuestra inexistencia paleontológica. [C-1947–C-1952; BN-116] Choanoflagellata conserva el material putativo de la Formación Capas Blancas, mientras que los candidatos de Weng’an no se promueven a Metazoa porque sus interpretaciones compiten y su posición sigue sin resolverse. [C-732–C-739; C-785]
 
 <!-- TABLE:table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo -->
+
+<!-- TABLE:table-34a-5-8-inventario-fosiles-proterozoicos -->
+
+El inventario individual conserva para cada candidato proterozoico la adjudicación corona, tallo o indeterminada y el carácter usado, sin derivar posición desde la edad. [C-1971]
+
+Cada fila de la tabla distingue el material observado de su adjudicación al nodo y de la incertidumbre corona–tallo. Cuando la fuente canónica no nombra un contradictor, una formación o un procedimiento de datación, ese campo permanece no localizado; no se convierte la ausencia de un oponente nominal en consenso. [C-700–C-756; BN-116]
+
+El censo termina exactamente en Metazoa, que es el extremo solicitado del corredor Eukaryota → Holozoa → Metazoa. No se añaden nodos descendientes de Metazoa ni se prolonga la narración paleontológica más allá de ese límite. [C-1955]
 
 ## 5.9. Registro de afirmaciones de la sección 5
 

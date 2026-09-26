@@ -45,7 +45,7 @@ REQUIREMENT_MATRIX = Path("docs/auditorias/matriz_requisitos_2026-08-08.csv")
 MANUAL_LEDGER = Path(
     "docs/auditorias/revision_manual_requisitos_2026-08-08.csv"
 )
-CUTOFF_DATE = date(2026, 8, 8)
+REVIEW_CLOSURE_DATE = date(2026, 8, 13)
 ARTIFACT_HEADER = [
     "id_requisito", "alcance_o_censo", "comando_o_consulta",
     "resultado_control", "evidencia",
@@ -440,8 +440,11 @@ def validate_manual_review(
     except ValueError:
         errors.append(f"{rid}: fecha de revisión no es ISO YYYY-MM-DD")
     else:
-        if reviewed > CUTOFF_DATE:
-            errors.append(f"{rid}: fecha de revisión posterior al corte {CUTOFF_DATE}")
+        if reviewed != REVIEW_CLOSURE_DATE:
+            errors.append(
+                f"{rid}: fecha de revisión distinta del cierre "
+                f"{REVIEW_CLOSURE_DATE}"
+            )
     return errors
 
 
@@ -835,6 +838,7 @@ def check_teleology_candidates(corpus: Corpus, result: Result) -> None:
             candidates.append(f"{relative}:{line_number}")
             critical_context = (
                 "14-nombres-y-nomenclatura" in relative
+                or "table-56-14-8-1" in relative
                 or "table-58-14-8-3" in relative
                 or "B_entidades.csv" in relative
                 or any(token in line.casefold() for token in (

@@ -6,7 +6,7 @@ Douzery y colaboradores estimaron que las principales divergencias eucariotas co
 
 Douzery y colaboradores estimaron la divergencia entre animales y coanoflagelados entre 761 y 957 Ma. [C-758; S142 resumen; tabla 1]
 
-El análisis de Douzery y colaboradores utilizó un reloj molecular relajado bayesiano y seis referencias fósiles. [C-759; S142 métodos]
+El análisis de Douzery y colaboradores utilizó un reloj molecular relajado bayesiano (*Bayesian relaxed molecular clock*) y seis referencias fósiles. [C-759; S142 métodos]
 
 Parfrey y colaboradores estimaron la edad de LECA entre 1679 y 1866 Ma. [C-760; S139 resumen; resultados]
 
@@ -36,7 +36,9 @@ No existe una estimación de consenso para la edad de LECA. [C-772; S139 resulta
 
 Las estimaciones recuperadas para LECA en esta parte abarcan desde 1007 Ma hasta 2386 Ma. [C-773; S141 fig. 3; S140 fig. 2]
 
-No se presenta una amplitud única para ese envolvente: la fila que restaba extremos de estudios distintos fue retirada como cálculo no publicado. [C-774; S141 fig. 3; S140 fig. 2]
+No se presenta una amplitud única para ese envolvente: la fila que restaba extremos de estudios distintos fue retirada como cálculo no publicado. [C-774; S141 fig. 3; S140 fig. 2] Se conservan los extremos publicados 1007–2386 Ma, sin clasificarlos mediante un cociente propio. [C-773–C-774]
+
+Para la magnitud solicitada «cuánto se solapan todos los intervalos bajo el mismo modelo, calibraciones y muestreo», **no hay valor publicado** en las fuentes recuperadas: ninguna publica una matriz común y la tabla no calcula intersecciones propias entre estudios heterogéneos. [C-757–C-773; BN-117]
 
 Sandin et al. analizaron 75,975 OTU con 77 calibraciones, 32 árboles y 100 réplicas de TreePL. [C-786; C-787; C-788; C-789] Publicaron para la raíz Discoba una mediana de 1.776 Ma y un máximo/mínimo de medianas de 1.897/1.670 Ma; para Amorphea, 1.773 Ma y 1.934/1.703 Ma. [C-790; C-791] En la sensibilidad que trata Rafatazmia como dudosa situaron LECA en 2.054 Ma, con límites 2.104–1.967 Ma. [C-792] Son estadísticas y escenarios publicados por el estudio: no se promedian ni se convierten en una amplitud propia. [C-786–C-792; S548 métodos; resultados]
 
@@ -48,7 +50,9 @@ Bangiomorpha pubescens ejerce un peso desproporcionado como calibración porque 
 
 Mover el nodo asignado a Bangiomorpha o tratarlo como fósil troncal modifica las restricciones mínimas de divergencias profundas. [C-776; S141 §calibration sensitivity; S178 discusión]
 
-## 6.3. Por qué no existe una edad de consenso
+## 6.3. Controversia abierta: por qué no existe una edad de consenso
+
+La edad de LECA y la conciliación entre relojes y rocas se mantienen explícitamente abiertas: ninguna configuración se adopta como cierre y la discrepancia no se reduce a un intervalo compuesto. [C-772–C-784]
 
 Una calibración fósil suele aportar un mínimo para la edad de un nodo, no la fecha exacta de la divergencia. [C-777; S141 §Molecular clock methodology]
 

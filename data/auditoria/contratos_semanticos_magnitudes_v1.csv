@@ -1,0 +1,11 @@
+id_magnitud,contrato_semantico,objeto_literal_verificado
+MREQ-0011,NIVEL_OXIGENO,nivel de oxígeno atmosférico u oceánico; no edad del episodio ni δ13C
+MREQ-0012,NIVEL_OXIGENO,cifra de oxígeno por eón y proxy; no edad del episodio ni δ13C
+MREQ-0020,DISTRIBUCION_FOSIL_DEFENSIVA,distribución de tamaño de VSM o acritarcos interpretados como defensivos
+MREQ-0022,RANGO_TAMANO_CELULAR,rangos celulares de procariotas y eucariotas unicelulares
+MREQ-0028,LATENCIA_RESPUESTA,tiempo hasta manifestación o reversión de una respuesta; no protocolo cultivo o ciclo basal
+MREQ-0034,PERDIDA_GENES_NUMERO_TIEMPO,número de genes perdidos y tiempo en una trayectoria documentada
+MREQ-0035,CIFRA_HGT_SUSTANTIVA,cifra o frecuencia de HGT de cada posición; no tamaño de muestreo
+MREQ-0049,DURACION_GLACIACION,duración publicada de una glaciación global; no duración de OAE ni resta editorial de límites
+MREQ-0050,DURACION_TRANSICION_REDOX,duración del cambio redox en una cuenca proterozoica; no constante universal ni análogo cretácico
+MREQ-0072,COSTE_DOBLE_ISOGAMIA,aplicabilidad cuantitativa del coste doble clásico a protista isógamo; no morfometría gamética

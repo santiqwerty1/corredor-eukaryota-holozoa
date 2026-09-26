@@ -133,5 +133,41 @@ class AttributionContractTests(unittest.TestCase):
         self.assertEqual(errors, [])
 
 
+class H2SourceDensityTests(unittest.TestCase):
+    def test_section_zero_is_not_exempt_from_two_source_rule(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            sections = root / "docs/secciones"
+            sections.mkdir(parents=True)
+            (sections / "001-zero.md").write_text(
+                "# 0. Convenciones\n\n## 0.1. Evidencia\n\nTexto [S01].\n",
+                encoding="utf-8",
+            )
+            errors: list[str] = []
+            with (
+                mock.patch.object(audit_semantics, "ROOT", root),
+                mock.patch.object(audit_semantics, "table_map", return_value={}),
+            ):
+                audit_semantics.audit_h2_source_density(errors, {})
+            self.assertEqual(len(errors), 1)
+            self.assertIn("0.1. Evidencia", errors[0])
+
+    def test_section_zero_passes_with_two_resolved_sources(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            sections = root / "docs/secciones"
+            sections.mkdir(parents=True)
+            (sections / "001-zero.md").write_text(
+                "# 0. Convenciones\n\n## 0.1. Evidencia\n\nTexto [S01; S02].\n",
+                encoding="utf-8",
+            )
+            errors: list[str] = []
+            with (
+                mock.patch.object(audit_semantics, "ROOT", root),
+                mock.patch.object(audit_semantics, "table_map", return_value={}),
+            ):
+                audit_semantics.audit_h2_source_density(errors, {})
+            self.assertEqual(errors, [])
+
 if __name__ == "__main__":
     unittest.main()
