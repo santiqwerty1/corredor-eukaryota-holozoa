@@ -1,0 +1,28 @@
+{
+  "observacion_utc": "2026-09-27T01:27:11.066829Z",
+  "ruta": "data/afirmaciones/09.csv",
+  "fila": {
+    "#": "C-1197",
+    "Afirmación": "El episodio de los tardígrados muestra que contaminación, binning y cobertura pueden simular transferencia horizontal masiva.",
+    "Sujeto": "caso de HGT en tardígrados",
+    "Predicado": "posee_modo_de_fallo*",
+    "Objeto": "contaminación y ensamblaje quimérico",
+    "Atribución": "sintesis(C-1195, C-1196)",
+    "Fuente": "S295; S296",
+    "Aceptación": "consenso amplio",
+    "Fuerza": "alta",
+    "Motivo": "La afirmación original cambió tras datos y controles independientes.",
+    "Resolución": "resuelta",
+    "Vigencia": "vigente"
+  },
+  "sha256_fila_json": "651871b64000884a8033bdde5c121ed8dae1b7ce8ccf0904714c471f4132bb45",
+  "claim_fingerprint": "7f771268af250b6f9b57a177f42c7df7d5aee25c6aecd48a8b7b5fb34b5fe91c",
+  "primera_observacion_utc": "2026-09-27T01:26:02.104665Z",
+  "artefacto_final_s296": {
+    "ruta": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+    "sha256": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+    "localizador": "Results, Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini, tercer párrafo (About one-third...) y párrafo final; Conclusions"
+  },
+  "dictamen": "NO_CONFORME",
+  "motivo": "Objeto atribuye ensamblaje quimérico al caso, pero el tercer párrafo indica que la ausencia de semejanza metazoa sugiere que esos contigs no son coensamblajes quiméricos. Binning y cobertura son controles de diagnóstico y filtrado, no demostrados como causas del HGT aparente en este pasaje. Aceptación=consenso amplio tampoco justificada nominalmente."
+}

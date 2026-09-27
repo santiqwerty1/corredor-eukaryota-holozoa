@@ -1,0 +1,246 @@
+{
+  "fecha_revision_utc": "2026-09-26T22:16:46Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "inventario_fuentes": {
+    "archivos": 442,
+    "sha256": "69704030a52076437e131fde0a1b886605b3ed8efc6a8fcf272660df3e4503cd"
+  },
+  "evidencia_ejecuciones": [
+    {
+      "ruta": "docs/auditorias/evidencia_ejecuciones_internas_bn_fuentes_2026-09-26.json",
+      "sha256": "e56ef19992e5687c7a888fad77031384a07c2ffc2400a619e943b5e49618366b"
+    },
+    {
+      "ruta": "docs/auditorias/evidencia_ejecuciones_web_bn_fuentes_2026-09-26.json",
+      "sha256": "606f015c5b38aac3493889cde1e9f5efa8da3f8ef638ec732624768fc6bf556f"
+    }
+  ],
+  "raw_web_tmp_sha256": {
+    "bn121_primary_open.txt": "0467e7939ab279c9c2ee81e571d9ffab4b20ac2337c9e2c57a6805f4f9729330",
+    "bn120_search.txt": "b82bd344038ef2b9d040720ba548a5edef87a284b321be52d28f8f75340355e7",
+    "bn131_search.txt": "38031bc65910bb28391d538ff120a5447c42ac30b48d36ff5e1d27cffd62a4e0",
+    "bn130_search.txt": "876d229c9e1db081cc4084e99846b0b9075f55759228653ae116cccae08239f8",
+    "bn121_q1.txt": "35c0d60a151c29314b1f23738cd65be27e2abde678c99bb86f3d0f1d2e7ae1a5",
+    "bn_primary_open.txt": "fcfc465d4aad555341a5462388e3a8fbb8551cd4ea3bc4d7c5d6c3573552f8b9",
+    "bn_candidate_find.txt": "f807fbe9e2488075fac5f8ac466522d7110d0d01aae1eca44c0ff765a69ec337",
+    "bn121_search.txt": "7b8461d8087c4263cb53b4a0ae302f0c421da6f77347328acf7160f979869f3e",
+    "bn121_q2.txt": "977075ed6a9d87269b4c7b2180b4919302e93286ac9b8fb2900614a4425bbd76"
+  },
+  "fuentes_primarias_complementarias": [
+    {
+      "clave_bn": "BN-120",
+      "url": "https://protists.ensembl.org/Sphaeroforma_arctica_jp610_gca_001186125/Info/Annotation/",
+      "archivo_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN120-ensembl-annotation.html",
+      "sha256": "aecfeec270030657483a0b6aab05391b5281c240f893387e90586de332200fb3",
+      "instante_apertura_web": "2026-09-26T22:08:20Z",
+      "localizador": "Statistics/Summary/Gene counts; HTML127/133/148",
+      "valores_observados": {
+        "assembly": "GCA_001186125.1",
+        "nombre": "Spha_arctica_JP610_V1",
+        "database_version": "116.1",
+        "release": "63 June2026",
+        "longitud_bp": 121631465,
+        "coding_genes": 18213,
+        "noncoding_genes": 690,
+        "pseudogenes": 18,
+        "transcripts": 19438
+      }
+    },
+    {
+      "clave_bn": "BN-130",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5043310/fullTextXML",
+      "archivo_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN130-cytoskeleton.xml",
+      "sha256": "d50a8952826ae27d9ac6126e392b83ef42c4e938560d5e287d8762a2cd21ad22",
+      "doi": "10.1098/rsos.160283",
+      "localizador": "§3.3, body p23–24 índice0",
+      "limite": "Sinapomorfía propuesta como potencial; no prueba universalidad/exclusividad; no alta en A."
+    }
+  ],
+  "dictamenes_nominales": [
+    {
+      "ruta": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
+      "fila": {
+        "clave": "BN-114",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Ficha de hábitat o ecología por cada uno de los veinte taxones de S49 tabla 2 y tratamiento ecológico de Alphaproteobacteria comparable al de Obazoa.",
+        "términos exactos o n/a": "`rg -n -i \"Alphaproteobacteria|Tistrella|Elioraea|Nitrospirillum|Caenispirillum|Oceanibacterium|Iodidimonas|Kordiimonas|Odyssella|Camelimonas|Tepidicaulis|Hansschlegelia|Microvirga|Methylocella|Aestuariivirga\" fuentes/S49* docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md data/afirmaciones/02.csv data/tablas/02`",
+        "resultado": "Se recuperaron los veinte taxones y siete criterios de S49 tabla 2, y los catorce sistemas metabólicos de S49 tabla 3. La tabla 2 no contiene una ficha de hábitat por taxón; solo se transcribe el hábitat explícito de Iodidimonas muriae localizado en la referencia taxonómica citada. Las celdas vacías se conservan como no consta, no como ausencia.",
+        "filas relacionadas": "C-149–C-160; C-1956; C-1967–C-1969; S45–S49"
+      },
+      "huella_fila_bn_sha256": "2efbdca20a9e0dfcb52b7a0efe2d77cc0fb09aa88d4f3a078fbc9e123d7d83e3",
+      "dictamen_resultado": "CONFORME_EN_AMBITO_LOCAL",
+      "resultado": "Consulta textual repetida: 10 archivos, 73 líneas. S49 Table2/T2 contiene 20 taxones y siete columnas de criterios, sin columna de hábitat; Table3/T3 tiene 14 sistemas metabólicos. Ref R48 registra el aislamiento de Iodidimonas muriae de salmuera. No se extiende la ausencia de una ficha a toda la bibliografía.",
+      "limites": "Solo ámbitos internos declarados, incluida S49; no consulta taxonómica nueva por cada uno de los veinte taxones ni comparación ecológica exhaustiva con Obazoa.",
+      "loc": "S49 JATS table-wrap T2/T3 y ref R48; consulta BN-114-Q1.",
+      "fuentes": [
+        "S49"
+      ],
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S49 [2023] Multiple approaches of cellular metabolism define the bacterial ancest.xml",
+          "sha256": "fc9cf337b6ae3ad0213f36507dfd584b03c2dff1c299bca9e32fe3f5d67f81ea"
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+      "fila": {
+        "clave": "BN-115",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos metodológicos o mecanísticos no publicados en las afirmaciones canónicas recuperadas para los mapas históricos y algunos modelos de eucariogénesis o de origen nuclear; para H22, participantes celulares, socio taxonómico, intercambio metabólico, dirección del intercambio y ambiente.",
+        "términos exactos": "`rg -n -i \"Woese|Lake|Cox|Da Cunha|Spang|inside-out|protocoat|modelo E3|flujo inverso|hipótesis viral\" data/afirmaciones/02.csv data/afirmaciones/03.csv data/tablas/02 data/tablas/03 docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md docs/secciones/004-03-3-eucariogenesis.md`; inspección nominal de `fuentes/S97*.xml` y `fuentes/S99*.xml` para `organism|partner|metabolite|metabolic exchange|environment` en el contexto de H22",
+        "resultado": "La búsqueda interna recuperó matrices, modelos, muestreos o apoyos parciales, pero no una estadística de soporte para Woese, Lake, Cox o Spang ni ambiente/intercambio completo para H14, H15 y H17 ni una predicción discriminante explícita para H19. S97 y S99 describen arquitectura, homología, duplicación y divergencia de coatómeros; no se localizaron valores para los cinco campos de asociación celular de H22, y las menciones generales a organismos o ambiente no se promovieron a esos campos.",
+        "filas o fuente": "C-017–C-042; C-292–C-357; S06–S12; S88–S99"
+      },
+      "huella_fila_bn_sha256": "df7b6d77536662ccaa74391869179186d6d69d77507c5e6da280accbec433304",
+      "dictamen_resultado": "CONFORME_EN_AMBITO_LOCAL",
+      "resultado": "Consulta interna en 17 archivos: 199 líneas. Consulta nominal organism|partner|metabolite|metabolic exchange|environment en S97/S99 XML: 3 líneas JATS. Se inspeccionaron los contextos y secciones de hipótesis: arquitectura/homología, divergencia y expansión de módulos; los términos generales no identifican un socio taxonómico ni un intercambio metabólico direccional de H22.",
+      "limites": "Resultado sobre afirmaciones recuperadas y pasajes nominales; no demuestra que Woese/Cox/Spang carezcan de toda estadística en sus artículos ni reaudita todos los modelos. Las tablas vivas matizan Cox como falta de una estadística única común, no ausencia universal de soporte.",
+      "loc": "BN-115-Q1/Q2; S97 Discussion body p24/p27 (índice0) y S99 secs2–5/body p7–8,15–17; table11 H14/H15/H17 y table12 H19.",
+      "fuentes": [
+        "S97",
+        "S99"
+      ],
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.pdf",
+          "sha256": "c7366fa46b25d301cf3fd4aadf561e39cb0de088e5aa6febb477d5fd0ae961ea"
+        },
+        {
+          "ruta": "fuentes/S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.xml",
+          "sha256": "b671adee617bf211acb6a0edbdf8b7e0de5277578b4886e7f7b243365966bf5c"
+        },
+        {
+          "ruta": "fuentes/S99 [2022] Coatomer in the universe of cellular complexity.xml",
+          "sha256": "a3b85e6823ff2db5be02edac52d029e5fe82c28c6ebd021ba0290d67ea0a939b"
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "fila": {
+        "clave": "BN-118",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos residuales de ecología, alimentación, hospedador o socio y ciclo para cada una de las 26 entradas organismales de table-40; señal, reversión y coste de respuestas transitorias; y aparición o pérdida de cada modo trófico en cada nodo Eukaryota→Metazoa.",
+        "términos exactos": "`rg -n -i \"Monosiga|Salpingoeca|Choanoeca|Capsaspora|Ministeria|Sphaeroforma|Creolimax|Abeoforma|Pirum|Ichthyophonus|Corallochytrium|Syssomonas|Pigoraptor|Tunicaraptor|Lenisia|Pygsuia|Thecamonas|Breviata|Fonticula|Nuclearia|Rozella|Rhizophydium|Microsporidia|Dictyostelium|Entamoeba|Pelomyxa|Mastigamoeba\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`; `rg -n -i \"Eukaryota|Amorphea|Amoebozoa|Obazoa|Apusomonadida|Breviatea|Opisthokonta|Holomycota|Holozoa|Ichthyosporea|Pluriformea|Corallochytrea|Filasterea|Filozoa|Choanozoa|Choanoflagellata|Metazoa|bacterivor|depred|parasit|osmotrof|fagotrof|aliment\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`",
+        "resultado": "La consulta nominal cubrió las 26 entradas organismales y los 17 nodos del corredor. Recuperó campos positivos parciales por organismo y modos tróficos en ramas vivientes, pero no todos los campos por cada entrada ni una reconstrucción publicada homogénea de aparición o pérdida de cada modo en cada nodo. BN-083 y BN-101 acotan costes y retirada; la ausencia no se convirtió en estado ancestral.",
+        "filas relacionadas": "C-851–C-971; C-934–C-955; BN-083; BN-101; S129; S132; S147; S200–S215; S468–S479; S506"
+      },
+      "huella_fila_bn_sha256": "31450a2ce604391395ff61c68953802d62ff0a29e2853c8b5a9cccb6fa0877d1",
+      "dictamen_resultado": "CONFORME_EN_AMBITO_LOCAL",
+      "resultado": "Ambas expresiones nominales repetidas en los tres archivos previstos: 177 y 68 líneas. Table40 tiene 26 entradas y combina campos positivos con 40 celdas que remiten a BN118 (excluida columna filas); no se reemplazaron esos huecos por estados ancestrales. El segundo patrón incluye los 17 nombres nodales declarados.",
+      "limites": "Las 26 entradas son filas, no necesariamente 26 especies; patrón de 27 nombres permite filas combinadas. Es una comprobación interna de lo recuperado, no una búsqueda mundial de cada campo, lectura de cada S citada ni cierre de BN083/BN101.",
+      "loc": "BN-118-Q1/Q2; table40 filas1–26; data/afirmaciones/08.csv y docs/secciones/009-08-8-ecologia-y-trofismo.md.",
+      "fuentes": [],
+      "artefactos_locales": []
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-120",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Número agregado de genes publicados y densidad o promedio numérico de intrones para Sphaeroforma arctica JP610 en una misma versión de anotación",
+        "términos exactos utilizados": "\"Sphaeroforma arctica genome genes introns 121.6 Mb\"; \"Sphaeroforma arctica gene count intron density\"; \"Sphaeroforma arctica JP610 genome annotation genes\"",
+        "resultado y motivo": "La consulta del 13 de agosto de 2026 recuperó páginas de genes individuales de NCBI, el método de anotación genómica de S. arctica y la comparación de intrones de S434, pero no una cifra agregada estable de genes ni una densidad o promedio numérico de intrones atribuible a la misma versión del ensamblaje de 121.6 Mb. El hueco se conserva; no se estima una cifra contando identificadores parciales ni se mezcla una versión actual de RefSeq con la reconstrucción comparativa de S434."
+      },
+      "huella_fila_bn_sha256": "93f842a7e278911b6160bac9149fd5bbd7b7f6c9395bd707ba147b3cf16c5248",
+      "dictamen_resultado": "NO_CONFORME_REUTILIZACION_COMO_RESULTADO_VIGENTE",
+      "resultado": "Las tres consultas devuelven un lote combinado de 21 entradas. Ensembl Protists oficial especifica GCA_001186125.1/Spha_arctica_JP610_V1, database116.1, 121631465 bp, 18213 genes codificantes, 690 no codificantes, 18 pseudogenes y 19438 transcritos. Estos valores se mantienen separados; no se suman ni se mezclan con UniProt. Hay, por tanto, un recuento agregado de genes localizado en esta reinspección.",
+      "limites": "No refuta que la búsqueda histórica del13-08 no lo encontrara. No se localizó en la página de estadísticas una densidad/media de intrones, ni se calculó desde GFF. No queda resuelta la exigencia conjunta de genes+intrones de una misma anotación; no inferir inexistencia del segundo dato.",
+      "loc": "Ensembl página Annotation/Statistics, Summary y Gene counts; HTML líneas127/133/148; consulta bn120_search.",
+      "fuentes": [],
+      "artefactos_locales": []
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-121",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Coste energético directo de mantener agregados de Capsaspora owczarzaki y Ministeria vibrans o el fenotipo multicelular de levadura snowflake",
+        "términos exactos utilizados": "\"Capsaspora owczarzaki aggregation energetic cost ATP maintenance\"; \"Ministeria vibrans aggregation metabolic cost energy maintenance\"; \"snowflake yeast multicellularity energetic cost maintenance ATP\"",
+        "resultado y motivo": "La consulta del 13 de agosto de 2026 recuperó señales inductoras y mecanismo celular de Capsaspora, menor replicación al impedir agregación de Ministeria y costes ecológicos o de transporte por limitación de oxígeno en snowflake yeast. Ningún resultado publicó un coste directo de mantenimiento en ATP, consumo de oxígeno, calor o fracción comparable del presupuesto celular para los tres fenotipos. Esos efectos no se convierten en una cifra energética y el hueco permanece explícito."
+      },
+      "huella_fila_bn_sha256": "75610f4cb4bcae79fb6a75a11740961ccd317dae08818c456e344caba5f944ad",
+      "dictamen_resultado": "NO_VERIFICABLE_INTEGRALMENTE_REVISION_PARCIAL_DE_CANDIDATOS",
+      "resultado": "Tres términos ejecutados juntos (28 entradas), con repeticiones individuales adicionales para Capsaspora(23) y Ministeria(22); los lotes contienen duplicados y no se suman como artículos únicos. Pasajes contrastados: S427 trata inducción/agregación y consumo de lipoproteínas; S376 publicado trata replicación tras disrupción con confusores; Nature2021 trata límites de difusión/fitness y contiene medición de O2 para verificar una cepa no respiratoria, no un coste aislado del mantenimiento del fenotipo. No convertir esos indicadores en un presupuesto energético.",
+      "limites": "Las consultas completas sí se ejecutaron, pero no se inspeccionaron íntegramente todos los candidatos/SI. No se ratifica la frase universal sobre ningún resultado ni se certifica toda la fila. Pendientes relevantes: S433 versión final/SI, flujos metabólicos2025, coexistencia2024 y Capsaspora-lípidos2024 completo (editor devolvió error). PDF local S433 es preprint2021 y no se equipara a Nature2023. Ni el fallo XML500 ni el error del editor cuentan como ausencia.",
+      "loc": "bn121_search, bn121_q1, bn121_q2; S376 PDF p6 y fig6; S427 Results/Discussion; Nature s41467-021-23104-0 Methods/Strain construction y modelo/fig4; PMC10425966 cabecera/abstract (manuscrito autor asociado a publicación final).",
+      "fuentes": [
+        "S376",
+        "S427",
+        "S433"
+      ],
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S376 [2026] A unicellular relative links aggregative multicellularity to animal or.pdf",
+          "sha256": "3890375677b55be64479835e88930f675dc0efcea5529f3ff9250a0c350f0b92"
+        },
+        {
+          "ruta": "fuentes/S427 [2023] Chemical factors induce aggregative multicellularity in a close unicel.pdf",
+          "sha256": "2c8c90e746b228018792f8fb6ee61b798f40400240ed8432b4f605f49c0ac321"
+        },
+        {
+          "ruta": "fuentes/S427 [2023] Chemical factors induce aggregative multicellularity in a close unicel.xml",
+          "sha256": "e9b74c489365ba840efe06ef3157821f8d673eae5d8efea9a90a9ac6c70769f4"
+        },
+        {
+          "ruta": "fuentes/S433 [2023] De novo evolution of macroscopic multicellularity.pdf",
+          "sha256": "076566de00dff7d71f1ba9725caec18b4b6548ec5fa87a2cee41c2bc2fb16702"
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+      "fila": {
+        "clave": "BN-130",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "carácter morfológico universal y exclusivo que diagnostique Amoebozoa completo",
+        "términos exactos": "«Amoebozoa morphological synapomorphy universal exclusive»; «Amoebozoa diagnostic morphology»",
+        "resultado": "S112 Results y fig. 3 describe formas y locomoción heterogéneas, no una sinapomorfía morfológica universal del nodo."
+      },
+      "huella_fila_bn_sha256": "3cac5493b89e0f5552af81cb32c1416e42db8e44cff249345e2572e2d55eb288",
+      "dictamen_resultado": "CONFORME_PASAJE_ACOTADO_NO_EXHAUSTIVIDAD",
+      "resultado": "Dos términos ejecutados: 40 entradas del lote combinado. S112 muestra diversidad y reconstrucción de rasgos, con una sinapomorfía potencial limitada a Evosea examinada que requiere evaluación fuera de ese grupo. Otro candidato primario rsos.160283 propone arquitectura de microtúbulos como potencial sinapomorfía y pide más muestreo. No se convierte una propuesta potencial en diagnóstico universal/exclusivo de todo Amoebozoa.",
+      "limites": "Dictamen limitado a estos pasajes: no todos los candidatos fueron leídos íntegramente, no se declara inexistencia universal y no se ratifica una ausencia de propuestas morfológicas. Se preservan expresamente las candidatas encontradas.",
+      "loc": "S112 JATS Results/Discussion, body p26–28 índice0 y fig3; rsos.160283 §3.3/body p23–24; bn130_search.",
+      "fuentes": [
+        "S112"
+      ],
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S112 [2017] Between a Pod and a Hard Test The Deep Evolution of Amoebozoa.xml",
+          "sha256": "6c32cb81f4b81aa38bb5f3e190c5896ad2544eaf3691129317403bc9b1d7dd95"
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+      "fila": {
+        "clave": "BN-131",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "carácter morfológico universal y exclusivo que diagnostique Ichthyosporea completo",
+        "términos exactos": "«Ichthyosporea morphological synapomorphy universal exclusive»; «Ichthyosporea diagnostic morphology»",
+        "resultado": "S133 §§Diversity y Life cycles revisa paredes y estadios multinucleados en varios linajes, no una sinapomorfía morfológica universal del nodo."
+      },
+      "huella_fila_bn_sha256": "496709fb4c1c3198d2af18d0c4787ea52c9eac34c7bfabbea803d3a71d9e0c9e",
+      "dictamen_resultado": "CONFORME_PASAJE_ACOTADO_NO_EXHAUSTIVIDAD",
+      "resultado": "Dos términos ejecutados: 23 entradas del lote combinado. S133 describe coenocitos, pared, zoosporas, amebas y morfologías variables entre especies, con ciclos todavía crípticos; no identifica en esos pasajes un carácter demostrado universal y exclusivo de Ichthyosporea. La búsqueda devuelve también estudios de diagnóstico a escala de especie/género, no una solución automática para el nodo completo.",
+      "limites": "Pasajes nominales de revisión S133 cotejados; no revisión exhaustiva de todos los candidatos ni prueba de inexistencia biológica de un diagnóstico universal.",
+      "loc": "S133 JATS secciones de diversidad/ciclos vitales, body p9–19 índice0 y figs3–4; bn131_search.",
+      "fuentes": [
+        "S133"
+      ],
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S133 [2024] Ichthyosporea a window into the origin of animals.pdf",
+          "sha256": "6af8ca3b8568ed2589875b9eff434f9de40c35434a7577a98d2e604621b99f00"
+        },
+        {
+          "ruta": "fuentes/S133 [2024] Ichthyosporea a window into the origin of animals.xml",
+          "sha256": "b62a156e74cbdd7128db54cc2e10bb32e1bcba46697dc6ec3583a04d0d9ca111"
+        }
+      ]
+    }
+  ],
+  "limite_general": "Reinspección realmente ejecutada hoy, nunca fecha original reconstruida. Ejecución completa de términos no equivale a revisión científica integral. BN120 requiere cambio de resultado vigente, y BN121 conserva verificación parcial; ninguna fila autoriza autoaprobación o modificación automática del registro."
+}

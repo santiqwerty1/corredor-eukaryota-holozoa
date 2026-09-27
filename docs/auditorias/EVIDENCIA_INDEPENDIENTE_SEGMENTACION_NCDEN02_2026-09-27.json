@@ -1,0 +1,2225 @@
+{
+  "version": 1,
+  "dictamen": "NO_CONFORME",
+  "revisor": "/root/inspeccion_relojes",
+  "declaracion_independencia": "No participé en la implementación del delta NC-DEN02 ni en sus tests dedicados. Mi autoría científica S240/S352 queda excluida de esta revisión técnica.",
+  "fecha_emision_utc": "2026-09-27T03:03:32Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "ensayo_independiente": {
+    "reviewer": "/root/inspeccion_relojes",
+    "independence": "No participación en la implementación revisada; autoría científica S240/S352 excluida.",
+    "started_utc": "2026-09-27T03:02:02Z",
+    "finished_utc": "2026-09-27T03:02:02Z",
+    "hashes_before": {
+      "scripts/build_content_trace.py": "a1d865203b93016ac979ce54aa405c0e907d926ab9aa064046383d1d00f3d6f6",
+      "tests/test_content_trace_sentence_boundaries.py": "f84aa2b911bf375226698ffb511bada20a01bba36df5d94954e3b44bc9881419",
+      "docs/auditorias/ENTREGA_AUTORAL_SEGMENTACION_NCDEN02_2026-09-27.md": "d7507a6bb1c723aeab8bb4233ff3e4f54a1dc2072144792e6afdde67965a2aa5",
+      "docs/auditorias/PROPUESTA_CONTRATO_CENSO_ORACIONES_DENSIDAD_2026-09-27.md": "19c491ed7232c4b6267519a487dc2fe3281d74e3a757ef9dd82efadfd2c48846",
+      "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d"
+    },
+    "hashes_after": {
+      "scripts/build_content_trace.py": "a1d865203b93016ac979ce54aa405c0e907d926ab9aa064046383d1d00f3d6f6",
+      "tests/test_content_trace_sentence_boundaries.py": "f84aa2b911bf375226698ffb511bada20a01bba36df5d94954e3b44bc9881419",
+      "docs/auditorias/ENTREGA_AUTORAL_SEGMENTACION_NCDEN02_2026-09-27.md": "d7507a6bb1c723aeab8bb4233ff3e4f54a1dc2072144792e6afdde67965a2aa5",
+      "docs/auditorias/PROPUESTA_CONTRATO_CENSO_ORACIONES_DENSIDAD_2026-09-27.md": "19c491ed7232c4b6267519a487dc2fe3281d74e3a757ef9dd82efadfd2c48846",
+      "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d"
+    },
+    "reviewed_files_stable": true,
+    "tests": [
+      {
+        "case": "postposed_two",
+        "category": "baseline",
+        "text": "Dato. [C-001; S01 §Resultados] Otro dato. [C-002]",
+        "expected": [
+          "Dato. [C-001; S01 §Resultados]",
+          "Otro dato. [C-002]"
+        ],
+        "actual": [
+          "Dato. [C-001; S01 §Resultados]",
+          "Otro dato. [C-002]"
+        ],
+        "spans": [
+          [
+            0,
+            30
+          ],
+          [
+            31,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "012d5eb8adf51ad3747668fc4cfd8363ac816cb4b0b132ea1555c13277626df0"
+      },
+      {
+        "case": "postposed_two_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            30
+          ],
+          [
+            31,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "postposed_multiple",
+        "category": "baseline",
+        "text": "Dato.[C-001][S01 p. 2] [BN-001] otro dato.",
+        "expected": [
+          "Dato.[C-001][S01 p. 2] [BN-001]",
+          "otro dato."
+        ],
+        "actual": [
+          "Dato.[C-001][S01 p. 2] [BN-001]",
+          "otro dato."
+        ],
+        "spans": [
+          [
+            0,
+            31
+          ],
+          [
+            32,
+            42
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "762ab550248143f461a685daeb6469d8905b90d38b710830a56f7f747ea0cad4"
+      },
+      {
+        "case": "postposed_multiple_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            31
+          ],
+          [
+            32,
+            42
+          ]
+        ]
+      },
+      {
+        "case": "nested_locator",
+        "category": "baseline",
+        "text": "Dato. [C-001; S01 Fig. 2 [a.], p. 3] Otro.",
+        "expected": [
+          "Dato. [C-001; S01 Fig. 2 [a.], p. 3]",
+          "Otro."
+        ],
+        "actual": [
+          "Dato. [C-001; S01 Fig. 2 [a.], p. 3]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            36
+          ],
+          [
+            37,
+            42
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "abe4781c6211d1556a8580d23fe1e64d1d0b7d3e3910578cd2524a47f36fdb01"
+      },
+      {
+        "case": "nested_locator_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            36
+          ],
+          [
+            37,
+            42
+          ]
+        ]
+      },
+      {
+        "case": "sin_fuente_prefix",
+        "category": "baseline",
+        "text": "Dato. [C-001] [SIN FUENTE] Otro dato.",
+        "expected": [
+          "Dato. [C-001]",
+          "[SIN FUENTE] Otro dato."
+        ],
+        "actual": [
+          "Dato. [C-001]",
+          "[SIN FUENTE] Otro dato."
+        ],
+        "spans": [
+          [
+            0,
+            13
+          ],
+          [
+            14,
+            37
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "9e39c41c469da8b260ffdcd08a8abe616369b4c16c3a3aaf29b3ebb1341c99d0"
+      },
+      {
+        "case": "sin_fuente_prefix_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            13
+          ],
+          [
+            14,
+            37
+          ]
+        ]
+      },
+      {
+        "case": "noncitation_bracket",
+        "category": "baseline",
+        "text": "Dato. [La otra proposición usa C-002]",
+        "expected": [
+          "Dato.",
+          "[La otra proposición usa C-002]"
+        ],
+        "actual": [
+          "Dato.",
+          "[La otra proposición usa C-002]"
+        ],
+        "spans": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            37
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "fec3ad8cd576f401da9f352a01efaca391627c8899da737a475a7a2847311f50"
+      },
+      {
+        "case": "noncitation_bracket_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            37
+          ]
+        ]
+      },
+      {
+        "case": "unicode_whitespace_offsets",
+        "category": "unicode",
+        "text": "  Ácido α. [C-001]\r\n\t🧬 β. [C-002]  ",
+        "expected": [
+          "Ácido α. [C-001]",
+          "🧬 β. [C-002]"
+        ],
+        "actual": [
+          "Ácido α. [C-001]",
+          "🧬 β. [C-002]"
+        ],
+        "spans": [
+          [
+            2,
+            18
+          ],
+          [
+            21,
+            33
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "4fce18edfa68ab41cc70e4be459b68352ff0d81bc7129bab89f9f3a7f35909df"
+      },
+      {
+        "case": "unicode_whitespace_offsets_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            2,
+            18
+          ],
+          [
+            21,
+            33
+          ]
+        ]
+      },
+      {
+        "case": "decomposed_accent",
+        "category": "unicode",
+        "text": "Ámbito. [C-001] Otra oración.",
+        "expected": [
+          "Ámbito. [C-001]",
+          "Otra oración."
+        ],
+        "actual": [
+          "Ámbito. [C-001]",
+          "Otra oración."
+        ],
+        "spans": [
+          [
+            0,
+            16
+          ],
+          [
+            17,
+            30
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "d969b891d388b3f9e41648ba6da2ad986cb7be915807e7f123f4fb295dcf9c7a"
+      },
+      {
+        "case": "decomposed_accent_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            16
+          ],
+          [
+            17,
+            30
+          ]
+        ]
+      },
+      {
+        "case": "decimal_exponent",
+        "category": "numbers",
+        "text": "El valor fue 3.14e-5. [C-001] Otro.",
+        "expected": [
+          "El valor fue 3.14e-5. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "El valor fue 3.14e-5. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            29
+          ],
+          [
+            30,
+            35
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "e6b8b00d286cc346b6030d7fde5bc2565f71deafb05beea6d20914b6fda8b048"
+      },
+      {
+        "case": "decimal_exponent_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            29
+          ],
+          [
+            30,
+            35
+          ]
+        ]
+      },
+      {
+        "case": "decimal_span_range",
+        "category": "numbers",
+        "text": "Se transcribe 10.89–13.61. [C-001] Otro.",
+        "expected": [
+          "Se transcribe 10.89–13.61. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Se transcribe 10.89–13.61. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            34
+          ],
+          [
+            35,
+            40
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "6eab12317278887ad55fac7a997892d7f08e3d0a45c440351a0a279b7c645125"
+      },
+      {
+        "case": "decimal_span_range_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            34
+          ],
+          [
+            35,
+            40
+          ]
+        ]
+      },
+      {
+        "case": "inline_abbreviations",
+        "category": "abbreviations",
+        "text": "Smith et al. vieron Bacillus sp. y varias spp. [C-001] Otro.",
+        "expected": [
+          "Smith et al. vieron Bacillus sp. y varias spp. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Smith et al. vieron Bacillus sp. y varias spp. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            54
+          ],
+          [
+            55,
+            60
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "fddf3e9c86867985ef8172906dd4fb0a0271e859185291fab9adae168a5099c5"
+      },
+      {
+        "case": "inline_abbreviations_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            54
+          ],
+          [
+            55,
+            60
+          ]
+        ]
+      },
+      {
+        "case": "italic_taxon",
+        "category": "taxon",
+        "text": "Hubo cambios en *B. floridanus*. [C-001] Otro.",
+        "expected": [
+          "Hubo cambios en *B. floridanus*. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Hubo cambios en *B. floridanus*. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            40
+          ],
+          [
+            41,
+            46
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "0918d1dd93af553d850295800f4cd1270b579a8aed19fd0609a70184a41c6470"
+      },
+      {
+        "case": "italic_taxon_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            40
+          ],
+          [
+            41,
+            46
+          ]
+        ]
+      },
+      {
+        "case": "url_internal",
+        "category": "url",
+        "text": "Consulte https://example.org/a!b?x=3.14. [C-001] Otro.",
+        "expected": [
+          "Consulte https://example.org/a!b?x=3.14. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Consulte https://example.org/a!b?x=3.14. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            48
+          ],
+          [
+            49,
+            54
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "3cf50caac001d7f5ee61117561e7ec67a447840f9fc724f91372d074c07d58e0"
+      },
+      {
+        "case": "url_internal_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            48
+          ],
+          [
+            49,
+            54
+          ]
+        ]
+      },
+      {
+        "case": "url_autolink",
+        "category": "url",
+        "text": "Consulte <https://example.org/a>. [C-001] Otro.",
+        "expected": [
+          "Consulte <https://example.org/a>. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Consulte <https://example.org/a>. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            41
+          ],
+          [
+            42,
+            47
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "4159b6b2704f31ef44b580c492c17bbfbc2e9ffebb20641ffd45dae542d09f7a"
+      },
+      {
+        "case": "url_autolink_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            41
+          ],
+          [
+            42,
+            47
+          ]
+        ]
+      },
+      {
+        "case": "markdown_link",
+        "category": "url",
+        "text": "Consulte [fuente](https://example.org/a). [C-001] Otro.",
+        "expected": [
+          "Consulte [fuente](https://example.org/a). [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Consulte [fuente](https://example.org/a). [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ],
+          [
+            50,
+            55
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "7dae7c5e70932607f8fa522a52f34ef55b169ce0159605faba1a93dfa28b2792"
+      },
+      {
+        "case": "markdown_link_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ],
+          [
+            50,
+            55
+          ]
+        ]
+      },
+      {
+        "case": "closing_before_citation",
+        "category": "quote",
+        "text": "«Dato.» [C-001] Otro.",
+        "expected": [
+          "«Dato.» [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "«Dato.» [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            21
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "1ea192ae08c2fbef969babb2f00a2a7b799eeee954f0e438a7140c730215e171"
+      },
+      {
+        "case": "closing_before_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            21
+          ]
+        ]
+      },
+      {
+        "case": "punctuation_cluster",
+        "category": "punctuation",
+        "text": "¿Dato?! [C-001] ¡Otro! [C-002] Fin.",
+        "expected": [
+          "¿Dato?! [C-001]",
+          "¡Otro! [C-002]",
+          "Fin."
+        ],
+        "actual": [
+          "¿Dato?! [C-001]",
+          "¡Otro! [C-002]",
+          "Fin."
+        ],
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            30
+          ],
+          [
+            31,
+            35
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "12e11483ac2141e1b8d4546b675082611bdb53a9f0526b403f7b317bf88ccedb"
+      },
+      {
+        "case": "punctuation_cluster_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            30
+          ],
+          [
+            31,
+            35
+          ]
+        ]
+      },
+      {
+        "case": "ascii_ellipsis",
+        "category": "punctuation",
+        "text": "Dato... [C-001] Otro.",
+        "expected": [
+          "Dato... [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Dato... [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            21
+          ]
+        ],
+        "diagnostics": [],
+        "pass": true,
+        "text_sha256_lf": "61711f9ea34982522aac16cb9e5d0f86cc21061b45d0b3ac5efed0b3a399f32f"
+      },
+      {
+        "case": "ascii_ellipsis_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            15
+          ],
+          [
+            16,
+            21
+          ]
+        ]
+      },
+      {
+        "case": "parenthesis_after_citation",
+        "category": "postcitation_closers",
+        "text": "(Se observó. [C-001]) Otro resultado carece de C.",
+        "expected": [
+          "(Se observó. [C-001])",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "(Se observó. [C-001]) Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "9b62c3109168293f8026b3acf8e5d0928f2c8817044060fc4902ffddc541b5c1"
+      },
+      {
+        "case": "parenthesis_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "guillemet_after_citation",
+        "category": "postcitation_closers",
+        "text": "«Se observó. [C-001]» Otro resultado carece de C.",
+        "expected": [
+          "«Se observó. [C-001]»",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "«Se observó. [C-001]» Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "00dd8505e6f07eb64f213b9ce77695c407f039f2f24d85fc24607b91ba6c6fe9"
+      },
+      {
+        "case": "guillemet_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "doublequote_after_citation",
+        "category": "postcitation_closers",
+        "text": "\"Se observó. [C-001]\" Otro resultado carece de C.",
+        "expected": [
+          "\"Se observó. [C-001]\"",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "\"Se observó. [C-001]\" Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "37ad1c32030996c969d74317d99d74d5b4901849b60012bbd876cccdccc6aeee"
+      },
+      {
+        "case": "doublequote_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "curlyquote_after_citation",
+        "category": "postcitation_closers",
+        "text": "“Se observó. [C-001]” Otro resultado carece de C.",
+        "expected": [
+          "“Se observó. [C-001]”",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "“Se observó. [C-001]” Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "1c179c8165287ecf2d94ca563bd8b1d944bca581898847cd7294d10c37020d37"
+      },
+      {
+        "case": "curlyquote_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "singlequote_after_citation",
+        "category": "postcitation_closers",
+        "text": "'Se observó. [C-001]' Otro resultado carece de C.",
+        "expected": [
+          "'Se observó. [C-001]'",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "'Se observó. [C-001]' Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "fa4f6d71ef6dd0223c3cdf7b874cfc13584c97504d58345a4d6919808cea0e9d"
+      },
+      {
+        "case": "singlequote_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "italic_after_citation",
+        "category": "postcitation_closers",
+        "text": "*Se observó. [C-001]* Otro resultado carece de C.",
+        "expected": [
+          "*Se observó. [C-001]*",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "*Se observó. [C-001]* Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "16bf6b004b58f940e0871960ee70dca733a85d96ee391004625eff3ae1dcad1b"
+      },
+      {
+        "case": "italic_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            49
+          ]
+        ]
+      },
+      {
+        "case": "bold_after_citation",
+        "category": "postcitation_closers",
+        "text": "**Se observó. [C-001]** Otro resultado carece de C.",
+        "expected": [
+          "**Se observó. [C-001]**",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "**Se observó. [C-001]** Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "a1424ea87df4c59c141d1840a7dff73ec172ce4d0d21c6992337c0c1747962ea"
+      },
+      {
+        "case": "bold_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ]
+      },
+      {
+        "case": "underscore_bold_after_citation",
+        "category": "postcitation_closers",
+        "text": "__Se observó. [C-001]__ Otro resultado carece de C.",
+        "expected": [
+          "__Se observó. [C-001]__",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "__Se observó. [C-001]__ Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "2a7b2e89ea98afd16354d11ba7527affc7d790c39d41595338f60c27c4125638"
+      },
+      {
+        "case": "underscore_bold_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ]
+      },
+      {
+        "case": "nested_closings_after_citation",
+        "category": "postcitation_closers",
+        "text": "(«Se observó. [C-001]») Otro resultado carece de C.",
+        "expected": [
+          "(«Se observó. [C-001]»)",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "(«Se observó. [C-001]») Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "f29e4ab552068a2b64cd85f15c1607d8d9ef7e23147bc9644148fa25fa8f22e5"
+      },
+      {
+        "case": "nested_closings_after_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            51
+          ]
+        ]
+      },
+      {
+        "case": "linked_citation",
+        "category": "postcitation_link",
+        "text": "Dato. [C-001](https://example.org) Otro.",
+        "expected": [
+          "Dato. [C-001](https://example.org)",
+          "Otro."
+        ],
+        "actual": [
+          "Dato. [C-001](https://example.org) Otro."
+        ],
+        "spans": [
+          [
+            0,
+            40
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "f80d87fe9aae75b34db693e61fac887e9b67f8f406d082491ed1cb8530bd0d92"
+      },
+      {
+        "case": "linked_citation_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            40
+          ]
+        ]
+      },
+      {
+        "case": "unicode_ellipsis",
+        "category": "unicode_punctuation",
+        "text": "Dato… [C-001] Otro resultado carece de C.",
+        "expected": [
+          "Dato… [C-001]",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "Dato… [C-001] Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            41
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "41e00e102ef9632603612ed9fb124c8ce9fa0024f3941a13a23a0accea8c92cf"
+      },
+      {
+        "case": "unicode_ellipsis_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            41
+          ]
+        ]
+      },
+      {
+        "case": "adjacent_following_sentence",
+        "category": "adjacency",
+        "text": "Dato. [C-001]Otro resultado carece de C.",
+        "expected": [
+          "Dato. [C-001]",
+          "Otro resultado carece de C."
+        ],
+        "actual": [
+          "Dato. [C-001]Otro resultado carece de C."
+        ],
+        "spans": [
+          [
+            0,
+            40
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "7d8e9aa531fd0f796c96bef91b85166955735b05dbfd7f74af1fbb864a560284"
+      },
+      {
+        "case": "adjacent_following_sentence_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            40
+          ]
+        ]
+      },
+      {
+        "case": "underscored_taxon",
+        "category": "taxon",
+        "text": "Hubo cambios en _B. floridanus_. [C-001] Otro.",
+        "expected": [
+          "Hubo cambios en _B. floridanus_. [C-001]",
+          "Otro."
+        ],
+        "actual": [
+          "Hubo cambios en _B.",
+          "floridanus_. [C-001]",
+          "Otro."
+        ],
+        "spans": [
+          [
+            0,
+            19
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            41,
+            46
+          ]
+        ],
+        "diagnostics": [],
+        "pass": false,
+        "text_sha256_lf": "ac7e9bc4b5a78c63e5ec01fc5ecbcc401e833d79341d69235f56977fd4cf39e7"
+      },
+      {
+        "case": "underscored_taxon_exact_span_invariants",
+        "category": "spans",
+        "pass": true,
+        "spans": [
+          [
+            0,
+            19
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            41,
+            46
+          ]
+        ]
+      },
+      {
+        "case": "plain_initial",
+        "category": "ambiguity",
+        "text": "Hubo cambios en B. floridanus. [C-001]",
+        "diagnostics": [
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 17,
+            "literal": "B. floridanus. [C-001]",
+            "lectura_corte": [
+              [
+                0,
+                18
+              ],
+              [
+                19,
+                38
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                0,
+                38
+              ]
+            ]
+          }
+        ],
+        "pass": true
+      },
+      {
+        "case": "plain_initial_chain",
+        "category": "ambiguity",
+        "text": "B. floridanus y B. pennsylvanicus divergen. [C-001]",
+        "diagnostics": [
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 1,
+            "literal": "B. floridanus y B.",
+            "lectura_corte": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                18
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                0,
+                18
+              ]
+            ]
+          },
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 17,
+            "literal": "B. pennsylvanicus divergen. [C-001]",
+            "lectura_corte": [
+              [
+                3,
+                18
+              ],
+              [
+                19,
+                51
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                3,
+                51
+              ]
+            ]
+          }
+        ],
+        "pass": true
+      },
+      {
+        "case": "terminal_spp_not_autoapproved",
+        "category": "ambiguity",
+        "text": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+        "actual": [
+          "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]"
+        ],
+        "diagnostics": [],
+        "pass": false
+      }
+    ],
+    "pipelines": [
+      {
+        "case": "normal_uncited_following",
+        "text": "Se observó. [C-001] Otro resultado carece de C.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": true,
+        "main_write_exit": 1,
+        "main_check_exit": 1,
+        "output_written": false,
+        "output_sha256": null,
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 1",
+            "column": "n/a",
+            "content": "Se observó. [C-001]",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          },
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 2",
+            "column": "n/a",
+            "content": "Otro resultado carece de C.",
+            "claims": [],
+            "method": "sugerencia_no_revisada",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [
+          "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+        ],
+        "ambiguities": [],
+        "stdout": "",
+        "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+      },
+      {
+        "case": "plain_initial_pending",
+        "text": "Hubo cambios en B. floridanus. [C-001]",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": true,
+        "main_write_exit": 1,
+        "main_check_exit": 1,
+        "output_written": false,
+        "output_sha256": null,
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 1",
+            "column": "n/a",
+            "content": "Hubo cambios en B.",
+            "claims": [],
+            "method": "SIN_TRAZABILIDAD",
+            "content_sha256": ""
+          },
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 2",
+            "column": "n/a",
+            "content": "floridanus. [C-001]",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [
+          "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+        ],
+        "ambiguities": [
+          {
+            "ruta": "docs/secciones/003-02-fixture.md",
+            "localizador": "L1",
+            "texto": "Hubo cambios en B. floridanus. [C-001]",
+            "sha256_texto_lf": "6aa3248e248c8ed8c01773360291e894e7a6ef1fe4e7f2db35f49ce0ff4dd8a0",
+            "base_offsets": "Unicode del bloque normalizado, no del archivo",
+            "fronteras": [
+              {
+                "razon": "AMBIGUA_INICIAL_EPITETO",
+                "offset_punto": 17,
+                "literal": "B. floridanus. [C-001]",
+                "lectura_corte": [
+                  [
+                    0,
+                    18
+                  ],
+                  [
+                    19,
+                    38
+                  ]
+                ],
+                "lectura_abreviatura": [
+                  [
+                    0,
+                    38
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "stdout": "",
+        "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 iniciales)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 iniciales)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+      },
+      {
+        "case": "parenthesis_after_citation",
+        "text": "(Se observó. [C-001]) Otro resultado carece de C.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "492c3ed38ef25bd82c4c6797096951d72031f076fe51b0b58a6042357ae11d92",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "(Se observó. [C-001]) Otro resultado carece de C.",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "guillemet_after_citation",
+        "text": "«Se observó. [C-001]» Otro resultado carece de C.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "a692ef7062b4c8a2ceaeef7a6f93c9d3bdd0d620e4bd2909abde06f6f1e5c8eb",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "«Se observó. [C-001]» Otro resultado carece de C.",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "bold_after_citation",
+        "text": "**Se observó. [C-001]** Otro resultado carece de C.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "ee0b2186bd77e792ae37cf3ba19e457fb1acb6111e2ac37810102737db1fa791",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "**Se observó. [C-001]** Otro resultado carece de C.",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "unicode_ellipsis",
+        "text": "Dato… [C-001] Otro resultado carece de C.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "851000866bf8a04670ea3778c00bab4970689da934f60dd0d3ad097e1b6f941c",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "Dato… [C-001] Otro resultado carece de C.",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "terminal_spp_not_autoapproved",
+        "text": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "b264866074afcb0b33854c49f833decfeec660b25df93b53200eee9aec674dc0",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "unclosed_nominal_citation",
+        "text": "Se observó [C-001; S01 p. 1 sin cierre.",
+        "expected": "RECHAZAR_SIN_ESCRIBIR",
+        "pass": false,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "4ed7f40e48045e373a326c30084bf2739715f0c814a4d24842408a0203ff459f",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "Se observó [C-001; S01 p. 1 sin cierre.",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+        "stderr": ""
+      },
+      {
+        "case": "positive_two_explicit_claims",
+        "expected": "DOS_SEGMENTOS_DETERMINISTAS",
+        "pass": true,
+        "main_write_exit": 0,
+        "main_check_exit": 0,
+        "output_written": true,
+        "output_sha256": "4e2e506f4decd247fd82bab3558fff19b3bba8750360d05144172c1fb67e6410",
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 1",
+            "column": "n/a",
+            "content": "Se observó. [C-001]",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          },
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 2",
+            "column": "n/a",
+            "content": "Otro resultado. [C-002]",
+            "claims": [
+              "C-002"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [],
+        "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+        "stderr": ""
+      }
+    ],
+    "counts": {
+      "checks": 63,
+      "pass": 49,
+      "fail": 14,
+      "pipelines": 9,
+      "pipeline_pass": 3,
+      "pipeline_fail": 6
+    },
+    "scope": "Segmentación y puerta técnica; no adjudicación científica de candidatos, NC-DEN01, censo C ni cierre global."
+  },
+  "tests_autorales_reejecutados": {
+    "comando": "python3 -m unittest tests.test_content_trace_sentence_boundaries -v",
+    "exit_code": 0,
+    "output": "test_abbreviation_as_terminal_before_postposed_citation (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_abbreviation_as_terminal_before_postposed_citation) ... ok\ntest_adjacent_postposed_citations (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_adjacent_postposed_citations) ... ok\ntest_bibliographic_and_taxonomic_abbreviations (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_bibliographic_and_taxonomic_abbreviations) ... ok\ntest_citations_before_terminal_period (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_citations_before_terminal_period) ... ok\ntest_decimal_is_not_sentence_boundary (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_decimal_is_not_sentence_boundary) ... ok\ntest_empty_and_non_terminated_input (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_empty_and_non_terminated_input) ... ok\ntest_exclamations_questions_and_ellipsis (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_exclamations_questions_and_ellipsis) ... ok\ntest_full_narrative_pipeline_fails_on_newly_exposed_sentence_without_C (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_full_narrative_pipeline_fails_on_newly_exposed_sentence_without_C) ... ok\ntest_initial_label_does_not_exempt_lowercase_next_sentence (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_initial_label_does_not_exempt_lowercase_next_sentence) ... ok\ntest_internal_invariants_unchanged (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_internal_invariants_unchanged) ... ok\ntest_italic_initial_and_citation_initial_are_not_ambiguous (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_italic_initial_and_citation_initial_are_not_ambiguous) ... ok\ntest_italic_initial_term_keeps_abbreviation (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_italic_initial_term_keeps_abbreviation) ... ok\ntest_lowercase_start_is_also_a_boundary (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_lowercase_start_is_also_a_boundary) ... ok\ntest_markdown_link_url_does_not_split_inside_link (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_markdown_link_url_does_not_split_inside_link) ... ok\ntest_multiple_postposed_citations_with_spaces (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_multiple_postposed_citations_with_spaces) ... ok\ntest_nested_citation_preserves_locator_punctuation (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_nested_citation_preserves_locator_punctuation) ... ok\ntest_non_citation_bracket_cannot_lend_claim_backwards (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_non_citation_bracket_cannot_lend_claim_backwards) ... ok\ntest_original_unicode_offsets_and_whitespace_are_preserved (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_original_unicode_offsets_and_whitespace_are_preserved) ... ok\ntest_plain_genus_initial_has_two_explicit_readings (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_plain_genus_initial_has_two_explicit_readings) ... ok\ntest_postposed_citation_cannot_cover_following_unregistered_sentence (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_postposed_citation_cannot_cover_following_unregistered_sentence) ... ok\ntest_postposed_citation_stays_with_previous_sentence (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_postposed_citation_stays_with_previous_sentence) ... ok\ntest_quoted_terminal_then_citation (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_quoted_terminal_then_citation) ... ok\ntest_sin_fuente_marker_not_attached_to_preceding_sentence (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_sin_fuente_marker_not_attached_to_preceding_sentence) ... ok\ntest_terminal_period_after_postposed_citation (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_terminal_period_after_postposed_citation) ... ok\ntest_two_sentences_inside_outer_parentheses_do_not_share_claim (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_two_sentences_inside_outer_parentheses_do_not_share_claim) ... ok\ntest_url_internal_punctuation_and_terminal (tests.test_content_trace_sentence_boundaries.SentenceBoundaryTests.test_url_internal_punctuation_and_terminal) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.019s\n\nOK\n",
+    "limite": "Reejecución observada, no reemplaza adversarios independientes."
+  },
+  "censo_independiente_en_memoria": {
+    "utc": "2026-09-27T03:02:41Z",
+    "files_before": {
+      "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+      "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+      "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+      "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+      "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+      "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+      "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+      "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+      "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+      "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+      "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+      "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+      "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+      "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+      "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+      "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+      "data/apendices/F_magnitudes.csv": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+      "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+      "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+      "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+      "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+      "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+      "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+      "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+      "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+      "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+      "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+      "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+      "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+      "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+      "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+      "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+      "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+      "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+      "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+      "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+      "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+      "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+      "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+      "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+      "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+      "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+      "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+      "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+      "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+      "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+      "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+      "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+      "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+      "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+      "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+      "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+      "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+      "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+      "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+      "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+      "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+      "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+      "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+      "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+      "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+      "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+      "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+      "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+      "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+      "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+      "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+      "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+      "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+      "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+      "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+      "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+      "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+      "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+      "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+      "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+      "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+      "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+      "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+      "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+      "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+      "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+      "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+      "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+      "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+      "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+      "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+      "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+      "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+      "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+      "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+      "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+      "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+      "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+      "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+      "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+      "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+      "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+      "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+      "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+      "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+      "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+      "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+      "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+      "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+      "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+      "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+      "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+      "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+      "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+      "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e"
+    },
+    "files_after": {
+      "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+      "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+      "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+      "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+      "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+      "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+      "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+      "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+      "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+      "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+      "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+      "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+      "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+      "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+      "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+      "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+      "data/apendices/F_magnitudes.csv": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+      "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+      "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+      "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+      "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+      "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+      "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+      "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+      "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+      "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+      "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+      "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+      "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+      "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+      "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+      "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+      "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+      "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+      "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+      "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+      "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+      "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+      "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+      "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+      "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+      "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+      "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+      "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+      "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+      "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+      "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+      "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+      "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+      "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+      "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+      "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+      "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+      "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+      "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+      "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+      "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+      "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+      "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+      "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+      "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+      "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+      "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+      "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+      "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+      "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+      "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+      "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+      "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+      "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+      "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+      "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+      "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+      "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+      "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+      "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+      "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+      "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+      "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+      "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+      "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+      "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+      "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+      "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+      "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+      "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+      "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+      "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+      "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+      "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+      "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+      "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+      "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+      "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+      "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+      "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+      "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+      "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+      "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+      "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+      "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+      "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+      "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+      "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+      "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+      "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+      "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+      "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+      "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+      "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+      "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e"
+    },
+    "inputs_stable": true,
+    "deterministic_in_memory": true,
+    "payload_sha256": "169f0b302ab4ebcec88865e4de6aee63c376964eeb7bb943405738aec234052d",
+    "counts": {
+      "narrative": 2129,
+      "cells": 2664,
+      "total": 4793,
+      "narrative_without_C": 42,
+      "ambiguous_blocks": 1,
+      "ambiguous_boundaries": 3
+    },
+    "manifest_errors": [],
+    "payload_errors": [
+      "42 segmentos sustantivos carecen de C: docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L63; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L69; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L73; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L99; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L111; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L141; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L147; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L165; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L175; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L183; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L187; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L209; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L221; oración 3:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 1:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 3:prosa; docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md:L43; oración 2:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 4:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 4:prosa"
+    ],
+    "ambiguities": [
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "localizador": "L381",
+        "texto": "La pareja número–tiempo se documenta separadamente en Blochmannia: Degnan, Lazarus y Wernegreen estimaron 25 ORF perdidos o inactivados en B. floridanus y 4 en B. pennsylvanicus durante los 16–20 millones de años desde su divergencia. [C-2833–C-2834] Son reconstrucciones bajo un supuesto de repertorio ancestral, no recuentos exclusivamente de ADN eliminado ni un seguimiento experimental. [C-2833–C-2834; S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia] Los autores advierten que los datos no sitúan los puntos de aceleración o pérdida de cada gen en el linaje de B. floridanus: esos recuentos acumulados no dibujan una curva temporal continua. [C-2835; S562 Discussion, penúltimo párrafo]",
+        "sha256_texto_lf": "f4d55854af82c7f630db3c404cbeafdbaeafc353f26a18ef8c7347abf82cb948",
+        "base_offsets": "Unicode del bloque normalizado, no del archivo",
+        "fronteras": [
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 140,
+            "literal": "B. floridanus y 4 en B.",
+            "lectura_corte": [
+              [
+                0,
+                141
+              ],
+              [
+                142,
+                162
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                0,
+                162
+              ]
+            ]
+          },
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 161,
+            "literal": "B. pennsylvanicus durante los 16–20 millones de años desde su divergencia. [C-2833–C-2834]",
+            "lectura_corte": [
+              [
+                142,
+                162
+              ],
+              [
+                163,
+                250
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                142,
+                250
+              ]
+            ]
+          },
+          {
+            "razon": "AMBIGUA_INICIAL_EPITETO",
+            "offset_punto": 622,
+            "literal": "B. floridanus: esos recuentos acumulados no dibujan una curva temporal continua. [C-2835; S562 Discussion, penúltimo párrafo]",
+            "lectura_corte": [
+              [
+                511,
+                623
+              ],
+              [
+                624,
+                746
+              ]
+            ],
+            "lectura_abreviatura": [
+              [
+                511,
+                746
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "missing": [
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L63; oración 2",
+        "sha256": "be7979b2d9fd32a375ad9ce5c915520590abec4a4e844088589875ea305bf4cb",
+        "text": "El episodio muestra una discrepancia en datos seleccionados y modelado, no dos observaciones celulares incompatibles."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L69; oración 2",
+        "sha256": "eaf6aa63a2513ea9b5beb1e260a497ff4aeeb6ffad1f3657e824cf8ec155d0d1",
+        "text": "Esta práctica es convencional: no convierte dos topologías incompatibles en una sola ni resuelve por sí misma qué rango o código debe recibir cada nombre."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L73; oración 2",
+        "sha256": "a743b942335010f23c42c72aef689183f4541734f5ad299ea65bc4af36dc1c89",
+        "text": "Se trata como posición minoritaria porque no fue recuperada por las filogenómicas de dos dominios examinadas."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L99; oración 3",
+        "sha256": "322e6fe30021664160e6861f1cea360019f97659966f42e7591b2b564087d5b4",
+        "text": "Los experimentos y simulaciones acotan lo químicamente posible y algunos costes, pero no seleccionan una historia histórica única."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L111; oración 2",
+        "sha256": "b434ac2979fcd241452fa781ea7e255538cb99e71f8dd2b2381a6f5a4de22eda",
+        "text": "La frase defendible no es un porcentaje único de «genoma arqueano» o «genoma bacteriano», sino una lista condicionada por método."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L141; oración 3",
+        "sha256": "d180ba5a83b7dc47447e9358c1c599bcfa78815db67f13f509068b421c2310fa",
+        "text": "No existe una ecología única que pueda asignarse al clado completo."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L147; oración 2",
+        "sha256": "bc68c15527ed2b4896fcef2bdf263155daf69fd2d4904d6f59928fdf74440ed9",
+        "text": "No es una mera variante tipográfica."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L165; oración 3",
+        "sha256": "016e4149cacb1b765090015e7c19cc715d12ad286d7dd57b449394fcc6a97ad6",
+        "text": "La fuente no autoriza llamarlo cultivo puro ni convertir todos esos potenciales en flujos medidos."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L175; oración 3",
+        "sha256": "e17f9744b7aa88d7b53af2f991104dfccbac74bee47ba52b40673a9d8bbd040a",
+        "text": "Ninguna de esas magnitudes es una medición en un Hodarchaeales cultivado."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L183; oración 2",
+        "sha256": "ba56f59440e0a8341b45efb7a333dd333bc21e79be4d31be55cd3982e3e57fc7",
+        "text": "`linaje asgard más próximo a Eukaryota no resuelto` es, por tanto, la etiqueta correcta en esta fase."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L187; oración 2",
+        "sha256": "ea96f413a9976947560f403d84ff0e3be2b98e4a180bf8ec1082e28680304fa5",
+        "text": "La tabla separa la clase de evidencia, porque una secuencia con buen alineamiento no produce por sí sola un filamento, una vesícula ni un tráfico intracelular."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L209; oración 3",
+        "sha256": "35205cb06395f6f9b20ed0c0568b9906bb8bd811a792586ec924f3708b575ef5",
+        "text": "Para los otros linajes, la matriz dice `no consta` cuando los pasajes locales no aportan una ecología representativa y no lo convierte en ausencia."
+      },
+      {
+        "path": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "locator": "L221; oración 3",
+        "sha256": "3e7503a17c258da86f0636c5181d4e80c5da7d187b8493d10da4c6afad833f4f",
+        "text": "La etiqueta estable es `linaje alfaproteobacteriano más próximo a la mitocondria no resuelto`."
+      },
+      {
+        "path": "docs/secciones/004-03-3-eucariogenesis.md",
+        "locator": "L486; oración 1",
+        "sha256": "6fcada4c26be2c2e393096c0f4435c6a82493d42cc55eb463fd34789c1f42f25",
+        "text": "**Ficha de montaje H22.**"
+      },
+      {
+        "path": "docs/secciones/004-03-3-eucariogenesis.md",
+        "locator": "L486; oración 3",
+        "sha256": "ee69aec5b4840c09418f99e22300216a59238e79ef7104d865f6971b7719ac98",
+        "text": "Participantes, socio taxonómico, intercambio metabólico, dirección de intercambio y ambiente: **no hay valor publicado localizado** en S97 y S99 para esos campos; la inspección negativa se registra en BN-115 y no se transforma en la afirmación de que tales participantes o intercambios no existieran. [BN-115]"
+      },
+      {
+        "path": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
+        "locator": "L43; oración 2",
+        "sha256": "558244f3b9f7a8f23432b5b674e2a1f92414c5bcf746110dbb03b7a3cd05fead",
+        "text": "Para la raíz eucariota bajo el enraizamiento en Discoba publicaron una mediana de 1776 Ma y un máximo/mínimo de medianas de 1897/1670 Ma; bajo el enraizamiento en Amorphea, 1773 Ma y 1934/1703 Ma."
+      },
+      {
+        "path": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "locator": "L153; oración 1",
+        "sha256": "5b4cc8e8dfc2534da21cb3c0a6cbfd20528564437d917b8578fc793e4ebcb4ea",
+        "text": "**Ficha de la propuesta de escalada depredador–presa (H48).**"
+      },
+      {
+        "path": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "locator": "L153; oración 4",
+        "sha256": "f4516420ddf006edc5e589f161541a5e945d93700543c7246e75931ec48f06e4",
+        "text": "Falsador: se conserva exclusivamente en H48 del Apéndice E; no se duplica aquí."
+      },
+      {
+        "path": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "locator": "L155; oración 1",
+        "sha256": "d5781d059cd01c06319ba22f5bbdb8b6220b77d4222e4a0c3d160dc4ec5abac9",
+        "text": "**Ficha de la propuesta fagotrófica autógena (H15).**"
+      },
+      {
+        "path": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "locator": "L155; oración 4",
+        "sha256": "f530860ffc2b9521661eec908ef94e4476fbca114c146b19e121bdf8c17db7c6",
+        "text": "Falsador: una cronología robusta que situara esa maquinaria después de la endosimbiosis; se conserva nominalmente en H15 del Apéndice E."
+      },
+      {
+        "path": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "locator": "L240; oración 2",
+        "sha256": "834c91b4801ea322ee1a03c41cc738013b483ef89b75db9c4d325a84c9d3e789",
+        "text": "BN-118 no localizó cuándo apareció o se perdió cada modo en todos los nodos Eukaryota→Metazoa."
+      },
+      {
+        "path": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "locator": "L381; oración 1",
+        "sha256": "6ce3ac1bdecde290961edffb645cf34cb3b54a861fcd86ebf25b0b2a84bbf5fa",
+        "text": "La pareja número–tiempo se documenta separadamente en Blochmannia: Degnan, Lazarus y Wernegreen estimaron 25 ORF perdidos o inactivados en B."
+      },
+      {
+        "path": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "locator": "L381; oración 2",
+        "sha256": "87ca19786edec5272add6a09168f16b7ad08a79e02913c2a1337315b8f95cd6e",
+        "text": "floridanus y 4 en B."
+      },
+      {
+        "path": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "locator": "L381; oración 5",
+        "sha256": "088bc7a2224f60c2038830e3b1e0153be63afe31d9ec5b405db02fb7fa1fc714",
+        "text": "Los autores advierten que los datos no sitúan los puntos de aceleración o pérdida de cada gen en el linaje de B."
+      },
+      {
+        "path": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "locator": "L9; oración 1",
+        "sha256": "28a56e51a618fe86bf30e7c08085d824f93959b84805e4de0a08cd39137deef2",
+        "text": "La trazabilidad de conversiones queda explícita en el apéndice D: cuando S87 publica el nombre «Paleoproterozoico», la fila conserva ese término en el objeto y atribuye los límites 2500–1600 Ma a la tabla cronoestratigráfica S02; de igual modo, la fila de Capas Blancas conserva «Cenomaniano–Turoniano» junto a los límites de S02."
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L147; oración 1",
+        "sha256": "85dfb73e28bfd6f68a17083bdd6e3b970fd307cb172dfbb17b98a4a197567fcb",
+        "text": "- **Eukaryota.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L149; oración 1",
+        "sha256": "1ad51ed8386f54e1d825a00ac13c7922188514dd813210e69dfc46cb91d1eb97",
+        "text": "- **Amorphea.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L151; oración 1",
+        "sha256": "8ae553da12bf5aaa055f1ecd7df9cce4767e28d751f6cd181e51bf1ea1e605b0",
+        "text": "- **Amoebozoa.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L153; oración 1",
+        "sha256": "b5ed896eadf48085ba325b1cb6a9ba4b3e31c039b82e9b357fc11821e0dce327",
+        "text": "- **Obazoa.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L155; oración 1",
+        "sha256": "db3f06d88531209539e96248aeebc94f3245526971c496c4303b1ceda27f6699",
+        "text": "- **Apusomonadida.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L157; oración 1",
+        "sha256": "8c95d40444c74d86683a7ad464cc9d4ce4b549e980f7f18bdc0dc1b2c6ee44a2",
+        "text": "- **Breviatea.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L159; oración 1",
+        "sha256": "92a0423fac37bcb841137b5c3ce6c2391b15d4a038523671f3780e52949f5410",
+        "text": "- **Opisthokonta.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L161; oración 1",
+        "sha256": "dbd3c443c6331d4b6db9d6d8bb6439823516dc9ba4d2b2eaf497f1a7129b3289",
+        "text": "- **Holomycota.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L163; oración 1",
+        "sha256": "0210963110dd75c99b5e25c2b9c57f2cad3f290dbda429d8aac805f76956ccea",
+        "text": "- **Holozoa.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L165; oración 1",
+        "sha256": "9ba7e2b5ce5601e098a99f5784ddd4fc671f1474feb66360f1fc45a517c66692",
+        "text": "- **Ichthyosporea.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L167; oración 1",
+        "sha256": "34be811a00e09f42866cf1fd5982615817ec7f2f9ef87b646298efb9cf86e0a9",
+        "text": "- **Pluriformea *sensu* Hehenberger et al. 2017.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L169; oración 1",
+        "sha256": "f76c00b435d479f2a6e795dcf9c67cd0cf9b8c548dc47d273ae7555b5de518be",
+        "text": "- **Corallochytrea.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L171; oración 1",
+        "sha256": "ef6a92dd3ee903ab9ea54c5cb055de4a2cea0bc7962cda6dd007f71031e8c037",
+        "text": "- **Filasterea.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L173; oración 1",
+        "sha256": "071519f994a821bc14772df84439623d789fe2f9b66a164a9732ba2c48a8db86",
+        "text": "- **Filozoa.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L175; oración 1",
+        "sha256": "d442574bb12ffa5c0ee73c9ba7c385e61bd44eccc91070d97394b8bc3d1ce781",
+        "text": "- **Choanozoa *sensu stricto* ≈ Apoikozoa.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L177; oración 1",
+        "sha256": "954599c408f6aca45e62e501ebd83c7a1abf1d2c5b3ed6624bdffdf040a7faa3",
+        "text": "- **Choanoflagellata.**"
+      },
+      {
+        "path": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "locator": "L179; oración 1",
+        "sha256": "8294a4faf035a87e087a5e0dc258eaed21b535afa5a70052548419503685adcb",
+        "text": "- **Metazoa.**"
+      }
+    ]
+  },
+  "restricciones": [
+    "Sin cambios de código, prosa, canon, matriz persistente, contratos ni firmas.",
+    "El censo de 4793/42/3 no adjudica candidatos ni presencia de S/localizador.",
+    "NC-DEN01 sigue independiente y abierta.",
+    "Las escrituras de main de la fixture ocurrieron exclusivamente en TemporaryDirectory, no en producción.",
+    "Los fallos reportados pertenecen al hash revisado; no se atribuye sin diff causalidad histórica a todos ellos."
+  ]
+}

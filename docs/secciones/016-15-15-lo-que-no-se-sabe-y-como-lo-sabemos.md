@@ -94,9 +94,9 @@ Ninguna clase de evidencia del corpus resuelve por sí sola topología, edad, fi
 
 ## 15.4. Búsquedas negativas consolidadas
 
-El registro canónico contiene 497 búsquedas negativas activas y cada una porta exactamente una de las dos etiquetas exigidas. [C-1931] La auditoría separada conserva las 106 claves originales y la disposición de las 38 retiradas. [C-1931; registro canónico de búsquedas negativas; auditoría del 2026-08-08]
+El registro canónico contiene 494 búsquedas negativas activas y cada una porta exactamente una de las dos etiquetas exigidas. [C-1931] La auditoría separada conserva las 106 claves originales y la disposición de las 38 retiradas. [C-1931; registro canónico de búsquedas negativas; auditoría del 2026-08-08]
 
-Doce filas están marcadas `LA LITERATURA DECLARA QUE NO SE SABE`, 485 están marcadas `NO LOCALIZADO EN ESTA SESIÓN` y ninguna está marcada `NO BUSCADO`. [C-1932; C-1933; C-1934] Las exclusiones de alcance ya no inflan el denominador científico. [C-1932; C-1933; C-1934; registro canónico de búsquedas negativas]
+Doce filas están marcadas `LA LITERATURA DECLARA QUE NO SE SABE`, 482 están marcadas `NO LOCALIZADO EN ESTA SESIÓN` y ninguna está marcada `NO BUSCADO`. [C-1932; C-1933; C-1934] Las exclusiones de alcance ya no inflan el denominador científico. [C-1932; C-1933; C-1934; registro canónico de búsquedas negativas]
 
 `NO LOCALIZADO EN ESTA SESIÓN` registra un resultado de búsqueda y no demuestra inexistencia en toda la literatura. [C-1935; glosa de alcance del registro]
 

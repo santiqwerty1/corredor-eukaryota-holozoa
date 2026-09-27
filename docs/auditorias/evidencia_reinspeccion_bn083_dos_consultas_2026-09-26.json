@@ -1,0 +1,335 @@
+{
+  "fecha_finalizacion_registro_utc": "2026-09-26T21:51:56Z",
+  "ejecutor": "/root/verificacion_fuentes_nuevas",
+  "clave_bn": "BN-083",
+  "huella_fila_bn_sha256": "bc5344939f2920e9feabf408f6dd43d22f229e9e38a50d14b76d3d09bea175ce",
+  "fila_bn_inspeccionada": {
+    "clave": "BN-083",
+    "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+    "hueco": "Presupuestos energéticos directos y comparables para mantener rosetas de Salpingoeca rosetta, producir matriz extracelular en holozoos unicelulares, invertir o agregar láminas de Choanoeca flexa, celularizar Sphaeroforma arctica y comparar las rutas clonal, agregativa y cenocítica",
+    "términos exactos utilizados": "\"Salpingoeca rosetta rosette energetic cost ATP\"; \"choanoflagellate colony maintenance oxygen consumption\"; \"rosette growth rate cost\"; \"unicellular holozoan extracellular matrix energetic cost\"; \"Capsaspora ECM biosynthesis ATP cost\"; \"Choanoeca flexa energetic cost inversion aggregation\"; \"Choanoeca flexa growth tradeoff salinity\"; \"Sphaeroforma arctica cellularization energetic cost ATP\"; \"Sphaeroforma oxygen consumption cellularization\"; \"cost comparison clonal aggregative coenocytic multicellularity\"; \"energetic costs routes to multicellularity\"; \"choanoflagellate collar power dissipation metabolic cost\"; \"Iqbal choanoflagellate ATP oxygen consumption collar\"",
+    "resultado y motivo": "Fila maestra que consolida las búsquedas previas sobre rosetas, matriz extracelular, láminas de Choanoeca y celularización de Sphaeroforma. S549 modela hidrodinámicamente el flujo efectivo y la disipación de potencia de collares de coanoflagelados y localiza máximos geométricos parciales; no mide ATP, consumo de oxígeno, calor ni coste de crecimiento, ni compara las rutas clonal, agregativa y cenocítica en una unidad común. Por tanto reduce el hueco hidrodinámico sin cerrar el hueco metabólico (C-1612–C-1613)."
+  },
+  "clase_fecha": "REINSPECCION",
+  "alcance": "Reejecución actual y parcial de solo los dos términos adicionales collar/Iqbal; no certifica ejecución original ni las once consultas históricas y no cierra búsqueda maestra.",
+  "consultas": [
+    {
+      "id_consulta": "BN083-Q12",
+      "consulta_exacta": "choanoflagellate collar power dissipation metabolic cost",
+      "fecha_inicio_utc": "2026-09-26T21:46:34Z",
+      "fecha_fin_utc": "2026-09-26T21:46:35Z",
+      "servicio": "Herramienta de búsqueda web; search_query q; sin filtros de dominio ni fecha",
+      "parametros": {
+        "search_query": [
+          {
+            "q": "choanoflagellate collar power dissipation metabolic cost"
+          }
+        ],
+        "response_length": "long"
+      },
+      "ambito": "Resultados devueltos por una llamada sin paginación; términos enviados sin comillas de frase exacta ni operadores añadidos. No es el conjunto total indexado ni las otras once consultas de BN-083.",
+      "numero_resultados_devueltos": 26,
+      "respuesta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN083-Q12-web.txt",
+      "respuesta_temporal_sha256": "b2ed537ce714c46b98c4f2646de092e90e152f3d74525ba3b1a7462467b22baf",
+      "resultados_nominales": [
+        {
+          "titulo_devuelto": "Hydrodynamic functionality of the lorica in choanoflagellates - PMC",
+          "url_devuelta": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6364640/",
+          "estado_de_esta_pasada": "PASAJES_PRIMARIOS_INSPECCIONADOS_OTRO_ORGANISMO_Y_ESTIMACION_NO_BLANCO_BN083"
+        },
+        {
+          "titulo_devuelto": "Hydrodynamics constrain choanoflagellate collar geometry | Phys. Rev. Fluids",
+          "url_devuelta": "https://journals.aps.org/prfluids/abstract/10.1103/vzxt-rpf8",
+          "estado_de_esta_pasada": "S549_PUBLICADO_INSPECCIONADO_NO_RESUELVE_BLANCO_METABOLICO"
+        },
+        {
+          "titulo_devuelto": "Downloaded from orbit.dtu.dk on: Jun 13, 2026",
+          "url_devuelta": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/197460347/S266_Seyed_Saeed_Asadzadeh_PhD_Thesis.pdf",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Hydrodynamic functionality of the",
+          "url_devuelta": "https://physics.dtu.dk/-/media/institutter/fysik/research/fluids/fluid/english/publications/asadzadeh-et-al-2019.pdf",
+          "estado_de_esta_pasada": "PASAJES_PRIMARIOS_INSPECCIONADOS_OTRO_ORGANISMO_Y_ESTIMACION_NO_BLANCO_BN083"
+        },
+        {
+          "titulo_devuelto": "Hydrodynamics constrain choanoflagellate collar geometry",
+          "url_devuelta": "https://arxiv.org/abs/2605.25337",
+          "estado_de_esta_pasada": "PREPRINT_NO_SUSTITUYE_VERSION_APS_INSPECCIONADA"
+        },
+        {
+          "titulo_devuelto": "Filter-feeding, near-field flows, and the morphologies of colonial choanoflagellates - PMC",
+          "url_devuelta": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6054299/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "(PDF) Hydrodynamic functionality of the lorica in choanoflagellates",
+          "url_devuelta": "https://www.researchgate.net/publication/330252553_Hydrodynamic_functionality_of_the_lorica_in_choanoflagellates",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Choanocyte - an overview | ScienceDirect Topics",
+          "url_devuelta": "https://www.sciencedirect.com/topics/veterinary-science-and-veterinary-medicine/choanocyte",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Energy costs of the sponge pump - Welcome to DTU Research Database",
+          "url_devuelta": "https://orbit.dtu.dk/en/publications/energy-costs-of-the-sponge-pump/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Energy costs of the sponge pump - University of Southern Denmark",
+          "url_devuelta": "https://portal.findresearcher.sdu.dk/en/publications/energy-costs-of-the-sponge-pump/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Hydrodynamic functionality of the lorica in choanoflagellates - PubMed",
+          "url_devuelta": "https://pubmed.ncbi.nlm.nih.gov/30958164/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "The architecture of cell differentiation in choanoflagellates and sponge choanocytes - PMC",
+          "url_devuelta": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6481868/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Filter-feeding, near-field flows, and the morphologies of colonial choanoflagellates | Phys. Rev. E",
+          "url_devuelta": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.052401",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "The hydrodynamics of filter feeding in choanoflagellates - ScienceDirect",
+          "url_devuelta": "https://www.sciencedirect.com/science/article/pii/S0932473904700711",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "(PDF) Hydrodynamics constrain choanoflagellate collar geometry",
+          "url_devuelta": "https://www.researchgate.net/publication/405263908_Hydrodynamics_constrain_choanoflagellate_collar_geometry",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Filter-feeding, near-field flows, and the morphologies of colonial choanoflagellates",
+          "url_devuelta": "https://arxiv.org/abs/1607.02892",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "9/10/19, 10:28 PM",
+          "url_devuelta": "https://par.nsf.gov/servlets/purl/10113592",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanoflagellate",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "royalsocietypublishing.org/journal/rsif",
+          "url_devuelta": "https://par.nsf.gov/servlets/purl/10113588",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Untitled",
+          "url_devuelta": "https://ib.berkeley.edu/labs/koehl/pdfs/Koehl%2CChoanReview.pdf",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate and choanocyte collar‐flagellar systems and the assumption of homology",
+          "url_devuelta": "https://leyslab.weebly.com/uploads/5/4/9/4/54947267/choanoflagellate_and_choanocyte_collar-flagellar_systems_and_the_assumption_of_homology.pdf",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanocyte",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanocyte",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Choanozoa",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanozoa",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Crinolina isefiordensis",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Crinolina_isefiordensis",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Kragengeißeltierchen",
+          "url_devuelta": "https://de.wikipedia.org/wiki/Kragengei%C3%9Feltierchen",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Filozoa",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Filozoa",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        }
+      ],
+      "resultado": "Consulta realmente ejecutada; hay candidatos. En los pasajes primarios inspeccionados no se obtuvo una resolución del presupuesto metabólico directo del blanco BN-083. Los candidatos no leídos permanecen no adjudicados.",
+      "dictamen_ejecucion": "EJECUTADA",
+      "clase_fecha": "REINSPECCION"
+    },
+    {
+      "id_consulta": "BN083-Q13",
+      "consulta_exacta": "Iqbal choanoflagellate ATP oxygen consumption collar",
+      "fecha_inicio_utc": "2026-09-26T21:46:36Z",
+      "fecha_fin_utc": "2026-09-26T21:46:37Z",
+      "servicio": "Herramienta de búsqueda web; search_query q; sin filtros de dominio ni fecha",
+      "parametros": {
+        "search_query": [
+          {
+            "q": "Iqbal choanoflagellate ATP oxygen consumption collar"
+          }
+        ],
+        "response_length": "long"
+      },
+      "ambito": "Resultados devueltos por una llamada sin paginación; términos enviados sin comillas de frase exacta ni operadores añadidos. No es el conjunto total indexado ni las otras once consultas de BN-083.",
+      "numero_resultados_devueltos": 24,
+      "respuesta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN083-Q13-web.txt",
+      "respuesta_temporal_sha256": "9715c2c5894f4c28c0383a4bcce3a99ee054069de4efea457940ca5c921cde9e",
+      "resultados_nominales": [
+        {
+          "titulo_devuelto": "Hydrodynamics constrain choanoflagellate collar geometry",
+          "url_devuelta": "https://arxiv.org/abs/2605.25337",
+          "estado_de_esta_pasada": "PREPRINT_NO_SUSTITUYE_VERSION_APS_INSPECCIONADA"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate and choanocyte collar-flagellar systems and the assumption of homology - PubMed",
+          "url_devuelta": "https://pubmed.ncbi.nlm.nih.gov/24393465/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "What is it like to be a choanoflagellate? Sensation, processing and behavior in the closest unicellular relatives of animals - PMC",
+          "url_devuelta": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10770216/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanoflagellate",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Selective factors in the evolution of multicellularity in choanoflagellates - PubMed",
+          "url_devuelta": "https://pubmed.ncbi.nlm.nih.gov/32198827/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanocyte",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanocyte",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate and choanocyte collar‐flagellar systems and the assumption of homology - Mah - 2014 - Evolution & Development - Wiley Online Library",
+          "url_devuelta": "https://onlinelibrary.wiley.com/doi/10.1111/ede.12060",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanozoa",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Choanozoa",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellatea",
+          "url_devuelta": "https://es.wikipedia.org/wiki/Choanoflagellatea",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate and choanocyte collar‐flagellar systems and the assumption of homology - Mah - 2014 - Evolution & Development - Wiley Online Library",
+          "url_devuelta": "https://doi.org/10.1111%2Fede.12060",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate - an overview | ScienceDirect Topics",
+          "url_devuelta": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/choanoflagellate",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Prey capture in protists utilizing microtubule filled processes and surface motility - Bloodgood - 2020 - Cytoskeleton - Wiley Online Library",
+          "url_devuelta": "https://onlinelibrary.wiley.com/doi/10.1002/cm.21644",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanocyte - an overview | ScienceDirect Topics",
+          "url_devuelta": "https://www.sciencedirect.com/topics/veterinary-science-and-veterinary-medicine/choanocyte",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "The collar angle as a function of the total length of the collar... | Download Scientific Diagram",
+          "url_devuelta": "https://www.researchgate.net/figure/The-collar-angle-as-a-function-of-the-total-length-of-the-collar-microvilli-of-Monosiga_fig4_259606132",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "royalsocietypublishing.org/journal/rsif",
+          "url_devuelta": "https://par.nsf.gov/servlets/purl/10113588",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Clonal-aggregative multicellularity tuned by salinity in a choanoflagellate | Nature",
+          "url_devuelta": "https://www.nature.com/articles/s41586-026-10137-y",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "9/10/19, 10:28 PM",
+          "url_devuelta": "https://par.nsf.gov/servlets/purl/10113592",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Effects of cell morphology and attachment to a surface on the hydrodynamic performance of unicellular choanoflagellates.",
+          "url_devuelta": "https://pubmed.ncbi.nlm.nih.gov/30958167/",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate and choanocyte collar‐flagellar systems and the assumption of homology - Mah - 2014 - Evolution & Development - Wiley Online Library",
+          "url_devuelta": "https://onlinelibrary.wiley.com/doi/abs/10.1111/ede.12060",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Precambrian body plans",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Precambrian_body_plans",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "Proterospongia",
+          "url_devuelta": "https://en.wikipedia.org/wiki/Proterospongia",
+          "estado_de_esta_pasada": "NO_USADO_COMO_EVIDENCIA_PRIMARIA"
+        },
+        {
+          "titulo_devuelto": "SHORT REPORTS",
+          "url_devuelta": "https://journals.plos.org/plosbiology/article/file?id=10.1371%2Fjournal.pbio.3000226&type=printable",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "Choanoflagellate Transcriptional Regulation: Towards the Origin of Animal Cell Types",
+          "url_devuelta": "https://escholarship.org/content/qt46h6j54n/qt46h6j54n_noSplash_9b36165f0f129431964a4a5e588051bf.pdf",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        },
+        {
+          "titulo_devuelto": "on December 11, 2017",
+          "url_devuelta": "https://archimer.ifremer.fr/doc/00414/52509/53322.pdf",
+          "estado_de_esta_pasada": "CANDIDATO_NO_ADJUDICADO_EN_TEXTO_COMPLETO"
+        }
+      ],
+      "resultado": "Consulta realmente ejecutada; hay candidatos. En los pasajes primarios inspeccionados no se obtuvo una resolución del presupuesto metabólico directo del blanco BN-083. Los candidatos no leídos permanecen no adjudicados.",
+      "dictamen_ejecucion": "EJECUTADA",
+      "clase_fecha": "REINSPECCION"
+    }
+  ],
+  "inspeccion_primaria_adicional": {
+    "titulo": "Hydrodynamic functionality of the lorica in choanoflagellates",
+    "doi": "https://doi.org/10.1098/rsif.2018.0478",
+    "url_recuperacion": "https://physics.dtu.dk/-/media/institutter/fysik/research/fluids/fluid/english/publications/asadzadeh-et-al-2019.pdf",
+    "ruta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN083-candidato-lorica.pdf",
+    "sha256": "0d6391fbf3324abfad42f54904b184b543eb022de35d50df5a96952839e2416f",
+    "localizador": "p. 1, organismo del resumen; §3.2 Swimming motion and power expenditure, p. 7, último párrafo y fig. 7",
+    "resultado": "Estudia Diaphanoeca grandis. Compara potencia mecánica CFD con un presupuesto metabólico estimado mediante una relación alométrica y conversión oxicalorífica. No es medición directa por roseta de Salpingoeca ni comparación de las tres rutas del blanco maestro. No se convierte esta diferencia de objeto en ausencia universal.",
+    "limite": "No se reinspecciona cada sección, referencia o suplemento ni se añade este trabajo a A."
+  },
+  "S549_inspeccionado": {
+    "ruta_local": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf",
+    "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+    "auditoria_previa": "docs/auditorias/REVISION_S549_PUBLICADO_2026-09-26.md",
+    "localizador": "resumen; §§II–III y Appendix/Table II",
+    "resultado": "Modelo hidrodinámico; no presupuesto metabólico medido por roseta."
+  },
+  "incongruencia_de_ambito": "Las dos consultas son complementarias sobre collar e Iqbal y siguen siendo pertinentes para excluir S549 como resolución metabólica. No cubren por sí mismas matriz, celularización, láminas ni comparación de rutas. Sería incongruente atribuir a esta fecha una ejecución de los trece términos o cierre integral de BN-083.",
+  "errores_de_acceso": "PMC6364640 abrió una comprobación de navegador; Europe PMC fullTextXML para ese candidato devolvió HTTP 500; el PDF institucional primario se recuperó y permitió inspeccionar el pasaje.",
+  "limites": "Sin exhaustividad, sin resultado cero inventado, sin fecha original reconstruida, sin cambio de corpus, fuentes/, firmas previas o registros cronológicos."
+}

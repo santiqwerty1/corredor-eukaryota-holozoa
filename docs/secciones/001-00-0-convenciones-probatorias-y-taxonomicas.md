@@ -28,6 +28,16 @@ En su primera glosa se conservan juntos el término español y el inglés: atrac
 
 `dura*` relaciona un episodio o crono identificado en el sujeto con la duración publicada, y no calculada por el corpus, consignada en el objeto. [C-2570–C-2571] Ejemplo: C-2570 vincula el crono glacial Sturtiano con el intervalo publicado de 57,0–59,0 millones de años. [C-2570]
 
+`tiene_densidad_estimada*` relaciona un organismo o conjunto delimitado en el sujeto con una densidad inferida publicada, conservando en el objeto su unidad y el ámbito del modelo. [C-2822] Ejemplo: C-2822 vincula Sphaeroforma arctica con la densidad de intrones por kbp de secuencia codificante estimada mediante Malin en el análisis de S434; no la presenta como un recuento directo de todo el genoma. [C-2822; S434 Materials and methods, Comparative analysis of intron content]
+
+`tiene_recuento_inferido*` relaciona un conjunto delimitado en el sujeto con el número publicado de elementos que un procedimiento de inferencia asigna a ese conjunto, conservando la unidad y el muestreo en el objeto o sus calificadores. [C-1163; C-2824] Ejemplo: C-1163 vincula los genes nucleares clasificados como de origen mitocondrial por Wang y Wu con el recuento inferido de su muestra; C-2824 cuenta familias, no episodios de transferencia. [C-1163; C-2824; S560 Results and Discussion, Identifying mitochondria-derived nuclear genes]
+
+`tiene_proporcion_publicada*` relaciona un conjunto delimitado en el sujeto con la proporción publicada de una propiedad, conservando la unidad y el denominador en el objeto o sus calificadores. [C-2825; C-2828; C-2830; C-2832] No equipara publicación con validación independiente ni confunde clados, grupos de ortólogos y genes. [C-2825; C-2828; C-2832] Ejemplo: C-2828 relaciona los grupos candidatos a HGT de Rossoni y colaboradores con su proporción entre los grupos analizados; C-2830 expresa colocalización entre candidatos, no frecuencia de transferencias. [C-2828; C-2830]
+
+`tiene_limite_de_resolucion*` relaciona un análisis delimitado con una limitación de resolución declarada explícitamente por sus autores. [C-2835] Ejemplo: C-2835 vincula el análisis de Blochmannia de Degnan y colaboradores con la imposibilidad de situar temporalmente pérdidas particulares; no infiere ausencia de datos desde una búsqueda negativa. [C-2835]
+
+`tiene_parametro_DTL*` relaciona un conjunto de ramas filogenéticas con el parámetro publicado de duplicación, transferencia o pérdida estimado para ellas, conservando el estadístico y su dispersión. [C-2836–C-2837] Ejemplo: C-2836 registra la mediana y desviación estándar del parámetro de pérdida en ramas de establecimiento de endosimbiosis; no significa genes por año. [C-1120; C-2836]
+
 ## 0.1. Clases de evidencia
 
 Un genoma ensamblado a partir de metagenomas (*metagenome-assembled genome*, MAG) se genera ensamblando lecturas metagenómicas en contigs y agrupándolos en bins poblacionales. [C-006; S559 §Metagenome-assembled genomes] Ese procedimiento reconstruye secuencias desde una comunidad y no constituye por sí mismo una observación de la célula, su morfología ni su fisiología en cultivo. [C-006; S559 §Metagenome-assembled genomes]

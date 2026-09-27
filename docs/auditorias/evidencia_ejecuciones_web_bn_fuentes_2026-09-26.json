@@ -1,0 +1,717 @@
+{
+  "ejecuciones": [
+    {
+      "id": "bn120_search",
+      "queries": [
+        "Sphaeroforma arctica genome genes introns 121.6 Mb",
+        "Sphaeroforma arctica gene count intron density",
+        "Sphaeroforma arctica JP610 genome annotation genes"
+      ],
+      "inicio_utc": "2026-09-26 22:07:13 UTC",
+      "fin_utc": "2026-09-26 22:07:15 UTC",
+      "resultados_devuelto": 21,
+      "resultados": [
+        {
+          "titulo": "Details - Sphaeroforma_arctica_jp610_gca_001186125 - Ensembl Genomes 63",
+          "url": "https://protists.ensembl.org/Sphaeroforma_arctica_jp610_gca_001186125/Info/Annotation/"
+        },
+        {
+          "titulo": "SARC_02816 hypothetical protein [Sphaeroforma arctica JP610] - Gene - NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/25903320"
+        },
+        {
+          "titulo": "Sphaeroforma arctica JP610 | Proteomes",
+          "url": "https://www.uniprot.org/proteomes/UP000054560"
+        },
+        {
+          "titulo": "Mon2/Sec7/BIG1-like HUS domain-containing protein - Sphaeroforma arctica JP610 | UniProtKB",
+          "url": "https://www.uniprot.org/uniprotkb/A0A0L0FK68/entry"
+        },
+        {
+          "titulo": "RESEARCH ARTICLE",
+          "url": "https://elifesciences.org/articles/49801.pdf"
+        },
+        {
+          "titulo": "Browse ORF cDNA clones by species Sphaeroforma arctica JP610, page 1",
+          "url": "https://www.genscript.com/gene/667725/sphaeroforma-arctica-jp610"
+        },
+        {
+          "titulo": "Bråte, J., Neumann, R., Fromm, B., Haraldsen, A., Tarver, J., Suga,",
+          "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/174469174/1_s2.0_S0960982218310637_main.pdf"
+        },
+        {
+          "titulo": "SARC_03690 protein (Sphaeroforma arctica) - STRING interaction network",
+          "url": "https://string-db.org/network/667725.A0A0L0G4Z2"
+        },
+        {
+          "titulo": "A unicellular relative of animals generates a layer of polarized cells by actomyosin-dependent cellularization - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6855841/"
+        },
+        {
+          "titulo": "SARC_02649 hypothetical protein [ Sphaeroforma arctica JP610 ] - Gene - Data resources - CNGBdb",
+          "url": "https://db.cngb.org/data_resources/gene/25903153"
+        },
+        {
+          "titulo": "SARC_01335 protein (Sphaeroforma arctica) - STRING interaction network",
+          "url": "https://string-db.org/network/667725.A0A0L0GBY6"
+        },
+        {
+          "titulo": "SARC_03537 protein (Sphaeroforma arctica) - STRING interaction network",
+          "url": "https://string-db.org/network/667725.A0A0L0G5C0"
+        },
+        {
+          "titulo": "SARC_05002 gene cDNA ORF clone, Sphaeroforma arctica JP610 - GenScript",
+          "url": "https://www.genscript.com/gene/sphaeroforma-arctica-jp610/25905506/sarc_05002.html"
+        },
+        {
+          "titulo": "SARC_05139 protein (Sphaeroforma arctica) - STRING interaction network",
+          "url": "https://string-db.org/network/667725.A0A0L0G0J2"
+        },
+        {
+          "titulo": "Chromatin loops are an ancestral hallmark",
+          "url": "https://www.sebepedroslab.org/_files/ugd/d1ace5_5db642456eb846da85a6b03e2ca384b0.pdf"
+        },
+        {
+          "titulo": "L’origen de la multicel·lularitat a metazous,",
+          "url": "https://diposit.ub.edu/dspace/bitstream/2445/44592/4/ASP_PhD_THESIS.pdf"
+        },
+        {
+          "titulo": "Chapter 19",
+          "url": "https://par.nsf.gov/servlets/purl/10621757"
+        },
+        {
+          "titulo": "Sphaeroforma arctica",
+          "url": "https://en.wikipedia.org/wiki/Sphaeroforma_arctica"
+        },
+        {
+          "titulo": "Sphaeroforma arctica",
+          "url": "https://de.wikipedia.org/wiki/Sphaeroforma_arctica"
+        },
+        {
+          "titulo": "Evidence-based gene models for structural and functional annotations of the oil palm genome",
+          "url": "https://arxiv.org/abs/1702.07246"
+        },
+        {
+          "titulo": "Joint assembly and genetic mapping of the Atlantic horseshoe crab genome reveals ancient whole genome duplication",
+          "url": "https://arxiv.org/abs/1309.7402"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn120_search.txt"
+    },
+    {
+      "id": "bn121_search",
+      "queries": [
+        "Capsaspora owczarzaki aggregation energetic cost ATP maintenance",
+        "Ministeria vibrans aggregation metabolic cost energy maintenance",
+        "snowflake yeast multicellularity energetic cost maintenance ATP"
+      ],
+      "inicio_utc": "2026-09-26 22:07:36 UTC",
+      "fin_utc": "2026-09-26 22:07:37 UTC",
+      "resultados_devuelto": 28,
+      "resultados": [
+        {
+          "titulo": "De novo evolution of macroscopic multicellularity - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10425966/"
+        },
+        {
+          "titulo": "Emergence and maintenance of stable coexistence during a long-term multicellular evolution experiment - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090753/"
+        },
+        {
+          "titulo": "MuLTEE | The Multicellularity Long-Term Evolution Experiment",
+          "url": "https://multee.org/"
+        },
+        {
+          "titulo": "Oxygen suppression of macroscopic multicellularity | Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-021-23104-0"
+        },
+        {
+          "titulo": "Origins of multicellular evolvability in snowflake yeast - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4309424/"
+        },
+        {
+          "titulo": "Cellular packing, mechanical stress and the evolution of multicellularity - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6853058/"
+        },
+        {
+          "titulo": "Metabolically driven flows enable exponential growth in macroscopic multicellular yeast - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12180493/"
+        },
+        {
+          "titulo": "Experimental evolution of multicellularity - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/3277146/"
+        },
+        {
+          "titulo": "EXPLORING THE ECOLOGICAL AND EVOLUTIONARY CONSEQUENCES",
+          "url": "https://repository.gatech.edu/server/api/core/bitstreams/9b6a9be8-9297-48cd-baec-7f18d2de9679/content"
+        },
+        {
+          "titulo": "vol. 192, no. 6",
+          "url": "https://mrebolleda.github.io/files/AmNat_2018.pdf"
+        },
+        {
+          "titulo": "Maintenance-energy requirements and robustness of Saccharomyces cerevisiae at aerobic near-zero specific growth rates | TU Delft Repository",
+          "url": "https://repository.tudelft.nl/record/uuid%3Aa02bdca1-8fdd-4325-9115-1322ae953034"
+        },
+        {
+          "titulo": "Oxygen suppression of macroscopic multicellularity - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8121917/"
+        },
+        {
+          "titulo": "Evolution of Multicellularity: One from Many or Many from One? - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S096098222031246X"
+        },
+        {
+          "titulo": "History | MuLTEE",
+          "url": "https://multee.org/history.html"
+        },
+        {
+          "titulo": "Cellular organization in lab-evolved and extant multicellular species obeys a maximum entropy law",
+          "url": "https://arxiv.org/abs/2108.00425"
+        },
+        {
+          "titulo": "multicel",
+          "url": "https://par.nsf.gov/servlets/purl/10461035"
+        },
+        {
+          "titulo": "Geometry shapes evolution of early multicellularity",
+          "url": "https://arxiv.org/abs/1403.7556"
+        },
+        {
+          "titulo": "Geometry, packing, and evolutionary paths to increased multicellular size",
+          "url": "https://arxiv.org/abs/1802.03615"
+        },
+        {
+          "titulo": "Science Journals — AAAS",
+          "url": "https://pdfs.semanticscholar.org/a9af/100d48d69b6d7b89cce0738b1301de6030ed.pdf"
+        },
+        {
+          "titulo": "Annual Review of Biophysics",
+          "url": "https://www.annualreviews.org/docserver/fulltext/biophys/54/1/annurev-biophys-070524-090334.pdf?accname=guest&checksum=74CEA79D197A4188ECAD73693D30C0A5&expires=1778427543&id=id"
+        },
+        {
+          "titulo": "Dynamic Energy and Mass Budgets",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=e4114f891d8d020c4d76b218cbc20b7d12a5ae1e&repid=rep1&type=pdf"
+        },
+        {
+          "titulo": "Capsaspora owczarzaki",
+          "url": "https://de.wikipedia.org/wiki/Capsaspora_owczarzaki"
+        },
+        {
+          "titulo": "The Energetic Costs of Cellular Computation",
+          "url": "https://arxiv.org/abs/1203.5426"
+        },
+        {
+          "titulo": "Multicellular organism",
+          "url": "https://en.wikipedia.org/wiki/Multicellular_organism"
+        },
+        {
+          "titulo": "Cellular respiration",
+          "url": "https://en.wikipedia.org/wiki/Cellular_respiration"
+        },
+        {
+          "titulo": "Ministeria vibrans",
+          "url": "https://en.wikipedia.org/wiki/Ministeria_vibrans"
+        },
+        {
+          "titulo": "Energy charge",
+          "url": "https://en.wikipedia.org/wiki/Energy_charge"
+        },
+        {
+          "titulo": "Pasteur effect",
+          "url": "https://en.wikipedia.org/wiki/Pasteur_effect"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn121_search.txt"
+    },
+    {
+      "id": "bn130_search",
+      "queries": [
+        "Amoebozoa morphological synapomorphy universal exclusive",
+        "Amoebozoa diagnostic morphology"
+      ],
+      "inicio_utc": "2026-09-26 22:07:46 UTC",
+      "fin_utc": "2026-09-26 22:07:48 UTC",
+      "resultados_devuelto": 40,
+      "resultados": [
+        {
+          "titulo": "Evaluating Support for the Current Classification of Eukaryotic Diversity | PLOS Genetics",
+          "url": "https://journals.plos.org/plosgenetics/article?id=10.1371%2Fjournal.pgen.0020220"
+        },
+        {
+          "titulo": "Cytoskeletal architecture and its evolutionary significance in amoeboid eukaryotes and their mode of locomotion - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5043310/"
+        },
+        {
+          "titulo": "Systematics Protozoa",
+          "url": "https://www.nies.go.jp/chiiki1/protoz/systemat/s-protoz.htm"
+        },
+        {
+          "titulo": "doi:10.1016/j.ympev.2007.11.015",
+          "url": "https://www.science.smith.edu/departments/biology/lkatz/documents/Tekle_Amoebozoa_2008.pdf"
+        },
+        {
+          "titulo": "University of Massachusetts - Amherst",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=7131c1e3885f145e52341d23bb6f63cd76430a01&repid=rep1&type=pdf"
+        },
+        {
+          "titulo": "CDC - DPDx - Diagnostic Procedures - Stool Specimens",
+          "url": "https://cdc.gov/dpdx/diagnosticProcedures/stool/morphcomp.html"
+        },
+        {
+          "titulo": "Between a Pod and a Hard Test: The Deep Evolution of Amoebae - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5850466/"
+        },
+        {
+          "titulo": "Amoebozoa | Overview & Research Examples",
+          "url": "https://www.perlego.com/index/biological-sciences/amoebozoa"
+        },
+        {
+          "titulo": "The Amoebozoa - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4037983/"
+        },
+        {
+          "titulo": "A Revised Classification of Naked Lobose Amoebae (Amoebozoa: Lobosa) - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1434461011000319"
+        },
+        {
+          "titulo": "The Princeton Guide to Evolution",
+          "url": "https://www.kokkonuts.org/wp-content/uploads/jennions_kokko_2014_The_Princeton_Guide_to_Evolut.pdf"
+        },
+        {
+          "titulo": "Free-living amoebae and squatters in the wild: ecological and molecular features | FEMS Microbiology Reviews | Oxford Academic",
+          "url": "https://academic.oup.com/femsre/article/43/4/415/5484839"
+        },
+        {
+          "titulo": "Comprehensive Phylogenetic Reconstruction of Amoebozoa Based on Concatenated Analyses of SSU-rDNA and Actin Genes - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145751/"
+        },
+        {
+          "titulo": "Amoebozoans Are Secretly but Ancestrally Sexual: Evidence for Sex Genes and Potential Novel Crossover Pathways in Diverse Groups of Amoebae - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28087686/"
+        },
+        {
+          "titulo": "Amoebozoa - an overview | ScienceDirect Topics",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/amoebozoa"
+        },
+        {
+          "titulo": "Evolutionary history of clathrin-mediated",
+          "url": "https://ore.exeter.ac.uk/repository/bitstream/handle/10036/3484/CibrarioL.pdf?isAllowed=y&sequence=1"
+        },
+        {
+          "titulo": "Amoebozoa",
+          "url": "https://en.wikipedia.org/wiki/Amoebozoa"
+        },
+        {
+          "titulo": "Received: 25 September 2023  |  Revised: 1 December 2023  |  Accepted: 26 December 2023",
+          "url": "https://amoeba.msstate.edu/pdfs/Fry_etal.2024.CrackAmoebae.JEMB.pdf"
+        },
+        {
+          "titulo": "rsos.royalsocietypublishing.org",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cytoskeletal_architecture_and_its_evolutionary_significance_in_amoeboid_eukaryotes_and_their_mode_of_locomotion.pdf"
+        },
+        {
+          "titulo": "Amoebozoa",
+          "url": "https://fr.wikipedia.org/wiki/Amoebozoa"
+        },
+        {
+          "titulo": "Amorphea",
+          "url": "https://en.wikipedia.org/wiki/Amorphea"
+        },
+        {
+          "titulo": "Amoebozoa",
+          "url": "https://de.wikipedia.org/wiki/Amoebozoa"
+        },
+        {
+          "titulo": "Evosea",
+          "url": "https://en.wikipedia.org/wiki/Evosea"
+        },
+        {
+          "titulo": "Vampyrellida",
+          "url": "https://en.wikipedia.org/wiki/Vampyrellida"
+        },
+        {
+          "titulo": "Is there a phenotypic trait exclusive to and ubiquitous in Eumetazoa?",
+          "url": "https://www.reddit.com/r/biology/comments/1wj3155/is_there_a_phenotypic_trait_exclusive_to_and/"
+        },
+        {
+          "titulo": "Describing Amoebas",
+          "url": "https://arxiv.org/abs/1805.00273"
+        },
+        {
+          "titulo": "Pond Water ID help please! Closest organisms in our keys are walled amoebas… Seattle, WA",
+          "url": "https://www.reddit.com/r/microscopy/comments/qap8n4"
+        },
+        {
+          "titulo": "UniMorph 2.0: Universal Morphology",
+          "url": "https://arxiv.org/abs/1810.11101"
+        },
+        {
+          "titulo": "Do All Members of a Clade Have to Have a Trait for it To Be Considered a Synapamorphy?",
+          "url": "https://www.reddit.com/r/evolution/comments/oexzdd"
+        },
+        {
+          "titulo": "Help me identify these little red guys!",
+          "url": "https://www.reddit.com/r/mycology/comments/okdfvv"
+        },
+        {
+          "titulo": "What kind of Fungus is this? From AZ",
+          "url": "https://www.reddit.com/r/mycology/comments/otmedx"
+        },
+        {
+          "titulo": "A Nullstellensatz for amoebas",
+          "url": "https://arxiv.org/abs/math/0603201"
+        },
+        {
+          "titulo": "A morpho-kinematic and spectroscopic study of the bipolar nebulae: M 2-9, Mz 3, and Hen 2-104",
+          "url": "https://arxiv.org/abs/1509.05448"
+        },
+        {
+          "titulo": "[University evolutionary biology] What's the difference between homologous structures and synapomorphies? ELI5 please!",
+          "url": "https://www.reddit.com/r/HomeworkHelp/comments/19biupp"
+        },
+        {
+          "titulo": "What's the difference between synapomorphies and (sym)plesiomorphies?",
+          "url": "https://www.reddit.com/r/AskBiology/comments/wx9hu8"
+        },
+        {
+          "titulo": "If you traced back our ancestry, did humans ever have an amoeba-like ancestor?",
+          "url": "https://www.reddit.com/r/evolution/comments/1eszaum"
+        },
+        {
+          "titulo": "Is blob a large amoeba? Also, should amoeba be considered a kingdom? Should it be considered an animal?",
+          "url": "https://www.reddit.com/r/AskBiology/comments/1e7fvai"
+        },
+        {
+          "titulo": "Why are animals grouped as they are? Has genetic evidence supported it? I mean, we group ungulates by \"how many toes they have\" Why is that the right criteria among the endless choices we have?",
+          "url": "https://www.reddit.com/r/biology/comments/1ipmvwb"
+        },
+        {
+          "titulo": "Need Help Finding A Term",
+          "url": "https://www.reddit.com/r/evolution/comments/xozxo5"
+        },
+        {
+          "titulo": "Need help identifying what this is. I thought it may be a shelled amoeba, but prof says it’s a testate amoeba.",
+          "url": "https://www.reddit.com/r/microscopy/comments/pxl8bb"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn130_search.txt"
+    },
+    {
+      "id": "bn131_search",
+      "queries": [
+        "Ichthyosporea morphological synapomorphy universal exclusive",
+        "Ichthyosporea diagnostic morphology"
+      ],
+      "inicio_utc": "2026-09-26 22:07:48 UTC",
+      "fin_utc": "2026-09-26 22:07:50 UTC",
+      "resultados_devuelto": 23,
+      "resultados": [
+        {
+          "titulo": "Ichthyosporea - an overview | ScienceDirect Topics",
+          "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/ichthyosporea"
+        },
+        {
+          "titulo": "Ichthyosporea: a window into the origin of animals | Communications Biology",
+          "url": "https://www.nature.com/articles/s42003-024-06608-5"
+        },
+        {
+          "titulo": "Ichthyosporea: a window into the origin of animals - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11286789/"
+        },
+        {
+          "titulo": "Taxonomy browser Taxonomy Browser (Ichthyosporea)",
+          "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=127916&mode=Info"
+        },
+        {
+          "titulo": "Ichthyosporea",
+          "url": "https://tolweb.org/Ichthyosporea"
+        },
+        {
+          "titulo": "Evolutionary history of clathrin-mediated",
+          "url": "https://ore.exeter.ac.uk/repository/bitstream/handle/10036/3484/CibrarioL.pdf?isAllowed=y&sequence=1"
+        },
+        {
+          "titulo": "Ichthyosporea - an overview | ScienceDirect Topics",
+          "url": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/ichthyosporea"
+        },
+        {
+          "titulo": "Ichthyosporea - an overview | ScienceDirect Topics",
+          "url": "https://www.sciencedirect.com/topics/immunology-and-microbiology/ichthyosporea"
+        },
+        {
+          "titulo": "Ichthyosporea - an overview | ScienceDirect Topics",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/ichthyosporea"
+        },
+        {
+          "titulo": "Comparative morphology and genealogical delimitation of cryptic species of sympatric isolates of Sphaeroforma (Ichthyosporea, Opisthokonta) - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23352078/"
+        },
+        {
+          "titulo": "Sphaeroforma(イクチオスポレア, 後方鞭毛類)同所性分離隠蔽種の比較形態学と系統的分界 | 文献情報 | J-GLOBAL 科学技術総合リンクセンター",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201302236540274604"
+        },
+        {
+          "titulo": "Amphibian parasites of the Order Dermocystida (Ichthyosporea): current knowledge, taxonomic review and new records from Brazil.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30314064/"
+        },
+        {
+          "titulo": "Comparative Morphology and Genealogical Delimitation of Cryptic Species of Sympatric Isolates of Sphaeroforma (Ichthyosporea, Opisthokonta) - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1434461012001289"
+        },
+        {
+          "titulo": "Ichthyosporea",
+          "url": "https://en.wikipedia.org/wiki/Ichthyosporea"
+        },
+        {
+          "titulo": "Ichthyosporea",
+          "url": "https://de.wikipedia.org/wiki/Ichthyosporea"
+        },
+        {
+          "titulo": "NEW ICHTHYOSPOREAN PROTISTS AND THEIR BIOLOGY",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=13c2fe7ff998ebed75406b11dd417ec7a5cfee91&repid=rep1&type=pdf"
+        },
+        {
+          "titulo": "tesi_GTC_v3",
+          "url": "https://diposit.ub.edu/bitstreams/f668534f-8ebf-4fb0-8ca7-29945d3e505b/download"
+        },
+        {
+          "titulo": "Dermocystidium",
+          "url": "https://en.wikipedia.org/wiki/Dermocystidium"
+        },
+        {
+          "titulo": "中菌动物",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%8C%E5%8A%A8%E7%89%A9"
+        },
+        {
+          "titulo": "Chromosphaera perkinsii",
+          "url": "https://de.wikipedia.org/wiki/Chromosphaera_perkinsii"
+        },
+        {
+          "titulo": "Paramoebidium",
+          "url": "https://en.wikipedia.org/wiki/Paramoebidium"
+        },
+        {
+          "titulo": "Is there a 100% accurate way to differentiate between kingdoms?",
+          "url": "https://www.reddit.com/r/biology/comments/1em4mts"
+        },
+        {
+          "titulo": "Deep learning approach to description and classification of fungi microscopic images",
+          "url": "https://arxiv.org/abs/1906.09449"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn131_search.txt"
+    },
+    {
+      "id": "bn121_q1",
+      "queries": [
+        "Capsaspora owczarzaki aggregation energetic cost ATP maintenance"
+      ],
+      "inicio_utc": "2026-09-26 22:10:10 UTC",
+      "fin_utc": "2026-09-26 22:10:12 UTC",
+      "resultados_devuelto": 23,
+      "resultados": [
+        {
+          "titulo": "Lipids from a snail host regulate the multicellular behavior of a predator of parasitic schistosomes - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2589004224019497"
+        },
+        {
+          "titulo": "Energetic Constraints on Fungal Growth | The American Naturalist: Vol 187, No 2",
+          "url": "https://www.journals.uchicago.edu/doi/10.1086/684392"
+        },
+        {
+          "titulo": "Energetic Constraints on Fungal Growth | The American Naturalist: Vol 187, No 2",
+          "url": "https://www.journals.uchicago.edu/doi/full/10.1086/684392"
+        },
+        {
+          "titulo": "CAOG_01548 ATP-dependent protease ATP-binding subunit [Capsaspora owczarzaki ATCC 30864] - Gene - NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/14901231"
+        },
+        {
+          "titulo": "The Hippo kinase cascade regulates a contractile cell behavior and cell density in a close unicellular relative of animals",
+          "url": "https://doi.org/10.7554/eLife.90818.2.sa2"
+        },
+        {
+          "titulo": "ATP-dependent RNA helicase DRS1 [Capsaspora owczarzaki ATCC 30864] - Protein - NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/protein/XP_004364941.2"
+        },
+        {
+          "titulo": "generalized microbial cell model for methane biosignature predictions | Monthly Notices of the Royal Astronomical Society | Oxford Academic",
+          "url": "https://academic.oup.com/mnras/article/550/3/stag1300/8732237"
+        },
+        {
+          "titulo": "How much (ATP) does it cost to build a trypanosome? A theoretical study on the quantity of ATP needed to maintain and duplicate a bloodstream-form Trypanosoma brucei cell | PLOS Pathogens",
+          "url": "https://journals.plos.org/plospathogens/article?id=10.1371%2Fjournal.ppat.1011522"
+        },
+        {
+          "titulo": "How much (ATP) does it cost to build a trypanosome? A theoretical study on the quantity of ATP needed to maintain and duplicate a bloodstream-form Trypanosoma brucei cell - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10409291/"
+        },
+        {
+          "titulo": "Integrin-Mediated Adhesion in the Unicellular Holozoan Capsaspora owczarzaki - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0960982220311696"
+        },
+        {
+          "titulo": "Maintenance-energy requirements and robustness of Saccharomyces cerevisiae at aerobic near-zero specific growth rates - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27317316/"
+        },
+        {
+          "titulo": "Capsaspora owczarzaki ATCC 30864 ATP-dependent RNA helicase DRS1 mRNA - Nucleotide - NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/XM_004364884.2"
+        },
+        {
+          "titulo": "ATP requirements for growth reveal the bioenergetic impact of mitochondrial symbiosis",
+          "url": "https://docserv.uni-duesseldorf.de/servlets/DerivateServlet/Derivate-76137"
+        },
+        {
+          "titulo": "Annual Review of Biophysics",
+          "url": "https://www.annualreviews.org/docserver/fulltext/biophys/54/1/annurev-biophys-070524-090334.pdf?accname=guest&checksum=74CEA79D197A4188ECAD73693D30C0A5&expires=1778427543&id=id"
+        },
+        {
+          "titulo": "How much (ATP) does it cost to build a trypanosome? A theoretical study on the quantity of ATP needed to maintain and duplicate a bloodstream-form Trypanosoma brucei cell",
+          "url": "https://journals.plos.org/plospathogens/article/file?id=10.1371%2Fjournal.ppat.1011522&type=printable"
+        },
+        {
+          "titulo": "The Energetic Costs of Cellular Features and the Emergence of Cellular Complexity",
+          "url": "https://online.kitp.ucsb.edu/online/cellenergy19/lynch/pdf/Lynch_CellEnergy19_KITP.pdf"
+        },
+        {
+          "titulo": "Capsaspora owczarzaki",
+          "url": "https://de.wikipedia.org/wiki/Capsaspora_owczarzaki"
+        },
+        {
+          "titulo": "High-throughput",
+          "url": "https://repositori-api.upf.edu/api/core/bitstreams/0e5a54bd-7ed7-4c3e-a3c7-b2b5b06270b8/content"
+        },
+        {
+          "titulo": "January 2025",
+          "url": "https://api.icrea.cat/api/show-file/47483?token=e93QZVcbwi9MQxRz6wtTQzfAHr28aOEUdAPEPJfy2lA4d7E1KuZ61cSaXiLAPtqq"
+        },
+        {
+          "titulo": "ATP requirements for growth reveal the bioenergetic impact of mitochondrial symbiosis",
+          "url": "https://arxiv.org/abs/2503.16962"
+        },
+        {
+          "titulo": "The Energetic Costs of Cellular Computation",
+          "url": "https://arxiv.org/abs/1203.5426"
+        },
+        {
+          "titulo": "ATP consumption of eukaryotic flagella measured at a single-cell level",
+          "url": "https://arxiv.org/abs/1511.01820"
+        },
+        {
+          "titulo": "The free energy cost of accurate biochemical oscillations",
+          "url": "https://arxiv.org/abs/1506.05686"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn121_q1.txt"
+    },
+    {
+      "id": "bn121_q2",
+      "queries": [
+        "Ministeria vibrans aggregation metabolic cost energy maintenance"
+      ],
+      "inicio_utc": "2026-09-26 22:10:12 UTC",
+      "fin_utc": "2026-09-26 22:10:14 UTC",
+      "resultados_devuelto": 22,
+      "resultados": [
+        {
+          "titulo": "Un organismo unicelular marino revela que la capacidad de agruparse pudo ser clave para el origen de los animales - Institut de Biologia Evolutiva - CSIC UPF (UPF)",
+          "url": "https://www.ibe.upf-csic.es/es/news/-/asset_publisher/PXTgqZXxlocA/content/a-marine-unicellular-organism-reveals-that-the-ability-to-aggregate-may-have-been-key-to-the-origin-of-animals/maximized"
+        },
+        {
+          "titulo": "Read \"Nutrient Requirements of Nonhuman Primates: Second Revised Edition\" at NAP.edu",
+          "url": "https://www.nationalacademies.org/read/9826/chapter/4"
+        },
+        {
+          "titulo": "Drivers of Bacterial Maintenance and Minimal Energy Requirements - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5281582/"
+        },
+        {
+          "titulo": "Cost of growth in cells and organisms: general rules and comparative aspects.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8193215/"
+        },
+        {
+          "titulo": "A physical model of cell metabolism - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5974398/"
+        },
+        {
+          "titulo": "Metabolic adaptation to decreases in energy intake due to changes in the energy cost of low energy expenditure regimen.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2408254/"
+        },
+        {
+          "titulo": "Energetic mechanisms for coping with changes in resource availability - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7728673/"
+        },
+        {
+          "titulo": "Dynamic Energy and Mass Budgets",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=e4114f891d8d020c4d76b218cbc20b7d12a5ae1e&repid=rep1&type=pdf"
+        },
+        {
+          "titulo": "The metabolic rate of the biosphere and its components - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10288578/"
+        },
+        {
+          "titulo": "Growth, metabolic partitioning, and the size of microorganisms - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3258615/"
+        },
+        {
+          "titulo": "(PDF) A close unicellular relative reveals aggregative multicellularity was key to the evolution of animals",
+          "url": "https://www.researchgate.net/publication/391800112_A_close_unicellular_relative_reveals_aggregative_multicellularity_was_key_to_the_evolution_of_animals"
+        },
+        {
+          "titulo": "Frontiers | Drivers of Bacterial Maintenance and Minimal Energy Requirements",
+          "url": "https://doi.org/10.3389/fmicb.2017.00031"
+        },
+        {
+          "titulo": "Frontiers | Drivers of Bacterial Maintenance and Minimal Energy Requirements",
+          "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.00031/full"
+        },
+        {
+          "titulo": "Microbial maintenance energy quantified and modeled with",
+          "url": "https://www.osti.gov/servlets/purl/1874049"
+        },
+        {
+          "titulo": "The Bioenergetics",
+          "url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/21442/2/02whole.pdf"
+        },
+        {
+          "titulo": "Dynamic Energy and Mass Budgets",
+          "url": "https://www.bio.vu.nl/thb/research/bib/Kooy2000.pdf"
+        },
+        {
+          "titulo": "ENERGY BUDGET AND ASPECTS OF ENERGY M",
+          "url": "https://storre.stir.ac.uk/bitstream/1893/1808/4/Energy%20Budget%20and%20Aspects%20of%20Energy%20Metabolism%20by%20S%20C%20Chakraborty%20%281992%29.pdf"
+        },
+        {
+          "titulo": "Ministeria vibrans",
+          "url": "https://en.wikipedia.org/wiki/Ministeria_vibrans"
+        },
+        {
+          "titulo": "http://www.diva-portal.org",
+          "url": "https://uu.diva-portal.org/smash/get/diva2%3A1724925/FULLTEXT01"
+        },
+        {
+          "titulo": "Ministeria",
+          "url": "https://de.wikipedia.org/wiki/Ministeria"
+        },
+        {
+          "titulo": "Metabolic heat in microbial conflict and cooperation",
+          "url": "https://arxiv.org/abs/2005.04796"
+        },
+        {
+          "titulo": "Dynamic energy budget theory",
+          "url": "https://en.wikipedia.org/wiki/Dynamic_energy_budget_theory"
+        }
+      ],
+      "formato": "Búsqueda web sin filtros, texto exacto sin operadores de frase; cuando hay varias consultas la herramienta devuelve un lote combinado sin asignar cada resultado a una consulta concreta.",
+      "raw_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/bn121_q2.txt"
+    }
+  ],
+  "limites": "Resultados nominales del buscador, no censo bibliográfico universal ni certificación de lectura completa de cada candidato. Sitios secundarios devueltos se conservan como resultados, pero no sustentan dictámenes científicos."
+}

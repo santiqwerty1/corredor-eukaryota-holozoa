@@ -2158,7 +2158,7 @@
         "15.5. Registro de afirmaciones de la sección 15"
       ],
       "csv_path": "data/afirmaciones/15.csv",
-      "row_count": 916,
+      "row_count": 941,
       "column_count": 12,
       "columns": [
         "#",
@@ -2239,7 +2239,7 @@
         "15.4.3. Raíz eucariota y corredor filogenético"
       ],
       "csv_path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
-      "row_count": 17,
+      "row_count": 19,
       "column_count": 5,
       "columns": [
         "clave",
@@ -2288,7 +2288,7 @@
         "15.4.5. Asociación, integración y transferencia"
       ],
       "csv_path": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
-      "row_count": 87,
+      "row_count": 83,
       "column_count": 5,
       "columns": [
         "clave",
@@ -2383,7 +2383,7 @@
         "15.4.9. Multicelularidad y repertorio preanimal"
       ],
       "csv_path": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
-      "row_count": 69,
+      "row_count": 68,
       "column_count": 5,
       "columns": [
         "clave",
@@ -2405,7 +2405,7 @@
         "17.A. Apéndice A. Fuentes"
       ],
       "csv_path": "data/apendices/A_fuentes.csv",
-      "row_count": 524,
+      "row_count": 527,
       "column_count": 9,
       "columns": [
         "clave",
@@ -2431,7 +2431,7 @@
         "17.B. Apéndice B. Entidades"
       ],
       "csv_path": "data/apendices/B_entidades.csv",
-      "row_count": 1498,
+      "row_count": 1518,
       "column_count": 5,
       "columns": [
         "etiqueta preferida",
@@ -2530,7 +2530,7 @@
         "17.F. Apéndice F. Magnitudes"
       ],
       "csv_path": "data/apendices/F_magnitudes.csv",
-      "row_count": 572,
+      "row_count": 620,
       "column_count": 9,
       "columns": [
         "magnitud",

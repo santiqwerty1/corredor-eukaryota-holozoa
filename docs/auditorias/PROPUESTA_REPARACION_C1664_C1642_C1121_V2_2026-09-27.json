@@ -1,0 +1,576 @@
+{
+  "version": 2,
+  "autor": "/root",
+  "fecha_utc": "2026-09-27T02:42:25Z",
+  "estado": "PROPUESTA_V2_NO_INTEGRADA_SIN_REVISION_INDEPENDIENTE",
+  "alcance": "Reparación nominal C1664 (atomicidad, atribución, magnitudes, densidad), original restringido C1121, BN111 no convertida en inexistencia C1642. No censo científico global; no aprobación C1665 de S460. Las cinco C nuevas se reservan después del paqueteS240/S352.",
+  "C_correcciones": [
+    {
+      "ruta": "data/afirmaciones/13.csv",
+      "claim_id": "C-1664",
+      "anterior": {
+        "#": "C-1664",
+        "Afirmación": "Se han reconstruido al menos 223 orígenes de parasitismo en 15 filos animales y al menos 16 orígenes de simbiosis obligada en 89 familias de insectos, pero no una frecuencia pan-eucariota de parasitismo intracelular o simbiosis obligada.",
+        "Sujeto": "orígenes de parasitismo y simbiosis obligada en muestreos restringidos",
+        "Predicado": "tiene_numero_de_origenes*",
+        "Objeto": "≥223 en Animalia y ≥16 en insectos",
+        "Atribución": "sintesis(C-1121)",
+        "Fuente": "S517 resumen; S513 resultados; BN-113",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Las definiciones y denominadores difieren: parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no representa Eukaryota.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "a2cf038097ae07d496c0ed44452535830cbc222599c77c4c2635741c1ab84161",
+      "propuesta": {
+        "#": "C-1664",
+        "Afirmación": "Weinstein y Kuris reconstruyeron al menos 223 orígenes independientes de parasitismo en un censo restringido a animales como consumidores y presas/huéspedes, definido por alimentación sobre un único individuo huésped durante al menos una fase vital.",
+        "Sujeto": "orígenes independientes de parasitismo en el censo de Animalia de Weinstein y Kuris 2016",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "al menos 223 orígenes de parasitismo",
+        "Atribución": "expresa",
+        "Fuente": "S517 Results and discussion, primer párrafo, p. 2: «at least 223 times»; Material and methods, primer párrafo, p. 2: «only Animalia as both consumers and prey/hosts», «single individual» y «during at least one life-history stage»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Reconstrucción bibliográfica de grupos monofiléticos con filogenias disponibles bajo la definición operacional declarada. El mínimo depende de definición, resolución filogenética y conocimiento de ciclos; no mide una frecuencia pan-eucariota ni sólo parasitismo intracelular. El método incluye parasitoides, castradores, macroparásitos y patógenos y excluye micropredadores y asociaciones no alimentarias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_propuesta": "dba2bd472308d2dd96cd56613051298748d8b1b8a5cb2c133050e7632ff96b12"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "claim_id": "C-1121",
+      "anterior": {
+        "#": "C-1121",
+        "Afirmación": "En 1.850 simbiosis distribuidas en 402 familias de insectos, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos.",
+        "Sujeto": "simbiosis obligadas de insectos en Cornwallis et al.",
+        "Predicado": "tiene_correlato*",
+        "Objeto": "baja disponibilidad de vitaminas B",
+        "Atribución": "expresa",
+        "Fuente": "S513 resumen; resultados nutricionales; BN-044",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es un correlato del muestreo de insectos y no una condición suficiente y necesaria que prediga obligatoriedad en cualquier asociación.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "87a6a1c8d31a2d2911ba48158957cc5b81ef5216a1646dd5d01c7a850b2891b1",
+      "propuesta": {
+        "#": "C-1121",
+        "Afirmación": "En 1.850 simbiosis distribuidas en 402 familias de insectos, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos.",
+        "Sujeto": "simbiosis obligadas de insectos en Cornwallis et al.",
+        "Predicado": "tiene_correlato*",
+        "Objeto": "baja disponibilidad de vitaminas B: correlación filogenética −0.32 (CI −0.54 a −0.09; pMCMC = 0.006)",
+        "Atribución": "expresa",
+        "Fuente": "S513 Nutrient deficiencies and obligate symbiosis, P12: «only one dietary component» y «across all feeding niches»; Abstract, P1, muestreo; Methods → General statistical methods → MR-BPMMs, P53, modos posteriores e intervalos; Methods → Specific analyses → Nutritional deficiencies and the evolution of obligate symbiosis, P65",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Correlato a escala familiar, no condición causal universal. El MR-BPMM relaciona proporción de especies con simbiontes obligados por familia y contenido dietario; r filogenética −0.32, intervalo creíble del 95 % −0.54 a −0.09, pMCMC = 0.006. P53 presenta modos posteriores e intervalos del 95 %; P12 define credible interval y pMCMC como proporción de iteraciones corregida por tamaño finito.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_propuesta": "d94d854e9741f881c49bd1cb4b728500baa907d596349ea1996b5112a411ada8"
+    },
+    {
+      "ruta": "data/afirmaciones/13.csv",
+      "claim_id": "C-1642",
+      "anterior": {
+        "#": "C-1642",
+        "Afirmación": "No existe una cronología de inicio y etapas intermedias comparable para todas las endosimbiosis documentadas en este corpus.",
+        "Sujeto": "tiempo desde endosimbiosis hasta integración actual",
+        "Predicado": "carece_de_cronología_comparable*",
+        "Objeto": "serie temporal completa entre sistemas",
+        "Atribución": "glosa",
+        "Fuente": "BN-111",
+        "Aceptación": "no evaluado",
+        "Fuerza": "desconocida",
+        "Motivo": "Las fuentes suelen fechar divergencias u orígenes de clado y describir el estado presente, no una serie temporal completa.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "5bb6205fdc2d624ca7284d8385e058c1e9efa5866e1bd38932c62106a23b7c24",
+      "propuesta": {
+        "#": "C-1642",
+        "Afirmación": "La búsqueda BN-111 registró «NO LOCALIZADO EN ESTA SESIÓN» para una cronología completa y comparable del inicio y las etapas de integración de las endosimbiosis del corpus.",
+        "Sujeto": "búsqueda BN-111 sobre cronología comparada de integración endosimbiótica",
+        "Predicado": "tiene_estado*",
+        "Objeto": "NO LOCALIZADO EN ESTA SESIÓN",
+        "Atribución": "glosa",
+        "Fuente": "BN-111 campos hueco, términos exactos y resultado o motivo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "desconocida",
+        "Motivo": "Glosa del resultado registrado en BN-111, no afirmación de inexistencia. Su registro conserva anclas parciales; no se reejecuta aquí la consulta ni se convierte su alcance en exhaustividad de la literatura.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "sha256_propuesta": "e9cc41c859829fb3258b5e5de0a867dceb2b3f50c4f7231f2f475ab814d87db8"
+    },
+    {
+      "ruta": "data/afirmaciones/13.csv",
+      "claim_id": "C-1665",
+      "anterior": {
+        "#": "C-1665",
+        "Afirmación": "La revisión de Bartošová-Sojková et al. documenta transiciones paralelas en Kinetoplastea, Holomycota y Apicomplexa, pero no usa esos tres grupos como denominador de todos los eucariotas.",
+        "Sujeto": "revisión de parasitismo intracelular de Bartošová-Sojková et al.",
+        "Predicado": "no_equivale_a*",
+        "Objeto": "estimación pan-eucariota de frecuencia",
+        "Atribución": "expresa",
+        "Fuente": "S460 resumen y alcance",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La fila queda limitada a S460; los recuentos animales o de insectos y sus denominadores distintos permanecen en C-1664 y no se transfieren a esta afirmación.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "6b3e76fd3c3f40814b70e4ad188712913fd9704023b1cc3ca69fe4e00a025773",
+      "propuesta": {
+        "#": "C-1665",
+        "Afirmación": "La revisión de Bartošová-Sojková et al. documenta transiciones paralelas en Kinetoplastea, Holomycota y Apicomplexa, pero no usa esos tres grupos como denominador de todos los eucariotas.",
+        "Sujeto": "revisión de parasitismo intracelular de Bartošová-Sojková et al.",
+        "Predicado": "no_equivale_a*",
+        "Objeto": "estimación pan-eucariota de frecuencia",
+        "Atribución": "expresa",
+        "Fuente": "S460 resumen y alcance",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La fila queda limitada a S460; los recuentos animales o de insectos y sus denominadores distintos permanecen en C-1664 y C-2879–C-2881 y no se transfieren a esta afirmación.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_propuesta": "3a53cfcbde06ea440bd1d769eb8a56cbc66f4a928b3a5d798cb6f66c89256d2c"
+    }
+  ],
+  "C_altas": [
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2879",
+        "Afirmación": "Weinstein y Kuris registraron presencia de parasitismo en 15 filos animales de su censo.",
+        "Sujeto": "filos animales con parasitismo en el censo de Weinstein y Kuris 2016",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "15 filos",
+        "Atribución": "expresa",
+        "Fuente": "S517 Results and discussion, segundo párrafo, p. 2: «Parasites are present in 15»; Material and methods, p. 2",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Recuento de presencia por filo en el inventario operacional de la fuente; no equivale al número de orígenes ni al número de especies parasitarias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "a62578badc9e9d7f2d8a826c9fb5a87cf8719bfa25cc767fbc417c616b8ef1bb"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2880",
+        "Afirmación": "Cornwallis y colaboradores reconstruyeron al menos 16 orígenes independientes de simbiosis obligada en su filogenia de familias de insectos.",
+        "Sujeto": "orígenes de simbiosis obligada en la filogenia de familias de insectos de Cornwallis et al. 2023",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "al menos 16 orígenes",
+        "Atribución": "expresa",
+        "Fuente": "S513 Evolutionary origins of obligate symbiosis, párrafo P7: «at least 16 independent origins»; Methods → Specific analyses, The number of origins of obligate symbiosis, P60–P61",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Reconstrucción BPMM de dependencia obligada o efectivamente obligada a escala familiar; estados nodales asignados con probabilidad posterior mayor que 0.5, contraste con mapas estocásticos. El mínimo no resuelve todas las transiciones dentro de familias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "dcc1ba1e1b4e8dc0a70a41f77874b7ee89f71182bcb2197d7e59e0736c7cce90"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2881",
+        "Afirmación": "Cornwallis y colaboradores distribuyeron las simbiosis obligadas de su censo en 89 familias de insectos.",
+        "Sujeto": "familias de insectos con simbiosis obligada en Cornwallis et al. 2023",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "89 familias de insectos",
+        "Atribución": "expresa",
+        "Fuente": "S513 Evolutionary origins of obligate symbiosis, párrafo P7: «spread across 89 insect families»; Methods → Criteria for assessing obligate symbiosis, P35–P37",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Recuento de familias con asociaciones que satisfacen los criterios operacionales de dependencia de la fuente; no es número de orígenes ni cobertura de todos los eucariotas.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "b780d4bf36e3531970136cb77ae2dc510f718a0a32c0af876b527523694cc43d"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2882",
+        "Afirmación": "BN-113 registra «NO LOCALIZADO EN ESTA SESIÓN» para una estimación pan-eucariota de la frecuencia de origen del parasitismo intracelular o de la simbiosis obligada.",
+        "Sujeto": "resultado de búsqueda registrado en BN-113",
+        "Predicado": "tiene_estado*",
+        "Objeto": "NO LOCALIZADO EN ESTA SESIÓN",
+        "Atribución": "glosa",
+        "Fuente": "BN-113 campos hueco, términos exactos y resultado o motivo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "desconocida",
+        "Motivo": "Glosa del objeto documental BN-113 y de su universo declarado. No afirma inexistencia de tales estimaciones ni eleva la búsqueda a censo exhaustivo; los resultados acotados de S517 y S513 se registran por separado.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "e7a338b78f34f25153d8fc222d348f27f90d2bee1a750fb984d86e308a87bbec"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2883",
+        "Afirmación": "Cornwallis y colaboradores señalaron que, sin filogenias de especies, no puede resolverse el número exacto de orígenes de simbiosis obligada dentro de las familias que contienen especies con y sin simbiontes obligados.",
+        "Sujeto": "número exacto de orígenes de simbiosis obligada dentro de familias mixtas en Cornwallis et al. 2023",
+        "Predicado": "tiene_estado*",
+        "Objeto": "no resoluble sin filogenias de especies en ese análisis",
+        "Atribución": "expresa",
+        "Fuente": "S513 Evolutionary origins of obligate symbiosis, párrafo P7: «without species phylogenies the exact number of origins cannot be resolved»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La negativa se limita a la resolución del análisis publicado a nivel familiar; no implica que el número sea incognoscible ni niega evidencia fuera del estudio.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "2e4ebb642f7dec368a34537e0fa9cfcc20100919e2b36ebac311243e00a0c575"
+    }
+  ],
+  "prosa": [
+    {
+      "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+      "linea": 165,
+      "anterior": "Weinstein y Kuris reconstruyeron al menos 223 orígenes de parasitismo en 15 filos animales; Cornwallis y colaboradores, al menos 16 orígenes de simbiosis obligada en 89 familias de insectos. [C-1664] Parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no es un denominador de Eukaryota: la frecuencia pan-eucariota permanece sin localizar. [C-1664; S517 resumen; S513 resultados; BN-113]",
+      "sha256_anterior": "f7771a109717b88ce66c859d20bf420efb765f93132e29d83cc5037d15277fab",
+      "propuesta": "Weinstein y Kuris reconstruyeron al menos 223 orígenes independientes de parasitismo y registraron su presencia en 15 filos animales, restringiendo consumidores y presas/huéspedes a Animalia y definiendo alimentación sobre un único individuo huésped durante al menos una fase vital. [C-1664; C-2879; S517 Results and discussion, primer y segundo párrafos, p. 2; Material and methods, primer párrafo, p. 2] Cornwallis y colaboradores reconstruyeron al menos 16 orígenes de simbiosis obligada distribuidos en 89 familias de insectos, con límites de resolución dentro de las familias. [C-2880–C-2881; C-2883; S513 Evolutionary origins of obligate symbiosis, P7; Methods → Specific analyses, P60–P61] El resultado documental de BN-113 sigue siendo «NO LOCALIZADO EN ESTA SESIÓN» para la estimación pan-eucariota buscada; no se afirma que tal estimación no exista. [C-2882; BN-113 términos exactos y resultado; glosa]"
+    },
+    {
+      "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+      "linea": 182,
+      "anterior": "No se localizó una partición universal y exhaustiva de orígenes multicelulares para las tres rutas de este corpus ni una frecuencia pan-eucariota de parasitismo intracelular o simbiosis obligada; los recuentos de animales e insectos conservan denominadores restringidos. [C-1606; C-1662; C-1664; S458; BN-113; S517; S513]",
+      "sha256_anterior": "b4658d9d1a5a27e1ce93dea6cd59eccbc63f75cca4bbe01958520b4cd7b86a12",
+      "propuesta": "No se localizó una partición universal y exhaustiva de orígenes multicelulares para las tres rutas de este corpus ni una frecuencia pan-eucariota de parasitismo intracelular o simbiosis obligada; los recuentos de animales e insectos conservan denominadores restringidos. [C-1606; C-1662; C-1664; C-2879–C-2883; S458; BN-113; S517 Results and discussion, p. 2; S513 Evolutionary origins of obligate symbiosis, P7]",
+      "alcance": "Sólo actualización de referencias para resultados separados; no adjudica aquí la proposición de multicelularidad."
+    },
+    {
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "linea": 383,
+      "anterior": "En 1.850 simbiosis distribuidas en 402 familias de insectos, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos. [C-1121] Es un correlato de ese muestreo, no una condición suficiente y necesaria para cualquier asociación. [C-1121; C-1201; S513 resumen; resultados nutricionales; BN-044]",
+      "sha256_anterior": "b34a2086dc25db803e6d093919a99248ffe9b6932152b691b79ce8ddea454e58",
+      "propuesta": "En el análisis por familias del conjunto de 1.850 combinaciones microbio–insecto distribuidas en 402 familias, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos (correlación filogenética −0.32; intervalo creíble del 95 % −0.54 a −0.09; pMCMC = 0.006). [C-1121; S513 Abstract, P1; Nutrient deficiencies and obligate symbiosis, P12; Methods, P53 y P65] Es un correlato de ese muestreo, no una condición suficiente y necesaria para cualquier asociación. [C-1121; C-1201; S513 Nutrient deficiencies and obligate symbiosis, P12; BN-044 términos exactos y resultado]"
+    }
+  ],
+  "derivados_a_actualizar": [
+    "C1665 motivo; sin aprobación científica nueva",
+    "mapeo/procedencia/magnitudes/tablalineage/contenttrace",
+    "referencias C en disposiciones R0271/R0281/R0286/R0287 conservando estados",
+    "accesoS517 y todos los impactos C→S, cronología e inventario fuentes",
+    "render y manifiesto"
+  ],
+  "artefactos": [
+    {
+      "clave": "S517",
+      "ruta_temporal": "/tmp/s517-c1664-20260927.wRKfUK/S517-author-copy.pdf",
+      "destino_propuesto": "fuentes/S517 [2016] Independent origins of parasitism in Animalia - copia de autores.pdf",
+      "url": "https://parasitology.msi.ucsb.edu/sites/default/files/docs/publications/Weinstein%26Kuris2016BioLett.pdf",
+      "sha256": "61955ee69452e0303df9d90382515529529cefeb3513141d485f926711d5a247",
+      "bytes": 363273,
+      "identidad_leida": "Título/autores/DOI/año2016 en primera página, PDF5p publicado Biology Letters12:20160324; copia alojada por grupo de autores; fecha embebida descarga2016 no es fecha revisión actual",
+      "lectura": "Resumen p1, Material and methods p2 completo, Results and discussion p2; no se adjudica aquí la figura3 ni suplementoDryad",
+      "integrado": false
+    },
+    {
+      "clave": "S513",
+      "ruta": "fuentes/S513 [2023] Symbioses shape feeding niches and diversification across insects.xml",
+      "sha256": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040",
+      "pasajes_leidos": [
+        {
+          "id": "P7",
+          "sha256_pasaje": "f8294dc4c0ceb59df0869c559e8e7584c20484416759f26ff0c1ae7c581a615e",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P12",
+          "sha256_pasaje": "71af505b509d8fa8c7fda1f9aa1c0f6adefae0c09d91371eec241772759a29ab",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P35",
+          "sha256_pasaje": "d0e181f7ab928b2f7742278179c029cc22f2b24eeed099592a94f59da9ddf50d",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P36",
+          "sha256_pasaje": "75739afae42142f52a0abb262ffbc4fddae8d7b91ab3ceb23c3cc5d3ff3f6160",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P37",
+          "sha256_pasaje": "9a845be614d91e572f3ece9d21385e4bc7afe7382f05d980824372a109a01e03",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P60",
+          "sha256_pasaje": "a97a7a7d51a8d6d08bc12482f0045388b34cda716466cc81566035ce2b221335",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P61",
+          "sha256_pasaje": "fb583be56df4759b103380127141ea2fe26f6abb13298076ccd022313763c7ca",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P1",
+          "sha256_pasaje": "af4b4c36a04b17f9c606e19adf925151ecbd4eb8ce75f3a750e0f8495a4811cf",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P5",
+          "sha256_pasaje": "baf4bd58d0e18495482ec7546fbf3988e53d6f2d717ca90b386430cdeb1c8028",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P53",
+          "sha256_pasaje": "28814a0b30586bc9746578acae41bb2521bde7e2898e6e7da392341727e35a90",
+          "normalizacion": "itertext, blancos simples, LF final"
+        },
+        {
+          "id": "P65",
+          "sha256_pasaje": "af5a82bd83f615492c35ac6ff3a70180b6290111ccad3787fed73c1eac95342f",
+          "normalizacion": "itertext, blancos simples, LF final"
+        }
+      ]
+    }
+  ],
+  "limites": [
+    "BN111 y BN113 permanecen históricas intactas; no reejecución ni prueba de ausencia biológica",
+    "C1664 previa preservada íntegra en propuesta/hash y diagnóstico; es corrección de síntesis editorial inválida, no eliminación de una posición científica contradictoria",
+    "No promueve revisión global de C1665/S460, C1201 ni multicelularidad de prosa182. Sus referencias permanecen con alcance previo; la revisión debe señalar cualquier nuevo defecto descubierto."
+  ],
+  "propuesta_anterior": {
+    "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_2026-09-27.json",
+    "sha256": "4ffc3b7c31c18546c62f0213980eee7a2373a5e94c40c16c3a7d418df20388e3",
+    "conservada": true
+  },
+  "F_sustituciones": [
+    {
+      "anterior": {
+        "magnitud": "orígenes restringidos de parasitismo y simbiosis obligada",
+        "valor tal como lo publica la fuente": "≥223 en 15 filos; ≥16 en 89 familias",
+        "unidad original": "orígenes y unidades taxonómicas",
+        "organismo, nodo o intervalo al que se aplica": "Animalia; familias de insectos",
+        "método o proxy": "revisión filogenética y modelos a escala familiar",
+        "incertidumbre publicada": "definiciones y denominadores distintos; no frecuencia pan-eucariota",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S517 resumen; S513 resultados",
+        "#": "C-1664"
+      },
+      "sha256_anterior": "75e088498cb903d9de032718cb5f3f9bf1ab6aae0eea861a5f6ff19ac460dee9",
+      "nuevas": [
+        {
+          "magnitud": "orígenes independientes de parasitismo",
+          "valor tal como lo publica la fuente": "al menos 223",
+          "unidad original": "orígenes",
+          "organismo, nodo o intervalo al que se aplica": "Animalia como consumidores y presas/huéspedes, según definición de Weinstein y Kuris 2016",
+          "método o proxy": "censo bibliográfico y filogenias; alimentación sobre un único huésped durante al menos una fase vital",
+          "incertidumbre publicada": "mínimo; dependiente de definición, resolución y conocimiento de ciclos",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S517 Results and discussion, primer párrafo, p. 2: «at least 223 times»; Material and methods, primer párrafo, p. 2: «only Animalia as both consumers and prey/hosts», «single individual» y «during at least one life-history stage»",
+          "#": "C-1664"
+        },
+        {
+          "magnitud": "filos animales con parasitismo en el censo",
+          "valor tal como lo publica la fuente": "15",
+          "unidad original": "filos",
+          "organismo, nodo o intervalo al que se aplica": "censo de Animalia de Weinstein y Kuris 2016",
+          "método o proxy": "recuento taxonómico de presencia bajo definición operacional",
+          "incertidumbre publicada": "no se publica intervalo para este recuento",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S517 Results and discussion, segundo párrafo, p. 2: «Parasites are present in 15»; Material and methods, p. 2",
+          "#": "C-2879"
+        },
+        {
+          "magnitud": "orígenes independientes de simbiosis obligada",
+          "valor tal como lo publica la fuente": "al menos 16",
+          "unidad original": "orígenes",
+          "organismo, nodo o intervalo al que se aplica": "familias de insectos de Cornwallis et al. 2023",
+          "método o proxy": "BPMM; estados nodales según probabilidad posterior >0.5; contraste SCM",
+          "incertidumbre publicada": "mínimo a escala familiar; sin resolución exacta de orígenes intrafamiliares",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Evolutionary origins of obligate symbiosis, párrafo P7: «at least 16 independent origins»; Methods → Specific analyses, The number of origins of obligate symbiosis, P60–P61",
+          "#": "C-2880"
+        },
+        {
+          "magnitud": "familias de insectos con simbiosis obligada en el censo",
+          "valor tal como lo publica la fuente": "89",
+          "unidad original": "familias",
+          "organismo, nodo o intervalo al que se aplica": "censo de Cornwallis et al. 2023",
+          "método o proxy": "recuento por familia con criterios operacionales de dependencia",
+          "incertidumbre publicada": "no se publica intervalo para este recuento",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S513 Evolutionary origins of obligate symbiosis, párrafo P7: «spread across 89 insect families»; Methods → Criteria for assessing obligate symbiosis, P35–P37",
+          "#": "C-2881"
+        }
+      ]
+    },
+    {
+      "anterior": {
+        "magnitud": "simbiosis y familias de insectos del análisis de correlatos",
+        "valor tal como lo publica la fuente": "1.850; 402",
+        "unidad original": "simbiosis; familias",
+        "organismo, nodo o intervalo al que se aplica": "insectos",
+        "método o proxy": "base comparativa y modelos filogenéticos",
+        "incertidumbre publicada": "muestreo restringido a insectos",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S513 resumen; métodos",
+        "#": "C-1121"
+      },
+      "sha256_anterior": "4a97ef332f25ff853704f8489af78519196747999635e95b4b85296dde83cd41",
+      "nuevas": [
+        {
+          "magnitud": "combinaciones microbio–insecto del conjunto comparativo",
+          "valor tal como lo publica la fuente": "1.850",
+          "unidad original": "combinaciones microbio–insecto",
+          "organismo, nodo o intervalo al que se aplica": "conjunto de Cornwallis et al. 2023",
+          "método o proxy": "censo bibliográfico de asociaciones",
+          "incertidumbre publicada": "no se publica intervalo para el recuento del conjunto",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S513 Abstract, P1; introducción, P5",
+          "#": "C-1121"
+        },
+        {
+          "magnitud": "familias de insectos del conjunto comparativo",
+          "valor tal como lo publica la fuente": "402",
+          "unidad original": "familias",
+          "organismo, nodo o intervalo al que se aplica": "conjunto de Cornwallis et al. 2023",
+          "método o proxy": "censo de familias incluido en modelos filogenéticos",
+          "incertidumbre publicada": "no se publica intervalo para el recuento del conjunto",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S513 Abstract, P1; introducción, P5",
+          "#": "C-1121"
+        }
+      ]
+    }
+  ],
+  "F_altas": [
+    {
+      "magnitud": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+      "valor tal como lo publica la fuente": "−0.32",
+      "unidad original": "coeficiente de correlación",
+      "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+      "método o proxy": "MR-BPMM; modo posterior",
+      "incertidumbre publicada": "CI creíble del 95 %: −0.54 a −0.09; no intervalo de confianza frecuentista",
+      "observado o inferido": "inferido",
+      "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+      "#": "C-1121"
+    },
+    {
+      "magnitud": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+      "valor tal como lo publica la fuente": "0.006",
+      "unidad original": "proporción posterior corregida (pMCMC)",
+      "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+      "método o proxy": "MR-BPMM; proporción de iteraciones por encima o debajo del valor de prueba, con corrección por tamaño finito",
+      "incertidumbre publicada": "no se publica intervalo para pMCMC en el pasaje",
+      "observado o inferido": "inferido",
+      "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+      "#": "C-1121"
+    },
+    {
+      "magnitud": "umbral de probabilidad posterior para estado nodal con simbiontes obligados",
+      "valor tal como lo publica la fuente": ">0.5",
+      "unidad original": "probabilidad posterior",
+      "organismo, nodo o intervalo al que se aplica": "nodos de la filogenia de familias de insectos de Cornwallis et al. 2023",
+      "método o proxy": "clasificación de estados reconstruidos con BPMM/MCMCglmm",
+      "incertidumbre publicada": "umbral operacional; no intervalo de incertidumbre",
+      "observado o inferido": "inferido",
+      "fuente con localizador": "S513 Methods → Specific analyses, The number of origins of obligate symbiosis, P60",
+      "#": "C-2880"
+    }
+  ],
+  "tablas_correcciones": [
+    {
+      "ruta": "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv",
+      "anterior": {
+        "proceso": "parasitismo y simbiosis obligada",
+        "recuento o rango recuperado": "≥223 orígenes de parasitismo en 15 filos animales; ≥16 orígenes de simbiosis obligada en 89 familias de insectos",
+        "criterio y autor": "Weinstein y Kuris: definición operacional y filogenias animales; Cornwallis et al.: reconstrucción en familias de insectos",
+        "estado": "sin frecuencia pan-eucariota localizada",
+        "límite principal": "parasitismo animal no equivale a intracelular; ningún recuento tiene denominador pan-eucariota",
+        "filas": "C-1664–C-1665; S517 resumen; S513 resultados; BN-113"
+      },
+      "sha256_anterior": "5aa6d1a38bbc97ff543b23c137ca9c22877ed3926a1f741d2c32d95dc40b2897",
+      "propuesta": {
+        "proceso": "parasitismo y simbiosis obligada",
+        "recuento o rango recuperado": "≥223 orígenes de parasitismo en 15 filos animales; ≥16 orígenes de simbiosis obligada en 89 familias de insectos",
+        "criterio y autor": "Weinstein y Kuris: definición consumidor–huésped restringida a Animalia en ambos papeles y filogenias disponibles; Cornwallis et al.: BPMM sobre familias de insectos",
+        "estado": "BN-113: NO LOCALIZADO EN ESTA SESIÓN para la frecuencia pan-eucariota buscada",
+        "límite principal": "parasitismo animal no equivale a intracelular; ningún recuento tiene denominador pan-eucariota",
+        "filas": "C-1664; C-1665; C-2879–C-2883; S517 Material and methods y Results and discussion, p. 2; S513 Evolutionary origins of obligate symbiosis, P7; Methods, P60–P61; BN-113"
+      },
+      "sha256_propuesta": "5e289dd6a0470c1cbee3aec5ed00fc678f8ba729aedd51984306430484bb9fd8"
+    },
+    {
+      "ruta": "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv",
+      "anterior": {
+        "condición": "baja disponibilidad de vitaminas B",
+        "desenlace asociado": "asociada con simbiosis obligada entre nichos de insectos",
+        "quién lo sostiene": "Cornwallis et al. (2023)",
+        "casos examinados": "1.850 simbiosis distribuidas en 402 familias de insectos",
+        "tipo de apoyo": "único componente nutricional consistentemente asociado en ese muestreo; correlato, no predictor universal",
+        "filas": "C-1121; C-1201"
+      },
+      "sha256_anterior": "8f637b81e1e37fa98ad9c38939a654f775f98fffcea9e20cbabc9f8d5547d97c",
+      "propuesta": {
+        "condición": "baja disponibilidad de vitaminas B",
+        "desenlace asociado": "correlación filogenética −0.32 con simbiosis obligada entre nichos de insectos (CI creíble del 95 % −0.54 a −0.09; pMCMC = 0.006)",
+        "quién lo sostiene": "Cornwallis et al. (2023)",
+        "casos examinados": "1.850 simbiosis distribuidas en 402 familias de insectos",
+        "tipo de apoyo": "único componente nutricional consistentemente asociado en ese muestreo; correlato, no predictor universal",
+        "filas": "C-1121; C-1201; S513 Nutrient deficiencies and obligate symbiosis, P12; Methods, P53 y P65"
+      },
+      "sha256_propuesta": "4b4f63246f9520548dd53b0beb71c344ddae9f9557e6e00338598ff77e75cdff"
+    }
+  ],
+  "B_altas": [
+    {
+      "etiqueta preferida": "orígenes independientes de parasitismo en el censo de Animalia de Weinstein y Kuris 2016",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-1664"
+    },
+    {
+      "etiqueta preferida": "filos animales con parasitismo en el censo de Weinstein y Kuris 2016",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-2879"
+    },
+    {
+      "etiqueta preferida": "orígenes de simbiosis obligada en la filogenia de familias de insectos de Cornwallis et al. 2023",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-2880"
+    },
+    {
+      "etiqueta preferida": "familias de insectos con simbiosis obligada en Cornwallis et al. 2023",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-2881"
+    },
+    {
+      "etiqueta preferida": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-1121"
+    },
+    {
+      "etiqueta preferida": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+      "tipo": "magnitud",
+      "sinónimos y grafías alternativas": "n/a",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+      "# de la fila del registro donde aparece por primera vez": "C-1121"
+    }
+  ]
+}

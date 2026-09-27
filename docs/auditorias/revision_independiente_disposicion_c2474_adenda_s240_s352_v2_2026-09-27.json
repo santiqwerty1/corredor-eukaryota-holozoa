@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "claim_id": "C-2474",
+  "disposicion_sha256": "677f853560fc329aa845378334a7e30ce424180fb9d6798d2ab7d51a41b1ebfc",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T04:12:43Z",
+  "dictamen": "CONFORME",
+  "independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "cobertura": {
+    "Rhodopsin_receptores_Monosiga": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "Rhodopsin_ligandos_posicion_Monosiga": [
+      1
+    ],
+    "familia_Glutamate_Monosiga": [
+      2,
+      3
+    ],
+    "familia_Adhesion / Secretin_Monosiga": [
+      2,
+      3
+    ],
+    "familia_cAMP_Monosiga": [
+      2,
+      3
+    ],
+    "familia_GPR108-like_Monosiga": [
+      2,
+      3
+    ],
+    "Frizzled_Monosiga": [
+      2,
+      3,
+      4
+    ],
+    "ITR_like_Monosiga": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "OA1_like_Monosiga": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "limite_funcion_y_otras_senales": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "pasajes": [
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256_artefacto": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "localizador": "Supplementary Information pPDF/impresa94; bloque desde C. owczarzaki has a rich repertoire",
+      "fragmento_control": "although it lacks the rhodopsin family like M. brevicollis",
+      "sha256_pasaje": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Gene repertoire of Capsaspora, párrafo hijo directo 4",
+      "fragmento_control": "Both Capsaspora and M. brevicollis lack receptors and ligands",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256_artefacto": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "localizador": "Supplementary Information pPDF/impresa44; bloque desde Supplementary Figure S26. Conservation; inspección visual nueva de Fig. S26 p43, columna Monosiga brevicollis: Glutamate PF00003, Adhesion/Secretin PF00002, cAMP PF05462 y GPR108-like PF06814 con punto; Rhodopsin PF00001, Frizzled PF01534, ITR-like PF10192 y OA1-like PF02101 sin punto",
+      "fragmento_control": "Presence of a gene is indicated by a dot.",
+      "sha256_pasaje": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Gene family analysis, párrafo hijo directo 1",
+      "fragmento_control": "we inferred the presence and absence of the gene or protein domains",
+      "sha256_pasaje": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256_artefacto": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+      "localizador": "S352 PDF principal p6, Fig.4 y leyenda completa reextraída; inspección visual nueva de bloques 7TM/Wnt: ITR/OA1 azules, Rhodopsin/Frizzled punteados blancos; GluR/Secretin/GPR108 rojos. Convención azul: Capsaspora, no Monosiga.",
+      "fragmento_control": "Components with red and blue backgrounds indicate",
+      "sha256_pasaje": "ea818905c90e74ce6472a1c5e618c9b4c978229476527e5c3a07d2f629904086"
+    }
+  ],
+  "limitaciones": "Revisión independiente de la disposición prospectiva exacta de la adenda cf00495ba91d037d07c2f8b8ac1b950d58d0c4441b28e05e73a4336333894c58, no de integración ejecutada ni del paquete completo. Nueve C directas cotejadas; C2876/C2877 tienen los Motivos nuevos ITR-like/OA1-like y sus hashes nuevos. Diez componentes adjudicados contra párrafos completos y figuras inspeccionadas, no por búsquedas literales ni por metadatos. Ligandos Rhodopsin es una atribución separada al párrafo general; no se infiere de falta de receptor. No se declara acoplamiento funcional, ausencia universal de señalización ni transferencia. La suplementaria S352 se leyó en /tmp/S352-supplement-preparacion-v2-20260927.pdf, SHA d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23; su destino fuentes/ aún no existe. La validez operacional exige copia idéntica, C soporte exactas y el expediente exacto. Evidencia nueva: docs/auditorias/evidencia_independiente_adenda_s240_s352_v2_2026-09-27.json. No se firman C1581/C2851/C2468, las cinco altas B no conformes ni los 210 controles. Las cuatro revisiones de disposición anteriores quedan históricamente intactas."
+}

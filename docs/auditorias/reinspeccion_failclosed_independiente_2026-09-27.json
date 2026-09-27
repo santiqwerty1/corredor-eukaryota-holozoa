@@ -1,0 +1,293 @@
+{
+  "utc": "2026-09-27T01:41:42Z",
+  "scope": "Reinspección técnica independiente; solo fixtures temporales, sin aprobación científica ni global.",
+  "hashes": {
+    "scripts/build_audit_deliverables.py": "01bdd7e1ce15019b0ba701c81ccb4b51cbf0e1ab0b100a347edfc0424d35f6f5",
+    "scripts/audit_chronology.py": "7d977bae7c206eb61f20bae52035a133f31983fc05ae58c3f890f96b5ec7dba0",
+    "tests/test_build_audit_closure.py": "a503e8a1d1e00a9ec5f120171e04224cbf5c7a9d61ec7671cba50071580a99c3",
+    "docs/auditorias/fixtures/revision_failclosed_independiente_20260926.py": "b94fc19fd17b4533ecfdbaa04fc229dea9c0d4b76229b4589c6f87cad36c37b9",
+    "docs/auditorias/fixtures/reinspeccion_failclosed_independiente_20260927.py": "def926033bd47cb00d0546126537758388590212c0c1b0ea5f0b350c143a8467"
+  },
+  "original": {
+    "tests": 32,
+    "passed": 32,
+    "results": [
+      {
+        "case": "cycle_manifest.json_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "stale_cannot_hide_cycle",
+        "result": "PASS",
+        "detail": "La ausencia anterior no oculta el ciclo posterior."
+      },
+      {
+        "case": "nominal_history_and_duplicates",
+        "result": "PASS",
+        "detail": "Historia intacta, reinspección nueva elegible, duplicado vigente rechazado."
+      },
+      {
+        "case": "census_valid",
+        "result": "PASS",
+        "detail": "Dos lecturas idénticas, censo real validate() íntegro y dos ejes nominales."
+      },
+      {
+        "case": "census_primary_duplicate",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Primera revisión duplicada: C-001',)"
+      },
+      {
+        "case": "census_secondary_duplicate",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Segunda revisión duplicada: C-001',)"
+      },
+      {
+        "case": "census_source_stale",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('La congelación semántica no coincide con el corpus vivo', 'C-001: sha256_artefactos no coincide con artefactos congelados')"
+      },
+      {
+        "case": "census_control_stale",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('La congelación semántica no coincide con el corpus vivo',)"
+      },
+      {
+        "case": "census_dependency",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('C-001: dependencias_y_huellas no coincide con la atribución viva',)"
+      },
+      {
+        "case": "census_negative",
+        "result": "PASS",
+        "detail": "Permanece abierto: (\"Residuales en primera revisión: ['C-001']\", \"Residuales en segunda revisión: ['C-001']\")"
+      },
+      {
+        "case": "census_missing_secondary",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Falta artefacto: data/auditoria/segunda_revision_afirmaciones_v1.csv', \"Faltan 1 C en segunda revisión: ['C-001']\")"
+      },
+      {
+        "case": "artifact_changed_after_validate",
+        "result": "PASS",
+        "detail": "Rechazo del cambio concurrente."
+      },
+      {
+        "case": "global_valid",
+        "result": "PASS",
+        "detail": "Resultado=CONFORME"
+      },
+      {
+        "case": "global_changed_dossier",
+        "result": "PASS",
+        "detail": "Resultado=PENDIENTE"
+      },
+      {
+        "case": "global_premature",
+        "result": "PASS",
+        "detail": "Resultado=PENDIENTE"
+      },
+      {
+        "case": "global_duplicate_last_approval",
+        "result": "PASS",
+        "detail": "Duplicado rechazado."
+      },
+      {
+        "case": "global_duplicate_last_failure",
+        "result": "PASS",
+        "detail": "Duplicado rechazado."
+      }
+    ]
+  },
+  "extension": {
+    "tests": 22,
+    "passed": 20,
+    "results": [
+      {
+        "case": "nominal_C_proof_content",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_C_proof_absent",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_C_registry_changed",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_C_registry_absent",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_C_artifact_only",
+        "result": "PASS",
+        "detail": "Queda abierto."
+      },
+      {
+        "case": "nominal_C_symlink_target",
+        "result": "PASS",
+        "detail": "Queda abierto."
+      },
+      {
+        "case": "negative_control_C",
+        "result": "PASS",
+        "detail": "Control negativo SOLO en memoria: sin el guard se reproduce CERRADO."
+      },
+      {
+        "case": "global_bound_C_2026-09-26T14:59:59Z",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26T14:59:59Z; resultado=PENDIENTE"
+      },
+      {
+        "case": "global_bound_C_2026-09-26T15:00:00Z",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26T15:00:00Z; resultado=CONFORME"
+      },
+      {
+        "case": "global_bound_C_2026-09-26",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26; resultado=PENDIENTE"
+      },
+      {
+        "case": "nominal_S_proof_content",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_S_proof_absent",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_S_registry_changed",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_S_registry_absent",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_S_artifact_only",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "nominal_S_symlink_target",
+        "result": "PASS",
+        "detail": "Rechazo por BuildError: El expediente nominal o sus artefactos cambiaron durante la construcción"
+      },
+      {
+        "case": "negative_control_S",
+        "result": "PASS",
+        "detail": "Control negativo SOLO en memoria: sin el guard se reproduce CERRADO."
+      },
+      {
+        "case": "global_bound_S_2026-09-26T14:59:59Z",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26T14:59:59Z; resultado=PENDIENTE"
+      },
+      {
+        "case": "global_bound_S_2026-09-26T15:00:00Z",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26T15:00:00Z; resultado=CONFORME"
+      },
+      {
+        "case": "global_bound_S_2026-09-26",
+        "result": "PASS",
+        "detail": "Máximo nominal 15:00Z; fecha global=2026-09-26; resultado=PENDIENTE"
+      },
+      {
+        "case": "source_canonical_changed_before_return",
+        "result": "FAIL",
+        "detail": "AssertionError: S01 devuelta CERRADO con SHA anterior=da8fdc2d90db4337857fa31f48d5a30bdc8e8e838083fb8381e30f2396afd339; A viva=4ede6568627b119a126279fbcf350d893e80eb16f0fc6741742c5a8be0e290b6"
+      },
+      {
+        "case": "all_pending_closed_cannot_close_report",
+        "result": "FAIL",
+        "detail": "AssertionError: 483/483 revisiones PENDIENTE/CERRADO; informe declara CERRADA=True"
+      }
+    ]
+  }
+}

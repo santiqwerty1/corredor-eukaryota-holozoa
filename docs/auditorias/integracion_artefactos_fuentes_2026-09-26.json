@@ -1,0 +1,62 @@
+{
+  "alcance": "Registro de integración por el autor, no dictamen independiente. Ocho artefactos recuperados e inspeccionados por revisores independientes se copian sin sustituir los preprints existentes; las licencias y exclusión Git de fuentes/ se conservan.",
+  "integracion_observada_utc": "2026-09-26T21:44:31Z",
+  "archivos": [
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S548-published.xml",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — versión publicada.xml",
+      "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/fullTextXML"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sapp.pdf",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — SI Appendix publicado.pdf",
+      "sha256": "90df70ce0afb06f33c4b8cc4f553cd29ca9e7474b0c6620f027dd0dc9aba6b83",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sd01.xlsx",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S1 publicado.xlsx",
+      "sha256": "532004056b6b963a86fdd9634c727c6948cc359ba6d3f56f100ca57cfc2a5077",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sd02.xlsx",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S2 publicado.xlsx",
+      "sha256": "6e8ef742ce128bf304e7981ec9ce1dc8048449535fb7acf75844883cda04c780",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles"
+    },
+    {
+      "clave": "S549",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S549-aps-published.pdf",
+      "ruta_local": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf",
+      "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+      "url_de_recuperacion": "https://harvest.aps.org/v2/journals/articles/10.1103/vzxt-rpf8/fulltext"
+    },
+    {
+      "clave": "S557",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S557-institutional.pdf",
+      "ruta_local": "fuentes/S557 [2016] Extremely low oxygen concentration in mid-Proterozoic shallow seawaters.pdf",
+      "sha256": "22d5d593e97380fd3fa93bee019ad46d0d991fc7ee333fb9f598d2b661083378",
+      "url_de_recuperacion": "https://ganqing.faculty.unlv.edu/Publications/Tang-Shi-Jiang-2016-Precambrian-Research-Mesoproterozoic-REE.pdf"
+    },
+    {
+      "clave": "S559",
+      "origen_temporal": "/tmp/S559-corrigendum-2018-02-06.xml",
+      "ruta_local": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum febrero.xml",
+      "sha256": "9953e3d76199e8512eb1388bca8a26a2327534e9e394f34aff1bb3356be95935",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7609277/fullTextXML"
+    },
+    {
+      "clave": "S559",
+      "origen_temporal": "/tmp/S559-corrigendum-2018-07-06.xml",
+      "ruta_local": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum julio.xml",
+      "sha256": "7b4f1fe400abccf26be1f4110eaf1e1de4116f622d6fe2e5a79df9834a359bfa",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7608355/fullTextXML"
+    }
+  ]
+}

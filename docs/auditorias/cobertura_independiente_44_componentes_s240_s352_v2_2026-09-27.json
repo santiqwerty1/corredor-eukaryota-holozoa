@@ -1,0 +1,1062 @@
+{
+  "version": 1,
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T03:24:30Z",
+  "propuesta": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.json",
+  "sha256_propuesta": "96d36be9adeed056a5c5f6da54321101b2dc25e7ae1bc28cb9258dae0b3e8bfa",
+  "componentes": [
+    {
+      "claim_id": "C-2708",
+      "componente": "genoma_nuclear_Perkinsela_estimado",
+      "afirmaciones": [
+        "C-1037"
+      ],
+      "sha256_afirmaciones": {
+        "C-1037": "58ccfa35bf952f266fc3e77239bc24347428d2a4b87285fd82c7e763c75c4ae8"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par7",
+          "sha256": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2708",
+      "componente": "genoma_Bodo_ensamblado_y_comparando_libre",
+      "afirmaciones": [
+        "C-2839"
+      ],
+      "sha256_afirmaciones": {
+        "C-2839": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Table1",
+          "sha256": "e57052e3eded9b6049fd1c3479330e749e22f9fef9b3230607c3eae600c144ce"
+        },
+        {
+          "id": "S240_Par10",
+          "sha256": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa"
+        },
+        {
+          "id": "S563_sec2.1",
+          "sha256": "b5a7223d799ee19cf42a55b0582e914defa56142a8266bc8e79df3a8c1c3977e"
+        },
+        {
+          "id": "S563_sec4.2",
+          "sha256": "84a0dab76cc9fd6afb637c1d8daa6e384ae19c788bfab89b1b9d2061ac2b1d87"
+        },
+        {
+          "id": "S563_sec4.4",
+          "sha256": "5096dffe3167981c51cccd0e26f52dd1bfe078270d5465ffc572ebead07b16e4"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2708",
+      "componente": "limite_comparacion_mitocondrial_y_cociente",
+      "afirmaciones": [
+        "C-1037",
+        "C-2839"
+      ],
+      "sha256_afirmaciones": {
+        "C-1037": "58ccfa35bf952f266fc3e77239bc24347428d2a4b87285fd82c7e763c75c4ae8",
+        "C-2839": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par7",
+          "sha256": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+        },
+        {
+          "id": "S240_Table1",
+          "sha256": "e57052e3eded9b6049fd1c3479330e749e22f9fef9b3230607c3eae600c144ce"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2709",
+      "componente": "EGT_candidata_y_denominador",
+      "afirmaciones": [
+        "C-2840"
+      ],
+      "sha256_afirmaciones": {
+        "C-2840": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par14",
+          "sha256": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+        },
+        {
+          "id": "S240_Methods",
+          "sha256": "6dcb4d2616f51b2ad77ff18dce4b2d64bae41fa110f767163384f4af43bcfe30"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2709",
+      "componente": "hipotesis_captacion_metabolitos",
+      "afirmaciones": [
+        "C-2841"
+      ],
+      "sha256_afirmaciones": {
+        "C-2841": "178a41f6d593ff6481aa5ec6afae0bbde8816328167a4552a00a5c915f96d39c"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par16",
+          "sha256": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2709",
+      "componente": "hipotesis_captacion_enzimas",
+      "afirmaciones": [
+        "C-2842"
+      ],
+      "sha256_afirmaciones": {
+        "C-2842": "061df51db5ca993d367e1415050360342b12ccf33930d100107e6e628c785880"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par16",
+          "sha256": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2709",
+      "componente": "limite_retorno_productos_EGT",
+      "afirmaciones": [
+        "C-2840",
+        "C-2842"
+      ],
+      "sha256_afirmaciones": {
+        "C-2840": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+        "C-2842": "061df51db5ca993d367e1415050360342b12ccf33930d100107e6e628c785880"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S240_Par14",
+          "sha256": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+        },
+        {
+          "id": "S240_Par16",
+          "sha256": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "posicion_textual_receptores_Monosiga",
+      "afirmaciones": [
+        "C-2843"
+      ],
+      "sha256_afirmaciones": {
+        "C-2843": "7908768474da973bc3ec762f99f84687cea3c0db61b9d1b2b462b012e8d69b33"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_GeneRepertoire_p4",
+          "sha256": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "posicion_textual_ligandos_Monosiga",
+      "afirmaciones": [
+        "C-2844"
+      ],
+      "sha256_afirmaciones": {
+        "C-2844": "e47bb6671d073d35925825606c313e81872ce5606ad1b7ed29ffde8a1a708bcc"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_GeneRepertoire_p4",
+          "sha256": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "Patched_Monosiga",
+      "afirmaciones": [
+        "C-2845"
+      ],
+      "sha256_afirmaciones": {
+        "C-2845": "b155ea1f86ca430f675c2c28a22e76ea5983eb1fc51365e6fa5a2d78e28a4421"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "Dispatched_Monosiga",
+      "afirmaciones": [
+        "C-2846"
+      ],
+      "sha256_afirmaciones": {
+        "C-2846": "73b6bbc20eec7edcb5a72b35a63c702365320484f694f387cd51d6300f7fd4e0"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "Hint_Hog_Monosiga",
+      "afirmaciones": [
+        "C-2847"
+      ],
+      "sha256_afirmaciones": {
+        "C-2847": "180c16e4e726f4937643c8f73eae1a4546525ea65b0761d7f774b1ad00d4e808"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "Hedge_Monosiga",
+      "afirmaciones": [
+        "C-2848"
+      ],
+      "sha256_afirmaciones": {
+        "C-2848": "0cd33c4ec6504cb6aea0b9f5c729f6fc6ed0bb490ec1d8a8d5acdefbfc611434"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "dominios_en_proteinas_separadas",
+      "afirmaciones": [
+        "C-2849"
+      ],
+      "sha256_afirmaciones": {
+        "C-2849": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2468",
+      "componente": "limite_contraste_y_funcion_Hedgehog",
+      "afirmaciones": [
+        "C-2843",
+        "C-2844",
+        "C-2845",
+        "C-2849"
+      ],
+      "sha256_afirmaciones": {
+        "C-2843": "7908768474da973bc3ec762f99f84687cea3c0db61b9d1b2b462b012e8d69b33",
+        "C-2844": "e47bb6671d073d35925825606c313e81872ce5606ad1b7ed29ffde8a1a708bcc",
+        "C-2845": "b155ea1f86ca430f675c2c28a22e76ea5983eb1fc51365e6fa5a2d78e28a4421",
+        "C-2849": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_GeneRepertoire_p4",
+          "sha256": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        },
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "SIN_FIRMA_POR_REPRESENTACION_ABIERTA"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Hh_Capsaspora",
+      "afirmaciones": [
+        "C-2853"
+      ],
+      "sha256_afirmaciones": {
+        "C-2853": "84b2db71e1dbbadab33b512ff03abc77e2bc8adc1f1fa23ad63e3466f1c85595"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Dispatched_Capsaspora",
+      "afirmaciones": [
+        "C-2854"
+      ],
+      "sha256_afirmaciones": {
+        "C-2854": "36e56f67829ecda33f59e721237d6a216700d6dee197a74c45af7f31866bd52a"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Patched_Capsaspora",
+      "afirmaciones": [
+        "C-2855"
+      ],
+      "sha256_afirmaciones": {
+        "C-2855": "bf04036596d576d10dea545d787adc0fc7f1a82cb60857834b02446ca48807f2"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Smoothened_Capsaspora",
+      "afirmaciones": [
+        "C-2856"
+      ],
+      "sha256_afirmaciones": {
+        "C-2856": "83a397cf3960e622644f53ed5cf8505b52e0ef6c9038f4c5d15b3e2a29e914b6"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_Fig4_leyenda",
+          "sha256": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+        }
+      ],
+      "inspeccion_visual": "Fig4p6: símbolo nominal yleyenda leídos visualmente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Hint_Hog_Capsaspora",
+      "afirmaciones": [
+        "C-2857"
+      ],
+      "sha256_afirmaciones": {
+        "C-2857": "1e054bcb2172dc35f247765a20482a489452e18daed8fed4f39191ef487754b2"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Hedge_Capsaspora",
+      "afirmaciones": [
+        "C-2858"
+      ],
+      "sha256_afirmaciones": {
+        "C-2858": "63135350c41a099d93440987c9f48d37990440e73595afd63907ea8df953862c"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "Gli_ortologia_Capsaspora",
+      "afirmaciones": [
+        "C-2859"
+      ],
+      "sha256_afirmaciones": {
+        "C-2859": "38c09b44e78c4f7dbddc45eb4f9e1a3aebd7ca028833603ca38fae39109bac68"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2469",
+      "componente": "limite_genomico_y_funcional",
+      "afirmaciones": [
+        "C-2853",
+        "C-2859"
+      ],
+      "sha256_afirmaciones": {
+        "C-2853": "84b2db71e1dbbadab33b512ff03abc77e2bc8adc1f1fa23ad63e3466f1c85595",
+        "C-2859": "38c09b44e78c4f7dbddc45eb4f9e1a3aebd7ca028833603ca38fae39109bac68"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        },
+        {
+          "id": "S352_SI_Hh_inicio",
+          "sha256": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+        },
+        {
+          "id": "S352_SI_Hh_fin",
+          "sha256": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "Rhodopsin_receptores_Monosiga",
+      "afirmaciones": [
+        "C-2860"
+      ],
+      "sha256_afirmaciones": {
+        "C-2860": "4fcb24c602c302aab80be4e977f85c92108744a2bd7aa66e5f123ad6aa6bd8e6"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "Rhodopsin_ligandos_posicion_Monosiga",
+      "afirmaciones": [
+        "C-2861"
+      ],
+      "sha256_afirmaciones": {
+        "C-2861": "5dc10847adc2469078fcc647c1b731494f3042b4007d8f5a82eb990bdb6d67b9"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_GeneRepertoire_p4",
+          "sha256": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "familia_Glutamate_Monosiga",
+      "afirmaciones": [
+        "C-2865"
+      ],
+      "sha256_afirmaciones": {
+        "C-2865": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "familia_Adhesion / Secretin_Monosiga",
+      "afirmaciones": [
+        "C-2866"
+      ],
+      "sha256_afirmaciones": {
+        "C-2866": "3c54834d1f7b4851659a8dfe68b714691716791cd62e8dfeeff06f9c979a347f"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "familia_cAMP_Monosiga",
+      "afirmaciones": [
+        "C-2867"
+      ],
+      "sha256_afirmaciones": {
+        "C-2867": "b639c4015a36896d1cc83460dbb0196f111399b280e4528e2c487aeb92fb6d2c"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "familia_GPR108-like_Monosiga",
+      "afirmaciones": [
+        "C-2868"
+      ],
+      "sha256_afirmaciones": {
+        "C-2868": "a426af97a3804c38e61151fab2cb1d6c3a5efa7cb21016a3359137b8e59946f9"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "Frizzled_Monosiga",
+      "afirmaciones": [
+        "C-2875"
+      ],
+      "sha256_afirmaciones": {
+        "C-2875": "886746fd26ee305299c4c69630c1d8f64a1ca08632871ad7436c9b74c1c02e61"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "ITR_like_Monosiga",
+      "afirmaciones": [
+        "C-2876"
+      ],
+      "sha256_afirmaciones": {
+        "C-2876": "31d9166276b855cd7d4aa5f57e350c02fd84627abebf5c262feca0d38f35dbd3"
+      },
+      "dictamen": "NO_CONFORME_TRAZABILIDAD_OBJETO_COMPLETO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "La proposición de ausencia de esta familia sí coincide conSI/S26; Csoporte completa cita Frizzled enMotivo y requiere reparación.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "OA1_like_Monosiga",
+      "afirmaciones": [
+        "C-2877"
+      ],
+      "sha256_afirmaciones": {
+        "C-2877": "b8ed0765a848a69b03855e209053e8e1f6312687f756c5826c3751fd09da430c"
+      },
+      "dictamen": "NO_CONFORME_TRAZABILIDAD_OBJETO_COMPLETO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "La proposición de ausencia de esta familia sí coincide conSI/S26; Csoporte completa cita Frizzled enMotivo y requiere reparación.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2474",
+      "componente": "limite_funcion_y_otras_senales",
+      "afirmaciones": [
+        "C-2860",
+        "C-2865"
+      ],
+      "sha256_afirmaciones": {
+        "C-2860": "4fcb24c602c302aab80be4e977f85c92108744a2bd7aa66e5f123ad6aa6bd8e6",
+        "C-2865": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        },
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "NO_CONFORME_POR_C2876_C2877"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "Rhodopsin_receptores_Capsaspora",
+      "afirmaciones": [
+        "C-2862"
+      ],
+      "sha256_afirmaciones": {
+        "C-2862": "745dff7adaa8b6b1239157f2255e90986828f0cd846678b776fa3aa08d8e8b9f"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "Rhodopsin_ligandos_posicion_Capsaspora",
+      "afirmaciones": [
+        "C-2863"
+      ],
+      "sha256_afirmaciones": {
+        "C-2863": "c84de621bb0420eee6e287508663c721b87e06ade113f8cb278116ab61be2072"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_GeneRepertoire_p4",
+          "sha256": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "recuento_publicado_seis_de_ocho",
+      "afirmaciones": [
+        "C-2864"
+      ],
+      "sha256_afirmaciones": {
+        "C-2864": "3e9565d78e99749e2011c96a37e4e252a1032a8f3ecedcb083a56d1355952083"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_Glutamate_Capsaspora",
+      "afirmaciones": [
+        "C-2869"
+      ],
+      "sha256_afirmaciones": {
+        "C-2869": "0a6843387fee142662272b1a99a2079e1cd13fa59164547ed471c7ae761f00a1"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_Adhesion / Secretin_Capsaspora",
+      "afirmaciones": [
+        "C-2870"
+      ],
+      "sha256_afirmaciones": {
+        "C-2870": "301af3b6e8c55c81dbfa4edf95c911121f092ae61a248b6ccd0c537b1195dcc6"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_cAMP_Capsaspora",
+      "afirmaciones": [
+        "C-2871"
+      ],
+      "sha256_afirmaciones": {
+        "C-2871": "c4c999960aab5fe8b2f0cb6d6b9c3c656ad0cfa6911b2723187782111f871195"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_ITR-like_Capsaspora",
+      "afirmaciones": [
+        "C-2872"
+      ],
+      "sha256_afirmaciones": {
+        "C-2872": "0767c4924a157c9653287a5bcf38b1fe08dc8784d18185c6c247983a59b7bbb9"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_GPR108-like_Capsaspora",
+      "afirmaciones": [
+        "C-2873"
+      ],
+      "sha256_afirmaciones": {
+        "C-2873": "08aa58ddec8ce5a605d1a82c1e86ec33cfbab826739152085a2f9a7c9d5f2635"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        },
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "familia_OA1-like_Capsaspora",
+      "afirmaciones": [
+        "C-2874"
+      ],
+      "sha256_afirmaciones": {
+        "C-2874": "339b81317d396d588d45267ad8a9d64095944522853a30f9a576f253ba078e63"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "Frizzled_Capsaspora",
+      "afirmaciones": [
+        "C-2878"
+      ],
+      "sha256_afirmaciones": {
+        "C-2878": "6eb67151dcafcd51ec17f46b60649ad61b88081cec84c7dcc7f6974d173310ae"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_SI_Wnt",
+          "sha256": "552c630e7953b1f35255c3bb35c1f14add7e73d2310344110f90d04655cae93c"
+        },
+        {
+          "id": "S352_S26_leyenda",
+          "sha256": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+        }
+      ],
+      "inspeccion_visual": "FigS26 p43: intersección nominal correspondiente leída conleyendap44; no inferencia automática por texto",
+      "limite": "Objeto/muestra/modalidad exactamenteacotados; no prueba funcional ni cierre global.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    },
+    {
+      "claim_id": "C-2475",
+      "componente": "limite_funcion_y_otras_senales",
+      "afirmaciones": [
+        "C-2862",
+        "C-2864"
+      ],
+      "sha256_afirmaciones": {
+        "C-2862": "745dff7adaa8b6b1239157f2255e90986828f0cd846678b776fa3aa08d8e8b9f",
+        "C-2864": "3e9565d78e99749e2011c96a37e4e252a1032a8f3ecedcb083a56d1355952083"
+      },
+      "dictamen": "CONFORME_COMPONENTE_ACOTADO",
+      "pasajes": [
+        {
+          "id": "S352_Methods",
+          "sha256": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+        },
+        {
+          "id": "S352_SI_7TM",
+          "sha256": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+        }
+      ],
+      "inspeccion_visual": "no requerida paraeste componente",
+      "limite": "Límite explícito de esta adjudicación, no ausencia universal ni hueco transformado en hecho.",
+      "estado_disposicion": "EXPEDIENTE_CONFORME_PROSPECTIVO_EMITIDO"
+    }
+  ],
+  "alcance": "44 componentes leídos; 26 en cuatro disposiciones firmadas. C2468 con8componentes sostenidos pero sinfirma; C2474 con8componentes sostenidos y2NCporobjetos completos. No censo global ni canon integrado."
+}

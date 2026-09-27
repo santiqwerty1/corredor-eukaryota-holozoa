@@ -1,0 +1,7019 @@
+{
+  "utc": "2026-09-27T02:09:12Z",
+  "scope": "Revisión técnica independiente del delta cuantitativo; no firma R0001–7 ni ciencia.",
+  "hashes": {
+    "scripts/audit_requirement_controls.py": "0200686fac33c6074c194ee7cfcc440a67e2e57fb96e207b573c6a330463f7ca",
+    "tests/test_audit_requirement_controls.py": "66ff9f19eb975dc98cc9c397dd6736e50da34e977509f3ea11b8a14d708c1ffb",
+    "docs/auditorias/fixtures/revision_teleologia_cuantitativa_independiente_20260927.py": "abd95c6d88c2143ba28ad61312b473302451609ee9613e77842fa5c8de398cc6"
+  },
+  "tests": 268,
+  "passed": 268,
+  "results": [
+    {
+      "kind": "quantitative",
+      "text": "Se informa el cuartil superior.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se registra identidad superior al 70,5 %.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se registra identidad inferior al 0 %.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "quantitative",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": true,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "teleology",
+      "text": "todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el cuartil superior.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se informa el cuartil superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se informa el CUARTIL INFERIOR.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se informa el CUARTIL INFERIOR.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica superior al 70 %.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se registra identidad proteica superior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad proteica inferior al 70.5%.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se registra identidad proteica inferior al 70.5%.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad superior al 70,5 %.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se registra identidad superior al 70,5 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se registra identidad inferior al 0 %.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se registra identidad inferior al 0 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Se comparan el cuartil superior y el cuartil inferior.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Se comparan el cuartil superior y el cuartil inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; este linaje es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es superior; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; este linaje es inferior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es inferior; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; este linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es primitivo; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; este linaje es avanzado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es avanzado; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; este linaje es más evolucionado.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "este linaje es más evolucionado; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es un intento fallido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un intento fallido; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es un paso obligatorio.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un paso obligatorio; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es un fósil viviente.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un fósil viviente; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es el eslabón perdido.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es el eslabón perdido; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es un eucariota primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un eucariota primitivo; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es un organismo simple.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es un organismo simple; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es una versión antigua.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión antigua; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; es una versión detenida.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "es una versión detenida; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; apareció para llegar a animales.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "apareció para llegar a animales; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_suffix",
+      "text": "Identidad superior al 100 % e identidad inferior al 70 %.; todavía no había desarrollado complejidad.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "mixed_prefix",
+      "text": "todavía no había desarrollado complejidad; Identidad superior al 100 % e identidad inferior al 70 %.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "not_identity",
+      "text": "El linaje es superior al 70 % de los restantes.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "not_numeric",
+      "text": "Su identidad proteica es superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "no_percentage",
+      "text": "Su identidad proteica superior al 70 se describe aquí.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "not_quartile",
+      "text": "Se trata de un cuartil de linajes superior.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1']"
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "kind": "line_boundary",
+      "text": "Se informa el cuartil superior.\nEste linaje es primitivo.",
+      "expected_accepted": false,
+      "before_ablation": {
+        "accepted": false,
+        "candidates": 2,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:1', 'fixture.md:2']"
+        ]
+      },
+      "after": {
+        "accepted": false,
+        "candidates": 2,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": [
+          "candidatos no clasificados: ['fixture.md:2']"
+        ]
+      },
+      "result": "PASS"
+    }
+  ],
+  "legacy_limitations_not_introduced": [
+    {
+      "text": "La identidad es superior a 70 %; este linaje es primitivo.",
+      "before_ablation": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "text": "Hay un criterio; este linaje es más evolucionado.",
+      "before_ablation": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      },
+      "after": {
+        "accepted": true,
+        "candidates": 1,
+        "scope": [
+          "fixture.md"
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "live_corpus": {
+    "same_population_and_scope": true,
+    "scope_paths": 123,
+    "candidates_before": 74,
+    "candidates_after": 74,
+    "errors_without_new_branch": [
+      "candidatos no clasificados: ['data/afirmaciones/15.csv:929', 'data/afirmaciones/15.csv:935', 'data/apendices/F_magnitudes.csv:602', 'data/apendices/F_magnitudes.csv:603', 'data/apendices/F_magnitudes.csv:604', 'docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md:569']"
+    ],
+    "errors_after": []
+  },
+  "tests_project": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_audit_requirement_controls -q",
+    "note": "Resultado detallado consignado en informe junto con evidencia de herramienta."
+  }
+}

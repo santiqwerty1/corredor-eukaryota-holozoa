@@ -1,0 +1,378 @@
+{
+  "scope": "Investigación y propuesta BN-120; no firma de censo, no revisión de parche no aplicado, no identidad de anotaciones asumida.",
+  "inspection_utc": "2026-09-26T22:25:54Z",
+  "author": "/root/verificacion_fuentes_nuevas",
+  "branch_observed": "codex/cierre-plan-pendiente",
+  "source_S434_local_xml": {
+    "path": "fuentes/S434 [2017] Dynamics of genomic innovation in the unicellular ancestry of animals.xml",
+    "sha256": "4dd18d20c875fee9404c1b647d4614212ba4750e1b689dfbe87e2fdacedd0eb5"
+  },
+  "artifacts_downloaded_only_to_tmp": [
+    {
+      "temporary_path": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data1-v3.xlsx",
+      "primary_url": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data1-v3.xlsx",
+      "sha256": "4578d91e371e5c41dd5a8a4dddb53122537e88e2acfd1416251ac30f07e4d918",
+      "bytes": 20548,
+      "sheet": "Sheet1",
+      "published_cells_no_calculation": {
+        "B2": "NOTE: mean, Q1, Q2, Q3 and sum values are in bp",
+        "C6": "sp",
+        "E6": "gene_n",
+        "Q6": "intron_n",
+        "S6": "intron_mean",
+        "C27": "Sarc",
+        "E27": "18319",
+        "Q27": "45684",
+        "S27": "576.463"
+      }
+    },
+    {
+      "temporary_path": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data2-v3.xlsx",
+      "primary_url": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data2-v3.xlsx",
+      "sha256": "44ef87c6af48d8dc48ce5d286dc5fdb748a387853df23e600d0936670cfb99c6",
+      "bytes": 10817,
+      "sheet": "Full1",
+      "published_cells_no_calculation": {
+        "A1": "Species name",
+        "B1": "Abbreviation",
+        "C1": "Type of data",
+        "E1": "Source of data",
+        "A25": "Sphaeroforma arctica",
+        "B25": "Sarc",
+        "C25": "Genome",
+        "D25": "40 sps dataset",
+        "E25": "Broad Institute Multicellularity Initiative"
+      }
+    },
+    {
+      "temporary_path": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig5-data1-v3.xlsx",
+      "primary_url": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig5-data1-v3.xlsx",
+      "sha256": "6384ee9ca5991cbade0e6dca100392031ffdedca17dba5765850353bac300d2f",
+      "bytes": 20167,
+      "sheet": "Full1",
+      "published_cells_no_calculation": {
+        "A4": "Species or LCA name",
+        "B4": "node code",
+        "D4": "Ancestor? (0/1)",
+        "N4": "Intron per gene",
+        "O4": "Intron per kbp coding seq",
+        "A31": "Sphaeroforma arctica",
+        "B31": "Sarc",
+        "D31": "0",
+        "N31": "2.33026847094573",
+        "O31": "4.80483247137073"
+      }
+    },
+    {
+      "temporary_path": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-v3.xml",
+      "primary_url": "https://cdn.elifesciences.org/articles/26036/elife-26036-v3.xml",
+      "sha256": "fcd2ee1d7baab2b2327d66bf659e5f3b190df1b48d0cd81d825b4f8958c9d89d",
+      "bytes": 346652
+    },
+    {
+      "temporary_path": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN120-ensembl-annotation.html",
+      "primary_url": "https://protists.ensembl.org/Sphaeroforma_arctica_jp610_gca_001186125/Info/Annotation/",
+      "sha256": "aecfeec270030657483a0b6aab05391b5281c240f893387e90586de332200fb3",
+      "bytes": 55765
+    }
+  ],
+  "method_text_comparison": [
+    {
+      "section_id": "s4-4",
+      "equal_normalized_text": true,
+      "local_text_sha256": "3c44a6ea6ca271b6a42c5a3d5ce739f56a45ceb33ea37e816d70c204bbd1412b",
+      "editorial_text_sha256": "3c44a6ea6ca271b6a42c5a3d5ce739f56a45ceb33ea37e816d70c204bbd1412b"
+    },
+    {
+      "section_id": "s4-6",
+      "equal_normalized_text": true,
+      "local_text_sha256": "10f5c996cf739646dabce2b6753cb22686f0156e382699e94f439713715465bf",
+      "editorial_text_sha256": "10f5c996cf739646dabce2b6753cb22686f0156e382699e94f439713715465bf"
+    },
+    {
+      "section_id": "s4-11",
+      "equal_normalized_text": true,
+      "local_text_sha256": "dbfbbbee3f48cb8fde1a9388e3abfe271762a5c4a352f54ec85b2edc5acce086",
+      "editorial_text_sha256": "dbfbbbee3f48cb8fde1a9388e3abfe271762a5c4a352f54ec85b2edc5acce086"
+    }
+  ],
+  "interpretation": {
+    "gene_count": "18319 genes en estadísticas de S434; identidad Sarc/Sphaeroforma documentada; procedencia Broad Institute, no accession/release declarada en esa fila.",
+    "intron_count": "45684 es recuento publicado; no convertido aquí a densidad.",
+    "intron_length_mean": "576.463 bp; longitud, no número de intrones/gen.",
+    "intron_model_values": "N31 2.33026847094573 intrones/gen y O31 4.80483247137073 intrones/kbp codificante; taxón extante D31=0; estimaciones publicadas del modelo con 342 ortólogos y 40 genomas, no media de todos los genes.",
+    "unresolved": "No demostrada identidad de la anotación Broad Institute usada por S434 con GCF_001186125.1/S446 o GCA_001186125.1/Ensembl116.1.",
+    "ensembl_not_discarded": "18213 coding genes, Golden Path Length121631465, release63June2026/database116.1/GCA_001186125.1; fuente no dada de alta en A; evidencia previa conservada; no se requieren estos valores en el parche mínimo S434."
+  },
+  "canonical_rows_before_patch": {
+    "data/apendices/A_fuentes.csv": [
+      {
+        "record_number_without_header": 421,
+        "row": {
+          "clave": "S434",
+          "autores": "Grau-Bové, X. et al.",
+          "año": "2017",
+          "título": "Dynamics of genomic innovation in the unicellular ancestry of animals",
+          "publicación o repositorio": "eLife 6:e26036",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.7554/eLife.26036",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genómica comparada de holozoos; incluye reconstrucción de intrones y repertorios. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "row_sha256": "ced22756b46f9fa844b37cee6c250538faefdb759074af6da41e5d388f6ae6dc"
+      },
+      {
+        "record_number_without_header": 432,
+        "row": {
+          "clave": "S446",
+          "autores": "National Center for Biotechnology Information",
+          "año": "2015",
+          "título": "Sphaeroforma arctica JP610 genome assembly GCF_001186125.1",
+          "publicación o repositorio": "NCBI Datasets: Genome",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001186125.1/",
+          "tipo": "otro",
+          "notas de calidad": "Registro de ensamblaje; las estadísticas corresponden a la versión visible consultada y pueden cambiar con nuevas anotaciones. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez. [USO EN UNA SOLA C] C-1565.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "row_sha256": "f735d6448070d43cc336fca2226bf8134ece185b67ddffabad052e54afe42cd3"
+      }
+    ],
+    "data/afirmaciones/12.csv": [
+      {
+        "record_number_without_header": 84,
+        "row": {
+          "#": "C-1565",
+          "Afirmación": "El ensamblaje de referencia de Sphaeroforma arctica JP610 registra 121.6 Mb.",
+          "Sujeto": "genoma de Sphaeroforma arctica JP610",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "121.6 Mb",
+          "Atribución": "expresa",
+          "Fuente": "S446 Assembly statistics [sin localizar con mayor precisión]",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "El valor procede del registro de ensamblaje de referencia; las anotaciones derivadas pueden cambiar entre versiones.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "row_sha256": "e501d163d7b39131a574fa7e95696f5598087ec7ad942982cfe67b0ef795c9f9"
+      },
+      {
+        "record_number_without_header": 85,
+        "row": {
+          "#": "C-1566",
+          "Afirmación": "El linaje ichthyofónido ancestral y sus descendientes muestran densidades de intrones elevadas frente a Corallochytrium en la reconstrucción comparativa publicada.",
+          "Sujeto": "Ichthyophonida y Corallochytrium",
+          "Predicado": "se_distingue_de*",
+          "Objeto": "densidad de intrones",
+          "Atribución": "expresa",
+          "Fuente": "S434 figs. 5–6",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "La diferencia se infiere de anotaciones y un modelo de ganancia-pérdida de intrones.",
+          "Resolución": "parcialmente resuelta",
+          "Vigencia": "vigente"
+        },
+        "row_sha256": "3915165771ae7282beb44d74233fef9c4bf2025b75315476fd320e16b93d84b4"
+      }
+    ],
+    "data/afirmaciones/15.csv": [
+      {
+        "record_number_without_header": 93,
+        "row": {
+          "#": "C-1990",
+          "Afirmación": "Las búsquedas BN-120, BN-121 y BN-122 no localizaron, respectivamente, un recuento agregado de genes y densidad numérica de intrones para la misma versión de Sphaeroforma arctica, un coste energético directo y comparable para tres fenotipos agregativos, ni una duración de división o tasa de crecimiento publicada para los apusomonádidos consultados.",
+          "Sujeto": "tres magnitudes cuantitativas residuales de las tablas 52, 53 y 55a",
+          "Predicado": "tiene_estado_de_localizacion*",
+          "Objeto": "tres huecos nominales con consultas y objetos distintos",
+          "Atribución": "glosa",
+          "Fuente": "BN-120; BN-121; BN-122",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "No se mezclan versiones de anotación, efectos indirectos o tiempos de repique con las magnitudes pedidas.",
+          "Resolución": "información insuficiente",
+          "Vigencia": "vigente"
+        },
+        "row_sha256": "534698b0790c254ce6446089a6c0ee454168e57729f63b26e922b6cb054993d3"
+      },
+      {
+        "record_number_without_header": 886,
+        "row": {
+          "#": "C-2783",
+          "Afirmación": "Para organismo «*Sphaeroforma arctica*», el campo «versión o método» tiene el valor literal «ensamblaje de referencia y reconstrucción comparativa; los dos huecos cuantitativos se conservan sin inferir valores ni mezclar versiones».",
+          "Sujeto": "organismo «*Sphaeroforma arctica*»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "versión o método: ensamblaje de referencia y reconstrucción comparativa; los dos huecos cuantitativos se conservan sin inferir valores ni mezclar versiones",
+          "Atribución": "sintesis(C-1565, C-1566)",
+          "Fuente": "n/a; dependencias canónicas C-1565; C-1566",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv:fila 6:versión o método. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "row_sha256": "c59f2f4e6199f6bdd387fce502db7f574546409e237f17549906306d20d8def5"
+      },
+      {
+        "record_number_without_header": 887,
+        "row": {
+          "#": "C-2784",
+          "Afirmación": "Para clase «división celular», el campo «valor publicado» tiene el valor literal «NO LOCALIZADO EN ESTA SESIÓN; tampoco se localizó una ordenación relativa publicada atribuible».",
+          "Sujeto": "clase «división celular»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "valor publicado: NO LOCALIZADO EN ESTA SESIÓN; tampoco se localizó una ordenación relativa publicada atribuible",
+          "Atribución": "sintesis(C-1669, C-1670, C-1990, C-1619)",
+          "Fuente": "n/a; dependencias canónicas C-1669; C-1670; C-1990; C-1619; BN-108; BN-122 términos exactos y resultado",
+          "Aceptación": "no evaluado",
+          "Fuerza": "desconocida",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv:fila 6:valor publicado. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "row_sha256": "e0b620c97f78aba950f63163be3c7a8cf5560b3d70e52dbcbb3c6140804ffa88"
+      }
+    ],
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": [
+      {
+        "record_number_without_header": 5,
+        "row": {
+          "clave": "BN-120",
+          "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Número agregado de genes publicados y densidad o promedio numérico de intrones para Sphaeroforma arctica JP610 en una misma versión de anotación",
+          "términos exactos utilizados": "\"Sphaeroforma arctica genome genes introns 121.6 Mb\"; \"Sphaeroforma arctica gene count intron density\"; \"Sphaeroforma arctica JP610 genome annotation genes\"",
+          "resultado y motivo": "La consulta del 13 de agosto de 2026 recuperó páginas de genes individuales de NCBI, el método de anotación genómica de S. arctica y la comparación de intrones de S434, pero no una cifra agregada estable de genes ni una densidad o promedio numérico de intrones atribuible a la misma versión del ensamblaje de 121.6 Mb. El hueco se conserva; no se estima una cifra contando identificadores parciales ni se mezcla una versión actual de RefSeq con la reconstrucción comparativa de S434."
+        },
+        "row_sha256": "93f842a7e278911b6160bac9149fd5bbd7b7f6c9395bd707ba147b3cf16c5248"
+      }
+    ],
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": [
+      {
+        "record_number_without_header": 5,
+        "row": {
+          "organismo": "*Sphaeroforma arctica*",
+          "tamaño del genoma publicado": "121.6 Mb",
+          "genes publicados": "NO LOCALIZADO EN ESTA SESIÓN (BN-120)",
+          "densidad o promedio de intrones": "NO LOCALIZADO EN ESTA SESIÓN como cifra; S434 solo sostiene una densidad elevada comparada (BN-120)",
+          "versión o método": "ensamblaje de referencia y reconstrucción comparativa; los dos huecos cuantitativos se conservan sin inferir valores ni mezclar versiones",
+          "fuente": "S446 Assembly statistics [sin localizar con mayor precisión]; S434 figs. 5–6; BN-120",
+          "#": "C-1565–C-1566"
+        },
+        "row_sha256": "e606ff426bd7cc399ccade9267da09ff354e050346aa05d91f0fedb036682d27"
+      }
+    ],
+    "data/auditoria/especificacion_magnitudes_por_requisito_v1.csv": [
+      {
+        "record_number_without_header": 43,
+        "row": {
+          "id_magnitud": "MREQ-0043",
+          "id_requisito": "R-0266",
+          "fragmento_literal": "tamaño, número de genes, densidad de intrones",
+          "magnitud_solicitada": "métricas genómicas nominales de ocho taxones del corredor",
+          "desenlace": "VALOR_PUBLICADO",
+          "afirmaciones_terminales": "C-1516; C-1517; C-1521; C-1522; C-1557; C-1558; C-1559; C-1560; C-1561; C-1562; C-1564; C-1568",
+          "registro_hueco": "",
+          "razon_hueco": "",
+          "transformacion_editorial": "NINGUNA"
+        },
+        "row_sha256": "887819eb2e8e86681490d8aa765891b2847648aa5da9c8b1851813565de2941c"
+      },
+      {
+        "record_number_without_header": 44,
+        "row": {
+          "id_magnitud": "MREQ-0044",
+          "id_requisito": "R-0266",
+          "fragmento_literal": "Sphaeroforma arctica",
+          "magnitud_solicitada": "número de genes y densidad de intrones de Sphaeroforma arctica",
+          "desenlace": "HUECO_EXPLICITO",
+          "afirmaciones_terminales": "",
+          "registro_hueco": "BN-120",
+          "razon_hueco": "No se localizó una cifra agregada estable de genes e intrones para la misma anotación del ensamblaje publicado.",
+          "transformacion_editorial": "NINGUNA"
+        },
+        "row_sha256": "5c990532e7b7a054c69f219789ca7990fd314451ca135f62f41c014e6a086c45"
+      }
+    ],
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": [
+      {
+        "record_number_without_header": 2021,
+        "row": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "tamaño del genoma publicado",
+          "contenido_sha256": "141ff2940b25b80f62e064cb71ae8c9015281e6093d649eaf59b56d204411dd4",
+          "contenido": "121.6 Mb",
+          "afirmaciones": "C-1565",
+          "base_semantica": "Afirmación+Objeto",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Adjudicación explícita conservadora tras cotejo del valor con Afirmación+Objeto; no se heredaron todas las C de la fila."
+        },
+        "row_sha256": "bf408a2cbe661a53ace439d1e63425a8ae26d57c76b15771132562abb2b2c6e3"
+      },
+      {
+        "record_number_without_header": 2022,
+        "row": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "genes publicados",
+          "contenido_sha256": "271bb055e6e77f021d9cfd69e4184b24960eb6cd14024e58dcc29dc8d3514fea",
+          "contenido": "NO LOCALIZADO EN ESTA SESIÓN (BN-120)",
+          "afirmaciones": "C-1990",
+          "base_semantica": "cotejo_literal_celda_C",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Cotejo de autor: C-1990 afirma el valor o límite acotado de esta celda; pendiente segunda revisión independiente."
+        },
+        "row_sha256": "291cc504c41884ab0acad40097ae51506a3bdb57f00179cf2f538651d0dcd3d0"
+      },
+      {
+        "record_number_without_header": 2023,
+        "row": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "densidad o promedio de intrones",
+          "contenido_sha256": "b0f95fc4162907fac44d415f013f5cc62e07cfdee346349c009ffe26a563b45e",
+          "contenido": "NO LOCALIZADO EN ESTA SESIÓN como cifra; S434 solo sostiene una densidad elevada comparada (BN-120)",
+          "afirmaciones": "C-1990",
+          "base_semantica": "cotejo_literal_celda_C",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Cotejo de autor: C-1990 afirma el valor o límite acotado de esta celda; pendiente segunda revisión independiente."
+        },
+        "row_sha256": "69c4267190733f3a67b3db8ffbb780d2e7d4693d5044aabb098b697816c0685b"
+      },
+      {
+        "record_number_without_header": 2024,
+        "row": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "versión o método",
+          "contenido_sha256": "c45abf5233e7693dc57c32122466526f24b989defe1fce4dacda02312fbffbd2",
+          "contenido": "ensamblaje de referencia y reconstrucción comparativa; los dos huecos cuantitativos se conservan sin inferir valores ni mezclar versiones",
+          "afirmaciones": "C-2783",
+          "base_semantica": "cotejo_literal_C_atomica_por_celda",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "row_sha256": "4ad40e617db1bc88d10b74ac276affd2fae914694bf9589cfc0793afea163d9e"
+      }
+    ],
+    "data/apendices/F_magnitudes.csv": [
+      {
+        "record_number_without_header": 442,
+        "row": {
+          "magnitud": "tamaño genómico de ensamblaje",
+          "valor tal como lo publica la fuente": "121.6",
+          "unidad original": "Mb",
+          "organismo, nodo o intervalo al que se aplica": "Sphaeroforma arctica JP610",
+          "método o proxy": "ensamblaje GCF_001186125.1",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S446 registro NCBI Datasets, Assembly statistics",
+          "#": "C-1565"
+        },
+        "row_sha256": "02437ad155cef04c99da003ef1d39a8c91ff768413f4405425c45b3931c00391"
+      }
+    ]
+  },
+  "mutations": [
+    "Solo propuesta MD y este JSON de evidencia; los artefactos externos permanecen en /tmp."
+  ],
+  "second_review_status": "No se emite CONFORME sobre ninguna futura C/celda/control. Requiere revisión nominal posterior a la aplicación por el autor principal."
+}

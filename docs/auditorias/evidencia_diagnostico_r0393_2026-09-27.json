@@ -1,0 +1,403 @@
+{
+  "utc": "2026-09-27T02:39:12Z",
+  "scope": "Diagnóstico independiente de automatización R0393 y segmentación; sin implementar ni firmar cumplimiento",
+  "hashes_before": {
+    "scripts/audit_requirement_controls.py": "1b275f110e46c7b7423d218e2f8a513b9670fe415a13e8750c26c3132ce97262",
+    "scripts/build_content_trace.py": "665322eef3aa0ffe640173e9463e4b9e3a45687c0af2b26c5270f7764ebb0f54",
+    "scripts/audit_semantics.py": "c8640f86a7f69f130f670948c11fcb1869afa5ae184c46e4d8adf7f889a154eb",
+    "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/auditorias/DIAGNOSTICO_INDEPENDIENTE_SECCION16_2026-09-27.md": "9362091b3cc259b12f1da59f58acd8aa16d9862db451d8e97616758619eee7a4",
+    "docs/auditorias/controles_requisitos/R-0393.csv": "6a8e8bc5c39ef29987d53eb8b898cfbd2a569b9fd830368f85ba0e7342d6aad5",
+    "docs/auditorias/fixtures/diagnostico_r0393_independiente_20260927.py": "bc7548ad44a047d28c5daa1bb87330734ea9ef49b8952738b36c7a2af1223837"
+  },
+  "hashes_after": {
+    "scripts/audit_requirement_controls.py": "1b275f110e46c7b7423d218e2f8a513b9670fe415a13e8750c26c3132ce97262",
+    "scripts/build_content_trace.py": "665322eef3aa0ffe640173e9463e4b9e3a45687c0af2b26c5270f7764ebb0f54",
+    "scripts/audit_semantics.py": "c8640f86a7f69f130f670948c11fcb1869afa5ae184c46e4d8adf7f889a154eb",
+    "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/auditorias/DIAGNOSTICO_INDEPENDIENTE_SECCION16_2026-09-27.md": "9362091b3cc259b12f1da59f58acd8aa16d9862db451d8e97616758619eee7a4",
+    "docs/auditorias/controles_requisitos/R-0393.csv": "6a8e8bc5c39ef29987d53eb8b898cfbd2a569b9fd830368f85ba0e7342d6aad5",
+    "docs/auditorias/fixtures/diagnostico_r0393_independiente_20260927.py": "bc7548ad44a047d28c5daa1bb87330734ea9ef49b8952738b36c7a2af1223837"
+  },
+  "inputs_stable": true,
+  "cases": [
+    {
+      "id": "solo_C_no_es_localizador_S",
+      "text": "Se midieron 223 orígenes [C-001].",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "INCUMPLE_DENSIDAD",
+      "manual_reason": "Una C no es una clave de fuente con localizador.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "S_solo_en_segunda_oracion",
+      "text": "Se midieron 223 orígenes [C-001]. Otro análisis informó 16 casos [C-001; S01 p. 1].",
+      "manual_grammatical_sentences": 2,
+      "manual_scope_verdict": "INCUMPLE_DENSIDAD",
+      "manual_reason": "Primera oración cuantitativa sin S/localizador; la segunda no la cubre.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro análisis informó 16 casos [C-001; S01 p. 1].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001].",
+        "Otro análisis informó 16 casos [C-001; S01 p. 1]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "cita_tras_punto_fusiona_oraciones",
+      "text": "Se midieron 223 orígenes. [C-001] Otro análisis informó 16 casos. [C-001; S01 p. 1]",
+      "manual_grammatical_sentences": 2,
+      "manual_scope_verdict": "INCUMPLE_DENSIDAD",
+      "manual_reason": "El primer grupo pospuesto sólo tiene C; el S de la segunda no lo sustituye.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes. [C-001] Otro análisis informó 16 casos. [C-001; S01 p. 1]",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes. [C-001] Otro análisis informó 16 casos. [C-001; S01 p. 1]"
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "cita_tras_punto_oculta_segunda_sin_C",
+      "text": "Se midieron 223 orígenes. [C-001; S01 p. 1] Otro análisis informó 16 casos.",
+      "manual_grammatical_sentences": 2,
+      "manual_scope_verdict": "INCUMPLE_C_Y_DENSIDAD",
+      "manual_reason": "La segunda oración no tiene C ni fuente propios; no hereda los de la primera.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes. [C-001; S01 p. 1] Otro análisis informó 16 casos.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes. [C-001; S01 p. 1] Otro análisis informó 16 casos."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "S_sin_localizador",
+      "text": "Se midieron 223 orígenes [C-001; S01].",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "INCUMPLE_DENSIDAD",
+      "manual_reason": "Una cifra exige localizador o marca honesta de imprecisión; la clave sola no basta.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001; S01].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001; S01]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "palabra_metodo_no_es_fuente",
+      "text": "Se midieron 223 orígenes [C-001; método propio].",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "INCUMPLE_DENSIDAD",
+      "manual_reason": "La palabra método no acredita ninguna fuente nominal.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001; método propio].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001; método propio]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "control_con_fuente_y_localizador",
+      "text": "Se midieron 223 orígenes [C-001; S01 p. 1].",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "ESTRUCTURA_PRESENTE_NO_COTEJO_CIENTIFICO",
+      "manual_reason": "Fuente/localizador están en la oración; su soporte real no se prueba aquí.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001; S01 p. 1].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001; S01 p. 1]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "marca_honesta_no_se_convierte_en_pasaje",
+      "text": "Se midieron 223 orígenes [C-001; S01 (sin localizar)].",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "IMPRECISION_HONESTA_NO_PASAJE_LOCALIZADO",
+      "manual_reason": "El contrato admite la marca honesta; no se inventa p.1 ni se confunde con pasaje recuperable.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "Se midieron 223 orígenes [C-001; S01 (sin localizar)].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Se midieron 223 orígenes [C-001; S01 (sin localizar)]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "SIN_FUENTE_no_exime_registro_C",
+      "text": "[SIN FUENTE] Se midieron 223 orígenes; se incluye para explicitar un dato no respaldado.",
+      "manual_grammatical_sentences": 1,
+      "manual_scope_verdict": "INCUMPLE_REGISTRO_C",
+      "manual_reason": "La marca explícita no elimina el deber independiente de registrar la proposición.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "[SIN FUENTE] Se midieron 223 orígenes; se incluye para explicitar un dato no respaldado.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "[SIN FUENTE] Se midieron 223 orígenes; se incluye para explicitar un dato no respaldado."
+      ],
+      "narrative_audit_errors": [
+        "Prosa sin fila C en docs/secciones/003-02-fixture.md:1"
+      ],
+      "trace_build_exit": 1,
+      "trace_check_exit": 1,
+      "trace_accepted": false,
+      "trace_stdout": "",
+      "trace_stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1:prosa\n",
+      "expected_current_acceptance": false,
+      "reproduction": "PASS"
+    },
+    {
+      "id": "control_abreviatura_bibliografica",
+      "text": "Smith et al. observaron 12 casos [C-001; S01 fig. 2]. Otra observación informó 16 [C-001; S01 p. 3].",
+      "manual_grammatical_sentences": 2,
+      "manual_scope_verdict": "ESTRUCTURA_PRESENTE_NO_COTEJO_CIENTIFICO",
+      "manual_reason": "Las abreviaturas et al., fig. y p. no constituyen fronteras de oración.",
+      "trace_segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Smith et al. observaron 12 casos [C-001; S01 fig. 2].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otra observación informó 16 [C-001; S01 p. 3].",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "split_sentences": [
+        "Smith et al. observaron 12 casos [C-001; S01 fig. 2].",
+        "Otra observación informó 16 [C-001; S01 p. 3]."
+      ],
+      "narrative_audit_errors": [],
+      "trace_build_exit": 0,
+      "trace_check_exit": 0,
+      "trace_accepted": true,
+      "trace_stdout": "Trazabilidad escrita: docs/auditorias/traza_ficticia.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "trace_stderr": "",
+      "expected_current_acceptance": true,
+      "reproduction": "PASS"
+    }
+  ],
+  "reproductions": 10,
+  "passed": 10,
+  "live_case": {
+    "path": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+    "line": 165,
+    "text": "Weinstein y Kuris reconstruyeron al menos 223 orígenes de parasitismo en 15 filos animales; Cornwallis y colaboradores, al menos 16 orígenes de simbiosis obligada en 89 familias de insectos. [C-1664] Parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no es un denominador de Eukaryota: la frecuencia pan-eucariota permanece sin localizar. [C-1664; S517 resumen; S513 resultados; BN-113]",
+    "sha256_text_lf": "f7771a109717b88ce66c859d20bf420efb765f93132e29d83cc5037d15277fab",
+    "split_sentences": [
+      "Weinstein y Kuris reconstruyeron al menos 223 orígenes de parasitismo en 15 filos animales; Cornwallis y colaboradores, al menos 16 orígenes de simbiosis obligada en 89 familias de insectos. [C-1664] Parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no es un denominador de Eukaryota: la frecuencia pan-eucariota permanece sin localizar. [C-1664; S517 resumen; S513 resultados; BN-113]"
+    ],
+    "segments": [
+      {
+        "kind": "prosa",
+        "path": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "locator": "L165",
+        "column": "n/a",
+        "content": "Weinstein y Kuris reconstruyeron al menos 223 orígenes de parasitismo en 15 filos animales; Cornwallis y colaboradores, al menos 16 orígenes de simbiosis obligada en 89 familias de insectos. [C-1664] Parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no es un denominador de Eukaryota: la frecuencia pan-eucariota permanece sin localizar. [C-1664; S517 resumen; S513 resultados; BN-113]",
+        "claims": [
+          "C-1664"
+        ],
+        "method": "cita_en_segmento",
+        "content_sha256": ""
+      }
+    ]
+  },
+  "live_R0393": {
+    "exit": 0,
+    "stdout": "{\"alcance_o_censo\": \"corpus_live; control=ORACION_CIENTIFICA_CON_C; clasificacion=AUTOMATIZADO; familias=TRAZABILIDAD_CONTENIDO_EXACTA; ficheros=48; BN_objetivo=0,C_objetivo=0,fallos=0,pruebas=2,pruebas_nominales=2,secciones_markdown=26,segmentos_trazabilidad=4488,tablas_objetivo=0; sha256_censo=82751db9d398160216f94d16c52ee2844efd7f47f5fbdf2d746465c927ffae49\", \"clasificacion\": \"AUTOMATIZADO\", \"comando_o_consulta\": \"python3 scripts/audit_requirement_controls.py --root . --requirement R-0393\", \"evidencia\": \"clasificacion=AUTOMATIZADO; familias=TRAZABILIDAD_CONTENIDO_EXACTA; pruebas=2; fallos=0; sha256_pruebas=354d5db3961752c57523ef49a85be3b8747baf68509f9430a440682526213b51; testigo=AUDITORÍA SEMÁNTICA CORRECTA: narrativa registrada, referencias anteriores, magnitudes trazadas, densidad H2, contrato de atribución, localizadores honestos y cierre final. | Trazabilidad exacta: 4488 segmentos.; detalle=ninguna infracción; localizadores=data/afirmaciones/00.csv;data/afirmaciones/01.csv;data/afirmaciones/02.csv;data/afirmaciones/03.csv;data/afirmaciones/04.csv;data/afirmaciones/05.csv;data/afirmaciones/06.csv;data/afirmaciones/07.csv;data/afirmaciones/08.csv;data/afirmaciones/09.csv;data/afirmaciones/10.csv;data/afirmaciones/11.csv;data/afirmaciones/12.csv;data/afirmaciones/13.csv;data/afirmaciones/14.csv;data/afirmaciones/15.csv;data/auditoria/mapeo_celdas_afirmaciones.csv;data/table_index.json;docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv;docs/secciones/000-preambulo.md;docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md;docs/secciones/002-01-1-alcance-del-corpus.md;docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md;docs/secciones/004-03-3-eucariogenesis.md;docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md;docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md;docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md;docs/secciones/008-07-7-ambiente.md;docs/secciones/009-08-8-ecologia-y-trofismo.md;docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md;docs/secciones/011-10-10-rasgos-con-costo.md;docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md;docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md;docs/secciones/014-13-13-escalas-tasas-y-recuentos.md;docs/secciones/015-14-14-nombres-y-nomenclatura.md;docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md;docs/secciones/017-17-apendice-a-apendice-a-fuentes.md;docs/secciones/018-17-apendice-b-apendice-b-entidades.md;docs/secciones/019-17-apendice-c-apendice-c-eventos.md;docs/secciones/020-17-apendice-d-apendice-d-fechas.md;docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md;docs/secciones/022-17-apendice-f-…\", \"fallos\": [], \"familias_automatizacion\": [\"TRAZABILIDAD_CONTENIDO_EXACTA\"], \"id_requisito\": \"R-0393\", \"pruebas\": [\"audit_semantics.py\", \"build_content_trace.py --check\"], \"resultado_control\": \"CERO_FALLOS\"}\n",
+    "stderr": ""
+  }
+}

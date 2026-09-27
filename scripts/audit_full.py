@@ -20,10 +20,20 @@ from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+try:
+    from audit_chronology import (
+        OBJECT_DATES, SEARCH_DATES, load_object_dates, load_search_dates,
+        manual_review_dates, review_date_errors, temporal_errors,
+    )
+except ModuleNotFoundError:
+    from scripts.audit_chronology import (
+        OBJECT_DATES, SEARCH_DATES, load_object_dates, load_search_dates,
+        manual_review_dates, review_date_errors, temporal_errors,
+    )
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CUTOFF = "2026-08-08"
-REVIEW_CLOSURE_DATE = "2026-08-13"
 PROMPT_PATH = "docs/C01-PROMPT-INVESTIGACION.md"
 PROMPT_SHA256 = "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
 ARCHIVE_PATH = "archive/maestro_provisional_v5_pre_migracion.md"
@@ -231,15 +241,9 @@ def valid_iso_date(value: str) -> bool:
     return parsed <= dt.date.fromisoformat(CUTOFF)
 
 
-def valid_review_closure_date(value: str) -> bool:
-    """Valida la fecha posterior reservada para la segunda revisión final."""
-    if not ISO_DATE.fullmatch(value):
-        return False
-    try:
-        parsed = dt.date.fromisoformat(value)
-    except ValueError:
-        return False
-    return parsed == dt.date.fromisoformat(REVIEW_CLOSURE_DATE)
+def valid_review_closure_date(value: str, not_before: tuple[str, ...] = ()) -> bool:
+    """Valida cronología declarada, no autenticidad ni una fecha fija de cierre."""
+    return not review_date_errors(value, not_before)
 
 
 def canonical_prefixed_id(prefix: str, number: int) -> str:
@@ -735,6 +739,9 @@ def audit_matrices(
                 add(findings, "AF507", CLAIM_MATRIX, "La matriz no cubre cada C final exactamente una vez")
 
     path = ctx.path(SOURCE_MATRIX)
+    chronology = load_object_dates(ctx.root)
+    for error in chronology.errors:
+        add(findings, "AF514", str(OBJECT_DATES), error)
     if not path.exists():
         add(findings, "AF510", SOURCE_MATRIX, "Falta la matriz final de fuentes")
     else:
@@ -806,8 +813,15 @@ def audit_matrices(
                     add(findings, "AF515", SOURCE_MATRIX, "Sintaxis de clave final inválida", index, row["clave_inicial"])
                 if row["estado_hallazgo"] not in {"CERRADO", "HUECO_CIENTIFICO_ETIQUETADO"}:
                     add(findings, "AF513", SOURCE_MATRIX, "Hallazgo bibliográfico no cerrado", index, row["clave_inicial"])
-                if not valid_iso_date(row["fecha_verificacion"]):
-                    add(findings, "AF514", SOURCE_MATRIX, "Fecha inválida o posterior al corte", index, row["clave_inicial"])
+                is_new_source = row["clave_inicial"].startswith("NUEVA:")
+                verification = chronology.object_date(
+                    "VERIFICACION_FUENTE", row["clave_final"], row["huella_final_sha256"],
+                )
+                if (
+                    (is_new_source and (not verification or row["fecha_verificacion"] != verification[0]))
+                    or (not is_new_source and not valid_iso_date(row["fecha_verificacion"]))
+                ):
+                    add(findings, "AF514", SOURCE_MATRIX, "Fecha de verificación inválida, desconocida o sin evidencia de la versión", index, row["clave_inicial"])
                 for column in SOURCE_MATRIX_COLUMNS:
                     if not row[column].strip():
                         add(findings, "AF511", SOURCE_MATRIX, f"Celda obligatoria vacía: {column}", index, row["clave_inicial"])
@@ -1177,6 +1191,9 @@ def audit_negative_history(ctx: AuditContext, findings: list[Finding]) -> None:
 
 
 def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
+    chronology = load_search_dates(ctx.root)
+    for error in chronology.errors:
+        add(findings, "AF613", str(SEARCH_DATES), error)
     path = ctx.path(SEARCH_MATRIX)
     if not path.exists():
         add(findings, "AF610", SEARCH_MATRIX, "Falta el registro final de búsquedas")
@@ -1210,6 +1227,7 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
     if aggregate_keyed_fingerprints(initial_items) != BASELINE_SEARCH_AUDIT_SHA256:
         add(findings, "AF621", SEARCH_MATRIX, "Inventario Q-0001…Q-0165 distinto del congelado")
     baseline_bn_rows = baseline_rows[:106]
+    original_dates = {row["clave_bn"]: row["fecha"] for row in baseline_bn_rows}
     ids = [row["clave_bn"] for row in baseline_bn_rows]
     if len(ids) != BASELINE_BN_COUNT or len(ids) != len(set(ids)) or keyset_sha256(ids) != BASELINE_BN_KEYSET_SHA256:
         add(findings, "AF612", SEARCH_MATRIX, "El registro no contiene exactamente las 106 BN")
@@ -1222,16 +1240,29 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
             for row in history_rows
         }
     canonical_bn: set[str] = set()
+    current_bn: dict[str, dict[str, str]] = {}
     for entry in load_index(ctx)["tables"]:
         if entry["category"] == "negative":
             _, bn_rows = read_dicts(ctx.path(entry["csv_path"]))
             canonical_bn.update(row["clave"] for row in bn_rows)
+            current_bn.update((row["clave"], row) for row in bn_rows)
     new_bn = canonical_bn - set(history_priorities)
     recorded_new_bn = Counter(
         row["clave_bn"] for row in rows[165:] if row["clave_bn"] in new_bn
     )
     if recorded_new_bn != Counter({key: 1 for key in new_bn}):
         add(findings, "AF628", SEARCH_MATRIX, "Altas BN sin una búsqueda Q posterior exacta")
+    historical_reinspections = {
+        key for key in canonical_bn & set(history_priorities)
+        if (dated := chronology.rows.get((key, canonical_row_fingerprint(current_bn[key]))))
+        and dated["clase_fecha"] == "REINSPECCION"
+    }
+    recorded_reinspections = Counter(
+        row["clave_bn"] for row in rows[165:]
+        if row["clave_bn"] in history_priorities
+    )
+    if recorded_reinspections != Counter({key: 1 for key in historical_reinspections}):
+        add(findings, "AF628", SEARCH_MATRIX, "Reinspecciones BN históricas sin una Q posterior exacta y documentada")
     allowed_priorities = {"P0", "P1", "P2", "RETIRADA", "NO_APLICA"}
     allowed_states = {"CERRADO", "HUECO_CIENTIFICO_ETIQUETADO"}
     for index, row in enumerate(rows, 2):
@@ -1239,13 +1270,32 @@ def audit_searches(ctx: AuditContext, findings: list[Finding]) -> None:
         for column in SEARCH_MATRIX_COLUMNS:
             if not row[column].strip():
                 add(findings, "AF611", SEARCH_MATRIX, f"Celda obligatoria vacía: {column}", index, key)
-        post_cutoff_control = row["bloque"].startswith("alta de control manual ")
+        # La procedencia depende de la clave y de la posición, no de un texto
+        # de bloque modificable para eludir el contrato temporal.
+        post_cutoff_control = index > 166 and row["clave_bn"] in canonical_bn
+        dated = None
+        if post_cutoff_control:
+            dated = chronology.rows.get((
+                row["clave_bn"], canonical_row_fingerprint(current_bn[row["clave_bn"]]),
+            ))
         valid_date = (
-            row["fecha"] == REVIEW_CLOSURE_DATE
+            dated is not None and row["fecha"] == dated["fecha_ejecucion"]
             if post_cutoff_control else valid_iso_date(row["fecha"])
         )
         if not valid_date:
-            add(findings, "AF613", SEARCH_MATRIX, "Fecha inválida o posterior al corte", index, key)
+            add(findings, "AF613", SEARCH_MATRIX, "Fecha inválida, desconocida o sin ejecución documentada para la huella BN", index, key)
+        if dated is not None and row["clave_bn"] in historical_reinspections:
+            errors = temporal_errors(row["fecha"], (original_dates.get(row["clave_bn"], "FECHA_NO_DOCUMENTADA"),))
+            if errors:
+                add(findings, "AF613", SEARCH_MATRIX, "Reinspección incompatible con Q original: " + "; ".join(errors), index, key)
+        if dated is not None and any(
+            token not in row["evidencia_final"] for token in (
+                f"clase_fecha={dated['clase_fecha']}",
+                f"evidencia_fecha={dated['evidencia_local']}",
+                f"sha256_evidencia_fecha={dated['huella_evidencia_sha256']}",
+            )
+        ):
+            add(findings, "AF613", SEARCH_MATRIX, "La fecha Q omite o altera la clase/procedencia de ejecución BN", index, key)
         if row["prioridad"] not in allowed_priorities:
             add(findings, "AF622", SEARCH_MATRIX, "Prioridad fuera del vocabulario", index, key)
         if row["estado_registro"] not in allowed_states:
@@ -1444,6 +1494,10 @@ def review_object_fingerprint(
 
 
 def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
+    chronology = load_object_dates(ctx.root)
+    manual_dates, temporal_errors = manual_review_dates(ctx.root)
+    for error in [*chronology.errors, *temporal_errors]:
+        add(findings, "AF751", SECOND_REVIEW, error)
     path = ctx.path(SECOND_REVIEW)
     if not path.exists():
         add(findings, "AF740", SECOND_REVIEW, "Falta la segunda revisión independiente")
@@ -1560,14 +1614,16 @@ def audit_second_review(ctx: AuditContext, findings: list[Finding]) -> None:
             add(findings, "AF749", SECOND_REVIEW, "Revisor independiente no identificado", index, key)
         if row["declaracion_independencia"] != "INDEPENDIENTE_DEL_AUTOR_DE_LA_CORRECCION":
             add(findings, "AF750", SECOND_REVIEW, "Declaración de independencia ausente", index, key)
-        # La matriz base conserva el corte 2026-08-08, pero esta firma se
-        # realiza explícitamente en la fecha posterior de cierre. Aplicar aquí
-        # ``valid_iso_date`` (que por contrato rechaza todo lo posterior al
-        # corte) haría AF751 inevitable incluso con la fecha literal correcta.
-        if not valid_review_closure_date(row["fecha"]):
+        bounds = chronology.object_date(stratum, key, row["huella_objeto_sha256"])
+        if stratum == "FUENTE" and object_row is not None:
+            bounds += (object_row["fecha_verificacion"],)
+        if stratum == "REQUISITO" and key in manual_dates:
+            bounds += (manual_dates[key],)
+        date_errors = review_date_errors(row["fecha"], bounds)
+        if date_errors:
             add(
                 findings, "AF751", SECOND_REVIEW,
-                f"Fecha de revisión distinta del cierre {REVIEW_CLOSURE_DATE}",
+                "; ".join(date_errors),
                 index, key,
             )
         expected_closure = "ABIERTO" if result == "NO_CONFORME" else "CERRADO"

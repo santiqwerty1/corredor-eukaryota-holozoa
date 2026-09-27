@@ -1,0 +1,199 @@
+{
+  "autor": "/root",
+  "utc": "2026-09-27T01:28:28Z",
+  "dictamen_previo": "docs/auditorias/evidencia_revision_independiente_s560_hgt_r0212_2026-09-27.json; snapshot y mensajes nominales de /root/revision_residuales/candidatos_editoriales; dictamen final independiente se conserva separado",
+  "estado_revision_independiente_delta": "PENDIENTE; no se autoaprueba esta corrección",
+  "normalizacion_huellas": "SHA-256 JSON ordenado por claves, ensure_ascii=False, separadores compactos, LF final",
+  "filas_previas": [
+    {
+      "fila": {
+        "#": "C-1186",
+        "Afirmación": "Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas y consideraron las adquisiciones recientes demasiado raras para tener amplia importancia evolutiva.",
+        "Sujeto": "hipótesis de barrera natural de HGT",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); Conclusion (Sec8)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra la interpretación de estos autores, que distinguen adquisiciones endosimbióticas de transferencia continua; no se presenta como consenso ni como ausencia demostrada de toda HGT.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "be6172815b58ac68ddfe60003d8c5b4a5824d47f9551b6e034aba492c92b258a"
+    },
+    {
+      "fila": {
+        "#": "C-1196",
+        "Afirmación": "Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación.",
+        "Sujeto": "afirmación C-1195",
+        "Predicado": "cuestionado_por",
+        "Objeto": "reensamblaje y decontaminación",
+        "Atribución": "expresa",
+        "Fuente": "S296 título y resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Las secuencias de supuesto origen extraño se asociaron con contigs contaminantes o cobertura discordante.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "fccb7ad3a193aacf5fc963a0dcb39a5266d26243cf069d254089510d103aac10"
+    },
+    {
+      "fila": {
+        "#": "C-1197",
+        "Afirmación": "El episodio de los tardígrados muestra que contaminación, binning y cobertura pueden simular transferencia horizontal masiva.",
+        "Sujeto": "caso de HGT en tardígrados",
+        "Predicado": "posee_modo_de_fallo*",
+        "Objeto": "contaminación y ensamblaje quimérico",
+        "Atribución": "sintesis(C-1195, C-1196)",
+        "Fuente": "S295; S296",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "La afirmación original cambió tras datos y controles independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "651871b64000884a8033bdde5c121ed8dae1b7ce8ccf0904714c471f4132bb45"
+    },
+    {
+      "fila": {
+        "#": "C-1198",
+        "Afirmación": "La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico.",
+        "Sujeto": "contaminación en estudios de HGT",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia de HGT eucariota real",
+        "Atribución": "sintesis(C-1188, C-1191, C-1192, C-1196)",
+        "Fuente": "S561; S211; S296",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "Los criterios probatorios discriminan casos, no una respuesta global binaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "df988e9519b70839b8b94966cfaf263b461eda9b43c8c1f6999bf91f2fd6d78f"
+    },
+    {
+      "fila": {
+        "#": "C-2832",
+        "Afirmación": "Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas, y advirtieron que debía contrastarse con más datos y un procedimiento estandarizado.",
+        "Sujeto": "contribución de HGT a los inventarios génicos de protistas resumida por Van Etten y Bhattacharya",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "aproximadamente 1 % como frecuencia relativa media de genes atribuidos a HGT en inventarios de protistas",
+        "Atribución": "expresa",
+        "Fuente": "S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una generalización aproximada de una revisión, no una tasa temporal ni un resultado obtenido con el mismo muestreo, denominador o filtro de S290. Se cotejó el apartado público, sin afirmar acceso al cuerpo completo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "9d95ecd8ffa15e7b52d4b8dc59f634bde8fc6f7f48c0e656375b8cd28e1a1caa"
+    }
+  ],
+  "filas_corregidas": [
+    {
+      "fila": {
+        "#": "C-1186",
+        "Afirmación": "Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas.",
+        "Sujeto": "hipótesis de barrera natural de HGT",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); Conclusion (Sec8)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra la interpretación de estos autores, que distinguen adquisiciones endosimbióticas de transferencia continua; no se presenta como consenso ni como ausencia demostrada de toda HGT. La proposición separada sobre rareza e importancia evolutiva se conserva en C-2838.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "6ddadd97f97e256556d1a7e59e1864d9d2c6cce9ed0a5f1257a09ba8ef9dcd97"
+    },
+    {
+      "fila": {
+        "#": "C-1196",
+        "Afirmación": "Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación.",
+        "Sujeto": "afirmación C-1195",
+        "Predicado": "cuestionado_por",
+        "Objeto": "reensamblaje y decontaminación",
+        "Atribución": "expresa",
+        "Fuente": "S296 Results and Discussion, Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini; Conclusions (versión PNAS final, PMC4983863)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Las secuencias de supuesto origen extraño se asociaron con contigs contaminantes o cobertura discordante.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "36061e5f5e8f69c0c3453ee36d4a30c6b7480c4806b726cb94cbc2b999e850f1"
+    },
+    {
+      "fila": {
+        "#": "C-1197",
+        "Afirmación": "El episodio de los tardígrados ejemplifica un falso positivo de HGT masiva debido a contaminación no detectada en los datos ensamblados.",
+        "Sujeto": "caso de HGT en tardígrados",
+        "Predicado": "posee_modo_de_fallo*",
+        "Objeto": "contaminación no detectada en los datos ensamblados",
+        "Atribución": "sintesis(C-1195, C-1196)",
+        "Fuente": "S295; S296",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La síntesis se limita a C-1195 y C-1196. Cobertura, contenido GC y afinidad taxonómica se usaron como controles para identificar contaminación, no como causas de HGT. El pasaje de S296 no acredita ensamblaje quimérico: la ausencia de similitud metazoa sugiere que los contigs evaluados no eran coensamblajes quiméricos. La atribución errónea previa se conserva en el dictamen independiente; no se afirma consenso social.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "aba4c99a48771eef68498737a85e888383551099e3fdb00328fe83f92d7e1c95"
+    },
+    {
+      "fila": {
+        "#": "C-1198",
+        "Afirmación": "La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico.",
+        "Sujeto": "contaminación en estudios de HGT",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia de HGT eucariota real",
+        "Atribución": "sintesis(C-1188, C-1191, C-1192, C-1196)",
+        "Fuente": "S561; S211; S296",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Los criterios probatorios discriminan casos, no una respuesta global binaria. La síntesis se restringe a sus premisas y no acredita una encuesta de aceptación en la comunidad; la fuerza media describe ese apoyo acotado, no se deduce de la falta de consenso evaluado.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "397186f47a1b26a914a68257a88ae3053005f5bd956a4f60f228bd600a99377e"
+    },
+    {
+      "fila": {
+        "#": "C-2832",
+        "Afirmación": "Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas.",
+        "Sujeto": "contribución de HGT a los inventarios génicos de protistas resumida por Van Etten y Bhattacharya",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "aproximadamente 1 % como frecuencia relativa media de genes atribuidos a HGT en inventarios de protistas",
+        "Atribución": "expresa",
+        "Fuente": "S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una generalización aproximada de una revisión, no una tasa temporal ni un resultado obtenido con el mismo muestreo, denominador o filtro de S290. Se cotejó el apartado público, sin afirmar acceso al cuerpo completo. Los autores advierten explícitamente que esta generalización requiere más datos y un procedimiento estandarizado; se conserva como cautela del estimador, no como segunda proposición en Afirmación.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "4c6a151501e581de368fecc3e3d02f81338ebe18055e0aa427e98ac167a1bd64"
+    },
+    {
+      "fila": {
+        "#": "C-2838",
+        "Afirmación": "Ku y Martin consideraron las adquisiciones evolutivamente recientes de genes procariotas en eucariotas demasiado raras para tener amplia importancia evolutiva.",
+        "Sujeto": "hipótesis de escasa importancia evolutiva de la HGT procariota reciente hacia eucariotas",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 conclusión (Conclusion), JATS Sec8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se atribuye la interpretación a esos autores, no se presenta como un hecho establecido ni como rechazo de todos los casos de transferencia. Es la proposición independiente que estaba compuesta con C-1186.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "73f304a3b3bc7c46a800cdf9c611bb6d7cc554d04aa64a6e8b8db1a60519234d"
+    }
+  ],
+  "alcance": "Se separa C-1186/C-2838; cautela de C-2832 queda en Motivo; se corrige la causalidad/quimerismo no sustentados de C-1197 y las etiquetas de aceptación no acreditadas. C-1196 mantiene proposición y añade localizador de versión PNAS final. No se alteran dictámenes previos."
+}

@@ -2,6 +2,22 @@
 
 Fecha de corte bibliográfico: **2026-08-08**.
 
+## Rectificación posterior del lote S126 — 2026-09-26
+
+El informe y sus recuentos siguientes describen el corte histórico de 106 BN,
+no el registro activo actual. Se conserva esa procedencia sin convertir sus
+decisiones históricas en una aprobación de las afirmaciones vigentes.
+
+La disposición actual de los intervalos de S126 está documentada en
+`REMEDIACION_S126_2026-09-26.md` y en los dictámenes independientes del lote.
+Las edades antes convertidas o redondeadas y la numeración nodal reconstruida
+no son transcripciones válidas que puedan reutilizarse desde este informe.
+C-525/C-526 registran la raíz del muestreo, no una corona de Amorphea;
+C-558/C-559 registran el nodo Pygsuia–Nutomonas, no una corona de Breviatea.
+Los límites de las búsquedas actuales permanecen en BN-025/C-2817 y
+BN-557/C-2815. Esta rectificación no reescribe las filas iniciales congeladas
+ni convierte un resultado negativo en ausencia en toda la literatura.
+
 ## Objeto y cobertura
 
 Esta auditoría retoma las 106 búsquedas negativas que figuraban en el registro al comenzar la revisión y las contrasta con el encargo de docs/C01-PROMPT-INVESTIGACION.md. Se revisó cada fila de forma individual, incluyendo sus términos originales, las afirmaciones y tablas relacionadas, las fuentes ya incorporadas y búsquedas bibliográficas adicionales.

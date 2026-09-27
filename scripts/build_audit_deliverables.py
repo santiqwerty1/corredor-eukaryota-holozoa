@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import importlib.util
 import io
 import json
 import math
@@ -27,15 +28,25 @@ import subprocess
 import sys
 import tempfile
 from collections import Counter, defaultdict, deque
-from datetime import date
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable, Sequence
+
+try:
+    from audit_chronology import (
+        UNKNOWN_DATE, load_object_dates, load_search_dates, manual_review_dates,
+        review_date_errors, temporal_errors,
+    )
+except ModuleNotFoundError:
+    from scripts.audit_chronology import (
+        UNKNOWN_DATE, load_object_dates, load_search_dates, manual_review_dates,
+        review_date_errors, temporal_errors,
+    )
 
 
 ROOT = Path(__file__).resolve().parents[1]
 CUTOFF = "2026-08-08"
 AUDIT_ID = "research-audit-2026-08-08"
-REVIEW_CLOSURE_DATE = "2026-08-13"
 BASELINE_COMMIT = "a3ce4e6685a4e287a5fbd478d4657e475e10de3c"
 EVIDENCE_COMMIT = "af7e799e2d096a48f24afd31d7745e19cebf374d"
 DEFAULT_RECONSTRUCTED_INPUTS = Path(
@@ -129,6 +140,42 @@ SECOND_REVIEW_COLUMNS = [
     "fecha", "evidencia", "accion", "estado_cierre",
     "huella_objeto_sha256",
 ]
+NOMINAL_REVIEWS = Path("data/auditoria/revision_nominal_cierres_v1.csv")
+NOMINAL_REVIEW_COLUMNS = [
+    "version_revision", "estrato", "clave_objeto", "huella_objeto_sha256",
+    "eje", "resultado", "autor_version", "revisor_independiente",
+    "declaracion_independencia", "fecha_version_utc", "fecha_revision_utc",
+    "artefactos_inspeccionados", "evidencia_local", "huella_evidencia_sha256",
+    "localizador_evidencia", "alcance", "dictamen", "limitaciones",
+]
+SEMANTIC_AXES = (
+    "atomicidad", "equivalencia_spo", "soporte", "localizador",
+    "fidelidad_epistemica",
+)
+EXTRA_CLAIM_AXES = ("etiquetas", "trazabilidad_apendices")
+SOURCE_REVIEW_AXES = ("identidad_bibliografica", "tipo", "estado_editorial", "acceso")
+NOMINAL_INDEPENDENCE = "INDEPENDIENTE_DEL_AUTOR_DE_LA_VERSION"
+SOURCE_MATRIX_PATH = Path("docs/auditorias/matriz_fuentes_2026-08-08.csv")
+# Los dictámenes nominales son ENTRADAS manuales, nunca salidas del constructor.
+# Una fila por (estrato, clave, huella, eje), incluyendo los resultados adversos.
+# La huella C usa claim_fingerprint (U+001F+LF), la S source_fingerprint (JSON).
+# artefactos_inspeccionados es un objeto JSON canónico {ruta relativa: SHA256},
+# no vacío. Evidencia, localizador, alcance, dictamen y límites deben ser
+# nominales; autor/revisor distintos, independencia explícita y UTC exacto.
+# NO_APLICA solo se admite para los dos ejes C adicionales, con dictamen.
+# El contrato no acredita autenticidad humana: impide inferir una firma desde
+# metadatos, fechas, existencia de archivos o un CONFORME aislado.
+# Este CSV queda congelado por check_semantic_claim_census.review_artifacts.
+# Se completa ANTES de preparar S y congelar; no lee censos, matrices finales
+# ni segunda revisión global. No se reutiliza esa segunda revisión como entrada
+# de la matriz: sería circular. Las firmas globales C/S deben fijar además
+# expediente_sha256=<row_fingerprint(fila de matriz vigente)> en su evidencia.
+# Historia: no se reescriben firmas cuando cambia un artefacto compartido. Una
+# fila cuya prueba desaparece/cambia queda HISTORICA_NO_VIGENTE y no presta
+# conformidad; puede coexistir con una reinspección nueva. Archivar artefactos
+# con nombre versionado antes de sustituirlos conserva su recuperabilidad. Dos
+# dictámenes simultáneamente vigentes para objeto+huella+eje son ambiguos y se
+# rechazan; rutas circulares nunca se degradan a una mera obsolescencia.
 REQUIREMENT_REVIEW_TYPE = "CENSO_REQUISITO_100_PCT"
 APPENDIX_DELTA_COLUMNS = [
     "id_delta", "apendice", "fila_inicial", "fila_final",
@@ -770,7 +817,249 @@ def claim_is_hole(row: dict[str, str]) -> bool:
     )
 
 
-def final_claim_axes(rows: Sequence[dict[str, str]]) -> dict[str, str]:
+def semantic_census_module(root: Path):
+    """Instancia aislada del verificador íntegro; --root no muta sus globals.
+
+    Se ejecuta el mismo código que la puerta canónica, sin copiar ni reducir
+    sus condiciones. Las rutas se rebajan al root solicitado, también en tests.
+    """
+    spec = importlib.util.spec_from_file_location(
+        "_audit_semantic_census", Path(__file__).with_name("check_semantic_claim_census.py"),
+    )
+    if spec is None or spec.loader is None:
+        raise BuildError("No se pudo cargar el verificador del censo")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    original = module.ROOT
+    for name in ("FREEZE", "PRIMARY", "SECONDARY", "PROTOCOL"):
+        setattr(module, name, root / getattr(module, name).relative_to(original))
+    module.ROOT = root
+    return module
+
+
+class ObsoleteNominalEvidence(BuildError):
+    pass
+
+
+class NominalReviewIndex(dict):
+    def __init__(self):
+        super().__init__()
+        self.obsolete: list[tuple[str, str, str]] = []
+
+
+def nominal_artifact(root: Path, relative: str, fingerprint: str) -> None:
+    """No admite pruebas externas, autorreferentes ni derivados de cierre."""
+    path = Path(relative)
+    resolved = (root / path).resolve()
+    forbidden_names = {
+        "congelacion_censo_semantico_v1.json", "censo_semantico_afirmaciones_v1.csv",
+        "segunda_revision_afirmaciones_v1.csv", "segunda_revision_2026-08-08.csv",
+        "matriz_afirmaciones_2026-08-08.csv", "matriz_fuentes_2026-08-08.csv",
+        "matriz_requisitos_2026-08-08.csv", "AUDITORIA-COMPLETA-2026-08-08.md",
+        "auditoria_reproducible_2026-08-08.json", NOMINAL_REVIEWS.name,
+        "manifest.json", "requisitos_disposiciones.csv",
+        "revision_manual_requisitos_2026-08-08.csv",
+    }
+    forbidden_roots = (root.resolve() / "docs/auditorias/controles_requisitos",)
+    logical = root.resolve() / path
+    if (
+        path.is_absolute() or path.as_posix() != relative or ".." in path.parts
+        or not resolved.is_relative_to(root.resolve())
+        or any(candidate.name in forbidden_names for candidate in (logical, resolved))
+        or any(candidate.is_relative_to(base) for candidate in (logical, resolved) for base in forbidden_roots)
+        or not re.fullmatch(r"[0-9a-f]{64}", fingerprint)
+    ):
+        raise BuildError(f"Evidencia nominal externa, malformada o circular: {relative}")
+    if not resolved.is_file() or sha256_file(resolved) != fingerprint:
+        raise ObsoleteNominalEvidence(f"Artefacto ausente o SHA obsoleto: {relative}")
+
+
+def load_nominal_reviews(root: Path) -> NominalReviewIndex:
+    """Lee decisiones manuales; una ausencia no genera ninguna aprobación.
+
+    Conserva versiones históricas por huella, pero solo la versión exacta se
+    consulta para cerrar. Un contrato malformado se rechaza, no se repara.
+    El registro cronológico no presta un resultado científico a estas filas.
+    """
+    path = root / NOMINAL_REVIEWS
+    if not path.exists():
+        return NominalReviewIndex()
+    header, rows = read_dicts(path)
+    if header != NOMINAL_REVIEW_COLUMNS:
+        raise BuildError(f"Cabecera incompatible: {NOMINAL_REVIEWS}")
+    result = NominalReviewIndex()
+    seen_rows = set()
+    for number, row in enumerate(rows, 2):
+        label = f"{NOMINAL_REVIEWS}:{number}"
+        if None in row or any(not isinstance(row.get(k), str) or not row[k].strip() for k in header):
+            raise BuildError(f"{label}: fila nominal incompleta")
+        axes = EXTRA_CLAIM_AXES if row["estrato"] == "AFIRMACION" else SOURCE_REVIEW_AXES
+        pattern = r"C-\d{3,5}" if row["estrato"] == "AFIRMACION" else r"S\d{2,3}"
+        allowed = {"CONFORME", "NO_CONFORME", "NO_VERIFICABLE"}
+        if row["estrato"] == "AFIRMACION":
+            allowed.add("NO_APLICA")
+        if (
+            row["version_revision"] != "1" or row["estrato"] not in {"AFIRMACION", "FUENTE"}
+            or not re.fullmatch(pattern, row["clave_objeto"])
+            or row["eje"] not in axes or row["resultado"] not in allowed
+            or not re.fullmatch(r"[0-9a-f]{64}", row["huella_objeto_sha256"])
+        ):
+            raise BuildError(f"{label}: identidad, alcance o resultado incompatible")
+        placeholders = {"n/a", "no_aplica", "pendiente", "no_asignado", "x"}
+        for field_name in ("autor_version", "revisor_independiente", "localizador_evidencia"):
+            if row[field_name].strip().casefold() in placeholders:
+                raise BuildError(f"{label}: {field_name} no nominal")
+        if (
+            row["autor_version"].strip().casefold() == row["revisor_independiente"].strip().casefold()
+            or row["declaracion_independencia"] != NOMINAL_INDEPENDENCE
+        ):
+            raise BuildError(f"{label}: independencia no acreditada")
+        if any(
+            not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", row[key])
+            for key in ("fecha_version_utc", "fecha_revision_utc")
+        ) or temporal_errors(row["fecha_version_utc"]) or review_date_errors(
+            row["fecha_revision_utc"], (row["fecha_version_utc"],),
+        ):
+            raise BuildError(f"{label}: UTC u orden temporal inválido")
+        if len(row["alcance"].strip()) < 20 or len(row["dictamen"].strip()) < 30:
+            raise BuildError(f"{label}: alcance/dictamen insuficiente")
+        artifacts = json.loads(row["artefactos_inspeccionados"])
+        if (
+            not isinstance(artifacts, dict) or not artifacts
+            or json.dumps(artifacts, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            != row["artefactos_inspeccionados"]
+            or any(not isinstance(k, str) or not isinstance(v, str) for k, v in artifacts.items())
+        ):
+            raise BuildError(f"{label}: artefactos no son un mapa JSON canónico no vacío")
+        key = tuple(row[name] for name in ("estrato", "clave_objeto", "huella_objeto_sha256", "eje"))
+        row_hash = row_fingerprint(row)
+        if row_hash in seen_rows:
+            raise BuildError(f"{label}: dictamen nominal duplicado")
+        seen_rows.add(row_hash)
+        obsolete = []
+        # Inspeccionar TODAS las rutas: una obsoleta no puede ocultar otra
+        # circular. Las firmas anteriores permanecen byte por byte intactas.
+        for relative, fingerprint in [*artifacts.items(), (row["evidencia_local"], row["huella_evidencia_sha256"])]:
+            try:
+                nominal_artifact(root, relative, fingerprint)
+            except ObsoleteNominalEvidence as exc:
+                obsolete.append(str(exc))
+        if obsolete:
+            result.obsolete.append((row["estrato"], row["clave_objeto"],
+                f"HISTORICA_NO_VIGENTE: dictamen_sha256={row_hash}; " + "; ".join(sorted(set(obsolete)))))
+            continue
+        if key in result:
+            raise BuildError(f"{label}: dos dictámenes nominales vigentes para el mismo eje")
+        result[key] = row
+    return result
+
+
+def assert_nominal_reviews_current(root: Path, expected: NominalReviewIndex) -> None:
+    """Las pruebas nominales pueden estar fuera del inventario del censo.
+
+    Volver a leer el registro también revalida sus artefactos y sus SHA. La
+    igualdad de filas o del inventario semántico no sustituye esa comprobación.
+    Conservar la historia no autoriza usar una prueba que acaba de caducar.
+    """
+    current = load_nominal_reviews(root)
+    if current != expected or current.obsolete != expected.obsolete:
+        raise BuildError("El expediente nominal o sus artefactos cambiaron durante la construcción")
+
+
+@dataclass
+class ClaimReviewEvidence:
+    # El constructor de este objeto no sustituye load_claim_review_evidence.
+    semantic: dict[str, tuple[str, str]] = field(default_factory=dict)
+    nominal: dict[tuple[str, str, str, str], dict[str, str]] = field(default_factory=dict)
+    errors: tuple[str, ...] = ()
+
+    def evidence(self, rows: Sequence[dict[str, str]]) -> str:
+        parts = []
+        for row in rows:
+            key, fingerprint = row["#"], claim_fingerprint(row)
+            entry = self.semantic.get(key)
+            parts.append(entry[1] if entry and entry[0] == fingerprint else f"{key}: censo no vigente")
+            for axis in EXTRA_CLAIM_AXES:
+                proof = self.nominal.get(("AFIRMACION", key, fingerprint, axis))
+                parts.append(
+                    f"{key}/{axis}: dictamen_sha256={row_fingerprint(proof)}; "
+                    f"expediente_no_antes_utc={proof['fecha_revision_utc']}"
+                    if proof else f"{key}/{axis}: revisión nominal pendiente"
+                )
+            historical = sum(
+                stratum == "AFIRMACION" and claim_id == key and old_hash != fingerprint
+                for stratum, claim_id, old_hash, _ in self.nominal
+            )
+            if historical:
+                parts.append(f"{key}: HISTORICA_NO_VIGENTE: {historical} dictámenes de otras versiones conservados")
+        if self.errors:
+            parts.append("Censo no cerrado: " + " | ".join(self.errors))
+        for stratum, key, diagnostic in getattr(self.nominal, "obsolete", []):
+            if stratum == "AFIRMACION" and key in {row["#"] for row in rows}:
+                parts.append(f"{key}: {diagnostic}")
+        return "; ".join(parts)
+
+
+def load_claim_review_evidence(root: Path) -> ClaimReviewEvidence:
+    nominal = load_nominal_reviews(root)
+    census = semantic_census_module(root)
+    evidence_paths = (census.FREEZE, census.PRIMARY, census.SECONDARY)
+    before = {path: sha256_file(path) for path in evidence_paths if path.exists()}
+    try:
+        inventory_before = census.inventory_payload()
+        errors = census.validate()
+    except (OSError, ValueError, RuntimeError, KeyError) as exc:
+        errors = [f"Censo no validable: {exc}"]
+    if errors:
+        return ClaimReviewEvidence(nominal=nominal, errors=tuple(errors))
+    primary = {r["id_afirmacion"]: r for r in read_dicts(census.PRIMARY)[1]}
+    secondary = {r["id_afirmacion"]: r for r in read_dicts(census.SECONDARY)[1]}
+    if before != {path: sha256_file(path) for path in evidence_paths if path.exists()}:
+        raise BuildError("El expediente semántico cambió durante su validación")
+    if inventory_before != census.inventory_payload():
+        raise BuildError("El inventario semántico cambió durante su validación")
+    inventory = census.claim_inventory()
+    # Toda C enlaza el CSV secundario completo, no solo su propia revisión.
+    # La firma global no puede ser anterior a una adjudicación que ese CSV
+    # todavía no contenía, ni a los dictámenes nominales adicionales.
+    last_review = max(
+        [row["fecha_utc"] for row in primary.values()]
+        + [row["fecha_utc"] for row in secondary.values()], default="",
+    )
+    dossier = (
+        f"censo_primario_sha256={sha256_file(census.PRIMARY)}; "
+        f"segunda_semantica_sha256={sha256_file(census.SECONDARY)}; "
+        f"congelacion_sha256={sha256_file(census.FREEZE)}; "
+        f"expediente_no_antes_utc={last_review}"
+    )
+    semantic = {}
+    for row in load_claims(root)[0]:
+        key = row["#"]
+        # CSV del censo y U+001F de la matriz son dos contratos distintos.
+        census_hash = sha256_bytes(census.serialized(CLAIM_COLUMNS, row))
+        if (
+            census_hash != inventory[key]["sha256_fila"]
+            or primary[key]["sha256_fila"] != census_hash
+            or secondary[key]["sha256_fila"] != census_hash
+        ):
+            raise BuildError(f"{key}: cambio de C durante el enlace del censo")
+        semantic[key] = (claim_fingerprint(row), (
+            f"{key}: {dossier}; "
+            f"fila_primaria_sha256={row_fingerprint(primary[key])}; "
+            f"fila_secundaria_sha256={row_fingerprint(secondary[key])}"
+        ))
+    assert_nominal_reviews_current(root, nominal)
+    if (
+        inventory_before != census.inventory_payload()
+        or before != {path: sha256_file(path) for path in evidence_paths if path.exists()}
+    ):
+        raise BuildError("El corpus o el expediente semántico cambió durante su enlace")
+    return ClaimReviewEvidence(semantic=semantic, nominal=nominal)
+
+
+def final_claim_axes(
+    rows: Sequence[dict[str, str]], evidence: ClaimReviewEvidence | None = None,
+) -> dict[str, str]:
     if not rows:
         return {
             "atomicidad": "NO_APLICA", "equivalencia_spo": "NO_APLICA",
@@ -778,17 +1067,25 @@ def final_claim_axes(rows: Sequence[dict[str, str]]) -> dict[str, str]:
             "fidelidad_epistemica": "NO_APLICA", "etiquetas": "NO_APLICA",
             "trazabilidad_apendices": "NO_APLICA",
         }
-    expresses = [row for row in rows if row["Atribución"] == "expresa"]
-    evaluated = [row for row in rows if row["Aceptación"] != "no evaluado"]
-    return {
-        "atomicidad": "CONFORME",
-        "equivalencia_spo": "CONFORME",
-        "soporte": "CONFORME" if expresses else "NO_APLICA",
-        "localizador": "CONFORME" if expresses else "NO_APLICA",
-        "fidelidad_epistemica": "CONFORME",
-        "etiquetas": "CONFORME" if evaluated else "NO_APLICA",
-        "trazabilidad_apendices": "CONFORME",
-    }
+    evidence = evidence or ClaimReviewEvidence()
+    verified = not evidence.errors and all(
+        row.get("#") in evidence.semantic
+        and evidence.semantic[row["#"]][0] == claim_fingerprint(row)
+        for row in rows
+    )
+    axes = dict.fromkeys(SEMANTIC_AXES, "CONFORME" if verified else "PENDIENTE")
+    for axis in EXTRA_CLAIM_AXES:
+        results = []
+        for row in rows:
+            proof = evidence.nominal.get(("AFIRMACION", row.get("#", ""), claim_fingerprint(row), axis)) if row.get("#") else None
+            results.append(proof["resultado"] if proof else "PENDIENTE")
+        axes[axis] = next((state for state in ("NO_CONFORME", "NO_VERIFICABLE", "PENDIENTE") if state in results),
+                          "NO_APLICA" if set(results) == {"NO_APLICA"} else "CONFORME")
+    return axes
+
+
+def claim_closure(axes: dict[str, str]) -> str:
+    return "CERRADO" if all(value in {"CONFORME", "NO_APLICA"} for value in axes.values()) else "ABIERTO"
 
 
 def build_claim_matrix(
@@ -798,6 +1095,7 @@ def build_claim_matrix(
 ) -> list[dict[str, str]]:
     current_rows, current_sections = load_claims(root)
     current = {row["#"]: row for row in current_rows}
+    review_evidence = load_claim_review_evidence(root)
     if {row["clave_inicial"] for row in frozen_rows} != {
         canonical_claim(number) for number in range(1, 1841)
     }:
@@ -859,18 +1157,16 @@ def build_claim_matrix(
         finals = sorted(destinations.get(claim_id, []), key=natural_key)
         final_rows = [current[final] for final in finals]
         covered.update(finals)
-        axes = final_claim_axes(final_rows)
-        if not finals:
-            disposition = "RETIRADA"
-        elif initial["resultado"] == "CONFORME" and len(finals) == 1:
-            disposition = "CONFORME"
-        else:
-            disposition = "CORREGIDA"
+        axes = final_claim_axes(final_rows, review_evidence)
         changed = (
             not finals
             or len(finals) != 1
             or initial["huella_corpus_inicial_sha256"]
             != claim_fingerprint({**final_rows[0], "#": claim_id})
+        )
+        disposition = (
+            "RETIRADA" if not finals else "CORREGIDA" if changed else
+            "CONFORME" if claim_closure(axes) == "CERRADO" else "PENDIENTE"
         )
         if not finals:
             final_action = (
@@ -881,7 +1177,7 @@ def build_claim_matrix(
             final_hash = "NO_APLICA"
         else:
             action_word = "ACTUALIZADA" if changed else "CONSERVADA"
-            split_note = f"; dividida en {len(finals)} filas atómicas" if len(finals) > 1 else ""
+            split_note = f"; dividida en {len(finals)} filas" if len(finals) > 1 else ""
             lineage_note = (
                 "reasignación semántica documentada posterior al renumerado"
                 if claim_id in SEMANTIC_DESTINATION_OVERRIDES
@@ -889,13 +1185,13 @@ def build_claim_matrix(
             )
             final_action = (
                 f"{action_word}{split_note}; destino(s) fijado(s) por {lineage_note} "
-                "y sometidos a las puertas deterministas."
+                "sin que la disposición estructural apruebe su contenido."
             )
             attrs = Counter(row["Atribución"] for row in final_rows)
             final_evidence = (
                 f"C final={compress_claim_refs(finals)}; atribuciones={dict(attrs)}; "
                 "huella(s) del corpus fijadas. El constructor no atribuye una "
-                "inspección de pasaje adicional."
+                "inspección de pasaje adicional. " + review_evidence.evidence(final_rows)
             )
             final_hash = (
                 claim_fingerprint(final_rows[0])
@@ -914,11 +1210,7 @@ def build_claim_matrix(
             "accion_final": final_action,
             "evidencia_auditoria_inicial": initial["evidencia_auditoria"],
             "evidencia_final": final_evidence,
-            "estado_hallazgo": (
-                "HUECO_CIENTIFICO_ETIQUETADO"
-                if any(claim_is_hole(row) for row in final_rows)
-                else "CERRADO"
-            ),
+            "estado_hallazgo": claim_closure(axes),
             "huella_inicial_sha256": initial_fingerprint(initial),
             "huella_corpus_inicial_sha256": initial["huella_corpus_inicial_sha256"],
             "huella_final_sha256": final_hash,
@@ -927,7 +1219,7 @@ def build_claim_matrix(
     for before, after in sorted(new_destinations, key=lambda item: natural_key(item[0])):
         row = current[after]
         covered[after] += 1
-        axes = final_claim_axes([row])
+        axes = final_claim_axes([row], review_evidence)
         result.append({
             "clave_inicial": f"NUEVA:{before}",
             "seccion_inicial": "NO_APLICA",
@@ -941,11 +1233,10 @@ def build_claim_matrix(
             "evidencia_auditoria_inicial": f"Mapa temporal: {before} -> NUEVA.",
             "evidencia_final": (
                 f"{after}; sección final {current_sections[after]}; huella del "
-                "corpus fijada. El constructor no atribuye inspección adicional."
+                "corpus fijada. El constructor no atribuye inspección adicional. "
+                + review_evidence.evidence([row])
             ),
-            "estado_hallazgo": (
-                "HUECO_CIENTIFICO_ETIQUETADO" if claim_is_hole(row) else "CERRADO"
-            ),
+            "estado_hallazgo": claim_closure(axes),
             "huella_inicial_sha256": "NO_APLICA",
             "huella_corpus_inicial_sha256": "NO_APLICA",
             "huella_final_sha256": claim_fingerprint(row),
@@ -985,9 +1276,9 @@ def final_editorial_status(row: dict[str, str] | None) -> str:
     if sentences:
         return "FINAL EN A: " + " ".join(sentences)
     return (
-        "FINAL EN A: sin corrección, retractación ni alerta editorial "
-        "registrada al 2026-08-08; el constructor no sustituye la verificación "
-        "editorial documentada."
+        "FINAL EN A: no se identifica una alerta editorial en las notas; "
+        "esto no documenta una búsqueda negativa ni su fecha y no sustituye "
+        "la verificación editorial nominal."
     )
 
 
@@ -995,7 +1286,19 @@ def build_source_matrix(
     frozen_rows: list[dict[str, str]], root: Path,
     claims: Sequence[dict[str, str]], removed_sources_path: Path,
 ) -> list[dict[str, str]]:
-    current = {row["clave"]: row for row in load_sources(root)}
+    chronology = load_object_dates(root)
+    if chronology.errors:
+        raise BuildError("\n".join(chronology.errors))
+    nominal = load_nominal_reviews(root)
+    source_catalogue = root / "data/apendices/A_fuentes.csv"
+    try:
+        catalogue_hash = sha256_file(source_catalogue)
+        current_rows = load_sources(root)
+    except (OSError, BuildError) as exc:
+        raise BuildError(f"No se puede fijar el catálogo A al construir la matriz S: {exc}") from exc
+    current = {row["clave"]: row for row in current_rows}
+    if len(current) != len(current_rows):
+        raise BuildError("El catálogo A contiene claves duplicadas; no se puede adjudicar una versión única")
     frozen = {row["clave_inicial"]: row for row in frozen_rows}
     if len(frozen) != 525:
         raise BuildError("La reconstrucción S no conserva 525 claves")
@@ -1117,6 +1420,9 @@ def build_source_matrix(
 
     for source_id in sorted(set(current) - set(frozen), key=natural_key):
         final = current[source_id]
+        verification = chronology.object_date(
+            "VERIFICACION_FUENTE", source_id, source_fingerprint(final),
+        )
         covered[source_id] += 1
         usage = f"{len(cited_by[source_id])} afirmaciones finales"
         unique = (
@@ -1153,13 +1459,79 @@ def build_source_matrix(
                 "no atribuye una verificación editorial nueva."
             ),
             "estado_hallazgo": "CERRADO",
-            "fecha_verificacion": CUTOFF,
+            "fecha_verificacion": verification[0] if verification else UNKNOWN_DATE,
             "huella_inicial_sha256": "NO_APLICA",
             "huella_corpus_inicial_sha256": "NO_APLICA",
             "huella_final_sha256": source_fingerprint(final),
         })
     if covered != Counter({source_id: 1 for source_id in current}):
         raise BuildError("La matriz S no cubre cada fuente final exactamente una vez")
+    # Los resultados estructurales previos no son aprobaciones. Solo un
+    # expediente bibliográfico/editorial vivo puede cerrar una S conservada.
+    # Ningún resultado depende del censo semántico que congelará esta matriz.
+    for row in result:
+        source_id = row["clave_final"]
+        if source_id == "NO_APLICA":
+            continue  # Retirada explícita; no se declara inspección de fuente.
+        fingerprint = row["huella_final_sha256"]
+        proofs = {
+            axis: nominal.get(("FUENTE", source_id, fingerprint, axis))
+            for axis in SOURCE_REVIEW_AXES
+        }
+        complete = all(proof and proof["resultado"] == "CONFORME" for proof in proofs.values())
+        verification = chronology.object_date("VERIFICACION_FUENTE", source_id, fingerprint)
+        identity = proofs["identidad_bibliografica"]
+        # La fecha de identidad se conserva separada de los otros dictámenes.
+        # Las S nuevas necesitan además el registro temporal exigido por AF514.
+        row["fecha_verificacion"] = (
+            verification[0] if verification else
+            identity["fecha_revision_utc"] if identity and not row["clave_inicial"].startswith("NUEVA:")
+            else UNKNOWN_DATE
+        )
+        complete = complete and row["fecha_verificacion"] != UNKNOWN_DATE
+        row["estado_hallazgo"] = "CERRADO" if complete else "ABIERTO"
+        if row["veredicto"] == "CONFORME" and not complete:
+            row["veredicto"] = "PENDIENTE"
+        for column, axis in (("identidad_bibliografica", "identidad_bibliografica"), ("acceso", "acceso")):
+            proof = proofs[axis]
+            row[column] = (
+                f"{proof['resultado']}: {proof['dictamen']}"
+                if proof else "NO_VERIFICADO: falta dictamen nominal de la versión actual."
+            )
+        editorial = proofs["estado_editorial"]
+        row["correcciones_retractaciones"] = (
+            final_editorial_status(current[source_id]) + " | " +
+            (f"{editorial['resultado']}: {editorial['dictamen']}" if editorial else
+             "PENDIENTE: falta revisión editorial nominal de la versión actual.")
+        )
+        row["estado_editorial"] += " | " + row["correcciones_retractaciones"]
+        row["evidencia_final"] += " Disposición estructural, no aprobación. " + "; ".join(
+            f"{axis}: {proof['resultado']}; dictamen_sha256={row_fingerprint(proof)}; "
+            f"expediente_no_antes_utc={proof['fecha_revision_utc']}"
+            if proof else f"{axis}: revisión nominal pendiente"
+            for axis, proof in proofs.items()
+        )
+        for stratum, key, diagnostic in nominal.obsolete:
+            if stratum == "FUENTE" and key == source_id:
+                row["evidencia_final"] += "; " + diagnostic
+        historical = sum(
+            stratum == "FUENTE" and key == source_id and old_hash != fingerprint
+            for stratum, key, old_hash, _ in nominal
+        )
+        if historical:
+            row["evidencia_final"] += f"; HISTORICA_NO_VIGENTE: {historical} dictámenes de otras versiones conservados"
+    assert_nominal_reviews_current(root, nominal)
+    # El expediente nominal puede inspeccionar otros artefactos y no incluir
+    # A. Su integridad no garantiza por sí sola la identidad viva de las S.
+    # Releer filas y bytes detecta cambios durante el enlace y también un
+    # cambio producido después de obtener las filas de esta relectura.
+    try:
+        final_rows = load_sources(root)
+        final_catalogue_hash = sha256_file(source_catalogue)
+    except (OSError, BuildError) as exc:
+        raise BuildError(f"El catálogo A dejó de ser verificable durante la construcción S: {exc}") from exc
+    if final_rows != current_rows or final_catalogue_hash != catalogue_hash:
+        raise BuildError("El catálogo A cambió durante la construcción de la matriz S; no se conserva ningún cierre")
     return result
 
 
@@ -1803,7 +2175,11 @@ def build_search_matrix(
     frozen_rows: list[dict[str, str]], active_bn: set[str],
     history: dict[str, dict[str, str]], current_bn: dict[str, dict[str, str]],
     key_map: dict[str, str],
+    *, root: Path = ROOT,
 ) -> list[dict[str, str]]:
+    chronology = load_search_dates(root)
+    if chronology.errors:
+        raise BuildError("\n".join(chronology.errors))
     if len(frozen_rows) != FROZEN_SEARCH_COUNT:
         raise BuildError(
             f"Inventario Q congelado inesperado: {len(frozen_rows)}; "
@@ -1861,6 +2237,7 @@ def build_search_matrix(
             "estado_registro": state,
             "huella_inicial_sha256": initial_fingerprint(initial),
         })
+    original_dates = {row["clave_bn"]: row["fecha"] for row in result if row["clave_bn"] != "n/a"}
     for offset, row in enumerate(ADDITIONAL_SEARCHES, len(result) + 1):
         mapped = {
             column: CLAIM_REF.sub(
@@ -1869,8 +2246,26 @@ def build_search_matrix(
             for column, value in row.items()
         }
         result.append({"id_busqueda": f"Q-{offset:04d}", **mapped})
-    for key in sorted(active_bn - set(history), key=natural_key):
+    historical_reinspections = {
+        key for key in active_bn & set(history)
+        if (dated := chronology.rows.get((key, row_fingerprint(current_bn[key]))))
+        and dated["clase_fecha"] == "REINSPECCION"
+    }
+    for key in sorted((active_bn - set(history)) | historical_reinspections, key=natural_key):
         row = current_bn[key]
+        historical = key in historical_reinspections
+        dated = chronology.rows.get((key, row_fingerprint(row)))
+        if historical and dated:
+            errors = temporal_errors(dated["fecha_ejecucion"], (original_dates.get(key, UNKNOWN_DATE),))
+            if errors:
+                raise BuildError(f"{key}: reinspección incompatible con Q original: {'; '.join(errors)}")
+        temporal_evidence = (
+            f"clase_fecha={dated['clase_fecha']}; "
+            f"evidencia_fecha={dated['evidencia_local']} "
+            f"({dated['localizador_evidencia']}); "
+            f"sha256_evidencia_fecha={dated['huella_evidencia_sha256']}; "
+            + ("la reinspección no acredita la fecha original; " if dated["clase_fecha"] == "REINSPECCION" else "")
+        ) if dated else "FECHA_NO_DOCUMENTADA: falta ejecución fechada con evidencia ligada a esta huella; "
         def value(*columns: str, fallback: str = "") -> str:
             return next(
                 (row[column] for column in columns if row.get(column, "").strip()),
@@ -1878,10 +2273,10 @@ def build_search_matrix(
             )
         result.append({
             "id_busqueda": f"Q-{len(result) + 1:04d}",
-            "fecha": REVIEW_CLOSURE_DATE,
-            "bloque": f"alta de control manual {key}",
+            "fecha": dated["fecha_ejecucion"] if dated else UNKNOWN_DATE,
+            "bloque": f"reinspección documentada {key}" if historical else f"alta de control manual {key}",
             "clave_bn": key,
-            "prioridad": "P1",
+            "prioridad": history[key]["prioridad_final"] if historical else "P1",
             "objetivo": value("hueco", "elemento"),
             "consulta_exacta": value(
                 "términos exactos o n/a", "términos exactos",
@@ -1903,14 +2298,15 @@ def build_search_matrix(
                 "resultado", "resultado y motivo", "resultado o motivo",
                 "términos exactos o fundamento",
             ),
-            "accion_inicial": "NO_APLICA: alta posterior al inventario Q congelado.",
-            "cambio_realizado": "ALTA_CANONICA_DOCUMENTADA",
+            "accion_inicial": "NO_APLICA: reinspección posterior, no sustituye la Q congelada." if historical else "NO_APLICA: alta posterior al inventario Q congelado.",
+            "cambio_realizado": "REINSPECCION_DOCUMENTADA" if historical else "ALTA_CANONICA_DOCUMENTADA",
             "desencadenante": (
                 "Nueva evidencia primaria que responda al hueco literal o "
                 "amplíe el censo indicado."
             ),
             "evidencia_final": (
                 f"{key}; sha256_fila_bn={row_fingerprint(row)}; "
+                + temporal_evidence +
                 "no se convierte el resultado negativo en una inferencia positiva."
             ),
             "estado_registro": "HUECO_CIENTIFICO_ETIQUETADO",
@@ -2122,39 +2518,34 @@ def deterministic_sample(
     )[:size]
 
 
-def valid_review_date(value: str) -> bool:
-    try:
-        parsed = date.fromisoformat(value)
-        closure = date.fromisoformat(REVIEW_CLOSURE_DATE)
-    except ValueError:
-        return False
-    return parsed == closure
+def valid_review_date(value: str, not_before: tuple[str, ...] = ()) -> bool:
+    return not review_date_errors(value, not_before)
 
 
-def valid_review_identity(row: dict[str, str]) -> bool:
+def valid_review_identity(row: dict[str, str], not_before: tuple[str, ...] = ()) -> bool:
     return (
         row.get("revisor_independiente") not in {"", "NO_ASIGNADO", "n/a"}
         and row.get("declaracion_independencia")
         == "INDEPENDIENTE_DEL_AUTOR_DE_LA_CORRECCION"
-        and valid_review_date(row.get("fecha", ""))
+        and valid_review_date(row.get("fecha", ""), not_before)
         and row.get("evidencia", "").strip() not in {"", "n/a"}
         and row.get("accion", "").strip() not in {"", "n/a"}
     )
 
 
-def valid_closed_review(row: dict[str, str]) -> bool:
+def valid_closed_review(row: dict[str, str], not_before: tuple[str, ...] = ()) -> bool:
     return (
         row.get("resultado") in {"CONFORME", "FALLO_CORREGIDO"}
         and row.get("estado_cierre") == "CERRADO"
-        and valid_review_identity(row)
+        and valid_review_identity(row, not_before)
     )
 
 
-def valid_open_failure(row: dict[str, str]) -> bool:
+def valid_open_failure(row: dict[str, str], not_before: tuple[str, ...] = ()) -> bool:
     return (
         row.get("resultado") == "NO_CONFORME"
         and row.get("estado_cierre") == "ABIERTO"
-        and valid_review_identity(row)
+        and valid_review_identity(row, not_before)
     )
 
 
@@ -2198,17 +2589,56 @@ def build_second_review(
     claim_matrix: list[dict[str, str]], source_matrix: list[dict[str, str]],
     requirement_matrix: list[dict[str, str]], content_trace_path: Path,
     evidence_path: Path | None,
+    *, root: Path = ROOT,
 ) -> list[dict[str, str]]:
+    chronology = load_object_dates(root)
+    manual_dates, manual_errors = manual_review_dates(root)
+    if chronology.errors or manual_errors:
+        raise BuildError("\n".join([*chronology.errors, *manual_errors]))
+    source_dates = {
+        row["clave_inicial"]: row["fecha_verificacion"] for row in source_matrix
+    }
+    dossiers = {
+        (stratum, row["clave_inicial"]): row
+        for stratum, matrix in (("AFIRMACION", claim_matrix), ("FUENTE", source_matrix))
+        for row in matrix
+    }
+
+    def bounds(row: dict[str, str]) -> tuple[str, ...]:
+        values = chronology.object_date(
+            row["estrato"], row["clave_matriz"], row["huella_objeto_sha256"],
+        )
+        if row["estrato"] == "FUENTE" and row["clave_matriz"] in source_dates:
+            values += (source_dates[row["clave_matriz"]],)
+        if row["estrato"] == "REQUISITO" and row["clave_matriz"] in manual_dates:
+            values += (manual_dates[row["clave_matriz"]],)
+        dossier = dossiers.get((row["estrato"], row["clave_matriz"]))
+        if dossier is not None:
+            values += tuple(re.findall(
+                r"\bexpediente_no_antes_utc=(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)\b",
+                dossier.get("evidencia_final", ""),
+            ))
+        return values
     _, trace_rows = read_dicts(content_trace_path)
     old_rows: list[dict[str, str]] = []
     if evidence_path and evidence_path.exists():
         header, old_rows = read_dicts(evidence_path)
         if header != SECOND_REVIEW_COLUMNS:
             raise BuildError(f"Cabecera incompatible en segunda revisión: {evidence_path}")
-    old = {
-        (row["estrato"], row["clave_matriz"], row["tipo_revision"]): row
-        for row in old_rows
-    }
+    old = {}
+    for row in old_rows:
+        key = (row["estrato"], row["clave_matriz"], row["tipo_revision"])
+        if key in old:
+            raise BuildError(f"Segunda revisión global duplicada y ambigua: {key}")
+        if (row["resultado"], row["estado_cierre"]) not in {
+            ("PENDIENTE", "ABIERTO"), ("NO_CONFORME", "ABIERTO"),
+            ("CONFORME", "CERRADO"), ("FALLO_CORREGIDO", "CERRADO"),
+        }:
+            raise BuildError(
+                f"Segunda revisión {key}: resultado/estado_cierre incompatibles: "
+                f"{row['resultado']}/{row['estado_cierre']}"
+            )
+        old[key] = row
 
     rows: list[dict[str, str]] = []
     matrices = {
@@ -2297,8 +2727,17 @@ def build_second_review(
     for row in rows:
         key = (row["estrato"], row["clave_matriz"], row["tipo_revision"])
         previous = old.get(key)
+        dossier = dossiers.get((row["estrato"], row["clave_matriz"]))
+        if dossier is not None:
+            token = f"expediente_sha256={row_fingerprint(dossier)}"
+            row["evidencia"] += f" La revisión nominal debe fijar {token} (expediente vigente)."
+            if previous and previous["resultado"] in {"CONFORME", "FALLO_CORREGIDO"} and (
+                dossier.get("estado_hallazgo") != "CERRADO"
+                or token not in previous["evidencia"].split()
+            ):
+                previous = None
         if previous and previous["huella_objeto_sha256"] == row["huella_objeto_sha256"]:
-            if valid_closed_review(previous) or valid_open_failure(previous):
+            if valid_closed_review(previous, bounds(row)) or valid_open_failure(previous, bounds(row)):
                 for column in SECOND_REVIEW_COLUMNS:
                     if column != "id_revision":
                         row[column] = previous[column]
@@ -2306,9 +2745,11 @@ def build_second_review(
                 # Conservar solo texto abierto; nunca promoverlo automáticamente.
                 for column in (
                     "revisor_independiente", "declaracion_independencia", "fecha",
-                    "evidencia", "accion", "estado_cierre",
+                    "evidencia", "accion",
                 ):
                     row[column] = previous[column]
+        if dossier is not None and row["resultado"] == "PENDIENTE" and token not in row["evidencia"].split():
+            row["evidencia"] += f" Expediente ahora requerido: {token} (sin aprobación)."
     for number, row in enumerate(rows, 1):
         row["id_revision"] = f"REV-{number:05d}"
     return rows
@@ -2353,12 +2794,17 @@ def report_markdown(
     review: list[dict[str, str]], after: dict[str, int],
     appendix_delta_counts: dict[str, Counter[str]],
 ) -> bytes:
-    pending = sum(row["estado_cierre"] != "CERRADO" for row in review)
+    pending = sum(not valid_closed_review(row) for row in review)
+    unclosed = sum(row["estado_hallazgo"] != "CERRADO" for row in [*claim_matrix, *source_matrix])
+    open_severities = Counter(
+        row["severidad_inicial"] for row in [*claim_matrix, *source_matrix]
+        if row["estado_hallazgo"] != "CERRADO"
+    )
     corrected_failures = sum(row["resultado"] == "FALLO_CORREGIDO" for row in review)
     verdict = (
         "CERRADA: la segunda revisión independiente está documentada."
-        if pending == 0 else
-        "EN CURSO: la remediación está materializada, pero la segunda revisión independiente sigue abierta."
+        if pending == 0 and unclosed == 0 else
+        f"EN CURSO: {unclosed} objetos C/S y {pending} segundas revisiones permanecen abiertos."
     )
     claim_initial = Counter(row["estado_inicial"] for row in claim_matrix if row["clave_inicial"].startswith("C-"))
     claim_severity = Counter(row["severidad_inicial"] for row in claim_matrix if row["clave_inicial"].startswith("C-"))
@@ -2410,8 +2856,8 @@ def report_markdown(
         "",
         f"El corte inicial registró P0/P1 en C como {dict(claim_severity)} y en S como {dict(source_severity)}. Tras aplicar las disposiciones y destinos de las matrices:",
         "",
-        "- P0 abiertos: 0",
-        "- P1 abiertos: 0",
+        f"- P0 abiertos: {open_severities['P0']}",
+        f"- P1 abiertos: {open_severities['P1']}",
         "- Los huecos científicos reales permanecen etiquetados y no se cuentan como falsedades.",
         "- La segunda revisión abierta es una condición de aceptación independiente, no un hallazgo científico reclasificado silenciosamente.",
         "",
@@ -2452,6 +2898,7 @@ def build_reproducible_json(
     root: Path, reconstructed_inputs: Path, payloads: dict[str, bytes],
     after: dict[str, int], review: list[dict[str, str]],
     origin_paths: Sequence[Path], removed_sources_path: Path,
+    *, unclosed_objects: int,
 ) -> bytes:
     artifact_hashes = {
         relative: {"sha256": sha256_bytes(payload), "bytes": len(payload)}
@@ -2468,12 +2915,12 @@ def build_reproducible_json(
         artifact_hashes[relative] = {
             "sha256": sha256_file(path), "bytes": path.stat().st_size,
         }
-    pending = sum(row["estado_cierre"] != "CERRADO" for row in review)
+    pending = sum(not valid_closed_review(row) for row in review)
     data = {
         "audit_id": AUDIT_ID,
         "cutoff": CUTOFF,
         "verdict": (
-            "CERRADA" if pending == 0 else "REVISION_INDEPENDIENTE_PENDIENTE"
+            "CERRADA" if pending == 0 and unclosed_objects == 0 else "REVISION_INDEPENDIENTE_PENDIENTE"
         ),
         "anchors": {
             "prompt": {
@@ -2511,6 +2958,7 @@ def build_reproducible_json(
             "platform": platform.platform(),
         },
         "counts": {
+            "unclosed_claims_and_sources": unclosed_objects,
             "before": {
                 "claims": 1840, "sources": 525, "entities": 1536,
                 "events": 111, "dates": 282, "hypotheses": 81,
@@ -2602,6 +3050,13 @@ def parse_args() -> argparse.Namespace:
         "--check", action="store_true",
         help="Compara todos los derivados sin escribirlos.",
     )
+    parser.add_argument(
+        "--prepare-source-matrix", action="store_true",
+        help=(
+            "Prepara SOLO la matriz S desde revisión nominal, antes de congelar "
+            "el censo. No crea dictámenes ni congela; --check tampoco escribe."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -2646,18 +3101,37 @@ def main() -> int:
         if completed.returncode:
             raise BuildError(completed.stdout.strip())
         frozen = load_and_validate_reconstructed(reconstructed_inputs)
+        current_claims, _ = load_claims(root)
+        source_matrix = build_source_matrix(
+            frozen["sources"], root, current_claims, removed_sources_path,
+        )
+        source_payload = csv_payload(SOURCE_MATRIX_COLUMNS, source_matrix)
+        if args.prepare_source_matrix:
+            if args.require_complete_review:
+                raise BuildError("Preparación de S no es cierre global; opciones incompatibles")
+            if args.check:
+                if not paths["sources"].exists() or paths["sources"].read_bytes() != source_payload:
+                    raise BuildError("Matriz S preparada desactualizada")
+            else:
+                atomic_write(paths["sources"], source_payload)
+            print("Solo matriz S preparada; no se aprobaron ni congelaron censos o revisiones.")
+            return 0
+        # S es una ENTRADA congelada del censo: el cierre nunca puede cambiarla
+        # después de validar ese censo. Preparar, congelar y revisar son fases
+        # explícitas; no se actualizan pruebas para que encajen con el derivado.
+        if not paths["sources"].exists() or paths["sources"].read_bytes() != source_payload:
+            raise BuildError(
+                "La matriz S no está preparada: ejecutar --prepare-source-matrix "
+                "antes de congelar y revisar el censo; no se escribió ningún cierre."
+            )
         key_rows, key_map = load_key_map(
             root / "docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv"
         )
         origins = load_origin_maps(origin_paths)
-        current_claims, _ = load_claims(root)
         current_bn = load_negative_rows(root)
         active_bn = set(current_bn)
         claim_matrix = build_claim_matrix(
             frozen["claims"], root, key_rows, key_map, origins
-        )
-        source_matrix = build_source_matrix(
-            frozen["sources"], root, current_claims, removed_sources_path,
         )
         history_rows, history_delta_lines = build_negative_history(
             frozen["history"], current_bn
@@ -2670,7 +3144,8 @@ def main() -> int:
         )
         history_by_id = {row["clave_original"]: row for row in history_rows}
         search_matrix = build_search_matrix(
-            frozen["searches"], active_bn, history_by_id, current_bn, key_map
+            frozen["searches"], active_bn, history_by_id, current_bn, key_map,
+            root=root,
         )
 
         review_evidence = args.second_review_evidence
@@ -2680,11 +3155,13 @@ def main() -> int:
             claim_matrix, source_matrix, requirement_matrix,
             output_dir / "matriz_trazabilidad_contenido_2026-08-08.csv",
             review_evidence,
+            root=root,
         )
-        pending = [row for row in review if row["estado_cierre"] != "CERRADO"]
-        if args.require_complete_review and pending:
+        pending = [row for row in review if not valid_closed_review(row)]
+        unclosed = sum(row["estado_hallazgo"] != "CERRADO" for row in [*claim_matrix, *source_matrix])
+        if args.require_complete_review and (pending or unclosed):
             raise BuildError(
-                f"Quedan {len(pending)} revisiones independientes abiertas; "
+                f"Quedan {len(pending)} revisiones independientes y {unclosed} objetos C/S abiertos; "
                 "no se escribió ningún entregable."
             )
 
@@ -2721,7 +3198,7 @@ def main() -> int:
         )
         json_payload = build_reproducible_json(
             root, reconstructed_inputs, payloads, after, review, origin_paths,
-            removed_sources_path,
+            removed_sources_path, unclosed_objects=unclosed,
         )
 
         all_payloads = {**payloads, paths["json"].relative_to(root).as_posix(): json_payload}

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "integrador": "/root",
+  "fecha_captura_utc": "2026-09-27T03:13:04Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "estado": "TRES_LOCALIZADORES_INTEGRADOS_TRAS_REVISION_INDEPENDIENTE_LIMITADA",
+  "propuesta": {
+    "ruta": "docs/auditorias/PROPUESTA_LOCALIZADORES_C031_F_TABLA_V2_2026-09-27.json",
+    "sha256": "f5a497ba982f247f4bb3e64310b55f45da5758214cefabc0b803232c4691f375"
+  },
+  "revisiones": [
+    {
+      "ruta": "docs/auditorias/REVISION_INDEPENDIENTE_LOCALIZADORES_C031_V2_2026-09-27.json",
+      "sha256": "dc9db3f8504cafca14f26a8c04fe49c89afc81223c14739cab6848b8a71cac29"
+    },
+    {
+      "ruta": "docs/auditorias/REVISION_INDEPENDIENTE_LOCALIZADORES_C031_V2_2026-09-27.md",
+      "sha256": "57e9fe817c69f71279857a7a67880a13d2b2a4f23e41a2c9def2803cecc200b3"
+    },
+    {
+      "ruta": "docs/auditorias/dictamenes_localizadores_c031_v2_2026-09-27.csv",
+      "sha256": "7414e7ef3764b5ecec931be5821a70f4414bbed22ba4857fc77d8bcf130f6713"
+    }
+  ],
+  "cambios": [
+    {
+      "ruta": "data/afirmaciones/02.csv",
+      "campos": [
+        "Fuente"
+      ],
+      "sha256_archivo_antes": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+      "sha256_archivo_despues": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "sha256_fila_despues": "d602733bd48a4264d736d216d28750994bd6b9e7d6e616a378176c7e0f5d96c0",
+      "reversion_del_unico_campo_reproduce_archivo_anterior": true
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "campos": [
+        "fuente con localizador"
+      ],
+      "sha256_archivo_antes": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+      "sha256_archivo_despues": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "sha256_fila_despues": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051",
+      "reversion_del_unico_campo_reproduce_archivo_anterior": true
+    },
+    {
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "campos": [
+        "filas y fuentes"
+      ],
+      "sha256_archivo_antes": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+      "sha256_archivo_despues": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "sha256_fila_despues": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824",
+      "reversion_del_unico_campo_reproduce_archivo_anterior": true
+    }
+  ],
+  "recuentos": {
+    "C": 2838,
+    "F": 620
+  },
+  "derivados_ejecutados": [
+    "sync_claim_key_map.py --write: 2838 claves",
+    "build_claim_provenance.py --write: 2838 afirmaciones",
+    "build_magnitude_census.py --write: 620 filas",
+    "build_requirement_magnitude_census.py --write: 76 filas",
+    "build_table_lineage.py: 97 tablas",
+    "render.py: informes, exports, índice y manifest"
+  ],
+  "comprobaciones_ejecutadas": [
+    "build_atomic_cell_claims.py (comprobación predeterminada): exit0, 816 filas atómicas exactas",
+    "audit_semantics.py: exit0; alcance mecánico declarado por herramienta, no cierre científico",
+    "git diff --check: exit0"
+  ],
+  "intento_invalido_no_defecto": "build_atomic_cell_claims.py --check devolvió usage2 porque no admite esa opción; después se ejecutó correctamente la comprobación predeterminada sin --write.",
+  "limites": [
+    "Sólo tres campos de localizador; no se aprobaron todas las propiedades de C031/F/tabla ni las otras cinco filas Williams2020.",
+    "No se modificaron fuentes ni BN430/BN115. El resultado de las búsquedas históricas no se promueve.",
+    "La traza no se regeneró: su segmentador está en reparación y reinspección. Se mantuvieron sus bytes persistentes.",
+    "El censo de teleología v2 ya estaba obsoleto tras C1196; este cambio también invalida sus huellas de 02.csv/F/table01. No se recalcularon firmas independientes.",
+    "La QA externa final, el censo primario, la segunda revisión integral, los controles manuales y make verify siguen pendientes.",
+    "El paquete S240/S352 y el lote C1664/C1642/C1121 no se integraron; sus objetos nominales distintos permanecen sin cambio. Las huellas de archivo F anteriores deben interpretarse junto a este delta exacto, no actualizarse retrospectivamente."
+  ]
+}

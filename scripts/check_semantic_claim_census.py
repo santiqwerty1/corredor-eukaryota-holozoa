@@ -15,6 +15,7 @@ import hashlib
 import io
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -25,7 +26,7 @@ SECONDARY = ROOT / "data/auditoria/segunda_revision_afirmaciones_v1.csv"
 PROTOCOL = ROOT / "docs/auditorias/protocolo_censo_semantico_2026-08-13.md"
 RESULTS = {"CONFORME", "NO_CONFORME", "NO_VERIFICABLE"}
 HEX64 = re.compile(r"[0-9a-f]{64}")
-UTC_TIMESTAMP = re.compile(r"2026-08-13T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\dZ")
+UTC_TIMESTAMP = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 INDEPENDENCE_DECLARATION = "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CENSO_PRIMARIO"
 PLACEHOLDERS = {"", "n/a", "pendiente", "no verificado", "sin revisar", "x"}
 
@@ -91,11 +92,20 @@ def source_artifacts() -> dict[str, str]:
     }
 
 
+def control_paths() -> tuple[Path, ...]:
+    return (
+        ROOT / "data/apendices/A_fuentes.csv",
+        ROOT / "docs/auditorias/matriz_fuentes_2026-08-08.csv",
+        ROOT / "exports/acceso_fuentes.csv",
+    )
+
+
 def review_artifacts() -> dict[str, str]:
     """Congela todos los artefactos locales admisibles para glosas y BN.
 
     No incluye las propias salidas del censo: una revisión no puede usarse a sí
-    misma como evidencia. Las filas C ya quedan fijadas por ``afirmaciones``.
+    misma como evidencia. Las filas C ya quedan fijadas por ``afirmaciones``;
+    los archivos de control se registran una sola vez en su propio catálogo.
     """
     roots = [
         ROOT / "data/apendices",
@@ -111,28 +121,39 @@ def review_artifacts() -> dict[str, str]:
     paths.extend([ROOT / "data/table_index.json", ROOT / "data/table_lineage.csv"])
     return {
         path.relative_to(ROOT).as_posix(): sha(path)
-        for path in sorted(set(paths)) if path.exists()
+        for path in sorted(set(paths) - set(control_paths())) if path.exists()
     }
 
 
-def freeze_payload() -> dict[str, object]:
+def inventory_payload() -> dict[str, object]:
+    """Inventario vivo reproducible, sin inventar una fecha de congelación."""
     protocol_hash = sha(PROTOCOL) if PROTOCOL.exists() else "PROTOCOLO_NO_DISPONIBLE"
-    fixed = [
-        ROOT / "data/apendices/A_fuentes.csv",
-        ROOT / "docs/auditorias/matriz_fuentes_2026-08-08.csv",
-        ROOT / "exports/acceso_fuentes.csv",
-    ]
     return {
         "version": "1",
-        "fecha_congelacion": "2026-08-13",
         "version_protocolo": protocol_hash,
         "afirmaciones": claim_inventory(),
         "archivos_control": {
-            path.relative_to(ROOT).as_posix(): sha(path) for path in fixed
+            path.relative_to(ROOT).as_posix(): sha(path) for path in control_paths()
         },
         "artefactos_fuente": source_artifacts(),
         "artefactos_revision": review_artifacts(),
     }
+
+
+def parse_utc_timestamp(value: object) -> datetime | None:
+    """Acepta solo instantes UTC canónicos y fechas de calendario reales."""
+    if not isinstance(value, str) or not UTC_TIMESTAMP.fullmatch(value):
+        return None
+    try:
+        return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def freeze_payload(fecha_congelacion: str) -> dict[str, object]:
+    if parse_utc_timestamp(fecha_congelacion) is None:
+        raise ValueError("fecha_congelacion debe ser un instante UTC válido YYYY-MM-DDTHH:MM:SSZ")
+    return {**inventory_payload(), "fecha_congelacion": fecha_congelacion}
 
 
 def load_csv(path: Path, header: list[str]) -> tuple[list[dict[str, str]], list[str]]:
@@ -367,8 +388,8 @@ def validate_primary_evidence(
         errors.append(f"{key}: motivo_dictamen no es evidencia nominal suficiente")
     if is_placeholder(row["revisor"]):
         errors.append(f"{key}: revisor primario no identificado")
-    if not UTC_TIMESTAMP.fullmatch(row["fecha_utc"]):
-        errors.append(f"{key}: fecha_utc no es un instante UTC del cierre")
+    if parse_utc_timestamp(row["fecha_utc"]) is None:
+        errors.append(f"{key}: fecha_utc no es un instante UTC válido")
     if row["version_censo"] != "1":
         errors.append(f"{key}: version_censo inválida")
 
@@ -388,14 +409,27 @@ def validate_primary_evidence(
 
 def validate() -> list[str]:
     errors: list[str] = []
-    expected_freeze = freeze_payload()
+    expected_freeze = inventory_payload()
+    frozen: dict[str, object] = {}
     if not FREEZE.exists():
         errors.append(f"Falta congelación: {FREEZE.relative_to(ROOT)}")
-        frozen = expected_freeze
     else:
-        frozen = json.loads(FREEZE.read_text(encoding="utf-8"))
-        if frozen != expected_freeze:
-            errors.append("La congelación semántica no coincide con el corpus vivo")
+        try:
+            loaded = json.loads(FREEZE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            errors.append(f"Congelación: JSON inválido: {exc}")
+        else:
+            if not isinstance(loaded, dict):
+                errors.append("Congelación: debe ser un objeto JSON")
+            else:
+                frozen = loaded
+    freeze_time = parse_utc_timestamp(frozen.get("fecha_congelacion"))
+    if freeze_time is None:
+        errors.append("Congelación: fecha_congelacion debe ser un instante UTC válido")
+    else:
+        expected_freeze["fecha_congelacion"] = frozen["fecha_congelacion"]
+    if frozen != expected_freeze:
+        errors.append("La congelación semántica no coincide con el corpus vivo")
     claims = expected_freeze["afirmaciones"]
     assert isinstance(claims, dict)
     catalog = artifact_catalog(expected_freeze, errors)
@@ -403,6 +437,7 @@ def validate() -> list[str]:
     primary, primary_errors = load_csv(PRIMARY, PRIMARY_HEADER)
     errors.extend(primary_errors)
     by_claim: dict[str, dict[str, str]] = {}
+    primary_times: list[datetime] = []
     for row in primary:
         key = row["id_afirmacion"]
         if key in by_claim:
@@ -422,6 +457,11 @@ def validate() -> list[str]:
         if row["resultado"] not in RESULTS:
             errors.append(f"{key}: resultado primario inválido")
         validate_primary_evidence(row, expected, claims, catalog, errors)
+        primary_time = parse_utc_timestamp(row["fecha_utc"])
+        if primary_time is not None:
+            primary_times.append(primary_time)
+            if freeze_time is not None and primary_time < freeze_time:
+                errors.append(f"{key}: primera revisión anterior a la congelación")
         if row["version_protocolo"] != expected_freeze["version_protocolo"]:
             errors.append(f"{key}: versión de protocolo incorrecta")
     missing = sorted(set(claims) - set(by_claim))
@@ -435,6 +475,7 @@ def validate() -> list[str]:
     errors.extend(secondary_errors)
     second_by_claim: dict[str, dict[str, str]] = {}
     primary_hash = sha(PRIMARY) if PRIMARY.exists() else ""
+    last_primary_time = max(primary_times, default=None)
     for row in secondary:
         key = row["id_afirmacion"]
         if key in second_by_claim:
@@ -459,8 +500,15 @@ def validate() -> list[str]:
             errors.append(f"{key}: version_revision inválida")
         if is_placeholder(row["revisor_independiente"]):
             errors.append(f"{key}: revisor independiente no identificado")
-        if not UTC_TIMESTAMP.fullmatch(row["fecha_utc"]):
-            errors.append(f"{key}: fecha_utc independiente no es un instante UTC del cierre")
+        secondary_time = parse_utc_timestamp(row["fecha_utc"])
+        if secondary_time is None:
+            errors.append(f"{key}: fecha_utc independiente no es un instante UTC válido")
+        else:
+            if freeze_time is not None and secondary_time < freeze_time:
+                errors.append(f"{key}: segunda revisión anterior a la congelación")
+            # Cada fila secundaria fija el CSV primario completo, no solo su C.
+            if last_primary_time is not None and secondary_time < last_primary_time:
+                errors.append(f"{key}: segunda revisión anterior al cierre del censo primario completo")
         passage_hashes = row["sha256_pasajes_reinspeccionados"].split(";")
         if not passage_hashes or any(not HEX64.fullmatch(item) for item in passage_hashes):
             errors.append(f"{key}: huellas de pasajes reinspeccionados inválidas")
@@ -502,14 +550,22 @@ def validate() -> list[str]:
     return errors
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--write-freeze", action="store_true")
-    args = parser.parse_args()
+    parser.add_argument(
+        "--fecha-congelacion-utc",
+        help="Instante real de congelación, explícito: YYYY-MM-DDTHH:MM:SSZ",
+    )
+    args = parser.parse_args(argv)
+    if args.write_freeze and parse_utc_timestamp(args.fecha_congelacion_utc) is None:
+        parser.error("--write-freeze exige --fecha-congelacion-utc con un instante UTC válido")
+    if args.fecha_congelacion_utc is not None and not args.write_freeze:
+        parser.error("--fecha-congelacion-utc solo se admite con --write-freeze")
     if args.write_freeze:
         FREEZE.parent.mkdir(parents=True, exist_ok=True)
         FREEZE.write_text(
-            json.dumps(freeze_payload(), ensure_ascii=False, sort_keys=True, indent=2)
+            json.dumps(freeze_payload(args.fecha_congelacion_utc), ensure_ascii=False, sort_keys=True, indent=2)
             + "\n",
             encoding="utf-8",
         )

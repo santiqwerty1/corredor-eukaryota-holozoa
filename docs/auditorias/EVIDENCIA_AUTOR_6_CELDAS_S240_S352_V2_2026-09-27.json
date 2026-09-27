@@ -1,0 +1,1010 @@
+{
+  "version": 2,
+  "tipo": "EVIDENCIA_AUTORAL_DE_PROPUESTA; NO_REVISION_INDEPENDIENTE",
+  "autor": "/root/inspeccion_relojes",
+  "fecha_utc": "2026-09-27T02:48:53Z",
+  "finalizacion_autor_utc": "2026-09-27T02:50:52Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "normalizacion_huellas": {
+    "fila": "sha256(json.dumps(fila, ensure_ascii=False, sort_keys=True, separators=(',', ':')) + '\\n'), UTF-8",
+    "texto": "sha256(texto + '\\n'), UTF-8; se conserva texto exacto sin normalizar",
+    "archivo": "sha256 de bytes",
+    "pasaje": "Párrafos: join(itertext), colapsar espacios Unicode mediante split/join, UTF8 + LF; tablas: texto normalizado de cada celda unido por TAB, filas por LF, UTF8 + LF."
+  },
+  "fuentes": [
+    {
+      "clave": "S240",
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_archivo": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7"
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_archivo": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c"
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256_archivo": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+      "uso": "Inspección visual Fig. 4, p.6; colores y trazos no se infieren del JATS."
+    },
+    {
+      "clave": "S352",
+      "ruta_temporal": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+      "sha256_archivo": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms3325/MediaObjects/41467_2013_BFncomms3325_MOESM833_ESM.pdf",
+      "estado": "NO_INTEGRADO_EN_FUENTES"
+    },
+    {
+      "clave": "S563",
+      "ruta_temporal": "/tmp/S240-ref25-Jackson2016-preparacion-v2-20260927.xml",
+      "sha256_archivo": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4728078/fullTextXML",
+      "estado": "ALTA_PROPUESTA_NO_INTEGRADA"
+    }
+  ],
+  "rutas_fuentes_propuestas": [
+    {
+      "origen": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+      "destino": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "estado": "RUTA_PROPUESTA; NO_ARCHIVO_INTEGRADO"
+    },
+    {
+      "origen": "/tmp/S240-ref25-Jackson2016-preparacion-v2-20260927.xml",
+      "destino": "fuentes/S563 [2016] Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism.xml",
+      "sha256": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "estado": "RUTA_PROPUESTA; NO_ARCHIVO_INTEGRADO"
+    }
+  ],
+  "evidencia_preparatoria_s352": {
+    "ruta": "docs/auditorias/LECTURA_AUTORAL_S352_FIG4_NOTA5_PARA_V2_2026-09-27.json",
+    "sha256": "c677f03057590f7757a2fd8539b3fe3f6e017d690c3e384e0761219a38e54011"
+  },
+  "pasajes": [
+    {
+      "id": "S240_Par7",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par7\"]",
+      "texto_normalizado": "From a set of 15,623 genomic scaffolds, 693 scaffolds (all manually curated) were determined to be from the Perkinsela sp. nuclear genome. The N50 for these scaffolds was 57,461 base pairs (bp), with an average Illumina sequence depth of ~550X and a G + C content of 47.1% (Table S1.1). The total genome size was estimated to be ~9.5 Mbp. 5,252 protein-coding genes were predicted, with a mean intergenic distance of ~515 bp. 332 of a set of 458 ‘core eukaryotic genes’ (72%) were found in Perkinsela sp. using webMGA23.",
+      "sha256_pasaje": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+    },
+    {
+      "id": "S240_Par10",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par10\"]",
+      "texto_normalizado": "At ~9.5 Mbp in size and with < 5,500 predicted protein-coding genes, the Perkinsela sp. nuclear genome is substantially smaller than that of the free-living kinetoplastid flagellate Bodo saltans 25, the plant pathogen Phytomonas sp.26, and the human parasites Trypanosoma brucei 27 and Leishmania major 28 (Table 1). An analysis of proteins with KOG-based functional predictions (euKaryotic Orthologous Groups29) revealed > 600 KOG identifiers present in B. saltans, T. brucei, and Phytomonas sp. but absent in Perkinsela sp. (Fig. 2a; refs 25–27). The size and functional diversity of the Perkinsela sp. proteome is thus substantially reduced (Fig. 2a and b), presumably as a consequence of adaptation to intracellular life. Almost 14% of its proteome (721 of 5,252 proteins) appears to service its giant mitochondrion (including its mass of mitochondrial DNA, the kinetoplast) (Supplementary Note 1.7), which occupies the majority of the cell’s volume (Fig. 1e) and whose transcripts have been shown to undergo extensive and error-prone U-insertion/deletion RNA editing24.",
+      "sha256_pasaje": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa"
+    },
+    {
+      "id": "S240_Par14",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par14\"]",
+      "texto_normalizado": "P. pemaquidensis and Perkinsela sp. have never been successfully cultured separately (ref. 5 and references therein). Indeed, Page noted that “the Nebenkörper… [Perkinsela sp.] was always so close to the [amoeba] cell nucleus and followed its movements so faithfully that a physical connection between the 2 must be assumed…”40. We attempted to discern the underlying reason(s) for the obligate relationship between the two organisms. Endosymbiotic gene transfer (EGT), a well-known factor in the transition from endosymbiont to organelle41, is one possibility. We used a phylogenomics pipeline to search the >11,000 genes in the P. pemaquidensis nuclear genome for genes of kinetoplastid ancestry. Out of 3,846 protein alignments for which interpretable phylogenies could be reconstructed, only 8 genes likely derived from the endosymbiont were identified in the amoeba (Supplemental Note S1.6, Supplemental Fig. S1.6.1a–h). The role of EGT in forging this unusual symbiosis thus appears to have been minimal.",
+      "sha256_pasaje": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+    },
+    {
+      "id": "S240_Par16",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par16\"]",
+      "texto_normalizado": "How might Perkinsela sp. and P. pemaquidensis ‘communicate’? Using TEM and freeze-fracture cryo-SEM, we discovered invaginations on the surface of the endosymbiont, which appears bound by a single membrane (Fig. 1h,i, Supplementary Fig. S2.6.1). Intracellular vesicles with electron densities similar to the P. pemaquidensis cytoplasm were also apparent, like those seen in an early study of P. perniciosa 2. These observations suggest that Perkinsela sp. carries out endocytosis (although with no flagellar pocket, the site of endocytosis in trypanosomes32, the process is presumably not restricted to any particular region of the plasma membrane). This idea is further supported by genomic data. The Perkinsela sp. genome encodes a varied set of proteins involved in clathrin-mediated endocytosis, exocytosis, and vesicular trafficking (e.g., clathrin, dynamin, SNARE proteins, and a set of Rab proteins) (Supplementary Note 2.6), as well as 66 putative membrane transporters with diverse substrate specificities (Supplementary Note 2.7). Although their intracellular destination(s) is unknown, we speculate that the endocytic vesicles of Perkinsela sp. serve to internalize amoeba-derived metabolites (and, possibly, enzymes), thereby allowing the contents of the amoeba cytoplasm to feed directly into the biochemical pathways of the endosymbiont (Supplementary Note 3.14). In the opposite direction, Perkinsela sp. may secrete key proteins and metabolites to its plasma membrane or out into the cytoplasm of its host (Fig. 4). These are hypotheses that can be tested experimentally.",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+    },
+    {
+      "id": "S240_Tab1",
+      "fuente": "S240",
+      "selector": ".//table-wrap[@id=\"Tab1\"]/.//tr",
+      "filas_tabla": [
+        [
+          "",
+          "Perkinsela sp.a",
+          "Bodo saltans b",
+          "Phytomonas sp.c",
+          "Trypanosoma brucei d",
+          "Leishmania major e"
+        ],
+        [
+          "Genome size (Mbp)",
+          "9.5",
+          "39.9",
+          "17.8",
+          "26.1",
+          "32.8"
+        ],
+        [
+          "G + C (%)",
+          "47.1",
+          "46.6",
+          "48.0",
+          "46.4",
+          "59.7"
+        ],
+        [
+          "Protein-coding genes",
+          "5,252",
+          "18,943",
+          "6,381",
+          "9,068",
+          "8,272"
+        ],
+        [
+          "Mean intergenic distance (bp)",
+          "515.4",
+          "462.9",
+          "1,140",
+          "1,279",
+          "2,045"
+        ],
+        [
+          "Trans-splicing?",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ]
+      ],
+      "texto_normalizado": "\tPerkinsela sp.a\tBodo saltans b\tPhytomonas sp.c\tTrypanosoma brucei d\tLeishmania major e\nGenome size (Mbp)\t9.5\t39.9\t17.8\t26.1\t32.8\nG + C (%)\t47.1\t46.6\t48.0\t46.4\t59.7\nProtein-coding genes\t5,252\t18,943\t6,381\t9,068\t8,272\nMean intergenic distance (bp)\t515.4\t462.9\t1,140\t1,279\t2,045\nTrans-splicing?\tyes\tyes\tyes\tyes\tyes",
+      "sha256_pasaje": "859d1ce3afb8136dd29cbaf7b0a062f92f6263e938941cfbf651884079aecb4c",
+      "nota": "Celdas por fila unidas por TAB; filas unidas por LF; no se usan dimensiones inferidas de una figura."
+    },
+    {
+      "id": "S352_GeneRepertoire_p4",
+      "fuente": "S352",
+      "selector": "sec con título normalizado Gene repertoire of Capsaspora, cuarto p hijo directo",
+      "texto_normalizado": "Our data reveal the contrasting evolutionary histories of extracellular (or membrane-bound) components versus cytoplasmic components of signalling pathways involved in metazoan multicellularity and development. Most metazoan receptors and diffusible ligands are either ancestral metazoan innovations or have independently diversified in metazoans, whereas the majority of their intracellular components were already present in the unicellular ancestors of metazoans (Fig. 4). Both Capsaspora and M. brevicollis lack receptors and ligands in several systems involved in cell communication and development in metazoans, for example, those in the Hedgehog, Rhodopsin family G-protein-coupled receptors, Wnt, transforming growth factor-β and nuclear receptor signalling pathways (Fig. 4). Notch signalling also seems to be a metazoan innovation, although Capsaspora has several receptor proteins that resemble the metazoan Notch and Delta proteins in their domain architecture, which may represent the ancestral components of this system (Supplementary Figs S19–S21, Supplementary Note 5). Both Capsaspora and M. brevicollis have large numbers of TKs (92 and 128, respectively)20 (Supplementary Figs S22 and S23, Supplementary Table S9). Again, the receptor-type TKs independently diversified in Capsaspora, M. brevicollis and metazoans, whereas the cytoplasmic TKs are mostly homologous among these three lineages, highlighting the animal-specific adaptation of the receptor-ligand system in the Metazoa20. The mitogen-activated protein kinase pathway, a downstream cytoplasmic signalling system of the TK pathway, is also present in Capsaspora in the diversified form that we see now in metazoans (Supplementary Figs S24 and S25, Supplementary Note 5). The diverse members of the G-protein α-subunit family and the regulator of G-protein-signalling family, which together coordinate signal transduction from the 7TM receptors to their specific effectors, are also present in the Capsaspora genome, indicating that the diversity of these components has been secondarily lost, to some extent, in the lineage leading to M. brevicollis (Supplementary Figs S26 and S27, Supplementary Note 5).",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    },
+    {
+      "id": "S563_sec2.1_p1",
+      "localizador": "S563 Comparative Analysis of Kinetoplastid Genomes, párrafo 1; JATS sec[@id=sec2.1]/p[1]",
+      "texto_normalizado": "The 39.9 Mb genome of Bodo saltans strain Konstanz was sequenced to 170× coverage using Illumina HiSeq. The genome was assembled into 2,402 scaffolds (N50 = 31.5 kb) and includes 18,936 predicted protein-coding sequences. To prevent contamination of the assembly from xenic culture, we restricted the B. saltans genome to contigs that contain both eukaryotic homologs and transcriptomic coverage (see the Supplemental Experimental Procedures). The genome sequences of B. saltans and model trypanosomatids are compared in Table 1; based on CEGMA (core eukaryotic genes mapping approach) score [13], the B. saltans sequence displays a comparable degree of completeness to the reference genomes.",
+      "sha256_pasaje": "b5a7223d799ee19cf42a55b0582e914defa56142a8266bc8e79df3a8c1c3977e"
+    },
+    {
+      "id": "S563_sec4.2_p1",
+      "localizador": "S563 DNA Preparation and Sequencing, párrafo 1; JATS sec[@id=sec4.2]/p[1]",
+      "texto_normalizado": "B. saltans genomic DNA was prepared from cell cultures after reduction of the bacterial microflora (see the Supplemental Experimental Procedures). However, the sample retained a significant bacterial component. Genomic DNA was prepared from the cell pellet using phenol-chloroform extraction and used to create 500 bp and 3 Kb genomic libraries. T. borreli genomic DNA was prepared directly from commercial cell culture (LGC Standards) and used to create a 500 bp genomic library. All libraries were sequenced on the Illumina HiSeq platform.",
+      "sha256_pasaje": "84a0dab76cc9fd6afb637c1d8daa6e384ae19c788bfab89b1b9d2061ac2b1d87"
+    },
+    {
+      "id": "S563_sec4.4_p1",
+      "localizador": "S563 Genome Assembly, párrafo 1; JATS sec[@id=sec4.4]/p[1]",
+      "texto_normalizado": "To obtain the genome sequence of B. saltans, we applied an iterative approach. First, we corrected the reads for errors using SGA [43]. Then, 500-bp-insert sequence reads were assembled with Velvet version 1.0.18 [44], under the following parameters: kmer (41), exp_cov (auto), cov_cutoff (3), and insertsize (400). The scaffolds obtained were further joined with SSPACE [45] using first the 500-bp and then the 3-kb-insert libraries. Sequencing gaps were closed with Gapfiller [46] and Image [47]. Finally, we manually identified contigs that represented bacterial contamination and excluded reads mapping back to these. A contig was considered a contaminant if it displayed >70% similarity with the UniProt bacteria database and had no mapped RNA sequencing reads. This process was repeated three times. After the last iteration, we corrected small base errors with five iterations of ICORN [48] and split scaffolds with reads from the 3-kb-insert library and REAPR [49] under default parameters.",
+      "sha256_pasaje": "5096dffe3167981c51cccd0e26f52dd1bfe078270d5465ffc572ebead07b16e4"
+    },
+    {
+      "id": "S352_fig4_caption",
+      "localizador": "JATS fig[@id=f4]/caption",
+      "texto_normalizado": "Schematic representation of the putative Capsaspora owczarzaki cell.Protein components of major metazoan cell adhesion complexes (green background) and various signalling pathways including receptors (yellow background) are depicted. Components with red and blue backgrounds indicate those found both in C. owczarzaki and M. brevicollis and those found in C. owczarzaki but not in M. brevicollis, respectively. Dotted components are absent in the C. owczarzaki genome; greyed when M. brevicollis has them. A grey striped line represents an actin filament, to which the cell–ECM–adhesion complexes bind. See Supplementary Note 5 for details. *, two domains hedge and hog are found in different proteins in M. brevicollis. **, receptor-type proteins with domain architectures similar to Notch and Delta proteins are present in C. owczarzaki. ***, proteins with similar domain architectures are present in M. brevicollis, but not confidently mapped to those metazoan families by phylogenetic analyses. ****, the repertoires of RTKs are totally different between C. owczarzaki, M. brevicollis and metazoans, and thus likely to have diversified independently in each lineage. 4E-BP1, eukaryotic initiation factor 4E-binding protein 1; CK1, Casein kinase 1; C-Lectin, C-type lectin; CSL, CBF1/RBP-Jκ/suppressor of hairless/LAG-1; CTKs, cytoplasmic tyrosine kinases; DB, Dystrobrevin; DG, Dystroglycan; DP, Dystrophin; Dsh, Dishevelled; Ets, E-twenty six; FOX, Forkhead box; Gα, G-protein-α subunit; GluR, glutamate receptor; GPR108, G-protein-coupled receptor 108; GSK3, glycogen synthetase kinase 3; Grh, Grainy head; HD, homeodomain; IgCAM, Immunoglobulin-like cell adhesion molecule; ILK, Integrin-linked kinase; ITR, intimal thickness-related receptor; JNK, c-Jun N-terminal kinase; NRPTPs, non-receptor protein tyrosine phosphatases; OA1, Ocular albinism 1-like; PDE, phosphodiesterase; RGS, regulator of G-protein signalling; RTKs, receptor tyrosine kinases; RPTP, receptor protein tyrosine phosphatase; S6K p70; 70kDa ribosomal protein S6 kinase; SAV, Salvador; Sd, Scalloped; SG, Sarcoglycan; SSPN, Sarcospan; SYN, Syntrophin; TALE, three amino-acid loop extension-class homeodomain; TGFβ, Transforming growth factor β; TOR, Target of rapamycin; YAP, Yes-associated protein.",
+      "sha256_pasaje_utf8_lf": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+    },
+    {
+      "id": "S352_methods_gene_family",
+      "localizador": "Methods, Gene family analysis; único párrafo",
+      "texto_normalizado": "We chose several gene families that are particularly interesting in the context of the evolution of multicellularity. For each gene family, we inferred the presence and absence of the gene or protein domains in chosen taxa using the HMMER45 package, mutual Blast and phylogenetic analyses based on maximum likelihood trees inferred by RAxML42. Analysed taxa include three bilaterians (Homo sapiens, Strongylocentrotus purpuratus and Drosophila melanogaster), three non-bilaterian metazoans (Nematostella vectensis, Trichoplax adhaerens and Amphimedon queenslandica), the choanoflagellate M. brevicollis, the filasterean C. owczarzaki, three fungi (Rhizopus oryzae, Laccaria bicolor and Neurospora crassa), and the amoebozoan Dictyostelium discoideum. We also searched, if necessary, further basal eukaryotes whose genomes have been sequenced, in order to know the origin of gene families that could predate the split between amoebozoans and opisthokonts.",
+      "sha256_pasaje_utf8_lf": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    {
+      "id": "S352_results_gene_repertoire_p4",
+      "localizador": "Results, Gene repertoire of Capsaspora; cuarto párrafo hijo directo",
+      "texto_normalizado": "Our data reveal the contrasting evolutionary histories of extracellular (or membrane-bound) components versus cytoplasmic components of signalling pathways involved in metazoan multicellularity and development. Most metazoan receptors and diffusible ligands are either ancestral metazoan innovations or have independently diversified in metazoans, whereas the majority of their intracellular components were already present in the unicellular ancestors of metazoans (Fig. 4). Both Capsaspora and M. brevicollis lack receptors and ligands in several systems involved in cell communication and development in metazoans, for example, those in the Hedgehog, Rhodopsin family G-protein-coupled receptors, Wnt, transforming growth factor-β and nuclear receptor signalling pathways (Fig. 4). Notch signalling also seems to be a metazoan innovation, although Capsaspora has several receptor proteins that resemble the metazoan Notch and Delta proteins in their domain architecture, which may represent the ancestral components of this system (Supplementary Figs S19–S21, Supplementary Note 5). Both Capsaspora and M. brevicollis have large numbers of TKs (92 and 128, respectively)20 (Supplementary Figs S22 and S23, Supplementary Table S9). Again, the receptor-type TKs independently diversified in Capsaspora, M. brevicollis and metazoans, whereas the cytoplasmic TKs are mostly homologous among these three lineages, highlighting the animal-specific adaptation of the receptor-ligand system in the Metazoa20. The mitogen-activated protein kinase pathway, a downstream cytoplasmic signalling system of the TK pathway, is also present in Capsaspora in the diversified form that we see now in metazoans (Supplementary Figs S24 and S25, Supplementary Note 5). The diverse members of the G-protein α-subunit family and the regulator of G-protein-signalling family, which together coordinate signal transduction from the 7TM receptors to their specific effectors, are also present in the Capsaspora genome, indicating that the diversity of these components has been secondarily lost, to some extent, in the lineage leading to M. brevicollis (Supplementary Figs S26 and S27, Supplementary Note 5).",
+      "sha256_pasaje_utf8_lf": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    },
+    {
+      "id": "S240_Methods_Phylogenomics",
+      "localizador": "JATS sec[@id=Sec14], Methods, Phylogenomics",
+      "texto_normalizado": "Phylogenomics To identify gene transfers between P . pemaquidensis and Perkinsela sp., we implemented a phylogenomics pipeline (Supplementary Fig. S1.6.2 ) using predicted proteins from both the host and endosymbiont genomes. BlastP searches were used to retrieve a maximum of 1,000 sequences from a comprehensive database comprised of proteins from public genomic and transcriptomic databases (see Supplementary Table S1.6.1 ), with an E-value cut-off of 1E-15 and a query-target alignment length of 50% or more. After multiple sequence alignment and preliminary phylogenetic analysis using FastTree 66 , TreeTrimmer 67 was used to reduce OTU redundancy for alignments containing > 100 sequences using the criteria shown in Supplementary Table S1.6.2 (paralogs within the P . pemaquidensis and Perkinsela sp. genomes were retained in each alignment, regardless of how similar they were to one another). Alignments were then repeated, trimAL ver. 1.4 68 was used to remove ambiguously aligned regions, and phylogenetic trees were inferred using FastTree. The number of proteins for which trees could be constructed (i.e., at least 4 OTUs including the query) was 3,846 for P . pemaquidensis (out of 11,573 predicted proteins in total at the time of analysis) and 2,633 for the endosymbiont Perkinsela sp. (out of 5,252 proteins). Tree topologies were screened in an automated fashion using an in-house Ruby script; trees of interest (i.e., trees in which P . pemaquidensis or Perkinsela sp. proteins branch with one or more kinetoplastid or amoebozoan homologs, respectively) were selected for closer scrutiny. For these initial endosymbiotic gene transfer (EGT) candidates (35 host and 6 endosymbiont proteins), additional homologs (if present) were retrieved from the GenBank NR database using BlastP searches and added to the datasets. After elimination of redundant sequences, multiple alignment and removal of ambiguously aligned sites, trees were inferred from the final curated alignments using RAxML ver. 7.7.9 (with the LG + G + F model 69 ) (Supplementary Fig. S1.6.2 ). Trees were then checked manually, and those with topologies consistent with EGT were flagged for further investigation. Branch support was evaluated by rapid bootstrapping in RAxML (100 replicates), using the same substitution model described above. The flagged datasets were also analyzed using PhyloBayes ver. 3.3f 70 with the site-heterogeneous mixture CAT model. Two independent Markov chains were run for a total of 10,000 cycles. Bayesian posterior probabilities were calculated by sampling every 10 trees after discarding the first 2,500 trees as ‘burn-in’.",
+      "sha256_pasaje_utf8_lf": "edc7fb6d260a06e52afb38eb4d2aac4c39d660193706295b06540d50bdaaacdc"
+    }
+  ],
+  "pasajes_suplemento": [
+    {
+      "id": "S352_SI_7TM_p1",
+      "pagina_pdf": 94,
+      "pagina_impresa": 94,
+      "inicio_caracter_en_pagina": 602,
+      "fin_caracter_exclusivo_en_pagina": 1392,
+      "sha256_pasaje_normalizado_utf8_lf": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92",
+      "longitud_caracteres_normalizados": 775
+    },
+    {
+      "id": "S352_SI_Hedgehog_inicio",
+      "pagina_pdf": 95,
+      "pagina_impresa": 95,
+      "inicio_caracter_en_pagina": 1646,
+      "fin_caracter_exclusivo_en_pagina": 2023,
+      "sha256_pasaje_normalizado_utf8_lf": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b",
+      "longitud_caracteres_normalizados": 370
+    },
+    {
+      "id": "S352_SI_Hedgehog_fin",
+      "pagina_pdf": 96,
+      "pagina_impresa": 96,
+      "inicio_caracter_en_pagina": 0,
+      "fin_caracter_exclusivo_en_pagina": 514,
+      "sha256_pasaje_normalizado_utf8_lf": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a",
+      "longitud_caracteres_normalizados": 502
+    },
+    {
+      "id": "S352_SI_S26_leyenda",
+      "pagina_pdf": 44,
+      "pagina_impresa": 44,
+      "inicio_caracter_en_pagina": 4759,
+      "fin_caracter_exclusivo_en_pagina": 5892,
+      "sha256_pasaje_normalizado_utf8_lf": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4",
+      "longitud_caracteres_normalizados": 1128
+    },
+    {
+      "id": "S352_SI_Wnt_p96",
+      "pagina_pdf": 96,
+      "pagina_impresa": 96,
+      "inicio_caracter_en_pagina": 514,
+      "fin_caracter_exclusivo_en_pagina": 1101,
+      "sha256_pasaje_normalizado_utf8_lf": "552c630e7953b1f35255c3bb35c1f14add7e73d2310344110f90d04655cae93c"
+    }
+  ],
+  "lectura_visual": {
+    "artefactos": [
+      {
+        "ruta": "/tmp/S352-fig4-review-20260927.png",
+        "sha256": "b7d12beb90dbd75c95c57cb26240c7678129e26c305c21485beafe12384281ab"
+      },
+      {
+        "ruta": "/tmp/S352-v2-SI-p-094.png",
+        "sha256": "178ad9964ebd767583e0527b6ee7e10afc4283efad39a716bc4aa5b2290f9d21"
+      },
+      {
+        "ruta": "/tmp/S352-v2-SI-p-095.png",
+        "sha256": "2bb126db8bdb7f42d0d4bd933e667283acdde131928a8c74a2656b219916a4cc"
+      },
+      {
+        "ruta": "/tmp/S352-v2-SI-p-096.png",
+        "sha256": "bb265e75dcfdc05aa873c0fec91ba5b08c04b58f92a7037580f89757fd0571db"
+      },
+      {
+        "ruta": "/tmp/S352-v2-SI-S26-receptores-43.png",
+        "sha256": "ef37aada8f0462f05e7f042b51e670fc9329c5d6a4377eff9af54280b8beded6"
+      },
+      {
+        "ruta": "/tmp/S352-v2-SI-S26.png",
+        "sha256": "6067ed66a3b34e35c476e8557c3ef93adaff2339de6a53b1b250b3c3d3e00ab1"
+      }
+    ],
+    "Fig4": [
+      {
+        "componente": "Hedge",
+        "representacion": "borde punteado, relleno gris",
+        "limite": "La leyenda especifica dominios Hedge y Hog en proteínas distintas de Monosiga.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      },
+      {
+        "componente": "Hog",
+        "representacion": "borde punteado, relleno gris",
+        "limite": "No equivale al ligando Hedgehog completo.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      },
+      {
+        "componente": "Patched",
+        "representacion": "borde punteado, relleno gris",
+        "limite": "La codificación publicada señala componente en Monosiga, no en Capsaspora; no se deduce función receptora ensayada.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      },
+      {
+        "componente": "Dispatched",
+        "representacion": "borde punteado, relleno gris",
+        "limite": "La codificación publicada señala componente en Monosiga, no en Capsaspora; no se deduce secreción funcional de Hedgehog.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      },
+      {
+        "componente": "Smoothened",
+        "representacion": "borde punteado, sin relleno gris",
+        "limite": "Se registra el símbolo; no se generaliza a todas las clases receptoras ni a una vía funcional.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      },
+      {
+        "componente": "Gli",
+        "representacion": "borde punteado, sin relleno gris",
+        "limite": "Note 5 p. 96 conserva incertidumbre sobre la ortología de CAOG_06541; no convertir el símbolo en ausencia de cualquier proteína parecida a Gli.",
+        "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+      }
+    ],
+    "S26": [
+      {
+        "familia": "Glutamate",
+        "modelo_Pfam": "PF00003",
+        "Capsaspora": "punto",
+        "Monosiga": "punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "Rhodopsin",
+        "modelo_Pfam": "PF00001",
+        "Capsaspora": "sin punto",
+        "Monosiga": "sin punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "Adhesion / Secretin",
+        "modelo_Pfam": "PF00002",
+        "Capsaspora": "punto",
+        "Monosiga": "punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "Frizzled",
+        "modelo_Pfam": "PF01534",
+        "Capsaspora": "sin punto",
+        "Monosiga": "sin punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "cAMP",
+        "modelo_Pfam": "PF05462",
+        "Capsaspora": "punto",
+        "Monosiga": "punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "ITR-like",
+        "modelo_Pfam": "PF10192",
+        "Capsaspora": "punto",
+        "Monosiga": "sin punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "GPR108-like",
+        "modelo_Pfam": "PF06814",
+        "Capsaspora": "punto",
+        "Monosiga": "punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      },
+      {
+        "familia": "OA1-like",
+        "modelo_Pfam": "PF02101",
+        "Capsaspora": "punto",
+        "Monosiga": "sin punto",
+        "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+      }
+    ],
+    "limite": "Inspección autoral; pendiente de revisión independiente de estos objetos y no sólo de la leyenda."
+  },
+  "huellas_objetos": [
+    {
+      "grupo": "C_altas",
+      "indice": 0,
+      "sha256_fila": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 1,
+      "sha256_fila": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 2,
+      "sha256_fila": "178a41f6d593ff6481aa5ec6afae0bbde8816328167a4552a00a5c915f96d39c"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 3,
+      "sha256_fila": "061df51db5ca993d367e1415050360342b12ccf33930d100107e6e628c785880"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 4,
+      "sha256_fila": "7908768474da973bc3ec762f99f84687cea3c0db61b9d1b2b462b012e8d69b33"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 5,
+      "sha256_fila": "e47bb6671d073d35925825606c313e81872ce5606ad1b7ed29ffde8a1a708bcc"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 6,
+      "sha256_fila": "b155ea1f86ca430f675c2c28a22e76ea5983eb1fc51365e6fa5a2d78e28a4421"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 7,
+      "sha256_fila": "73b6bbc20eec7edcb5a72b35a63c702365320484f694f387cd51d6300f7fd4e0"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 8,
+      "sha256_fila": "180c16e4e726f4937643c8f73eae1a4546525ea65b0761d7f774b1ad00d4e808"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 9,
+      "sha256_fila": "0cd33c4ec6504cb6aea0b9f5c729f6fc6ed0bb490ec1d8a8d5acdefbfc611434"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 10,
+      "sha256_fila": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 11,
+      "sha256_fila": "3891cdaedefd8c956de1355dbb470be682f26d2ddfde589950db7f694a8cf2a5"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 12,
+      "sha256_fila": "266cd67714b6dc63d80e3e9bbb7c6d113a70e36e6288c1809c170d01100ec313"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 13,
+      "sha256_fila": "69e47fc428b55dc87432f021ed21f09718c4d3f69001bd60c7d32fa10b296479"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 14,
+      "sha256_fila": "84b2db71e1dbbadab33b512ff03abc77e2bc8adc1f1fa23ad63e3466f1c85595"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 15,
+      "sha256_fila": "36e56f67829ecda33f59e721237d6a216700d6dee197a74c45af7f31866bd52a"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 16,
+      "sha256_fila": "bf04036596d576d10dea545d787adc0fc7f1a82cb60857834b02446ca48807f2"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 17,
+      "sha256_fila": "83a397cf3960e622644f53ed5cf8505b52e0ef6c9038f4c5d15b3e2a29e914b6"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 18,
+      "sha256_fila": "1e054bcb2172dc35f247765a20482a489452e18daed8fed4f39191ef487754b2"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 19,
+      "sha256_fila": "63135350c41a099d93440987c9f48d37990440e73595afd63907ea8df953862c"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 20,
+      "sha256_fila": "38c09b44e78c4f7dbddc45eb4f9e1a3aebd7ca028833603ca38fae39109bac68"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 21,
+      "sha256_fila": "4fcb24c602c302aab80be4e977f85c92108744a2bd7aa66e5f123ad6aa6bd8e6"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 22,
+      "sha256_fila": "5dc10847adc2469078fcc647c1b731494f3042b4007d8f5a82eb990bdb6d67b9"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 23,
+      "sha256_fila": "745dff7adaa8b6b1239157f2255e90986828f0cd846678b776fa3aa08d8e8b9f"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 24,
+      "sha256_fila": "c84de621bb0420eee6e287508663c721b87e06ade113f8cb278116ab61be2072"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 25,
+      "sha256_fila": "3e9565d78e99749e2011c96a37e4e252a1032a8f3ecedcb083a56d1355952083"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 26,
+      "sha256_fila": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 27,
+      "sha256_fila": "3c54834d1f7b4851659a8dfe68b714691716791cd62e8dfeeff06f9c979a347f"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 28,
+      "sha256_fila": "b639c4015a36896d1cc83460dbb0196f111399b280e4528e2c487aeb92fb6d2c"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 29,
+      "sha256_fila": "a426af97a3804c38e61151fab2cb1d6c3a5efa7cb21016a3359137b8e59946f9"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 30,
+      "sha256_fila": "0a6843387fee142662272b1a99a2079e1cd13fa59164547ed471c7ae761f00a1"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 31,
+      "sha256_fila": "301af3b6e8c55c81dbfa4edf95c911121f092ae61a248b6ccd0c537b1195dcc6"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 32,
+      "sha256_fila": "c4c999960aab5fe8b2f0cb6d6b9c3c656ad0cfa6911b2723187782111f871195"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 33,
+      "sha256_fila": "0767c4924a157c9653287a5bcf38b1fe08dc8784d18185c6c247983a59b7bbb9"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 34,
+      "sha256_fila": "08aa58ddec8ce5a605d1a82c1e86ec33cfbab826739152085a2f9a7c9d5f2635"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 35,
+      "sha256_fila": "339b81317d396d588d45267ad8a9d64095944522853a30f9a576f253ba078e63"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 36,
+      "sha256_fila": "886746fd26ee305299c4c69630c1d8f64a1ca08632871ad7436c9b74c1c02e61"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 37,
+      "sha256_fila": "31d9166276b855cd7d4aa5f57e350c02fd84627abebf5c262feca0d38f35dbd3"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 38,
+      "sha256_fila": "b8ed0765a848a69b03855e209053e8e1f6312687f756c5826c3751fd09da430c"
+    },
+    {
+      "grupo": "C_altas",
+      "indice": 39,
+      "sha256_fila": "6eb67151dcafcd51ec17f46b60649ad61b88081cec84c7dcc7f6974d173310ae"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 0,
+      "sha256_fila": "1e10147e8a2a5cccc150dde7889cb1603f2049d43d26ad61d41ba1f58a2d9ec9"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 1,
+      "sha256_fila": "b3e9a51acf2a7e107dc10c5b8c1b03a6712297017e556531daf2609ee23b2a10"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 2,
+      "sha256_fila": "4c150b04eade50ad08b4b369dfa1ac0ee2efa676c2d307d73a933186e3062880"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 3,
+      "sha256_fila": "66052a27939730e412423705ee79ac7d8183c553dafdd7bf730b8f92bf9ed82d"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 4,
+      "sha256_fila": "c2b3543bd67646700819f192af0cfe5854760775edc04d1323e95eacee0ecac9"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 5,
+      "sha256_fila": "e3bdfce040d1beccbad30a26c33aaf065a8e17d38604511831ab7a8747b23679"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 6,
+      "sha256_fila": "b52c70971dcf2d45233adb9ba26a2c8c4e6a2c4a53bfd99c023ced4fb942af2a"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 7,
+      "sha256_fila": "51a0c19a135ce67d761016f415c500de63e1e73599eca70f4813a0a2e5cabaca"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 8,
+      "sha256_fila": "25a61244b55be80195fdee025e240f1ae564f3e00f60d82bd9aecccd90a66bbf"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 9,
+      "sha256_fila": "393d6271c79186d4efefb5cf9f57356f17a6dbe3d77f14711a79e21c54a0a2ef"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 10,
+      "sha256_fila": "1db4d65d68f4dc950be4282d876262aed713cb33f962716c4ad81c3e26d9dc20"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 11,
+      "sha256_fila": "012430dcddbcd5333410136f9c8aa9486fe7c91b4d16e8b7e9df3abf7aa5dd72"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 12,
+      "sha256_fila": "980033a20beec0bba192550f4c796503a0afe61e6442f91c705167297a766218"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 13,
+      "sha256_fila": "f46be118d9632a895dfc07c4f7f88204fc4182b57f419076883cba7dcfbb1a85"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 14,
+      "sha256_fila": "92169154c85451dd962b37baa567751d06243d187cb0889b80dc1a73877b2454"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 15,
+      "sha256_fila": "f17085b3e0dbd414b17a39da85c86ad100266e92836b0b6ed2a6ca18c04420c0"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 16,
+      "sha256_fila": "ea0dee277ff97e43eb8b1b1ac9e6c61a4a701929b252bfe8309c7deb33a6cf02"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 17,
+      "sha256_fila": "9d6d9565ac0f74a81b32a88e4a5b93208e30b2329cd2860400f0782355f06bd9"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 18,
+      "sha256_fila": "c679b719ce6dff4f7611d3e16f0af7fd701ae93b3a27ab780dd1f31349a500bd"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 19,
+      "sha256_fila": "c221481ea38a86920ba22f61d89107de479f9f5a15004bd7ae20696068fed5bd"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 20,
+      "sha256_fila": "4c65b4134ab2b0436a58e2d175606470b5a1800a2c98ce375b1eaf689ef363d0"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 21,
+      "sha256_fila": "270b6f1cc9996d50ddbb252bd2b93aeea80f3781d412ecd461e30b7fcc6e3209"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 22,
+      "sha256_fila": "58111bfc01e1f6b9d62554977eab0efe8f587337e29f6eafe7ad11dabfef2046"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 23,
+      "sha256_fila": "043cb409e7ab4d2c89b6eb188f2ea43a0c411f27ac280ab9b53c7c228e096e47"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 24,
+      "sha256_fila": "035da1a778779fa6868d747f83fe48fd680d6d5ac247772fefa827b63d6cbbe6"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 25,
+      "sha256_fila": "f6ad4e97404676e7c03807f725e1b9cafa62ca921a80214a2260997d97ce2d99"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 26,
+      "sha256_fila": "8b81a38af1fab180e5b6a1b885ac0585a073e1752fb37e2a3cdf5105c96ac8af"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 27,
+      "sha256_fila": "519e1418cc90c80bb26402e861345dfd57f1da8b19f27eb0321961aeee9971c8"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 28,
+      "sha256_fila": "379ab34574f00ec87d7e77593cbf87855ac158231cfd8d3eb90a1fde7a68361a"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 29,
+      "sha256_fila": "ba9a12c32a7429468284aacc69ea85483baae3a8b76a8a76fc28afde7db503ef"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 30,
+      "sha256_fila": "a073dc3ebf768a6d14fe70e26692119e1089da92055178d9997bea8222c64449"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 31,
+      "sha256_fila": "b1be8bff133301a625040c9e5bd7269caf0ac71944241ad7d1a4f310563b8499"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 32,
+      "sha256_fila": "d1944332a39bdc38068045953e78a652b2a717f2b171004da4a02114c98ab69a"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 33,
+      "sha256_fila": "4949980b6e2305f184bea73ca06ce6b77537bb760b0b7b023e928564b5ae1bcc"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 34,
+      "sha256_fila": "32b3a8404743307280099f0f58fb2b75e79376f7e0a131c72dd34a11b63f2d0c"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 35,
+      "sha256_fila": "1f0b8d14317752ec5135f026c12ef17ca0fd9ce48decf71e11f4f1345e41a2c2"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 36,
+      "sha256_fila": "0014ed03d150952a548880553268fc677e54c0d9be92de4f663163c1ca39d4ec"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 37,
+      "sha256_fila": "ca06dc64568ce3c86314ef431034e6228257917ee9f5d70e20e88f03c611239a"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 38,
+      "sha256_fila": "0ee52018bd3327e287c723b112c29696b6f37ae5990311a2fa3663c35d1a104a"
+    },
+    {
+      "grupo": "B_altas",
+      "indice": 39,
+      "sha256_fila": "e5af9231ca985e33a48d87267ffeeeb391b54e791e7caea57c9656f33dd9cca0"
+    },
+    {
+      "grupo": "F_altas",
+      "indice": 0,
+      "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea"
+    },
+    {
+      "grupo": "F_altas",
+      "indice": 1,
+      "sha256_fila": "61dd6c702561cc78ee07d7167766cc4cbb80d8e8f4c7873e68347b4829c76ee7"
+    },
+    {
+      "grupo": "F_altas",
+      "indice": 2,
+      "sha256_fila": "5a2994bcfc147a319b23b1af446d9b8f11e9f2a25aa5bb803e296e0997a87776"
+    },
+    {
+      "grupo": "F_altas",
+      "indice": 3,
+      "sha256_fila": "a44369e984a70916ebad66d73b1c59127a4d504813bb40426eb4c5954e2865d5"
+    },
+    {
+      "grupo": "F_altas",
+      "indice": 4,
+      "sha256_fila": "12cd5a398f1b72cdd56400b11a15a811a5a4eafac6d92c3410dc4ad7cdfa5157"
+    },
+    {
+      "grupo": "A_altas",
+      "indice": 0,
+      "sha256_fila": "a4dbf70df8748f1363d8a771710b630e74507146b17e1c18f897fb66ee394638"
+    },
+    {
+      "grupo": "C_conservadas",
+      "indice": 0,
+      "sha256_fila": "9bdb1a21bbf293aed15a0e5a71b4bc62ac893567a672da0f7a356d3fd3f0ce16"
+    },
+    {
+      "grupo": "C_conservadas",
+      "indice": 1,
+      "sha256_fila": "5b7dadd342ee1f80ea76bb6dc70b212630ddb3eb0ac8bd60a3645a761318ac34"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 0,
+      "sha256_fila": "84d65480c947c4d42496d3d228c398e734ee89eb1ef2f30dc931a710219e9920"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 1,
+      "sha256_fila": "992e7c6472487978b1386bd0df7ef04d4d88ff1bba228d7a7db2697ea73c597b"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 2,
+      "sha256_fila": "33ba7a3a0c82b84b76c502992a870e7b67419cb27926b2926ce8f3868e0116a6"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 3,
+      "sha256_fila": "7549cb89801f86cad401458a6b6e16f55a74c24a4746b0b870b3ca95194d25f3"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 4,
+      "sha256_fila": "4ce3eaf7718f139c7ddf31c50f70e6adc1c10fda6e7301733df211d5fa2f7c3a"
+    },
+    {
+      "grupo": "BN_historicas_intactas",
+      "indice": 5,
+      "sha256_fila": "eab11c7bb93d0946fd34ff3fbe7973093b971fde7dfb77147beb66165abb8b3a"
+    },
+    {
+      "grupo": "C_correcciones",
+      "indice": 0,
+      "sha256_antes": "feea6b1cefa4ffa8e0dbc5b6c2a88362a238f792ca318b73cb8fbde949eaa5ad",
+      "sha256_despues": "58ccfa35bf952f266fc3e77239bc24347428d2a4b87285fd82c7e763c75c4ae8"
+    },
+    {
+      "grupo": "C_correcciones",
+      "indice": 1,
+      "sha256_antes": "28da58c95bbbff7e6abdbe038d84e16dd8a1e65f830b7fb0968835ae3e32694b",
+      "sha256_despues": "179aeff7c831d551ebb58f4192a7f717cc6488f5e17453fe1f7fac7a10ca0132"
+    },
+    {
+      "grupo": "F_correcciones",
+      "indice": 0,
+      "sha256_antes": "e058043f2eb6213c37f81c67dc800acc8dbac6c651665b4d8d6743fded000f2f",
+      "sha256_despues": "2f1953395335009530f1e0caf705311025233d091c5094e0b406b5c19d5bb774"
+    },
+    {
+      "grupo": "B_correcciones",
+      "indice": 0,
+      "sha256_antes": "b217f30faec29826c59bd6831f75e2abf8ec17d4a061a9685bf3f4ba54bc1a11",
+      "sha256_despues": "66159413abcaa28626f3ce77adfe49b9a17362bdd657f7ff62b6bfca91410b62"
+    },
+    {
+      "grupo": "prosa_cambios",
+      "indice": 0,
+      "sha256_antes": "8eff23b464682f892fecf20ed10b8a2a462e6e69784d356c31f07ba8c26ffa21",
+      "sha256_despues": "3c126324fb3f7f71c92dc234ee9e96760c3f4e62772f17a8f2d8195f14018dda"
+    },
+    {
+      "grupo": "prosa_cambios",
+      "indice": 1,
+      "sha256_antes": "4c5d0e575a8d5274fa82d4bf2c0216688a867dacaeeeae742d82c323314e5de0",
+      "sha256_despues": "913d3a5c06febe3e086d541a6d9c4492d4c00b635306b739058eaf4d98301895"
+    },
+    {
+      "grupo": "prosa_cambios",
+      "indice": 2,
+      "sha256_antes": "92cc65db8986675c118464efbde91eaf883a700fa1095e77eeff3b5c62360b1d",
+      "sha256_despues": "9e1a562f1e213e55c3df7b6d5c817539d4e7fc1f9319326d5ad32a4da951d4a2"
+    },
+    {
+      "grupo": "prosa_cambios",
+      "indice": 3,
+      "sha256_antes": "5902ad3150af0f9ce53eb389527459f6e9199c3282daa4fb2a794d5141c67933",
+      "sha256_despues": "ad6e4b8c1240b5ab07ee1fed3543126634778f892e9d785d0a184b082d88fc49"
+    },
+    {
+      "grupo": "prosa_cambios",
+      "indice": 4,
+      "sha256_antes": "0bad02b75d6fa1355c03cba8e347d300b7d7555eed17e21fa1f276c2bdef8e08",
+      "sha256_despues": "0fc3939937d806536f74f4b821025557ce49f89917fd33b14730d03828eeac8a"
+    },
+    {
+      "grupo": "metadatos_tablas",
+      "indice": 0,
+      "sha256_antes": "7b94faa2e4fb46bc50c8070f15a918037f4ecf75ccd4d2a4a24b8f22b08f37bc",
+      "sha256_despues": "f429a53ef6fbfdc08f57e5507fa7a95d0d359b31849d7ed0b2a51f59a680abf3"
+    },
+    {
+      "grupo": "metadatos_tablas",
+      "indice": 1,
+      "sha256_antes": "f552c28b1138585df5cf77213f8a0cd05bdd4263acd4c0b12203e48147c50cd4",
+      "sha256_despues": "cbe61aea4a8bf7ea002100c32a293147a2b04041bf2addae8d9c510dd7805fd0"
+    },
+    {
+      "grupo": "metadatos_tablas",
+      "indice": 2,
+      "sha256_antes": "b442f585e8a30ecddeb93bbab1155bdcda78a824989c6cf3dfa3a8a0210cfccf",
+      "sha256_despues": "8c5017231fb9fccd05dcb90b3b9926e4105fb687b8ef9055582275200b552f0a"
+    }
+  ],
+  "huellas_celdas": [
+    {
+      "claim_id": "C-2708",
+      "sha256_previo": "7bca140dd364e02c0196303da87f3d8fb79c4e7afcb6e13fe97e3e0272a8df4c",
+      "sha256_nuevo": "e1e6be220e49c81955be181397bf72b08348799cc5e575885f26343de7d4a5cd",
+      "sha256_residual": "eac7f5f2de554f1b45db9944de7f387627bf12f5f6cc46c37f5aa23268d2620f",
+      "sha256_C_antes": "dfaa41efd866277a321bbd4e1ebeb83c24ffe5c6737d2101422b72511c4d10d0",
+      "sha256_C_despues": "728eb7605d38215ee9320056cd2d31e58921ca6c826c5a084717cf121cb30fa9",
+      "identidad_fila": {
+        "caso ordenado por grado de integración": "Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*"
+      }
+    },
+    {
+      "claim_id": "C-2709",
+      "sha256_previo": "6ddc0890b6d2e2cfa59eb7f534b539f6cf43434d2f02a36d117c01951966d911",
+      "sha256_nuevo": "6b92e5f4ab3ec21ca9589f49586c922b3b61435003ee61a9b2b6a6932ec0a124",
+      "sha256_residual": "504bba04a2e30854c1601eb4b024b66bb558c195b35900727730e4ee8096e134",
+      "sha256_C_antes": "ee5591342b21f01667e72a159e4d5f5442470dcc831dc236216c5eb98482b39b",
+      "sha256_C_despues": "c7f30232528b4026113d7b32b58b9028fee9f701e1312e69b53c924361ad4de3",
+      "identidad_fila": {
+        "caso ordenado por grado de integración": "Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*"
+      }
+    },
+    {
+      "claim_id": "C-2468",
+      "sha256_previo": "8e525c6f1357d2a706115d250f5c8363c76836e342d121aa7e095f9fc429b7ee",
+      "sha256_nuevo": "9b2b14deb7f475399f19e072675b8c8155ff80b36a7adb21a2792207f7bc6a75",
+      "sha256_residual": "46ff2e4d49ef49a73cb56c610eab3c5c367e15afb6ea6a797623cca1a1de4bc1",
+      "sha256_C_antes": "e5aa5b3b287edca9fffdd9ce9ce26570f8edc74ebb6e687d5a695de792b72153",
+      "sha256_C_despues": "bc27c0967f452eea470a3cd7e3e1a738d32de8a4f5b7b3060836aa288109775c",
+      "identidad_fila": {
+        "familia o sistema": "Hedgehog"
+      }
+    },
+    {
+      "claim_id": "C-2469",
+      "sha256_previo": "a35b5b757538eb090246b88e060ba384e1bed68bcf382ae60f2f0868b55bbd3f",
+      "sha256_nuevo": "4779971ea1bca688575bdf7fc04f94476d284da6681fad4a71939582fc86dfb1",
+      "sha256_residual": "69684b3d4f1ba8112008d419ead48500fa5962e919db2781a3f84983cb94689f",
+      "sha256_C_antes": "eb62df50aa13960c00d428ef3f99aa2f6ba5cd41dfe65b5f364bffa212ffcfa5",
+      "sha256_C_despues": "29b8702e7f41d652e58ebdd4bc0e011961c1747eca69e79cdb2f8451069b2dac",
+      "identidad_fila": {
+        "familia o sistema": "Hedgehog"
+      }
+    },
+    {
+      "claim_id": "C-2474",
+      "sha256_previo": "aa1be1720cd47dfbb2aaea48fedf681ed6c72285356f2db4d00d3c2823461ca5",
+      "sha256_nuevo": "7fb883b8f7c1d1387a362247dc1d81b074dc532f3b4477e9f439de031d765f3a",
+      "sha256_residual": "00351ea99837df50c19c969c6e84e23c36f93fc9697851a6934a5669d7c6ea21",
+      "sha256_C_antes": "c4d9cd72ca979b0dbc9bea253c3dd681120d445dc4f8dab5af5479e551d8b188",
+      "sha256_C_despues": "e3e7508f2f6485ee472ce9ca05fda65bff3ac9e09c40512479d3e8835d0cee24",
+      "identidad_fila": {
+        "familia o sistema": "GPCR y otras señales"
+      }
+    },
+    {
+      "claim_id": "C-2475",
+      "sha256_previo": "ac11db3bfd278bc3ecc79929e18c19c801795a03957413bb0d59f4a936716c22",
+      "sha256_nuevo": "38802a4c9a8aefac16b81ff74f05120a7867990f9fd43ac4b240cfc20fd69e27",
+      "sha256_residual": "5e839b93cf4c1a54af827c3e7ff97761f6400e85cc5f9517af8d828a420c4d1e",
+      "sha256_C_antes": "2880295914bf32d3ae50d0ab52d0a656aa4f38930c45cfd4cbdf74be9773f80e",
+      "sha256_C_despues": "cf7bc7ed40ecc4d719c97ae823fafc8b538e043f101ef3cc66d14df1f293c514",
+      "identidad_fila": {
+        "familia o sistema": "GPCR y otras señales"
+      }
+    }
+  ],
+  "huellas_archivos_base": {
+    "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/F_magnitudes.csv": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "scripts/build_atomic_cell_claims.py": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9",
+    "scripts/residual_semantic_dispositions.py": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4"
+  },
+  "alcance": "C2839–2878 propuestas, correcciones C1037/C1040 y seis celdas; ni integradas ni aprobadas. Los pasajes se recuperaron/leyeron nominalmente; ésta es autoría, no una firma ajena.",
+  "limites": [
+    "C-1581 mantiene todos sus campos, incluidos fuerza, resolución y vigencia. No se presenta su conservación como saneamiento automático de atomicidad o localizador histórico: requiere dictamen ajeno sobre la representación de §16.",
+    "C-1041 y su prosa mitocondrial se conservan sin aprobación nueva. El componente mitocondrial no se restaura en C-2708.",
+    "Las hipótesis C-2841/C-2842 requerirán reflejo coherente en el apéndice E si se integran; este paquete no reserva IDs H ni autoriza nuevas firmas por ese reflejo. Las proposiciones y fuentes quedan fijadas aquí para su revisión científica.",
+    "Los rótulos de tabla son metadatos de fila, no evidencia automática de todos sus campos. Las seis celdas citan sólo sus propias C expresas.",
+    "Las cifras antiguas rechazadas y las seis BN residuales se conservan íntegramente como historia de consultas, no se suman a POSITIVE_CLAIMS.",
+    "Las rutas futuras de los dos artefactos temporales deben fijarse al integrar, y las 408 consultas deben volver a ejecutarse sobre el inventario nuevo con fechas reales; la revisión de esta propuesta no sustituye esa ejecución."
+  ]
+}

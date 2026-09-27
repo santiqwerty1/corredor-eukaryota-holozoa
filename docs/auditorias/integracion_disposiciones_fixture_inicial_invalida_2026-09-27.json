@@ -1,0 +1,29 @@
+{
+  "utc": "2026-09-27T01:58:54Z",
+  "hashes": {
+    "scripts/residual_semantic_dispositions.py": "06e18f3aaf43f6053a51599cf819dac520f36a429ff077acca9ee76a2ec99e5b",
+    "scripts/remediate_trace_residuals.py": "c8f2484cffba87c47369187c0818ae8e01efd6999b86546cca988aa2583c437c",
+    "scripts/build_atomic_cell_claims.py": "d075c18d6538f04b5849bb3a43cad01bf9a02d0b5598f5d0e184044eb86d2778",
+    "docs/auditorias/fixtures/integracion_disposiciones_independiente_20260927.py": "8a809c0e69c549ab37fda4338dffcffb4f918d3bb152a1c53ec1d8a3620e2c6d"
+  },
+  "tests": 3,
+  "passed": 1,
+  "results": [
+    {
+      "case": "six_dispositions_full_build_history_dependencies_idempotence",
+      "result": "FAIL",
+      "detail": "RuntimeError: Disposición semántica residual: soportes no nominales/circularidad: C-2708"
+    },
+    {
+      "case": "remediation_source_changed_after_disposition_validation",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: soportes no nominales/circularidad: C-2708"
+    },
+    {
+      "case": "atomic_correction_changed_after_disposition_validation",
+      "result": "FAIL",
+      "detail": "RuntimeError: Disposición semántica residual: soportes no nominales/circularidad: C-2708"
+    }
+  ],
+  "limitation": "Fixture del revisor inválida: el texto nuevo mencionaba además su propia C-2708. El rechazo por circularidad era correcto. Ninguna prueba de esta corrida acredita integración o carreras; se corrige solo la fixture del revisor."
+}

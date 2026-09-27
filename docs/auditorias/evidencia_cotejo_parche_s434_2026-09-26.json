@@ -1,0 +1,400 @@
+{
+  "fecha_revision_utc": "2026-09-26T22:45:21Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "independencia": "No escribí las C, celdas, B, F, prosa, predicado ni especificación canónica revisados; el autor del parche es /root. Participé en la investigación primaria y propuesta previa, circunstancia declarada. Este cotejo no es firma del censo ni revisión global de R-0266.",
+  "artefactos_primarios": [
+    {
+      "ruta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data1-v3.xlsx",
+      "sha256": "4578d91e371e5c41dd5a8a4dddb53122537e88e2acfd1416251ac30f07e4d918",
+      "url_primaria": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data1-v3.xlsx"
+    },
+    {
+      "ruta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data2-v3.xlsx",
+      "sha256": "44ef87c6af48d8dc48ce5d286dc5fdb748a387853df23e600d0936670cfb99c6",
+      "url_primaria": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data2-v3.xlsx"
+    },
+    {
+      "ruta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig5-data1-v3.xlsx",
+      "sha256": "6384ee9ca5991cbade0e6dca100392031ffdedca17dba5765850353bac300d2f",
+      "url_primaria": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig5-data1-v3.xlsx"
+    },
+    {
+      "ruta_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-v3.xml",
+      "sha256": "fcd2ee1d7baab2b2327d66bf659e5f3b190df1b48d0cd81d825b4f8958c9d89d",
+      "url_primaria": "https://cdn.elifesciences.org/articles/26036/elife-26036-v3.xml"
+    }
+  ],
+  "metodos_xml_local": {
+    "ruta": "fuentes/S434 [2017] Dynamics of genomic innovation in the unicellular ancestry of animals.xml",
+    "sha256": "4dd18d20c875fee9404c1b647d4614212ba4750e1b689dfbe87e2fdacedd0eb5"
+  },
+  "sha256_texto_s4_11_normalizado": "dbfbbbee3f48cb8fde1a9388e3abfe271762a5c4a352f54ec85b2edc5acce086",
+  "pruebas_no_mutantes": [
+    {
+      "comando": "python3 scripts/audit_semantics.py",
+      "salida": 0,
+      "resultado": "AUDITORÍA SEMÁNTICA CORRECTA"
+    },
+    {
+      "comando": "python3 scripts/build_atomic_cell_claims.py",
+      "salida": 0,
+      "resultado": "816 C atómicas exactas"
+    },
+    {
+      "comando": "git diff --check",
+      "salida": 0
+    }
+  ],
+  "objetos": [
+    {
+      "id_objeto": "C-2821",
+      "ruta": "data/afirmaciones/15.csv",
+      "objeto": {
+        "#": "C-2821",
+        "Afirmación": "Las estadísticas genómicas de Sphaeroforma arctica (Sarc) publicadas por Grau-Bové et al. registran 18319 genes en el conjunto procedente de Broad Institute Multicellularity Initiative.",
+        "Sujeto": "anotación de Sphaeroforma arctica (Sarc) utilizada por Grau-Bové et al.",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "18319 genes en el conjunto procedente de Broad Institute Multicellularity Initiative",
+        "Atribución": "expresa",
+        "Fuente": "S434 Materials and methods, Generation of a species tree and ortholog datasets for comparative analyses; Figure 1—source data 1 v3, Sheet1, C27 y E27 (gene_n); Figure 1—source data 2 v3, Full1, A25, B25 y E25; las celdas requieren inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Recuento publicado de la anotación analizada. La tabla de procedencia identifica Sarc y Broad Institute, pero no demuestra identidad de versión con RefSeq S446 ni con Ensembl actual.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "huella_objeto_sha256": "636e5a351e081de1a81b5719a3e76f8d3800a9d13427ccddc1a60d47eda20707",
+      "resultado": "CONFORME",
+      "comprobaciones": "18319 coincide con E27; Sarc C27 se identifica con Sphaeroforma arctica por A25/B25 y Broad Institute por E25 del segundo suplemento. SPO expresa un recuento publicado sin declarar igualdad con RefSeq o Ensembl.",
+      "limites": "No valida anotación actual ni la totalidad de R-0266. Participé en la investigación/propuesta previa, no en la implementación canónica.",
+      "localizador_primario": "S434 Figure1 source data1 v3 Sheet1 C27/E27; source data2 v3 Full1 A25/B25/E25"
+    },
+    {
+      "id_objeto": "C-2822",
+      "ruta": "data/afirmaciones/15.csv",
+      "objeto": {
+        "#": "C-2822",
+        "Afirmación": "El análisis probabilístico de intrones de Grau-Bové et al., basado en 342 grupos de ortólogos de 40 genomas y realizado con Malin, publica para Sphaeroforma arctica una densidad de 4.80483247137073 intrones por kbp de secuencia codificante.",
+        "Sujeto": "Sphaeroforma arctica en el análisis comparativo de intrones de Grau-Bové et al.",
+        "Predicado": "tiene_densidad_estimada*",
+        "Objeto": "4.80483247137073 intrones por kbp de secuencia codificante, estimados con Malin sobre 342 grupos de ortólogos de 40 genomas",
+        "Atribución": "expresa",
+        "Fuente": "S434 Materials and methods, Comparative analysis of intron content; Figure 5—source data 1 v3, Full1, A31, B31, D31 y O31; la celda O31 (Intron per kbp coding seq) requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Densidad publicada del modelo comparativo para el taxón extante, no del ancestro Sphaeroforma+Creolimax. No es una media observada sobre todos los genes anotados ni un cociente calculado aquí, y no equipara las versiones de S434 y S446.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "huella_objeto_sha256": "a1c93f9a6dffa29487104c46f48a94697402cd2e1b965d10694f9e4913aa238a",
+      "resultado": "CONFORME",
+      "comprobaciones": "O31 publica 4.80483247137073; A31/B31 identifican especie/Sarc y D31=0 el taxón extante. Métodos s4-11 declara40genomas,342grupos yMalin. Unidad intrones/kbp codificante y modalidad estimada permanecen expresas; no división propia.",
+      "limites": "No corresponde al ancestro fila33 ni a una media de todos los genes; expresa significa atribución de estimación publicada, no observación directa. Participé en investigación/propuesta previa, no implementación.",
+      "localizador_primario": "S434 Figure5 source data1 v3 Full1 A31/B31/D31/O31; JATS s4-11 párrafo inicial"
+    },
+    {
+      "id_objeto": "C-2783",
+      "ruta": "data/afirmaciones/15.csv",
+      "objeto": {
+        "#": "C-2783",
+        "Afirmación": "Para organismo «*Sphaeroforma arctica*», el campo «versión o método» tiene el valor literal «tamaño: ensamblaje de referencia de S446; intrones: reconstrucción comparativa de S434; las métricas se atribuyen por separado a sus fuentes».",
+        "Sujeto": "organismo «*Sphaeroforma arctica*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "versión o método: tamaño: ensamblaje de referencia de S446; intrones: reconstrucción comparativa de S434; las métricas se atribuyen por separado a sus fuentes",
+        "Atribución": "sintesis(C-1565, C-1566)",
+        "Fuente": "n/a; dependencias canónicas C-1565; C-1566",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv:fila 6:versión o método. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "huella_objeto_sha256": "1cfcbc44e280ecf79c8d5cae64d783e22299ed96897f12d77657abca6c62623b",
+      "resultado": "CONFORME_DERIVACION_ACOTADA",
+      "comprobaciones": "Literal de método coincide con la celda; síntesis exclusivamente C-1565/C-1566 anteriores. La organización por fuentes no afirma equivalencia de anotaciones ni hereda C-2821/C-2822.",
+      "limites": "Cotejo de derivación y celda; no nueva verificación primaria del tamaño S446 ni revisión integral de C-1566.",
+      "localizador_primario": "C-1565/C-1566 vigentes; table53 fila6 versión o método"
+    },
+    {
+      "id_objeto": "table53:6:genes publicados",
+      "ruta": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+      "objeto": {
+        "identidad": "*Sphaeroforma arctica*",
+        "columna": "genes publicados",
+        "contenido": "18319 en el conjunto Broad Institute de S434 [C-2821]",
+        "mapeo": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "genes publicados",
+          "contenido_sha256": "4dd7f6d92d6160c6816ebe2150a894e0b1a61b3adc17de08856c9774d9f6f273",
+          "contenido": "18319 en el conjunto Broad Institute de S434 [C-2821]",
+          "afirmaciones": "C-2821",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Cotejo de autor 2026-09-26: C-2821 transcribe S434 Figure 1—source data 1 E27 y source data 2 A25/B25/E25; sustituye el hueco BN-120 sin equiparar anotaciones. Pendiente segunda revisión independiente del parche."
+        }
+      },
+      "huella_objeto_sha256": "b9f98a9cb26c7d336b1735d4976e68327afd3ded457aad9bf274b82a02799605",
+      "resultado": "CONFORME",
+      "comprobaciones": "Contenido y SHA de celda+LF coinciden con el manifiesto. C exacta C-2821 sostiene esta celda; referencias nuevas locales, sin propagarse al roll-up del método.",
+      "limites": "No valida las otras siete especies ni el tamaño antiguo de esta fila.",
+      "localizador_primario": "S434 Figure1 source data1 v3 Sheet1 C27/E27; source data2 v3 Full1 A25/B25/E25"
+    },
+    {
+      "id_objeto": "table53:6:densidad o promedio de intrones",
+      "ruta": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+      "objeto": {
+        "identidad": "*Sphaeroforma arctica*",
+        "columna": "densidad o promedio de intrones",
+        "contenido": "4.80483247137073 intrones por kbp de secuencia codificante; estimación con Malin sobre 342 grupos de ortólogos de 40 genomas, no promedio observado de toda la anotación [C-2822]",
+        "mapeo": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "densidad o promedio de intrones",
+          "contenido_sha256": "17a813bdc0bef3fd220770fd9f39b1e4b9e905f1c7c15f34cac19ef3b1b0c7e0",
+          "contenido": "4.80483247137073 intrones por kbp de secuencia codificante; estimación con Malin sobre 342 grupos de ortólogos de 40 genomas, no promedio observado de toda la anotación [C-2822]",
+          "afirmaciones": "C-2822",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Cotejo de autor 2026-09-26: C-2822 transcribe S434 Figure 5—source data 1 O31 para el taxón extante, con ámbito de Methods Comparative analysis of intron content; no transforma densidad modelada en media genómica observada. Pendiente segunda revisión independiente del parche."
+        }
+      },
+      "huella_objeto_sha256": "86c5465af2efb2c511c32d5c9857a1ead2049741c85581c98230a2298974a42b",
+      "resultado": "CONFORME",
+      "comprobaciones": "Contenido y SHA de celda+LF coinciden con el manifiesto. C exacta C-2822 sostiene esta celda; referencias nuevas locales, sin propagarse al roll-up del método.",
+      "limites": "No valida las otras siete especies ni el tamaño antiguo de esta fila.",
+      "localizador_primario": "S434 Figure5 source data1 v3 Full1 A31/B31/D31/O31; JATS s4-11 párrafo inicial"
+    },
+    {
+      "id_objeto": "table53:6:versión o método",
+      "ruta": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+      "objeto": {
+        "identidad": "*Sphaeroforma arctica*",
+        "columna": "versión o método",
+        "contenido": "tamaño: ensamblaje de referencia de S446; intrones: reconstrucción comparativa de S434; las métricas se atribuyen por separado a sus fuentes",
+        "mapeo": {
+          "csv_path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+          "fila": "6",
+          "columna": "versión o método",
+          "contenido_sha256": "49f9189e50893de2092acf3b00eee251c912efad6481e0c2205cffaff2a3068d",
+          "contenido": "tamaño: ensamblaje de referencia de S446; intrones: reconstrucción comparativa de S434; las métricas se atribuyen por separado a sus fuentes",
+          "afirmaciones": "C-2783",
+          "base_semantica": "cotejo_literal_C_atomica_por_celda",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        }
+      },
+      "huella_objeto_sha256": "06f26dee6c5abd3e136e1a9e2ab1e0d33cf7723366bb14a96f6c748a95cb8101",
+      "resultado": "CONFORME",
+      "comprobaciones": "Contenido y SHA de celda+LF coinciden con el manifiesto. C exacta C-2783 sostiene esta celda; referencias nuevas locales, sin propagarse al roll-up del método.",
+      "limites": "No valida las otras siete especies ni el tamaño antiguo de esta fila.",
+      "localizador_primario": "C-1565/C-1566 vigentes; table53 fila6 versión o método"
+    },
+    {
+      "id_objeto": "F:número de genes de la anotación publicada",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "objeto": {
+        "magnitud": "número de genes de la anotación publicada",
+        "valor tal como lo publica la fuente": "18319",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "Sphaeroforma arctica (Sarc)",
+        "método o proxy": "estadísticas de la anotación procedente de Broad Institute Multicellularity Initiative utilizada en S434",
+        "incertidumbre publicada": "no consta en la fuente recuperada; no se equipara la versión con S446 o Ensembl",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S434 Materials and methods, Generation of a species tree and ortholog datasets for comparative analyses; Figure 1—source data 1 v3, Sheet1 C27/E27; Figure 1—source data 2 v3, Full1 A25/B25/E25; requiere inspección humana",
+        "#": "C-2821"
+      },
+      "huella_objeto_sha256": "1150a2e1a0416fda3d8ddde8740c03b12890d93d5c15aa42801c32328fc0dc33",
+      "resultado": "CONFORME",
+      "comprobaciones": "Valor/unidad/organismo/método cotejados con C y primario. Densidad etiquetada inferido; genes y tamaños del conjunto son datos publicados observados del análisis.",
+      "limites": "No confirma un intervalo de incertidumbre donde no está publicado. La mención de falta de intervalo se limita al dato recuperado.",
+      "localizador_primario": "S434 fig1-data1 E27/fig1-data2 A25/B25/E25 o fig5-data1 O31 y JATS s4-11, según magnitud"
+    },
+    {
+      "id_objeto": "F:densidad de intrones del modelo comparativo",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "objeto": {
+        "magnitud": "densidad de intrones del modelo comparativo",
+        "valor tal como lo publica la fuente": "4.80483247137073",
+        "unidad original": "intrones por kbp de secuencia codificante",
+        "organismo, nodo o intervalo al que se aplica": "Sphaeroforma arctica (Sarc)",
+        "método o proxy": "modelo probabilístico Malin sobre 342 grupos de ortólogos de 40 genomas; taxón extante",
+        "incertidumbre publicada": "no consta un intervalo para la densidad de O31 en la fuente recuperada; no es una media observada de toda la anotación",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S434 Materials and methods, Comparative analysis of intron content; Figure 5—source data 1 v3, Full1 A31/B31/D31/O31; requiere inspección humana",
+        "#": "C-2822"
+      },
+      "huella_objeto_sha256": "db7bde9499b4bea3280d241ec29f410b57b4a25622ef424cdd891e5d3699976c",
+      "resultado": "CONFORME",
+      "comprobaciones": "Valor/unidad/organismo/método cotejados con C y primario. Densidad etiquetada inferido; genes y tamaños del conjunto son datos publicados observados del análisis.",
+      "limites": "No confirma un intervalo de incertidumbre donde no está publicado. La mención de falta de intervalo se limita al dato recuperado.",
+      "localizador_primario": "S434 fig1-data1 E27/fig1-data2 A25/B25/E25 o fig5-data1 O31 y JATS s4-11, según magnitud"
+    },
+    {
+      "id_objeto": "F:grupos de ortólogos del análisis comparativo de intrones",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "objeto": {
+        "magnitud": "grupos de ortólogos del análisis comparativo de intrones",
+        "valor tal como lo publica la fuente": "342",
+        "unidad original": "grupos de ortólogos",
+        "organismo, nodo o intervalo al que se aplica": "conjunto comparativo de S434 que incluye Sphaeroforma arctica",
+        "método o proxy": "selección de grupos casi paneucarióticos para la reconstrucción de intrones con Malin",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S434 Materials and methods, Comparative analysis of intron content, párrafo inicial",
+        "#": "C-2822"
+      },
+      "huella_objeto_sha256": "68811b9fa9c332da0509f18decbaf477f36ca4524ae6b964e2d2fe8fe6b39455",
+      "resultado": "CONFORME",
+      "comprobaciones": "Valor/unidad/organismo/método cotejados con C y primario. Densidad etiquetada inferido; genes y tamaños del conjunto son datos publicados observados del análisis.",
+      "limites": "No confirma un intervalo de incertidumbre donde no está publicado. La mención de falta de intervalo se limita al dato recuperado.",
+      "localizador_primario": "S434 fig1-data1 E27/fig1-data2 A25/B25/E25 o fig5-data1 O31 y JATS s4-11, según magnitud"
+    },
+    {
+      "id_objeto": "F:genomas del análisis comparativo de intrones",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "objeto": {
+        "magnitud": "genomas del análisis comparativo de intrones",
+        "valor tal como lo publica la fuente": "40",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "conjunto comparativo de S434 que incluye Sphaeroforma arctica",
+        "método o proxy": "muestreo del análisis de 342 grupos de ortólogos",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S434 Materials and methods, Comparative analysis of intron content, párrafo inicial",
+        "#": "C-2822"
+      },
+      "huella_objeto_sha256": "fa136b310f316410512ae0e3667243736018f2bab906bad837582a1594ee2a97",
+      "resultado": "CONFORME",
+      "comprobaciones": "Valor/unidad/organismo/método cotejados con C y primario. Densidad etiquetada inferido; genes y tamaños del conjunto son datos publicados observados del análisis.",
+      "limites": "No confirma un intervalo de incertidumbre donde no está publicado. La mención de falta de intervalo se limita al dato recuperado.",
+      "localizador_primario": "S434 fig1-data1 E27/fig1-data2 A25/B25/E25 o fig5-data1 O31 y JATS s4-11, según magnitud"
+    },
+    {
+      "id_objeto": "B:Broad Institute Multicellularity Initiative",
+      "ruta": "data/apendices/B_entidades.csv",
+      "objeto": {
+        "etiqueta preferida": "Broad Institute Multicellularity Initiative",
+        "tipo": "proyecto de recursos genómicos",
+        "sinónimos y grafías alternativas": "procedencia del conjunto de Sphaeroforma arctica identificado como Sarc en S434",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2821"
+      },
+      "huella_objeto_sha256": "69d59d09dfb6db27d6f4271bf3b4b9970c726abc452baf5ad7cfbd56f7640cbd",
+      "resultado": "CONFORME",
+      "comprobaciones": "Identificador de procedencia Broad Institute y nombre de implementación Malin constan en fuente; entradas remiten a las C nuevas.",
+      "limites": "La tipificación de entidad es organización editorial del índice; no añade una afirmación científica sobre el genoma.",
+      "localizador_primario": "S434 fig1-data2 Full1 E25; JATS s4-11 párrafo inicial"
+    },
+    {
+      "id_objeto": "B:Malin",
+      "ruta": "data/apendices/B_entidades.csv",
+      "objeto": {
+        "etiqueta preferida": "Malin",
+        "tipo": "método computacional",
+        "sinónimos y grafías alternativas": "implementación del modelo probabilístico de evolución de intrones utilizada en S434",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2822"
+      },
+      "huella_objeto_sha256": "fe68b9fe2c1a43925306b46c7f76be87d20b7014abf983b45a14e7abab1b057b",
+      "resultado": "CONFORME",
+      "comprobaciones": "Identificador de procedencia Broad Institute y nombre de implementación Malin constan en fuente; entradas remiten a las C nuevas.",
+      "limites": "La tipificación de entidad es organización editorial del índice; no añade una afirmación científica sobre el genoma.",
+      "localizador_primario": "S434 fig1-data2 Full1 E25; JATS s4-11 párrafo inicial"
+    },
+    {
+      "id_objeto": "PROSA12:1",
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "objeto": {
+        "parrafo": "Las estadísticas de Grau-Bové et al. registran 18319 genes para Sphaeroforma arctica (Sarc) en el conjunto procedente de Broad Institute Multicellularity Initiative. [C-2821; S434 Materials and methods, Generation of a species tree and ortholog datasets for comparative analyses; Figure 1—source data 1 v3, Sheet1, C27/E27; Figure 1—source data 2 v3, Full1, A25/B25/E25; requiere inspección humana]"
+      },
+      "huella_objeto_sha256": "e717b19ccbb0477da14b414a3d03757e912683c21761946a56e5f5c98a9fbdc4",
+      "resultado": "CONFORME",
+      "comprobaciones": "Conserva recuento, especie, unidad, modelo y distinción de anotaciones de las C cotejadas. Glosa de alcance no se atribuye como hecho al artículo.",
+      "limites": "No implica cierre de prosa completa ni de R-0266.",
+      "localizador_primario": "C-2821/C-2822 y los tres SI S434; advertencia editorial entre S434/S446"
+    },
+    {
+      "id_objeto": "PROSA12:2",
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "objeto": {
+        "parrafo": "Su análisis probabilístico de intrones con Malin, basado en 342 grupos de ortólogos de 40 genomas, publica para Sphaeroforma arctica una densidad de 4.80483247137073 intrones por kbp de secuencia codificante. Es una estimación del modelo comparativo, no un promedio observado sobre todos los genes de la anotación. [C-2822; S434 Materials and methods, Comparative analysis of intron content; Figure 5—source data 1 v3, Full1, A31/B31/D31/O31; requiere inspección humana]"
+      },
+      "huella_objeto_sha256": "37197a9bf8ac91ab882bde17131962705775465be1db7ceaf367d7c17926c88a",
+      "resultado": "CONFORME",
+      "comprobaciones": "Conserva recuento, especie, unidad, modelo y distinción de anotaciones de las C cotejadas. Glosa de alcance no se atribuye como hecho al artículo.",
+      "limites": "No implica cierre de prosa completa ni de R-0266.",
+      "localizador_primario": "C-2821/C-2822 y los tres SI S434; advertencia editorial entre S434/S446"
+    },
+    {
+      "id_objeto": "PROSA12:3",
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "objeto": {
+        "parrafo": "El tamaño de ensamblaje, el recuento de genes y la densidad se atribuyen por separado a sus fuentes: no se afirma que S434 y el registro RefSeq S446 correspondan a la misma versión de anotación. [C-1565; C-2821–C-2822; glosa de alcance documental]"
+      },
+      "huella_objeto_sha256": "c3cfdc0a675213d85a0d2810c2079d12bb95f21eb5f9b60aef5d5ef0ee0bfeee",
+      "resultado": "CONFORME",
+      "comprobaciones": "Conserva recuento, especie, unidad, modelo y distinción de anotaciones de las C cotejadas. Glosa de alcance no se atribuye como hecho al artículo.",
+      "limites": "No implica cierre de prosa completa ni de R-0266.",
+      "localizador_primario": "C-2821/C-2822 y los tres SI S434; advertencia editorial entre S434/S446"
+    },
+    {
+      "id_objeto": "PREDICADO:tiene_densidad_estimada*",
+      "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+      "objeto": {
+        "parrafo": "`tiene_densidad_estimada*` relaciona un organismo o conjunto delimitado en el sujeto con una densidad inferida publicada, conservando en el objeto su unidad y el ámbito del modelo. [C-2822] Ejemplo: C-2822 vincula Sphaeroforma arctica con la densidad de intrones por kbp de secuencia codificante estimada mediante Malin en el análisis de S434; no la presenta como un recuento directo de todo el genoma. [C-2822; S434 Materials and methods, Comparative analysis of intron content]"
+      },
+      "huella_objeto_sha256": "596d44c6d0b4cdc0a8505515ae5d1193164cf42c42ea1ee1fb8536143d766955",
+      "resultado": "CONFORME",
+      "comprobaciones": "Definición anterior al uso delimita sujeto, unidad y ámbito de densidad inferida publicada. Un predicado, no un conteo directo ni promedio global.",
+      "limites": "Cotejo de definición y uso C-2822; no revisión de todos los predicados.",
+      "localizador_primario": "C-2822; S434 Methods s4-11"
+    },
+    {
+      "id_objeto": "MREQ-0043",
+      "ruta": "data/auditoria/especificacion_magnitudes_por_requisito_v1.csv",
+      "objeto": {
+        "id_magnitud": "MREQ-0043",
+        "id_requisito": "R-0266",
+        "fragmento_literal": "tamaño, número de genes, densidad de intrones",
+        "magnitud_solicitada": "métricas genómicas nominales de ocho taxones del corredor",
+        "desenlace": "VALOR_PUBLICADO",
+        "afirmaciones_terminales": "C-1516; C-1517; C-1521; C-1522; C-1557; C-1558; C-1559; C-1560; C-1561; C-1562; C-1564; C-1568; C-2821; C-2822",
+        "registro_hueco": "",
+        "razon_hueco": "",
+        "transformacion_editorial": "NINGUNA"
+      },
+      "huella_objeto_sha256": "bf5d1d57918f37423084c637588d498f56d3e47ae38deda157c76282a8e21b0f",
+      "resultado": "CONFORME_DELTA_NO_CONTROL_INTEGRAL",
+      "comprobaciones": "Las nuevas C cubren genes y densidad publicados de Sphaeroforma; no queda hueco artificial por falta de equivalencia entre versiones. MREQ0044 usa VALOR_PUBLICADO y dos terminales.",
+      "limites": "Solo delta Sphaeroforma; no se revisan aquí todos los ocho taxones ni se cierra R-0266. MREQ0043 tiene otros terminales preexistentes fuera de este lote.",
+      "localizador_primario": "Literal R-0266/L195; C-2821/C-2822"
+    },
+    {
+      "id_objeto": "MREQ-0044",
+      "ruta": "data/auditoria/especificacion_magnitudes_por_requisito_v1.csv",
+      "objeto": {
+        "id_magnitud": "MREQ-0044",
+        "id_requisito": "R-0266",
+        "fragmento_literal": "Sphaeroforma arctica",
+        "magnitud_solicitada": "número de genes y densidad de intrones de Sphaeroforma arctica: anotación y modelo comparativo de S434 sin equiparar versiones con S446",
+        "desenlace": "VALOR_PUBLICADO",
+        "afirmaciones_terminales": "C-2821; C-2822",
+        "registro_hueco": "",
+        "razon_hueco": "",
+        "transformacion_editorial": "NINGUNA"
+      },
+      "huella_objeto_sha256": "5efcf814298ab451aa095305b3f4c4629d76742413bb0392cc1295270034a4c1",
+      "resultado": "CONFORME_DELTA_NO_CONTROL_INTEGRAL",
+      "comprobaciones": "Las nuevas C cubren genes y densidad publicados de Sphaeroforma; no queda hueco artificial por falta de equivalencia entre versiones. MREQ0044 usa VALOR_PUBLICADO y dos terminales.",
+      "limites": "Solo delta Sphaeroforma; no se revisan aquí todos los ocho taxones ni se cierra R-0266. MREQ0043 tiene otros terminales preexistentes fuera de este lote.",
+      "localizador_primario": "Literal R-0266/L195; C-2821/C-2822"
+    }
+  ],
+  "pendientes_fuera_del_dictamen": [
+    "Integración de SI en fuentes/ y prueba de correspondencia de copias; actualmente /tmp.",
+    "Retirada BN120/C1990 y archivo histórico todavía no revisados.",
+    "Derivados y make verify completo/aislado no ejecutados por este cotejo.",
+    "R0266 y censo completo no adjudicados."
+  ]
+}

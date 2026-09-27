@@ -1,0 +1,758 @@
+{
+  "utc": "2026-09-27T02:27:29Z",
+  "normalizacion_pasajes": "join itertext y colapso de blancos; HTML elimina etiquetas, resuelve entidades y colapsa blancos; UTF8+LF",
+  "pasajes": [
+    {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "sha256_artefacto": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+      "localizador": "Results and Discussion > Analysis of core genes consistently supports two primary domains, not three, p5",
+      "sha256_pasaje": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87",
+      "fragmento_control": "The 3D tree (AU = 0.036) could also be rejected at P < 0.05"
+    },
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "Results and Discussion, Host-endosymbiont interactions, Par16",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d",
+      "fragmento_control": "These observations suggest"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Results, Gene repertoire of Capsaspora, p4",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb",
+      "fragmento_control": "lack receptors and ligands"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Fig4, leyenda",
+      "sha256_pasaje": "18079951084572701a9e53b88f86603130a5d9c523dae546f82334ff339b2fc2",
+      "fragmento_control": "greyed when M. brevicollis has them"
+    },
+    {
+      "artefacto": "fuentes/S513 [2023] Symbioses shape feeding niches and diversification across insects.xml",
+      "sha256_artefacto": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040",
+      "localizador": "Evolutionary origins of obligate symbiosis, p1",
+      "sha256_pasaje": "f8294dc4c0ceb59df0869c559e8e7584c20484416759f26ff0c1ae7c581a615e",
+      "fragmento_control": "at least 16 independent origins"
+    },
+    {
+      "artefacto": "fuentes/S513 [2023] Symbioses shape feeding niches and diversification across insects.xml",
+      "sha256_artefacto": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040",
+      "localizador": "Nutrient deficiencies and obligate symbiosis, p2",
+      "sha256_pasaje": "71af505b509d8fa8c7fda1f9aa1c0f6adefae0c09d91371eec241772759a29ab",
+      "fragmento_control": "only one dietary component"
+    },
+    {
+      "artefacto": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+      "sha256_artefacto": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+      "localizador": "Conclusions, sección s5 completa",
+      "sha256_pasaje": "5c948dd31f5dc833b5153d7b14c111423baa6c0026f65d680d04994375dd7c75",
+      "fragmento_control": "the vast majority of the proposed fHGT candidates are artifactual"
+    }
+  ],
+  "artefactos": [
+    {
+      "ruta": "docs/C01-PROMPT-INVESTIGACION.md",
+      "sha256": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3"
+    },
+    {
+      "ruta": "docs/auditorias/protocolo_censo_semantico_2026-08-13.md",
+      "sha256": "d312f22b287f94eac3a402af049977f69d56842c2d1638930d77df6ce3f32e15"
+    },
+    {
+      "ruta": "docs/auditorias/CONTRATO_CRONOLOGIA_CIERRE.md",
+      "sha256": "e3307c9807f0ed8718b034af8092e2bf030c426f5ebb7012d16e4984797f73a9"
+    },
+    {
+      "ruta": "docs/auditorias/CONTRATO_DISPOSICIONES_SEMANTICAS_RESIDUALES_2026-09-27.md",
+      "sha256": "4020e414ba44a6e581382fe0b7519e9784e73686c358a7336195c1e8fa08530a"
+    },
+    {
+      "ruta": "scripts/audit_requirement_controls.py",
+      "sha256": "a92c9b4a04e23f5a8320d52e0c0b5c47fb99bc8aeb4a8f2a7cd0847c7d0e206a"
+    },
+    {
+      "ruta": "scripts/audit_semantics.py",
+      "sha256": "c8640f86a7f69f130f670948c11fcb1869afa5ae184c46e4d8adf7f889a154eb"
+    },
+    {
+      "ruta": "scripts/check_semantic_claim_census.py",
+      "sha256": "598dacc8ea3c0d1d3be06763ebc0734988a50c2fc9105095a66274e5c3dc3350"
+    },
+    {
+      "ruta": "scripts/build_claim_provenance.py",
+      "sha256": "12bbeba2d6f32547d327ed304ee0c4ff40606655a6c1594fae7b95628e4eceff"
+    },
+    {
+      "ruta": "data/auditoria/procedencia_afirmaciones_v1.csv",
+      "sha256": "37dcbdc8045f488cc46c11cb256f0768812827fd0c60a57406405b82693a982a"
+    },
+    {
+      "ruta": "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv",
+      "sha256": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03"
+    },
+    {
+      "ruta": "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv",
+      "sha256": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0"
+    },
+    {
+      "ruta": "docs/auditorias/probe_diagnostico_seccion16_2026-09-27.py",
+      "sha256": "5806cf4c7043f10fbdf7619baf5a45b9c39d0abfdb6f4c766659c47486af7a9f"
+    }
+  ],
+  "BN": [
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 10,
+      "fila": {
+        "clave": "BN-111",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente",
+        "términos exactos": "`time from endosymbiosis origin to organelle integration comparative`; `endosymbiosis age integration timeline mitochondria plastid Paulinella UCYN Epithemia`; `duration organellogenesis endosymbiotic gene transfer`",
+        "resultado o motivo": "Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema."
+      },
+      "sha256_fila_csv": "788d0bd27a6d725a95956150ead2653db09d19dde69b478e891ec31ce49bba24"
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 11,
+      "fila": {
+        "clave": "BN-113",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Estimación pan-eucariota de la frecuencia de origen del parasitismo intracelular o de la simbiosis obligada",
+        "términos exactos": "`global number independent origins intracellular parasitism across eukaryotes`; `frequency evolution obligate endosymbiosis eukaryotes estimate`; `pan-eukaryotic estimate intracellular parasite obligate symbiosis`",
+        "resultado o motivo": "S517 reconstruye al menos 223 orígenes de parasitismo en 15 filos animales y S513 al menos 16 orígenes de simbiosis obligada en 89 familias de insectos; no son recuentos de parasitismo intracelular ni un denominador pan-eucariota comparable."
+      },
+      "sha256_fila_csv": "6be22e56ed1d25cf947b0635964e7d9cfd6be06ace10c925aabd3bdd3839cf38"
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "fila_csv": 118,
+      "fila": {
+        "clave": "BN-296",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo estado de genoma para data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv:fila 25:estado de genoma",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«*Entamoeba histolytica*»; campo=«estado de genoma»; valor=«genoma NO LOCALIZADO EN ESTA SESIÓN»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-296",
+        "resultado": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv:fila 25:estado de genoma.",
+        "filas relacionadas": "C-2435; data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv:fila 25:estado de genoma"
+      },
+      "sha256_fila_csv": "f333863427ad4bc1261dc02633674ea410a5ebeee8abfa4a0df6cf1fdd6b32c6"
+    }
+  ],
+  "prosa": [
+    {
+      "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+      "linea": 428,
+      "contenido": "No se ha observado un virus que se transforme en un núcleo hereditario ni un núcleo que se origine de novo durante una infección. [C-338; n/a; límite empírico de S92, S93, S94, S95]",
+      "sha256_texto": "cfe73556bbebdd4ea23c637263455009d3b5b55ee82bfbf0e4e6896c29f79f4b",
+      "sha256_artefacto": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0"
+    },
+    {
+      "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+      "linea": 533,
+      "contenido": "Las reconstrucciones de cronología y presencia ancestral registradas en C-202 y C-208 son sensibles al muestreo, los modelos y la detección de homología. [C-426; S56 líneas 380–407; S58 línea 91]",
+      "sha256_texto": "d53d69d116c6889b0dc184c99286a75df7e65c71a02975b4bee85a9471a1401e",
+      "sha256_artefacto": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0"
+    },
+    {
+      "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+      "linea": 181,
+      "contenido": "Los indels de eEF1A y enolasa registrados en C-475 y C-476 pueden presentar homoplasia, errores de alineamiento y pérdidas secundarias. [C-477; S123 tesis general; S120 Discussion]",
+      "sha256_texto": "f58652b03e5c485edad3c113391260cd1d645918caf9a4c7c7209eb221bb7ab2",
+      "sha256_artefacto": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80"
+    },
+    {
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "linea": 153,
+      "contenido": "Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba. [C-1040; S240 resumen; fig. 1; expresa]",
+      "sha256_texto": "4c5d0e575a8d5274fa82d4bf2c0216688a867dacaeeeae742d82c323314e5de0",
+      "sha256_artefacto": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217"
+    },
+    {
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "linea": 257,
+      "contenido": "En una comparación distinta y acotada a dos genomas, Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en *Capsaspora owczarzaki* ni *Monosiga brevicollis*. [C-1581; S352 §Signalling pathways]",
+      "sha256_texto": "92cc65db8986675c118464efbde91eaf883a700fa1095e77eeff3b5c62360b1d",
+      "sha256_artefacto": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749"
+    },
+    {
+      "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+      "linea": 165,
+      "contenido": "Weinstein y Kuris reconstruyeron al menos 223 orígenes de parasitismo en 15 filos animales; Cornwallis y colaboradores, al menos 16 orígenes de simbiosis obligada en 89 familias de insectos. [C-1664] Parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no es un denominador de Eukaryota: la frecuencia pan-eucariota permanece sin localizar. [C-1664; S517 resumen; S513 resultados; BN-113]",
+      "sha256_texto": "f7771a109717b88ce66c859d20bf420efb765f93132e29d83cc5037d15277fab",
+      "sha256_artefacto": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9"
+    }
+  ],
+  "observaciones": [
+    "Read-only python3 scripts/build_claim_provenance.py --root .: exit0, PROCEDENCIA VERIFICABLE:2838 afirmaciones.",
+    "Tabla34:17 nodos, último Metazoa, sin nodos descendientes de Metazoa.",
+    "Tabla40a fila CSV25 estado de genoma: literal coincide con C-2435 y declara hueco, no ausencia de genoma.",
+    "Se observaron32 filas cuyo predicado es cuestionado_por; todas tienen referencia C en sujeto/afirmación/objeto. No equivale a censo completo de contraevidencia.",
+    "Figura4 S352: inspección visual independiente anterior preservada en evidencia_revision_independiente_propuesta_s240_s352_v1_2026-09-27.json; no lectura de la figura inferida por regex."
+  ],
+  "claims_leidas": [
+    {
+      "id": "C-018",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila_csv": 3,
+      "sha256_fila_csv": "4101674621fbb6503d67f17bf19ff467f6b723adb5cac459f0b9120df60560ea",
+      "fila": {
+        "#": "C-018",
+        "Afirmación": "En el árbol de tres dominios, Eukaryota se representa como grupo hermano de Archaea y Archaea se trata como monofilético.",
+        "Sujeto": "árbol de tres dominios",
+        "Predicado": "posee_topologia*",
+        "Objeto": "(Bacteria,(Archaea,Eukaryota))",
+        "Atribución": "expresa",
+        "Fuente": "S06 fig. 1; cuestionado por S08 fig. 1, S09 tesis general y S10 figs. 1–3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Es la topología explícita del esquema; su vigencia filogenética está discutida.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-031",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila_csv": 16,
+      "sha256_fila_csv": "69554f6fb1e19d514444e6147e1997d15f6ba09082a4f069c4a7ee3510a8962e",
+      "fila": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results, párrafo 3, «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "restriccion",
+        "contradiccion"
+      ],
+      "contiene_marca_comillas": true,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-041",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila_csv": 26,
+      "sha256_fila_csv": "df1dd0636ce7b35c376c413299b4f86bd944e6ea7c90e1687e1592f131bd22c3",
+      "fila": {
+        "#": "C-041",
+        "Afirmación": "La exclusión de una secuencia EF2 alteró la relación Eukaryota–Lokiarchaeota registrada en C-040.",
+        "Sujeto": "C-040",
+        "Predicado": "cuestionado_por",
+        "Objeto": "sensibilidad a la exclusión de una secuencia EF2",
+        "Atribución": "expresa",
+        "Fuente": "S11 Results; fig. 3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La topología mostró sensibilidad a taxones o secuencias concretas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-260",
+      "ruta": "data/afirmaciones/03.csv",
+      "fila_csv": 89,
+      "sha256_fila_csv": "410a1cd811ec275cdbabc55c1bd618065429e5599e5576d60a5fae713a5868af",
+      "fila": {
+        "#": "C-260",
+        "Afirmación": "La reconstrucción funcional de Bernabeu et al. no elimina la posibilidad de anaerobiosis facultativa o de pérdidas tempranas no recuperables.",
+        "Sujeto": "afirmación C-259",
+        "Predicado": "cuestionado_por",
+        "Objeto": "incompletitud de reconstrucción y plasticidad metabólica",
+        "Atribución": "sintesis(C-258, C-259)",
+        "Fuente": "S59 Discussion: limitations; S57 pp. 301–303",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La ausencia de ortogrupos no establece ausencia histórica absoluta.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-263",
+      "ruta": "data/afirmaciones/03.csv",
+      "fila_csv": 92,
+      "sha256_fila_csv": "05b8c7989d111234ff9e76fa0a0a366ead1ef5479d587e0c952d84702c6c3637",
+      "fila": {
+        "#": "C-263",
+        "Afirmación": "Martin et al. sostuvieron que la adquisición mitocondrial tardía inferida por Pittis y Gabaldón era un artefacto estadístico y de interpretación.",
+        "Sujeto": "afirmación C-261",
+        "Predicado": "cuestionado_por",
+        "Objeto": "artefacto estadístico y de polarización",
+        "Atribución": "expresa",
+        "Fuente": "S83 título; Results; Discussion",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La crítica reanaliza el mismo tipo de datos y señala dependencia del procedimiento.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "modalidad",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-338",
+      "ruta": "data/afirmaciones/03.csv",
+      "fila_csv": 167,
+      "sha256_fila_csv": "eb07ba8158864dc32de4ceacc1942004f62dc5c55cf3a50fddc5bfbceb1770fc",
+      "fila": {
+        "#": "C-338",
+        "Afirmación": "En los casos actuales examinados no se observó una transición de virus a núcleo hereditario ni el origen de novo de un núcleo durante una infección.",
+        "Sujeto": "casos actuales examinados en S92–S95",
+        "Predicado": "no_observado_en*",
+        "Objeto": "transición virus–núcleo hereditario",
+        "Atribución": "sintesis(C-331, C-332, C-334, C-335, C-336, C-337)",
+        "Fuente": "S92, S93, S94 y S95: resultados y discusión",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "La ausencia se limita a los casos examinados por las premisas, incluida la infección persistente de C-331. Una búsqueda histórica retirada se conserva solo como delta de auditoría, no como soporte canónico. Esto no demuestra imposibilidad universal ni resuelve el origen histórico del núcleo.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-426",
+      "ruta": "data/afirmaciones/03.csv",
+      "fila_csv": 255,
+      "sha256_fila_csv": "2085ce61a0cdba08aebb3ee140714c60da9563a7d26b797fc01f2aa1ac54960b",
+      "fila": {
+        "#": "C-426",
+        "Afirmación": "Las reconstrucciones de cronología y presencia ancestral registradas en C-202 y C-208 son sensibles al muestreo, los modelos y la detección de homología.",
+        "Sujeto": "reconstrucciones de C-202 y C-208",
+        "Predicado": "posee_sensibilidad*",
+        "Objeto": "muestreo, modelos y detección de homología",
+        "Atribución": "sintesis(C-202, C-208)",
+        "Fuente": "S56 líneas 380–407; S58 línea 91",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "La síntesis enlaza explícitamente las reconstrucciones cuestionadas y los modos de cambio enumerados por las fuentes.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-477",
+      "ruta": "data/afirmaciones/04.csv",
+      "fila_csv": 48,
+      "sha256_fila_csv": "27d8b7a7d0fa0bd7261f86992f33f7efd6d7c7b3d82a05bc6e3db03352931025",
+      "fila": {
+        "#": "C-477",
+        "Afirmación": "Los indels de eEF1A y enolasa registrados en C-475 y C-476 pueden presentar homoplasia, errores de alineamiento y pérdidas secundarias.",
+        "Sujeto": "indels de C-475 y C-476",
+        "Predicado": "posee_limitacion*",
+        "Objeto": "homoplasia, errores de alineamiento y pérdidas secundarias",
+        "Atribución": "sintesis(C-475, C-476)",
+        "Fuente": "S123 tesis general; S120 Discussion",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "La fila enlaza los caracteres exactos cuestionados; los cambios raros no son necesariamente únicos ni irreversibles.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-712",
+      "ruta": "data/afirmaciones/05.csv",
+      "fila_csv": 20,
+      "sha256_fila_csv": "7174b3b431bda315d6ddfde06306b7e887113361b6242ab932fd96a5c3d9beb1",
+      "fila": {
+        "#": "C-712",
+        "Afirmación": "La asignación de Rafatazmia chitrakootensis a Rhodophyta corona es cuestionada por la ausencia de caracteres reproductivos inequívocos y por incertidumbres estratigráficas.",
+        "Sujeto": "afirmación C-711",
+        "Predicado": "cuestionado_por",
+        "Objeto": "ambigüedad morfológica y estratigráfica",
+        "Atribución": "sintesis(C-710, C-711)",
+        "Fuente": "S152 discusión; S178 §fossil record",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La contraargumentación no niega su origen biológico, sino la resolución taxonómica y temporal.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion",
+        "contradiccion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1040",
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 70,
+      "sha256_fila_csv": "6158f81f365590defa832abe38be3d6337a597171fc32eb6e78e37cdab44a0ce",
+      "fila": {
+        "#": "C-1040",
+        "Afirmación": "Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba.",
+        "Sujeto": "Perkinsela",
+        "Predicado": "depreda_a",
+        "Objeto": "citoplasma de Paramoeba dentro de una asociación obligada",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen; fig. 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Vesículas e invaginaciones se observaron por TEM y crio-SEM.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1121",
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 151,
+      "sha256_fila_csv": "ad70f24c114862425bf8faf439d2417311c1b76594538b011eb14c1c241acfb1",
+      "fila": {
+        "#": "C-1121",
+        "Afirmación": "En 1.850 simbiosis distribuidas en 402 familias de insectos, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos.",
+        "Sujeto": "simbiosis obligadas de insectos en Cornwallis et al.",
+        "Predicado": "tiene_correlato*",
+        "Objeto": "baja disponibilidad de vitaminas B",
+        "Atribución": "expresa",
+        "Fuente": "S513 resumen; resultados nutricionales; BN-044",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es un correlato del muestreo de insectos y no una condición suficiente y necesaria que prediga obligatoriedad en cualquier asociación.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "restriccion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1195",
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 225,
+      "sha256_fila_csv": "2b46aec7bb7c01d5723e4ee4289d7cdcdfe52bded90a5a9370b4a789f95c249a",
+      "fila": {
+        "#": "C-1195",
+        "Afirmación": "Boothby y colaboradores afirmaron que aproximadamente una sexta parte de los genes de un borrador de genoma de tardígrado procedía de HGT.",
+        "Sujeto": "genoma borrador de Hypsibius dujardini",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "aproximadamente una sexta parte atribuida a HGT",
+        "Atribución": "expresa",
+        "Fuente": "S295 título, resumen y discusión",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "La cifra dependía de un ensamblaje posteriormente cuestionado.",
+        "Resolución": "sin resolver",
+        "Vigencia": "histórica"
+      },
+      "candidatos": [
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1196",
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 226,
+      "sha256_fila_csv": "d24a1ccf270800f6e869a3d5d05ed9850a9ebed61a35d5a7483faa56f4bd78bb",
+      "fila": {
+        "#": "C-1196",
+        "Afirmación": "Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación.",
+        "Sujeto": "afirmación C-1195",
+        "Predicado": "cuestionado_por",
+        "Objeto": "reensamblaje y decontaminación",
+        "Atribución": "expresa",
+        "Fuente": "S296 Results and Discussion, Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini; Conclusions (versión PNAS final, PMC4983863)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Las secuencias de supuesto origen extraño se asociaron con contigs contaminantes o cobertura discordante.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion",
+        "contradiccion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1581",
+      "ruta": "data/afirmaciones/12.csv",
+      "fila_csv": 101,
+      "sha256_fila_csv": "f646702988d799cf1b225a8b79c8b1951b846a2b4cbf1c8444e1b4ddc7f7be9d",
+      "fila": {
+        "#": "C-1581",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "comparación genómica de Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 §Signalling pathways, “Both Capsaspora and M. brevicollis lack receptors and ligands ... in the Hedgehog ... pathways”",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La ausencia se limita a los dos genomas y a las familias que el estudio pudo anotar; no se extrapola a todos los holozoos unicelulares. La proposición de Hedgehog queda separada de la observación de Notch y Delta en C-1580.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": true,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1642",
+      "ruta": "data/afirmaciones/13.csv",
+      "fila_csv": 27,
+      "sha256_fila_csv": "deeaaff254c077cf1036fc344c507a8c4bafb3f8785fdb2e9da69e695b1013ab",
+      "fila": {
+        "#": "C-1642",
+        "Afirmación": "No existe una cronología de inicio y etapas intermedias comparable para todas las endosimbiosis documentadas en este corpus.",
+        "Sujeto": "tiempo desde endosimbiosis hasta integración actual",
+        "Predicado": "carece_de_cronología_comparable*",
+        "Objeto": "serie temporal completa entre sistemas",
+        "Atribución": "glosa",
+        "Fuente": "BN-111",
+        "Aceptación": "no evaluado",
+        "Fuerza": "desconocida",
+        "Motivo": "Las fuentes suelen fechar divergencias u orígenes de clado y describir el estado presente, no una serie temporal completa.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": false
+    },
+    {
+      "id": "C-1664",
+      "ruta": "data/afirmaciones/13.csv",
+      "fila_csv": 49,
+      "sha256_fila_csv": "1ed0e3adbf89c0dcf45441964a87b7067bafaa23a585c44f5f0468f121cd51cb",
+      "fila": {
+        "#": "C-1664",
+        "Afirmación": "Se han reconstruido al menos 223 orígenes de parasitismo en 15 filos animales y al menos 16 orígenes de simbiosis obligada en 89 familias de insectos, pero no una frecuencia pan-eucariota de parasitismo intracelular o simbiosis obligada.",
+        "Sujeto": "orígenes de parasitismo y simbiosis obligada en muestreos restringidos",
+        "Predicado": "tiene_numero_de_origenes*",
+        "Objeto": "≥223 en Animalia y ≥16 en insectos",
+        "Atribución": "sintesis(C-1121)",
+        "Fuente": "S517 resumen; S513 resultados; BN-113",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Las definiciones y denominadores difieren: parasitismo animal no equivale a parasitismo intracelular y el censo de insectos no representa Eukaryota.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "restriccion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1918",
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 22,
+      "sha256_fila_csv": "c5dc608ae06c986a5f44aa4adc529e77c6a9970abfc0d504a7fd6745900ee653",
+      "fila": {
+        "#": "C-1918",
+        "Afirmación": "La hipótesis de Archezoa primitivamente amitochondriales fue refutada por genes y orgánulos derivados de mitocondrias en sus supuestos ejemplos.",
+        "Sujeto": "afirmación C-1816",
+        "Predicado": "cuestionado_por",
+        "Objeto": "mitosomas, hidrogenosomas y genes mitocondriales",
+        "Atribución": "sintesis(C-1816, C-1817, C-1818, C-1819)",
+        "Fuente": "S398; S399",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La ausencia de mitocondria clásica resultó de reducción secundaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "rechazada"
+      },
+      "candidatos": [
+        "modalidad",
+        "conjuncion",
+        "contradiccion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": true
+    },
+    {
+      "id": "C-1955",
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 59,
+      "sha256_fila_csv": "56c283fb43357760df3b557e75a094267fa0b67498da9e353844ca5f0162cfed",
+      "fila": {
+        "#": "C-1955",
+        "Afirmación": "El censo paleontológico del corredor termina en Metazoa y no incluye nodos descendientes de Metazoa.",
+        "Sujeto": "censo paleontológico del corredor Eukaryota–Metazoa",
+        "Predicado": "termina_en*",
+        "Objeto": "Metazoa, sin nodos descendientes",
+        "Atribución": "glosa",
+        "Fuente": "n/a; control estructural de data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La afirmación codifica el límite editorial verificable en la última fila de la tabla nodal y no pretende convertir ese límite en un resultado paleontológico.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": false
+    },
+    {
+      "id": "C-1965",
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 69,
+      "sha256_fila_csv": "9b0323d6cca1b17b29c5ce31da174bcf9bda41c0209f1a702a9b071000bae0cb",
+      "fila": {
+        "#": "C-1965",
+        "Afirmación": "El censo de procedencia versión 1 enumera cada afirmación canónica viva con su archivo, huella de fila, atribución, fuentes S declaradas en Fuente, referencias inter-C presentes en todos los campos, artefactos locales y el estado de acceso disponible, sin cotejar el contenido de los pasajes.",
+        "Sujeto": "censo de procedencia de afirmaciones",
+        "Predicado": "enumera_objeto_por_objeto*",
+        "Objeto": "inventario estructural de afirmaciones y referencias declaradas que no certifica apoyo semántico",
+        "Atribución": "glosa",
+        "Fuente": "n/a; data/auditoria/procedencia_afirmaciones_v1.csv; scripts/build_claim_provenance.py",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El control falla ante C duplicadas, referencias inter-C inexistentes, fuentes S declaradas en Fuente ausentes del Apéndice A o cualquier cambio no regenerado. Si A registra una fuente pero la matriz de acceso no, conserva explícitamente esa limitación; ni acceso ni artefacto prueban el pasaje.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": false
+    },
+    {
+      "id": "C-1985",
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 89,
+      "sha256_fila_csv": "5cc866f69e01d17b21287b2d94a1835d3939f2aeff1a3d0adfce09cae7652c27",
+      "fila": {
+        "#": "C-1985",
+        "Afirmación": "La búsqueda BN-118 cubrió nominalmente las 26 entradas organismales de las tablas 40 y 40a y no localizó ecología, alimentación, hospedador o socio, ciclo, genoma y cultivo para todas las combinaciones exigidas.",
+        "Sujeto": "campos organismales de las tablas 40 y 40a",
+        "Predicado": "tiene_estado_de_localizacion*",
+        "Objeto": "campos positivos parciales y huecos nominales por organismo",
+        "Atribución": "glosa",
+        "Fuente": "BN-118",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Un campo no localizado no se transforma en ausencia de genoma, cultivo, hospedador, alimentación o ciclo; las combinaciones positivas conservan sus C específicas.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": false,
+      "metacelda_literal": false,
+      "clave_S_declarada": false
+    },
+    {
+      "id": "C-2435",
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 539,
+      "sha256_fila_csv": "24333dccbc4f29358c630f89450e672a769c2e4d6660318fd9013ca3a21fabbe",
+      "fila": {
+        "#": "C-2435",
+        "Afirmación": "Para organismo «*Entamoeba histolytica*», el campo «estado de genoma» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-296]».",
+        "Sujeto": "organismo «*Entamoeba histolytica*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "estado de genoma: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-296]",
+        "Atribución": "sintesis(C-1985)",
+        "Fuente": "n/a; dependencias canónicas C-1985; BN-296; BN-118 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv:fila 25:estado de genoma. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "candidatos": [
+        "negacion",
+        "conjuncion"
+      ],
+      "contiene_marca_comillas": true,
+      "metacelda_literal": true,
+      "clave_S_declarada": false
+    }
+  ],
+  "censo_candidatos": "docs/auditorias/candidatos_diagnostico_seccion16_2026-09-27.json",
+  "alcance": "Diagnóstico parcial nominal, no censo científico cerrado ni firma manual."
+}

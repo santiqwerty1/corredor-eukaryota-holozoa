@@ -1,0 +1,1098 @@
+{
+  "version_propuesta": "1",
+  "autor": "/root/inspeccion_relojes",
+  "rol": "AUTOR; NO REVISOR INDEPENDIENTE",
+  "captura_utc": "2026-09-27T01:54:34Z",
+  "estado": "PENDIENTE_REVISION_INDEPENDIENTE",
+  "rama": "codex/cierre-plan-pendiente",
+  "ids_reservados": [
+    "C-2839",
+    "C-2840",
+    "C-2841",
+    "C-2842",
+    "C-2843",
+    "C-2844",
+    "C-2845"
+  ],
+  "restricciones": [
+    "No modifica producción.",
+    "No modifica las 408 BN históricas, sus consultas ni resultados.",
+    "No amplía POSITIVE_CLAIMS.",
+    "El soporte semántico nuevo no es coincidencia literal retrospectiva.",
+    "No restaura ni declara falsos los seis genes mitocondriales; C-1041 queda fuera de revisión.",
+    "GPCR se limita a Rhodopsin por organismo; otras familias no adjudicadas.",
+    "Importación en Perkinsela: hipótesis publicada, no ensayo funcional demostrado."
+  ],
+  "formatos": {
+    "C": [
+      "#",
+      "Afirmación",
+      "Sujeto",
+      "Predicado",
+      "Objeto",
+      "Atribución",
+      "Fuente",
+      "Aceptación",
+      "Fuerza",
+      "Motivo",
+      "Resolución",
+      "Vigencia"
+    ],
+    "B": [
+      "etiqueta preferida",
+      "tipo",
+      "sinónimos y grafías alternativas",
+      "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila",
+      "# de la fila del registro donde aparece por primera vez"
+    ],
+    "F": [
+      "magnitud",
+      "valor tal como lo publica la fuente",
+      "unidad original",
+      "organismo, nodo o intervalo al que se aplica",
+      "método o proxy",
+      "incertidumbre publicada",
+      "observado o inferido",
+      "fuente con localizador",
+      "#"
+    ]
+  },
+  "fuentes": [
+    {
+      "clave": "S240",
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_archivo": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7"
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_archivo": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c"
+    }
+  ],
+  "pasajes": [
+    {
+      "id": "S240_Par7",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par7\"]",
+      "texto_normalizado": "From a set of 15,623 genomic scaffolds, 693 scaffolds (all manually curated) were determined to be from the Perkinsela sp. nuclear genome. The N50 for these scaffolds was 57,461 base pairs (bp), with an average Illumina sequence depth of ~550X and a G + C content of 47.1% (Table S1.1). The total genome size was estimated to be ~9.5 Mbp. 5,252 protein-coding genes were predicted, with a mean intergenic distance of ~515 bp. 332 of a set of 458 ‘core eukaryotic genes’ (72%) were found in Perkinsela sp. using webMGA23.",
+      "sha256_pasaje": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+    },
+    {
+      "id": "S240_Par10",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par10\"]",
+      "texto_normalizado": "At ~9.5 Mbp in size and with < 5,500 predicted protein-coding genes, the Perkinsela sp. nuclear genome is substantially smaller than that of the free-living kinetoplastid flagellate Bodo saltans 25, the plant pathogen Phytomonas sp.26, and the human parasites Trypanosoma brucei 27 and Leishmania major 28 (Table 1). An analysis of proteins with KOG-based functional predictions (euKaryotic Orthologous Groups29) revealed > 600 KOG identifiers present in B. saltans, T. brucei, and Phytomonas sp. but absent in Perkinsela sp. (Fig. 2a; refs 25–27). The size and functional diversity of the Perkinsela sp. proteome is thus substantially reduced (Fig. 2a and b), presumably as a consequence of adaptation to intracellular life. Almost 14% of its proteome (721 of 5,252 proteins) appears to service its giant mitochondrion (including its mass of mitochondrial DNA, the kinetoplast) (Supplementary Note 1.7), which occupies the majority of the cell’s volume (Fig. 1e) and whose transcripts have been shown to undergo extensive and error-prone U-insertion/deletion RNA editing24.",
+      "sha256_pasaje": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa"
+    },
+    {
+      "id": "S240_Par14",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par14\"]",
+      "texto_normalizado": "P. pemaquidensis and Perkinsela sp. have never been successfully cultured separately (ref. 5 and references therein). Indeed, Page noted that “the Nebenkörper… [Perkinsela sp.] was always so close to the [amoeba] cell nucleus and followed its movements so faithfully that a physical connection between the 2 must be assumed…”40. We attempted to discern the underlying reason(s) for the obligate relationship between the two organisms. Endosymbiotic gene transfer (EGT), a well-known factor in the transition from endosymbiont to organelle41, is one possibility. We used a phylogenomics pipeline to search the >11,000 genes in the P. pemaquidensis nuclear genome for genes of kinetoplastid ancestry. Out of 3,846 protein alignments for which interpretable phylogenies could be reconstructed, only 8 genes likely derived from the endosymbiont were identified in the amoeba (Supplemental Note S1.6, Supplemental Fig. S1.6.1a–h). The role of EGT in forging this unusual symbiosis thus appears to have been minimal.",
+      "sha256_pasaje": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+    },
+    {
+      "id": "S240_Par16",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par16\"]",
+      "texto_normalizado": "How might Perkinsela sp. and P. pemaquidensis ‘communicate’? Using TEM and freeze-fracture cryo-SEM, we discovered invaginations on the surface of the endosymbiont, which appears bound by a single membrane (Fig. 1h,i, Supplementary Fig. S2.6.1). Intracellular vesicles with electron densities similar to the P. pemaquidensis cytoplasm were also apparent, like those seen in an early study of P. perniciosa 2. These observations suggest that Perkinsela sp. carries out endocytosis (although with no flagellar pocket, the site of endocytosis in trypanosomes32, the process is presumably not restricted to any particular region of the plasma membrane). This idea is further supported by genomic data. The Perkinsela sp. genome encodes a varied set of proteins involved in clathrin-mediated endocytosis, exocytosis, and vesicular trafficking (e.g., clathrin, dynamin, SNARE proteins, and a set of Rab proteins) (Supplementary Note 2.6), as well as 66 putative membrane transporters with diverse substrate specificities (Supplementary Note 2.7). Although their intracellular destination(s) is unknown, we speculate that the endocytic vesicles of Perkinsela sp. serve to internalize amoeba-derived metabolites (and, possibly, enzymes), thereby allowing the contents of the amoeba cytoplasm to feed directly into the biochemical pathways of the endosymbiont (Supplementary Note 3.14). In the opposite direction, Perkinsela sp. may secrete key proteins and metabolites to its plasma membrane or out into the cytoplasm of its host (Fig. 4). These are hypotheses that can be tested experimentally.",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+    },
+    {
+      "id": "S240_Tab1",
+      "fuente": "S240",
+      "selector": ".//table-wrap[@id=\"Tab1\"]/.//tr",
+      "filas_tabla": [
+        [
+          "",
+          "Perkinsela sp.a",
+          "Bodo saltans b",
+          "Phytomonas sp.c",
+          "Trypanosoma brucei d",
+          "Leishmania major e"
+        ],
+        [
+          "Genome size (Mbp)",
+          "9.5",
+          "39.9",
+          "17.8",
+          "26.1",
+          "32.8"
+        ],
+        [
+          "G + C (%)",
+          "47.1",
+          "46.6",
+          "48.0",
+          "46.4",
+          "59.7"
+        ],
+        [
+          "Protein-coding genes",
+          "5,252",
+          "18,943",
+          "6,381",
+          "9,068",
+          "8,272"
+        ],
+        [
+          "Mean intergenic distance (bp)",
+          "515.4",
+          "462.9",
+          "1,140",
+          "1,279",
+          "2,045"
+        ],
+        [
+          "Trans-splicing?",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ]
+      ],
+      "texto_normalizado": "\tPerkinsela sp.a\tBodo saltans b\tPhytomonas sp.c\tTrypanosoma brucei d\tLeishmania major e\nGenome size (Mbp)\t9.5\t39.9\t17.8\t26.1\t32.8\nG + C (%)\t47.1\t46.6\t48.0\t46.4\t59.7\nProtein-coding genes\t5,252\t18,943\t6,381\t9,068\t8,272\nMean intergenic distance (bp)\t515.4\t462.9\t1,140\t1,279\t2,045\nTrans-splicing?\tyes\tyes\tyes\tyes\tyes",
+      "sha256_pasaje": "859d1ce3afb8136dd29cbaf7b0a062f92f6263e938941cfbf651884079aecb4c",
+      "nota": "Celdas por fila unidas por TAB; filas unidas por LF; no se usan dimensiones inferidas de una figura."
+    },
+    {
+      "id": "S352_GeneRepertoire_p4",
+      "fuente": "S352",
+      "selector": "sec con título normalizado Gene repertoire of Capsaspora, cuarto p hijo directo",
+      "texto_normalizado": "Our data reveal the contrasting evolutionary histories of extracellular (or membrane-bound) components versus cytoplasmic components of signalling pathways involved in metazoan multicellularity and development. Most metazoan receptors and diffusible ligands are either ancestral metazoan innovations or have independently diversified in metazoans, whereas the majority of their intracellular components were already present in the unicellular ancestors of metazoans (Fig. 4). Both Capsaspora and M. brevicollis lack receptors and ligands in several systems involved in cell communication and development in metazoans, for example, those in the Hedgehog, Rhodopsin family G-protein-coupled receptors, Wnt, transforming growth factor-β and nuclear receptor signalling pathways (Fig. 4). Notch signalling also seems to be a metazoan innovation, although Capsaspora has several receptor proteins that resemble the metazoan Notch and Delta proteins in their domain architecture, which may represent the ancestral components of this system (Supplementary Figs S19–S21, Supplementary Note 5). Both Capsaspora and M. brevicollis have large numbers of TKs (92 and 128, respectively)20 (Supplementary Figs S22 and S23, Supplementary Table S9). Again, the receptor-type TKs independently diversified in Capsaspora, M. brevicollis and metazoans, whereas the cytoplasmic TKs are mostly homologous among these three lineages, highlighting the animal-specific adaptation of the receptor-ligand system in the Metazoa20. The mitogen-activated protein kinase pathway, a downstream cytoplasmic signalling system of the TK pathway, is also present in Capsaspora in the diversified form that we see now in metazoans (Supplementary Figs S24 and S25, Supplementary Note 5). The diverse members of the G-protein α-subunit family and the regulator of G-protein-signalling family, which together coordinate signal transduction from the 7TM receptors to their specific effectors, are also present in the Capsaspora genome, indicating that the diversity of these components has been secondarily lost, to some extent, in the lineage leading to M. brevicollis (Supplementary Figs S26 and S27, Supplementary Note 5).",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    }
+  ],
+  "normalizacion_pasaje": "Párrafos: join(itertext), colapsar espacios Unicode mediante split/join, UTF8 + LF; tablas: texto normalizado de cada celda unido por TAB, filas por LF, UTF8 + LF.",
+  "C_altas": [
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2839",
+        "Afirmación": "Tanifuji et al. registran 39.9 Mbp para el genoma nuclear del flagelado de vida libre Bodo saltans usado como comparando de Perkinsela.",
+        "Sujeto": "genoma nuclear de Bodo saltans",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "39.9 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La cifra se transcribe de Table 1 sin conversión ni cociente. Par10 identifica expresamente a Bodo saltans como flagelado de vida libre; la tabla remite los datos de este organismo a su referencia 25. No se afirma haber reinspeccionado esa referencia ni que Tanifuji et al. secuenciaran de nuevo ese genoma.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S240_Tab1",
+        "S240_Par10"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2840",
+        "Afirmación": "Tanifuji et al. identificaron en el núcleo de Paramoeba pemaquidensis 8 genes probablemente derivados del endosimbionte Perkinsela entre 3,846 alineamientos proteicos con filogenias interpretables.",
+        "Sujeto": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "Predicado": "tiene_numero_de_candidatos*",
+        "Objeto": "8 genes candidatos entre 3,846 alineamientos con filogenias interpretables",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El numerador son genes de origen endosimbionte probable y el denominador son alineamientos con filogenias interpretables, no todos los genes nucleares. La atribución de origen es filogenómica; no se convierte en ocho transferencias demostradas experimentalmente ni en un porcentaje calculado.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S240_Par14"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2841",
+        "Afirmación": "Tanifuji et al. proponen que vesículas endocíticas de Perkinsela podrían internalizar metabolitos y, posiblemente, enzimas procedentes del citoplasma de su hospedador.",
+        "Sujeto": "hipótesis de captación vesicular de metabolitos y posiblemente enzimas del hospedador por Perkinsela",
+        "Predicado": "propuesto_por",
+        "Objeto": "Tanifuji et al. (2017)",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Los autores presentan esta vía como especulación contrastable y dicen que se desconocen los destinos intracelulares. No se equipara esa hipótesis a importación proteica dirigida demostrada ni a una ausencia universal de importación.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S240_Par16"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2842",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en el genoma de Monosiga brevicollis comparado en 2013.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La negación reproduce el resultado de la comparación publicada y se limita al genoma y criterio de anotación de ese estudio. No se extiende a todos los coanoflagelados ni a todos los componentes intracelulares de señalización.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_GeneRepertoire_p4"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2843",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en el genoma de Capsaspora owczarzaki comparado en 2013.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La negación reproduce el resultado de la comparación publicada y se limita al genoma y criterio de anotación de ese estudio. No se extiende a todos los filastereos ni a todos los componentes intracelulares de señalización.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_GeneRepertoire_p4"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2844",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la familia Rhodopsin de receptores acoplados a proteína G en el genoma de Monosiga brevicollis comparado en 2013.",
+        "Sujeto": "receptores y ligandos de la familia Rhodopsin de GPCR en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El resultado se limita a la familia Rhodopsin y al genoma y criterio de anotación de ese estudio. No adjudica otras familias de GPCR ni otras señales, y no autoriza a declarar una ausencia global de GPCR.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_GeneRepertoire_p4"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2845",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la familia Rhodopsin de receptores acoplados a proteína G en el genoma de Capsaspora owczarzaki comparado en 2013.",
+        "Sujeto": "receptores y ligandos de la familia Rhodopsin de GPCR en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El resultado se limita a la familia Rhodopsin y al genoma y criterio de anotación de ese estudio. No adjudica otras familias de GPCR ni otras señales, y no autoriza a declarar una ausencia global de GPCR.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_GeneRepertoire_p4"
+      ]
+    }
+  ],
+  "C_correcciones": [
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "antes": {
+        "#": "C-1037",
+        "Afirmación": "El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb.",
+        "Sujeto": "genoma nuclear de Perkinsela",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "aproximadamente 9,5 Mb",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen y resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El tamaño procede del ensamblaje genómico.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-1037",
+        "Afirmación": "Tanifuji et al. estimaron el tamaño del genoma nuclear de Perkinsela sp. en ~9.5 Mbp.",
+        "Sujeto": "genoma nuclear de Perkinsela",
+        "Predicado": "tiene_valor_estimado*",
+        "Objeto": "~9.5 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Par7 dice estimated y publica ~9.5 Mbp. Se conserva la unidad y la aproximación originales; es una estimación del tamaño nuclear a partir del ensamblaje, no una medición directa ni el tamaño del genoma mitocondrial.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S240_Par7"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "antes": {
+        "#": "C-1040",
+        "Afirmación": "Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba.",
+        "Sujeto": "Perkinsela",
+        "Predicado": "depreda_a",
+        "Objeto": "citoplasma de Paramoeba dentro de una asociación obligada",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen; fig. 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Vesículas e invaginaciones se observaron por TEM y crio-SEM.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-1040",
+        "Afirmación": "Tanifuji et al. interpretan las invaginaciones superficiales y las vesículas intracelulares observadas en Perkinsela como indicios de endocitosis.",
+        "Sujeto": "endocitosis propuesta en Perkinsela",
+        "Predicado": "respaldado_por",
+        "Objeto": "invaginaciones superficiales y vesículas intracelulares observadas",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "TEM y crio-SEM muestran estructuras; los autores dicen que esas observaciones sugieren endocitosis. No se convierte la interpretación en demostración directa de captación de citoplasma ni de importación proteica.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S240_Par16"
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "antes": {
+        "#": "C-1581",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "comparación genómica de Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 §Signalling pathways, “Both Capsaspora and M. brevicollis lack receptors and ligands ... in the Hedgehog ... pathways”",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La ausencia se limita a los dos genomas y a las familias que el estudio pudo anotar; no se extrapola a todos los holozoos unicelulares. La proposición de Hedgehog queda separada de la observación de Notch y Delta en C-1580.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-1581",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "comparación genómica de Suga et al. 2013",
+        "Atribución": "sintesis(C-2842, C-2843)",
+        "Fuente": "C-2842; C-2843",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Síntesis de dos resultados separados por organismo en las C citadas. Ambos se limitan a los genomas y al criterio de anotación de Suga et al. (2013), sin extrapolar a todos los holozoos unicelulares.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_GeneRepertoire_p4"
+      ]
+    }
+  ],
+  "celdas": [
+    {
+      "claim_id": "C-2708",
+      "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila": 7,
+      "columna": "genoma del socio comparado con parientes de vida libre",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]",
+      "sha256_archivo": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "bn_historica": "BN-473",
+      "nuevo_contenido": "Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.",
+      "afirmaciones_cientificas": [
+        "C-1037",
+        "C-2839"
+      ],
+      "componentes": [
+        {
+          "componente": "tamaño nuclear de Perkinsela",
+          "claim": "C-1037",
+          "pasaje": "S240_Par7"
+        },
+        {
+          "componente": "tamaño nuclear de Bodo saltans",
+          "claim": "C-2839",
+          "pasaje": "S240_Tab1"
+        },
+        {
+          "componente": "condición libre del comparando",
+          "claim": "C-2839",
+          "pasaje": "S240_Par10"
+        }
+      ],
+      "alcance_propuesto": "COMPARACION_NUCLEAR_ACOTADA",
+      "limitaciones": "Comparación nuclear nominal cubierta; los seis genes mitocondriales del texto histórico no se restauran ni se declaran falsos.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2708",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «genoma del socio comparado con parientes de vida libre» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "genoma del socio comparado con parientes de vida libre: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]",
+        "Atribución": "sintesis(C-1036, C-1037, C-1038, C-1039, C-1040, C-1041, C-1042, C-1987)",
+        "Fuente": "n/a; dependencias canónicas C-1036; C-1037; C-1038; C-1039; C-1040; C-1041; C-1042; C-1987; BN-473; BN-111 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2708",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «genoma del socio comparado con parientes de vida libre» tiene el valor literal «Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "genoma del socio comparado con parientes de vida libre: Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.",
+        "Atribución": "sintesis(C-1037, C-2839)",
+        "Fuente": "n/a; dependencias canónicas C-1037; C-2839",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-473 y su rechazo se conservan; no son la prueba del valor nuevo. Comparación nuclear nominal cubierta; los seis genes mitocondriales del texto histórico no se restauran ni se declaran falsos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "claim_id": "C-2709",
+      "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila": 7,
+      "columna": "EGT al núcleo; importación de proteínas de vuelta",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]",
+      "sha256_archivo": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "bn_historica": "BN-474",
+      "nuevo_contenido": "EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.",
+      "afirmaciones_cientificas": [
+        "C-2840",
+        "C-2841"
+      ],
+      "componentes": [
+        {
+          "componente": "candidatos EGT y denominador",
+          "claim": "C-2840",
+          "pasaje": "S240_Par14"
+        },
+        {
+          "componente": "hipótesis de captación de metabolitos/posibles enzimas",
+          "claim": "C-2841",
+          "pasaje": "S240_Par16"
+        }
+      ],
+      "alcance_propuesto": "PARCIAL_HIPOTESIS_EXPLICITA",
+      "limitaciones": "El componente EGT es inferencial. La importación dirigida permanece sin demostración en el pasaje; la hipótesis no equivale a ensayo funcional ni a prueba de inexistencia.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2709",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «EGT al núcleo; importación de proteínas de vuelta» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "EGT al núcleo; importación de proteínas de vuelta: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]",
+        "Atribución": "sintesis(C-1036, C-1037, C-1038, C-1039, C-1040, C-1041, C-1042)",
+        "Fuente": "n/a; dependencias canónicas C-1036; C-1037; C-1038; C-1039; C-1040; C-1041; C-1042; BN-474; BN-111 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2709",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «EGT al núcleo; importación de proteínas de vuelta» tiene el valor literal «EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "EGT al núcleo; importación de proteínas de vuelta: EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.",
+        "Atribución": "sintesis(C-2840, C-2841)",
+        "Fuente": "n/a; dependencias canónicas C-2840; C-2841",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-474 y su rechazo se conservan; no son la prueba del valor nuevo. El componente EGT es inferencial. La importación dirigida permanece sin demostración en el pasaje; la hipótesis no equivale a ensayo funcional ni a prueba de inexistencia.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "claim_id": "C-2468",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": 7,
+      "columna": "Monosiga",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]",
+      "sha256_archivo": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "bn_historica": "BN-329",
+      "nuevo_contenido": "Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.",
+      "afirmaciones_cientificas": [
+        "C-2842"
+      ],
+      "componentes": [
+        {
+          "componente": "ausencia declarada de receptores/ligandos Hedgehog en M. brevicollis",
+          "claim": "C-2842",
+          "pasaje": "S352_GeneRepertoire_p4"
+        }
+      ],
+      "alcance_propuesto": "RESULTADO_NEGATIVO_PUBLICADO_ACOTADO",
+      "limitaciones": "No generaliza a otros taxones ni a todos los componentes de la vía.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2468",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Monosiga» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-329 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2468",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Monosiga» tiene el valor literal «Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.",
+        "Atribución": "sintesis(C-2842)",
+        "Fuente": "n/a; dependencias canónicas C-2842",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-329 y su rechazo se conservan; no son la prueba del valor nuevo. No generaliza a otros taxones ni a todos los componentes de la vía.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "claim_id": "C-2469",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": 7,
+      "columna": "Capsaspora",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]",
+      "sha256_archivo": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "bn_historica": "BN-330",
+      "nuevo_contenido": "Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.",
+      "afirmaciones_cientificas": [
+        "C-2843"
+      ],
+      "componentes": [
+        {
+          "componente": "ausencia declarada de receptores/ligandos Hedgehog en C. owczarzaki",
+          "claim": "C-2843",
+          "pasaje": "S352_GeneRepertoire_p4"
+        }
+      ],
+      "alcance_propuesto": "RESULTADO_NEGATIVO_PUBLICADO_ACOTADO",
+      "limitaciones": "No generaliza a otros taxones ni a todos los componentes de la vía.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2469",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Capsaspora» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-330 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2469",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Capsaspora» tiene el valor literal «Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.",
+        "Atribución": "sintesis(C-2843)",
+        "Fuente": "n/a; dependencias canónicas C-2843",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-330 y su rechazo se conservan; no son la prueba del valor nuevo. No generaliza a otros taxones ni a todos los componentes de la vía.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "claim_id": "C-2474",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": 8,
+      "columna": "Monosiga",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]",
+      "sha256_archivo": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "bn_historica": "BN-334",
+      "nuevo_contenido": "Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+      "afirmaciones_cientificas": [
+        "C-2844"
+      ],
+      "componentes": [
+        {
+          "componente": "ausencia declarada de la familia Rhodopsin en M. brevicollis",
+          "claim": "C-2844",
+          "pasaje": "S352_GeneRepertoire_p4"
+        }
+      ],
+      "alcance_propuesto": "PARCIAL_SUBFAMILIA_RHODOPSIN",
+      "limitaciones": "Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2474",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Monosiga» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-334 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2474",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Monosiga» tiene el valor literal «Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+        "Atribución": "sintesis(C-2844)",
+        "Fuente": "n/a; dependencias canónicas C-2844",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-334 y su rechazo se conservan; no son la prueba del valor nuevo. Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "claim_id": "C-2475",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": 8,
+      "columna": "Capsaspora",
+      "contenido_actual": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]",
+      "sha256_archivo": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "bn_historica": "BN-335",
+      "nuevo_contenido": "Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+      "afirmaciones_cientificas": [
+        "C-2845"
+      ],
+      "componentes": [
+        {
+          "componente": "ausencia declarada de la familia Rhodopsin en C. owczarzaki",
+          "claim": "C-2845",
+          "pasaje": "S352_GeneRepertoire_p4"
+        }
+      ],
+      "alcance_propuesto": "PARCIAL_SUBFAMILIA_RHODOPSIN",
+      "limitaciones": "Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+      "estado_propuesta": "PENDIENTE_REVISION_INDEPENDIENTE",
+      "claim_celda_antes": {
+        "#": "C-2475",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Capsaspora» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-335 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "claim_celda_despues": {
+        "#": "C-2475",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Capsaspora» tiene el valor literal «Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+        "Atribución": "sintesis(C-2845)",
+        "Fuente": "n/a; dependencias canónicas C-2845",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-335 y su rechazo se conservan; no son la prueba del valor nuevo. Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    }
+  ],
+  "F_altas": [
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "tamaño del genoma nuclear de Bodo saltans",
+        "valor tal como lo publica la fuente": "39.9",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Bodo saltans, comparando de vida libre de Perkinsela en Table 1",
+        "método o proxy": "valor de comparación genómica de S240 Table 1, atribuido allí a la referencia 25; sin reanálisis propio",
+        "incertidumbre publicada": "no se publica intervalo en Table 1",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans; requiere inspección humana",
+        "#": "C-2839"
+      }
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "genes nucleares candidatos a EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "8",
+        "unidad original": "genes candidatos",
+        "organismo, nodo o intervalo al que se aplica": "Paramoeba pemaquidensis, entre 3,846 alineamientos con filogenias interpretables",
+        "método o proxy": "inferencia de origen por pipeline filogenómica",
+        "incertidumbre publicada": "origen probablemente endosimbionte; no se publica intervalo para el recuento en Par14",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "#": "C-2840"
+      }
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "alineamientos proteicos con filogenias interpretables evaluados para EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "3,846",
+        "unidad original": "alineamientos proteicos",
+        "organismo, nodo o intervalo al que se aplica": "análisis de genes nucleares de Paramoeba pemaquidensis por Tanifuji et al.",
+        "método o proxy": "recuento del conjunto de alineamientos que produjo filogenias interpretables en el pipeline",
+        "incertidumbre publicada": "no se publica intervalo en Par14",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "#": "C-2840"
+      }
+    }
+  ],
+  "F_correcciones": [
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "antes": {
+        "magnitud": "tamaño del genoma nuclear de *Perkinsela*",
+        "valor tal como lo publica la fuente": "aprox. 9,5",
+        "unidad original": "Mb",
+        "organismo, nodo o intervalo al que se aplica": "*Perkinsela*",
+        "método o proxy": "secuenciación genómica",
+        "incertidumbre publicada": "no consta en el pasaje recuperado",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 resultados",
+        "#": "C-1037"
+      },
+      "despues": {
+        "magnitud": "tamaño del genoma nuclear de *Perkinsela*",
+        "valor tal como lo publica la fuente": "~9.5",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Perkinsela sp., genoma nuclear",
+        "método o proxy": "estimación del tamaño a partir del ensamblaje genómico descrito en Par7",
+        "incertidumbre publicada": "aproximación indicada por ~; Par7 no publica un intervalo",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7",
+        "#": "C-1037"
+      }
+    }
+  ],
+  "B_altas": [
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Bodo saltans",
+        "tipo": "taxón, organismo o linaje",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "genoma nuclear de Bodo saltans",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Paramoeba pemaquidensis",
+        "tipo": "taxón, organismo o linaje",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "endocitosis propuesta en Perkinsela",
+        "tipo": "hipótesis o interpretación",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-1040"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "hipótesis de captación vesicular de metabolitos y posiblemente enzimas del hospedador por Perkinsela",
+        "tipo": "hipótesis o interpretación",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2841"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de Hedgehog en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2842"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de Hedgehog en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2843"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de la familia Rhodopsin de GPCR en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2844"
+      }
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de la familia Rhodopsin de GPCR en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2845"
+      }
+    }
+  ],
+  "residuales_historicos_intactos": [
+    {
+      "claim_id": "C-2708",
+      "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila": "7",
+      "columna": "genoma del socio comparado con parientes de vida libre",
+      "contenido_anterior": "núcleo aprox. 9,5 Mb; mitocondria conserva 6 genes proteicos; comparación con pariente libre NO LOCALIZADA",
+      "contenido_sha256": "f218425b02ab95ffe108f7e989420cc5cdfd186541dfb9a7ecde75bc4f270657",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+      "resultado": "NO_CONFORME",
+      "evidencia": "Las C positivas describen el sistema, pero no hacen exhaustiva la ausencia escrita. BN-111 solo cubre cronología de integración; no deriva genoma comparado, transmisión, EGT/importación, obligación/reversibilidad o aportes no documentados. Dependencias cotejadas: C-1036: Perkinsela vive como endosimbionte eucariota obligado dentro de Paramoeba. | C-1037: El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb. | C-1038: Perkinsela perdió el flagelo pero conserva transcripción policistrónica, trans-splicing y un orgánulo semejante a glicosoma. | C-1039: Las rutas metabólicas de Perkinsela y Paramoeba son complementarias e interdependientes. | C-1040: Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba. | C-1041: El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas. | C-1042: El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos. | C-1987: La búsqueda BN-134 localizó antigüedad de inicio y tamaño genómico solo para subconjuntos del catálogo de asociaciones de la tabla 43, no para cada asociación bajo un método y comparando homogéneos. Búsquedas declaradas: BN-111: Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente — Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema.",
+      "localizadores": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre; data/afirmaciones/15.csv:C-2708; data/afirmaciones/09.csv:C-1036; data/afirmaciones/09.csv:C-1037; data/afirmaciones/09.csv:C-1038; data/afirmaciones/09.csv:C-1039; data/afirmaciones/09.csv:C-1040; data/afirmaciones/09.csv:C-1041; data/afirmaciones/09.csv:C-1042; data/afirmaciones/15.csv:C-1987; data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv:BN-111; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv|7|genoma del socio comparado con parientes de vida libre"
+    },
+    {
+      "claim_id": "C-2709",
+      "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila": "7",
+      "columna": "EGT al núcleo; importación de proteínas de vuelta",
+      "contenido_anterior": "EGT: NO DOCUMENTADA; importación de vuelta: NO DOCUMENTADA; Perkinsela incorpora material citoplasmático del hospedador",
+      "contenido_sha256": "a09f0fb1c5c5bab20467c7dd2299bf0ec0e1917b4da4d9b56c4e82d7e68c2fa0",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+      "resultado": "NO_CONFORME",
+      "evidencia": "Las C positivas describen el sistema, pero no hacen exhaustiva la ausencia escrita. BN-111 solo cubre cronología de integración; no deriva genoma comparado, transmisión, EGT/importación, obligación/reversibilidad o aportes no documentados. Dependencias cotejadas: C-1036: Perkinsela vive como endosimbionte eucariota obligado dentro de Paramoeba. | C-1037: El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb. | C-1038: Perkinsela perdió el flagelo pero conserva transcripción policistrónica, trans-splicing y un orgánulo semejante a glicosoma. | C-1039: Las rutas metabólicas de Perkinsela y Paramoeba son complementarias e interdependientes. | C-1040: Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba. | C-1041: El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas. | C-1042: El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos. Búsquedas declaradas: BN-111: Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente — Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema.",
+      "localizadores": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta; data/afirmaciones/15.csv:C-2709; data/afirmaciones/09.csv:C-1036; data/afirmaciones/09.csv:C-1037; data/afirmaciones/09.csv:C-1038; data/afirmaciones/09.csv:C-1039; data/afirmaciones/09.csv:C-1040; data/afirmaciones/09.csv:C-1041; data/afirmaciones/09.csv:C-1042; data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv:BN-111; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv|7|EGT al núcleo; importación de proteínas de vuelta"
+    },
+    {
+      "claim_id": "C-2468",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": "7",
+      "columna": "Monosiga",
+      "contenido_anterior": "no localizado en el genoma comparado por S352",
+      "contenido_sha256": "7fb2f50e824dd3c3ae096d8e0ea268338147814ce95201aa5374b9e4653d4875",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+      "resultado": "NO_CONFORME",
+      "evidencia": "NO CONFORME: la C nueva repite «no localizado en el genoma comparado por S352», pero el hueco depende de una búsqueda agregada que no individualiza esta fila, campo y unidad. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Una BN nueva o corregida tendría que registrar términos, ámbito y resultado nominales para esta combinación exacta; el estado actual no permite deducirla desde “no para todos”.",
+      "localizadores": "C-2468;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga"
+    },
+    {
+      "claim_id": "C-2469",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": "7",
+      "columna": "Capsaspora",
+      "contenido_anterior": "no localizado en el genoma comparado por S352",
+      "contenido_sha256": "7fb2f50e824dd3c3ae096d8e0ea268338147814ce95201aa5374b9e4653d4875",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+      "resultado": "NO_CONFORME",
+      "evidencia": "NO CONFORME: la C nueva repite «no localizado en el genoma comparado por S352», pero el hueco depende de una búsqueda agregada que no individualiza esta fila, campo y unidad. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Una BN nueva o corregida tendría que registrar términos, ámbito y resultado nominales para esta combinación exacta; el estado actual no permite deducirla desde “no para todos”.",
+      "localizadores": "C-2469;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora"
+    },
+    {
+      "claim_id": "C-2474",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": "8",
+      "columna": "Monosiga",
+      "contenido_anterior": "familias antiguas; detalle nominal NO LOCALIZADO",
+      "contenido_sha256": "cb769f0aaeb99123cf2bd2dfefac12ecacf518aa881ad505a51a28e9b8da660b",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+      "resultado": "NO_CONFORME",
+      "evidencia": "NO CONFORME: la C nueva conserva literalmente «familias antiguas; detalle nominal NO LOCALIZADO», pero sus dependencias no sostienen todas sus cláusulas, taxón, dirección, cantidad, modalidad o límite. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Repetir la celda en la C no crea evidencia; hace falta una fuente/C atómica que cubra el valor completo o cambiar/retirar la parte no demostrada.",
+      "localizadores": "C-2474;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga"
+    },
+    {
+      "claim_id": "C-2475",
+      "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila": "8",
+      "columna": "Capsaspora",
+      "contenido_anterior": "familias antiguas; detalle nominal NO LOCALIZADO",
+      "contenido_sha256": "cb769f0aaeb99123cf2bd2dfefac12ecacf518aa881ad505a51a28e9b8da660b",
+      "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+      "resultado": "NO_CONFORME",
+      "evidencia": "NO CONFORME: la C nueva conserva literalmente «familias antiguas; detalle nominal NO LOCALIZADO», pero sus dependencias no sostienen todas sus cláusulas, taxón, dirección, cantidad, modalidad o límite. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Repetir la celda en la C no crea evidencia; hace falta una fuente/C atómica que cubra el valor completo o cambiar/retirar la parte no demostrada.",
+      "localizadores": "C-2475;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora"
+    }
+  ],
+  "BN_historicas_intactas": [
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-329",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Monosiga para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«Hedgehog»; campo=«Monosiga»; valor=«no localizado en el genoma comparado por S352»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-329",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-330",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Capsaspora para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«Hedgehog»; campo=«Capsaspora»; valor=«no localizado en el genoma comparado por S352»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-330",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-334",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Monosiga para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«GPCR y otras señales»; campo=«Monosiga»; valor=«familias antiguas; detalle nominal NO LOCALIZADO»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-334",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila": {
+        "clave": "BN-335",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Capsaspora para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«GPCR y otras señales»; campo=«Capsaspora»; valor=«familias antiguas; detalle nominal NO LOCALIZADO»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-335",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila": {
+        "clave": "BN-473",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo genoma del socio comparado con parientes de vida libre para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»; campo=«genoma del socio comparado con parientes de vida libre»; valor=«núcleo aprox. 9,5 Mb; mitocondria conserva 6 genes proteicos; comparación con pariente libre NO LOCALIZADA»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-473",
+        "resultado o motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila": {
+        "clave": "BN-474",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo EGT al núcleo; importación de proteínas de vuelta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»; campo=«EGT al núcleo; importación de proteínas de vuelta»; valor=«EGT: NO DOCUMENTADA; importación de vuelta: NO DOCUMENTADA; Perkinsela incorpora material citoplasmático del hospedador»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-474",
+        "resultado o motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta."
+      }
+    }
+  ],
+  "C_fuera_de_alcance": [
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-1041",
+        "Afirmación": "El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas.",
+        "Sujeto": "genoma mitocondrial de Perkinsela",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "seis genes codificantes de proteínas",
+        "Atribución": "expresa",
+        "Fuente": "S241 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El genoma fue secuenciado y anotado.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "motivo": "No se restauran seis genes mitocondriales en la celda nueva; esta C previa no se aprueba ni se refuta."
+    }
+  ],
+  "metadatos_tabla_a_integrar": [
+    {
+      "tabla": 43,
+      "fila": 7,
+      "columna": "filas",
+      "anadir": "C-2839–C-2841",
+      "nota": "No adjudicar C-1041 a la nueva celda nuclear aunque permanezca en el rango histórico de referencias de la fila."
+    },
+    {
+      "tabla": 54,
+      "fila": 7,
+      "columna": "#",
+      "anadir": "C-2842; C-2843"
+    },
+    {
+      "tabla": 54,
+      "fila": 8,
+      "columna": "#",
+      "anadir": "C-2844; C-2845",
+      "nota": "La celda Metazoa=235 dominios sigue NO_CONFORME y fuera del lote de seis; estas C no la aprueban."
+    }
+  ],
+  "derivados_pendientes": [
+    "Prosa §9: actualizar párrafos C-1037/C-1040 y enlazar nuevas C sin repetir los datos numéricos en otro lugar.",
+    "Prosa §12: C-1581 es síntesis de dos organismos; sustituir antiguo localizador §Signalling pathways por las C primarias y sección real.",
+    "Regenerar mapeo, F/B derivados, recuentos y manifiesto sólo después de revisión de la propuesta y disposición explícita auditada."
+  ],
+  "nota_F_Bodo": "observado designa aquí el valor registrado en la comparación genómica publicada, no una nueva medición ni una estimación propia. El método de ensamblaje de Bodo de ref25 no fue reinspeccionado: se conserva esa limitación explícita.",
+  "revisor_independiente": "NO_ASIGNADO_EN_ESTA_PROPUESTA"
+}

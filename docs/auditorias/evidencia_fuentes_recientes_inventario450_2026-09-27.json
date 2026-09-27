@@ -1,0 +1,3106 @@
+{
+  "fecha_inicio_utc": "2026-09-27T01:14:36Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "autor_integracion": "/root",
+  "rama": "codex/cierre-plan-pendiente",
+  "alcance": "Identidad, tipo documentado, versiones, inspección editorial acotada, acceso material e integridad de inventarios. No apoyo científico ni cierre global.",
+  "normalizacion_objeto_A": "source_fingerprint: SHA-256 de JSON canónico de la fila A (sort_keys=True, ensure_ascii=False, separadores compactos), más LF final, UTF-8; no es la huella de fila CSV QUOTE_ALL.",
+  "normalizacion_inventario": "nombre NUL sha256 NUL tamaño decimal; orden por nombre; separador LF y LF final, UTF-8.",
+  "fuentes": [
+    {
+      "clave": "S126",
+      "fila_A": {
+        "clave": "S126",
+        "autores": "Liu et al.",
+        "año": "2024",
+        "título": "A taxon-rich and genome-scale phylogeny of Opisthokonta",
+        "publicación o repositorio": "PLOS Biology",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1371/journal.pbio.3002794",
+        "tipo": "investigación primaria",
+        "notas de calidad": "348 taxones, tres matrices, 18 árboles, concordancia y reloj relajado; las relaciones de Holozoa unicelular permanecen conflictivas. Usa Pluriformea/Corallochytrea de modo operacional en matrices; no establece sinonimia nomenclatural plena. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 34 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez. Suplemento S1 Data recuperado el 2026-09-26: páginas 6 y 21 del PDF presentan numeración discordante de los árboles temporales; se citan paneles izquierdo/derecho. El muestreo incluye Nutomonas, rotulado Ancyromonadida en la página 7 del PDF, panel 1, aunque p. 21 lo agrupa bajo Apusomonadida+Breviatea. La denominación Obazoa de Table 2 no elimina esta discrepancia de composición.",
+        "fecha de consulta": "2026-08-07"
+      },
+      "huella_fila_A_sha256": "246d5fab06906b919c0458a213527f65b67183a05f1c419693c885084fd58d72",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta - S1 Data.pdf",
+          "sha256": "e01f0f62c208834b8b67be8fe43692397b39607cbd25d0229beaf82b4d0b5889",
+          "bytes": 3228855
+        },
+        {
+          "ruta": "fuentes/S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta - Supplementary Table S7.xlsx",
+          "sha256": "8f5ec40a0278fa318ca0bc1bd1c66c898534d9654b92a1be431617c4c9ae5adb",
+          "bytes": 40484
+        },
+        {
+          "ruta": "fuentes/S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta.pdf",
+          "sha256": "8a4b4193f8743f591e261c1c2af4975b1ca80492bf08695eaad80487adc54c79",
+          "bytes": 4327148
+        },
+        {
+          "ruta": "fuentes/S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta.xml",
+          "sha256": "e837def39380dd37fba8a44643df3f3f7e7cc1ae998449332ee06a02fdffb807",
+          "bytes": 276212
+        }
+      ],
+      "JATS": {
+        "article_type": "research-article",
+        "title": "A taxon-rich and genome-scale phylogeny of Opisthokonta",
+        "doi": "10.1371/journal.pbio.3002794",
+        "authors": [
+          "Hongyue Liu",
+          "Jacob L. Steenwyk",
+          "Xiaofan Zhou",
+          "Darrin T. Schultz",
+          "Kevin M. Kocot",
+          "Xing-Xing Shen",
+          "Antonis Rokas",
+          "Yuanning Li"
+        ],
+        "pub_dates": [
+          {
+            "atributos": {
+              "pub-type": "epub"
+            },
+            "dia": "16",
+            "mes": "9",
+            "anio": "2024"
+          },
+          {
+            "atributos": {
+              "pub-type": "collection"
+            },
+            "dia": null,
+            "mes": "9",
+            "anio": "2024"
+          }
+        ],
+        "related_articles": [],
+        "localizador": "article/@article-type; front/article-meta/title-group, contrib-group[@contrib-type=author], article-id, pub-date; related-article"
+      }
+    },
+    {
+      "clave": "S512",
+      "fila_A": {
+        "clave": "S512",
+        "autores": "Forni, G. et al.",
+        "año": "2026",
+        "título": "Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales",
+        "publicación o repositorio": "Molecular Phylogenetics and Evolution 217:108532",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.ympev.2026.108532",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Filogenómica de más de 200 genomas; reconstruye un pico de pérdida génica al pasar a endosimbiosis seguido por erosión más lenta y continua. No fija una tasa universal en genes por millón de años. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "huella_fila_A_sha256": "8fee862aaf30a25c5a6f6581bb05090cd0c95f02afb8b901fcd6c0006c4445eb",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+          "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+          "bytes": 8102337
+        }
+      ],
+      "crossref": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S512-crossref.json",
+          "sha256": "d71e722fe0df8f52b0e46c9e474511d6ce9c9a4f65d4be7779a47a09e537eaca",
+          "bytes": 29311
+        },
+        "url": "https://api.crossref.org/works/10.1016/j.ympev.2026.108532",
+        "campos": {
+          "DOI": "10.1016/j.ympev.2026.108532",
+          "title": [
+            "Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-3669-8693",
+              "authenticated-orcid": false,
+              "given": "Giobbe",
+              "family": "Forni",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Jacopo",
+              "family": "Martelossi",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Benoit",
+              "family": "Morel",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Dario",
+              "family": "Pistone",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Claudio",
+              "family": "Bandi",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4465-7146",
+              "authenticated-orcid": false,
+              "given": "Matteo",
+              "family": "Montagna",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "container-title": [
+            "Molecular Phylogenetics and Evolution"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                4
+              ]
+            ]
+          },
+          "published-online": null,
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                4
+              ]
+            ]
+          },
+          "volume": "217",
+          "issue": null,
+          "page": "108532",
+          "article-number": "108532",
+          "relation": {},
+          "update-to": null,
+          "updated-by": null
+        }
+      },
+      "epmc": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S512-epmc.json",
+          "sha256": "93f74ecfe90ad7b7d7a847b2249064cce7467e5b96c49fe58e65863e28a0d343",
+          "bytes": 6425
+        },
+        "query": {
+          "queryString": "DOI:10.1016/j.ympev.2026.108532",
+          "resultType": "core",
+          "cursorMark": "*",
+          "pageSize": 25,
+          "sort": "",
+          "synonym": false
+        },
+        "hitCount": 1,
+        "registros": [
+          {
+            "id": "41500269",
+            "source": "MED",
+            "doi": "10.1016/j.ympev.2026.108532",
+            "title": "Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.",
+            "authorString": "Forni G, Martelossi J, Morel B, Pistone D, Bandi C, Montagna M.",
+            "pubYear": "2026",
+            "pubTypeList": {
+              "pubType": [
+                "Journal Article"
+              ]
+            },
+            "isOpenAccess": "N",
+            "inEPMC": "N",
+            "inPMC": "N",
+            "hasPDF": "N",
+            "firstPublicationDate": "2026-01-05"
+          }
+        ]
+      }
+    },
+    {
+      "clave": "S548",
+      "fila_A": {
+        "clave": "S548",
+        "autores": "Sandin, Miguel M.; Cohen, Phoebe A.; Morlon, Hélène; Burki, Fabien",
+        "año": "2026",
+        "título": "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic",
+        "publicación o repositorio": "Proceedings of the National Academy of Sciences 123:e2600283123",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.2600283123",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Filogenia ambiental y datación con 75.975 OTU no redundantes. MC01 usa 77 calibraciones y 32 árboles; TreePL se ejecuta con 100 réplicas por árbol. La sensibilidad MC02 incluye Rafatazmia como mínimo de 1600 Ma y usa 10 árboles elegidos al azar. Los escenarios de enraizamiento en Discoba y Amorphea resumen edades de la raíz eucariota, no de las coronas de esos grupos. La reinspección científica del 2026-09-26 usa el JATS publicado y SI Appendix/Datasets S1–S2, no presupone equivalencia con el PDF preprint de 2025 disponible anteriormente. Las edades son específicas del marco del estudio y no constituyen consenso. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 8 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "huella_fila_A_sha256": "233871dc64f3916d4ab38519893b6df351a14dd81c5d0cf5ff2716226184d2e0",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics supports a steady diversification of crown.pdf",
+          "sha256": "1494dc1fc86c72a8fc800265c1ff2a9d1bdb61e209107f2a0513bb8f67c9c745",
+          "bytes": 10960988
+        },
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S1 publicado.xlsx",
+          "sha256": "532004056b6b963a86fdd9634c727c6948cc359ba6d3f56f100ca57cfc2a5077",
+          "bytes": 10956
+        },
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S2 publicado.xlsx",
+          "sha256": "6e8ef742ce128bf304e7981ec9ce1dc8048449535fb7acf75844883cda04c780",
+          "bytes": 10762
+        },
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics — SI Appendix publicado.pdf",
+          "sha256": "90df70ce0afb06f33c4b8cc4f553cd29ca9e7474b0c6620f027dd0dc9aba6b83",
+          "bytes": 12009440
+        },
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics — versión publicada.xml",
+          "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+          "bytes": 190292
+        }
+      ]
+    },
+    {
+      "clave": "S549",
+      "fila_A": {
+        "clave": "S549",
+        "autores": "Iqbal, Tasawar; Penington, Catherine; Thomas, Christian; Koens, Lyndon",
+        "año": "2026",
+        "título": "Hydrodynamics constrain choanoflagellate collar geometry",
+        "publicación o repositorio": "Physical Review Fluids 11:063102",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1103/vzxt-rpf8",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Modelo reducido que omite la longitud finita del collar y compara geometrías entre especies; la disipación hidrodinámica modelada no es una medida de ATP, oxígeno ni coste metabólico celular. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 4 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación. [USO EN UNA SOLA C] C-1612.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "huella_fila_A_sha256": "097ed000f73c2b1da41fd1d90ddfcfeb5dd625525d89c3b5a5c811e94d54f540",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf",
+          "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+          "bytes": 1953995
+        },
+        {
+          "ruta": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry.pdf",
+          "sha256": "5d96bee75ff2ff6c52ea0ab0403f8f414181de7772cafdcf949ebc9b1e18dd7c",
+          "bytes": 21687972
+        }
+      ]
+    },
+    {
+      "clave": "S551",
+      "fila_A": {
+        "clave": "S551",
+        "autores": "Uschmann, Georg",
+        "año": "1964",
+        "título": "Goldfuß, Georg August",
+        "publicación o repositorio": "Neue Deutsche Biographie 6:605 [Online-Version]",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://www.deutsche-biographie.de/gnd100151310.html#ndbcontent",
+        "tipo": "otro",
+        "notas de calidad": "Entrada biográfica firmada de Neue Deutsche Biographie, distinta de la entrada ADB de Victor Carus (1879) alojada en la misma página. Autor, año de publicación y localización bibliográfica cotejados en la reinspección independiente del 2026-09-26; se conserva la fecha histórica de consulta. [PASAJE VERIFICADO 2026-08-08] La sección biográfica indica que Goldfuß introdujo en 1818 el término Protozoa en su clasificación de Zoophyta como primera clase; se usa para distinguir esa sistematización de la aparición impresa de 1817 descrita por S422 y de la clase de 1820 referida por S386. [USO EN UNA SOLA C] C-1783.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "huella_fila_A_sha256": "2d465114676e77cccc956888e75ac9e216b7ecc296e3c7eb25399eb309603289",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S551 [2026, consulta] Goldfuß Georg August.pdf",
+          "sha256": "93bddae4824bddfe29fe136faa1916ff8c5a659da717d95955e4a953e8ae08db",
+          "bytes": 59320
+        }
+      ]
+    },
+    {
+      "clave": "S559",
+      "fila_A": {
+        "clave": "S559",
+        "autores": "Bowers, R. M. et al.",
+        "año": "2017",
+        "título": "Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea",
+        "publicación o repositorio": "Nature Biotechnology 35:725–731",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nbt.3893",
+        "tipo": "revisión",
+        "notas de calidad": "Tipo documental: Perspective en el editor y review-article en el JATS; se registra como revisión, no como investigación primaria. La inspección bibliográfica independiente del 2026-09-26 observó corrigenda editoriales fechados el 2018-02-06 y el 2018-07-06; esta constatación no establece su impacto científico ni una revisión editorial exhaustiva. [PASAJE VERIFICADO 2026-08-13] §Metagenome-assembled genomes: las lecturas metagenómicas se ensamblan en contigs con algoritmos específicos; los contigs se agrupan y los grupos se asignan a bins poblacionales discretos. §Developing MISAG and MIMAG checklists añade que SAG y MAG suelen proceder de organismos sin una cepa de referencia cultivada. El uso se limita al procedimiento y no infiere morfología o fisiología celular. [SOPORTE ÚNICO ACTUAL] S559 es la única fuente S directa de C-006. [USO EN UNA SOLA C] C-006.",
+        "fecha de consulta": "2026-08-13"
+      },
+      "huella_fila_A_sha256": "377f0358924b12c43027fd8b19a40087b2fbb4e3d30445493a8cca65b957541f",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S559 [2017] Minimum information about a single amplified genome MISAG and a metagenome-assembled genome MIMAG of bacteria and archaea.xml",
+          "sha256": "7fdec05ef70b15e852d21225fbcae8b0ecc24e4accdaf5075d1e976ab9295ba4",
+          "bytes": 175407
+        },
+        {
+          "ruta": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum febrero.xml",
+          "sha256": "9953e3d76199e8512eb1388bca8a26a2327534e9e394f34aff1bb3356be95935",
+          "bytes": 10948
+        },
+        {
+          "ruta": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum julio.xml",
+          "sha256": "7b4f1fe400abccf26be1f4110eaf1e1de4116f622d6fe2e5a79df9834a359bfa",
+          "bytes": 11418
+        }
+      ]
+    },
+    {
+      "clave": "S560",
+      "fila_A": {
+        "clave": "S560",
+        "autores": "Wang, Z.; Wu, M.",
+        "año": "2014",
+        "título": "Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite",
+        "publicación o repositorio": "PLOS ONE 9(10):e110685",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1371/journal.pone.0110685",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Análisis filogenómico primario. Results and Discussion, Identifying mitochondria-derived nuclear genes, publica genes y familias de origen mitocondrial inferido; Materials and Methods, Identification of mitochondria-derived nuclear genes, delimita muestra, filtrado BLASTP, agrupación MCL, árboles FastTree 2 y separación de parálogos. Se distinguen recuentos de genes, familias y episodios de transferencia; no se extrapola un total ancestral único. Texto completo JATS PMC4198247.1 recuperado y cotejado nominalmente el 2026-09-26; identidad coincidente con la página editorial y DOI. Revisión editorial exhaustiva y revisión científica independiente del parche pendientes. [SOPORTE ÚNICO ACTUAL] S560 es la única fuente S directa de C-1163 y C-2824.",
+        "fecha de consulta": "2026-09-26"
+      },
+      "huella_fila_A_sha256": "94d6df9db85dd20e71fb6fc702dc06fd9c7b857a5c907f74a1e13d3bf5e404f9",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+          "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+          "bytes": 129891
+        }
+      ],
+      "JATS": {
+        "article_type": "research-article",
+        "title": "Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite",
+        "doi": "10.1371/journal.pone.0110685",
+        "authors": [
+          "Zhang Wang",
+          "Martin Wu"
+        ],
+        "pub_dates": [
+          {
+            "atributos": {
+              "pub-type": "collection"
+            },
+            "dia": null,
+            "mes": null,
+            "anio": "2014"
+          },
+          {
+            "atributos": {
+              "pub-type": "epub"
+            },
+            "dia": "15",
+            "mes": "10",
+            "anio": "2014"
+          }
+        ],
+        "related_articles": [],
+        "localizador": "article/@article-type; front/article-meta/title-group, contrib-group[@contrib-type=author], article-id, pub-date; related-article"
+      },
+      "crossref": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S560-crossref.json",
+          "sha256": "98f1e2d2642c4ee28619cc520de2ad480930f93e5b42e23b8e55f749fe7bf250",
+          "bytes": 21074
+        },
+        "url": "https://api.crossref.org/works/10.1371/journal.pone.0110685",
+        "campos": {
+          "DOI": "10.1371/journal.pone.0110685",
+          "title": [
+            "Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite"
+          ],
+          "author": [
+            {
+              "given": "Zhang",
+              "family": "Wang",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Martin",
+              "family": "Wu",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "container-title": [
+            "PLoS ONE"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2014,
+                10,
+                15
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2014,
+                10,
+                15
+              ]
+            ]
+          },
+          "published-print": null,
+          "volume": "9",
+          "issue": "10",
+          "page": "e110685",
+          "article-number": null,
+          "relation": {},
+          "update-to": null,
+          "updated-by": null
+        }
+      },
+      "epmc": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S560-epmc.json",
+          "sha256": "feb8b7e9abe8ef375c1419a19149760dca5e432165d4f5cc80d61d5961bf92a9",
+          "bytes": 5919
+        },
+        "query": {
+          "queryString": "DOI:10.1371/journal.pone.0110685",
+          "resultType": "core",
+          "cursorMark": "*",
+          "pageSize": 25,
+          "sort": "",
+          "synonym": false
+        },
+        "hitCount": 1,
+        "registros": [
+          {
+            "id": "25333787",
+            "source": "MED",
+            "pmcid": "PMC4198247",
+            "doi": "10.1371/journal.pone.0110685",
+            "title": "Phylogenomic reconstruction indicates mitochondrial ancestor was an energy parasite.",
+            "authorString": "Wang Z, Wu M.",
+            "pubYear": "2014",
+            "pubTypeList": {
+              "pubType": [
+                "Research Support, Non-U.S. Gov't",
+                "research-article",
+                "Journal Article"
+              ]
+            },
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "firstPublicationDate": "2014-10-15"
+          }
+        ]
+      }
+    },
+    {
+      "clave": "S561",
+      "fila_A": {
+        "clave": "S561",
+        "autores": "Rossoni, A. W.; Price, D. C.; Seger, M.; Lyska, D.; Lammers, P.; Bhattacharya, D.; Weber, A. P. M.",
+        "año": "2019",
+        "título": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+        "publicación o repositorio": "eLife 8:e45017",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.7554/eLife.45017",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Análisis primario de Cyanidiales con filogenias, exclusión de candidatos a EGT y controles de lecturas largas. Se distinguen grupos de ortólogos, secuencias candidatas y colocalización: no son tasas ni recuentos intercambiables. Texto JATS PMC6629376.1 recuperado de Europe PMC; título, siete autores y DOI cotejados. La fecha electrónica del JATS es 2019-05-31; la página editorial distingue manuscrito aceptado y versión de registro. Revisión editorial exhaustiva y revisión independiente de esta integración pendientes.",
+        "fecha de consulta": "2026-09-27"
+      },
+      "huella_fila_A_sha256": "ed4edd58cb46b56bcf81959350d7b9a48e32a4b8ef58c44c1635d0557c0d1965",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+          "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+          "bytes": 564211
+        }
+      ],
+      "JATS": {
+        "article_type": "research-article",
+        "title": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+        "doi": "10.7554/eLife.45017",
+        "authors": [
+          "Alessandro W Rossoni",
+          "Dana C Price",
+          "Mark Seger",
+          "Dagmar Lyska",
+          "Peter Lammers",
+          "Debashish Bhattacharya",
+          "Andreas PM Weber"
+        ],
+        "pub_dates": [
+          {
+            "atributos": {
+              "date-type": "pub",
+              "publication-format": "electronic"
+            },
+            "dia": "31",
+            "mes": "5",
+            "anio": "2019"
+          },
+          {
+            "atributos": {
+              "pub-type": "collection"
+            },
+            "dia": null,
+            "mes": null,
+            "anio": "2019"
+          }
+        ],
+        "related_articles": [
+          {
+            "tipo": "commentary",
+            "doi": "10.7554/eLife.48999",
+            "title": "Adapting for life in the extreme"
+          }
+        ],
+        "localizador": "article/@article-type; front/article-meta/title-group, contrib-group[@contrib-type=author], article-id, pub-date; related-article"
+      },
+      "crossref": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S561-crossref.json",
+          "sha256": "218eb306f730cc041adef8849f8c58fc5791aee7236a1f7a648118e082b01ef2",
+          "bytes": 46191
+        },
+        "url": "https://api.crossref.org/works/10.7554/elife.45017",
+        "campos": {
+          "DOI": "10.7554/elife.45017",
+          "title": [
+            "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-4716-6799",
+              "authenticated-orcid": true,
+              "given": "Alessandro W",
+              "family": "Rossoni",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Institute of Plant Biochemistry, Cluster of Excellence on Plant Sciences (CEPLAS), Heinrich Heine University, Düsseldorf, Germany"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Dana C",
+              "family": "Price",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Plant Biology, Rutgers University, New Brunswick, United States"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Mark",
+              "family": "Seger",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Arizona Center for Algae Technology and Innovation, Arizona State University, Mesa, United States"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Dagmar",
+              "family": "Lyska",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute of Plant Biochemistry, Cluster of Excellence on Plant Sciences (CEPLAS), Heinrich Heine University, Düsseldorf, Germany"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Peter",
+              "family": "Lammers",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Arizona Center for Algae Technology and Innovation, Arizona State University, Mesa, United States"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0611-1273",
+              "authenticated-orcid": true,
+              "given": "Debashish",
+              "family": "Bhattacharya",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Biochemistry and Microbiology, Rutgers University, New Brunswick, United States"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0970-4672",
+              "authenticated-orcid": true,
+              "given": "Andreas PM",
+              "family": "Weber",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute of Plant Biochemistry, Cluster of Excellence on Plant Sciences (CEPLAS), Heinrich Heine University, Düsseldorf, Germany"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "container-title": [
+            "eLife"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                31
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                31
+              ]
+            ]
+          },
+          "published-print": null,
+          "volume": "8",
+          "issue": null,
+          "page": null,
+          "article-number": "e45017",
+          "relation": {
+            "is-supplemented-by": [
+              {
+                "id-type": "accession",
+                "id": "PRJNA512382",
+                "asserted-by": "subject"
+              },
+              {
+                "id-type": "doi",
+                "id": "10.5061/dryad.m06n200",
+                "asserted-by": "subject"
+              },
+              {
+                "id-type": "uri",
+                "id": "http://porphyra.rutgers.edu/bindex.php",
+                "asserted-by": "subject"
+              }
+            ],
+            "has-review": [
+              {
+                "id-type": "doi",
+                "id": "10.7554/eLife.45017.152",
+                "asserted-by": "object"
+              },
+              {
+                "id-type": "doi",
+                "id": "10.7554/eLife.45017.151",
+                "asserted-by": "object"
+              }
+            ],
+            "has-preprint": [
+              {
+                "id-type": "doi",
+                "id": "10.1101/526111",
+                "asserted-by": "object"
+              }
+            ]
+          },
+          "update-to": null,
+          "updated-by": null
+        }
+      },
+      "epmc": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S561-epmc.json",
+          "sha256": "1b0c301cb2a47f3695dd94195abbb6b5c443737c6c027893dee26880bc41fa78",
+          "bytes": 7330
+        },
+        "query": {
+          "queryString": "DOI:10.7554/eLife.45017",
+          "resultType": "core",
+          "cursorMark": "*",
+          "pageSize": 25,
+          "sort": "",
+          "synonym": false
+        },
+        "hitCount": 1,
+        "registros": [
+          {
+            "id": "31149898",
+            "source": "MED",
+            "pmcid": "PMC6629376",
+            "doi": "10.7554/elife.45017",
+            "title": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions.",
+            "authorString": "Rossoni AW, Price DC, Seger M, Lyska D, Lammers P, Bhattacharya D, Weber AP.",
+            "pubYear": "2019",
+            "pubTypeList": {
+              "pubType": [
+                "Research Support, Non-U.S. Gov't",
+                "research-article",
+                "Journal Article"
+              ]
+            },
+            "commentCorrectionList": {
+              "commentCorrection": [
+                {
+                  "source": "MED",
+                  "id": "31305242",
+                  "reference": "Elife. 2019 Jul 15;8:e48999. doi: 10.7554/eLife.48999",
+                  "type": "Comment in",
+                  "orderIn": 1
+                },
+                {
+                  "source": "PPR",
+                  "id": "PPR68055",
+                  "type": "Preprint in",
+                  "note": "CrossRef Pre-print loader",
+                  "orderIn": 10002
+                }
+              ]
+            },
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "firstPublicationDate": "2019-05-31"
+          }
+        ]
+      }
+    },
+    {
+      "clave": "S562",
+      "fila_A": {
+        "clave": "S562",
+        "autores": "Degnan, P. H.; Lazarus, A. B.; Wernegreen, J. J.",
+        "año": "2005",
+        "título": "Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects",
+        "publicación o repositorio": "Genome Research 15(8):1023–1033",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1101/gr.3771305",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Texto completo de PMC1182215 recuperado y cotejado. Recuentos de ORF perdidos o inactivados emparejados con divergencia estimada; la discusión declara que no puede fechar pérdidas individuales. No es una curva temporal observada. Revisión editorial independiente pendiente.",
+        "fecha de consulta": "2026-09-27"
+      },
+      "huella_fila_A_sha256": "67765dd112567cab4ebeddb546de8443c9a56f6fc4e05226a0ccb7856bebb834",
+      "artefactos_locales": [
+        {
+          "ruta": "fuentes/S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+          "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+          "bytes": 231528
+        }
+      ],
+      "crossref": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S562-crossref.json",
+          "sha256": "137e8ee355e2d7b2e69348a85514a2fbdf7c8faa54f0d471ecf7ddd2a32eec2e",
+          "bytes": 15373
+        },
+        "url": "https://api.crossref.org/works/10.1101/gr.3771305",
+        "campos": {
+          "DOI": "10.1101/gr.3771305",
+          "title": [
+            "Genome sequence of\n                    <i>Blochmannia pennsylvanicus</i>\n                    indicates parallel evolutionary trends among bacterial mutualists of insects"
+          ],
+          "author": [
+            {
+              "given": "Patrick H.",
+              "family": "Degnan",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Adam B.",
+              "family": "Lazarus",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Jennifer J.",
+              "family": "Wernegreen",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "container-title": [
+            "Genome Research"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2005,
+                8
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2005,
+                8,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2005,
+                8
+              ]
+            ]
+          },
+          "volume": "15",
+          "issue": "8",
+          "page": "1023-1033",
+          "article-number": null,
+          "relation": {},
+          "update-to": null,
+          "updated-by": null
+        }
+      },
+      "epmc": {
+        "artefacto": {
+          "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S562-epmc.json",
+          "sha256": "e0947376f8136a817f8598b61de08053e693f6e1e0335761621248e48379fb51",
+          "bytes": 6749
+        },
+        "query": {
+          "queryString": "DOI:10.1101/gr.3771305",
+          "resultType": "core",
+          "cursorMark": "*",
+          "pageSize": 25,
+          "sort": "",
+          "synonym": false
+        },
+        "hitCount": 1,
+        "registros": [
+          {
+            "id": "16077009",
+            "source": "MED",
+            "pmcid": "PMC1182215",
+            "doi": "10.1101/gr.3771305",
+            "title": "Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.",
+            "authorString": "Degnan PH, Lazarus AB, Wernegreen JJ.",
+            "pubYear": "2005",
+            "pubTypeList": {
+              "pubType": [
+                "Research Support, U.S. Gov't, P.H.S.",
+                "research-article",
+                "Research Support, U.S. Gov't, Non-P.H.S.",
+                "Journal Article",
+                "Research Support, N.I.H., Extramural"
+              ]
+            },
+            "isOpenAccess": "N",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "firstPublicationDate": "2005-08-01"
+          }
+        ]
+      }
+    }
+  ],
+  "inventario_final": {
+    "cantidad": 450,
+    "sha256": "170c7d69a86dbc8361aed5214e5e2c1452b5fee54c382b4cfb3cd61f02960647",
+    "archivos": {
+      "S434 [2017] Dynamics of genomic innovation in the unicellular ancestry of animals.xml": {
+        "sha256": "4dd18d20c875fee9404c1b647d4614212ba4750e1b689dfbe87e2fdacedd0eb5",
+        "bytes": 382815
+      },
+      "S362 [2012] The many costs of sex.pdf": {
+        "sha256": "64756f795c7060636a23178be5774932d8cb9034f11e6704e9f04364c9bea87a",
+        "bytes": 299109
+      },
+      "S49 [2023] Multiple approaches of cellular metabolism define the bacterial ancest.xml": {
+        "sha256": "fc9cf337b6ae3ad0213f36507dfd584b03c2dff1c299bca9e32fe3f5d67f81ea",
+        "bytes": 219710
+      },
+      "S428 [2026] Endocytosed lipids induce cell aggregation via filopodia retraction in.xml": {
+        "sha256": "6d23d812aa35daa30bfb1f36c70459837f7c0fbe9626749147e8376bd6e34bcc",
+        "bytes": 184390
+      },
+      "S534 [2025] Asgard Arf GTPases can act as membrane-associating molecular switches.pdf": {
+        "sha256": "0139484ec68d560525b13f402537b001266d267e3a5a80a108a949bd1eb4811c",
+        "bytes": 3985927
+      },
+      "S13 [2020] Multidomain ribosomal protein trees and the planctobacterial origin of.pdf": {
+        "sha256": "55dbc734259e8b29723e741c19462b38a1c931041059c8fb220f6f1d287ef535",
+        "bytes": 12311047
+      },
+      "S487 [2023] Correction How much ATP does it cost to build a trypanosome.xml": {
+        "sha256": "f28680521cb6d9897792cd3b2b0ba98723b6ccaa4e4b275ce1b82486e8a4e87c",
+        "bytes": 9721
+      },
+      "S355 [2019] Meiotic genes are constitutively expressed in an asexual amoeba and ar.pdf": {
+        "sha256": "9fcf33294ab65214b2dfb62bde3b135a7308aa5801c814193745d0987f023a25",
+        "bytes": 831379
+      },
+      "S12 [2018] Asgard archaea are the closest prokaryotic relatives of eukaryotes.xml": {
+        "sha256": "85dade12f60b168b67c6e5e4e6d1c3450824f5dbbea0bee3dba422c9ca9acea7",
+        "bytes": 33161
+      },
+      "S64 [2011] The phylogenomic analysis of the anaphase promoting complex and its ta.xml": {
+        "sha256": "096b8a812eb103447e09f2d8d445226f40ad88e84d94ef78523ad11773c3fa41",
+        "bytes": 174398
+      },
+      "S17 [2024] A tuneable minimal cell membrane reveals that two lipid species suffic.pdf": {
+        "sha256": "d5480b920a8f8d86a563c10611474857618b0f67c09165c69bef135f6d6fde08",
+        "bytes": 2806923
+      },
+      "S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml": {
+        "sha256": "f3ce5412cb5c4be946a9abc7217c8ace3943bc822a33e32c1805282ea7d45c8b",
+        "bytes": 148555
+      },
+      "S433 [2023] De novo evolution of macroscopic multicellularity.pdf": {
+        "sha256": "076566de00dff7d71f1ba9725caec18b4b6548ec5fa87a2cee41c2bc2fb16702",
+        "bytes": 1878009
+      },
+      "S237 [2013] Genome Evolution and Phylogenomic Analysis of Candidatus Kinetoplastib.xml": {
+        "sha256": "de1bae161ed09fc8e1930bc529114213272d7513fea484c3b9869305f8620021",
+        "bytes": 132656
+      },
+      "S429 [2022] The cellular slime mold Fonticula alba forms a dynamic multicellular c.pdf": {
+        "sha256": "c37e90e1958815ce544f84f73cab00824e984b88def442bfd8de2c8e2515a4f8",
+        "bytes": 27575701
+      },
+      "S304 [2019] A genomic survey of transposable elements in the choanoflagellate Salp.pdf": {
+        "sha256": "79eae6e72afd5cbbabdef58c153f1d71afbce3cdcd6cad0428d566ece3ebbb1b",
+        "bytes": 1262699
+      },
+      "S548 [2026] Environmental phylogenetics supports a steady diversification of crown.pdf": {
+        "sha256": "1494dc1fc86c72a8fc800265c1ff2a9d1bdb61e209107f2a0513bb8f67c9c745",
+        "bytes": 10960988
+      },
+      "S505 [2020] Gene Similarity Networks Unveil a Potential Novel Unicellular Group Cl.pdf": {
+        "sha256": "8000ff2a4dfa7d90df9175430418b0bdc989a5853bc14fe205969c4a0ae26940",
+        "bytes": 1636892
+      },
+      "S66 [2007] An elaborate classification of SNARE proteins sheds light on the conse.pdf": {
+        "sha256": "12e25cc8b158cbeba90f9fb800b1e40a6b6fb751e20544f7226f955de6cbd912",
+        "bytes": 507311
+      },
+      "S312 [2017] Membranes energetics and evolution across the prokaryote-eukaryote div.pdf": {
+        "sha256": "f51ebe26be58ab852faff3cfe82755553a1c5215a04ab54a9135c7ad9eac0a7e",
+        "bytes": 1312031
+      },
+      "S508 [2026] Protracted ocean oxygenation in the early Mesoproterozoic.pdf": {
+        "sha256": "7d86f1f4dbdea330beb7e17dc44f72f76a415132e229afeca4005ca5fb31fb64",
+        "bytes": 3814638
+      },
+      "S25 [2023] Inference and reconstruction of the heimdallarchaeial ancestry of euka.xml": {
+        "sha256": "71a35b3bb515d6c29ffe0cfeddcadb3b112adfea9e8fe18a2ed18cabc733e6fb",
+        "bytes": 227231
+      },
+      "S447 [2018] Rapid and efficient genetic engineering of both wild type and axenic s.xml": {
+        "sha256": "7e26a702cdcf18d3bee15b55368a3ef9f1d6ab9e267aeb8b921521976ab4db7b",
+        "bytes": 210552
+      },
+      "S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf": {
+        "sha256": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+        "bytes": 713922
+      },
+      "S02 [2026] International Chronostratigraphic Chart version 202606.url": {
+        "sha256": "4c4377d717ac231bd99a0159c755f7e259c997720909876a0c192d3549fc737a",
+        "bytes": 121
+      },
+      "S513 [2023] Symbioses shape feeding niches and diversification across insects.pdf": {
+        "sha256": "0e3cc8f478f98d82c59e1fd6e090c45b9bc3cf458446d189ede00a380a169beb",
+        "bytes": 12902528
+      },
+      "S130 [2008] Multigene Phylogeny of Choanozoa and the Origin of Animals.pdf": {
+        "sha256": "290d29baf5fe51ccfbac9411950826faabc93dc7800e609ddb1da18ddab22eff",
+        "bytes": 267414
+      },
+      "S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.xml": {
+        "sha256": "b540e65381a7d9a76a23207005aaeed9dd0c2d7cc53cc184ca49693b51abf67d",
+        "bytes": 230825
+      },
+      "S548 [2026] Environmental phylogenetics — Dataset S1 publicado.xlsx": {
+        "sha256": "532004056b6b963a86fdd9634c727c6948cc359ba6d3f56f100ca57cfc2a5077",
+        "bytes": 10956
+      },
+      "S22 [2015] Complex archaea that bridge the gap between prokaryotes and eukaryotes.xml": {
+        "sha256": "1e2d8d9fdb49dbf5248647d15d76b79d3df5f4ce478e0844698e1d0a7f06c5e5",
+        "bytes": 185980
+      },
+      "S300 [2017] Uniparental Inheritance Promotes Adaptive Evolution in Cytoplasmic Gen.xml": {
+        "sha256": "e50bbf61404fcc5422782e7898caa34e6756287ae27050916570d67a87ef894b",
+        "bytes": 211856
+      },
+      "S427 [2023] Chemical factors induce aggregative multicellularity in a close unicel.pdf": {
+        "sha256": "2c8c90e746b228018792f8fb6ee61b798f40400240ed8432b4f605f49c0ac321",
+        "bytes": 3900467
+      },
+      "S427 [2023] Chemical factors induce aggregative multicellularity in a close unicel.xml": {
+        "sha256": "e9b74c489365ba840efe06ef3157821f8d673eae5d8efea9a90a9ac6c70769f4",
+        "bytes": 194712
+      },
+      "S95 [2020] Medusavirus ancestor in a proto-eukaryotic cell updating the hypothesi.xml": {
+        "sha256": "8b67cc7022e80cb1d057c4aa4778d4f928a9dbc388111365ca9345e1d8d779cc",
+        "bytes": 81243
+      },
+      "S552 [2022] Global patterns and rates of habitat transitions across the eukaryotic.pdf": {
+        "sha256": "b95cdf096f572c37ad6db7100a687acb8973e5b8b0871477305a743517eb8818",
+        "bytes": 6437413
+      },
+      "S107 [2022] Phylogenomic analyses of 2786 genes in 158 lineages support a root of.pdf": {
+        "sha256": "9e2940a814551a28cf065655453ed41517fa54bdf94e1f2c20c34329a0ada14d",
+        "bytes": 1482731
+      },
+      "S281 [2024] Mitochondrial genomes revisited why do different lineages retain diffe.pdf": {
+        "sha256": "4c849dd336d3c2584e54fcc56ff746dc7c1c422674e1fed8926deb11efbbe77a",
+        "bytes": 4355435
+      },
+      "S442 [2026] Thecamonas trahens ATCC 50062 genome assembly GCA_0001429051.url": {
+        "sha256": "f094ecba6d0d285aa5902690da9a5934345967cbbff3a168debdcfeb39d8965a",
+        "bytes": 157
+      },
+      "S165 [2020] Developmental biology of Helicoforamina reveals holozoan affinity cryp.xml": {
+        "sha256": "dca3ff5a14e0e08595d957c2d9938c51d950b1b8ed81c18923f3206512419bd4",
+        "bytes": 94041
+      },
+      "S11 [2017] Lokiarchaea are close relatives of Euryarchaeota not bridging the gap.pdf": {
+        "sha256": "013ee72427aeb7469d9413f22c0692ed7c3208e9a31112ac4845707ae6c65610",
+        "bytes": 10244584
+      },
+      "S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf": {
+        "sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+        "bytes": 227457
+      },
+      "S83 [2017] Late mitochondrial origin is an artefact.xml": {
+        "sha256": "a49400e56560afbafde8bc972d565a9a6589001042e398f7c0324a887a51b295",
+        "bytes": 60621
+      },
+      "S367 [2010] Variation Sex and Social Cooperation Molecular Population Genetics of.xml": {
+        "sha256": "127852fca47cc11578e2150b50dd0e3225c625c8eca226a2ee496a9578e11167",
+        "bytes": 152346
+      },
+      "S43 [2022] Structure and dynamics of Odinarchaeota tubulin and the implications f.xml": {
+        "sha256": "12c2d024a3e58774bbe0e28b728fb3066e5cb02192407f00c814f09a4e48ebd6",
+        "bytes": 114076
+      },
+      "S307 [2025] Bioenergetics and the Evolution of Cellular Traits.xml": {
+        "sha256": "4a222fc67f1788d9dcd277b1243ed1911d849c34ac8ee8a728e20daf30e4ecdd",
+        "bytes": 168672
+      },
+      "S276 [2019] The Oxymonad Genome Displays Canonical Eukaryotic Complexity in the Ab.pdf": {
+        "sha256": "03e86826170efdb7e0f05b821e5c4eb1bb46320ce3b1f306def85278f0e74444",
+        "bytes": 1466507
+      },
+      "S207 [2018] Decoupling of Nuclear Division Cycles and Cell Size during the Coenocy.xml": {
+        "sha256": "0e9ba62e5ee114d7960a68389043425e25f9025c845f35d872f6dd989eb5cb06",
+        "bytes": 82141
+      },
+      "S334 [2024] Life-cycle-coupled evolution of mitosis in close relatives of animals.xml": {
+        "sha256": "2bd58496546bc64dae0db03d63dd419357658c4d9510149d854961a7f4e584dd",
+        "bytes": 212708
+      },
+      "S306 [2020] Unorthodox features in two venerid bivalves with doubly uniparental in.xml": {
+        "sha256": "fe08a7c1c99950de0e54e9e6a66d88123a0c6ff5723fcbb71736de16c296eaa1",
+        "bytes": 206401
+      },
+      "S441 [2016] The Dynamic Regulatory Genome of Capsaspora and the Origin of Animal M.pdf": {
+        "sha256": "825f37141c865901df6571efe9fee00b5ba96bcbaaab430961bd34035d6f044c",
+        "bytes": 5089918
+      },
+      "S205 [2013] Premetazoan genome evolution and the regulation of cell differentiatio.xml": {
+        "sha256": "d682131ebce0ea60a4eb2637d403c1292ed7fc94efb537b757134abf7cdfa61d",
+        "bytes": 168199
+      },
+      "S372 [2025] Meiosis-associated expression patterns during starvation-induced cell.xml": {
+        "sha256": "5814b3182c51910d9f4412623dc0fa2ac605b38dc8a5eb0efc27ad2a59a61aaf",
+        "bytes": 91379
+      },
+      "S208 [2019] A unicellular relative of animals generates a layer of polarized cells.pdf": {
+        "sha256": "045a3c24dde118b1ff8fd235750eb4840c9ee4f30a90668deb101aefc02fb707",
+        "bytes": 63597
+      },
+      "S324 [2022] Flagellar energy costs across the tree of life.pdf": {
+        "sha256": "3075ffb47302e5a91fea9f26357d70ae131a98c53ed797232e7bb0d1ec60497e",
+        "bytes": 1031567
+      },
+      "S253 [2017] Dynamics of Sequestered Cryptophyte Nuclei in Mesodinium rubrum during.pdf": {
+        "sha256": "16f2fc5d7a8538f94cc1d6bbc6f35ff02930147711b84f58d77615b2df331f5c",
+        "bytes": 3386556
+      },
+      "S367 [2010] Variation Sex and Social Cooperation Molecular Population Genetics of.pdf": {
+        "sha256": "696baeb0de37c14d82a2584e4e6ed60a8afbc391a162db0dcdf89a2798fae353",
+        "bytes": 1972811
+      },
+      "S422 [1989] Protozoa Protista Protoctista whats in a name.pdf": {
+        "sha256": "a4876d1e71a33d02eea35b5a4c45d45b0dec3ecc1390fc6572fc6560ba956fe0",
+        "bytes": 1664710
+      },
+      "S323 [2025] Effective population size does not explain long-term variation in geno.pdf": {
+        "sha256": "545e4adf92a9daf80099d2863141703d6e50041f63085853d1c419359037b526",
+        "bytes": 3942179
+      },
+      "S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml": {
+        "sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+        "bytes": 147491
+      },
+      "S297 [2017] Evolutionary conservation and in vitro reconstitution of microsporidia.pdf": {
+        "sha256": "a1da76fb6bd0197e9dacfd8aa451bf8988830da088da7aec3b1069914d44130d",
+        "bytes": 4286983
+      },
+      "S330 [2019] A Mechanistic Perspective on PEX1 and PEX6 Two AAA Proteins of the Per.xml": {
+        "sha256": "5925a66782e9707dff1fd40f3bca0a36203564cb6f2c3deb5e4ff6c10fc9bb00",
+        "bytes": 222150
+      },
+      "S63 [2009] A complex cell division machinery was present in the last common ances.xml": {
+        "sha256": "f424c1fd31d7e095eaa8a594503e1dd9e04d8e832fa6284eab518fbcfd4a855c",
+        "bytes": 108111
+      },
+      "S37 [2025] Peculiar morphology of Asgard archaeal cells close to the prokaryote-e.pdf": {
+        "sha256": "54d524f34e81e352bcf5caf88706c0a8696f13b90c2d0359b5af7d681249a156",
+        "bytes": 909399
+      },
+      "S130 [2008] Multigene Phylogeny of Choanozoa and the Origin of Animals.xml": {
+        "sha256": "02d1fefc16bd2713eb1e003fefb4dbcb24ed35b55479fb8d3120403215e60fbe",
+        "bytes": 85829
+      },
+      "S555 [2022] Extreme variability in atmospheric oxygen levels in the late Precambri.xml": {
+        "sha256": "1ad5807e2e45132c0caafd397377f46e694ddc0a5431a740027e7f7b23f9eb70",
+        "bytes": 145151
+      },
+      "S81 [2021] Gene duplications trace mitochondria to the onset of eukaryote complex.xml": {
+        "sha256": "35665ebed7c19e33846706a9671a0bc6b3dd280ac2fea17885b64a19410b6050",
+        "bytes": 185672
+      },
+      "S273 [2021] Inheritance of the reduced mitochondria of Giardia intestinalis.pdf": {
+        "sha256": "ffb34f97549ab1bff0c97cb9bb7355f67f885bdab3c211ddd51fd2b47c2499a6",
+        "bytes": 4489603
+      },
+      "S426 [2013] Development of ichthyosporeans sheds light on the origin of metazoan m.xml": {
+        "sha256": "4cfcaabd27ec705daecec86590b2d0ba8ffb357d72fc788b8cf9ef3648239615",
+        "bytes": 93577
+      },
+      "S239 [2025] A nucleus-encoded dynamin-like protein controls endosymbiont division.xml": {
+        "sha256": "e50acf7ddec0084d7c0fa7309201b183590fcb0c35e2b18964ddc5c6135e584f",
+        "bytes": 229875
+      },
+      "S21 [2026] Dominant contribution of Asgard archaea to eukaryogenesis.xml": {
+        "sha256": "35d5d6a246cd1ff1e970b1f76bb4916587d811d814d0604ceeb673fe07c89f45",
+        "bytes": 176012
+      },
+      "S388 [2015] A Higher Level Classification of All Living Organisms.pdf": {
+        "sha256": "92a6295d61e436b4b185e1295f3fa8ce545578da06c502b139f3e7cb35e72fe6",
+        "bytes": 352499
+      },
+      "S197 [2017] Snowball Earth climate dynamics and Cryogenian geology-geobiology.pdf": {
+        "sha256": "7d49af668ce8306d16ddd4b27f1660cab95e901a56210d5a28ac8791093f5077",
+        "bytes": 7347983
+      },
+      "S417 [2009] Darwins Extreme Imperfection.pdf": {
+        "sha256": "7192856defcfa4172ecd321df5a6ba531b9e07f0c0aa6c6061e9d8dfd5d41cd3",
+        "bytes": 880077
+      },
+      "S185 [2018] Highly fractionated chromium isotopes in Mesoproterozoic-aged shales a.xml": {
+        "sha256": "b9a7688ba4feaf465e663519f0c8996b80a10225ca76c9761b5117f4d9b0a53d",
+        "bytes": 129700
+      },
+      "S228 [2017] The evolution of host-symbiont dependence.pdf": {
+        "sha256": "cdc930fc78b3a3a30fdbc17ab500787996f73273dfc1fd59b499850073909cdc",
+        "bytes": 743039
+      },
+      "S201 [2012] A bacterial sulfonolipid triggers multicellular development in the clo.xml": {
+        "sha256": "6ff64507cbe292bccaceed7919a1e38b663170d1fa0bf5b292cbc660d3ea8a23",
+        "bytes": 219087
+      },
+      "S376 [2026] A unicellular relative links aggregative multicellularity to animal or.pdf": {
+        "sha256": "3890375677b55be64479835e88930f675dc0efcea5529f3ff9250a0c350f0b92",
+        "bytes": 19936989
+      },
+      "S20 [2020] Bacterial Genes Outnumber Archaeal Genes in Eukaryotic Genomes.xml": {
+        "sha256": "7b467ce10abe0e4a7639c6047c470744a4e4cedfca8f1fcf5c3f9d06dc8db27a",
+        "bytes": 112110
+      },
+      "S453 [2013] Strikingly Bacteria-Like and Gene-Rich Mitochondrial Genomes throughou.xml": {
+        "sha256": "2bd586ac8bcff7bf517dc25da2e5810d5e1b8f76300d0a2a4a09cdf72e73c75c",
+        "bytes": 177162
+      },
+      "S254 [2019] Genes functioned in kleptoplastids of Dinophysis are derived from hapt.xml": {
+        "sha256": "21201411cb017df441df0de3ef68e5ea2d3771cfd7a0f7a23df9ea7e0e1c430c",
+        "bytes": 101886
+      },
+      "S32 [2021] Sifarchaeota a Novel Asgard Phylum from Costa Rican Sediment Capable o.pdf": {
+        "sha256": "5b9f18b189233cca0b818387f87e73ee9fc7e81d9af7a5607afd28ebdeee9438",
+        "bytes": 2920715
+      },
+      "S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf": {
+        "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+        "bytes": 1953995
+      },
+      "S143 [2023] Genomes of fungi and relatives reveal delayed loss of ancestral gene f.xml": {
+        "sha256": "2f9f840e4e85d50e976c9970bb000ae6d204addeecbcfffa9adcfcd1b790d8fb",
+        "bytes": 182047
+      },
+      "S357 [2014] Origins of Eukaryotic Sexual Reproduction.pdf": {
+        "sha256": "373d48406905c7de8aaffea27716dc1c6411ef3eec61fbaaf0af2e08f3e4e9bf",
+        "bytes": 804966
+      },
+      "S545 [2024] Opisthokonta phylogeny - scripts.tar.gz": {
+        "sha256": "bb54e7e2872f11160f8f2b2a8db64b2e06824b2063d35bb0cc1bd31e4f8e170e",
+        "bytes": 24864
+      },
+      "S548 [2026] Environmental phylogenetics — Dataset S2 publicado.xlsx": {
+        "sha256": "6e8ef742ce128bf304e7981ec9ce1dc8048449535fb7acf75844883cda04c780",
+        "bytes": 10762
+      },
+      "S197 [2017] Snowball Earth climate dynamics and Cryogenian geology-geobiology.xml": {
+        "sha256": "110ae18784a2e03b597b06cbbdf22bb19173eb6490d9646eed222a301c05f0f1",
+        "bytes": 673374
+      },
+      "S55 [2024] The nature of the last universal common ancestor and its impact on the.pdf": {
+        "sha256": "2a4fc47b022ef915a3291e0cd211486e912be512cbc6865a421fc4256ac6e7b5",
+        "bytes": 17108157
+      },
+      "S17 [2024] A tuneable minimal cell membrane reveals that two lipid species suffic.xml": {
+        "sha256": "ee5a53e1bf72e3c5c3ae6bb132dfb47c8245bfc9068f8b380ed84f5649887ecf",
+        "bytes": 179475
+      },
+      "S484 [2022] Anaerobic derivates of mitochondria and peroxisomes in the free-living.pdf": {
+        "sha256": "be8c9063cdb48f2af58c3927b29729975814e52965ea4b479a8043eec98c836c",
+        "bytes": 4190873
+      },
+      "S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.xml": {
+        "sha256": "b671adee617bf211acb6a0edbdf8b7e0de5277578b4886e7f7b243365966bf5c",
+        "bytes": 129276
+      },
+      "S541 [2026] Eukaryogenesis Did an Oxidative Crucible Result in Misleading Bioinfor.xml": {
+        "sha256": "00cefbcbb4515222fa6096254f927cbb310fffd4c79effee0a17882b2e4ef99d",
+        "bytes": 50474
+      },
+      "S69 [2011] Tracing the origins of centrioles cilia and flagella.xml": {
+        "sha256": "611942d048d5afe9b3acd1ce5197486e2450d533c9b757163d3c658205dfc14f",
+        "bytes": 178242
+      },
+      "S435 [2018] Gene family innovation conservation and loss on the animal stem lineag.xml": {
+        "sha256": "195bca8cc8b4c253c8f7a78f2bb85b91fa0d65129e10dbec220dce78dc3d8bb2",
+        "bytes": 473178
+      },
+      "S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.pdf": {
+        "sha256": "c7366fa46b25d301cf3fd4aadf561e39cb0de088e5aa6febb477d5fd0ae961ea",
+        "bytes": 266712
+      },
+      "S507 [2026] Distribution and Feeding of Hexatilemonas jangsaensis a Novel Cosmopol.xml": {
+        "sha256": "d2b84a1798667ee8423c36ae69ecda59ee421b8589149014f2d0196e2648a580",
+        "bytes": 82475
+      },
+      "S120 [2009] Analysis of Rare Genomic Changes Does Not Support the UnikontBikont Ph.xml": {
+        "sha256": "db71ae4ea4a42f6679569cd32b4fa207bb2bb49fa7d969ffa2d0c5fd9d869d59",
+        "bytes": 235636
+      },
+      "S415 [2018] Rethinking Living Fossils.xml": {
+        "sha256": "a66e934113c4ff4c8f11a731a01a3c5b950b9d1e9dea4f090ee8a8839b9304f7",
+        "bytes": 119770
+      },
+      "S60 [2013] Molecular paleontology and complexity in the last eukaryotic common an.xml": {
+        "sha256": "6893bc7f25c8203cfb94e6aa6feeea0822adbdbb7dd59425cef13ba0d2b36b67",
+        "bytes": 414923
+      },
+      "S270 [2011] The Organellar Genome and Metabolic Potential of the Hydrogen-Producin.xml": {
+        "sha256": "44e919c1b7c5de2abcff90e612358815076f0a1362b59d4744d9b6ef73c25c2f",
+        "bytes": 165207
+      },
+      "S378 [1999, edición en línea vigente] International Code of Zoological Nomenclature Fourth Edition.url": {
+        "sha256": "0c0fe3d27b2cea5ff83c271a45dac6371094845648f6a9a8cad33cfe865f06f3",
+        "bytes": 142
+      },
+      "S222 [2019] Medusavirus a novel large DNA virus discovered from hot spring water.pdf": {
+        "sha256": "10b517327b7288cb57c77cee3fdfbf810b386fc07b36ca9e5f4f5eb11d9e0cf9",
+        "bytes": 2405901
+      },
+      "S131 [2020] New lineage of microbial predators adds complexity to reconstructing t.pdf": {
+        "sha256": "e412cff6028f9df29948bfed750f12a4db04bc557a2bc6bbfddf2744562f3a0d",
+        "bytes": 3040058
+      },
+      "S341 [2023] How much ATP does it cost to build a trypanosome A theoretical study o.pdf": {
+        "sha256": "397515a0727e214528b3a0bb13328ee89ff80209218f8afe74a0934e6919489d",
+        "bytes": 1264134
+      },
+      "S270 [2011] The Organellar Genome and Metabolic Potential of the Hydrogen-Producin.pdf": {
+        "sha256": "fa4ffde0c39b12e75ec7d1a473e4d85fdcdf6e3bb7069df9a41e1284c8e43fc5",
+        "bytes": 924061
+      },
+      "S55 [2024] The nature of the last universal common ancestor and its impact on the.xml": {
+        "sha256": "e36b7abee322adcd65e56fe427ea4cecbca050711f0af0cbaa1b6bb3dcd9ef54",
+        "bytes": 259784
+      },
+      "S12 [2018] Asgard archaea are the closest prokaryotic relatives of eukaryotes.pdf": {
+        "sha256": "1e38e65fbfac594917777970afc7f5b4930476d1bd6baa4508a3d1cfdea8f3be",
+        "bytes": 906074
+      },
+      "S161 [2019] Early fungi from the Proterozoic era in Arctic Canada.pdf": {
+        "sha256": "df566729a53d8ad29fc5bf6effefcd9e78cfe835bfb9d57018f715bdba4709f1",
+        "bytes": 4805723
+      },
+      "S108 [2018] Phylogenomics places orphan protistan lineages in a novel eukaryotic s.pdf": {
+        "sha256": "11a18d12cb8942baf00f134e9b6bb8e9ff86c7e92c04b3d6897075b4c74e0784",
+        "bytes": 350742
+      },
+      "S01 [2019] Revisions to the Classification Nomenclature and Diversity of Eukaryot.pdf": {
+        "sha256": "cd24333b3cf8c7f71e257cc14b5fabaae77b6876bfaa308a442ec49420b45079",
+        "bytes": 1664645
+      },
+      "S314 [2018] Elusive data underlying debate at the prokaryote-eukaryote divide.pdf": {
+        "sha256": "ef438e91a7030e74235299602a385a8fcbc370707e41a7d21e670c457ae77495",
+        "bytes": 731275
+      },
+      "S20 [2020] Bacterial Genes Outnumber Archaeal Genes in Eukaryotic Genomes.pdf": {
+        "sha256": "d8fc703a6eaa19ed9ccbecc85005de96a8ed05eb788b3b6d1343ecc35af56090",
+        "bytes": 1178298
+      },
+      "S15 [2021] Bridging the membrane lipid divide bacteria of the FCB group superphyl.pdf": {
+        "sha256": "b7857ee1ba6ccde30bc1cecbc7fc5e58a507dba818f4b1a42f7e18f1995e825f",
+        "bytes": 2075600
+      },
+      "S56 [2024] Reconstructing the last common ancestor of all eukaryotes.pdf": {
+        "sha256": "3f935f99fd735f2a019141f5ef27ed268273026caa9ef9558ab9f421602df36c",
+        "bytes": 2122253
+      },
+      "S332 [2023] Structure of the peroxisomal Pex1Pex6 ATPase complex bound to a substr.xml": {
+        "sha256": "c72d93704f10bad61462ef4bc14d5b31ddde66d49a7d9bd81681ef5f921f4e54",
+        "bytes": 206042
+      },
+      "S07 [1984] Eocytes a new ribosome structure indicates a kingdom with a close rela.pdf": {
+        "sha256": "273878bf34657bbbe3f4ce9c8187c8c9a5d0898c4e80e62ac49b49dfe924038e",
+        "bytes": 2042413
+      },
+      "S530 [2021] Reconciling Asgardarchaeota Phylogenetic Proximity to Eukaryotes and P.pdf": {
+        "sha256": "9b51575097f7639ec6431515e83e18d96b0206ec470b299911f349d0fde42fe1",
+        "bytes": 403102
+      },
+      "S316 [2022] The role of mitochondrial energetics in the origin and diversification.pdf": {
+        "sha256": "91f7e916849f4a41240269fccb31ed76ddff85aa06edf01452dfaf5091bafb63",
+        "bytes": 1043905
+      },
+      "S448 [2012] Whole Genome Sequencing of Mutation Accumulation Lines Reveals a Low M.xml": {
+        "sha256": "b9a4556b8ea94030de6133e62885b7422201b7bb9560f9cf824bbe3f6726b404",
+        "bytes": 116020
+      },
+      "S153 [2017] A Laurentian record of the earliest fossil eukaryotes.pdf": {
+        "sha256": "3b2cc3f803a0e0168c5ccfc262a3633c426ac4e73f4565503a5a98dc43eded90",
+        "bytes": 948261
+      },
+      "S11 [2017] Lokiarchaea are close relatives of Euryarchaeota not bridging the gap.xml": {
+        "sha256": "c1c3f964a6995d1c95f2d9784f0cf1a4196185a30c1dcdb96e797536822a6142",
+        "bytes": 309923
+      },
+      "S429 [2022] The cellular slime mold Fonticula alba forms a dynamic multicellular c.xml": {
+        "sha256": "ed42c94dde46b31d584f8fbd1ee83c9e87e17c63c4cbc030b01bfad7d8172715",
+        "bytes": 133429
+      },
+      "S402 [2008] EEF2 Analysis Challenges the Monophyly of Archaeplastida and Chromalve.xml": {
+        "sha256": "4641c3c8406f1badadee97fc47b899816836e2a8b76c2b908b96e14991cb22af",
+        "bytes": 150948
+      },
+      "S404 [2024] A New Model and Dating for the Evolution of Complex Plastids of Red Al.xml": {
+        "sha256": "86ac3142c0d7857d85da47c2d052ceb848ace9057a45473afc1c2926053422c2",
+        "bytes": 99115
+      },
+      "S388 [2015] A Higher Level Classification of All Living Organisms.xml": {
+        "sha256": "4f9831117b84c94141b8afe1607ff7862f8806e7bd8f8d1088d1956fe199d1c7",
+        "bytes": 1407349
+      },
+      "S456 [2025] Genomes of nitrogen-fixing eukaryotes reveal an alternate path for org.xml": {
+        "sha256": "97fd9edcd3015622b26a8a7e1cb0035382556daf5f88a93ab6cb6e433eb6d6db",
+        "bytes": 230319
+      },
+      "S184 [2021] A persistently low level of atmospheric oxygen in Earths middle age.xml": {
+        "sha256": "3a5db199af987f4112ec7fc9a24d980fb1d42cac178a5b4c7a5aea79e3de913e",
+        "bytes": 82841
+      },
+      "S360 [2016] The evolution of meiotic sex and its alternatives.xml": {
+        "sha256": "58bd6d00d0b08b23c00232e3a60a2da55f5f7346b295fcab69ce7b0273ef0a31",
+        "bytes": 137315
+      },
+      "S328 [2008] Creatine kinase-mediated ATP supply fuels actin-based events in phagoc.pdf": {
+        "sha256": "8f6b1ae995f25b245b1ed42c9d3525002a120251426516bcc250615d164db1b5",
+        "bytes": 828971
+      },
+      "S08 [2008] The archaebacterial origin of eukaryotes.pdf": {
+        "sha256": "c5855cf3895e0f92399a4d9085734f4f3c625b043989b03dea2982212f9823f2",
+        "bytes": 806653
+      },
+      "S542 [2014] Morphology phylogeny and ecology of the aphelids Aphelidea Opisthokont.pdf": {
+        "sha256": "c03d84e0857c75f2229f631e198b22fc6b9776056d01104ae26e78ceb99af15d",
+        "bytes": 2291581
+      },
+      "S108 [2018] Phylogenomics places orphan protistan lineages in a novel eukaryotic s.xml": {
+        "sha256": "804d7bfc32884ceec34a0811a2c57844eab81b7a7b39cfad15dd71f4db722c27",
+        "bytes": 78821
+      },
+      "S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.pdf": {
+        "sha256": "f5ff38aacb628066ac913768edefb3e77257267e2e4f8113dd8c972879fe61f3",
+        "bytes": 6091815
+      },
+      "S322 [2026] A Comparative Analysis of Long-Term Effective Population Sizes Across.xml": {
+        "sha256": "dcc97cf4e288dd34c49d3e98330a845beef3796b45c75687d979e91267b09597",
+        "bytes": 165485
+      },
+      "S221 [2006] The origin of introns and their role in eukaryogenesis a compromise so.pdf": {
+        "sha256": "aa1d9f919becc8d5a17954c76909f88b974e3dd7ce102df22fb12ee809ed41db",
+        "bytes": 531754
+      },
+      "S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": {
+        "sha256": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+        "bytes": 151030
+      },
+      "S69 [2011] Tracing the origins of centrioles cilia and flagella.pdf": {
+        "sha256": "39dae78c10da48285c92c8ea9ce7872282d2ab3791d9a8b89ff54218e0d3f190",
+        "bytes": 465719
+      },
+      "S40 [2020] Insights into the evolution of regulated actin dynamics via characteri.pdf": {
+        "sha256": "da78caa7a9d10fd995f04df47669bfee23488707806d527556ebc905218c9cdc",
+        "bytes": 2725699
+      },
+      "S117 [2014] Complex Patterns of Gene Fission in the Eukaryotic Folate Biosynthesis.xml": {
+        "sha256": "04b26470821b69b097be313c8a5f452ff4a3bbdefd8085e211b0494ebae1984f",
+        "bytes": 134014
+      },
+      "S382 [2023] A Brief Guide to Establishing Phylogenetically Defined Names under the.pdf": {
+        "sha256": "bd9ddc8cfe7881be5e8f9da9f606c67e518defb498e5143dabd07f6d656080e3",
+        "bytes": 1235727
+      },
+      "S143 [2023] Genomes of fungi and relatives reveal delayed loss of ancestral gene f.pdf": {
+        "sha256": "f21100f034bb4b2c6154b70b266b609952df1bd161a15df58a93cd8cc3975650",
+        "bytes": 18387005
+      },
+      "S434 [2017] Dynamics of genomic innovation in the unicellular ancestry of animals.pdf": {
+        "sha256": "933b666f3556588709b0fd4eafe000218606f7b5c44428df8d85d842aaa0a4d4",
+        "bytes": 2442646
+      },
+      "S365 [2010] Sex determination in the social amoeba Dictyostelium discoideum.pdf": {
+        "sha256": "a9957fe26603d378cca4d4743f0220a7237a365063ab62fa7cc32d98be3dc758",
+        "bytes": 1079600
+      },
+      "S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf": {
+        "sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+        "bytes": 3944383
+      },
+      "S559 [2018] MISAG MIMAG — Corrigendum febrero.xml": {
+        "sha256": "9953e3d76199e8512eb1388bca8a26a2327534e9e394f34aff1bb3356be95935",
+        "bytes": 10948
+      },
+      "S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.pdf": {
+        "sha256": "0823e889fbcdfdbfb48cf949c4c7a852ab8a767e1f4812803188550fb38ec6d7",
+        "bytes": 4584341
+      },
+      "S167 [2022] Ediacaran algal cysts from the Doushantuo Formation South China.pdf": {
+        "sha256": "a98dc394eab0be7e54902d504cd7fc033c2b5447ffd368cf7b86c3ed791e626e",
+        "bytes": 1723523
+      },
+      "S01 [2019] Revisions to the Classification Nomenclature and Diversity of Eukaryot.xml": {
+        "sha256": "f13988bf10570fce537f501886369111c05f421052101d1e757a4a8c53bdc9bc",
+        "bytes": 860101
+      },
+      "S133 [2024] Ichthyosporea a window into the origin of animals.xml": {
+        "sha256": "b62a156e74cbdd7128db54cc2e10bb32e1bcba46697dc6ec3583a04d0d9ca111",
+        "bytes": 192682
+      },
+      "S132 [2020] Insights into the origin of metazoan multicellularity from predatory u.xml": {
+        "sha256": "24b8dde5104c9af1104f5a55bb893e682b9c9b5274c90a983bc93aef8e30205a",
+        "bytes": 226417
+      },
+      "S127 [2022] Divergent genomic trajectories predate the origin of animals and fungi.xml": {
+        "sha256": "60ee5909f42d480492448c571b3be6ddc7a4fae8253cc686004c2a3488fa3dc3",
+        "bytes": 168507
+      },
+      "S351 [2020] Synergistic Cues from Diverse Bacteria Enhance Multicellular Developme.xml": {
+        "sha256": "7061951e8955fa0121d4ecdb210511ce5ece4902d9119cd4b5c123949c54bf28",
+        "bytes": 109245
+      },
+      "S171 [2023] Lost world of complex life and the late rise of the eukaryotic crown.pdf": {
+        "sha256": "af4ad316f6eebc4c86d8e80bfcd11a2b13c8366875143954b57cca83bdf5635f",
+        "bytes": 9340208
+      },
+      "S559 [2018] MISAG MIMAG — Corrigendum julio.xml": {
+        "sha256": "7b4f1fe400abccf26be1f4110eaf1e1de4116f622d6fe2e5a79df9834a359bfa",
+        "bytes": 11418
+      },
+      "S555 [2022] Extreme variability in atmospheric oxygen levels in the late Precambri.pdf": {
+        "sha256": "89816b9b0240e185e1e9ccaf1e3b3f25fac8af3a87f463244e40e30c4242efb4",
+        "bytes": 1894607
+      },
+      "S44 [2024] The eukaryotic-like characteristics of small GTPase roadblock and TRAP.xml": {
+        "sha256": "530a066a927777d8ee2574fe008d254838656429d05100348e499ab6527e95ff",
+        "bytes": 112712
+      },
+      "S61 [2010] Comparative genomic evidence for a complete nuclear pore complex in th.xml": {
+        "sha256": "d61b842987cc2eb09315b8a3c82482f88a386deefb5adde1fc60721c5b82fb46",
+        "bytes": 359023
+      },
+      "S513 [2023] Symbioses shape feeding niches and diversification across insects.xml": {
+        "sha256": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040",
+        "bytes": 406953
+      },
+      "S381 [2020] International Code of Phylogenetic Nomenclature PhyloCode version 6.pdf": {
+        "sha256": "bf260e5fe18c1e4b9b2033c5ceb5422322dcf226d535d5c8c123556b3117b9d2",
+        "bytes": 16556034
+      },
+      "S177 [2018] Integrated genomic and fossil evidence illuminates lifes early evoluti.pdf": {
+        "sha256": "c08fd19def53f91a97016e7709bb39ac9e455005eee6652cff6ada1ff82661c0",
+        "bytes": 2094674
+      },
+      "S30 [2019] Casting light on Asgardarchaeota metabolism in a sunlit microoxic nich.pdf": {
+        "sha256": "1c5f84ca7d8670e1a7d6db72f84e483d3251bb9e551d485938392dd35c8fc0c6",
+        "bytes": 2456953
+      },
+      "S288 [2021] Mothers curse is pervasive across a large mitonuclear Drosophila panel.xml": {
+        "sha256": "d5b48a61874e1e325211cca000418082e0d016eb7c0186d5929ff9c1245e4070",
+        "bytes": 117829
+      },
+      "S482 [2026, consulta] Frequently Asked Questions.url": {
+        "sha256": "4e3b955ad70309c8aaa229aaa39e7d7d8bcd65d690654913b3182975f106d780",
+        "bytes": 96
+      },
+      "S315 [2018] Response to Martin and colleagues Mitochondria do not boost the bioene.pdf": {
+        "sha256": "3970fb803798b3a0ff1d806fcba05506b0ca2b7e6c15063ff9f27f0b2236b898",
+        "bytes": 272953
+      },
+      "S375 [2019] The Evolution of Sexual Reproduction and the Mating-Type Locus Links t.pdf": {
+        "sha256": "9ee5168f5b3a995c9227cdeb8a0e3d40382833b760454cb18f55f16f02b33a55",
+        "bytes": 2016228
+      },
+      "S312 [2017] Membranes energetics and evolution across the prokaryote-eukaryote div.xml": {
+        "sha256": "ef4f461ad494e5285d21e324de14ba7ccfc3ec44e8ebb65a31116d28a07b8393",
+        "bytes": 351108
+      },
+      "S189 [2013] Proterozoic ocean redox and biogeochemical stasis.pdf": {
+        "sha256": "5aa627e53a7d2b1767835c6fa0b07657306362e473f335c7b1419a57085e8cc6",
+        "bytes": 967181
+      },
+      "S407 [2009] Eumycetozoa Amoebozoa SSU-rDNA phylogeny of protosteloid slime molds a.xml": {
+        "sha256": "5c1b4229d7bae216353596392eaf6e85e1c823aaca23fc3141ad457858701571",
+        "bytes": 189148
+      },
+      "S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml": {
+        "sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+        "bytes": 152363
+      },
+      "S505 [2020] Gene Similarity Networks Unveil a Potential Novel Unicellular Group Cl.xml": {
+        "sha256": "fb75615a3614fdd27ead69fa0d29840ae447d1c500d1e9ec8877ce008ce09b27",
+        "bytes": 116855
+      },
+      "S88 [2014] An inside-out origin for the eukaryotic cell.xml": {
+        "sha256": "704498b87f5cdc4b75885f9450c243abea06821897e12082348a57fa5a6b3a79",
+        "bytes": 286351
+      },
+      "S51 [2005] Ancestral paralogs and pseudoparalogs and their role in the emergence.pdf": {
+        "sha256": "976e1780c50340f49fa6249bdc5487b93964dedb0d68ab37ced762511bc0f283",
+        "bytes": 217627
+      },
+      "S476 [2021] Stable transfection in protist Corallochytrium limacisporum identifies.pdf": {
+        "sha256": "d3587ba0f8cdeba7d071aa65c71266d3cb624a6246e2a1237808ae8cf2b82b5a",
+        "bytes": 2546711
+      },
+      "S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta.pdf": {
+        "sha256": "8a4b4193f8743f591e261c1c2af4975b1ca80492bf08695eaad80487adc54c79",
+        "bytes": 4327148
+      },
+      "S483 [2015] Comparative Genomics of a Bacterivorous Green Alga Reveals Evolutionar.xml": {
+        "sha256": "80c985fbea4b1995c96b5c344555a96e38d831f72b24a0a8e8aa05a806038d35",
+        "bytes": 199531
+      },
+      "S259 [2001] The highly reduced genome of an enslaved algal nucleus.pdf": {
+        "sha256": "6dd99e59a932e57ba0ed966fa00676c2ee0edb91d3b5e13f693b5da7b48e7e44",
+        "bytes": 303530
+      },
+      "S424 [2026] Clonal-aggregative multicellularity tuned by salinity in a choanoflage.xml": {
+        "sha256": "56c76fa58ecd02269e90e913469c8f257e831d3dac6645954d85e08524d94615",
+        "bytes": 251618
+      },
+      "S43 [2022] Structure and dynamics of Odinarchaeota tubulin and the implications f.pdf": {
+        "sha256": "ca9bae3ce884ff60e534fe78653dd8a51001723d88ae947cd2c4ec7397eec9d9",
+        "bytes": 6075152
+      },
+      "S320 [2007] The frailty of adaptive hypotheses for the origins of organismal compl.pdf": {
+        "sha256": "949a9c0477b6a29e0ee333b173437b6d6f454e349629f9fc51cbf1c76d0eba07",
+        "bytes": 457172
+      },
+      "S450 [2016] Low Base-Substitution Mutation Rate in the Germline Genome of the Cili.pdf": {
+        "sha256": "8d91c1cf448b2e343a0a5341318b2c24f083f86fd459615a176981d7ef89ba08",
+        "bytes": 227881
+      },
+      "S500 [2023] First putative occurrence in the fossil record of choanoflagellates th.xml": {
+        "sha256": "f61e0fc659bdba765a003b8c2fdc4d01aeff34d7b11e712cf92b05b4c4c9d191",
+        "bytes": 84872
+      },
+      "S179 [2011] A late origin of the extant eukaryotic diversity divergence time estim.xml": {
+        "sha256": "be8ad1fefdebee97aefb67014453870fca177d74800affc6dcb7162f251bf8d5",
+        "bytes": 210157
+      },
+      "S95 [2020] Medusavirus ancestor in a proto-eukaryotic cell updating the hypothesi.pdf": {
+        "sha256": "87cd1172a324bdd916a30a71334f79ba21440db30e44e62dd1da4d51642ce213",
+        "bytes": 970857
+      },
+      "S435 [2018] Gene family innovation conservation and loss on the animal stem lineag.pdf": {
+        "sha256": "391ae28e6bf5f70fe194205ab7301698870ada6fb175df478ea6c6ab14cf30c3",
+        "bytes": 1976427
+      },
+      "S384 [2026] RegNum Phylogenetic Nomenclature Database.url": {
+        "sha256": "d62e47c0efe2bdc467adbc2d3ac3c3dc1fbfb4b390c980c5e4eac09580aea3a9",
+        "bytes": 118
+      },
+      "S73 [2021] Comparative Genomics of Peroxisome Biogenesis Proteins Making Sense of.xml": {
+        "sha256": "a146312a85bd5e3b07f844066f50cae7d9ee21267171708b7f932e705a94c736",
+        "bytes": 240394
+      },
+      "S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml": {
+        "sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+        "bytes": 90681
+      },
+      "S331 [2018] The peroxisomal AAA-ATPase Pex1Pex6 unfolds substrates by processive t.xml": {
+        "sha256": "86d0e9622dfb45087e25f381d04a66a45a641d257e000c4fe44ded04389192f3",
+        "bytes": 185474
+      },
+      "S26 [2025] Deep origin of eukaryotes outside Heimdallarchaeia within Asgardarchae.xml": {
+        "sha256": "2d5ee1b3e8851488dfbc326e56e1584f6598ff779c60149aa12d1f88f09b009d",
+        "bytes": 211458
+      },
+      "S42 [2022] Asgard archaea shed light on the evolutionary origins of the eukaryoti.xml": {
+        "sha256": "8611dec4f59b953cf07c1ab325d3fa6615fec4d2c7307e680ee1079364b68c72",
+        "bytes": 212438
+      },
+      "S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml": {
+        "sha256": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+        "bytes": 176869
+      },
+      "S538 [2021] Recoding of stop codons expands the metabolic potential of two novel A.xml": {
+        "sha256": "db9dea3417bacbd891b2e87d3aa5420241ebd3395a9af2b2010b5b381f4a8db8",
+        "bytes": 202726
+      },
+      "S122 [1993] Animals and fungi are each others closest relatives congruent evidence.pdf": {
+        "sha256": "398fc25b4d03f94365f6021bd8a015d231a6f5370071f26984c5b486a8d898b6",
+        "bytes": 1190714
+      },
+      "S181 [2026] Clade dynamics support an early origin of crown eukaryotes.pdf": {
+        "sha256": "e80c3426bb48eb113452b2e1d96712e9fd5c063e8d92b9fc58ca2b1c256ae105",
+        "bytes": 997442
+      },
+      "S156 [2017] Three-dimensional preservation of cellular and subcellular structures.pdf": {
+        "sha256": "3ccc6adda9db94b9149bb26384d482710344bcc4c1addd0e5ec838888fb25e1f",
+        "bytes": 10672748
+      },
+      "S80 [2021] Timing the origin of eukaryotic cellular complexity with ancient dupli.pdf": {
+        "sha256": "47bb33afc1231c92145769929d42e3c0bc61c6dbe0d41d07c552df5e87f38cb5",
+        "bytes": 782798
+      },
+      "S140 [2021] A molecular timescale for eukaryote evolution with implications for th.xml": {
+        "sha256": "7e3e34daa2f62bcc8f9834a02383edce10ad9cf8f5b4d21b58620a23e548a249",
+        "bytes": 190956
+      },
+      "S109 [2025] Phylogenomics of neglected flagellated protists supports a revised euk.pdf": {
+        "sha256": "37691f19dd2ccc416af4e8b2900e8cb4306295b77c13569b29f3bd479854d9f1",
+        "bytes": 1487877
+      },
+      "S306 [2020] Unorthodox features in two venerid bivalves with doubly uniparental in.pdf": {
+        "sha256": "c153ae6a6159e5ef57c53b360916625f4ad6ca6b2d3959a37ea5e364c71106b9",
+        "bytes": 1837265
+      },
+      "S538 [2021] Recoding of stop codons expands the metabolic potential of two novel A.pdf": {
+        "sha256": "0053734f12c4c76114f25a23a83d21a48610c800c2f92f82757d657b2ef786a6",
+        "bytes": 3187594
+      },
+      "S548 [2026] Environmental phylogenetics — versión publicada.xml": {
+        "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+        "bytes": 190292
+      },
+      "S107 [2022] Phylogenomic analyses of 2786 genes in 158 lineages support a root of.xml": {
+        "sha256": "e61397fd3c33cc6e03bd80f0d86b91adf331ce18dafb8e3829eae94a51507422",
+        "bytes": 134240
+      },
+      "S04 [2013] The Protist Ribosomal Reference database PR2 a catalog of unicellular.pdf": {
+        "sha256": "4326f539bfd5c0e9a6dbb2e48671eca58796bb4480276acba6f32b50da12355e",
+        "bytes": 380590
+      },
+      "S543 [2023] Phylogenomics Supports the Monophyly of Aphelids and Fungi and Identif.pdf": {
+        "sha256": "75789fc598189fd5d543b59ac543e47a27754ba1557ad831429a534a4037a481",
+        "bytes": 2316598
+      },
+      "S73 [2021] Comparative Genomics of Peroxisome Biogenesis Proteins Making Sense of.pdf": {
+        "sha256": "955951deed3e39407825ea876eb397d372325f6032f8926ab8bc19029c5314fa",
+        "bytes": 6762122
+      },
+      "S466 [2020] Phosphorus-limited conditions in the early Neoproterozoic ocean mainta.pdf": {
+        "sha256": "c1807e61ef4eb099179f3bc377d715cb3ee9763bb5ee38eab450f574e9220304",
+        "bytes": 1181293
+      },
+      "S461 [2010] Aerobic growth at nanomolar oxygen concentrations.pdf": {
+        "sha256": "edd9dd4def5145adb236cd589429b8cb6f0783d2edb20266f883c13853c513d8",
+        "bytes": 822897
+      },
+      "S36 [2023] Actin cytoskeleton and complex cell architecture in an Asgard archaeon.pdf": {
+        "sha256": "23f89586caabbaf2d3af2ebbd51d93d638e18dc641d3a0e0190f3deb92303cc2",
+        "bytes": 12430770
+      },
+      "S185 [2018] Highly fractionated chromium isotopes in Mesoproterozoic-aged shales a.pdf": {
+        "sha256": "92d52f0448e112484263d402d4be9c34853de6a36fee954921381df964e03185",
+        "bytes": 2037999
+      },
+      "S313 [2018] Correction Membranes energetics and evolution across the prokaryote-eu.xml": {
+        "sha256": "425c42efd03f8e66d733b5d4f835a68acaf54bc40b84619d9a05b0054a784365",
+        "bytes": 10329
+      },
+      "S115 [2018] Combined morphological and phylogenomic re-examination of malawimonads.xml": {
+        "sha256": "4e6ded5cf0075413f52e65feec2a4c59a7149d74c7e66c158167e284e27478b8",
+        "bytes": 127592
+      },
+      "S44 [2024] The eukaryotic-like characteristics of small GTPase roadblock and TRAP.pdf": {
+        "sha256": "4b2be0a4057aa2fd85d091c23131e057a8e2003510afa48e7e0d531788300602",
+        "bytes": 3931528
+      },
+      "S57 [2024] The emerging view on the origin and early evolution of eukaryotic cell.pdf": {
+        "sha256": "3795462b4c4e396a4e939e212bb373d55584106e09597424d45d08f94ce21be6",
+        "bytes": 2342637
+      },
+      "S287 [2019] Bottleneck and selection in the germline and maternal age influence tr.xml": {
+        "sha256": "02967a27f0fa33dd6877f4b8658b5c71395bef142ed9708ae3af83f301e133e4",
+        "bytes": 114512
+      },
+      "S205 [2013] Premetazoan genome evolution and the regulation of cell differentiatio.pdf": {
+        "sha256": "a521795b8720b68a1a12b30031ad1abe63360acae329a1c223c08a1f9fb4f13d",
+        "bytes": 1679580
+      },
+      "S51 [2005] Ancestral paralogs and pseudoparalogs and their role in the emergence.xml": {
+        "sha256": "dfb8f93fdd58723b75886d6c371d6fcd2c5807de60390fc2df47cf1461ff16c1",
+        "bytes": 146791
+      },
+      "S21 [2026] Dominant contribution of Asgard archaea to eukaryogenesis.pdf": {
+        "sha256": "fb5f7df99075c54e18cc9375e0c8cd2b82e6505e709d3561f203a0670c9b4ab3",
+        "bytes": 33573881
+      },
+      "S201 [2012] A bacterial sulfonolipid triggers multicellular development in the clo.pdf": {
+        "sha256": "e30da20db1e6110506ef7cf40f0edac86adb5a617d7379133e6510342c3085dc",
+        "bytes": 1448597
+      },
+      "S206 [2013] Regulated aggregative multicellularity in a close unicellular relative.pdf": {
+        "sha256": "49f9fa448de0b68da6b22f2a1a201f0b922707a283d218747a499dd280b1a6d4",
+        "bytes": 5274626
+      },
+      "S534 [2025] Asgard Arf GTPases can act as membrane-associating molecular switches.xml": {
+        "sha256": "4ae606113a91f61a3f070de61957fa6d0e7c1b5a8b9eec0aaba9e2c468688d21",
+        "bytes": 171511
+      },
+      "S315 [2018] Response to Martin and colleagues Mitochondria do not boost the bioene.xml": {
+        "sha256": "e0d6ae429c5630b3253ecc419eb797be02ac62128c68cdf3216f47faea8ecac6",
+        "bytes": 23303
+      },
+      "S542 [2014] Morphology phylogeny and ecology of the aphelids Aphelidea Opisthokont.xml": {
+        "sha256": "03595639f64334bd34cc13304a612179c446c7152c322d6b66c5e511fa6f4069",
+        "bytes": 117309
+      },
+      "S300 [2017] Uniparental Inheritance Promotes Adaptive Evolution in Cytoplasmic Gen.pdf": {
+        "sha256": "489c3a4f2e18aff511e64c3468d164bc79e716fa3d8213bca248a7385dbf3f9c",
+        "bytes": 5662486
+      },
+      "S40 [2020] Insights into the evolution of regulated actin dynamics via characteri.xml": {
+        "sha256": "ab128b3c0a307c4168092725bb07036d8fa9822a9ac1c79f5bb89c6059c9b701",
+        "bytes": 127135
+      },
+      "S276 [2019] The Oxymonad Genome Displays Canonical Eukaryotic Complexity in the Ab.xml": {
+        "sha256": "b86001ad16cd2b9a3b0dfb895b1fa05acbb5a8e4f7865094424fdca5eb5f557b",
+        "bytes": 276919
+      },
+      "S371 [2020] Genome expansion in early eukaryotes drove the transition from lateral.xml": {
+        "sha256": "30559b957f930d297a97efde55422caa6766b07db2e1326066f6eef7d5adf3ce",
+        "bytes": 185489
+      },
+      "S550 [2012] Lack of Csk-mediated negative regulation in a unicellular Src kinase.pdf": {
+        "sha256": "3baf829b477dc34b9f2a060f93e412b8390f88c59adf49303d8e48d1fe1943e1",
+        "bytes": 4388492
+      },
+      "S428 [2026] Endocytosed lipids induce cell aggregation via filopodia retraction in.pdf": {
+        "sha256": "81c82faf86305659536d9ab74bc1f1aa353ef75ef4bccce49530f3fcaa96066a",
+        "bytes": 10015296
+      },
+      "S411 [2017] Lynn Margulis and the endosymbiont hypothesis 50 years later.xml": {
+        "sha256": "9fbb5e1766963b80b2f1919ee8d4814deaff33f890cdf167f121d22b735c6ecc",
+        "bytes": 41838
+      },
+      "S15 [2021] Bridging the membrane lipid divide bacteria of the FCB group superphyl.xml": {
+        "sha256": "09ecbd12e32277a115a62c689bf046c9cb7c07736eec24d3e2f063222f7e7c10",
+        "bytes": 165970
+      },
+      "S559 [2017] Minimum information about a single amplified genome MISAG and a metagenome-assembled genome MIMAG of bacteria and archaea.xml": {
+        "sha256": "7fdec05ef70b15e852d21225fbcae8b0ecc24e4accdaf5075d1e976ab9295ba4",
+        "bytes": 175407
+      },
+      "S99 [2022] Coatomer in the universe of cellular complexity.xml": {
+        "sha256": "a3b85e6823ff2db5be02edac52d029e5fe82c28c6ebd021ba0290d67ea0a939b",
+        "bytes": 77562
+      },
+      "S241 [2015] Gene Loss and Error-Prone RNA Editing in the Mitochondrion of Perkinse.pdf": {
+        "sha256": "e1cde6e06cbbaaa9577b16792cc59ca6738539fb449f58d8db13ca7306088764",
+        "bytes": 4649998
+      },
+      "S142 [2004] The timing of eukaryotic evolution does a relaxed molecular clock reco.pdf": {
+        "sha256": "65278c603752a4aec0b0552ae22736f95265d84f7b5aa6737908b8fb6c311f16",
+        "bytes": 384298
+      },
+      "S511 [2016] Integration mechanism of endosymbiotic algae as organelles through sec.pdf": {
+        "sha256": "043b47b2eafa8d00d14a760194757808d449764fd654c5fb5a776708e5275ffa",
+        "bytes": 199131
+      },
+      "S449 [2012] Extraordinary genome stability in the ciliate Paramecium tetraurelia.pdf": {
+        "sha256": "aa1ef6577ab5b58b4e071f009b8c7bd5635fe171e015a1c31181bc72838a2656",
+        "bytes": 3569064
+      },
+      "S278 [2020] A cnidarian parasite of salmon Myxozoa Henneguya lacks a mitochondrial.pdf": {
+        "sha256": "742dc5740ee97fcb615ac8519b020dd3bfe824d4b35e8f280393447ddef4ac5d",
+        "bytes": 2454302
+      },
+      "S75 [2023] The Ancestral Mitotic State Closed Orthomitosis With Intranuclear Spin.xml": {
+        "sha256": "db6cb7b5c085e61b11ce6b105ba354af3fa81492e57258ce98b9950079cb4c45",
+        "bytes": 136989
+      },
+      "S190 [2002] Proterozoic ocean chemistry and evolution a bioinorganic bridge.pdf": {
+        "sha256": "4113e53f96e00658c3957f3412f36069bd8b7dc313f748f486767dc54e967fc1",
+        "bytes": 743852
+      },
+      "S515 [2018] The Cost of Metabolic Interactions in Symbioses between Insects and Ba.xml": {
+        "sha256": "d867ef69c2b4fc985b8f849fde09dc9410a7bae6eb3bc8f8519040bc8a06c8d9",
+        "bytes": 166658
+      },
+      "S262 [2016] Repeated replacement of an intrabacterial symbiont in the tripartite n.pdf": {
+        "sha256": "b1b0929d36247a98f5b245ed22c0bd0ad4be4d55e14377cbe5fcb4edb8246661",
+        "bytes": 4233734
+      },
+      "S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.pdf": {
+        "sha256": "84c6bb337fc669cd014ed02de721ba003003076dbd08d3c0b698402eb40f2d1b",
+        "bytes": 2326151
+      },
+      "S455 [2016] Cyanobacterial symbionts diverged in the late Cretaceous towards linea.pdf": {
+        "sha256": "9d9cacd3d9b26270e81fbe0fc7472cb9ba3bbab0dc811138bccbdf29ab7b844f",
+        "bytes": 1079684
+      },
+      "S34 [2020] Isolation of an archaeon at the prokaryoteeukaryote interface.xml": {
+        "sha256": "8fd3540bca6c8258d5e9511c9ed9bf602d5d24e47f7d29dd2dfb9a80756a427d",
+        "bytes": 209469
+      },
+      "S101 [2021] The metabolic network of the last bacterial common ancestor.xml": {
+        "sha256": "f5f698eedb3e721097ca31debd20e796b788ea45cdb45003976b6deb24ffd263",
+        "bytes": 154983
+      },
+      "S314 [2018] Elusive data underlying debate at the prokaryote-eukaryote divide.xml": {
+        "sha256": "d832e4d843578935e1585f4e21e98bd6e84c60bd7a8e03f84377d0ac64b1a075",
+        "bytes": 133680
+      },
+      "S350 [2017] Eukaryotic Sexual Reproduction Evoked with a Little Help from My Frien.pdf": {
+        "sha256": "b4a5d97a081fbce2d2400c02a765d510b6a490f62de2cf0f862e7719e7088c26",
+        "bytes": 806224
+      },
+      "S441 [2016] The Dynamic Regulatory Genome of Capsaspora and the Origin of Animal M.xml": {
+        "sha256": "801498d51b597e717b22221f7346438aa0b39a2efaccab48a1c7f4051e8a4aa2",
+        "bytes": 146792
+      },
+      "S103 [2023] An excavate root for the eukaryote Tree of Life.xml": {
+        "sha256": "44f4606c019d8003afe6c81b090b8e619b74496028d010711fbc874ba67dd79f",
+        "bytes": 100134
+      },
+      "S210 [2016] Environmental Breviatea harbour mutualistic Arcobacter epibionts.pdf": {
+        "sha256": "5894f3c5e91362c7a0d0f9190e3b0ce4d9c3cca1dd01a57ad31fe07540036d80",
+        "bytes": 3450918
+      },
+      "S34 [2020] Isolation of an archaeon at the prokaryoteeukaryote interface.pdf": {
+        "sha256": "c4c2934045d5dacd4d607c60983103ff4f871a16d32ba8f9c0df37e73096f04a",
+        "bytes": 6851069
+      },
+      "S551 [2026, consulta] Goldfuß Georg August.pdf": {
+        "sha256": "93bddae4824bddfe29fe136faa1916ff8c5a659da717d95955e4a953e8ae08db",
+        "bytes": 59320
+      },
+      "S222 [2019] Medusavirus a novel large DNA virus discovered from hot spring water.xml": {
+        "sha256": "e75988cae3a7e2ac62fbcc1dedf8decab9a5a51349782ab53e88d29139baa923",
+        "bytes": 236846
+      },
+      "S56 [2024] Reconstructing the last common ancestor of all eukaryotes.xml": {
+        "sha256": "81e50f55688c00380974535ab4061280f79dffb1f4d4c129049e228e43e84b16",
+        "bytes": 267867
+      },
+      "S136 [2008] Molecular phylogeny of choanoflagellates the sister group to Metazoa.pdf": {
+        "sha256": "6dd5ef6653bf1d32b2aa8539a08fb4ccabc87a5679d386bb4a7c720e9de58675",
+        "bytes": 1018634
+      },
+      "S342 [2025] Quantifying the evolutionary paths to endomembranes.xml": {
+        "sha256": "9449d9a837d44e9b27d50cfb4045b2ac374befea9464ca81fbd54538870e97f3",
+        "bytes": 116246
+      },
+      "S134 [2017] The Origin of Animal Multicellularity and Cell Differentiation.pdf": {
+        "sha256": "282c0658bd4f46d3efe095e0a4a0682ce045972c684a64b2ef6c6d890e070991",
+        "bytes": 5895239
+      },
+      "S545 [2024] Opisthokonta phylogeny - Phylogenetic Analysis.tar.gz": {
+        "sha256": "e016a6f84bd83f481c1c2d6964669970eed719d8b927be7e60efcfc537d43145",
+        "bytes": 86768013
+      },
+      "S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta.xml": {
+        "sha256": "e837def39380dd37fba8a44643df3f3f7e7cc1ae998449332ee06a02fdffb807",
+        "bytes": 276212
+      },
+      "S397 [2026] Palynomorph focus Acritarchs.pdf": {
+        "sha256": "e79beaad301a629874377dca28e1d71a38bf8fefa238193b0d2c269871ea670c",
+        "bytes": 6105242
+      },
+      "S80 [2021] Timing the origin of eukaryotic cellular complexity with ancient dupli.xml": {
+        "sha256": "5adba294323ac87090a72b9059542172f0768475f53432fffd29bb28d32e4ffe",
+        "bytes": 113369
+      },
+      "S519 [2026, consulta] Thecamonas trahens Larsen and Patterson ATCC 50062.url": {
+        "sha256": "31f5a65d2bc1a3ec3388765a7e4e0ef5ae9f87b1daed7fe366ec019c184b6eb6",
+        "bytes": 121
+      },
+      "S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml": {
+        "sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+        "bytes": 171222
+      },
+      "S156 [2017] Three-dimensional preservation of cellular and subcellular structures.xml": {
+        "sha256": "be005fadb2efa8f1e76daad83901aebe58700180e9913043f7ccf8384b6eeaaa",
+        "bytes": 224770
+      },
+      "S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta - S1 Data.pdf": {
+        "sha256": "e01f0f62c208834b8b67be8fe43692397b39607cbd25d0229beaf82b4d0b5889",
+        "bytes": 3228855
+      },
+      "S263 [2000] Genome sequence of the endocellular bacterial symbiont of aphids Buchn.pdf": {
+        "sha256": "0c966ac9c340b55062faedd5cc2c951c3f56756b082fb7b311c1bcbd938fd4c6",
+        "bytes": 314853
+      },
+      "S14 [2018] A Briefly Argued Case That Asgard Archaea Are Part of the Eukaryote Tr.xml": {
+        "sha256": "e61d783b7e0ec07318f3ddadcd8978dae0e83a2a121043e57726124efb0472b0",
+        "bytes": 85691
+      },
+      "S354 [2017] Amoebozoans Are Secretly but Ancestrally Sexual Evidence for Sex Genes.xml": {
+        "sha256": "cea5d28213d41d27dd3c6141ebe38d5fbcaf86ba336d326011b4c904f8831413",
+        "bytes": 169893
+      },
+      "S13 [2020] Multidomain ribosomal protein trees and the planctobacterial origin of.xml": {
+        "sha256": "04cbef50210dc6f7c5488f5bd7446b7756402d83f9b38efb51eb334b7f09ba2e",
+        "bytes": 1219122
+      },
+      "S341 [2023] How much ATP does it cost to build a trypanosome A theoretical study o.xml": {
+        "sha256": "f36819a4d7fcd11656c6f0c717886b90c88ef3212e0916643e21d652fd89d561",
+        "bytes": 361450
+      },
+      "S208 [2019] A unicellular relative of animals generates a layer of polarized cells.xml": {
+        "sha256": "efe3a720b4b938a1406fc524756e8d4aa06209a450c5858313e32cb2124dfc32",
+        "bytes": 246186
+      },
+      "S203 [2017] Mating in the Closest Living Relatives of Animals Is Induced by a Bact.pdf": {
+        "sha256": "393b35817ae1757f2e891212ce805762462cbc69195095b9df25bddd4537f173",
+        "bytes": 806224
+      },
+      "S36 [2023] Actin cytoskeleton and complex cell architecture in an Asgard archaeon.xml": {
+        "sha256": "cb9b852c67730672945c386452bb69ac0584604b726eaf8c9aa65e70dfdce122",
+        "bytes": 205983
+      },
+      "S330 [2019] A Mechanistic Perspective on PEX1 and PEX6 Two AAA Proteins of the Per.pdf": {
+        "sha256": "c70bd43174a3b6573efa9a0b0a39b44d9cebc058eda5d9e9f113da9ca0887781",
+        "bytes": 6866368
+      },
+      "S119 [2014] Evolution and Classification of Myosins a Paneukaryotic Whole-Genome A.pdf": {
+        "sha256": "7d610f73cb6adfd78a8433c4dd11448cf0ff88a9eb36d73f5e33a6da71b6478a",
+        "bytes": 594760
+      },
+      "S509 [2026] Signatures of gene transfer in the parallel evolution of osmotrophic s.pdf": {
+        "sha256": "28bfa77cc12046063995c3270af5738250b2db662be4ed8585d3f8bf54f04dcc",
+        "bytes": 13015713
+      },
+      "S45 [1998] The genome sequence of Rickettsia prowazekii and the origin of mitocho.pdf": {
+        "sha256": "9b395135c10b194a8b65214ceb95c02efa7df524d570bdadc03927db894ca197",
+        "bytes": 1197145
+      },
+      "S557 [2016] Extremely low oxygen concentration in mid-Proterozoic shallow seawaters.pdf": {
+        "sha256": "22d5d593e97380fd3fa93bee019ad46d0d991fc7ee333fb9f598d2b661083378",
+        "bytes": 3822857
+      },
+      "S219 [2021] Prokaryotic viperins produce diverse antiviral molecules.xml": {
+        "sha256": "fb305137d11b1aabb4fbec3f1caf5bd0095d13128a1511ef94ada6435241d0f5",
+        "bytes": 554714
+      },
+      "S76 [2021] Evidence for a syncytial origin of eukaryotes from ancestral state rec.xml": {
+        "sha256": "e13e400de8bae178c45daa2540c0127b93b6d0c1aec983d8865792d41e3d5a92",
+        "bytes": 147641
+      },
+      "S42 [2022] Asgard archaea shed light on the evolutionary origins of the eukaryoti.pdf": {
+        "sha256": "6f61b3eaf8c9c1d38ab08b76d638f5ab771d8daef676baadbac699390f2594f4",
+        "bytes": 6572234
+      },
+      "S221 [2006] The origin of introns and their role in eukaryogenesis a compromise so.xml": {
+        "sha256": "e5b527901ed17533e72d3af28f0c2268023073f251ffcff369929f0c89a74325",
+        "bytes": 203318
+      },
+      "S459 [2020] Cretaceous oceanic anoxic events prolonged by phosphorus cycle feedbac.pdf": {
+        "sha256": "90829a22983742a181deb5aa15be7afd51193f8764640bc30637abb813c46cbc",
+        "bytes": 10136656
+      },
+      "S402 [2008] EEF2 Analysis Challenges the Monophyly of Archaeplastida and Chromalve.pdf": {
+        "sha256": "12918f514cf90a1024619de359685a95a2884577313b1f7d11653b10d3f9a04c",
+        "bytes": 995198
+      },
+      "S101 [2021] The metabolic network of the last bacterial common ancestor.pdf": {
+        "sha256": "02e5e40d0c2806131243b16002d6b953747399acdb2767fe8527ae2f63505a6d",
+        "bytes": 2319194
+      },
+      "S74 [2006] Origin and evolution of the peroxisomal proteome.pdf": {
+        "sha256": "bb96f5e0e74c2851e68063946250de40bade9c86c99a6bf7f9a983b62c1f3310",
+        "bytes": 544363
+      },
+      "S207 [2018] Decoupling of Nuclear Division Cycles and Cell Size during the Coenocy.pdf": {
+        "sha256": "059d4f57f4484b34175772d23067d36e1ecf4ea4ca8e27b9b6a69156f4f07d27",
+        "bytes": 2379887
+      },
+      "S253 [2017] Dynamics of Sequestered Cryptophyte Nuclei in Mesodinium rubrum during.xml": {
+        "sha256": "136313ab3722160d5f91207257b6ec242ec0d689bac56bbc041770fbbcf3f970",
+        "bytes": 124566
+      },
+      "S26 [2025] Deep origin of eukaryotes outside Heimdallarchaeia within Asgardarchae.pdf": {
+        "sha256": "4f526fe9b6672dcd5e3915ebc08c3bc58408fec965db2f6489ef0fc79ee682ec",
+        "bytes": 2507785
+      },
+      "S04 [2013] The Protist Ribosomal Reference database PR2 a catalog of unicellular.xml": {
+        "sha256": "b9009dd5b1459cd842717714bdfe32b20dd5cbc1b9c3746d07819a731984bf43",
+        "bytes": 94795
+      },
+      "S174 [2019] Putative sponge biomarkers in unicellular Rhizaria question an early r.pdf": {
+        "sha256": "d7c317309d77b84be7ef70d97a99e0447ac9695f2c2a981e9a770dd89bcbbcd5",
+        "bytes": 844615
+      },
+      "S88 [2014] An inside-out origin for the eukaryotic cell.pdf": {
+        "sha256": "8375036d08c00a4dbf5a16302b7007a7ebdc10846a8a8fb808b7cbe89124be57",
+        "bytes": 1801161
+      },
+      "S254 [2019] Genes functioned in kleptoplastids of Dinophysis are derived from hapt.pdf": {
+        "sha256": "22a78fd4b6b4b23b4de64d2bfca53ec94f0ee411554d7e03be6fadda1a02e489",
+        "bytes": 4042465
+      },
+      "S133 [2024] Ichthyosporea a window into the origin of animals.pdf": {
+        "sha256": "6af8ca3b8568ed2589875b9eff434f9de40c35434a7577a98d2e604621b99f00",
+        "bytes": 2757979
+      },
+      "S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.pdf": {
+        "sha256": "79a8ff0a2d2ff78bc54dd7042e1f9945177b768cd548f13f16b42b9566193bf5",
+        "bytes": 733656
+      },
+      "S548 [2026] Environmental phylogenetics — SI Appendix publicado.pdf": {
+        "sha256": "90df70ce0afb06f33c4b8cc4f553cd29ca9e7474b0c6620f027dd0dc9aba6b83",
+        "bytes": 12009440
+      },
+      "S346 [2008] An Expanded Inventory of Conserved Meiotic Genes Provides Evidence for.xml": {
+        "sha256": "074853ba35fbcbcbc8523fc687ff291269a3182135fb84e7617583cecab60ea3",
+        "bytes": 263621
+      },
+      "S64 [2011] The phylogenomic analysis of the anaphase promoting complex and its ta.pdf": {
+        "sha256": "f7f040a976d04181819c3511bc142d639e2694994bb82a5ef642b94afb85ef86",
+        "bytes": 729161
+      },
+      "S209 [2015] Complex transcriptional regulation and independent evolution of fungal.xml": {
+        "sha256": "65f1b5dd5dfa0de1ba1043010f92cef531a5b2fe19a62154b4bbec0af67e419b",
+        "bytes": 278278
+      },
+      "S530 [2021] Reconciling Asgardarchaeota Phylogenetic Proximity to Eukaryotes and P.xml": {
+        "sha256": "9a0c65cf0857596efc3601af5c47549513eaf26720e396a3138c21ddf8961dac",
+        "bytes": 155907
+      },
+      "S177 [2018] Integrated genomic and fossil evidence illuminates lifes early evoluti.xml": {
+        "sha256": "2055bbc9926026c77915730bddc4a9afc16b57e122c605f3ca22d64f07cbe919",
+        "bytes": 97795
+      },
+      "S79 [2022] Ancestral State Reconstructions Trace Mitochondria But Not Phagocytosi.xml": {
+        "sha256": "14d1b267c6b488650534a430ecbdc246c164630ecaeeadd5debec4ae06fcef96",
+        "bytes": 141048
+      },
+      "S552 [2022] Global patterns and rates of habitat transitions across the eukaryotic.xml": {
+        "sha256": "0e1b2c66356d2e86c7c6a4d58ddc522ca87451f66266f8edf94e4c48cedf3bb2",
+        "bytes": 200081
+      },
+      "S277 [2024] Characterization of the SUF FeS cluster synthesis machinery in the ami.pdf": {
+        "sha256": "8db5ec0b34a1e3ca006a4a296f5ef8424bbd4d054655bfd553e800651b71c542",
+        "bytes": 701247
+      },
+      "S473 [2013] Pandoraviruses amoeba viruses with genomes up to 25 Mb reaching that o.pdf": {
+        "sha256": "e76daf15fc4ab144363dfe8653f1652ba785ac7cfcafb8034b9cd97445208d72",
+        "bytes": 2362365
+      },
+      "S394 [2011] How stands the Tree of Life a century and a half after The Origin.xml": {
+        "sha256": "1fa95fff027eea22718f627fc7182d060e3e7aae0106c20f02f32953ba7f068c",
+        "bytes": 187923
+      },
+      "S223 [2018] Multiple evolutionary origins of giant viruses.pdf": {
+        "sha256": "2df3b0cb8af779c8943629190ca00bdb9b4fd3aa3509a8587b04cbb725ea9df4",
+        "bytes": 3904554
+      },
+      "S282 [2004] Endosymbiotic gene transfer organelle genomes forge eukaryotic chromos.pdf": {
+        "sha256": "249c74e98b6c3c7679439db0b1093033a9a33a29e863faf8ed4b57b3aea0107e",
+        "bytes": 883570
+      },
+      "S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml": {
+        "sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+        "bytes": 171130
+      },
+      "S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": {
+        "sha256": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768",
+        "bytes": 374804
+      },
+      "S16 [2018] Converting Escherichia coli into an archaebacterium with a hybrid hete.xml": {
+        "sha256": "633149bc3bda476baacd57e72a85cdade10c8f0b4fbd657998bcda04fad4b348",
+        "bytes": 99436
+      },
+      "S426 [2013] Development of ichthyosporeans sheds light on the origin of metazoan m.pdf": {
+        "sha256": "fe27fa07c0eb3e70013c5890e68a11fb2d5b959890619547410ca5ef47d61f45",
+        "bytes": 1356538
+      },
+      "S173 [2016] Sterol and genomic analyses validate the sponge biomarker hypothesis.pdf": {
+        "sha256": "7ddda6580d98183518f1aab5aaaf411536966ab3481f2032051495a5e7ebdf50",
+        "bytes": 174518
+      },
+      "S452 [2021] Low base-substitution mutation rate and predominance of insertion-dele.xml": {
+        "sha256": "586256aa7babb91b264f503ba49cca36a8a4c000bd72cecf9d09a587d789d576",
+        "bytes": 91781
+      },
+      "S336 [2005] Cell Adhesion Strengthening Contributions of Adhesive Area Integrin Bi.pdf": {
+        "sha256": "06932b30399ebdda2d19d5fa00e64b6b444daa531452d0681071b4ce0513174b",
+        "bytes": 565098
+      },
+      "S328 [2008] Creatine kinase-mediated ATP supply fuels actin-based events in phagoc.xml": {
+        "sha256": "b87a6c4feecba53b56b88b0a7c10781c58360fcbcf20d9e0955afa78f3cbd9f0",
+        "bytes": 140506
+      },
+      "S332 [2023] Structure of the peroxisomal Pex1Pex6 ATPase complex bound to a substr.pdf": {
+        "sha256": "877a9bf575add674b21ab84000d4c5e5b8976cfcf193149b9654e81831bbf7bd",
+        "bytes": 9217744
+      },
+      "S164 [2019] The Early Ediacaran Caveasphaera Foreshadows the Evolutionary Origin o.pdf": {
+        "sha256": "6970af83fae4aadbd0b5e01cfed17f5152942b4d1897427b4473c63fbd1e5230",
+        "bytes": 78668311
+      },
+      "S317 [2020] Revisiting the hypothesis of an energetic barrier to genome complexity.pdf": {
+        "sha256": "23ce6af9edc888dcf87dc2a0fc27ba751393e8c50976efb88b5ac4580516d93a",
+        "bytes": 411884
+      },
+      "S297 [2017] Evolutionary conservation and in vitro reconstitution of microsporidia.xml": {
+        "sha256": "6a340db93a8136ef06be2c967dac6fe18e192c3433d711012af7e47586affc79",
+        "bytes": 144194
+      },
+      "S140 [2021] A molecular timescale for eukaryote evolution with implications for th.pdf": {
+        "sha256": "d89cc0bb268b04cf0f038c01cddddc11609b98830cf53c915ee9133982adcc6d",
+        "bytes": 2266682
+      },
+      "S03 [2022] EukProt a database of genome-scale predicted proteins across the diver.pdf": {
+        "sha256": "f6a36ae921a4ad63503b31538d73063545ae0a3fb9099d9a08e4cfafa2a6c2cf",
+        "bytes": 2138609
+      },
+      "S536 [2024] Asgard archaea modulate potential methanogenesis substrates in wetland.pdf": {
+        "sha256": "5a463a7281099d7000e116ed9acb6f09faf66d048a38f7f52a2a242681189f25",
+        "bytes": 4434814
+      },
+      "S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml": {
+        "sha256": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+        "bytes": 108835
+      },
+      "S423 [2008] Understanding Evolutionary Trees.pdf": {
+        "sha256": "e73b562f99675c36d7b257a7c17aa2754b26cc36447ad1e72a2ece4cd4a6ad97",
+        "bytes": 1038754
+      },
+      "S179 [2011] A late origin of the extant eukaryotic diversity divergence time estim.pdf": {
+        "sha256": "5d4ea743e447fb38008769d3d2a56060ed240f7aef7793b6bb83d77fa9e977fc",
+        "bytes": 1149264
+      },
+      "S537 [2024] Evolution of optimal growth temperature in Asgard archaea inferred fro.xml": {
+        "sha256": "a762bcb8f855969fd5c7ef25ce1774efb7dd3da40f7a6b521e2f778e3f80929d",
+        "bytes": 98217
+      },
+      "S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta - Supplementary Table S7.xlsx": {
+        "sha256": "8f5ec40a0278fa318ca0bc1bd1c66c898534d9654b92a1be431617c4c9ae5adb",
+        "bytes": 40484
+      },
+      "S53 [2024] The Unfinished Reconstructed Nature of the Last Universal Common Ances.xml": {
+        "sha256": "c5cd020758220b40d3cff161e1bd3d20e1fa5d648289409fa4f3abeb8008fc38",
+        "bytes": 118278
+      },
+      "S41 [2020] Coevolution of eukaryote-like Vps4 and ESCRT-III subunits in the Asgar.xml": {
+        "sha256": "a772024e8882d979653abb8f3a0d1ab63e720336f23efca97a9ffac648609965",
+        "bytes": 154704
+      },
+      "S72 [2017] The origin of mitochondrial cristae from alphaproteobacteria.pdf": {
+        "sha256": "b199204f393978d3767da5bff002e35ecb448448cae4267a6a06cdb0fcc9a130",
+        "bytes": 817948
+      },
+      "S127 [2022] Divergent genomic trajectories predate the origin of animals and fungi.pdf": {
+        "sha256": "74802dc836322ed2ba0e673f788cff594d02927dd53b85a8413e1ceb444aa3fe",
+        "bytes": 34340405
+      },
+      "S553 [1983] The source of oxygen in the reaction catalysed by collagen lysyl hydro.pdf": {
+        "sha256": "d5ef24be08cf68df318e5906246683b2bbe3da2e2bae04d5d8766b94a0183226",
+        "bytes": 806746
+      },
+      "S90 [2019] Proposal of the reverse flow model for the origin of the eukaryotic ce.pdf": {
+        "sha256": "be6e61ef4195bea9ad88c38ffde1bd90fd94ee034c23a703fb347513b6b5ff02",
+        "bytes": 1691400
+      },
+      "S536 [2024] Asgard archaea modulate potential methanogenesis substrates in wetland.xml": {
+        "sha256": "94f48901dbec5562fa4a7df044456bd3f427d75454326828d47b6cfbb3165f1c",
+        "bytes": 233788
+      },
+      "S470 [2021] The Mastigamoeba balamuthi Genome and the Nature of the Free-Living An.pdf": {
+        "sha256": "3c97def319c10f43f557f91753bb8617e9e8d75c4af6ceac5b82685ba2f093d3",
+        "bytes": 2474057
+      },
+      "S407 [2009] Eumycetozoa Amoebozoa SSU-rDNA phylogeny of protosteloid slime molds a.pdf": {
+        "sha256": "c1ec7b3853c518b36df581f640a2b8fe7e91f74e8f1ea06f30ab75a55d706423",
+        "bytes": 554002
+      },
+      "S458 [2023] Diversity of simple multicellular eukaryotes 45 independent cases and.pdf": {
+        "sha256": "ca85c49c7bc243a0d6f50765b729b8cdc4829536a6cd4b866fc7b8246373e9c9",
+        "bytes": 3650337
+      },
+      "S371 [2020] Genome expansion in early eukaryotes drove the transition from lateral.pdf": {
+        "sha256": "ae833c4e9cc6b681bfb62a2d89602521fa4c9b98e473b3986cdfa870f29d1a85",
+        "bytes": 2597875
+      },
+      "S353 [2018] Comparative Genomics Supports Sex and Meiosis in Diverse Amoebozoa.xml": {
+        "sha256": "96e5a6e3a2ab5e10ad0a28e919cfcdf015d6ba4c104248fc329c468935cae8d8",
+        "bytes": 144562
+      },
+      "S68 [2022] The spread of the first introns in proto-eukaryotic paralogs.xml": {
+        "sha256": "22062dcd1e85286bd7696baca8147bca231486dc2af3acda676c9e1faae5adcf",
+        "bytes": 115281
+      },
+      "S296 [2016] No evidence for extensive horizontal gene transfer in the genome of th.pdf": {
+        "sha256": "1b6271c98a3515b26f8b8be56b2a3567d611253c17274df35861127bad2d54fe",
+        "bytes": 14493111
+      },
+      "S484 [2022] Anaerobic derivates of mitochondria and peroxisomes in the free-living.xml": {
+        "sha256": "ba9962e6d4496232bf39421ba2c263e84ea8194481a5bca170e5b1187780a65d",
+        "bytes": 172223
+      },
+      "S16 [2018] Converting Escherichia coli into an archaebacterium with a hybrid hete.pdf": {
+        "sha256": "30e0ec180b6d57c9df209a2910a63da0c4657582243422d0e82f370c37b123f8",
+        "bytes": 1445895
+      },
+      "S273 [2021] Inheritance of the reduced mitochondria of Giardia intestinalis.xml": {
+        "sha256": "a45c91e4d3f0d9b32e9a0210a0358a8522c95e2c512fda0e66499fc20c144570",
+        "bytes": 184366
+      },
+      "S25 [2023] Inference and reconstruction of the heimdallarchaeial ancestry of euka.pdf": {
+        "sha256": "91a3fc4356991e4cfc4c69fc1ef91bd91cf65afc4580f5d235b16e7e1c751dca",
+        "bytes": 5042160
+      },
+      "S154 [2024] 163-billion-year-old multicellular eukaryotes from the Chuanlinggou Fo.xml": {
+        "sha256": "7fe08873fb0bb125effa7f4c12057d4d9df044a5946d1b1394b381da79b1580c",
+        "bytes": 150453
+      },
+      "S409 [2013] Current usage of symbiosis and associated terminology.pdf": {
+        "sha256": "7757be3aae0e6447aa1fefb14a8ae582b882ee6ae77ba80f5ea8b50af11a9716",
+        "bytes": 2432652
+      },
+      "S184 [2021] A persistently low level of atmospheric oxygen in Earths middle age.pdf": {
+        "sha256": "72cad531c3227b1485ae63ba6a64ea03aef1cdcdf75434c4a22b7f5effb6c718",
+        "bytes": 3010665
+      },
+      "S331 [2018] The peroxisomal AAA-ATPase Pex1Pex6 unfolds substrates by processive t.pdf": {
+        "sha256": "64cf9368f88a2ad8940b3880c160a15f1a9957d245e86933ac2a77b504745c48",
+        "bytes": 3011190
+      },
+      "S132 [2020] Insights into the origin of metazoan multicellularity from predatory u.pdf": {
+        "sha256": "81da28ec29e5a9acf32ed9cbc4fdb0d7d1bb63973b81c49c19a41adfd9243636",
+        "bytes": 9369903
+      },
+      "S223 [2018] Multiple evolutionary origins of giant viruses.xml": {
+        "sha256": "f1ee2adf8c267716827cd1863bf78b3b9642d6c5a379a94d4425370ebcbdb09e",
+        "bytes": 121298
+      },
+      "S346 [2008] An Expanded Inventory of Conserved Meiotic Genes Provides Evidence for.pdf": {
+        "sha256": "3d7a9f140c3646f190a79a8975706802562a960f012bbfe924e10330daf3a365",
+        "bytes": 437066
+      },
+      "S59 [2026] Gene ancestries reveal diverse microbial associations during eukaryoge.pdf": {
+        "sha256": "965fa887358b7a5e49d94ecf19fd9fa7cfd93084dadab5f4e4b18128db5f8676",
+        "bytes": 12454590
+      },
+      "S33 [2021] Newly discovered Asgard archaea Hermodarchaeota potentially degrade al.pdf": {
+        "sha256": "d6f7a691ff33dec8446fd69336d632536fc503c7ac0cdb912020850101d769b2",
+        "bytes": 4648281
+      },
+      "S48 [2022] Site-and-branch-heterogeneous analyses of an expanded dataset favour m.pdf": {
+        "sha256": "7a9e0b6f3916ad1e50e6257d1c1032a4135ccf2ba5aefc76a073b8071fc7ca65",
+        "bytes": 1754578
+      },
+      "S329 [1982] Energy metabolism of human neutrophils during phagocytosis.pdf": {
+        "sha256": "082b774fbc20a72220c3ba6a522e3f981eaefc23ee3de2251a2659da2ae528f8",
+        "bytes": 1489509
+      },
+      "S05 [2017] UniEuk Time to Speak a Common Language in Protistology.xml": {
+        "sha256": "04863e168a6c6929c2ca062c3166af8e55c2fef23783a1371c1593f067040906",
+        "bytes": 67437
+      },
+      "S37 [2025] Peculiar morphology of Asgard archaeal cells close to the prokaryote-e.xml": {
+        "sha256": "2a13a26acbe8ab3ce5631e61203a8c7c93715962d20956d05c963b18fde7e67c",
+        "bytes": 45660
+      },
+      "S29 [2019] Asgard archaea capable of anaerobic hydrocarbon cycling.xml": {
+        "sha256": "9c093ff9f6ac183782f259cd43804dcf3d1542760a9d9624973ae9a4272bb0e5",
+        "bytes": 144102
+      },
+      "S206 [2013] Regulated aggregative multicellularity in a close unicellular relative.xml": {
+        "sha256": "01a5e25c78ba4b9c9b3f69ac052b8cf91c9ea338bae14219b25ba849c6adbe42",
+        "bytes": 176274
+      },
+      "S448 [2012] Whole Genome Sequencing of Mutation Accumulation Lines Reveals a Low M.pdf": {
+        "sha256": "94ffcd3930c75975bec927a5423e51695531be09a12c93637e6167bfc4f2179c",
+        "bytes": 390251
+      },
+      "S515 [2018] The Cost of Metabolic Interactions in Symbioses between Insects and Ba.pdf": {
+        "sha256": "1f54781a141c484008b25c69e0ca69f941a0408e58fb87095bc8f31cf4a484f6",
+        "bytes": 3049567
+      },
+      "S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry.pdf": {
+        "sha256": "5d96bee75ff2ff6c52ea0ab0403f8f414181de7772cafdcf949ebc9b1e18dd7c",
+        "bytes": 21687972
+      },
+      "S334 [2024] Life-cycle-coupled evolution of mitosis in close relatives of animals.pdf": {
+        "sha256": "6deb417a2d2e324b5c9ee1628ac80506bcd8c4ed68a08306f6e8a892a7a59012",
+        "bytes": 12824421
+      },
+      "S537 [2024] Evolution of optimal growth temperature in Asgard archaea inferred fro.pdf": {
+        "sha256": "903142c2c9ddca044d87f329ca8aa0d80b827797ad56cd5e664d079b303b39cf",
+        "bytes": 1025828
+      },
+      "S23 [2017] Asgard archaea illuminate the origin of eukaryotic cellular complexity.pdf": {
+        "sha256": "4be391e4ab5b920037b8c813d0ca6552a250b59ddc8cf820cfd4249e5fd4986e",
+        "bytes": 242681
+      },
+      "S500 [2023] First putative occurrence in the fossil record of choanoflagellates th.pdf": {
+        "sha256": "6317fb168759b74006bc21539e39009a63c9e212101dcced9268fe05eea9dee9",
+        "bytes": 4284688
+      },
+      "S141 [2014] On the age of eukaryotes evaluating evidence from fossils and molecula.pdf": {
+        "sha256": "8a82e2e3d761a7dc2fce149e7c3408d7aec93310c701aa85b671ae03f8e3925a",
+        "bytes": 811545
+      },
+      "S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf": {
+        "sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+        "bytes": 9880777
+      },
+      "S298 [2009] Mutational Meltdown in Primary Endosymbionts Selection Limits Mullers.xml": {
+        "sha256": "2c614ddf5041f6abffc3d0ccd3c2d5241c4d9b45a6845f243e0785c764f5ade4",
+        "bytes": 130917
+      },
+      "S18 [1998] Genomic evidence for two functionally distinct gene classes.pdf": {
+        "sha256": "f6b116570c79845639c581f9a13e60b2d46eec732022034813bde9d44cf4f545",
+        "bytes": 336429
+      },
+      "S61 [2010] Comparative genomic evidence for a complete nuclear pore complex in th.pdf": {
+        "sha256": "62a7e0ec678ea1cfb7472dd4200ec50fcf9ffbacaa2f6077066da69d82e8aad5",
+        "bytes": 584641
+      },
+      "S324 [2022] Flagellar energy costs across the tree of life.xml": {
+        "sha256": "d6c770984ab5fe0d41363960ca01fbfc98a4bd1bf201fd2d7418aba758b6f8b2",
+        "bytes": 249096
+      },
+      "S68 [2022] The spread of the first introns in proto-eukaryotic paralogs.pdf": {
+        "sha256": "3bfbcbd937f156707734ad6111567dbfba941e31ac152ed46595274bcfac0564",
+        "bytes": 1074180
+      },
+      "S183 [2016] Sufficient oxygen for animal respiration 1400 million years ago.pdf": {
+        "sha256": "a22957cacc985888cf225a512bf3c1d648a6bc6bb693d9cb9cacf07dcf1ead19",
+        "bytes": 1076273
+      },
+      "S372 [2025] Meiosis-associated expression patterns during starvation-induced cell.pdf": {
+        "sha256": "af6747cb839edda60043c9fcfcfd8add5653e39f8b0f1986826a8c5393d0a874",
+        "bytes": 6083244
+      },
+      "S501 [2025] Oxygen isotope composition of Mesoproterozoic 1360 Ma seawater constra.xml": {
+        "sha256": "5ff01dfdd81afbc7504844049ff377a74858c8ce54d8bb615a14ff70b70a0b98",
+        "bytes": 183745
+      },
+      "S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.pdf": {
+        "sha256": "0ccafe920a53724d984cde4102b105962c4d9c837d99e903955df68f33ec24a5",
+        "bytes": 1647579
+      },
+      "S535 [2025] An Asgard archaeon with internal membrane compartments.pdf": {
+        "sha256": "c853e0c098e468379c455bf027b49180fe4cd89574fd64377b5dd5413aef45d4",
+        "bytes": 32289633
+      },
+      "S150 [2017] Micropaleontology of the lower Mesoproterozoic Roper Group Australia a.pdf": {
+        "sha256": "a8bd121d6dfad4e86a760a014c7772d104098901e602252009d0269c1acad90d",
+        "bytes": 3471587
+      },
+      "S162 [2021] A possible billion-year-old holozoan with differentiated multicellular.pdf": {
+        "sha256": "b71f0a76d46e1e11b98b2eca529c5858389cd6d654342af137f853c30769d00f",
+        "bytes": 3418968
+      },
+      "S256 [2013] Genome Analysis of Elysia chlorotica Egg DNA Provides No Evidence for.xml": {
+        "sha256": "e6feb45834db7ba8e6ae1b183c06fae6f609c419ce0fa3178844e3f32a598bd0",
+        "bytes": 97090
+      },
+      "S248 [2013] Discovery of an Endosymbiotic Nitrogen-Fixing Cyanobacterium UCYN-A in.xml": {
+        "sha256": "7e8a07e81c2deb1fd6024f2fedbe932dfcf4820d4a86abcfc169881f2683f4f2",
+        "bytes": 121126
+      },
+      "S62 [2011] The evolution of the cytoskeleton.xml": {
+        "sha256": "21b76da596607c3d90d3cf0a9d9b41967797aea14672f1ec9a7fa57619fe7de9",
+        "bytes": 208944
+      },
+      "S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml": {
+        "sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+        "bytes": 223258
+      },
+      "S447 [2018] Rapid and efficient genetic engineering of both wild type and axenic s.pdf": {
+        "sha256": "f95050f82429d23295e9d23c5ef36f530594010ad9846249042c293e7529fe18",
+        "bytes": 5409591
+      },
+      "S87 [2020] The Syntrophy hypothesis for the origin of eukaryotes revisited.pdf": {
+        "sha256": "2b213bb1d843f0e24d0b1a72b95fa514d0e73fb3a38c73715f0755dc876186a5",
+        "bytes": 1640376
+      },
+      "S317 [2020] Revisiting the hypothesis of an energetic barrier to genome complexity.xml": {
+        "sha256": "b316c3729938fdcadcb67566adaf21ade2f1b49aae92f9bd79a477c539bf6587",
+        "bytes": 94303
+      },
+      "S351 [2020] Synergistic Cues from Diverse Bacteria Enhance Multicellular Developme.pdf": {
+        "sha256": "d9532890d6d156efe96aa49a5080663fd07b87550257ac99e8f17d04b3803571",
+        "bytes": 5168509
+      },
+      "S416 [2023] Norms of evidence in the classification of living fossils.pdf": {
+        "sha256": "799c385de0e3f961b906a912d315c1478f64ed2c00faf3750e305db82d2fd571",
+        "bytes": 2414471
+      },
+      "S450 [2016] Low Base-Substitution Mutation Rate in the Germline Genome of the Cili.xml": {
+        "sha256": "da9153a304926e86c3d1d2b7426a06066bcaa069b428ae742a1328245716aefd",
+        "bytes": 144256
+      },
+      "S285 [2017] Regulation of Small Mitochondrial DNA Replicative Advantage by Ribonuc.xml": {
+        "sha256": "fc746100a8473fda5148f7525affe273ee17d5a9bd70e1ed9f53930dc020080c",
+        "bytes": 113638
+      },
+      "S209 [2015] Complex transcriptional regulation and independent evolution of fungal.pdf": {
+        "sha256": "73caff421ee74a3ba0779ff42b7c7a9e6a1b136cb57f4bc315635b5cfc32e222",
+        "bytes": 4138960
+      },
+      "S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.pdf": {
+        "sha256": "da1b031d59d353ce033efef78dd8d88968e8f6f1bc699937a6bc726fa7565608",
+        "bytes": 4624074
+      },
+      "S245 [2019] Evolutionary dynamics of the chromatophore genome in three photosynthe.pdf": {
+        "sha256": "c28ef566cac6c839d1f686749c87458b141c2176b1138025c380fd5995bb163a",
+        "bytes": 2153500
+      },
+      "S74 [2006] Origin and evolution of the peroxisomal proteome.xml": {
+        "sha256": "e92341a8c3f73139d14491bfe33f06cdcbbcf3ccf44182cd65d6173aa21792f5",
+        "bytes": 118977
+      },
+      "S14 [2018] A Briefly Argued Case That Asgard Archaea Are Part of the Eukaryote Tr.pdf": {
+        "sha256": "72f544655b3ac419972e18e952c2b27ccaa85abe7cf5dded8326681bc67e1062",
+        "bytes": 1180635
+      },
+      "S63 [2009] A complex cell division machinery was present in the last common ances.pdf": {
+        "sha256": "a58f88235401abfd9666df3d2480cd36ef2fa427069dbc7eb8fec38e141b748d",
+        "bytes": 756328
+      },
+      "S28 [2016] Genomic reconstruction of a novel deeply branched sediment archaeal ph.pdf": {
+        "sha256": "545b139fc4b7038c2bb288dc50c399217079c321ab86e46ab4238dbeee5d958f",
+        "bytes": 495070
+      },
+      "S470 [2021] The Mastigamoeba balamuthi Genome and the Nature of the Free-Living An.xml": {
+        "sha256": "ab73d04dca75658c780bc675980f709f9d30e6158074e5680b497ab404a25438",
+        "bytes": 232357
+      },
+      "S33 [2021] Newly discovered Asgard archaea Hermodarchaeota potentially degrade al.xml": {
+        "sha256": "de2d9a9a449e26de7c86b29841b09982afeedaeaa0ce1e75db42dc1965d40bfe",
+        "bytes": 179126
+      },
+      "S281 [2024] Mitochondrial genomes revisited why do different lineages retain diffe.xml": {
+        "sha256": "d7c075167b539b1441f38283b30b03e09a3c0e564b9a1bf660632446a2e16597",
+        "bytes": 200542
+      },
+      "S486 [2026] An adhesion GPCR regulates cell adhesion and mating in the closest liv.pdf": {
+        "sha256": "1bf709913251b3923fc0e9029919b4d4d5c3ce1fe999cc5f36560a928f3fb192",
+        "bytes": 24605764
+      },
+      "S487 [2023] Correction How much ATP does it cost to build a trypanosome.pdf": {
+        "sha256": "a95b71e0ba76e5ad5109f53520c82c4ee88ce2c1db32e89b33110135e0d4f460",
+        "bytes": 289027
+      },
+      "S455 [2016] Cyanobacterial symbionts diverged in the late Cretaceous towards linea.xml": {
+        "sha256": "0918422bf8b62924912c4137f20dd288e19e88fd810c9f8a2d4ce9e7ad980722",
+        "bytes": 128592
+      },
+      "S304 [2019] A genomic survey of transposable elements in the choanoflagellate Salp.xml": {
+        "sha256": "7fe9232ecc494457c20c00efaeb5f3a0e3f29de904d0286549dedb9124d9c1e4",
+        "bytes": 189705
+      },
+      "S120 [2009] Analysis of Rare Genomic Changes Does Not Support the UnikontBikont Ph.pdf": {
+        "sha256": "854986aaa7ec2b6cf614c1d0d50b5823e0bc0b32a7d6044ee1f26645484f0234",
+        "bytes": 1004442
+      },
+      "S424 [2026] Clonal-aggregative multicellularity tuned by salinity in a choanoflage.pdf": {
+        "sha256": "86b423cce7711f29969de732e881748f0be788da2ba608660b8e2300d8b77697",
+        "bytes": 45676610
+      },
+      "S29 [2019] Asgard archaea capable of anaerobic hydrocarbon cycling.pdf": {
+        "sha256": "45b98c07eec22e074db9000fe3991aa7efa469a5f6596a8a23f719236ff1f211",
+        "bytes": 1793217
+      },
+      "S556 [2024] Sustained increases in atmospheric oxygen and marine productivity in t.pdf": {
+        "sha256": "8b6ffa2906687fb64663b6a1c337b42ad08272b6266968b353a138db7453a274",
+        "bytes": 7234026
+      },
+      "S380 [2026] International Code of Nomenclature of Prokaryotes Prokaryotic Code 202.pdf": {
+        "sha256": "a30fad9225317b00190c81a34087f68360f309e56d58fdd35b4ec4bc987af967",
+        "bytes": 5334888
+      },
+      "S289 [2025] Testing the Mothers Curse Hypothesis in Human Mitochondrial Genome Evo.xml": {
+        "sha256": "6d460f9e9c2529fcfdba87358519fe9aa47d1fdc9e6c85faa441aa7ac11d982b",
+        "bytes": 122392
+      },
+      "S115 [2018] Combined morphological and phylogenomic re-examination of malawimonads.pdf": {
+        "sha256": "13407737aed5ac6f6cb217a2eb293f9545f4ec4626293d7202558cbf1929ecfb",
+        "bytes": 1632167
+      },
+      "S58 [2026] Dated gene duplications elucidate the evolutionary assembly of eukaryo.pdf": {
+        "sha256": "fc7bd50f404620f052d0a35d548a17f65a472c51d4d3d74ee541ed95bc9efa54",
+        "bytes": 5016031
+      },
+      "S298 [2009] Mutational Meltdown in Primary Endosymbionts Selection Limits Mullers.pdf": {
+        "sha256": "0ce7f43edbc7a0401a1f1d78ec8decb1b6a4b3e3e1a40cf7482eab62ea6dd10a",
+        "bytes": 417466
+      },
+      "S41 [2020] Coevolution of eukaryote-like Vps4 and ESCRT-III subunits in the Asgar.pdf": {
+        "sha256": "21d565eb56341007ddf9ad4dca6bc7ac46d8b8295e492534ffa10675c345b0bb",
+        "bytes": 2397725
+      },
+      "S94 [2020] Evidence supporting a viral origin of the eukaryotic nucleus.pdf": {
+        "sha256": "f40e4ad5377d8a86be4cd6c8098d5338485b71f8faa1a97ff00d1cd904f3f2e0",
+        "bytes": 1636727
+      },
+      "S82 [2016] Late acquisition of mitochondria by a host with chimaeric prokaryotic.xml": {
+        "sha256": "79964d4c4ae650689a80c8261585a99c6c51e131bd69ff7f1a5eafe0b756c07e",
+        "bytes": 111913
+      },
+      "S50 [2026] Asgardarchaeota nomenclatural record and child taxa.url": {
+        "sha256": "6e3d39c714fcdef80bffb2a9fcb159a2a9d1ac73824b032eb2b196b36e727d11",
+        "bytes": 123
+      },
+      "S210 [2016] Environmental Breviatea harbour mutualistic Arcobacter epibionts.xml": {
+        "sha256": "4a60a9aebeb54884cdb066dc68574cb33e9fd5e53cc89e161b193aa29e7e4072",
+        "bytes": 155030
+      },
+      "S35 [2024] Promethearchaeum syntrophicum gen nov sp nov an anaerobic obligately s.xml": {
+        "sha256": "1d31fe86a5df35ae214b4bbbc477a82c81c6a2bf746f089e6498cfe38f41700c",
+        "bytes": 122046
+      },
+      "S228 [2017] The evolution of host-symbiont dependence.xml": {
+        "sha256": "e96aa10b60d9a4d11e5a43c77638267cff62ca00d8a386dc17e37b4043745857",
+        "bytes": 89936
+      },
+      "S38 [2026] An Asgard archaeon from a modern analog of ancient microbial mats.pdf": {
+        "sha256": "e5d8c8307da5273ddd74951f4fea08acd83a4e41586816ce8d67f9ef296901a0",
+        "bytes": 1637801
+      },
+      "S293 [2013] Horizontal gene transfer in eukaryotes the weak-link model.xml": {
+        "sha256": "7d6b6f80989ff205b12caebdb273c8a2895c6db93cc3a32366bd9ac19465f1d0",
+        "bytes": 132796
+      },
+      "S241 [2015] Gene Loss and Error-Prone RNA Editing in the Mitochondrion of Perkinse.xml": {
+        "sha256": "0e154230435fc1158b915625a8658003962ffc096628b51612fa0b2588a9f500",
+        "bytes": 189432
+      },
+      "S53 [2024] The Unfinished Reconstructed Nature of the Last Universal Common Ances.pdf": {
+        "sha256": "3b5c21d6111bf41ebf08d11413fd7fface6bea19f7ce4eb0fd0dc438e3cc2334",
+        "bytes": 1208118
+      },
+      "S299 [2016] Defying Mullers Ratchet Ancient Heritable Endobacteria Escape Extincti.xml": {
+        "sha256": "d78f9c14fc3288c4b7703e674de9dab58476ed3b372316e52e1dc221713f9c7f",
+        "bytes": 123312
+      },
+      "S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.pdf": {
+        "sha256": "91ea1ace12663e38718521f7688f1fa625448b93f4621295f739560bb1170561",
+        "bytes": 4815256
+      },
+      ".resolucion.json": {
+        "sha256": "4e3fdc047d979f1d8c8024fe1b1f81f2167cc166a42bcfdf81c986cd7f9359bc",
+        "bytes": 72757
+      },
+      "S119 [2014] Evolution and Classification of Myosins a Paneukaryotic Whole-Genome A.xml": {
+        "sha256": "658c5152cee5ee65dcd5f4e5a9dc1cbc73f7f06e2e8f11b33a56bd288a2d20cf",
+        "bytes": 144058
+      },
+      "S05 [2017] UniEuk Time to Speak a Common Language in Protistology.pdf": {
+        "sha256": "9329ed279ed0d4761885d338f46aeefb6135ef4ed652e25d2fc65b05f1cedae9",
+        "bytes": 705138
+      },
+      "S245 [2019] Evolutionary dynamics of the chromatophore genome in three photosynthe.xml": {
+        "sha256": "72a63d67b3963d54d1f7152bfc6f9353d70d581bb0c333c4b4e45c3a3655aab7",
+        "bytes": 133316
+      },
+      "S112 [2017] Between a Pod and a Hard Test The Deep Evolution of Amoebozoa.xml": {
+        "sha256": "6c32cb81f4b81aa38bb5f3e190c5896ad2544eaf3691129317403bc9b1d7dd95",
+        "bytes": 149188
+      },
+      "S147 [2008] The genome of the choanoflagellate Monosiga brevicollis and the origin.pdf": {
+        "sha256": "acef498167104906e31fc6169e183837b9692ce6de5df2e29f6e0240ed700910",
+        "bytes": 423936
+      },
+      "S19 [2010] Eukaryotic genes of archaebacterial origin are more important than the.pdf": {
+        "sha256": "a0be2d07dfece8b7599935bbf65b3ec7cc2e74fe86bd703c599b4cd2b4af4661",
+        "bytes": 1043366
+      },
+      "S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.pdf": {
+        "sha256": "4ab00305c0a6e334e7cd2e36839d6819b1a50ba3666047c122544bd849687c5a",
+        "bytes": 704214
+      },
+      "S129 [2017] Novel Predators Reshape Holozoan Phylogeny and Reveal the Presence of a Two-Component Signaling System in the Ancestor of Animals.pdf": {
+        "sha256": "53f046cdc5310a2a59bf2843141dbbea18ba44c74610a3e2ad0dbd446a84b53e",
+        "bytes": 1595963
+      },
+      "S58 [2026] Dated gene duplications elucidate the evolutionary assembly of eukaryo.xml": {
+        "sha256": "267e0cf97ab92dfed3672ebd4241b8e16316340f227bc1a8916146d50e0acab9",
+        "bytes": 182452
+      },
+      "S128 [2015] Phylogenomics reveals convergent evolution of lifestyles in close rela.pdf": {
+        "sha256": "260c27f0d65b2f035be4049b33bb239ae9a313a51d4b5d6259bd75593cf520b8",
+        "bytes": 824060
+      },
+      "S394 [2011] How stands the Tree of Life a century and a half after The Origin.pdf": {
+        "sha256": "fd7c83d577e4994725e5ac684050cff101c834c9952af635f0fb98bbdc1dc693",
+        "bytes": 1437774
+      },
+      "S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml": {
+        "sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+        "bytes": 197877
+      }
+    }
+  },
+  "reconstruccion_inventarios": [
+    {
+      "registro_autor": {
+        "ruta": "docs/auditorias/integracion_s512_s562_2026-09-27.json",
+        "sha256": "1531fdbfb5ad7aa7c6e1428df2ab35603a30dca283b717b4795e6f22080808b7",
+        "bytes": 2193
+      },
+      "antes": {
+        "cantidad": 450,
+        "sha256": "170c7d69a86dbc8361aed5214e5e2c1452b5fee54c382b4cfb3cd61f02960647"
+      },
+      "retiradas_solo_del_calculo": [
+        {
+          "ruta_local": "fuentes/S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+          "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+          "bytes": 8102337,
+          "url": "https://publikationen.bibliothek.kit.edu/1000189992/173850597",
+          "identidad": "PDF editorial; DOI 10.1016/j.ympev.2026.108532; título y autores cotejados",
+          "contenido": "Texto completo PDF; 10 páginas"
+        },
+        {
+          "ruta_local": "fuentes/S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+          "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+          "bytes": 231528,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1182215/",
+          "identidad": "HTML íntegro PMC1182215; DOI 10.1101/gr.3771305; título y tres autores cotejados",
+          "contenido": "Texto completo HTML, no PDF ni JATS"
+        }
+      ],
+      "despues": {
+        "cantidad": 448,
+        "sha256": "1373e4658ea749685d9b9fdea95e800ff3bff56ab3d2012ae3b9d47d45d55bb6"
+      },
+      "resultado": "CONFORME; nombres, tamaños y contenidos previos preservados"
+    },
+    {
+      "registro_autor": {
+        "ruta": "docs/auditorias/integracion_s561_2026-09-27.json",
+        "sha256": "7bb8d9ab71c4cdbe1aa2e8261c165e7c9f9a1d81cd4981f5b5d2671f09236398",
+        "bytes": 1494
+      },
+      "antes": {
+        "cantidad": 448,
+        "sha256": "1373e4658ea749685d9b9fdea95e800ff3bff56ab3d2012ae3b9d47d45d55bb6"
+      },
+      "retiradas_solo_del_calculo": [
+        {
+          "ruta_local": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+          "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+          "bytes": 564211,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6629376/fullTextXML",
+          "identidad": "PMC6629376.1; DOI 10.7554/eLife.45017; título y siete autores cotejados en JATS",
+          "contenido": "Texto completo JATS; no PDF"
+        }
+      ],
+      "despues": {
+        "cantidad": 447,
+        "sha256": "eb65a6efc4b262af7edb4488ea907c29f7dba2c4e4f61fd76472b653aa547f93"
+      },
+      "resultado": "CONFORME; nombres, tamaños y contenidos previos preservados"
+    },
+    {
+      "registro_autor": {
+        "ruta": "docs/auditorias/integracion_s434_s560_2026-09-26.json",
+        "sha256": "807aa4e8cf6e01a620243f159585c2a1c554e53e1cc2a3460c520012a675f215",
+        "bytes": 3992
+      },
+      "antes": {
+        "cantidad": 447,
+        "sha256": "eb65a6efc4b262af7edb4488ea907c29f7dba2c4e4f61fd76472b653aa547f93"
+      },
+      "retiradas_solo_del_calculo": [
+        {
+          "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 1 source data 1 v3.xlsx",
+          "sha256": "4578d91e371e5c41dd5a8a4dddb53122537e88e2acfd1416251ac30f07e4d918",
+          "bytes": 20548,
+          "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data1-v3.xlsx",
+          "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data1-v3.xlsx"
+        },
+        {
+          "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 1 source data 2 v3.xlsx",
+          "sha256": "44ef87c6af48d8dc48ce5d286dc5fdb748a387853df23e600d0936670cfb99c6",
+          "bytes": 10817,
+          "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data2-v3.xlsx",
+          "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data2-v3.xlsx"
+        },
+        {
+          "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 5 source data 1 v3.xlsx",
+          "sha256": "6384ee9ca5991cbade0e6dca100392031ffdedca17dba5765850353bac300d2f",
+          "bytes": 20167,
+          "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig5-data1-v3.xlsx",
+          "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig5-data1-v3.xlsx"
+        },
+        {
+          "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — versión eLife v3.xml",
+          "sha256": "fcd2ee1d7baab2b2327d66bf659e5f3b190df1b48d0cd81d825b4f8958c9d89d",
+          "bytes": 346652,
+          "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-v3.xml",
+          "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-v3.xml"
+        },
+        {
+          "ruta_local": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+          "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+          "bytes": 129891,
+          "origen_temporal": "/tmp/Wang-Wu-2014-PMC4198247.xml",
+          "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4198247/fullTextXML"
+        }
+      ],
+      "despues": {
+        "cantidad": 442,
+        "sha256": "69704030a52076437e131fde0a1b886605b3ed8efc6a8fcf272660df3e4503cd"
+      },
+      "resultado": "CONFORME; nombres, tamaños y contenidos previos preservados"
+    }
+  ],
+  "S560_recuperacion_independiente": {
+    "artefacto_actual": {
+      "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S560-current.xml",
+      "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+      "bytes": 129891
+    },
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4198247/fullTextXML",
+    "igualdad_bytes_local": true
+  },
+  "S561_versiones": {
+    "artefactos": [
+      {
+        "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S561-versions.json",
+        "sha256": "e6bebc830e3fed308ee7d690b7f87bdf1acfde03b942553ed8340c51c200e6fa",
+        "bytes": 2361
+      },
+      {
+        "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S561-elife-api.json",
+        "sha256": "cb0408ac31387a25cf5c78d231503b9e69929a1de848a048183e9b328f2ed66d",
+        "bytes": 421619
+      },
+      {
+        "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S561-v2.xml",
+        "sha256": "f06203351eb98beb9c1be1731bbd93f530d904c75961c259f05620b174dc18e6",
+        "bytes": 409554
+      }
+    ],
+    "urls": [
+      "https://api.elifesciences.org/articles/45017/versions",
+      "https://api.elifesciences.org/articles/45017",
+      "https://cdn.elifesciences.org/articles/45017/elife-45017-v2.xml"
+    ],
+    "versiones": [
+      {
+        "status": "poa",
+        "version": 1,
+        "type": "research-article",
+        "doi": "10.7554/eLife.45017",
+        "title": "The genomes of polyextremophilic Cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+        "published": "2019-05-31T00:00:00Z",
+        "versionDate": "2019-05-31T00:00:00Z",
+        "statusDate": "2019-05-31T00:00:00Z"
+      },
+      {
+        "status": "vor",
+        "version": 2,
+        "type": "research-article",
+        "doi": "10.7554/eLife.45017",
+        "title": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+        "published": "2019-05-31T00:00:00Z",
+        "statusDate": "2019-07-15T13:14:35Z",
+        "versionDate": "2019-07-15T13:14:35Z"
+      }
+    ],
+    "actual": {
+      "status": "vor",
+      "version": 2,
+      "type": "research-article",
+      "doi": "10.7554/eLife.45017",
+      "title": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+      "published": "2019-05-31T00:00:00Z",
+      "versionDate": "2019-07-15T13:14:35Z",
+      "statusDate": "2019-07-15T13:14:35Z"
+    },
+    "comparaciones": [
+      {
+        "xpath": "body",
+        "normalizacion": "itertext en orden; join espacios; UTF8 sin LF final",
+        "local_sha256": "fe000d79ac4cc4594214d390f2a9ae65976bf708fc4608b549918234e81c1b77",
+        "editorial_sha256": "fe000d79ac4cc4594214d390f2a9ae65976bf708fc4608b549918234e81c1b77",
+        "igualdad": true
+      },
+      {
+        "xpath": "front/article-meta/title-group/article-title",
+        "normalizacion": "itertext en orden; join espacios; UTF8 sin LF final",
+        "local_sha256": "e29b03f9d9f23bef4651d68a55dc0b717b0f84f6a0301e604b0c90c463aac7a0",
+        "editorial_sha256": "e29b03f9d9f23bef4651d68a55dc0b717b0f84f6a0301e604b0c90c463aac7a0",
+        "igualdad": true
+      },
+      {
+        "xpath": "front/article-meta/contrib-group",
+        "normalizacion": "itertext en orden; join espacios; UTF8 sin LF final",
+        "local_sha256": "3007cc6077a097c98abe316a86afb5c8de88423e33a81e23f94a57a3fa958b0f",
+        "editorial_sha256": "3007cc6077a097c98abe316a86afb5c8de88423e33a81e23f94a57a3fa958b0f",
+        "igualdad": true
+      },
+      {
+        "xpath": "back",
+        "normalizacion": "itertext en orden; join espacios; UTF8 sin LF final",
+        "local_sha256": "fe9419acaeca19e2a9f27db2802655d3be982f2a696857b9acd099608a5cc893",
+        "editorial_sha256": "b378cabb6e7ace9740756d44850c4f9b2116a6f9966d0b21b6c7aa67c9861712",
+        "igualdad": false
+      }
+    ]
+  },
+  "S562_recuperacion_independiente": {
+    "artefacto_actual": {
+      "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S562-current.html",
+      "sha256": "8f7f74e9495def8e7a7e90699b677a3fc53a59548212f57ff2d2eec81701cfb4",
+      "bytes": 231528
+    },
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1182215/",
+    "igualdad_bytes_local": false,
+    "contenido_article_igual": true,
+    "sha256_article_normalizado": "7182a3678f9bbcc97a8a4640c816339c26f45a8a217d3e0b5803ee7f0d67b83b",
+    "normalizacion": "HTMLParser texto dentro de article; blancos colapsados; UTF8 sin LF final",
+    "diferencias_bytes": "Solo valores de metadato ncbi_phid y token dinámico de formulario csrfmiddlewaretoken; no son contenido del artículo.",
+    "formato": "HTML íntegro: article, Results, Discussion, Methods, References; no PDF ni XML JATS."
+  },
+  "S559_corrigenda": [
+    {
+      "artefacto": {
+        "ruta": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum febrero.xml",
+        "sha256": "9953e3d76199e8512eb1388bca8a26a2327534e9e394f34aff1bb3356be95935",
+        "bytes": 10948
+      },
+      "doi": "10.1038/nbt0218-196a",
+      "localizador": "article/body/p[@id=Par2] y, en julio, p[@id=Par3]",
+      "sha256_cuerpo_normalizado": "b5653f520f68693058d0d74bc8099855b0326bf12e7c8d4e8405ada68a015178"
+    },
+    {
+      "artefacto": {
+        "ruta": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum julio.xml",
+        "sha256": "7b4f1fe400abccf26be1f4110eaf1e1de4116f622d6fe2e5a79df9834a359bfa",
+        "bytes": 11418
+      },
+      "doi": "10.1038/nbt0718-660a",
+      "localizador": "article/body/p[@id=Par2] y, en julio, p[@id=Par3]",
+      "sha256_cuerpo_normalizado": "3ea4dc6c0ac954db0b0135b18d2295b6fd28604ca26edcfe3caf650df9871a27"
+    }
+  ],
+  "comprobacion_reportes_previos": [
+    {
+      "ruta": "docs/auditorias/VERIFICACION_FUENTES_NUEVAS_2026-09-26.md",
+      "sha256": "50f7866958fa8e1491ae8b5682b434d39f411fa9defa8c275d12efbc0cc7d0ef",
+      "bytes": 3189
+    },
+    {
+      "ruta": "docs/auditorias/ADDENDUM_IDENTIDAD_S551_S559_2026-09-26.md",
+      "sha256": "56dfcc82861af0bc02a77e575db2614fecbe43a9dffdffd1550d3e7348edd836",
+      "bytes": 3287
+    },
+    {
+      "ruta": "docs/auditorias/ADDENDUM_INTEGRACION_FUENTES_2026-09-26.md",
+      "sha256": "473008df7d3120eb047422f68b246898675ee4e509f300457e4cf7173e652bb8",
+      "bytes": 2089
+    },
+    {
+      "ruta": "docs/auditorias/REVISION_S549_PUBLICADO_2026-09-26.md",
+      "sha256": "d17fd3c23cd03cd784f8ef4ee302d0acc78761d73ef475837cdfd745422fbb3a",
+      "bytes": 5599
+    },
+    {
+      "ruta": "docs/auditorias/evidencia_c006_s559_2026-09-26.md",
+      "sha256": "6295d46d2797bd9ac9c4c6b99359b076a81476ae3b474695a516bd3fe1cbcbdb",
+      "bytes": 5397
+    },
+    {
+      "ruta": "docs/auditorias/confirmacion_final_s548_2026-09-26.csv",
+      "sha256": "571551cea1c97534e87e9af85035adda4cf285c6ec25f0440d1cd3508f871f6b",
+      "bytes": 52660
+    },
+    {
+      "ruta": "docs/auditorias/cotejo_parche_s434_2026-09-26.csv",
+      "sha256": "61f1ed6dd9a61b5e1156847775f76fbc53010c58cda661f1e3d3a8ec6273c433",
+      "bytes": 13176
+    }
+  ],
+  "fecha_fin_corte_450_utc": "2026-09-27T01:23:13Z",
+  "corte_inventario": "450 archivos; revisión cerrada de este corte intermedio. S296 posterior se documenta en addendum, no se mezcla con estas huellas.",
+  "alertas_editoriales": {
+    "alcance": "Consultas oficiales y documentales en esta sesión, no búsqueda universal ni aprobación editorial integral.",
+    "consultas_web": [
+      {
+        "query": "\"10.1371/journal.pone.0110685\" (correction OR retraction) site:journals.plos.org",
+        "resultado": "Se recuperó el artículo original; no un aviso separado en los resultados observados."
+      },
+      {
+        "query": "\"10.7554/eLife.45017\" (correction OR retraction) site:elifesciences.org",
+        "resultado": "Se recuperaron original, versión aceptada y peer review. La carta de revisión contiene correcciones solicitadas prepublicación; no se convierte en corrigendum posterior."
+      },
+      {
+        "query": "\"10.1016/j.ympev.2026.108532\" (corrigendum OR retraction) site:sciencedirect.com",
+        "resultado": "Ficha del artículo; acceso directo respondió 403; sin aviso separado observado."
+      },
+      {
+        "query": "\"10.1101/gr.3771305\" (correction OR retraction) site:genome.cshlp.org",
+        "resultado": "Original en ficha editorial; descarga full respondió 429; sin aviso separado observado."
+      }
+    ],
+    "crossref": "Las cuatro respuestas DOI tienen relation vacía salvo relaciones de S561 (preprint, revisión y datos); update-to/updated-by no constan. Su ausencia no es garantía universal de ausencia de alertas.",
+    "epmc": "S561 enlaza comentario eLife.48999 y preprint; no se confunde Comment in con erratum. Los otros tres registros no incluyen commentCorrectionList en estas respuestas.",
+    "fallos_acceso": [
+      "PLOS vía curl 503, pero la cabecera editorial fue legible en navegador.",
+      "eLife vía web 403; API editorial y versiones/v2XML fueron accesibles.",
+      "ScienceDirect directo 403; PDF editorial KIT y depósito DOI inspeccionados.",
+      "Genome Research full vía curl429; PMC HTML actual recuperado con texto de article idéntico al local."
+    ]
+  },
+  "S559_corrigenda_dictamen": "Identidades y contenido nominal de ambos avisos confirmados: febrero añade financiación omitida; julio rectifica nombre/afiliaciones de A. Murat Eren y reitera financiación omitida. Se distinguen avisos publicados en 2018 de correcciones HTML/PDF fechadas por el aviso en noviembre/diciembre2017. No reabre ni sustituye el cotejo científico C006 del otro revisor; no búsqueda universal de avisos.",
+  "S126_dictamen": "Título,8 autores/año/DOI cotejados en JATS local y cabecera PLOS. Methods and Resources en editor y research-article en JATS, compatible con investigación primaria. No se aprueban las notas científicas ni se resuelve por identidad la discrepancia de paneles de S1 Data."
+}

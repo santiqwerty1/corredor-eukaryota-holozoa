@@ -1,0 +1,2006 @@
+{
+  "tipo": "CHECKPOINT_INDEPENDIENTE_PARCIAL_BN134_NO_CIERRE",
+  "revisor": "/root/inspeccion_relojes",
+  "fecha_utc": "2026-09-27T04:20:41Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "anterior": {
+    "ruta": "docs/auditorias/CHECKPOINT_BN134_19_ASOCIACIONES_2026-09-27.json",
+    "sha256": "d71bb592fc7d459ea622412ac2f7e1c6172d21648f100cc333310e9afdcb0ff8",
+    "preservado": true
+  },
+  "alcance": "Diez asociaciones con lectura parcial delimitada acumulada; ocho inventariadas pendientes de esta lectura; Perkinsela excluida de dictamen independiente por autoría de propuestas aún no integradas. Ninguna fila completa ni BN134 se cierra.",
+  "literal_componentes": [
+    "hospedador",
+    "simbionte",
+    "aporte_hospedador",
+    "aporte_simbionte",
+    "antiguedad_inicio",
+    "transmision",
+    "genoma_simbionte_vs_libre",
+    "EGT_al_nucleo",
+    "importacion_proteinas",
+    "dependencia_reversibilidad"
+  ],
+  "restricciones": [
+    "§9 no exige método homogéneo ni cociente calculado por el compilador: comparación publicada puede satisfacer el componente en su alcance.",
+    "Conservar 408 consultas residuales históricas; candidato semántico positivo no es coincidencia literal retrospectiva ni autorización de disposición.",
+    "No equivaler manuscrito aceptado/tesis/preprint con versión publicada.",
+    "No convertir falta de acceso o falta de pasaje en ausencia biológica.",
+    "No inventar fecha de ejecución de consultas previas ni reutilizar firma como aprobación nueva."
+  ],
+  "hash_filas": "SHA256 UTF-8 de json.dumps(ensure_ascii=False,sort_keys=True,separators=(',',':')) más LF.",
+  "captura_viva": {
+    "archivos": [
+      {
+        "ruta": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "sha256": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd"
+      },
+      {
+        "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+        "sha256": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7"
+      },
+      {
+        "ruta": "data/afirmaciones/09.csv",
+        "sha256": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf"
+      },
+      {
+        "ruta": "data/apendices/A_fuentes.csv",
+        "sha256": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8"
+      }
+    ],
+    "tabla": [
+      {
+        "linea_csv": 2,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: sintrofía externa — *Lenisia limosa*–*Arcobacter*",
+          "hospedador": "*Lenisia limosa*",
+          "socio": "*Arcobacter* epibionte",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: libera H₂/equivalentes reductores; socio: consume reductores y usa N₂O como aceptor.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "No hay transmisión vertical demostrada",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-455]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-456]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-457]",
+          "filas": "C-986; C-993–C-1006; BN-111"
+        },
+        "sha256_fila": "335b5cddd6668fbeb3267ea2fb01350671b1dec545d4d6aa1642ef4b36829fb6"
+      },
+      {
+        "linea_csv": 3,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: consorcio extracelular con transferencia de electrones — ANME–SRB",
+          "hospedador": "arquea ANME",
+          "socio": "bacteria reductora de sulfato",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador operacional ANME: oxida metano y cede electrones; socio: reduce sulfato.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "No hereditaria conjunta",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-458]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-459]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-460]",
+          "filas": "C-1007–C-1013; BN-111"
+        },
+        "sha256_fila": "f8653b32ab03df97c272272ad889182fcdefdaeb45056a8a7d2bd884efa806e0"
+      },
+      {
+        "linea_csv": 4,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: endosimbiosis metabólica — *Pelomyxa*–metanógenos",
+          "hospedador": "*Pelomyxa*",
+          "socio": "arqueas metanógenas y otros procariotas",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: produce H₂ en el metabolismo anaerobio; socios metanógenos: consumen H₂ mediante metanogénesis hidrogenotrófica.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-461]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-462]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-463]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-464]",
+          "filas": "C-1014–C-1021; BN-111"
+        },
+        "sha256_fila": "7a3feff93da38ff24b51917c73a738beb7d487d49e1e2dba7e4cde4e7c2cab38"
+      },
+      {
+        "linea_csv": 5,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: adquisiciones múltiples con transmisión variable — ciliados anaerobios–metanógenos",
+          "hospedador": "ciliados anaerobios",
+          "socio": "arqueas metanógenas",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-465]",
+          "antigüedad estimada del inicio": "orígenes múltiples sin una fecha de inicio común localizada",
+          "transmisión": "vertical o mixta según el linaje estudiado",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-466]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-467]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-468]",
+          "filas": "C-1022–C-1027; BN-111"
+        },
+        "sha256_fila": "7aa745fcc1002ce7c0b10e6673d8039d4ea82d63a64e0ac132f8674d1af9d2c2"
+      },
+      {
+        "linea_csv": 6,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: control hospedador de la división endosimbionte — *Angomonas deanei*–*Kinetoplastibacterium*",
+          "hospedador": "*Angomonas deanei*",
+          "socio": "*Candidatus Kinetoplastibacterium*",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: ETP9 y proteínas para controlar división; socio: funciones metabólicas y OCD ancestral transferida.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-469]",
+          "genoma del socio comparado con parientes de vida libre": "aprox. 0,8 Mb y pérdida de genes bacterianos de división; comparación cuantitativa con pariente libre NO LOCALIZADA",
+          "EGT al núcleo; importación de proteínas de vuelta": "EGT: OCD al núcleo; importación: proteínas nucleares regresan para controlar división, pero OCD no fue detectada dentro del endosimbionte",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-470]",
+          "filas": "C-1028–C-1035; BN-111"
+        },
+        "sha256_fila": "48cd7223c0b61009bef66392148160e6514779814f3425a44824c2b94011dbfa"
+      },
+      {
+        "linea_csv": 7,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*",
+          "hospedador": "*Paramoeba*",
+          "socio": "*Perkinsela*",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-471]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-472]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]",
+          "estado obligado, facultativo o reversible": "obligada",
+          "filas": "C-1036–C-1042; BN-111"
+        },
+        "sha256_fila": "6e89d600ca797f31df7859f886eb7ddb73e36e67f591522be8b9801474f2d553"
+      },
+      {
+        "linea_csv": 8,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: orgánulo fotosintético con EGT e importación — *Paulinella chromatophora*–cromatóforo",
+          "hospedador": "*Paulinella chromatophora*",
+          "socio": "cianobacteria del linaje del cromatóforo",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: proteínas nucleares y transferencias bacterianas compensatorias; socio: fotosíntesis.",
+          "antigüedad estimada del inicio": "90–140 Ma",
+          "transmisión": "vertical",
+          "genoma del socio comparado con parientes de vida libre": "1,02 Mb y 867 proteínas; reducido respecto de cianobacterias de vida libre emparentadas",
+          "EGT al núcleo; importación de proteínas de vuelta": "EGT: 0,3–0,8 % en el análisis inicial; importación: proteínas nucleares masivamente dirigidas al cromatóforo",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-475]",
+          "filas": "C-1043–C-1053"
+        },
+        "sha256_fila": "026f33130ff3e8dc9536ef1dd48242c933ade2de2f396c497a586ebe40e4c92f"
+      },
+      {
+        "linea_csv": 9,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: orgánulo fijador de nitrógeno propuesto — *Braarudosphaera bigelowii*–UCYN-A",
+          "hospedador": "*Braarudosphaera bigelowii*",
+          "socio": "UCYN-A / nitroplasto",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: carbono y otros metabolitos; socio: fija N₂ y entrega nitrógeno reducido.",
+          "antigüedad estimada del inicio": "asociación ancestral inferida hacia el Cretácico tardío a partir de divergencia UCYN-A1/A2 de aprox. 91 Ma; no es fecha directa de captura",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-476]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-477]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-478]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-479]",
+          "filas": "C-1054–C-1061; C-1638–C-1639; S455"
+        },
+        "sha256_fila": "a8f08bca7d89c31a5a1644ea8e75ae74ecf3d76691c71653b842569eae03f832"
+      },
+      {
+        "linea_csv": 10,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: transmisión vertical incompleta con readquisición — *Hatena arenicola*–*Nephroselmis*",
+          "hospedador": "*Hatena arenicola*",
+          "socio": "*Nephroselmis*",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-480]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "vertical incompleta; readquisición horizontal",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-481]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-482]",
+          "estado obligado, facultativo o reversible": "reversible por linaje celular: la hija sin socio puede readquirirlo",
+          "filas": "C-1062–C-1067; C-1071; S511; BN-040; BN-111"
+        },
+        "sha256_fila": "39e843ac664e9b7d79bc575c7aa3032ed0d30b98f8fa0be9c19c9ae1a0302934"
+      },
+      {
+        "linea_csv": 11,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: cuerpo esferoidal fijador de nitrógeno tras pérdida fotosintética — *Rhopalodia*/*Epithemia*",
+          "hospedador": "*Rhopalodia gibba* y *Epithemia turgida*",
+          "socio": "cuerpo esferoidal cianobacteriano no fotosintético",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-483]",
+          "antigüedad estimada del inicio": "aprox. 12 Ma para el origen único inferido de Rhopalodiaceae muestreadas",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-484]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-485]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-486]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-487]",
+          "filas": "C-1068–C-1070; C-1637; C-1640–C-1641"
+        },
+        "sha256_fila": "daea44f80a49c9ba5a1b4e6205511d1aab3e3d1d080c8eb173550a8c49179e3e"
+      },
+      {
+        "linea_csv": 12,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: adquisición trófica reiterada de orgánulos y núcleo — *Mesodinium rubrum*–criptófita",
+          "hospedador": "*Mesodinium rubrum*",
+          "socio": "criptófita ingerida",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-488]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "reposición por alimentación periódica",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-489]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-490]",
+          "estado obligado, facultativo o reversible": "reversible y dependiente de reposición trófica",
+          "filas": "C-1072–C-1074; BN-111"
+        },
+        "sha256_fila": "5fabeb10ed1f5e270e0bf2b2d2fceb49a81d7139275cc94161eb0e62c7b992d0"
+      },
+      {
+        "linea_csv": 13,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: kleptoplastia vía presa intermediaria — *Dinophysis*–plastos criptófitos",
+          "hospedador": "*Dinophysis*",
+          "socio": "plastos obtenidos vía *Mesodinium*",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: retención selectiva; socio: función fotosintética con fotoaclimatación limitada.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "adquisición trófica vía *Mesodinium*",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-491]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-492]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-493]",
+          "filas": "C-1075–C-1077; BN-111"
+        },
+        "sha256_fila": "a0b4a893b50700eb082979769d782b0f8d009d2289cbdd7e6d52b91c487658ca"
+      },
+      {
+        "linea_csv": 14,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: kleptoplastia animal sin HGT nuclear extensa — *Elysia*/*Plakobranchus*–plastos",
+          "hospedador": "*Elysia chlorotica* y *Plakobranchus ocellatus*",
+          "socio": "plastos de algas",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: retención intracelular; socio: fotosíntesis temporal.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "adquisición alimentaria sin transferencia hereditaria de genes nucleares",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-494]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-495]",
+          "estado obligado, facultativo o reversible": "reversible y no hereditaria en los casos citados",
+          "filas": "C-1078–C-1081; BN-111"
+        },
+        "sha256_fila": "f79b1fcc7d1f79bb0f8c9b4d04189ce5de22af4f473c2e1cdf5ad5493c4c7212"
+      },
+      {
+        "linea_csv": 15,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: endosimbiosis secundaria con núcleo reducido retenido — criptófitos/cloraracniófitos–nucleomorfo",
+          "hospedador": "criptófitos y cloraracniófitos",
+          "socio": "núcleo de alga roja o verde incorporada",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-496]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de las dos adquisiciones",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-497]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-498]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-499]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-500]",
+          "filas": "C-990; C-1082–C-1087; BN-111"
+        },
+        "sha256_fila": "bc3af965a374e88410000b4eea0185faab56dacfce7606f24f28a45a046b0a89"
+      },
+      {
+        "linea_csv": 16,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: endosimbiosis terciaria con núcleo y mitocondrias retenidos — dinotomos–endosimbionte diatomeo",
+          "hospedador": "*Durinskia baltica* o *Kryptoperidinium foliaceum*",
+          "socio": "diatomea terciaria intracelular",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador: mantenimiento nuclear y celular; socio: compartimentos eucariotas retenidos, incluidas mitocondrias.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-501]",
+          "genoma del socio comparado con parientes de vida libre": "mitocondrias endosimbiontes: 34.242/34.742 bp y 58/59 genes; comparación con vida libre NO LOCALIZADA",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-502]",
+          "estado obligado, facultativo o reversible": "obligada en el sistema descrito; reversibilidad NO DOCUMENTADA",
+          "filas": "C-1206–C-1212; BN-111"
+        },
+        "sha256_fila": "a63fe028dfc52e6e97456f04dbf41b8c66e887874e97e2367952ce9a0eb8a912"
+      },
+      {
+        "linea_csv": 17,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: reemplazo terciario por plasto haptófito — kareniáceos–plasto haptófito",
+          "hospedador": "*Karlodinium veneficum* y Kareniaceae",
+          "socio": "plasto terciario derivado de haptófita",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-503]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de la asociación",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-504]",
+          "genoma del socio comparado con parientes de vida libre": "142.981 bp en *K. veneficum*; 70 proteínas, 30 ARNt y 3 ARNr; comparación libre NO LOCALIZADA",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-505]",
+          "estado obligado, facultativo o reversible": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-506]",
+          "filas": "C-1211; C-1213–C-1214; BN-111"
+        },
+        "sha256_fila": "eb1a1ec4a4e7b0f494d357c36982cb8128a7a900984f53720c3ca71aa0c4b2c6"
+      },
+      {
+        "linea_csv": 18,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: endosimbiosis anidada con reemplazo — *Tremblaya*–*Moranella*–piojo harinoso",
+          "hospedador": "piojo harinoso; *Tremblaya* como hospedador interno",
+          "socio": "*Tremblaya* y *Moranella*",
+          "aporte documentado del hospedador; aporte documentado del socio": "Hospedador insecto: genes bacterianos y metabolitos; socios: rutas metabólicas complementarias tripartitas.",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para el inicio de cada reemplazo",
+          "transmisión": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-507]",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-508]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-509]",
+          "estado obligado, facultativo o reversible": "dependencia anidada; reemplazo histórico del socio interno",
+          "filas": "C-1089–C-1095; BN-111"
+        },
+        "sha256_fila": "573cc6562f8091e3674583302557fd74ad4374ca2e528e356f0bc451df41a670"
+      },
+      {
+        "linea_csv": 19,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: dependencia nutricional con transmisión materna — áfido–*Buchnera aphidicola*",
+          "hospedador": "áfido",
+          "socio": "*Buchnera aphidicola*",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-510]",
+          "antigüedad estimada del inicio": "80–150 Ma para la divergencia de cepas comparadas; no es fecha directa de captura",
+          "transmisión": "vertical materna",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-511]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-512]",
+          "estado obligado, facultativo o reversible": "obligada",
+          "filas": "C-1096–C-1102"
+        },
+        "sha256_fila": "058d6f27ae5b99be2cc1ca6600855ddd1eef82dc915df68298c419b74711bd03"
+      },
+      {
+        "linea_csv": 20,
+        "fila": {
+          "caso ordenado por grado de integración": "Mecanismo: transmisión materna con saltos horizontales y desenlaces variables — hospedadores–*Wolbachia*",
+          "hospedador": "artrópodos y nematodos según caso",
+          "socio": "*Wolbachia*",
+          "aporte documentado del hospedador; aporte documentado del socio": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-513]",
+          "antigüedad estimada del inicio": "NO LOCALIZADO EN ESTA SESIÓN para un inicio único",
+          "transmisión": "materna y horizontal entre hospedadores",
+          "genoma del socio comparado con parientes de vida libre": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-514]",
+          "EGT al núcleo; importación de proteínas de vuelta": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-515]",
+          "estado obligado, facultativo o reversible": "depende del caso: parasitismo, mutualismo facultativo u obligado",
+          "filas": "C-1103–C-1107; BN-111"
+        },
+        "sha256_fila": "ea18ae4c7fcd5dbf7b834264b3899698d953fd4fe431b8fc293ee48bf5057453"
+      }
+    ],
+    "BN134": [
+      {
+        "linea_csv": 12,
+        "fila": {
+          "clave": "BN-134",
+          "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Antigüedad de inicio y razón de tamaño genómico publicadas para cada asociación del catálogo de desenlaces con un método homogéneo",
+          "términos exactos": "`rg -n -i \\Ma|Myr|million years|genome size|Mb|kb|bp\\\" data/afirmaciones/09.csv data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv fuentes`; `symbiosis association age symbiont genome free living relative size all cases`\"",
+          "resultado o motivo": "La consulta recuperó edades y tamaños para subconjuntos —Paulinella, Rhopalodiaceae, UCYN-A, kinetoplástidos y otros endosimbiontes—, pero varias asociaciones del catálogo carecen de edad de inicio o de un comparando de vida libre publicado. Las cifras localizadas se transcriben por C; las celdas restantes no se completan por analogía ni se convierten en un promedio."
+        },
+        "sha256_fila": "93ab398640e379c6605447e71dbf09b8f52f2155cad3fc227b9bb4a0a455c857"
+      }
+    ],
+    "fuentes": [
+      {
+        "fila": {
+          "clave": "S210",
+          "autores": "Hamann, E. et al.",
+          "año": "2016",
+          "título": "Environmental Breviatea harbour mutualistic Arcobacter epibionts",
+          "publicación o repositorio": "Nature 534:254–258",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nature18297",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Cultivo de Lenisia y análisis metabólico; asociación observada, relevancia ancestral analógica. Cultivo, microscopía, transcriptómica y experimentos metabólicos en Lenisia limosa. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 14 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "118228c32ca568226c9e213612f00fbe8c7f1b6f37856e47fb303dcab21ea29e"
+      },
+      {
+        "fila": {
+          "clave": "S225",
+          "autores": "Aguilera-Campos et al.",
+          "año": "2025",
+          "título": "Anaerobic breviate protist survival in microcosms depends on microbiome metabolic function",
+          "publicación o repositorio": "The ISME Journal 19:wraf171",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1093/ismejo/wraf171",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Microcosmos de cinco breviados; distingue función del microbioma de identidad taxonómica del socio. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "c0433a9027b5fd994da9ec3c22311524606f100ffc00e6cae25a39fa06e38a9c"
+      },
+      {
+        "fila": {
+          "clave": "S226",
+          "autores": "Wegener et al.",
+          "año": "2015",
+          "título": "Intercellular wiring enables electron transfer between methanotrophic archaea and bacteria",
+          "publicación o repositorio": "Nature 526:587–590",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nature15733",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Consorcios termófilos ANME-1–HotSeep-1; evidencia de transferencia directa de electrones. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "200eb0a3841580dfa5302395d897a2abaa607decee5ba11af2425ebb7be03f75"
+      },
+      {
+        "fila": {
+          "clave": "S227",
+          "autores": "Scheller et al.",
+          "año": "2016",
+          "título": "Artificial electron acceptors decouple archaeal methane oxidation from sulfate reduction",
+          "publicación o repositorio": "Science 351:703–707",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1126/science.aad7154",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Desacoplamiento experimental de oxidación anaerobia de metano y reducción de sulfato. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "2298cd9efd0a2b5dafa0caf94b8719afa092c2c02aefa6a66c156739fc094e8b"
+      },
+      {
+        "fila": {
+          "clave": "S233",
+          "autores": "Treitli et al.",
+          "año": "2023",
+          "título": "Hydrogenotrophic methanogenesis is the key process in the Pelomyxa schiedti symbiosis",
+          "publicación o repositorio": "The ISME Journal",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41396-023-01499-6",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genómica y transcriptómica unicelular de un consorcio de Pelomyxa. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "f7ceb8f74cb520e11ae71b754e5ba5437d2dff88a56d77fd7600385fba6620fb"
+      },
+      {
+        "fila": {
+          "clave": "S234",
+          "autores": "Méndez-Sánchez et al.",
+          "año": "2024",
+          "título": "Methanogenic symbionts of anaerobic ciliates are host and habitat specific",
+          "publicación o repositorio": "Microbiome",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11378729/",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Microscopía y genética en 32 especies de ciliados anaerobios. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "e11c7cc494ebcab9f4b0a8811848dda4930cccf069d2ba1cd83c323509a5a8eb"
+      },
+      {
+        "fila": {
+          "clave": "S235",
+          "autores": "Hao et al.",
+          "año": "2025",
+          "título": "Distinct evolutionary origins and mixed-mode transmissions of methanogenic endosymbionts are revealed in anaerobic ciliated protists",
+          "publicación o repositorio": "Marine Life Science & Technology 7:700–716",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1007/s42995-025-00295-9",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Amplía muestreo y recupera adquisiciones, persistencia vertical y reemplazos. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "bbe97b7ca70ce75344477d9a37ca61cb39c14132326c59db512942853470d72b"
+      },
+      {
+        "fila": {
+          "clave": "S237",
+          "autores": "Alves et al.",
+          "año": "2013",
+          "título": "Genome Evolution and Phylogenomic Analysis of Candidatus Kinetoplastibacterium, the Betaproteobacterial Endosymbionts of Strigomonas and Angomonas",
+          "publicación o repositorio": "Genome Biology and Evolution 5:338–350",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1093/gbe/evt012",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genomas completos de endosimbiontes de tripanosomátidos. [USO EN UNA SOLA C] C-1030.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "cb85b8f02e0c0e866b15e805fb090d79d75abb37ed6dbbc999bc52a714877e13"
+      },
+      {
+        "fila": {
+          "clave": "S239",
+          "autores": "Maurya et al.",
+          "año": "2025",
+          "título": "A nucleus-encoded dynamin-like protein controls endosymbiont division in the trypanosomatid Angomonas deanei",
+          "publicación o repositorio": "Science Advances",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1126/sciadv.adp8518",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Intervención genética sobre una proteína del hospedador que controla la división bacteriana. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "f1ddf9f440100366b3dd1f737324461e1c4c4ca3dd67e56b0c5f3ac9db613fd4"
+      },
+      {
+        "fila": {
+          "clave": "S261",
+          "autores": "Husnik et al.",
+          "año": "2013",
+          "título": "Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Enables a Tripartite Nested Mealybug Symbiosis",
+          "publicación o repositorio": "Cell 153:1567–1578",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.cell.2013.05.040",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genes bacterianos en el genoma del hospedador completan rutas del consorcio. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "c156792a2873f2a27193402dc9e14a69e979abc40382680a3942e499632fcb7a"
+      },
+      {
+        "fila": {
+          "clave": "S262",
+          "autores": "Husnik y McCutcheon",
+          "año": "2016",
+          "título": "Repeated replacement of an intrabacterial symbiont in the tripartite nested mealybug symbiosis",
+          "publicación o repositorio": "PNAS 113:E5416–E5424",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.1603910113",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Documenta sustituciones repetidas del endosimbionte interno. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "3f5d26281ed128f1d610f295a0ed72a3491a89c613669f0bd40789c4612e9c62"
+      },
+      {
+        "fila": {
+          "clave": "S263",
+          "autores": "Shigenobu et al.",
+          "año": "2000",
+          "título": "Genome sequence of the endocellular bacterial symbiont of aphids Buchnera sp. APS",
+          "publicación o repositorio": "Nature 407:81–86",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://www.nature.com/articles/35024074",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genoma de Buchnera APS de 640.681 bp y dos plásmidos. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "0f3558b5dbfdd799e1b70e1eacdbd35b79d2c37f18f0ef3d2cdd28e0cd467697"
+      },
+      {
+        "fila": {
+          "clave": "S268",
+          "autores": "Ahmed et al.",
+          "año": "2016",
+          "título": "Evidence for common horizontal transmission of Wolbachia among butterflies and moths",
+          "publicación o repositorio": "BMC Evolutionary Biology 16:118",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1186/s12862-016-0660-x",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Filogenias y MLST para transmisión horizontal en Lepidoptera. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "dc0697949fb93724cd598f0ef602e06a6571263f4d3ebf4cd59bcb861dc5b13e"
+      },
+      {
+        "fila": {
+          "clave": "S301",
+          "autores": "Imanian et al.",
+          "año": "2012",
+          "título": "Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in the Mitochondrial Genomes of Their Dinoflagellate Hosts and Diatom Endosymbionts",
+          "publicación o repositorio": "PLOS ONE 7:e43763",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1371/journal.pone.0043763",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Secuencia los genomas mitocondriales de hospedador y endosimbionte en dos dinotomos. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "cc200ab892373801954ecf053f366e901ad2932ac452092a02b508b51ed00829"
+      },
+      {
+        "fila": {
+          "clave": "S302",
+          "autores": "Burki et al.",
+          "año": "2014",
+          "título": "Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagellates",
+          "publicación o repositorio": "Eukaryotic Cell 13:246–255",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1128/EC.00299-13",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Transcriptomas de dinotomos y kareniáceos; compara la magnitud de EGT tras endosimbiosis terciaria. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 3 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "b3eb1ee04c453b919b6aedba79658dc256900ab1170af649a0931b6ee82ad516"
+      },
+      {
+        "fila": {
+          "clave": "S303",
+          "autores": "Gabrielsen et al.",
+          "año": "2011",
+          "título": "Genome Evolution of a Tertiary Dinoflagellate Plastid",
+          "publicación o repositorio": "PLOS ONE 6:e19132",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1371/journal.pone.0019132",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Genoma del plasto terciario derivado de haptófita en Karlodinium veneficum. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "sha256_fila": "a313f74c70195d5c45712dfd35d9384e70ef742f9a27cda2b01e715233f659ca"
+      }
+    ],
+    "C": [
+      {
+        "fila": {
+          "#": "C-1006",
+          "Afirmación": "Lenisia–Arcobacter no constituye una observación de la asociación que originó la mitocondria.",
+          "Sujeto": "Lenisia–Arcobacter",
+          "Predicado": "no_equivale_a*",
+          "Objeto": "asociación ancestral mitocondrial no observada",
+          "Atribución": "sintesis(C-993, C-994, C-995, C-996, C-997, C-998, C-999, C-1000, C-1001, C-1002, C-1003, C-1004, C-1005)",
+          "Fuente": "n/a; síntesis de C-993–C-1005",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Es un comparando actual de mecanismo, no una población ancestral preservada.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "5b378fdeb374f3cd891250a0dcb663b6f616437ae15fc012a3b67293d177c364"
+      },
+      {
+        "fila": {
+          "#": "C-1013",
+          "Afirmación": "Los consorcios ANME–SRB ilustran que una asociación puede ser estable sin endocitosis ni transmisión hereditaria conjunta.",
+          "Sujeto": "consorcio ANME–SRB",
+          "Predicado": "clasificado_como_por",
+          "Objeto": "dependencia metabólica extracelular",
+          "Atribución": "sintesis(C-1008, C-1012)",
+          "Fuente": "S226; S227",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "La geometría es consorcial y el acoplamiento ocurre mediante electrones.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "ac645d40e1b1029f868e599d14ddac11d74a5fbaf5f9d6c231ff53ed133a448c"
+      },
+      {
+        "fila": {
+          "#": "C-1021",
+          "Afirmación": "La identidad del metanógeno de Pelomyxa palustris no puede fijarse universalmente a partir del aislamiento de 1988.",
+          "Sujeto": "endosimbionte metanógeno de Pelomyxa palustris no identificado con certeza",
+          "Predicado": "tiene_identidad*",
+          "Objeto": "sin resolver",
+          "Atribución": "sintesis(C-1016, C-1019, C-1020)",
+          "Fuente": "S231; S232; S233",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Muestras, especies hospedadoras e identidades microbianas no coinciden.",
+          "Resolución": "sin resolver",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "41870b3ac1998d915ff91965ec42826312693c38c30541bfd087de279f1adbc4"
+      },
+      {
+        "fila": {
+          "#": "C-1027",
+          "Afirmación": "La transmisión de metanógenos en ciliados no puede describirse como exclusivamente vertical para todo el grupo.",
+          "Sujeto": "metanógenos endosimbióticos de ciliados",
+          "Predicado": "no_posee_rasgo*",
+          "Objeto": "transmisión universal exclusivamente vertical",
+          "Atribución": "sintesis(C-1025, C-1026)",
+          "Fuente": "S235; S236",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Los estudios difieren porque abarcan taxones y escalas filogenéticas distintas.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "178880f0ee3cb256374998cfca2fec1d2dd33c8a223ab3f6c6452adc6ef0e927"
+      },
+      {
+        "fila": {
+          "#": "C-1035",
+          "Afirmación": "La transferencia de un gen no implica que su producto regrese al compartimento donante.",
+          "Sujeto": "transferencia génica endosimbiótica en Angomonas",
+          "Predicado": "no_implica*",
+          "Objeto": "importación de la proteína al endosimbionte",
+          "Atribución": "sintesis(C-1033, C-1034)",
+          "Fuente": "S238",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "OCD proporciona un contraejemplo directo.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "5673becfce3d015a8b7a289868af6bab1755ccce9ccfc8b2d07c8fb2899d0ec9"
+      },
+      {
+        "fila": {
+          "#": "C-1093",
+          "Afirmación": "Genes bacterianos adquiridos por el genoma del insecto completan funciones ausentes en ambos endosimbiontes.",
+          "Sujeto": "Planococcus citri",
+          "Predicado": "adquiere_rasgo",
+          "Objeto": "genes bacterianos para la simbiosis tripartita",
+          "Atribución": "expresa",
+          "Fuente": "S261 título y resultados",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Filogenias y expresión localizan genes de donantes bacterianos diversos.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "b6b4f9dcd7518bd34ca520f520438b1d2fd08af97db70dd18d6c04ca3c4fea7d"
+      },
+      {
+        "fila": {
+          "#": "C-1099",
+          "Afirmación": "Las cepas de Buchnera comparadas por van Ham y colaboradores divergieron hace 80–150 Ma.",
+          "Sujeto": "divergencia entre cepas de Buchnera estudiadas",
+          "Predicado": "tiene_edad_estimada",
+          "Objeto": "80–150 Ma",
+          "Atribución": "expresa",
+          "Fuente": "S264 resumen",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "Es una estimación filogenética aplicada a las cepas comparadas.",
+          "Resolución": "parcialmente resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "315304454aa18888cfe1fd2982cc2cb1612165eae2a021a27a68e117752d87c5"
+      },
+      {
+        "fila": {
+          "#": "C-1105",
+          "Afirmación": "La filogenia de Wolbachia en lepidópteros muestra transferencia horizontal común entre especies.",
+          "Sujeto": "Wolbachia de lepidópteros",
+          "Predicado": "posee_rasgo",
+          "Objeto": "transmisión horizontal interespecífica común",
+          "Atribución": "expresa",
+          "Fuente": "S268 título y resultados",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "La incongruencia entre filogenias y MLST apoya saltos de hospedador.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "f4e0ae6f51fa72c7d40175bae7ecfa6c89e8fdf9b7f8b407fc388bbf9b48f818"
+      },
+      {
+        "fila": {
+          "#": "C-1207",
+          "Afirmación": "Las regiones codificantes de los genomas mitocondriales endosimbiontes de Durinskia baltica y Kryptoperidinium foliaceum miden 34.242 bp y 34.742 bp.",
+          "Sujeto": "mitocondrias de endosimbiontes diatomeos de dinotomos",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "34.242 bp y 34.742 bp",
+          "Atribución": "expresa",
+          "Fuente": "S301 resultados; tabla 1",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "Las longitudes proceden de ensamblajes publicados; quedaron regiones no cerradas fuera de la región codificante.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "f171d3e07d397cbf9470cba0132671f91289be4c9f9a9b239d6e4d66eab83728"
+      },
+      {
+        "fila": {
+          "#": "C-1212",
+          "Afirmación": "La persistencia estable y obligada del endosimbionte diatomeo no produjo una transferencia génica masiva comparable a la inferida en kareniáceos.",
+          "Sujeto": "dinotomos",
+          "Predicado": "no_posee_rasgo*",
+          "Objeto": "EGT terciaria masiva localizada",
+          "Atribución": "sintesis(C-1210, C-1211)",
+          "Fuente": "S302 resultados y discusión",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "El núcleo endosimbionte retenido conserva funciones que en otros sistemas pueden transferirse.",
+          "Resolución": "parcialmente resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "b677cc5632f3cd453dcdec9b14b1f2559f9ca24d5d304425f4cfc71d613bee0a"
+      },
+      {
+        "fila": {
+          "#": "C-1213",
+          "Afirmación": "El genoma del plasto terciario de Karlodinium veneficum mide 142.981 bp y codifica 70 proteínas, 30 ARNt y tres ARNr.",
+          "Sujeto": "plasto terciario de Karlodinium veneficum",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "142.981 bp; 70 proteínas; 30 ARNt; 3 ARNr",
+          "Atribución": "expresa",
+          "Fuente": "S303 resultados; tabla 1",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Los valores proceden del ensamblaje y anotación del genoma plastidial.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "sha256_fila": "e0a78b699f4e0dc4870ae1be90df2fb926da79e8685152d6e4958e9aca08c242"
+      }
+    ]
+  },
+  "continuidad": {
+    "tabla_igual_checkpoint1": true,
+    "BN134_igual_checkpoint1": true
+  },
+  "evaluaciones": [
+    {
+      "fila_csv": 2,
+      "caso": "Lenisia limosa–Arcobacter",
+      "fuentes": [
+        "S210",
+        "S225"
+      ],
+      "cobertura": "Lectura de S210 cuerpo científico y métodos iniciales; S225 cuerpo P1–16 y P22–37. No revisión integral de todas sus referencias.",
+      "campos": {
+        "identidad": "S210 cultivo LL-12, no axénico; Arcobacter epibionte. No generalizar todos los breviados.",
+        "aportes": "S210 sustenta metabolismo compartido con datos genómicos/proteómicos; varias rutas y flujos son inferencias, no mediciones directas de cada intercambio.",
+        "antiguedad": "S210 P13 plantea escenarios alternativos de origen. La antigüedad de Breviatea no fecha esta asociación.",
+        "transmision": "S225 ausencia de señal de codiversificación tiene limitaciones de muestreo/resolución; no prueba ausencia de transmisión vertical.",
+        "genoma": "S210 P6 publica ensamblaje provisional de Arcobacter de 3 Mb (15×); no localicé allí comparando cuantitativo de vida libre. BN455 sólo podría sustituirse parcialmente.",
+        "EGT": "No adjudicado por los pasajes leídos; BN456 no equivale a ausencia.",
+        "importacion": "No adjudicado por los pasajes leídos; separado de EGT.",
+        "estado": "S210 P5 declara facultativa para ambos socios bajo condiciones experimentales explícitas. Positivo delimitado para BN457."
+      },
+      "resultado": "NO_CONFORME_COMPLETITUD; candidatos positivos parciales, sin disposición ni integración"
+    },
+    {
+      "fila_csv": 3,
+      "caso": "ANME–SRB",
+      "fuentes": [
+        "S226",
+        "S227"
+      ],
+      "cobertura": "S226 manuscrito aceptado dentro de tesis, PDF pp51–62 (impresas47–58). S227 copia de autor: parte científica p1 y resultados pp3–4; no suplemento.",
+      "campos": {
+        "identidad": "S226 ANME-1 termófila/HotSeep-1; S227 consorcios ANME-2c y otros. No son una cepa o experimento único.",
+        "aportes": "S226 evidencia de pili/citocromos apoya transferencia directa de electrones, con límites mecanísticos; S227 desacopla actividad arqueana de SRB mediante aceptor artificial.",
+        "antiguedad": "No fecha de origen de asociación adjudicada.",
+        "transmision": "La frase canónica «No hereditaria conjunta» no se deduce de ser un consorcio extracelular ni de los experimentos leídos.",
+        "genoma": "Sin tamaño/comparando de vida libre adjudicados; BN458 permanece documental.",
+        "EGT": "No adjudicado; BN459 no es negación biológica.",
+        "importacion": "No adjudicada; no se deduce de geometría extracelular.",
+        "estado": "S226 permite crecimiento separado de HotSeep-1 con H2/sulfato; S227 usa un sistema artificial. No equivalen a reversibilidad natural universal del consorcio."
+      },
+      "resultado": "NO_CONFORME transmisión categórica y versión S226 sin identificar; resto parcial"
+    },
+    {
+      "fila_csv": 4,
+      "caso": "Pelomyxa–metanógenos",
+      "fuentes": [
+        "S233"
+      ],
+      "cobertura": "Cuerpo científico de S233 leído; no se presume revisión de S231 ni S232.",
+      "campos": {
+        "identidad": "P. schiedti cepa SKADARSKE; Ca. Methanoregula pelomyxae, Ca. Syntrophus pelomyxae, Ca. Vesiculincola pelomyxae confirmados por FISH; otros bins fueron contaminantes.",
+        "aportes": "S233 infiere rutas/flujo de H2; el modelo metabólico se formula como hipótesis. No extender a todo Pelomyxa.",
+        "antiguedad": "No fecha de origen adjudicada.",
+        "transmision": "Sin adjudicación nominal; BN461 permanece.",
+        "genoma": "Metanógeno: ensamblaje circular ~1.95 Mbp; Table1 publica 1,949,073 bp. Vesiculincola ~1.4 Mbp/17 scaffolds/85.2%; Syntrophus ~4.97 Mbp/84 scaffolds/97.4%. R. bromii comparado con Vesiculincola es intestinal, no acreditado como vida libre. BN462 sólo parcial.",
+        "EGT": "No adjudicado, BN463 no negativo biológico.",
+        "importacion": "No adjudicada.",
+        "estado": "BES: cultivos murieron en 7 días, lo que sugiere dependencia de metanogénesis. Vancomicina elimina otros socios y el hospedador persiste con metanógeno. No todos los socios son obligados."
+      },
+      "resultado": "NO_CONFORME generalización de taxón/función; cobertura parcial recuperable"
+    },
+    {
+      "fila_csv": 5,
+      "caso": "ciliados anaerobios–metanógenos",
+      "fuentes": [
+        "S234",
+        "S235"
+      ],
+      "cobertura": "S234 introducción/resultados/discusión y métodos seleccionados; S235 P42–49; no revisión integral de S236 ni primarias genómicas citadas por S235.",
+      "campos": {
+        "identidad": "S234 muestrea 54 cepas/32 especies; separar Armophorea, Plagiopylea y otros linajes.",
+        "aportes": "S234 plantea sintrofía por proximidad a MRO y antecedentes; no mide todos los intercambios. BN465 necesita atribución y alcance.",
+        "antiguedad": "Orígenes múltiples inferidos, sin fecha numérica común en estos pasajes.",
+        "transmision": "Mixta es inferencia filogenética, con vertical a corto plazo y adquisiciones ocasionales; siete cocultivos sin reemplazo no excluyen horizontal. Otros linajes insuficientemente muestreados.",
+        "genoma": "S235 cita reducción/pseudogenes en MCE y NOE, pero no reducción significativa en CSS. Las primarias citadas aún no cotejadas; no llenar BN466 desde una regla universal.",
+        "EGT": "No adjudicado; BN467 no ausencia.",
+        "importacion": "No adjudicada.",
+        "estado": "Dependencia variable; pérdida en cultivo para Trimyema atribuida a un trabajo anterior, aún no inspeccionado. BN468 no resuelta globalmente."
+      },
+      "resultado": "NO_CONFORME completitud; evitar convertir inferencia/muestra en universal"
+    },
+    {
+      "fila_csv": 6,
+      "caso": "Angomonas deanei–Kinetoplastibacterium",
+      "fuentes": [
+        "S237",
+        "S239"
+      ],
+      "cobertura": "Se conserva lectura y evidencia primaria del checkpoint 1. Aquí se fija continuidad, no nueva fecha de aprobación.",
+      "campos": {
+        "identidad": "S237 A. deanei TCC036E/Ca. K. crithidii; A. xylosoxidans es el comparando de vida libre explícito.",
+        "aportes": "Distinguir nutrición, OCD ancestral transferida y control de división mediante ETP9.",
+        "antiguedad": "S237 atribuye evento probablemente tardocretácico a referencias previas; no es reloj nuevo de la asociación particular.",
+        "transmision": "Sin nueva adjudicación integral en este checkpoint.",
+        "genoma": "S237 publica 810–833 kbp para cinco endosimbiontes y A. xylosoxidans 7.36 Mbp/~9×; existe comparación publicada. Table1 valores exactos no llevan unidad en cabecera JATS: no añadirla por inferencia.",
+        "EGT": "OCD y otros genes requieren cotejo nominal S238; sólo metadata recuperada, no texto completo.",
+        "importacion": "S239 ETP9 forma anillo externo; no equivale a importación intracelular. OCD no detectada dentro del simbionte.",
+        "estado": "Sin nuevo dictamen completo del campo."
+      },
+      "resultado": "NO_CONFORME: comparando declarado no localizado pese a pasaje explícito; importación sobregeneralizada"
+    },
+    {
+      "fila_csv": 16,
+      "caso": "dinotomos–diatomea",
+      "fuentes": [
+        "S301",
+        "S302"
+      ],
+      "cobertura": "S301 introducción/resultados/discusión y cepas; S302 texto científico pp246–252. Figuras no reinspeccionadas visualmente en esta ronda.",
+      "campos": {
+        "identidad": "D. baltica CSIRO CS-38; K. foliaceum CCMP1326. Compartimento mitocondrial del endosimbionte, no genoma nuclear completo.",
+        "aportes": "Retener compartimentos no demuestra por sí mismo el aporte «mantenimiento nuclear y celular» del hospedador.",
+        "antiguedad": "No edad de inicio adjudicada.",
+        "transmision": "S302 atribuye permanencia a lo largo del ciclo y división asociada al hospedador a antecedentes; candidato parcial para BN501, no experimento nuevo de herencia.",
+        "genoma": "S301 contigs 35,505/39,686 bp, extremos no cerrados; 34,242/34,742 no son tamaño total sino componente descrito como coding regions en prosa y coding and intergenic en Table1. Hay comparandos mitocondriales explícitos de diatomeas de vida libre; no reemplazan tamaño nuclear.",
+        "EGT": "S302 nueve posibles EGT, con incertidumbre host/diatomea por transcriptoma mixto; candidato parcial BN502.",
+        "importacion": "S302 usa predicciones de localización, no demostración experimental de importación.",
+        "estado": "Permanente/obligada en sistemas citados; no adjudicar reversibilidad global."
+      },
+      "resultado": "NO_CONFORME magnitud/compartimento y comparación; positivo parcial, no reparación implementada"
+    },
+    {
+      "fila_csv": 17,
+      "caso": "Kareniaceae–plasto terciario",
+      "fuentes": [
+        "S302",
+        "S303"
+      ],
+      "cobertura": "S302 pp246–252 y S303 secciones científicas principales; Table1 JATS leído, sin inspección visual nueva.",
+      "campos": {
+        "identidad": "K. veneficum, plastoma de origen haptófito. No equivale a genoma nuclear del endosimbionte ancestral.",
+        "aportes": "Fotosíntesis y destinos proteicos requieren separar función/predicción.",
+        "antiguedad": "Sin fecha numérica de captura adjudicada.",
+        "transmision": "Sin adjudicación nueva suficiente.",
+        "genoma": "S303 ensamblaje de 142,981 bp, circularidad no confirmada; comparación publicada 143 kb frente a 105 kb de E. huxleyi. Discrepancia interna: 30 tRNA en prosa frente a 29 en Table1; 110 proteínas comparando en discusión frente a 113 en tabla. No armonizar.",
+        "EGT": "S302 90 posibles EGT de origen haptófito, no todos de función plastidial; S303 ausencia de hits EST no distingue pérdida/EGT.",
+        "importacion": "Predicción in silico no prueba importación; BN505 sólo podría recuperar componente delimitado.",
+        "estado": "Sin adjudicación integral nueva."
+      },
+      "resultado": "NO_CONFORME completitud; discrepancias primarias conservadas, no resueltas"
+    },
+    {
+      "fila_csv": 18,
+      "caso": "Tremblaya–Moranella",
+      "fuentes": [
+        "S261",
+        "S262"
+      ],
+      "cobertura": "Inspección de identidad y lectura de artefactos locales; lectura parcial de Husnik2013 publicado por web. No equivalencia entre documentos.",
+      "campos": {
+        "identidad": "Archivo llamado S261 es Bublitz2019 Cell, no Husnik2013 S261. Archivo S262 es preprint marzo2016, no VoR PNAS citada.",
+        "aportes": "Bublitz2019 trata peptidoglicano mosaico; Husnik2013 complementariedad genómica. No convertir todos los intercambios en medidos.",
+        "antiguedad": "Reemplazos inferidos del socio interno en preprint; sin fecha nominal VoR adjudicada.",
+        "transmision": "Sin adjudicación completa nueva.",
+        "genoma": "No confirmar cifras exactas del catálogo desde redondeos del preprint; S260 no leído en esta ronda.",
+        "EGT": "Husnik2013 informa HGT de bacterias diversas, no de Tremblaya; EGT del socio actual es otra proposición.",
+        "importacion": "Bublitz2019 MurF en citoplasma de Moranella; autores conservan posibilidad formal de transporte de mRNA y traducción allí. No atribuir a S261 ni dar mecanismo resuelto.",
+        "estado": "Sin adjudicación integral de todos los miembros/casos."
+      },
+      "resultado": "NO_CONFORME identidad/versión; candidato primario distinto requiere alta/coordinación, no sustitución silenciosa"
+    },
+    {
+      "fila_csv": 19,
+      "caso": "Buchnera",
+      "fuentes": [
+        "S263"
+      ],
+      "cobertura": "Lectura S263 completa conservada del checkpoint1; pista RlpA4 primaria sólo parcial, no nueva aprobación.",
+      "campos": {
+        "identidad": "Buchnera APS de Acyrthosiphon pisum; no todas las cepas.",
+        "aportes": "Complementariedad metabólica inferida del genoma y fisiología previa, no todos los flujos medidos aquí.",
+        "antiguedad": "S263 introducción atribuye 200–250 Myr a ref7; no confirma C1099 de 80–150 Ma.",
+        "transmision": "No nuevo cotejo integral independiente en esta ronda.",
+        "genoma": "640,681 bp es cromosoma, más dos plásmidos. Comparación autoral one-seventh E. coli; no calcular total o razón nueva.",
+        "EGT": "No confundir genes bacterianos adquiridos de otros donantes con transferencia de Buchnera.",
+        "importacion": "S263 sólo hipótesis de lípidos o enzimas del hospedador. Nakabachi2014 RlpA4 es pista experimental posterior, leída parcialmente por leyenda indexada: falta texto/métodos completos.",
+        "estado": "Obligación debe conservar alcance hospedador/cepa y apoyo preciso."
+      },
+      "resultado": "NO_CONFORME edad/tamaño tal como agrupados; no declarar ausencia de importación"
+    },
+    {
+      "fila_csv": 20,
+      "caso": "Wolbachia",
+      "fuentes": [
+        "S268"
+      ],
+      "cobertura": "Resumen, introducción, métodos de datación, resultados de fechas/LGT y discusión leídos; S267 no inspeccionada.",
+      "campos": {
+        "identidad": "Wolbachia de mariposas/polillas muestreadas; no toda asociación Wolbachia–animal.",
+        "aportes": "No adjudicar fenotipos generales desde estudio filogenético de lepidópteros.",
+        "antiguedad": "Sec16 raíz media 12.67 mya (26.86–4.76,95%HPD), o 10.67 mya (22.6–4.7) con alternativa de prior. Fechas de cepas usadas para inferir introducción, no edad universal de captura.",
+        "transmision": "Al menos siete casos probables de transmisión horizontal por filogenia entre 31 hospedadores; no experimentos de transmisión directa.",
+        "genoma": "Sin tamaño/comparando cuantitativo adjudicado.",
+        "EGT": "Coincidencia ~350 bp/>96% requiere validación PCR para excluir contaminación; autores no la dan como transferencia probada. Otros genomas pueden haber filtrado secuencias bacterianas reales.",
+        "importacion": "No adjudicada.",
+        "estado": "No convertir fenotipos variables en dependencia universal."
+      },
+      "resultado": "NO_CONFORME completitud; posible LGT no probado"
+    }
+  ],
+  "inventario_19": [
+    {
+      "fila_csv": 2,
+      "caso": "Mecanismo: sintrofía externa — *Lenisia limosa*–*Arcobacter*",
+      "sha256_fila": "335b5cddd6668fbeb3267ea2fb01350671b1dec545d4d6aa1642ef4b36829fb6",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 3,
+      "caso": "Mecanismo: consorcio extracelular con transferencia de electrones — ANME–SRB",
+      "sha256_fila": "f8653b32ab03df97c272272ad889182fcdefdaeb45056a8a7d2bd884efa806e0",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 4,
+      "caso": "Mecanismo: endosimbiosis metabólica — *Pelomyxa*–metanógenos",
+      "sha256_fila": "7a3feff93da38ff24b51917c73a738beb7d487d49e1e2dba7e4cde4e7c2cab38",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 5,
+      "caso": "Mecanismo: adquisiciones múltiples con transmisión variable — ciliados anaerobios–metanógenos",
+      "sha256_fila": "7aa745fcc1002ce7c0b10e6673d8039d4ea82d63a64e0ac132f8674d1af9d2c2",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 6,
+      "caso": "Mecanismo: control hospedador de la división endosimbionte — *Angomonas deanei*–*Kinetoplastibacterium*",
+      "sha256_fila": "48cd7223c0b61009bef66392148160e6514779814f3425a44824c2b94011dbfa",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 7,
+      "caso": "Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*",
+      "sha256_fila": "6e89d600ca797f31df7859f886eb7ddb73e36e67f591522be8b9801474f2d553",
+      "estado": "EXCLUIDA_INDEPENDENCIA_PROPUESTA_PROPIA_NO_INTEGRADA"
+    },
+    {
+      "fila_csv": 8,
+      "caso": "Mecanismo: orgánulo fotosintético con EGT e importación — *Paulinella chromatophora*–cromatóforo",
+      "sha256_fila": "026f33130ff3e8dc9536ef1dd48242c933ade2de2f396c497a586ebe40e4c92f",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 9,
+      "caso": "Mecanismo: orgánulo fijador de nitrógeno propuesto — *Braarudosphaera bigelowii*–UCYN-A",
+      "sha256_fila": "a8f08bca7d89c31a5a1644ea8e75ae74ecf3d76691c71653b842569eae03f832",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 10,
+      "caso": "Mecanismo: transmisión vertical incompleta con readquisición — *Hatena arenicola*–*Nephroselmis*",
+      "sha256_fila": "39e843ac664e9b7d79bc575c7aa3032ed0d30b98f8fa0be9c19c9ae1a0302934",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 11,
+      "caso": "Mecanismo: cuerpo esferoidal fijador de nitrógeno tras pérdida fotosintética — *Rhopalodia*/*Epithemia*",
+      "sha256_fila": "daea44f80a49c9ba5a1b4e6205511d1aab3e3d1d080c8eb173550a8c49179e3e",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 12,
+      "caso": "Mecanismo: adquisición trófica reiterada de orgánulos y núcleo — *Mesodinium rubrum*–criptófita",
+      "sha256_fila": "5fabeb10ed1f5e270e0bf2b2d2fceb49a81d7139275cc94161eb0e62c7b992d0",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 13,
+      "caso": "Mecanismo: kleptoplastia vía presa intermediaria — *Dinophysis*–plastos criptófitos",
+      "sha256_fila": "a0b4a893b50700eb082979769d782b0f8d009d2289cbdd7e6d52b91c487658ca",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 14,
+      "caso": "Mecanismo: kleptoplastia animal sin HGT nuclear extensa — *Elysia*/*Plakobranchus*–plastos",
+      "sha256_fila": "f79b1fcc7d1f79bb0f8c9b4d04189ce5de22af4f473c2e1cdf5ad5493c4c7212",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 15,
+      "caso": "Mecanismo: endosimbiosis secundaria con núcleo reducido retenido — criptófitos/cloraracniófitos–nucleomorfo",
+      "sha256_fila": "bc3af965a374e88410000b4eea0185faab56dacfce7606f24f28a45a046b0a89",
+      "estado": "INVENTARIADA_PENDIENTE_RELECTURA_PRIMARIA_EN_ESTE_LOTE"
+    },
+    {
+      "fila_csv": 16,
+      "caso": "Mecanismo: endosimbiosis terciaria con núcleo y mitocondrias retenidos — dinotomos–endosimbionte diatomeo",
+      "sha256_fila": "a63fe028dfc52e6e97456f04dbf41b8c66e887874e97e2367952ce9a0eb8a912",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 17,
+      "caso": "Mecanismo: reemplazo terciario por plasto haptófito — kareniáceos–plasto haptófito",
+      "sha256_fila": "eb1a1ec4a4e7b0f494d357c36982cb8128a7a900984f53720c3ca71aa0c4b2c6",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 18,
+      "caso": "Mecanismo: endosimbiosis anidada con reemplazo — *Tremblaya*–*Moranella*–piojo harinoso",
+      "sha256_fila": "573cc6562f8091e3674583302557fd74ad4374ca2e528e356f0bc451df41a670",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 19,
+      "caso": "Mecanismo: dependencia nutricional con transmisión materna — áfido–*Buchnera aphidicola*",
+      "sha256_fila": "058d6f27ae5b99be2cc1ca6600855ddd1eef82dc915df68298c419b74711bd03",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    },
+    {
+      "fila_csv": 20,
+      "caso": "Mecanismo: transmisión materna con saltos horizontales y desenlaces variables — hospedadores–*Wolbachia*",
+      "sha256_fila": "ea18ae4c7fcd5dbf7b834264b3899698d953fd4fe431b8fc293ee48bf5057453",
+      "estado": "LECTURA_PARCIAL_DESCRITA_NO_CIERRE"
+    }
+  ],
+  "pasajes_primarios": [
+    {
+      "source": "S210",
+      "artifact": "fuentes/S210 [2016] Environmental Breviatea harbour mutualistic Arcobacter epibionts.xml",
+      "artifact_sha256": "4a60a9aebeb54884cdb066dc68574cb33e9fd5e53cc89e161b193aa29e7e4072",
+      "locator": "body / body; paragraphs in document order / P5",
+      "text_opening": "We found that the symbiosis was facultative for both partners. Provided with dissolved organic carbon, hydrogen and nitrous oxide as the only electron acceptor,",
+      "text_sha256": "c1b8116d3fffb960a32b769b2e45d3c9298da4813ba62146a6edd843e37cfd76",
+      "text_bytes": 531,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S210",
+      "artifact": "fuentes/S210 [2016] Environmental Breviatea harbour mutualistic Arcobacter epibionts.xml",
+      "artifact_sha256": "4a60a9aebeb54884cdb066dc68574cb33e9fd5e53cc89e161b193aa29e7e4072",
+      "locator": "body / body; paragraphs in document order / P6",
+      "text_opening": "Why did Arcobacter sp. colonize L. limosa? To address this question, we investigated potential metabolic interactions between both partners with combined metage",
+      "text_sha256": "e1cf78333c94a29b433bca3ab0b2f9a4ede493a23dfbb1d682e0ffccb4df68bb",
+      "text_bytes": 988,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S210",
+      "artifact": "fuentes/S210 [2016] Environmental Breviatea harbour mutualistic Arcobacter epibionts.xml",
+      "artifact_sha256": "4a60a9aebeb54884cdb066dc68574cb33e9fd5e53cc89e161b193aa29e7e4072",
+      "locator": "body / body; paragraphs in document order / P13",
+      "text_opening": "To investigate whether Arcobacter might also engage beneficially with other Breviatea, we screened previously published3,4 transcriptomic data of Pygsuia biform",
+      "text_sha256": "c1fa0d1753fc82b4ffb98807bd925ad804070ab8b75b67230af4842bb27704a6",
+      "text_bytes": 1982,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S225",
+      "artifact": "fuentes/S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml",
+      "artifact_sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+      "locator": "body / body; paragraphs in document order / P3",
+      "text_opening": "Breviates are free-living amoeboflagellate protists that have only been identified in hypoxic or anoxic environments. They are part of the eukaryotic supergroup",
+      "text_sha256": "cb8ea33669650ea41c9595c01d5cbdf3ba9efdf3aa3e36f57bda3ab0c6deacc0",
+      "text_bytes": 1368,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S225",
+      "artifact": "fuentes/S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml",
+      "artifact_sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+      "locator": "body / body; paragraphs in document order / P28",
+      "text_opening": "Extracellular relationships between prokaryotes and protists can vary in the nature of the interaction. For example, some protists have sophisticated cellular s",
+      "text_sha256": "adf702e660f29bb2689066113b37a8df733c854145869b03812419fb0f46743c",
+      "text_bytes": 1025,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S225",
+      "artifact": "fuentes/S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml",
+      "artifact_sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+      "locator": "body / body; paragraphs in document order / P35",
+      "text_opening": "The nature of known eukaryote:prokaryote interactions is diverse, ranging from transient associations to obligate symbioses [82], and is influenced by the envir",
+      "text_sha256": "ae6808e8645011cc93d73564be49c3e6531d8142e076402852c24e17fe9a3e2d",
+      "text_bytes": 1610,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S225",
+      "artifact": "fuentes/S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml",
+      "artifact_sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+      "locator": "body / body; paragraphs in document order / P36",
+      "text_opening": "The diverse nature of the Desulfovibrionaceae and Arcobacteraceae across phylogenomic trees (Fig. 3A) suggests that their co-occurrence with breviates may not b",
+      "text_sha256": "5d106bdcae17e91e05690e9db6005d5b8162cd1d351fa275db28fcf8945f8dc3",
+      "text_bytes": 828,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S225",
+      "artifact": "fuentes/S225 [2025] Anaerobic breviate protist survival in microcosms depends on microbiom.xml",
+      "artifact_sha256": "654f16bda16f141e27a800ee38b87f8e4a0c630cbf772437c9228187e890f2b3",
+      "locator": "body / body; paragraphs in document order / P37",
+      "text_opening": "Here, we present the microbial complement of five laboratory-maintained protist microcosms. We demonstrate that protist growth is influenced by the metabolism o",
+      "text_sha256": "96dbe96a06be33cbc3fb5d36360910286cafd0ffdf71d054a1c6aa5b75e131f4",
+      "text_bytes": 1437,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec9 / Species composition of the Pelomyxa schiedti endosymbiont community / P2",
+      "text_opening": "We designed specific oligonucleotide probes against the 16 S rRNA gene of each metagenomic bin (Table S1). FISH with probes against Ca. Methanoregula pelomyxae ",
+      "text_sha256": "d7fbf56c6709e41f5e1b5c3a6e0691e46b568cf8c55bf77d48c944207755b7f2",
+      "text_bytes": 1331,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec9 / Species composition of the Pelomyxa schiedti endosymbiont community / P3",
+      "text_opening": "We evaluated the essentiality of each endosymbiont by treating the cultures of P. schiedti with vancomycin, an antibiotic that inhibits bacterial cell wall bios",
+      "text_sha256": "6d6464fe7e96bf5ed6731e89c2c7290f6c7ad0e6ee5e20c981eea6bfb9b6aa64",
+      "text_bytes": 709,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec11 / Genome and metabolism of Ca. Vesiculincola pelomyxae / P1",
+      "text_opening": "The genome assembly of Ca. Vesiculincola pelomyxae consists of 17 scaffolds with a total length of ~1.4 Mbp, a GC content of 33.1%, and a genome completeness of",
+      "text_sha256": "6797cfd999f3405cfb5d6d895ad62b740b438f5d37c46d575d2492e6cb49b0ee",
+      "text_bytes": 1383,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec13 / Genome and metabolism of Ca. Methanoregula pelomyxae / P1",
+      "text_opening": "The genome assemblies of Ca. Methanoregula pelomyxae from individual P. schiedti cells were composed of 2–14 scaffolds. We aligned these assemblies using MAUVE ",
+      "text_sha256": "ef231d17a52432a4e555c67652681d28c95396e77aa00f2049b91b9f96636b5d",
+      "text_bytes": 537,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec13 / Genome and metabolism of Ca. Methanoregula pelomyxae / P2",
+      "text_opening": "The predicted metabolism of Ca. Methanoregula pelomyxae resembles a typical hydrogenotrophic methanogen that uses H2 and formate to reduce CO2 to methane (Fig. ",
+      "text_sha256": "34944e08c5515a5cd60ec7f6f89cb4005a089c8d5457cfb8c283207feadfb54a",
+      "text_bytes": 1674,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P2",
+      "text_opening": "The results of genome annotations and transcriptomic analysis allowed us to present the first hypothesis on the metabolic interactions in the consortium (Fig. 7",
+      "text_sha256": "240e905614d1b6bc43f61f8b62db262b3092b06ea9ccdc51ad07538c0a06d6ab",
+      "text_bytes": 1849,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P3",
+      "text_opening": "To maintain the redox balance and to maximize ATP production, the ameba reoxidizes NADH and reduced ferredoxin using long hydrogenases, which are characterized ",
+      "text_sha256": "efc09eda4d09d1a540b275867928d2b2f5776e67b06686138dfc0b60e33d5ae9",
+      "text_bytes": 1616,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P5",
+      "text_opening": "The bacterial members of the consortium, Ca. Vesiculincola pelomyxae and Ca. Syntrophus pelomyxae, do not seem essential symbionts, as they can be removed by an",
+      "text_sha256": "5c6b46d463b46a5997f1f527454a2afe8480492c386ccef36c821ead3cc90241",
+      "text_bytes": 2027,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P7",
+      "text_opening": "The consortia of P. schiedti and P. palustris are quite similar with respect to the presence of a methanogen and a syntrophic deltaproteobacterium [19] (Figs. S",
+      "text_sha256": "415a562b72838f913f26279e7b6079a6d0113cd53ce6324df7fcf1fc8d55fd87",
+      "text_bytes": 550,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P8",
+      "text_opening": "The third partner in the consortia of the respective ameba, however, is unrelated and localized in different compartments. Ca. Vesiculincola pelomyxae (Clostrid",
+      "text_sha256": "cd1ceabaf00412e6df662ce38c38f56bd61c32571a35c9934b59f82f94b190ad",
+      "text_bytes": 885,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S233",
+      "artifact": "fuentes/S233 [2023] Hydrogenotrophic methanogenesis is the key process in the Pelomyxa sch.xml",
+      "artifact_sha256": "b7631b3f62568131c26b834c87ebc3a4e57cb57d1f51bf67618c8cadec81a3ce",
+      "locator": "Sec14 / Discussion / P9",
+      "text_opening": "The study presented here elucidates the interactions within a complex quadripartite endosymbiotic community of a free-living anaerobic ameba. We show that Ca. V",
+      "text_sha256": "d102392e5836ae4c069fad9382bcd583e0e516cf2d9c39888a2c00f909a2d3f8",
+      "text_bytes": 1240,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec3 / Introduction / P3",
+      "text_opening": "Existing evidence suggests that each ciliate species harbors a single methanogen population [11, 12, 28, 29, 38, 44]. Although it is generally assumed that the ",
+      "text_sha256": "76c12d0c2865dc01411e71e9dffd4ea88016534f28f0e37d2ec022e266dc3ae1",
+      "text_bytes": 1058,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec18 / Symbiont switches do not occur in experimentally co-cultured ciliates / P1",
+      "text_opening": "A total of seven artificially mixed cultures, each containing a pair of different ciliate species, were successfully established. Five of them contained species",
+      "text_sha256": "9cbea2b3643527c9fc07d2c239b85510054221b25f7cff6bffcb80a29e24dc94",
+      "text_bytes": 1126,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec18 / Symbiont switches do not occur in experimentally co-cultured ciliates / P2",
+      "text_opening": "Except for the MIX7 culture, the free-living archaeal community from the control medium of these mixed cultures (Fig. 4A) as well as for four naturally mixed cu",
+      "text_sha256": "0dca0525265d21e47024678c0042519a1cd1ff2aad82fcc6ef897361c368031c",
+      "text_bytes": 860,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec20 / Anaerobic ciliates maintain stable populations of dominant methanogenic symbionts / P1",
+      "text_opening": "Based on our and previous observations [11, 45], metopid cells typically host hundreds to thousands of symbiotic methanogens (Table S10). We observed the symbio",
+      "text_sha256": "1b7dce501f6a98bc7cd1fa2aa915a99456526bfb45f42025d7735326ff35ea6e",
+      "text_bytes": 974,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec20 / Anaerobic ciliates maintain stable populations of dominant methanogenic symbionts / P3",
+      "text_opening": "Interestingly, the methanogenic symbionts identified here and those from other studies [18, 27, 30, 32, 36] are different from their free-living relatives. Howe",
+      "text_sha256": "2ce361b8746ec68f088ce1cb80301030444f4a81f20125e6a2ab29f210b12048",
+      "text_bytes": 568,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec24 / The methanogen–ciliate association implies a mixed transmission mode / P1",
+      "text_opening": "At short evolutionary timescales, vertical transmission during host division is a straightforward mechanism to maintain symbiont fidelity across generations, as",
+      "text_sha256": "0aa6a773ba2d88bc7cca4323ab12fd8e7c893f0e653dd7f6dcf170f59f74703d",
+      "text_bytes": 888,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec24 / The methanogen–ciliate association implies a mixed transmission mode / P2",
+      "text_opening": "Even so, occasional horizontal transmission of methanogens apparently also occurs among closely related hosts (e.g. within a species). Remarkably, the different",
+      "text_sha256": "ea1f368ee2f530492463d547e3dcfbee7a3167e5f0a6bdbe1e4bfe0ccb5e19f1",
+      "text_bytes": 1092,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec25 / Further considerations / P2",
+      "text_opening": "Although the transmission modes of the methanogens are not yet fully understood, it is likely that a ciliate population maintains its symbiotic methanogen linea",
+      "text_sha256": "5bcb6c6c80cb542db8288739b6ad8df70b3b5e4563fd74961ca02a0310eb36ca",
+      "text_bytes": 486,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S234",
+      "artifact": "fuentes/S234 [2024] Methanogenic symbionts of anaerobic ciliates are host and habitat spec.xml",
+      "artifact_sha256": "2c54d830cff858fcc498c38bf891a3fd41c78ab9dfe5bc1c186065dde4a7512c",
+      "locator": "sec25 / Further considerations / P3",
+      "text_opening": "The identified methanogenic symbiont lineages, along with previously sequenced symbionts, were genetically different yet similar to the “putatively” free-living",
+      "text_sha256": "ceb0670a6e707d15f08cb186f5d0fcd480ecf5e31d3463fd483d7ce438fcfa61",
+      "text_bytes": 1713,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P42",
+      "text_opening": "By comparing genomes of methanogenic endosymbionts inhabiting ciliates of the class Armophorea with their closest free-living counterparts, researchers have beg",
+      "text_sha256": "0e43efb364f11316b4550c8ea9b01c13c337ca026ec95716363840ce5fd01650",
+      "text_bytes": 1503,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P43",
+      "text_opening": "Clarifying the evolution of associations between methanogenic endosymbionts and their ciliate hosts is a necessary precondition for illustrating mechanisms by w",
+      "text_sha256": "317babdc8947985b2949179426a2ca6d158296f4661b40fed0965d3b24d0a93a",
+      "text_bytes": 2844,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P45",
+      "text_opening": "It is noteworthy that endosymbiont replacements occurred during the evolution of endosymbiotic associations between methanogens and their ciliate hosts. Members",
+      "text_sha256": "2c20034d5ec02286c7a2ddfa79f06a8b10821585db3c366f6f0a0798d24a2b77",
+      "text_bytes": 3701,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P46",
+      "text_opening": "As expected, the present study revealed an independent origin and a mixed-model transmission for the anaerobic class Plagiopylea (Figs. 5, 7). Most plagiopylean",
+      "text_sha256": "dfe021243b552a807c130a44bc1040e7ff88d5940d2d38beaf127a73193895e6",
+      "text_bytes": 1801,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P47",
+      "text_opening": "Similarly, phylogenies of the anaerobic class Armophorea and their methanogenic endosymbionts did not match well, probably due to endosymbiont replacements (Fig",
+      "text_sha256": "9a63a1eb12a73acce49a2baa4c4f269671b2bc2a9cae67fe0a2158904e7a7052",
+      "text_bytes": 5277,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P48",
+      "text_opening": "Among the ciliate classes Oligohymenophorea, Karyorelictea, Litostomatea, Prostomatea, and Muranotrichea, only one or two species hosting methanogenic endosymbi",
+      "text_sha256": "a71dbe323881fca50ee76f7de4d134a9eace3c11dd43c89a3f2cf12dbfbcd135",
+      "text_bytes": 876,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S235",
+      "artifact": "fuentes/S235 [2025] Distinct evolutionary origins and mixed-mode transmissions of methanog.xml",
+      "artifact_sha256": "f1d3eb5b89f01a79450b9fa048765d641d02a5c79a2e6f2a8c17e2906f3d41ed",
+      "locator": "body / body; paragraphs in document order / P49",
+      "text_opening": "In the present investigation, the identities of methanogenic endosymbionts of nine anaerobic ciliate populations were verified by autofluorescence, FISH, and am",
+      "text_sha256": "746329163e6004b853837c13f5807891b62f4937942a85bedfdf2bd53f48199d",
+      "text_bytes": 1693,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s1 / Introduction / P3",
+      "text_opening": "The tertiary diatom endosymbiont of dinotoms has, like other tertiary endosymbionts' reduced to some degree: it has lost its distinctive cell wall, motility, an",
+      "text_sha256": "814e6d1494a988a6c14b219ed4c02b4136f943af553850df48fa2e4adf72c2e5",
+      "text_bytes": 528,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s1 / Introduction / P4",
+      "text_opening": "In two dinotom species, Durinskia baltica and Kryptoperidinium foliaceum, it has been shown that the mitochondria of the endosymbionts still express genes for c",
+      "text_sha256": "52d1745c4c77a398aa2acfe56df40c1dbdccbc207bad95ba4718928350c12d32",
+      "text_bytes": 1661,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s1 / Introduction / P5",
+      "text_opening": "The co-occurrence of these two distinct mitochondria within dinotoms raises questions about whether or not either or both genomes have been reduced in any way d",
+      "text_sha256": "8378581c7a5eddf9b06c6077b04b669c497884db49ffdb8a78c282aca6d692ac",
+      "text_bytes": 2812,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s2a / The endosymbiont mitochondrial genomes of D. baltica and K. foliaceum / P1",
+      "text_opening": "From the A+T-rich fraction of DNA of D. baltica and K. foliaceum, 299 and 635 pyrosequencing reads with an average length of 366 bp and 386 bp were respectively",
+      "text_sha256": "339bcae3b9ff78ee0b8b8cb89321df8161210b088caa48d1773973216561ffe3",
+      "text_bytes": 1080,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s2b / General features of the endosymbiont mitochondrial genomes of D. baltica and K. foliaceum / P1",
+      "text_opening": "The coding regions of the endosymbiont mitochondrial genomes of D. baltica (34,242 bp) (GenBank: JN378735) and K. foliaceum (34,742 bp) (GenBank: JN378734) are ",
+      "text_sha256": "0e07dd3ab6cd32211212a95ee5889a5827712dd3a2672ffb5314d18492022116",
+      "text_bytes": 1922,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s3a / The mitochondrial genomes of the endosymbionts in D. baltica and K. foliaceum have not been reduced / P1",
+      "text_opening": "The mitochondrial genomes of the tertiary endosymbionts in D. baltica and K. foliaceum share nearly all the characteristics found in mitochondrial genomes of fr",
+      "text_sha256": "bb54c229ab489a3cd830c166001b7e2fb5eddd97e416625845d9828043c6b684",
+      "text_bytes": 897,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s3a / The mitochondrial genomes of the endosymbionts in D. baltica and K. foliaceum have not been reduced / P2",
+      "text_opening": "Recently, Gabrielsen et al. [44] sequenced the plastid genome of the tertiary haptophyte in the dinoflagellate Karlodinium veneficum, providing the only availab",
+      "text_sha256": "5ef21adf175fd06f94a8d30115469ee08c36134d8cc140da454d49424e58a936",
+      "text_bytes": 1006,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s3b / The mitochondrial genomes of the host in D. baltica and K. foliaceum retain nearly all their dinoflagellate characteristics / P3",
+      "text_opening": "These genomes raise the important question of why the endosymbiont mitochondrial genomes have not been completely eliminated or significantly reduced, and why t",
+      "text_sha256": "576ecc5dd9a14c913ac79a6a4c1e3d6430c44b415d8c0fc142315b52b65adee4",
+      "text_bytes": 859,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "s4a / Strains and culture conditions / P1",
+      "text_opening": "Cultures of Kryptoperidinium foliaceum CCMP 1326 and Durinskia baltica (Peridinium balticum) CSIRO CS-38 were respectively obtained from the Provasoli-Guillard ",
+      "text_sha256": "e5af38ed037665eab4c67e2ba20277ac39ea2fc2fa7620b7d3ea90d5c0aeb3a7",
+      "text_bytes": 541,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S301",
+      "artifact": "fuentes/S301 [2012] Tertiary Endosymbiosis in Two Dinotoms Has Generated Little Change in.xml",
+      "artifact_sha256": "262d78f5bab37f475dc18fd319373b9e4d15462a5da3e6657e490764d659077e",
+      "locator": "pone-0043763-t001",
+      "text_sha256": "f5561ec6d96c74b9fe6b55903b568bf100accadf99310144201a5aca6ace8f25",
+      "limitation": "JATS table inspected; figure/table visual not newly inspected in this checkpoint."
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s2a / Genome assembly / P1",
+      "text_opening": "The 454 sequencing resulted in 260,387 (FLX) and 625,532 (Titanium) reads, generating a total of 230 Mbp (megabasepairs) of sequence. Some K. veneficum plastid-",
+      "text_sha256": "01ab84dfdab58577910d11135f9100d2f647ce9470a2a83e7b4396dbaa725900",
+      "text_bytes": 850,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s2b / Essential features of the K. veneficum plastid genome / P1",
+      "text_opening": "The K. veneficum plastid genome encodes 70 different proteins, 30 tRNAs (of which trnE and trnK is present in five and two copies, respectively) and three ribos",
+      "text_sha256": "7d57b8f39e2d43ebd55dffcf70ed41623f033caeeac2043714bdad7688c978dc",
+      "text_bytes": 1180,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s2b / Essential features of the K. veneficum plastid genome / P2",
+      "text_opening": "The K. veneficum plastid genome contains a subset of the protein-coding plastid genes found in the haptophyte E. huxleyi (Fig. 2), including all 12 protein-codi",
+      "text_sha256": "2982c6ebd2270556309499d43f767bb38ea77e5a3f330ba27ef43ab5135f5438",
+      "text_bytes": 472,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s3a / A significant gene reduction is seen in the tertiary endosymbiont genome / P1",
+      "text_opening": "The plastid genome of K. veneficum contains only 70 protein-coding genes, whereas the haptophyte Emiliana huxleyi has 110 plastid-encoded protein genes [16]. Th",
+      "text_sha256": "ae46c23e48147db4cc63ddc499a72651a6742c903f05c2d3dc8959ca34f09d59",
+      "text_bytes": 1108,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s3a / A significant gene reduction is seen in the tertiary endosymbiont genome / P2",
+      "text_opening": "Interestingly, when comparing the plastid-encoded genes of C. velia and K. veneficum a large overlap is observed: 48 of the 56 plastid protein genes in C. velia",
+      "text_sha256": "cefa58a09656a132f35c5966462438f0e77ec7b6ebc81e190f1d924bd606766e",
+      "text_bytes": 1269,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s3b / A reshuffled plastid genome with expanded intergenic regions / P1",
+      "text_opening": "In contrast to the peridinin dinoflagellates which carry their plastid genome on multiple minicircles [10], the K. veneficum plastid contains a large linear, or",
+      "text_sha256": "c633788fb9a3840f2c9c9a41dc9966923846e3a962f3f9791523f122847623c1",
+      "text_bytes": 1513,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "s3b / A reshuffled plastid genome with expanded intergenic regions / P2",
+      "text_opening": "Together, these results show that the establishment of the tertiary plastid in dinoflagellates was accompanied by major changes to the endosymbiont genome, incl",
+      "text_sha256": "09c077e06381d3641bc423f000ebd6b027cce7eb3ec030dff279955ad32d96c9",
+      "text_bytes": 677,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S303",
+      "artifact": "fuentes/S303 [2011] Genome Evolution of a Tertiary Dinoflagellate Plastid.xml",
+      "artifact_sha256": "73a501f932617fe9363f261d103124f2f334d2454bf1b57637f679dbafb0176a",
+      "locator": "pone-0019132-t001",
+      "text_sha256": "280d86c994d329377e615c3b5c604008b460cdbf3414023b6eec15a83edf2014",
+      "limitation": "JATS table inspected; figure/table visual not newly inspected in this checkpoint."
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec9 / Divergence time estimation / P1",
+      "text_opening": "To compare the age of Wolbachia divergence to previously published Lepidoptera divergence time estimations, we dated the splits of all Wolbachia strains found i",
+      "text_sha256": "6398866d81a757a2150b1196665bfbcda393a2c821f8b0d524f4ad288ef07f6b",
+      "text_bytes": 1697,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec9 / Divergence time estimation / P2",
+      "text_opening": "The first calibration scheme was based on the median rate (substitutions per site per generation) of the Wolbachia genome [65] reported in generations of Drosop",
+      "text_sha256": "fbe5b02e2ea636cdae53d93430866ebdc14befd6ae6f67fc2691f436f031d094",
+      "text_bytes": 991,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec9 / Divergence time estimation / P3",
+      "text_opening": "For each calibration scheme, we ran two BEAST analyses for a total of 4 runs using default settings for the remaining priors. We ran the MCMC chains for 150,000",
+      "text_sha256": "aedcba1062a6138ceccab9f45a5cbfead06b2dffa2d539c87664eeec99fa7acf",
+      "text_bytes": 411,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec16 / Divergence time estimation / P1",
+      "text_opening": "Both the LRT (nt12: df = 91, LRT value = 565.16, P-value = 0; nt3: df = 91, LRT = 1833.43, P-value = 0) and RRT (outgroup: Ephestia sp., nt12: 112/351, nt3: 140",
+      "text_sha256": "719086332d34e411e285de170bcf5579ef3d1704a885894951c3e7271339e827",
+      "text_bytes": 2108,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec19 / Lateral gene transfer (LGT) / P1",
+      "text_opening": "We found one possible case of LGT between the Wolbachia strain wHa of Drosophila simulans and the genome of the butterfly Melitaea cinxia. The portion of the Wo",
+      "text_sha256": "1c72c4921d02186387ab4e16baaecf4ef4c955deb788b887de9f49a71e5ae3bf",
+      "text_bytes": 1017,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source": "S268",
+      "artifact": "fuentes/S268 [2016] Evidence for common horizontal transmission of Wolbachia among butterf.xml",
+      "artifact_sha256": "688a3eb0745361b87b97529ef3d3817b02c650364584ec2f15caf009ae6ff93d",
+      "locator": "Sec20 / Discussion / P8",
+      "text_opening": "Recently, a complete copy of the Wolbachia genome was found within the genome of Drosophila ananassae and large segments were found in seven other Drosophila sp",
+      "text_sha256": "372a540b4b6674af59b66280e6e267ce801699be970f5f029af4dbb7e0015c4b",
+      "text_bytes": 2013,
+      "normalization": "JATS itertext, join whitespace with single spaces, UTF-8 without LF"
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 1; pdftotext -raw",
+      "text_sha256": "0b613d8f7e08ad58f6abbab2fa52b2ffe2f542cf89a618d3f4027c1d1f3b52e1",
+      "text_bytes": 305
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 3; pdftotext -raw",
+      "text_sha256": "fe5e92a2c780fe691cb9bf706560f1532972b75a470b272479e20ef134b91a7d",
+      "text_bytes": 3151
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 51; pdftotext -raw",
+      "text_sha256": "d5d02c7d75b2078538cfe3641392914c229a46555a9056bae9a865673da72eb5",
+      "text_bytes": 987
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 52; pdftotext -raw",
+      "text_sha256": "86256b03bdfd8279fc3b9ba091876f02c0bdc77b555bc1b8736264bacc432f67",
+      "text_bytes": 1879
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 53; pdftotext -raw",
+      "text_sha256": "5770a141b60d5edb2af09592a384aa393aa47d7cb920c1303d9d482f386f4da8",
+      "text_bytes": 2728
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 54; pdftotext -raw",
+      "text_sha256": "78749724df951edc349bf81d937104b82866eb0bb7cc9820ba5b077528de6bfb",
+      "text_bytes": 3015
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 55; pdftotext -raw",
+      "text_sha256": "ab52e2a54a518e49b36451056f1d5145869d3b301f199de0a3d64d49fcf359b9",
+      "text_bytes": 2941
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 56; pdftotext -raw",
+      "text_sha256": "192aad2ae76dd8984ea277ba677ce274eb167912c394d395a8286bc9f7d97a4d",
+      "text_bytes": 2843
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 57; pdftotext -raw",
+      "text_sha256": "20240493c95d4fc2da763b5f600d32ede33f2fc39032215aa9361ae6ba1091eb",
+      "text_bytes": 2146
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 59; pdftotext -raw",
+      "text_sha256": "745f22920810da43ff64df1ec0f03815d0d8aa4146a482c871eac456de2531e5",
+      "text_bytes": 2312
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 61; pdftotext -raw",
+      "text_sha256": "8b69094fb068e6796f88904c6f7991abf7e8c2a3bcd04fff4f7e0f3b310c1b7d",
+      "text_bytes": 2717
+    },
+    {
+      "source_label_only": "S226",
+      "artifact": "fuentes/S226 [2015] Intercellular wiring enables electron transfer between methanotrophic.pdf",
+      "artifact_sha256": "4b587fbd1ff5dacf6bfeaa28da613d183377c3bc6708eb5725ea361afa300ac9",
+      "locator": "PDF physical page 62; pdftotext -raw",
+      "text_sha256": "48ad04969ff162840770454a9ccc79907ee4cb951a2d1d9b28d1a22a2683b7f2",
+      "text_bytes": 2680
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 1; pdftotext -raw",
+      "text_sha256": "e1e3c1fd28f14fa2ebd6c0d85fdd775964759ee168ed9f5d5befb16e86181e79",
+      "text_bytes": 1101
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 2; pdftotext -raw",
+      "text_sha256": "a86c1652812979322dfe899159e7e04b7d707ffe81040ef0bdc7ca92d82e4b0d",
+      "text_bytes": 937
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 3; pdftotext -raw",
+      "text_sha256": "c6a3a0f5d404600f0d580b143d631723f738fa0cb59f54519aed7eb603f92a5c",
+      "text_bytes": 5452
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 4; pdftotext -raw",
+      "text_sha256": "8707f9e6b4ccea394f21bca3cc03a5f844072db5f53e02b4b88fa17645033777",
+      "text_bytes": 4031
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 7; pdftotext -raw",
+      "text_sha256": "6bc7108f86f85cf2c88dac91b77b52348ab69800a80903e268fe1457fa771796",
+      "text_bytes": 3286
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 8; pdftotext -raw",
+      "text_sha256": "6b24400c907a1f318b335df9e9d67546f9f04c24807abe8476ee847d76f70303",
+      "text_bytes": 5861
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 9; pdftotext -raw",
+      "text_sha256": "2ab4c560c925541082e08ef76d68bd55608f928cc599039e8962c66ed74812e3",
+      "text_bytes": 6080
+    },
+    {
+      "source_label_only": "S261",
+      "artifact": "fuentes/S261 [2013] Horizontal Gene Transfer from Diverse Bacteria to an Insect Genome Ena.pdf",
+      "artifact_sha256": "4502baf93bd61b78733857b247b94517ec57ed252163b4c5579e44118c7d0e77",
+      "locator": "PDF physical page 17; pdftotext -raw",
+      "text_sha256": "22e639b8bc1cdd253316cd79ab9f524b572948b00818e794e170365026ad601a",
+      "text_bytes": 6076
+    },
+    {
+      "source_label_only": "S262",
+      "artifact": "fuentes/S262 [2016] Repeated replacement of an intrabacterial symbiont in the tripartite n.pdf",
+      "artifact_sha256": "b1b0929d36247a98f5b245ed22c0bd0ad4be4d55e14377cbe5fcb4edb8246661",
+      "locator": "PDF physical page 1; pdftotext -raw",
+      "text_sha256": "9ea630357e65ccbe641d5a9726e77e8a9adf78b5868c747338bf8c2a4a02bc7f",
+      "text_bytes": 4541
+    },
+    {
+      "source_label_only": "S262",
+      "artifact": "fuentes/S262 [2016] Repeated replacement of an intrabacterial symbiont in the tripartite n.pdf",
+      "artifact_sha256": "b1b0929d36247a98f5b245ed22c0bd0ad4be4d55e14377cbe5fcb4edb8246661",
+      "locator": "PDF physical page 2; pdftotext -raw",
+      "text_sha256": "84220a68ce0c9154dd8f9dfd22d53898e8c542887631833bebbf665b4c65200a",
+      "text_bytes": 5542
+    },
+    {
+      "source_label_only": "S262",
+      "artifact": "fuentes/S262 [2016] Repeated replacement of an intrabacterial symbiont in the tripartite n.pdf",
+      "artifact_sha256": "b1b0929d36247a98f5b245ed22c0bd0ad4be4d55e14377cbe5fcb4edb8246661",
+      "locator": "PDF physical page 3; pdftotext -raw",
+      "text_sha256": "b115ed03c2799b52a5b40c5d40685843df9f1f9b0bc55d7ab880b0e2923c82ca",
+      "text_bytes": 6263
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 1; pdftotext -raw",
+      "text_sha256": "bbaec0963f66da6aaf8cdd0d369c09c9815ee0c506441042feb137df70b7065f",
+      "text_bytes": 6257
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 2; pdftotext -raw",
+      "text_sha256": "ab1f277496538981bf979ea4a9f7519b4269e350330530108d4e640e5a38d5f3",
+      "text_bytes": 8224
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 3; pdftotext -raw",
+      "text_sha256": "e57583d4f8a8934e51c55b3e9e298faaaf4d66ac6aeb9f77d0fffe5849cfe9ec",
+      "text_bytes": 8523
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 4; pdftotext -raw",
+      "text_sha256": "356e30f653ad1baaa6fb8d713daa329de8840e6c770ed06994a7c30c6920bcb0",
+      "text_bytes": 5077
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 5; pdftotext -raw",
+      "text_sha256": "d8186775a4642538104ad7cbaf684b5f907a5c20de2632e34a0f653839f0b8c2",
+      "text_bytes": 7700
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 6; pdftotext -raw",
+      "text_sha256": "fb563607be8ee7f2158647dd46fd0d27d84204e7f6c3ad410c905d6fcf20f555",
+      "text_bytes": 2169
+    },
+    {
+      "source_label_only": "S302",
+      "artifact": "fuentes/S302 [2014] Endosymbiotic Gene Transfer in Tertiary Plastid-Containing Dinoflagell.pdf",
+      "artifact_sha256": "002d2488f95cdf7ddcbbb61eac88f4599fea4e7cc4c87a75624c38a7f4f5ee34",
+      "locator": "PDF physical page 7; pdftotext -raw",
+      "text_sha256": "15d40249b03b0b9dc417c9ad4582bfc45d0a2e1869eaf3a50ebf47862e596c71",
+      "text_bytes": 8589
+    },
+    {
+      "source": "S227 downloaded author copy",
+      "artifact": "/tmp/lectura-bn134-20260927-MPilZ4/S227-autor.pdf",
+      "artifact_sha256": "b633fd65d10d3bf6ec297925dc604b82fee2c1c5610aef80e7efafac5f5abee5",
+      "locator": "PDF physical page 1; printed 703",
+      "text_sha256": "47ce046a2dcb85f2455547eace4b3a71dc3db115a1359db1608e57a21c62d20d",
+      "text_not_reproduced": "Full page not reproduced; recovered primary scientific text and identifier checked. Printed pages 703,705,706 only within scope; neighboring unrelated articles excluded."
+    },
+    {
+      "source": "S227 downloaded author copy",
+      "artifact": "/tmp/lectura-bn134-20260927-MPilZ4/S227-autor.pdf",
+      "artifact_sha256": "b633fd65d10d3bf6ec297925dc604b82fee2c1c5610aef80e7efafac5f5abee5",
+      "locator": "PDF physical page 3; printed 705",
+      "text_sha256": "0199d5c99915577f88653f401a851c42a4998aa37dd90e7caf08c686553340a1",
+      "text_not_reproduced": "Full page not reproduced; recovered primary scientific text and identifier checked. Printed pages 703,705,706 only within scope; neighboring unrelated articles excluded."
+    },
+    {
+      "source": "S227 downloaded author copy",
+      "artifact": "/tmp/lectura-bn134-20260927-MPilZ4/S227-autor.pdf",
+      "artifact_sha256": "b633fd65d10d3bf6ec297925dc604b82fee2c1c5610aef80e7efafac5f5abee5",
+      "locator": "PDF physical page 4; printed 706",
+      "text_sha256": "b5b77fb9bd9ee63d02b8f157caa22f2f0966ea8edfc7c9d5c7ec860305d2cbb8",
+      "text_not_reproduced": "Full page not reproduced; recovered primary scientific text and identifier checked. Printed pages 703,705,706 only within scope; neighboring unrelated articles excluded."
+    }
+  ],
+  "artefactos_temporales": [
+    {
+      "ruta": "/tmp/lectura-bn134-20260927-MPilZ4/S227-autor.pdf",
+      "sha256": "b633fd65d10d3bf6ec297925dc604b82fee2c1c5610aef80e7efafac5f5abee5",
+      "url": "https://researchmap.jp/simplyshawn/published_papers/15198252/attachment_file.pdf",
+      "alcance": "Science351703–707 DOI10.1126/science.aad7154; excluir artículos vecinos en las páginas extremas."
+    },
+    {
+      "ruta": "/tmp/lectura-bn134-20260927-MPilZ4/S238-metadata.json",
+      "sha256": "a891160754500f10174bbdc9ce6763996fe4d01746bbb52df9ff4ea42debea47",
+      "alcance": "Sólo metadata, no texto ni prueba científica."
+    },
+    {
+      "ruta": "/tmp/lectura-bn134-20260927-MPilZ4/S262-metadata.json",
+      "sha256": "80a270d6a1a0c3da49748e65deb9af0f0a6add2f8ad44b728cfa10574c5ec3d2",
+      "alcance": "Sólo metadata de artículo publicado; PMCID PMC5027413 no sustituye lectura."
+    }
+  ],
+  "pistas_web_primarias": [
+    {
+      "url": "https://www.filiphusnik.com/sites/default/files/13_husnik_cell.pdf",
+      "doi": "10.1016/j.cell.2013.05.040",
+      "lectura": "PDF accesible por lector web; título/DOI y pp iniciales leídos. Descarga por curl falló DNS. No artefacto local firmado ni lectura integral."
+    },
+    {
+      "url": "https://mccutcheonlab.org/pubs/16_husnik_pnas.pdf",
+      "doi": "10.1073/pnas.1603910113",
+      "lectura": "Referencia publicada localizada; descarga falló verificación TLS. No equivalencia de versiones ni texto completo adjudicado."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0960982214007544",
+      "doi": "10.1016/j.cub.2014.06.038",
+      "lectura": "Pista RlpA4: leyenda Figure1 indexada leída, no texto y métodos completos. No disposición ni prueba de EGT del socio actual."
+    }
+  ],
+  "acceso_limitado": [
+    "Europe PMC fullTextXML PMC3021230,PMC44621,PMC5027413 devolvió HTTP500.",
+    "PMC5027413 presentó control antirrobot; PNAS no entregó cuerpo completo.",
+    "No se desactivó TLS ni se integraron archivos en fuentes/."
+  ],
+  "continuacion_pendiente": [
+    "Revisar ocho filas8–15 por todos los campos antes de cualquier cierre de BN134.",
+    "Resolver acceso/identidad de S261,S262 sin sustituir o renombrar automáticamente.",
+    "Cotejar referencias primarias de fechas/comparaciones y ensayos RlpA4/S238 antes de nuevas afirmaciones.",
+    "Proponer disposiciones nominales separadas si raíz autoriza; mantener rechazos y consultas previas."
+  ],
+  "escrituras_canonicas": [],
+  "fuentes_integradas": [],
+  "dictamen_global": "NO_EMITIDO; BN134 y controles asociados permanecen abiertos"
+}

@@ -1,0 +1,35 @@
+{
+  "autor": "Codex-Autor-Principal /root",
+  "observacion_utc": "2026-09-27 01:22:55 UTC",
+  "estado_revision_independiente": "PENDIENTE; hallazgo previo del revisor candidatos_editoriales; integración nueva no autoaprobada",
+  "motivo": "El archivo PDF rotulado S296 [2016] es un preprint bioRxiv 10.1101/033464v009 de 2015, no la versión final PNAS. Se conserva sin sobrescribir y se añade el texto final correcto.",
+  "inventario_previo": {
+    "cantidad": 450,
+    "sha256": "170c7d69a86dbc8361aed5214e5e2c1452b5fee54c382b4cfb3cd61f02960647"
+  },
+  "inventario_final": {
+    "cantidad": 451,
+    "sha256": "62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc"
+  },
+  "preservacion": "Los 450 archivos previos conservan nombre, tamaño y SHA-256.",
+  "normalizacion_inventario": "Orden por nombre; nombre NUL sha256 NUL tamaño; filas separadas por LF y LF final; SHA-256 UTF-8.",
+  "artefacto_anterior": {
+    "ruta_local": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of th.pdf",
+    "sha256": "1b6271c98a3515b26f8b8be56b2a3567d611253c17274df35861127bad2d54fe",
+    "bytes": 14493111,
+    "identidad": "NO COINCIDE con la versión final de A/S296: preprint bioRxiv 2015. Se conserva como historial, no como texto PNAS ni evidencia de identidad publicada."
+  },
+  "archivos": [
+    {
+      "ruta_local": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+      "sha256": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+      "bytes": 199521,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4983863/",
+      "identidad": "Versión PNAS 2016, DOI 10.1073/pnas.1600338113; título y autores cotejados; HTML íntegro de PMC4983863",
+      "contenido": "Texto completo HTML, no PDF ni JATS"
+    }
+  ],
+  "intentos_no_integrados": [
+    "Europe PMC fullTextXML devolvió HTTP 500 para PMC4983863. No se presenta esa respuesta como texto XML."
+  ]
+}

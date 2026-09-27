@@ -1,0 +1,2137 @@
+{
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T03:16:51+00:00",
+  "propuesta": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.json",
+  "sha256_propuesta": "96d36be9adeed056a5c5f6da54321101b2dc25e7ae1bc28cb9258dae0b3e8bfa",
+  "objetos": [
+    {
+      "objeto": "C-2839",
+      "categoria": "C_altas",
+      "indice": 0,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185",
+      "valor": {
+        "#": "C-2839",
+        "Afirmación": "Tanifuji et al. consignan 39.9 Mbp para el tamaño genómico nuclear del flagelado de vida libre Bodo saltans cepa Konstanz reconstruido por ensamblaje.",
+        "Sujeto": "ensamblaje genómico nuclear de Bodo saltans cepa Konstanz",
+        "Predicado": "tiene_longitud_ensamblada*",
+        "Objeto": "39.9 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly; fragmentos originales: S240 Par10 «free-living» y S563 Results, §Comparative Analysis of Kinetoplastid Genomes «genome was assembled»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "tiene_longitud_ensamblada* relaciona un ensamblaje identificado con su longitud publicada, no con una medición citométrica del genoma completo. Se conserva 39.9 Mbp de S240; S563 describe Illumina HiSeq, corrección SGA, ensamblaje Velvet, scaffolding SSPACE, cierre de huecos y depuración bacteriana. Es una reconstrucción desde lecturas: F se clasifica inferido por ese procedimiento, no por leer una tabla. No se calcula equivalencia ni cociente.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2840",
+      "categoria": "C_altas",
+      "indice": 1,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+      "valor": {
+        "#": "C-2840",
+        "Afirmación": "Tanifuji et al. identificaron en el núcleo de Paramoeba pemaquidensis 8 genes probablemente derivados de Perkinsela entre 3,846 alineamientos proteicos con filogenias interpretables.",
+        "Sujeto": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "8 genes candidatos entre 3,846 alineamientos con filogenias interpretables",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14; Methods, §Phylogenomics, Sec14; fragmento original: «likely derived from the endosymbiont»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El origen es una inferencia filogenómica: BLASTP/FastTree, curación y comprobación de topologías con RAxML LG+G+F y PhyloBayes CAT. No son ocho eventos observados ni genes de retorno demostrado. El denominador es el conjunto de alineamientos interpretables, no todo el genoma hospedador.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2841",
+      "categoria": "C_altas",
+      "indice": 2,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "178a41f6d593ff6481aa5ec6afae0bbde8816328167a4552a00a5c915f96d39c",
+      "valor": {
+        "#": "C-2841",
+        "Afirmación": "Tanifuji et al. proponen que las vesículas endocíticas de Perkinsela podrían internalizar metabolitos procedentes de la ameba hospedadora.",
+        "Sujeto": "hipótesis de captación vesicular de metabolitos del hospedador por Perkinsela",
+        "Predicado": "propuesto_por",
+        "Objeto": "Tanifuji et al. 2017",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmento original: «we speculate»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se conserva la formulación especulativa del pasaje. El destino intracelular de las vesículas no se conoce allí; no se declara captación demostrada ni se vincula este mecanismo a los ocho candidatos EGT.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2842",
+      "categoria": "C_altas",
+      "indice": 3,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "061df51db5ca993d367e1415050360342b12ccf33930d100107e6e628c785880",
+      "valor": {
+        "#": "C-2842",
+        "Afirmación": "Tanifuji et al. proponen que las vesículas endocíticas de Perkinsela podrían internalizar enzimas procedentes de la ameba hospedadora.",
+        "Sujeto": "hipótesis de captación vesicular de enzimas del hospedador por Perkinsela",
+        "Predicado": "propuesto_por",
+        "Objeto": "Tanifuji et al. 2017",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmentos originales: «we speculate» y «possibly, enzymes»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Hipótesis más restringida que la captación de metabolitos y con modalidad explícita de posibilidad. No demuestra importación proteica dirigida ni identifica enzimas retornadas como productos de los ocho genes candidatos.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2843",
+      "categoria": "C_altas",
+      "indice": 4,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "7908768474da973bc3ec762f99f84687cea3c0db61b9d1b2b462b012e8d69b33",
+      "valor": {
+        "#": "C-2843",
+        "Afirmación": "El párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de receptores del sistema Hedgehog.",
+        "Sujeto": "posición textual de Suga et al. sobre receptores Hedgehog de Monosiga brevicollis",
+        "Predicado": "propuesto_por",
+        "Objeto": "Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra sólo la parte referente a receptores en un organismo, como posición textual. Fig. 4 representa Patched en Monosiga; C-2850 enlaza esta contraevidencia. No se reinterpreta la generalización como ausencia de todos los componentes ni como resultado funcional.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2844",
+      "categoria": "C_altas",
+      "indice": 5,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "e47bb6671d073d35925825606c313e81872ce5606ad1b7ed29ffde8a1a708bcc",
+      "valor": {
+        "#": "C-2844",
+        "Afirmación": "El párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de ligandos del sistema Hedgehog.",
+        "Sujeto": "posición textual de Suga et al. sobre ligandos Hedgehog de Monosiga brevicollis",
+        "Predicado": "propuesto_por",
+        "Objeto": "Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se separa la proposición referente a ligandos. Los dominios Hedge/Hog se describen en proteínas distintas; eso no prueba un ligando Hedgehog completo o su función, pero impide generalizar la frase a ausencia indiferenciada de sus componentes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2845",
+      "categoria": "C_altas",
+      "indice": 6,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "b155ea1f86ca430f675c2c28a22e76ea5983eb1fc51365e6fa5a2d78e28a4421",
+      "valor": {
+        "#": "C-2845",
+        "Afirmación": "Suga et al. representan Patched como componente presente en Monosiga brevicollis en Fig. 4.",
+        "Sujeto": "Patched en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «greyed when M. brevicollis has them»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "localizado_en* registra un gen, dominio o familia identificado por un análisis delimitado, sin atribuirle una función experimental. Rótulo gris punteado en la figura, leído según su leyenda; no se infiere recepción funcional del ligando Hedgehog.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2846",
+      "categoria": "C_altas",
+      "indice": 7,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "73b6bbc20eec7edcb5a72b35a63c702365320484f694f387cd51d6300f7fd4e0",
+      "valor": {
+        "#": "C-2846",
+        "Afirmación": "Suga et al. representan Dispatched como componente presente en Monosiga brevicollis en Fig. 4.",
+        "Sujeto": "Dispatched en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «greyed when M. brevicollis has them»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "localizado_en* registra un gen, dominio o familia identificado por un análisis delimitado, sin atribuirle una función experimental. Rótulo gris punteado en la figura, leído según su leyenda; no se infiere secreción funcional del ligando Hedgehog.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2847",
+      "categoria": "C_altas",
+      "indice": 8,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "180c16e4e726f4937643c8f73eae1a4546525ea65b0761d7f774b1ad00d4e808",
+      "valor": {
+        "#": "C-2847",
+        "Afirmación": "Suga et al. describen en Monosiga brevicollis una proteína con similitud a la parte C-terminal Hint o Hog de Hedgehog.",
+        "Sujeto": "proteína con dominio Hint o Hog de Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La descripción se refiere a una parte homóloga de la proteína, no a un ligando completo. La figura distingue el dominio Hog del dominio Hedge; no se atribuye actividad de señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2848",
+      "categoria": "C_altas",
+      "indice": 9,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "0cd33c4ec6504cb6aea0b9f5c729f6fc6ed0bb490ec1d8a8d5acdefbfc611434",
+      "valor": {
+        "#": "C-2848",
+        "Afirmación": "Suga et al. describen en Monosiga brevicollis una proteína que contiene la parte N-terminal Hedge de Hedgehog.",
+        "Sujeto": "proteína con dominio Hedge de Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El objeto es el dominio Hedge descrito por la fuente; no se completa por inferencia una arquitectura Hedgehog metazoana ni su función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2849",
+      "categoria": "C_altas",
+      "indice": 10,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2",
+      "valor": {
+        "#": "C-2849",
+        "Afirmación": "Suga et al. sitúan los dominios Hedge y Hog de Monosiga brevicollis en proteínas diferentes.",
+        "Sujeto": "distribución de los dominios Hedge y Hog de Monosiga brevicollis",
+        "Predicado": "tiene_distribucion_proteica*",
+        "Objeto": "proteínas diferentes",
+        "Atribución": "expresa",
+        "Fuente": "S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «two domains hedge and hog are found in different proteins»; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "tiene_distribucion_proteica* relaciona dominios identificados con su distribución publicada entre proteínas. Es una relación entre partes y portadores, no dos presencias reunidas ni una afirmación sobre una vía funcional.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2850",
+      "categoria": "C_altas",
+      "indice": 11,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "3891cdaedefd8c956de1355dbb470be682f26d2ddfde589950db7f694a8cf2a5",
+      "valor": {
+        "#": "C-2850",
+        "Afirmación": "La posición sobre ausencia de receptores de Monosiga en C-2843 queda cuestionada por la representación de Patched en C-2845.",
+        "Sujeto": "C-2843",
+        "Predicado": "cuestionado_por",
+        "Objeto": "C-2845",
+        "Atribución": "sintesis(C-2843, C-2845)",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Contraevidencia contextual explícita: impide usar la generalización como negación genómica indiferenciada. El componente representado no prueba por sí mismo función receptora canónica. Se conserva C-2843 sin suavizarla.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2851",
+      "categoria": "C_altas",
+      "indice": 12,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "266cd67714b6dc63d80e3e9bbb7c6d113a70e36e6288c1809c170d01100ec313",
+      "valor": {
+        "#": "C-2851",
+        "Afirmación": "La ausencia indiferenciada de receptores de Monosiga recogida en C-1581 queda cuestionada por la representación de Patched en C-2845.",
+        "Sujeto": "C-1581",
+        "Predicado": "cuestionado_por",
+        "Objeto": "C-2845",
+        "Atribución": "sintesis(C-1581, C-2845)",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La fila histórica se conserva intacta por §16. Este enlace identifica la contraevidencia nominal sin declarar un receptor funcional demostrado ni aprobar la atomicidad compuesta de C-1581.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2852",
+      "categoria": "C_altas",
+      "indice": 13,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "69e47fc428b55dc87432f021ed21f09718c4d3f69001bd60c7d32fa10b296479",
+      "valor": {
+        "#": "C-2852",
+        "Afirmación": "La lectura de C-1581 como ausencia indiferenciada de componentes semejantes al ligando Hedgehog de Monosiga queda cuestionada por su distribución en proteínas separadas recogida en C-2849.",
+        "Sujeto": "C-1581",
+        "Predicado": "cuestionado_por",
+        "Objeto": "C-2849",
+        "Atribución": "sintesis(C-1581, C-2849)",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El enlace debilita la lectura indiferenciada, no afirma que dos dominios separados constituyan el ligando completo ni refuta por sí mismo una ausencia funcional. Se conservan tanto el texto general como sus límites.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2853",
+      "categoria": "C_altas",
+      "indice": 14,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "84b2db71e1dbbadab33b512ff03abc77e2bc8adc1f1fa23ad63e3466f1c85595",
+      "valor": {
+        "#": "C-2853",
+        "Afirmación": "Suga et al. no identificaron Hedgehog (Hh) en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "Hedgehog (Hh) de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "no_localizado_en* registra la falta de identificación de un objeto por el análisis delimitado, no una ausencia biológica universal. La fuente distingue este ligando; método comparativo de homología de genes/dominios, no ensayo de función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2854",
+      "categoria": "C_altas",
+      "indice": 15,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "36e56f67829ecda33f59e721237d6a216700d6dee197a74c45af7f31866bd52a",
+      "valor": {
+        "#": "C-2854",
+        "Afirmación": "Suga et al. no identificaron Dispatched en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "Dispatched de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "no_localizado_en* registra la falta de identificación de un objeto por el análisis delimitado, no una ausencia biológica universal. La fuente distingue este componente asociado a secreción; método comparativo de homología de genes/dominios, no ensayo de función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2855",
+      "categoria": "C_altas",
+      "indice": 16,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "bf04036596d576d10dea545d787adc0fc7f1a82cb60857834b02446ca48807f2",
+      "valor": {
+        "#": "C-2855",
+        "Afirmación": "Suga et al. no identificaron Patched en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "Patched de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "no_localizado_en* registra la falta de identificación de un objeto por el análisis delimitado, no una ausencia biológica universal. La fuente distingue este componente asociado a recepción; método comparativo de homología de genes/dominios, no ensayo de función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2856",
+      "categoria": "C_altas",
+      "indice": 17,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "83a397cf3960e622644f53ed5cf8505b52e0ef6c9038f4c5d15b3e2a29e914b6",
+      "valor": {
+        "#": "C-2856",
+        "Afirmación": "Suga et al. no identificaron Smoothened en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "Smoothened de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "no_localizado_en* registra la falta de identificación de un objeto por el análisis delimitado, no una ausencia biológica universal. La fuente distingue este componente asociado a recepción; método comparativo de homología de genes/dominios, no ensayo de función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2857",
+      "categoria": "C_altas",
+      "indice": 18,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "1e054bcb2172dc35f247765a20482a489452e18daed8fed4f39191ef487754b2",
+      "valor": {
+        "#": "C-2857",
+        "Afirmación": "Suga et al. no identificaron el dominio Hint o Hog en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "dominio Hint o Hog de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «neither Hint»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se conserva la negación nominal del dominio; no se extiende a todas las proteínas con alguna función comparable ni a otros linajes.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2858",
+      "categoria": "C_altas",
+      "indice": 19,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "63135350c41a099d93440987c9f48d37990440e73595afd63907ea8df953862c",
+      "valor": {
+        "#": "C-2858",
+        "Afirmación": "Suga et al. no identificaron el dominio Hedge en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "dominio Hedge de Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «nor Hedge domain»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una negación separada de la del dominio Hint/Hog y limitada al análisis genómico publicado.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2859",
+      "categoria": "C_altas",
+      "indice": 20,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "38c09b44e78c4f7dbddc45eb4f9e1a3aebd7ca028833603ca38fae39109bac68",
+      "valor": {
+        "#": "C-2859",
+        "Afirmación": "Suga et al. dejan sin resolver si CAOG_06541 de Capsaspora owczarzaki es un ortólogo bona fide de Gli.",
+        "Sujeto": "ortología de CAOG_06541 de Capsaspora owczarzaki respecto de Gli",
+        "Predicado": "tiene_limite_de_resolucion*",
+        "Objeto": "ortología bona fide no resuelta",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; p. 96, fragmento original: «remains unclear»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La similitud de los dedos de zinc no resuelve la ortología; no se convierte el símbolo de Fig. 4 en ausencia de cualquier proteína semejante a Gli.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2860",
+      "categoria": "C_altas",
+      "indice": 21,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "4fcb24c602c302aab80be4e977f85c92108744a2bd7aa66e5f123ad6aa6bd8e6",
+      "valor": {
+        "#": "C-2860",
+        "Afirmación": "Suga et al. no identificaron la familia Rhodopsin de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia Rhodopsin de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «lacks»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La negativa se limita a la familia Rhodopsin; otras familias de receptores 7TM aparecen en el mismo análisis. No se niegan todos los GPCR ni sus mecanismos intracelulares.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2861",
+      "categoria": "C_altas",
+      "indice": 22,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "5dc10847adc2469078fcc647c1b731494f3042b4007d8f5a82eb990bdb6d67b9",
+      "valor": {
+        "#": "C-2861",
+        "Afirmación": "El párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de ligandos del sistema de receptores de la familia Rhodopsin.",
+        "Sujeto": "posición textual de Suga et al. sobre ligandos de Rhodopsin en Monosiga brevicollis",
+        "Predicado": "propuesto_por",
+        "Objeto": "Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se conserva separada la atribución negativa de ligandos del párrafo general; no se deduce del símbolo de un receptor ni de la ausencia de otra familia. No adjudica la identidad o función de todos los posibles ligandos de otras señales.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2862",
+      "categoria": "C_altas",
+      "indice": 23,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "745dff7adaa8b6b1239157f2255e90986828f0cd846678b776fa3aa08d8e8b9f",
+      "valor": {
+        "#": "C-2862",
+        "Afirmación": "Suga et al. no identificaron la familia Rhodopsin de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia Rhodopsin de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «lacks»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La negativa se limita a la familia Rhodopsin; otras familias de receptores 7TM aparecen en el mismo análisis. No se niegan todos los GPCR ni sus mecanismos intracelulares.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2863",
+      "categoria": "C_altas",
+      "indice": 24,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "c84de621bb0420eee6e287508663c721b87e06ade113f8cb278116ab61be2072",
+      "valor": {
+        "#": "C-2863",
+        "Afirmación": "El párrafo general de Suga et al. atribuye a Capsaspora owczarzaki la falta de ligandos del sistema de receptores de la familia Rhodopsin.",
+        "Sujeto": "posición textual de Suga et al. sobre ligandos de Rhodopsin en Capsaspora owczarzaki",
+        "Predicado": "propuesto_por",
+        "Objeto": "Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se conserva separada la atribución negativa de ligandos del párrafo general; no se deduce del símbolo de un receptor ni de la ausencia de otra familia. No adjudica la identidad o función de todos los posibles ligandos de otras señales.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2864",
+      "categoria": "C_altas",
+      "indice": 25,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "3e9565d78e99749e2011c96a37e4e252a1032a8f3ecedcb083a56d1355952083",
+      "valor": {
+        "#": "C-2864",
+        "Afirmación": "Suga et al. registran en Capsaspora owczarzaki seis de las ocho familias de receptores 7TM de su clasificación.",
+        "Sujeto": "familias de receptores 7TM de Capsaspora owczarzaki en Suga et al. 2013",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "seis familias de un universo publicado de ocho",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Recuento publicado, no suma propia de puntos de una figura. La clasificación usa homología global y arquitectura de dominios; 7TM se denomina también GPCR porque la mayoría transmite señales por proteínas G, no porque se haya probado cada acoplamiento individual.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2865",
+      "categoria": "C_altas",
+      "indice": 26,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210",
+      "valor": {
+        "#": "C-2865",
+        "Afirmación": "Suga et al. identificaron la familia Glutamate de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia Glutamate de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Glutamate (PF00003), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2866",
+      "categoria": "C_altas",
+      "indice": 27,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "3c54834d1f7b4851659a8dfe68b714691716791cd62e8dfeeff06f9c979a347f",
+      "valor": {
+        "#": "C-2866",
+        "Afirmación": "Suga et al. identificaron la familia Adhesion / Secretin de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia Adhesion / Secretin de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Adhesion / Secretin (PF00002), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2867",
+      "categoria": "C_altas",
+      "indice": 28,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "b639c4015a36896d1cc83460dbb0196f111399b280e4528e2c487aeb92fb6d2c",
+      "valor": {
+        "#": "C-2867",
+        "Afirmación": "Suga et al. identificaron la familia cAMP de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia cAMP de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila cAMP (PF05462), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2868",
+      "categoria": "C_altas",
+      "indice": 29,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "a426af97a3804c38e61151fab2cb1d6c3a5efa7cb21016a3359137b8e59946f9",
+      "valor": {
+        "#": "C-2868",
+        "Afirmación": "Suga et al. identificaron la familia GPR108-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia GPR108-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila GPR108-like (PF06814), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2869",
+      "categoria": "C_altas",
+      "indice": 30,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "0a6843387fee142662272b1a99a2079e1cd13fa59164547ed471c7ae761f00a1",
+      "valor": {
+        "#": "C-2869",
+        "Afirmación": "Suga et al. identificaron la familia Glutamate de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia Glutamate de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Glutamate (PF00003), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2870",
+      "categoria": "C_altas",
+      "indice": 31,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "301af3b6e8c55c81dbfa4edf95c911121f092ae61a248b6ccd0c537b1195dcc6",
+      "valor": {
+        "#": "C-2870",
+        "Afirmación": "Suga et al. identificaron la familia Adhesion / Secretin de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia Adhesion / Secretin de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Adhesion / Secretin (PF00002), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2871",
+      "categoria": "C_altas",
+      "indice": 32,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "c4c999960aab5fe8b2f0cb6d6b9c3c656ad0cfa6911b2723187782111f871195",
+      "valor": {
+        "#": "C-2871",
+        "Afirmación": "Suga et al. identificaron la familia cAMP de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia cAMP de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila cAMP (PF05462), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2872",
+      "categoria": "C_altas",
+      "indice": 33,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "0767c4924a157c9653287a5bcf38b1fe08dc8784d18185c6c247983a59b7bbb9",
+      "valor": {
+        "#": "C-2872",
+        "Afirmación": "Suga et al. identificaron la familia ITR-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia ITR-like de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila ITR-like (PF10192), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2873",
+      "categoria": "C_altas",
+      "indice": 34,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "08aa58ddec8ce5a605d1a82c1e86ec33cfbab826739152085a2f9a7c9d5f2635",
+      "valor": {
+        "#": "C-2873",
+        "Afirmación": "Suga et al. identificaron la familia GPR108-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia GPR108-like de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila GPR108-like (PF06814), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2874",
+      "categoria": "C_altas",
+      "indice": 35,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "339b81317d396d588d45267ad8a9d64095944522853a30f9a576f253ba078e63",
+      "valor": {
+        "#": "C-2874",
+        "Afirmación": "Suga et al. identificaron la familia OA1-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia OA1-like de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila OA1-like (PF02101), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2875",
+      "categoria": "C_altas",
+      "indice": 36,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "886746fd26ee305299c4c69630c1d8f64a1ca08632871ad7436c9b74c1c02e61",
+      "valor": {
+        "#": "C-2875",
+        "Afirmación": "Suga et al. no identificaron la familia Frizzled de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia Frizzled de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; S352 Methods, §Gene family analysis; fragmento original: «presence and absence»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2876",
+      "categoria": "C_altas",
+      "indice": 37,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "31d9166276b855cd7d4aa5f57e350c02fd84627abebf5c262feca0d38f35dbd3",
+      "valor": {
+        "#": "C-2876",
+        "Afirmación": "Suga et al. no identificaron la familia ITR-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia ITR-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2877",
+      "categoria": "C_altas",
+      "indice": 38,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "b8ed0765a848a69b03855e209053e8e1f6312687f756c5826c3751fd09da430c",
+      "valor": {
+        "#": "C-2877",
+        "Afirmación": "Suga et al. no identificaron la familia OA1-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia OA1-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-2878",
+      "categoria": "C_altas",
+      "indice": 39,
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_objeto": "6eb67151dcafcd51ec17f46b60649ad61b88081cec84c7dcc7f6974d173310ae",
+      "valor": {
+        "#": "C-2878",
+        "Afirmación": "Suga et al. no identificaron la familia Frizzled de receptores 7TM en el genoma de Capsaspora owczarzaki analizado.",
+        "Sujeto": "familia Frizzled de receptores 7TM en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, p. física e impresa 96, párrafo que comienza «Similarly»; fragmento original: «None»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "objeto": "C-1037",
+      "categoria": "C_correcciones",
+      "indice": 0,
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_objeto": "58ccfa35bf952f266fc3e77239bc24347428d2a4b87285fd82c7e763c75c4ae8",
+      "valor": {
+        "#": "C-1037",
+        "Afirmación": "Tanifuji et al. estimaron el tamaño del genoma nuclear de Perkinsela sp. en ~9.5 Mbp.",
+        "Sujeto": "genoma nuclear de Perkinsela",
+        "Predicado": "tiene_valor_estimado*",
+        "Objeto": "~9.5 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7; fragmento original: «was estimated to be»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "tiene_valor_estimado* relaciona una magnitud con su estimación publicada, conservando unidad y aproximación. La fuente expresa tamaño total estimado a partir de scaffolds asignados al núcleo de Perkinsela. No es una medición directa de ADN por citometría ni una cifra mitocondrial.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "feea6b1cefa4ffa8e0dbc5b6c2a88362a238f792ca318b73cb8fbde949eaa5ad",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "C-1040",
+      "categoria": "C_correcciones",
+      "indice": 1,
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_objeto": "179aeff7c831d551ebb58f4192a7f717cc6488f5e17453fe1f7fac7a10ca0132",
+      "valor": {
+        "#": "C-1040",
+        "Afirmación": "Tanifuji et al. interpretan las invaginaciones superficiales y las vesículas intracelulares observadas en Perkinsela como indicios de endocitosis.",
+        "Sujeto": "endocitosis propuesta en Perkinsela",
+        "Predicado": "respaldado_por",
+        "Objeto": "invaginaciones superficiales y vesículas intracelulares observadas",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmento original: «These observations suggest»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "TEM y crio-SEM muestran estructuras; los autores dicen que esas observaciones sugieren endocitosis. No se convierte la interpretación en demostración directa de captación de citoplasma ni de importación proteica.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_anterior": "28da58c95bbbff7e6abdbe038d84e16dd8a1e65f830b7fb0968835ae3e32694b",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "C-1581",
+      "categoria": "C_conservadas",
+      "indice": 0,
+      "ruta": "data/afirmaciones/12.csv",
+      "sha256_objeto": "9bdb1a21bbf293aed15a0e5a71b4bc62ac893567a672da0f7a356d3fd3f0ce16",
+      "valor": {
+        "#": "C-1581",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "comparación genómica de Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 §Signalling pathways, “Both Capsaspora and M. brevicollis lack receptors and ligands ... in the Hedgehog ... pathways”",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La ausencia se limita a los dos genomas y a las familias que el estudio pudo anotar; no se extrapola a todos los holozoos unicelulares. La proposición de Hedgehog queda separada de la observación de Notch y Delta en C-1580.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "conservada_presente_vivo": true
+    },
+    {
+      "objeto": "C-1041",
+      "categoria": "C_conservadas",
+      "indice": 1,
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_objeto": "5b7dadd342ee1f80ea76bb6dc70b212630ddb3eb0ac8bd60a3645a761318ac34",
+      "valor": {
+        "#": "C-1041",
+        "Afirmación": "El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas.",
+        "Sujeto": "genoma mitocondrial de Perkinsela",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "seis genes codificantes de proteínas",
+        "Atribución": "expresa",
+        "Fuente": "S241 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El genoma fue secuenciado y anotado.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "conservada_presente_vivo": true
+    },
+    {
+      "objeto": "F_altas-1",
+      "categoria": "F_altas",
+      "indice": 0,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+      "valor": {
+        "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+        "valor tal como lo publica la fuente": "39.9",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+        "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+        "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+        "#": "C-2839"
+      }
+    },
+    {
+      "objeto": "F_altas-2",
+      "categoria": "F_altas",
+      "indice": 1,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "61dd6c702561cc78ee07d7167766cc4cbb80d8e8f4c7873e68347b4829c76ee7",
+      "valor": {
+        "magnitud": "genes nucleares candidatos a EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "8",
+        "unidad original": "genes candidatos",
+        "organismo, nodo o intervalo al que se aplica": "Paramoeba pemaquidensis, entre 3,846 alineamientos con filogenias interpretables",
+        "método o proxy": "inferencia de origen por pipeline filogenómica",
+        "incertidumbre publicada": "origen probablemente endosimbionte; no consta en la fuente recuperada (intervalo para el recuento en Par14)",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14; Methods, §Phylogenomics, Sec14",
+        "#": "C-2840"
+      }
+    },
+    {
+      "objeto": "F_altas-3",
+      "categoria": "F_altas",
+      "indice": 2,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "5a2994bcfc147a319b23b1af446d9b8f11e9f2a25aa5bb803e296e0997a87776",
+      "valor": {
+        "magnitud": "alineamientos proteicos con filogenias interpretables evaluados para EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "3,846",
+        "unidad original": "alineamientos proteicos",
+        "organismo, nodo o intervalo al que se aplica": "análisis de genes nucleares de Paramoeba pemaquidensis por Tanifuji et al.",
+        "método o proxy": "recuento del conjunto de alineamientos que produjo filogenias interpretables en el pipeline",
+        "incertidumbre publicada": "no consta en la fuente recuperada (intervalo para el recuento en Par14)",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14; Methods, §Phylogenomics, Sec14",
+        "#": "C-2840"
+      }
+    },
+    {
+      "objeto": "F_altas-4",
+      "categoria": "F_altas",
+      "indice": 3,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "a44369e984a70916ebad66d73b1c59127a4d504813bb40426eb4c5954e2865d5",
+      "valor": {
+        "magnitud": "familias 7TM identificadas",
+        "valor tal como lo publica la fuente": "six",
+        "unidad original": "families",
+        "organismo, nodo o intervalo al que se aplica": "Capsaspora owczarzaki en la clasificación de Suga et al.",
+        "método o proxy": "homología global de secuencia y arquitectura de dominios; HMMER, Blast recíproco y filogenias RAxML",
+        "incertidumbre publicada": "no consta en la fuente recuperada (intervalo en el pasaje); recuento atribuido al repertorio genómico analizado",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; S352 Methods, §Gene family analysis",
+        "#": "C-2864"
+      }
+    },
+    {
+      "objeto": "F_altas-5",
+      "categoria": "F_altas",
+      "indice": 4,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "12cd5a398f1b72cdd56400b11a15a811a5a4eafac6d92c3410dc4ad7cdfa5157",
+      "valor": {
+        "magnitud": "universo de familias 7TM de la clasificación usada",
+        "valor tal como lo publica la fuente": "eight",
+        "unidad original": "families",
+        "organismo, nodo o intervalo al que se aplica": "esquema de clasificación aplicado al repertorio de Capsaspora por Suga et al.",
+        "método o proxy": "número de categorías de la clasificación por homología y arquitectura; no suma propia ni número de genes",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo",
+        "#": "C-2864"
+      }
+    },
+    {
+      "objeto": "F_correcciones-1",
+      "categoria": "F_correcciones",
+      "indice": 0,
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_objeto": "2f1953395335009530f1e0caf705311025233d091c5094e0b406b5c19d5bb774",
+      "valor": {
+        "magnitud": "tamaño del genoma nuclear de *Perkinsela*",
+        "valor tal como lo publica la fuente": "~9.5",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Perkinsela sp., genoma nuclear",
+        "método o proxy": "estimación del tamaño a partir del ensamblaje genómico descrito en Par7",
+        "incertidumbre publicada": "aproximación indicada por ~; Par7 no publica un intervalo",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7",
+        "#": "C-1037"
+      },
+      "sha256_anterior": "e058043f2eb6213c37f81c67dc800acc8dbac6c651665b4d8d6743fded000f2f",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "B_altas-1",
+      "categoria": "B_altas",
+      "indice": 0,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "1e10147e8a2a5cccc150dde7889cb1603f2049d43d26ad61d41ba1f58a2d9ec9",
+      "valor": {
+        "etiqueta preferida": "ensamblaje genómico nuclear de Bodo saltans cepa Konstanz",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      }
+    },
+    {
+      "objeto": "B_altas-2",
+      "categoria": "B_altas",
+      "indice": 1,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "b3e9a51acf2a7e107dc10c5b8c1b03a6712297017e556531daf2609ee23b2a10",
+      "valor": {
+        "etiqueta preferida": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      }
+    },
+    {
+      "objeto": "B_altas-3",
+      "categoria": "B_altas",
+      "indice": 2,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "4c150b04eade50ad08b4b369dfa1ac0ee2efa676c2d307d73a933186e3062880",
+      "valor": {
+        "etiqueta preferida": "hipótesis de captación vesicular de metabolitos del hospedador por Perkinsela",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2841"
+      }
+    },
+    {
+      "objeto": "B_altas-4",
+      "categoria": "B_altas",
+      "indice": 3,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "66052a27939730e412423705ee79ac7d8183c553dafdd7bf730b8f92bf9ed82d",
+      "valor": {
+        "etiqueta preferida": "hipótesis de captación vesicular de enzimas del hospedador por Perkinsela",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2842"
+      }
+    },
+    {
+      "objeto": "B_altas-5",
+      "categoria": "B_altas",
+      "indice": 4,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "c2b3543bd67646700819f192af0cfe5854760775edc04d1323e95eacee0ecac9",
+      "valor": {
+        "etiqueta preferida": "posición textual de Suga et al. sobre receptores Hedgehog de Monosiga brevicollis",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2843"
+      }
+    },
+    {
+      "objeto": "B_altas-6",
+      "categoria": "B_altas",
+      "indice": 5,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "e3bdfce040d1beccbad30a26c33aaf065a8e17d38604511831ab7a8747b23679",
+      "valor": {
+        "etiqueta preferida": "posición textual de Suga et al. sobre ligandos Hedgehog de Monosiga brevicollis",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2844"
+      }
+    },
+    {
+      "objeto": "B_altas-7",
+      "categoria": "B_altas",
+      "indice": 6,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "b52c70971dcf2d45233adb9ba26a2c8c4e6a2c4a53bfd99c023ced4fb942af2a",
+      "valor": {
+        "etiqueta preferida": "Patched en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2845"
+      }
+    },
+    {
+      "objeto": "B_altas-8",
+      "categoria": "B_altas",
+      "indice": 7,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "51a0c19a135ce67d761016f415c500de63e1e73599eca70f4813a0a2e5cabaca",
+      "valor": {
+        "etiqueta preferida": "Dispatched en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2846"
+      }
+    },
+    {
+      "objeto": "B_altas-9",
+      "categoria": "B_altas",
+      "indice": 8,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "25a61244b55be80195fdee025e240f1ae564f3e00f60d82bd9aecccd90a66bbf",
+      "valor": {
+        "etiqueta preferida": "proteína con dominio Hint o Hog de Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2847"
+      }
+    },
+    {
+      "objeto": "B_altas-10",
+      "categoria": "B_altas",
+      "indice": 9,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "393d6271c79186d4efefb5cf9f57356f17a6dbe3d77f14711a79e21c54a0a2ef",
+      "valor": {
+        "etiqueta preferida": "proteína con dominio Hedge de Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2848"
+      }
+    },
+    {
+      "objeto": "B_altas-11",
+      "categoria": "B_altas",
+      "indice": 10,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "1db4d65d68f4dc950be4282d876262aed713cb33f962716c4ad81c3e26d9dc20",
+      "valor": {
+        "etiqueta preferida": "distribución de los dominios Hedge y Hog de Monosiga brevicollis",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2849"
+      }
+    },
+    {
+      "objeto": "B_altas-12",
+      "categoria": "B_altas",
+      "indice": 11,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "012430dcddbcd5333410136f9c8aa9486fe7c91b4d16e8b7e9df3abf7aa5dd72",
+      "valor": {
+        "etiqueta preferida": "Hedgehog (Hh) de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2853"
+      }
+    },
+    {
+      "objeto": "B_altas-13",
+      "categoria": "B_altas",
+      "indice": 12,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "980033a20beec0bba192550f4c796503a0afe61e6442f91c705167297a766218",
+      "valor": {
+        "etiqueta preferida": "Dispatched de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2854"
+      }
+    },
+    {
+      "objeto": "B_altas-14",
+      "categoria": "B_altas",
+      "indice": 13,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "f46be118d9632a895dfc07c4f7f88204fc4182b57f419076883cba7dcfbb1a85",
+      "valor": {
+        "etiqueta preferida": "Patched de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2855"
+      }
+    },
+    {
+      "objeto": "B_altas-15",
+      "categoria": "B_altas",
+      "indice": 14,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "92169154c85451dd962b37baa567751d06243d187cb0889b80dc1a73877b2454",
+      "valor": {
+        "etiqueta preferida": "Smoothened de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2856"
+      }
+    },
+    {
+      "objeto": "B_altas-16",
+      "categoria": "B_altas",
+      "indice": 15,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "f17085b3e0dbd414b17a39da85c86ad100266e92836b0b6ed2a6ca18c04420c0",
+      "valor": {
+        "etiqueta preferida": "dominio Hint o Hog de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2857"
+      }
+    },
+    {
+      "objeto": "B_altas-17",
+      "categoria": "B_altas",
+      "indice": 16,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "ea0dee277ff97e43eb8b1b1ac9e6c61a4a701929b252bfe8309c7deb33a6cf02",
+      "valor": {
+        "etiqueta preferida": "dominio Hedge de Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2858"
+      }
+    },
+    {
+      "objeto": "B_altas-18",
+      "categoria": "B_altas",
+      "indice": 17,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "9d6d9565ac0f74a81b32a88e4a5b93208e30b2329cd2860400f0782355f06bd9",
+      "valor": {
+        "etiqueta preferida": "ortología de CAOG_06541 de Capsaspora owczarzaki respecto de Gli",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2859"
+      }
+    },
+    {
+      "objeto": "B_altas-19",
+      "categoria": "B_altas",
+      "indice": 18,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "c679b719ce6dff4f7611d3e16f0af7fd701ae93b3a27ab780dd1f31349a500bd",
+      "valor": {
+        "etiqueta preferida": "familia Rhodopsin de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2860"
+      }
+    },
+    {
+      "objeto": "B_altas-20",
+      "categoria": "B_altas",
+      "indice": 19,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "c221481ea38a86920ba22f61d89107de479f9f5a15004bd7ae20696068fed5bd",
+      "valor": {
+        "etiqueta preferida": "posición textual de Suga et al. sobre ligandos de Rhodopsin en Monosiga brevicollis",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2861"
+      }
+    },
+    {
+      "objeto": "B_altas-21",
+      "categoria": "B_altas",
+      "indice": 20,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "4c65b4134ab2b0436a58e2d175606470b5a1800a2c98ce375b1eaf689ef363d0",
+      "valor": {
+        "etiqueta preferida": "familia Rhodopsin de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2862"
+      }
+    },
+    {
+      "objeto": "B_altas-22",
+      "categoria": "B_altas",
+      "indice": 21,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "270b6f1cc9996d50ddbb252bd2b93aeea80f3781d412ecd461e30b7fcc6e3209",
+      "valor": {
+        "etiqueta preferida": "posición textual de Suga et al. sobre ligandos de Rhodopsin en Capsaspora owczarzaki",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2863"
+      }
+    },
+    {
+      "objeto": "B_altas-23",
+      "categoria": "B_altas",
+      "indice": 22,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "58111bfc01e1f6b9d62554977eab0efe8f587337e29f6eafe7ad11dabfef2046",
+      "valor": {
+        "etiqueta preferida": "familias de receptores 7TM de Capsaspora owczarzaki en Suga et al. 2013",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2864"
+      }
+    },
+    {
+      "objeto": "B_altas-24",
+      "categoria": "B_altas",
+      "indice": 23,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "043cb409e7ab4d2c89b6eb188f2ea43a0c411f27ac280ab9b53c7c228e096e47",
+      "valor": {
+        "etiqueta preferida": "familia Glutamate de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2865"
+      }
+    },
+    {
+      "objeto": "B_altas-25",
+      "categoria": "B_altas",
+      "indice": 24,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "035da1a778779fa6868d747f83fe48fd680d6d5ac247772fefa827b63d6cbbe6",
+      "valor": {
+        "etiqueta preferida": "familia Adhesion / Secretin de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2866"
+      }
+    },
+    {
+      "objeto": "B_altas-26",
+      "categoria": "B_altas",
+      "indice": 25,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "f6ad4e97404676e7c03807f725e1b9cafa62ca921a80214a2260997d97ce2d99",
+      "valor": {
+        "etiqueta preferida": "familia cAMP de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2867"
+      }
+    },
+    {
+      "objeto": "B_altas-27",
+      "categoria": "B_altas",
+      "indice": 26,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "8b81a38af1fab180e5b6a1b885ac0585a073e1752fb37e2a3cdf5105c96ac8af",
+      "valor": {
+        "etiqueta preferida": "familia GPR108-like de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2868"
+      }
+    },
+    {
+      "objeto": "B_altas-28",
+      "categoria": "B_altas",
+      "indice": 27,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "519e1418cc90c80bb26402e861345dfd57f1da8b19f27eb0321961aeee9971c8",
+      "valor": {
+        "etiqueta preferida": "familia Glutamate de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2869"
+      }
+    },
+    {
+      "objeto": "B_altas-29",
+      "categoria": "B_altas",
+      "indice": 28,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "379ab34574f00ec87d7e77593cbf87855ac158231cfd8d3eb90a1fde7a68361a",
+      "valor": {
+        "etiqueta preferida": "familia Adhesion / Secretin de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2870"
+      }
+    },
+    {
+      "objeto": "B_altas-30",
+      "categoria": "B_altas",
+      "indice": 29,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "ba9a12c32a7429468284aacc69ea85483baae3a8b76a8a76fc28afde7db503ef",
+      "valor": {
+        "etiqueta preferida": "familia cAMP de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2871"
+      }
+    },
+    {
+      "objeto": "B_altas-31",
+      "categoria": "B_altas",
+      "indice": 30,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "a073dc3ebf768a6d14fe70e26692119e1089da92055178d9997bea8222c64449",
+      "valor": {
+        "etiqueta preferida": "familia ITR-like de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2872"
+      }
+    },
+    {
+      "objeto": "B_altas-32",
+      "categoria": "B_altas",
+      "indice": 31,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "b1be8bff133301a625040c9e5bd7269caf0ac71944241ad7d1a4f310563b8499",
+      "valor": {
+        "etiqueta preferida": "familia GPR108-like de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2873"
+      }
+    },
+    {
+      "objeto": "B_altas-33",
+      "categoria": "B_altas",
+      "indice": 32,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "d1944332a39bdc38068045953e78a652b2a717f2b171004da4a02114c98ab69a",
+      "valor": {
+        "etiqueta preferida": "familia OA1-like de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2874"
+      }
+    },
+    {
+      "objeto": "B_altas-34",
+      "categoria": "B_altas",
+      "indice": 33,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "4949980b6e2305f184bea73ca06ce6b77537bb760b0b7b023e928564b5ae1bcc",
+      "valor": {
+        "etiqueta preferida": "familia Frizzled de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2875"
+      }
+    },
+    {
+      "objeto": "B_altas-35",
+      "categoria": "B_altas",
+      "indice": 34,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "32b3a8404743307280099f0f58fb2b75e79376f7e0a131c72dd34a11b63f2d0c",
+      "valor": {
+        "etiqueta preferida": "familia ITR-like de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2876"
+      }
+    },
+    {
+      "objeto": "B_altas-36",
+      "categoria": "B_altas",
+      "indice": 35,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "1f0b8d14317752ec5135f026c12ef17ca0fd9ce48decf71e11f4f1345e41a2c2",
+      "valor": {
+        "etiqueta preferida": "familia OA1-like de receptores 7TM en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2877"
+      }
+    },
+    {
+      "objeto": "B_altas-37",
+      "categoria": "B_altas",
+      "indice": 36,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "0014ed03d150952a548880553268fc677e54c0d9be92de4f663163c1ca39d4ec",
+      "valor": {
+        "etiqueta preferida": "familia Frizzled de receptores 7TM en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2878"
+      }
+    },
+    {
+      "objeto": "B_altas-38",
+      "categoria": "B_altas",
+      "indice": 37,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "ca06dc64568ce3c86314ef431034e6228257917ee9f5d70e20e88f03c611239a",
+      "valor": {
+        "etiqueta preferida": "Bodo saltans",
+        "tipo": "taxón",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2708"
+      }
+    },
+    {
+      "objeto": "B_altas-39",
+      "categoria": "B_altas",
+      "indice": 38,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "0ee52018bd3327e287c723b112c29696b6f37ae5990311a2fa3663c35d1a104a",
+      "valor": {
+        "etiqueta preferida": "Paramoeba pemaquidensis",
+        "tipo": "taxón",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2709"
+      }
+    },
+    {
+      "objeto": "B_altas-40",
+      "categoria": "B_altas",
+      "indice": 39,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "e5af9231ca985e33a48d87267ffeeeb391b54e791e7caea57c9656f33dd9cca0",
+      "valor": {
+        "etiqueta preferida": "endocitosis propuesta en Perkinsela",
+        "tipo": "hipótesis o posición publicada",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-1040"
+      }
+    },
+    {
+      "objeto": "B_correcciones-1",
+      "categoria": "B_correcciones",
+      "indice": 0,
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_objeto": "66159413abcaa28626f3ce77adfe49b9a17362bdd657f7ff62b6bfca91410b62",
+      "valor": {
+        "etiqueta preferida": "invaginaciones superficiales y vesículas intracelulares observadas",
+        "tipo": "estructuras celulares observadas",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-1040"
+      },
+      "sha256_anterior": "b217f30faec29826c59bd6831f75e2abf8ec17d4a061a9685bf3f4ba54bc1a11",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "A_altas-1",
+      "categoria": "A_altas",
+      "indice": 0,
+      "ruta": "data/apendices/A_fuentes.csv",
+      "sha256_objeto": "a4dbf70df8748f1363d8a771710b630e74507146b17e1c18f897fb66ee394638",
+      "valor": {
+        "clave": "S563",
+        "autores": "Jackson, A. P. et al.",
+        "año": "2016",
+        "título": "Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism",
+        "publicación o repositorio": "Current Biology 26(2):161–172",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.cub.2015.11.055",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Texto completo JATS PMC4728078 recuperado de Europe PMC y leído nominalmente para el ensamblaje de Bodo saltans. Research-article; is-manuscript=no e is-preprint=no. Fecha de artículo en JATS: 2016-01-25; no se infiere el año desde el DOI. Results and Discussion, Comparative Analysis of Kinetoplastid Genomes, identifica el tamaño genómico comparado; Experimental Procedures, Genome Assembly, documenta reconstrucción iterativa, ensamblaje y depuración bacteriana. Se usa como soporte metodológico de la magnitud citada en S240 Table 1, no como lectura de todo el suplemento ni revisión editorial exhaustiva. Alta propuesta, pendiente de integración y revisión independiente.",
+        "fecha de consulta": "2026-09-27"
+      }
+    },
+    {
+      "objeto": "PROSA-1",
+      "categoria": "prosa_cambios",
+      "indice": 0,
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "sha256_objeto": "3c126324fb3f7f71c92dc234ee9e96760c3f4e62772f17a8f2d8195f14018dda",
+      "valor": "Tanifuji et al. estimaron el tamaño del genoma nuclear de Perkinsela sp. en ~9.5 Mbp. [C-1037; S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7; fragmento original: «was estimated to be»; expresa]\n\nTanifuji et al. consignan 39.9 Mbp para el tamaño genómico nuclear del flagelado de vida libre Bodo saltans cepa Konstanz reconstruido por ensamblaje. [C-2839; S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly; fragmentos originales: S240 Par10 «free-living» y S563 Results, §Comparative Analysis of Kinetoplastid Genomes «genome was assembled»; expresa]",
+      "ocurrencias_antes": 1
+    },
+    {
+      "objeto": "PROSA-2",
+      "categoria": "prosa_cambios",
+      "indice": 1,
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "sha256_objeto": "913d3a5c06febe3e086d541a6d9c4492d4c00b635306b739058eaf4d98301895",
+      "valor": "Tanifuji et al. interpretan las invaginaciones superficiales y las vesículas intracelulares observadas en Perkinsela como indicios de endocitosis. [C-1040; S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmento original: «These observations suggest»; expresa]\n\nTanifuji et al. identificaron en el núcleo de Paramoeba pemaquidensis 8 genes probablemente derivados de Perkinsela entre 3,846 alineamientos proteicos con filogenias interpretables. [C-2840; S240 Results and Discussion, §Host-endosymbiont interactions, Par14; Methods, §Phylogenomics, Sec14; fragmento original: «likely derived from the endosymbiont»; expresa]\n\nTanifuji et al. proponen que las vesículas endocíticas de Perkinsela podrían internalizar metabolitos procedentes de la ameba hospedadora. [C-2841; S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmento original: «we speculate»; expresa]\n\nTanifuji et al. proponen que las vesículas endocíticas de Perkinsela podrían internalizar enzimas procedentes de la ameba hospedadora. [C-2842; S240 Results and Discussion, §Host-endosymbiont interactions, Par16; fragmentos originales: «we speculate» y «possibly, enzymes»; expresa]",
+      "ocurrencias_antes": 1
+    },
+    {
+      "objeto": "PROSA-3",
+      "categoria": "prosa_cambios",
+      "indice": 2,
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "sha256_objeto": "9e1a562f1e213e55c3df7b6d5c817539d4e7fc1f9319326d5ad32a4da951d4a2",
+      "valor": "Se conserva como posición atribuida, no como ausencia genómica indiferenciada aceptada, la afirmación histórica: «Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis». [C-1581; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo, «lack receptors and ligands»] La fila C-1581 permanece intacta; su forma compuesta no queda aprobada por esta conservación. [C-1581; C-2851; C-2852]\n\nEl párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de receptores del sistema Hedgehog. [C-2843; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»; expresa]\n\nEl párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de ligandos del sistema Hedgehog. [C-2844; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»; expresa]\n\nSuga et al. representan Patched como componente presente en Monosiga brevicollis en Fig. 4. [C-2845; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «greyed when M. brevicollis has them»; expresa]\n\nSuga et al. representan Dispatched como componente presente en Monosiga brevicollis en Fig. 4. [C-2846; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «greyed when M. brevicollis has them»; expresa]\n\nSuga et al. describen en Monosiga brevicollis una proteína con similitud a la parte C-terminal Hint o Hog de Hedgehog. [C-2847; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; expresa]\n\nSuga et al. describen en Monosiga brevicollis una proteína que contiene la parte N-terminal Hedge de Hedgehog. [C-2848; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; expresa]\n\nSuga et al. sitúan los dominios Hedge y Hog de Monosiga brevicollis en proteínas diferentes. [C-2849; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «two domains hedge and hog are found in different proteins»; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; expresa]\n\nLa posición sobre ausencia de receptores de Monosiga en C-2843 queda cuestionada por la representación de Patched en C-2845. [C-2850; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; sintesis(C-2843, C-2845)]\n\nLa ausencia indiferenciada de receptores de Monosiga recogida en C-1581 queda cuestionada por la representación de Patched en C-2845. [C-2851; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; sintesis(C-1581, C-2845)]\n\nLa lectura de C-1581 como ausencia indiferenciada de componentes semejantes al ligando Hedgehog de Monosiga queda cuestionada por su distribución en proteínas separadas recogida en C-2849. [C-2852; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; sintesis(C-1581, C-2849)]\n\nSuga et al. no identificaron Hedgehog (Hh) en el genoma de Capsaspora owczarzaki analizado. [C-2853; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»; expresa]\n\nSuga et al. no identificaron Dispatched en el genoma de Capsaspora owczarzaki analizado. [C-2854; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»; expresa]\n\nSuga et al. no identificaron Patched en el genoma de Capsaspora owczarzaki analizado. [C-2855; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»; expresa]\n\nSuga et al. no identificaron Smoothened en el genoma de Capsaspora owczarzaki analizado. [C-2856; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «does not have»; expresa]\n\nSuga et al. no identificaron el dominio Hint o Hog en el genoma de Capsaspora owczarzaki analizado. [C-2857; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «neither Hint»; expresa]\n\nSuga et al. no identificaron el dominio Hedge en el genoma de Capsaspora owczarzaki analizado. [C-2858; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; fragmento original: «nor Hedge domain»; expresa]\n\nSuga et al. dejan sin resolver si CAOG_06541 de Capsaspora owczarzaki es un ortólogo bona fide de Gli. [C-2859; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; p. 96, fragmento original: «remains unclear»; expresa]",
+      "ocurrencias_antes": 1
+    },
+    {
+      "objeto": "PROSA-4",
+      "categoria": "prosa_cambios",
+      "indice": 3,
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "sha256_objeto": "ad6e4b8c1240b5ab07ee1fed3543126634778f892e9d785d0a184b082d88fc49",
+      "valor": "Los receptores acoplados a proteína G y otras familias de señalización tienen historias anteriores a Metazoa y expansiones y pérdidas posteriores. [C-1582; S352 resultados; S434 figs. 2–4; S435]\n\nSuga et al. no identificaron la familia Rhodopsin de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2860; S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «lacks»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; expresa]\n\nEl párrafo general de Suga et al. atribuye a Monosiga brevicollis la falta de ligandos del sistema de receptores de la familia Rhodopsin. [C-2861; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»; expresa]\n\nSuga et al. no identificaron la familia Rhodopsin de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2862; S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «lacks»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; expresa]\n\nEl párrafo general de Suga et al. atribuye a Capsaspora owczarzaki la falta de ligandos del sistema de receptores de la familia Rhodopsin. [C-2863; S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; fragmento original: «lack receptors and ligands»; expresa]\n\nSuga et al. registran en Capsaspora owczarzaki seis de las ocho familias de receptores 7TM de su clasificación. [C-2864; S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia Glutamate de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2865; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Glutamate (PF00003), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia Adhesion / Secretin de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2866; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Adhesion / Secretin (PF00002), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia cAMP de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2867; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila cAMP (PF05462), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia GPR108-like de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2868; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila GPR108-like (PF06814), columna Monosiga brevicollis; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia Glutamate de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2869; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Glutamate (PF00003), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia Adhesion / Secretin de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2870; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila Adhesion / Secretin (PF00002), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia cAMP de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2871; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila cAMP (PF05462), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia ITR-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2872; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila ITR-like (PF10192), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia GPR108-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2873; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila GPR108-like (PF06814), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. identificaron la familia OA1-like de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2874; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; fila OA1-like (PF02101), columna Capsaspora owczarzaki; S352 Methods, §Gene family analysis; formulación metodológica: «we inferred»; expresa]\n\nSuga et al. no identificaron la familia Frizzled de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2875; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; S352 Methods, §Gene family analysis; fragmento original: «presence and absence»; expresa]\n\nSuga et al. no identificaron la familia ITR-like de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2876; S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; expresa]\n\nSuga et al. no identificaron la familia OA1-like de receptores 7TM en el genoma de Monosiga brevicollis analizado. [C-2877; S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; expresa]\n\nSuga et al. no identificaron la familia Frizzled de receptores 7TM en el genoma de Capsaspora owczarzaki analizado. [C-2878; S352 Supplementary Information, Note 5, §Other signal transduction systems, p. física e impresa 96, párrafo que comienza «Similarly»; fragmento original: «None»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana; expresa]",
+      "ocurrencias_antes": 1
+    },
+    {
+      "objeto": "PROSA-5",
+      "categoria": "prosa_cambios",
+      "indice": 4,
+      "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+      "sha256_objeto": "0fc3939937d806536f74f4b821025557ce49f89917fd33b14730d03828eeac8a",
+      "valor": "`tiene_longitud_ensamblada*` Relaciona un ensamblaje identificado con su longitud publicada. La longitud procede de reconstrucción desde lecturas; no equivale a medición citométrica del contenido completo de ADN. [C-2839] Ejemplo: C-2839.\n\n`localizado_en*` Registra un gen, dominio o familia identificado por un análisis delimitado; no atribuye una función experimental al objeto. [C-2845] Ejemplo: C-2845.\n\n`no_localizado_en*` Registra la falta de identificación de un objeto en un análisis y muestreo explícitos; no afirma una ausencia biológica universal. [C-2853] Ejemplo: C-2853.\n\n`tiene_distribucion_proteica*` Relaciona dominios identificados con su distribución publicada entre proteínas; no convierte presencia de dominios en una vía funcional. [C-2849] Ejemplo: C-2849.\n\n`tiene_valor_estimado*` Relaciona una magnitud con su estimación publicada conservando unidad y aproximación. [C-1037] Ejemplo: C-1037.\n\n## 0.1. Clases de evidencia",
+      "ocurrencias_antes": 1
+    },
+    {
+      "objeto": "META-1",
+      "categoria": "metadatos_tablas",
+      "indice": 0,
+      "ruta": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "sha256_objeto": "f429a53ef6fbfdc08f57e5507fa7a95d0d359b31849d7ed0b2a51f59a680abf3",
+      "valor": "C-1036–C-1042; BN-111; C-2839; C-2840; C-2841; C-2842",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "META-2",
+      "categoria": "metadatos_tablas",
+      "indice": 1,
+      "ruta": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "sha256_objeto": "cbe61aea4a8bf7ea002100c32a293147a2b04041bf2addae8d9c510dd7805fd0",
+      "valor": "C-1581; C-2843; C-2844; C-2845; C-2846; C-2847; C-2848; C-2849; C-2850; C-2851; C-2852; C-2853; C-2854; C-2855; C-2856; C-2857; C-2858; C-2859",
+      "anterior_presente_vivo": true
+    },
+    {
+      "objeto": "META-3",
+      "categoria": "metadatos_tablas",
+      "indice": 2,
+      "ruta": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "sha256_objeto": "8c5017231fb9fccd05dcb90b3b9926e4105fb687b8ef9055582275200b552f0a",
+      "valor": "C-1582–C-1583; C-2860; C-2861; C-2862; C-2863; C-2864; C-2865; C-2866; C-2867; C-2868; C-2869; C-2870; C-2871; C-2872; C-2873; C-2874; C-2875; C-2876; C-2877; C-2878",
+      "anterior_presente_vivo": true
+    }
+  ],
+  "pasajes": {
+    "S240_Par7": {
+      "fuente": "S240",
+      "localizador": "JATS p[@id=Par7]",
+      "texto_normalizado": "From a set of 15,623 genomic scaffolds, 693 scaffolds (all manually curated) were determined to be from the Perkinsela sp. nuclear genome. The N50 for these scaffolds was 57,461 base pairs (bp), with an average Illumina sequence depth of ~550X and a G + C content of 47.1% (Table S1.1). The total genome size was estimated to be ~9.5 Mbp. 5,252 protein-coding genes were predicted, with a mean intergenic distance of ~515 bp. 332 of a set of 458 ‘core eukaryotic genes’ (72%) were found in Perkinsela sp. using webMGA23.",
+      "sha256_pasaje": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+    },
+    "S240_Par10": {
+      "fuente": "S240",
+      "localizador": "JATS p[@id=Par10]",
+      "texto_normalizado": "At ~9.5 Mbp in size and with < 5,500 predicted protein-coding genes, the Perkinsela sp. nuclear genome is substantially smaller than that of the free-living kinetoplastid flagellate Bodo saltans 25, the plant pathogen Phytomonas sp.26, and the human parasites Trypanosoma brucei 27 and Leishmania major 28 (Table 1). An analysis of proteins with KOG-based functional predictions (euKaryotic Orthologous Groups29) revealed > 600 KOG identifiers present in B. saltans, T. brucei, and Phytomonas sp. but absent in Perkinsela sp. (Fig. 2a; refs 25–27). The size and functional diversity of the Perkinsela sp. proteome is thus substantially reduced (Fig. 2a and b), presumably as a consequence of adaptation to intracellular life. Almost 14% of its proteome (721 of 5,252 proteins) appears to service its giant mitochondrion (including its mass of mitochondrial DNA, the kinetoplast) (Supplementary Note 1.7), which occupies the majority of the cell’s volume (Fig. 1e) and whose transcripts have been shown to undergo extensive and error-prone U-insertion/deletion RNA editing24.",
+      "sha256_pasaje": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa"
+    },
+    "S240_Par14": {
+      "fuente": "S240",
+      "localizador": "JATS p[@id=Par14]",
+      "texto_normalizado": "P. pemaquidensis and Perkinsela sp. have never been successfully cultured separately (ref. 5 and references therein). Indeed, Page noted that “the Nebenkörper… [Perkinsela sp.] was always so close to the [amoeba] cell nucleus and followed its movements so faithfully that a physical connection between the 2 must be assumed…”40. We attempted to discern the underlying reason(s) for the obligate relationship between the two organisms. Endosymbiotic gene transfer (EGT), a well-known factor in the transition from endosymbiont to organelle41, is one possibility. We used a phylogenomics pipeline to search the >11,000 genes in the P. pemaquidensis nuclear genome for genes of kinetoplastid ancestry. Out of 3,846 protein alignments for which interpretable phylogenies could be reconstructed, only 8 genes likely derived from the endosymbiont were identified in the amoeba (Supplemental Note S1.6, Supplemental Fig. S1.6.1a–h). The role of EGT in forging this unusual symbiosis thus appears to have been minimal.",
+      "sha256_pasaje": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+    },
+    "S240_Par15": {
+      "fuente": "S240",
+      "localizador": "JATS p[@id=Par15]",
+      "texto_normalizado": "We next considered the possibility that the host and endosymbiont metabolisms are functionally intertwined. A global comparison of the KEGG-inferred metabolic capacities of both organisms supports this hypothesis (Fig. 3a). For example, Perkinsela sp. appears capable of making trypanothione—an antioxidant unique to kinetoplastids42—with its own trypanothione synthase (TryS), but only using glutathione and spermidine synthesized by enzymes encoded by its host (Fig. 3b and Supplementary Fig. S3.1.1a). Genes for 7 of 8 heme biosynthetic enzymes are found in Perkinsela sp., with a gene for the ‘missing’ enzyme (uroporphyrinogen-III synthase, UROS) located in the amoeba genome43 (Fig. 3c); and genes for the synthesis of mitochondrial ubiquinone are exclusively found in Perkinsela sp., with the exception of the ubiquinone biosynthesis monooxygenase (Coq7) gene, a version of which resides in both nuclear genomes (Fig. 3d and Supplementary Fig. S3.1.1b; the ubiquinone biosynthetic pathway is otherwise conserved in amoebozoans). Conversely, arginine and proline metabolic enzymes are primarily encoded by the P. pemaquidensis genome (Fig. 3a and Supplementary Fig. S3.1.1c), as are fatty acid degradation enzymes (Fig. 3a and Supplementary Fig. S3.1.1d), while purine metabolism is a complex mixture of proteins encoded by both genomes or one or the other (Fig. 3a and Supplementary Fig. S3.1.1e).",
+      "sha256_pasaje": "4fe6e9f1d75fbbd72c1587cf269cdf4e85eba27abf4b133f91f951379b9a8ea2"
+    },
+    "S240_Par16": {
+      "fuente": "S240",
+      "localizador": "JATS p[@id=Par16]",
+      "texto_normalizado": "How might Perkinsela sp. and P. pemaquidensis ‘communicate’? Using TEM and freeze-fracture cryo-SEM, we discovered invaginations on the surface of the endosymbiont, which appears bound by a single membrane (Fig. 1h,i, Supplementary Fig. S2.6.1). Intracellular vesicles with electron densities similar to the P. pemaquidensis cytoplasm were also apparent, like those seen in an early study of P. perniciosa 2. These observations suggest that Perkinsela sp. carries out endocytosis (although with no flagellar pocket, the site of endocytosis in trypanosomes32, the process is presumably not restricted to any particular region of the plasma membrane). This idea is further supported by genomic data. The Perkinsela sp. genome encodes a varied set of proteins involved in clathrin-mediated endocytosis, exocytosis, and vesicular trafficking (e.g., clathrin, dynamin, SNARE proteins, and a set of Rab proteins) (Supplementary Note 2.6), as well as 66 putative membrane transporters with diverse substrate specificities (Supplementary Note 2.7). Although their intracellular destination(s) is unknown, we speculate that the endocytic vesicles of Perkinsela sp. serve to internalize amoeba-derived metabolites (and, possibly, enzymes), thereby allowing the contents of the amoeba cytoplasm to feed directly into the biochemical pathways of the endosymbiont (Supplementary Note 3.14). In the opposite direction, Perkinsela sp. may secrete key proteins and metabolites to its plasma membrane or out into the cytoplasm of its host (Fig. 4). These are hypotheses that can be tested experimentally.",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+    },
+    "S240_Methods": {
+      "fuente": "S240",
+      "localizador": "Methods, Phylogenomics, JATS sec[@id=Sec14]",
+      "texto_normalizado": "PhylogenomicsTo identify gene transfers between P. pemaquidensis and Perkinsela sp., we implemented a phylogenomics pipeline (Supplementary Fig. S1.6.2) using predicted proteins from both the host and endosymbiont genomes. BlastP searches were used to retrieve a maximum of 1,000 sequences from a comprehensive database comprised of proteins from public genomic and transcriptomic databases (see Supplementary Table S1.6.1), with an E-value cut-off of 1E-15 and a query-target alignment length of 50% or more. After multiple sequence alignment and preliminary phylogenetic analysis using FastTree66, TreeTrimmer67 was used to reduce OTU redundancy for alignments containing > 100 sequences using the criteria shown in Supplementary Table S1.6.2 (paralogs within the P. pemaquidensis and Perkinsela sp. genomes were retained in each alignment, regardless of how similar they were to one another). Alignments were then repeated, trimAL ver. 1.468 was used to remove ambiguously aligned regions, and phylogenetic trees were inferred using FastTree. The number of proteins for which trees could be constructed (i.e., at least 4 OTUs including the query) was 3,846 for P. pemaquidensis (out of 11,573 predicted proteins in total at the time of analysis) and 2,633 for the endosymbiont Perkinsela sp. (out of 5,252 proteins). Tree topologies were screened in an automated fashion using an in-house Ruby script; trees of interest (i.e., trees in which P. pemaquidensis or Perkinsela sp. proteins branch with one or more kinetoplastid or amoebozoan homologs, respectively) were selected for closer scrutiny. For these initial endosymbiotic gene transfer (EGT) candidates (35 host and 6 endosymbiont proteins), additional homologs (if present) were retrieved from the GenBank NR database using BlastP searches and added to the datasets. After elimination of redundant sequences, multiple alignment and removal of ambiguously aligned sites, trees were inferred from the final curated alignments using RAxML ver. 7.7.9 (with the LG + G + F model69) (Supplementary Fig. S1.6.2). Trees were then checked manually, and those with topologies consistent with EGT were flagged for further investigation. Branch support was evaluated by rapid bootstrapping in RAxML (100 replicates), using the same substitution model described above. The flagged datasets were also analyzed using PhyloBayes ver. 3.3f70 with the site-heterogeneous mixture CAT model. Two independent Markov chains were run for a total of 10,000 cycles. Bayesian posterior probabilities were calculated by sampling every 10 trees after discarding the first 2,500 trees as ‘burn-in’.",
+      "sha256_pasaje": "6dcb4d2616f51b2ad77ff18dce4b2d64bae41fa110f767163384f4af43bcfe30"
+    },
+    "S240_Table1": {
+      "fuente": "S240",
+      "localizador": "Table1: fila Genome size (Mbp), columnas Perkinsela/Bodo y nota b",
+      "texto_normalizado": "Table 1Features of the Perkinsela sp. nuclear genome and those of select kintetoplastids. Perkinsela sp.a Bodo saltans b Phytomonas sp.c Trypanosoma brucei d Leishmania major e Genome size (Mbp)9.539.917.826.132.8G + C (%)47.146.648.046.459.7Protein-coding genes5,25218,9436,3819,0688,272Mean intergenic distance (bp)515.4462.91,1401,2792,045 Trans-splicing?yesyesyesyesyes aStrain CCAP1560/4; This study. bStrain Konstanz; numbers shown correspond to Jackson et al.25. We analyzed 18,963 protein-coding genes taken from http://www.sanger.ac.uk/resources/downloads/protozoa/bodo-saltans.html cStrain EM26. dStrain TREU92727. eStrain Friedlin28.",
+      "sha256_pasaje": "e57052e3eded9b6049fd1c3479330e749e22f9fef9b3230607c3eae600c144ce"
+    },
+    "S563_sec2.1": {
+      "fuente": "S563",
+      "localizador": "JATS sec[@id=sec2.1]/p[1]",
+      "texto_normalizado": "The 39.9 Mb genome of Bodo saltans strain Konstanz was sequenced to 170× coverage using Illumina HiSeq. The genome was assembled into 2,402 scaffolds (N50 = 31.5 kb) and includes 18,936 predicted protein-coding sequences. To prevent contamination of the assembly from xenic culture, we restricted the B. saltans genome to contigs that contain both eukaryotic homologs and transcriptomic coverage (see the Supplemental Experimental Procedures). The genome sequences of B. saltans and model trypanosomatids are compared in Table 1; based on CEGMA (core eukaryotic genes mapping approach) score [13], the B. saltans sequence displays a comparable degree of completeness to the reference genomes.",
+      "sha256_pasaje": "b5a7223d799ee19cf42a55b0582e914defa56142a8266bc8e79df3a8c1c3977e"
+    },
+    "S563_sec4.2": {
+      "fuente": "S563",
+      "localizador": "JATS sec[@id=sec4.2]/p[1]",
+      "texto_normalizado": "B. saltans genomic DNA was prepared from cell cultures after reduction of the bacterial microflora (see the Supplemental Experimental Procedures). However, the sample retained a significant bacterial component. Genomic DNA was prepared from the cell pellet using phenol-chloroform extraction and used to create 500 bp and 3 Kb genomic libraries. T. borreli genomic DNA was prepared directly from commercial cell culture (LGC Standards) and used to create a 500 bp genomic library. All libraries were sequenced on the Illumina HiSeq platform.",
+      "sha256_pasaje": "84a0dab76cc9fd6afb637c1d8daa6e384ae19c788bfab89b1b9d2061ac2b1d87"
+    },
+    "S563_sec4.4": {
+      "fuente": "S563",
+      "localizador": "JATS sec[@id=sec4.4]/p[1]",
+      "texto_normalizado": "To obtain the genome sequence of B. saltans, we applied an iterative approach. First, we corrected the reads for errors using SGA [43]. Then, 500-bp-insert sequence reads were assembled with Velvet version 1.0.18 [44], under the following parameters: kmer (41), exp_cov (auto), cov_cutoff (3), and insertsize (400). The scaffolds obtained were further joined with SSPACE [45] using first the 500-bp and then the 3-kb-insert libraries. Sequencing gaps were closed with Gapfiller [46] and Image [47]. Finally, we manually identified contigs that represented bacterial contamination and excluded reads mapping back to these. A contig was considered a contaminant if it displayed >70% similarity with the UniProt bacteria database and had no mapped RNA sequencing reads. This process was repeated three times. After the last iteration, we corrected small base errors with five iterations of ICORN [48] and split scaffolds with reads from the 3-kb-insert library and REAPR [49] under default parameters.",
+      "sha256_pasaje": "5096dffe3167981c51cccd0e26f52dd1bfe078270d5465ffc572ebead07b16e4"
+    },
+    "S352_GeneRepertoire_p4": {
+      "fuente": "S352",
+      "localizador": "Gene repertoire of Capsaspora, párrafo hijo directo 4",
+      "texto_normalizado": "Our data reveal the contrasting evolutionary histories of extracellular (or membrane-bound) components versus cytoplasmic components of signalling pathways involved in metazoan multicellularity and development. Most metazoan receptors and diffusible ligands are either ancestral metazoan innovations or have independently diversified in metazoans, whereas the majority of their intracellular components were already present in the unicellular ancestors of metazoans (Fig. 4). Both Capsaspora and M. brevicollis lack receptors and ligands in several systems involved in cell communication and development in metazoans, for example, those in the Hedgehog, Rhodopsin family G-protein-coupled receptors, Wnt, transforming growth factor-β and nuclear receptor signalling pathways (Fig. 4). Notch signalling also seems to be a metazoan innovation, although Capsaspora has several receptor proteins that resemble the metazoan Notch and Delta proteins in their domain architecture, which may represent the ancestral components of this system (Supplementary Figs S19–S21, Supplementary Note 5). Both Capsaspora and M. brevicollis have large numbers of TKs (92 and 128, respectively)20 (Supplementary Figs S22 and S23, Supplementary Table S9). Again, the receptor-type TKs independently diversified in Capsaspora, M. brevicollis and metazoans, whereas the cytoplasmic TKs are mostly homologous among these three lineages, highlighting the animal-specific adaptation of the receptor-ligand system in the Metazoa20. The mitogen-activated protein kinase pathway, a downstream cytoplasmic signalling system of the TK pathway, is also present in Capsaspora in the diversified form that we see now in metazoans (Supplementary Figs S24 and S25, Supplementary Note 5). The diverse members of the G-protein α-subunit family and the regulator of G-protein-signalling family, which together coordinate signal transduction from the 7TM receptors to their specific effectors, are also present in the Capsaspora genome, indicating that the diversity of these components has been secondarily lost, to some extent, in the lineage leading to M. brevicollis (Supplementary Figs S26 and S27, Supplementary Note 5).",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    },
+    "S352_Methods": {
+      "fuente": "S352",
+      "localizador": "Gene family analysis, párrafo hijo directo 1",
+      "texto_normalizado": "We chose several gene families that are particularly interesting in the context of the evolution of multicellularity. For each gene family, we inferred the presence and absence of the gene or protein domains in chosen taxa using the HMMER45 package, mutual Blast and phylogenetic analyses based on maximum likelihood trees inferred by RAxML42. Analysed taxa include three bilaterians (Homo sapiens, Strongylocentrotus purpuratus and Drosophila melanogaster), three non-bilaterian metazoans (Nematostella vectensis, Trichoplax adhaerens and Amphimedon queenslandica), the choanoflagellate M. brevicollis, the filasterean C. owczarzaki, three fungi (Rhizopus oryzae, Laccaria bicolor and Neurospora crassa), and the amoebozoan Dictyostelium discoideum. We also searched, if necessary, further basal eukaryotes whose genomes have been sequenced, in order to know the origin of gene families that could predate the split between amoebozoans and opisthokonts.",
+      "sha256_pasaje": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    "S352_Fig4_leyenda": {
+      "fuente": "S352",
+      "localizador": "Fig4 pPDF6/impresa6, leyenda completa; símbolos inspeccionados visualmente",
+      "texto_normalizado": "Schematic representation of the putative Capsaspora owczarzaki cell.Protein components of major metazoan cell adhesion complexes (green background) and various signalling pathways including receptors (yellow background) are depicted. Components with red and blue backgrounds indicate those found both in C. owczarzaki and M. brevicollis and those found in C. owczarzaki but not in M. brevicollis, respectively. Dotted components are absent in the C. owczarzaki genome; greyed when M. brevicollis has them. A grey striped line represents an actin filament, to which the cell–ECM–adhesion complexes bind. See Supplementary Note 5 for details. *, two domains hedge and hog are found in different proteins in M. brevicollis. **, receptor-type proteins with domain architectures similar to Notch and Delta proteins are present in C. owczarzaki. ***, proteins with similar domain architectures are present in M. brevicollis, but not confidently mapped to those metazoan families by phylogenetic analyses. ****, the repertoires of RTKs are totally different between C. owczarzaki, M. brevicollis and metazoans, and thus likely to have diversified independently in each lineage. 4E-BP1, eukaryotic initiation factor 4E-binding protein 1; CK1, Casein kinase 1; C-Lectin, C-type lectin; CSL, CBF1/RBP-Jκ/suppressor of hairless/LAG-1; CTKs, cytoplasmic tyrosine kinases; DB, Dystrobrevin; DG, Dystroglycan; DP, Dystrophin; Dsh, Dishevelled; Ets, E-twenty six; FOX, Forkhead box; Gα, G-protein-α subunit; GluR, glutamate receptor; GPR108, G-protein-coupled receptor 108; GSK3, glycogen synthetase kinase 3; Grh, Grainy head; HD, homeodomain; IgCAM, Immunoglobulin-like cell adhesion molecule; ILK, Integrin-linked kinase; ITR, intimal thickness-related receptor; JNK, c-Jun N-terminal kinase; NRPTPs, non-receptor protein tyrosine phosphatases; OA1, Ocular albinism 1-like; PDE, phosphodiesterase; RGS, regulator of G-protein signalling; RTKs, receptor tyrosine kinases; RPTP, receptor protein tyrosine phosphatase; S6K p70; 70kDa ribosomal protein S6 kinase; SAV, Salvador; Sd, Scalloped; SG, Sarcoglycan; SSPN, Sarcospan; SYN, Syntrophin; TALE, three amino-acid loop extension-class homeodomain; TGFβ, Transforming growth factor β; TOR, Target of rapamycin; YAP, Yes-associated protein.",
+      "sha256_pasaje": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+    },
+    "S352_SI_7TM": {
+      "fuente": "S352",
+      "localizador": "Supplementary Information pPDF/impresa94; bloque desde C. owczarzaki has a rich repertoire",
+      "texto_normalizado": "C. owczarzaki has a rich repertoire of seven-transmembrane (7TM) receptors, which are also referred to as G protein-coupled receptors (GPCRs) because most of them transmit signals by activating heterotrimeric G proteins108. They are involved in diverse signaling pathways that are important for cell communication and signaling108. 7TM receptors can be classified into eight families by their overall sequence homology and domain architecture109. C. owczarzaki has six out of these eight families, although it lacks the rhodopsin family like M. brevicollis (Supplementary Figure S26). The C. owczarzaki genome contains two families that are absent in M. brevicollis: the intimal thickness-related receptor (ITR) -like family and the Ocular albinism type 1 (OA1) -like family.",
+      "sha256_pasaje": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+    },
+    "S352_SI_Hh_inicio": {
+      "fuente": "S352",
+      "localizador": "Supplementary Information pPDF/impresa95; bloque desde Main players of the canonical Hedgehog",
+      "texto_normalizado": "Main players of the canonical Hedgehog (Hh) signaling are lacking in the C. owczarzaki genome. C. owczarzaki does not have the ligand Hh, Dispatched (involved in ligand secretion), or Patched and Smoothened (involved in ligand reception). The Hh-like protein identified in M. brevicollis is split up into two different proteins: one having a sequence similarity with the",
+      "sha256_pasaje": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b"
+    },
+    "S352_SI_Hh_fin": {
+      "fuente": "S352",
+      "localizador": "Supplementary Information pPDF/impresa96; bloque desde C-terminal part",
+      "texto_normalizado": "C-terminal part (Hint or Hog domain) of Hh, and another possessing the N-terminal part (Hedge domain), which appears as a large transmembrane protein9,116. However, neither Hint nor Hedge domain is encoded by the C. owczarzaki genome. One of the main targets of the Hh signaling is the transcription factor Gli117. Although C. owczarzaki has a protein (CAOG_06541) containing five Cys2His2 zinc fingers that are closely related to those of Gli, whether it is the bona fide Gli ortholog remains unclear.",
+      "sha256_pasaje": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a"
+    },
+    "S352_SI_Wnt": {
+      "fuente": "S352",
+      "localizador": "Supplementary Information pPDF/impresa96; bloque desde Similarly, no receptor",
+      "texto_normalizado": "Similarly, no receptor or ligand genes were found for Wnt signaling in the genome of C. owczarzaki. None of the 7TM receptors of C. owczarzaki is closely-related to the Frizzled family (see Supplementary Figure S26), which is the receptor of canonical Wnt signaling. Moreover, none of its 7TM receptors have the specific Fz domain, which is involved in the interaction with the ligand Wnt. Because the amoebozoan D. discoideum has a putative Frizzled homolog with the Fz domain118, the receptor Frizzled may have been secondary lost in both C. owczarzaki and M. brevicollis.",
+      "sha256_pasaje": "552c630e7953b1f35255c3bb35c1f14add7e73d2310344110f90d04655cae93c"
+    },
+    "S352_S26_leyenda": {
+      "fuente": "S352",
+      "localizador": "Supplementary Information pPDF/impresa44; bloque desde Supplementary Figure S26. Conservation",
+      "texto_normalizado": "Supplementary Figure S26. Conservation of genes involved in 7TM receptors and their signaling Presence of a gene is indicated by a dot. Pfam statistical models used for HMMER search are shown after family names when available. AKAP, A-kinase anchor protein; SNX, sorting nexin; 7TM-RGS, undescribed RGS family with seven transmembrane segments. a, the genomes of the amoeboflagellate Naegleria gruberi and some stramenopiles genomes were analyzed; b, The genomes of Neurospora crassa, Ustilago maydis, and Schizosaccharomyces pombe, were analyzed c, H. sapiens and D. melanogaster genomes were analyzed; d, although fish, basal chordates, and some arthropods have it, tetrapods and many other invertebrate species seem to have lost it61; e, Gαi/t and Gαo seem to have diverged in the lineage leading to choanoflagellates and metazoans after their divergence from filastereans; f, proteins with same domain architecture present in amoebozoans (GRK), N. gruberi (FlbA), and green plants, Ectocarpus siliculosus, and Naegleria gruberi (7TM- RGS) though not confidently classified to families by the sequence homology of RGS domain.",
+      "sha256_pasaje": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+    }
+  },
+  "fuentes": [
+    {
+      "clave": "S240",
+      "ruta_leida": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "coincide_autor": true
+    },
+    {
+      "clave": "S352",
+      "ruta_leida": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "coincide_autor": true
+    },
+    {
+      "clave": "S352",
+      "ruta_leida": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+      "coincide_autor": true
+    },
+    {
+      "clave": "S352",
+      "ruta_leida": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+      "sha256": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "coincide_autor": true
+    },
+    {
+      "clave": "S563",
+      "ruta_leida": "/tmp/S240-ref25-Jackson2016-preparacion-v2-20260927.xml",
+      "sha256": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "coincide_autor": true
+    }
+  ],
+  "disposiciones": [
+    {
+      "claim_id": "C-2708",
+      "sha256_disposicion": "9cbcb9410ef372ed937d2e41f28c2b2a5c7fa801c7a411550d4ada24c4f3fb99",
+      "componentes": [
+        "genoma_nuclear_Perkinsela_estimado",
+        "genoma_Bodo_ensamblado_y_comparando_libre",
+        "limite_comparacion_mitocondrial_y_cociente"
+      ],
+      "C_soporte": {
+        "C-1037": "58ccfa35bf952f266fc3e77239bc24347428d2a4b87285fd82c7e763c75c4ae8",
+        "C-2839": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185"
+      },
+      "artefactos": {
+        "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+        "fuentes/S563 [2016] Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism.xml": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094"
+      }
+    },
+    {
+      "claim_id": "C-2709",
+      "sha256_disposicion": "68b732543469c480a44460d8ea2b80a66c2b65867df9d363bcde63177f435673",
+      "componentes": [
+        "EGT_candidata_y_denominador",
+        "hipotesis_captacion_metabolitos",
+        "hipotesis_captacion_enzimas",
+        "limite_retorno_productos_EGT"
+      ],
+      "C_soporte": {
+        "C-2840": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+        "C-2841": "178a41f6d593ff6481aa5ec6afae0bbde8816328167a4552a00a5c915f96d39c",
+        "C-2842": "061df51db5ca993d367e1415050360342b12ccf33930d100107e6e628c785880"
+      },
+      "artefactos": {
+        "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7"
+      }
+    },
+    {
+      "claim_id": "C-2468",
+      "sha256_disposicion": "f12a8016b1fd8b7e497fc4b5555fde9e6f16bcf3f52418674c57f9867b5950e0",
+      "componentes": [
+        "posicion_textual_receptores_Monosiga",
+        "posicion_textual_ligandos_Monosiga",
+        "Patched_Monosiga",
+        "Dispatched_Monosiga",
+        "Hint_Hog_Monosiga",
+        "Hedge_Monosiga",
+        "dominios_en_proteinas_separadas",
+        "limite_contraste_y_funcion_Hedgehog"
+      ],
+      "C_soporte": {
+        "C-2843": "7908768474da973bc3ec762f99f84687cea3c0db61b9d1b2b462b012e8d69b33",
+        "C-2844": "e47bb6671d073d35925825606c313e81872ce5606ad1b7ed29ffde8a1a708bcc",
+        "C-2845": "b155ea1f86ca430f675c2c28a22e76ea5983eb1fc51365e6fa5a2d78e28a4421",
+        "C-2846": "73b6bbc20eec7edcb5a72b35a63c702365320484f694f387cd51d6300f7fd4e0",
+        "C-2847": "180c16e4e726f4937643c8f73eae1a4546525ea65b0761d7f774b1ad00d4e808",
+        "C-2848": "0cd33c4ec6504cb6aea0b9f5c729f6fc6ed0bb490ec1d8a8d5acdefbfc611434",
+        "C-2849": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2"
+      },
+      "artefactos": {
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23"
+      }
+    },
+    {
+      "claim_id": "C-2469",
+      "sha256_disposicion": "ae27235263a93876bc1e2b2dc018036ed17b2ac25ca03d691c9423c42745e6d1",
+      "componentes": [
+        "Hh_Capsaspora",
+        "Dispatched_Capsaspora",
+        "Patched_Capsaspora",
+        "Smoothened_Capsaspora",
+        "Hint_Hog_Capsaspora",
+        "Hedge_Capsaspora",
+        "Gli_ortologia_Capsaspora",
+        "limite_genomico_y_funcional"
+      ],
+      "C_soporte": {
+        "C-2853": "84b2db71e1dbbadab33b512ff03abc77e2bc8adc1f1fa23ad63e3466f1c85595",
+        "C-2854": "36e56f67829ecda33f59e721237d6a216700d6dee197a74c45af7f31866bd52a",
+        "C-2855": "bf04036596d576d10dea545d787adc0fc7f1a82cb60857834b02446ca48807f2",
+        "C-2856": "83a397cf3960e622644f53ed5cf8505b52e0ef6c9038f4c5d15b3e2a29e914b6",
+        "C-2857": "1e054bcb2172dc35f247765a20482a489452e18daed8fed4f39191ef487754b2",
+        "C-2858": "63135350c41a099d93440987c9f48d37990440e73595afd63907ea8df953862c",
+        "C-2859": "38c09b44e78c4f7dbddc45eb4f9e1a3aebd7ca028833603ca38fae39109bac68"
+      },
+      "artefactos": {
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23"
+      }
+    },
+    {
+      "claim_id": "C-2474",
+      "sha256_disposicion": "d9cf668d711dc18d6d3e9ad8b2eac6dc11edfb5d5d03684a4e5207585f4603f6",
+      "componentes": [
+        "Rhodopsin_receptores_Monosiga",
+        "Rhodopsin_ligandos_posicion_Monosiga",
+        "familia_Glutamate_Monosiga",
+        "familia_Adhesion / Secretin_Monosiga",
+        "familia_cAMP_Monosiga",
+        "familia_GPR108-like_Monosiga",
+        "Frizzled_Monosiga",
+        "ITR_like_Monosiga",
+        "OA1_like_Monosiga",
+        "limite_funcion_y_otras_senales"
+      ],
+      "C_soporte": {
+        "C-2860": "4fcb24c602c302aab80be4e977f85c92108744a2bd7aa66e5f123ad6aa6bd8e6",
+        "C-2861": "5dc10847adc2469078fcc647c1b731494f3042b4007d8f5a82eb990bdb6d67b9",
+        "C-2865": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210",
+        "C-2866": "3c54834d1f7b4851659a8dfe68b714691716791cd62e8dfeeff06f9c979a347f",
+        "C-2867": "b639c4015a36896d1cc83460dbb0196f111399b280e4528e2c487aeb92fb6d2c",
+        "C-2868": "a426af97a3804c38e61151fab2cb1d6c3a5efa7cb21016a3359137b8e59946f9",
+        "C-2875": "886746fd26ee305299c4c69630c1d8f64a1ca08632871ad7436c9b74c1c02e61",
+        "C-2876": "31d9166276b855cd7d4aa5f57e350c02fd84627abebf5c262feca0d38f35dbd3",
+        "C-2877": "b8ed0765a848a69b03855e209053e8e1f6312687f756c5826c3751fd09da430c"
+      },
+      "artefactos": {
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23"
+      }
+    },
+    {
+      "claim_id": "C-2475",
+      "sha256_disposicion": "ff934a0106273148cd7a1a6fc05a218d6fa12275b85fe62d6bd567e3ea87bab4",
+      "componentes": [
+        "Rhodopsin_receptores_Capsaspora",
+        "Rhodopsin_ligandos_posicion_Capsaspora",
+        "recuento_publicado_seis_de_ocho",
+        "familia_Glutamate_Capsaspora",
+        "familia_Adhesion / Secretin_Capsaspora",
+        "familia_cAMP_Capsaspora",
+        "familia_ITR-like_Capsaspora",
+        "familia_GPR108-like_Capsaspora",
+        "familia_OA1-like_Capsaspora",
+        "Frizzled_Capsaspora",
+        "limite_funcion_y_otras_senales"
+      ],
+      "C_soporte": {
+        "C-2862": "745dff7adaa8b6b1239157f2255e90986828f0cd846678b776fa3aa08d8e8b9f",
+        "C-2863": "c84de621bb0420eee6e287508663c721b87e06ade113f8cb278116ab61be2072",
+        "C-2864": "3e9565d78e99749e2011c96a37e4e252a1032a8f3ecedcb083a56d1355952083",
+        "C-2869": "0a6843387fee142662272b1a99a2079e1cd13fa59164547ed471c7ae761f00a1",
+        "C-2870": "301af3b6e8c55c81dbfa4edf95c911121f092ae61a248b6ccd0c537b1195dcc6",
+        "C-2871": "c4c999960aab5fe8b2f0cb6d6b9c3c656ad0cfa6911b2723187782111f871195",
+        "C-2872": "0767c4924a157c9653287a5bcf38b1fe08dc8784d18185c6c247983a59b7bbb9",
+        "C-2873": "08aa58ddec8ce5a605d1a82c1e86ec33cfbab826739152085a2f9a7c9d5f2635",
+        "C-2874": "339b81317d396d588d45267ad8a9d64095944522853a30f9a576f253ba078e63",
+        "C-2878": "6eb67151dcafcd51ec17f46b60649ad61b88081cec84c7dcc7f6974d173310ae"
+      },
+      "artefactos": {
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+        "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23"
+      }
+    }
+  ],
+  "archivos_base": [
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_propuesta": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "sha256_vivo": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "coincide": true
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "sha256_propuesta": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "sha256_vivo": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "coincide": true
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_propuesta": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "sha256_vivo": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "coincide": true
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "sha256_propuesta": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "sha256_vivo": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "coincide": true
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "sha256_propuesta": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "sha256_vivo": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "coincide": true
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "sha256_propuesta": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+      "sha256_vivo": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "coincide": false
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "sha256_propuesta": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "sha256_vivo": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "coincide": true
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "sha256_propuesta": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "sha256_vivo": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "coincide": true
+    },
+    {
+      "ruta": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "sha256_propuesta": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "sha256_vivo": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "coincide": true
+    },
+    {
+      "ruta": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "sha256_propuesta": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "sha256_vivo": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "coincide": true
+    },
+    {
+      "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+      "sha256_propuesta": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "sha256_vivo": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "coincide": true
+    },
+    {
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "sha256_propuesta": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "sha256_vivo": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "coincide": true
+    },
+    {
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "sha256_propuesta": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "sha256_vivo": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "coincide": true
+    },
+    {
+      "ruta": "scripts/build_atomic_cell_claims.py",
+      "sha256_propuesta": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9",
+      "sha256_vivo": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9",
+      "coincide": true
+    },
+    {
+      "ruta": "scripts/residual_semantic_dispositions.py",
+      "sha256_propuesta": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4",
+      "sha256_vivo": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4",
+      "coincide": true
+    }
+  ],
+  "imagenes_inspeccionadas": [
+    {
+      "ruta": "/tmp/S352-fig4-review-20260927.png",
+      "sha256": "b7d12beb90dbd75c95c57cb26240c7678129e26c305c21485beafe12384281ab"
+    },
+    {
+      "ruta": "/tmp/S352-s26-independiente-v2-20260927-043.png",
+      "sha256": "a36e5316d04f83ed3949fa16cf9727c8df58e2e9f054d2dc2d5530b0fd27dfb2"
+    },
+    {
+      "ruta": "/tmp/S352-s26-independiente-v2-20260927-044.png",
+      "sha256": "ff453eb32b797d8c1e3f8b4526b79d7c92c5aea3236acf332d1f46d4177a7a65"
+    }
+  ],
+  "B_metodos_candidates": {
+    "Illumina": [],
+    "SGA": [],
+    "Velvet": [],
+    "SSPACE": [],
+    "Gapfiller": [],
+    "Image": [],
+    "ICORN": [],
+    "REAPR": [],
+    "HMMER": [],
+    "RAxML": [],
+    "PhyloBayes": [],
+    "FastTree": [],
+    "BLASTP": [],
+    "crio-SEM": []
+  }
+}

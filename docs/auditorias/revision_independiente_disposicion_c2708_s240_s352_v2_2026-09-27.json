@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "claim_id": "C-2708",
+  "disposicion_sha256": "9cbcb9410ef372ed937d2e41f28c2b2a5c7fa801c7a411550d4ada24c4f3fb99",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T03:20:10Z",
+  "dictamen": "CONFORME",
+  "independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "cobertura": {
+    "genoma_nuclear_Perkinsela_estimado": [
+      0
+    ],
+    "genoma_Bodo_ensamblado_y_comparando_libre": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "limite_comparacion_mitocondrial_y_cociente": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "pasajes": [
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "JATS p[@id=Par7]",
+      "fragmento_control": "The total genome size was estimated to be ~9.5 Mbp.",
+      "sha256_pasaje": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20"
+    },
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "Table1: fila Genome size (Mbp), columnas Perkinsela/Bodo y nota b",
+      "fragmento_control": "Features of the Perkinsela sp. nuclear genome",
+      "sha256_pasaje": "e57052e3eded9b6049fd1c3479330e749e22f9fef9b3230607c3eae600c144ce"
+    },
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "JATS p[@id=Par10]",
+      "fragmento_control": "free-living kinetoplastid flagellate Bodo saltans",
+      "sha256_pasaje": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa"
+    },
+    {
+      "artefacto": "fuentes/S563 [2016] Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism.xml",
+      "sha256_artefacto": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "localizador": "JATS sec[@id=sec2.1]/p[1]",
+      "fragmento_control": "The 39.9 Mb genome of Bodo saltans strain Konstanz",
+      "sha256_pasaje": "b5a7223d799ee19cf42a55b0582e914defa56142a8266bc8e79df3a8c1c3977e"
+    },
+    {
+      "artefacto": "fuentes/S563 [2016] Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism.xml",
+      "sha256_artefacto": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "localizador": "JATS sec[@id=sec4.2]/p[1]",
+      "fragmento_control": "All libraries were sequenced on the Illumina HiSeq platform.",
+      "sha256_pasaje": "84a0dab76cc9fd6afb637c1d8daa6e384ae19c788bfab89b1b9d2061ac2b1d87"
+    },
+    {
+      "artefacto": "fuentes/S563 [2016] Kinetoplastid Phylogenomics Reveals the Evolutionary Innovations Associated with the Origins of Parasitism.xml",
+      "sha256_artefacto": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "localizador": "JATS sec[@id=sec4.4]/p[1]",
+      "fragmento_control": "500-bp-insert sequence reads were assembled with Velvet",
+      "sha256_pasaje": "5096dffe3167981c51cccd0e26f52dd1bfe078270d5465ffc572ebead07b16e4"
+    }
+  ],
+  "limitaciones": "La comparación es nuclear y no calcula cociente. El último componente es un límite de esta adjudicación, no una inexistencia biológica. S563 se leyó en /tmp/S240-ref25-Jackson2016-preparacion-v2-20260927.xml; el destino en fuentes/ todavía no existe y deberá copiar exactamente esos bytes. C1041 mitocondrial queda fuera. Revisión de disposición prospectiva exacta, no de integración ejecutada ni de todo el paquete. Fuente, Csoporte, identidad y texto han de coincidir al integrar. No firma global ni censo integral. Evidencia propia: evidencia_independiente_s240_s352_v2_2026-09-27.json; figuras leídas, no aprobación por hashes."
+}

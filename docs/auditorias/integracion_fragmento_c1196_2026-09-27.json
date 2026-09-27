@@ -1,0 +1,42 @@
+{
+  "fecha_comprobacion_utc": "2026-09-27T02:39:20Z",
+  "autor_integracion": "/root",
+  "rama": "codex/cierre-plan-pendiente",
+  "clave": "C-1196",
+  "campos_modificados": [
+    "Fuente"
+  ],
+  "propuesta": {
+    "ruta": "docs/auditorias/PROPUESTA_FRAGMENTO_ORIGINAL_C1196_2026-09-27.json",
+    "sha256": "a49e4a1a147d86965ea651b0ada66cbccae861139e1578309e3871423d326129"
+  },
+  "revision_independiente": {
+    "ruta": "docs/auditorias/revision_independiente_fragmento_c1196_2026-09-27.json",
+    "sha256": "15dd588bb9d0e744558a302aec1c34dc095ea0b8380a28df955951a6f4adebe2",
+    "alcance": "reparación Fuente exacta, no revisión completa global"
+  },
+  "sha256_fila_previa_json": "36061e5f5e8f69c0c3453ee36d4a30c6b7480c4806b726cb94cbc2b999e850f1",
+  "sha256_fila_nueva_json": "5a38581f261c230df10c5a61da3d7eed1d1a0cd06e442e7cacfe770c8a19e8f2",
+  "sha256_09_previo_reconstruido": "15626aee0e032338d9f93b94a1ee852e28e7935ee55e689e7ac1f271a7461e34",
+  "sha256_09_integrado": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+  "prueba_no_otros_cambios_en_09": "Sustituir sólo la línea nueva por la anterior reproduce exactamente hash09 del snapshot independiente de123rutas",
+  "rutas_cambiadas_desde_contexto_teleologia_v2": [
+    "data/afirmaciones/09.csv"
+  ],
+  "derivados_regenerados": [
+    "sync_claim_key_map --write",
+    "build_claim_provenance --write",
+    "render.py"
+  ],
+  "fuentes": {
+    "archivos": 451,
+    "sha256_inventario": "62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc",
+    "delta": 0
+  },
+  "estado_cierre": "ABIERTO",
+  "limites": [
+    "Ledger lingüístico v2 obsoleto legítimamente por hash09; falta reinspección contextual posterior, no reciclar firma",
+    "Censos C/S y controles manuales siguen pendientes; sin autoaprobación",
+    "QA externa y verify final no ejecutados para esta versión"
+  ]
+}

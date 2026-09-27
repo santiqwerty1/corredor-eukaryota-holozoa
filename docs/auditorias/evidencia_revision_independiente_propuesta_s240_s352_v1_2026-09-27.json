@@ -1,0 +1,708 @@
+{
+  "version": "revision_independiente_propuesta_s240_s352_v1",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "independencia": "No autor ni implementador de este bloque; lectura primaria contextual antes de leer propuesta. Dictamen limitado a propuesta, no corpus ni segundas revisiones globales.",
+  "inicio_utc": "2026-09-27T01:58:41Z",
+  "lectura_version_final_utc": "2026-09-27T02:03:50.489734Z",
+  "captura_evidencia_utc": "2026-09-27T02:07:50.475550Z",
+  "propuesta": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_2026-09-27.json",
+  "sha256_propuesta": "20bc4ed7cd09c556044b8f5f99c93337b8a5519d66420b2b8f84ab62165065ca",
+  "borrador_recuperado_por_autor": {
+    "ruta": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_BORRADOR_2026-09-27.json",
+    "sha256": "3fc812472be6573c6fe372e65abe932b859491a8cf31544e9db7fa9edef21b1d",
+    "limite": "No se conservó una copia propia completa en la primera lectura; archivo preservado posteriormente por autor y cotejado al SHA visto entonces. No reconstruye una observación retroactiva."
+  },
+  "delta_borrador_final": {
+    "C_altas": true,
+    "C_correcciones": true,
+    "celdas": true,
+    "F_altas": true,
+    "F_correcciones": true,
+    "B_altas": true
+  },
+  "fuentes_checks": [
+    {
+      "clave": "S240",
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "coincide": true
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "coincide": true
+    }
+  ],
+  "pasajes_checks": [
+    {
+      "id": "S240_Par7",
+      "texto_coincide": true,
+      "sha256_recalculado": "25f8457a5214c7725a4ae2f74b38c2e09c890516c3b0bff401efaabd262a0d20",
+      "sha256_coincide": true
+    },
+    {
+      "id": "S240_Par10",
+      "texto_coincide": true,
+      "sha256_recalculado": "9e3a559c7354ad9ee64c7b2e714597fc7f3c5b60e38d931b0dfa52d3afb652fa",
+      "sha256_coincide": true
+    },
+    {
+      "id": "S240_Par14",
+      "texto_coincide": true,
+      "sha256_recalculado": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82",
+      "sha256_coincide": true
+    },
+    {
+      "id": "S240_Par16",
+      "texto_coincide": true,
+      "sha256_recalculado": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d",
+      "sha256_coincide": true
+    },
+    {
+      "id": "S240_Tab1",
+      "texto_coincide": true,
+      "sha256_recalculado": "859d1ce3afb8136dd29cbaf7b0a062f92f6263e938941cfbf651884079aecb4c",
+      "sha256_coincide": true
+    },
+    {
+      "id": "S352_GeneRepertoire_p4",
+      "texto_coincide": true,
+      "sha256_recalculado": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb",
+      "sha256_coincide": true
+    }
+  ],
+  "pasajes_contextuales": [
+    {
+      "fuente": "S240",
+      "selector": ".//sec[@id=\"Sec3\"]",
+      "sha256_texto_normalizado": "2b45f36b8ababdb10e714e9e9b5a7217ed6640008bfc139f13bbd1ff0dd56ab7"
+    },
+    {
+      "fuente": "S240",
+      "selector": ".//sec[@id=\"Sec4\"]",
+      "sha256_texto_normalizado": "f39619ea256b06964fb2bc9316dc7c39bbcd3202919ffb781a44a9863d81c888"
+    },
+    {
+      "fuente": "S240",
+      "selector": ".//sec[@id=\"Sec5\"]",
+      "sha256_texto_normalizado": "f1f4f345fa9125e9ca51b24f7973646aa5d96ad251d4052cb6f51cd25d8dd4fa"
+    },
+    {
+      "fuente": "S240",
+      "selector": ".//sec[@id=\"Sec14\"]",
+      "sha256_texto_normalizado": "6dcb4d2616f51b2ad77ff18dce4b2d64bae41fa110f767163384f4af43bcfe30"
+    },
+    {
+      "fuente": "S352",
+      "selector": ".//fig[@id=\"f4\"]",
+      "leyenda": "Figure 4Schematic representation of the putative Capsaspora owczarzaki cell.Protein components of major metazoan cell adhesion complexes (green background) and various signalling pathways including receptors (yellow background) are depicted. Components with red and blue backgrounds indicate those found both in C. owczarzaki and M. brevicollis and those found in C. owczarzaki but not in M. brevicollis, respectively. Dotted components are absent in the C. owczarzaki genome; greyed when M. brevicollis has them. A grey striped line represents an actin filament, to which the cell–ECM–adhesion complexes bind. See Supplementary Note 5 for details. *, two domains hedge and hog are found in different proteins in M. brevicollis. **, receptor-type proteins with domain architectures similar to Notch and Delta proteins are present in C. owczarzaki. ***, proteins with similar domain architectures are present in M. brevicollis, but not confidently mapped to those metazoan families by phylogenetic analyses. ****, the repertoires of RTKs are totally different between C. owczarzaki, M. brevicollis and metazoans, and thus likely to have diversified independently in each lineage. 4E-BP1, eukaryotic initiation factor 4E-binding protein 1; CK1, Casein kinase 1; C-Lectin, C-type lectin; CSL, CBF1/RBP-Jκ/suppressor of hairless/LAG-1; CTKs, cytoplasmic tyrosine kinases; DB, Dystrobrevin; DG, Dystroglycan; DP, Dystrophin; Dsh, Dishevelled; Ets, E-twenty six; FOX, Forkhead box; Gα, G-protein-α subunit; GluR, glutamate receptor; GPR108, G-protein-coupled receptor 108; GSK3, glycogen synthetase kinase 3; Grh, Grainy head; HD, homeodomain; IgCAM, Immunoglobulin-like cell adhesion molecule; ILK, Integrin-linked kinase; ITR, intimal thickness-related receptor; JNK, c-Jun N-terminal kinase; NRPTPs, non-receptor protein tyrosine phosphatases; OA1, Ocular albinism 1-like; PDE, phosphodiesterase; RGS, regulator of G-protein signalling; RTKs, receptor tyrosine kinases; RPTP, receptor protein tyrosine phosphatase; S6K p70; 70kDa ribosomal protein S6 kinase; SAV, Salvador; Sd, Scalloped; SG, Sarcoglycan; SSPN, Sarcospan; SYN, Syntrophin; TALE, three amino-acid loop extension-class homeodomain; TGFβ, Transforming growth factor β; TOR, Target of rapamycin; YAP, Yes-associated protein.",
+      "sha256_texto_normalizado": "18079951084572701a9e53b88f86603130a5d9c523dae546f82334ff339b2fc2"
+    }
+  ],
+  "artefactos": [
+    {
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "bytes": 176869,
+      "sha256": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7"
+    },
+    {
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.pdf",
+      "bytes": 4815256,
+      "sha256": "91ea1ace12663e38718521f7688f1fa625448b93f4621295f739560bb1170561"
+    },
+    {
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "bytes": 713922,
+      "sha256": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d"
+    },
+    {
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "bytes": 108835,
+      "sha256": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c"
+    },
+    {
+      "ruta": "/tmp/S352-fig4-review-20260927.png",
+      "bytes": 620341,
+      "sha256": "b7d12beb90dbd75c95c57cb26240c7678129e26c305c21485beafe12384281ab"
+    }
+  ],
+  "observacion_visual": {
+    "documento": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+    "pagina_fisica_y_impresa": 6,
+    "figura": 4,
+    "reproduccion": "pdftoppm -f 6 -singlefile -scale-to 1700 -png PDF /tmp/S352-fig4-review-20260927",
+    "observado": "Patched y Dispatched aparecen grises punteados; Hedge/Hog grises separados con asterisco; Smoothened/Gli blancos punteados. Leyenda: gris=presente en M.brevicollis; puntos=ausente de C.owczarzaki. Rhodopsin blanco punteado; otras familias7TM presentan rojo/azul.",
+    "limite": "Es codificación de componentes/arquitecturas en una figura publicada, no ensayo de receptor funcional ni prueba de vía Hedgehog operativa."
+  },
+  "objetos_revisados": [
+    {
+      "selector": "C_altas/0/fila",
+      "ruta_propuesta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2839",
+        "Afirmación": "Tanifuji et al. registran 39.9 Mbp para el genoma nuclear del flagelado de vida libre Bodo saltans usado como comparando de Perkinsela.",
+        "Sujeto": "genoma nuclear de Bodo saltans",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "39.9 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La cifra se transcribe de Table 1 sin conversión ni cociente. Par10 identifica expresamente a Bodo saltans como flagelado de vida libre; la tabla remite los datos de este organismo a su referencia 25. No se afirma haber reinspeccionado esa referencia ni que Tanifuji et al. secuenciaran de nuevo ese genoma.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "a3b7691230e89b7d87576e14d16147497e170ce57ec57caf95963be14cda6e35"
+    },
+    {
+      "selector": "C_altas/1/fila",
+      "ruta_propuesta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2840",
+        "Afirmación": "Tanifuji et al. identificaron en el núcleo de Paramoeba pemaquidensis 8 genes probablemente derivados del endosimbionte Perkinsela entre 3,846 alineamientos proteicos con filogenias interpretables.",
+        "Sujeto": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "Predicado": "tiene_numero_de_candidatos*",
+        "Objeto": "8 genes candidatos entre 3,846 alineamientos con filogenias interpretables",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El numerador son genes de origen endosimbionte probable y el denominador son alineamientos con filogenias interpretables, no todos los genes nucleares. La atribución de origen es filogenómica; no se convierte en ocho transferencias demostradas experimentalmente ni en un porcentaje calculado.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "bf1c80f4440003dfb8920117ca10f6c7e752168353dd890de399f4bb1924a2ae"
+    },
+    {
+      "selector": "C_altas/2/fila",
+      "ruta_propuesta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-2841",
+        "Afirmación": "Tanifuji et al. proponen que vesículas endocíticas de Perkinsela podrían internalizar metabolitos y, posiblemente, enzimas procedentes del citoplasma de su hospedador.",
+        "Sujeto": "hipótesis de captación vesicular de metabolitos y posiblemente enzimas del hospedador por Perkinsela",
+        "Predicado": "propuesto_por",
+        "Objeto": "Tanifuji et al. (2017)",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Los autores presentan esta vía como especulación contrastable y dicen que se desconocen los destinos intracelulares. No se equipara esa hipótesis a importación proteica dirigida demostrada ni a una ausencia universal de importación.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "e33408f0914e8c6e20cadf6fb7c987e6f20eee77bd8a370a0ce6439641d40216"
+    },
+    {
+      "selector": "C_altas/3/fila",
+      "ruta_propuesta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2842",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en el genoma de Monosiga brevicollis comparado en 2013.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La negación reproduce el resultado de la comparación publicada y se limita al genoma y criterio de anotación de ese estudio. No se extiende a todos los coanoflagelados ni a todos los componentes intracelulares de señalización.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "e4228aedb6a78733eab22bd460879e952b841f12b07e4aa12978d42ba9e8301d"
+    },
+    {
+      "selector": "C_altas/4/fila",
+      "ruta_propuesta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2843",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en el genoma de Capsaspora owczarzaki comparado en 2013.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La negación reproduce el resultado de la comparación publicada y se limita al genoma y criterio de anotación de ese estudio. No se extiende a todos los filastereos ni a todos los componentes intracelulares de señalización.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "5511f134be890d559e6edc77bf938d96b1b502bc30d231e2ddf74c11f1beb020"
+    },
+    {
+      "selector": "C_altas/5/fila",
+      "ruta_propuesta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2844",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la familia Rhodopsin de receptores acoplados a proteína G en el genoma de Monosiga brevicollis comparado en 2013.",
+        "Sujeto": "receptores y ligandos de la familia Rhodopsin de GPCR en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El resultado se limita a la familia Rhodopsin y al genoma y criterio de anotación de ese estudio. No adjudica otras familias de GPCR ni otras señales, y no autoriza a declarar una ausencia global de GPCR.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "0df73c4dd568f71c3bc649b5c2440ee875bfc1af525bbf2b25c50f7c467c9cc4"
+    },
+    {
+      "selector": "C_altas/6/fila",
+      "ruta_propuesta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-2845",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la familia Rhodopsin de receptores acoplados a proteína G en el genoma de Capsaspora owczarzaki comparado en 2013.",
+        "Sujeto": "receptores y ligandos de la familia Rhodopsin de GPCR en Capsaspora owczarzaki",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Capsaspora owczarzaki comparado por Suga et al. (2013)",
+        "Atribución": "expresa",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo (comienza Our data reveal the contrasting evolutionary histories), remisión a Fig. 4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El resultado se limita a la familia Rhodopsin y al genoma y criterio de anotación de ese estudio. No adjudica otras familias de GPCR ni otras señales, y no autoriza a declarar una ausencia global de GPCR.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "2a2bb23610db0067119b781e29c5eae63fb8b8cb1bcf13ba4a602389a0a9c439"
+    },
+    {
+      "selector": "C_correcciones/0/despues",
+      "ruta_propuesta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-1037",
+        "Afirmación": "Tanifuji et al. estimaron el tamaño del genoma nuclear de Perkinsela sp. en ~9.5 Mbp.",
+        "Sujeto": "genoma nuclear de Perkinsela",
+        "Predicado": "tiene_valor_estimado*",
+        "Objeto": "~9.5 Mbp",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Par7 dice estimated y publica ~9.5 Mbp. Se conserva la unidad y la aproximación originales; es una estimación del tamaño nuclear a partir del ensamblaje, no una medición directa ni el tamaño del genoma mitocondrial.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "f32aa389b75cc20b992a38979784a94c06ea5ca2f0f1ee4cf5d88294caad1114"
+    },
+    {
+      "selector": "C_correcciones/1/despues",
+      "ruta_propuesta": "data/afirmaciones/09.csv",
+      "fila": {
+        "#": "C-1040",
+        "Afirmación": "Tanifuji et al. interpretan las invaginaciones superficiales y las vesículas intracelulares observadas en Perkinsela como indicios de endocitosis.",
+        "Sujeto": "endocitosis propuesta en Perkinsela",
+        "Predicado": "respaldado_por",
+        "Objeto": "invaginaciones superficiales y vesículas intracelulares observadas",
+        "Atribución": "expresa",
+        "Fuente": "S240 Results and Discussion, §Host-endosymbiont interactions, Par16",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "TEM y crio-SEM muestran estructuras; los autores dicen que esas observaciones sugieren endocitosis. No se convierte la interpretación en demostración directa de captación de citoplasma ni de importación proteica.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "6f8466db34e08dc5f0fe8a8df910eaa8d234ee07679c837da521d6b1be04b869"
+    },
+    {
+      "selector": "C_correcciones/2/despues",
+      "ruta_propuesta": "data/afirmaciones/12.csv",
+      "fila": {
+        "#": "C-1581",
+        "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+        "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "comparación genómica de Suga et al. 2013",
+        "Atribución": "sintesis(C-2842, C-2843)",
+        "Fuente": "C-2842; C-2843",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Síntesis de dos resultados separados por organismo en las C citadas. Ambos se limitan a los genomas y al criterio de anotación de Suga et al. (2013), sin extrapolar a todos los holozoos unicelulares.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "556817a867904be85987df58b33833dc7270fcc717fee33114dd205f2e47f562"
+    },
+    {
+      "selector": "F_altas/0/fila",
+      "ruta_propuesta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "tamaño del genoma nuclear de Bodo saltans",
+        "valor tal como lo publica la fuente": "39.9",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Bodo saltans, comparando de vida libre de Perkinsela en Table 1",
+        "método o proxy": "valor de comparación genómica de S240 Table 1, atribuido allí a la referencia 25; sin reanálisis propio",
+        "incertidumbre publicada": "no se publica intervalo en Table 1",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans; requiere inspección humana",
+        "#": "C-2839"
+      },
+      "sha256_fila": "14c352b389d7fe8d08979f5e2577a131aa974723ab6ec0b7a70ada93438c22fc"
+    },
+    {
+      "selector": "F_altas/1/fila",
+      "ruta_propuesta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "genes nucleares candidatos a EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "8",
+        "unidad original": "genes candidatos",
+        "organismo, nodo o intervalo al que se aplica": "Paramoeba pemaquidensis, entre 3,846 alineamientos con filogenias interpretables",
+        "método o proxy": "inferencia de origen por pipeline filogenómica",
+        "incertidumbre publicada": "origen probablemente endosimbionte; no se publica intervalo para el recuento en Par14",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "#": "C-2840"
+      },
+      "sha256_fila": "29c8578098baa37535ba05a705ef8101b153631debab4269c82ea20d6683d435"
+    },
+    {
+      "selector": "F_altas/2/fila",
+      "ruta_propuesta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "alineamientos proteicos con filogenias interpretables evaluados para EGT desde Perkinsela",
+        "valor tal como lo publica la fuente": "3,846",
+        "unidad original": "alineamientos proteicos",
+        "organismo, nodo o intervalo al que se aplica": "análisis de genes nucleares de Paramoeba pemaquidensis por Tanifuji et al.",
+        "método o proxy": "recuento del conjunto de alineamientos que produjo filogenias interpretables en el pipeline",
+        "incertidumbre publicada": "no se publica intervalo en Par14",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S240 Results and Discussion, §Host-endosymbiont interactions, Par14",
+        "#": "C-2840"
+      },
+      "sha256_fila": "57a7d1f9730789000437d7111e83ae863730dba690b24a9bae1f8fa2a41a1d58"
+    },
+    {
+      "selector": "F_correcciones/0/despues",
+      "ruta_propuesta": "data/apendices/F_magnitudes.csv",
+      "fila": {
+        "magnitud": "tamaño del genoma nuclear de *Perkinsela*",
+        "valor tal como lo publica la fuente": "~9.5",
+        "unidad original": "Mbp",
+        "organismo, nodo o intervalo al que se aplica": "Perkinsela sp., genoma nuclear",
+        "método o proxy": "estimación del tamaño a partir del ensamblaje genómico descrito en Par7",
+        "incertidumbre publicada": "aproximación indicada por ~; Par7 no publica un intervalo",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7",
+        "#": "C-1037"
+      },
+      "sha256_fila": "2f1953395335009530f1e0caf705311025233d091c5094e0b406b5c19d5bb774"
+    },
+    {
+      "selector": "B_altas/0/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Bodo saltans",
+        "tipo": "taxón, organismo o linaje",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "sha256_fila": "162d2f50643ae5e8ee162a28a1793808f605d16c308afd55020a8c78239507ec"
+    },
+    {
+      "selector": "B_altas/1/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "genoma nuclear de Bodo saltans",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "sha256_fila": "c7fdbc30807353cfdbf406a544ea14fc8fbd9bdef99ac8767d1948700a37d99f"
+    },
+    {
+      "selector": "B_altas/2/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Paramoeba pemaquidensis",
+        "tipo": "taxón, organismo o linaje",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "sha256_fila": "dd14f9c031a5f903392879f31edef4e24ec7acef543de45b970b02f2e0e595d9"
+    },
+    {
+      "selector": "B_altas/3/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "genes nucleares de Paramoeba pemaquidensis candidatos a EGT desde Perkinsela",
+        "tipo": "magnitud o conjunto de datos",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "sha256_fila": "81da3a1d1939935cc830bcbf73acd6360303a23b92c900364ee70a8c10877024"
+    },
+    {
+      "selector": "B_altas/4/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "endocitosis propuesta en Perkinsela",
+        "tipo": "hipótesis o interpretación",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-1040"
+      },
+      "sha256_fila": "69141c570cb0d76b9ca49e2c5e3dac11f6c4753921ef9945b4b8f159284b19e3"
+    },
+    {
+      "selector": "B_altas/5/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "hipótesis de captación vesicular de metabolitos y posiblemente enzimas del hospedador por Perkinsela",
+        "tipo": "hipótesis o interpretación",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "[H]",
+        "# de la fila del registro donde aparece por primera vez": "C-2841"
+      },
+      "sha256_fila": "3cddbde380fd18505e9a93e5790751c4a7920acc877abf88a1472007c7eefd6c"
+    },
+    {
+      "selector": "B_altas/6/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de Hedgehog en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2842"
+      },
+      "sha256_fila": "901efe40f8517dbbf852c64d73f8204abc4b5c7bc2fc86b2a4a3004953859dc4"
+    },
+    {
+      "selector": "B_altas/7/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de Hedgehog en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2843"
+      },
+      "sha256_fila": "badb036173f4a74c3f9ac754fbb1056afeabe0466c50ec96f49abe8669132020"
+    },
+    {
+      "selector": "B_altas/8/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de la familia Rhodopsin de GPCR en Monosiga brevicollis",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2844"
+      },
+      "sha256_fila": "a58fdbf42afd327260f46af1a2074c4cf43492ca78b54a9f17d4c35177dad055"
+    },
+    {
+      "selector": "B_altas/9/fila",
+      "ruta_propuesta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "receptores y ligandos de la familia Rhodopsin de GPCR en Capsaspora owczarzaki",
+        "tipo": "gen, proteína o familia funcional",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2845"
+      },
+      "sha256_fila": "83c609f560071f4fd3f703cfe25f501d20302fbaaa8eb9e83b55dc98bf50d9cd"
+    },
+    {
+      "selector": "celdas/0/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2708",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «genoma del socio comparado con parientes de vida libre» tiene el valor literal «Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "genoma del socio comparado con parientes de vida libre: Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.",
+        "Atribución": "sintesis(C-1037, C-2839)",
+        "Fuente": "n/a; dependencias canónicas C-1037; C-2839",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-473 y su rechazo se conservan; no son la prueba del valor nuevo. Comparación nuclear nominal cubierta; los seis genes mitocondriales del texto histórico no se restauran ni se declaran falsos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "8e6ebec5058cda9c0f0b39c2ddf2cb3dbc4abfc648e5dcfa1a7d94de3a8e59bc"
+    },
+    {
+      "selector": "celdas/0/nuevo_contenido",
+      "claim_id": "C-2708",
+      "tabla": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila_csv": 7,
+      "columna": "genoma del socio comparado con parientes de vida libre",
+      "contenido": "Genoma nuclear de Perkinsela sp.: ~9.5 Mbp; comparando de vida libre Bodo saltans: 39.9 Mbp. No se calcula una razón ni se incorpora aquí el genoma mitocondrial.",
+      "sha256_texto": "a502a2fa62f961d53523b7790502c6704d0e93698d6432eb8a34d4608019bc0a"
+    },
+    {
+      "selector": "celdas/1/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2709",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «EGT al núcleo; importación de proteínas de vuelta» tiene el valor literal «EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "EGT al núcleo; importación de proteínas de vuelta: EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.",
+        "Atribución": "sintesis(C-2840, C-2841)",
+        "Fuente": "n/a; dependencias canónicas C-2840; C-2841",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-474 y su rechazo se conservan; no son la prueba del valor nuevo. El componente EGT es inferencial. La importación dirigida permanece sin demostración en el pasaje; la hipótesis no equivale a ensayo funcional ni a prueba de inexistencia.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "fe9f76bbe58e8a00287bc3bd212899376f1f81743ac82e201903fc688e0530c4"
+    },
+    {
+      "selector": "celdas/1/nuevo_contenido",
+      "claim_id": "C-2709",
+      "tabla": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "fila_csv": 7,
+      "columna": "EGT al núcleo; importación de proteínas de vuelta",
+      "contenido": "EGT candidata: 8 genes probablemente derivados de Perkinsela en el núcleo de Paramoeba pemaquidensis entre 3,846 alineamientos con filogenias interpretables. Importación de vuelta: Tanifuji et al. proponen captación vesicular de metabolitos y posiblemente enzimas del hospedador; es una hipótesis, no importación proteica dirigida demostrada.",
+      "sha256_texto": "9315cf02be19e22f262c4b84c8413c5b49a7f1c7130c3571101aa0d22bb9cf36"
+    },
+    {
+      "selector": "celdas/2/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2468",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Monosiga» tiene el valor literal «Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.",
+        "Atribución": "sintesis(C-2842)",
+        "Fuente": "n/a; dependencias canónicas C-2842",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-329 y su rechazo se conservan; no son la prueba del valor nuevo. No generaliza a otros taxones ni a todos los componentes de la vía.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "8d547b87d5f4ed37112d9e6eab61043c8d11334b9dfba9b1df440717b4b48440"
+    },
+    {
+      "selector": "celdas/2/nuevo_contenido",
+      "claim_id": "C-2468",
+      "tabla": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila_csv": 7,
+      "columna": "Monosiga",
+      "contenido": "Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Monosiga brevicollis; resultado limitado a ese genoma y criterio de anotación.",
+      "sha256_texto": "ead99b6406f4600faf57c495492b47bdb3cafdb562a3be4901e2b806d553c459"
+    },
+    {
+      "selector": "celdas/3/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2469",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Capsaspora» tiene el valor literal «Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.",
+        "Atribución": "sintesis(C-2843)",
+        "Fuente": "n/a; dependencias canónicas C-2843",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-330 y su rechazo se conservan; no son la prueba del valor nuevo. No generaliza a otros taxones ni a todos los componentes de la vía.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "673342930b591407ab8546b2b87419ec5e6d7b12c679e4d3aa830556ec865f11"
+    },
+    {
+      "selector": "celdas/3/nuevo_contenido",
+      "claim_id": "C-2469",
+      "tabla": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila_csv": 7,
+      "columna": "Capsaspora",
+      "contenido": "Suga et al. (2013) no localizaron receptores ni ligandos de Hedgehog en el genoma comparado de Capsaspora owczarzaki; resultado limitado a ese genoma y criterio de anotación.",
+      "sha256_texto": "bc36ca39ff3e9a491cd705e61a16bf3689a1dd9fd63c36c237b2aacae8c998d0"
+    },
+    {
+      "selector": "celdas/4/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2474",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Monosiga» tiene el valor literal «Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+        "Atribución": "sintesis(C-2844)",
+        "Fuente": "n/a; dependencias canónicas C-2844",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-334 y su rechazo se conservan; no son la prueba del valor nuevo. Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "21bd601d235d3e7219aeebbe9ed43985b260a5885c02ea9da537d982b1b51840"
+    },
+    {
+      "selector": "celdas/4/nuevo_contenido",
+      "claim_id": "C-2474",
+      "tabla": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila_csv": 8,
+      "columna": "Monosiga",
+      "contenido": "Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Monosiga brevicollis. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+      "sha256_texto": "b0fda407462422bd97aa5c3aa162124af8f786bc71b057de07c3578f08704f0c"
+    },
+    {
+      "selector": "celdas/5/claim_celda_despues",
+      "ruta_propuesta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2475",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Capsaspora» tiene el valor literal «Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+        "Atribución": "sintesis(C-2845)",
+        "Fuente": "n/a; dependencias canónicas C-2845",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda propuesta para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora. Su valor nuevo se apoya sólo en las C indicadas. La consulta literal histórica BN-335 y su rechazo se conservan; no son la prueba del valor nuevo. Cobertura parcial del rótulo GPCR y otras señales; la limitación de adjudicación no declara ausencia biológica en las otras familias.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila": "d5ec291aaa2de619134c0da85cb0865a4100be8606ceac5b77422d7b0213321c"
+    },
+    {
+      "selector": "celdas/5/nuevo_contenido",
+      "claim_id": "C-2475",
+      "tabla": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "fila_csv": 8,
+      "columna": "Capsaspora",
+      "contenido": "Familia Rhodopsin de GPCR: Suga et al. (2013) no localizaron receptores ni ligandos en el genoma comparado de Capsaspora owczarzaki. Otras familias de GPCR y otras señales no se adjudican en esta celda.",
+      "sha256_texto": "bb3c1c523e7630499f724ec027b4f4282fb744711fd14dd21d5a158e1955eac9"
+    },
+    {
+      "selector": "prosa_correcciones/0/despues",
+      "ruta_propuesta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "contenido": "Tanifuji et al. estimaron el tamaño del genoma nuclear de Perkinsela sp. en ~9.5 Mbp. [C-1037; S240 Results and Discussion, §Endosymbiont and host nuclear genome sequencing, Par7; expresa]",
+      "sha256_texto": "39ffae9299df6a11611520f0ecafbd3e9ab206081013ecf77783e3239c10aa57"
+    },
+    {
+      "selector": "prosa_correcciones/1/despues",
+      "ruta_propuesta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "contenido": "Tanifuji et al. interpretan las invaginaciones superficiales y las vesículas intracelulares observadas en Perkinsela como indicios de endocitosis. [C-1040; S240 Results and Discussion, §Host-endosymbiont interactions, Par16; expresa]",
+      "sha256_texto": "25fe26e0c8d6ac52c426f93cac1a3c56025aeae0ddfcacd91b157ed2273a5100"
+    },
+    {
+      "selector": "prosa_correcciones/2/despues",
+      "ruta_propuesta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "contenido": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis. [C-1581; C-2842; C-2843; sintesis(C-2842, C-2843)]",
+      "sha256_texto": "fb55c21dfa579b1ae44393576ea5ab0d532a1626660b1a968073205f9f525c5b"
+    }
+  ],
+  "fuente_externa_auxiliar": {
+    "doi": "10.1016/j.cub.2015.11.055",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4728078/",
+    "url_pdf_publicado": "https://eprints.lancs.ac.uk/78558/1/1_s2.0_S0960982215014992_main.pdf",
+    "via": "Apertura PMC recaptcha; búsqueda web devolvió Results Comparative Analysis of Kinetoplastid Genomes yTable1 primarios. No archivo local integrado.",
+    "hallazgo": "39.9Mb procede de secuencia ensamblada en2402scaffolds tras filtrado de contaminación, no basta observar la cifra impresa para clasificarla como observado científico."
+  },
+  "habilita_cierre_global": false
+}

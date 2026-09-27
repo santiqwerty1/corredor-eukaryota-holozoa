@@ -1,0 +1,18 @@
+{
+  "scope": "Reproducción adicional independiente del desacople entre referencias C nominales y expansión del constructor atómico. Solo fixture temporal.",
+  "observed": {
+    "module_sha": "06e18f3aaf43f6053a51599cf819dac520f36a429ff077acca9ee76a2ec99e5b",
+    "accepted": [
+      "C-2708"
+    ],
+    "atomic_refs": [
+      "C-9000",
+      "C-9001",
+      "C-9002"
+    ],
+    "reviewed_support": [
+      "C-9000",
+      "C-9002"
+    ]
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "autor": "/root",
+  "observacion_utc": "2026-09-27T01:37:31Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "canonico": {
+    "C": 2838,
+    "S": 527,
+    "B": 1518,
+    "eventos": 108,
+    "fechas": 216,
+    "hipotesis": 82,
+    "F": 620,
+    "BN": 494,
+    "tablas": 97,
+    "traza_segmentos": 4488
+  },
+  "preservacion_bn": {
+    "retirada": [
+      "BN-144"
+    ],
+    "otras_bn_ajenas_a_v3_identicas": 86,
+    "v3": 408,
+    "nota": "Se preservan todas las huellas de las BN ajenas a v3 salvo la retirada archivada. Las 408 v3 enlazan inventario451; no se convierten en ausencia científica."
+  },
+  "fechas": {
+    "antes": 1657,
+    "despues": 2065,
+    "prefijo_previo_sha256": "d495d305f263596ac444dbc788bd50e6d2ffe2ddae0de751b3e71f16ef2669a4",
+    "errores_carga": 0,
+    "nuevas_ejecuciones": "Autor /root; no son dictámenes independientes; primer instante01:26:53Z, último01:30:13Z del2026-09-27"
+  },
+  "pruebas": {
+    "unittest": 236,
+    "fallos": 0,
+    "duracion_segundos": 22.836,
+    "advertencia": "Regresiones automáticas, no revisión científica."
+  },
+  "qa_csv": {
+    "archivos": 97,
+    "celdas": 63627,
+    "diferencias": 0,
+    "nodo": "v24.19.0",
+    "metodo": "Workbook.fromCSV del runtime empaquetado contra csv.reader; reintento autorizado tras fallo de interoperabilidad WSL; todas97huellas revalidadas"
+  },
+  "make_verify": {
+    "exit": 2,
+    "puerta": "check_semantic_claim_census.py",
+    "faltante": "Congelación sin UTC válido y obsoleta; matrices primera/segunda revisión ausentes para2838C. Ninguna puerta anterior falló. No éxito integral aislado."
+  },
+  "dictamenes_independientes": {
+    "cientifico": "Expediente inicial24C:20conformes/4NC antiguas; nueva reinspección6C conformes tras corrección, conserva ambos estados. No primera/segunda revisión global ni210controles. Participación previa del revisor en búsqueda/propuestas declarada.",
+    "editorial": "Identidades y acceso recientes, preservación442→451 y cuentas527filas comprobados por otro revisor; conserva NC del PDF S296 preprint. No527fuentes aprobadas integralmente."
+  },
+  "filas_finales": [
+    {
+      "fila": {
+        "#": "C-1088",
+        "Afirmación": "En más de 200 genomas de Enterobacterales, Forni et al. reconstruyeron un pico de pérdida génica al iniciarse la endosimbiosis seguido por una erosión más lenta y continua.",
+        "Sujeto": "reducción genómica de endosimbiontes de Enterobacterales",
+        "Predicado": "tiene_trayectoria_reconstruida*",
+        "Objeto": "pico inicial de pérdida seguido por erosión más lenta",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Discussion, p. 6",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La forma bifásica procede de reconstrucciones comparativas; el eje de la Fig. 2B cuenta ramas antes y después de la transición, no años. Los parámetros DTL se definen en C-1120; no son genes por millón de años.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "05a8f39b2680274b5f0eb0cea64d64a046592ae3097161fe03d0827351bf0ffe",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-1120",
+        "Afirmación": "En Forni et al., las tasas DTL representan probabilidades no normalizadas de duplicación, transferencia o pérdida de genes a lo largo de cada rama del árbol de especies.",
+        "Sujeto": "tasas DTL por rama de Forni y colaboradores",
+        "Predicado": "clasificado_como_por",
+        "Objeto": "probabilidades no normalizadas de duplicación, transferencia o pérdida por rama",
+        "Atribución": "expresa",
+        "Fuente": "S512 Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Definición explícita del parámetro estimado con GeneRax por rama. No equivale a genes perdidos por millón de años ni a la frecuencia por familia, que el artículo calcula mediante otra fórmula. Se corrige la anterior afirmación sobre una tasa universal ausente; BN-043 queda como registro de aquella consulta distinta, no como requisito de R-0212.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "e481e7076ef19dd62b1ca0429318c1e295cea551645aa141cdd33755a9d0daec",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-1186",
+        "Afirmación": "Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas.",
+        "Sujeto": "hipótesis de barrera natural de HGT",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); Conclusion (Sec8)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra la interpretación de estos autores, que distinguen adquisiciones endosimbióticas de transferencia continua; no se presenta como consenso ni como ausencia demostrada de toda HGT. La proposición separada sobre rareza e importancia evolutiva se conserva en C-2838.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "6ddadd97f97e256556d1a7e59e1864d9d2c6cce9ed0a5f1257a09ba8ef9dcd97",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-1196",
+        "Afirmación": "Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación.",
+        "Sujeto": "afirmación C-1195",
+        "Predicado": "cuestionado_por",
+        "Objeto": "reensamblaje y decontaminación",
+        "Atribución": "expresa",
+        "Fuente": "S296 Results and Discussion, Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini; Conclusions (versión PNAS final, PMC4983863)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Las secuencias de supuesto origen extraño se asociaron con contigs contaminantes o cobertura discordante.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "36061e5f5e8f69c0c3453ee36d4a30c6b7480c4806b726cb94cbc2b999e850f1",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-1197",
+        "Afirmación": "El episodio de los tardígrados ejemplifica un falso positivo de HGT masiva debido a contaminación no detectada en los datos ensamblados.",
+        "Sujeto": "caso de HGT en tardígrados",
+        "Predicado": "posee_modo_de_fallo*",
+        "Objeto": "contaminación no detectada en los datos ensamblados",
+        "Atribución": "sintesis(C-1195, C-1196)",
+        "Fuente": "S295; S296",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La síntesis se limita a C-1195 y C-1196. Cobertura, contenido GC y afinidad taxonómica se usaron como controles para identificar contaminación, no como causas de HGT. El pasaje de S296 no acredita ensamblaje quimérico: la ausencia de similitud metazoa sugiere que los contigs evaluados no eran coensamblajes quiméricos. La atribución errónea previa se conserva en el dictamen independiente; no se afirma consenso social.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "aba4c99a48771eef68498737a85e888383551099e3fdb00328fe83f92d7e1c95",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-1198",
+        "Afirmación": "La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico.",
+        "Sujeto": "contaminación en estudios de HGT",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia de HGT eucariota real",
+        "Atribución": "sintesis(C-1188, C-1191, C-1192, C-1196)",
+        "Fuente": "S561; S211; S296",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Los criterios probatorios discriminan casos, no una respuesta global binaria. La síntesis se restringe a sus premisas y no acredita una encuesta de aceptación en la comunidad; la fuerza media describe ese apoyo acotado, no se deduce de la falta de consenso evaluado.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "397186f47a1b26a914a68257a88ae3053005f5bd956a4f60f228bd600a99377e",
+      "ruta": "data/afirmaciones/09.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2832",
+        "Afirmación": "Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas.",
+        "Sujeto": "contribución de HGT a los inventarios génicos de protistas resumida por Van Etten y Bhattacharya",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "aproximadamente 1 % como frecuencia relativa media de genes atribuidos a HGT en inventarios de protistas",
+        "Atribución": "expresa",
+        "Fuente": "S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una generalización aproximada de una revisión, no una tasa temporal ni un resultado obtenido con el mismo muestreo, denominador o filtro de S290. Se cotejó el apartado público, sin afirmar acceso al cuerpo completo. Los autores advierten explícitamente que esta generalización requiere más datos y un procedimiento estandarizado; se conserva como cautela del estimador, no como segunda proposición en Afirmación.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "4c6a151501e581de368fecc3e3d02f81338ebe18055e0aa427e98ac167a1bd64",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2833",
+        "Afirmación": "Degnan, Lazarus y Wernegreen estimaron 25 ORF perdidos o inactivados en el linaje de Blochmannia floridanus durante los 16–20 millones de años transcurridos desde su divergencia con B. pennsylvanicus.",
+        "Sujeto": "ORF perdidos o inactivados en el linaje de Blochmannia floridanus de Degnan y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "número de genes perdidos o inactivados: 25 ORF; tiempo transcurrido: 16–20 millones de años",
+        "Atribución": "expresa",
+        "Fuente": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El número de genes perdidos o inactivados se empareja con el tiempo transcurrido en el mismo pasaje. Los autores asumen que el ancestro codificaba al menos el conjunto combinado de ORF y toman la divergencia de Degnan et al. (2004); no es una duración experimental ni equivale exclusivamente a ADN eliminado. Pérdidas paralelas pueden subestimar el recuento.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "3bc95a1dda9a064687bb1cdf1b0ae0940973e5dd01c1f42657474a1e12b6dcce",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2834",
+        "Afirmación": "Degnan, Lazarus y Wernegreen estimaron 4 ORF perdidos o inactivados en el linaje de Blochmannia pennsylvanicus durante los 16–20 millones de años transcurridos desde su divergencia con B. floridanus.",
+        "Sujeto": "ORF perdidos o inactivados en el linaje de Blochmannia pennsylvanicus de Degnan y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "número de genes perdidos o inactivados: 4 ORF; tiempo transcurrido: 16–20 millones de años",
+        "Atribución": "expresa",
+        "Fuente": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El número de genes perdidos o inactivados se empareja con el tiempo transcurrido en el mismo pasaje, bajo el mismo supuesto ancestral y la misma calibración de C-2833. Cada cifra corresponde a un linaje; no se duplica el intervalo para producir una tasa conjunta ni se presenta la inactivación como deleción física.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "eb257ee28e73f62279562cec3d53b2b2b603f872c3c718967c799c8d0105b8c4",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2835",
+        "Afirmación": "Degnan, Lazarus y Wernegreen advierten que sus datos no distinguen en qué puntos del linaje de B. floridanus se aceleró la evolución o se perdieron genes concretos.",
+        "Sujeto": "resolución temporal de las pérdidas de Blochmannia floridanus en Degnan y colaboradores",
+        "Predicado": "tiene_limite_de_resolucion*",
+        "Objeto": "no distingue puntos de aceleración ni fechas de pérdidas particulares",
+        "Atribución": "expresa",
+        "Fuente": "S562 discusión (Discussion), penúltimo párrafo, limitación que comienza However, given that current data",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una limitación declarada por los autores, no un resultado negativo inferido de una búsqueda. Los recuentos acumulados de C-2833 y C-2834 no determinan una curva temporal continua ni datan cada deleción.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "8839362a2b2c05531946bfcfdbf7de3e35534573f8ac6cf12a5b0cf109e41743",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2836",
+        "Afirmación": "Forni et al. publicaron una mediana de 0,592, con desviación estándar 0,21, del parámetro DTL de pérdida para las ramas donde se infiere el establecimiento de endosimbiosis.",
+        "Sujeto": "parámetro DTL de pérdida en ramas de establecimiento de endosimbiosis de Forni y colaboradores",
+        "Predicado": "tiene_parametro_DTL*",
+        "Objeto": "0,592 ± 0,21 (mediana ± desviación estándar; parámetro por rama)",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Parámetro de probabilidad no normalizada por rama, definido en C-1120; no es una tasa por año, una proporción directa de genes perdidos ni la frecuencia por familia calculada con otra fórmula. El ± corresponde a desviación estándar, no a intervalo de confianza. El texto reproduce el contraste, sin extraer cifras exclusivamente de la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "ae2ee2ba4b2ffa003b14762e806608b5698a0c3fabf36cf8bda880423519b587",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2837",
+        "Afirmación": "Forni et al. publicaron una mediana de 0,185, con desviación estándar 0,123, del parámetro DTL de pérdida para las tres ramas anteriores y posteriores a la transición.",
+        "Sujeto": "parámetro DTL de pérdida en ramas adyacentes a la transición de Forni y colaboradores",
+        "Predicado": "tiene_parametro_DTL*",
+        "Objeto": "0,185 ± 0,123 (mediana ± desviación estándar; parámetro por rama)",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Parámetro de probabilidad no normalizada por rama, definido en C-1120; no es una tasa por año, una proporción directa de genes perdidos ni la frecuencia por familia calculada con otra fórmula. El ± corresponde a desviación estándar, no a intervalo de confianza. El texto reproduce el contraste, sin extraer cifras exclusivamente de la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "38341dc4fea9995302f5917ef422215f286e954d57df955b088ebdfec565d8a5",
+      "ruta": "data/afirmaciones/15.csv"
+    },
+    {
+      "fila": {
+        "#": "C-2838",
+        "Afirmación": "Ku y Martin consideraron las adquisiciones evolutivamente recientes de genes procariotas en eucariotas demasiado raras para tener amplia importancia evolutiva.",
+        "Sujeto": "hipótesis de escasa importancia evolutiva de la HGT procariota reciente hacia eucariotas",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 conclusión (Conclusion), JATS Sec8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se atribuye la interpretación a esos autores, no se presenta como un hecho establecido ni como rechazo de todos los casos de transferencia. Es la proposición independiente que estaba compuesta con C-1186.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_json": "73f304a3b3bc7c46a800cdf9c611bb6d7cc554d04aa64a6e8b8db1a60519234d",
+      "ruta": "data/afirmaciones/15.csv"
+    }
+  ],
+  "huellas_archivos": {
+    "scripts/remediate_trace_residuals.py": "8267892735fc5d85b66160ad3906efba1127c076482c4555e79be517f75d93e8",
+    "tests/test_remediate_trace_residuals.py": "58738a13965d5858ededcb161e1b12d0213766a30e909e01b54a9d1022c89d93",
+    "tests/test_gene_loss_quantification_regression.py": "bf510dc9e55b5208e9c56c12c5f010ada5bea23833743a0a6d25e52e8053e6d0",
+    "tests/test_hgt_quantification_regression.py": "9d6951b8121b5942c6e8cff6c0627504bdb0905e7df83ea929440b62c7af6668",
+    "docs/auditorias/retirada_bn144_2026-09-27.json": "fd4d62981bf165f2b0246b5738853e1a8c7af2d184c4f12655fa420defac6673",
+    "docs/auditorias/integracion_s512_s562_2026-09-27.json": "1531fdbfb5ad7aa7c6e1428df2ab35603a30dca283b717b4795e6f22080808b7",
+    "docs/auditorias/integracion_s296_version_final_2026-09-27.json": "1fb726e409c676576b023e8194a99214475b94174d2da5bbf4eb7d5d369f9f11",
+    "docs/auditorias/correccion_hgt_tras_revision_2026-09-27.json": "97b88cd3186c16a4e377c8dea31455b776f32cc41482e38f18d5ea2e9974876f",
+    "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-27_inventario451.csv": "04c0f903bf5669ac54d12f461a5f7f9796c816e525dd3319a9d372971b20307e",
+    "docs/auditorias/fixtures/reinspeccion_autor_inventario451_20260927.py": "07a8621acac8b32c03ddc0e89c0b8ed7d62695f8203a31e175ec92d66c2647db",
+    "docs/auditorias/qa_tabular_externa_2026-09-27_corpus2838.json": "8cfe215b6f339beb0a940c5d48e178339d7172aedd91389793570916bd6dd591",
+    "data/auditoria/fechas_ejecuciones_bn.csv": "089cd9b1a227238a9574084d649a77070a41a72d48143133835623b391873b57",
+    "exports/acceso_fuentes.csv": "8dc16c54c1e44e6b126efec71517c6756246233d0c1c4dd1176d914bc1229959",
+    "docs/auditorias/REVISION_INDEPENDIENTE_S560_HGT_R0212_2026-09-27.md": "98ad9a3fe0f9289bc8722198f2f4b1611230c0e52bcbe50dd7c84d130b46a218",
+    "docs/auditorias/REINSPECCION_INDEPENDIENTE_DELTA_HGT_2026-09-27.md": "c468f8d966dce151fdaff676163cd63766c6ba06602aeacbc1f1bbeb8546d3a1",
+    "docs/auditorias/REVISION_FUENTES_RECIENTES_2026-09-27.md": "8e682df2fe7484b789e768959f93ccbba6e76cfa7876b17d27fa3bc24119455f",
+    "docs/auditorias/ADDENDUM_S296_ACCESO_INVENTARIO451_2026-09-27.md": "1455985b0ef5e76b443734749720f7749ef507a8909fed560e826f78285e59c8"
+  },
+  "pendiente": "No se congeló ni materializó cierre global; continúan controles científicos/manuales y revisión de infraestructura. No se rebajan validadores ni se autoaprueban firmas."
+}

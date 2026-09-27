@@ -1,0 +1,2186 @@
+{
+  "alcance": "Inspección editorial; no verifica apoyo científico, calidad bibliográfica ni cumplimiento global.",
+  "inventario_sha256": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "933f60513ae26d46284ecb60efc6c32746e91a735663acd0d5ec6672eaa678f6",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "a044ff3eb28145e783b7035b35a37d69749b57f15be3f820e4c25bd558af982f",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "da00a5c36659c55331420458bf5e681a342158a0588b3e02df14004182fc702e",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "20a4ebd4135bccf09a1fd4ac23e2ee7c2f5b4cd4981de967332cddf19e1d11e7",
+    "data/apendices/A_fuentes.csv": "a99ad415e131ab94ce68bb25f04ab71b3b5315e3399450d709de5f0e7d02e218",
+    "data/apendices/B_entidades.csv": "acfce2cb7582ea32f5f636ea5058ef1cd2aa54e666ffcc773c7bdddd609def8f",
+    "data/apendices/C_eventos.csv": "2531662d00f09aa294d6313d17a3b7bf9eee9feded84121deb0aaa9c3617eeef",
+    "data/apendices/D_fechas.csv": "f24cb0b405e04986f9f72911d9015158672556b5fe2ab8f50653767ff0d0805d",
+    "data/apendices/E_hipotesis.csv": "dd8b9cde02d1010109866c3de48c02de581d26d05cb400f9f3449d07499ff1bd",
+    "data/apendices/F_magnitudes.csv": "e62116f77825a0b159aec5fb0ff10ee6c573b0542bda614eca21c2067163f7e7",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "778c1fa76468368dd1923826a7c00fd111119f298702984e4348f4215da955c7",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "33233048fc0c94f5ba11dc09e30d69655999a7257e3c8c3b2690c8341df282fc",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "d64e1ddadfb8b4f7b6c01d6b1068bb47d2bdce210cad32c03974f11597cc9105",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "99f1ae02a824ebaaa7fdb34b44cd6fe7da405136bde8a8a378c1e85348b82fd1",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "23c19362c7cee0eae76cc80b00f7ec32334fc70ed864b1f1ceaa2c88436e8749",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "bc22d985ce6a4e9f714b9d96716a4742b24b7e62b075ef16e5cb64530e2e8aef",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "db423d2ac28bfc512963ce3251b97aa7515f38224312597f9bdfe77a5f6ee27b",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "50e650db0ddd0388e7774987af0e9cb3ef286cf4463eb2915889164f30f5e448",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "bdbcbadcdb3ff385ecda32debe08a103f8790530265c4e8ea19ea14973ae74b7",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "a6e481dc4f57f426bf199b0c8176b36a09e7112f6a15ee59a30e32e340348b6d",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "b4693fd1bf3c55a0ad3650ace288c1e5020a243f80c5f1c9dc9c9f5decb485e8",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "b3b5b7180d34e1c97173b1809a50e563c457b62e231cc7ad14095ff2c7a1006b",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "7e879b828b2191425efb20ff931f544188284fddb70db4e0edf8f7afb10e5474",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "18362f03c09287796e459011bd3debb5048c934ef56102233a220342729bde99",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "04dfdb4647d55b2002072649ca754861aef1bb6e1ac7997e4d1ead7d293a83bd",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "39920926d7b59b08b4524c5b8698890ca4194ff157f18e2f3a46df2954db5723",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "84a7da0903940eabb9fd7767a01f58d9d2869a588775e10e4687a2e777753231",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "data/table_index.json": "d3765362ae6f58bc8fc109e779358de6250f2e39e691b37f380f793115bb5c4a",
+    "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+    "docs/auditorias/registro_busquedas_2026-08-08.csv": "31a4ecf4665bd1a7b96f2cf8e3171d01802dda865441b878c9f7a9e3c60cba94",
+    "docs/informe.md": "b263701ddebb824651eb284643add56b249c964b3a4f25036a14938cd1911b03",
+    "docs/informe_completo_autocontenido.md": "96c2ef9fa355658bace71766e3b7626d6c437812bf76cef0ff6e0c95bce59f02",
+    "docs/order.txt": "a530b3b2b2385cc2d9b876bce0a8bd8eec22205b7cc487166644806958ddcf6a",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "7530ad74fce170f219dd5f3f99809426f01b609491bd70ba7ff02509b2d7e170",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "2a67ad31263d930368ece86eba090ac0e241e089f4ae4eb8ca070b8510f76840",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "8f090386dd9fcde464bad06721d86768ee5bdeddf5e244802f855a590ebe0259",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "9fa6bc84dd36c2bfc2622ef0cf357011456cafd9ffa523354c24c7b1b1f70f23",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "e6ed4303b39048e3514b4a45eff183c4d47b244f184fa030e6b640799cf61157",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "9d0ed915200699d77413038fda57f400459d4935f0b297dcd719f66d2f1666eb",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e"
+  },
+  "salida_igual_a_ensamblado_independiente_de_todas_las_plantillas_y_csv": true,
+  "lineas_markdown": 11706,
+  "plantillas": 26,
+  "tablas_indice": 97,
+  "marcadores_plantillas": 97,
+  "bloques_tabla_salida": 97,
+  "identificadores_tabla_omitidos": [],
+  "identificadores_tabla_repetidos": [],
+  "tablas_con_cardinalidad_incorrecta": [],
+  "apendices": {
+    "appendix-a": {
+      "filas": 524,
+      "columnas": 9,
+      "cabecera": [
+        "clave",
+        "autores",
+        "año",
+        "título",
+        "publicación o repositorio",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI",
+        "tipo",
+        "notas de calidad",
+        "fecha de consulta"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 8515,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-b": {
+      "filas": 1501,
+      "columnas": 5,
+      "cabecera": [
+        "etiqueta preferida",
+        "tipo",
+        "sinónimos y grafías alternativas",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila",
+        "# de la fila del registro donde aparece por primera vez"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 9046,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-c": {
+      "filas": 108,
+      "columnas": 8,
+      "cabecera": [
+        "clave",
+        "tipo",
+        "participantes con su papel",
+        "entidad resultante si la hay",
+        "intervalo temporal",
+        "# de las filas que lo sostienen",
+        "qué fuente lo describe como evento",
+        "desenlace"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 10554,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-d": {
+      "filas": 216,
+      "columnas": 10,
+      "cabecera": [
+        "a qué se aplica",
+        "límite más antiguo",
+        "límite más reciente",
+        "unidad explícita",
+        "incertidumbre tal como la da la fuente",
+        "tipo",
+        "método y calibración",
+        "observado o inferido",
+        "fuente con localizador",
+        "# de la fila que la sostiene"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 10669,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-e": {
+      "filas": 82,
+      "columnas": 8,
+      "cabecera": [
+        "clave",
+        "qué sostiene en una frase",
+        "supuestos que da por buenos",
+        "# de las filas que la componen",
+        "fuentes a favor",
+        "fuentes en contra",
+        "con qué otras hipótesis es incompatible y en qué punto exacto",
+        "qué observación la falsaría"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 10892,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-f": {
+      "filas": 590,
+      "columnas": 9,
+      "cabecera": [
+        "magnitud",
+        "valor tal como lo publica la fuente",
+        "unidad original",
+        "organismo, nodo o intervalo al que se aplica",
+        "método o proxy",
+        "incertidumbre publicada",
+        "observado o inferido",
+        "fuente con localizador",
+        "#"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 10981,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-g": {
+      "filas": 23,
+      "columnas": 5,
+      "cabecera": [
+        "material",
+        "afirmación o estado",
+        "fuente y localizador",
+        "sección propuesta",
+        "#"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 11578,
+      "todas_filas_cardinalidad_exacta": true
+    },
+    "appendix-h": {
+      "filas": 25,
+      "columnas": 2,
+      "cabecera": [
+        "control",
+        "valor"
+      ],
+      "cabecera_esperada_coincide": true,
+      "apariciones_tabla_completa": 1,
+      "linea_cabecera": 11606,
+      "todas_filas_cardinalidad_exacta": true
+    }
+  },
+  "referencias": {
+    "C": {
+      "catalogadas": 2817,
+      "usadas_distintas": 2817,
+      "no_definidas": []
+    },
+    "E": {
+      "catalogadas": 108,
+      "usadas_distintas": 108,
+      "no_definidas": []
+    },
+    "H": {
+      "catalogadas": 82,
+      "usadas_distintas": 82,
+      "no_definidas": []
+    },
+    "BN": {
+      "catalogadas": 498,
+      "usadas_distintas": 498,
+      "no_definidas": []
+    },
+    "V19": {
+      "catalogadas": 56,
+      "usadas_distintas": 56,
+      "no_definidas": []
+    },
+    "Q": {
+      "catalogadas": 604,
+      "usadas_distintas": 5,
+      "no_definidas": []
+    },
+    "S": {
+      "catalogadas": 524,
+      "usadas_distintas": 524,
+      "no_definidas": []
+    }
+  },
+  "referencias_s_ausentes_lineas": [],
+  "prefijos_prohibidos_en_documento": [],
+  "prefijos_prohibidos_en_informe_lectura": [],
+  "encabezados": [
+    {
+      "linea": 1,
+      "texto": "# 0.0.0. Preámbulo del corredor Eukaryota → Holozoa"
+    },
+    {
+      "linea": 43,
+      "texto": "# 0. Convenciones probatorias y taxonómicas: el corredor es un alcance de muestreo, no es una dirección u orientación hacia Holozoa; cada nodo tuvo ramas hermanas y algunas persisten hoy"
+    },
+    {
+      "linea": 45,
+      "texto": "## 0.0. Autoridades y recursos operativos"
+    },
+    {
+      "linea": 53,
+      "texto": "### 0.0.1. Contrato de trazabilidad y ausencia"
+    },
+    {
+      "linea": 63,
+      "texto": "### 0.0.2. Glosas bilingües que conservan el término original"
+    },
+    {
+      "linea": 67,
+      "texto": "### 0.0.3. Predicado personalizado para trazabilidad atómica de celdas"
+    },
+    {
+      "linea": 73,
+      "texto": "## 0.1. Clases de evidencia"
+    },
+    {
+      "linea": 81,
+      "texto": "## 0.2. Grupo corona, grupo tronco y grupo total"
+    },
+    {
+      "linea": 93,
+      "texto": "## 0.3. Registro de afirmaciones de la sección 0"
+    },
+    {
+      "linea": 117,
+      "texto": "# 1. Alcance del corpus"
+    },
+    {
+      "linea": 127,
+      "texto": "## 1.1. Registro de afirmaciones de la sección 1"
+    },
+    {
+      "linea": 138,
+      "texto": "# 2. El punto de partida: dos dominios o tres"
+    },
+    {
+      "linea": 140,
+      "texto": "## 2.1. Tres dominios, eocitos y dos dominios"
+    },
+    {
+      "linea": 142,
+      "texto": "### 2.1.1. Tres topologías que no deben fundirse"
+    },
+    {
+      "linea": 180,
+      "texto": "### 2.1.2. Por qué el modelo cambia el árbol"
+    },
+    {
+      "linea": 206,
+      "texto": "### 2.1.3. Una oposición publicada al resultado asgard"
+    },
+    {
+      "linea": 214,
+      "texto": "### 2.1.4. Consecuencia nomenclatural"
+    },
+    {
+      "linea": 220,
+      "texto": "### 2.1.5. La posición neomurana"
+    },
+    {
+      "linea": 226,
+      "texto": "## 2.2. Bacteria, Archaea y la divisoria lipídica"
+    },
+    {
+      "linea": 228,
+      "texto": "### 2.2.1. Química de membrana"
+    },
+    {
+      "linea": 240,
+      "texto": "### 2.2.2. Membranas heteroquirales experimentales"
+    },
+    {
+      "linea": 246,
+      "texto": "### 2.2.3. Soluciones propuestas y estado del problema"
+    },
+    {
+      "linea": 258,
+      "texto": "## 2.3. Naturaleza quimérica del genoma eucariota"
+    },
+    {
+      "linea": 270,
+      "texto": "## 2.4. Asgardarchaeota como conjunto de actores"
+    },
+    {
+      "linea": 272,
+      "texto": "### 2.4.1. De Lokiarchaeota a una diversidad mucho mayor"
+    },
+    {
+      "linea": 280,
+      "texto": "### 2.4.2. Divisiones nombradas y clase de evidencia localizada"
+    },
+    {
+      "linea": 310,
+      "texto": "### 2.4.3. Ecologías y metabolismos documentados"
+    },
+    {
+      "linea": 320,
+      "texto": "## 2.5. Cultivos y observaciones celulares directas"
+    },
+    {
+      "linea": 322,
+      "texto": "### 2.5.1. *Promethearchaeum syntrophicum*"
+    },
+    {
+      "linea": 332,
+      "texto": "### 2.5.2. *Lokiarchaeum ossiferum*"
+    },
+    {
+      "linea": 336,
+      "texto": "### 2.5.3. Hodarchaeales observados sin cultivo"
+    },
+    {
+      "linea": 340,
+      "texto": "### 2.5.4. *Nerearchaeum marumarumayae*"
+    },
+    {
+      "linea": 344,
+      "texto": "## 2.6. Posición interna de Eukaryota dentro de Asgard"
+    },
+    {
+      "linea": 346,
+      "texto": "### 2.6.1. Hipótesis Hodarchaeales–Eukaryota"
+    },
+    {
+      "linea": 354,
+      "texto": "### 2.6.2. Hipótesis de origen más profundo fuera de Heimdallarchaeia"
+    },
+    {
+      "linea": 362,
+      "texto": "## 2.7. Proteínas de firma eucariota: detección y función"
+    },
+    {
+      "linea": 378,
+      "texto": "## 2.8. El simbionte alfa-proteobacteriano"
+    },
+    {
+      "linea": 380,
+      "texto": "### 2.8.1. Lo ampliamente aceptado"
+    },
+    {
+      "linea": 386,
+      "texto": "### 2.8.2. El grupo vivo más próximo no está resuelto"
+    },
+    {
+      "linea": 459,
+      "texto": "## 2.9. Qué no se sabe en esta parte"
+    },
+    {
+      "linea": 470,
+      "texto": "## 2.10. Registro de afirmaciones de la sección 2"
+    },
+    {
+      "linea": 633,
+      "texto": "# 3. Eucariogénesis"
+    },
+    {
+      "linea": 637,
+      "texto": "## 3.1. Poblaciones ancestrales y extremos del intervalo"
+    },
+    {
+      "linea": 639,
+      "texto": "### 3.1.1. Etiquetas y alcance"
+    },
+    {
+      "linea": 683,
+      "texto": "### 3.1.2. Modelo mínimo y pluralidad de contribuciones"
+    },
+    {
+      "linea": 693,
+      "texto": "### 3.1.3. Cronología de los dos tallos en Kay et al. 2026"
+    },
+    {
+      "linea": 727,
+      "texto": "## 3.2. Reconstrucción de LECA"
+    },
+    {
+      "linea": 729,
+      "texto": "### 3.2.1. Qué clase de inferencia es"
+    },
+    {
+      "linea": 751,
+      "texto": "### 3.2.2. Núcleo y sistema endomembranoso"
+    },
+    {
+      "linea": 773,
+      "texto": "### 3.2.3. Citoesqueleto, motores y cilio"
+    },
+    {
+      "linea": 785,
+      "texto": "### 3.2.4. Mitocondria, crestas y peroxisoma"
+    },
+    {
+      "linea": 805,
+      "texto": "### 3.2.5. Mitosis, meiosis, intrones y espliceosoma"
+    },
+    {
+      "linea": 827,
+      "texto": "### 3.2.6. Fagocitosis y metabolismo: reconstrucciones incompatibles"
+    },
+    {
+      "linea": 847,
+      "texto": "### 3.2.7. Matriz de caracteres y método de inferencia"
+    },
+    {
+      "linea": 863,
+      "texto": "## 3.3. Orden de los eventos: mitocondria y fagotrofia"
+    },
+    {
+      "linea": 899,
+      "texto": "## 3.4. Modelos rivales de eucariogénesis"
+    },
+    {
+      "linea": 901,
+      "texto": "### 3.4.1. Hipótesis del hidrógeno"
+    },
+    {
+      "linea": 926,
+      "texto": "### 3.4.2. Hipótesis sintrófica original y revisada"
+    },
+    {
+      "linea": 953,
+      "texto": "### 3.4.3. Modelo *inside-out*"
+    },
+    {
+      "linea": 979,
+      "texto": "### 3.4.4. Modelo autógeno fagotrófico"
+    },
+    {
+      "linea": 999,
+      "texto": "### 3.4.5. Modelo de flujo inverso"
+    },
+    {
+      "linea": 1019,
+      "texto": "### 3.4.6. Modelo E3"
+    },
+    {
+      "linea": 1044,
+      "texto": "### 3.4.7. Comparación del montaje inicial"
+    },
+    {
+      "linea": 1055,
+      "texto": "## 3.5. Origen del núcleo como problema separado"
+    },
+    {
+      "linea": 1059,
+      "texto": "### 3.5.1. Invasión de intrones"
+    },
+    {
+      "linea": 1077,
+      "texto": "### 3.5.2. Origen viral"
+    },
+    {
+      "linea": 1099,
+      "texto": "### 3.5.3. Invaginación autógena"
+    },
+    {
+      "linea": 1113,
+      "texto": "### 3.5.4. Submodelo nuclear *inside-out*"
+    },
+    {
+      "linea": 1125,
+      "texto": "### 3.5.5. Comparación de los modelos nucleares"
+    },
+    {
+      "linea": 1136,
+      "texto": "## 3.6. Hipótesis del protocoatómero"
+    },
+    {
+      "linea": 1169,
+      "texto": "## 3.7. Matriz de compatibilidad"
+    },
+    {
+      "linea": 1233,
+      "texto": "## 3.8. Qué no se sabe"
+    },
+    {
+      "linea": 1267,
+      "texto": "## 3.9. Registro de afirmaciones"
+    },
+    {
+      "linea": 1532,
+      "texto": "# 4. La raíz eucariota y la forma de Amorphea"
+    },
+    {
+      "linea": 1543,
+      "texto": "## 4.1. Por qué la raíz es difícil"
+    },
+    {
+      "linea": 1559,
+      "texto": "## 4.2. Hipótesis de raíz que no deben fundirse"
+    },
+    {
+      "linea": 1561,
+      "texto": "### 4.2.1. División histórica unikonta–bikonta"
+    },
+    {
+      "linea": 1577,
+      "texto": "### 4.2.2. Raíz entre Amorphea y Diaphoretickes: una abreviación condicionada"
+    },
+    {
+      "linea": 1587,
+      "texto": "### 4.2.3. Raíz Opimoda–Diphoda"
+    },
+    {
+      "linea": 1603,
+      "texto": "### 4.2.4. Raíz Discoba"
+    },
+    {
+      "linea": 1615,
+      "texto": "### 4.2.5. Raíz excavada con divergencias sucesivas"
+    },
+    {
+      "linea": 1634,
+      "texto": "### 4.2.6. Raíz Opisthokonta"
+    },
+    {
+      "linea": 1648,
+      "texto": "### 4.2.7. Raíz Opimoda+–Diphoda+ de Williamson et al."
+    },
+    {
+      "linea": 1670,
+      "texto": "### 4.2.8. Comparación de las raíces"
+    },
+    {
+      "linea": 1684,
+      "texto": "## 4.3. Caracteres moleculares raros y su peso actual"
+    },
+    {
+      "linea": 1686,
+      "texto": "### 4.3.1. Fusión DHFR–TS"
+    },
+    {
+      "linea": 1698,
+      "texto": "### 4.3.2. Repertorios de miosina"
+    },
+    {
+      "linea": 1712,
+      "texto": "### 4.3.3. Inserciones y deleciones conservadas"
+    },
+    {
+      "linea": 1724,
+      "texto": "### 4.3.4. Posiciones de intrones"
+    },
+    {
+      "linea": 1732,
+      "texto": "### 4.3.5. Evaluación conjunta"
+    },
+    {
+      "linea": 1738,
+      "texto": "## 4.4. Amorphea y los linajes que orbitan su base"
+    },
+    {
+      "linea": 1740,
+      "texto": "### 4.4.1. Amorphea"
+    },
+    {
+      "linea": 1757,
+      "texto": "### 4.4.2. CRuMs"
+    },
+    {
+      "linea": 1769,
+      "texto": "### 4.4.3. Ancyromonadida y Malawimonadida"
+    },
+    {
+      "linea": 1781,
+      "texto": "## 4.5. Historia nomenclatural: nombres solapados, no una bolsa de sinónimos"
+    },
+    {
+      "linea": 1783,
+      "texto": "### 4.5.1. Unikonta y Amorphea"
+    },
+    {
+      "linea": 1791,
+      "texto": "### 4.5.2. Podiata"
+    },
+    {
+      "linea": 1799,
+      "texto": "### 4.5.3. Sulcozoa"
+    },
+    {
+      "linea": 1807,
+      "texto": "### 4.5.4. Varisulca"
+    },
+    {
+      "linea": 1813,
+      "texto": "### 4.5.5. Estado de Amorphea"
+    },
+    {
+      "linea": 1819,
+      "texto": "## 4.6. Corredor filogenético y tablas por nodo"
+    },
+    {
+      "linea": 1848,
+      "texto": "### 4.6.1. Eukaryota"
+    },
+    {
+      "linea": 1854,
+      "texto": "### 4.6.2. Amorphea"
+    },
+    {
+      "linea": 1862,
+      "texto": "### 4.6.3. Amoebozoa"
+    },
+    {
+      "linea": 1868,
+      "texto": "### 4.6.4. Obazoa"
+    },
+    {
+      "linea": 1874,
+      "texto": "### 4.6.5. Apusomonadida"
+    },
+    {
+      "linea": 1880,
+      "texto": "### 4.6.6. Breviatea"
+    },
+    {
+      "linea": 1886,
+      "texto": "### 4.6.7. Opisthokonta"
+    },
+    {
+      "linea": 1892,
+      "texto": "### 4.6.8. Holomycota"
+    },
+    {
+      "linea": 1898,
+      "texto": "### 4.6.9. Holozoa"
+    },
+    {
+      "linea": 1904,
+      "texto": "### 4.6.10. Ichthyosporea"
+    },
+    {
+      "linea": 1910,
+      "texto": "### 4.6.11. Pluriformea sensu Hehenberger et al. 2017"
+    },
+    {
+      "linea": 1916,
+      "texto": "### 4.6.12. Corallochytrea"
+    },
+    {
+      "linea": 1922,
+      "texto": "### 4.6.13. Filasterea"
+    },
+    {
+      "linea": 1928,
+      "texto": "### 4.6.14. Filozoa"
+    },
+    {
+      "linea": 1934,
+      "texto": "### 4.6.15. Choanozoa sensu stricto ≈ Apoikozoa"
+    },
+    {
+      "linea": 1940,
+      "texto": "### 4.6.16. Choanoflagellata"
+    },
+    {
+      "linea": 1946,
+      "texto": "### 4.6.17. Metazoa"
+    },
+    {
+      "linea": 1952,
+      "texto": "## 4.7. Tres raíces incompatibles dentro de Holozoa unicelular"
+    },
+    {
+      "linea": 2010,
+      "texto": "## 4.8. Circunscripciones rivales en el extremo del corredor"
+    },
+    {
+      "linea": 2012,
+      "texto": "### 4.8.1. Choanozoa sensu histórico, Choanozoa sensu stricto y Apoikozoa"
+    },
+    {
+      "linea": 2024,
+      "texto": "### 4.8.2. Pluriformea, Corallochytrea y Corallochytrium"
+    },
+    {
+      "linea": 2036,
+      "texto": "## 4.9. Qué permanece sin resolver"
+    },
+    {
+      "linea": 2052,
+      "texto": "## 4.10. Registro de afirmaciones de la sección 4"
+    },
+    {
+      "linea": 2322,
+      "texto": "# 5. El registro material: fósiles y biomarcadores"
+    },
+    {
+      "linea": 2324,
+      "texto": "## 5.1. Criterios de reconocimiento y límites de los acritarcos"
+    },
+    {
+      "linea": 2336,
+      "texto": "## 5.2. Roper, Ruyang y otros registros de pared orgánica"
+    },
+    {
+      "linea": 2360,
+      "texto": "## 5.3. Candidatos antiguos y discutidos"
+    },
+    {
+      "linea": 2374,
+      "texto": "## 5.4. Microfósiles con forma de vasija (*vase-shaped microfossils*, VSM) y daño por perforación"
+    },
+    {
+      "linea": 2400,
+      "texto": "## 5.5. Fósiles con relevancia directa para el corredor"
+    },
+    {
+      "linea": 2426,
+      "texto": "## 5.6. Doushantuo y Weng’an: embriones, quistes y desarrollo holozoo"
+    },
+    {
+      "linea": 2448,
+      "texto": "## 5.7. Biomarcadores"
+    },
+    {
+      "linea": 2468,
+      "texto": "## 5.8. Asignación fósil más antigua localizada por nodo"
+    },
+    {
+      "linea": 2517,
+      "texto": "## 5.9. Registro de afirmaciones de la sección 5"
+    },
+    {
+      "linea": 2587,
+      "texto": "# 6. Tiempo: relojes moleculares y desacuerdo con las rocas"
+    },
+    {
+      "linea": 2589,
+      "texto": "## 6.1. Estimaciones publicadas"
+    },
+    {
+      "linea": 2649,
+      "texto": "## 6.2. El peso de *Bangiomorpha*"
+    },
+    {
+      "linea": 2655,
+      "texto": "## 6.3. Controversia abierta: por qué no existe una edad de consenso"
+    },
+    {
+      "linea": 2675,
+      "texto": "## 6.4. Nodos sin intervalo comparable localizado"
+    },
+    {
+      "linea": 2679,
+      "texto": "## 6.5. Registro de afirmaciones de la sección 6"
+    },
+    {
+      "linea": 2722,
+      "texto": "# 7. Ambiente"
+    },
+    {
+      "linea": 2724,
+      "texto": "## 7.1. Oxígeno: cronología, proxies y discrepancias cuantitativas"
+    },
+    {
+      "linea": 2789,
+      "texto": "## 7.2. Química redox del océano"
+    },
+    {
+      "linea": 2827,
+      "texto": "## 7.3. Metales traza y nutrientes"
+    },
+    {
+      "linea": 2847,
+      "texto": "## 7.4. «Aburrido millardo» y glaciaciones"
+    },
+    {
+      "linea": 2879,
+      "texto": "## 7.5. Hábitat, estructura espacial y densidad"
+    },
+    {
+      "linea": 2901,
+      "texto": "## 7.6. Registro de afirmaciones de la sección 7"
+    },
+    {
+      "linea": 2966,
+      "texto": "# 8. Ecología y trofismo"
+    },
+    {
+      "linea": 2968,
+      "texto": "## 8.1. Coanoflagelados: alimentación, colonias, rosetas y señales"
+    },
+    {
+      "linea": 3008,
+      "texto": "## 8.2. Filasterea e Ichthyosporea"
+    },
+    {
+      "linea": 3046,
+      "texto": "## 8.3. Depredadores holozoos, Obazoa, Holomycota y Amoebozoa"
+    },
+    {
+      "linea": 3160,
+      "texto": "## 8.4. Depredación observada, hipótesis causal y magnitudes tróficas"
+    },
+    {
+      "linea": 3190,
+      "texto": "## 8.5. Virus y elementos móviles"
+    },
+    {
+      "linea": 3246,
+      "texto": "## 8.6. Respuesta reversible y cambio heredable"
+    },
+    {
+      "linea": 3270,
+      "texto": "## 8.7. Registro de afirmaciones de la sección 8"
+    },
+    {
+      "linea": 3398,
+      "texto": "# 9. Asociación: el catálogo de desenlaces"
+    },
+    {
+      "linea": 3400,
+      "texto": "## 9.0. Distinciones operativas"
+    },
+    {
+      "linea": 3422,
+      "texto": "## 9.1. Tipología cerrada y numerada de desenlaces"
+    },
+    {
+      "linea": 3448,
+      "texto": "### 9.1.1. Tipología cerrada"
+    },
+    {
+      "linea": 3464,
+      "texto": "## 9.2. Asociación externa y sintrofía"
+    },
+    {
+      "linea": 3508,
+      "texto": "## 9.3. Endosimbiontes procariotas y eucariotas en protistas"
+    },
+    {
+      "linea": 3568,
+      "texto": "## 9.4. Endosimbiosis en curso o comparativamente recientes"
+    },
+    {
+      "linea": 3626,
+      "texto": "### 9.4.1. Fichas comparativas por grado de integración"
+    },
+    {
+      "linea": 3690,
+      "texto": "## 9.5. Robo temporal de orgánulos, endosimbiosis secundaria y nucleomorfos"
+    },
+    {
+      "linea": 3742,
+      "texto": "## 9.6. Endosimbiosis anidadas, reducción extrema y reemplazo"
+    },
+    {
+      "linea": 3782,
+      "texto": "## 9.7. Correlatos de dependencia, persistencia y ruptura"
+    },
+    {
+      "linea": 3812,
+      "texto": "### 9.7.1. Correlatos publicados"
+    },
+    {
+      "linea": 3824,
+      "texto": "## 9.8. Pérdida y degradación de la mitocondria"
+    },
+    {
+      "linea": 3894,
+      "texto": "### 9.8.1. Gradiente funcional comparado"
+    },
+    {
+      "linea": 3909,
+      "texto": "## 9.9. Cooperación y conflicto entre genomas"
+    },
+    {
+      "linea": 3975,
+      "texto": "## 9.10. Transferencia génica horizontal hacia y dentro de eucariotas"
+    },
+    {
+      "linea": 4015,
+      "texto": "## 9.11. Qué no se sabe"
+    },
+    {
+      "linea": 4029,
+      "texto": "## 9.12. Registro de afirmaciones de la sección 9"
+    },
+    {
+      "linea": 4285,
+      "texto": "# 10. Rasgos con costo"
+    },
+    {
+      "linea": 4287,
+      "texto": "## 10.0. Alcance, denominadores y clases de coste"
+    },
+    {
+      "linea": 4309,
+      "texto": "## 10.1. Tabla consolidada de rasgos con coste"
+    },
+    {
+      "linea": 4345,
+      "texto": "## 10.2. Núcleo y envoltura nuclear"
+    },
+    {
+      "linea": 4365,
+      "texto": "## 10.3. Endomembranas y tráfico vesicular"
+    },
+    {
+      "linea": 4391,
+      "texto": "## 10.4. Citoesqueleto y fagocitosis"
+    },
+    {
+      "linea": 4419,
+      "texto": "## 10.5. Peroxisomas y mitosis"
+    },
+    {
+      "linea": 4441,
+      "texto": "## 10.6. Mitocondria, cilio, adhesión y señalización"
+    },
+    {
+      "linea": 4489,
+      "texto": "## 10.7. Posición de la precondición energética mitocondrial"
+    },
+    {
+      "linea": 4511,
+      "texto": "## 10.8. Posición contraria, réplicas y reanálisis"
+    },
+    {
+      "linea": 4541,
+      "texto": "## 10.9. Barrera de deriva y tamaño efectivo de población"
+    },
+    {
+      "linea": 4579,
+      "texto": "## 10.10. Adaptación, compensación y productos no adaptativos"
+    },
+    {
+      "linea": 4603,
+      "texto": "## 10.11. Qué permanece sin cuantificar"
+    },
+    {
+      "linea": 4617,
+      "texto": "## 10.12. Registro de afirmaciones de la sección 10"
+    },
+    {
+      "linea": 4759,
+      "texto": "# 11. Sexo, meiosis y ciclo vital"
+    },
+    {
+      "linea": 4763,
+      "texto": "## 11.1. Definiciones operativas y componentes desacoplables"
+    },
+    {
+      "linea": 4787,
+      "texto": "## 11.2. ¿Era sexual LECA? Inventarios, observaciones y límites"
+    },
+    {
+      "linea": 4833,
+      "texto": "## 11.3. Origen de la meiosis"
+    },
+    {
+      "linea": 4857,
+      "texto": "## 11.4. Hipótesis sobre el mantenimiento del sexo"
+    },
+    {
+      "linea": 4875,
+      "texto": "## 11.5. Costes del sexo en microorganismos eucariotas"
+    },
+    {
+      "linea": 4901,
+      "texto": "## 11.6. Tipos de apareamiento, ciclos de ploidía y anisogamia"
+    },
+    {
+      "linea": 4931,
+      "texto": "## 11.7. Sexo críptico, parasexualidad y criterios de detección"
+    },
+    {
+      "linea": 4977,
+      "texto": "## 11.8. Evidencia fósil de sexo"
+    },
+    {
+      "linea": 4991,
+      "texto": "## 11.9. Apareamiento inducido por señales externas en coanoflagelados"
+    },
+    {
+      "linea": 5025,
+      "texto": "## 11.10. Estado de resolución"
+    },
+    {
+      "linea": 5047,
+      "texto": "## 11.11. Vista comparativa de clases de evidencia"
+    },
+    {
+      "linea": 5062,
+      "texto": "## 11.12. Registro de afirmaciones de la sección 11"
+    },
+    {
+      "linea": 5191,
+      "texto": "# 12. Multicelularidad y el repertorio preanimal"
+    },
+    {
+      "linea": 5195,
+      "texto": "## 12.1. Rutas celulares y definiciones operativas"
+    },
+    {
+      "linea": 5215,
+      "texto": "### 12.1.1. Vista comparativa de rutas"
+    },
+    {
+      "linea": 5224,
+      "texto": "## 12.2. Vía clonal y combinación clonal-agregativa en coanoflagelados"
+    },
+    {
+      "linea": 5262,
+      "texto": "## 12.3. Vía cenocítica con celularización"
+    },
+    {
+      "linea": 5296,
+      "texto": "## 12.4. Vía agregativa en Filasterea, Holomycota y Amoebozoa"
+    },
+    {
+      "linea": 5334,
+      "texto": "## 12.5. Parentesco, conflicto y mecanismos antitramposo"
+    },
+    {
+      "linea": 5356,
+      "texto": "## 12.6. Evolución experimental de multicelularidad en levadura"
+    },
+    {
+      "linea": 5378,
+      "texto": "### 12.6.1. Costes y compensaciones cuantificados o no localizados"
+    },
+    {
+      "linea": 5392,
+      "texto": "## 12.7. Genomas de referencia y arquitectura génica"
+    },
+    {
+      "linea": 5418,
+      "texto": "### 12.7.1. Tabla comparativa de genomas"
+    },
+    {
+      "linea": 5431,
+      "texto": "## 12.8. Adhesión y matriz extracelular antes de Metazoa"
+    },
+    {
+      "linea": 5449,
+      "texto": "## 12.9. Señalización preanimal"
+    },
+    {
+      "linea": 5469,
+      "texto": "## 12.10. Regulación transcripcional preanimal"
+    },
+    {
+      "linea": 5489,
+      "texto": "### 12.10.1. Repertorio funcional localizado"
+    },
+    {
+      "linea": 5506,
+      "texto": "## 12.11. Hipótesis de transición temporal a espacial"
+    },
+    {
+      "linea": 5526,
+      "texto": "## 12.12. Qué permanece sin resolver"
+    },
+    {
+      "linea": 5542,
+      "texto": "## 12.13. Registro de afirmaciones de la sección 12"
+    },
+    {
+      "linea": 5686,
+      "texto": "# 13. Escalas, tasas y recuentos"
+    },
+    {
+      "linea": 5688,
+      "texto": "## 13.1. Qué puede compararse"
+    },
+    {
+      "linea": 5699,
+      "texto": "## 13.2. Cuánto separa a FECA de LECA"
+    },
+    {
+      "linea": 5712,
+      "texto": "## 13.3. Tiempos de generación y división"
+    },
+    {
+      "linea": 5740,
+      "texto": "## 13.4. Tasas de mutación por generación y sitio"
+    },
+    {
+      "linea": 5744,
+      "texto": "### 13.4.1. Eucariotas unicelulares"
+    },
+    {
+      "linea": 5754,
+      "texto": "### 13.4.2. Procariotas comparables por método"
+    },
+    {
+      "linea": 5774,
+      "texto": "## 13.5. Duración de episodios ambientales"
+    },
+    {
+      "linea": 5789,
+      "texto": "## 13.6. Tiempo desde endosimbiosis hasta integración observada"
+    },
+    {
+      "linea": 5815,
+      "texto": "## 13.7. Cuántos genes conserva un genoma mitocondrial"
+    },
+    {
+      "linea": 5824,
+      "texto": "## 13.8. Qué es rápido y qué es lento, y respecto de qué"
+    },
+    {
+      "linea": 5837,
+      "texto": "## 13.9. Recuentos de orígenes y pérdidas"
+    },
+    {
+      "linea": 5839,
+      "texto": "### 13.9.1. Endosimbiosis primaria con orgánulo y EGT"
+    },
+    {
+      "linea": 5847,
+      "texto": "### 13.9.2. Origen único y reducciones de la mitocondria"
+    },
+    {
+      "linea": 5859,
+      "texto": "### 13.9.3. Fagocitosis y fagotrofia"
+    },
+    {
+      "linea": 5869,
+      "texto": "### 13.9.4. Multicelularidad"
+    },
+    {
+      "linea": 5877,
+      "texto": "### 13.9.5. Parasitismo intracelular y simbiosis obligada"
+    },
+    {
+      "linea": 5899,
+      "texto": "## 13.10. Huecos cuantitativos que permanecen abiertos"
+    },
+    {
+      "linea": 5915,
+      "texto": "## 13.11. Registro de afirmaciones de la sección 13"
+    },
+    {
+      "linea": 5985,
+      "texto": "# 14. Nombres y nomenclatura"
+    },
+    {
+      "linea": 5987,
+      "texto": "## 14.1. Tres propiedades que no deben fundirse"
+    },
+    {
+      "linea": 6006,
+      "texto": "## 14.2. Códigos aplicables"
+    },
+    {
+      "linea": 6008,
+      "texto": "### 14.2.1. ICZN: nombres zoológicos"
+    },
+    {
+      "linea": 6023,
+      "texto": "### 14.2.2. ICN: Madrid Code"
+    },
+    {
+      "linea": 6036,
+      "texto": "### 14.2.3. ICNP: nombres procarióticos"
+    },
+    {
+      "linea": 6047,
+      "texto": "### 14.2.4. PhyloCode y RegNum"
+    },
+    {
+      "linea": 6064,
+      "texto": "### 14.2.5. Phylonyms y definiciones formales localizadas"
+    },
+    {
+      "linea": 6079,
+      "texto": "## 14.3. Rangos y marcado del corpus"
+    },
+    {
+      "linea": 6104,
+      "texto": "## 14.4. Grupo corona, grupo tronco y grupo total"
+    },
+    {
+      "linea": 6127,
+      "texto": "### 14.4.1. Aplicación a los 17 nodos del corredor"
+    },
+    {
+      "linea": 6166,
+      "texto": "## 14.5. Historia y competencia de nombres del corredor"
+    },
+    {
+      "linea": 6170,
+      "texto": "### 14.5.1. Eucarya, Eukarya y Eukaryota"
+    },
+    {
+      "linea": 6183,
+      "texto": "### 14.5.2. Unikonta, Podiata, Sulcozoa, Varisulca y Amorphea"
+    },
+    {
+      "linea": 6206,
+      "texto": "### 14.5.3. Opisthokonta, Holomycota y Nucletmycea"
+    },
+    {
+      "linea": 6219,
+      "texto": "### 14.5.4. Obazoa, Holozoa y Filozoa"
+    },
+    {
+      "linea": 6234,
+      "texto": "### 14.5.5. Choanozoa sensu stricto y Apoikozoa"
+    },
+    {
+      "linea": 6253,
+      "texto": "### 14.5.6. Pluriformea, Corallochytrea y Corallochytrium"
+    },
+    {
+      "linea": 6268,
+      "texto": "## 14.6. Advertencias terminológicas"
+    },
+    {
+      "linea": 6270,
+      "texto": "### 14.6.1. Protista y protista"
+    },
+    {
+      "linea": 6285,
+      "texto": "### 14.6.2. Protozoa y protozoo"
+    },
+    {
+      "linea": 6298,
+      "texto": "### 14.6.3. Alga y cianobacterias"
+    },
+    {
+      "linea": 6313,
+      "texto": "### 14.6.4. Invertebrado"
+    },
+    {
+      "linea": 6326,
+      "texto": "### 14.6.5. Procariota"
+    },
+    {
+      "linea": 6343,
+      "texto": "### 14.6.6. Acritarco"
+    },
+    {
+      "linea": 6356,
+      "texto": "### 14.6.7. Reino"
+    },
+    {
+      "linea": 6371,
+      "texto": "### 14.6.8. Archezoa"
+    },
+    {
+      "linea": 6386,
+      "texto": "### 14.6.9. Excavata"
+    },
+    {
+      "linea": 6401,
+      "texto": "### 14.6.10. Chromalveolata"
+    },
+    {
+      "linea": 6418,
+      "texto": "### 14.6.11. Unikonta y Bikonta como advertencia terminológica"
+    },
+    {
+      "linea": 6431,
+      "texto": "### 14.6.12. Hongo aplicado a oomicetos y mohos mucilaginosos"
+    },
+    {
+      "linea": 6446,
+      "texto": "### 14.6.13. Flagelo"
+    },
+    {
+      "linea": 6459,
+      "texto": "### 14.6.14. Simbiosis y mutualismo"
+    },
+    {
+      "linea": 6472,
+      "texto": "### 14.6.15. Endosimbiosis seriada"
+    },
+    {
+      "linea": 6487,
+      "texto": "### 14.6.16. Eucariota primitivo"
+    },
+    {
+      "linea": 6498,
+      "texto": "### 14.6.17. Organismo simple"
+    },
+    {
+      "linea": 6509,
+      "texto": "### 14.6.18. Fósil viviente"
+    },
+    {
+      "linea": 6522,
+      "texto": "### 14.6.19. Eslabón perdido"
+    },
+    {
+      "linea": 6535,
+      "texto": "### 14.6.20. Basal aplicado a un linaje viviente"
+    },
+    {
+      "linea": 6550,
+      "texto": "## 14.7. Integración terminológica y límites"
+    },
+    {
+      "linea": 6574,
+      "texto": "## 14.8. Vistas de resumen"
+    },
+    {
+      "linea": 6576,
+      "texto": "### 14.8.1. Códigos"
+    },
+    {
+      "linea": 6610,
+      "texto": "### 14.8.2. Nombres rivales o solapados"
+    },
+    {
+      "linea": 6625,
+      "texto": "### 14.8.3. Términos problemáticos y reemplazos"
+    },
+    {
+      "linea": 6650,
+      "texto": "## 14.9. Registro de afirmaciones de la sección 14"
+    },
+    {
+      "linea": 6875,
+      "texto": "# 15. Lo que no se sabe, y cómo lo sabemos"
+    },
+    {
+      "linea": 6877,
+      "texto": "## 15.1. Mapa del terreno probatorio"
+    },
+    {
+      "linea": 6879,
+      "texto": "### 15.1.1. Relojes moleculares"
+    },
+    {
+      "linea": 6887,
+      "texto": "### 15.1.2. Filogenómica comparada"
+    },
+    {
+      "linea": 6895,
+      "texto": "### 15.1.3. Microfósiles y tipos"
+    },
+    {
+      "linea": 6901,
+      "texto": "### 15.1.4. Biomarcadores"
+    },
+    {
+      "linea": 6909,
+      "texto": "### 15.1.5. *Proxies* geoquímicos"
+    },
+    {
+      "linea": 6917,
+      "texto": "### 15.1.6. Genómica y biología celular de organismos actuales"
+    },
+    {
+      "linea": 6923,
+      "texto": "### 15.1.7. Experimentos de laboratorio con simbiosis"
+    },
+    {
+      "linea": 6939,
+      "texto": "## 15.2. Evidencia retirada, refutada o reinterpretada"
+    },
+    {
+      "linea": 6964,
+      "texto": "## 15.3. Nodos, fechas y relaciones con soporte insuficiente"
+    },
+    {
+      "linea": 6991,
+      "texto": "## 15.4. Búsquedas negativas consolidadas"
+    },
+    {
+      "linea": 7003,
+      "texto": "### 15.4.1. Punto de partida y participantes celulares"
+    },
+    {
+      "linea": 7089,
+      "texto": "### 15.4.2. Eucariogénesis"
+    },
+    {
+      "linea": 7102,
+      "texto": "### 15.4.3. Raíz eucariota y corredor filogenético"
+    },
+    {
+      "linea": 7125,
+      "texto": "### 15.4.4. Registro material, tiempo, ambiente y ecología"
+    },
+    {
+      "linea": 7274,
+      "texto": "### 15.4.5. Asociación, integración y transferencia"
+    },
+    {
+      "linea": 7366,
+      "texto": "### 15.4.6. Rasgos con costo y controversia energética"
+    },
+    {
+      "linea": 7383,
+      "texto": "### 15.4.7. Sexo, meiosis y ciclo vital"
+    },
+    {
+      "linea": 7397,
+      "texto": "### 15.4.8. Nombres y nomenclatura"
+    },
+    {
+      "linea": 7472,
+      "texto": "### 15.4.9. Multicelularidad y repertorio preanimal"
+    },
+    {
+      "linea": 7546,
+      "texto": "## 15.5. Controles canónicos y evidencia positiva conservada"
+    },
+    {
+      "linea": 7584,
+      "texto": "## 15.6. Registro de afirmaciones de la sección 15"
+    },
+    {
+      "linea": 8511,
+      "texto": "# 17.A. Apéndice A. Fuentes"
+    },
+    {
+      "linea": 9042,
+      "texto": "# 17.B. Apéndice B. Entidades"
+    },
+    {
+      "linea": 10550,
+      "texto": "# 17.C. Apéndice C. Eventos"
+    },
+    {
+      "linea": 10665,
+      "texto": "# 17.D. Apéndice D. Fechas"
+    },
+    {
+      "linea": 10888,
+      "texto": "# 17.E. Apéndice E. Hipótesis"
+    },
+    {
+      "linea": 10977,
+      "texto": "# 17.F. Apéndice F. Magnitudes"
+    },
+    {
+      "linea": 11574,
+      "texto": "# 17.G. Apéndice G. Material no encajado"
+    },
+    {
+      "linea": 11604,
+      "texto": "# 17.H. Apéndice H. Recuento de control"
+    },
+    {
+      "linea": 11634,
+      "texto": "# 19. Respuestas a las seis preguntas de cierre"
+    },
+    {
+      "linea": 11647,
+      "texto": "## 19.1. Registro de afirmaciones de la sección 19"
+    }
+  ],
+  "bloques_cercados": [
+    [
+      146,
+      151
+    ],
+    [
+      157,
+      164
+    ],
+    [
+      170,
+      176
+    ],
+    [
+      719,
+      724
+    ],
+    [
+      919,
+      923
+    ],
+    [
+      946,
+      950
+    ],
+    [
+      971,
+      976
+    ],
+    [
+      993,
+      996
+    ],
+    [
+      1013,
+      1016
+    ],
+    [
+      1037,
+      1041
+    ],
+    [
+      1160,
+      1166
+    ],
+    [
+      1563,
+      1567
+    ],
+    [
+      1589,
+      1593
+    ],
+    [
+      1605,
+      1609
+    ],
+    [
+      1617,
+      1624
+    ],
+    [
+      1636,
+      1640
+    ],
+    [
+      1650,
+      1654
+    ],
+    [
+      1751,
+      1755
+    ],
+    [
+      1823,
+      1844
+    ],
+    [
+      1956,
+      1958
+    ],
+    [
+      1962,
+      1964
+    ],
+    [
+      1968,
+      1970
+    ]
+  ],
+  "bloque_cercado_sin_cerrar": null,
+  "urls_fuera_de_a": [
+    {
+      "linea": 6689,
+      "texto": "| C-1715 | La consulta oficial de RegNum del 8 de agosto de 2026 devolvió “No clade names found” para Holozoa, Filozoa, Choanozoa, Apoikozoa, Obazoa, Pluriformea y Corallochytrea. | nombres del corredor consultados en RegNum | tiene_estado* | sin entrada devuelta por el registro en la fecha de consulta | expresa | S384 consultas GET https://www.phyloregnum.org/?term=Holozoa, ?term=Filozoa, ?term=Choanozoa, ?term=Apoikozoa, ?term=Obazoa, ?term=Pluriformea y ?term=Corallochytrea [sin localizar con mayor precisión]; resultado “No clade names found”; consulta 2026-08-08 | no evaluado | alta | Los siete destinos de consulta se conservaron en forma reproducible y se verificó su fragmento de resultados; la observación fechada no prueba que los nombres estén ausentes de la literatura. | resuelta | vigente |"
+    }
+  ],
+  "seleccion_lectura_idioma_no_es_dictamen": {
+    "candidatos_plantillas": [
+      {
+        "ruta": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "linea": 119,
+        "es": 2,
+        "en": 2,
+        "texto": "En quimeras de Dictyostelium discoideum, algunos genotipos contribuyen desproporcionadamente a esporas frente a otros genotipos co-agregados. [C-903; S215 resultados]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 59,
+        "es": 2,
+        "en": 2,
+        "texto": "Microscopía electrónica mostró células de Arcobacter conectadas a Lenisia limosa por estructuras semejantes a pili. [C-994; S210 fig. 1 y microscopía; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 87,
+        "es": 1,
+        "en": 1,
+        "texto": "Wegener y colaboradores estudiaron consorcios termófilos ANME-1–HotSeep-1 a 60 °C. [C-1008; S226 métodos y resultados; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 105,
+        "es": 1,
+        "en": 1,
+        "texto": "El aislado atribuido a Pelomyxa midió aproximadamente 3 × 0,4 µm. [C-1016; S232 descripción; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 183,
+        "es": 1,
+        "en": 1,
+        "texto": "Braarudosphaera bigelowii alberga al diazótrofo cyanobacteriano UCYN-A. [C-1054; S248 resumen y resultados; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 187,
+        "es": 2,
+        "en": 2,
+        "texto": "El hospedador suministra carbono y otros metabolitos a UCYN-A. [C-1056; S247 resultados; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 447,
+        "es": 1,
+        "en": 1,
+        "texto": "### 14.6.12. Hongo aplicado a oomicetos y mohos mucilaginosos"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 451,
+        "es": 2,
+        "en": 2,
+        "texto": "Oomycota pertenece a Stramenopiles y no a Fungi. [C-1841; S405 título y filogenia; S01 clasificación]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 457,
+        "es": 2,
+        "en": 3,
+        "texto": "“Hongo” aplicado a oomicetos o mohos mucilaginosos no equivale a pertenencia taxonómica a Fungi. [C-1844; S405, S406, S407]"
+      }
+    ],
+    "candidatos_afirmaciones": [
+      {
+        "clave": "C-076",
+        "es": 2,
+        "en": 2,
+        "texto": "Tobiasson et al. atribuyeron a Asgard la contribución dominante a numerosos sistemas funcionales eucariotas conservados."
+      },
+      {
+        "clave": "C-138",
+        "es": 1,
+        "en": 1,
+        "texto": "OdinTubulin purificada formó protofilamentos, anillos y polímeros dinámicos in vitro."
+      },
+      {
+        "clave": "C-513",
+        "es": 1,
+        "en": 1,
+        "texto": "S56 atribuye a LECA envoltura nuclear, poro nuclear, endomembranas, citoesqueleto y mitocondria."
+      },
+      {
+        "clave": "C-890",
+        "es": 0,
+        "en": 0,
+        "texto": "Lenisia limosa porta epibiontes Arcobacter."
+      },
+      {
+        "clave": "C-903",
+        "es": 2,
+        "en": 2,
+        "texto": "En quimeras de Dictyostelium discoideum, algunos genotipos contribuyen desproporcionadamente a esporas frente a otros genotipos co-agregados."
+      },
+      {
+        "clave": "C-994",
+        "es": 2,
+        "en": 2,
+        "texto": "Microscopía electrónica mostró células de Arcobacter conectadas a Lenisia limosa por estructuras semejantes a pili."
+      },
+      {
+        "clave": "C-1008",
+        "es": 1,
+        "en": 1,
+        "texto": "Wegener y colaboradores estudiaron consorcios termófilos ANME-1–HotSeep-1 a 60 °C."
+      },
+      {
+        "clave": "C-1016",
+        "es": 1,
+        "en": 1,
+        "texto": "El aislado atribuido a Pelomyxa midió aproximadamente 3 × 0,4 µm."
+      },
+      {
+        "clave": "C-1054",
+        "es": 1,
+        "en": 1,
+        "texto": "Braarudosphaera bigelowii alberga al diazótrofo cyanobacteriano UCYN-A."
+      },
+      {
+        "clave": "C-1056",
+        "es": 2,
+        "en": 2,
+        "texto": "El hospedador suministra carbono y otros metabolitos a UCYN-A."
+      },
+      {
+        "clave": "C-1660",
+        "es": 1,
+        "en": 1,
+        "texto": "Lamża identificó 45 linajes multicelulares eucariotas independientes distribuidos entre seis tipos bajo criterios funcionales explícitos."
+      },
+      {
+        "clave": "C-1841",
+        "es": 2,
+        "en": 2,
+        "texto": "Oomycota pertenece a Stramenopiles y no a Fungi."
+      },
+      {
+        "clave": "C-1843",
+        "es": 0,
+        "en": 1,
+        "texto": "Diversos mohos mucilaginosos pertenecen a Amoebozoa."
+      },
+      {
+        "clave": "C-1844",
+        "es": 2,
+        "en": 3,
+        "texto": "“Hongo” aplicado a oomicetos o mohos mucilaginosos no equivale a pertenencia taxonómica a Fungi."
+      },
+      {
+        "clave": "C-1884",
+        "es": 0,
+        "en": 1,
+        "texto": "“Rama que diverge primero en el árbol enraizado bajo la hipótesis H” sustituye a “linaje basal”."
+      }
+    ],
+    "muestras_prosa_por_plantilla": [
+      {
+        "ruta": "docs/secciones/000-preambulo.md",
+        "linea": 3,
+        "texto": "**Fecha de corte bibliográfico: 8 de agosto de 2026.**"
+      },
+      {
+        "ruta": "docs/secciones/000-preambulo.md",
+        "linea": 5,
+        "texto": "**Unidad temporal por defecto:** Ma antes del presente. Cuando una fuente publica Ga, se conserva Ga. Los nombres cronoestratigráficos siguen la Tabla Cronoestratigráfica Internacional, versión 2026/06."
+      },
+      {
+        "ruta": "docs/secciones/000-preambulo.md",
+        "linea": 7,
+        "texto": "**Etiquetas descriptivas cerradas del corpus integrado:**"
+      },
+      {
+        "ruta": "docs/secciones/000-preambulo.md",
+        "linea": 39,
+        "texto": "Estas etiquetas no son taxones formales. Se conservan literalmente en la prosa y en las tablas."
+      },
+      {
+        "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+        "linea": 5,
+        "texto": "La clasificación eucariota de esta parte adopta como autoridad taxonómica operativa la revisión de Adl et al. 2019. [C-001; S01 clasificación]"
+      },
+      {
+        "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+        "linea": 7,
+        "texto": "Los nombres cronoestratigráficos se contrastan con la Tabla Cronoestratigráfica Internacional, versión 2026/06 localizada para este corte. [C-002; S02 descripción de metadatos; encabezado de versión]"
+      },
+      {
+        "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+        "linea": 47,
+        "texto": "Estas definiciones son relacionales. Un fósil no entra en un tallo por ser antiguo, y un linaje viviente no puede convertirse en troncal respecto de otro linaje viviente por conservar una combinación particular de rasgos. [C-010–C-012; glosa documental]"
+      },
+      {
+        "ruta": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+        "linea": 49,
+        "texto": "La guía de aplicación del PhyloCode exige una definición filogenética y el cumplimiento de requisitos de publicación y registro; esa obligación nomenclatural no convierte por sí sola una hipótesis filogenética en evidencia. [C-1707; S382 pp. 31–38, checklist y apartados «The phylogenetic definition» y «Registering a name in RegNum»]"
+      },
+      {
+        "ruta": "docs/secciones/002-01-1-alcance-del-corpus.md",
+        "linea": 3,
+        "texto": "El corredor principal tratado es el tallo de Eukaryota entre FECA y LECA, Eukaryota, Amorphea, Obazoa, Opisthokonta, Holozoa, Filozoa y Choanozoa *sensu stricto*. [C-013]"
+      },
+      {
+        "ruta": "docs/secciones/002-01-1-alcance-del-corpus.md",
+        "linea": 5,
+        "texto": "Metazoa se mantiene como nombre terminal sin desarrollar su topología interna. [C-014]"
+      },
+      {
+        "ruta": "docs/secciones/002-01-1-alcance-del-corpus.md",
+        "linea": 9,
+        "texto": "También incorpora Asgardarchaeota y el componente alfa-proteobacteriano como participantes de la eucariogénesis, no solo como contexto. [C-016]"
+      },
+      {
+        "ruta": "docs/secciones/002-01-1-alcance-del-corpus.md",
+        "linea": 13,
+        "texto": "Las filas siguientes documentan el alcance del encargo; son glosas de delimitación y no resultados científicos."
+      },
+      {
+        "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "linea": 7,
+        "texto": "**Árbol de tres dominios** [C-017–C-018; S06 fig. 1]"
+      },
+      {
+        "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "linea": 16,
+        "texto": "En su formulación de 1990, Bacteria, Archaea y Eucarya fueron tratados como tres dominios primarios. [C-017; S06 título; fig. 1] El esquema representa a Eukaryota como grupo hermano de Archaea; esa topología histórica no debe confundirse con el árbol de dos dominios. [C-018; S06 fig. 1]"
+      },
+      {
+        "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "linea": 229,
+        "texto": "5. La función nativa de tubulinas Asgard se demostró en Lokiarchaeia, pero no para OdinTubulin en Odinarchaeota; las GTPasas pequeñas carecen todavía de colocalización y perturbación causal nativas. [C-139; C-141; C-143–C-146]"
+      },
+      {
+        "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "linea": 230,
+        "texto": "6. La familia alfa-proteobacteriana viviente más próxima a la mitocondria no está resuelta. [C-159–C-160]"
+      },
+      {
+        "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+        "linea": 3,
+        "texto": "En la sección 3, la clasificación de Adl et al. 2019 fija el vocabulario y la circunscripción de los grupos eucariotas comparados. [C-173] Esta parte usa Ma como unidad temporal predeterminada y conserva en Ga los valores publicados en Ga; la Tabla Cronoestratigráfica Internacional 2026/06 funciona como referencia cronoestratigráfica. [C-173; C-174; C-175; S01 clasificación; S02 metadatos y encabezado de versión]"
+      },
+      {
+        "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+        "linea": 9,
+        "texto": "Delaye atribuye a Forterre 1997 la propuesta del acrónimo LUCA. [C-176; S53 §History of LUCA; S54 título y texto]"
+      },
+      {
+        "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+        "linea": 535,
+        "texto": "La búsqueda BN-049 no localizó una cifra publicada para construir y operar una envoltura nuclear ancestral completa de FECA o LECA. [C-430] Es un hueco de la búsqueda, no una prueba de inexistencia universal ni una autorización para sumar costes modernos heterogéneos. [C-430; BN-049; S307 pp. 82 y 90–91]"
+      },
+      {
+        "ruta": "docs/secciones/004-03-3-eucariogenesis.md",
+        "linea": 537,
+        "texto": "Los modelos de esta parte no forman una única lista de alternativas equivalentes porque algunos explican metabolismo, otros geometría, otros origen nuclear y otro homología de maquinaria. [C-427; n/a; matriz de compatibilidad de esta parte]"
+      },
+      {
+        "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+        "linea": 3,
+        "texto": "Recursos y convenciones operativas de esta sección: [C-684–C-689]"
+      },
+      {
+        "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+        "linea": 5,
+        "texto": "- La clasificación de Adl et al. 2019 normaliza los nombres y circunscripciones de las tablas nodales. [C-684; S01 clasificación]"
+      },
+      {
+        "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+        "linea": 475,
+        "texto": "El muestreo de ambos árboles temporales incluye Nutomonas longa. [C-2816; S126 Supporting information, S1 Data, p. 21, terminal Nutomonas longa; requiere inspección humana] Adl et al. incluyen Nutomonas en Ancyromonadida. [C-2814; S01 §Ancyromonadida, Table 2, lista de géneros] Los intervalos [8.0305,12.3765] y [8.0734,12.4308], en unidades de 100 millones de años antes del presente, corresponden al nodo Pygsuia–Nutomonas. [C-558; C-559; S126 Supporting information, S1 Data, p. 21, árboles izquierdo y derecho, bifurcación Pygsuia biforma–Nutomonas longa; requiere inspección humana] La inspección de ese suplemento no localizó una edad de corona de Breviatea con muestreo interno. [C-2815; BN-557 términos, ámbito y resultado]"
+      },
+      {
+        "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+        "linea": 477,
+        "texto": "Para Obazoa se conserva la denominación de Table 2 y su intervalo literal, con la advertencia anterior sobre la composición del muestreo. [C-541; C-2816; S126 Results, A timescale for Opisthokonta diversification, Table 2; Supporting information, S1 Data, p. 21; requiere inspección humana] La raíz del árbol temporal se registra como raíz del muestreo de S126; la estimación de Amorphea de S548 permanece separada. [C-525; C-526; C-791; S126 Supporting information, S1 Data, p. 21; requiere inspección humana; S548 resultados, resumen nodal de Amorphea]"
+      },
+      {
+        "ruta": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
+        "linea": 5,
+        "texto": "«Acritarco» designa una categoría artificial de microfósiles orgánicos de afinidad biológica incierta y no un clado. [C-694; S152 §2]"
+      },
+      {
+        "ruta": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
+        "linea": 7,
+        "texto": "La ornamentación compleja, los procesos huecos, las aberturas de excistamiento y una pared multicapa aumentan la probabilidad de afinidad eucariota, pero ningún carácter aislado es universalmente diagnóstico. [C-695; S151 resultados; S152 §2]"
+      },
+      {
+        "ruta": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
+        "linea": 157,
+        "texto": "Cada fila de la tabla distingue el material observado de su adjudicación al nodo y de la incertidumbre corona–tallo. Cuando la fuente canónica no nombra un contradictor, una formación o un procedimiento de datación, ese campo permanece no localizado; no se convierte la ausencia de un oponente nominal en consenso. [C-700–C-756; BN-116]"
+      },
+      {
+        "ruta": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
+        "linea": 159,
+        "texto": "El censo termina exactamente en Metazoa, que es el extremo solicitado del corredor Eukaryota → Holozoa → Metazoa. No se añaden nodos descendientes de Metazoa ni se prolonga la narración paleontológica más allá de ese límite. [C-1955]"
+      },
+      {
+        "ruta": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
+        "linea": 5,
+        "texto": "Douzery y colaboradores estimaron que las principales divergencias eucariotas consideradas en su estudio ocurrieron entre 950 y 1259 Ma. [C-757; S142 resumen]"
+      },
+      {
+        "ruta": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
+        "linea": 7,
+        "texto": "Douzery y colaboradores estimaron la divergencia entre animales y coanoflagelados entre 761 y 957 Ma. [C-758; S142 resumen; tabla 1]"
+      },
+      {
+        "ruta": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
+        "linea": 71,
+        "texto": "La propuesta de conciliación entre fósiles jóvenes y relojes antiguos sostiene que buena parte del registro proterozoico temprano pertenece al grupo tronco y no al grupo corona. [C-784; S171 discusión; S178 §4]"
+      },
+      {
+        "ruta": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
+        "linea": 75,
+        "texto": "Los relojes recuperados para divergencias profundas no comparten un único muestreo, modelo ni juego de calibraciones. [C-760–C-766; S139 resultados y métodos; S140 métodos; S141 §Molecular clocks]"
+      },
+      {
+        "ruta": "docs/secciones/008-07-7-ambiente.md",
+        "linea": 5,
+        "texto": "La Gran Oxidación produjo una acumulación persistente de oxígeno atmosférico durante el Paleoproterozoico, aproximadamente entre 2.43 y 2.32 Ga según la síntesis de proxies recuperada. [C-793; S194 fig. 1 y texto principal]"
+      },
+      {
+        "ruta": "docs/secciones/008-07-7-ambiente.md",
+        "linea": 7,
+        "texto": "La excursión de Lomagundi–Jatuli se sitúa aproximadamente entre 2.22 y 2.06 Ga en la reconstrucción de Bekker y Holland. [C-794; S195 resumen]"
+      },
+      {
+        "ruta": "docs/secciones/008-07-7-ambiente.md",
+        "linea": 151,
+        "texto": "Tang y colaboradores cuantificaron ocurrencias y riqueza taxonómica de eucariotas proterozoicos en una base global. [C-835] Una ocurrencia paleontológica no se convierte en células por volumen de agua ni permite asignar densidad a comunidades del corredor. [C-835; S504 resumen; métodos; BN-098]"
+      },
+      {
+        "ruta": "docs/secciones/008-07-7-ambiente.md",
+        "linea": 153,
+        "texto": "Arroyo y colaboradores cartografiaron secuencias holozoas por estaciones, provincias y profundidad de Tara Oceans. [C-836] La distribución de marcadores no mide por sí sola distancia o tasa de dispersión y no establece una escala común a las poblaciones microbianas del corredor. [C-836; S505 resultados; fig. 5; BN-099]"
+      },
+      {
+        "ruta": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "linea": 5,
+        "texto": "Los coanoflagelados generan corrientes con el flagelo y capturan bacterias en un collar de microvellosidades. [C-851; S200 introducción; S147 introducción]"
+      },
+      {
+        "ruta": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "linea": 7,
+        "texto": "Monosiga brevicollis es un coanoflagelado unicelular bacterívoro cuyo genoma contiene aproximadamente 9.200 genes ricos en intrones. [C-852; S147 resumen]"
+      },
+      {
+        "ruta": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "linea": 242,
+        "texto": "*Ichthyophonus*, *Abeoforma*, *Pirum*, *Entamoeba*, *Pelomyxa* y *Mastigamoeba* no constituyen una categoría ecológica única: incluyen patógenos, aislados de relación incierta con invertebrados, fagótrofos parasíticos y amebas anaerobias libres o endosimbióticas. [C-969; C-934–C-936; C-952, C-954–C-955; S468–S471; S475]"
+      },
+      {
+        "ruta": "docs/secciones/009-08-8-ecologia-y-trofismo.md",
+        "linea": 244,
+        "texto": "Opisthokonta contiene coanoflagelados bacterívoros, holozoos depredadores de eucariotas, asociaciones mutualistas externas y holomicetos parásitos en ramas distintas. [C-971] La observación de esa diversidad no reconstruye por sí sola los estados ancestrales. [C-971; S200 introducción; S129 resumen; S210 resumen; S214 discusión]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 5,
+        "texto": "Una endosimbiosis se define por la localización de un organismo dentro de otro y no por que la interacción sea beneficiosa para ambos. [C-972; S230 tesis general; S240 introducción; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 7,
+        "texto": "Simbiosis incluye mutualismo, comensalismo y parasitismo en su uso biológico amplio. [C-973; S230 tesis general; S267 introducción; expresa]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 579,
+        "texto": "En modelos metabólicos de tres simbiosis de insectos xilófagos, simbiontes de ≤0,3 Mb reciclaron aproximadamente 30–80% del N derivado del hospedador, frente a 10–15% para simbiontes de ≥0,6 Mb. [C-1205] Son resultados de asociaciones y modelos concretos, no una medida neta común a todas las asociaciones. [C-1204–C-1205; S515 resumen; resultados; figs. 6–7; BN-046]"
+      },
+      {
+        "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+        "linea": 581,
+        "texto": "Grau-Bové y colaboradores estimaron aproximadamente 5–9% de elementos transponibles en *Salpingoeca*, *Sphaeroforma*, *Abeoforma* y *Pirum*, frente a menos de 2,5% en otros holozoos de su comparación. [C-1222] Los porcentajes dependen de especie, anotación y continuidad del ensamblaje y no forman una medición homogénea para todo el corredor. [C-1222; S434 resultados; suplemento; BN-048]"
+      },
+      {
+        "ruta": "docs/secciones/011-10-10-rasgos-con-costo.md",
+        "linea": 5,
+        "texto": "Un coste absoluto de un rasgo puede expresarse como ATP equivalente invertido en su construcción u operación. [C-1223; S307 pp. 82–83]"
+      },
+      {
+        "ruta": "docs/secciones/011-10-10-rasgos-con-costo.md",
+        "linea": 7,
+        "texto": "Un coste relativo divide el coste absoluto del rasgo por el presupuesto energético celular usado como denominador. [C-1224; S307 pp. 83, 95]"
+      },
+      {
+        "ruta": "docs/secciones/011-10-10-rasgos-con-costo.md",
+        "linea": 305,
+        "texto": "No se localizó una reconstrucción cuantitativa del presupuesto energético de FECA o LECA que descomponga todos los rasgos pedidos. [C-1356; BN-058]"
+      },
+      {
+        "ruta": "docs/secciones/011-10-10-rasgos-con-costo.md",
+        "linea": 307,
+        "texto": "La discrepancia energética combina datos incompletos, extrapolación a ancestros no observados y elecciones distintas de denominador. [C-1357; S308, S309, S310, S311, S312, S313, S314, S315, S316, S317, S318; S344]"
+      },
+      {
+        "ruta": "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md",
+        "linea": 7,
+        "texto": "La recombinación genética puede ocurrir sin meiosis y sin fusión entre individuos. [C-1360; S357 §Definitions; S360 introducción]"
+      },
+      {
+        "ruta": "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md",
+        "linea": 9,
+        "texto": "La meiosis es un programa de división y recombinación que reduce la ploidía, pero no equivale por sí sola al ciclo sexual completo. [C-1361; S357 §Meiosis; S358 introducción]"
+      },
+      {
+        "ruta": "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md",
+        "linea": 283,
+        "texto": "La presencia de sexo en un linaje no implica que sea frecuente, obligado o dominante en su ciclo vital. [C-1468; S78; S357; S367; S370]"
+      },
+      {
+        "ruta": "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md",
+        "linea": 285,
+        "texto": "Meiosis, sexo y recombinación deben codificarse como rasgos separados en el corpus. [C-1469; S357; S360]"
+      },
+      {
+        "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+        "linea": 7,
+        "texto": "La multicelularidad clonal se forma mediante divisiones celulares sucesivas sin separación completa de las células hijas. [C-1482; S134 §Routes to multicellularity; S443 §Clonal development]"
+      },
+      {
+        "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+        "linea": 9,
+        "texto": "La multicelularidad agregativa se forma cuando células que crecieron de manera independiente se adhieren y organizan en un colectivo. [C-1483; S206 resultados; S134 §Routes to multicellularity]"
+      },
+      {
+        "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+        "linea": 309,
+        "texto": "El inventario operacional de Lamża contabilizó 23 instancias por no separación tras división, 9 por compartimentación de un plasmodio y 12 agregativas, más una por gemación endógena. [C-1606] La correspondencia entre compartimentación plasmodial y la vía cenocítica del corpus es un mapeo editorial, y las cifras no constituyen una partición universal de las tres rutas. [C-1606; S458 tablas 1–2; limitaciones]"
+      },
+      {
+        "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+        "linea": 311,
+        "texto": "La evidencia experimental muestra que multicelularidad simple puede evolucionar con rapidez bajo selección intensa, mientras que la historia natural del corredor abarca divergencias profundas no reproducidas por esos ensayos. [C-1607; S432; S433; S134 discusión]"
+      },
+      {
+        "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "linea": 5,
+        "texto": "La rapidez relativa solo puede compararse tras especificar inicio, final, unidad y nivel biológico; un recuento de orígenes depende además de la definición del rasgo, la topología, el muestreo y la unidad contada. [C-1646; C-1666] Sin esos componentes, «rápido», «lento», «una vez» y «muchas veces» no son magnitudes comparables. [C-1646; C-1666; S79 Methods; S458 métodos]"
+      },
+      {
+        "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "linea": 7,
+        "texto": "En esta sección se conserva la unidad original. Una duplicación de población no se trata como división nuclear; una tasa por genoma no se mezcla con una tasa por sitio; una divergencia de dos simbiontes no se presenta como fecha de inicio de la asociación. [C-1620; C-1627; C-1639]"
+      },
+      {
+        "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "linea": 182,
+        "texto": "No se localizó una partición universal y exhaustiva de orígenes multicelulares para las tres rutas de este corpus ni una frecuencia pan-eucariota de parasitismo intracelular o simbiosis obligada; los recuentos de animales e insectos conservan denominadores restringidos. [C-1606; C-1662; C-1664; S458; BN-113; S517; S513]"
+      },
+      {
+        "ruta": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
+        "linea": 184,
+        "texto": "Estos huecos no se rellenan con promedios de estudios heterogéneos: la ausencia de un denominador común es parte del resultado. [C-1630; C-1642; C-1666]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 5,
+        "texto": "Un nombre nomenclaturalmente disponible o válidamente publicado cumple los requisitos del código que le resulta aplicable. [C-1680; S378 arts. 10–11; S379 Principios y reglas de publicación; S380 reglas de publicación]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 7,
+        "texto": "La disponibilidad o publicación válida de un nombre no establece que el taxón correspondiente sea monofilético. [C-1681; S378 Preámbulo; S379 Preámbulo; S380 Principios]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 586,
+        "texto": "Los códigos no los asignan universalmente a un único régimen; la aplicación depende de la historia del nombre concreto. [C-1897; S482 FAQ]"
+      },
+      {
+        "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+        "linea": 588,
+        "texto": "La auditoría de tipos, protólogos, combinaciones y prioridad de cada género o especie se conserva como exclusión explícita de alcance y no como hueco científico del corpus. [C-1895; alcance de la sección 14]"
+      },
+      {
+        "ruta": "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md",
+        "linea": 7,
+        "texto": "Los relojes moleculares estiman intervalos de divergencia condicionados por la topología, el modelo de tasas y las calibraciones. [C-1898; S139 resultados; S140 métodos; S141 §Molecular clocks; S142 métodos]"
+      },
+      {
+        "ruta": "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md",
+        "linea": 9,
+        "texto": "Un intervalo de reloj no es una observación directa de la divergencia. [C-1899; S141 §Molecular clocks]"
+      },
+      {
+        "ruta": "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md",
+        "linea": 177,
+        "texto": "BN-142 no localizó autor y fecha inequívocos para cada término de la tabla 58 y mantiene separados `NO BUSCADO` y `NO APLICA`. [C-1994; BN-142]"
+      },
+      {
+        "ruta": "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md",
+        "linea": 179,
+        "texto": "Al retirar negaciones universales, el registro conserva cuatro observaciones positivas acotadas: heterogeneidad de formas y locomoción en Amoebozoa muestreados, recuperación filogenómica de Obazoa, diversidad de estados flagelados y filopodiales en holozoos muestreados, y paredes o estadios multinucleados revisados en Ichthyosporea. [C-529; C-537; C-578; C-586; S112 Results y fig. 3; S111 resumen, Results y fig. 2; S130 Results y fig. 1; S133 §§Diversity y Life cycles]"
+      },
+      {
+        "ruta": "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md",
+        "linea": 5,
+        "texto": "La vista final referencia cada C citada por estas respuestas, conserva su proposición y huella canónica y no crea copias del registro. [C-1972]"
+      }
+    ]
+  }
+}

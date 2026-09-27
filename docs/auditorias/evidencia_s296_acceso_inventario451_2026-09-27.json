@@ -1,0 +1,530 @@
+{
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "autor_integracion": "/root",
+  "rama": "codex/cierre-plan-pendiente",
+  "S296": {
+    "A": {
+      "clave": "S296",
+      "autores": "Koutsovoulos et al.",
+      "año": "2016",
+      "título": "No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini",
+      "publicación o repositorio": "PNAS 113:5053–5058",
+      "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.1600338113",
+      "tipo": "investigación primaria",
+      "notas de calidad": "Reensamblaje y controles que atribuyeron gran parte de la señal a contaminación. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+      "fecha de consulta": "2026-08-08"
+    },
+    "huella_A_sha256": "879a622897b282bcaa2eef6a899622dad1020769fd133f5ec68c790a110b7e25",
+    "preprint_conservado": {
+      "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of th.pdf",
+      "sha256": "1b6271c98a3515b26f8b8be56b2a3567d611253c17274df35861127bad2d54fe",
+      "bytes": 14493111,
+      "formato": "PDF36p",
+      "doi_observado": "10.1101/033464",
+      "version_observada": "version009;2015-12-01",
+      "titulo_observado": "The genome of the tardigrade Hypsibius dujardini",
+      "localizador": "PDFpágina1 y pdfinfo",
+      "dictamen": "NO_COINCIDE con publicación PNAS2016 de A; NO_CONFORME si se presenta como esa versión."
+    },
+    "publicado": {
+      "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+      "sha256": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+      "bytes": 199521,
+      "formato": "HTML íntegro PMC4983863; no PDF ni JATS",
+      "identidad": "10autores; DOI10.1073/pnas.1600338113; PNAS113(18):5053–5058; online2016-03-24/print2016-05-03",
+      "localizador": "meta citation_* y article; apartados Results y Methods",
+      "article_caracteres_normalizados": 44874,
+      "article_sha256_normalizado": "41e5cb30a1de75d09d143c43b971abc4eaef9bd61bb04db72db8219fb6a25b5e",
+      "dictamen": "CONFORME identidad y acceso material; no apoyo científico"
+    },
+    "crossref": {
+      "artefacto": {
+        "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S296-crossref.json",
+        "sha256": "f69ae8004223f908a7b0fbc1b4ac00857bde2b7f7b75d5dcfc25295dd4e85b05",
+        "bytes": 29657
+      },
+      "campos": {
+        "DOI": "10.1073/pnas.1600338113",
+        "title": [
+          "No evidence for extensive horizontal gene transfer in the genome of the tardigrade\n                    <i>Hypsibius dujardini</i>"
+        ],
+        "author": [
+          {
+            "given": "Georgios",
+            "family": "Koutsovoulos",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5902-6641",
+            "authenticated-orcid": false,
+            "given": "Sujai",
+            "family": "Kumar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dominik R.",
+            "family": "Laetsch",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              },
+              {
+                "name": "The James Hutton Institute, Dundee DD2 5DA, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lewis",
+            "family": "Stevens",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jennifer",
+            "family": "Daub",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Claire",
+            "family": "Conlon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Habib",
+            "family": "Maroon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fran",
+            "family": "Thomas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Aziz A.",
+            "family": "Aboobaker",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Zoology, University of Oxford, Oxford OX1 3PS, United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2861-949X",
+            "authenticated-orcid": false,
+            "given": "Mark",
+            "family": "Blaxter",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Evolutionary Biology, University of Edinburgh, Edinburgh EH9 3FL, United Kingdom;"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              3,
+              24
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2016,
+              3,
+              24
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              3
+            ]
+          ]
+        },
+        "volume": "113",
+        "issue": "18",
+        "page": "5053-5058",
+        "relation": {
+          "has-preprint": [
+            {
+              "id-type": "doi",
+              "id": "10.1101/033464",
+              "asserted-by": "object"
+            }
+          ],
+          "has-review": [
+            {
+              "id-type": "doi",
+              "id": "10.3410/f.726259934.793517203",
+              "asserted-by": "object"
+            }
+          ]
+        },
+        "update-to": null,
+        "updated-by": null
+      }
+    },
+    "epmc": {
+      "artefacto": {
+        "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S296-epmc.json",
+        "sha256": "b7e44eed92abbb6467da171e9bbe1ce2874f2831fe6a80012d619384984da5c9",
+        "bytes": 9233
+      },
+      "registros": [
+        {
+          "id": "27035985",
+          "pmcid": "PMC4983863",
+          "doi": "10.1073/pnas.1600338113",
+          "title": "No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini.",
+          "authorString": "Koutsovoulos G, Kumar S, Laetsch DR, Stevens L, Daub J, Conlon C, Maroon H, Thomas F, Aboobaker AA, Blaxter M.",
+          "pubTypeList": {
+            "pubType": [
+              "Comment",
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "source": "MED",
+                "id": "27084885",
+                "reference": "Proc Natl Acad Sci U S A. 2016 May 3;113(18):4892-4. doi: 10.1073/pnas.1603862113",
+                "type": "Comment in",
+                "orderIn": 1
+              },
+              {
+                "source": "MED",
+                "id": "27084885",
+                "reference": "Proc Natl Acad Sci U S A. 2016 May 3;113(18):4892-4. doi: 10.1073/pnas.1603862113",
+                "type": "Comment on",
+                "orderIn": 2
+              },
+              {
+                "source": "MED",
+                "id": "27173901",
+                "reference": "Proc Natl Acad Sci U S A. 2016 May 31;113(22):E3057. doi: 10.1073/pnas.1602711113",
+                "type": "Comment in",
+                "orderIn": 3
+              },
+              {
+                "source": "MED",
+                "id": "27173902",
+                "reference": "Proc Natl Acad Sci U S A. 2016 May 31;113(22):E3054-6. doi: 10.1073/pnas.1525116113",
+                "type": "Comment in",
+                "orderIn": 4
+              },
+              {
+                "source": "PPR",
+                "id": "PPR30870",
+                "type": "Preprint in",
+                "note": "CrossRef Pre-print loader",
+                "orderIn": 10002
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "intento_recuperacion_independiente": {
+      "ruta": "/tmp/revision-fuentes-recientes-20260927.86d6S8/S296-current.html",
+      "sha256": "7d46bde015925d503f9f6d94262efe8d4e4c66227b06bfb5bc0dd25411c335a5",
+      "bytes": 21207,
+      "resultado": "Desafío HTML; no article ni citation_*. No es una segunda copia del artículo y no se usa como prueba de igualdad."
+    }
+  },
+  "integracion": {
+    "registro_autor": {
+      "ruta": "/home/santi/code/corredor-eukaryota-holozoa/docs/auditorias/integracion_s296_version_final_2026-09-27.json",
+      "sha256": "1fb726e409c676576b023e8194a99214475b94174d2da5bbf4eb7d5d369f9f11",
+      "bytes": 2025
+    },
+    "inventario_final": {
+      "cantidad": 451,
+      "sha256": "62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc"
+    },
+    "reconstruido_previo": {
+      "cantidad": 450,
+      "sha256": "170c7d69a86dbc8361aed5214e5e2c1452b5fee54c382b4cfb3cd61f02960647"
+    },
+    "resultado": "CONFORME451→450; solo añadeHTML, no sobrescribePDFniotros449archivos."
+  },
+  "acceso": {
+    "artefacto": {
+      "ruta": "/home/santi/code/corredor-eukaryota-holozoa/exports/acceso_fuentes.csv",
+      "sha256": "c606c05fcf78825d714e6846d0d82195920e0df78ee01a48d212b331fbf9cb5c",
+      "bytes": 156487
+    },
+    "registro_autor": {
+      "ruta": "/home/santi/code/corredor-eukaryota-holozoa/docs/auditorias/actualizacion_acceso_s296_s512_s562_2026-09-27.json",
+      "sha256": "bc8baf225b81e3f7f5d88fa9546ca79d1934f427b7c3379658c24cc0b36a0413",
+      "bytes": 4959
+    },
+    "sha_previo_reconstruido": "21486323ae08016a0dac71ba0fdb7e0a8bafd8e2a6bcba656919a233ab364b35",
+    "sha_previo_declarado": "21486323ae08016a0dac71ba0fdb7e0a8bafd8e2a6bcba656919a233ab364b35",
+    "reconstruccion_exacta": true,
+    "filas": 527,
+    "claves_unicas": 527,
+    "obtenidas": 288,
+    "cuenta_resultados": {
+      "ya estaba": 277,
+      "recurso web": 7,
+      "sin url": 2,
+      "cerrada": 118,
+      "rechazado": 33,
+      "error": 79,
+      "descargado": 11
+    },
+    "LF_sin_CR": true,
+    "errores_recuentos": [
+      {
+        "clave": "S290",
+        "export": [
+          "7",
+          "6"
+        ],
+        "vivo": [
+          8,
+          7
+        ]
+      }
+    ],
+    "filas_nominales": [
+      {
+        "fila": {
+          "clave": "S296",
+          "año": "2016",
+          "título": "No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini",
+          "doi": "10.1073/pnas.1600338113",
+          "acceso": "bronze",
+          "vía": "PMC; HTML íntegro",
+          "url_pdf": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4983863/",
+          "fichero": "S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+          "resultado": "descargado",
+          "detalle": "Texto completo cotejado por autor; revisión editorial independiente en curso. HTML completo; no es PDF ni JATS. El PDF anterior corresponde a preprint2015, no a la versión PNAS2016; se conserva sin sobrescribir.",
+          "sha256": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+          "obtenido_el": "2026-09-27",
+          "identidad": "coincide con versión editorial; cotejo de autor, revisión independiente pendiente",
+          "afirmaciones_que_la_citan": "5",
+          "de_las_cuales_fuente_unica": "1"
+        },
+        "artefacto": {
+          "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+          "sha256": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+          "bytes": 199521
+        },
+        "resultado": "CONFORME correspondencia documental y SHA; no apoyo científico"
+      },
+      {
+        "fila": {
+          "clave": "S512",
+          "año": "2026",
+          "título": "Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales",
+          "doi": "10.1016/j.ympev.2026.108532",
+          "acceso": "gold",
+          "vía": "repositorio KIT; PDF editorial",
+          "url_pdf": "https://publikationen.bibliothek.kit.edu/1000189992/173850597",
+          "fichero": "S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+          "resultado": "descargado",
+          "detalle": "Texto completo cotejado por autor; revisión editorial independiente en curso. PDF editorial de 10 páginas.",
+          "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+          "obtenido_el": "2026-09-27",
+          "identidad": "coincide con versión editorial; cotejo de autor, revisión independiente pendiente",
+          "afirmaciones_que_la_citan": "4",
+          "de_las_cuales_fuente_unica": "4"
+        },
+        "artefacto": {
+          "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+          "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+          "bytes": 8102337
+        },
+        "resultado": "CONFORME correspondencia documental y SHA; no apoyo científico"
+      },
+      {
+        "fila": {
+          "clave": "S560",
+          "año": "2014",
+          "título": "Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite",
+          "doi": "10.1371/journal.pone.0110685",
+          "acceso": "gold",
+          "vía": "Europe PMC",
+          "url_pdf": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4198247/fullTextXML",
+          "fichero": "S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+          "resultado": "descargado",
+          "detalle": "JATS PMC4198247.1 y metadatos cotejados con la página editorial; integración y revisión científica del parche pendientes de cotejo independiente",
+          "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+          "obtenido_el": "2026-09-26",
+          "identidad": "coincide DOI título y autores del JATS y del editor",
+          "afirmaciones_que_la_citan": "2",
+          "de_las_cuales_fuente_unica": "2"
+        },
+        "artefacto": {
+          "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+          "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+          "bytes": 129891
+        },
+        "resultado": "CONFORME correspondencia documental y SHA; no apoyo científico"
+      },
+      {
+        "fila": {
+          "clave": "S561",
+          "año": "2019",
+          "título": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+          "doi": "10.7554/eLife.45017",
+          "acceso": "gold",
+          "vía": "Europe PMC",
+          "url_pdf": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6629376/fullTextXML",
+          "fichero": "S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+          "resultado": "descargado",
+          "detalle": "JATS PMC6629376.1 completo; identidad cotejada con título, siete autores y DOI. Revisión independiente de integración y estado editorial pendientes.",
+          "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+          "obtenido_el": "2026-09-27",
+          "identidad": "coincide título autores y DOI",
+          "afirmaciones_que_la_citan": "7",
+          "de_las_cuales_fuente_unica": "5"
+        },
+        "artefacto": {
+          "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+          "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+          "bytes": 564211
+        },
+        "resultado": "CONFORME correspondencia documental y SHA; no apoyo científico"
+      },
+      {
+        "fila": {
+          "clave": "S562",
+          "año": "2005",
+          "título": "Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects",
+          "doi": "10.1101/gr.3771305",
+          "acceso": "bronze",
+          "vía": "PMC; HTML íntegro",
+          "url_pdf": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1182215/",
+          "fichero": "S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+          "resultado": "descargado",
+          "detalle": "Texto completo cotejado por autor; revisión editorial independiente en curso. HTML completo; no es PDF ni JATS.",
+          "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+          "obtenido_el": "2026-09-27",
+          "identidad": "coincide con versión editorial; cotejo de autor, revisión independiente pendiente",
+          "afirmaciones_que_la_citan": "3",
+          "de_las_cuales_fuente_unica": "3"
+        },
+        "artefacto": {
+          "ruta": "/home/santi/code/corredor-eukaryota-holozoa/fuentes/S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+          "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+          "bytes": 231528
+        },
+        "resultado": "CONFORME correspondencia documental y SHA; no apoyo científico"
+      }
+    ]
+  },
+  "fecha_revision_utc": "2026-09-27T01:31:05Z",
+  "observaciones_temporales": {
+    "cotejo_2026_09_27_012648Z": "CSVc606c05f…b5c coincidía con todos los recuentos C en ese instante; 527filas/288obtenidas, cero diferencias.",
+    "cotejo_actual": "Posteriormente cambió el corpus C; el mismo CSV conserva S290=7/6 y el vivo8/7. Esta discrepancia se mantiene como NO_CONFORME de vigencia de recuentos, no de identidad bibliográfica del lote."
+  },
+  "limites": "No se aprueban 527fuentes ni apoyo científico. La relación has-preprint y comentarios de S296 no son corrigenda; ausencia de update-to no prueba ausencia universal. La recuperación propia de PMC respondió desafío y no se afirma igualdad con ella. Las cifras de acceso son estados de obtención, no disponibilidad jurídica universal."
+}

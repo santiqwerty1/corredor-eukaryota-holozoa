@@ -376,7 +376,9 @@ La dependencia puede mantenerse a nivel funcional aunque cambie la identidad tax
 
 La reducción genómica puede convertir una asociación contingente en dependencia porque elimina alternativas metabólicas del simbionte. [C-1119; S230 revisión; S260 resultados; S265 resultados; expresa]
 
-En más de 200 genomas de Enterobacterales, Forni y colaboradores reconstruyeron un pico de pérdida génica al iniciarse la endosimbiosis seguido por erosión más lenta y continua. [C-1088] Es una trayectoria comparativa del orden, no una tasa universal en genes por millón de años. [C-1088; C-1120; S512 resumen; resultados; BN-043]
+En más de 200 genomas de Enterobacterales, Forni y colaboradores reconstruyeron un pico de pérdida génica al iniciarse la endosimbiosis seguido por erosión más lenta y continua. [C-1088] El eje comparativo cuenta ramas anteriores y posteriores a la transición, no años. [C-1088; S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species; Discussion] Las tasas DTL representan probabilidades no normalizadas por rama de duplicación, transferencia o pérdida; no son genes por millón de años. [C-1120; S512 Methods, Inference of gene families duplication, transfer, and loss] La mediana del parámetro de pérdida es 0,592 ± 0,21 en las ramas de establecimiento y 0,185 ± 0,123 en las tres ramas anteriores y posteriores; el ± expresa desviación estándar. [C-2836–C-2837; S512 Results, mismo apartado, pp. 2–3]
+
+La pareja número–tiempo se documenta separadamente en Blochmannia: Degnan, Lazarus y Wernegreen estimaron 25 ORF perdidos o inactivados en B. floridanus y 4 en B. pennsylvanicus durante los 16–20 millones de años desde su divergencia. [C-2833–C-2834] Son reconstrucciones bajo un supuesto de repertorio ancestral, no recuentos exclusivamente de ADN eliminado ni un seguimiento experimental. [C-2833–C-2834; S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia] Los autores advierten que los datos no sitúan los puntos de aceleración o pérdida de cada gen en el linaje de B. floridanus: esos recuentos acumulados no dibujan una curva temporal continua. [C-2835; S562 Discussion, penúltimo párrafo]
 
 En 1.850 simbiosis distribuidas en 402 familias de insectos, la baja disponibilidad de vitaminas B fue el único componente nutricional consistentemente asociado con simbiosis obligada entre nichos. [C-1121] Es un correlato de ese muestreo, no una condición suficiente y necesaria para cualquier asociación. [C-1121; C-1201; S513 resumen; resultados nutricionales; BN-044]
 
@@ -476,11 +478,19 @@ CoRR, hidrofobicidad y código divergente no son mutuamente excluyentes. [C-1161
 
 La transferencia endosimbiótica movió numerosos genes mitocondriales ancestrales hacia cromosomas nucleares. [C-1162; S282 tesis general; expresa]
 
-No se puede dar un único número de genes transferidos desde la protomitocondria porque pérdidas, duplicaciones y transferencias posteriores borraron parte de la señal. [C-1163; S282 revisión; expresa]
+Wang y Wu identificaron computacionalmente 4.459 genes nucleares de origen mitocondrial inferido en una muestra de 427.186 genes de 30 genomas eucariotas. [C-1163; S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo; Materials and Methods, Identification of mitochondria-derived nuclear genes]
+
+El mismo análisis agrupó los genes clasificados como de origen mitocondrial en 394 familias, conservando como familias distintas los parálogos separados por su procedimiento. [C-2824; S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo; Materials and Methods, Identification of mitochondria-derived nuclear genes, segundo párrafo]
+
+Estas cifras tienen unidades distintas: genes del muestreo y familias inferidas, no episodios ancestrales de transferencia ni un inventario exhaustivo de LECA. [C-1163; C-2824; glosa de alcance y unidades; S560 Results and Discussion, Identifying mitochondria-derived nuclear genes; Materials and Methods, Identification of mitochondria-derived nuclear genes]
 
 Proteínas nucleares destinadas a mitocondria atraviesan complejos de importación de membrana externa e interna, incluidos TOM y TIM. [C-1164; S283 revisión; expresa]
 
 La importación proteica permite que un gen transferido al núcleo siga sosteniendo una función mitocondrial. [C-1165; S282; S283; sintesis(C-1162, C-1164)]
+
+Timmis et al. proponen que la importación de proteínas tuvo que evolucionar antes de que pudiera comenzar la reducción del genoma organelar. [C-2823; S282 §Endosymbiotic gene transfer: bigger questions, p. impresa 133, página 11 del PDF, columna derecha, último párrafo; formulación condicional transcrita en el registro]
+
+Esta es la secuencia del escenario atribuido, no una cronología observada de todos los episodios de transferencia ni una declaración de consenso. [C-2823; glosa de modalidad; S282 §Endosymbiotic gene transfer: bigger questions, p. impresa 133]
 
 Un gen mitocondrial egoísta puede aumentar dentro de la célula aunque reduzca la respiración del hospedador. [C-1166; S284 resultados; S285 resultados; expresa]
 
@@ -536,13 +546,31 @@ Fagotrofia, endosimbiosis, vectores virales, elementos móviles y etapas celular
 
 Ku y Martin analizaron 30.358 secuencias eucariotas frente a 1.035.375 homólogos procariotas en 2.585 árboles génicos. [C-1184; S290 resumen y métodos; expresa]
 
-La regla del 70 % de Ku y Martin trata identidades procariota-eucariota superiores a 70 % como señal probable de contaminación o error en muchos ensamblajes. [C-1185; S290 título y resultados; expresa]
+Ku y Martin propusieron la regla del 70 %: una identidad aminoacídica procariota-eucariota de al menos 70 % señala posibles contaminaciones, con excepciones de origen endosimbiótico en su muestra. [C-1185; S290 discusión, The 70 % rule (JATS Sec5); resultados, Deep differences between prokaryotes and eukaryotes (Sec3); expresa]
 
-Ku y Martin defendieron una barrera natural que hace rara la transferencia continua desde procariotas hacia eucariotas. [C-1186; S290 discusión; expresa]
+Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas. [C-1186; S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); expresa] También consideraron las adquisiciones evolutivamente recientes demasiado raras para tener amplia importancia evolutiva. [C-2838; S290 conclusión (Conclusion), JATS Sec8; expresa]
 
-Van Etten y Bhattacharya sostuvieron que la cuestión principal es cuánto HGT eucariota existe y no si existe. [C-1187; S291 título y discusión; expresa]
+Van Etten y Bhattacharya defendieron que la HGT tiene un papel pequeño pero significativo en la evolución de los eucariotas microbianos. [C-1187; S291 resumen (Abstract), oración final; Highlights, primer punto; expresa]
 
-La atribución de origen bacteriano a un gen eucariota requiere filogenia, contexto genómico, cobertura, composición y exclusión de contaminación. [C-1188; S290 métodos; S291 discusión; expresa]
+Rossoni y colaboradores atribuyeron candidatos a HGT en Cyanidiales mediante filogenias con homólogos procariotas, filtros para distinguir transferencia endosimbiótica y comprobación del contexto genómico con lecturas largas. [C-1188; S561 Materials and methods, Orthogroups and phylogenetic analysis (JATS s4-5) y Detection of HGTs (s4-6); Results, Gene co-localization on raw sequence reads (s2-4); expresa]
+
+Ku y Martin publicaron que los clados procariotas de alta identidad con más de un taxón representaban entre 3,1 % y 5,1 % de todos los clados de los grupos comparados. [C-2825; S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9); expresa]
+
+En el análisis de Ku y Martin, los clados eucariotas de alta identidad con más de un taxón representaban menos del 1,0 % de todos los clados eucariotas analizados. [C-2826; S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3); expresa]
+
+Al retirar los clados de origen plastidial, Ku y Martin publicaron un 0,3 % de clados eucariotas de alta identidad con más de un taxón entre los clados restantes. [C-2827; S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3); expresa]
+
+Rossoni y colaboradores clasificaron como candidatos a HGT 96 de los 9075 grupos de ortólogos de sus 13 genomas de Cyanidiales, el 1,06 % publicado. [C-2828; S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6); Results, Orthogroups and phylogeny (s2-2); expresa]
+
+Rossoni y colaboradores identificaron 641 secuencias individuales de Cyanidiales como candidatas a HGT. [C-2829; S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6); expresa]
+
+En el control de lecturas largas de Rossoni y colaboradores, 629 de los 641 candidatos a HGT, el 98,12 % publicado, colocalizaron con genes nativos de alga roja en una misma lectura. [C-2830; S561 Results, Gene co-localization on raw sequence reads (JATS s2-4); expresa]
+
+Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado. [C-2831; S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento; expresa]
+
+Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas. [C-2832] Como cautela de ese estimador, sus Highlights piden contrastarlo con más datos y un procedimiento estandarizado. [C-2832; S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers); expresa]
+
+Los porcentajes de clados HIC, grupos de ortólogos y genes tienen denominadores diferentes: se presentan como resultados de cada posición, sin convertirlos en una tasa común. [C-2825; C-2826; C-2827; C-2828; C-2832] El control de lecturas largas cubre un subconjunto de candidatos, y las excepciones al umbral de identidad son individuales, no promedios de grupo. [C-2830; C-2831]
 
 La hipótesis “eres lo que comes” propone un trinquete en el que genes de presas bacterianas sustituyen genes nucleares eucariotas. [C-1189; S292 resumen; expresa]
 
@@ -558,13 +586,13 @@ Monocercomonoides y Pygsuia muestran adquisiciones independientes de sistemas ba
 
 Boothby y colaboradores afirmaron que aproximadamente una sexta parte de los genes de un borrador de genoma de tardígrado procedía de HGT. [C-1195; S295 título, resumen y discusión; expresa]
 
-Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación. [C-1196; S296 título y resultados; expresa]
+Koutsovoulos y colaboradores no recuperaron evidencia de HGT extensa al reensamblar el genoma con controles de contaminación. [C-1196; S296 Results and Discussion, Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini; Conclusions (versión PNAS final, PMC4983863); expresa]
 
-El episodio de los tardígrados muestra que contaminación, binning y cobertura pueden simular transferencia horizontal masiva. [C-1197; S295; S296; sintesis(C-1195, C-1196)]
+El episodio de los tardígrados ejemplifica un falso positivo de HGT masiva debido a contaminación no detectada en los datos ensamblados. [C-1197; S295; S296; sintesis(C-1195, C-1196)]
 
-La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico. [C-1198; S291; S211; S296; sintesis(C-1188, C-1191, C-1192, C-1196)]
+La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico. [C-1198; S561; S211; S296; sintesis(C-1188, C-1191, C-1192, C-1196)]
 
-La controversia sobre HGT eucariota es en parte una disputa sobre denominador, filtros y unidad de recuento. [C-1199; S290; S291; sintesis(C-1184, C-1185, C-1186, C-1187, C-1188)]
+La controversia sobre HGT eucariota es en parte una disputa sobre denominador, filtros y unidad de recuento. [C-1199; S290; S291; S561; sintesis(C-1184, C-1185, C-1186, C-1187, C-1188)]
 
 ## 9.11. Qué no se sabe
 

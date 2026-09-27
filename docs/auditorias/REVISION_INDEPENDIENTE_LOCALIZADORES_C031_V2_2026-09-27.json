@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "dictamen": "CONFORME",
+  "alcance": "Únicamente los tres campos de localizador del delta exacto v2. No es dictamen de la totalidad científica de C-031/F ni de table-01.",
+  "revisor": "/root/inspeccion_relojes",
+  "autor_propuesta": "/root",
+  "independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "fecha_utc": "2026-09-27T03:08:16Z",
+  "propuesta": {
+    "ruta": "docs/auditorias/PROPUESTA_LOCALIZADORES_C031_F_TABLA_V2_2026-09-27.json",
+    "sha256": "f5a497ba982f247f4bb3e64310b55f45da5758214cefabc0b803232c4691f375",
+    "autor": "/root",
+    "fecha_utc": "2026-09-27T03:07:02Z"
+  },
+  "observacion_v1": {
+    "ruta": "docs/auditorias/PROPUESTA_LOCALIZADORES_C031_F_TABLA_2026-09-27.json",
+    "sha256": "99166dc75d74faf1c6f53bea8e85ea084d39fa400f59667681c6e58cdf5d3fad",
+    "motivo": "Revisor identificó encabezado padre nominal Results and Discussion; se conserva v1 y se rectifica el nombre literal sin cambiar resultado ni subapartado.",
+    "hash_verificado": true,
+    "observacion": "Se identificó que el padre literal es Results and Discussion. V1 abreviaba Results, pero el subapartado y P10 resolvían inequívocamente; no se inventa NO_CONFORME de soporte por esa abreviación. V2 fija el encabezado completo."
+  },
+  "lectura_primaria": {
+    "fuente": {
+      "fuente": "S10",
+      "ruta": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "sha256": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+      "doi": "10.1038/s41559-019-1040-x",
+      "localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+      "pasaje_id": "P10",
+      "pasaje_sha256": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87",
+      "normalizacion_pasaje": "join(itertext), espacios Unicode colapsados mediante split/join, UTF-8 y LF final",
+      "fragmento_original": "The 3D tree (AU = 0.036) could also be rejected at P < 0.05"
+    },
+    "sha256_archivo_verificado": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+    "encabezado_padre": "Results and Discussion",
+    "subapartado": "Analysis of core genes consistently supports two primary domains, not three",
+    "parrafo_directo": 5,
+    "id": "P10",
+    "sha256_pasaje": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87",
+    "cita_literal_exacta": true,
+    "pasaje": "The CAT+GTR+G4 model44,47 is an extension to the standard GTR model that allows compositions to vary across sites. Analysis of the 35-gene dataset using this model produced a 2D tree where eukaryotes group with Heimdallarchaeota and Lokiarchaeum with maximal support (Figure 1). It was previously reported22 that convergence in Bayesian analyses is a problem for this data set using the CAT+GTR+G422 model. In our analyses, we achieved good convergence between chains as assessed both by comparison of split frequencies and, for the continuous parameters of the model, means and effective sample sizes (Supplementary Table 4). As an additional check, we also carried out ML analyses using the LG+C60+G4+F model, which improves on the LG+G4+F model by modelling site-specific compositional heterogeneity using a mixture of 60 composition categories. This model fits the data much better than the LG+G4+F according to the BIC (Supplementary Table 3) and, like CAT+GTR+G4, it recovered a 2D tree with high bootstrap support (Supplementary Figure 1(c)). The 3D tree (AU = 0.036) could also be rejected at P < 0.05 using an AU test, based on the LG+C60+G4+F model and the 35-gene alignment.",
+    "table1": {
+      "texto": "Table 1Summed quartet distances between the supertrees produced by several methods and the set of 3199 input trees.All trees recover a clade of eukaryotes and Asgard archaea; in addition, the SPA and ASTRAL trees place eukaryotes within Asgard archaea, as the sister group to the Heimdallarchaeota.Supertree methodSummed quartet distanceAsgard-eukaryote relationshipSR200817287838Sister groupsMSC (ASTRAL)17213379Eukaryotes with Heimdallarchaeota (0.28 quadripartition support)SPA17195042Eukaryotes with Heimdallarchaeota (BPP 1.0t)",
+      "sha256": "52ff5977ead58ab1bc151c5eced3c9cc6df75d5a729b75345ef956b9de50d6fb"
+    },
+    "identidades_bibliograficas": [
+      {
+        "clave": "S09",
+        "autores": "Williams et al.",
+        "año": "2013",
+        "título": "An archaeal origin of eukaryotes supports only two primary domains of life",
+        "publicación o repositorio": "Nature",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nature12779",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Filogenómica que recupera Eukaryota dentro de Archaea; una de las fuentes centrales del árbol de dos dominios.",
+        "fecha de consulta": "2026-08-07"
+      },
+      {
+        "clave": "S10",
+        "autores": "Williams et al.",
+        "año": "2020",
+        "título": "Phylogenomics provides robust support for a two-domains tree of life",
+        "publicación o repositorio": "Nature Ecology & Evolution",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41559-019-1040-x",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Comparación cuantitativa de topologías y modelos; incluye pruebas AU, CAT-GTR y recodificación SR4. Publicado en línea en 2019 y asignado al volumen 4 de 2020; el campo de año conserva el año del volumen. [CORRECCIÓN VERIFICADA 2026-08-08] La Author Correction https://doi.org/10.1038/s41559-020-01347-2 corrige en la tabla 1 la summed quartet distance de MSC (ASTRAL), de 17213379 a 17145892, y atribuye a ASTRAL, no a SPA, la mejor distancia; declara que los árboles y las conclusiones no cambian. Ninguna C vigente transcribe esa distancia, por lo que C-028–C-036 no requieren cambio por esta corrección. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 9 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      }
+    ],
+    "limite": "Table 1 se leyó para contrastar el objeto del localizador anterior: distancias de cuartetos, no el AU de este delta. No se revisan aquí cifras de esa tabla ni su Author Correction."
+  },
+  "dictamenes": [
+    {
+      "identificador": "DELTA-C031-C-LOCALIZADOR",
+      "dictamen": "CONFORME",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila_csv": 16,
+      "campos_revisados": [
+        "Fuente"
+      ],
+      "antes": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results, párrafo 3, «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10): «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_antes": "6a324a309582445da86ea91df49278a374a049e9b2a5a8a6e63d9211401931af",
+      "sha256_fila_despues": "d602733bd48a4264d736d216d28750994bd6b9e7d6e616a378176c7e0f5d96c0",
+      "sha256_archivo_base": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+      "base_viva_coincide": true,
+      "hashes_calculados": {
+        "antes": "6a324a309582445da86ea91df49278a374a049e9b2a5a8a6e63d9211401931af",
+        "despues": "d602733bd48a4264d736d216d28750994bd6b9e7d6e616a378176c7e0f5d96c0"
+      },
+      "campos_hashes": {
+        "Fuente": {
+          "antes": "83aaebd89fbe6a2d6d1ee392aeb5ef040a79e844cb29e076c67948b8cfc227f6",
+          "despues": "5b60f95e1f6b360dfda629b3ca438dc488d44fd3bb4bf1ee2cd2051141bbc5a9"
+        }
+      },
+      "revisor": "/root/inspeccion_relojes",
+      "fecha_utc": "2026-09-27T03:08:16Z",
+      "razon": "El localizador apunta al quinto párrafo directo P10, que publica el rechazo 3D AU0.036 condicionado al modelo LG+C60+G4+F y la alineación de35 genes. No cambian las demás propiedades.",
+      "habilita_integracion": "SOLO_REEMPLAZO_EXACTO_DE_LOS_CAMPOS_REVISADOS",
+      "habilita_cierre_global": false
+    },
+    {
+      "identificador": "DELTA-C031-F-LOCALIZADOR",
+      "dictamen": "CONFORME",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 11,
+      "campos_revisados": [
+        "fuente con localizador"
+      ],
+      "antes": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-031"
+      },
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+        "#": "C-031"
+      },
+      "sha256_fila_antes": "686799a87e2bcc1bea44ee059fd72f3d08e079b78863db43804c676085cf2f6b",
+      "sha256_fila_despues": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051",
+      "sha256_archivo_base": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+      "base_viva_coincide": true,
+      "hashes_calculados": {
+        "antes": "686799a87e2bcc1bea44ee059fd72f3d08e079b78863db43804c676085cf2f6b",
+        "despues": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051"
+      },
+      "campos_hashes": {
+        "fuente con localizador": {
+          "antes": "0eb52899aaf9c4720a107188dd958f30e1696e99b2427b013ae1cc272ef55148",
+          "despues": "247d3dd3a62eacdf20457522276680935710d4c1ae8f91bcb438aaaf63440a94"
+        }
+      },
+      "revisor": "/root/inspeccion_relojes",
+      "fecha_utc": "2026-09-27T03:08:16Z",
+      "razon": "El localizador apunta al quinto párrafo directo P10, que publica el rechazo 3D AU0.036 condicionado al modelo LG+C60+G4+F y la alineación de35 genes. No cambian las demás propiedades.",
+      "habilita_integracion": "SOLO_REEMPLAZO_EXACTO_DE_LOS_CAMPOS_REVISADOS",
+      "habilita_cierre_global": false
+    },
+    {
+      "identificador": "DELTA-C031-TABLA-LOCALIZADOR",
+      "dictamen": "CONFORME",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila_csv": 9,
+      "campos_revisados": [
+        "filas y fuentes"
+      ],
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115"
+      },
+      "sha256_fila_antes": "d3e177cede06164cf759d9a56144870ce2f47583a3e408f61d29b90c8bd616b7",
+      "sha256_fila_despues": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824",
+      "sha256_archivo_base": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+      "base_viva_coincide": true,
+      "hashes_calculados": {
+        "antes": "d3e177cede06164cf759d9a56144870ce2f47583a3e408f61d29b90c8bd616b7",
+        "despues": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824"
+      },
+      "campos_hashes": {
+        "filas y fuentes": {
+          "antes": "04b269de7eb2ea221cbdc9f9f10bcd957594eda0c0b076d32b88797589526ef4",
+          "despues": "79232397df21d98be7c3c75c0edb8add6e4c9ca542828a9dd32aa28c6f6711f2"
+        }
+      },
+      "revisor": "/root/inspeccion_relojes",
+      "fecha_utc": "2026-09-27T03:08:16Z",
+      "razon": "La atribución Williams 2020/AU 0.036 bajo LG+C60+G4+F corresponde a S10 P10; S09 identifica otro artículo de 2013. La celda BN430 y la referencia BN115 permanecen intactas.",
+      "habilita_integracion": "SOLO_REEMPLAZO_EXACTO_DE_LOS_CAMPOS_REVISADOS",
+      "habilita_cierre_global": false
+    }
+  ],
+  "preservacion": {
+    "BN430_celda_identica": true,
+    "BN115_referencia_conservada": true,
+    "BN_solo_hashes_y_estado": [
+      {
+        "ruta": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
+        "fila": 77,
+        "objeto": {
+          "clave": "BN-430",
+          "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo muestreo taxonómico para data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv:fila 9:muestreo taxonómico",
+          "términos exactos o n/a": "consulta nominal conjunta exacta identidad=«Williams et al. 2020»; campo=«muestreo taxonómico»; valor=«mismo muestreo publicado que C-028–C-029; desglose nominal no recuperado [BN-115]»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-430",
+          "resultado": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv:fila 9:muestreo taxonómico.",
+          "filas relacionadas": "C-2599; data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv:fila 9:muestreo taxonómico"
+        },
+        "sha256_fila": "75f1d917bdcad2b59bb534fd7cb8c70c3d232a4d27352b464fca0700a4d6d724",
+        "sha256_archivo": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10"
+      },
+      {
+        "ruta": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+        "fila": 9,
+        "objeto": {
+          "clave": "BN-115",
+          "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Campos metodológicos o mecanísticos no publicados en las afirmaciones canónicas recuperadas para los mapas históricos y algunos modelos de eucariogénesis o de origen nuclear; para H22, participantes celulares, socio taxonómico, intercambio metabólico, dirección del intercambio y ambiente.",
+          "términos exactos": "`rg -n -i \"Woese|Lake|Cox|Da Cunha|Spang|inside-out|protocoat|modelo E3|flujo inverso|hipótesis viral\" data/afirmaciones/02.csv data/afirmaciones/03.csv data/tablas/02 data/tablas/03 docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md docs/secciones/004-03-3-eucariogenesis.md`; inspección nominal de `fuentes/S97*.xml` y `fuentes/S99*.xml` para `organism|partner|metabolite|metabolic exchange|environment` en el contexto de H22",
+          "resultado": "La búsqueda interna recuperó matrices, modelos, muestreos o apoyos parciales, pero no una estadística de soporte para Woese, Lake, Cox o Spang ni ambiente/intercambio completo para H14, H15 y H17 ni una predicción discriminante explícita para H19. S97 y S99 describen arquitectura, homología, duplicación y divergencia de coatómeros; no se localizaron valores para los cinco campos de asociación celular de H22, y las menciones generales a organismos o ambiente no se promovieron a esos campos.",
+          "filas o fuente": "C-017–C-042; C-292–C-357; S06–S12; S88–S99"
+        },
+        "sha256_fila": "df7b6d77536662ccaa74391869179186d6d69d77507c5e6da280accbec433304",
+        "sha256_archivo": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be"
+      }
+    ],
+    "otras_cinco_filas_sin_adjudicar": [
+      {
+        "fila": 7,
+        "sha256_fila": "7e14b8553d9850c1eabe681b20cf921790631acd65a57b0ab7a5790d7480a592",
+        "filas_y_fuentes": "C-028–C-029; S09 resultados; BN-115"
+      },
+      {
+        "fila": 8,
+        "sha256_fila": "f8ebe4e23449a9fff95a34dc64fdb0011cb46880e4ec44f7a154be5e7c24e991",
+        "filas_y_fuentes": "C-030; S09 resultados; BN-115"
+      },
+      {
+        "fila": 10,
+        "sha256_fila": "945f63b97e42217496a0e4eb9173bff14cb058a50472bf20ce8e454e56c82c8c",
+        "filas_y_fuentes": "C-032; S09 resultados; BN-115"
+      },
+      {
+        "fila": 11,
+        "sha256_fila": "f594f56feb4ba719fb5b1aeaa3ef55946f2306266edbeceb72c99b9d929b8cc4",
+        "filas_y_fuentes": "C-033; S09 resultados; BN-115"
+      },
+      {
+        "fila": 12,
+        "sha256_fila": "c50f9ab1294eeef985d13ab914cf0ddf1cfa8abf1cbaabfd53c56e2890f12402",
+        "filas_y_fuentes": "C-034–C-036; S09 resultados; BN-115"
+      }
+    ]
+  },
+  "restricciones": [
+    "No editar ni aprobar otras cinco filas Williams2020 de table-01 mediante este dictamen.",
+    "No convertir P10 en prueba del muestreo nominal que permanece como BN430.",
+    "Las restantes propiedades de C031 y F permanecen fuera de la revisión; la huella de fila liga el objeto, no extiende la conformidad.",
+    "No se ejecutó ni aprobó censo científico, segunda revisión global, controles manuales o make verify.",
+    "No se modificó propuesta, corpus, fuentes ni registro canónico de revisiones. Una integración que altere los tres campos fijados requiere nueva revisión."
+  ]
+}

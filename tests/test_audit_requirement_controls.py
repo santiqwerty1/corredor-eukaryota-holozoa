@@ -8,6 +8,8 @@ from unittest import mock
 
 from scripts import audit_requirement_controls as controls
 from scripts import corpus_io
+from scripts import audit_chronology
+from tests.test_check_teleology_contexts import fictitious_review
 
 
 class RequirementControlTests(unittest.TestCase):
@@ -108,7 +110,33 @@ class RequirementControlTests(unittest.TestCase):
         errors = controls.validate_manual_review(
             self.corpus, result, self.literals[result.requirement_id], row,
         )
-        self.assertTrue(any("distinta del cierre" in error for error in errors))
+        self.assertTrue(any("anterior a 2026-08-13" in error for error in errors))
+
+    def test_manual_review_accepts_real_later_date_but_not_compact_or_impossible(self) -> None:
+        result, row = self.valid_manual_row()
+        row["fecha_revision"] = "2026-09-26T20:00:00Z"
+        self.assertEqual(controls.validate_manual_review(
+            self.corpus, result, self.literals[result.requirement_id], row,
+        ), [])
+        for value in ("20260813", "2026-W33-4", "2026-09-31", "2026-09-26T25:00:00Z"):
+            row["fecha_revision"] = value
+            errors = controls.validate_manual_review(
+                self.corpus, result, self.literals[result.requirement_id], row,
+            )
+            self.assertTrue(any("fecha no es" in error for error in errors), value)
+
+    def test_manual_review_respects_documented_scope_version_date(self) -> None:
+        result, row = self.valid_manual_row()
+        registry = audit_chronology.DateRegistry({
+            ("CONTROL_MANUAL", result.requirement_id, row["huella_alcance_sha256"]): {
+                "fecha_version": "2026-09-26T20:00:00Z",
+            },
+        }, [])
+        with mock.patch.object(controls, "load_object_dates", return_value=registry):
+            errors = controls.validate_manual_review(self.corpus, result, self.literals[result.requirement_id], row)
+            self.assertTrue(any("anterior a 2026-09-26T20:00:00Z" in error for error in errors))
+            row["fecha_revision"] = "2026-09-26T21:00:00Z"
+            self.assertEqual(controls.validate_manual_review(self.corpus, result, self.literals[result.requirement_id], row), [])
 
     def test_bare_manual_attestation_is_rejected(self) -> None:
         result, row = self.valid_manual_row()
@@ -237,7 +265,7 @@ class RequirementControlTests(unittest.TestCase):
             controls.check_teleology_candidates(corpus, result)
         self.assertTrue(any("candidatos no clasificados" in error for error in result.errors))
 
-    def test_nomenclatural_table_context_does_not_make_superior_teleological(self) -> None:
+    def test_nomenclatural_context_requires_nominal_review(self) -> None:
         with TemporaryDirectory() as temporary:
             root = Path(temporary)
             relative = "data/tablas/14/table-56-14-8-1-codigos.csv"
@@ -253,7 +281,63 @@ class RequirementControlTests(unittest.TestCase):
             )
             result = controls.Result("R-0002", "LITERAL_PROMPT_COMPLETO")
             controls.check_teleology_candidates(corpus, result)
+            self.assertTrue(result.errors, "la ruta nunca exime por sí sola")
+            fictitious_review(root, [path], ["CRITICA_TERMINOLOGICA"])
+            result = controls.Result("R-0002", "LITERAL_PROMPT_COMPLETO")
+            controls.check_teleology_candidates(corpus, result)
         self.assertFalse(result.errors)
+
+    def test_quantile_and_protein_identity_are_classified_per_occurrence(self) -> None:
+        sentences = {
+            "El umbral procede del cuartil superior de identidades.": True,
+            "Se encontró identidad proteica superior al 70 %.": True,
+            "Se encontró identidad inferior al 70,5%.": True,
+            "El umbral procede del cuartil superior; este linaje es primitivo.": False,
+            "La identidad proteica es superior al 70 %; ese linaje es más evolucionado.": False,
+            "Hay identidad proteica superior al 70 % y un linaje superior.": False,
+            "Este linaje es superior al 70 % de los restantes.": False,
+            "Este linaje es superior.": False,
+            "Es un paso obligatorio hacia animales.": False,
+        }
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            path = root / "docs/secciones/003-prueba.md"
+            path.parent.mkdir(parents=True)
+            corpus = SimpleNamespace(
+                root=root, section_paths=[path], claim_paths={},
+                index={"tables": []}, appendix_paths={},
+            )
+            for sentence, expected in sentences.items():
+                with self.subTest(sentence=sentence):
+                    path.write_text(sentence + "\n", encoding="utf-8")
+                    if expected:
+                        # La lectura ficticia es explícita; el consumidor no
+                        # produce una aprobación a partir de porcentajes.
+                        fictitious_review(root, [path], ["USO_CUANTITATIVO"])
+                    result = controls.Result("R-0002", "LITERAL_PROMPT_COMPLETO")
+                    controls.check_teleology_candidates(corpus, result)
+                    self.assertEqual(not result.errors, expected)
+                    self.assertEqual(result.metrics["candidatos_teleologia"], 1)
+
+    def test_reviewed_context_cannot_be_rebound_to_new_artifact_hash(self) -> None:
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            path = root / "docs/secciones/003-contexto.md"
+            path.parent.mkdir(parents=True)
+            path.write_text("La masa es superior a 30 kDa.\nContexto.\n", encoding="utf-8")
+            fictitious_review(root, [path], ["USO_CUANTITATIVO"])
+            corpus = SimpleNamespace(
+                root=root, section_paths=[path], claim_paths={},
+                index={"tables": []}, appendix_paths={},
+            )
+            result = controls.Result("R-0002", "FICTICIO")
+            controls.check_teleology_candidates(corpus, result)
+            original = controls.artifact_row(corpus, result)
+            self.assertEqual(original["resultado_control"], "CERO_FALLOS")
+            path.write_text("La masa es superior a 30 kDa.\nContexto diferente.\n", encoding="utf-8")
+            changed = controls.artifact_row(corpus, result)
+            self.assertEqual(changed["resultado_control"], "NO_CONFORME")
+            self.assertIn("contexto revisado obsoleto", changed["evidencia"])
 
     def test_trivial_motive_mutation_is_rejected(self) -> None:
         claim_id = next(iter(self.corpus.claims))

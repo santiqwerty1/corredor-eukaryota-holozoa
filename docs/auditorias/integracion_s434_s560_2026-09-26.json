@@ -1,0 +1,73 @@
+{
+  "alcance": "Integración y comprobación de integridad por /root, autor del parche. NO es revisión independiente ni aprobación científica. No se sustituyó ningún archivo previo ni se modificó la exclusión Git de fuentes/.",
+  "copias_observadas_utc": "2026-09-26T23:55:41Z",
+  "comprobacion_sha_utc": "2026-09-26T23:57:09Z",
+  "inventario_previo": {
+    "cantidad": 442,
+    "sha256": "69704030a52076437e131fde0a1b886605b3ed8efc6a8fcf272660df3e4503cd"
+  },
+  "inventario_resultante": {
+    "cantidad": 447,
+    "sha256": "eb65a6efc4b262af7edb4488ea907c29f7dba2c4e4f61fd76472b653aa547f93"
+  },
+  "comprobacion_preservacion": "Todos los 442 nombres, tamaños y SHA previos son idénticos al retirar solo estas cinco altas del inventario resultante.",
+  "normalizacion_inventario": "SHA-256 de filas ordenadas por nombre; nombre NUL sha256 NUL tamaño decimal, separadas por LF y LF final.",
+  "archivos": [
+    {
+      "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 1 source data 1 v3.xlsx",
+      "sha256": "4578d91e371e5c41dd5a8a4dddb53122537e88e2acfd1416251ac30f07e4d918",
+      "bytes": 20548,
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data1-v3.xlsx",
+      "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data1-v3.xlsx"
+    },
+    {
+      "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 1 source data 2 v3.xlsx",
+      "sha256": "44ef87c6af48d8dc48ce5d286dc5fdb748a387853df23e600d0936670cfb99c6",
+      "bytes": 10817,
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig1-data2-v3.xlsx",
+      "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig1-data2-v3.xlsx"
+    },
+    {
+      "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — Figure 5 source data 1 v3.xlsx",
+      "sha256": "6384ee9ca5991cbade0e6dca100392031ffdedca17dba5765850353bac300d2f",
+      "bytes": 20167,
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-fig5-data1-v3.xlsx",
+      "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-fig5-data1-v3.xlsx"
+    },
+    {
+      "ruta_local": "fuentes/S434 [2017] Dynamics of genomic innovation — versión eLife v3.xml",
+      "sha256": "fcd2ee1d7baab2b2327d66bf659e5f3b190df1b48d0cd81d825b4f8958c9d89d",
+      "bytes": 346652,
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/elife-26036-v3.xml",
+      "url_de_recuperacion": "https://cdn.elifesciences.org/articles/26036/elife-26036-v3.xml"
+    },
+    {
+      "ruta_local": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+      "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+      "bytes": 129891,
+      "origen_temporal": "/tmp/Wang-Wu-2014-PMC4198247.xml",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4198247/fullTextXML"
+    }
+  ],
+  "pasajes_s560": [
+    {
+      "xpath": "./body/sec[@id='s2']/sec[@id='s2a']/p[1]",
+      "sha256_pasaje_normalizado": "422ca3a6fd076e2a94461d9634baa7e989053cb5eb3c07111848b7e436703542",
+      "normalizacion": "Unicode UTF-8; espacios unidos; sin LF final",
+      "palabras": 163
+    },
+    {
+      "xpath": "./body/sec[@id='s3']/sec[@id='s3a']/p[1]",
+      "sha256_pasaje_normalizado": "d3809aa4f86b82bdd686d01826b8df2781a900b6b2d14b296aad04c21ba8915b",
+      "normalizacion": "Unicode UTF-8; espacios unidos; sin LF final",
+      "palabras": 95
+    },
+    {
+      "xpath": "./body/sec[@id='s3']/sec[@id='s3a']/p[2]",
+      "sha256_pasaje_normalizado": "8f75048002326ce2910e9ee7682372993695467e4461ac765946189dea1fd76b",
+      "normalizacion": "Unicode UTF-8; espacios unidos; sin LF final",
+      "palabras": 200
+    }
+  ],
+  "estado_revision_independiente": "PENDIENTE; las propuestas previas no inspeccionaron esta integración."
+}

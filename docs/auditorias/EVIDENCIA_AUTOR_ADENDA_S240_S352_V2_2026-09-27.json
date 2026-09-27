@@ -1,0 +1,886 @@
+{
+  "version": 1,
+  "autor": "/root/inspeccion_relojes",
+  "rol": "AUTOR_PROPUESTA_NO_REVISOR",
+  "fecha_utc": "2026-09-27T03:29:46Z",
+  "base_inmutable": {
+    "ruta": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.json",
+    "sha256": "96d36be9adeed056a5c5f6da54321101b2dc25e7ae1bc28cb9258dae0b3e8bfa"
+  },
+  "revision_origen": {
+    "ruta": "docs/auditorias/REVISION_INDEPENDIENTE_PROPUESTA_S240_S352_V2_2026-09-27.md",
+    "sha256": "3ae43f1bb98a091c5eb6a26b25635f66e6ba7f27fb259e5a2d62e8d6e1386ede"
+  },
+  "C_reparadas": [
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "antes": {
+        "#": "C-2852",
+        "Afirmación": "La lectura de C-1581 como ausencia indiferenciada de componentes semejantes al ligando Hedgehog de Monosiga queda cuestionada por su distribución en proteínas separadas recogida en C-2849.",
+        "Sujeto": "C-1581",
+        "Predicado": "cuestionado_por",
+        "Objeto": "C-2849",
+        "Atribución": "sintesis(C-1581, C-2849)",
+        "Fuente": "S352 Results, §Gene repertoire of Capsaspora, cuarto párrafo; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El enlace debilita la lectura indiferenciada, no afirma que dos dominios separados constituyan el ligando completo ni refuta por sí mismo una ausencia funcional. Se conservan tanto el texto general como sus límites.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_antes": "69e47fc428b55dc87432f021ed21f09718c4d3f69001bd60c7d32fa10b296479",
+      "despues": {
+        "#": "C-2852",
+        "Afirmación": "La descripción de dominios Hedge y Hog en proteínas distintas de C-2849 no equivale documentalmente a la identificación de un ligando Hedgehog completo.",
+        "Sujeto": "C-2849",
+        "Predicado": "no_equivale_documentalmente_a*",
+        "Objeto": "identificación documental de un ligando Hedgehog completo",
+        "Atribución": "glosa",
+        "Fuente": "n/a; contraste documental acotado de C-2847, C-2848 y C-2849 propuestas, con sus huellas fijadas en la adenda; no nueva afirmación científica atribuida a S352",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "no_equivale_documentalmente_a* Distingue el contenido explícito de una descripción documental de otra identificación que esa descripción no enuncia; no establece una ausencia biológica ni refuta una afirmación diferente. C-2847 y C-2848 describen similitud de partes/dominios; C-2849 documenta su distribución en proteínas distintas. Esta glosa delimita lo que esas filas dicen, no la existencia, inexistencia ni función de un ligando. C-1581 sólo atribuye falta de receptores y ligandos, no falta de cualquier componente semejante: esta fila no constituye contraevidencia a C-1581 ni la aprueba. Las tres filas de dominio conservan su contenido y su evidencia primaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes_base": [],
+      "sha256_despues": "a151b6cd6bec10aa4f1965abb83d0a6933c7bec628cdc873a6099b7223fb4e5d"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "antes": {
+        "#": "C-2876",
+        "Afirmación": "Suga et al. no identificaron la familia ITR-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia ITR-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_antes": "31d9166276b855cd7d4aa5f57e350c02fd84627abebf5c262feca0d38f35dbd3",
+      "despues": {
+        "#": "C-2876",
+        "Afirmación": "Suga et al. no identificaron la familia ITR-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia ITR-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila ITR-like sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes_base": [
+        "S352_SI_7TM_p1",
+        "S352_methods_gene_family"
+      ],
+      "sha256_despues": "c65770c1e3bad199fd1fd17238e3736661ccf3abbbbf8672fa6b0b16054fe595"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "antes": {
+        "#": "C-2877",
+        "Afirmación": "Suga et al. no identificaron la familia OA1-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia OA1-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila Frizzled sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_antes": "b8ed0765a848a69b03855e209053e8e1f6312687f756c5826c3751fd09da430c",
+      "despues": {
+        "#": "C-2877",
+        "Afirmación": "Suga et al. no identificaron la familia OA1-like de receptores 7TM en el genoma de Monosiga brevicollis analizado.",
+        "Sujeto": "familia OA1-like de receptores 7TM en Monosiga brevicollis",
+        "Predicado": "no_localizado_en*",
+        "Objeto": "genoma de Monosiga brevicollis analizado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; fragmento original: «absent»; S352 Supplementary Information, Fig. S26, p. física e impresa 43, bloque 7TM receptor y columnas nominales; leyenda en p. 44; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Resultado de homología delimitado a esta familia y organismo. La fila OA1-like sin punto en Fig. S26 se lee con la leyenda de presencia/ausencia; no se interpreta como ausencia de toda señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes_base": [
+        "S352_SI_7TM_p1",
+        "S352_methods_gene_family"
+      ],
+      "sha256_despues": "4263ccb0148c80c22ff7128b84c7a3c337143985a459c5010dfbc877d005c066"
+    }
+  ],
+  "B_altas": [
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Illumina HiSeq",
+        "tipo": "plataforma de secuenciación",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "Illumina HiSeq",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2839",
+            "sha256_fila": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185",
+            "campos": {
+              "Motivo": "tiene_longitud_ensamblada* relaciona un ensamblaje identificado con su longitud publicada, no con una medición citométrica del genoma completo. Se conserva 39.9 Mbp de S240; S563 describe Illumina HiSeq, corrección SGA, ensamblaje Velvet, scaffolding SSPACE, cierre de huecos y depuración bacteriana. Es una reconstrucción desde lecturas: F se clasifica inferido por ese procedimiento, no por leer una tabla. No se calcula equivalencia ni cociente."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "6415e09d5d7d327610a8b1b76f0c8b92b21a48e6778e91694b66f3faf4affb1e"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "SGA",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "SGA",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2839",
+            "sha256_fila": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185",
+            "campos": {
+              "Motivo": "tiene_longitud_ensamblada* relaciona un ensamblaje identificado con su longitud publicada, no con una medición citométrica del genoma completo. Se conserva 39.9 Mbp de S240; S563 describe Illumina HiSeq, corrección SGA, ensamblaje Velvet, scaffolding SSPACE, cierre de huecos y depuración bacteriana. Es una reconstrucción desde lecturas: F se clasifica inferido por ese procedimiento, no por leer una tabla. No se calcula equivalencia ni cociente."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "67cd2ecb66f4b5126590fc6d231537b6b0e4a2ae6da3f5964c002b8ba3159952"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Velvet",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "Velvet",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2839",
+            "sha256_fila": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185",
+            "campos": {
+              "Motivo": "tiene_longitud_ensamblada* relaciona un ensamblaje identificado con su longitud publicada, no con una medición citométrica del genoma completo. Se conserva 39.9 Mbp de S240; S563 describe Illumina HiSeq, corrección SGA, ensamblaje Velvet, scaffolding SSPACE, cierre de huecos y depuración bacteriana. Es una reconstrucción desde lecturas: F se clasifica inferido por ese procedimiento, no por leer una tabla. No se calcula equivalencia ni cociente."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "ac35987053f518eaac5f5301f136258947f10018ac00c5cac869e1e3f2300425"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "SSPACE",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "SSPACE",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2839",
+            "sha256_fila": "a37914308e2b72fb7bfec32fbe07b0b48f5086519d76b7136cdb9445ce2f7185",
+            "campos": {
+              "Motivo": "tiene_longitud_ensamblada* relaciona un ensamblaje identificado con su longitud publicada, no con una medición citométrica del genoma completo. Se conserva 39.9 Mbp de S240; S563 describe Illumina HiSeq, corrección SGA, ensamblaje Velvet, scaffolding SSPACE, cierre de huecos y depuración bacteriana. Es una reconstrucción desde lecturas: F se clasifica inferido por ese procedimiento, no por leer una tabla. No se calcula equivalencia ni cociente."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "166e0c850a2f456e0cdceaee261abe7009cceec3c43136d6ede2690daad7640f"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Gapfiller",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_F_CON_ANCLA_C_EXPLICITA",
+      "evidencia_ancla": {
+        "termino": "Gapfiller",
+        "primeras_menciones_C": [],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "La mención literal está en F, cuyo campo # enlaza esta C; no se afirma una mención literal del método en esa C.",
+      "sha256_fila": "69aaa9540396c1cd5b639dd4e59ec2fcea1a740b01a6480f570d03ba313af9b6"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "Image",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_F_CON_ANCLA_C_EXPLICITA",
+      "evidencia_ancla": {
+        "termino": "Image",
+        "primeras_menciones_C": [],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "La mención literal está en F, cuyo campo # enlaza esta C; no se afirma una mención literal del método en esa C.",
+      "sha256_fila": "b662485933e37c9dc69404a91d8c8c0ca04884e466525e5c46016a56127cc18d"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "ICORN",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_F_CON_ANCLA_C_EXPLICITA",
+      "evidencia_ancla": {
+        "termino": "ICORN",
+        "primeras_menciones_C": [],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "La mención literal está en F, cuyo campo # enlaza esta C; no se afirma una mención literal del método en esa C.",
+      "sha256_fila": "b2fef9debfff4277b435ddec0b4218de18a3f338448559a09ccc5cd4d0cb4af6"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "REAPR",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2839"
+      },
+      "tipo_ancla": "MENCION_LITERAL_F_CON_ANCLA_C_EXPLICITA",
+      "evidencia_ancla": {
+        "termino": "REAPR",
+        "primeras_menciones_C": [],
+        "menciones_F": [
+          {
+            "sha256_fila": "4a7f89e984b82a839a85e95fb5bff0417390f10aa063e5bf665ae035c8c90cea",
+            "fila": {
+              "magnitud": "tamaño genómico nuclear reconstruido por ensamblaje",
+              "valor tal como lo publica la fuente": "39.9",
+              "unidad original": "Mbp",
+              "organismo, nodo o intervalo al que se aplica": "Bodo saltans cepa Konstanz, comparando de vida libre de Perkinsela",
+              "método o proxy": "Illumina HiSeq; corrección SGA, ensamblaje Velvet, unión de scaffolds SSPACE, cierre de huecos con Gapfiller/Image, filtrado de contaminación bacteriana y correcciones ICORN/REAPR (S563); valor transcrito de S240 Table 1",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo de incertidumbre para esta longitud en S240 Table 1 ni en el primer párrafo de S563 Results); la reconstrucción depende del ensamblaje y su depuración",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S240 Results and Discussion, §Biology of a kinetoplastid endosymbiont, Par10 y Table 1, fila Genome size (Mbp), columna Bodo saltans, nota b/ref. 25; requiere inspección humana; S563 Results and Discussion, §Comparative Analysis of Kinetoplastid Genomes, primer párrafo; Experimental Procedures, §DNA Preparation and Sequencing y §Genome Assembly",
+              "#": "C-2839"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "La mención literal está en F, cuyo campo # enlaza esta C; no se afirma una mención literal del método en esa C.",
+      "sha256_fila": "aba840620b1cd3730f9eb8e7982c163aa4f2adda08f27dcec76683426c38767f"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "HMMER",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2864"
+      },
+      "tipo_ancla": "MENCION_LITERAL_F_CON_ANCLA_C_EXPLICITA",
+      "evidencia_ancla": {
+        "termino": "HMMER",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2865",
+            "sha256_fila": "2a2a44c1e91648ca8e86f43d9300313bf385308186a14959f89450b6e8f21210",
+            "campos": {
+              "Motivo": "Un punto en esa intersección representa presencia de gen según la leyenda; HMMER, búsqueda recíproca Blast y filogenias RAxML sustentan la clasificación. La anotación de familia no demuestra acoplamiento funcional de cada receptor."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "a44369e984a70916ebad66d73b1c59127a4d504813bb40426eb4c5954e2865d5",
+            "fila": {
+              "magnitud": "familias 7TM identificadas",
+              "valor tal como lo publica la fuente": "six",
+              "unidad original": "families",
+              "organismo, nodo o intervalo al que se aplica": "Capsaspora owczarzaki en la clasificación de Suga et al.",
+              "método o proxy": "homología global de secuencia y arquitectura de dominios; HMMER, Blast recíproco y filogenias RAxML",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo en el pasaje); recuento atribuido al repertorio genómico analizado",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; S352 Methods, §Gene family analysis",
+              "#": "C-2864"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "La mención literal está en F, cuyo campo # enlaza esta C; no se afirma una mención literal del método en esa C.",
+      "sha256_fila": "e4f230e6a017703a514937b042567296ed1d684e13dbe6fa215fcfee64f1a468"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "RAxML",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "RAxML",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2840",
+            "sha256_fila": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+            "campos": {
+              "Motivo": "El origen es una inferencia filogenómica: BLASTP/FastTree, curación y comprobación de topologías con RAxML LG+G+F y PhyloBayes CAT. No son ocho eventos observados ni genes de retorno demostrado. El denominador es el conjunto de alineamientos interpretables, no todo el genoma hospedador."
+            }
+          }
+        ],
+        "menciones_F": [
+          {
+            "sha256_fila": "a44369e984a70916ebad66d73b1c59127a4d504813bb40426eb4c5954e2865d5",
+            "fila": {
+              "magnitud": "familias 7TM identificadas",
+              "valor tal como lo publica la fuente": "six",
+              "unidad original": "families",
+              "organismo, nodo o intervalo al que se aplica": "Capsaspora owczarzaki en la clasificación de Suga et al.",
+              "método o proxy": "homología global de secuencia y arquitectura de dominios; HMMER, Blast recíproco y filogenias RAxML",
+              "incertidumbre publicada": "no consta en la fuente recuperada (intervalo en el pasaje); recuento atribuido al repertorio genómico analizado",
+              "observado o inferido": "inferido",
+              "fuente con localizador": "S352 Supplementary Information, Note 5, §Seven transmembrane receptors and G protein signaling, p. física e impresa 94, primer párrafo; S352 Methods, §Gene family analysis",
+              "#": "C-2864"
+            }
+          }
+        ],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "a9560c92da8679dc72d36b30eeac080b2c5438ef86c3f8c41d8bd596a9c7ceee"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "PhyloBayes",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "PhyloBayes",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2840",
+            "sha256_fila": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+            "campos": {
+              "Motivo": "El origen es una inferencia filogenómica: BLASTP/FastTree, curación y comprobación de topologías con RAxML LG+G+F y PhyloBayes CAT. No son ocho eventos observados ni genes de retorno demostrado. El denominador es el conjunto de alineamientos interpretables, no todo el genoma hospedador."
+            }
+          }
+        ],
+        "menciones_F": [],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "f116cef703a568f8bb2884f7e049a5709480585470f07486509df9dc33d2608d"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "BLASTP",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "BlastP",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "BLASTP",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2840",
+            "sha256_fila": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+            "campos": {
+              "Motivo": "El origen es una inferencia filogenómica: BLASTP/FastTree, curación y comprobación de topologías con RAxML LG+G+F y PhyloBayes CAT. No son ocho eventos observados ni genes de retorno demostrado. El denominador es el conjunto de alineamientos interpretables, no todo el genoma hospedador."
+            }
+          }
+        ],
+        "menciones_F": [],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "2eb8bfd39a97380df44d01e9575198cfeb6a64d2cb2691ade1d71aae4ac72399"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "FastTree",
+        "tipo": "herramienta de análisis",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2824"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "FastTree",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2824",
+            "sha256_fila": "34f2849ec07e88ac931551609a13b46d9074f8c096556cee7d3b17a6f285745c",
+            "campos": {
+              "Motivo": "La unidad es la familia obtenida por el procedimiento publicado: agrupación MCL, clasificación de árboles FastTree 2 y separación de parálogos como familias distintas. No se equiparan 394 familias con 394 episodios de transferencia ni con un inventario exhaustivo de LECA."
+            }
+          }
+        ],
+        "menciones_F": [],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "963e1de6948dc4aac226ed711840f65a5a6fbace46d91c562c15ea5cedb33ece"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "crio-SEM",
+        "tipo": "método de microscopía",
+        "sinónimos y grafías alternativas": "cryo-SEM",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-1040"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "crio-SEM",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/09.csv",
+            "id": "C-1040",
+            "sha256_fila": "179aeff7c831d551ebb58f4192a7f717cc6488f5e17453fe1f7fac7a10ca0132",
+            "campos": {
+              "Motivo": "TEM y crio-SEM muestran estructuras; los autores dicen que esas observaciones sugieren endocitosis. No se convierte la interpretación en demostración directa de captación de citoplasma ni de importación proteica."
+            }
+          }
+        ],
+        "menciones_F": [],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "92155e0810bc9056aa89e1c7d0bedbf0702d65fe9c85eff42e39a369ca0e1c4b"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "LG+G+F",
+        "tipo": "modelo filogenético",
+        "sinónimos y grafías alternativas": "LG + G + F",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2840"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C",
+      "evidencia_ancla": {
+        "termino": "LG+G+F",
+        "primeras_menciones_C": [
+          {
+            "ruta": "data/afirmaciones/15.csv",
+            "id": "C-2840",
+            "sha256_fila": "26c7343cc6f40c6c23beff459b2d6dc24cc749286775dc0c5089310e869f932d",
+            "campos": {
+              "Motivo": "El origen es una inferencia filogenómica: BLASTP/FastTree, curación y comprobación de topologías con RAxML LG+G+F y PhyloBayes CAT. No son ocho eventos observados ni genes de retorno demostrado. El denominador es el conjunto de alineamientos interpretables, no todo el genoma hospedador."
+            }
+          }
+        ],
+        "menciones_F": [],
+        "filas_B_existentes": []
+      },
+      "limite": "Primera mención nominal detectada en las C vivas más las propuestas v2, excluyendo coincidencias incrustadas en otras palabras.",
+      "sha256_fila": "0c9442e613f5b76d3202fed8894247aeaf9dfb88b56ce08ed35a0e391fcdd6ea"
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "fila": {
+        "etiqueta preferida": "identificación documental de un ligando Hedgehog completo",
+        "tipo": "concepto documental",
+        "sinónimos y grafías alternativas": "n/a",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-2852"
+      },
+      "tipo_ancla": "MENCION_LITERAL_C_PROPUESTA_ADENDA",
+      "limite": "Objeto de la glosa documental; no un ligando identificado.",
+      "sha256_fila": "f58c4f9b76eb88408014a229c1d7737399aba17ed96dbc089ce90c54d74082db"
+    }
+  ],
+  "dependencias_documentales": [
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2847",
+        "Afirmación": "Suga et al. describen en Monosiga brevicollis una proteína con similitud a la parte C-terminal Hint o Hog de Hedgehog.",
+        "Sujeto": "proteína con dominio Hint o Hog de Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La descripción se refiere a una parte homóloga de la proteína, no a un ligando completo. La figura distingue el dominio Hog del dominio Hedge; no se atribuye actividad de señalización.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_SI_Hedgehog_inicio",
+        "S352_SI_Hedgehog_fin",
+        "S352_fig4_caption"
+      ],
+      "sha256_fila": "180c16e4e726f4937643c8f73eae1a4546525ea65b0761d7f774b1ad00d4e808"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2848",
+        "Afirmación": "Suga et al. describen en Monosiga brevicollis una proteína que contiene la parte N-terminal Hedge de Hedgehog.",
+        "Sujeto": "proteína con dominio Hedge de Monosiga brevicollis",
+        "Predicado": "localizado_en*",
+        "Objeto": "repertorio genómico comparado por Suga et al. 2013",
+        "Atribución": "expresa",
+        "Fuente": "S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página; S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El objeto es el dominio Hedge descrito por la fuente; no se completa por inferencia una arquitectura Hedgehog metazoana ni su función.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_SI_Hedgehog_inicio",
+        "S352_SI_Hedgehog_fin",
+        "S352_fig4_caption"
+      ],
+      "sha256_fila": "0cd33c4ec6504cb6aea0b9f5c729f6fc6ed0bb490ec1d8a8d5acdefbfc611434"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila": {
+        "#": "C-2849",
+        "Afirmación": "Suga et al. sitúan los dominios Hedge y Hog de Monosiga brevicollis en proteínas diferentes.",
+        "Sujeto": "distribución de los dominios Hedge y Hog de Monosiga brevicollis",
+        "Predicado": "tiene_distribucion_proteica*",
+        "Objeto": "proteínas diferentes",
+        "Atribución": "expresa",
+        "Fuente": "S352 Fig. 4, p. física e impresa 6, bloque HedgeHog y leyenda completa; requiere inspección humana; leyenda: «two domains hedge and hog are found in different proteins»; S352 Supplementary Information, Note 5, §Other signal transduction systems, pp. físicas e impresas 95–96, segundo párrafo que continúa tras el salto de página",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "tiene_distribucion_proteica* relaciona dominios identificados con su distribución publicada entre proteínas. Es una relación entre partes y portadores, no dos presencias reunidas ni una afirmación sobre una vía funcional.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "pasajes": [
+        "S352_fig4_caption",
+        "S352_SI_Hedgehog_inicio",
+        "S352_SI_Hedgehog_fin"
+      ],
+      "sha256_fila": "c295db6b7a87c8d338e2f3e1fb97525c9401492ec1d5287767a63678774e5fd2"
+    }
+  ],
+  "posicion_no_refutada": {
+    "ruta": "data/afirmaciones/12.csv",
+    "fila": {
+      "#": "C-1581",
+      "Afirmación": "Suga et al. no localizaron receptores ni ligandos de la vía Hedgehog en Capsaspora owczarzaki ni Monosiga brevicollis.",
+      "Sujeto": "receptores y ligandos de Hedgehog en Capsaspora y Monosiga",
+      "Predicado": "no_localizado_en*",
+      "Objeto": "comparación genómica de Suga et al. 2013",
+      "Atribución": "expresa",
+      "Fuente": "S352 §Signalling pathways, “Both Capsaspora and M. brevicollis lack receptors and ligands ... in the Hedgehog ... pathways”",
+      "Aceptación": "no evaluado",
+      "Fuerza": "alta",
+      "Motivo": "La ausencia se limita a los dos genomas y a las familias que el estudio pudo anotar; no se extrapola a todos los holozoos unicelulares. La proposición de Hedgehog queda separada de la observación de Notch y Delta en C-1580.",
+      "Resolución": "resuelta",
+      "Vigencia": "vigente"
+    },
+    "motivo": "Conservación intacta exigida por §16 al registrar contraevidencia. No se autoaprueba su atomicidad compuesta; se separan posición, organismos y objetos en C nuevas y se enlaza cuestionado_por desde C-2851/C-2852.",
+    "habilita_cierre": "NO",
+    "contraevidencias": [
+      "C-2851",
+      "C-2852"
+    ],
+    "sha256_fila": "9bdb1a21bbf293aed15a0e5a71b4bc62ac893567a672da0f7a356d3fd3f0ce16"
+  },
+  "fuentes_inalteradas": [
+    {
+      "clave": "S240",
+      "ruta": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_archivo": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7"
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_archivo": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c"
+    },
+    {
+      "clave": "S352",
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256_archivo": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+      "uso": "Inspección visual Fig. 4, p.6; colores y trazos no se infieren del JATS."
+    },
+    {
+      "clave": "S352",
+      "ruta_temporal": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+      "sha256_archivo": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms3325/MediaObjects/41467_2013_BFncomms3325_MOESM833_ESM.pdf",
+      "estado": "NO_INTEGRADO_EN_FUENTES"
+    },
+    {
+      "clave": "S563",
+      "ruta_temporal": "/tmp/S240-ref25-Jackson2016-preparacion-v2-20260927.xml",
+      "sha256_archivo": "bef0178c91ff7ad19da896857bb861fc1dc2bf60ce02da5a99b7febc2df29094",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4728078/fullTextXML",
+      "estado": "ALTA_PROPUESTA_NO_INTEGRADA"
+    }
+  ],
+  "pasajes_metodos": [
+    {
+      "id": "S240_Par16",
+      "fuente": "S240",
+      "selector": ".//p[@id=\"Par16\"]",
+      "texto_normalizado": "How might Perkinsela sp. and P. pemaquidensis ‘communicate’? Using TEM and freeze-fracture cryo-SEM, we discovered invaginations on the surface of the endosymbiont, which appears bound by a single membrane (Fig. 1h,i, Supplementary Fig. S2.6.1). Intracellular vesicles with electron densities similar to the P. pemaquidensis cytoplasm were also apparent, like those seen in an early study of P. perniciosa 2. These observations suggest that Perkinsela sp. carries out endocytosis (although with no flagellar pocket, the site of endocytosis in trypanosomes32, the process is presumably not restricted to any particular region of the plasma membrane). This idea is further supported by genomic data. The Perkinsela sp. genome encodes a varied set of proteins involved in clathrin-mediated endocytosis, exocytosis, and vesicular trafficking (e.g., clathrin, dynamin, SNARE proteins, and a set of Rab proteins) (Supplementary Note 2.6), as well as 66 putative membrane transporters with diverse substrate specificities (Supplementary Note 2.7). Although their intracellular destination(s) is unknown, we speculate that the endocytic vesicles of Perkinsela sp. serve to internalize amoeba-derived metabolites (and, possibly, enzymes), thereby allowing the contents of the amoeba cytoplasm to feed directly into the biochemical pathways of the endosymbiont (Supplementary Note 3.14). In the opposite direction, Perkinsela sp. may secrete key proteins and metabolites to its plasma membrane or out into the cytoplasm of its host (Fig. 4). These are hypotheses that can be tested experimentally.",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+    },
+    {
+      "id": "S563_sec4.2_p1",
+      "localizador": "S563 DNA Preparation and Sequencing, párrafo 1; JATS sec[@id=sec4.2]/p[1]",
+      "texto_normalizado": "B. saltans genomic DNA was prepared from cell cultures after reduction of the bacterial microflora (see the Supplemental Experimental Procedures). However, the sample retained a significant bacterial component. Genomic DNA was prepared from the cell pellet using phenol-chloroform extraction and used to create 500 bp and 3 Kb genomic libraries. T. borreli genomic DNA was prepared directly from commercial cell culture (LGC Standards) and used to create a 500 bp genomic library. All libraries were sequenced on the Illumina HiSeq platform.",
+      "sha256_pasaje": "84a0dab76cc9fd6afb637c1d8daa6e384ae19c788bfab89b1b9d2061ac2b1d87"
+    },
+    {
+      "id": "S563_sec4.4_p1",
+      "localizador": "S563 Genome Assembly, párrafo 1; JATS sec[@id=sec4.4]/p[1]",
+      "texto_normalizado": "To obtain the genome sequence of B. saltans, we applied an iterative approach. First, we corrected the reads for errors using SGA [43]. Then, 500-bp-insert sequence reads were assembled with Velvet version 1.0.18 [44], under the following parameters: kmer (41), exp_cov (auto), cov_cutoff (3), and insertsize (400). The scaffolds obtained were further joined with SSPACE [45] using first the 500-bp and then the 3-kb-insert libraries. Sequencing gaps were closed with Gapfiller [46] and Image [47]. Finally, we manually identified contigs that represented bacterial contamination and excluded reads mapping back to these. A contig was considered a contaminant if it displayed >70% similarity with the UniProt bacteria database and had no mapped RNA sequencing reads. This process was repeated three times. After the last iteration, we corrected small base errors with five iterations of ICORN [48] and split scaffolds with reads from the 3-kb-insert library and REAPR [49] under default parameters.",
+      "sha256_pasaje": "5096dffe3167981c51cccd0e26f52dd1bfe078270d5465ffc572ebead07b16e4"
+    },
+    {
+      "id": "S352_methods_gene_family",
+      "localizador": "Methods, Gene family analysis; único párrafo",
+      "texto_normalizado": "We chose several gene families that are particularly interesting in the context of the evolution of multicellularity. For each gene family, we inferred the presence and absence of the gene or protein domains in chosen taxa using the HMMER45 package, mutual Blast and phylogenetic analyses based on maximum likelihood trees inferred by RAxML42. Analysed taxa include three bilaterians (Homo sapiens, Strongylocentrotus purpuratus and Drosophila melanogaster), three non-bilaterian metazoans (Nematostella vectensis, Trichoplax adhaerens and Amphimedon queenslandica), the choanoflagellate M. brevicollis, the filasterean C. owczarzaki, three fungi (Rhizopus oryzae, Laccaria bicolor and Neurospora crassa), and the amoebozoan Dictyostelium discoideum. We also searched, if necessary, further basal eukaryotes whose genomes have been sequenced, in order to know the origin of gene families that could predate the split between amoebozoans and opisthokonts.",
+      "sha256_pasaje_utf8_lf": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    {
+      "id": "S240_Methods_Phylogenomics",
+      "localizador": "JATS sec[@id=Sec14], Methods, Phylogenomics",
+      "texto_normalizado": "Phylogenomics To identify gene transfers between P . pemaquidensis and Perkinsela sp., we implemented a phylogenomics pipeline (Supplementary Fig. S1.6.2 ) using predicted proteins from both the host and endosymbiont genomes. BlastP searches were used to retrieve a maximum of 1,000 sequences from a comprehensive database comprised of proteins from public genomic and transcriptomic databases (see Supplementary Table S1.6.1 ), with an E-value cut-off of 1E-15 and a query-target alignment length of 50% or more. After multiple sequence alignment and preliminary phylogenetic analysis using FastTree 66 , TreeTrimmer 67 was used to reduce OTU redundancy for alignments containing > 100 sequences using the criteria shown in Supplementary Table S1.6.2 (paralogs within the P . pemaquidensis and Perkinsela sp. genomes were retained in each alignment, regardless of how similar they were to one another). Alignments were then repeated, trimAL ver. 1.4 68 was used to remove ambiguously aligned regions, and phylogenetic trees were inferred using FastTree. The number of proteins for which trees could be constructed (i.e., at least 4 OTUs including the query) was 3,846 for P . pemaquidensis (out of 11,573 predicted proteins in total at the time of analysis) and 2,633 for the endosymbiont Perkinsela sp. (out of 5,252 proteins). Tree topologies were screened in an automated fashion using an in-house Ruby script; trees of interest (i.e., trees in which P . pemaquidensis or Perkinsela sp. proteins branch with one or more kinetoplastid or amoebozoan homologs, respectively) were selected for closer scrutiny. For these initial endosymbiotic gene transfer (EGT) candidates (35 host and 6 endosymbiont proteins), additional homologs (if present) were retrieved from the GenBank NR database using BlastP searches and added to the datasets. After elimination of redundant sequences, multiple alignment and removal of ambiguously aligned sites, trees were inferred from the final curated alignments using RAxML ver. 7.7.9 (with the LG + G + F model 69 ) (Supplementary Fig. S1.6.2 ). Trees were then checked manually, and those with topologies consistent with EGT were flagged for further investigation. Branch support was evaluated by rapid bootstrapping in RAxML (100 replicates), using the same substitution model described above. The flagged datasets were also analyzed using PhyloBayes ver. 3.3f 70 with the site-heterogeneous mixture CAT model. Two independent Markov chains were run for a total of 10,000 cycles. Bayesian posterior probabilities were calculated by sampling every 10 trees after discarding the first 2,500 trees as ‘burn-in’.",
+      "sha256_pasaje_utf8_lf": "edc7fb6d260a06e52afb38eb4d2aac4c39d660193706295b06540d50bdaaacdc"
+    }
+  ],
+  "pasajes_ausencias": [
+    {
+      "id": "S352_SI_7TM_p1",
+      "pagina_pdf": 94,
+      "pagina_impresa": 94,
+      "inicio_caracter_en_pagina": 602,
+      "fin_caracter_exclusivo_en_pagina": 1392,
+      "sha256_pasaje_normalizado_utf8_lf": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92",
+      "longitud_caracteres_normalizados": 775
+    },
+    {
+      "id": "S352_SI_Hedgehog_inicio",
+      "pagina_pdf": 95,
+      "pagina_impresa": 95,
+      "inicio_caracter_en_pagina": 1646,
+      "fin_caracter_exclusivo_en_pagina": 2023,
+      "sha256_pasaje_normalizado_utf8_lf": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b",
+      "longitud_caracteres_normalizados": 370
+    },
+    {
+      "id": "S352_SI_Hedgehog_fin",
+      "pagina_pdf": 96,
+      "pagina_impresa": 96,
+      "inicio_caracter_en_pagina": 0,
+      "fin_caracter_exclusivo_en_pagina": 514,
+      "sha256_pasaje_normalizado_utf8_lf": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a",
+      "longitud_caracteres_normalizados": 502
+    },
+    {
+      "id": "S352_SI_S26_leyenda",
+      "pagina_pdf": 44,
+      "pagina_impresa": 44,
+      "inicio_caracter_en_pagina": 4759,
+      "fin_caracter_exclusivo_en_pagina": 5892,
+      "sha256_pasaje_normalizado_utf8_lf": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4",
+      "longitud_caracteres_normalizados": 1128
+    },
+    {
+      "id": "S352_SI_Wnt_p96",
+      "pagina_pdf": 96,
+      "pagina_impresa": 96,
+      "inicio_caracter_en_pagina": 514,
+      "fin_caracter_exclusivo_en_pagina": 1101,
+      "sha256_pasaje_normalizado_utf8_lf": "552c630e7953b1f35255c3bb35c1f14add7e73d2310344110f90d04655cae93c"
+    }
+  ],
+  "limites": [
+    "C1581 y C2851 permanecen NO_CONFORME; esta adenda no las modifica ni resuelve su representación.",
+    "C2852 es un contraste de contenido documental, no contraevidencia ni prueba biológica.",
+    "C2876/77 sólo cambian Motivo; no cifras, fuentes, organismo, modalidad ni figuras.",
+    "Las 15 altas metodológicas tienen mención real en el lote o en C2824 (FastTree); no se añaden otras herramientas sólo por aparecer en los artículos.",
+    "No se modifica F, fuentes/, canon, revisiones ajenas, disposición histórica ni firmas; no hay aprobación en este expediente autoral."
+  ]
+}

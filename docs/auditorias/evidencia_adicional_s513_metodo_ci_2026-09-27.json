@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-27T02:41:59Z",
+  "artefacto": "fuentes/S513 [2023] Symbioses shape feeding niches and diversification across insects.xml",
+  "sha256_artefacto": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040",
+  "normalizacion": "itertext,colapso blancos,UTF8+LF",
+  "pasajes": [
+    {
+      "id": "P53",
+      "sha256_pasaje": "28814a0b30586bc9746578acae41bb2521bde7e2898e6e7da392341727e35a90",
+      "localizador": "Methods/General statistical methods o Specific analyses: P53",
+      "fragmento_control": "posterior modes with 95% CIs"
+    },
+    {
+      "id": "P54",
+      "sha256_pasaje": "6568c950a81c77e57ccace28098f2049106b2094ba022649af7b51288f7800dc",
+      "localizador": "Methods/General statistical methods o Specific analyses: P54",
+      "fragmento_control": "Phylogenetic and residual correlations between traits"
+    },
+    {
+      "id": "P65",
+      "sha256_pasaje": "af5a82bd83f615492c35ac6ff3a70180b6290111ccad3787fed73c1eac95342f",
+      "localizador": "Methods/General statistical methods o Specific analyses: P65",
+      "fragmento_control": "estimated using a MR-BPMM"
+    }
+  ],
+  "F_anterior_coincide_una_vez_con_vivo": true,
+  "limite": "P12 dice credible interval; P53 especifica95% para estimaciones MR-BPMM; P65 liga análisis de correlaciones a MR-BPMM. No confidence interval de líneas de regresión ilustrativas."
+}

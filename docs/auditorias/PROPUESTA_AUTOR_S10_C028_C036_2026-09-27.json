@@ -1,0 +1,2125 @@
+{
+  "version": 1,
+  "autor": "/root",
+  "estado": "PROPUESTA_PENDIENTE_REVISION_INDEPENDIENTE_NO_INTEGRABLE_AUN",
+  "objetos": [
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-028",
+      "antes": {
+        "#": "C-028",
+        "Afirmación": "La matriz original del análisis de Williams et al. contenía 35 genes.",
+        "Sujeto": "matriz original de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "35 genes",
+        "Atribución": "expresa",
+        "Fuente": "S10 §Methods, tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La fila registra una sola dimensión de matriz; las topologías comparadas se documentan en filas separadas.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-028",
+        "Afirmación": "La matriz de Da Cunha et al. reanalizada por Williams et al. contiene 35 genes concatenados.",
+        "Sujeto": "matriz de Da Cunha et al. reanalizada por Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "35 genes concatenados",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); Methods → Sequences and alignment (JATS P30)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Dimensión génica del reanálisis publicada expresamente; no se identifica con el conjunto original de Spang ni con las matrices ampliadas.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P8",
+        "P30"
+      ],
+      "sha256_antes": "b3f6c1753468b42e4ddcec6029892f5c1cb8e9230e6fa0159f66bb2999de2a62",
+      "sha256_despues": "25336fe1ee00cd7bfbf884d5b667d1fbea65d21da8ec7a1c648538794139ef9f",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-029",
+      "antes": {
+        "#": "C-029",
+        "Afirmación": "Bajo LG+G4+F, Williams et al. obtuvieron log-verosimilitudes de −684701.2 para dos dominios y −684716.1 para tres dominios.",
+        "Sujeto": "comparación LG+G4+F de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "−684701.2 y −684716.1",
+        "Atribución": "expresa",
+        "Fuente": "S10 tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los valores se transcriben sin convertirlos a otra medida.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-029",
+        "Afirmación": "El texto principal de Williams et al. informa una log-verosimilitud aproximada de −684701.2 para dos dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de dos dominios bajo LG+G4+F en el reanálisis de 35 genes de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "log-verosimilitud ≈ −684701.2, según el texto principal",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8): «lnl ~= -684701.2»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se conserva la aproximación publicada en el texto; los valores específicos por programa de la tabla suplementaria 2 no se sustituyen por este resumen.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "86458ff1374498cedbaf96b0bde0c5f33d2f55d0fc8b90fef48a51ebaed1076e",
+      "sha256_despues": "0c9e1a4e605cca298e5f207393c3bcef5316cd472c38384328fda66099a5da1a",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-030",
+      "antes": {
+        "#": "C-030",
+        "Afirmación": "Bajo LG+G4+F, la prueba AU de Williams et al. dio 0.771 para dos dominios y 0.229 para tres dominios.",
+        "Sujeto": "prueba AU bajo LG+G4+F",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "0.771 y 0.229",
+        "Atribución": "expresa",
+        "Fuente": "S10 tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Valores publicados de la prueba de topología.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-030",
+        "Afirmación": "El texto principal de Williams et al. informa AU = 0.771 para dos dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de dos dominios bajo LG+G4+F en el reanálisis de 35 genes de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "AU = 0.771 en el texto principal",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8): «0.771 for the 2D»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Transcripción del texto principal; el valor distinto del pie de la tabla suplementaria 2 se conserva en C-2891 y se contrasta en C-2894.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "2b3a39b0e4565d670f9a635773ea757e775ed85cd4bdb73fff27aa6557293095",
+      "sha256_despues": "4ac42d1798ff77e0f94a2de830466e5b78673088991fb4ef677fabac2e4563ae",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo",
+        "Resolución"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-032",
+      "antes": {
+        "#": "C-032",
+        "Afirmación": "Bajo CAT+GTR+G4, Williams et al. recuperaron el árbol de dos dominios con apoyo posterior máximo.",
+        "Sujeto": "árbol de dos dominios bajo CAT+GTR+G4",
+        "Predicado": "respaldado_por",
+        "Objeto": "probabilidad posterior máxima",
+        "Atribución": "expresa",
+        "Fuente": "S10 fig. 1; Supplementary analyses",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo y apoyo son condición y resultado de una única inferencia filogenética publicada.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-032",
+        "Afirmación": "En el reanálisis de 35 genes concatenados bajo el modelo sitio-heterogéneo CAT+GTR+G4, Williams et al. recuperaron un clado de eucariotas, Heimdallarchaeota y Lokiarchaeum con PP = 1.",
+        "Sujeto": "clado de eucariotas, Heimdallarchaeota y Lokiarchaeum en el reanálisis de 35 genes de Williams et al. 2020",
+        "Predicado": "respaldado_por",
+        "Objeto": "PP = 1 bajo CAT+GTR+G4",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); figura 1 y leyenda (JATS F1; PDF físico p. 32, nodo eucariotas + Asgard muestreados); S10 Supplementary information → Supplementary Table 11, PDF p. 12, fila 35 genes/81 taxa/CAT+GTR+G4, columna Support; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Soporte posterior de un nodo bajo matriz y modelo definidos, no probabilidad de todo el árbol ni aceptación comunitaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P10",
+        "F1",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": "1d7d3d1634a8668b35e8bd6e10033372165898e86d9b36608d87626fdf46aab3",
+      "sha256_despues": "e832b9c2e9704b0233a51c1db758681dcca566297f87c8494323797a198aca9d",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-033",
+      "antes": {
+        "#": "C-033",
+        "Afirmación": "La recodificación SR4 bajo CAT produjo una probabilidad posterior de 0.98 para el árbol de dos dominios.",
+        "Sujeto": "árbol de dos dominios bajo CAT y SR4",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.98",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary analyses",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La recodificación fue una prueba contra heterogeneidad composicional.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-033",
+        "Afirmación": "En el reanálisis de 35 genes concatenados recodificados con SR4 bajo CAT+GTR+G4, Williams et al. recuperaron el clado de eucariotas y Heimdallarchaeota con PP = 0.98.",
+        "Sujeto": "clado de eucariotas y Heimdallarchaeota en el reanálisis de 35 genes recodificados con SR4",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.98 bajo CAT+GTR+G4",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 6 (JATS P11): «eukaryotes grouped with the Heimdallarchaeota (PP = 0.98, Supplementary Figure 2)»; S10 Supplementary information → Supplementary Table 11, PDF p. 12, fila CAT+GTR+G4/SR4, columna Support",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Soporte de la agrupación concreta tras recodificación; no es una probabilidad posterior del árbol completo.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P11",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": "e014842905ebeac80507b7b7f03b5654d4a9b05032ef268616c86f227726a12e",
+      "sha256_despues": "0162c5cfb954d78db9bb0a6f497b75a8fb782f67ff9d2d5552c8e8bd37ed928f",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-034",
+      "antes": {
+        "#": "C-034",
+        "Afirmación": "El diseño ampliado de Williams et al. comprendió una matriz de 21 proteínas universales y otra de 43 proteínas arqueano-eucariotas, ambas dentro del muestreo de 125 genomas declarado.",
+        "Sujeto": "diseño ampliado de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "dos matrices emparejadas: 21 y 43 proteínas; muestreo común de 125 genomas",
+        "Atribución": "expresa",
+        "Fuente": "S10 §Methods, figs. 2–3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se conserva como un único vector de diseño experimental porque las dos matrices se comparan sobre el mismo muestreo; no se usa como tres magnitudes biológicas independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-034",
+        "Afirmación": "La matriz ampliada de Williams et al. que incluye bacterias, arqueas y eucariotas contiene 21 genes marcadores concatenados, seleccionados mediante OMA y filtrado manual.",
+        "Sujeto": "matriz concatenada ampliada con bacterias, arqueas y eucariotas de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "21 genes marcadores",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); Methods → Sequences and alignment (JATS P30)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Recuento explícito tras selección de ortólogos y filtrado; matriz de 43 genes y muestreos se registran por separado.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P18",
+        "P30"
+      ],
+      "sha256_antes": "38c775230855d8423cf793f8ce6e6a859e741c53d9614a5b4c8c14566fdfc0c8",
+      "sha256_despues": "cab74f2eaffb6f4a44ea24212039082ef10e39604f0f9a1b2dae890e66404f3e",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-035",
+      "antes": {
+        "#": "C-035",
+        "Afirmación": "Williams et al. recuperaron a Eukaryota asociado con Heimdallarchaeia en el análisis citado.",
+        "Sujeto": "Eukaryota en Williams et al. 2020",
+        "Predicado": "grupo_hermano_de",
+        "Objeto": "Heimdallarchaeia",
+        "Atribución": "expresa",
+        "Fuente": "S10 fig. 3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El triple registra sólo la relación topológica; el tamaño de matriz y su apoyo se mantienen en afirmaciones cuantitativas separadas. Estudios posteriores con más muestreo recuperaron posiciones distintas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-035",
+        "Afirmación": "En la matriz concatenada de 43 genes arqueano-eucariotas recodificados con SR4 bajo CAT+GTR+G4, Williams et al. recuperaron el clado de eucariotas y Heimdallarchaeota con PP = 1.",
+        "Sujeto": "clado de eucariotas y Heimdallarchaeota en la matriz de 43 genes con SR4 de Williams et al. 2020",
+        "Predicado": "respaldado_por",
+        "Objeto": "PP = 1 bajo CAT+GTR+G4",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19); figura 3b y leyenda (JATS F3; PDF físico p. 34); S10 Supplementary information → Supplementary Table 11, PDF p. 13, fila 43 genes/92 taxa/CAT+GTR+G4/SR4; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Soporte de ese nodo en la matriz recodificada; no afirma que Eukaryota sea hermano de todos los Heimdallarchaeota excluyentes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P19",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": "dceba51b2ad544f4e9049ad839daba8fa9da3ce3330b804f5430275f52d14230",
+      "sha256_despues": "b702765fbf80fc6962b364397cd99f4d5f8b452b587be1bfd124dd9a281eedc0",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Predicado",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-036",
+      "antes": {
+        "#": "C-036",
+        "Afirmación": "El clado LC3 del análisis de Williams et al. obtuvo PP = 0.95.",
+        "Sujeto": "clado LC3 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.95",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results, párrafo 4, «LC3) with high (PP = 0.95) support»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es soporte cuantitativo de una matriz concreta, no de todas las topologías actuales.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-036",
+        "Afirmación": "En la matriz concatenada de 43 genes arqueano-eucariotas recodificados con SR4 bajo CAT+GTR+G4, Williams et al. recuperaron la agrupación de eucariotas con el MAG Heimdallarchaeota archaeon LC_3 con PP = 0.95.",
+        "Sujeto": "agrupación de eucariotas y Heimdallarchaeota archaeon LC_3 en la matriz de 43 genes recodificada con SR4",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.95 bajo CAT+GTR+G4",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19): «eukaryotes group with one Heimdallarchaeota metagenome bin (LC3) with high (PP = 0.95) support»; figura 3b y leyenda (JATS F3; PDF físico p. 34); S10 Supplementary information → Supplementary Table 11, PDF p. 13, fila 43 genes/92 taxa/CAT+GTR+G4/SR4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se identifica el nodo eucariotas + MAG LC_3 y su matriz; no se atribuye el soporte a LC_3 por sí solo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "evidencia_autor": [
+        "P19",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": "9937c016e6fc0b3d68ac8baef9154a44a024e97dbe37351422a6478313af2da4",
+      "sha256_despues": "5fd4dd9797a600befa4e5088059c98575cfd784426885ccc4d95c30a8e781a64",
+      "campos_modificados": [
+        "Afirmación",
+        "Sujeto",
+        "Objeto",
+        "Fuente",
+        "Motivo"
+      ]
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2884",
+      "antes": null,
+      "despues": {
+        "#": "C-2884",
+        "Afirmación": "El texto principal de Williams et al. informa una log-verosimilitud aproximada de −684716.1 para tres dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de tres dominios bajo LG+G4+F en el reanálisis de 35 genes de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "log-verosimilitud ≈ −684716.1, según el texto principal",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8): «compared to ~= -684716.1 for the 3D tree»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Aproximación del texto principal, no sustituto de los valores específicos por programa de la tabla suplementaria 2.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "499f3ea729cd40a6745fdb2007e2a91d5e0059f3d85e41e81f2110b0ba53249e"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2885",
+      "antes": null,
+      "despues": {
+        "#": "C-2885",
+        "Afirmación": "El texto principal de Williams et al. informa AU = 0.229 para tres dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de tres dominios bajo LG+G4+F en el reanálisis de 35 genes de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "AU = 0.229 en el texto principal",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8): «AU = 0.229 for the 3D tree»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Transcripción del texto principal; el valor distinto del pie de la tabla suplementaria 2 se conserva en C-2892 y se contrasta en C-2895.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "4efc9e362e2ff072348f5f5f55b669cd2cc5de34266788c9bfc0f96207a1dc20"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2886",
+      "antes": null,
+      "despues": {
+        "#": "C-2886",
+        "Afirmación": "La matriz ampliada arqueano-eucariota de Williams et al. contiene 43 genes concatenados seleccionados mediante OMA y filtrado manual.",
+        "Sujeto": "matriz concatenada ampliada arqueano-eucariota de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "43 genes",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); Methods → Sequences and alignment (JATS P30)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Recuento explícito del conjunto arqueano-eucariota; no se confunde con la matriz que incluye bacterias.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P18",
+        "P30"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "fa4ce0a8b3b612f48061402b5168becde6156f2823bd2df60a336def139bcb6b"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2887",
+      "antes": null,
+      "despues": {
+        "#": "C-2887",
+        "Afirmación": "El apartado de resultados de Williams et al. declara un muestreo ampliado de 125 especies.",
+        "Sujeto": "muestreo ampliado de especies declarado en resultados de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "125 especies",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 1 (JATS P17): «a dataset of 125 species»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se conserva la unidad species del pasaje; no se afirma que ambas matrices concatenadas contengan las mismas especies.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P17"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "8f8adc4123bd68c00ffedd46fc79fada94f2178f326dd2da5f4b8603940c3b92"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2888",
+      "antes": null,
+      "despues": {
+        "#": "C-2888",
+        "Afirmación": "La tabla suplementaria 11 de Williams et al. declara 81 taxones para los reanálisis de la matriz de 35 genes.",
+        "Sujeto": "muestreo taxonómico de la matriz de 35 genes en la tabla suplementaria 11 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "81 taxones",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary information → Supplementary Table 11, PDF p. 12, filas 35 genes, columna Dataset; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Recuento expresamente publicado; no se calcula restando taxones de otros conjuntos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "283422b6fd9d2da1ba1ed68831a60a356d37c3d264cb8f737b025b3e3f02bae0"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2889",
+      "antes": null,
+      "despues": {
+        "#": "C-2889",
+        "Afirmación": "La tabla suplementaria 11 de Williams et al. declara 92 taxones para la matriz de 43 genes arqueano-eucariotas.",
+        "Sujeto": "muestreo taxonómico de la matriz arqueano-eucariota de 43 genes de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "92 taxones",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary information → Supplementary Table 11, PDF p. 13, filas 43 genes, columna Dataset; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La tabla lo identifica como subconjunto arqueano-eucariota del muestreo ampliado, sin deducción aritmética.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "6354f460e6d40e766dfd8762114bde360d718090b6ce6891ca2d5a70467401f4"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2890",
+      "antes": null,
+      "despues": {
+        "#": "C-2890",
+        "Afirmación": "En la matriz concatenada de 21 genes y 125 taxones recodificada con SR4 bajo CAT+GTR+G4, Williams et al. recuperaron el clado de eucariotas y Heimdallarchaeota con PP = 0.79.",
+        "Sujeto": "clado de eucariotas y Heimdallarchaeota en la matriz de 21 genes con SR4 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.79",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18): «although with only modest support (PP = 0.79)»; figura 3a y leyenda (JATS F3; PDF físico p. 34); S10 Supplementary information → Supplementary Table 11, PDF p. 13, fila 21 genes/125 taxa/CAT+GTR+G4/SR4",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La fuente califica el soporte como modesto; se distingue del nodo y soporte de la matriz de 43 genes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P18",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "3f4fa680dc1f334c939791504619cdf3968a0c3345eae156709e8ae033aa0211"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2891",
+      "antes": null,
+      "despues": {
+        "#": "C-2891",
+        "Afirmación": "El pie de la tabla suplementaria 2 de Williams et al. informa AU = 0.767 para dos dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de dos dominios bajo LG+G4+F según el pie de la tabla suplementaria 2 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "AU = 0.767 en el pie de la tabla suplementaria 2",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary information → Supplementary Table 2, PDF p. 3, pie anterior al cuerpo de la tabla; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Dato del suplemento; no se sustituye ni se promedia con AU = 0.771 del texto principal.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "b82d9d3d3cfcf46fa8eedeb469687962945f39a726cd5d53f61fcfb14e698d74"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2892",
+      "antes": null,
+      "despues": {
+        "#": "C-2892",
+        "Afirmación": "El pie de la tabla suplementaria 2 de Williams et al. informa AU = 0.233 para tres dominios bajo LG+G4+F en la matriz concatenada de 35 genes.",
+        "Sujeto": "topología de tres dominios bajo LG+G4+F según el pie de la tabla suplementaria 2 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "AU = 0.233 en el pie de la tabla suplementaria 2",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary information → Supplementary Table 2, PDF p. 3, pie anterior al cuerpo de la tabla; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Dato del suplemento; no se sustituye ni se promedia con AU = 0.229 del texto principal.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "9f64969142a1ef97b90e6b40a78a09fd537d1155d891ade62dc5f83cd5598523"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2893",
+      "antes": null,
+      "despues": {
+        "#": "C-2893",
+        "Afirmación": "La tabla suplementaria 11 de Williams et al. informa AU = 0.0036 para el rechazo de tres dominios bajo LG+C60+G4+F en la matriz de 35 genes.",
+        "Sujeto": "rechazo de tres dominios bajo LG+C60+G4+F según la tabla suplementaria 11 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "AU = 0.0036 en la tabla suplementaria 11",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary information → Supplementary Table 11, PDF p. 12, fila 35 genes/81 taxa/LG+C60+G4+F, columna Support; inspección humana realizada",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Cifra literal distinta de AU = 0.036 del texto principal; la discrepancia no se denomina errata.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "ce1a9ee4a662a416ab61a7348835b50dab1f79ab0e425fd076af35dc18f28710"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2894",
+      "antes": null,
+      "despues": {
+        "#": "C-2894",
+        "Afirmación": "La cifra AU = 0.767 de la tabla suplementaria 2 introduce una discrepancia cuantitativa respecto a AU = 0.771 de C-030 para dos dominios bajo LG+G4+F.",
+        "Sujeto": "C-030",
+        "Predicado": "cuestionado_por",
+        "Objeto": "cifra AU = 0.767 del pie de la tabla suplementaria 2",
+        "Atribución": "sintesis(C-030, C-2891)",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); Supplementary information → Supplementary Table 2, PDF p. 3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Contraste de cifras atribuidas a pasajes distintos; no escoge un valor verdadero ni niega que P8 contenga 0.771.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P8",
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "0841e4b0a7d7f76be89a627390a9862b51b91a5dec9ae6ca3157bd3e317dc3ad"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2895",
+      "antes": null,
+      "despues": {
+        "#": "C-2895",
+        "Afirmación": "La cifra AU = 0.233 de la tabla suplementaria 2 introduce una discrepancia cuantitativa respecto a AU = 0.229 de C-2885 para tres dominios bajo LG+G4+F.",
+        "Sujeto": "C-2885",
+        "Predicado": "cuestionado_por",
+        "Objeto": "cifra AU = 0.233 del pie de la tabla suplementaria 2",
+        "Atribución": "sintesis(C-2885, C-2892)",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); Supplementary information → Supplementary Table 2, PDF p. 3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Contraste de cifras atribuidas a pasajes distintos; no escoge un valor verdadero ni altera las posiciones publicadas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P8",
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "84fbe4428ac898e26fd46218fe20c1caddef7fac6b87f4e434a70b8762d53506"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2896",
+      "antes": null,
+      "despues": {
+        "#": "C-2896",
+        "Afirmación": "La cifra AU = 0.0036 de la tabla suplementaria 11 introduce una discrepancia cuantitativa respecto a AU = 0.036 de C-031 para el rechazo de tres dominios bajo LG+C60+G4+F.",
+        "Sujeto": "C-031",
+        "Predicado": "cuestionado_por",
+        "Objeto": "cifra AU = 0.0036 de la tabla suplementaria 11",
+        "Atribución": "sintesis(C-031, C-2893)",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); Supplementary information → Supplementary Table 11, PDF p. 12",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se cuestiona la univocidad de la cifra, no que P10 publique 0.036 ni el rechazo condicional. El blanco y la atribución requieren revisión nominal, no aprobación por comparar números.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P10",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "3ce8e9a19fb6f16668c837decc700b28355475286ceb1ac10a211a8b0c93b329"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2897",
+      "antes": null,
+      "despues": {
+        "#": "C-2897",
+        "Afirmación": "El árbol arqueano-eucariota de 43 genes de Williams et al., figura 3b, es formalmente no enraizado por no incluir un grupo externo bacteriano.",
+        "Sujeto": "árbol de 43 genes de la figura 3b de Williams et al. 2020",
+        "Predicado": "posee_rasgo",
+        "Objeto": "formalmente no enraizado por ausencia de grupo externo bacteriano",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, figura 3b, leyenda (JATS F3): «formally unrooted because it does not include a bacterial outgroup»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Límite explícito de la figura; la colocación propuesta de la raíz se basa en análisis distintos y no se convierte en dato observado.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "F3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "45e60e93c711944e8cd060333c3a230d7dbf9fb066e6b6cbefba628cb12e5082"
+    },
+    {
+      "tipo": "C_ALTA",
+      "ruta": "data/afirmaciones/15.csv",
+      "identidad": "C-2898",
+      "antes": null,
+      "despues": {
+        "#": "C-2898",
+        "Afirmación": "El apartado Methods de Williams et al. describe la búsqueda de ortólogos con OMA en un conjunto de 92 genomas eucariotas, arqueanos y bacterianos.",
+        "Sujeto": "conjunto descrito en Methods → Sequences and alignment de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "92 genomas eucariotas, arqueanos y bacterianos según Methods",
+        "Atribución": "expresa",
+        "Fuente": "S10 Methods → Sequences and alignment (JATS P30): «92 eukaryotic, archaeal and bacterial genomes»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se conserva la descripción metodológica; no se identifica por inferencia con los 92 taxones arqueano-eucariotas de ST11 ni con las 125 especies de resultados.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_archivo_base": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "evidencia_autor": [
+        "P30"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "0ab7e9ed7708532664050f086b0128a5500d1ba299378dad2dd725e2b4e640ba"
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "genes de la matriz original de Williams et al.|C-028",
+      "antes": {
+        "magnitud": "genes de la matriz original de Williams et al.",
+        "valor tal como lo publica la fuente": "35",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "comparación dos frente a tres dominios",
+        "método o proxy": "matriz concatenada",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods; tabla 1",
+        "#": "C-028"
+      },
+      "despues": {
+        "magnitud": "genes de la matriz de Da Cunha reanalizada por Williams et al.",
+        "valor tal como lo publica la fuente": "35",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "comparación dos frente a tres dominios",
+        "método o proxy": "matriz concatenada",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)",
+        "#": "C-028"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P8",
+        "P30"
+      ],
+      "sha256_antes": "e003c7c5a10e9d6f2a9366efb6de8d03e1687b49c35cd32230c3eaf6198d776a",
+      "sha256_despues": "5a7e31fcb6b2a745465f10b8f575fbac1f9adc82caf56923b744b32de59c6711",
+      "campos_modificados": [
+        "magnitud",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "log-verosimilitud de dos dominios bajo LG+G4+F|C-029",
+      "antes": {
+        "magnitud": "log-verosimilitud de dos dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "−684701.2",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-029"
+      },
+      "despues": {
+        "magnitud": "log-verosimilitud de dos dominios bajo LG+G4+F, texto principal",
+        "valor tal como lo publica la fuente": "≈ −684701.2",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "aproximación ~= publicada; P8 no da un intervalo de incertidumbre para este valor",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)",
+        "#": "C-029"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "ad8284e2f82d3397063241e01ba7ae6700270f2077f41e5e5507227ad1d0725b",
+      "sha256_despues": "46540d6b69eb4999dfbaf00f3c1f5f3f78f53a6811eab6408644c284d6c56b97",
+      "campos_modificados": [
+        "magnitud",
+        "valor tal como lo publica la fuente",
+        "incertidumbre publicada",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "log-verosimilitud de tres dominios bajo LG+G4+F|C-029",
+      "antes": {
+        "magnitud": "log-verosimilitud de tres dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "−684716.1",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-029"
+      },
+      "despues": {
+        "magnitud": "log-verosimilitud de tres dominios bajo LG+G4+F, texto principal",
+        "valor tal como lo publica la fuente": "≈ −684716.1",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "aproximación ~= publicada; P8 no da un intervalo de incertidumbre para este valor",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)",
+        "#": "C-2884"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "73cc4e2fd980e96d90236b03d8407ba680cfe46e0333eb5e749cd74e5a04e02d",
+      "sha256_despues": "bb2cc7053a33b35bb3ac1053eecaa86855ac223d4cfd6bc387853dae289561a1",
+      "campos_modificados": [
+        "magnitud",
+        "valor tal como lo publica la fuente",
+        "incertidumbre publicada",
+        "fuente con localizador",
+        "#"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para dos dominios bajo LG+G4+F|C-030",
+      "antes": {
+        "magnitud": "p de prueba AU para dos dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "0.771",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-030"
+      },
+      "despues": {
+        "magnitud": "p de prueba AU para dos dominios bajo LG+G4+F, texto principal",
+        "valor tal como lo publica la fuente": "0.771",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)",
+        "#": "C-030"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "a89191e4e368112eda24405a3d835305a6fc5a73a8e491809bbcde0453226bf2",
+      "sha256_despues": "9099ace24220503fd44972aa7db65f09e2d0e9c2ade75d07e5dd8d246217b510",
+      "campos_modificados": [
+        "magnitud",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para tres dominios bajo LG+G4+F|C-030",
+      "antes": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "0.229",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-030"
+      },
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+G4+F, texto principal",
+        "valor tal como lo publica la fuente": "0.229",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)",
+        "#": "C-2885"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P8"
+      ],
+      "sha256_antes": "76d4e116705c4f2be636943709f71547c820d7996d5877bb8ff686b4d6f993d0",
+      "sha256_despues": "f68af6b58f81586929a13d85c36b426b0573a2374f90a44b576f7a3411fce8fd",
+      "campos_modificados": [
+        "magnitud",
+        "fuente con localizador",
+        "#"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para tres dominios bajo LG+C60+G4+F|C-031",
+      "antes": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+        "#": "C-031"
+      },
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F, texto principal",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+        "#": "C-031"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P10",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051",
+      "sha256_despues": "b2e969a60d9dab1b394c8ffc505ad32f88dce66a33dffa41a937f318ebdf08d5",
+      "campos_modificados": [
+        "magnitud"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "probabilidad posterior de dos dominios bajo CAT y SR4|C-033",
+      "antes": {
+        "magnitud": "probabilidad posterior de dos dominios bajo CAT y SR4",
+        "valor tal como lo publica la fuente": "0.98",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "CAT con recodificación SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Supplementary analyses",
+        "#": "C-033"
+      },
+      "despues": {
+        "magnitud": "probabilidad posterior de eucariotas + Heimdallarchaeota en la matriz de 35 genes con SR4",
+        "valor tal como lo publica la fuente": "0.98",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "clado de eucariotas y Heimdallarchaeota",
+        "método o proxy": "concatenación de 35 genes; CAT+GTR+G4; recodificación SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 6 (JATS P11)",
+        "#": "C-033"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P11",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": "3288a31b69cbdc52655b9e1c4bf8e5293e35bcbd669c85e012f4a273592c9141",
+      "sha256_despues": "efb0c4c916d70e18dae08ffddba86322507fe2933f91129183eea91603a47f9c",
+      "campos_modificados": [
+        "magnitud",
+        "organismo, nodo o intervalo al que se aplica",
+        "método o proxy",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "proteínas universales en matriz ampliada|C-034",
+      "antes": {
+        "magnitud": "proteínas universales en matriz ampliada",
+        "valor tal como lo publica la fuente": "21",
+        "unidad original": "proteínas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      },
+      "despues": {
+        "magnitud": "genes marcadores en matriz ampliada con los tres dominios",
+        "valor tal como lo publica la fuente": "21",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18)",
+        "#": "C-034"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P18",
+        "P30"
+      ],
+      "sha256_antes": "824e4a37902347502eb1ed93ee8dbbc7349726ff344a64edaef230ba45585ac9",
+      "sha256_despues": "ef10efe04cee5ec557381d6f0e94cd1ea2240e37363028ebe20b12d3f98b2e72",
+      "campos_modificados": [
+        "magnitud",
+        "unidad original",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "proteínas arqueano-eucariotas en matriz ampliada|C-034",
+      "antes": {
+        "magnitud": "proteínas arqueano-eucariotas en matriz ampliada",
+        "valor tal como lo publica la fuente": "43",
+        "unidad original": "proteínas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      },
+      "despues": {
+        "magnitud": "genes en matriz ampliada arqueano-eucariota",
+        "valor tal como lo publica la fuente": "43",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18)",
+        "#": "C-2886"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P18",
+        "P30"
+      ],
+      "sha256_antes": "12b6fc531d8174c30f37b54c7d29fa4eadacb9e0ba7ed15f862fbbd30a0c71d7",
+      "sha256_despues": "e3fce4500af41ea732a2ba8db7d2ddc8c45d7157c072693f23629c98889e20a1",
+      "campos_modificados": [
+        "magnitud",
+        "unidad original",
+        "fuente con localizador",
+        "#"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "genomas en matrices ampliadas|C-034",
+      "antes": {
+        "magnitud": "genomas en matrices ampliadas",
+        "valor tal como lo publica la fuente": "125",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "muestreo taxonómico",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      },
+      "despues": {
+        "magnitud": "especies del muestreo ampliado declarado en resultados",
+        "valor tal como lo publica la fuente": "125",
+        "unidad original": "especies",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "muestreo taxonómico",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 1 (JATS P17)",
+        "#": "C-2887"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P17"
+      ],
+      "sha256_antes": "502c6830cf7f75d8f61e1dfa340e642d4a3558275f486316646870f3980e0924",
+      "sha256_despues": "b0511babdc87abc5a13f9b915bf560eacfb489021392335e81ae89884771aeda",
+      "campos_modificados": [
+        "magnitud",
+        "unidad original",
+        "fuente con localizador",
+        "#"
+      ]
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "probabilidad posterior del clado LC3|C-036",
+      "antes": {
+        "magnitud": "probabilidad posterior del clado LC3",
+        "valor tal como lo publica la fuente": "0.95",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "LC3 de Williams et al.",
+        "método o proxy": "análisis bayesiano",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 fig. 3",
+        "#": "C-036"
+      },
+      "despues": {
+        "magnitud": "probabilidad posterior de eucariotas + MAG Heimdallarchaeota archaeon LC_3",
+        "valor tal como lo publica la fuente": "0.95",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "clado eucariotas + Heimdallarchaeota archaeon LC_3",
+        "método o proxy": "43 genes concatenados; CAT+GTR+G4; recodificación SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19); figura 3b y leyenda (JATS F3)",
+        "#": "C-036"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P19",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": "6037fa674be9b13f1f1fdf267e62fa7c29e664793bf903b311ead7a5b1a0ccef",
+      "sha256_despues": "77eef1a23c7ae85029c983ccd3b0920d3853e88872e95047a208d3d26a61fb56",
+      "campos_modificados": [
+        "magnitud",
+        "organismo, nodo o intervalo al que se aplica",
+        "método o proxy",
+        "fuente con localizador"
+      ]
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "probabilidad posterior de eucariotas + Heimdallarchaeota + Lokiarchaeum, 35 genes|C-032",
+      "antes": null,
+      "despues": {
+        "magnitud": "probabilidad posterior de eucariotas + Heimdallarchaeota + Lokiarchaeum, 35 genes",
+        "valor tal como lo publica la fuente": "1",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "clado de eucariotas, Heimdallarchaeota y Lokiarchaeum muestreados",
+        "método o proxy": "35 genes concatenados; CAT+GTR+G4; inferencia bayesiana",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); figura 1 y leyenda (JATS F1); S10 Supplementary information → Supplementary Table 11, PDF p. 12",
+        "#": "C-032"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P10",
+        "F1",
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "1a092a577d1df4e8aae796d5d6c0a6d6f31828bec48a360f3d9629fb2632d540"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "probabilidad posterior de eucariotas + Heimdallarchaeota, 43 genes SR4|C-035",
+      "antes": null,
+      "despues": {
+        "magnitud": "probabilidad posterior de eucariotas + Heimdallarchaeota, 43 genes SR4",
+        "valor tal como lo publica la fuente": "1",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "clado de eucariotas y Heimdallarchaeota",
+        "método o proxy": "43 genes concatenados; CAT+GTR+G4; SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19); figura 3b y leyenda (JATS F3); S10 Supplementary information → Supplementary Table 11, PDF p. 13",
+        "#": "C-035"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P19",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "7b7f754bf6c879170f626a6fe914876a663d489e52c5fe73a2c32da2884a2ac2"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "taxones de la matriz de 35 genes reanalizada|C-2888",
+      "antes": null,
+      "despues": {
+        "magnitud": "taxones de la matriz de 35 genes reanalizada",
+        "valor tal como lo publica la fuente": "81",
+        "unidad original": "taxones",
+        "organismo, nodo o intervalo al que se aplica": "matriz de 35 genes de Williams et al. 2020",
+        "método o proxy": "muestreo publicado en Supplementary Table 11",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 11, PDF p. 12, columna Dataset",
+        "#": "C-2888"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "6d8dd591340a38676318e442562ff5c5aa0d2c0eb39fe4715e078bdefa368199"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "taxones de la matriz arqueano-eucariota de 43 genes|C-2889",
+      "antes": null,
+      "despues": {
+        "magnitud": "taxones de la matriz arqueano-eucariota de 43 genes",
+        "valor tal como lo publica la fuente": "92",
+        "unidad original": "taxones",
+        "organismo, nodo o intervalo al que se aplica": "matriz de 43 genes de Williams et al. 2020",
+        "método o proxy": "muestreo publicado en Supplementary Table 11",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 11, PDF p. 13, columna Dataset",
+        "#": "C-2889"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "579dc6cbe7acdd37c06f04aaec48d9c24768a1e3f6a314fe27c6322e1d0a7bd9"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "probabilidad posterior de eucariotas + Heimdallarchaeota, 21 genes SR4|C-2890",
+      "antes": null,
+      "despues": {
+        "magnitud": "probabilidad posterior de eucariotas + Heimdallarchaeota, 21 genes SR4",
+        "valor tal como lo publica la fuente": "0.79",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "clado de eucariotas y Heimdallarchaeota",
+        "método o proxy": "21 genes concatenados; 125 taxones; CAT+GTR+G4; SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); figura 3a y leyenda (JATS F3); S10 Supplementary information → Supplementary Table 11, PDF p. 13",
+        "#": "C-2890"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P18",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "4beb1e9beaf13cf97ffe589b47ad3a10fe8208edd8ca918b2f6b9a750a0ae63f"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para dos dominios bajo LG+G4+F, suplemento tabla 2|C-2891",
+      "antes": null,
+      "despues": {
+        "magnitud": "p de prueba AU para dos dominios bajo LG+G4+F, suplemento tabla 2",
+        "valor tal como lo publica la fuente": "0.767",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "35 genes; LG+G4+F; prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 2, PDF p. 3, pie",
+        "#": "C-2891"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "ad5bad3733357ffca06152ab6ad0465afda654b268983f54d4babde797346c1e"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para tres dominios bajo LG+G4+F, suplemento tabla 2|C-2892",
+      "antes": null,
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+G4+F, suplemento tabla 2",
+        "valor tal como lo publica la fuente": "0.233",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "35 genes; LG+G4+F; prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 2, PDF p. 3, pie",
+        "#": "C-2892"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "supl_pdf_3"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "fb48b21813a7ed2c9a0aae045039da9907e454d7252c4210d8a8db830548a64d"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "p de prueba AU para tres dominios bajo LG+C60+G4+F, suplemento tabla 11|C-2893",
+      "antes": null,
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F, suplemento tabla 11",
+        "valor tal como lo publica la fuente": "0.0036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "35 genes; 81 taxones; LG+C60+G4+F; prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 11, PDF p. 12, columna Support",
+        "#": "C-2893"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "supl_pdf_12"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "6fc5d480c5f0e39464d9f847272fcf31907dde5e3a9bc0afd4c72579159985b7"
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "genomas del conjunto descrito en Methods para OMA|C-2898",
+      "antes": null,
+      "despues": {
+        "magnitud": "genomas del conjunto descrito en Methods para OMA",
+        "valor tal como lo publica la fuente": "92",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "conjunto descrito como eucariota, arqueano y bacteriano en Methods de S10",
+        "método o proxy": "OMA 2.1.1; Sequences and alignment",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods → Sequences and alignment (JATS P30)",
+        "#": "C-2898"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P30"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "7315a0625085a94f4eaf523791a369a6a4aa6e338050d1e9efe02ad70ee6c72f"
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 7",
+      "fila_csv": 7,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-428]",
+        "análisis": "comparación de log-verosimilitud",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios tuvo mejor log-verosimilitud que tres dominios",
+        "soporte cuantitativo tal cual": "−684701.2 frente a −684716.1",
+        "límite o campo no publicado/localizado": "Los valores se transcriben sin conversión editorial.",
+        "filas y fuentes": "C-028–C-029; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-428]",
+        "análisis": "comparación de log-verosimilitud",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios tuvo mejor log-verosimilitud que tres dominios",
+        "soporte cuantitativo tal cual": "≈ −684701.2 para dos dominios; ≈ −684716.1 para tres dominios",
+        "límite o campo no publicado/localizado": "Valores aproximados del texto principal.",
+        "filas y fuentes": "C-028–C-029; C-2884; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "7e14b8553d9850c1eabe681b20cf921790631acd65a57b0ab7a5790d7480a592",
+      "sha256_despues": "72a86695f8e4382c7a7ddf378e6520956024bbcbc042bb3fcee197ea57c13e02",
+      "campos_modificados": [
+        "soporte cuantitativo tal cual",
+        "límite o campo no publicado/localizado",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 8",
+      "fila_csv": 8,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-429]",
+        "análisis": "prueba AU",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios frente a tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.771 frente a 0.229",
+        "límite o campo no publicado/localizado": "Valores publicados de una prueba de topología.",
+        "filas y fuentes": "C-030; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-429]",
+        "análisis": "prueba AU",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios frente a tres dominios",
+        "soporte cuantitativo tal cual": "Texto principal: AU = 0.771 (dos dominios) y 0.229 (tres dominios); pie de tabla suplementaria 2: AU = 0.767 y 0.233, respectivamente",
+        "límite o campo no publicado/localizado": "Discrepancia numérica entre texto principal y pie de tabla suplementaria 2; no se adjudica un valor único.",
+        "filas y fuentes": "C-030; C-2885; C-2891–C-2892; C-2894–C-2895; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); S10 Supplementary information → Supplementary Table 2, PDF p. 3; BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "f8ebe4e23449a9fff95a34dc64fdb0011cb46880e4ec44f7a154be5e7c24e991",
+      "sha256_despues": "da5d5c75ead3f4022edf83070e6deeecd21133be112ad0638784c573077baba0",
+      "campos_modificados": [
+        "soporte cuantitativo tal cual",
+        "límite o campo no publicado/localizado",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 9",
+      "fila_csv": 9,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "Texto principal: AU = 0.036; tabla suplementaria 11: AU = 0.0036",
+        "límite o campo no publicado/localizado": "Discrepancia numérica entre P10 y tabla suplementaria 11; el rechazo queda condicionado al modelo y no se adjudica un valor AU único.",
+        "filas y fuentes": "C-031; C-2893; C-2896; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); S10 Supplementary information → Supplementary Table 11, PDF p. 12; BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824",
+      "sha256_despues": "1702d38591c7976d352a7d8124edcd9f6024846d9f48def36ad4e23f9ac28dc0",
+      "campos_modificados": [
+        "soporte cuantitativo tal cual",
+        "límite o campo no publicado/localizado",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 10",
+      "fila_csv": 10,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-431]",
+        "análisis": "inferencia bayesiana",
+        "modelo": "CAT+GTR+G4",
+        "resultado publicado": "dos dominios",
+        "soporte cuantitativo tal cual": "apoyo posterior máximo",
+        "límite o campo no publicado/localizado": "No consta un valor numérico adicional en la afirmación recuperada [BN-115].",
+        "filas y fuentes": "C-032; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-431]",
+        "análisis": "inferencia bayesiana",
+        "modelo": "CAT+GTR+G4",
+        "resultado publicado": "clado de eucariotas, Heimdallarchaeota y Lokiarchaeum dentro del árbol de dos dominios",
+        "soporte cuantitativo tal cual": "PP = 1 para el clado eucariotas + Heimdallarchaeota + Lokiarchaeum muestreados",
+        "límite o campo no publicado/localizado": "La probabilidad posterior corresponde al nodo indicado, no al árbol completo.",
+        "filas y fuentes": "C-032; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); S10 figura 1 y leyenda (JATS F1); S10 Supplementary information → Supplementary Table 11, PDF p. 12; BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "945f63b97e42217496a0e4eb9173bff14cb058a50472bf20ce8e454e56c82c8c",
+      "sha256_despues": "83690e43f234fb930b7e25f1d8a1cde593db7f643b4fb613d41d068f57ff8dbf",
+      "campos_modificados": [
+        "resultado publicado",
+        "soporte cuantitativo tal cual",
+        "límite o campo no publicado/localizado",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 11",
+      "fila_csv": 11,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes con recodificación SR4",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-432]",
+        "análisis": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-433]",
+        "modelo": "CAT con recodificación SR4",
+        "resultado publicado": "dos dominios",
+        "soporte cuantitativo tal cual": "PP = 0.98",
+        "límite o campo no publicado/localizado": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-434]",
+        "filas y fuentes": "C-033; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes con recodificación SR4",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-432]",
+        "análisis": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-433]",
+        "modelo": "CAT+GTR+G4 con recodificación SR4",
+        "resultado publicado": "clado de eucariotas y Heimdallarchaeota dentro del árbol de dos dominios",
+        "soporte cuantitativo tal cual": "PP = 0.98 para eucariotas + Heimdallarchaeota",
+        "límite o campo no publicado/localizado": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-434]",
+        "filas y fuentes": "C-033; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 6 (JATS P11); S10 Supplementary information → Supplementary Table 11, PDF p. 12; BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "f594f56feb4ba719fb5b1aeaa3ef55946f2306266edbeceb72c99b9d929b8cc4",
+      "sha256_despues": "ca062b806e502716e527795be5e386abc76b1645e98d7dfd74c8b4f7f8099edf",
+      "campos_modificados": [
+        "modelo",
+        "resultado publicado",
+        "soporte cuantitativo tal cual",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "TABLA_NO_RESIDUALES",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "identidad": "fila CSV 12",
+      "fila_csv": 12,
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "21 proteínas universales y 43 proteínas arqueano-eucariotas",
+        "muestreo taxonómico": "125 genomas",
+        "análisis": "análisis de matrices ampliadas",
+        "modelo": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-435]",
+        "resultado publicado": "Eukaryota dentro de Asgard",
+        "soporte cuantitativo tal cual": "apoyo máximo para la asociación con Heimdallarchaeia; LC3 PP = 0.95",
+        "límite o campo no publicado/localizado": "La división asgard concreta fue modificada por estudios posteriores.",
+        "filas y fuentes": "C-034–C-036; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "21 genes con bacterias, arqueas y eucariotas; 43 genes arqueano-eucariotas",
+        "muestreo taxonómico": "21 genes: 125 taxones; 43 genes: 92 taxones",
+        "análisis": "inferencia bayesiana de matrices concatenadas recodificadas con SR4, figura 3a y 3b",
+        "modelo": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-435]",
+        "resultado publicado": "agrupación de eucariotas y Heimdallarchaeota; en la matriz de 43 genes, agrupación interna de eucariotas con el MAG LC_3",
+        "soporte cuantitativo tal cual": "21 genes/SR4: PP = 0.79 para eucariotas + Heimdallarchaeota; 43 genes/SR4: PP = 1 para ese clado y PP = 0.95 para eucariotas + MAG LC_3",
+        "límite o campo no publicado/localizado": "El árbol de 43 genes de la figura 3b es formalmente no enraizado por no incluir grupo externo bacteriano.",
+        "filas y fuentes": "C-034–C-036; C-2886; C-2889–C-2890; C-2897; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafos 2–3 (JATS P18–P19); S10 figura 3 y leyenda (JATS F3); S10 Supplementary information → Supplementary Table 11, PDF p. 13; BN-115"
+      },
+      "sha256_archivo_base": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "limite": "Se conservan exactamente las ocho celdas residuales BN-428–BN-435; su sustitución requiere disposición contractual separada, no este delta.",
+      "sha256_antes": "c50f9ab1294eeef985d13ab914cf0ddf1cfa8abf1cbaabfd53c56e2890f12402",
+      "sha256_despues": "1a26473a82e2382fa89138da12070d7fea4bae4dd1803785a1d7a645366622e2",
+      "campos_modificados": [
+        "matriz",
+        "muestreo taxonómico",
+        "análisis",
+        "resultado publicado",
+        "soporte cuantitativo tal cual",
+        "límite o campo no publicado/localizado",
+        "filas y fuentes"
+      ]
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "LG+G4+F",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "LG+G4+F",
+        "tipo": "modelo filogenético",
+        "sinónimos y grafías alternativas": "LG con gamma de cuatro categorías y frecuencias empíricas",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-029"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "4370a1d47c6f5ed73d290e35dcddf9e8f881f82fbdfc206f969eafa52ebe402a"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "LG+C60+G4+F",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "LG+C60+G4+F",
+        "tipo": "modelo filogenético",
+        "sinónimos y grafías alternativas": "mezcla de perfiles C60 con LG, G4 y F",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-031"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "a8827c12ca90e2248085245a1f2f8339ec58e1ecd66927d075c047548cee25a2"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "CAT+GTR+G4",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "CAT+GTR+G4",
+        "tipo": "modelo filogenético",
+        "sinónimos y grafías alternativas": "CAT-GTR con heterogeneidad de tasas G4",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-032"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "c7dca02c96d37aeffe18ba2cd88b1e25823b2876fe5ece3755ca084e9eb4ac24"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "OMA",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "OMA",
+        "tipo": "método de identificación de ortólogos",
+        "sinónimos y grafías alternativas": "Orthologous MAtrix; OMA 2.1.1",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-034"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "8421089e44e22fd192912fabe9e124caabcca25ef237d7dbe1ea16a1dabaf198"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "log-verosimilitud",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "log-verosimilitud",
+        "tipo": "estadístico",
+        "sinónimos y grafías alternativas": "log likelihood; lnL",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-029"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "3558aa9851c454675b29066fc7b436a4d29838a9fa9525f8b167e52cf0a5ef69"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "probabilidad posterior",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "probabilidad posterior",
+        "tipo": "estadístico de soporte bayesiano",
+        "sinónimos y grafías alternativas": "posterior probability; PP",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-032"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "6e10aab002db89546f3e8426635e0463e4b8eb845d65240bdcd9243b3ffa63aa"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "Lokiarchaeum sp. GC14_75",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "Lokiarchaeum sp. GC14_75",
+        "tipo": "MAG nombrado en S10",
+        "sinónimos y grafías alternativas": "Loki1 en la nomenclatura anterior descrita por S10",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-032"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "4d9e28469c70306ec2931d6aedee30ec0991af9928cdd9114fe85e864861aa46"
+    },
+    {
+      "tipo": "B_ALTA_PROPUESTA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "Heimdallarchaeota archaeon LC_3",
+      "antes": null,
+      "despues": {
+        "etiqueta preferida": "Heimdallarchaeota archaeon LC_3",
+        "tipo": "MAG nombrado en S10",
+        "sinónimos y grafías alternativas": "LC3; Loki3 en la nomenclatura anterior descrita por S10",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+        "# de la fila del registro donde aparece por primera vez": "C-036"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Primera aparición y sinonimia requieren cotejo independiente; no constituye censo integral de B.",
+      "sha256_antes": null,
+      "sha256_despues": "9c4635775075876acee20bc1e2fd86a4c4f7f65d2720b2e63e85c97ede068a53"
+    },
+    {
+      "tipo": "B_ANCLA",
+      "ruta": "data/apendices/B_entidades.csv",
+      "identidad": "Heimdallarchaeia",
+      "antes": {
+        "etiqueta preferida": "Heimdallarchaeia",
+        "tipo": "clase asgard",
+        "sinónimos y grafías alternativas": "Heimdallarchaeota en literatura anterior",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "⚠ [F]",
+        "# de la fila del registro donde aparece por primera vez": "C-083"
+      },
+      "despues": {
+        "etiqueta preferida": "Heimdallarchaeia",
+        "tipo": "clase asgard",
+        "sinónimos y grafías alternativas": "Heimdallarchaeota en literatura anterior",
+        "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "⚠ [F]",
+        "# de la fila del registro donde aparece por primera vez": "C-032"
+      },
+      "sha256_archivo_base": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "limite": "Sólo ancla de primera aparición propuesta; no se adjudica desde este delta la equivalencia nomenclatural entre clase y circunscripciones históricas.",
+      "sha256_antes": "e3fb891e86f1d0db415f64b1a05d3a459da3e605fca078bbe5365f8333554816",
+      "sha256_despues": "9b0fa93f8a33233cca1f267595687ad4313c6e0859c6c109dcfcde7acfe99573",
+      "campos_modificados": [
+        "# de la fila del registro donde aparece por primera vez"
+      ]
+    },
+    {
+      "tipo": "F_ALTA",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "identidad": "taxones de la matriz ampliada de 21 genes|C-2890",
+      "antes": null,
+      "despues": {
+        "magnitud": "taxones de la matriz ampliada de 21 genes",
+        "valor tal como lo publica la fuente": "125",
+        "unidad original": "taxones",
+        "organismo, nodo o intervalo al que se aplica": "matriz de 21 genes de Williams et al. 2020",
+        "método o proxy": "muestreo publicado en Supplementary Table 11",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Supplementary information → Supplementary Table 11, PDF p. 13, filas 21 genes, columna Dataset",
+        "#": "C-2890"
+      },
+      "sha256_archivo_base": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "evidencia_autor": [
+        "P18",
+        "F3",
+        "supl_pdf_13"
+      ],
+      "sha256_antes": null,
+      "sha256_despues": "cb4a93e750dba399f69a4c994e30e6b98dc2eeb3f549a12fa77b7acdb31bb44f"
+    },
+    {
+      "tipo": "PROSA",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "identidad": "párrafo Williams de §2.1.2",
+      "antes": "Williams et al. analizaron una matriz de 43 proteínas arqueano-eucariotas dentro de un muestreo de 125 genomas. [C-034; S10 métodos] En ese análisis recuperaron a Eukaryota asociado con Heimdallarchaeia. [C-035; S10 fig. 3] El clado LC3 obtuvo PP = 0,95; se conserva como resultado de esa matriz, no como posición inmutable frente a muestreos posteriores. [C-036; S10 fig. 3]",
+      "despues": "Williams et al. seleccionaron mediante OMA (Orthologous MAtrix) y filtrado manual una matriz concatenada de 21 genes marcadores con bacterias, arqueas y eucariotas. [C-034; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); S10 Methods → Sequences and alignment (JATS P30)] Con recodificación SR4 bajo CAT+GTR+G4, la agrupación de eucariotas y Heimdallarchaeota en esa matriz de 125 taxones obtuvo PP = 0.79. [C-2890; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); S10 figura 3a y leyenda (JATS F3); S10 Supplementary information → Supplementary Table 11, PDF p. 13]\n\nLa matriz arqueano-eucariota comprende 43 genes y 92 taxones. [C-2886; C-2889; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 2 (JATS P18); S10 Supplementary information → Supplementary Table 11, PDF p. 13] Bajo CAT+GTR+G4 con SR4, el clado de eucariotas y Heimdallarchaeota obtuvo PP = 1. [C-035; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19); S10 figura 3b y leyenda (JATS F3); S10 Supplementary information → Supplementary Table 11, PDF p. 13] Dentro de él, la agrupación de eucariotas con el MAG Heimdallarchaeota archaeon LC_3 obtuvo PP = 0.95. [C-036; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 3 (JATS P19); S10 figura 3b y leyenda (JATS F3)] El árbol de 43 genes es formalmente no enraizado por no incluir un grupo externo bacteriano. [C-2897; S10 figura 3b, leyenda (JATS F3), apartado Expanded gene and taxon sampling]\n\nEl apartado de resultados declara un muestreo ampliado de 125 especies. [C-2887; S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafo 1 (JATS P17)] El apartado Methods describe un conjunto de 92 genomas eucariotas, arqueanos y bacterianos para OMA; se conserva esa descripción con su procedencia, sin identificarla por deducción con otra matriz. [C-2898; S10 Methods → Sequences and alignment (JATS P30)]\n\nEn la comparación bajo LG+G4+F, el texto principal informa AU = 0.771 para dos dominios y 0.229 para tres dominios. [C-030; C-2885; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8)] El pie de la tabla suplementaria 2 informa, respectivamente, 0.767 y 0.233. [C-2891–C-2892; S10 Supplementary information → Supplementary Table 2, PDF p. 3] Estas diferencias se conservan como discrepancias internas sin adjudicar un valor único. [C-2894–C-2895; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 3 (JATS P8); S10 Supplementary information → Supplementary Table 2, PDF p. 3]\n\nPara el rechazo de tres dominios bajo LG+C60+G4+F, el texto principal informa AU = 0.036 y la tabla suplementaria 11 informa AU = 0.0036. [C-031; C-2893; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); S10 Supplementary information → Supplementary Table 11, PDF p. 12] La discrepancia es numérica; se conservan ambos pasajes sin declarar que uno sea una errata. [C-2896; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); S10 Supplementary information → Supplementary Table 11, PDF p. 12]",
+      "sha256_archivo_base": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "sha256_antes": "299b5249ff44994f5083b8f0bc4a7a30250e5b4e874d1966cd499d34b63acef8",
+      "sha256_despues": "89b0625bdd527afaf60f06ba016be541d17a73baa26166823148cadce4b454fa"
+    },
+    {
+      "tipo": "PROSA",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "identidad": "cita posterior a tabla 01",
+      "antes": "[C-028–C-036; S10 tabla 1; figs. 1–3; material suplementario]",
+      "despues": "[C-028–C-036; C-2884–C-2898; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafos 3–6 (JATS P8–P11); S10 Results and Discussion → Expanded gene and taxon sampling supports a clade of eukaryotes and Asgard archaea, párrafos 1–3 (JATS P17–P19); S10 Supplementary information → Supplementary Tables 2 y 11]",
+      "sha256_archivo_base": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "sha256_antes": "744455f7f83cba4900b7e00b789e5ad7287b5ae9a99b029998a6219ce3936d5d",
+      "sha256_despues": "30f637303f3b835b581b66c9ce364cf6f406c7cd931294fa82b516a277df5288"
+    },
+    {
+      "tipo": "A_NOTAS",
+      "ruta": "data/apendices/A_fuentes.csv",
+      "identidad": "S10",
+      "antes": {
+        "clave": "S10",
+        "autores": "Williams et al.",
+        "año": "2020",
+        "título": "Phylogenomics provides robust support for a two-domains tree of life",
+        "publicación o repositorio": "Nature Ecology & Evolution",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41559-019-1040-x",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Comparación cuantitativa de topologías y modelos; incluye pruebas AU, CAT-GTR y recodificación SR4. Publicado en línea en 2019 y asignado al volumen 4 de 2020; el campo de año conserva el año del volumen. [CORRECCIÓN VERIFICADA 2026-08-08] La Author Correction https://doi.org/10.1038/s41559-020-01347-2 corrige en la tabla 1 la summed quartet distance de MSC (ASTRAL), de 17213379 a 17145892, y atribuye a ASTRAL, no a SPA, la mejor distancia; declara que los árboles y las conclusiones no cambian. Ninguna C vigente transcribe esa distancia, por lo que C-028–C-036 no requieren cambio por esta corrección. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 9 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "despues": {
+        "clave": "S10",
+        "autores": "Williams et al.",
+        "año": "2020",
+        "título": "Phylogenomics provides robust support for a two-domains tree of life",
+        "publicación o repositorio": "Nature Ecology & Evolution",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41559-019-1040-x",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Comparación cuantitativa de topologías y modelos; incluye pruebas AU, CAT-GTR y recodificación SR4. Publicado en línea en 2019 y asignado al volumen 4 de 2020; el campo de año conserva el año del volumen. [CORRECCIÓN VERIFICADA 2026-08-08] La Author Correction https://doi.org/10.1038/s41559-020-01347-2 corrige en la tabla 1 la summed quartet distance de MSC (ASTRAL), de 17213379 a 17145892, y atribuye a ASTRAL, no a SPA, la mejor distancia; declara que los árboles y las conclusiones no cambian. Ninguna C vigente transcribe esa distancia, por lo que C-028–C-036 no requieren cambio por esta corrección. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 9 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez. [COTEJO DE VERSIONES 2026-09-27] El XML PMC6942926 y el PDF Bristol consultados son manuscritos de autor; no se presentan como versión editorial corregida. El suplemento EMS84653 de Europe PMC publica AU distintos del texto principal: 0.767/0.233 frente a 0.771/0.229 bajo LG+G4+F, y 0.0036 frente a 0.036 bajo LG+C60+G4+F. Se conservan pasajes y versiones sin adjudicar erratas. La discrepancia entre la descripción de OMA en Methods (92 genomas eucariotas, arqueanos y bacterianos) y los conjuntos definidos en Results/ST11 no se resuelve por resta.",
+        "fecha de consulta": "2026-09-27"
+      },
+      "sha256_archivo_base": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "sha256_antes": "969e145f87bfe49e9fb71027ece1f25f5f020d9c48bc3462d6f395f69b72d553",
+      "sha256_despues": "9be0c07ce3bc378a25a55ffb93b834930357eaf4beb36f5d19a569521df051bb",
+      "campos_modificados": [
+        "notas de calidad",
+        "fecha de consulta"
+      ]
+    }
+  ],
+  "conservados": [
+    {
+      "ruta": "data/afirmaciones/02.csv",
+      "identidad": "C-031",
+      "fila": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10): «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "motivo": "Posición de P10 conservada exactamente; el contraste con ST11 se propone por separado."
+    }
+  ],
+  "huellas_base": {
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104"
+  },
+  "fuentes": {
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": {
+      "sha256": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+      "bytes": 151030
+    },
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": {
+      "sha256": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768",
+      "bytes": 374804
+    },
+    "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf": {
+      "sha256": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+      "bytes": 10820718
+    }
+  },
+  "pasajes": {
+    "P6": {
+      "sha256": "4e8cb50ef0ae8c50e0bdfc39b74bb27586b8b5a7a2d688da29333a528174e99e"
+    },
+    "P7": {
+      "sha256": "5146af1752ac73b59e1ee9eb6bdcec35d47da724303f7000548e7bdaae5b0981"
+    },
+    "P8": {
+      "sha256": "d21acb03a15235ad15f6120112223baabb8705c05764858b4041f035285933f8"
+    },
+    "P10": {
+      "sha256": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87"
+    },
+    "P11": {
+      "sha256": "8c7ffcdcd315aa841291ef2911d01febc3c041d4fb7ba15524d4ef18d00bf7c3"
+    },
+    "P17": {
+      "sha256": "9834c0c59bef0ccf9f92225ea6257901accdbbfdca9bef3ac82c91b40416ca93"
+    },
+    "P18": {
+      "sha256": "d31b89de8a0969c11aee082b175aa13520dd4b0499d37125546a17cc01f8fa66"
+    },
+    "P19": {
+      "sha256": "bba06ced61b2824d934f597557bcc0a1bf369acd8412c810c34a0a1398b37203"
+    },
+    "P30": {
+      "sha256": "833dae4983b7f185e4fbb9763514ed98a1d17defafaae7cec59f0ec7bcd5febf"
+    },
+    "P31": {
+      "sha256": "b09dce5a96c86240ea0e72cfe5d481bbef2b35a7c873279c3345619891c3d268"
+    },
+    "F1": {
+      "sha256": "d5eda8711cb3b1d28cb2d6e0b3bc1aab2c3253a0c8dda2be3175530e9f75c0de"
+    },
+    "F3": {
+      "sha256": "4c296222944ee435ef50ce13f0bf15482786c51c4388f098a9fbafca7e3baa71"
+    },
+    "supl_pdf_3": {
+      "sha256": "b679af4389679af100b93e7744a53c1d40bff824c9da096d3eaae392624d416c"
+    },
+    "supl_pdf_12": {
+      "sha256": "bbc887ed692d067efb071e359bd43db6e0343c9f7e930977130fc6b1af60552c"
+    },
+    "supl_pdf_13": {
+      "sha256": "cf2f6039ae71e5bdec64451bc5482abf255e951783670e2eea38d88edee9e847"
+    }
+  },
+  "matriz_evidencia_autor": {
+    "C-028": [
+      "P8",
+      "P30"
+    ],
+    "C-029": [
+      "P8"
+    ],
+    "C-030": [
+      "P8"
+    ],
+    "C-031": [
+      "P10",
+      "supl_pdf_12"
+    ],
+    "C-032": [
+      "P10",
+      "F1",
+      "supl_pdf_12"
+    ],
+    "C-033": [
+      "P11",
+      "supl_pdf_12"
+    ],
+    "C-034": [
+      "P18",
+      "P30"
+    ],
+    "C-035": [
+      "P19",
+      "F3",
+      "supl_pdf_13"
+    ],
+    "C-036": [
+      "P19",
+      "F3",
+      "supl_pdf_13"
+    ],
+    "C-2884": [
+      "P8"
+    ],
+    "C-2885": [
+      "P8"
+    ],
+    "C-2886": [
+      "P18",
+      "P30"
+    ],
+    "C-2887": [
+      "P17"
+    ],
+    "C-2888": [
+      "supl_pdf_12"
+    ],
+    "C-2889": [
+      "supl_pdf_13"
+    ],
+    "C-2890": [
+      "P18",
+      "F3",
+      "supl_pdf_13"
+    ],
+    "C-2891": [
+      "supl_pdf_3"
+    ],
+    "C-2892": [
+      "supl_pdf_3"
+    ],
+    "C-2893": [
+      "supl_pdf_12"
+    ],
+    "C-2894": [
+      "P8",
+      "supl_pdf_3"
+    ],
+    "C-2895": [
+      "P8",
+      "supl_pdf_3"
+    ],
+    "C-2896": [
+      "P10",
+      "supl_pdf_12"
+    ],
+    "C-2897": [
+      "F3"
+    ],
+    "C-2898": [
+      "P30"
+    ]
+  },
+  "destino_suplemento": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life - suplemento.pdf",
+  "recuperacion_suplemento": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6942926/supplementaryFiles",
+    "termino_normalmente": true,
+    "archivo_en_zip": "EMS84653-supplement-Supplementary_information.pdf",
+    "instante_comprobacion": "2026-09-27T03:31:48Z",
+    "zip": "/tmp/s10-figuras-cierre-20260927.pBwbOd/supplementary-files.zip",
+    "nota": "No se usa la marca horaria interna del ZIP como hora de recuperación."
+  },
+  "lecturas_visuales_autor": [
+    {
+      "archivo": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf",
+      "paginas_fisicas": [
+        32,
+        34
+      ],
+      "objetos": [
+        "Figura 1: nodo eucariotas + Asgard muestreados, PP = 1",
+        "Figura 3a: nodo eucariotas + Heimdallarchaeota, PP = 0.79",
+        "Figura 3b: eucariotas + Heimdallarchaeota PP = 1; eucariotas + LC_3 PP = 0.95"
+      ]
+    },
+    {
+      "archivo": "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf",
+      "paginas_fisicas": [
+        3,
+        12,
+        13
+      ],
+      "objetos": [
+        "ST2: pies AU y valores específicos por programa",
+        "ST11: matrices, muestreos, recodificación, nodos y AU"
+      ]
+    }
+  ],
+  "normalizacion_sha256_fila": "JSON ensure_ascii=False, sort_keys=True, separadores coma/dos puntos, LF final, UTF-8",
+  "normalizacion_pasajes": "JATS: join(itertext), blancos colapsados mediante split/join, LF final. Suplemento: página PDF extraída con pdftotext -layout y blancos colapsados, LF final; localizador identifica tabla/fila/columna y se comprobó visualmente.",
+  "alcance": "Propuesta autoral para reparar ocho C, conservar C-031, descomponer magnitudes compuestas y distinguir matrices/nodos/versiones. Incluye quince altas C, F/B/A, tabla y prosa. No constituye censo primario ni segunda revisión.",
+  "limites": [
+    "C-2884–C-2898 son identificadores reservados, posteriores a las propuestas C-2839–C-2883; no se integran dejando huecos ni renumerando dictámenes sin reinspección.",
+    "C-031 permanece idéntica a la fila viva. C-030 se descompone conservando íntegra la fila anterior en este expediente; las dos cifras originales permanecen en C-030 y C-2885. La conformidad editorial con §16/R0378 requiere dictamen explícito, no se presupone.",
+    "Los enlaces C-2894–C-2896 se proponen como contrastes de cifras, no como refutaciones de la existencia de pasajes. El revisor debe comprobar si el blanco está correctamente acotado; si no, se repararán sin declarar conformidad.",
+    "Las ocho celdas residuales BN-428–BN-435 siguen exactamente intactas. Hay evidencia nueva para su muestreo/modelo, pero todavía deben prepararse y revisarse sus disposiciones conforme al contrato vigente.",
+    "Faltan los deltas de correcciones_celdas_semanticas_v1 y su materialización atómica antes de integración. Las propuestas de fila completa no autorizan sobreescribir correcciones ni dictámenes históricos.",
+    "El suplemento permanece temporal y no altera fuentes/, inventario, acceso ni consultas negativas históricas. Tras su integración futura se deben regenerar derivados y ejecutar consultas reales.",
+    "No se declara verificado todo método de cada topología: posiciones del alineamiento y demás dimensiones aún no cotejadas siguen pendientes del control completo de §16.",
+    "No se considera resuelta la divergencia interna de cifras ni se convierte una copia AAM en versión de registro. No se extiende la Author Correction de la tabla 1 a estas cifras sin evidencia.",
+    "Las B son propuestas nominales; primera aparición, nombre y alcance requieren revisión, especialmente anclas existentes y etiquetas históricas.",
+    "La lectura del artículo y suplemento respalda pasajes localizados, no la aprobación de los 210 controles ni del censo de todas las C."
+  ],
+  "fecha_utc": "2026-09-27T03:50:17Z"
+}

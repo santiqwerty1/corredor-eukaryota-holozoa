@@ -24,7 +24,7 @@ CLAIM_COLUMNS = [
 ]
 
 LINK_CATEGORIES = {"claims", "appendix", "negative"}
-SOURCE_RANGE = re.compile(r"\bS(\d{2,3})\s*(?:-|–)\s*S(\d{2,3})\b")
+SOURCE_RANGE = re.compile(r"\bS(\d{2,3})\s*(?:-|–)\s*S?(\d{2,3})\b")
 SOURCE_REF = re.compile(r"\bS\d{2,3}\b")
 
 

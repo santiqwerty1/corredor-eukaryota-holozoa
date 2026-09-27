@@ -1,0 +1,8 @@
+{
+  "ruta": "data/apendices/F_magnitudes.csv",
+  "sha256_actual": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+  "sha256_revertido_solo_objeto_C031_en_memoria": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+  "base_declarada_C031": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+  "fila_csv_C031": 11,
+  "no_escritura": true
+}

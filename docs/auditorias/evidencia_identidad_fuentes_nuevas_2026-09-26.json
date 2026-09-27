@@ -1,0 +1,2053 @@
+{
+  "alcance": "Reinspección de identidad bibliográfica de las 13 altas frente al inventario inicial de 525 S. No prueba de soporte científico, revisión manual, segunda revisión global, fecha original de consulta ni estado editorial exhaustivo. CONFORME es solo concordancia bibliográfica dentro del alcance y límites nominales.",
+  "fecha_finalizacion_inspeccion_utc": "2026-09-26T21:27:59Z",
+  "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+  "independencia": "No participé en la redacción de A ni cambié A, corpus, fuentes/ o registros cronológicos. La inspección usa documentos primarios locales y endpoints oficiales, no la mera declaración de A.",
+  "fuentes": [
+    {
+      "clave_fuente": "S547",
+      "huella_fila_A_sha256": "36ca9f59b132164882cc6ebf50a5da0553b6e5f53326aa74019831b4d2180285",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S547",
+        "autores": "Lechte, Maxwell A.; Riedman, Leigh Anne; Porter, Susannah M.; Halverson, Galen P.; Whelan, Margaret",
+        "año": "2026",
+        "título": "Early fossil eukaryotes were benthic aerobes",
+        "publicación o repositorio": "Nature 655:670–675",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41586-026-10533-4",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Integra paleontología, sedimentología y geoquímica para fósiles eucariotas de aproximadamente 1,75–1,4 Ga; separa su distribución observada de las inferencias autorales de aerobiosis, mitocondrias y hábito bentónico. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 4 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1038/s41586-026-10533-4",
+          "title": [
+            "Early fossil eukaryotes were benthic aerobes"
+          ],
+          "author": [
+            {
+              "given": "Maxwell A.",
+              "family": "Lechte",
+              "sequence": "first"
+            },
+            {
+              "given": "Leigh Anne",
+              "family": "Riedman",
+              "sequence": "additional"
+            },
+            {
+              "given": "Susannah M.",
+              "family": "Porter",
+              "sequence": "additional"
+            },
+            {
+              "given": "Galen P.",
+              "family": "Halverson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Margaret",
+              "family": "Whelan",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                20
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                20
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                16
+              ]
+            ]
+          },
+          "container-title": [
+            "Nature"
+          ],
+          "volume": "655",
+          "issue": "8123",
+          "page": "670-675",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.nature.com/articles/s41586-026-10533-4"
+      ],
+      "comprobaciones": "Título, cinco autores en orden, año 2026, Nature 655:670–675 y DOI coinciden entre A, registro Crossref y cabecera editorial.",
+      "tipo_documental_observado": "Article en el editor; resumen describe investigación empírica original.",
+      "limitaciones": "La cabecera y el resumen del editor fueron accesibles; no se inspeccionó el texto completo de pago.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1038%2Fs41586-026-10533-4",
+        "respuesta_original_sha256": "78cd98a73718634dffa84ea1c70fa2dac8fb9190ffb97a49d520158f6a23c935",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S547-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S548",
+      "huella_fila_A_sha256": "d84a75032699d0a2af2a7cb4239e171619ee21d1261eae1f93dbd3042544e329",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S548",
+        "autores": "Sandin, Miguel M.; Cohen, Phoebe A.; Morlon, Hélène; Burki, Fabien",
+        "año": "2026",
+        "título": "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic",
+        "publicación o repositorio": "Proceedings of the National Academy of Sciences 123:e2600283123",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.2600283123",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Filogenia ambiental y datación con 75.975 OTU no redundantes, 77 calibraciones, 32 árboles y 100 réplicas TreePL por árbol; sus edades y sensibilidades son específicas del marco del estudio y no constituyen consenso. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 7 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1073/pnas.2600283123",
+          "title": [
+            "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic"
+          ],
+          "author": [
+            {
+              "given": "Miguel M.",
+              "family": "Sandin",
+              "sequence": "first"
+            },
+            {
+              "given": "Phoebe A.",
+              "family": "Cohen",
+              "sequence": "additional"
+            },
+            {
+              "given": "Hélène",
+              "family": "Morlon",
+              "sequence": "additional"
+            },
+            {
+              "given": "Fabien",
+              "family": "Burki",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                16
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                21
+              ]
+            ]
+          },
+          "container-title": [
+            "Proceedings of the National Academy of Sciences"
+          ],
+          "volume": "123",
+          "issue": "29",
+          "article-number": "e2600283123",
+          "type": "journal-article"
+        },
+        "JATS_PNAS_2026": {
+          "article-type": "research-article",
+          "article-id": [
+            {
+              "pub-id-type": "pmcid",
+              "value": "PMC13389600"
+            },
+            {
+              "pub-id-type": "pmcaid",
+              "value": "13389600"
+            },
+            {
+              "pub-id-type": "pmcaiid",
+              "value": "13389600"
+            },
+            {
+              "pub-id-type": "pmid",
+              "value": "42461763"
+            },
+            {
+              "pub-id-type": "doi",
+              "value": "10.1073/pnas.2600283123"
+            }
+          ],
+          "article-title": "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic",
+          "authors": [
+            "Miguel M Sandin",
+            "Phoebe A Cohen",
+            "Hélène Morlon",
+            "Fabien Burki"
+          ],
+          "pub-date": [
+            {
+              "year": "2026",
+              "month": "7",
+              "day": "16"
+            }
+          ],
+          "volume": "123",
+          "issue": "29",
+          "fpage": "e2600283123",
+          "lpage": "",
+          "journal-title": "Proceedings of the National Academy of Sciences of the United States of America"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S548 [2026] Environmental phylogenetics supports a steady diversification of crown.pdf",
+          "sha256": "1494dc1fc86c72a8fc800265c1ff2a9d1bdb61e209107f2a0513bb8f67c9c745",
+          "localizador": "p. 1, cabecera bioRxiv y autores",
+          "conservacion": "repositorio_local"
+        },
+        {
+          "ruta": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S548-published.xml",
+          "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+          "localizador": "article/@article-type; front/article-meta; custom-meta is-manuscript e is-preprint",
+          "conservacion": "temporal_no_versionado"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/fullTextXML",
+        "https://pubmed.ncbi.nlm.nih.gov/42461763/"
+      ],
+      "comprobaciones": "Título, cuatro autores, año 2026, PNAS 123:e2600283123 y DOI coinciden en A, Crossref y JATS publicado. JATS declara is-manuscript=no e is-preprint=no.",
+      "tipo_documental_observado": "research-article en JATS de PNAS 2026.",
+      "limitaciones": "El PDF ya existente en fuentes/ es bioRxiv 10.64898/2025.12.12.693929, versión 14-12-2025, y no es la versión PNAS. La concordancia bibliográfica no acredita identidad de datos, intervalos ni resultados entre versiones; ese cotejo queda separado.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1073%2Fpnas.2600283123",
+        "respuesta_original_sha256": "1b397b9d14b3a885fa24fa260ca1a5c155412a1205a19b6cf8072cbec6f9b9dd",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S548-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S549",
+      "huella_fila_A_sha256": "097ed000f73c2b1da41fd1d90ddfcfeb5dd625525d89c3b5a5c811e94d54f540",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S549",
+        "autores": "Iqbal, Tasawar; Penington, Catherine; Thomas, Christian; Koens, Lyndon",
+        "año": "2026",
+        "título": "Hydrodynamics constrain choanoflagellate collar geometry",
+        "publicación o repositorio": "Physical Review Fluids 11:063102",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1103/vzxt-rpf8",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Modelo reducido que omite la longitud finita del collar y compara geometrías entre especies; la disipación hidrodinámica modelada no es una medida de ATP, oxígeno ni coste metabólico celular. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 4 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación. [USO EN UNA SOLA C] C-1612.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1103/vzxt-rpf8",
+          "title": [
+            "Hydrodynamics constrain choanoflagellate collar geometry"
+          ],
+          "author": [
+            {
+              "given": "Tasawar",
+              "family": "Iqbal",
+              "sequence": "first"
+            },
+            {
+              "given": "Catherine",
+              "family": "Penington",
+              "sequence": "additional"
+            },
+            {
+              "given": "Christian",
+              "family": "Thomas",
+              "sequence": "additional"
+            },
+            {
+              "given": "Lyndon",
+              "family": "Koens",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                18
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                18
+              ]
+            ]
+          },
+          "container-title": [
+            "Physical Review Fluids"
+          ],
+          "volume": "11",
+          "issue": "6",
+          "article-number": "063102",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry.pdf",
+          "sha256": "5d96bee75ff2ff6c52ea0ab0403f8f414181de7772cafdcf949ebc9b1e18dd7c",
+          "localizador": "p. 1, autores y margen arXiv:2605.25337v1",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://journals.aps.org/prfluids/abstract/10.1103/vzxt-rpf8"
+      ],
+      "comprobaciones": "Título, cuatro autores en orden, año 2026, volumen 11, artículo 063102 y DOI coinciden en A, Crossref y cabecera APS.",
+      "tipo_documental_observado": "Artículo de Physical Review Fluids; resumen editorial describe un modelo original.",
+      "limitaciones": "El PDF local es arXiv:2605.25337v1 de 25-05-2026. La publicación APS es de 18-06-2026. No se afirma equivalencia completa entre ambas versiones.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1103%2Fvzxt-rpf8",
+        "respuesta_original_sha256": "831deee0c35aef595b764f74ef68b7b338912aa9d9ff7fcd871cb45547e3a2a6",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S549-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S550",
+      "huella_fila_A_sha256": "b0d0a739d8de062c19cb562be38065435b7ac24ca01eb7be18f56f7494f56aca",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S550",
+        "autores": "Schultheiss, Kira P.; Suga, Hiroshi; Ruiz-Trillo, Iñaki; Miller, W. Todd",
+        "año": "2012",
+        "título": "Lack of Csk-mediated negative regulation in a unicellular Src kinase",
+        "publicación o repositorio": "Biochemistry 51:8267–8277",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1021/bi300965h",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Ensayos celulares y bioquímicos de CoSrc1/2 y CoCsk en Capsaspora; apoya ausencia de regulación negativa medible por CoCsk bajo las condiciones ensayadas, no ausencia universal de toda regulación de Src. [SOPORTE ÚNICO ACTUAL] En el corpus final es la única fuente citada por 5 afirmaciones; esta condición es posterior al corte inicial y se calcula por afirmación.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1021/bi300965h",
+          "title": [
+            "Lack of Csk-Mediated Negative Regulation in a Unicellular Src Kinase"
+          ],
+          "author": [
+            {
+              "given": "Kira P.",
+              "family": "Schultheiss",
+              "sequence": "first"
+            },
+            {
+              "given": "Hiroshi",
+              "family": "Suga",
+              "sequence": "additional"
+            },
+            {
+              "given": "Iñaki",
+              "family": "Ruiz-Trillo",
+              "sequence": "additional"
+            },
+            {
+              "given": "W. Todd",
+              "family": "Miller",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2012,
+                10,
+                1
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2012,
+                10,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2012,
+                10,
+                16
+              ]
+            ]
+          },
+          "container-title": [
+            "Biochemistry"
+          ],
+          "volume": "51",
+          "issue": "41",
+          "page": "8267-8277",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S550 [2012] Lack of Csk-mediated negative regulation in a unicellular Src kinase.pdf",
+          "sha256": "3baf829b477dc34b9f2a060f93e412b8390f88c59adf49303d8e48d1fe1943e1",
+          "localizador": "pp. 1–2, título, autores y comienzo del manuscrito",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://pubs.acs.org/doi/10.1021/bi300965h"
+      ],
+      "comprobaciones": "Título, cuatro autores en orden, año 2012, Biochemistry 51:8267–8277 y DOI concordantes. Capitalización del título no cambia la identidad.",
+      "tipo_documental_observado": "journal-article en Crossref; manuscrito local describe ensayos originales.",
+      "limitaciones": "El PDF local es un manuscrito de autor; el endpoint editorial directo devolvió 403. No se atribuye al PDF local la paginación tipográfica de la versión publicada.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1021%2Fbi300965h",
+        "respuesta_original_sha256": "33d815aedfcb57f103f2f823e670a323e554d1e4778f1e3148800cdd92209744",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S550-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S551",
+      "huella_fila_A_sha256": "07e661ea5630cc6055742b38df5f79f606a8e3c0eced4cedc64103df9a72c9a1",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S551",
+        "autores": "Neue Deutsche Biographie",
+        "año": "2026, consulta",
+        "título": "Goldfuß, Georg August",
+        "publicación o repositorio": "Deutsche Biographie",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://www.deutsche-biographie.de/gnd100151310.html",
+        "tipo": "otro",
+        "notas de calidad": "Entrada biográfica institucional. [PASAJE VERIFICADO 2026-08-08] La sección biográfica indica que Goldfuß introdujo en 1818 el término Protozoa en su clasificación de Zoophyta como primera clase; se usa para distinguir esa sistematización de la aparición impresa de 1817 descrita por S422 y de la clase de 1820 referida por S386. [USO EN UNA SOLA C] C-1783.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "NDB": {
+          "autor": "Uschmann, Georg",
+          "año_publicacion": "1964",
+          "título": "Goldfuß, Georg August",
+          "publicación": "Neue Deutsche Biographie 6 (1964), S. 605 [Online-Version]",
+          "URL": "https://www.deutsche-biographie.de/gnd100151310.html#ndbcontent",
+          "tipo": "NDB-Artikel"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S551-institutional.html",
+          "sha256": "80bd6c71a62cd1a9f5e520b6c7991c7802149be16a47faaf0302e4a0f51e7855",
+          "localizador": "NDB: Autor/in y Zitierweise; #ndbcontent",
+          "conservacion": "temporal_no_versionado"
+        },
+        {
+          "ruta": "fuentes/S551 [2026, consulta] Goldfuß Georg August.pdf",
+          "sha256": "93bddae4824bddfe29fe136faa1916ff8c5a659da717d95955e4a953e8ae08db",
+          "localizador": "pp. 1–2, NDB-Artikel, Autor y Empfohlene Zitierweise",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.deutsche-biographie.de/gnd100151310.html#ndbcontent"
+      ],
+      "comprobaciones": "Título y URL identifican la entrada correcta, pero Autor/in y Zitierweise identifican a Georg Uschmann y Neue Deutsche Biographie 6 (1964), p. 605. A registra Neue Deutsche Biographie como autor y 2026, consulta como año.",
+      "tipo_documental_observado": "NDB-Artikel; entrada biográfica firmada.",
+      "limitaciones": "La fecha de consulta histórica 2026-08-08 no se verificó ni se modifica. La página también contiene una entrada ADB distinta, Victor Carus (1879), que no debe mezclarse con NDB.",
+      "dictamen_identidad_y_tipo": "NO_CONFORME"
+    },
+    {
+      "clave_fuente": "S552",
+      "huella_fila_A_sha256": "0790d59e5dc70057fdc065956adbbfbebf96064c34d07f296b96db77a24f3295",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S552",
+        "autores": "Jamy, M. et al.",
+        "año": "2022",
+        "título": "Global patterns and rates of habitat transitions across the eukaryotic tree of life",
+        "publicación o repositorio": "Nature Ecology & Evolution 6:1458–1470",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41559-022-01838-4",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Reconstrucción de estados ancestrales y tasas de transición de hábitat a escala eucariota. [PASAJES VERIFICADOS 2026-08-08] Results, sección “Habitat transition rates vary across major eukaryotic clades”, fig. 2b: Choanoflagellata presenta tasas marino→no marino y no marino→marino sin diferencia significativa; Results, sección “Ancestral habitat reconstruction”, fig. 4a–b: Amorphea se reconstruye como agua dulce/suelo; Fungi y el grupo Metazoa+Choanoflagellata no muestran una preferencia ancestral clara; el estado ancestral de Choanoflagellata cambia de marino en el árbol global a no marino en el árbol específico. Methods, secciones “Model test on global eukaryotic phylogeny”, “Inferring clade-specific transition rates” y “Ancestral habitat reconstruction”: modelos MCMC de BayesTraits y reconstrucciones sobre árboles global y específicos. No ofrece una transición concreta para cada nodo del corredor. Metadatos verificados contra el registro DOI de Crossref. [SOPORTE ÚNICO ACTUAL] S552 es la única fuente S directa de C-834.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1038/s41559-022-01838-4",
+          "title": [
+            "Global patterns and rates of habitat transitions across the eukaryotic tree of life"
+          ],
+          "author": [
+            {
+              "given": "Mahwash",
+              "family": "Jamy",
+              "sequence": "first"
+            },
+            {
+              "given": "Charlie",
+              "family": "Biwer",
+              "sequence": "additional"
+            },
+            {
+              "given": "Daniel",
+              "family": "Vaulot",
+              "sequence": "additional"
+            },
+            {
+              "given": "Aleix",
+              "family": "Obiol",
+              "sequence": "additional"
+            },
+            {
+              "given": "Hongmei",
+              "family": "Jing",
+              "sequence": "additional"
+            },
+            {
+              "given": "Sari",
+              "family": "Peura",
+              "sequence": "additional"
+            },
+            {
+              "given": "Ramon",
+              "family": "Massana",
+              "sequence": "additional"
+            },
+            {
+              "given": "Fabien",
+              "family": "Burki",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                4
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                4
+              ]
+            ]
+          },
+          "container-title": [
+            "Nature Ecology &amp; Evolution"
+          ],
+          "volume": "6",
+          "issue": "10",
+          "page": "1458-1470",
+          "type": "journal-article"
+        },
+        "JATS_local": {
+          "article-type": "research-article",
+          "article-id": [
+            {
+              "pub-id-type": "pmcid",
+              "value": "PMC9525238"
+            },
+            {
+              "pub-id-type": "pmcid-ver",
+              "value": "PMC9525238.1"
+            },
+            {
+              "pub-id-type": "pmcaid",
+              "value": "9525238"
+            },
+            {
+              "pub-id-type": "pmcaiid",
+              "value": "9525238"
+            },
+            {
+              "pub-id-type": "pmid",
+              "value": "35927316"
+            },
+            {
+              "pub-id-type": "doi",
+              "value": "10.1038/s41559-022-01838-4"
+            },
+            {
+              "pub-id-type": "publisher-id",
+              "value": "1838"
+            }
+          ],
+          "article-title": "Global patterns and rates of habitat transitions across the eukaryotic tree of life",
+          "authors": [
+            "Mahwash Jamy",
+            "Charlie Biwer",
+            "Daniel Vaulot",
+            "Aleix Obiol",
+            "Hongmei Jing",
+            "Sari Peura",
+            "Ramon Massana",
+            "Fabien Burki"
+          ],
+          "pub-date": [
+            {
+              "pub-type": "epub",
+              "year": "2022",
+              "month": "8",
+              "day": "4"
+            },
+            {
+              "pub-type": "ppub",
+              "year": "2022",
+              "month": "",
+              "day": ""
+            }
+          ],
+          "volume": "6",
+          "issue": "10",
+          "fpage": "1458",
+          "lpage": "1470",
+          "journal-title": "Nature Ecology & Evolution"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S552 [2022] Global patterns and rates of habitat transitions across the eukaryotic.xml",
+          "sha256": "0e1b2c66356d2e86c7c6a4d58ddc522ca87451f66266f8edf94e4c48cedf3bb2",
+          "localizador": "article/@article-type; front/article-meta: article-id, title-group, contrib-group, pub-date, volume, fpage, lpage",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9525238/fullTextXML"
+      ],
+      "comprobaciones": "Título, primer autor Mahwash Jamy y coautoría, año 2022, Nature Ecology & Evolution 6:1458–1470 y DOI coinciden. La abreviatura Jamy, M. et al. de A es compatible con la lista nominal.",
+      "tipo_documental_observado": "research-article en JATS local.",
+      "limitaciones": "El JATS fue inspeccionado localmente; no se atribuye a esta inspección una nueva descarga del endpoint mencionado como procedencia.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1038%2Fs41559-022-01838-4",
+        "respuesta_original_sha256": "b8facf437c86bb62f3a47c69de1dc1ff57203a6127342b2531b7af40788f1d69",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S552-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S553",
+      "huella_fila_A_sha256": "64ccd2be0240f22363055251f8b7a9d30cf53d80902edb05a53571f189068d35",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S553",
+        "autores": "Kikuchi, Y.; Suzuki, Y.; Tamiya, N.",
+        "año": "1983",
+        "título": "The source of oxygen in the reaction catalysed by collagen lysyl hydroxylase",
+        "publicación o repositorio": "Biochemical Journal 213:507–512",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1042/bj2130507",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] El resumen y el ensayo con atmósfera de ¹⁸O₂ informan la hidroxilación de los péptidos sintéticos (Pro-Pro-Gly)₅ e (Ile-Lys-Gly)₅-Phe mediante prolil- y lisil-hidroxilasa de colágeno y trazan oxígeno atmosférico a los grupos hidroxilo de hidroxiprolina e hidroxilisina. El experimento demuestra incorporación de O₂ en modelos de reacción; no publica un umbral ambiental de colágeno ni una condición universal para animales. Metadatos y resumen verificados en PubMed PMID 6412686 y PMC1152155. [SOPORTE ÚNICO ACTUAL] S553 es la única fuente S directa de C-1938. [USO EN UNA SOLA C] C-1938.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1042/bj2130507",
+          "title": [
+            "The source of oxygen in the reaction catalysed by collagen lysyl hydroxylase"
+          ],
+          "author": [
+            {
+              "given": "Y",
+              "family": "Kikuchi",
+              "sequence": "first"
+            },
+            {
+              "given": "Y",
+              "family": "Suzuki",
+              "sequence": "additional"
+            },
+            {
+              "given": "N",
+              "family": "Tamiya",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                1983,
+                8,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                1983,
+                8,
+                1
+              ]
+            ]
+          },
+          "container-title": [
+            "Biochemical Journal"
+          ],
+          "volume": "213",
+          "issue": "2",
+          "page": "507-512",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S553 [1983] The source of oxygen in the reaction catalysed by collagen lysyl hydro.pdf",
+          "sha256": "d5ef24be08cf68df318e5906246683b2bbe3da2e2bae04d5d8766b94a0183226",
+          "localizador": "p. 1, título, tres autores, Biochem. J. (1983) 213, 507–512; Materials and methods",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://portlandpress.com/biochemj/article/213/2/507/14903/The-source-of-oxygen-in-the-reaction-catalysed-by"
+      ],
+      "comprobaciones": "Título, Yasuo Kikuchi, Yoshihiro Suzuki y Nobuo Tamiya, año 1983, Biochemical Journal 213:507–512 coinciden en PDF y A; DOI confirmado en registro Crossref.",
+      "tipo_documental_observado": "journal-article en Crossref; PDF tipográfico contiene Materials and methods y ensayo original.",
+      "limitaciones": "El DOI no aparece en la cabecera del PDF histórico; se enlaza por identidad bibliográfica completa con Crossref. La consulta al editor no produjo una página utilizable.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1042%2Fbj2130507",
+        "respuesta_original_sha256": "c8ee9eac0ffb2869b0f0973819d2dbe9a52e0749bfa3075e1b485df723cc625c",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S553-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S554",
+      "huella_fila_A_sha256": "f31c4b56bdd9a2cf341eff0d7c6559b73585ac77fec316536cb086ba0fe89577",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S554",
+        "autores": "Bellefroid, E. J.; Hood, A. v. S.; Hoffman, P. F.; Thomas, M. D.; Reinhard, C. T.; Planavsky, N. J.",
+        "año": "2018",
+        "título": "Constraints on Paleoproterozoic atmospheric oxygen levels",
+        "publicación o repositorio": "Proceedings of the National Academy of Sciences 115:8104–8109",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.1806216115",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] El resumen informa concentraciones paleoproterozoicas de O₂ atmosférico bajas, cercanas a 0,1% PAL. El trabajo combina anomalías de Ce en carbonatos marinos del Grupo Pethei, restricción de la profundidad de la quimioclina, circulación oceánica y un modelo de oxidación de Ce. La cifra es una estimación modelada específica, no una medición directa ni una serie oceánica global. Metadatos verificados en PubMed PMID 30038009 y PMC6094116. [SOPORTE ÚNICO ACTUAL] S554 es la única fuente S directa de C-1939. [USO EN UNA SOLA C] C-1939.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1073/pnas.1806216115",
+          "title": [
+            "Constraints on Paleoproterozoic atmospheric oxygen levels"
+          ],
+          "author": [
+            {
+              "given": "Eric J.",
+              "family": "Bellefroid",
+              "sequence": "first"
+            },
+            {
+              "given": "Ashleigh v. S.",
+              "family": "Hood",
+              "sequence": "additional"
+            },
+            {
+              "given": "Paul F.",
+              "family": "Hoffman",
+              "sequence": "additional"
+            },
+            {
+              "given": "Matthew D.",
+              "family": "Thomas",
+              "sequence": "additional"
+            },
+            {
+              "given": "Christopher T.",
+              "family": "Reinhard",
+              "sequence": "additional"
+            },
+            {
+              "given": "Noah J.",
+              "family": "Planavsky",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                7,
+                23
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2018,
+                7,
+                23
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2018,
+                8,
+                7
+              ]
+            ]
+          },
+          "container-title": [
+            "Proceedings of the National Academy of Sciences"
+          ],
+          "volume": "115",
+          "issue": "32",
+          "page": "8104-8109",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6094116/"
+      ],
+      "comprobaciones": "Título, seis autores en orden, año 2018, PNAS 115:8104–8109 y DOI coinciden entre A, Crossref y cabecera del artículo en PMC.",
+      "tipo_documental_observado": "Artículo PNAS; la página del artículo describe investigación original y contribuciones empíricas.",
+      "limitaciones": "Se inspeccionó la página PMC; la descarga JATS alternativa de Europe PMC devolvió HTTP 500. No hay archivo nuevo de S554 en fuentes/.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1073%2Fpnas.1806216115",
+        "respuesta_original_sha256": "ff9d8592c8be1c9bf29d8664a6cc72fdf54d98a513c8b0c65c793ca2df6ee8a6",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S554-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S555",
+      "huella_fila_A_sha256": "7a886ec11363ba2df8a3c6e62b489f3245776b4dfc79b1310e0077b1719edf93",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S555",
+        "autores": "Krause, A. J.; Mills, B. J. W.; Merdith, A. S.; Lenton, T. M.; Poulton, S. W.",
+        "año": "2022",
+        "título": "Extreme variability in atmospheric oxygen levels in the late Precambrian",
+        "publicación o repositorio": "Science Advances 8:eabm8191",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1126/sciadv.abm8191",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] El resumen publica una reconstrucción cuantitativa continua por balance isotópico y tasas de reciclaje tectónico; predice que el O₂ atmosférico neoproterozoico osciló entre aproximadamente 1 y 50% PAL y rechaza una subida unidireccional simple. La introducción contrasta proxies de Cr, I/(Ca+Mg), Ce, U, Se, elementos sensibles a redox y especiación de Fe y advierte que el redox oceánico no se acopla de manera única a pO₂ atmosférica. Metadatos verificados en PubMed PMID 36240275 y PMC9565794. [SOPORTE ÚNICO ACTUAL] S555 es la única fuente S directa de C-1941. [USO EN UNA SOLA C] C-1941.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1126/sciadv.abm8191",
+          "title": [
+            "Extreme variability in atmospheric oxygen levels in the late Precambrian"
+          ],
+          "author": [
+            {
+              "given": "Alexander J.",
+              "family": "Krause",
+              "sequence": "first"
+            },
+            {
+              "given": "Benjamin J. W.",
+              "family": "Mills",
+              "sequence": "additional"
+            },
+            {
+              "given": "Andrew S.",
+              "family": "Merdith",
+              "sequence": "additional"
+            },
+            {
+              "given": "Timothy M.",
+              "family": "Lenton",
+              "sequence": "additional"
+            },
+            {
+              "given": "Simon W.",
+              "family": "Poulton",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                14
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                14
+              ]
+            ]
+          },
+          "container-title": [
+            "Science Advances"
+          ],
+          "volume": "8",
+          "issue": "41",
+          "article-number": "eabm8191",
+          "type": "journal-article"
+        },
+        "JATS_local": {
+          "article-type": "research-article",
+          "article-id": [
+            {
+              "pub-id-type": "pmcid",
+              "value": "PMC9565794"
+            },
+            {
+              "pub-id-type": "pmcaid",
+              "value": "9565794"
+            },
+            {
+              "pub-id-type": "pmcaiid",
+              "value": "9565794"
+            },
+            {
+              "pub-id-type": "pmid",
+              "value": "36240275"
+            },
+            {
+              "pub-id-type": "doi",
+              "value": "10.1126/sciadv.abm8191"
+            }
+          ],
+          "article-title": "Extreme variability in atmospheric oxygen levels in the late Precambrian",
+          "authors": [
+            "Alexander J Krause",
+            "Benjamin J W Mills",
+            "Andrew S Merdith",
+            "Timothy M Lenton",
+            "Simon W Poulton"
+          ],
+          "pub-date": [
+            {
+              "year": "2022",
+              "month": "10",
+              "day": "14"
+            }
+          ],
+          "volume": "8",
+          "issue": "41",
+          "fpage": "eabm8191",
+          "lpage": "",
+          "journal-title": "Science Advances"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S555 [2022] Extreme variability in atmospheric oxygen levels in the late Precambri.xml",
+          "sha256": "1ad5807e2e45132c0caafd397377f46e694ddc0a5431a740027e7f7b23f9eb70",
+          "localizador": "article/@article-type; front/article-meta: article-id, title-group, contrib-group, pub-date, volume, fpage",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9565794/fullTextXML"
+      ],
+      "comprobaciones": "Título, cinco autores en orden, año 2022, Science Advances 8:eabm8191 y DOI coinciden entre A, JATS y registro Crossref.",
+      "tipo_documental_observado": "research-article en JATS local.",
+      "limitaciones": "El JATS fue inspeccionado localmente; la URL identifica su procedencia, no una nueva descarga en esta ejecución.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1126%2Fsciadv.abm8191",
+        "respuesta_original_sha256": "fc824cce03f4e9ca8638b1808afa25c03d6c6b127a33bfa299eda6bdf280625d",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S555-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S556",
+      "huella_fila_A_sha256": "fb9789d639edc86a71e4a3b7156687810b0ba67ccbc0908b60a61b6184738650",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S556",
+        "autores": "Stockey, R. G. et al.",
+        "año": "2024",
+        "título": "Sustained increases in atmospheric oxygen and marine productivity in the Neoproterozoic and Palaeozoic eras",
+        "publicación o repositorio": "Nature Geoscience 17:667–674",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41561-024-01479-1",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] Results/Discussion y fig. 5e reconstruyen para la mayor parte del Neoproterozoico una media de O₂ disuelto en hábitats marinos someros de 0–22 µmol kg⁻¹; Methods §§Data processing, Spatial–temporal weighted bootstrap analysis, Random forest analyses y Earth system modelling describen SGP, Mo/U, especiación de Fe, TOC, 1.000 remuestreos por bin temporal, 100 bosques aleatorios y cGENIE. El trabajo no encuentra oxigenación total del océano profundo en el Neoproterozoico y separa plataforma somera de fondo global. [SOPORTE ÚNICO ACTUAL] S556 es la única fuente S directa de C-1942. [USO EN UNA SOLA C] C-1942.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1038/s41561-024-01479-1",
+          "title": [
+            "Sustained increases in atmospheric oxygen and marine productivity in the Neoproterozoic and Palaeozoic eras"
+          ],
+          "author": [
+            {
+              "given": "Richard G.",
+              "family": "Stockey",
+              "sequence": "first"
+            },
+            {
+              "given": "Devon B.",
+              "family": "Cole",
+              "sequence": "additional"
+            },
+            {
+              "given": "Una C.",
+              "family": "Farrell",
+              "sequence": "additional"
+            },
+            {
+              "given": "Heda",
+              "family": "Agić",
+              "sequence": "additional"
+            },
+            {
+              "given": "Thomas H.",
+              "family": "Boag",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jochen J.",
+              "family": "Brocks",
+              "sequence": "additional"
+            },
+            {
+              "given": "Don E.",
+              "family": "Canfield",
+              "sequence": "additional"
+            },
+            {
+              "given": "Meng",
+              "family": "Cheng",
+              "sequence": "additional"
+            },
+            {
+              "given": "Peter W.",
+              "family": "Crockford",
+              "sequence": "additional"
+            },
+            {
+              "given": "Huan",
+              "family": "Cui",
+              "sequence": "additional"
+            },
+            {
+              "given": "Tais W.",
+              "family": "Dahl",
+              "sequence": "additional"
+            },
+            {
+              "given": "Lucas",
+              "family": "Del Mouro",
+              "sequence": "additional"
+            },
+            {
+              "given": "Keith",
+              "family": "Dewing",
+              "sequence": "additional"
+            },
+            {
+              "given": "Stephen Q.",
+              "family": "Dornbos",
+              "sequence": "additional"
+            },
+            {
+              "given": "Joseph F.",
+              "family": "Emmings",
+              "sequence": "additional"
+            },
+            {
+              "given": "Robert R.",
+              "family": "Gaines",
+              "sequence": "additional"
+            },
+            {
+              "given": "Timothy M.",
+              "family": "Gibson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Benjamin C.",
+              "family": "Gill",
+              "sequence": "additional"
+            },
+            {
+              "given": "Geoffrey J.",
+              "family": "Gilleaudeau",
+              "sequence": "additional"
+            },
+            {
+              "given": "Karin",
+              "family": "Goldberg",
+              "sequence": "additional"
+            },
+            {
+              "given": "Romain",
+              "family": "Guilbaud",
+              "sequence": "additional"
+            },
+            {
+              "given": "Galen",
+              "family": "Halverson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Emma U.",
+              "family": "Hammarlund",
+              "sequence": "additional"
+            },
+            {
+              "given": "Kalev",
+              "family": "Hantsoo",
+              "sequence": "additional"
+            },
+            {
+              "given": "Miles A.",
+              "family": "Henderson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Charles M.",
+              "family": "Henderson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Malcolm S. W.",
+              "family": "Hodgskiss",
+              "sequence": "additional"
+            },
+            {
+              "given": "Amber J. M.",
+              "family": "Jarrett",
+              "sequence": "additional"
+            },
+            {
+              "given": "David T.",
+              "family": "Johnston",
+              "sequence": "additional"
+            },
+            {
+              "given": "Pavel",
+              "family": "Kabanov",
+              "sequence": "additional"
+            },
+            {
+              "given": "Julien",
+              "family": "Kimmig",
+              "sequence": "additional"
+            },
+            {
+              "given": "Andrew H.",
+              "family": "Knoll",
+              "sequence": "additional"
+            },
+            {
+              "given": "Marcus",
+              "family": "Kunzmann",
+              "sequence": "additional"
+            },
+            {
+              "given": "Matthew A.",
+              "family": "LeRoy",
+              "sequence": "additional"
+            },
+            {
+              "given": "Chao",
+              "family": "Li",
+              "sequence": "additional"
+            },
+            {
+              "given": "David K.",
+              "family": "Loydell",
+              "sequence": "additional"
+            },
+            {
+              "given": "Francis A.",
+              "family": "Macdonald",
+              "sequence": "additional"
+            },
+            {
+              "given": "Joseph M.",
+              "family": "Magnall",
+              "sequence": "additional"
+            },
+            {
+              "given": "N. Tanner",
+              "family": "Mills",
+              "sequence": "additional"
+            },
+            {
+              "given": "Lawrence M.",
+              "family": "Och",
+              "sequence": "additional"
+            },
+            {
+              "given": "Brennan",
+              "family": "O’Connell",
+              "sequence": "additional"
+            },
+            {
+              "given": "Anais",
+              "family": "Pagès",
+              "sequence": "additional"
+            },
+            {
+              "given": "Shanan E.",
+              "family": "Peters",
+              "sequence": "additional"
+            },
+            {
+              "given": "Susannah M.",
+              "family": "Porter",
+              "sequence": "additional"
+            },
+            {
+              "given": "Simon W.",
+              "family": "Poulton",
+              "sequence": "additional"
+            },
+            {
+              "given": "Samantha R.",
+              "family": "Ritzer",
+              "sequence": "additional"
+            },
+            {
+              "given": "Alan D.",
+              "family": "Rooney",
+              "sequence": "additional"
+            },
+            {
+              "given": "Shane",
+              "family": "Schoepfer",
+              "sequence": "additional"
+            },
+            {
+              "given": "Emily F.",
+              "family": "Smith",
+              "sequence": "additional"
+            },
+            {
+              "given": "Justin V.",
+              "family": "Strauss",
+              "sequence": "additional"
+            },
+            {
+              "given": "Gabriel Jubé",
+              "family": "Uhlein",
+              "sequence": "additional"
+            },
+            {
+              "given": "Tristan",
+              "family": "White",
+              "sequence": "additional"
+            },
+            {
+              "given": "Rachel A.",
+              "family": "Wood",
+              "sequence": "additional"
+            },
+            {
+              "given": "Christina R.",
+              "family": "Woltz",
+              "sequence": "additional"
+            },
+            {
+              "given": "Inessa",
+              "family": "Yurchenko",
+              "sequence": "additional"
+            },
+            {
+              "given": "Noah J.",
+              "family": "Planavsky",
+              "sequence": "additional"
+            },
+            {
+              "given": "Erik A.",
+              "family": "Sperling",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                7
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                7
+              ]
+            ]
+          },
+          "container-title": [
+            "Nature Geoscience"
+          ],
+          "volume": "17",
+          "issue": "7",
+          "page": "667-674",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S556 [2024] Sustained increases in atmospheric oxygen and marine productivity in t.pdf",
+          "sha256": "8b6ffa2906687fb64663b6a1c337b42ad08272b6266968b353a138db7453a274",
+          "localizador": "p. 1 (impresa 667), DOI, título y año; p. 8 (impresa 674), lista de autores",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.nature.com/articles/s41561-024-01479-1"
+      ],
+      "comprobaciones": "Título, Richard G. Stockey y lista de coautores, año 2024, Nature Geoscience 17:667–674 y DOI coinciden en A, PDF publicado y Crossref. Autores al final del artículo, página 674.",
+      "tipo_documental_observado": "Article impreso en la versión publicada; presenta investigación original.",
+      "limitaciones": "Se comprobó la abreviatura Stockey, R. G. et al. contra la lista, sin ampliar A ni evaluar la contribución científica de cada autor.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1038%2Fs41561-024-01479-1",
+        "respuesta_original_sha256": "9a73a0576d9b520d541ff6095db26716e64b97c98b6e63f96940a6288ebd0933",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S556-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S557",
+      "huella_fila_A_sha256": "56b3527b5b21d0c0df4445539e3d7998421833223e1a7d1666d560af31b344a0",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S557",
+        "autores": "Tang, D.; Shi, X.; Wang, X.; Jiang, G.",
+        "año": "2016",
+        "título": "Extremely low oxygen concentration in mid-Proterozoic shallow seawaters",
+        "publicación o repositorio": "Precambrian Research 276:145–157",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.precamres.2016.02.005",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] El resumen y la conclusión publican para aguas someras del Proterozoico medio menos de 0,2 µM O₂ antes de aproximadamente 1,54 Ga y fluctuación alrededor de 0,2 µM después; el proxy combina REE+Y, anomalías de Ce y elementos sensibles a redox de la plataforma del norte de China con datos compilados. Son estimaciones regionales/modeladas a partir del requisito mínimo de oxidación de Ce(III), no una media global ni oxígeno atmosférico. Metadatos verificados contra el registro DOI del editor y el repositorio institucional de UNLV. [SOPORTE ÚNICO ACTUAL] S557 es la única fuente S directa de C-1940. [USO EN UNA SOLA C] C-1940.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1016/j.precamres.2016.02.005",
+          "title": [
+            "Extremely low oxygen concentration in mid-Proterozoic shallow seawaters"
+          ],
+          "author": [
+            {
+              "given": "Dongjie",
+              "family": "Tang",
+              "sequence": "first"
+            },
+            {
+              "given": "Xiaoying",
+              "family": "Shi",
+              "sequence": "additional"
+            },
+            {
+              "given": "Xinqiang",
+              "family": "Wang",
+              "sequence": "additional"
+            },
+            {
+              "given": "Ganqing",
+              "family": "Jiang",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                5
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2016,
+                5
+              ]
+            ]
+          },
+          "container-title": [
+            "Precambrian Research"
+          ],
+          "volume": "276",
+          "page": "145-157",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S557-institutional.pdf",
+          "sha256": "22d5d593e97380fd3fa93bee019ad46d0d991fc7ee333fb9f598d2b661083378",
+          "localizador": "p. 1: título, autores, volumen, páginas, DOI al pie",
+          "conservacion": "temporal_no_versionado"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://ganqing.faculty.unlv.edu/Publications/Tang-Shi-Jiang-2016-Precambrian-Research-Mesoproterozoic-REE.pdf"
+      ],
+      "comprobaciones": "Título singular concentration, cuatro autores en orden, año 2016, Precambrian Research 276:145–157 y DOI coinciden en A, primera página del PDF y Crossref.",
+      "tipo_documental_observado": "Artículo de investigación; PDF editorial depositado por un coautor en UNLV.",
+      "limitaciones": "PDF descargado solo a /tmp; no se añadió a fuentes/ durante la observación BN. No se cotejó aquí soporte de cifras del corpus.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1016%2Fj.precamres.2016.02.005",
+        "respuesta_original_sha256": "041ef3905144e1a96fafad0b85da6fe6d5ebf53774312807d1996b363cdb67fb",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S557-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S558",
+      "huella_fila_A_sha256": "bccc2d0aad5071c2321d3efe605db49088d852813af2cfbd966f825124789a97",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S558",
+        "autores": "Hardisty, D. S.; Lu, Z.; Planavsky, N. J.; Bekker, A.; Philippot, P.; Zhou, X.; Lyons, T. W.",
+        "año": "2014",
+        "título": "An iodine record of Paleoproterozoic surface ocean oxygenation",
+        "publicación o repositorio": "Geology 42:619–622",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1130/G35439.1",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-08] Conclusion, pp. 621–622: durante la excursión Lomagundi, carbonatos con I/(Ca+Mg) no nulo implican estabilidad extendida de IO₃⁻ en el océano superficial relacionada con concentraciones de O₂ superiores a 1 µM. Results/Discussion, fig. 1 y tabla 1 sitúan la señal en aproximadamente 2,22–2,10 Ga. Es un límite inferior de aguas superficiales derivado del umbral de estabilidad del yodato, no una media del océano completo, una concentración profunda ni una trayectoria continua. Metadatos verificados contra el DOI del editor y el registro institucional. [SOPORTE ÚNICO ACTUAL] S558 es la única fuente S directa de C-1944. [USO EN UNA SOLA C] C-1944.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1130/g35439.1",
+          "title": [
+            "An iodine record of Paleoproterozoic surface ocean oxygenation"
+          ],
+          "author": [
+            {
+              "given": "Dalton S.",
+              "family": "Hardisty",
+              "sequence": "first"
+            },
+            {
+              "given": "Zunli",
+              "family": "Lu",
+              "sequence": "additional"
+            },
+            {
+              "given": "Noah J.",
+              "family": "Planavsky",
+              "sequence": "additional"
+            },
+            {
+              "given": "Andrey",
+              "family": "Bekker",
+              "sequence": "additional"
+            },
+            {
+              "given": "Pascal",
+              "family": "Philippot",
+              "sequence": "additional"
+            },
+            {
+              "given": "Xiaoli",
+              "family": "Zhou",
+              "sequence": "additional"
+            },
+            {
+              "given": "Timothy W.",
+              "family": "Lyons",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2014,
+                7
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2014,
+                7
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2014,
+                7
+              ]
+            ]
+          },
+          "container-title": [
+            "Geology"
+          ],
+          "volume": "42",
+          "issue": "7",
+          "page": "619-622",
+          "type": "journal-article"
+        }
+      },
+      "artefactos_inspeccionados": [],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://pure.uj.ac.za/en/publications/an-iodine-record-of-paleoproterozoic-surface-ocean-oxygenation/"
+      ],
+      "comprobaciones": "Título, siete autores en orden, año 2014, Geology 42:619–622 y DOI coinciden entre A, registro Crossref y ficha institucional de un coautor. DOI se compara sin sensibilidad a mayúsculas.",
+      "tipo_documental_observado": "Article según ficha institucional; Crossref journal-article.",
+      "limitaciones": "No se obtuvo texto completo ni cabecera editorial directa; la ficha institucional y Crossref verifican identidad, no por sí solos apoyo científico ni clasificación más fina que Article.",
+      "dictamen_identidad_y_tipo": "CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1130%2Fg35439.1",
+        "respuesta_original_sha256": "3f66720c6dbf09abb77053ab58d5efc37e68a85538b28e1a7531b7711644e0a0",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S558-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    },
+    {
+      "clave_fuente": "S559",
+      "huella_fila_A_sha256": "ed319894dca58f3d3ec9ab3e1e7e045ec5bdd21f191f8a66cc9cc741a6ac4e94",
+      "fecha_observacion_utc": "2026-09-26T21:27:59Z",
+      "revisor": "agente independiente /root/verificacion_fuentes_nuevas",
+      "metadatos_A_inspeccionados": {
+        "clave": "S559",
+        "autores": "Bowers, R. M. et al.",
+        "año": "2017",
+        "título": "Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea",
+        "publicación o repositorio": "Nature Biotechnology 35:725–731",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nbt.3893",
+        "tipo": "investigación primaria",
+        "notas de calidad": "[PASAJE VERIFICADO 2026-08-13] §Metagenome-assembled genomes: las lecturas metagenómicas se ensamblan en contigs con algoritmos específicos; los contigs se agrupan y los grupos se asignan a bins poblacionales discretos. §Developing MISAG and MIMAG checklists añade que SAG y MAG suelen proceder de organismos sin una cepa de referencia cultivada. El uso se limita al procedimiento y no infiere morfología o fisiología celular. [SOPORTE ÚNICO ACTUAL] S559 es la única fuente S directa de C-006. [USO EN UNA SOLA C] C-006.",
+        "fecha de consulta": "2026-08-13"
+      },
+      "metadatos_observados": {
+        "Crossref": {
+          "DOI": "10.1038/nbt.3893",
+          "title": [
+            "Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea"
+          ],
+          "author": [
+            {
+              "name": "The Genome Standards Consortium",
+              "sequence": "first"
+            },
+            {
+              "given": "Robert M",
+              "family": "Bowers",
+              "sequence": "first"
+            },
+            {
+              "given": "Nikos C",
+              "family": "Kyrpides",
+              "sequence": "additional"
+            },
+            {
+              "given": "Ramunas",
+              "family": "Stepanauskas",
+              "sequence": "additional"
+            },
+            {
+              "given": "Miranda",
+              "family": "Harmon-Smith",
+              "sequence": "additional"
+            },
+            {
+              "given": "Devin",
+              "family": "Doud",
+              "sequence": "additional"
+            },
+            {
+              "given": "T B K",
+              "family": "Reddy",
+              "sequence": "additional"
+            },
+            {
+              "given": "Frederik",
+              "family": "Schulz",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jessica",
+              "family": "Jarett",
+              "sequence": "additional"
+            },
+            {
+              "given": "Adam R",
+              "family": "Rivers",
+              "sequence": "additional"
+            },
+            {
+              "given": "Emiley A",
+              "family": "Eloe-Fadrosh",
+              "sequence": "additional"
+            },
+            {
+              "given": "Susannah G",
+              "family": "Tringe",
+              "sequence": "additional"
+            },
+            {
+              "given": "Natalia N",
+              "family": "Ivanova",
+              "sequence": "additional"
+            },
+            {
+              "given": "Alex",
+              "family": "Copeland",
+              "sequence": "additional"
+            },
+            {
+              "given": "Alicia",
+              "family": "Clum",
+              "sequence": "additional"
+            },
+            {
+              "given": "Eric D",
+              "family": "Becraft",
+              "sequence": "additional"
+            },
+            {
+              "given": "Rex R",
+              "family": "Malmstrom",
+              "sequence": "additional"
+            },
+            {
+              "given": "Bruce",
+              "family": "Birren",
+              "sequence": "additional"
+            },
+            {
+              "given": "Mircea",
+              "family": "Podar",
+              "sequence": "additional"
+            },
+            {
+              "given": "Peer",
+              "family": "Bork",
+              "sequence": "additional"
+            },
+            {
+              "given": "George M",
+              "family": "Weinstock",
+              "sequence": "additional"
+            },
+            {
+              "given": "George M",
+              "family": "Garrity",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jeremy A",
+              "family": "Dodsworth",
+              "sequence": "additional"
+            },
+            {
+              "given": "Shibu",
+              "family": "Yooseph",
+              "sequence": "additional"
+            },
+            {
+              "given": "Granger",
+              "family": "Sutton",
+              "sequence": "additional"
+            },
+            {
+              "given": "Frank O",
+              "family": "Glöckner",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jack A",
+              "family": "Gilbert",
+              "sequence": "additional"
+            },
+            {
+              "given": "William C",
+              "family": "Nelson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Steven J",
+              "family": "Hallam",
+              "sequence": "additional"
+            },
+            {
+              "given": "Sean P",
+              "family": "Jungbluth",
+              "sequence": "additional"
+            },
+            {
+              "given": "Thijs J G",
+              "family": "Ettema",
+              "sequence": "additional"
+            },
+            {
+              "given": "Scott",
+              "family": "Tighe",
+              "sequence": "additional"
+            },
+            {
+              "given": "Konstantinos T",
+              "family": "Konstantinidis",
+              "sequence": "additional"
+            },
+            {
+              "given": "Wen-Tso",
+              "family": "Liu",
+              "sequence": "additional"
+            },
+            {
+              "given": "Brett J",
+              "family": "Baker",
+              "sequence": "additional"
+            },
+            {
+              "given": "Thomas",
+              "family": "Rattei",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jonathan A",
+              "family": "Eisen",
+              "sequence": "additional"
+            },
+            {
+              "given": "Brian",
+              "family": "Hedlund",
+              "sequence": "additional"
+            },
+            {
+              "given": "Katherine D",
+              "family": "McMahon",
+              "sequence": "additional"
+            },
+            {
+              "given": "Noah",
+              "family": "Fierer",
+              "sequence": "additional"
+            },
+            {
+              "given": "Rob",
+              "family": "Knight",
+              "sequence": "additional"
+            },
+            {
+              "given": "Rob",
+              "family": "Finn",
+              "sequence": "additional"
+            },
+            {
+              "given": "Guy",
+              "family": "Cochrane",
+              "sequence": "additional"
+            },
+            {
+              "given": "Ilene",
+              "family": "Karsch-Mizrachi",
+              "sequence": "additional"
+            },
+            {
+              "given": "Gene W",
+              "family": "Tyson",
+              "sequence": "additional"
+            },
+            {
+              "given": "Christian",
+              "family": "Rinke",
+              "sequence": "additional"
+            },
+            {
+              "given": "Alla",
+              "family": "Lapidus",
+              "sequence": "additional"
+            },
+            {
+              "given": "Folker",
+              "family": "Meyer",
+              "sequence": "additional"
+            },
+            {
+              "given": "Pelin",
+              "family": "Yilmaz",
+              "sequence": "additional"
+            },
+            {
+              "given": "Donovan H",
+              "family": "Parks",
+              "sequence": "additional"
+            },
+            {
+              "given": "A",
+              "family": "Murat Eren",
+              "sequence": "additional"
+            },
+            {
+              "given": "Lynn",
+              "family": "Schriml",
+              "sequence": "additional"
+            },
+            {
+              "given": "Jillian F",
+              "family": "Banfield",
+              "sequence": "additional"
+            },
+            {
+              "given": "Philip",
+              "family": "Hugenholtz",
+              "sequence": "additional"
+            },
+            {
+              "given": "Tanja",
+              "family": "Woyke",
+              "sequence": "additional"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2017,
+                8
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2017,
+                8,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2017,
+                8
+              ]
+            ]
+          },
+          "container-title": [
+            "Nature Biotechnology"
+          ],
+          "volume": "35",
+          "issue": "8",
+          "page": "725-731",
+          "type": "journal-article"
+        },
+        "JATS_local": {
+          "article-type": "review-article",
+          "article-id": [
+            {
+              "pub-id-type": "pmcid",
+              "value": "PMC6436528"
+            },
+            {
+              "pub-id-type": "pmcid-ver",
+              "value": "PMC6436528.2"
+            },
+            {
+              "pub-id-type": "pmcaid",
+              "value": "6436528"
+            },
+            {
+              "pub-id-type": "pmcaiid",
+              "value": "6871005"
+            },
+            {
+              "pub-id-type": "pmid",
+              "value": "28787424"
+            },
+            {
+              "pub-id-type": "doi",
+              "value": "10.1038/nbt.3893"
+            },
+            {
+              "pub-id-type": "publisher-id",
+              "value": "BFnbt3893"
+            }
+          ],
+          "article-title": "Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea",
+          "authors": [
+            "Robert M Bowers",
+            "Nikos C Kyrpides",
+            "Ramunas Stepanauskas",
+            "Miranda Harmon-Smith",
+            "Devin Doud",
+            "T B K Reddy",
+            "Frederik Schulz",
+            "Jessica Jarett",
+            "Adam R Rivers",
+            "Emiley A Eloe-Fadrosh",
+            "Susannah G Tringe",
+            "Natalia N Ivanova",
+            "Alex Copeland",
+            "Alicia Clum",
+            "Eric D Becraft",
+            "Rex R Malmstrom",
+            "Bruce Birren",
+            "Mircea Podar",
+            "Peer Bork",
+            "George M Weinstock",
+            "George M Garrity",
+            "Jeremy A Dodsworth",
+            "Shibu Yooseph",
+            "Granger Sutton",
+            "Frank O Glöckner",
+            "Jack A Gilbert",
+            "William C Nelson",
+            "Steven J Hallam",
+            "Sean P Jungbluth",
+            "Thijs J G Ettema",
+            "Scott Tighe",
+            "Konstantinos T Konstantinidis",
+            "Wen-Tso Liu",
+            "Brett J Baker",
+            "Thomas Rattei",
+            "Jonathan A Eisen",
+            "Brian Hedlund",
+            "Katherine D McMahon",
+            "Noah Fierer",
+            "Rob Knight",
+            "Rob Finn",
+            "Guy Cochrane",
+            "Ilene Karsch-Mizrachi",
+            "Gene W Tyson",
+            "Christian Rinke",
+            "Alla Lapidus",
+            "Folker Meyer",
+            "Pelin Yilmaz",
+            "Donovan H Parks",
+            "A Murat Eren",
+            "Lynn Schriml",
+            "Jillian F Banfield",
+            "Philip Hugenholtz",
+            "Tanja Woyke"
+          ],
+          "pub-date": [
+            {
+              "pub-type": "epub",
+              "year": "2017",
+              "month": "8",
+              "day": "1"
+            },
+            {
+              "pub-type": "ppub",
+              "year": "2017",
+              "month": "",
+              "day": ""
+            }
+          ],
+          "volume": "35",
+          "issue": "8",
+          "fpage": "725",
+          "lpage": "731",
+          "journal-title": "Nature Biotechnology"
+        }
+      },
+      "artefactos_inspeccionados": [
+        {
+          "ruta": "fuentes/S559 [2017] Minimum information about a single amplified genome MISAG and a metagenome-assembled genome MIMAG of bacteria and archaea.xml",
+          "sha256": "7fdec05ef70b15e852d21225fbcae8b0ecc24e4accdaf5075d1e976ab9295ba4",
+          "localizador": "article/@article-type=review-article; front/article-meta: DOI, title-group, contrib-group, pub-date, volume, fpage, lpage",
+          "conservacion": "repositorio_local"
+        }
+      ],
+      "URLs_inspeccionadas_o_procedencia_local": [
+        "https://www.nature.com/articles/nbt.3893"
+      ],
+      "comprobaciones": "Título, Robert M. Bowers y coautoría, año 2017, Nature Biotechnology 35:725–731 y DOI coinciden. El tipo investigación primaria de A contradice la clasificación documental Perspective/review-article.",
+      "tipo_documental_observado": "Perspective en editor; review-article en JATS local.",
+      "limitaciones": "La página editorial muestra corrigenda de 06-02-2018 y 06-07-2018 y Change history. Se registra su presencia, no un examen exhaustivo ni conclusión sobre impacto científico o ausencia universal de retractaciones.",
+      "dictamen_identidad_y_tipo": "NO_CONFORME",
+      "consulta_Crossref": {
+        "URL": "https://api.crossref.org/works/10.1038%2Fnbt.3893",
+        "respuesta_original_sha256": "2685d6625d2457e131c8eeaee575848dbe611e73f66a6d3b9469b67d381b2e77",
+        "respuesta_original_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S559-crossref.json",
+        "seleccion_durable": "metadatos_observados.Crossref",
+        "nota": "Registro DOI consultado en esta ejecución; campos bibliográficos seleccionados, no artículo ni referencias completas."
+      }
+    }
+  ]
+}

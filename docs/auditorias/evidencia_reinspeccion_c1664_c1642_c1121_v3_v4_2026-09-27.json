@@ -1,0 +1,708 @@
+{
+  "fecha_utc": "2026-09-27T02:55:07+00:00",
+  "versiones": {
+    "3": {
+      "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V3_2026-09-27.json",
+      "sha256": "90d4e2b446df1aaa1d53dbe7d1ac4f210d7b1ffe091ecd96c0dc1d61c3632ad3",
+      "objetos": [
+        {
+          "id": "C-1664",
+          "puntero": "/C_correcciones/0/propuesta",
+          "sha256": "dba2bd472308d2dd96cd56613051298748d8b1b8a5cb2c133050e7632ff96b12"
+        },
+        {
+          "id": "C-1121",
+          "puntero": "/C_correcciones/1/propuesta",
+          "sha256": "d94d854e9741f881c49bd1cb4b728500baa907d596349ea1996b5112a411ada8"
+        },
+        {
+          "id": "C-1642",
+          "puntero": "/C_correcciones/2/propuesta",
+          "sha256": "e9cc41c859829fb3258b5e5de0a867dceb2b3f50c4f7231f2f475ab814d87db8"
+        },
+        {
+          "id": "C-1665",
+          "puntero": "/C_correcciones/3/propuesta",
+          "sha256": "3a53cfcbde06ea440bd1d769eb8a56cbc66f4a928b3a5d798cb6f66c89256d2c"
+        },
+        {
+          "id": "C-2879",
+          "puntero": "/C_altas/0/fila",
+          "sha256": "a62578badc9e9d7f2d8a826c9fb5a87cf8719bfa25cc767fbc417c616b8ef1bb"
+        },
+        {
+          "id": "C-2880",
+          "puntero": "/C_altas/1/fila",
+          "sha256": "dcc1ba1e1b4e8dc0a70a41f77874b7ee89f71182bcb2197d7e59e0736c7cce90"
+        },
+        {
+          "id": "C-2881",
+          "puntero": "/C_altas/2/fila",
+          "sha256": "b780d4bf36e3531970136cb77ae2dc510f718a0a32c0af876b527523694cc43d"
+        },
+        {
+          "id": "C-2882",
+          "puntero": "/C_altas/3/fila",
+          "sha256": "e7a338b78f34f25153d8fc222d348f27f90d2bee1a750fb984d86e308a87bbec"
+        },
+        {
+          "id": "C-2883",
+          "puntero": "/C_altas/4/fila",
+          "sha256": "2e4ebb642f7dec368a34537e0fa9cfcc20100919e2b36ebac311243e00a0c575"
+        },
+        {
+          "id": "F-S1-1",
+          "puntero": "/F_sustituciones/0/nuevas/0",
+          "sha256": "abcfbefd5712e3fbb01b26799d74480d2c10b34dd6ec82734babe1b068b60c3d"
+        },
+        {
+          "id": "F-S1-2",
+          "puntero": "/F_sustituciones/0/nuevas/1",
+          "sha256": "2e81be4506b0531ca98a51da3b86fa92251e269b6cf16089adc51010d3c75e18"
+        },
+        {
+          "id": "F-S1-3",
+          "puntero": "/F_sustituciones/0/nuevas/2",
+          "sha256": "6140f7092c5a3053c219af4f7ae0497b93b06a82ee687f9f6a5fed0c60025495"
+        },
+        {
+          "id": "F-S1-4",
+          "puntero": "/F_sustituciones/0/nuevas/3",
+          "sha256": "08193e95883d5d7516dcfe58de390c6d193eb875fecaba3470c823aee7fea8fe"
+        },
+        {
+          "id": "F-S2-1",
+          "puntero": "/F_sustituciones/1/nuevas/0",
+          "sha256": "efa8301478338a7c73d7372abd6b1628a0c1b5086efc31ec2b5277f2fc642a17"
+        },
+        {
+          "id": "F-S2-2",
+          "puntero": "/F_sustituciones/1/nuevas/1",
+          "sha256": "efd5d4b3806a82e0e608d6dd7bd7b08eafb99937c221e2220657dcb3019d6c8f"
+        },
+        {
+          "id": "F-A1",
+          "puntero": "/F_altas/0",
+          "sha256": "bb7943f5bf6d7e2d0859977ea30ce4b89311e805a36364034939c5b659dd364a"
+        },
+        {
+          "id": "F-A2",
+          "puntero": "/F_altas/1",
+          "sha256": "14b261935a469832dea378a5f699f69cd2c28d95f9a4049d4f2bc0e892fd6987"
+        },
+        {
+          "id": "F-A3",
+          "puntero": "/F_altas/2",
+          "sha256": "c3e7da75cdf101f2b0bb44f751ee9d80b0a34a05e3cf0a3e2774fe8b3bb6c2a4"
+        },
+        {
+          "id": "TABLA-1",
+          "puntero": "/tablas_correcciones/0/propuesta",
+          "sha256": "5e289dd6a0470c1cbee3aec5ed00fc678f8ba729aedd51984306430484bb9fd8"
+        },
+        {
+          "id": "TABLA-2",
+          "puntero": "/tablas_correcciones/1/propuesta",
+          "sha256": "4b4f63246f9520548dd53b0beb71c344ddae9f9557e6e00338598ff77e75cdff"
+        },
+        {
+          "id": "PROSA-165",
+          "puntero": "/prosa/0/propuesta",
+          "sha256": "5affa06086629cb340ac6d65c5c4896f461b316b679f0a2cf6365681bd0a6a74"
+        },
+        {
+          "id": "PROSA-182",
+          "puntero": "/prosa/1/propuesta",
+          "sha256": "dcece075e65e38c8f55313960530703efdad00c525ea8b0d43ac6d8f9bb4f227"
+        },
+        {
+          "id": "PROSA-383",
+          "puntero": "/prosa/2/propuesta",
+          "sha256": "067bc303fde5ef9107d5c28a315cf04176691792fbf463ad859109737f6e1b25"
+        },
+        {
+          "id": "B-1",
+          "puntero": "/B_altas/0",
+          "sha256": "933af0a23b667b747c7de40b2ef6d5d475e7eca94878d6d857d783f0f2108f46"
+        },
+        {
+          "id": "B-2",
+          "puntero": "/B_altas/1",
+          "sha256": "4e4f074d26a7f31d6a159144e6eec3f933de524ed4b5b16dda86f137d930157a"
+        },
+        {
+          "id": "B-3",
+          "puntero": "/B_altas/2",
+          "sha256": "f384da5cb757e4d78ac68a9383476a92781d6ea82c42a22b1d4c299ddc57c8ca"
+        },
+        {
+          "id": "B-4",
+          "puntero": "/B_altas/3",
+          "sha256": "2d445f8da461d9632a75864e39d92a12dff145f704208416eeea0175dcfc49fe"
+        },
+        {
+          "id": "B-5",
+          "puntero": "/B_altas/4",
+          "sha256": "4a7f605cc1e4d1c0283e27629046b2cf2ce28aab913219aceade5f20001fb38e"
+        },
+        {
+          "id": "B-6",
+          "puntero": "/B_altas/5",
+          "sha256": "8e9ff249973c7cd6fe5486c02bab69e85e1eb7c47559d543167685ef5b63fb5e"
+        },
+        {
+          "id": "B-7",
+          "puntero": "/B_altas/6",
+          "sha256": "8b50487ae8aee100141209a26232e97183427c3f55d54851f9a02f07d4b08969"
+        },
+        {
+          "id": "B-8",
+          "puntero": "/B_altas/7",
+          "sha256": "6476252863431dca877747412e67291c19c767679c8f5b3bcd5978254e048438"
+        },
+        {
+          "id": "B-9",
+          "puntero": "/B_altas/8",
+          "sha256": "dbbe131a7eb90dc34f158c4ada6dea809350f7bb09d9d1ba76140ec70ab27f89"
+        },
+        {
+          "id": "B-10",
+          "puntero": "/B_altas/9",
+          "sha256": "467dc27204e0240b2c6ddcc5eada934382b2f53cc4c7bb5ba1827118289565cd"
+        }
+      ],
+      "B_metodos_nuevos": [
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano (BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "Bayesian phylogenetic mixed model; BPMM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano multirrespuesta (MR-BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "multi-response Bayesian phylogenetic mixed model; MR-BPMM; MR-BPMMs",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "MCMCglmm",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "paquete R MCMCglmm; predict de MCMCglmm",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "mapeo estocástico de caracteres (SCM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "stochastic character mapping; mapas estocásticos de caracteres; SCM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        }
+      ]
+    },
+    "4": {
+      "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V4_2026-09-27.json",
+      "sha256": "f617976321c0cc1d784812d57d7d08ff533c178e65ddea1877cdfe434126b7d4",
+      "objetos": [
+        {
+          "id": "C-1664",
+          "puntero": "/C_correcciones/0/propuesta",
+          "sha256": "dba2bd472308d2dd96cd56613051298748d8b1b8a5cb2c133050e7632ff96b12"
+        },
+        {
+          "id": "C-1121",
+          "puntero": "/C_correcciones/1/propuesta",
+          "sha256": "d94d854e9741f881c49bd1cb4b728500baa907d596349ea1996b5112a411ada8"
+        },
+        {
+          "id": "C-1642",
+          "puntero": "/C_correcciones/2/propuesta",
+          "sha256": "e9cc41c859829fb3258b5e5de0a867dceb2b3f50c4f7231f2f475ab814d87db8"
+        },
+        {
+          "id": "C-1665",
+          "puntero": "/C_correcciones/3/propuesta",
+          "sha256": "3a53cfcbde06ea440bd1d769eb8a56cbc66f4a928b3a5d798cb6f66c89256d2c"
+        },
+        {
+          "id": "C-2879",
+          "puntero": "/C_altas/0/fila",
+          "sha256": "a62578badc9e9d7f2d8a826c9fb5a87cf8719bfa25cc767fbc417c616b8ef1bb"
+        },
+        {
+          "id": "C-2880",
+          "puntero": "/C_altas/1/fila",
+          "sha256": "dcc1ba1e1b4e8dc0a70a41f77874b7ee89f71182bcb2197d7e59e0736c7cce90"
+        },
+        {
+          "id": "C-2881",
+          "puntero": "/C_altas/2/fila",
+          "sha256": "b780d4bf36e3531970136cb77ae2dc510f718a0a32c0af876b527523694cc43d"
+        },
+        {
+          "id": "C-2882",
+          "puntero": "/C_altas/3/fila",
+          "sha256": "e7a338b78f34f25153d8fc222d348f27f90d2bee1a750fb984d86e308a87bbec"
+        },
+        {
+          "id": "C-2883",
+          "puntero": "/C_altas/4/fila",
+          "sha256": "2e4ebb642f7dec368a34537e0fa9cfcc20100919e2b36ebac311243e00a0c575"
+        },
+        {
+          "id": "F-S1-1",
+          "puntero": "/F_sustituciones/0/nuevas/0",
+          "sha256": "abcfbefd5712e3fbb01b26799d74480d2c10b34dd6ec82734babe1b068b60c3d"
+        },
+        {
+          "id": "F-S1-2",
+          "puntero": "/F_sustituciones/0/nuevas/1",
+          "sha256": "2e81be4506b0531ca98a51da3b86fa92251e269b6cf16089adc51010d3c75e18"
+        },
+        {
+          "id": "F-S1-3",
+          "puntero": "/F_sustituciones/0/nuevas/2",
+          "sha256": "6140f7092c5a3053c219af4f7ae0497b93b06a82ee687f9f6a5fed0c60025495"
+        },
+        {
+          "id": "F-S1-4",
+          "puntero": "/F_sustituciones/0/nuevas/3",
+          "sha256": "08193e95883d5d7516dcfe58de390c6d193eb875fecaba3470c823aee7fea8fe"
+        },
+        {
+          "id": "F-S2-1",
+          "puntero": "/F_sustituciones/1/nuevas/0",
+          "sha256": "efa8301478338a7c73d7372abd6b1628a0c1b5086efc31ec2b5277f2fc642a17"
+        },
+        {
+          "id": "F-S2-2",
+          "puntero": "/F_sustituciones/1/nuevas/1",
+          "sha256": "efd5d4b3806a82e0e608d6dd7bd7b08eafb99937c221e2220657dcb3019d6c8f"
+        },
+        {
+          "id": "F-A1",
+          "puntero": "/F_altas/0",
+          "sha256": "bb7943f5bf6d7e2d0859977ea30ce4b89311e805a36364034939c5b659dd364a"
+        },
+        {
+          "id": "F-A2",
+          "puntero": "/F_altas/1",
+          "sha256": "14b261935a469832dea378a5f699f69cd2c28d95f9a4049d4f2bc0e892fd6987"
+        },
+        {
+          "id": "TABLA-1",
+          "puntero": "/tablas_correcciones/0/propuesta",
+          "sha256": "5e289dd6a0470c1cbee3aec5ed00fc678f8ba729aedd51984306430484bb9fd8"
+        },
+        {
+          "id": "TABLA-2",
+          "puntero": "/tablas_correcciones/1/propuesta",
+          "sha256": "4b4f63246f9520548dd53b0beb71c344ddae9f9557e6e00338598ff77e75cdff"
+        },
+        {
+          "id": "PROSA-165",
+          "puntero": "/prosa/0/propuesta",
+          "sha256": "5affa06086629cb340ac6d65c5c4896f461b316b679f0a2cf6365681bd0a6a74"
+        },
+        {
+          "id": "PROSA-182",
+          "puntero": "/prosa/1/propuesta",
+          "sha256": "dcece075e65e38c8f55313960530703efdad00c525ea8b0d43ac6d8f9bb4f227"
+        },
+        {
+          "id": "PROSA-383",
+          "puntero": "/prosa/2/propuesta",
+          "sha256": "067bc303fde5ef9107d5c28a315cf04176691792fbf463ad859109737f6e1b25"
+        },
+        {
+          "id": "B-1",
+          "puntero": "/B_altas/0",
+          "sha256": "933af0a23b667b747c7de40b2ef6d5d475e7eca94878d6d857d783f0f2108f46"
+        },
+        {
+          "id": "B-2",
+          "puntero": "/B_altas/1",
+          "sha256": "4e4f074d26a7f31d6a159144e6eec3f933de524ed4b5b16dda86f137d930157a"
+        },
+        {
+          "id": "B-3",
+          "puntero": "/B_altas/2",
+          "sha256": "f384da5cb757e4d78ac68a9383476a92781d6ea82c42a22b1d4c299ddc57c8ca"
+        },
+        {
+          "id": "B-4",
+          "puntero": "/B_altas/3",
+          "sha256": "2d445f8da461d9632a75864e39d92a12dff145f704208416eeea0175dcfc49fe"
+        },
+        {
+          "id": "B-5",
+          "puntero": "/B_altas/4",
+          "sha256": "4a7f605cc1e4d1c0283e27629046b2cf2ce28aab913219aceade5f20001fb38e"
+        },
+        {
+          "id": "B-6",
+          "puntero": "/B_altas/5",
+          "sha256": "8e9ff249973c7cd6fe5486c02bab69e85e1eb7c47559d543167685ef5b63fb5e"
+        },
+        {
+          "id": "B-7",
+          "puntero": "/B_altas/6",
+          "sha256": "8b50487ae8aee100141209a26232e97183427c3f55d54851f9a02f07d4b08969"
+        },
+        {
+          "id": "B-8",
+          "puntero": "/B_altas/7",
+          "sha256": "6476252863431dca877747412e67291c19c767679c8f5b3bcd5978254e048438"
+        },
+        {
+          "id": "B-9",
+          "puntero": "/B_altas/8",
+          "sha256": "dbbe131a7eb90dc34f158c4ada6dea809350f7bb09d9d1ba76140ec70ab27f89"
+        },
+        {
+          "id": "B-10",
+          "puntero": "/B_altas/9",
+          "sha256": "467dc27204e0240b2c6ddcc5eada934382b2f53cc4c7bb5ba1827118289565cd"
+        }
+      ],
+      "B_metodos_nuevos": [
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano (BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "Bayesian phylogenetic mixed model; BPMM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano multirrespuesta (MR-BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "multi-response Bayesian phylogenetic mixed model; MR-BPMM; MR-BPMMs",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "MCMCglmm",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "paquete R MCMCglmm; predict de MCMCglmm",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "mapeo estocástico de caracteres (SCM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "stochastic character mapping; mapas estocásticos de caracteres; SCM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        }
+      ]
+    }
+  },
+  "pasajes": [
+    {
+      "id": "P8",
+      "texto": "Reconstructing the ancestral feeding niches of insect families showed that obligate symbioses evolved from omnivorous, herbivorous and predatory ancestors (respective percentage of origins estimated using stochastic character mapping (SCM): 75%, 8% and 17%; Fig. 1 and Supplementary Table 5). Following the acquisition of obligate symbionts, 60% of lineages switched to a single food source (phloem 42%, blood 12%, xylem 6%; Fig. 1 and Supplementary Table 5). This pattern of food utilization explains the current distribution of obligate symbiosis remarkably well, where over 90% of insect species feeding on blood, phloem, xylem and wood have obligate symbionts (Fig. 1 and Supplementary Tables 1, 2 and 6). Conversely, there are no known cases of obligate symbioses in insect families that are predominantly predators or fungivores (Fig. 1 and Supplementary Tables 1, 2 and 6).\n",
+      "sha256": "b735a7535e15cb2b0f53264f79f122aee9ec804e3d884f3a7e63feeda072e134"
+    },
+    {
+      "id": "P51",
+      "texto": "Data were analysed using Bayesian phylogenetic mixed models with single (BPMM) and multiple response variables (MR-BPMM), SCM and transition rate models with Markov chain Monte Carlo (MCMC) estimation. In this section we provide general details of modelling approaches, and in ‘Specific analyses’ in Methods, we outline the details of the analyses conducted. All analyses were performed in R 4.1.3 (ref. 88), apart from transition rate models that were conducted in BayesTraits V4 (ref. 89). Continuous response and explanatory variables were Z-transformed before analyses (mean 0, standard deviation 1).\n",
+      "sha256": "5c44a42781166365cd34b0e0104c23d0f7fc454ab2300e1b26a940c7b1b10a8f"
+    },
+    {
+      "id": "P52",
+      "texto": "Model construction, parameter estimates and assessing significance. To estimate phylogenetic signature, co-evolutionary relationships and ancestral trait values we used BPMMs and MR-BPMMs with MCMC estimation in the R package MCMCglmm90. Obligate symbiosis was analysed as the number of species with and without obligate symbionts (proportion) within each family using a binomial error distribution with a logit link function. Analysing obligate symbiosis in this way enables variation in the number of species examined for obligate symbionts across insect families to be accounted for. Nutrient concentrations were Z-transformed before analysis and modelled as Gaussian response variables and species richness was modelled using a Poisson error distribution with log link function.\n",
+      "sha256": "76fe174d638ba2511c17a776bda675d166eb9e0d5c1c340ff6e8f82193084c32"
+    },
+    {
+      "id": "P60",
+      "texto": "The number of origins of obligate symbiosis. The probability of each node in the insect phylogeny having an obligate symbiont was estimated using a BPMM with the proportion of species in families with obligate symbionts as a response variable. The posterior probability of each node having obligate symbionts was estimated using the ‘predict’ function in MCMCglmm and nodes with a posterior probability greater than 0.5 were classified as ‘obligate’. We found support for 16 origins and 8 losses of obligate symbiosis.\n",
+      "sha256": "a97a7a7d51a8d6d08bc12482f0045388b34cda716466cc81566035ce2b221335"
+    },
+    {
+      "id": "P61",
+      "texto": "We examined the robustness of the estimated number of origins and losses of obligate symbiosis using SCM. As SCM requires categorical states (obligate versus non-obligate), insect families (n = 402) were classified as having an obligate symbiosis where over 50% species in families had symbionts. Data on obligate symbiosis were used to build 1,000 stochastic character maps across the insect phylogeny using an all-rates different Q matrix estimated with MCMC. Nodes were classified as having obligate symbionts if the proportion of the 1,000 stochastic character maps was above 50%. We found high correspondence between the SCM and BPMM analyses: 98% of ancestral states had the same predicted state of obligate symbiosis across analyses, indicating that our results are robust to different statistical approaches (Supplementary Table 20).\n",
+      "sha256": "fb583be56df4759b103380127141ea2fe26f6abb13298076ccd022313763c7ca"
+    }
+  ],
+  "deltas": [
+    {
+      "de": 2,
+      "a": 3,
+      "clave": "B_altas",
+      "anterior": [
+        {
+          "etiqueta preferida": "orígenes independientes de parasitismo en el censo de Animalia de Weinstein y Kuris 2016",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1664"
+        },
+        {
+          "etiqueta preferida": "filos animales con parasitismo en el censo de Weinstein y Kuris 2016",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2879"
+        },
+        {
+          "etiqueta preferida": "orígenes de simbiosis obligada en la filogenia de familias de insectos de Cornwallis et al. 2023",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "familias de insectos con simbiosis obligada en Cornwallis et al. 2023",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2881"
+        },
+        {
+          "etiqueta preferida": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        }
+      ],
+      "nuevo": [
+        {
+          "etiqueta preferida": "orígenes independientes de parasitismo en el censo de Animalia de Weinstein y Kuris 2016",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1664"
+        },
+        {
+          "etiqueta preferida": "filos animales con parasitismo en el censo de Weinstein y Kuris 2016",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2879"
+        },
+        {
+          "etiqueta preferida": "orígenes de simbiosis obligada en la filogenia de familias de insectos de Cornwallis et al. 2023",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "familias de insectos con simbiosis obligada en Cornwallis et al. 2023",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2881"
+        },
+        {
+          "etiqueta preferida": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+          "tipo": "magnitud",
+          "sinónimos y grafías alternativas": "n/a",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano (BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "Bayesian phylogenetic mixed model; BPMM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "modelo mixto filogenético bayesiano multirrespuesta (MR-BPMM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "multi-response Bayesian phylogenetic mixed model; MR-BPMM; MR-BPMMs",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-1121"
+        },
+        {
+          "etiqueta preferida": "MCMCglmm",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "paquete R MCMCglmm; predict de MCMCglmm",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        },
+        {
+          "etiqueta preferida": "mapeo estocástico de caracteres (SCM)",
+          "tipo": "método",
+          "sinónimos y grafías alternativas": "stochastic character mapping; mapas estocásticos de caracteres; SCM",
+          "marcas (⚠, ≈, †, [F], [H]) como atributos de la fila": "n/a",
+          "# de la fila del registro donde aparece por primera vez": "C-2880"
+        }
+      ]
+    },
+    {
+      "de": 2,
+      "a": 3,
+      "clave": "estado",
+      "anterior": "PROPUESTA_V2_NO_INTEGRADA_SIN_REVISION_INDEPENDIENTE",
+      "nuevo": "PROPUESTA_V3_NO_INTEGRADA_SIN_REVISION_INDEPENDIENTE"
+    },
+    {
+      "de": 2,
+      "a": 3,
+      "clave": "fecha_utc",
+      "anterior": "2026-09-27T02:42:25Z",
+      "nuevo": "2026-09-27T02:50:47Z"
+    },
+    {
+      "de": 2,
+      "a": 3,
+      "clave": "propuesta_anterior",
+      "anterior": {
+        "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_2026-09-27.json",
+        "sha256": "4ffc3b7c31c18546c62f0213980eee7a2373a5e94c40c16c3a7d418df20388e3",
+        "conservada": true
+      },
+      "nuevo": {
+        "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V2_2026-09-27.json",
+        "sha256": "9cf84c0123fdcaf9fc25f37f5ad7990891c828c086900c4722ceb0b37075fdbc",
+        "conservada": true
+      }
+    },
+    {
+      "de": 2,
+      "a": 3,
+      "clave": "version",
+      "anterior": 2,
+      "nuevo": 3
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "F_altas",
+      "anterior": [
+        {
+          "magnitud": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+          "valor tal como lo publica la fuente": "−0.32",
+          "unidad original": "coeficiente de correlación",
+          "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+          "método o proxy": "MR-BPMM; modo posterior",
+          "incertidumbre publicada": "CI creíble del 95 %: −0.54 a −0.09; no intervalo de confianza frecuentista",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+          "#": "C-1121"
+        },
+        {
+          "magnitud": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+          "valor tal como lo publica la fuente": "0.006",
+          "unidad original": "proporción posterior corregida (pMCMC)",
+          "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+          "método o proxy": "MR-BPMM; proporción de iteraciones por encima o debajo del valor de prueba, con corrección por tamaño finito",
+          "incertidumbre publicada": "no se publica intervalo para pMCMC en el pasaje",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+          "#": "C-1121"
+        },
+        {
+          "magnitud": "umbral de probabilidad posterior para estado nodal con simbiontes obligados",
+          "valor tal como lo publica la fuente": ">0.5",
+          "unidad original": "probabilidad posterior",
+          "organismo, nodo o intervalo al que se aplica": "nodos de la filogenia de familias de insectos de Cornwallis et al. 2023",
+          "método o proxy": "clasificación de estados reconstruidos con BPMM/MCMCglmm",
+          "incertidumbre publicada": "umbral operacional; no intervalo de incertidumbre",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Methods → Specific analyses, The number of origins of obligate symbiosis, P60",
+          "#": "C-2880"
+        }
+      ],
+      "nuevo": [
+        {
+          "magnitud": "correlación filogenética entre vitaminas B dietarias y simbiosis obligada",
+          "valor tal como lo publica la fuente": "−0.32",
+          "unidad original": "coeficiente de correlación",
+          "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+          "método o proxy": "MR-BPMM; modo posterior",
+          "incertidumbre publicada": "CI creíble del 95 %: −0.54 a −0.09; no intervalo de confianza frecuentista",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+          "#": "C-1121"
+        },
+        {
+          "magnitud": "pMCMC de la correlación vitaminas B–simbiosis obligada",
+          "valor tal como lo publica la fuente": "0.006",
+          "unidad original": "proporción posterior corregida (pMCMC)",
+          "organismo, nodo o intervalo al que se aplica": "familias de insectos en Cornwallis et al. 2023",
+          "método o proxy": "MR-BPMM; proporción de iteraciones por encima o debajo del valor de prueba, con corrección por tamaño finito",
+          "incertidumbre publicada": "no se publica intervalo para pMCMC en el pasaje",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S513 Nutrient deficiencies and obligate symbiosis, P12; Methods → General statistical methods, P53; Specific analyses, P65",
+          "#": "C-1121"
+        }
+      ]
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "estado",
+      "anterior": "PROPUESTA_V3_NO_INTEGRADA_SIN_REVISION_INDEPENDIENTE",
+      "nuevo": "PROPUESTA_V4_NO_INTEGRADA_SIN_REVISION_INDEPENDIENTE"
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "fecha_utc",
+      "anterior": "2026-09-27T02:50:47Z",
+      "nuevo": "2026-09-27T02:52:30Z"
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "limites",
+      "anterior": [
+        "BN111 y BN113 permanecen históricas intactas; no reejecución ni prueba de ausencia biológica",
+        "C1664 previa preservada íntegra en propuesta/hash y diagnóstico; es corrección de síntesis editorial inválida, no eliminación de una posición científica contradictoria",
+        "No promueve revisión global de C1665/S460, C1201 ni multicelularidad de prosa182. Sus referencias permanecen con alcance previo; la revisión debe señalar cualquier nuevo defecto descubierto."
+      ],
+      "nuevo": [
+        "BN111 y BN113 permanecen históricas intactas; no reejecución ni prueba de ausencia biológica",
+        "C1664 previa preservada íntegra en propuesta/hash y diagnóstico; es corrección de síntesis editorial inválida, no eliminación de una posición científica contradictoria",
+        "No promueve revisión global de C1665/S460, C1201 ni multicelularidad de prosa182. Sus referencias permanecen con alcance previo; la revisión debe señalar cualquier nuevo defecto descubierto.",
+        "El corte >0.5 permanece como parámetro operacional en el método de F de 16 orígenes y en Motivo de C2880; no se representa como una magnitud observada o inferida independiente. Su retirada de F_altas corrige una clasificación errónea y no elimina el valor ni relaja AF436."
+      ]
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "propuesta_anterior",
+      "anterior": {
+        "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V2_2026-09-27.json",
+        "sha256": "9cf84c0123fdcaf9fc25f37f5ad7990891c828c086900c4722ceb0b37075fdbc",
+        "conservada": true
+      },
+      "nuevo": {
+        "ruta": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V3_2026-09-27.json",
+        "sha256": "90d4e2b446df1aaa1d53dbe7d1ac4f210d7b1ffe091ecd96c0dc1d61c3632ad3",
+        "conservada": true
+      }
+    },
+    {
+      "de": 3,
+      "a": 4,
+      "clave": "version",
+      "anterior": 3,
+      "nuevo": 4
+    }
+  ],
+  "fuente": {
+    "ruta": "fuentes/S513 [2023] Symbioses shape feeding niches and diversification across insects.xml",
+    "sha256": "97c37c51e5148821ade14fbab6cdf1c873aaad82b02bcd6e30d69c3944b8e040"
+  }
+}

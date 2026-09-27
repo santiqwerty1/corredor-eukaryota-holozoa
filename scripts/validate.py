@@ -17,6 +17,7 @@ from corpus_io import (
     combined_export_payloads,
     control_csv_payload,
     csv_text,
+    expand_source_refs,
     load_index,
     negative_entries,
     read_csv,
@@ -57,6 +58,25 @@ def read_all_text(paths: list[Path]) -> str:
 
 def canonical_claim_id(number: int) -> str:
     return f"C-{number:03d}" if number < 1000 else f"C-{number}"
+
+
+def source_reference_errors(text: str, source_ids: set[str]) -> list[str]:
+    """Comprueba también el interior de rangos, conservando el control previo.
+
+    Una cita S177–S181 no queda validada solo porque existan sus extremos.
+    Se reutiliza la expansión canónica de H, sin retirar las comprobaciones
+    de claves literales que ya realizaba este validador.
+    """
+    found = set(re.findall(r"\bS\d{2,3}\b", text))
+    errors: list[str] = []
+    try:
+        found.update(expand_source_refs(text))
+    except ValueError as exc:
+        errors.append(f"Referencias S inválidas: {exc}")
+    undefined = sorted(found - source_ids)
+    if undefined:
+        errors.append(f"Referencias S indefinidas: {undefined[:20]}")
+    return errors
 
 
 def main() -> int:
@@ -240,7 +260,6 @@ def main() -> int:
     corpus_text = read_all_text(reference_paths)
     reference_specs = [
         (r"\bC-\d{3,4}\b", claim_id_set, "C"),
-        (r"\bS\d{2,3}\b", source_ids, "S"),
         (r"\bE\d{2,3}\b", event_ids, "E"),
         (r"\bH\d{2,3}\b", hypothesis_ids, "H"),
         (r"\bBN-\d{3}\b", negative_ids, "BN"),
@@ -250,6 +269,7 @@ def main() -> int:
         undefined = sorted(found - valid)
         if undefined:
             errors.append(f"Referencias {label} indefinidas: {undefined[:20]}")
+    errors.extend(source_reference_errors(corpus_text, source_ids))
 
     # Salidas generadas.
     expected_reports = {

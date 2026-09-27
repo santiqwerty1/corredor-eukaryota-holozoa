@@ -49,6 +49,11 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+try:
+    from corpus_io import expand_source_refs
+except ModuleNotFoundError:
+    from scripts.corpus_io import expand_source_refs
+
 ROOT = Path(__file__).resolve().parents[1]
 APENDICE_A = ROOT / "data" / "apendices" / "A_fuentes.csv"
 INFORME = ROOT / "exports" / "acceso_fuentes.csv"
@@ -104,7 +109,7 @@ def impacto_por_fuente() -> tuple[dict[str, int], dict[str, int]]:
         for fila in list(csv.reader(fh))[1:]:
             if len(fila) < 7:
                 continue
-            claves = list(dict.fromkeys(re.findall(r"\bS\d{2,3}\b", fila[6] or "")))
+            claves = list(dict.fromkeys(expand_source_refs(fila[6] or "")))
             for k in claves:
                 usos[k] = usos.get(k, 0) + 1
             if len(claves) == 1:
@@ -745,7 +750,7 @@ def volcar(filas: list[list[str]], fuentes: list[dict]) -> None:
     """Escribe informe y listado con lo hecho hasta ahora."""
     INFORME.parent.mkdir(parents=True, exist_ok=True)
     with INFORME.open("w", encoding="utf-8", newline="") as fh:
-        w = csv.writer(fh)
+        w = csv.writer(fh, lineterminator="\n")
         w.writerow(CABECERA_INFORME)
         w.writerows(filas)
     escribir_listado(filas, fuentes)

@@ -2,9 +2,9 @@
 """Ensambla el ledger canónico a partir de dictámenes humanos independientes.
 
 El programa no decide ni promueve resultados: exige exactamente un dictamen
-``CONFORME`` por cada control manual, conserva literalmente prueba, evidencia,
-localizadores y revisor, y deja que el validador canónico recalcule literales,
-alcances y huellas sobre el repositorio vivo.
+``CONFORME`` por cada control manual y conserva todos los campos firmados,
+incluidos literal, alcance, huellas, fecha e independencia. El validador los
+contrasta con el repositorio vivo; el ensamblador nunca los reemplaza.
 """
 
 from __future__ import annotations
@@ -19,8 +19,10 @@ from pathlib import Path
 
 try:  # ejecución como módulo en tests
     from scripts import audit_requirement_controls as controls
+    from scripts.audit_chronology import review_date_errors
 except ImportError:  # ejecución directa: python3 scripts/...
     import audit_requirement_controls as controls
+    from audit_chronology import review_date_errors
 
 
 REVIEW_COLUMNS = [
@@ -44,12 +46,15 @@ def read_reviews(path: Path) -> list[dict[str, str]]:
                 f"{path}: cabecera inválida; esperada {REVIEW_COLUMNS} o "
                 f"{controls.MANUAL_LEDGER_HEADER}"
             )
-        rows = [
-            {column: row[column] for column in REVIEW_COLUMNS}
-            for row in reader
-        ]
+        rows = list(reader)
     if any(None in row or any(value is None for value in row.values()) for row in rows):
         raise RuntimeError(f"{path}: fila con cardinalidad inválida")
+    if reader.fieldnames == REVIEW_COLUMNS and any(row["resultado"] != "NO_CONFORME" for row in rows):
+        raise RuntimeError(
+            f"{path}: el formato histórico de seis columnas solo conserva "
+            "NO_CONFORME; cerrar exige literal, alcance, huellas, fecha e "
+            "independencia firmados por el revisor"
+        )
     return rows
 
 
@@ -104,6 +109,14 @@ def select_final_reviews(
                     f"{requirement_id}: un CONFORME previo de {path} fue "
                     "sustituido por otro dictamen"
                 )
+        for (_, earlier), (later_path, later) in zip(entries, entries[1:]):
+            if earlier.get("fecha_revision"):
+                errors.extend(
+                    f"{requirement_id}: historial temporal de {later_path}: {error}"
+                    for error in review_date_errors(
+                        later.get("fecha_revision", ""), (earlier["fecha_revision"],),
+                    )
+                )
         selected[requirement_id] = entries[-1][1]
     return selected, errors
 
@@ -141,26 +154,14 @@ def assemble(root: Path, review_paths: list[Path]) -> bytes:
                 f"{requirement_id}: dictamen abierto {review['resultado']}"
             )
             continue
-        template = controls.manual_template_row(
-            corpus, results[requirement_id], literals[requirement_id],
-        )
-        template.update({
-            "prueba_nominal": review["prueba_nominal"],
-            "resultado": review["resultado"],
-            "evidencia": review["evidencia"],
-            "localizadores_evidencia": review["localizadores_evidencia"],
-            "revisor": review["revisor"],
-            "declaracion_independencia": controls.INDEPENDENCE_DECLARATION,
-            "fecha_revision": controls.REVIEW_CLOSURE_DATE.isoformat(),
-        })
         row_errors = controls.validate_manual_review(
             corpus,
             results[requirement_id],
             literals[requirement_id],
-            template,
+            review,
         )
         errors.extend(row_errors)
-        output.append(template)
+        output.append(review)
     if errors:
         raise RuntimeError(
             f"dictámenes no cerrados o inválidos ({len(errors)}):\n- "

@@ -1,0 +1,1424 @@
+{
+  "formato": "revision_independiente_integracion_tres_lotes_v1",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "inicio_revision_utc": "2026-09-27T01:14:00Z",
+  "instantanea_utc": "2026-09-27T01:23:19.227672Z",
+  "rama": "codex/cierre-plan-pendiente",
+  "normalizacion_fila_json": "JSON ensure_ascii=False sort_keys=True separadores compactos, LF final, UTF-8 SHA256",
+  "normalizacion_claim_fingerprint": "12 columnas CSV en orden, separador U+001F y LF final, UTF-8 SHA256",
+  "afirmaciones": [
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 118,
+      "fila": {
+        "#": "C-1088",
+        "Afirmación": "En más de 200 genomas de Enterobacterales, Forni et al. reconstruyeron un pico de pérdida génica al iniciarse la endosimbiosis seguido por una erosión más lenta y continua.",
+        "Sujeto": "reducción genómica de endosimbiontes de Enterobacterales",
+        "Predicado": "tiene_trayectoria_reconstruida*",
+        "Objeto": "pico inicial de pérdida seguido por erosión más lenta",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Discussion, p. 6",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La forma bifásica procede de reconstrucciones comparativas; el eje de la Fig. 2B cuenta ramas antes y después de la transición, no años. Los parámetros DTL se definen en C-1120; no son genes por millón de años.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "05a8f39b2680274b5f0eb0cea64d64a046592ae3097161fe03d0827351bf0ffe",
+      "claim_fingerprint": "ec5bd60433e48f63e55c4b9b0ed06fd2db2fa9ec1ef55eeb094d08fbc16e13a6"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 150,
+      "fila": {
+        "#": "C-1120",
+        "Afirmación": "En Forni et al., las tasas DTL representan probabilidades no normalizadas de duplicación, transferencia o pérdida de genes a lo largo de cada rama del árbol de especies.",
+        "Sujeto": "tasas DTL por rama de Forni y colaboradores",
+        "Predicado": "clasificado_como_por",
+        "Objeto": "probabilidades no normalizadas de duplicación, transferencia o pérdida por rama",
+        "Atribución": "expresa",
+        "Fuente": "S512 Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Definición explícita del parámetro estimado con GeneRax por rama. No equivale a genes perdidos por millón de años ni a la frecuencia por familia, que el artículo calcula mediante otra fórmula. Se corrige la anterior afirmación sobre una tasa universal ausente; BN-043 queda como registro de aquella consulta distinta, no como requisito de R-0212.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "e481e7076ef19dd62b1ca0429318c1e295cea551645aa141cdd33755a9d0daec",
+      "claim_fingerprint": "e5d436f44f4e5189e298f8fba18c2eaaf93db4447cfe411f20c0a0fa19dc7cde"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 193,
+      "fila": {
+        "#": "C-1163",
+        "Afirmación": "Wang y Wu identificaron mediante análisis filogenómico 4459 genes nucleares de origen mitocondrial inferido entre 427186 genes de 30 genomas eucariotas.",
+        "Sujeto": "genes nucleares clasificados como de origen mitocondrial en la muestra de Wang y Wu",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "4459 genes entre 427186 genes de 30 genomas eucariotas",
+        "Atribución": "expresa",
+        "Fuente": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo (JATS body/sec[@id='s2']/sec[@id='s2a']/p[1]); Materials and Methods, Identification of mitochondria-derived nuclear genes",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es el resultado computacional publicado para una muestra y un procedimiento de clasificación filogenética, no un recuento observado de episodios ancestrales de transferencia ni el inventario completo de LECA. No se resta del contenido del genoma del donante ni se suman genes y familias.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "e6ff71dcd45f4e778cd91df90e758acf8d2f557c1d2976c4e5937a6362d011aa",
+      "claim_fingerprint": "d4caa93093d43a2a407ff134e800d2420d9101d4715f9dcd169aeabf0025c7ab"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 215,
+      "fila": {
+        "#": "C-1185",
+        "Afirmación": "Ku y Martin propusieron la regla del 70 %: una identidad aminoacídica procariota-eucariota de al menos 70 % señala posibles contaminaciones, con excepciones de origen endosimbiótico en su muestra.",
+        "Sujeto": "regla del 70 %",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 discusión, The 70 % rule (JATS Sec5); resultados, Deep differences between prokaryotes and eukaryotes (Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es un criterio derivado de los árboles y ensamblajes estudiados, no una prueba universal de contaminación. La discusión conserva excepciones de origen mitocondrial y plastidial.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "979e8aa69459f233baac6c0c66f28764a119f3f3b250b711d4c3e7f896ba9ab7",
+      "claim_fingerprint": "a940e3667f5f623af3fb7c0595a2e0e7552caa3465683a858380253c61c8063d"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 216,
+      "fila": {
+        "#": "C-1186",
+        "Afirmación": "Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas y consideraron las adquisiciones recientes demasiado raras para tener amplia importancia evolutiva.",
+        "Sujeto": "hipótesis de barrera natural de HGT",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); Conclusion (Sec8)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra la interpretación de estos autores, que distinguen adquisiciones endosimbióticas de transferencia continua; no se presenta como consenso ni como ausencia demostrada de toda HGT.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "be6172815b58ac68ddfe60003d8c5b4a5824d47f9551b6e034aba492c92b258a",
+      "claim_fingerprint": "3836eef9790d20f8e6ea1d9b1dc01cd5898ee711bb4dc7d6a19e43008fdd0498"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 217,
+      "fila": {
+        "#": "C-1187",
+        "Afirmación": "Van Etten y Bhattacharya defendieron que la HGT tiene un papel pequeño pero significativo en la evolución de los eucariotas microbianos.",
+        "Sujeto": "posición de un papel pequeño pero significativo de HGT en eucariotas microbianos",
+        "Predicado": "propuesto_por",
+        "Objeto": "Van Etten y Bhattacharya",
+        "Atribución": "expresa",
+        "Fuente": "S291 resumen (Abstract), oración final; Highlights, primer punto",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "La formulación se cotejó en el resumen y Highlights editoriales reproducidos por Rutgers; no se afirma haber recuperado el cuerpo completo de la revisión.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "9a78bf8b6077c528653a0e3941c911d0d61d1cb8ecf6a029b98f8a6757aad0cf",
+      "claim_fingerprint": "6e200b687f3936d3f7dab9493136c9a3f3c67a7e8b1e5f9b078057d37fc61018"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 218,
+      "fila": {
+        "#": "C-1188",
+        "Afirmación": "Rossoni y colaboradores atribuyeron candidatos a HGT en Cyanidiales mediante filogenias con homólogos procariotas, filtros para distinguir transferencia endosimbiótica y comprobación del contexto genómico con lecturas largas.",
+        "Sujeto": "atribución de HGT en Cyanidiales por Rossoni y colaboradores",
+        "Predicado": "respaldado_por",
+        "Objeto": "filogenias, filtros de EGT y colocalización con genes nativos en lecturas largas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Materials and methods, Orthogroups and phylogenetic analysis (JATS s4-5) y Detection of HGTs (s4-6); Results, Gene co-localization on raw sequence reads (s2-4)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se describe este protocolo publicado, no una lista universal de condiciones suficientes. La selección filogenética y el control de contaminación son pasos distintos; los autores reconocen posibles falsos negativos por sus filtros.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "d509ea6346db23e90b56637e71389dd8285c2a8659ea8e5ab7ca1ae56089e2ab",
+      "claim_fingerprint": "cfbd60547edede0e8a66000f1b732ff0efe23ec01cbd13c89953900bf665611d"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 228,
+      "fila": {
+        "#": "C-1198",
+        "Afirmación": "La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico.",
+        "Sujeto": "contaminación en estudios de HGT",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia de HGT eucariota real",
+        "Atribución": "sintesis(C-1188, C-1191, C-1192, C-1196)",
+        "Fuente": "S561; S211; S296",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "Los criterios probatorios discriminan casos, no una respuesta global binaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "df988e9519b70839b8b94966cfaf263b461eda9b43c8c1f6999bf91f2fd6d78f",
+      "claim_fingerprint": "80a3f504da9435ff1c66b7edcb52231a59a90c785d74f77c4c584f12edd404ae"
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 229,
+      "fila": {
+        "#": "C-1199",
+        "Afirmación": "La controversia sobre HGT eucariota es en parte una disputa sobre denominador, filtros y unidad de recuento.",
+        "Sujeto": "frecuencia de HGT eucariota",
+        "Predicado": "depende_de*",
+        "Objeto": "genes, eventos, familias, linajes y controles utilizados",
+        "Atribución": "sintesis(C-1184, C-1185, C-1186, C-1187, C-1188)",
+        "Fuente": "S290; S291; S561",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los trabajos cuentan objetos distintos y aplican filtros diferentes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "52d35867575465397c8fa10be9c8082f515d12aec0cab230a668f2be61ef6b6f",
+      "claim_fingerprint": "42c5f80b2c2085369a76ca34f1b5583fd2871f20a578586026d159931c2628bd"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 928,
+      "fila": {
+        "#": "C-2824",
+        "Afirmación": "El análisis filogenómico de Wang y Wu agrupó los genes nucleares clasificados como de origen mitocondrial en 394 familias.",
+        "Sujeto": "familias de genes nucleares de origen mitocondrial inferido en Wang y Wu",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "394 familias de genes",
+        "Atribución": "expresa",
+        "Fuente": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo (JATS body/sec[@id='s2']/sec[@id='s2a']/p[1]); Materials and Methods, Identification of mitochondria-derived nuclear genes",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La unidad es la familia obtenida por el procedimiento publicado: agrupación MCL, clasificación de árboles FastTree 2 y separación de parálogos como familias distintas. No se equiparan 394 familias con 394 episodios de transferencia ni con un inventario exhaustivo de LECA.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "34f2849ec07e88ac931551609a13b46d9074f8c096556cee7d3b17a6f285745c",
+      "claim_fingerprint": "317a396f0811f5024252697505fac8913d79d1c841f9107f2b45d9efb118d8f1"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 929,
+      "fila": {
+        "#": "C-2825",
+        "Afirmación": "Ku y Martin publicaron que los clados procariotas de alta identidad con más de un taxón representaban entre 3,1 % y 5,1 % de todos los clados de los grupos comparados.",
+        "Sujeto": "clados procariotas de alta identidad no singleton en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "3,1–5,1 % de los clados de cada grupo comparado",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "HIC se define por la identidad media clado–grupo hermano y un umbral específico de cada grupo: la media de identidades de singleton en su cuartil superior. El denominador cuenta clados, no genes transferidos ni eventos por tiempo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "9e3375c4cb7c239de4c401bf6e04b7fd3d5a9f967376b9eb66ee831b8a712818",
+      "claim_fingerprint": "774608405990eb84aae4407edf3d1b75df759e889e6f02c6ce7e0020e9ac422a"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 930,
+      "fila": {
+        "#": "C-2826",
+        "Afirmación": "En el análisis de Ku y Martin, los clados eucariotas de alta identidad con más de un taxón representaban menos del 1,0 % de todos los clados eucariotas analizados.",
+        "Sujeto": "clados eucariotas de alta identidad no singleton en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "<1,0 % de los clados eucariotas analizados",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La cifra es una proporción de clados clasificados por identidad clado–grupo hermano; no mide el porcentaje de genes eucariotas adquirido por HGT. La proposición numérica está en el texto, no depende de leer solo la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "b010f9de1153f26a69b99377d883d596d2e64b5ce802e30d2c9f26e264987ee4",
+      "claim_fingerprint": "bca3ac05230455510c7c7d2299940c50f05de9430ef341de2808a65022a25125"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 931,
+      "fila": {
+        "#": "C-2827",
+        "Afirmación": "Al retirar los clados de origen plastidial, Ku y Martin publicaron un 0,3 % de clados eucariotas de alta identidad con más de un taxón entre los clados restantes.",
+        "Sujeto": "clados eucariotas de alta identidad no singleton tras excluir origen plastidial en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "0,3 % de los clados restantes sin origen plastidial",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se conserva el denominador del análisis filtrado de Fig. 3b, descrito también en el texto. Ni esta cifra ni la de todos los clados es una tasa temporal de adquisición de genes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "79b4fe0ad30db96434b35d1e758b5ed5d234436c5b368a2243623909687d21a6",
+      "claim_fingerprint": "0e779d32df32a916a5076faeea2200826640d339578d31a711eb8f9a83038788"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 932,
+      "fila": {
+        "#": "C-2828",
+        "Afirmación": "Rossoni y colaboradores clasificaron como candidatos a HGT 96 de los 9075 grupos de ortólogos de sus 13 genomas de Cyanidiales, el 1,06 % publicado.",
+        "Sujeto": "grupos de ortólogos candidatos a HGT en Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "96 de 9075 grupos de ortólogos (1,06 %) en 13 genomas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6); Results, Orthogroups and phylogeny (s2-2)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La unidad es el grupo de ortólogos, no el clado HIC de Ku y Martin. La inferencia usa árboles de máxima verosimilitud, inspección manual y exclusiones por soporte, muestreo insuficiente y posible EGT; el porcentaje no se extrapola a todos los eucariotas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "37178d8ad45423a0bddd37940c5059c4c7fc1b2dddc3b35055137ea5a25cb7ec",
+      "claim_fingerprint": "39f867ab1eb8f925117a3596c97dd20d42ded00a3aa3a2a44f567b559a4c7431"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 933,
+      "fila": {
+        "#": "C-2829",
+        "Afirmación": "Rossoni y colaboradores identificaron 641 secuencias individuales de Cyanidiales como candidatas a HGT.",
+        "Sujeto": "secuencias de Cyanidiales candidatas a HGT en Rossoni y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "641 secuencias candidatas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se cuentan secuencias de la muestra, no 641 eventos independientes de transferencia. Las familias pueden compartir descendientes y copias entre genomas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "724cf0e73153ccefd9a39cbe3207561b0bb8926195cd19d8f17f4932aae6b6cc",
+      "claim_fingerprint": "7bfbb2b2b444a7903f179db6f06311830806d5cb45d7085f8d6cbf4b4afe6f11"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 934,
+      "fila": {
+        "#": "C-2830",
+        "Afirmación": "En el control de lecturas largas de Rossoni y colaboradores, 629 de los 641 candidatos a HGT, el 98,12 % publicado, colocalizaron con genes nativos de alga roja en una misma lectura.",
+        "Sujeto": "candidatos a HGT que colocalizan con genes nativos en lecturas largas de Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "629 de 641 candidatos (98,12 %)",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Gene co-localization on raw sequence reads (JATS s2-4)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La colocalización aporta evidencia de integración y control de contaminación para este subconjunto; no prueba por sí sola la dirección ni el mecanismo de la transferencia y no debe atribuirse a todos los candidatos.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "ffda5d7bb8b270c1d9b56a63cfd4d05f829d54b0a983a245e1cfe7d9f4005731",
+      "claim_fingerprint": "f932429199fae67a1f25fdf4f12567e6b320d51581f94806e3c79ff6812d9001"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 935,
+      "fila": {
+        "#": "C-2831",
+        "Afirmación": "Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado.",
+        "Sujeto": "grupos candidatos a HGT con al menos una secuencia individual sobre el umbral de identidad en Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "5 de 96 grupos candidatos a HGT (5,2 %), con alguna identidad individual >70 %",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Ningún grupo superó ese umbral en su identidad media: el resultado se refiere a comparaciones individuales. Los autores lo usan para cuestionar el descarte sistemático por el umbral; no demuestra que cualquier secuencia de alta identidad sea una transferencia real.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "a525e0c9a47c66c857fbe86c75744a715c77109e567147d5c4cccab7466987cb",
+      "claim_fingerprint": "04a3cd34795e11f027605dea650fccc26385096f4d4b1f568e60bf91e062ca58"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 936,
+      "fila": {
+        "#": "C-2832",
+        "Afirmación": "Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas, y advirtieron que debía contrastarse con más datos y un procedimiento estandarizado.",
+        "Sujeto": "contribución de HGT a los inventarios génicos de protistas resumida por Van Etten y Bhattacharya",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "aproximadamente 1 % como frecuencia relativa media de genes atribuidos a HGT en inventarios de protistas",
+        "Atribución": "expresa",
+        "Fuente": "S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una generalización aproximada de una revisión, no una tasa temporal ni un resultado obtenido con el mismo muestreo, denominador o filtro de S290. Se cotejó el apartado público, sin afirmar acceso al cuerpo completo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "9d95ecd8ffa15e7b52d4b8dc59f634bde8fc6f7f48c0e656375b8cd28e1a1caa",
+      "claim_fingerprint": "c1f930116dffe186b1b66e76f2d65499308929a7c35aba21b6c7ab4139abf62e"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 937,
+      "fila": {
+        "#": "C-2833",
+        "Afirmación": "Degnan, Lazarus y Wernegreen estimaron 25 ORF perdidos o inactivados en el linaje de Blochmannia floridanus durante los 16–20 millones de años transcurridos desde su divergencia con B. pennsylvanicus.",
+        "Sujeto": "ORF perdidos o inactivados en el linaje de Blochmannia floridanus de Degnan y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "número de genes perdidos o inactivados: 25 ORF; tiempo transcurrido: 16–20 millones de años",
+        "Atribución": "expresa",
+        "Fuente": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El número de genes perdidos o inactivados se empareja con el tiempo transcurrido en el mismo pasaje. Los autores asumen que el ancestro codificaba al menos el conjunto combinado de ORF y toman la divergencia de Degnan et al. (2004); no es una duración experimental ni equivale exclusivamente a ADN eliminado. Pérdidas paralelas pueden subestimar el recuento.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "3bc95a1dda9a064687bb1cdf1b0ae0940973e5dd01c1f42657474a1e12b6dcce",
+      "claim_fingerprint": "31957e763bdbb2b583f7e984a31bf8e2a5f49ebb54631ec67e0b72ff6f6e78c2"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 938,
+      "fila": {
+        "#": "C-2834",
+        "Afirmación": "Degnan, Lazarus y Wernegreen estimaron 4 ORF perdidos o inactivados en el linaje de Blochmannia pennsylvanicus durante los 16–20 millones de años transcurridos desde su divergencia con B. floridanus.",
+        "Sujeto": "ORF perdidos o inactivados en el linaje de Blochmannia pennsylvanicus de Degnan y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "número de genes perdidos o inactivados: 4 ORF; tiempo transcurrido: 16–20 millones de años",
+        "Atribución": "expresa",
+        "Fuente": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El número de genes perdidos o inactivados se empareja con el tiempo transcurrido en el mismo pasaje, bajo el mismo supuesto ancestral y la misma calibración de C-2833. Cada cifra corresponde a un linaje; no se duplica el intervalo para producir una tasa conjunta ni se presenta la inactivación como deleción física.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "eb257ee28e73f62279562cec3d53b2b2b603f872c3c718967c799c8d0105b8c4",
+      "claim_fingerprint": "0ed19eff9eb7222a51b89c2431f9f3622f72e61a28918869002cc37dbaaf9e1b"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 939,
+      "fila": {
+        "#": "C-2835",
+        "Afirmación": "Degnan, Lazarus y Wernegreen advierten que sus datos no distinguen en qué puntos del linaje de B. floridanus se aceleró la evolución o se perdieron genes concretos.",
+        "Sujeto": "resolución temporal de las pérdidas de Blochmannia floridanus en Degnan y colaboradores",
+        "Predicado": "tiene_limite_de_resolucion*",
+        "Objeto": "no distingue puntos de aceleración ni fechas de pérdidas particulares",
+        "Atribución": "expresa",
+        "Fuente": "S562 discusión (Discussion), penúltimo párrafo, limitación que comienza However, given that current data",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una limitación declarada por los autores, no un resultado negativo inferido de una búsqueda. Los recuentos acumulados de C-2833 y C-2834 no determinan una curva temporal continua ni datan cada deleción.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "8839362a2b2c05531946bfcfdbf7de3e35534573f8ac6cf12a5b0cf109e41743",
+      "claim_fingerprint": "4b6970536c441f63d4e7690c96f8d0bb4d9abeb90fb071dd99e236e8e80e09b5"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 940,
+      "fila": {
+        "#": "C-2836",
+        "Afirmación": "Forni et al. publicaron una mediana de 0,592, con desviación estándar 0,21, del parámetro DTL de pérdida para las ramas donde se infiere el establecimiento de endosimbiosis.",
+        "Sujeto": "parámetro DTL de pérdida en ramas de establecimiento de endosimbiosis de Forni y colaboradores",
+        "Predicado": "tiene_parametro_DTL*",
+        "Objeto": "0,592 ± 0,21 (mediana ± desviación estándar; parámetro por rama)",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Parámetro de probabilidad no normalizada por rama, definido en C-1120; no es una tasa por año, una proporción directa de genes perdidos ni la frecuencia por familia calculada con otra fórmula. El ± corresponde a desviación estándar, no a intervalo de confianza. El texto reproduce el contraste, sin extraer cifras exclusivamente de la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "ae2ee2ba4b2ffa003b14762e806608b5698a0c3fabf36cf8bda880423519b587",
+      "claim_fingerprint": "21d0e4eb8815f828c06b155b564e5a71b661bcc1bdb4fdc8dd9942197032b281"
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 941,
+      "fila": {
+        "#": "C-2837",
+        "Afirmación": "Forni et al. publicaron una mediana de 0,185, con desviación estándar 0,123, del parámetro DTL de pérdida para las tres ramas anteriores y posteriores a la transición.",
+        "Sujeto": "parámetro DTL de pérdida en ramas adyacentes a la transición de Forni y colaboradores",
+        "Predicado": "tiene_parametro_DTL*",
+        "Objeto": "0,185 ± 0,123 (mediana ± desviación estándar; parámetro por rama)",
+        "Atribución": "expresa",
+        "Fuente": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Parámetro de probabilidad no normalizada por rama, definido en C-1120; no es una tasa por año, una proporción directa de genes perdidos ni la frecuencia por familia calculada con otra fórmula. El ± corresponde a desviación estándar, no a intervalo de confianza. El texto reproduce el contraste, sin extraer cifras exclusivamente de la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      },
+      "sha256_fila_json": "38341dc4fea9995302f5917ef422215f286e954d57df955b088ebdfec565d8a5",
+      "claim_fingerprint": "f7df46677d3f54bf6d1640875fb597808a3868788cda958dc71c1cec9c7bc670"
+    }
+  ],
+  "fuentes": [
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 206,
+      "fila": {
+        "clave": "S211",
+        "autores": "Stairs, C. W. et al.",
+        "año": "2018",
+        "título": "Microbial eukaryotes have adapted to hypoxia by horizontal acquisitions of a gene involved in rhodoquinone biosynthesis",
+        "publicación o repositorio": "eLife 7:e34292",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.7554/elife.34292",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Función de RquA en orgánulos de Pygsuia; transferencia inferida filogenéticamente. Filogenia y función de rquA, incluida Pygsuia biforma. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "sha256_fila_json": "272818c5ac9c49abb9cb2ab0840c30e5b19612d704b8b10e0c1e94243b85db65"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 285,
+      "fila": {
+        "clave": "S290",
+        "autores": "Ku y Martin",
+        "año": "2016",
+        "título": "A natural barrier to lateral gene transfer from prokaryotes to eukaryotes revealed from genomes: the 70% rule",
+        "publicación o repositorio": "BMC Biology 14:89",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1186/s12915-016-0315-9",
+        "tipo": "investigación primaria",
+        "notas de calidad": "2.585 árboles génicos y control de contaminación/identidad elevada. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 3 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "sha256_fila_json": "0909a73a6d6c75897aa64566f7813eee3a596222edb9c03c4f00face5374f622"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 286,
+      "fila": {
+        "clave": "S291",
+        "autores": "Van Etten y Bhattacharya",
+        "año": "2020",
+        "título": "Horizontal Gene Transfer in Eukaryotes: Not If, but How Much?",
+        "publicación o repositorio": "Trends in Genetics 36:915–925",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.tig.2020.08.006",
+        "tipo": "revisión",
+        "notas de calidad": "Defiende HGT eucariota real y enfatiza controles de contaminación y filogenia; se sustituyó un PMID ajeno por el DOI verificado. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "sha256_fila_json": "599fe7c9eeff9eed6eed59cf11bc14fac964c7a866f7733cd4b3ebabf364475b"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 291,
+      "fila": {
+        "clave": "S296",
+        "autores": "Koutsovoulos et al.",
+        "año": "2016",
+        "título": "No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini",
+        "publicación o repositorio": "PNAS 113:5053–5058",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1073/pnas.1600338113",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Reensamblaje y controles que atribuyeron gran parte de la señal a contaminación. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 1 afirmación; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "sha256_fila_json": "879a622897b282bcaa2eef6a899622dad1020769fd133f5ec68c790a110b7e25"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 503,
+      "fila": {
+        "clave": "S512",
+        "autores": "Forni, G. et al.",
+        "año": "2026",
+        "título": "Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales",
+        "publicación o repositorio": "Molecular Phylogenetics and Evolution 217:108532",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1016/j.ympev.2026.108532",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Filogenómica de más de 200 genomas; reconstruye un pico de pérdida génica al pasar a endosimbiosis seguido por erosión más lenta y continua. No fija una tasa universal en genes por millón de años. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 2 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+        "fecha de consulta": "2026-08-08"
+      },
+      "sha256_fila_json": "8fee862aaf30a25c5a6f6581bb05090cd0c95f02afb8b901fcd6c0006c4445eb"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 526,
+      "fila": {
+        "clave": "S560",
+        "autores": "Wang, Z.; Wu, M.",
+        "año": "2014",
+        "título": "Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite",
+        "publicación o repositorio": "PLOS ONE 9(10):e110685",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1371/journal.pone.0110685",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Análisis filogenómico primario. Results and Discussion, Identifying mitochondria-derived nuclear genes, publica genes y familias de origen mitocondrial inferido; Materials and Methods, Identification of mitochondria-derived nuclear genes, delimita muestra, filtrado BLASTP, agrupación MCL, árboles FastTree 2 y separación de parálogos. Se distinguen recuentos de genes, familias y episodios de transferencia; no se extrapola un total ancestral único. Texto completo JATS PMC4198247.1 recuperado y cotejado nominalmente el 2026-09-26; identidad coincidente con la página editorial y DOI. Revisión editorial exhaustiva y revisión científica independiente del parche pendientes. [SOPORTE ÚNICO ACTUAL] S560 es la única fuente S directa de C-1163 y C-2824.",
+        "fecha de consulta": "2026-09-26"
+      },
+      "sha256_fila_json": "94d6df9db85dd20e71fb6fc702dc06fd9c7b857a5c907f74a1e13d3bf5e404f9"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 527,
+      "fila": {
+        "clave": "S561",
+        "autores": "Rossoni, A. W.; Price, D. C.; Seger, M.; Lyska, D.; Lammers, P.; Bhattacharya, D.; Weber, A. P. M.",
+        "año": "2019",
+        "título": "The genomes of polyextremophilic cyanidiales contain 1% horizontally transferred genes with diverse adaptive functions",
+        "publicación o repositorio": "eLife 8:e45017",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.7554/eLife.45017",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Análisis primario de Cyanidiales con filogenias, exclusión de candidatos a EGT y controles de lecturas largas. Se distinguen grupos de ortólogos, secuencias candidatas y colocalización: no son tasas ni recuentos intercambiables. Texto JATS PMC6629376.1 recuperado de Europe PMC; título, siete autores y DOI cotejados. La fecha electrónica del JATS es 2019-05-31; la página editorial distingue manuscrito aceptado y versión de registro. Revisión editorial exhaustiva y revisión independiente de esta integración pendientes.",
+        "fecha de consulta": "2026-09-27"
+      },
+      "sha256_fila_json": "ed4edd58cb46b56bcf81959350d7b9a48e32a4b8ef58c44c1635d0557c0d1965"
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "fila_csv": 528,
+      "fila": {
+        "clave": "S562",
+        "autores": "Degnan, P. H.; Lazarus, A. B.; Wernegreen, J. J.",
+        "año": "2005",
+        "título": "Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects",
+        "publicación o repositorio": "Genome Research 15(8):1023–1033",
+        "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1101/gr.3771305",
+        "tipo": "investigación primaria",
+        "notas de calidad": "Texto completo de PMC1182215 recuperado y cotejado. Recuentos de ORF perdidos o inactivados emparejados con divergencia estimada; la discusión declara que no puede fechar pérdidas individuales. No es una curva temporal observada. Revisión editorial independiente pendiente.",
+        "fecha de consulta": "2026-09-27"
+      },
+      "sha256_fila_json": "67765dd112567cab4ebeddb546de8443c9a56f6fc4e05226a0ccb7856bebb834"
+    }
+  ],
+  "magnitudes": [
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 281,
+      "fila": {
+        "magnitud": "umbral de la regla de contaminación",
+        "valor tal como lo publica la fuente": "≥70",
+        "unidad original": "% de identidad",
+        "organismo, nodo o intervalo al que se aplica": "regla de Ku y Martin",
+        "método o proxy": "criterio empírico",
+        "incertidumbre publicada": "puede tener excepciones",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S290 Discussion, The 70 % rule (JATS Sec5), segundo párrafo",
+        "#": "C-1185"
+      },
+      "sha256_fila_json": "5dd595a4144c648bb4d3b43106ed3e201ce443e414fcb400b5cd6619d1d0a832"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 543,
+      "fila": {
+        "magnitud": "genomas incluidos en filogenómica de reducción endosimbionte",
+        "valor tal como lo publica la fuente": "más de 200",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "Enterobacterales libres y endosimbiontes",
+        "método o proxy": "filogenómica y reconstrucción de familias génicas",
+        "incertidumbre publicada": "muestreo del orden; no tasa universal",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S512 resumen; métodos",
+        "#": "C-1088"
+      },
+      "sha256_fila_json": "c88d4ba5644943de4cf4414dec79194d17f0a3400d853d74cdae2b794f7d15bd"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 598,
+      "fila": {
+        "magnitud": "genes nucleares de origen mitocondrial inferido",
+        "valor tal como lo publica la fuente": "4,459",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "muestreo de 427186 genes de 30 genomas eucariotas de Wang y Wu",
+        "método o proxy": "clasificación filogenómica tras filtrado BLASTP; agrupación MCL y árboles FastTree 2",
+        "incertidumbre publicada": "no consta un intervalo para este recuento en la fuente recuperada; no cuenta episodios ancestrales de transferencia",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo; Materials and Methods, Identification of mitochondria-derived nuclear genes",
+        "#": "C-1163"
+      },
+      "sha256_fila_json": "cfd52c48515b960417d1a88149723406ad635fed64751550f819cc022033db1b"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 599,
+      "fila": {
+        "magnitud": "familias de genes nucleares de origen mitocondrial inferido",
+        "valor tal como lo publica la fuente": "394",
+        "unidad original": "familias de genes",
+        "organismo, nodo o intervalo al que se aplica": "conjunto de genes clasificados como de origen mitocondrial en Wang y Wu",
+        "método o proxy": "agrupación MCL y clasificación filogenética; separación de parálogos como familias distintas",
+        "incertidumbre publicada": "no consta un intervalo para este recuento en la fuente recuperada; no es un inventario completo de LECA",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo; Materials and Methods, Identification of mitochondria-derived nuclear genes, segundo párrafo",
+        "#": "C-2824"
+      },
+      "sha256_fila_json": "700527414a202cb0e144abc629238c5514fc5eac495c33a8f3b27b881291276f"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 600,
+      "fila": {
+        "magnitud": "genes del muestreo eucariota inicial de Wang y Wu",
+        "valor tal como lo publica la fuente": "427,186",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "muestra nuclear de Wang y Wu para identificar genes de origen mitocondrial",
+        "método o proxy": "recuento del conjunto inicial sometido al procedimiento filogenómico",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo",
+        "#": "C-1163"
+      },
+      "sha256_fila_json": "578fb781cbc6b350db6e2c074fb2361b7f2eba51783ca3ba5683eaaf81e0db45"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 601,
+      "fila": {
+        "magnitud": "genomas eucariotas del muestreo inicial de Wang y Wu",
+        "valor tal como lo publica la fuente": "30",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "muestra eucariota de Wang y Wu para identificar genes de origen mitocondrial",
+        "método o proxy": "selección del muestreo nuclear eucariota",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S560 Results and Discussion, Identifying mitochondria-derived nuclear genes, primer párrafo; Materials and Methods, Identification of mitochondria-derived nuclear genes, primer párrafo",
+        "#": "C-1163"
+      },
+      "sha256_fila_json": "d274cc7b05fb2b032809ab5e7a18887bb893be16519d96d513fe5e1c7456650c"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 602,
+      "fila": {
+        "magnitud": "clados procariotas HIC no singleton",
+        "valor tal como lo publica la fuente": "3.1–5.1",
+        "unidad original": "% de clados",
+        "organismo, nodo o intervalo al que se aplica": "cada grupo procariota comparado por Ku y Martin",
+        "método o proxy": "clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9)",
+        "#": "C-2825"
+      },
+      "sha256_fila_json": "a6ebf604e22fe687e9a023d82f4f0c52acbb4ea5648cffba2da6cb3add308256"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 603,
+      "fila": {
+        "magnitud": "clados eucariotas HIC no singleton",
+        "valor tal como lo publica la fuente": "<1.0",
+        "unidad original": "% de clados",
+        "organismo, nodo o intervalo al que se aplica": "todos los clados eucariotas del análisis de Ku y Martin",
+        "método o proxy": "clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "#": "C-2826"
+      },
+      "sha256_fila_json": "96d1092a67a60efbac341747a8004eec39967f8417c55060e2fe02a0abaae6ed"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 604,
+      "fila": {
+        "magnitud": "clados eucariotas HIC no singleton tras retirar origen plastidial",
+        "valor tal como lo publica la fuente": "0.3",
+        "unidad original": "% de clados",
+        "organismo, nodo o intervalo al que se aplica": "clados eucariotas restantes sin origen plastidial en Ku y Martin",
+        "método o proxy": "clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "#": "C-2827"
+      },
+      "sha256_fila_json": "fb5dcdc3cac2705ace45f687d3959295603926c7fb6335fb78b8abd64dd57279"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 605,
+      "fila": {
+        "magnitud": "grupos de ortólogos candidatos a HGT en Cyanidiales",
+        "valor tal como lo publica la fuente": "1.06",
+        "unidad original": "% de grupos de ortólogos",
+        "organismo, nodo o intervalo al que se aplica": "9075 grupos de los 13 genomas analizados por Rossoni y colaboradores",
+        "método o proxy": "filogenias de máxima verosimilitud e inspección manual; filtrado de soporte, muestreo y posible EGT",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6)",
+        "#": "C-2828"
+      },
+      "sha256_fila_json": "297473791f3a29709b002d4372fdf3230dc673b39c3d429b35df8c01775931d5"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 606,
+      "fila": {
+        "magnitud": "grupos de ortólogos clasificados como candidatos a HGT",
+        "valor tal como lo publica la fuente": "96",
+        "unidad original": "grupos de ortólogos",
+        "organismo, nodo o intervalo al que se aplica": "Cyanidiales de Rossoni y colaboradores",
+        "método o proxy": "clasificación filogenética de los grupos",
+        "incertidumbre publicada": "no es un recuento observado de episodios de transferencia",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6)",
+        "#": "C-2828"
+      },
+      "sha256_fila_json": "ddbca8f885713bb02fbc43b99b957f91e3d8c5606c9223eaca8f2979e5596a22"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 607,
+      "fila": {
+        "magnitud": "grupos de ortólogos del muestreo de Cyanidiales",
+        "valor tal como lo publica la fuente": "9075",
+        "unidad original": "grupos de ortólogos",
+        "organismo, nodo o intervalo al que se aplica": "conjunto de los 13 genomas de Rossoni y colaboradores",
+        "método o proxy": "agrupación de las proteínas predichas mediante OrthoFinder",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, Orthogroups and phylogeny (JATS s2-2); Materials and methods, Orthogroups and phylogenetic analysis (s4-5)",
+        "#": "C-2828"
+      },
+      "sha256_fila_json": "514287d068d3aa06a90a5cb24b77d411cf640028e83a2c7bd757dcbbe8abcd1e"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 608,
+      "fila": {
+        "magnitud": "genomas del muestreo de Cyanidiales",
+        "valor tal como lo publica la fuente": "13",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "muestreo de Rossoni y colaboradores",
+        "método o proxy": "selección de genomas nuevos y previamente publicados",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S561 Results, Orthogroups and phylogeny (JATS s2-2)",
+        "#": "C-2828"
+      },
+      "sha256_fila_json": "539b3bf4fea62fa85f90a4d0a3fd66209e76d26fea0880f5af0331827f5654d8"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 609,
+      "fila": {
+        "magnitud": "secuencias individuales candidatas a HGT en Cyanidiales",
+        "valor tal como lo publica la fuente": "641",
+        "unidad original": "secuencias candidatas",
+        "organismo, nodo o intervalo al que se aplica": "muestreo de Rossoni y colaboradores",
+        "método o proxy": "inferencia a partir de grupos de ortólogos y árboles filtrados",
+        "incertidumbre publicada": "no equivale a eventos independientes de transferencia",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6)",
+        "#": "C-2829"
+      },
+      "sha256_fila_json": "c96dd814a0a07559acecd67490dd20082d3c6016a689ef36d7c6cef2dd5c3020"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 610,
+      "fila": {
+        "magnitud": "colocalización de candidatos a HGT con genes nativos en lecturas largas",
+        "valor tal como lo publica la fuente": "98.12",
+        "unidad original": "% de candidatos",
+        "organismo, nodo o intervalo al que se aplica": "641 candidatos a HGT de Cyanidiales de Rossoni y colaboradores",
+        "método o proxy": "búsqueda tblastn de coocurrencia en lecturas PacBio RSII sin corregir",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S561 Results, Gene co-localization on raw sequence reads (JATS s2-4)",
+        "#": "C-2830"
+      },
+      "sha256_fila_json": "2ef44a20d962d3f64a1d3cfbe615cf3fc41ce39d3b2f35a93139db2c5f009f1d"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 611,
+      "fila": {
+        "magnitud": "candidatos a HGT colocalizados con genes nativos",
+        "valor tal como lo publica la fuente": "629",
+        "unidad original": "candidatos",
+        "organismo, nodo o intervalo al que se aplica": "641 candidatos de Cyanidiales de Rossoni y colaboradores",
+        "método o proxy": "coocurrencia de candidato y gen nativo en una misma lectura larga",
+        "incertidumbre publicada": "no se atribuye la colocalización a los candidatos restantes",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S561 Results, Gene co-localization on raw sequence reads (JATS s2-4)",
+        "#": "C-2830"
+      },
+      "sha256_fila_json": "731217e82f79f055cdc3af943c0830693db547b8d706fab84c8bf8e7af0d40b6"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 612,
+      "fila": {
+        "magnitud": "grupos candidatos a HGT con alguna identidad individual sobre el umbral",
+        "valor tal como lo publica la fuente": "5.2",
+        "unidad original": "% de grupos candidatos a HGT",
+        "organismo, nodo o intervalo al que se aplica": "96 grupos candidatos de Rossoni y colaboradores",
+        "método o proxy": "comparación individual de identidad proteica con homólogos no eucariotas",
+        "incertidumbre publicada": "no consta un intervalo de confianza para este porcentaje en el pasaje cotejado; no es el porcentaje de identidad media del grupo",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento",
+        "#": "C-2831"
+      },
+      "sha256_fila_json": "07e898a60cf89a81fb7d6a8c0448e913bbe945f1c9199ad4a569f7e52250bfc5"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 613,
+      "fila": {
+        "magnitud": "grupos candidatos a HGT con alguna identidad individual sobre el umbral",
+        "valor tal como lo publica la fuente": "5/96",
+        "unidad original": "grupos / grupos candidatos a HGT",
+        "organismo, nodo o intervalo al que se aplica": "Cyanidiales de Rossoni y colaboradores",
+        "método o proxy": "recuento de grupos con al menos una comparación individual por encima del umbral",
+        "incertidumbre publicada": "ningún grupo excede el umbral en identidad media",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento",
+        "#": "C-2831"
+      },
+      "sha256_fila_json": "8eec82403f34db1c24fc2a96c1d24c5ad9e3940771d31fa832df589edfd7e366"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 614,
+      "fila": {
+        "magnitud": "umbral de identidad individual examinado en candidatos a HGT",
+        "valor tal como lo publica la fuente": ">70",
+        "unidad original": "% de identidad proteica",
+        "organismo, nodo o intervalo al que se aplica": "comparaciones individuales de candidatos de Rossoni y colaboradores con homólogos no eucariotas",
+        "método o proxy": "comparación con el umbral de la regla discutida",
+        "incertidumbre publicada": "las identidades individuales no equivalen al promedio de cada grupo",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento",
+        "#": "C-2831"
+      },
+      "sha256_fila_json": "8deec8e06252c00b71e71e2d4cb2b4517fda46ba96389748f69023beb8ac08aa"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 615,
+      "fila": {
+        "magnitud": "contribución media de HGT a inventarios génicos de protistas",
+        "valor tal como lo publica la fuente": "about 1",
+        "unidad original": "% de inventario génico",
+        "organismo, nodo o intervalo al que se aplica": "protistas resumidos por Van Etten y Bhattacharya",
+        "método o proxy": "síntesis de estudios previos en una revisión",
+        "incertidumbre publicada": "aproximado; los autores exigen más datos y un procedimiento estandarizado para contrastarlo",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S291 Highlights, cuarto punto",
+        "#": "C-2832"
+      },
+      "sha256_fila_json": "dbd382e30ab4d93fab8e033bfabeb56a66d9a4c456e8fc20eeafda2971dd3279"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 616,
+      "fila": {
+        "magnitud": "ORF perdidos o inactivados desde la divergencia",
+        "valor tal como lo publica la fuente": "25",
+        "unidad original": "ORF",
+        "organismo, nodo o intervalo al que se aplica": "Blochmannia floridanus",
+        "método o proxy": "comparación de inventarios; ancestro con al menos el repertorio combinado",
+        "incertidumbre publicada": "Pérdidas paralelas pueden subestimar el recuento; no separa toda inactivación de deleción física.",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "#": "C-2833"
+      },
+      "sha256_fila_json": "259a29bcf8a47349ba982c7466e1672bf0955adcc396f5ea7f47318578b91d47"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 617,
+      "fila": {
+        "magnitud": "tiempo transcurrido desde la divergencia del linaje",
+        "valor tal como lo publica la fuente": "16–20",
+        "unidad original": "Myr",
+        "organismo, nodo o intervalo al que se aplica": "Blochmannia floridanus",
+        "método o proxy": "intervalo de divergencia tomado por S562 de Degnan et al. (2004)",
+        "incertidumbre publicada": "intervalo publicado; no es seguimiento experimental ni edad de cada pérdida",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "#": "C-2833"
+      },
+      "sha256_fila_json": "5fcc2a08955b93685599f5b6918704859738b3044d4423d9db7007cc8c1abe77"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 618,
+      "fila": {
+        "magnitud": "ORF perdidos o inactivados desde la divergencia",
+        "valor tal como lo publica la fuente": "4",
+        "unidad original": "ORF",
+        "organismo, nodo o intervalo al que se aplica": "Blochmannia pennsylvanicus",
+        "método o proxy": "comparación de inventarios; ancestro con al menos el repertorio combinado",
+        "incertidumbre publicada": "Pérdidas paralelas pueden subestimar el recuento; no separa toda inactivación de deleción física.",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "#": "C-2834"
+      },
+      "sha256_fila_json": "ffa1683140312e8e8af62d09cc311a38149c79ac135c6dbc24b1b2bd30d4f78b"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 619,
+      "fila": {
+        "magnitud": "tiempo transcurrido desde la divergencia del linaje",
+        "valor tal como lo publica la fuente": "16–20",
+        "unidad original": "Myr",
+        "organismo, nodo o intervalo al que se aplica": "Blochmannia pennsylvanicus",
+        "método o proxy": "intervalo de divergencia tomado por S562 de Degnan et al. (2004)",
+        "incertidumbre publicada": "intervalo publicado; no es seguimiento experimental ni edad de cada pérdida",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S562 Results, Differential gene loss, yet complete stability of genome architecture within Blochmannia, párrafo que comienza Assuming that the common ancestor; introducción, último párrafo",
+        "#": "C-2834"
+      },
+      "sha256_fila_json": "5c9320e05db0abf6d136165cfb7105224d6d5dbdaacd3153a48a52b989a2a783"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 620,
+      "fila": {
+        "magnitud": "parámetro DTL de pérdida por rama",
+        "valor tal como lo publica la fuente": "0.592 ± 0.21",
+        "unidad original": "probabilidad no normalizada por rama",
+        "organismo, nodo o intervalo al que se aplica": "ramas de establecimiento de endosimbiosis en Enterobacterales",
+        "método o proxy": "GeneRax; optimización DTL por rama; mediana ± desviación estándar",
+        "incertidumbre publicada": "± es desviación estándar; no intervalo de confianza",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "#": "C-2836"
+      },
+      "sha256_fila_json": "11dc5f4ad4c1c3f60195e098df82601361627d1a9f29f94af4ec8753b4786bbb"
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila_csv": 621,
+      "fila": {
+        "magnitud": "parámetro DTL de pérdida por rama",
+        "valor tal como lo publica la fuente": "0.185 ± 0.123",
+        "unidad original": "probabilidad no normalizada por rama",
+        "organismo, nodo o intervalo al que se aplica": "tres ramas anteriores y posteriores a la transición en Enterobacterales",
+        "método o proxy": "GeneRax; optimización DTL por rama; mediana ± desviación estándar",
+        "incertidumbre publicada": "± es desviación estándar; no intervalo de confianza",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S512 Results, Gene duplication, transfer, and loss patterns in endosymbionts and free-living species, pp. 2–3; Methods, Inference of gene families duplication, transfer, and loss, p. 8",
+        "#": "C-2837"
+      },
+      "sha256_fila_json": "68e39626375c79b3ad85ddd1ff0439a6324d75d6bfbab35826c9ab93724c3aa6"
+    }
+  ],
+  "disposiciones": [
+    {
+      "ruta": "data/auditoria/requisitos_disposiciones.csv",
+      "fila_csv": 210,
+      "fila": {
+        "id_requisito": "R-0209",
+        "tipo": "CIENTIFICO",
+        "estado_disposicion": "CUBIERTO",
+        "afirmaciones_exactas": "C-1162; C-1163; C-1164; C-1165; C-2824",
+        "tablas_exactas": "n/a",
+        "fuentes_exactas": "S282; S283; S560",
+        "busquedas_negativas_exactas": "n/a",
+        "busquedas_ejecutadas_exactas": "n/a",
+        "control_o_rollup": "n/a",
+        "artefacto_control": "n/a",
+        "alcance_o_censo": "n/a",
+        "comando_o_consulta": "n/a",
+        "resultado_control": "n/a",
+        "huella_control_sha256": "n/a",
+        "accion": "Cobertura propuesta: C-1163 distingue genes de origen mitocondrial inferido en una muestra y C-2824 familias, sin convertirlos en episodios ancestrales. Se retira BN-132 activa con historia preservada. La dirección y TOM/TIM conservan sus soportes declarados; esta disposición no adjudica revisión científica independiente de R-0209."
+      },
+      "sha256_fila_json": "1104ffa14032ef1c2dc11b6116909ab6f21577b97db2fa3da7c89a48637b42e9"
+    },
+    {
+      "ruta": "data/auditoria/requisitos_disposiciones.csv",
+      "fila_csv": 213,
+      "fila": {
+        "id_requisito": "R-0212",
+        "tipo": "CIENTIFICO",
+        "estado_disposicion": "CUBIERTO",
+        "afirmaciones_exactas": "C-1088; C-1120; C-2833; C-2834; C-2835; C-2836; C-2837",
+        "tablas_exactas": "table-44-9-7-1-correlatos-publicados",
+        "fuentes_exactas": "S512; S562",
+        "busquedas_negativas_exactas": "n/a",
+        "busquedas_ejecutadas_exactas": "n/a",
+        "control_o_rollup": "n/a",
+        "artefacto_control": "n/a",
+        "alcance_o_censo": "n/a",
+        "comando_o_consulta": "n/a",
+        "resultado_control": "n/a",
+        "huella_control_sha256": "n/a",
+        "accion": "Recuentos y tiempo emparejados en Blochmannia; límite temporal explícito C-2835. Forma bifásica comparativa y parámetros por rama en S512, sin convertirlos en genes/año ni mezclar series. Cobertura documental, no adjudicación nominal ni segunda revisión."
+      },
+      "sha256_fila_json": "d91505542e413d8e00c76f5f472565d3fa2b14fbced0f23869532b0c6ea1b98d"
+    },
+    {
+      "ruta": "data/auditoria/requisitos_disposiciones.csv",
+      "fila_csv": 221,
+      "fila": {
+        "id_requisito": "R-0220",
+        "tipo": "CIENTIFICO",
+        "estado_disposicion": "CUBIERTO",
+        "afirmaciones_exactas": "C-1184; C-1185; C-1186; C-1187; C-1188; C-1199; C-2825; C-2826; C-2827; C-2828; C-2829; C-2830; C-2831; C-2832",
+        "tablas_exactas": "n/a",
+        "fuentes_exactas": "S290; S291; S561",
+        "busquedas_negativas_exactas": "n/a",
+        "busquedas_ejecutadas_exactas": "n/a",
+        "control_o_rollup": "n/a",
+        "artefacto_control": "n/a",
+        "alcance_o_censo": "n/a",
+        "comando_o_consulta": "n/a",
+        "resultado_control": "n/a",
+        "huella_control_sha256": "n/a",
+        "accion": "Barrera y posición contraria con cifras de clados, grupos de ortólogos y genes, conservando denominadores y filtros. Cobertura no equivale a aprobación; revisión nominal independiente pendiente."
+      },
+      "sha256_fila_json": "259a9b9db2c328d7e5222689dcf4cbaa69af2252cacdf559e4afa482eafc5179"
+    }
+  ],
+  "artefactos": [
+    {
+      "fuente": "S560",
+      "ruta": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+      "bytes": 129891,
+      "sha256": "0cc3ae6e651cb6841f280570ee4915ba6f2a7528e69f7180004e6612c4015901",
+      "formato": "JATS"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "bytes": 564211,
+      "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+      "formato": "JATS"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "bytes": 148555,
+      "sha256": "f3ce5412cb5c4be946a9abc7217c8ace3943bc822a33e32c1805282ea7d45c8b",
+      "formato": "JATS"
+    },
+    {
+      "fuente": "S211",
+      "ruta": "fuentes/S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.xml",
+      "bytes": 230825,
+      "sha256": "b540e65381a7d9a76a23207005aaeed9dd0c2d7cc53cc184ca49693b51abf67d",
+      "formato": "JATS"
+    },
+    {
+      "fuente": "S512",
+      "ruta": "fuentes/S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+      "bytes": 8102337,
+      "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+      "formato": "PDF editorial"
+    },
+    {
+      "fuente": "S562",
+      "ruta": "fuentes/S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+      "bytes": 231528,
+      "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+      "formato": "HTML PMC completo"
+    },
+    {
+      "fuente": "S296",
+      "ruta": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of th.pdf",
+      "bytes": 14493111,
+      "sha256": "1b6271c98a3515b26f8b8be56b2a3567d611253c17274df35861127bad2d54fe",
+      "formato": "PDF local: preprint bioRxiv 2015, no versión PNAS 2016"
+    },
+    {
+      "fuente": "S512",
+      "ruta": "/tmp/S512-revision-independiente-20260927.txt",
+      "bytes": 77316,
+      "sha256": "8e169b888eadaecf46b427eb34c91206872e7037b0df24e4c5ecffaca8df2431",
+      "formato": "extracción propia pdftotext -layout"
+    },
+    {
+      "ruta": "docs/C01-PROMPT-INVESTIGACION.md",
+      "bytes": 68802,
+      "sha256": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "bytes": 53760,
+      "sha256": "d533711433410e4dea9c35f1a9710a77c93f5859aa1ebe2cab4ba681331fac14",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/auditorias/INTEGRACION_S560_Y_RETIRADA_BN132_2026-09-27.md",
+      "bytes": 6996,
+      "sha256": "0192de28f5e7d8413d4582e5fc65189e55f3b0f39c9b857fcbacb991b87013bf",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/auditorias/INTEGRACION_HGT_R0220_2026-09-27.md",
+      "bytes": 10363,
+      "sha256": "2788331df5deb2d7b0e79cdf50f7cb9d1c7d6a3e28e5ca1a1598ab014af88a32",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/auditorias/integracion_s512_s562_2026-09-27.json",
+      "bytes": 2193,
+      "sha256": "1531fdbfb5ad7aa7c6e1428df2ab35603a30dca283b717b4795e6f22080808b7",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+      "bytes": 5562,
+      "sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+      "formato": "evidencia/contexto, no sustituto científico"
+    },
+    {
+      "ruta": "docs/auditorias/evidencia_revision_independiente_8bn_integracion_2026-09-26.json",
+      "bytes": 39874,
+      "sha256": "bf0701492203d7ca2c4731c6a728f059867c2ac4afeb2408faad2e27421b3f7e",
+      "formato": "evidencia/contexto, no sustituto científico"
+    }
+  ],
+  "pasajes_normalizados": [
+    {
+      "fuente": "S560",
+      "ruta": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+      "localizador": "sec[@id=\"s2a\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2282,
+      "sha256": "5803f0c0df19ca9a2eca45837c4f2db523b50755f849baa0820eeab7ae4c30b2"
+    },
+    {
+      "fuente": "S560",
+      "ruta": "fuentes/S560 [2014] Phylogenomic Reconstruction Indicates Mitochondrial Ancestor Was an Energy Parasite.xml",
+      "localizador": "sec[@id=\"s3a\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2426,
+      "sha256": "7614b71356f4e232d58b7511a04f37346250067fa9a3f6d8889be9ea4fd6a97e"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s2-2\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2136,
+      "sha256": "0112c65ca1077db7bbe3aca31c610293acaa4ace60da6478c2466c6fb2996061"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s2-3\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 1324,
+      "sha256": "df2581d2d3f2b45ab5698d36c4e0dbefe3305c202c9db5d9e02daca344e20925"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s2-4\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 1765,
+      "sha256": "1c8a890a27a96abae1f473acfd0e54245103f849d24d56c7aa5051a6cc0e48a4"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s2-9\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2885,
+      "sha256": "6bb334b113bbb0ddc683ed241e48ce41e33b510bc877fd782225c1664e4f0cfd"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s4-5\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2971,
+      "sha256": "6afb58b61618b6751af6c010a8c4b447651d3d855a504a2c889fd0fc245e6b5e"
+    },
+    {
+      "fuente": "S561",
+      "ruta": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "localizador": "sec[@id=\"s4-6\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 1660,
+      "sha256": "ae65bba36192cd3ea88adf54592a4d19c9dce0492478b7bf28dedf9f3a269641"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "localizador": "sec[@id=\"Sec2\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 13566,
+      "sha256": "d46f984e62c592adbf60a1efced7d259e7a82cd1f4acb53370831e0c401f320c"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "localizador": "sec[@id=\"Sec3\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 7410,
+      "sha256": "101517057ee44174166052d5f34c72c7080de01f6d9cb008966995086796f7ea"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "localizador": "sec[@id=\"Sec5\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 1999,
+      "sha256": "e62ba9463600ad660c1c6b7488fd50569f6f83611e7d294d47fdbc881c7409fb"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "localizador": "sec[@id=\"Sec8\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 983,
+      "sha256": "7dfa9330af7e902f7c78d4d9aa060525b05ab9cfc889ef3fd6dafac5dfd8fc3e"
+    },
+    {
+      "fuente": "S290",
+      "ruta": "fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml",
+      "localizador": "sec[@id=\"Sec9\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 2447,
+      "sha256": "d608690eef95865ccd22a7411261e74abb1d84b4d22c554c970adc0483cfe2e9"
+    },
+    {
+      "fuente": "S211",
+      "ruta": "fuentes/S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.xml",
+      "localizador": "sec[@id=\"s2-6\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 4202,
+      "sha256": "1ad729cd66f64f033cf83c7ab8340ce614bd69538135f8535a4fdd2786b3f677"
+    },
+    {
+      "fuente": "S211",
+      "ruta": "fuentes/S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.xml",
+      "localizador": "sec[@id=\"s3-4\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 6221,
+      "sha256": "bbeff05c191713f7f1bab55b5e973a3383fb481271f8b0f6d0af83de3f54d88e"
+    },
+    {
+      "fuente": "S211",
+      "ruta": "fuentes/S211 [2018] Microbial eukaryotes have adapted to hypoxia by horizontal acquisition.xml",
+      "localizador": "sec[@id=\"s3-5\"]",
+      "normalizacion": "join(itertext), whitespace split/join, UTF8, sin LF",
+      "caracteres": 3070,
+      "sha256": "2a098849c2d5646b1d5776a146b7a76fac4514101209039bb6cf5e2a9e8b3ba2"
+    }
+  ],
+  "retiradas": [
+    {
+      "archivo_historia": "docs/auditorias/retirada_bn132_2026-09-26.json",
+      "sha256_archivo_historia": "5a19054d2831607ee30a570eb23b117204ab9e9a195bae4b01818971668d5cd4",
+      "fila_historica": {
+        "cabecera": [
+          "clave",
+          "etiqueta",
+          "hueco",
+          "términos exactos",
+          "resultado o motivo"
+        ],
+        "fila": {
+          "clave": "BN-132",
+          "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Número único publicado de genes mitocondriales transferidos al núcleo durante la eucariogénesis",
+          "resultado o motivo": "La consulta local recuperó revisiones de transferencia y maquinaria TOM/TIM, además de recuentos para endosimbiosis secundarias concretas, pero no una cifra única atribuible al episodio mitocondrial ancestral. C-1163 conserva que no existe un recuento único directo; no se suman familias ni se infiere una cifra.",
+          "términos exactos": "`rg -n -i \\endosymbiotic gene transfer|mitochondrial.*gene transfer|genes transferred|transfer.*nucleus|TOM.?TIM\\\" fuentes data/afirmaciones/09.csv`; `S282 exact count mitochondrial genes transferred nucleus`\""
+        },
+        "fila_csv": 12,
+        "huella_fila_json_sha256": "f959d62895a3206acd331bcee7604117d59af36ab607419aa66ff16060ebb2d5",
+        "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+        "sha256_archivo": "149e479419ad2bae667f1fb90f8a53cd4246851b82c18507d4cd33be1a56f81d"
+      },
+      "sha256_fila_json_recalculado": "f959d62895a3206acd331bcee7604117d59af36ab607419aa66ff16060ebb2d5",
+      "causa_declarada": "S560 publica recuentos de genes nucleares de origen mitocondrial inferido y de familias, ahora C-1163/C-2824. R-0209 pide cuántos genes, no un único total ancestral exacto. Los límites de muestreo y método permanecen en las afirmaciones, sin crear otro hueco con esa condición añadida."
+    },
+    {
+      "archivo_historia": "docs/auditorias/retirada_bn133_bn146_2026-09-27.json",
+      "sha256_archivo_historia": "5a282cd06c145b050240d6aaef8ed46448309089c8d8445e9c3a728e83447cc1",
+      "fila_historica": {
+        "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+        "sha256_archivo": "a7e935a9357e495f0513dfc8ca24ed13d37a158eebee665e96b87dca5f2ed745",
+        "cabecera": [
+          "clave",
+          "etiqueta",
+          "hueco",
+          "términos exactos",
+          "resultado o motivo"
+        ],
+        "fila_csv": 12,
+        "fila": {
+          "clave": "BN-133",
+          "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Cifra publicada de la posición contraria a una barrera natural general de transferencia procarionte a eucarionte con el mismo denominador de S290",
+          "términos exactos": "`rg -n -i \\barrier|barrera|lateral gene transfer|horizontal gene transfer\\\" fuentes/S290* fuentes/S291* data/afirmaciones/09.csv`; `prokaryote eukaryote gene transfer no barrier quantitative rate`\"",
+          "resultado o motivo": "S290 publica el muestreo de 30.358 secuencias, 1.035.375 homólogos y 2.585 árboles para su prueba de barrera. S291 discute transferencias y sesgos de atribución, pero el corpus local no contiene una cifra rival con el mismo objeto y denominador; no se convierte una conclusión cualitativa en tasa."
+        },
+        "huella_fila_json_sha256": "85a2e205c015b9226a699a26d0efa16856deb323d8358ef2e0bc02217a6e45eb"
+      },
+      "sha256_fila_json_recalculado": "85a2e205c015b9226a699a26d0efa16856deb323d8358ef2e0bc02217a6e45eb",
+      "causa_declarada": "R-0220 solicita cifras de ambas posiciones, no un denominador idéntico. S290 publica porcentajes de clados HIC y S561 publica grupos y candidatos a HGT con controles; S291 Highlights incluye una media aproximada. Se conservan las unidades y límites, sin fabricar una tasa común ni reemplazar el hueco por otra exigencia añadida."
+    },
+    {
+      "archivo_historia": "docs/auditorias/retirada_bn133_bn146_2026-09-27.json",
+      "sha256_archivo_historia": "5a282cd06c145b050240d6aaef8ed46448309089c8d8445e9c3a728e83447cc1",
+      "fila_historica": {
+        "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+        "sha256_archivo": "a7e935a9357e495f0513dfc8ca24ed13d37a158eebee665e96b87dca5f2ed745",
+        "cabecera": [
+          "clave",
+          "etiqueta",
+          "hueco",
+          "términos exactos",
+          "resultado o motivo"
+        ],
+        "fila_csv": 15,
+        "fila": {
+          "clave": "BN-146",
+          "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Cifras sustantivas comparables de la posición de barrera natural de HGT procariota→eucariota y de la posición contraria",
+          "términos exactos": "`rg -o -i '30,358 eukaryotic sequences.{0,180}2585 phylogenetic trees|≥70 % amino acid identity.{0,120}lateral gene transfers' 'fuentes/S290 [2016] A natural barrier to lateral gene transfer from prokaryotes to eukaryo.xml'`; `rg -n -i \"HGT|transferencia horizontal|una sexta parte|70 %\" data/afirmaciones/09.csv`",
+          "resultado o motivo": "La consulta de S290 devolvió el muestreo de 30.358 secuencias, 1.035.375 homólogos y 2.585 árboles y el texto del filtro del 70 %, pero el muestreo no es la frecuencia sustantiva de HGT. La segunda consulta recuperó C-1195 como resultado positivo parcial: aproximadamente una sexta parte del borrador de Hypsibius atribuida históricamente a HGT, luego cuestionada por C-1196. No se localizó un par de cifras rivales con el mismo objeto y denominador. Filas relacionadas: C-1184–C-1188; C-1195–C-1199; S290; S291; S295; S296."
+        },
+        "huella_fila_json_sha256": "e5c4f0ced6cce3940a1c56e567566040fe0c549bd5658343fede7d3220306e02"
+      },
+      "sha256_fila_json_recalculado": "e5c4f0ced6cce3940a1c56e567566040fe0c549bd5658343fede7d3220306e02",
+      "causa_declarada": "R-0220 solicita cifras de ambas posiciones, no un denominador idéntico. S290 publica porcentajes de clados HIC y S561 publica grupos y candidatos a HGT con controles; S291 Highlights incluye una media aproximada. Se conservan las unidades y límites, sin fabricar una tasa común ni reemplazar el hueco por otra exigencia añadida."
+    },
+    {
+      "archivo_historia": "docs/auditorias/retirada_bn144_2026-09-27.json",
+      "sha256_archivo_historia": "fd4d62981bf165f2b0246b5738853e1a8c7af2d184c4f12655fa420defac6673",
+      "fila_historica": {
+        "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+        "sha256_archivo": "3927232e2ca58f824dba4d0dc1c87c2cbbdaf39cb4b6e82b8664791352165c00",
+        "cabecera": [
+          "clave",
+          "etiqueta",
+          "hueco",
+          "términos exactos",
+          "resultado o motivo"
+        ],
+        "fila_csv": 13,
+        "fila": {
+          "clave": "BN-144",
+          "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+          "hueco": "Número de genes perdidos y tiempo transcurrido en una misma trayectoria endosimbiótica documentada, además de la forma de su curva",
+          "términos exactos": "`rg -n -i \"gene loss.{0,100}(time|million years|Myr|rate|curve)|genes lost.{0,100}(time|million years|Myr)\" fuentes data/afirmaciones/09.csv`; `rg -n -i \"pico inicial|erosión más lenta|genes por millón\" data/afirmaciones/09.csv`",
+          "resultado o motivo": "S512/C-1088 recupera positivamente una forma bifásica —pico inicial de pérdida y erosión posterior más lenta—, pero la consulta no recupera para esa trayectoria un número de genes perdidos emparejado con un tiempo transcurrido. BN-043 se mantiene separado para tasas entre sistemas; este hueco responde exactamente al par número+tiempo pedido. Filas relacionadas: C-1088; C-1120; S512."
+        },
+        "huella_fila_json_sha256": "49d875db6a79dc9b507dc35177b6fbdaca27044c2ac484529f318f2d5a029b58"
+      },
+      "sha256_fila_json_recalculado": "49d875db6a79dc9b507dc35177b6fbdaca27044c2ac484529f318f2d5a029b58",
+      "causa_declarada": "S562 publica 25 y 4 ORF perdidos o inactivados en dos linajes de Blochmannia durante 16–20 Myr; son recuentos emparejados con tiempo en el pasaje primario. La limitación de resolución temporal se conserva en C-2835 y no se convierte en una curva medida."
+    }
+  ],
+  "retiradas_presentes_activas": []
+}

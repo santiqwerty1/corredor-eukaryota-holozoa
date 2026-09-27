@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "tipo": "LECTURA AUTORAL PREPARATORIA; NO PROPUESTA V2 NI REVISIÓN INDEPENDIENTE",
+  "autor": "/root/inspeccion_relojes",
+  "inicio_utc": "2026-09-27T02:09:22Z",
+  "finalizacion_utc": "2026-09-27T02:15:26Z",
+  "restricciones": [
+    "v1 y borrador no modificados",
+    "corpus científico y fuentes/ no modificados",
+    "sin aprobación del censo ni cierre de controles",
+    "nuevas C futuras al final de data/afirmaciones/15.csv; predicados nuevos con definición; hipótesis, inferencias y negaciones con fragmento original en la fila"
+  ],
+  "suplemento": {
+    "url_pagina_editorial": "https://www.nature.com/articles/ncomms3325",
+    "url_descarga_observada": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms3325/MediaObjects/41467_2013_BFncomms3325_MOESM833_ESM.pdf",
+    "identidad": "Enlace Supplementary Information del artículo DOI 10.1038/ncomms3325; describe Figures S1–S36, Tables S1–S9 y Notes 1–5; el JATS S352 remite a ncomms3325-s1.pdf.",
+    "ruta": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+    "sha256": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+    "paginas_pdf": 110,
+    "paginacion": "Inspección visual: numeración física e impresa coincide en pp. 43, 44, 94, 95 y 96.",
+    "acceso": "Enlace editorial público. Recuperación real por curl tras autorización de red; PMC devolvió comprobación de navegador y no se eludió.",
+    "integracion": "Sólo /tmp; eventual alta en fuentes exige coordinación y delta de inventario por raíz."
+  },
+  "normalizacion": "JATS: itertext, colapsar espacios, UTF8+LF. Pasajes SI: página obtenida por split(form feed) del texto pdftotext -layout 22.12.0, segmento con offsets Unicode base cero, colapsar espacios, UTF8+LF; texto SI completo preservado en /tmp, no reproducido en este JSON.",
+  "archivos": [
+    {
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c"
+    },
+    {
+      "ruta": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d"
+    },
+    {
+      "ruta": "/tmp/S352-supplement-preparacion-v2-20260927.pdf",
+      "sha256": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23"
+    },
+    {
+      "ruta": "/tmp/S352-supplement-preparacion-v2-20260927.txt",
+      "sha256": "6e792da61247000d4f3e224fe1bc3a8bbfd32922eae4bdbee17832d7791c158e"
+    },
+    {
+      "ruta": "/tmp/S352-fig4-review-20260927.png",
+      "sha256": "b7d12beb90dbd75c95c57cb26240c7678129e26c305c21485beafe12384281ab"
+    },
+    {
+      "ruta": "/tmp/S352-v2-SI-p-094.png",
+      "sha256": "178ad9964ebd767583e0527b6ee7e10afc4283efad39a716bc4aa5b2290f9d21"
+    },
+    {
+      "ruta": "/tmp/S352-v2-SI-p-095.png",
+      "sha256": "2bb126db8bdb7f42d0d4bd933e667283acdde131928a8c74a2656b219916a4cc"
+    },
+    {
+      "ruta": "/tmp/S352-v2-SI-p-096.png",
+      "sha256": "bb265e75dcfdc05aa873c0fec91ba5b08c04b58f92a7037580f89757fd0571db"
+    },
+    {
+      "ruta": "/tmp/S352-v2-SI-S26-receptores-43.png",
+      "sha256": "ef37aada8f0462f05e7f042b51e670fc9329c5d6a4377eff9af54280b8beded6"
+    },
+    {
+      "ruta": "/tmp/S352-v2-SI-S26.png",
+      "sha256": "6067ed66a3b34e35c476e8557c3ef93adaff2339de6a53b1b250b3c3d3e00ab1"
+    }
+  ],
+  "pasajes_JATS": [
+    {
+      "id": "S352_fig4_caption",
+      "localizador": "JATS fig[@id=f4]/caption",
+      "texto_normalizado": "Schematic representation of the putative Capsaspora owczarzaki cell.Protein components of major metazoan cell adhesion complexes (green background) and various signalling pathways including receptors (yellow background) are depicted. Components with red and blue backgrounds indicate those found both in C. owczarzaki and M. brevicollis and those found in C. owczarzaki but not in M. brevicollis, respectively. Dotted components are absent in the C. owczarzaki genome; greyed when M. brevicollis has them. A grey striped line represents an actin filament, to which the cell–ECM–adhesion complexes bind. See Supplementary Note 5 for details. *, two domains hedge and hog are found in different proteins in M. brevicollis. **, receptor-type proteins with domain architectures similar to Notch and Delta proteins are present in C. owczarzaki. ***, proteins with similar domain architectures are present in M. brevicollis, but not confidently mapped to those metazoan families by phylogenetic analyses. ****, the repertoires of RTKs are totally different between C. owczarzaki, M. brevicollis and metazoans, and thus likely to have diversified independently in each lineage. 4E-BP1, eukaryotic initiation factor 4E-binding protein 1; CK1, Casein kinase 1; C-Lectin, C-type lectin; CSL, CBF1/RBP-Jκ/suppressor of hairless/LAG-1; CTKs, cytoplasmic tyrosine kinases; DB, Dystrobrevin; DG, Dystroglycan; DP, Dystrophin; Dsh, Dishevelled; Ets, E-twenty six; FOX, Forkhead box; Gα, G-protein-α subunit; GluR, glutamate receptor; GPR108, G-protein-coupled receptor 108; GSK3, glycogen synthetase kinase 3; Grh, Grainy head; HD, homeodomain; IgCAM, Immunoglobulin-like cell adhesion molecule; ILK, Integrin-linked kinase; ITR, intimal thickness-related receptor; JNK, c-Jun N-terminal kinase; NRPTPs, non-receptor protein tyrosine phosphatases; OA1, Ocular albinism 1-like; PDE, phosphodiesterase; RGS, regulator of G-protein signalling; RTKs, receptor tyrosine kinases; RPTP, receptor protein tyrosine phosphatase; S6K p70; 70kDa ribosomal protein S6 kinase; SAV, Salvador; Sd, Scalloped; SG, Sarcoglycan; SSPN, Sarcospan; SYN, Syntrophin; TALE, three amino-acid loop extension-class homeodomain; TGFβ, Transforming growth factor β; TOR, Target of rapamycin; YAP, Yes-associated protein.",
+      "sha256_pasaje_utf8_lf": "7e6b8dde207cb4ead130cd026fefc124ff5aa51f409a28b77cba014cd3e06b7e"
+    },
+    {
+      "id": "S352_methods_gene_family",
+      "localizador": "Methods, Gene family analysis; único párrafo",
+      "texto_normalizado": "We chose several gene families that are particularly interesting in the context of the evolution of multicellularity. For each gene family, we inferred the presence and absence of the gene or protein domains in chosen taxa using the HMMER45 package, mutual Blast and phylogenetic analyses based on maximum likelihood trees inferred by RAxML42. Analysed taxa include three bilaterians (Homo sapiens, Strongylocentrotus purpuratus and Drosophila melanogaster), three non-bilaterian metazoans (Nematostella vectensis, Trichoplax adhaerens and Amphimedon queenslandica), the choanoflagellate M. brevicollis, the filasterean C. owczarzaki, three fungi (Rhizopus oryzae, Laccaria bicolor and Neurospora crassa), and the amoebozoan Dictyostelium discoideum. We also searched, if necessary, further basal eukaryotes whose genomes have been sequenced, in order to know the origin of gene families that could predate the split between amoebozoans and opisthokonts.",
+      "sha256_pasaje_utf8_lf": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    {
+      "id": "S352_results_gene_repertoire_p4",
+      "localizador": "Results, Gene repertoire of Capsaspora; cuarto párrafo hijo directo",
+      "texto_normalizado": "Our data reveal the contrasting evolutionary histories of extracellular (or membrane-bound) components versus cytoplasmic components of signalling pathways involved in metazoan multicellularity and development. Most metazoan receptors and diffusible ligands are either ancestral metazoan innovations or have independently diversified in metazoans, whereas the majority of their intracellular components were already present in the unicellular ancestors of metazoans (Fig. 4). Both Capsaspora and M. brevicollis lack receptors and ligands in several systems involved in cell communication and development in metazoans, for example, those in the Hedgehog, Rhodopsin family G-protein-coupled receptors, Wnt, transforming growth factor-β and nuclear receptor signalling pathways (Fig. 4). Notch signalling also seems to be a metazoan innovation, although Capsaspora has several receptor proteins that resemble the metazoan Notch and Delta proteins in their domain architecture, which may represent the ancestral components of this system (Supplementary Figs S19–S21, Supplementary Note 5). Both Capsaspora and M. brevicollis have large numbers of TKs (92 and 128, respectively)20 (Supplementary Figs S22 and S23, Supplementary Table S9). Again, the receptor-type TKs independently diversified in Capsaspora, M. brevicollis and metazoans, whereas the cytoplasmic TKs are mostly homologous among these three lineages, highlighting the animal-specific adaptation of the receptor-ligand system in the Metazoa20. The mitogen-activated protein kinase pathway, a downstream cytoplasmic signalling system of the TK pathway, is also present in Capsaspora in the diversified form that we see now in metazoans (Supplementary Figs S24 and S25, Supplementary Note 5). The diverse members of the G-protein α-subunit family and the regulator of G-protein-signalling family, which together coordinate signal transduction from the 7TM receptors to their specific effectors, are also present in the Capsaspora genome, indicating that the diversity of these components has been secondarily lost, to some extent, in the lineage leading to M. brevicollis (Supplementary Figs S26 and S27, Supplementary Note 5).",
+      "sha256_pasaje_utf8_lf": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    }
+  ],
+  "pasajes_suplemento": [
+    {
+      "id": "S352_SI_7TM_p1",
+      "pagina_pdf": 94,
+      "pagina_impresa": 94,
+      "inicio_caracter_en_pagina": 602,
+      "fin_caracter_exclusivo_en_pagina": 1392,
+      "sha256_pasaje_normalizado_utf8_lf": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92",
+      "longitud_caracteres_normalizados": 775
+    },
+    {
+      "id": "S352_SI_Hedgehog_inicio",
+      "pagina_pdf": 95,
+      "pagina_impresa": 95,
+      "inicio_caracter_en_pagina": 1646,
+      "fin_caracter_exclusivo_en_pagina": 2023,
+      "sha256_pasaje_normalizado_utf8_lf": "cd230999a54bd6370e80a029b626bccfc60c3bf8ef4b22e439b3aa62bc5ef72b",
+      "longitud_caracteres_normalizados": 370
+    },
+    {
+      "id": "S352_SI_Hedgehog_fin",
+      "pagina_pdf": 96,
+      "pagina_impresa": 96,
+      "inicio_caracter_en_pagina": 0,
+      "fin_caracter_exclusivo_en_pagina": 514,
+      "sha256_pasaje_normalizado_utf8_lf": "adf6c7370a5381b42ef0a97d5133d301598cea740af9983b364dae8fb05cfb9a",
+      "longitud_caracteres_normalizados": 502
+    },
+    {
+      "id": "S352_SI_S26_leyenda",
+      "pagina_pdf": 44,
+      "pagina_impresa": 44,
+      "inicio_caracter_en_pagina": 4759,
+      "fin_caracter_exclusivo_en_pagina": 5892,
+      "sha256_pasaje_normalizado_utf8_lf": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4",
+      "longitud_caracteres_normalizados": 1128
+    }
+  ],
+  "observaciones_figura4": [
+    {
+      "componente": "Hedge",
+      "representacion": "borde punteado, relleno gris",
+      "limite": "La leyenda especifica dominios Hedge y Hog en proteínas distintas de Monosiga.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    },
+    {
+      "componente": "Hog",
+      "representacion": "borde punteado, relleno gris",
+      "limite": "No equivale al ligando Hedgehog completo.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    },
+    {
+      "componente": "Patched",
+      "representacion": "borde punteado, relleno gris",
+      "limite": "La codificación publicada señala componente en Monosiga, no en Capsaspora; no se deduce función receptora ensayada.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    },
+    {
+      "componente": "Dispatched",
+      "representacion": "borde punteado, relleno gris",
+      "limite": "La codificación publicada señala componente en Monosiga, no en Capsaspora; no se deduce secreción funcional de Hedgehog.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    },
+    {
+      "componente": "Smoothened",
+      "representacion": "borde punteado, sin relleno gris",
+      "limite": "Se registra el símbolo; no se generaliza a todas las clases receptoras ni a una vía funcional.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    },
+    {
+      "componente": "Gli",
+      "representacion": "borde punteado, sin relleno gris",
+      "limite": "Note 5 p. 96 conserva incertidumbre sobre la ortología de CAOG_06541; no convertir el símbolo en ausencia de cualquier proteína parecida a Gli.",
+      "localizador": "Artículo principal, Fig. 4, p. física/impresa 6, zona HedgeHog y leyenda"
+    }
+  ],
+  "transcripcion_visual_S26": [
+    {
+      "familia": "Glutamate",
+      "modelo_Pfam": "PF00003",
+      "Capsaspora": "punto",
+      "Monosiga": "punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "Rhodopsin",
+      "modelo_Pfam": "PF00001",
+      "Capsaspora": "sin punto",
+      "Monosiga": "sin punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "Adhesion / Secretin",
+      "modelo_Pfam": "PF00002",
+      "Capsaspora": "punto",
+      "Monosiga": "punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "Frizzled",
+      "modelo_Pfam": "PF01534",
+      "Capsaspora": "sin punto",
+      "Monosiga": "sin punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "cAMP",
+      "modelo_Pfam": "PF05462",
+      "Capsaspora": "punto",
+      "Monosiga": "punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "ITR-like",
+      "modelo_Pfam": "PF10192",
+      "Capsaspora": "punto",
+      "Monosiga": "sin punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "GPR108-like",
+      "modelo_Pfam": "PF06814",
+      "Capsaspora": "punto",
+      "Monosiga": "punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    },
+    {
+      "familia": "OA1-like",
+      "modelo_Pfam": "PF02101",
+      "Capsaspora": "punto",
+      "Monosiga": "sin punto",
+      "localizador": "Supplementary Figure S26, p. física/impresa 43, bloque 7TM receptor; leyenda p. 44"
+    }
+  ],
+  "pistas_positivas_y_limites": [
+    {
+      "objeto": "Clasificación 7TM",
+      "localizador": "Note 5, p. 94, primer párrafo bajo Seven transmembrane receptors and G protein signaling",
+      "resultado": "Ocho familias se distinguen por homología global de secuencia y arquitectura de dominios. El texto atribuye seis a Capsaspora; no calculo un recuento nuevo para Monosiga.",
+      "fragmento_original": "six out of these eight families",
+      "limite": "7TM se denomina también GPCR porque la mayoría activa proteínas G heterotriméricas; eso no valida acoplamiento funcional de cada proteína encontrada."
+    },
+    {
+      "objeto": "Familia Rhodopsin",
+      "localizador": "Mismo párrafo; S26 p. 43",
+      "resultado": "Negación nominal para ambos organismos, separable en futuras filas.",
+      "fragmento_original": "lacks the rhodopsin family",
+      "limite": "No ausencia de todas las familias 7TM/GPCR ni de toda señalización."
+    },
+    {
+      "objeto": "Componentes Hedgehog en Capsaspora",
+      "localizador": "Note 5, p. 95, segundo párrafo de Other signal transduction systems",
+      "resultado": "Negaciones explícitas para Hh, Dispatched, Patched y Smoothened; cada objeto debe separarse al redactar.",
+      "fragmento_original": "does not have",
+      "limite": "Resultado del repertorio genómico estudiado, no demostración universal por organismo o clado."
+    },
+    {
+      "objeto": "Proteínas con Hedge/Hog en Monosiga",
+      "localizador": "Mismo párrafo, pp. 95–96",
+      "resultado": "Hog/Hint y Hedge descritos en proteínas distintas; no adjudica una vía funcional completa.",
+      "fragmento_original": "split up into two different proteins",
+      "limite": "No convertir presencia de dominios separados en ligando Hh entero ni función de señalización."
+    },
+    {
+      "objeto": "Proteína semejante a Gli de Capsaspora",
+      "localizador": "Note 5, p. 96, continuación del mismo párrafo",
+      "resultado": "La ortología bona fide de CAOG_06541 no se resuelve.",
+      "fragmento_original": "remains unclear",
+      "limite": "No restaurar una ausencia genérica de Gli a partir de la figura."
+    }
+  ],
+  "tension_con_v1": "El párrafo general principal no cancela Patched/Dispatched grises ni Hedge/Hog separados en Fig. 4. La futura propuesta debe describir esos objetos nominalmente y no justificar v1 mediante una interpretación funcional inventada.",
+  "siguiente_paso": "Esperar dictamen formal v1 y después redactar propuesta atómica v2 completa con citas explícitas, textos originales en filas, F/B y expedientes, para revisión ajena."
+}

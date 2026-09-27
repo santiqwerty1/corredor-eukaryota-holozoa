@@ -1,0 +1,521 @@
+{
+  "rol": "PRUEBAS_FICTICIAS_INDEPENDIENTES_NO_REVISION_CIENTIFICA",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "utc_inicio": "2026-09-27T04:21:11Z",
+  "huellas_antes": {
+    "scripts/build_atomic_cell_claims.py": "6a357a08f93918254f25b2381cb6c9e18fa520838bd33a3d56f37a74e51ba5e9",
+    "tests/test_build_atomic_cell_claims.py": "4ea9e78be209811100d32d02e887f91f1a19a14a22a7900e5378705a41b6de27",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v1.csv": "30cd2599d1af58479a8e3e6448ca4323d366be5487d28866561e3d0063583630",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv": "7e66d25fce873e8e91499650afaa1b751bbbab4fff477e76843663dabd648b4c",
+    "data/auditoria/correcciones_celdas_semanticas_v1.csv": "5cfad5a16210d698f42d5a850e325ec9a441724ee8e9909741ec5928a180a270",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3"
+  },
+  "casos": [
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo [C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo [C-032]",
+          "Atribución": "sintesis(C-032)",
+          "Fuente": "n/a; dependencias canónicas C-032",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "2bc5b0754380e49b4fe6a13bfce57db37c20f9a723692b22adb973224feecd51",
+          "contenido": "nuevo [C-032]",
+          "afirmaciones": "C-032; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "d1a1193caf50545e9b4a3b50b971d6cffed88716375071a859f0739d1bb49bbb",
+        "manifest_sha256": "ac0e856269b47d638721d58651720a3cedbf56c34f4601de4a848b4ed1b69aa5",
+        "count": 816
+      },
+      "caso": "correccion_explicita_generica",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo [C-029–C-032; C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo [C-029–C-032; C-032]",
+          "Atribución": "sintesis(C-029, C-030, C-031, C-032)",
+          "Fuente": "n/a; dependencias canónicas C-029; C-030; C-031; C-032",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "a3a70da12c74842516c406d4f70e23d43089a8151f0f22c56f7575b2ad755bd7",
+          "contenido": "nuevo [C-029–C-032; C-032]",
+          "afirmaciones": "C-029; C-030; C-031; C-032; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "06c91f502dca245f32304a3339c0e3164b691a9fe2412514b47b82f66f209828",
+        "manifest_sha256": "a8eb33fb8da960e9639709b754088203b6415600eaad3e96be3c50e973539ee0",
+        "count": 816
+      },
+      "caso": "rango_ascendente_incluye_interiores",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo [C-032]; límite [BN-010]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo [C-032]; límite [BN-010]",
+          "Atribución": "sintesis(C-032)",
+          "Fuente": "n/a; dependencias canónicas C-032; BN-010 términos exactos y resultado",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "04629a1ea3cba228cc3b533f8bb29c289946434e35933b994ccdb2bdedab5a5f",
+          "contenido": "nuevo [C-032]; límite [BN-010]",
+          "afirmaciones": "C-032; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "b9669c5eca4631de6c3a6495be4fde033f039254d33bb25a679bdb876244eb9b",
+        "manifest_sha256": "eff30fd403270d6f7ff6f123df38eb42086d9ad527931381efac2a479f7a545e",
+        "count": 816
+      },
+      "caso": "BN_local_conservada_fila_excluida",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo sin referencia».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo sin referencia",
+          "Atribución": "sintesis(C-029, C-1983, C-028)",
+          "Fuente": "n/a; dependencias canónicas C-029; C-1983; C-028; BN-115 términos exactos y resultado",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "b77ff9f9f58fe8cc6713c3ca7731619baf8f9817aba792cc8ae7c187288132f3",
+          "contenido": "nuevo sin referencia",
+          "afirmaciones": "C-2606",
+          "base_semantica": "cotejo_literal_C_atomica_por_celda",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "3c30f1604b5509dc55c0689515d285a1dbeb017f8108d93e2c2969467892f473",
+        "manifest_sha256": "14ee7d08e63b14f0a7c87c79f1372ee354525ff2235aac54443a911f63986657",
+        "count": 816
+      },
+      "caso": "correccion_sin_C_conserva_candidatos",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «viejo [C-029]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: viejo [C-029]",
+          "Atribución": "sintesis(C-029, C-1983, C-028)",
+          "Fuente": "n/a; dependencias canónicas C-029; C-1983; C-028; BN-115 términos exactos y resultado",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "ce33699d40620b7cbe88e4741c3fa0bd8577eba7c23defbab06924ee38eb06ec",
+          "contenido": "viejo [C-029]",
+          "afirmaciones": "C-029; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "295b9799c036b568e64baf454d888e7fccabdc770f79047252b386bdafa1b3ea",
+        "manifest_sha256": "d833c2d7030744e02233e5fb0c3324ca16a00019c424ef9d6d167a41d6435da5",
+        "count": 816
+      },
+      "caso": "objetivo_no_corregido_conserva_candidatos",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2009",
+          "Afirmación": "Para estudio «FICTICIO tabla06», el campo «dato» tiene el valor literal «NUEVO FICTICIO [C-032]».",
+          "Sujeto": "estudio «FICTICIO tabla06»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: NUEVO FICTICIO [C-032]",
+          "Atribución": "expresa",
+          "Fuente": "S49 Results and Discussion §Discriminatory criteria to evaluate which alphaproteobacteria may be close to protomitochondria; tabla 2 [requiere inspección humana]",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/table-06-ficticia.csv:fila 5:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/table-06-ficticia.csv",
+          "fila": "5",
+          "columna": "dato",
+          "contenido_sha256": "9404f491d187746defe578afe34f05f130350d14db715cf1a2c6caf340f608b0",
+          "contenido": "NUEVO FICTICIO [C-032]",
+          "afirmaciones": "C-032; C-2009",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "17c20dcb5635f6f07d1279673d1cad22c3f3ada15fc89904ef0888cc7890fb03",
+        "manifest_sha256": "0075f22db5d014599ea4eeda4dacc4b4a8a399432643c849e6d83129e9e622df",
+        "count": 816
+      },
+      "caso": "rama_directa_C-2009",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2029",
+          "Afirmación": "Para estudio «FICTICIO tabla06», el campo «dato» tiene el valor literal «NUEVO FICTICIO [C-032]».",
+          "Sujeto": "estudio «FICTICIO tabla06»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: NUEVO FICTICIO [C-032]",
+          "Atribución": "expresa",
+          "Fuente": "S49 Results and Discussion §Other metabolic systems and traits analyzed in this work and their characteristics; tabla 3 [requiere inspección humana]",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/table-06-ficticia.csv:fila 25:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/table-06-ficticia.csv",
+          "fila": "25",
+          "columna": "dato",
+          "contenido_sha256": "9404f491d187746defe578afe34f05f130350d14db715cf1a2c6caf340f608b0",
+          "contenido": "NUEVO FICTICIO [C-032]",
+          "afirmaciones": "C-032; C-2029",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "832327e321abb159ddf3c10933cb377987296533f2ce976174b8183e7fa6b25d",
+        "manifest_sha256": "dcb8d579e1ec12dd9995f633f6c254fb67c866d413b8720b82000c58d1969007",
+        "count": 816
+      },
+      "caso": "rama_directa_C-2029",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2472",
+          "Afirmación": "Para estudio «FICTICIO C-2472», el campo «dato» tiene el valor literal «NUEVO FICTICIO [C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2472»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: NUEVO FICTICIO [C-032]",
+          "Atribución": "expresa",
+          "Fuente": "S435 §Introduction; párrafo que comienza ‘Although close to 1000 genomes’",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 478:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "478",
+          "columna": "dato",
+          "contenido_sha256": "9404f491d187746defe578afe34f05f130350d14db715cf1a2c6caf340f608b0",
+          "contenido": "NUEVO FICTICIO [C-032]",
+          "afirmaciones": "C-032; C-2472",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "cb2b82fd04cbaebe19bd3c8bdcac97acd367da5962e683227e6f1299e55d3469",
+        "manifest_sha256": "3e13280735cb13dc58650f0541e7f184219c32ec13664bbe030f61d9e4ce3516",
+        "count": 816
+      },
+      "caso": "rama_directa_C-2472",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2489",
+          "Afirmación": "Para estudio «FICTICIO C-2489», el campo «dato» tiene el valor literal «NUEVO FICTICIO [C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2489»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: NUEVO FICTICIO [C-032]",
+          "Atribución": "expresa",
+          "Fuente": "S435 §Introduction; párrafo que comienza ‘Nonetheless, M. brevicollis’",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 495:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "495",
+          "columna": "dato",
+          "contenido_sha256": "9404f491d187746defe578afe34f05f130350d14db715cf1a2c6caf340f608b0",
+          "contenido": "NUEVO FICTICIO [C-032]",
+          "afirmaciones": "C-032; C-2489",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "a7d58b8afa644ebc9e415ef56712453ab86208171e89c6a885975b200f3883eb",
+        "manifest_sha256": "d00523f45e4cf9a9e9966ada85981b059d70e7ada1641a3880afa1bc1347c6c1",
+        "count": 816
+      },
+      "caso": "rama_directa_C-2489",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "C-2606: autocita en soporte corregido",
+      "caso": "autocita",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "C-2606: autocita en soporte corregido",
+      "caso": "autocita_en_rango",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "C-2606: rango C invertido en corrección",
+      "caso": "rango_inverso",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "C-2606: rango C invertido en corrección",
+      "caso": "rango_inverso_mixto",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "C-2606: dependencia inexistente C-999",
+      "caso": "dependencia_ausente",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "La corrección no enlaza el dictamen original exacto: ('data/tablas/ficticia.csv', 610, 'dato', 'C-2606')",
+      "caso": "hash_previo_invalido",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "Corrección sin autor/evidencia: ('data/tablas/ficticia.csv', 610, 'dato', 'C-2606')",
+      "caso": "evidencia_autoral_vacia",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "Correcciones sin objetivo original: [('data/tablas/ficticia.csv', 610, 'dato', 'C-9999')]",
+      "caso": "correccion_huerfana",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "Disposición semántica residual: correcciones residuales sin disposición revisada: ['C-2708']",
+      "caso": "residual_con_C_sin_disposicion",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "RECHAZADO",
+      "clase": "RuntimeError",
+      "error": "Entradas cambiaron durante materialización atómica",
+      "caso": "mutacion_tabla_durante_build",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo [C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo [C-032]",
+          "Atribución": "sintesis(C-032)",
+          "Fuente": "n/a; dependencias canónicas C-032",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "2bc5b0754380e49b4fe6a13bfce57db37c20f9a723692b22adb973224feecd51",
+          "contenido": "nuevo [C-032]",
+          "afirmaciones": "C-032; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "d1a1193caf50545e9b4a3b50b971d6cffed88716375071a859f0739d1bb49bbb",
+        "manifest_sha256": "ac0e856269b47d638721d58651720a3cedbf56c34f4601de4a848b4ed1b69aa5",
+        "count": 816
+      },
+      "caso": "mutacion_Csoporte_fuera_15_durante_build",
+      "historia_objetivos_intacta": true
+    },
+    {
+      "resultado": "ACEPTADO",
+      "salida": {
+        "claim": {
+          "#": "C-2606",
+          "Afirmación": "Para estudio «FICTICIO C-2606», el campo «dato» tiene el valor literal «nuevo [C-032]».",
+          "Sujeto": "estudio «FICTICIO C-2606»",
+          "Predicado": "tiene_valor_literal_de_campo*",
+          "Objeto": "dato: nuevo [C-032]",
+          "Atribución": "sintesis(C-032)",
+          "Fuente": "n/a; dependencias canónicas C-032",
+          "Aceptación": "no evaluado",
+          "Fuerza": "baja",
+          "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/ficticia.csv:fila 610:dato. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "manifest": {
+          "csv_path": "data/tablas/ficticia.csv",
+          "fila": "610",
+          "columna": "dato",
+          "contenido_sha256": "2bc5b0754380e49b4fe6a13bfce57db37c20f9a723692b22adb973224feecd51",
+          "contenido": "nuevo [C-032]",
+          "afirmaciones": "C-032; C-2606",
+          "base_semantica": "cita_en_celda+manifiesto_explicito",
+          "estado_revision": "REVISADA",
+          "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+        },
+        "claims_sha256": "d1a1193caf50545e9b4a3b50b971d6cffed88716375071a859f0739d1bb49bbb",
+        "manifest_sha256": "ac0e856269b47d638721d58651720a3cedbf56c34f4601de4a848b4ed1b69aa5",
+        "count": 816
+      },
+      "caso": "mutacion_semantica_Fuerza_C032_fuera_15_durante_build",
+      "historia_objetivos_intacta": true
+    }
+  ],
+  "determinismo_fixture_dos_builds": true,
+  "huellas_despues": {
+    "scripts/build_atomic_cell_claims.py": "6a357a08f93918254f25b2381cb6c9e18fa520838bd33a3d56f37a74e51ba5e9",
+    "tests/test_build_atomic_cell_claims.py": "4ea9e78be209811100d32d02e887f91f1a19a14a22a7900e5378705a41b6de27",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v1.csv": "30cd2599d1af58479a8e3e6448ca4323d366be5487d28866561e3d0063583630",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv": "7e66d25fce873e8e91499650afaa1b751bbbab4fff477e76843663dabd648b4c",
+    "data/auditoria/correcciones_celdas_semanticas_v1.csv": "5cfad5a16210d698f42d5a850e325ec9a441724ee8e9909741ec5928a180a270",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3"
+  },
+  "canon_historia_codigo_tests_intactos": true,
+  "utc_fin": "2026-09-27T04:21:13Z",
+  "revision_tecnica": {
+    "fecha_utc": "2026-09-27T04:21:13Z",
+    "dictamen": "NO_CONFORME",
+    "hallazgos": [
+      {
+        "id": "DEP-EXPLICITA-01",
+        "prioridad": "P1",
+        "casos": [
+          "rama_directa_C-2009",
+          "rama_directa_C-2029",
+          "rama_directa_C-2472",
+          "rama_directa_C-2489"
+        ],
+        "causa": "Las cuatro ramas direct_source siguen teniendo prioridad sobre exact_dependencies; generan expresa/S49 o S435 aunque una corrección válida declara sólo C032."
+      },
+      {
+        "id": "DEP-EXPLICITA-02",
+        "prioridad": "P2",
+        "casos": [
+          "mutacion_Csoporte_fuera_15_durante_build",
+          "mutacion_semantica_Fuerza_C032_fuera_15_durante_build"
+        ],
+        "causa": "El snapshot input_paths incluye sólo CLAIMS=15.csv, no los demás archivos leídos por _claim_catalog. Un soporte externo a 15 cambia tras lectura y build emite Fuerza antigua sin rechazar."
+      }
+    ],
+    "limite": "Revisión técnica de materialización y ligaduras. No adjudicación científica de S10 ni aprobación de corpus. No se creó ninguna firma real."
+  },
+  "regresiones_ejecutadas": {
+    "comando": "python3 -m unittest tests.test_build_atomic_cell_claims tests.test_residual_semantic_dispositions tests.test_remediate_trace_residuals",
+    "resultado": "Ran 49 tests in 6.253s; OK",
+    "exit_code": 0,
+    "funcion": "Regresión disponible, no prueba independiente de ausencia de defectos."
+  },
+  "constructor_vivo": {
+    "comando": "python3 scripts/build_atomic_cell_claims.py",
+    "resultado": "Afirmaciones atómicas exactas: 816 (C-1996..C-2813).",
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "version": "integracion-16-reinspecciones-bn-v1",
+  "revisor": "/root/inspeccion_relojes",
+  "registro_sha256": "9d0175a112981fa7a1c56b8231435e3028c0cd6023b70150c06238aedae11e4d",
+  "filas": 833,
+  "prefijo817_sha256": "d61ca90536e7ba2f80b797569bb90c1169fae1d74d888e132146638b4e7e91af",
+  "registry_errors": [],
+  "nuevas": [
+    {
+      "fila_registro": 819,
+      "bn": "BN-114",
+      "huella_bn": "2efbdca20a9e0dfcb52b7a0efe2d77cc0fb09aa88d4f3a078fbc9e123d7d83e3",
+      "fecha": "2026-09-26T22:09:27Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 2,
+      "dictamen_preservado": "CONFORME_EN_AMBITO_LOCAL",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 820,
+      "bn": "BN-115",
+      "huella_bn": "df7b6d77536662ccaa74391869179186d6d69d77507c5e6da280accbec433304",
+      "fecha": "2026-09-26T22:09:27Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 3,
+      "dictamen_preservado": "CONFORME_EN_AMBITO_LOCAL",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 821,
+      "bn": "BN-118",
+      "huella_bn": "31450a2ce604391395ff61c68953802d62ff0a29e2853c8b5a9cccb6fa0877d1",
+      "fecha": "2026-09-26T22:09:27Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 4,
+      "dictamen_preservado": "CONFORME_EN_AMBITO_LOCAL",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 822,
+      "bn": "BN-120",
+      "huella_bn": "93f842a7e278911b6160bac9149fd5bbd7b7f6c9395bd707ba147b3cf16c5248",
+      "fecha": "2026-09-26T22:07:15Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 5,
+      "dictamen_preservado": "NO_CONFORME_REUTILIZACION_COMO_RESULTADO_VIGENTE",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 823,
+      "bn": "BN-121",
+      "huella_bn": "75610f4cb4bcae79fb6a75a11740961ccd317dae08818c456e344caba5f944ad",
+      "fecha": "2026-09-26T22:10:14Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 6,
+      "dictamen_preservado": "NO_VERIFICABLE_INTEGRALMENTE_REVISION_PARCIAL_DE_CANDIDATOS",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 824,
+      "bn": "BN-130",
+      "huella_bn": "3cac5493b89e0f5552af81cb32c1416e42db8e44cff249345e2572e2d55eb288",
+      "fecha": "2026-09-26T22:07:48Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 7,
+      "dictamen_preservado": "CONFORME_PASAJE_ACOTADO_NO_EXHAUSTIVIDAD",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 825,
+      "bn": "BN-131",
+      "huella_bn": "496709fb4c1c3198d2af18d0c4787ea52c9eac34c7bfabbea803d3a71d9e0c9e",
+      "fecha": "2026-09-26T22:07:50Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "sha_evidencia": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb",
+      "fila_evidencia": 8,
+      "dictamen_preservado": "CONFORME_PASAJE_ACOTADO_NO_EXHAUSTIVIDAD",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 826,
+      "bn": "BN-025",
+      "huella_bn": "10558876ffe82f38f51d78cc7243bd30b75673c5046365f829f567c4bb5989b2",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 2,
+      "dictamen_preservado": "CONFORME",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 827,
+      "bn": "BN-557",
+      "huella_bn": "8588c985ca804f331446108eb3739aa139d368002689a722cd9334e7d58804cc",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 3,
+      "dictamen_preservado": "NO_CONFORME",
+      "corresponde_version_viva": false
+    },
+    {
+      "fila_registro": 828,
+      "bn": "BN-116",
+      "huella_bn": "02d02113dc75f62a751a99b94eb0380a19b51e24a0b7822ebe7c4d115b0305af",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 4,
+      "dictamen_preservado": "NO_VERIFICABLE",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 829,
+      "bn": "BN-117",
+      "huella_bn": "ba3067a9c61d18841ea4000527d8dc7d51c35ac500eddd944ce40c0c0f72fa1f",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 5,
+      "dictamen_preservado": "CONFORME",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 830,
+      "bn": "BN-122",
+      "huella_bn": "8b838601947b613bf1ff0984b3ef6a3d6ce7178a82a3f4d87d70b82413ded1b2",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 6,
+      "dictamen_preservado": "CONFORME",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 831,
+      "bn": "BN-138",
+      "huella_bn": "7584a096472587a5c7696c2073a29770fa501328e80af4ff741ac1a2b275b53a",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 7,
+      "dictamen_preservado": "NO_VERIFICABLE",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 832,
+      "bn": "BN-141",
+      "huella_bn": "e89f6f04d97300086a348367c3b7fe3e2eed6fdeaf8bf6ed582e0341a9b2fa68",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 8,
+      "dictamen_preservado": "CONFORME",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 833,
+      "bn": "BN-145",
+      "huella_bn": "b4e7bc1b66087b8f8eeb96802b44724dce89904427b9398c091be6ccfa17640e",
+      "fecha": "2026-09-26T22:19:08Z",
+      "evidencia": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "sha_evidencia": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e",
+      "fila_evidencia": 9,
+      "dictamen_preservado": "NO_VERIFICABLE",
+      "corresponde_version_viva": true
+    },
+    {
+      "fila_registro": 834,
+      "bn": "BN-557",
+      "huella_bn": "8c9424a8aaf0942173b562390172c163a02232ba9784755dc83b6dd7fa72db37",
+      "fecha": "2026-09-26T22:24:30Z",
+      "evidencia": "docs/auditorias/addendum_paginacion_s126_2026-09-26.csv",
+      "sha_evidencia": "0833602f6d06296efacda8e4d28911e8d6a751a8f6b5a89755d8c4a20358b272",
+      "fila_evidencia": 55,
+      "dictamen_preservado": "CONFORME nominal",
+      "corresponde_version_viva": true
+    }
+  ],
+  "fecha_revision_utc": "2026-09-26T22:28:33Z",
+  "preview_read_only": {
+    "utc": "2026-09-26T22:28:53Z",
+    "matrix_rows": 607,
+    "unknown": [
+      {
+        "bn": "BN-132",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0187"
+      },
+      {
+        "bn": "BN-133",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0188"
+      },
+      {
+        "bn": "BN-134",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0189"
+      },
+      {
+        "bn": "BN-135",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0190"
+      },
+      {
+        "bn": "BN-140",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0192"
+      },
+      {
+        "bn": "BN-142",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0194"
+      },
+      {
+        "bn": "BN-144",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0195"
+      },
+      {
+        "bn": "BN-146",
+        "fecha": "FECHA_NO_DOCUMENTADA",
+        "id_busqueda": "Q-0197"
+      }
+    ],
+    "BN025": [
+      {
+        "id_busqueda": "Q-0017",
+        "fecha": "2026-08-08",
+        "bloque": "15.3 activa P0 BN-025",
+        "accion_inicial": "Leer artículo, suplemento/datos y pasaje; aceptar solo coincidencia de organismo, proceso, denominador, unidad y condiciones; los títulos excluidos por irrelevancia no cierran el negativo; AÑADIR estos términos exactos al registro canónico 15.3, donde hoy solo consta el fundamento",
+        "cambio_realizado": "CORRECCION_EXPLICITA: evidencia_principal corregida; valor_inicial_sha256=56e8a6fb928c963826c7b83a899252417947d3483d00c46d7f2d53246db80aae; se acotó la evidencia a la magnitud o clase de medición publicada; CAMBIO_CANONICO_DOCUMENTADO; campos=términos exactos o fundamento; inicial_sha256=f2d7387200a1a992593a613458fe4ae997e6cfbb8b481aaca653acf028555829; final_sha256=207ea3f5d8201c7d710534c07cb093e7770624382eb706262369eafd721f5024"
+      },
+      {
+        "id_busqueda": "Q-0176",
+        "fecha": "2026-09-26T22:19:08Z",
+        "bloque": "reinspección documentada BN-025",
+        "accion_inicial": "NO_APLICA: reinspección posterior, no sustituye la Q congelada.",
+        "cambio_realizado": "REINSPECCION_DOCUMENTADA"
+      }
+    ]
+  },
+  "dictamen": "CONFORME únicamente como integración cronológica: conserva 817 entradas y añade16 ligaduras fieles. No aprueba resultados científicos, incluido NO_CONFORME/NO_VERIFICABLE, ni convierte reinspección en fecha original."
+}

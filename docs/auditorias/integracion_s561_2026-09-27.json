@@ -1,0 +1,29 @@
+{
+  "autor": "Codex-Autor-Principal /root",
+  "observacion_utc": "2026-09-27T00:36:04Z",
+  "estado_revision_independiente": "PENDIENTE; no adjudica apoyo científico",
+  "inventario_previo": {
+    "cantidad": 447,
+    "sha256": "eb65a6efc4b262af7edb4488ea907c29f7dba2c4e4f61fd76472b653aa547f93"
+  },
+  "inventario_final": {
+    "cantidad": 448,
+    "sha256": "1373e4658ea749685d9b9fdea95e800ff3bff56ab3d2012ae3b9d47d45d55bb6"
+  },
+  "preservacion": "Los 447 archivos previos conservan nombre, tamaño y SHA-256; comprobación por autor.",
+  "normalizacion_inventario": "Orden por nombre; nombre NUL sha256 NUL tamaño; filas separadas por LF y LF final; SHA-256 UTF-8.",
+  "archivos": [
+    {
+      "ruta_local": "fuentes/S561 [2019] The genomes of polyextremophilic cyanidiales contain 1 percent horizontally transferred genes.xml",
+      "sha256": "ae605a39767da61863afb1c7a017e51689a79a758990392c01d0d5fd1747320a",
+      "bytes": 564211,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6629376/fullTextXML",
+      "identidad": "PMC6629376.1; DOI 10.7554/eLife.45017; título y siete autores cotejados en JATS",
+      "contenido": "Texto completo JATS; no PDF"
+    }
+  ],
+  "intentos_no_integrados": [
+    "La respuesta de elifesciences.org/articles/45017.pdf fue HTML, no PDF.",
+    "S291: antigua URL PDF institucional HTTP 404 y PDF editorial HTTP 403. No se presenta acceso a cuerpo completo; resumen y Highlights cotejados en ficha editorial pública y Rutgers."
+  ]
+}

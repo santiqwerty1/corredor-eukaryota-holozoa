@@ -1,0 +1,41 @@
+{
+  "autor": "/root",
+  "estado_revision_independiente": "PENDIENTE",
+  "observacion_utc": "2026-09-27T00:09:42Z",
+  "alcance": "Comprobación del delta tras retirar BN-132 y regenerar las 408 BN v3 por el inventario 442→447. No adjudica apoyo científico.",
+  "comprobaciones": {
+    "bn_activas": 497,
+    "bn_ajenas_v3_identicas": 89,
+    "bn_v3_solo_cambio_inventario": 408,
+    "unica_retirada": "BN-132",
+    "qa_csv_vigentes": 97
+  },
+  "metodo": "Cada una de las 408 filas regeneradas recupera su huella anterior registrada en retirada_bn132_2026-09-26.json al sustituir exclusivamente la huella y cantidad del inventario por las anteriores; las otras 89 filas coinciden sin cambio. Las 408 huellas nuevas coinciden con la evidencia de ejecución. Se rehashearon los 97 CSV de la QA externa.",
+  "cronologia": {
+    "filas_antes": 841,
+    "filas_despues": 1249,
+    "sha256_prefijo_841_conservado": "3576e5d5e8ba0bf95d58a9eda0ee9c830791e19b6b56f8709fb663b190edd059",
+    "sha256_registro_resultante": "65d8c8e061aa34ed34fe58a612a1d217947f25fe7f5314e24588653306ab42de",
+    "errores_carga": 0
+  },
+  "evidencia_ejecuciones": {
+    "ruta": "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-26_inventario447.csv",
+    "sha256": "98781bb0c54d32d99deae6a6b333234d7b1775a2c2896b09a1911c4cbaa614e3",
+    "inicio_utc": "2026-09-27T00:00:32Z",
+    "fin_utc": "2026-09-27T00:06:31Z",
+    "consultas_negativas": 408,
+    "consultas_positivas": [
+      [
+        "C-2472",
+        3
+      ],
+      [
+        "C-2489",
+        5
+      ]
+    ],
+    "primera_observacion_individual_utc": "2026-09-27T00:01:44Z",
+    "ultima_observacion_individual_utc": "2026-09-27T00:06:27Z",
+    "nota_nombre": "El nombre fechado 2026-09-26 no es la fecha de ejecución: esta ocurrió realmente el 2026-09-27 UTC."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "autor": "Codex-Autor-Principal /root",
+  "observacion_utc": "2026-09-27 01:11:48 UTC",
+  "estado_revision_independiente": "PENDIENTE; no adjudica apoyo científico",
+  "inventario_previo": {
+    "cantidad": 448,
+    "sha256": "1373e4658ea749685d9b9fdea95e800ff3bff56ab3d2012ae3b9d47d45d55bb6"
+  },
+  "inventario_final": {
+    "cantidad": 450,
+    "sha256": "170c7d69a86dbc8361aed5214e5e2c1452b5fee54c382b4cfb3cd61f02960647"
+  },
+  "preservacion": "Los 448 archivos previos conservan nombre, tamaño y SHA-256; comprobación por autor.",
+  "normalizacion_inventario": "Orden por nombre; nombre NUL sha256 NUL tamaño; filas separadas por LF y LF final; SHA-256 UTF-8.",
+  "archivos": [
+    {
+      "ruta_local": "fuentes/S512 [2026] Large-scale phylogenomics reveals convergent genome evolution across repeated transitions to endosymbiosis in Enterobacterales.pdf",
+      "sha256": "46e3aef050666d1c08cd5aea13f2a88da17bc20fd1402eba841b1c31b8575827",
+      "bytes": 8102337,
+      "url": "https://publikationen.bibliothek.kit.edu/1000189992/173850597",
+      "identidad": "PDF editorial; DOI 10.1016/j.ympev.2026.108532; título y autores cotejados",
+      "contenido": "Texto completo PDF; 10 páginas"
+    },
+    {
+      "ruta_local": "fuentes/S562 [2005] Genome sequence of Blochmannia pennsylvanicus indicates parallel evolutionary trends among bacterial mutualists of insects.html",
+      "sha256": "618ba43000d3c0495c0531d477ecaa2992006fa4e0369c09efb4272c0d5166e7",
+      "bytes": 231528,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1182215/",
+      "identidad": "HTML íntegro PMC1182215; DOI 10.1101/gr.3771305; título y tres autores cotejados",
+      "contenido": "Texto completo HTML, no PDF ni JATS"
+    }
+  ],
+  "intentos_no_integrados": [
+    "Europe PMC fullTextXML devolvió HTTP 500 para PMC1182215; no se guardó como XML.",
+    "La ruta PDF de PMC devolvió HTML de desafío; la copia de Semantic Scholar tenía cero bytes. No se presentan como PDF.",
+    "Se contrastaron Clayton 2012, Oakeson 2014, Delmotte 2006, Bourguignon 2020 y S264 como pistas, sin incorporarlos como nuevas fuentes canónicas ni trasladar sus cifras a las afirmaciones nuevas."
+  ]
+}

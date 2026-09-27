@@ -22,6 +22,7 @@ import hashlib
 import io
 import json
 import re
+import string
 import sys
 import unicodedata
 from collections import Counter
@@ -34,10 +35,17 @@ OUTPUT = ROOT / "docs" / "auditorias" / "matriz_trazabilidad_contenido_2026-08-0
 CELL_MANIFEST = ROOT / "data" / "auditoria" / "mapeo_celdas_afirmaciones.csv"
 CLAIM = re.compile(r"\bC-\d{3,5}\b")
 RANGE = re.compile(r"\bC-(\d{3,5})\s*(?:-|–)\s*C-(\d{3,5})\b")
-SENTENCE_BOUNDARY = re.compile(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡“«`])")
 ABBREVIATION = re.compile(
     r"\b(?:figs?|suppl|pp?|spp?|cf)\.|\bet\s+al\.", re.IGNORECASE,
 )
+URL_TOKEN = re.compile(r"https?://[^\s<>\[\]«»\"“”]+", re.IGNORECASE)
+CITATION_START = re.compile(r"\[\s*(?:C-\d{3,5}|S\d{2,3}|BN-\d{3})\b")
+ITALIC_INITIAL_TERM = re.compile(
+    r"(?<![\w*_])(?:\*[A-Z]\.\s+[a-z][a-z-]+\*|_[A-Z]\.\s+[a-z][a-z-]+_)(?![\w*_])"
+)
+AMBIGUOUS_INITIAL = re.compile(r"(?<![^\W_])[A-Z]\.(?=\s+[a-záéíóúñ][a-záéíóúñ-]+)")
+TERMINALS = ".!?…"
+TERMINAL_CLOSERS = '\"\u201d\u00bb\u2019\u203a\')]}*_`'
 SPURIOUS_SENTENCE_START = re.compile(
     r"^(?:S\d{1,3}\b|figs?\.?\b|suppl\.?\b|pp?\.\s)", re.IGNORECASE,
 )
@@ -330,17 +338,265 @@ def best_claims(
     )[:3]
 
 
+def inline_link_end(text: str, start: int) -> int | None:
+    """Fin de destino/título inline nominal; no parser Markdown general.
+
+    CommonMark 0.31.2 §6.3: un paréntesis balanceado con prosa arbitraria
+    no basta. Destino desnudo, destino angular y título tienen delimitadores
+    diferentes. Una forma que no se reconoce queda inválida, no protegida.
+    """
+    if start >= len(text) or text[start] != "(":
+        return None
+
+    def escaped(offset: int) -> bool:
+        return (text[offset] == "\\" and offset + 1 < len(text)
+                and text[offset + 1] in string.punctuation)
+
+    def whitespace_end(offset: int) -> int | None:
+        line_endings = 0
+        while offset < len(text) and text[offset] in " \t\r\n":
+            if text[offset] in "\r\n":
+                line_endings += 1
+                if text[offset:offset + 2] == "\r\n":
+                    offset += 1
+            offset += 1
+        return offset if line_endings <= 1 else None
+
+    def destination_end(offset: int) -> int | None:
+        if offset >= len(text):
+            return None
+        if text[offset] == "<":
+            cursor = offset + 1
+            while cursor < len(text):
+                if escaped(cursor):
+                    cursor += 2
+                    continue
+                if text[cursor] == ">":
+                    return cursor + 1
+                if text[cursor] in "<\r\n":
+                    return None
+                cursor += 1
+            return None
+        cursor, depth = offset, 0
+        while cursor < len(text):
+            character = text[cursor]
+            if escaped(cursor):
+                cursor += 2
+                continue
+            if ord(character) <= 32 or ord(character) == 127:
+                break
+            if character == "(":
+                depth += 1
+            elif character == ")":
+                if depth == 0:
+                    break
+                depth -= 1
+            cursor += 1
+        return cursor if cursor > offset and depth == 0 else None
+
+    def title_end(offset: int) -> int | None:
+        if offset >= len(text) or text[offset] not in "\"'(":
+            return None
+        opening = text[offset]
+        closing = ")" if opening == "(" else opening
+        cursor = offset + 1
+        while cursor < len(text):
+            if escaped(cursor):
+                cursor += 2
+                continue
+            if text[cursor] == closing:
+                title_lines = text[offset + 1:cursor].replace("\r\n", "\n").replace("\r", "\n")
+                if re.search(r"\n[ \t]*\n", title_lines):
+                    return None
+                return cursor + 1
+            if opening == "(" and text[cursor] == "(":
+                return None
+            cursor += 1
+        return None
+
+    def close_after(offset: int) -> int | None:
+        end = whitespace_end(offset)
+        return end + 1 if end is not None and end < len(text) and text[end] == ")" else None
+
+    beginning = whitespace_end(start + 1)
+    if beginning is None or beginning >= len(text):
+        return None
+    if text[beginning] == ")":
+        return beginning + 1
+    destination = destination_end(beginning)
+    if destination is not None:
+        closed = close_after(destination)
+        if closed is not None:
+            return closed
+        title_start = whitespace_end(destination)
+        if title_start is not None and title_start > destination:
+            title = title_end(title_start)
+            if title is not None:
+                return close_after(title)
+    # Título sin destino, cuando no se pudo leer como destino completo.
+    title = title_end(beginning)
+    return close_after(title) if title is not None else None
+
+
+def citation_end(text: str, start: int) -> int | None:
+    """Fin excluido de una cita nominal entre corchetes, incluidos anidados.
+
+    No consume cualquier corchete: [SIN FUENTE] o prosa entre corchetes no
+    son citas pospuestas y no deben trasladarse a la oración precedente.
+    """
+    if not CITATION_START.match(text, start):
+        return None
+    depth = 0
+    for offset in range(start, len(text)):
+        if text[offset] == "[":
+            depth += 1
+        elif text[offset] == "]":
+            depth -= 1
+            if depth == 0:
+                end = offset + 1
+                if end < len(text) and text[end] == "(":
+                    return inline_link_end(text, end)
+                return end
+    return None
+
+
+def sentence_masks(text: str) -> tuple[set[int], set[int]]:
+    """Puntuación léxica protegida; no clasifica proposiciones como editoriales."""
+    abbreviations = {
+        offset for match in ABBREVIATION.finditer(text)
+        for offset in range(match.start(), match.end()) if text[offset] == "."
+    }
+    protected: set[int] = set()
+    for match in ITALIC_INITIAL_TERM.finditer(text):
+        # Token de dos componentes explícitamente encerrado en cursiva, como
+        # *S. rosetta*. No extender a «modelo B. este…» sin ese delimitador.
+        protected.update(offset for offset in range(match.start(), match.end()) if text[offset] == ".")
+    for match in URL_TOKEN.finditer(text):
+        # El signo terminal de prosa no es parte de la URL. Sus puntos
+        # interiores (dominio/ruta), decimales y query permanecen intactos.
+        # Retirar también los cierres externos: «https://example.org.’»
+        # no debe proteger el punto por llevar una comilla o formato detrás.
+        # Sólo se recorta el sufijo; apóstrofos, guiones bajos y otros signos
+        # interiores de ruta/query siguen protegidos, sin reescribir la URL.
+        token = match.group().rstrip(TERMINALS + TERMINAL_CLOSERS + ",;:")
+        protected.update(range(match.start(), match.start() + len(token)))
+    for offset, character in enumerate(text):
+        if character == "[":
+            end = citation_end(text, offset)
+            if end is not None:
+                protected.update(range(offset, end))
+    return abbreviations, protected
+
+
+def sentence_spans(text: str) -> list[tuple[int, int]]:
+    """Offsets Unicode [inicio, fin) sobre el texto recibido, sin reescribirlo.
+
+    Una cita después del punto se adjunta solo a la oración precedente.
+    La siguiente oración se separa también si empieza por minúscula. Los
+    spans no son offsets del fichero cuando el llamador normalizó el párrafo;
+    no cambian el esquema persistente de la matriz de trazabilidad. Una inicial
+    sin delimitador puede ser abreviatura o fin: se conserva el corte provisional
+    y sentence_boundary_diagnostics exige su adjudicación, nunca lo aprueba.
+    """
+    abbreviations, protected = sentence_masks(text)
+
+    spans: list[tuple[int, int]] = []
+    start = 0
+    offset = 0
+    while offset < len(text):
+        if text[offset] not in TERMINALS or offset in protected:
+            offset += 1
+            continue
+        end = offset + 1
+        while end < len(text) and text[end] in TERMINALS + TERMINAL_CLOSERS:
+            end += 1
+        had_citation = False
+        while True:
+            candidate = end
+            while candidate < len(text) and text[candidate].isspace():
+                candidate += 1
+            citation = citation_end(text, candidate)
+            if citation is None:
+                break
+            had_citation = True
+            end = citation
+            # También admite «Resultado. [C-001]. Siguiente…» sin dejar un
+            # segmento de puntuación que oculte la siguiente proposición.
+            while end < len(text) and text[end] in TERMINALS + TERMINAL_CLOSERS:
+                end += 1
+        if offset in abbreviations and not had_citation:
+            offset += 1
+            continue
+        if end < len(text) and not text[end].isspace() and not had_citation:
+            offset += 1
+            continue
+        while start < end and text[start].isspace():
+            start += 1
+        if start < end:
+            spans.append((start, end))
+        start = end
+        offset = end
+    while start < len(text) and text[start].isspace():
+        start += 1
+    end = len(text)
+    while end > start and text[end - 1].isspace():
+        end -= 1
+    if start < end:
+        spans.append((start, end))
+    return spans
+
+
 def split_sentences(text: str) -> list[str]:
-    """Segmenta sin cortar abreviaturas bibliográficas o taxonómicas."""
-    protected_dot = "\ue000"
-    protected = ABBREVIATION.sub(
-        lambda match: match.group(0).replace(".", protected_dot), text,
-    )
-    return [
-        piece.replace(protected_dot, ".").strip()
-        for piece in SENTENCE_BOUNDARY.split(protected)
-        if piece.strip()
-    ]
+    """Conserva citas/abreviaturas y no presta C entre oraciones."""
+    return [text[start:end] for start, end in sentence_spans(text)]
+
+
+def sentence_boundary_diagnostics(text: str) -> list[dict[str, object]]:
+    """Conserva lecturas de inicial o abreviatura terminal, sin adjudicarlas."""
+    _, protected = sentence_masks(text)
+    spans = sentence_spans(text)
+    diagnostics: list[dict[str, object]] = []
+    for match in AMBIGUOUS_INITIAL.finditer(text):
+        punctuation = match.end() - 1
+        if punctuation in protected:
+            continue
+        for index, (start, end) in enumerate(spans[:-1]):
+            if start <= punctuation < end and end == punctuation + 1:
+                following = spans[index + 1]
+                diagnostics.append({
+                    "razon": "AMBIGUA_INICIAL_EPITETO",
+                    "offset_punto": punctuation,
+                    "literal": text[match.start():following[1]],
+                    "lectura_corte": [(start, end), following],
+                    "lectura_abreviatura": [(start, following[1])],
+                })
+                break
+    # Una abreviatura seguida de otro contenido separado puede terminar una
+    # oración. No elegir por mayúscula, formato, número ni C en el resto.
+    # Se preserva la segmentación provisional y ambas lecturas; main bloquea.
+    for match in ABBREVIATION.finditer(text):
+        punctuation = match.end() - 1
+        if punctuation in protected:
+            continue
+        following_start = match.end()
+        while following_start < len(text) and text[following_start] in TERMINAL_CLOSERS:
+            following_start += 1
+        cut_end = following_start
+        while following_start < len(text) and text[following_start].isspace():
+            following_start += 1
+        if following_start == cut_end or following_start == len(text):
+            continue
+        for start, end in spans:
+            if start <= punctuation < following_start < end:
+                diagnostics.append({
+                    "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+                    "offset_punto": punctuation,
+                    "literal": text[match.start():end],
+                    "lectura_corte": [(start, cut_end), (following_start, end)],
+                    "lectura_abreviatura": [(start, end)],
+                })
+                break
+    return diagnostics
 
 
 def narrative_blocks(path: Path) -> list[tuple[int, int, str, str]]:
@@ -437,6 +693,28 @@ def narrative_segments() -> list[Segment]:
                     locator += f"; oración {ordinal}"
                 segments.append(Segment(kind, relative, locator, "n/a", piece, refs, method))
     return segments
+
+
+def narrative_ambiguities() -> list[dict[str, object]]:
+    """Diagnóstico nominal de fronteras pendientes, sin nueva exención de C."""
+    result: list[dict[str, object]] = []
+    for path in sorted((ROOT / "docs" / "secciones").glob("*.md")):
+        if not SCIENTIFIC_TEMPLATES.fullmatch(path.name):
+            continue
+        for start, end, kind, block in narrative_blocks(path):
+            if kind != "prosa":
+                continue
+            diagnostics = sentence_boundary_diagnostics(block)
+            if diagnostics:
+                result.append({
+                    "ruta": path.relative_to(ROOT).as_posix(),
+                    "localizador": f"L{start}" if start == end else f"L{start}-L{end}",
+                    "texto": block,
+                    "sha256_texto_lf": hashlib.sha256((block + "\n").encode()).hexdigest(),
+                    "base_offsets": "Unicode del bloque normalizado, no del archivo",
+                    "fronteras": diagnostics,
+                })
+    return result
 
 
 def table_cells() -> list[TableCell]:
@@ -686,6 +964,12 @@ def validate_payload(payload: bytes) -> list[str]:
                     "Fragmento espurio de corchete: "
                     f"{row['ruta']}:{row['localizador']}: {content[:80]!r}"
                 )
+            for match in CITATION_START.finditer(content):
+                if citation_end(content, match.start()) is None:
+                    errors.append(
+                        "Cita nominal o enlace sin cierre o con sintaxis inválida: "
+                        f"{row['ruta']}:{row['localizador']}: offset {match.start()}"
+                    )
     if missing:
         errors.append(
             f"{len(missing)} segmentos sustantivos carecen de C: "
@@ -770,6 +1054,12 @@ def main() -> int:
     manifest, errors = load_cell_manifest()
     errors.extend(cell_manifest_errors(cells, manifest))
     errors.extend(internal_invariant_errors())
+    for ambiguity in narrative_ambiguities():
+        errors.append(
+            "Frontera de oración ambigua, requiere adjudicación de spans: "
+            f"{ambiguity['ruta']}:{ambiguity['localizador']} "
+            f"({len(ambiguity['fronteras'])} fronteras)"
+        )
     segments = narrative_segments() + table_segments(cells, manifest)
     payload = csv_bytes(segments)
     errors.extend(validate_payload(payload))

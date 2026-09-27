@@ -1,0 +1,2681 @@
+{
+  "utc": "2026-09-27T04:14:42Z",
+  "rol": "COMPROBACION_MECANICA_NO_DICTAMEN_CIENTIFICO",
+  "inputs_before": {
+    "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv": "7e66d25fce873e8e91499650afaa1b751bbbab4fff477e76843663dabd648b4c",
+    "data/auditoria/correcciones_celdas_semanticas_v1.csv": "5cfad5a16210d698f42d5a850e325ec9a441724ee8e9909741ec5928a180a270",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/auditoria/residuales_trazabilidad_no_conformes_v3.csv": "8a33be0a189a42fe8a6c4b14ae5e36aa8df9da89aa312c045c6fd99de3c3f355",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "docs/auditorias/EVIDENCIA_AUTOR_S10_C028_C036_V2_FINAL_2026-09-27.json": "d7a4556b8fb8d9c39999bff21452671563d0ee8f9281db1aa149a5196ccc0b4b",
+    "docs/auditorias/PROPUESTA_AUTOR_S10_C028_C036_V2_2026-09-27.json": "f45995c5712765883b75dbca82163d4d4a4e10f383c851b3adbb68362f3f3e8b",
+    "docs/auditorias/fixtures/cotejo_independiente_propuesta_s10_v2_20260927.py": "8d0d0a70efcea0d217c9222fa4062d4340e7bd0ce173061e57c735dd62bf3d67",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98"
+  },
+  "inputs_after": {
+    "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv": "7e66d25fce873e8e91499650afaa1b751bbbab4fff477e76843663dabd648b4c",
+    "data/auditoria/correcciones_celdas_semanticas_v1.csv": "5cfad5a16210d698f42d5a850e325ec9a441724ee8e9909741ec5928a180a270",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/auditoria/residuales_trazabilidad_no_conformes_v3.csv": "8a33be0a189a42fe8a6c4b14ae5e36aa8df9da89aa312c045c6fd99de3c3f355",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "docs/auditorias/EVIDENCIA_AUTOR_S10_C028_C036_V2_FINAL_2026-09-27.json": "d7a4556b8fb8d9c39999bff21452671563d0ee8f9281db1aa149a5196ccc0b4b",
+    "docs/auditorias/PROPUESTA_AUTOR_S10_C028_C036_V2_2026-09-27.json": "f45995c5712765883b75dbca82163d4d4a4e10f383c851b3adbb68362f3f3e8b",
+    "docs/auditorias/fixtures/cotejo_independiente_propuesta_s10_v2_20260927.py": "8d0d0a70efcea0d217c9222fa4062d4340e7bd0ce173061e57c735dd62bf3d67",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98"
+  },
+  "inputs_stable": true,
+  "n_comprobaciones": 3332,
+  "fallos": [],
+  "comprobaciones_no_censo_C": [
+    {
+      "tipo": "huella_base",
+      "id": "data/afirmaciones/02.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/afirmaciones/15.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/apendices/F_magnitudes.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/apendices/B_entidades.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/apendices/A_fuentes.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/auditoria/correcciones_celdas_semanticas_v1.csv",
+      "pass": true
+    },
+    {
+      "tipo": "huella_base",
+      "id": "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv",
+      "pass": true
+    },
+    {
+      "tipo": "artefacto",
+      "id": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "pass": true
+    },
+    {
+      "tipo": "artefacto",
+      "id": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf",
+      "pass": true
+    },
+    {
+      "tipo": "artefacto",
+      "id": "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-028:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-028:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-028",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-028",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-029:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-029:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-029",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-029",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-030:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-030:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-030",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-030",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-032:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-032:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-032",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-032",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-033:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-033:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-033",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-033",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-034:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-034:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-034",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-034",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-035:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-035:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-035",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-035",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-036:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C:C-036:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C:C-036",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C:C-036",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2884:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2884:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2884",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2885:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2885:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2885",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2886:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2886:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2886",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2887:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2887:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2887",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2888:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2888:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2888",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2889:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2889:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2889",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2890:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2890:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2890",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2891:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2891:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2891",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2892:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2892:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2892",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2893:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2893:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2893",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2894:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2894:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2894",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2895:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2895:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2895",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2896:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2896:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2896",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2897:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2897:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2897",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2898:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2898:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2898",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:genes de la matriz original de Williams et al.|C-028:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:genes de la matriz original de Williams et al.|C-028:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:genes de la matriz original de Williams et al.|C-028",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:genes de la matriz original de Williams et al.|C-028",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:log-verosimilitud de dos dominios bajo LG+G4+F|C-029:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:log-verosimilitud de dos dominios bajo LG+G4+F|C-029:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:log-verosimilitud de dos dominios bajo LG+G4+F|C-029",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:log-verosimilitud de dos dominios bajo LG+G4+F|C-029",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:log-verosimilitud de tres dominios bajo LG+G4+F|C-029:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:log-verosimilitud de tres dominios bajo LG+G4+F|C-029:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:log-verosimilitud de tres dominios bajo LG+G4+F|C-029",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:log-verosimilitud de tres dominios bajo LG+G4+F|C-029",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para dos dominios bajo LG+G4+F|C-030:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para dos dominios bajo LG+G4+F|C-030:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:p de prueba AU para dos dominios bajo LG+G4+F|C-030",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:p de prueba AU para dos dominios bajo LG+G4+F|C-030",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para tres dominios bajo LG+G4+F|C-030:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para tres dominios bajo LG+G4+F|C-030:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:p de prueba AU para tres dominios bajo LG+G4+F|C-030",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:p de prueba AU para tres dominios bajo LG+G4+F|C-030",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para tres dominios bajo LG+C60+G4+F|C-031:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:p de prueba AU para tres dominios bajo LG+C60+G4+F|C-031:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:p de prueba AU para tres dominios bajo LG+C60+G4+F|C-031",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:p de prueba AU para tres dominios bajo LG+C60+G4+F|C-031",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:probabilidad posterior de dos dominios bajo CAT y SR4|C-033:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:probabilidad posterior de dos dominios bajo CAT y SR4|C-033:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:probabilidad posterior de dos dominios bajo CAT y SR4|C-033",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:probabilidad posterior de dos dominios bajo CAT y SR4|C-033",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:proteínas universales en matriz ampliada|C-034:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:proteínas universales en matriz ampliada|C-034:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:proteínas universales en matriz ampliada|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:proteínas universales en matriz ampliada|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:proteínas arqueano-eucariotas en matriz ampliada|C-034:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:proteínas arqueano-eucariotas en matriz ampliada|C-034:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:proteínas arqueano-eucariotas en matriz ampliada|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:proteínas arqueano-eucariotas en matriz ampliada|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:genomas en matrices ampliadas|C-034:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:genomas en matrices ampliadas|C-034:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:genomas en matrices ampliadas|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:genomas en matrices ampliadas|C-034",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:probabilidad posterior del clado LC3|C-036:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F:probabilidad posterior del clado LC3|C-036:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "F:probabilidad posterior del clado LC3|C-036",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "F:probabilidad posterior del clado LC3|C-036",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota + Lokiarchaeum, 35 genes|C-032:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota + Lokiarchaeum, 35 genes|C-032:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota, 43 genes SR4|C-035:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota, 43 genes SR4|C-035:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz de 35 genes reanalizada|C-2888:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz de 35 genes reanalizada|C-2888:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz arqueano-eucariota de 43 genes|C-2889:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz arqueano-eucariota de 43 genes|C-2889:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota, 21 genes SR4|C-2890:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:probabilidad posterior de eucariotas + Heimdallarchaeota, 21 genes SR4|C-2890:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para dos dominios bajo LG+G4+F, suplemento tabla 2|C-2891:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para dos dominios bajo LG+G4+F, suplemento tabla 2|C-2891:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para tres dominios bajo LG+G4+F, suplemento tabla 2|C-2892:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para tres dominios bajo LG+G4+F, suplemento tabla 2|C-2892:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para tres dominios bajo LG+C60+G4+F, suplemento tabla 11|C-2893:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:p de prueba AU para tres dominios bajo LG+C60+G4+F, suplemento tabla 11|C-2893:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:genomas del conjunto descrito en Methods para OMA|C-2898:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:genomas del conjunto descrito en Methods para OMA|C-2898:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 7:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 7:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 7",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 7",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 8:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 8:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 8",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 8",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 9:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 9:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 9",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 9",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 10:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 10:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 10",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 10",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 11:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 11:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 11",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 11",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 12:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 12:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 12",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "TABLA_PROPUESTA_CON_DISPOSICIONES:fila CSV 12",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:LG+G4+F:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:LG+G4+F:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:LG+C60+G4+F:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:LG+C60+G4+F:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:CAT+GTR+G4:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:CAT+GTR+G4:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:OMA:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:OMA:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:log-verosimilitud:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:log-verosimilitud:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:probabilidad posterior:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:probabilidad posterior:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:Lokiarchaeum sp. GC14_75:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:Lokiarchaeum sp. GC14_75:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:Heimdallarchaeota archaeon LC_3:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ALTA_PROPUESTA:Heimdallarchaeota archaeon LC_3:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ANCLA:Heimdallarchaeia:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "B_ANCLA:Heimdallarchaeia:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "B_ANCLA:Heimdallarchaeia",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "B_ANCLA:Heimdallarchaeia",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz ampliada de 21 genes|C-2890:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "F_ALTA:taxones de la matriz ampliada de 21 genes|C-2890:despues",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "PROSA:párrafo Williams de §2.1.2:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "PROSA:párrafo Williams de §2.1.2:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "PROSA:párrafo Williams de §2.1.2",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "PROSA:cita posterior a tabla 01:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "PROSA:cita posterior a tabla 01:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "PROSA:cita posterior a tabla 01",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "A_NOTAS:S10:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "A_NOTAS:S10:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "A_NOTAS:S10",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "A_NOTAS:S10",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "DEFINICION_PREDICADO:difiere_documentalmente_de*:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "DEFINICION_PREDICADO:difiere_documentalmente_de*:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "DEFINICION_PREDICADO:difiere_documentalmente_de*",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2899:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2899:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2899",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2900:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ALTA:C-2900:despues",
+      "pass": true
+    },
+    {
+      "tipo": "alta_no_existente",
+      "id": "C_ALTA:C-2900",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2595:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2595:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2596:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2596:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2597:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2597:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2597",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2597",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2598:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2598:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2598",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2598",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2599:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2599:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2600:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2600:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2600",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2600",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2601:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2601:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2601",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2601",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2602:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2602:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2603:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2603:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2603",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2603",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2604:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2604:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2604",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2604",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2605:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2605:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2605",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2605",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2606:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2606:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2606",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2606",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2607:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2607:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2607",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2607",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2608:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2608:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2609:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2609:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2610:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2610:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2610",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2610",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2611:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2611:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2612:antes",
+      "pass": true
+    },
+    {
+      "tipo": "huella_objeto",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2612:despues",
+      "pass": true
+    },
+    {
+      "tipo": "antes_vivo",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "delta_campos",
+      "id": "C_ATOMICA_VISTA_PROSPECTIVA:C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "conservado",
+      "id": "C-031",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-028",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-029",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-030",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-032",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-033",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-034",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-035",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-036",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2884",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2885",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2886",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2887",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2888",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2889",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2890",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2891",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2892",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2893",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2894",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2895",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2896",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2897",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2898",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2899",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_autor_C",
+      "id": "C-2900",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|7|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|8|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|9|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|10|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|11|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|matriz",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|muestreo taxonómico",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|análisis",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|modelo",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|resultado publicado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|soporte cuantitativo tal cual",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_antes",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_texto",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "mapa_C_existe_prospectivamente",
+      "id": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv|12|límite o campo no publicado/localizado",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2598",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2601",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2605",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2606",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2610",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "correccion_textos",
+      "id": "C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2595",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2596",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2599",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2602",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2608",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2609",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2611",
+      "pass": true
+    },
+    {
+      "tipo": "residual_historico",
+      "id": "C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "C_soporte_prospectivo",
+      "id": "C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "evidencia_ligada",
+      "id": "C-2612",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P6",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P7",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P8",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P10",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P11",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P17",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P18",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P19",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P30",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "P31",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "F1",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "F3",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "supl_pdf_3",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "supl_pdf_12",
+      "pass": true
+    },
+    {
+      "tipo": "pasaje",
+      "id": "supl_pdf_13",
+      "pass": true
+    }
+  ],
+  "primeras_apariciones_B": [
+    {
+      "etiqueta": "LG+G4+F",
+      "formas_buscadas": [
+        "LG+G4+F"
+      ],
+      "primera_literal": "C-029",
+      "propuesta": "C-029",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "LG+C60+G4+F",
+      "formas_buscadas": [
+        "LG+C60+G4+F"
+      ],
+      "primera_literal": "C-031",
+      "propuesta": "C-031",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "CAT+GTR+G4",
+      "formas_buscadas": [
+        "CAT+GTR+G4"
+      ],
+      "primera_literal": "C-032",
+      "propuesta": "C-032",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "OMA",
+      "formas_buscadas": [
+        "OMA"
+      ],
+      "primera_literal": "C-034",
+      "propuesta": "C-034",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "log-verosimilitud",
+      "formas_buscadas": [
+        "log-verosimilitud",
+        "log-verosimilitudes",
+        "log likelihood",
+        "lnL"
+      ],
+      "primera_literal": "C-029",
+      "propuesta": "C-029",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "probabilidad posterior",
+      "formas_buscadas": [
+        "probabilidad posterior",
+        "PP"
+      ],
+      "primera_literal": "C-032",
+      "propuesta": "C-032",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "Lokiarchaeum sp. GC14_75",
+      "formas_buscadas": [
+        "Lokiarchaeum sp. GC14_75"
+      ],
+      "primera_literal": "C-032",
+      "propuesta": "C-032",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "Heimdallarchaeota archaeon LC_3",
+      "formas_buscadas": [
+        "Heimdallarchaeota archaeon LC_3"
+      ],
+      "primera_literal": "C-036",
+      "propuesta": "C-036",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    },
+    {
+      "etiqueta": "Heimdallarchaeia",
+      "formas_buscadas": [
+        "Heimdallarchaeia",
+        "Heimdallarchaeota"
+      ],
+      "primera_literal": "C-032",
+      "propuesta": "C-032",
+      "limite": "Búsqueda nominal literal, no prueba automática de sinonimia taxonómica."
+    }
+  ],
+  "disposiciones": [
+    {
+      "claim_id": "C-2595",
+      "sha256_propuesta": "57655af01807875e69fb420e4f39c25628f3c84729546192d962d43bc4e6119d",
+      "componentes": [
+        "Estudio: reanálisis de Williams et al. de la matriz de Da Cunha et al.",
+        "Matriz: 35 genes",
+        "Muestreo: 81 taxones"
+      ]
+    },
+    {
+      "claim_id": "C-2596",
+      "sha256_propuesta": "5770a94df3e06aa5ecf55c8687532545a21c141bb81f840a509fa59263e9b392",
+      "componentes": [
+        "Estudio: reanálisis de Williams et al. de la matriz de Da Cunha et al.",
+        "Matriz: 35 genes",
+        "Muestreo: 81 taxones"
+      ]
+    },
+    {
+      "claim_id": "C-2599",
+      "sha256_propuesta": "9546ab1eb0450257ba9a5c37d87124812fbb696b6984f53836ceda67ae141ff1",
+      "componentes": [
+        "Estudio: reanálisis de Williams et al. de la matriz de Da Cunha et al.",
+        "Matriz: 35 genes",
+        "Muestreo: 81 taxones"
+      ]
+    },
+    {
+      "claim_id": "C-2602",
+      "sha256_propuesta": "21e01f432430dc93612623d9f21e13b28b298a0f1fc62099d656d2f3cd1cebe7",
+      "componentes": [
+        "Estudio: reanálisis de Williams et al. de la matriz de Da Cunha et al.",
+        "Matriz: 35 genes",
+        "Muestreo: 81 taxones"
+      ]
+    },
+    {
+      "claim_id": "C-2608",
+      "sha256_propuesta": "45c24630b8bb7932b8140634b7e5b3597f7722f9b03c94e5a237326afca5cb51",
+      "componentes": [
+        "Estudio: reanálisis de Williams et al. de la matriz de Da Cunha et al.",
+        "Matriz: 35 genes",
+        "Muestreo: 81 taxones"
+      ]
+    },
+    {
+      "claim_id": "C-2609",
+      "sha256_propuesta": "5dfc73a4b18ffa260e4e44ac81965b46d2ffd2a99a8b001ba8cbcd39b99ac1fe",
+      "componentes": [
+        "Alineamiento concatenado de 35 genes",
+        "Recodificación con SR4"
+      ]
+    },
+    {
+      "claim_id": "C-2611",
+      "sha256_propuesta": "4ae37039864e5a088f429a2c0af2350c5b1d567acb8eb14c5e62a57b11f194b8",
+      "componentes": [
+        "Soporte PP = 0.98",
+        "Nodo: eucariotas + Heimdallarchaeota",
+        "Condición: 35 genes recodificados con SR4 bajo CAT+GTR+G4"
+      ]
+    },
+    {
+      "claim_id": "C-2612",
+      "sha256_propuesta": "298fcc15602f97d01c951d8148bf3596ea789641694ab7d9dbcd4b92e19d0020",
+      "componentes": [
+        "Modelo CAT+GTR+G4 con SR4 para la matriz de 21 genes",
+        "Modelo CAT+GTR+G4 con SR4 para la matriz de 43 genes"
+      ]
+    }
+  ],
+  "suplemento_futuro_existe": false,
+  "consumidor_real_ejecutado": false
+}

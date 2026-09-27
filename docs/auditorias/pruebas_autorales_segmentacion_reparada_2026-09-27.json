@@ -1,0 +1,1918 @@
+{
+  "tipo": "PRUEBAS_AUTORALES_NO_REVISION_INDEPENDIENTE",
+  "nota_captura": "Se conservan los resultados y recuentos finales; no se guardó un bloque intermedio de puntos de progreso de unittest. No se presenta la cadena como transcripción completa.",
+  "autor": "/root/verificacion_fuentes_nuevas",
+  "inicio_utc": "2026-09-27 03:13:57 UTC",
+  "fin_utc": "2026-09-27 03:14:37 UTC",
+  "comando": "python3 -m unittest tests.test_content_trace_sentence_boundaries && python3 -m unittest discover -s tests && git diff --check -- scripts/build_content_trace.py",
+  "exit_code": 0,
+  "stdout_stderr": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 0.026s\n\nOK\n...............................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 325 tests in 36.800s\n\nOK\n",
+  "reejecucion_fixture_ajena": {
+    "tipo": "REEJECUCION_AUTORAL_DE_FIXTURE_AJENA_NO_APROBACION_INDEPENDIENTE",
+    "ejecutor_real": "/root/verificacion_fuentes_nuevas",
+    "independencia": "AUTOR_DEL_PARCHE; pendiente de reinspección ajena",
+    "fixture": "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py",
+    "fixture_sha256": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573",
+    "campos_estaticos_de_la_fixture_no_aplicables_a_esta_ejecucion": {
+      "reviewer": "/root/inspeccion_relojes",
+      "independence": "No participación en la implementación revisada; autoría científica S240/S352 excluida."
+    },
+    "resultado": {
+      "started_utc": "2026-09-27T03:13:35Z",
+      "finished_utc": "2026-09-27T03:13:35Z",
+      "hashes_before": {
+        "scripts/build_content_trace.py": "df72e57c7cfa7b0c9d3d6dd1d1457b3b5226af91c395841762a7326347422f8d",
+        "tests/test_content_trace_sentence_boundaries.py": "85fb7aeb4418b4602fb50a44ebca0787031fa054800de074840894737c8d3921",
+        "docs/auditorias/ENTREGA_AUTORAL_SEGMENTACION_NCDEN02_2026-09-27.md": "d7507a6bb1c723aeab8bb4233ff3e4f54a1dc2072144792e6afdde67965a2aa5",
+        "docs/auditorias/PROPUESTA_CONTRATO_CENSO_ORACIONES_DENSIDAD_2026-09-27.md": "19c491ed7232c4b6267519a487dc2fe3281d74e3a757ef9dd82efadfd2c48846",
+        "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573",
+        "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d"
+      },
+      "hashes_after": {
+        "scripts/build_content_trace.py": "df72e57c7cfa7b0c9d3d6dd1d1457b3b5226af91c395841762a7326347422f8d",
+        "tests/test_content_trace_sentence_boundaries.py": "85fb7aeb4418b4602fb50a44ebca0787031fa054800de074840894737c8d3921",
+        "docs/auditorias/ENTREGA_AUTORAL_SEGMENTACION_NCDEN02_2026-09-27.md": "d7507a6bb1c723aeab8bb4233ff3e4f54a1dc2072144792e6afdde67965a2aa5",
+        "docs/auditorias/PROPUESTA_CONTRATO_CENSO_ORACIONES_DENSIDAD_2026-09-27.md": "19c491ed7232c4b6267519a487dc2fe3281d74e3a757ef9dd82efadfd2c48846",
+        "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573",
+        "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d"
+      },
+      "reviewed_files_stable": true,
+      "tests": [
+        {
+          "case": "postposed_two",
+          "category": "baseline",
+          "text": "Dato. [C-001; S01 §Resultados] Otro dato. [C-002]",
+          "expected": [
+            "Dato. [C-001; S01 §Resultados]",
+            "Otro dato. [C-002]"
+          ],
+          "actual": [
+            "Dato. [C-001; S01 §Resultados]",
+            "Otro dato. [C-002]"
+          ],
+          "spans": [
+            [
+              0,
+              30
+            ],
+            [
+              31,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "012d5eb8adf51ad3747668fc4cfd8363ac816cb4b0b132ea1555c13277626df0"
+        },
+        {
+          "case": "postposed_two_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              30
+            ],
+            [
+              31,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "postposed_multiple",
+          "category": "baseline",
+          "text": "Dato.[C-001][S01 p. 2] [BN-001] otro dato.",
+          "expected": [
+            "Dato.[C-001][S01 p. 2] [BN-001]",
+            "otro dato."
+          ],
+          "actual": [
+            "Dato.[C-001][S01 p. 2] [BN-001]",
+            "otro dato."
+          ],
+          "spans": [
+            [
+              0,
+              31
+            ],
+            [
+              32,
+              42
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "762ab550248143f461a685daeb6469d8905b90d38b710830a56f7f747ea0cad4"
+        },
+        {
+          "case": "postposed_multiple_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              31
+            ],
+            [
+              32,
+              42
+            ]
+          ]
+        },
+        {
+          "case": "nested_locator",
+          "category": "baseline",
+          "text": "Dato. [C-001; S01 Fig. 2 [a.], p. 3] Otro.",
+          "expected": [
+            "Dato. [C-001; S01 Fig. 2 [a.], p. 3]",
+            "Otro."
+          ],
+          "actual": [
+            "Dato. [C-001; S01 Fig. 2 [a.], p. 3]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              36
+            ],
+            [
+              37,
+              42
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "abe4781c6211d1556a8580d23fe1e64d1d0b7d3e3910578cd2524a47f36fdb01"
+        },
+        {
+          "case": "nested_locator_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              36
+            ],
+            [
+              37,
+              42
+            ]
+          ]
+        },
+        {
+          "case": "sin_fuente_prefix",
+          "category": "baseline",
+          "text": "Dato. [C-001] [SIN FUENTE] Otro dato.",
+          "expected": [
+            "Dato. [C-001]",
+            "[SIN FUENTE] Otro dato."
+          ],
+          "actual": [
+            "Dato. [C-001]",
+            "[SIN FUENTE] Otro dato."
+          ],
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              14,
+              37
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "9e39c41c469da8b260ffdcd08a8abe616369b4c16c3a3aaf29b3ebb1341c99d0"
+        },
+        {
+          "case": "sin_fuente_prefix_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              14,
+              37
+            ]
+          ]
+        },
+        {
+          "case": "noncitation_bracket",
+          "category": "baseline",
+          "text": "Dato. [La otra proposición usa C-002]",
+          "expected": [
+            "Dato.",
+            "[La otra proposición usa C-002]"
+          ],
+          "actual": [
+            "Dato.",
+            "[La otra proposición usa C-002]"
+          ],
+          "spans": [
+            [
+              0,
+              5
+            ],
+            [
+              6,
+              37
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "fec3ad8cd576f401da9f352a01efaca391627c8899da737a475a7a2847311f50"
+        },
+        {
+          "case": "noncitation_bracket_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              5
+            ],
+            [
+              6,
+              37
+            ]
+          ]
+        },
+        {
+          "case": "unicode_whitespace_offsets",
+          "category": "unicode",
+          "text": "  Ácido α. [C-001]\r\n\t🧬 β. [C-002]  ",
+          "expected": [
+            "Ácido α. [C-001]",
+            "🧬 β. [C-002]"
+          ],
+          "actual": [
+            "Ácido α. [C-001]",
+            "🧬 β. [C-002]"
+          ],
+          "spans": [
+            [
+              2,
+              18
+            ],
+            [
+              21,
+              33
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "4fce18edfa68ab41cc70e4be459b68352ff0d81bc7129bab89f9f3a7f35909df"
+        },
+        {
+          "case": "unicode_whitespace_offsets_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              2,
+              18
+            ],
+            [
+              21,
+              33
+            ]
+          ]
+        },
+        {
+          "case": "decomposed_accent",
+          "category": "unicode",
+          "text": "Ámbito. [C-001] Otra oración.",
+          "expected": [
+            "Ámbito. [C-001]",
+            "Otra oración."
+          ],
+          "actual": [
+            "Ámbito. [C-001]",
+            "Otra oración."
+          ],
+          "spans": [
+            [
+              0,
+              16
+            ],
+            [
+              17,
+              30
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "d969b891d388b3f9e41648ba6da2ad986cb7be915807e7f123f4fb295dcf9c7a"
+        },
+        {
+          "case": "decomposed_accent_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              16
+            ],
+            [
+              17,
+              30
+            ]
+          ]
+        },
+        {
+          "case": "decimal_exponent",
+          "category": "numbers",
+          "text": "El valor fue 3.14e-5. [C-001] Otro.",
+          "expected": [
+            "El valor fue 3.14e-5. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "El valor fue 3.14e-5. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              29
+            ],
+            [
+              30,
+              35
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "e6b8b00d286cc346b6030d7fde5bc2565f71deafb05beea6d20914b6fda8b048"
+        },
+        {
+          "case": "decimal_exponent_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              29
+            ],
+            [
+              30,
+              35
+            ]
+          ]
+        },
+        {
+          "case": "decimal_span_range",
+          "category": "numbers",
+          "text": "Se transcribe 10.89–13.61. [C-001] Otro.",
+          "expected": [
+            "Se transcribe 10.89–13.61. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Se transcribe 10.89–13.61. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              34
+            ],
+            [
+              35,
+              40
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "6eab12317278887ad55fac7a997892d7f08e3d0a45c440351a0a279b7c645125"
+        },
+        {
+          "case": "decimal_span_range_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              34
+            ],
+            [
+              35,
+              40
+            ]
+          ]
+        },
+        {
+          "case": "inline_abbreviations",
+          "category": "abbreviations",
+          "text": "Smith et al. vieron Bacillus sp. y varias spp. [C-001] Otro.",
+          "expected": [
+            "Smith et al. vieron Bacillus sp. y varias spp. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Smith et al. vieron Bacillus sp. y varias spp. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              54
+            ],
+            [
+              55,
+              60
+            ]
+          ],
+          "diagnostics": [
+            {
+              "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+              "offset_punto": 11,
+              "literal": "et al. vieron Bacillus sp. y varias spp. [C-001]",
+              "lectura_corte": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  13,
+                  54
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  54
+                ]
+              ]
+            },
+            {
+              "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+              "offset_punto": 31,
+              "literal": "sp. y varias spp. [C-001]",
+              "lectura_corte": [
+                [
+                  0,
+                  32
+                ],
+                [
+                  33,
+                  54
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  54
+                ]
+              ]
+            },
+            {
+              "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+              "offset_punto": 45,
+              "literal": "spp. [C-001]",
+              "lectura_corte": [
+                [
+                  0,
+                  46
+                ],
+                [
+                  47,
+                  54
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  54
+                ]
+              ]
+            }
+          ],
+          "pass": true,
+          "text_sha256_lf": "fddf3e9c86867985ef8172906dd4fb0a0271e859185291fab9adae168a5099c5"
+        },
+        {
+          "case": "inline_abbreviations_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              54
+            ],
+            [
+              55,
+              60
+            ]
+          ]
+        },
+        {
+          "case": "italic_taxon",
+          "category": "taxon",
+          "text": "Hubo cambios en *B. floridanus*. [C-001] Otro.",
+          "expected": [
+            "Hubo cambios en *B. floridanus*. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Hubo cambios en *B. floridanus*. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              40
+            ],
+            [
+              41,
+              46
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "0918d1dd93af553d850295800f4cd1270b579a8aed19fd0609a70184a41c6470"
+        },
+        {
+          "case": "italic_taxon_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              40
+            ],
+            [
+              41,
+              46
+            ]
+          ]
+        },
+        {
+          "case": "url_internal",
+          "category": "url",
+          "text": "Consulte https://example.org/a!b?x=3.14. [C-001] Otro.",
+          "expected": [
+            "Consulte https://example.org/a!b?x=3.14. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Consulte https://example.org/a!b?x=3.14. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              48
+            ],
+            [
+              49,
+              54
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "3cf50caac001d7f5ee61117561e7ec67a447840f9fc724f91372d074c07d58e0"
+        },
+        {
+          "case": "url_internal_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              48
+            ],
+            [
+              49,
+              54
+            ]
+          ]
+        },
+        {
+          "case": "url_autolink",
+          "category": "url",
+          "text": "Consulte <https://example.org/a>. [C-001] Otro.",
+          "expected": [
+            "Consulte <https://example.org/a>. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Consulte <https://example.org/a>. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              41
+            ],
+            [
+              42,
+              47
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "4159b6b2704f31ef44b580c492c17bbfbc2e9ffebb20641ffd45dae542d09f7a"
+        },
+        {
+          "case": "url_autolink_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              41
+            ],
+            [
+              42,
+              47
+            ]
+          ]
+        },
+        {
+          "case": "markdown_link",
+          "category": "url",
+          "text": "Consulte [fuente](https://example.org/a). [C-001] Otro.",
+          "expected": [
+            "Consulte [fuente](https://example.org/a). [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Consulte [fuente](https://example.org/a). [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              49
+            ],
+            [
+              50,
+              55
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "7dae7c5e70932607f8fa522a52f34ef55b169ce0159605faba1a93dfa28b2792"
+        },
+        {
+          "case": "markdown_link_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              49
+            ],
+            [
+              50,
+              55
+            ]
+          ]
+        },
+        {
+          "case": "closing_before_citation",
+          "category": "quote",
+          "text": "«Dato.» [C-001] Otro.",
+          "expected": [
+            "«Dato.» [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "«Dato.» [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              21
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "1ea192ae08c2fbef969babb2f00a2a7b799eeee954f0e438a7140c730215e171"
+        },
+        {
+          "case": "closing_before_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              21
+            ]
+          ]
+        },
+        {
+          "case": "punctuation_cluster",
+          "category": "punctuation",
+          "text": "¿Dato?! [C-001] ¡Otro! [C-002] Fin.",
+          "expected": [
+            "¿Dato?! [C-001]",
+            "¡Otro! [C-002]",
+            "Fin."
+          ],
+          "actual": [
+            "¿Dato?! [C-001]",
+            "¡Otro! [C-002]",
+            "Fin."
+          ],
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              30
+            ],
+            [
+              31,
+              35
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "12e11483ac2141e1b8d4546b675082611bdb53a9f0526b403f7b317bf88ccedb"
+        },
+        {
+          "case": "punctuation_cluster_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              30
+            ],
+            [
+              31,
+              35
+            ]
+          ]
+        },
+        {
+          "case": "ascii_ellipsis",
+          "category": "punctuation",
+          "text": "Dato... [C-001] Otro.",
+          "expected": [
+            "Dato... [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Dato... [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              21
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "61711f9ea34982522aac16cb9e5d0f86cc21061b45d0b3ac5efed0b3a399f32f"
+        },
+        {
+          "case": "ascii_ellipsis_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              15
+            ],
+            [
+              16,
+              21
+            ]
+          ]
+        },
+        {
+          "case": "parenthesis_after_citation",
+          "category": "postcitation_closers",
+          "text": "(Se observó. [C-001]) Otro resultado carece de C.",
+          "expected": [
+            "(Se observó. [C-001])",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "(Se observó. [C-001])",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "9b62c3109168293f8026b3acf8e5d0928f2c8817044060fc4902ffddc541b5c1"
+        },
+        {
+          "case": "parenthesis_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "guillemet_after_citation",
+          "category": "postcitation_closers",
+          "text": "«Se observó. [C-001]» Otro resultado carece de C.",
+          "expected": [
+            "«Se observó. [C-001]»",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "«Se observó. [C-001]»",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "00dd8505e6f07eb64f213b9ce77695c407f039f2f24d85fc24607b91ba6c6fe9"
+        },
+        {
+          "case": "guillemet_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "doublequote_after_citation",
+          "category": "postcitation_closers",
+          "text": "\"Se observó. [C-001]\" Otro resultado carece de C.",
+          "expected": [
+            "\"Se observó. [C-001]\"",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "\"Se observó. [C-001]\"",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "37ad1c32030996c969d74317d99d74d5b4901849b60012bbd876cccdccc6aeee"
+        },
+        {
+          "case": "doublequote_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "curlyquote_after_citation",
+          "category": "postcitation_closers",
+          "text": "“Se observó. [C-001]” Otro resultado carece de C.",
+          "expected": [
+            "“Se observó. [C-001]”",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "“Se observó. [C-001]”",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "1c179c8165287ecf2d94ca563bd8b1d944bca581898847cd7294d10c37020d37"
+        },
+        {
+          "case": "curlyquote_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "singlequote_after_citation",
+          "category": "postcitation_closers",
+          "text": "'Se observó. [C-001]' Otro resultado carece de C.",
+          "expected": [
+            "'Se observó. [C-001]'",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "'Se observó. [C-001]'",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "fa4f6d71ef6dd0223c3cdf7b874cfc13584c97504d58345a4d6919808cea0e9d"
+        },
+        {
+          "case": "singlequote_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "italic_after_citation",
+          "category": "postcitation_closers",
+          "text": "*Se observó. [C-001]* Otro resultado carece de C.",
+          "expected": [
+            "*Se observó. [C-001]*",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "*Se observó. [C-001]*",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "16bf6b004b58f940e0871960ee70dca733a85d96ee391004625eff3ae1dcad1b"
+        },
+        {
+          "case": "italic_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              21
+            ],
+            [
+              22,
+              49
+            ]
+          ]
+        },
+        {
+          "case": "bold_after_citation",
+          "category": "postcitation_closers",
+          "text": "**Se observó. [C-001]** Otro resultado carece de C.",
+          "expected": [
+            "**Se observó. [C-001]**",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "**Se observó. [C-001]**",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "a1424ea87df4c59c141d1840a7dff73ec172ce4d0d21c6992337c0c1747962ea"
+        },
+        {
+          "case": "bold_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ]
+        },
+        {
+          "case": "underscore_bold_after_citation",
+          "category": "postcitation_closers",
+          "text": "__Se observó. [C-001]__ Otro resultado carece de C.",
+          "expected": [
+            "__Se observó. [C-001]__",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "__Se observó. [C-001]__",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "2a7b2e89ea98afd16354d11ba7527affc7d790c39d41595338f60c27c4125638"
+        },
+        {
+          "case": "underscore_bold_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ]
+        },
+        {
+          "case": "nested_closings_after_citation",
+          "category": "postcitation_closers",
+          "text": "(«Se observó. [C-001]») Otro resultado carece de C.",
+          "expected": [
+            "(«Se observó. [C-001]»)",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "(«Se observó. [C-001]»)",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "f29e4ab552068a2b64cd85f15c1607d8d9ef7e23147bc9644148fa25fa8f22e5"
+        },
+        {
+          "case": "nested_closings_after_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              23
+            ],
+            [
+              24,
+              51
+            ]
+          ]
+        },
+        {
+          "case": "linked_citation",
+          "category": "postcitation_link",
+          "text": "Dato. [C-001](https://example.org) Otro.",
+          "expected": [
+            "Dato. [C-001](https://example.org)",
+            "Otro."
+          ],
+          "actual": [
+            "Dato. [C-001](https://example.org)",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              34
+            ],
+            [
+              35,
+              40
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "f80d87fe9aae75b34db693e61fac887e9b67f8f406d082491ed1cb8530bd0d92"
+        },
+        {
+          "case": "linked_citation_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              34
+            ],
+            [
+              35,
+              40
+            ]
+          ]
+        },
+        {
+          "case": "unicode_ellipsis",
+          "category": "unicode_punctuation",
+          "text": "Dato… [C-001] Otro resultado carece de C.",
+          "expected": [
+            "Dato… [C-001]",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "Dato… [C-001]",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              14,
+              41
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "41e00e102ef9632603612ed9fb124c8ce9fa0024f3941a13a23a0accea8c92cf"
+        },
+        {
+          "case": "unicode_ellipsis_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              14,
+              41
+            ]
+          ]
+        },
+        {
+          "case": "adjacent_following_sentence",
+          "category": "adjacency",
+          "text": "Dato. [C-001]Otro resultado carece de C.",
+          "expected": [
+            "Dato. [C-001]",
+            "Otro resultado carece de C."
+          ],
+          "actual": [
+            "Dato. [C-001]",
+            "Otro resultado carece de C."
+          ],
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              13,
+              40
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "7d8e9aa531fd0f796c96bef91b85166955735b05dbfd7f74af1fbb864a560284"
+        },
+        {
+          "case": "adjacent_following_sentence_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              13
+            ],
+            [
+              13,
+              40
+            ]
+          ]
+        },
+        {
+          "case": "underscored_taxon",
+          "category": "taxon",
+          "text": "Hubo cambios en _B. floridanus_. [C-001] Otro.",
+          "expected": [
+            "Hubo cambios en _B. floridanus_. [C-001]",
+            "Otro."
+          ],
+          "actual": [
+            "Hubo cambios en _B. floridanus_. [C-001]",
+            "Otro."
+          ],
+          "spans": [
+            [
+              0,
+              40
+            ],
+            [
+              41,
+              46
+            ]
+          ],
+          "diagnostics": [],
+          "pass": true,
+          "text_sha256_lf": "ac7e9bc4b5a78c63e5ec01fc5ecbcc401e833d79341d69235f56977fd4cf39e7"
+        },
+        {
+          "case": "underscored_taxon_exact_span_invariants",
+          "category": "spans",
+          "pass": true,
+          "spans": [
+            [
+              0,
+              40
+            ],
+            [
+              41,
+              46
+            ]
+          ]
+        },
+        {
+          "case": "plain_initial",
+          "category": "ambiguity",
+          "text": "Hubo cambios en B. floridanus. [C-001]",
+          "diagnostics": [
+            {
+              "razon": "AMBIGUA_INICIAL_EPITETO",
+              "offset_punto": 17,
+              "literal": "B. floridanus. [C-001]",
+              "lectura_corte": [
+                [
+                  0,
+                  18
+                ],
+                [
+                  19,
+                  38
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  38
+                ]
+              ]
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "plain_initial_chain",
+          "category": "ambiguity",
+          "text": "B. floridanus y B. pennsylvanicus divergen. [C-001]",
+          "diagnostics": [
+            {
+              "razon": "AMBIGUA_INICIAL_EPITETO",
+              "offset_punto": 1,
+              "literal": "B. floridanus y B.",
+              "lectura_corte": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  3,
+                  18
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  18
+                ]
+              ]
+            },
+            {
+              "razon": "AMBIGUA_INICIAL_EPITETO",
+              "offset_punto": 17,
+              "literal": "B. pennsylvanicus divergen. [C-001]",
+              "lectura_corte": [
+                [
+                  3,
+                  18
+                ],
+                [
+                  19,
+                  51
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  3,
+                  51
+                ]
+              ]
+            }
+          ],
+          "pass": true
+        },
+        {
+          "case": "terminal_spp_not_autoapproved",
+          "category": "ambiguity",
+          "text": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+          "actual": [
+            "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]"
+          ],
+          "diagnostics": [
+            {
+              "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+              "offset_punto": 23,
+              "literal": "spp. El segundo resultado no está registrado. [C-001]",
+              "lectura_corte": [
+                [
+                  0,
+                  24
+                ],
+                [
+                  25,
+                  73
+                ]
+              ],
+              "lectura_abreviatura": [
+                [
+                  0,
+                  73
+                ]
+              ]
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pipelines": [
+        {
+          "case": "normal_uncited_following",
+          "text": "Se observó. [C-001] Otro resultado carece de C.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "Se observó. [C-001]",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado carece de C.",
+              "claims": [],
+              "method": "sugerencia_no_revisada",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+          ],
+          "ambiguities": [],
+          "stdout": "",
+          "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+        },
+        {
+          "case": "plain_initial_pending",
+          "text": "Hubo cambios en B. floridanus. [C-001]",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "Hubo cambios en B.",
+              "claims": [],
+              "method": "SIN_TRAZABILIDAD",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "floridanus. [C-001]",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+          ],
+          "ambiguities": [
+            {
+              "ruta": "docs/secciones/003-02-fixture.md",
+              "localizador": "L1",
+              "texto": "Hubo cambios en B. floridanus. [C-001]",
+              "sha256_texto_lf": "6aa3248e248c8ed8c01773360291e894e7a6ef1fe4e7f2db35f49ce0ff4dd8a0",
+              "base_offsets": "Unicode del bloque normalizado, no del archivo",
+              "fronteras": [
+                {
+                  "razon": "AMBIGUA_INICIAL_EPITETO",
+                  "offset_punto": 17,
+                  "literal": "B. floridanus. [C-001]",
+                  "lectura_corte": [
+                    [
+                      0,
+                      18
+                    ],
+                    [
+                      19,
+                      38
+                    ]
+                  ],
+                  "lectura_abreviatura": [
+                    [
+                      0,
+                      38
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "stdout": "",
+          "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+        },
+        {
+          "case": "parenthesis_after_citation",
+          "text": "(Se observó. [C-001]) Otro resultado carece de C.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "(Se observó. [C-001])",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado carece de C.",
+              "claims": [],
+              "method": "sugerencia_no_revisada",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+          ],
+          "ambiguities": [],
+          "stdout": "",
+          "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+        },
+        {
+          "case": "guillemet_after_citation",
+          "text": "«Se observó. [C-001]» Otro resultado carece de C.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "«Se observó. [C-001]»",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado carece de C.",
+              "claims": [],
+              "method": "sugerencia_no_revisada",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+          ],
+          "ambiguities": [],
+          "stdout": "",
+          "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+        },
+        {
+          "case": "bold_after_citation",
+          "text": "**Se observó. [C-001]** Otro resultado carece de C.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "**Se observó. [C-001]**",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado carece de C.",
+              "claims": [],
+              "method": "sugerencia_no_revisada",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+          ],
+          "ambiguities": [],
+          "stdout": "",
+          "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+        },
+        {
+          "case": "unicode_ellipsis",
+          "text": "Dato… [C-001] Otro resultado carece de C.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "Dato… [C-001]",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado carece de C.",
+              "claims": [],
+              "method": "sugerencia_no_revisada",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+          ],
+          "ambiguities": [],
+          "stdout": "",
+          "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+        },
+        {
+          "case": "terminal_spp_not_autoapproved",
+          "text": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1",
+              "column": "n/a",
+              "content": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [],
+          "ambiguities": [
+            {
+              "ruta": "docs/secciones/003-02-fixture.md",
+              "localizador": "L1",
+              "texto": "Se analizaron otras spp. El segundo resultado no está registrado. [C-001]",
+              "sha256_texto_lf": "dd83521f21141b2c044b294a6fb2b1f0de4134604d7c7cb00301b72eb577af4e",
+              "base_offsets": "Unicode del bloque normalizado, no del archivo",
+              "fronteras": [
+                {
+                  "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+                  "offset_punto": 23,
+                  "literal": "spp. El segundo resultado no está registrado. [C-001]",
+                  "lectura_corte": [
+                    [
+                      0,
+                      24
+                    ],
+                    [
+                      25,
+                      73
+                    ]
+                  ],
+                  "lectura_abreviatura": [
+                    [
+                      0,
+                      73
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "stdout": "",
+          "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n"
+        },
+        {
+          "case": "unclosed_nominal_citation",
+          "text": "Se observó [C-001; S01 p. 1 sin cierre.",
+          "expected": "RECHAZAR_SIN_ESCRIBIR",
+          "pass": true,
+          "main_write_exit": 1,
+          "main_check_exit": 1,
+          "output_written": false,
+          "output_sha256": null,
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1",
+              "column": "n/a",
+              "content": "Se observó [C-001; S01 p. 1 sin cierre.",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [
+            "Cita nominal o enlace sin cierre: docs/secciones/003-02-fixture.md:L1: offset 11"
+          ],
+          "ambiguities": [
+            {
+              "ruta": "docs/secciones/003-02-fixture.md",
+              "localizador": "L1",
+              "texto": "Se observó [C-001; S01 p. 1 sin cierre.",
+              "sha256_texto_lf": "cc195b18787c2c396691b6f741e654ae2333db25aee9107e64c41df51231f928",
+              "base_offsets": "Unicode del bloque normalizado, no del archivo",
+              "fronteras": [
+                {
+                  "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+                  "offset_punto": 24,
+                  "literal": "p. 1 sin cierre.",
+                  "lectura_corte": [
+                    [
+                      0,
+                      25
+                    ],
+                    [
+                      26,
+                      39
+                    ]
+                  ],
+                  "lectura_abreviatura": [
+                    [
+                      0,
+                      39
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "stdout": "",
+          "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\nCita nominal o enlace sin cierre: docs/secciones/003-02-fixture.md:L1: offset 11\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\nCita nominal o enlace sin cierre: docs/secciones/003-02-fixture.md:L1: offset 11\n"
+        },
+        {
+          "case": "positive_two_explicit_claims",
+          "expected": "DOS_SEGMENTOS_DETERMINISTAS",
+          "pass": true,
+          "main_write_exit": 0,
+          "main_check_exit": 0,
+          "output_written": true,
+          "output_sha256": "4e2e506f4decd247fd82bab3558fff19b3bba8750360d05144172c1fb67e6410",
+          "output_unchanged_second_run": true,
+          "inputs_unchanged": true,
+          "segments": [
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 1",
+              "column": "n/a",
+              "content": "Se observó. [C-001]",
+              "claims": [
+                "C-001"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            },
+            {
+              "kind": "prosa",
+              "path": "docs/secciones/003-02-fixture.md",
+              "locator": "L1; oración 2",
+              "column": "n/a",
+              "content": "Otro resultado. [C-002]",
+              "claims": [
+                "C-002"
+              ],
+              "method": "cita_en_segmento",
+              "content_sha256": ""
+            }
+          ],
+          "payload_errors": [],
+          "ambiguities": [],
+          "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+          "stderr": ""
+        }
+      ],
+      "counts": {
+        "checks": 63,
+        "pass": 63,
+        "fail": 0,
+        "pipelines": 9,
+        "pipeline_pass": 9,
+        "pipeline_fail": 0
+      },
+      "scope": "Segmentación y puerta técnica; no adjudicación científica de candidatos, NC-DEN01, censo C ni cierre global."
+    }
+  }
+}

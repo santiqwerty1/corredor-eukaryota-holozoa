@@ -206,10 +206,13 @@ class AuditFullMutationTests(unittest.TestCase):
         self.assertFalse(audit_full.valid_iso_date("2026-08-09"))
         self.assertFalse(audit_full.valid_iso_date("08/08/2026"))
 
-    def test_review_closure_date_accepts_only_the_literal_later_close(self) -> None:
+    def test_review_closure_date_preserves_calendar_and_order_without_fixed_day(self) -> None:
         self.assertTrue(audit_full.valid_review_closure_date("2026-08-13"))
+        self.assertTrue(audit_full.valid_review_closure_date("2026-09-26"))
         self.assertFalse(audit_full.valid_review_closure_date("2026-08-08"))
         self.assertFalse(audit_full.valid_review_closure_date("2026-02-30"))
+        self.assertFalse(audit_full.valid_review_closure_date("2026-W33-4"))
+        self.assertFalse(audit_full.valid_review_closure_date("2026-09-26", ("2026-09-26T01:00:00Z",)))
 
     def test_stratified_sample_is_stable_and_uses_ceiling(self) -> None:
         keys = {f"C-{number:03d}" for number in range(1, 8)}

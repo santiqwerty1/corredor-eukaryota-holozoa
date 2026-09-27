@@ -1,0 +1,1270 @@
+{
+  "method": "CSV importado por Workbook.fromCSV; comparación exacta de cada celda contra csv.reader; sin conversiones",
+  "node": "v24.19.0",
+  "expected_sha256": "65f5c55462003180b0ff6c37dbcb7353ac06cf8e803e366d67ca4fa328d766d3",
+  "total": 97,
+  "failures": 0,
+  "records": [
+    {
+      "path": "data/afirmaciones/00.csv",
+      "sha256_csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+      "rows": 13,
+      "columns": 12,
+      "sha256_matrix": "adf1cb93f65a465e5f7a975bff736560e1594cd18303d395d516c9502f2e39a6",
+      "observed_rows": 13,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "adf1cb93f65a465e5f7a975bff736560e1594cd18303d395d516c9502f2e39a6",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/01.csv",
+      "sha256_csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+      "rows": 5,
+      "columns": 12,
+      "sha256_matrix": "f98a0248c6cf775a5e10ec7f48d6e1085cda8bd1f4dd11409f3bb471b0b29f98",
+      "observed_rows": 5,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "f98a0248c6cf775a5e10ec7f48d6e1085cda8bd1f4dd11409f3bb471b0b29f98",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "sha256_csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+      "rows": 12,
+      "columns": 9,
+      "sha256_matrix": "3b1ff0366a570fca6c1d50278470bc4423f553a19c8798ea4a98004a1b98aba1",
+      "observed_rows": 12,
+      "observed_columns": [
+        9
+      ],
+      "sha256_observed_matrix": "3b1ff0366a570fca6c1d50278470bc4423f553a19c8798ea4a98004a1b98aba1",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv",
+      "sha256_csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+      "rows": 4,
+      "columns": 3,
+      "sha256_matrix": "2e19b3f00c3a59b357339dc7254ba59fa7d943348ed7113608803ddeba180886",
+      "observed_rows": 4,
+      "observed_columns": [
+        3
+      ],
+      "sha256_observed_matrix": "2e19b3f00c3a59b357339dc7254ba59fa7d943348ed7113608803ddeba180886",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv",
+      "sha256_csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+      "rows": 4,
+      "columns": 6,
+      "sha256_matrix": "bf556640c5bab6304631b5946b6b4d45c5fff85a94d6b1b78d5fb03bc63fd884",
+      "observed_rows": 4,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "bf556640c5bab6304631b5946b6b4d45c5fff85a94d6b1b78d5fb03bc63fd884",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv",
+      "sha256_csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+      "rows": 20,
+      "columns": 6,
+      "sha256_matrix": "4e079abb4010fedddb699df4c0b528f6c9df53e26e6155a2f72a7799a309eb74",
+      "observed_rows": 20,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "4e079abb4010fedddb699df4c0b528f6c9df53e26e6155a2f72a7799a309eb74",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv",
+      "sha256_csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+      "rows": 8,
+      "columns": 6,
+      "sha256_matrix": "fdc47b4fdb1ef832e089fde3ddb1e840e9ac93b633433858b8405fd7fe8f52a4",
+      "observed_rows": 8,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "fdc47b4fdb1ef832e089fde3ddb1e840e9ac93b633433858b8405fd7fe8f52a4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv",
+      "sha256_csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+      "rows": 38,
+      "columns": 13,
+      "sha256_matrix": "28f07563fc60ab375ae39e3e24e9e334635b99de1a756ed0eac4a4440ff587b4",
+      "observed_rows": 38,
+      "observed_columns": [
+        13
+      ],
+      "sha256_observed_matrix": "28f07563fc60ab375ae39e3e24e9e334635b99de1a756ed0eac4a4440ff587b4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv",
+      "sha256_csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+      "rows": 13,
+      "columns": 7,
+      "sha256_matrix": "49029835e3767a5e4ba998aae6ce82e3a40fed1c2c0708b4612b5440bcc6856f",
+      "observed_rows": 13,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "49029835e3767a5e4ba998aae6ce82e3a40fed1c2c0708b4612b5440bcc6856f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/02.csv",
+      "sha256_csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+      "rows": 157,
+      "columns": 12,
+      "sha256_matrix": "d49f3402ff8c4f48a4bbb39c6442976733993f598b46b9d1f61222f6ef8fd13b",
+      "observed_rows": 157,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "d49f3402ff8c4f48a4bbb39c6442976733993f598b46b9d1f61222f6ef8fd13b",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv",
+      "sha256_csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+      "rows": 8,
+      "columns": 4,
+      "sha256_matrix": "3d2fa64229709d9089d8894f454cc3d6963ab36d0e3358626b4ba65a7b24ece0",
+      "observed_rows": 8,
+      "observed_columns": [
+        4
+      ],
+      "sha256_observed_matrix": "3d2fa64229709d9089d8894f454cc3d6963ab36d0e3358626b4ba65a7b24ece0",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv",
+      "sha256_csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+      "rows": 12,
+      "columns": 4,
+      "sha256_matrix": "ba38dd5015273b01518fee7fef03e0d99737ddcac84758fcef6361d07db08a84",
+      "observed_rows": 12,
+      "observed_columns": [
+        4
+      ],
+      "sha256_observed_matrix": "ba38dd5015273b01518fee7fef03e0d99737ddcac84758fcef6361d07db08a84",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv",
+      "sha256_csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+      "rows": 8,
+      "columns": 4,
+      "sha256_matrix": "4c69fb3d2504c9c9ae61743798a8cb6799a8138ef7cb6c08242a5bf3a41c18b5",
+      "observed_rows": 8,
+      "observed_columns": [
+        4
+      ],
+      "sha256_observed_matrix": "4c69fb3d2504c9c9ae61743798a8cb6799a8138ef7cb6c08242a5bf3a41c18b5",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv",
+      "sha256_csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+      "rows": 7,
+      "columns": 10,
+      "sha256_matrix": "0b5311b337ebf6d30a43060fe9add38e6d9106f6305fe910d5deb66badba77c8",
+      "observed_rows": 7,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "0b5311b337ebf6d30a43060fe9add38e6d9106f6305fe910d5deb66badba77c8",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv",
+      "sha256_csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+      "rows": 5,
+      "columns": 8,
+      "sha256_matrix": "76b9d4570a236b9b24500d71de7695531b3629c9e86320c58335c5d37569f8f2",
+      "observed_rows": 5,
+      "observed_columns": [
+        8
+      ],
+      "sha256_observed_matrix": "76b9d4570a236b9b24500d71de7695531b3629c9e86320c58335c5d37569f8f2",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv",
+      "sha256_csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+      "rows": 56,
+      "columns": 6,
+      "sha256_matrix": "27c504925a8f48e63a86c88bf59f4b5f738c2d3efba5e5c627085afadb1702d7",
+      "observed_rows": 56,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "27c504925a8f48e63a86c88bf59f4b5f738c2d3efba5e5c627085afadb1702d7",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/03.csv",
+      "sha256_csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+      "rows": 259,
+      "columns": 12,
+      "sha256_matrix": "5bf15cee218418571ec061abae244abe00ea81611c665f03b778d798586e396a",
+      "observed_rows": 259,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "5bf15cee218418571ec061abae244abe00ea81611c665f03b778d798586e396a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv",
+      "sha256_csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+      "rows": 8,
+      "columns": 6,
+      "sha256_matrix": "293056aaa77114862583be2734e93eaeb7fd3fad0e32488bd81d42a0ed2b1bbb",
+      "observed_rows": 8,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "293056aaa77114862583be2734e93eaeb7fd3fad0e32488bd81d42a0ed2b1bbb",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-16-4-6-1-eukaryota.csv",
+      "sha256_csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "421c50a6eb8c8df4afc6b9f15239581b3650dcc349d005d631bcf6d7e5949dac",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "421c50a6eb8c8df4afc6b9f15239581b3650dcc349d005d631bcf6d7e5949dac",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-17-4-6-2-amorphea.csv",
+      "sha256_csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "1b8ea5fbab072e0f30b59f8136561e63ee39075b32ad5c9e01ae5a7595101638",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "1b8ea5fbab072e0f30b59f8136561e63ee39075b32ad5c9e01ae5a7595101638",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+      "sha256_csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "b09ebd1c2be62ab9ec2d7c9599165c3904fb66a59389d18e745298497d516be9",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "b09ebd1c2be62ab9ec2d7c9599165c3904fb66a59389d18e745298497d516be9",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-19-4-6-4-obazoa.csv",
+      "sha256_csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "ee06c73cf6554e68d542dc7067b607a76589899908dfa52ff6102c644083deba",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "ee06c73cf6554e68d542dc7067b607a76589899908dfa52ff6102c644083deba",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+      "sha256_csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "b56386eabe45aee947b1463f870340a6c1fa68f684cb5c1d06a5de0d4de06000",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "b56386eabe45aee947b1463f870340a6c1fa68f684cb5c1d06a5de0d4de06000",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-21-4-6-6-breviatea.csv",
+      "sha256_csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "437a048926580147e1967419097c208d3d0b65ba956600c541e1830cc43a940e",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "437a048926580147e1967419097c208d3d0b65ba956600c541e1830cc43a940e",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-22-4-6-7-opisthokonta.csv",
+      "sha256_csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "78d2182528da4348e3400f155556b3e79f090b50bdbe4255d47e9a66f8650a3f",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "78d2182528da4348e3400f155556b3e79f090b50bdbe4255d47e9a66f8650a3f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-23-4-6-8-holomycota.csv",
+      "sha256_csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "d56431fff02a8d198b0034247085435303aab1cdbb8e4fabb89b3d428a3be25f",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "d56431fff02a8d198b0034247085435303aab1cdbb8e4fabb89b3d428a3be25f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-24-4-6-9-holozoa.csv",
+      "sha256_csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "8574a45c95c486f3926cd85ed1e8f4c691b8b69bfe93c01cf5b17cd2f1d4a7e7",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "8574a45c95c486f3926cd85ed1e8f4c691b8b69bfe93c01cf5b17cd2f1d4a7e7",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+      "sha256_csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "1100f182cb5f45e5f983251495f64403e38eefa42f79d8954c51fb3038e3fb2c",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "1100f182cb5f45e5f983251495f64403e38eefa42f79d8954c51fb3038e3fb2c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+      "sha256_csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "b2cb62d599166c5d2c57081a276291ccc9fb51a23a3f540402989eeef1ec174b",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "b2cb62d599166c5d2c57081a276291ccc9fb51a23a3f540402989eeef1ec174b",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-27-4-6-12-corallochytrea.csv",
+      "sha256_csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "0a5600d74688c27b63cdab4476cd29dda2167b0c1c07a0a48522be31cf63aa32",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "0a5600d74688c27b63cdab4476cd29dda2167b0c1c07a0a48522be31cf63aa32",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+      "sha256_csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "931b32e611a198ced2b966a2a5c796d3e1a847891a73ce8ebad926d8930c6889",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "931b32e611a198ced2b966a2a5c796d3e1a847891a73ce8ebad926d8930c6889",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+      "sha256_csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "0276c970363c012a3510ea4895947d602bee8b68854cc5705fd3775b170dde88",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "0276c970363c012a3510ea4895947d602bee8b68854cc5705fd3775b170dde88",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv",
+      "sha256_csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "7558596548244710354c22773485651f3b762d0d79af1ad8d2760dd9a26e9156",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "7558596548244710354c22773485651f3b762d0d79af1ad8d2760dd9a26e9156",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-31-4-6-16-choanoflagellata.csv",
+      "sha256_csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "67cbd08c9b34393d43c6bbcd70227d7cb68db3af067ead091860c7b5c4accdcf",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "67cbd08c9b34393d43c6bbcd70227d7cb68db3af067ead091860c7b5c4accdcf",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/04/table-32-4-6-17-metazoa.csv",
+      "sha256_csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "939044fe5d450b71d7675fa706a21e89d848407b019aa98766a2833e957d0ce1",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "939044fe5d450b71d7675fa706a21e89d848407b019aa98766a2833e957d0ce1",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/04.csv",
+      "sha256_csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+      "rows": 264,
+      "columns": 12,
+      "sha256_matrix": "47dadcd36b766141bf14a4766a9c8d9acfc4ad224fbe70c4d28b2ec8c739022c",
+      "observed_rows": 264,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "47dadcd36b766141bf14a4766a9c8d9acfc4ad224fbe70c4d28b2ec8c739022c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv",
+      "sha256_csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+      "rows": 2,
+      "columns": 10,
+      "sha256_matrix": "9c567d4916fb901dd7acfc29501c5cb2258905cf311691bbc45a63ffa9b9f000",
+      "observed_rows": 2,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "9c567d4916fb901dd7acfc29501c5cb2258905cf311691bbc45a63ffa9b9f000",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv",
+      "sha256_csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+      "rows": 18,
+      "columns": 11,
+      "sha256_matrix": "cdbdcc902642ac8c5eaf6ec30641dc9cdb79f753e7c7aeabde84015e02d6109a",
+      "observed_rows": 18,
+      "observed_columns": [
+        11
+      ],
+      "sha256_observed_matrix": "cdbdcc902642ac8c5eaf6ec30641dc9cdb79f753e7c7aeabde84015e02d6109a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv",
+      "sha256_csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+      "rows": 15,
+      "columns": 5,
+      "sha256_matrix": "69f15c3986e66bfd4ab6165a56ddfc19c84a19554e0c397587b685cdce4c5b61",
+      "observed_rows": 15,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "69f15c3986e66bfd4ab6165a56ddfc19c84a19554e0c397587b685cdce4c5b61",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/05.csv",
+      "sha256_csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+      "rows": 64,
+      "columns": 12,
+      "sha256_matrix": "fe5459d1ff2379b6e60d37315df119f65b12ef39106fbbfd7ed22b156a70e5ce",
+      "observed_rows": 64,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "fe5459d1ff2379b6e60d37315df119f65b12ef39106fbbfd7ed22b156a70e5ce",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv",
+      "sha256_csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+      "rows": 16,
+      "columns": 10,
+      "sha256_matrix": "56885a0f848507ea4178fbc106e99cf125ffb4be16fe3964e79ecfc50d48cf54",
+      "observed_rows": 16,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "56885a0f848507ea4178fbc106e99cf125ffb4be16fe3964e79ecfc50d48cf54",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/06.csv",
+      "sha256_csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+      "rows": 37,
+      "columns": 12,
+      "sha256_matrix": "7b41a5cf0e79e0d3c329e16dc7ffc637a02000ce1889a3944686e9d7f41f1fe4",
+      "observed_rows": 37,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "7b41a5cf0e79e0d3c329e16dc7ffc637a02000ce1889a3944686e9d7f41f1fe4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv",
+      "sha256_csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+      "rows": 11,
+      "columns": 6,
+      "sha256_matrix": "7e6bfac06b9ac92442b8b64695094dc6f0297b76333da6d9b5c8def82e4036fb",
+      "observed_rows": 11,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "7e6bfac06b9ac92442b8b64695094dc6f0297b76333da6d9b5c8def82e4036fb",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv",
+      "sha256_csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+      "rows": 8,
+      "columns": 7,
+      "sha256_matrix": "36ad341c1e572b7c03898cb3066fcae8845a4d5f1a1ec87eea85eea3c0ffcc92",
+      "observed_rows": 8,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "36ad341c1e572b7c03898cb3066fcae8845a4d5f1a1ec87eea85eea3c0ffcc92",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/07/table-38c-7-4-episodios-globales.csv",
+      "sha256_csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+      "rows": 6,
+      "columns": 7,
+      "sha256_matrix": "8abd98d1dd39d655ee2f8286f1262cb3c0c6af37bc28095ea0a3cc750f9bfd9a",
+      "observed_rows": 6,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "8abd98d1dd39d655ee2f8286f1262cb3c0c6af37bc28095ea0a3cc750f9bfd9a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/07.csv",
+      "sha256_csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+      "rows": 59,
+      "columns": 12,
+      "sha256_matrix": "ae7fa0c552efafc725ac189a1c18df034099e6cfc948015bce3929ced6c964f3",
+      "observed_rows": 59,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "ae7fa0c552efafc725ac189a1c18df034099e6cfc948015bce3929ced6c964f3",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv",
+      "sha256_csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+      "rows": 27,
+      "columns": 7,
+      "sha256_matrix": "372345d457cf93dd2c44567b7ba7a010b2414cd1e9b46b5200ba5f9d8c84df0c",
+      "observed_rows": 27,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "372345d457cf93dd2c44567b7ba7a010b2414cd1e9b46b5200ba5f9d8c84df0c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv",
+      "sha256_csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+      "rows": 27,
+      "columns": 6,
+      "sha256_matrix": "e0ebcdea0b9de05d0557547453cbcfd1f2bdc359679b7706720f6ff10154d21a",
+      "observed_rows": 27,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "e0ebcdea0b9de05d0557547453cbcfd1f2bdc359679b7706720f6ff10154d21a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/08/table-40b-8-5-virus-gigantes.csv",
+      "sha256_csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+      "rows": 5,
+      "columns": 7,
+      "sha256_matrix": "6e907844a60345018f204c40c2d201b7793a1ccfc08c0c88d339712d3af41db5",
+      "observed_rows": 5,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "6e907844a60345018f204c40c2d201b7793a1ccfc08c0c88d339712d3af41db5",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/08.csv",
+      "sha256_csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+      "rows": 122,
+      "columns": 12,
+      "sha256_matrix": "098c5880af2cf785356d8eb60769a6f5c2531f7e1c703cd34f0d774b8c14641b",
+      "observed_rows": 122,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "098c5880af2cf785356d8eb60769a6f5c2531f7e1c703cd34f0d774b8c14641b",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv",
+      "sha256_csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+      "rows": 12,
+      "columns": 6,
+      "sha256_matrix": "77912c7070e58fd95e949ead9d95c6307364abc1750965cc73793c00734c2a69",
+      "observed_rows": 12,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "77912c7070e58fd95e949ead9d95c6307364abc1750965cc73793c00734c2a69",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+      "sha256_csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "rows": 20,
+      "columns": 10,
+      "sha256_matrix": "2f67a1e397eeb16599f76eee82e3ab8e54642f2984ae7f0dfec4c9209e26cf59",
+      "observed_rows": 20,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "2f67a1e397eeb16599f76eee82e3ab8e54642f2984ae7f0dfec4c9209e26cf59",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv",
+      "sha256_csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+      "rows": 8,
+      "columns": 6,
+      "sha256_matrix": "c82542b8eb2e6675bd4bb01d97cd59034ce6ebcf6f724e246b16f6bbdb4d37ea",
+      "observed_rows": 8,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "c82542b8eb2e6675bd4bb01d97cd59034ce6ebcf6f724e246b16f6bbdb4d37ea",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv",
+      "sha256_csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+      "rows": 9,
+      "columns": 6,
+      "sha256_matrix": "20178dcce6aa77410296ac555d348e0fda67202711caae4de4c63af15721c91c",
+      "observed_rows": 9,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "20178dcce6aa77410296ac555d348e0fda67202711caae4de4c63af15721c91c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/09.csv",
+      "sha256_csv": "02c6c5154c66ee3d20413f50806e20e1b2a6251dd83b6b66cfd93def66ff2844",
+      "rows": 252,
+      "columns": 12,
+      "sha256_matrix": "58113034732297e1b60d5da6f3519eb0f89468d8d4115352f7aba52ecb47b4cf",
+      "observed_rows": 252,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "58113034732297e1b60d5da6f3519eb0f89468d8d4115352f7aba52ecb47b4cf",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv",
+      "sha256_csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+      "rows": 24,
+      "columns": 9,
+      "sha256_matrix": "182567a6b0db40f66b0a9b7363830a35a9d499617e95c17cb36e23dff5e4fd4f",
+      "observed_rows": 24,
+      "observed_columns": [
+        9
+      ],
+      "sha256_observed_matrix": "182567a6b0db40f66b0a9b7363830a35a9d499617e95c17cb36e23dff5e4fd4f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/10.csv",
+      "sha256_csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+      "rows": 138,
+      "columns": 12,
+      "sha256_matrix": "9e20bb32f9f1257266c891c7da39823b44fa87746a855706ec39449c05400dbc",
+      "observed_rows": 138,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "9e20bb32f9f1257266c891c7da39823b44fa87746a855706ec39449c05400dbc",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv",
+      "sha256_csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+      "rows": 9,
+      "columns": 5,
+      "sha256_matrix": "dbe3d584c31d5989af6fb62b87386af2ec84797b85da12b25ef144728a49c3e4",
+      "observed_rows": 9,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "dbe3d584c31d5989af6fb62b87386af2ec84797b85da12b25ef144728a49c3e4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/11.csv",
+      "sha256_csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+      "rows": 123,
+      "columns": 12,
+      "sha256_matrix": "721e9bbe87e6ed79817383e68a2e6889727912ce3f337fcdf4f0a1fb4fb1bc4a",
+      "observed_rows": 123,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "721e9bbe87e6ed79817383e68a2e6889727912ce3f337fcdf4f0a1fb4fb1bc4a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv",
+      "sha256_csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+      "rows": 5,
+      "columns": 7,
+      "sha256_matrix": "5a86beb68c4346fe4ad70c8e0b62e5e9b0b473008bf745cf9f6e046bfd26695c",
+      "observed_rows": 5,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "5a86beb68c4346fe4ad70c8e0b62e5e9b0b473008bf745cf9f6e046bfd26695c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv",
+      "sha256_csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+      "rows": 10,
+      "columns": 7,
+      "sha256_matrix": "abdb0a4f5c68d2afa2adb2fc090ca218c45fbdb75a10d7c1bf6eb3993f646e42",
+      "observed_rows": 10,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "abdb0a4f5c68d2afa2adb2fc090ca218c45fbdb75a10d7c1bf6eb3993f646e42",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
+      "sha256_csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+      "rows": 9,
+      "columns": 7,
+      "sha256_matrix": "23bb5779091515f70ae4e4256d65259219f4eb2aec6043d9619d18216a7f7fa8",
+      "observed_rows": 9,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "23bb5779091515f70ae4e4256d65259219f4eb2aec6043d9619d18216a7f7fa8",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+      "sha256_csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "rows": 13,
+      "columns": 9,
+      "sha256_matrix": "0deb9ab0f0c27a7f61511d72aa4319b62f384b87f0f3b57f4d24e61dbaaf950a",
+      "observed_rows": 13,
+      "observed_columns": [
+        9
+      ],
+      "sha256_observed_matrix": "0deb9ab0f0c27a7f61511d72aa4319b62f384b87f0f3b57f4d24e61dbaaf950a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/12.csv",
+      "sha256_csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "rows": 136,
+      "columns": 12,
+      "sha256_matrix": "ae2ecf19ba9e36a608c98855d7d9a37ace8f853d2f8606e83b8d37c4adfd3357",
+      "observed_rows": 136,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "ae2ecf19ba9e36a608c98855d7d9a37ace8f853d2f8606e83b8d37c4adfd3357",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv",
+      "sha256_csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+      "rows": 13,
+      "columns": 7,
+      "sha256_matrix": "b6521045a652cddc7784933b56a8d3276dd8fd8b4fe2e489d4f705705cc0346d",
+      "observed_rows": 13,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "b6521045a652cddc7784933b56a8d3276dd8fd8b4fe2e489d4f705705cc0346d",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv",
+      "sha256_csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+      "rows": 9,
+      "columns": 7,
+      "sha256_matrix": "8d4a9b1fe8f42b9c864902143b9b2582aac8677a5ef4d98d6a4bffee79ea4222",
+      "observed_rows": 9,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "8d4a9b1fe8f42b9c864902143b9b2582aac8677a5ef4d98d6a4bffee79ea4222",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv",
+      "sha256_csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+      "rows": 7,
+      "columns": 6,
+      "sha256_matrix": "c6dd84e8709ce7e078a38ed437e9a69ab16f756b49185bc11a1de6b6aa7d11a9",
+      "observed_rows": 7,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "c6dd84e8709ce7e078a38ed437e9a69ab16f756b49185bc11a1de6b6aa7d11a9",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv",
+      "sha256_csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+      "rows": 13,
+      "columns": 6,
+      "sha256_matrix": "d9cce16fd77f46c170f01fa3806c760604554b8a7fec862b1b823db86aab0ed4",
+      "observed_rows": 13,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "d9cce16fd77f46c170f01fa3806c760604554b8a7fec862b1b823db86aab0ed4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/13.csv",
+      "sha256_csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+      "rows": 64,
+      "columns": 12,
+      "sha256_matrix": "46dfdcd89a57e29c62876daf530e4dd6c5037a19463a458371343a5b742cdd79",
+      "observed_rows": 64,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "46dfdcd89a57e29c62876daf530e4dd6c5037a19463a458371343a5b742cdd79",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/14/table-56-14-8-1-codigos.csv",
+      "sha256_csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+      "rows": 10,
+      "columns": 5,
+      "sha256_matrix": "5a4f6f79f794ab8e1ea7d451eef269fcc668e1bfb2dcd1d7ecbfbcdecbe21857",
+      "observed_rows": 10,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "5a4f6f79f794ab8e1ea7d451eef269fcc668e1bfb2dcd1d7ecbfbcdecbe21857",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv",
+      "sha256_csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+      "rows": 18,
+      "columns": 7,
+      "sha256_matrix": "ed19df57e819a1e63b345e3e3ebb1b6a1890029c0a37e76c8098efde461d13e4",
+      "observed_rows": 18,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "ed19df57e819a1e63b345e3e3ebb1b6a1890029c0a37e76c8098efde461d13e4",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv",
+      "sha256_csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+      "rows": 11,
+      "columns": 5,
+      "sha256_matrix": "2e35b8df0fee14ef703f3802c20e99614c327c3ce590b9237b14cf8d27aa8637",
+      "observed_rows": 11,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "2e35b8df0fee14ef703f3802c20e99614c327c3ce590b9237b14cf8d27aa8637",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "sha256_csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+      "rows": 21,
+      "columns": 8,
+      "sha256_matrix": "70c449df998915557d7a0adb1e5317d009cbe5626ff964bc825514161f6f949a",
+      "observed_rows": 21,
+      "observed_columns": [
+        8
+      ],
+      "sha256_observed_matrix": "70c449df998915557d7a0adb1e5317d009cbe5626ff964bc825514161f6f949a",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/14.csv",
+      "sha256_csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+      "rows": 219,
+      "columns": 12,
+      "sha256_matrix": "9384230045ae619c2ea78ff0b1e0c019bd1538754e061f09d7f7ef974f916ba6",
+      "observed_rows": 219,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "9384230045ae619c2ea78ff0b1e0c019bd1538754e061f09d7f7ef974f916ba6",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv",
+      "sha256_csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+      "rows": 8,
+      "columns": 7,
+      "sha256_matrix": "1134343997e3237ed4142c6f50260825332d9edba849ed4beed990819d0cbd3f",
+      "observed_rows": 8,
+      "observed_columns": [
+        7
+      ],
+      "sha256_observed_matrix": "1134343997e3237ed4142c6f50260825332d9edba849ed4beed990819d0cbd3f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv",
+      "sha256_csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+      "rows": 7,
+      "columns": 6,
+      "sha256_matrix": "37d8f406871da72b9d398ccd4a3a4b4082bb2e4d893f8e7b46f5e74661d65d9b",
+      "observed_rows": 7,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "37d8f406871da72b9d398ccd4a3a4b4082bb2e4d893f8e7b46f5e74661d65d9b",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv",
+      "sha256_csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+      "rows": 7,
+      "columns": 6,
+      "sha256_matrix": "a596c74d72ab71f0ea27d25e101bf811142148b26b7d16806ef24a2a46acff91",
+      "observed_rows": 7,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "a596c74d72ab71f0ea27d25e101bf811142148b26b7d16806ef24a2a46acff91",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/afirmaciones/15.csv",
+      "sha256_csv": "231df6e7676c5b7f32e69b73addffaf52a7254189f9143b7c07c6531b3937ca7",
+      "rows": 928,
+      "columns": 12,
+      "sha256_matrix": "fc729ef9ae1b685dde4c676fb0a8370b68980f365b4fb78f6af3a2a0e796cf31",
+      "observed_rows": 928,
+      "observed_columns": [
+        12
+      ],
+      "sha256_observed_matrix": "fc729ef9ae1b685dde4c676fb0a8370b68980f365b4fb78f6af3a2a0e796cf31",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
+      "sha256_csv": "605b3bbbaaf376f2c79bff0a70d995b07705d1f74ea6e179d8681d168b70747d",
+      "rows": 82,
+      "columns": 6,
+      "sha256_matrix": "62afe0a4dd823e083450fe792394a038f3dd7a61a8421610be3fbf1efbe0cf9b",
+      "observed_rows": 82,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "62afe0a4dd823e083450fe792394a038f3dd7a61a8421610be3fbf1efbe0cf9b",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+      "sha256_csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+      "rows": 9,
+      "columns": 6,
+      "sha256_matrix": "bb7ace58f98545ee429211eff93ffd15431fb4ab126a95f2b08bfacbe9725333",
+      "observed_rows": 9,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "bb7ace58f98545ee429211eff93ffd15431fb4ab126a95f2b08bfacbe9725333",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+      "sha256_csv": "acee2ecc4b81bf3eafb1651bd7f22b85493a66d2fecb3aa2a106cc5e08af82e0",
+      "rows": 20,
+      "columns": 5,
+      "sha256_matrix": "257c0402612d8c82a1062f43b3895fb034941b53a481a1e2823e3fa274d4c7fa",
+      "observed_rows": 20,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "257c0402612d8c82a1062f43b3895fb034941b53a481a1e2823e3fa274d4c7fa",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "sha256_csv": "90c06ec0039e250e5dd086af409f6d47b766ecd23f135421a456112a56066495",
+      "rows": 145,
+      "columns": 6,
+      "sha256_matrix": "25b7d06b6493738e5a1909f227861ea50a12c3bd4f40e9897a1966c3408418a9",
+      "observed_rows": 145,
+      "observed_columns": [
+        6
+      ],
+      "sha256_observed_matrix": "25b7d06b6493738e5a1909f227861ea50a12c3bd4f40e9897a1966c3408418a9",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "sha256_csv": "a7e935a9357e495f0513dfc8ca24ed13d37a158eebee665e96b87dca5f2ed745",
+      "rows": 87,
+      "columns": 5,
+      "sha256_matrix": "b0015368e23937c400e55784378bbfac29815d5c9024c6a602c179797b633f9c",
+      "observed_rows": 87,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "b0015368e23937c400e55784378bbfac29815d5c9024c6a602c179797b633f9c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv",
+      "sha256_csv": "02a51cef4da75470c56440ec35dc303b0343efdee7c4a1bec5257ee6fc5f4b85",
+      "rows": 13,
+      "columns": 5,
+      "sha256_matrix": "407798cb81c42aaa26b06388ee00f71fea6a50cb9803c5b0feceae27844db9da",
+      "observed_rows": 13,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "407798cb81c42aaa26b06388ee00f71fea6a50cb9803c5b0feceae27844db9da",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv",
+      "sha256_csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+      "rows": 10,
+      "columns": 5,
+      "sha256_matrix": "84b0fc54b3db6b1de6e6fe04290649fce1d2f3f9f1a14252f59455c23c334096",
+      "observed_rows": 10,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "84b0fc54b3db6b1de6e6fe04290649fce1d2f3f9f1a14252f59455c23c334096",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "sha256_csv": "10ec1c4865f9565fcc2054b884b52bd9b8ca89745df2b1ef01d121bef50ffa4a",
+      "rows": 71,
+      "columns": 4,
+      "sha256_matrix": "b4de5110e10345a20bc654912449228d034ca90e93a1bbc21ff7e207f3d85b52",
+      "observed_rows": 71,
+      "observed_columns": [
+        4
+      ],
+      "sha256_observed_matrix": "b4de5110e10345a20bc654912449228d034ca90e93a1bbc21ff7e207f3d85b52",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "sha256_csv": "600c95489b2fca453ac899d2ed2851430ba2b490f903566f65caa9a4fde5c2b5",
+      "rows": 69,
+      "columns": 5,
+      "sha256_matrix": "d216f23815a93e4c5225a3c991fcdaaf832ef48f55a3bde848aab42040c53ba5",
+      "observed_rows": 69,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "d216f23815a93e4c5225a3c991fcdaaf832ef48f55a3bde848aab42040c53ba5",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/A_fuentes.csv",
+      "sha256_csv": "84da29fed8fe26e12aad8ea5c0125ea57b17933e9814bbea8c474b01297623e3",
+      "rows": 526,
+      "columns": 9,
+      "sha256_matrix": "33a45e4906fb4f1f5744a5c84354524b67fb88e1f087c2287cc1350d6c239457",
+      "observed_rows": 526,
+      "observed_columns": [
+        9
+      ],
+      "sha256_observed_matrix": "33a45e4906fb4f1f5744a5c84354524b67fb88e1f087c2287cc1350d6c239457",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/B_entidades.csv",
+      "sha256_csv": "7efee125223b9d7a487fd9e87f24fa3d16f0ae05d9d9251953430564ca8e8dde",
+      "rows": 1504,
+      "columns": 5,
+      "sha256_matrix": "b3b981bcfa6dc60b352998793ed2f9be484ca306594a7172a42ac161bc294eea",
+      "observed_rows": 1504,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "b3b981bcfa6dc60b352998793ed2f9be484ca306594a7172a42ac161bc294eea",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/C_eventos.csv",
+      "sha256_csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+      "rows": 109,
+      "columns": 8,
+      "sha256_matrix": "5040337bb677379c653c346bb7d1a7571ca129b2bf138ac6fcd344d947778b8f",
+      "observed_rows": 109,
+      "observed_columns": [
+        8
+      ],
+      "sha256_observed_matrix": "5040337bb677379c653c346bb7d1a7571ca129b2bf138ac6fcd344d947778b8f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/D_fechas.csv",
+      "sha256_csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+      "rows": 217,
+      "columns": 10,
+      "sha256_matrix": "4803910e8587708dcfc0ce515578820a38d8385c4c3b0ca218f9195a03c8917c",
+      "observed_rows": 217,
+      "observed_columns": [
+        10
+      ],
+      "sha256_observed_matrix": "4803910e8587708dcfc0ce515578820a38d8385c4c3b0ca218f9195a03c8917c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/E_hipotesis.csv",
+      "sha256_csv": "dd8b9cde02d1010109866c3de48c02de581d26d05cb400f9f3449d07499ff1bd",
+      "rows": 83,
+      "columns": 8,
+      "sha256_matrix": "8e20ef6ba3fe9f912826e5bbbc3809bb254cfcf3ba2a60aabc5995d041fbbee9",
+      "observed_rows": 83,
+      "observed_columns": [
+        8
+      ],
+      "sha256_observed_matrix": "8e20ef6ba3fe9f912826e5bbbc3809bb254cfcf3ba2a60aabc5995d041fbbee9",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/F_magnitudes.csv",
+      "sha256_csv": "41bdf04bcdff1072a51b5f6f85f94e1281adfe64b8b1d23660fe1f119b516ada",
+      "rows": 601,
+      "columns": 9,
+      "sha256_matrix": "479abea30961a11bd1d6531fbcfa329cdc5864dedaf5ab829a3f3f41a848d92c",
+      "observed_rows": 601,
+      "observed_columns": [
+        9
+      ],
+      "sha256_observed_matrix": "479abea30961a11bd1d6531fbcfa329cdc5864dedaf5ab829a3f3f41a848d92c",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/G_material_no_encajado.csv",
+      "sha256_csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+      "rows": 24,
+      "columns": 5,
+      "sha256_matrix": "38c9051458c4347e697aaa78d49879d492653632f2854c380f11f7998a49309f",
+      "observed_rows": 24,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "38c9051458c4347e697aaa78d49879d492653632f2854c380f11f7998a49309f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/apendices/H_recuento_control.csv",
+      "sha256_csv": "b26ff87faeb7519a3bef05664e4c5087212f8363d4bf29d8a05fcd1591e81b8a",
+      "rows": 26,
+      "columns": 2,
+      "sha256_matrix": "cdc7687ccb87e5f5e799231f077f329fb8eab8206251f243aa6bd584891ce197",
+      "observed_rows": 26,
+      "observed_columns": [
+        2
+      ],
+      "sha256_observed_matrix": "cdc7687ccb87e5f5e799231f077f329fb8eab8206251f243aa6bd584891ce197",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv",
+      "sha256_csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+      "rows": 7,
+      "columns": 3,
+      "sha256_matrix": "0ba2aec327f29cb81a6a3baebab3bc8267deb84c370c995f62a895b597fc1b3f",
+      "observed_rows": 7,
+      "observed_columns": [
+        3
+      ],
+      "sha256_observed_matrix": "0ba2aec327f29cb81a6a3baebab3bc8267deb84c370c995f62a895b597fc1b3f",
+      "result": "CONFORME"
+    },
+    {
+      "path": "data/tablas/19/claims-19.csv",
+      "sha256_csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+      "rows": 57,
+      "columns": 5,
+      "sha256_matrix": "6ae7cdd2b11ce51cfd0e6a6b61b79a055966065b260e7af5aca0c2870162ade0",
+      "observed_rows": 57,
+      "observed_columns": [
+        5
+      ],
+      "sha256_observed_matrix": "6ae7cdd2b11ce51cfd0e6a6b61b79a055966065b260e7af5aca0c2870162ade0",
+      "result": "CONFORME"
+    }
+  ]
+}

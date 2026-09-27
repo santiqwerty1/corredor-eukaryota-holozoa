@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "claim_id": "C-2709",
+  "disposicion_sha256": "68b732543469c480a44460d8ea2b80a66c2b65867df9d363bcde63177f435673",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T03:20:10Z",
+  "dictamen": "CONFORME",
+  "independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "cobertura": {
+    "EGT_candidata_y_denominador": [
+      0,
+      1
+    ],
+    "hipotesis_captacion_metabolitos": [
+      2
+    ],
+    "hipotesis_captacion_enzimas": [
+      2
+    ],
+    "limite_retorno_productos_EGT": [
+      0,
+      1,
+      2
+    ]
+  },
+  "pasajes": [
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "JATS p[@id=Par14]",
+      "fragmento_control": "only 8 genes likely derived from the endosymbiont",
+      "sha256_pasaje": "037d3c0865683139cc605db47b2d0c5296779b3862fbed42627e32b966fe3c82"
+    },
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "Methods, Phylogenomics, JATS sec[@id=Sec14]",
+      "fragmento_control": "trees were inferred from the final curated alignments using RAxML",
+      "sha256_pasaje": "6dcb4d2616f51b2ad77ff18dce4b2d64bae41fa110f767163384f4af43bcfe30"
+    },
+    {
+      "artefacto": "fuentes/S240 [2017] Genome sequencing reveals metabolic and cellular interdependence in an.xml",
+      "sha256_artefacto": "f48e9fa6e660c47322028ce349c68cc77429c9a45e18269023ab033a00068ad7",
+      "localizador": "JATS p[@id=Par16]",
+      "fragmento_control": "we speculate that the endocytic vesicles of Perkinsela sp. serve to internalize amoeba-derived metabolites",
+      "sha256_pasaje": "5381c22ab484ba510582d936de2442b518ca82e95db5609060eb7cc1ca81854d"
+    }
+  ],
+  "limitaciones": "8 son genes candidatos entre3846alineamientos interpretables, no eventos observados. Metabolitos y posibles enzimas son hipótesis explícitas, no importación demostrada ni retorno identificado de productosEGT. El límite expresa lo no adjudicado, no ausencia universal. Revisión de disposición prospectiva exacta, no de integración ejecutada ni de todo el paquete. Fuente, Csoporte, identidad y texto han de coincidir al integrar. No firma global ni censo integral. Evidencia propia: evidencia_independiente_s240_s352_v2_2026-09-27.json; figuras leídas, no aprobación por hashes."
+}

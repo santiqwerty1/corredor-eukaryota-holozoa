@@ -1,0 +1,208 @@
+{
+  "ejecuciones": [
+    {
+      "ruta": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
+      "fila": {
+        "clave": "BN-114",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Ficha de hábitat o ecología por cada uno de los veinte taxones de S49 tabla 2 y tratamiento ecológico de Alphaproteobacteria comparable al de Obazoa.",
+        "términos exactos o n/a": "`rg -n -i \"Alphaproteobacteria|Tistrella|Elioraea|Nitrospirillum|Caenispirillum|Oceanibacterium|Iodidimonas|Kordiimonas|Odyssella|Camelimonas|Tepidicaulis|Hansschlegelia|Microvirga|Methylocella|Aestuariivirga\" fuentes/S49* docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md data/afirmaciones/02.csv data/tablas/02`",
+        "resultado": "Se recuperaron los veinte taxones y siete criterios de S49 tabla 2, y los catorce sistemas metabólicos de S49 tabla 3. La tabla 2 no contiene una ficha de hábitat por taxón; solo se transcribe el hábitat explícito de Iodidimonas muriae localizado en la referencia taxonómica citada. Las celdas vacías se conservan como no consta, no como ausencia.",
+        "filas relacionadas": "C-149–C-160; C-1956; C-1967–C-1969; S45–S49"
+      },
+      "huella_fila_bn_sha256": "2efbdca20a9e0dfcb52b7a0efe2d77cc0fb09aa88d4f3a078fbc9e123d7d83e3",
+      "consulta_id": "BN-114-Q1",
+      "argv_revisado_manualmente": [
+        "rg",
+        "-n",
+        "-i",
+        "Alphaproteobacteria|Tistrella|Elioraea|Nitrospirillum|Caenispirillum|Oceanibacterium|Iodidimonas|Kordiimonas|Odyssella|Camelimonas|Tepidicaulis|Hansschlegelia|Microvirga|Methylocella|Aestuariivirga",
+        "fuentes/S49 [2023] Multiple approaches of cellular metabolism define the bacterial ancest.xml",
+        "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "data/afirmaciones/02.csv",
+        "data/tablas/02"
+      ],
+      "clase_fecha": "REINSPECCION",
+      "inicio_utc": "2026-09-26T22:09:27Z",
+      "fin_utc": "2026-09-26T22:09:27Z",
+      "archivos_sha256": {
+        "fuentes/S49 [2023] Multiple approaches of cellular metabolism define the bacterial ancest.xml": "fc9cf337b6ae3ad0213f36507dfd584b03c2dff1c299bca9e32fe3f5d67f81ea",
+        "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+        "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+        "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+        "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+        "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+        "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+        "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+        "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+        "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8"
+      },
+      "returncode": 0,
+      "lineas_devuelta": 73,
+      "stdout_sha256": "c94a775e9c3e205782d8d2d61dce45444e7c8ab1169afd0ec5a2cd853538ac98",
+      "stdout_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN-114-Q1-rg.txt",
+      "stderr": "",
+      "limite": "Búsqueda textual local; presencia de una línea no acredita todos sus campos ni la ausencia de coincidencia demuestra inexistencia científica."
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+      "fila": {
+        "clave": "BN-115",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos metodológicos o mecanísticos no publicados en las afirmaciones canónicas recuperadas para los mapas históricos y algunos modelos de eucariogénesis o de origen nuclear; para H22, participantes celulares, socio taxonómico, intercambio metabólico, dirección del intercambio y ambiente.",
+        "términos exactos": "`rg -n -i \"Woese|Lake|Cox|Da Cunha|Spang|inside-out|protocoat|modelo E3|flujo inverso|hipótesis viral\" data/afirmaciones/02.csv data/afirmaciones/03.csv data/tablas/02 data/tablas/03 docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md docs/secciones/004-03-3-eucariogenesis.md`; inspección nominal de `fuentes/S97*.xml` y `fuentes/S99*.xml` para `organism|partner|metabolite|metabolic exchange|environment` en el contexto de H22",
+        "resultado": "La búsqueda interna recuperó matrices, modelos, muestreos o apoyos parciales, pero no una estadística de soporte para Woese, Lake, Cox o Spang ni ambiente/intercambio completo para H14, H15 y H17 ni una predicción discriminante explícita para H19. S97 y S99 describen arquitectura, homología, duplicación y divergencia de coatómeros; no se localizaron valores para los cinco campos de asociación celular de H22, y las menciones generales a organismos o ambiente no se promovieron a esos campos.",
+        "filas o fuente": "C-017–C-042; C-292–C-357; S06–S12; S88–S99"
+      },
+      "huella_fila_bn_sha256": "df7b6d77536662ccaa74391869179186d6d69d77507c5e6da280accbec433304",
+      "consulta_id": "BN-115-Q1",
+      "argv_revisado_manualmente": [
+        "rg",
+        "-n",
+        "-i",
+        "Woese|Lake|Cox|Da Cunha|Spang|inside-out|protocoat|modelo E3|flujo inverso|hipótesis viral",
+        "data/afirmaciones/02.csv",
+        "data/afirmaciones/03.csv",
+        "data/tablas/02",
+        "data/tablas/03",
+        "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+        "docs/secciones/004-03-3-eucariogenesis.md"
+      ],
+      "clase_fecha": "REINSPECCION",
+      "inicio_utc": "2026-09-26T22:09:27Z",
+      "fin_utc": "2026-09-26T22:09:27Z",
+      "archivos_sha256": {
+        "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+        "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+        "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+        "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+        "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+        "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+        "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+        "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+        "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+        "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+        "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+        "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+        "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+        "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+        "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+        "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+        "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0"
+      },
+      "returncode": 0,
+      "lineas_devuelta": 199,
+      "stdout_sha256": "01907257dae3cd9d492dc0c9fc4f1cf79d80eec3cb167d5ed7c52d82d0a2151f",
+      "stdout_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN-115-Q1-rg.txt",
+      "stderr": "",
+      "limite": "Búsqueda textual local; presencia de una línea no acredita todos sus campos ni la ausencia de coincidencia demuestra inexistencia científica."
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
+      "fila": {
+        "clave": "BN-115",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos metodológicos o mecanísticos no publicados en las afirmaciones canónicas recuperadas para los mapas históricos y algunos modelos de eucariogénesis o de origen nuclear; para H22, participantes celulares, socio taxonómico, intercambio metabólico, dirección del intercambio y ambiente.",
+        "términos exactos": "`rg -n -i \"Woese|Lake|Cox|Da Cunha|Spang|inside-out|protocoat|modelo E3|flujo inverso|hipótesis viral\" data/afirmaciones/02.csv data/afirmaciones/03.csv data/tablas/02 data/tablas/03 docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md docs/secciones/004-03-3-eucariogenesis.md`; inspección nominal de `fuentes/S97*.xml` y `fuentes/S99*.xml` para `organism|partner|metabolite|metabolic exchange|environment` en el contexto de H22",
+        "resultado": "La búsqueda interna recuperó matrices, modelos, muestreos o apoyos parciales, pero no una estadística de soporte para Woese, Lake, Cox o Spang ni ambiente/intercambio completo para H14, H15 y H17 ni una predicción discriminante explícita para H19. S97 y S99 describen arquitectura, homología, duplicación y divergencia de coatómeros; no se localizaron valores para los cinco campos de asociación celular de H22, y las menciones generales a organismos o ambiente no se promovieron a esos campos.",
+        "filas o fuente": "C-017–C-042; C-292–C-357; S06–S12; S88–S99"
+      },
+      "huella_fila_bn_sha256": "df7b6d77536662ccaa74391869179186d6d69d77507c5e6da280accbec433304",
+      "consulta_id": "BN-115-Q2",
+      "argv_revisado_manualmente": [
+        "rg",
+        "-n",
+        "-i",
+        "organism|partner|metabolite|metabolic exchange|environment",
+        "fuentes/S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.xml",
+        "fuentes/S99 [2022] Coatomer in the universe of cellular complexity.xml"
+      ],
+      "clase_fecha": "REINSPECCION",
+      "inicio_utc": "2026-09-26T22:09:27Z",
+      "fin_utc": "2026-09-26T22:09:27Z",
+      "archivos_sha256": {
+        "fuentes/S97 [2004] Components of coated vesicles and nuclear pore complexes share a commo.xml": "b671adee617bf211acb6a0edbdf8b7e0de5277578b4886e7f7b243365966bf5c",
+        "fuentes/S99 [2022] Coatomer in the universe of cellular complexity.xml": "a3b85e6823ff2db5be02edac52d029e5fe82c28c6ebd021ba0290d67ea0a939b"
+      },
+      "returncode": 0,
+      "lineas_devuelta": 3,
+      "stdout_sha256": "140f44ffa1599572d7b8975d69efaa57b763ce25b90f34fa43d8985e7b4bf17f",
+      "stdout_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN-115-Q2-rg.txt",
+      "stderr": "",
+      "limite": "Búsqueda textual local; presencia de una línea no acredita todos sus campos ni la ausencia de coincidencia demuestra inexistencia científica."
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "fila": {
+        "clave": "BN-118",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos residuales de ecología, alimentación, hospedador o socio y ciclo para cada una de las 26 entradas organismales de table-40; señal, reversión y coste de respuestas transitorias; y aparición o pérdida de cada modo trófico en cada nodo Eukaryota→Metazoa.",
+        "términos exactos": "`rg -n -i \"Monosiga|Salpingoeca|Choanoeca|Capsaspora|Ministeria|Sphaeroforma|Creolimax|Abeoforma|Pirum|Ichthyophonus|Corallochytrium|Syssomonas|Pigoraptor|Tunicaraptor|Lenisia|Pygsuia|Thecamonas|Breviata|Fonticula|Nuclearia|Rozella|Rhizophydium|Microsporidia|Dictyostelium|Entamoeba|Pelomyxa|Mastigamoeba\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`; `rg -n -i \"Eukaryota|Amorphea|Amoebozoa|Obazoa|Apusomonadida|Breviatea|Opisthokonta|Holomycota|Holozoa|Ichthyosporea|Pluriformea|Corallochytrea|Filasterea|Filozoa|Choanozoa|Choanoflagellata|Metazoa|bacterivor|depred|parasit|osmotrof|fagotrof|aliment\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`",
+        "resultado": "La consulta nominal cubrió las 26 entradas organismales y los 17 nodos del corredor. Recuperó campos positivos parciales por organismo y modos tróficos en ramas vivientes, pero no todos los campos por cada entrada ni una reconstrucción publicada homogénea de aparición o pérdida de cada modo en cada nodo. BN-083 y BN-101 acotan costes y retirada; la ausencia no se convirtió en estado ancestral.",
+        "filas relacionadas": "C-851–C-971; C-934–C-955; BN-083; BN-101; S129; S132; S147; S200–S215; S468–S479; S506"
+      },
+      "huella_fila_bn_sha256": "31450a2ce604391395ff61c68953802d62ff0a29e2853c8b5a9cccb6fa0877d1",
+      "consulta_id": "BN-118-Q1",
+      "argv_revisado_manualmente": [
+        "rg",
+        "-n",
+        "-i",
+        "Monosiga|Salpingoeca|Choanoeca|Capsaspora|Ministeria|Sphaeroforma|Creolimax|Abeoforma|Pirum|Ichthyophonus|Corallochytrium|Syssomonas|Pigoraptor|Tunicaraptor|Lenisia|Pygsuia|Thecamonas|Breviata|Fonticula|Nuclearia|Rozella|Rhizophydium|Microsporidia|Dictyostelium|Entamoeba|Pelomyxa|Mastigamoeba",
+        "data/afirmaciones/08.csv",
+        "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv",
+        "docs/secciones/009-08-8-ecologia-y-trofismo.md"
+      ],
+      "clase_fecha": "REINSPECCION",
+      "inicio_utc": "2026-09-26T22:09:27Z",
+      "fin_utc": "2026-09-26T22:09:27Z",
+      "archivos_sha256": {
+        "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+        "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+        "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed"
+      },
+      "returncode": 0,
+      "lineas_devuelta": 177,
+      "stdout_sha256": "b058d3046925b19ec05eaa54cf5cb201e62c3ee064e6d2e613bb209cecac723e",
+      "stdout_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN-118-Q1-rg.txt",
+      "stderr": "",
+      "limite": "Búsqueda textual local; presencia de una línea no acredita todos sus campos ni la ausencia de coincidencia demuestra inexistencia científica."
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
+      "fila": {
+        "clave": "BN-118",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Campos residuales de ecología, alimentación, hospedador o socio y ciclo para cada una de las 26 entradas organismales de table-40; señal, reversión y coste de respuestas transitorias; y aparición o pérdida de cada modo trófico en cada nodo Eukaryota→Metazoa.",
+        "términos exactos": "`rg -n -i \"Monosiga|Salpingoeca|Choanoeca|Capsaspora|Ministeria|Sphaeroforma|Creolimax|Abeoforma|Pirum|Ichthyophonus|Corallochytrium|Syssomonas|Pigoraptor|Tunicaraptor|Lenisia|Pygsuia|Thecamonas|Breviata|Fonticula|Nuclearia|Rozella|Rhizophydium|Microsporidia|Dictyostelium|Entamoeba|Pelomyxa|Mastigamoeba\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`; `rg -n -i \"Eukaryota|Amorphea|Amoebozoa|Obazoa|Apusomonadida|Breviatea|Opisthokonta|Holomycota|Holozoa|Ichthyosporea|Pluriformea|Corallochytrea|Filasterea|Filozoa|Choanozoa|Choanoflagellata|Metazoa|bacterivor|depred|parasit|osmotrof|fagotrof|aliment\" data/afirmaciones/08.csv data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv docs/secciones/009-08-8-ecologia-y-trofismo.md`",
+        "resultado": "La consulta nominal cubrió las 26 entradas organismales y los 17 nodos del corredor. Recuperó campos positivos parciales por organismo y modos tróficos en ramas vivientes, pero no todos los campos por cada entrada ni una reconstrucción publicada homogénea de aparición o pérdida de cada modo en cada nodo. BN-083 y BN-101 acotan costes y retirada; la ausencia no se convirtió en estado ancestral.",
+        "filas relacionadas": "C-851–C-971; C-934–C-955; BN-083; BN-101; S129; S132; S147; S200–S215; S468–S479; S506"
+      },
+      "huella_fila_bn_sha256": "31450a2ce604391395ff61c68953802d62ff0a29e2853c8b5a9cccb6fa0877d1",
+      "consulta_id": "BN-118-Q2",
+      "argv_revisado_manualmente": [
+        "rg",
+        "-n",
+        "-i",
+        "Eukaryota|Amorphea|Amoebozoa|Obazoa|Apusomonadida|Breviatea|Opisthokonta|Holomycota|Holozoa|Ichthyosporea|Pluriformea|Corallochytrea|Filasterea|Filozoa|Choanozoa|Choanoflagellata|Metazoa|bacterivor|depred|parasit|osmotrof|fagotrof|aliment",
+        "data/afirmaciones/08.csv",
+        "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv",
+        "docs/secciones/009-08-8-ecologia-y-trofismo.md"
+      ],
+      "clase_fecha": "REINSPECCION",
+      "inicio_utc": "2026-09-26T22:09:27Z",
+      "fin_utc": "2026-09-26T22:09:27Z",
+      "archivos_sha256": {
+        "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+        "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+        "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed"
+      },
+      "returncode": 0,
+      "lineas_devuelta": 68,
+      "stdout_sha256": "d06abf6b69fbdcaac577ec38b46f21d93b10b5eaa8ef81cb47d6a3ac431ebe2c",
+      "stdout_tmp": "/tmp/verificacion-fuentes-nuevas-2026-09-26/BN-118-Q2-rg.txt",
+      "stderr": "",
+      "limite": "Búsqueda textual local; presencia de una línea no acredita todos sus campos ni la ausencia de coincidencia demuestra inexistencia científica."
+    }
+  ],
+  "seguridad": "Patrones y rutas transcritos y comprobados; subprocess usa argv, sin shell=True ni eval ni ejecución de comandos recuperados del CSV."
+}

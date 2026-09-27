@@ -1,0 +1,2 @@
+"fila_retirada","filas_sustitutas","motivo","fecha"
+"C-681","C-487; C-537; C-570; C-580","Registro retrospectivo de la sucesión ya materializada: síntesis multiclado retirada por no atomicidad; C-681 se conserva como glosa de registro con tiene_estado* y vigencia superada. Evidencia: data/afirmaciones/04.csv y commit 24f76c8eed5d908a2874c66c281016bb8d860438. La fecha es la inscripción en este CSV, no una reconstrucción del instante histórico de retirada.","2026-09-27T04:24:38Z"

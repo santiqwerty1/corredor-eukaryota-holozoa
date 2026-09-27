@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "ejecutor": "/root",
+  "caracter": "Reejecución por el autor de la corrección de pruebas escritas por un revisor distinto. NO es revisión independiente posterior del parche.",
+  "inicio_utc": "2026-09-26 23:44:42 UTC",
+  "fin_observado_utc": "2026-09-26 23:45:00 UTC",
+  "autor_pruebas": "/root/verificacion_fuentes_nuevas",
+  "comando": "PYTHONDONTWRITEBYTECODE=1 python3 docs/auditorias/fixtures/revision_failclosed_independiente_20260926.py",
+  "sha256_pruebas": "b94fc19fd17b4533ecfdbaa04fc229dea9c0d4b76229b4589c6f87cad36c37b9",
+  "sha256_constructor": "61bf0be9e4b0d9f9f643be8b614905e064353efdf9568588e245c050357a992a",
+  "salida": {
+    "tests": 32,
+    "passed": 32,
+    "results": [
+      {
+        "case": "cycle_manifest.json_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_manifest.json_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_data/auditoria/requisitos_disposiciones.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/controles_requisitos/R-0001.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_direct",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_logical",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_resolved",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "cycle_docs/auditorias/matriz_fuentes_2026-08-08.csv_parent",
+        "result": "PASS",
+        "detail": "Se rechaza, sin transformar circularidad en historia obsoleta."
+      },
+      {
+        "case": "stale_cannot_hide_cycle",
+        "result": "PASS",
+        "detail": "La ausencia anterior no oculta el ciclo posterior."
+      },
+      {
+        "case": "nominal_history_and_duplicates",
+        "result": "PASS",
+        "detail": "Historia intacta, reinspección nueva elegible, duplicado vigente rechazado."
+      },
+      {
+        "case": "census_valid",
+        "result": "PASS",
+        "detail": "Dos lecturas idénticas, censo real validate() íntegro y dos ejes nominales."
+      },
+      {
+        "case": "census_primary_duplicate",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Primera revisión duplicada: C-001',)"
+      },
+      {
+        "case": "census_secondary_duplicate",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Segunda revisión duplicada: C-001',)"
+      },
+      {
+        "case": "census_source_stale",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('La congelación semántica no coincide con el corpus vivo', 'C-001: sha256_artefactos no coincide con artefactos congelados')"
+      },
+      {
+        "case": "census_control_stale",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('La congelación semántica no coincide con el corpus vivo',)"
+      },
+      {
+        "case": "census_dependency",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('C-001: dependencias_y_huellas no coincide con la atribución viva',)"
+      },
+      {
+        "case": "census_negative",
+        "result": "PASS",
+        "detail": "Permanece abierto: (\"Residuales en primera revisión: ['C-001']\", \"Residuales en segunda revisión: ['C-001']\")"
+      },
+      {
+        "case": "census_missing_secondary",
+        "result": "PASS",
+        "detail": "Permanece abierto: ('Falta artefacto: data/auditoria/segunda_revision_afirmaciones_v1.csv', \"Faltan 1 C en segunda revisión: ['C-001']\")"
+      },
+      {
+        "case": "artifact_changed_after_validate",
+        "result": "PASS",
+        "detail": "Rechazo del cambio concurrente."
+      },
+      {
+        "case": "global_valid",
+        "result": "PASS",
+        "detail": "Resultado=CONFORME"
+      },
+      {
+        "case": "global_changed_dossier",
+        "result": "PASS",
+        "detail": "Resultado=PENDIENTE"
+      },
+      {
+        "case": "global_premature",
+        "result": "PASS",
+        "detail": "Resultado=PENDIENTE"
+      },
+      {
+        "case": "global_duplicate_last_approval",
+        "result": "PASS",
+        "detail": "Duplicado rechazado."
+      },
+      {
+        "case": "global_duplicate_last_failure",
+        "result": "PASS",
+        "detail": "Duplicado rechazado."
+      }
+    ]
+  }
+}

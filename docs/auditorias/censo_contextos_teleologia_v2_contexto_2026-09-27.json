@@ -1,0 +1,1858 @@
+{
+  "version": 2,
+  "alcance": "Revisión nominal de las 95 ocurrencias del patrón teleológico en las 74 líneas candidatas del censo actual de 123 rutas; se leyó cada línea/celda y su contexto. Solo clasifica el uso lingüístico en la versión textual fijada; no verifica hechos científicos, fuentes, fechas bibliográficas, censos C/S, R-0001–R-0007 ni el cierre global. La extracción fue mecánica; los 95 dictámenes y motivos son adjudicaciones individuales del revisor. Las huellas de las 123 rutas fijan el contexto completo y el ámbito sin coincidencias; son un snapshot de bytes, no una declaración de lectura científica exhaustiva de esas rutas.",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+  "fecha_revision_utc": "2026-09-27T02:18:27Z",
+  "algoritmo_huella": "SHA256(UTF8(texto+LF))",
+  "candidatos": [
+    {
+      "ruta": "data/afirmaciones/02.csv",
+      "linea": 25,
+      "localizador_logico": "C-040",
+      "texto": "\"C-040\",\"En los árboles de genes individuales de Da Cunha et al., la relación Eukaryota–Lokiarchaeota tuvo bootstrap inferior a 70 % salvo SecY con 84 % y EF2 con 100 %.\",\"relación Eukaryota–Lokiarchaeota en árboles individuales\",\"tiene_valor_medido\",\"BS < 70 %, salvo 84 % y 100 %\",\"expresa\",\"S11 Results; Supplementary figs.\",\"no evaluado\",\"media\",\"Los apoyos varían entre genes y no equivalen a una prueba concatenada única.\",\"sin resolver\",\"vigente\"",
+      "sha256_texto": "a126b22201742d175a6792270b0a924da7cdf57714a293da00278d1a1f922548",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 117,
+          "fin": 125,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «Afirmación»: En los árboles de genes individuales de Da Cunha et al., la relación Eukaryota–Lokiarchaeota tuvo bootstrap inferior a 70 % salvo SecY con 84 % y EF2 con 100 %.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Califica el bootstrap con un umbral explícito de 70 % y excepciones numéricas SecY/EF2; compara soporte estadístico, no grados de evolución."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/04.csv",
+      "linea": 261,
+      "localizador_logico": "C-690",
+      "texto": "\"C-690\",\"Brown et al. organizaron el árbol eucariota en tres ensamblajes de orden superior: Amorphea, Diaphoretickes y Excavata.\",\"árbol eucariota de Brown et al. 2018\",\"posee_miembro*\",\"Amorphea, Diaphoretickes y Excavata\",\"expresa\",\"S108 introducción\",\"no evaluado\",\"alta\",\"La fuente enumera explícitamente los tres ensamblajes usados en su contexto filogenómico.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "268655c560c1a415fc8d7cd343b5609f904f24b192ff476c1a96b1f47cf302bf",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 82,
+          "fin": 90,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Brown et al. organizaron el árbol eucariota en tres ensamblajes de orden superior: Amorphea, Diaphoretickes y Excavata.",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "«Orden superior» designa el nivel inclusivo de los tres ensamblajes filogenéticos enumerados, atribuidos a Brown; no dice que sus organismos sean mejores o más evolucionados."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/11.csv",
+      "linea": 104,
+      "localizador_logico": "C-1462",
+      "texto": "\"C-1462\",\"La evidencia de capacidad sexual en Capsaspora y varios Amoebozoa es principalmente genómica y no tiene la misma resolución que la observación en Salpingoeca rosetta.\",\"evidencia sexual comparada\",\"tiene_resolucion_relativa*\",\"observación directa en Salpingoeca superior a inventario genómico\",\"sintesis(C-1382, C-1383, C-1384, C-1452, C-1453)\",\"S349; S203; S352, S353, S354, S355\",\"consenso amplio\",\"alta\",\"Las clases de evidencia responden preguntas distintas.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "6d547bbf21bf1262b8e97a94fae63b57c48d0d7a1cfd55d1a7d71c90a471ffb1",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 272,
+          "fin": 280,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «Objeto»: observación directa en Salpingoeca superior a inventario genómico",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "El comparativo recae en observación directa frente a inventario genómico, es decir, resolución de evidencia sobre sexo; el sujeto no es la superioridad evolutiva de Salpingoeca."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "linea": 46,
+      "localizador_logico": "C-1526",
+      "texto": "\"C-1526\",\"La agregación de Capsaspora owczarzaki puede inducirse mediante calcio y una fracción sérica o lipoproteica de masa superior a 30 kDa.\",\"Capsaspora owczarzaki\",\"responde_a*\",\"calcio y factores lipoproteicos\",\"expresa\",\"S427 resultados; figs. 1–4\",\"no evaluado\",\"alta\",\"Ensayos de fraccionamiento y quelación separaron los componentes requeridos.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "938b09ba849dd0e6c8273a22a2ba1cd8d5f5d165e76664f787e236ea4cdbc653",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 126,
+          "fin": 134,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «Afirmación»: La agregación de Capsaspora owczarzaki puede inducirse mediante calcio y una fracción sérica o lipoproteica de masa superior a 30 kDa.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La propiedad comparada es masa molecular de la fracción inductora, expresada con el umbral 30 kDa, no calidad de Capsaspora."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/13.csv",
+      "linea": 2,
+      "localizador_logico": "C-1617",
+      "texto": "\"C-1617\",\"La cepa silvestre NC4 de Dictyostelium discoideum duplicó su población en poco menos de 4 h a 22 °C en SorMC con Klebsiella como alimento.\",\"Dictyostelium discoideum NC4\",\"tiene_valor_medido\",\"tiempo de duplicación inferior a 4 h a 22 °C en SorMC con Klebsiella\",\"expresa\",\"S447 §Growth of wild type cells; fig. 1B\",\"no evaluado\",\"alta\",\"El valor y las condiciones de cultivo están declarados por el experimento.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "d5750ca25e8bbbe24f29d513b32666702539d29f41500cbc0d14886414879804",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 225,
+          "fin": 233,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «Objeto»: tiempo de duplicación inferior a 4 h a 22 °C en SorMC con Klebsiella",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Describe el tiempo de duplicación con límite de 4 h, temperatura y medio declarados; inferior expresa una duración menor."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 184,
+      "localizador_logico": "C-1862",
+      "texto": "\"C-1862\",\"“Eucariota primitivo” aplicado a un linaje viviente confunde descendencia actual con estado ancestral.\",\"eucariota primitivo\",\"puede_inducir_error*\",\"linaje viviente como ancestro\",\"expresa\",\"S412 [sin localizar con mayor precisión]; S413 [sin localizar con mayor precisión]\",\"no evaluado\",\"alta\",\"Los linajes vivientes tienen la misma duración desde su ancestro común.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "f875aa2783257010e1c0f2f001c2a95ff65720d92788d6573413f104f0dc2281",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 11,
+          "fin": 30,
+          "literal": "Eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Eucariota primitivo” aplicado a un linaje viviente confunde descendencia actual con estado ancestral.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La expresión está entre comillas y la proposición la critica por confundir linaje viviente con estado ancestral."
+        },
+        {
+          "inicio": 115,
+          "fin": 134,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto de la fila nombra la expresión criticada; el predicado puede_inducir_error y el objeto linaje viviente como ancestro explicitan la crítica, no la aplican a un taxón."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 186,
+      "localizador_logico": "C-1864",
+      "texto": "\"C-1864\",\"“Plesiomórfico para el carácter X respecto del nodo Y” sustituye a “primitivo” cuando la reconstrucción lo sostiene.\",\"eucariota primitivo\",\"sustituido_por*\",\"estado plesiomórfico especificado\",\"sintesis(C-1862, C-1863)\",\"S412; S413\",\"consenso amplio\",\"alta\",\"La formulación identifica carácter y referencia filogenética.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "054e07dd815635039477ecced3ab20393a7a7aed8d4da28d7ae01e0b47ab1412",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 78,
+          "fin": 87,
+          "literal": "primitivo",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Plesiomórfico para el carácter X respecto del nodo Y” sustituye a “primitivo” cuando la reconstrucción lo sostiene.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La palabra se cita como formulación que se sustituye por una plesiomorfía de carácter y nodo explícitos."
+        },
+        {
+          "inicio": 129,
+          "fin": 148,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto identifica el término sustituido; el predicado sustituido_por y el objeto estado plesiomórfico especificado no atribuyen primitividad a un organismo."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 187,
+      "localizador_logico": "C-1865",
+      "texto": "\"C-1865\",\"“Eucariota primitivo” conserva uso legítimo únicamente como cita histórica o como término explícitamente criticado.\",\"eucariota primitivo\",\"tiene_uso_legitimo*\",\"historia de ideas\",\"sintesis(C-1862, C-1863, C-1864)\",\"n/a; derivación documental de S412, S413\",\"no evaluado\",\"alta\",\"El uso no debe atribuir inferioridad o inmovilidad evolutiva.\",\"resuelta\",\"histórica\"",
+      "sha256_texto": "ebbec2f96998ac4da756ad00fb7c142bee51ee171d71e2b49ff3a34c8839b26b",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 11,
+          "fin": 30,
+          "literal": "Eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Eucariota primitivo” conserva uso legítimo únicamente como cita histórica o como término explícitamente criticado.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La proposición restringe expresamente el uso a cita histórica o crítica explícita; no adopta el calificativo biológico."
+        },
+        {
+          "inicio": 128,
+          "fin": 147,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La celda Sujeto identifica el término cuya admisibilidad histórica se restringe; el Motivo prohíbe inferioridad e inmovilidad evolutivas."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 189,
+      "localizador_logico": "C-1867",
+      "texto": "\"C-1867\",\"“Organismo simple” sin una métrica explícita no produce una comparación auditable.\",\"organismo simple\",\"requiere*\",\"métrica de simplicidad especificada\",\"sintesis(C-1866)\",\"S414\",\"no evaluado\",\"alta\",\"La clasificación puede cambiar al cambiar la dimensión medida.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "eafde2522caedd00d3fbccebf6cd7587eb10cd981a25db79621fbc67b726b1cc",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 11,
+          "fin": 27,
+          "literal": "Organismo simple",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Organismo simple” sin una métrica explícita no produce una comparación auditable.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La afirmación rechaza la comparación sin una métrica explícita; no clasifica un organismo como menos evolucionado."
+        },
+        {
+          "inicio": 95,
+          "fin": 111,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «Sujeto»: organismo simple",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto es el rótulo sometido al requisito de una métrica de simplicidad especificada, no una entidad biológica declarada simple."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 192,
+      "localizador_logico": "C-1870",
+      "texto": "\"C-1870\",\"Living fossil se ha aplicado mediante criterios distintos de estasis morfológica, baja diversidad, larga duración o semejanza con fósiles.\",\"fósil viviente\",\"tiene_circunscripcion_variable*\",\"criterios múltiples\",\"expresa\",\"S415 revisión [sin localizar con mayor precisión]; S416 §2, §3 y tabla 1\",\"no evaluado\",\"media\",\"Las revisiones documentan criterios y niveles no equivalentes.\",\"parcialmente resuelta\",\"vigente\"",
+      "sha256_texto": "869adb88f6b60bd0eb9533c1553842f9c9fe6203abefa8413039f6172ca7f72a",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 151,
+          "fin": 165,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Sujeto»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La etiqueta de Sujeto se analiza por la variabilidad de criterios de estasis, diversidad, duración y semejanza; la fila no sostiene ausencia de evolución de ningún linaje."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 193,
+      "localizador_logico": "C-1871",
+      "texto": "\"C-1871\",\"“Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo.\",\"fósil viviente\",\"puede_inducir_error*\",\"transferencia parte–todo\",\"expresa\",\"S415 discusión\",\"no evaluado\",\"alta\",\"La fuente distingue partes y totalidades; esta premisa queda antes de la síntesis amplia de C-1872.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "2a3db68bd25e2f91ce222dddd29181b79d57622efb496a222940b9aca9be223a",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 11,
+          "fin": 25,
+          "literal": "Fósil viviente",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Se menciona el rótulo para advertir la transferencia indebida de estasis de un carácter al organismo completo."
+        },
+        {
+          "inicio": 118,
+          "fin": 132,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Sujeto»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La celda Sujeto nombra el rótulo criticado, con predicado puede_inducir_error y objeto transferencia parte–todo."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 195,
+      "localizador_logico": "C-1873",
+      "texto": "\"C-1873\",\"“Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente.\",\"fósil viviente\",\"sustituido_por*\",\"hipótesis de estasis operacional\",\"sintesis(C-1870, C-1871, C-1872)\",\"S415 revisión; S416 §2, §3 y tabla 1\",\"no evaluado\",\"media\",\"Es una propuesta operacional del corpus apoyada por criterios y estándares explícitos.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "232a10660efd49e2836b5211ffe8cf369ee26dddcf23bf897808f66d6f7767b9",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 128,
+          "fin": 142,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La frase descalifica la afirmación vaga y propone carácter, intervalo y estasis documentados como reemplazo."
+        },
+        {
+          "inicio": 146,
+          "fin": 160,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Sujeto»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto es el término sustituido por una hipótesis operacional; no caracteriza como inmóvil un linaje concreto."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 196,
+      "localizador_logico": "C-1874",
+      "texto": "\"C-1874\",\"Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”.\",\"fósil viviente\",\"tiene_uso_legitimo*\",\"concepto operacional o histórico\",\"expresa\",\"S415 revisión [sin localizar con mayor precisión]; S416 conclusión, “investigative kind”\",\"no evaluado\",\"media\",\"La conclusión de S416 defiende un uso investigable condicionado a estándares explícitos.\",\"parcialmente resuelta\",\"vigente\"",
+      "sha256_texto": "58b79ca78673c991cb9dfd5c09963f0fcbcea91e24d7368ce428f3bbfa390284",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 10,
+          "fin": 24,
+          "literal": "Fósil viviente",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La proposición condiciona el rótulo a criterios explícitos y excluye expresamente el significado sin cambios."
+        },
+        {
+          "inicio": 145,
+          "fin": 159,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Sujeto»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto nombra el rótulo de uso acotado; el objeto concepto operacional o histórico y la negación de sin cambios fijan la lectura."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 197,
+      "localizador_logico": "C-1875",
+      "texto": "\"C-1875\",\"“Eslabón perdido” representa la evolución como una cadena lineal con huecos discretos.\",\"eslabón perdido\",\"clasificado_como_por\",\"metáfora lineal\",\"expresa\",\"S417 tesis general [sin localizar con mayor precisión]; S423 [sin localizar con mayor precisión]\",\"no evaluado\",\"media\",\"La metáfora no representa un árbol ramificado.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "840eec9e96df6729dc6bcbf7ce49c03172b3ea205cd752379f0362b3be54bb15",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 11,
+          "fin": 26,
+          "literal": "Eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Eslabón perdido” representa la evolución como una cadena lineal con huecos discretos.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Las comillas presentan una metáfora cuyo contenido lineal se describe; el Motivo aclara que esa metáfora no representa un árbol ramificado."
+        },
+        {
+          "inicio": 99,
+          "fin": 114,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eslabón perdido",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto es la expresión que se clasifica como metáfora lineal, no un organismo supuesto como peldaño perdido."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 199,
+      "localizador_logico": "C-1877",
+      "texto": "\"C-1877\",\"“Fósil transicional” o “miembro del grupo tronco” sustituye a “eslabón perdido” cuando la topología lo permite.\",\"eslabón perdido\",\"sustituido_por*\",\"fósil transicional o miembro troncal\",\"sintesis(C-1875, C-1876)\",\"S385; S417\",\"consenso amplio\",\"alta\",\"Los reemplazos no presuponen una cadena ni ancestralidad directa.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "4171fc11396dd546b1b743cf0923ed6af586e64e29653617a74a922a8e2b1650",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 73,
+          "fin": 88,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Fósil transicional” o “miembro del grupo tronco” sustituye a “eslabón perdido” cuando la topología lo permite.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La expresión se cita como término reemplazado por fósil transicional o miembro troncal según la topología."
+        },
+        {
+          "inicio": 124,
+          "fin": 139,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eslabón perdido",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto nombra el término sustituido; el Motivo rechaza cadena y ancestralidad directa presupuestas."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 201,
+      "localizador_logico": "C-1879",
+      "texto": "\"C-1879\",\"Eslabón perdido conserva uso legítimo únicamente como objeto de historia cultural o crítica terminológica.\",\"eslabón perdido\",\"tiene_uso_legitimo*\",\"historia y comunicación crítica\",\"sintesis(C-1875, C-1876, C-1877, C-1878)\",\"n/a; derivación documental de S417\",\"no evaluado\",\"alta\",\"El corpus no lo usa como categoría paleontológica.\",\"resuelta\",\"histórica\"",
+      "sha256_texto": "443a50016d7fe49c7ecbeb5624ff643d7144867aa924103cc1674c8e055b4880",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 10,
+          "fin": 25,
+          "literal": "Eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Eslabón perdido conserva uso legítimo únicamente como objeto de historia cultural o crítica terminológica.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El uso legítimo se restringe de forma explícita a historia cultural o crítica terminológica."
+        },
+        {
+          "inicio": 119,
+          "fin": 134,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Sujeto»: eslabón perdido",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El sujeto es un objeto de análisis histórico; el Motivo dice expresamente que el corpus no lo usa como categoría paleontológica."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "linea": 214,
+      "localizador_logico": "C-1892",
+      "texto": "\"C-1892\",\"“Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan.\",\"lenguaje escalonado\",\"puede_inducir_error*\",\"pensamiento filogenético y métricas explícitas\",\"sintesis(C-1862, C-1867, C-1873, C-1877, C-1881)\",\"S412, S413, S414, S415, S416, S417; S423\",\"consenso amplio\",\"alta\",\"Los términos mezclan topología, tiempo, complejidad y valoraciones.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "8d509c637c2747f83a68e89dba55224ca8fb4fe447bf890cdfd5f4707b1bfb6a",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 20,
+          "fin": 29,
+          "literal": "primitivo",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Primitivo integra una lista de términos que la proposición advierte que pueden inducir una escala; no se atribuye a un taxón."
+        },
+        {
+          "inicio": 43,
+          "fin": 57,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Fósil viviente es uno de los rótulos advertidos como fuente de lectura escalonada si no se operacionaliza."
+        },
+        {
+          "inicio": 62,
+          "fin": 77,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «Afirmación»: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Eslabón perdido se enumera como término problemático; el objeto exige pensamiento filogenético y métricas explícitas."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 48,
+      "localizador_logico": "C-1944",
+      "texto": "\"C-1944\",\"Hardisty y colaboradores infirieron concentraciones de O₂ superiores a 1 µM en aguas superficiales paleoproterozoicas durante la excursión Lomagundi, a partir de la estabilidad extendida de yodato registrada en carbonatos.\",\"O₂ disuelto en el océano superficial durante Lomagundi\",\"tiene_límite_inferior_estimado*\",\">1 µM O₂\",\"expresa\",\"S558 Conclusion, pp. 621–622; fig. 1; tabla 1\",\"no evaluado\",\"media\",\"Es un límite inferior de aproximadamente 2,22–2,10 Ga basado en I/(Ca+Mg) y el umbral de estabilidad de IO₃⁻. No representa el océano profundo, una media global volumétrica ni todo el Paleoproterozoico.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "cf0682ce8307f9deb02aeab02ce0c4382f09621b78e9a08a0b86617d33c37025",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 430,
+          "fin": 438,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «Motivo»: Es un límite inferior de aproximadamente 2,22–2,10 Ga basado en I/(Ca+Mg) y el umbral de estabilidad de IO₃⁻. No representa el océano profundo, una media global volumétrica ni todo el Paleoproterozoico.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Límite inferior refiere a la concentración de O₂ >1 µM inferida por estabilidad del yodato y restringida a aguas superficiales; no ordena organismos."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 906,
+      "localizador_logico": "C-2802",
+      "texto": "\"C-2802\",\"Para término «eucariota primitivo», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-546]».\",\"término «eucariota primitivo»\",\"tiene_valor_literal_de_campo*\",\"quién lo introdujo y cuándo: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-546]\",\"sintesis(C-1862, C-1863, C-1864, C-1865)\",\"n/a; dependencias canónicas C-1862; C-1863; C-1864; C-1865; BN-546 términos exactos y resultado\",\"no evaluado\",\"media\",\"Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 17:quién lo introdujo y cuándo. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "b2fb5c31ebcc5f14c480e00c50f28b32d8bce4ec5c115ba82f1eada43c0d2dea",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 24,
+          "fin": 43,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Para término «eucariota primitivo», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-546]».",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "La afirmación menciona literalmente el nombre de un término cuyo autor y fecha de acuñación se buscan; el valor declarado es un hueco de trazabilidad, no primitividad de un linaje."
+        },
+        {
+          "inicio": 296,
+          "fin": 315,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «Sujeto»: término «eucariota primitivo»",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "El Sujeto identifica la entrada terminológica de esa búsqueda histórica; no es un taxón al que se aplique el calificativo."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 907,
+      "localizador_logico": "C-2803",
+      "texto": "\"C-2803\",\"Para término «organismo simple», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-547]».\",\"término «organismo simple»\",\"tiene_valor_literal_de_campo*\",\"quién lo introdujo y cuándo: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-547]\",\"sintesis(C-1866, C-1867, C-1868, C-1869)\",\"n/a; dependencias canónicas C-1866; C-1867; C-1868; C-1869; BN-547 términos exactos y resultado\",\"no evaluado\",\"baja\",\"Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 18:quién lo introdujo y cuándo. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "14b2a4f9276e3e2f2f2298365080a6b6a548f8756bf130d62cd713f1c5b67635",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 24,
+          "fin": 40,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Para término «organismo simple», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-547]».",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "La expresión identifica el término para el campo quién lo introdujo y cuándo; la proposición conserva un hueco, no una clasificación de complejidad."
+        },
+        {
+          "inicio": 293,
+          "fin": 309,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «Sujeto»: término «organismo simple»",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "El Sujeto es el nombre de la entrada terminológica cuya acuñación no se adjudica, no un organismo evaluado."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 908,
+      "localizador_logico": "C-2804",
+      "texto": "\"C-2804\",\"Para término «fósil viviente», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]».\",\"término «fósil viviente»\",\"tiene_valor_literal_de_campo*\",\"quién lo introdujo y cuándo: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]\",\"sintesis(C-1870, C-1871, C-1872, C-1873, C-1874, C-1994)\",\"n/a; dependencias canónicas C-1870; C-1871; C-1872; C-1873; C-1874; C-1994; BN-548 términos exactos y resultado\",\"no evaluado\",\"media\",\"Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.\",\"resuelta\",\"vigente\"",
+      "sha256_texto": "23073487e428130dfd280ef09760aa5955850ae9410ab3bcfb14e91ec44fe572",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 24,
+          "fin": 38,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Para término «fósil viviente», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]».",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "El rótulo es la identidad literal de una consulta sobre acuñación, con hueco explícito y sin afirmar estasis biológica."
+        },
+        {
+          "inicio": 291,
+          "fin": 305,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «Sujeto»: término «fósil viviente»",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "La celda Sujeto designa el término objeto de la pesquisa histórica; no dice que un linaje permanezca sin evolución."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 929,
+      "localizador_logico": "C-2825",
+      "texto": "\"C-2825\",\"Ku y Martin publicaron que los clados procariotas de alta identidad con más de un taxón representaban entre 3,1 % y 5,1 % de todos los clados de los grupos comparados.\",\"clados procariotas de alta identidad no singleton en Ku y Martin\",\"tiene_proporcion_publicada*\",\"3,1–5,1 % de los clados de cada grupo comparado\",\"expresa\",\"S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9)\",\"no evaluado\",\"media\",\"HIC se define por la identidad media clado–grupo hermano y un umbral específico de cada grupo: la media de identidades de singleton en su cuartil superior. El denominador cuenta clados, no genes transferidos ni eventos por tiempo.\",\"sin resolver\",\"vigente\"",
+      "sha256_texto": "e2d7b40635bcf36f1f1f6f550f459077a9051dd8046c8611a24d7c2347dd5065",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 611,
+          "fin": 619,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «Motivo»: HIC se define por la identidad media clado–grupo hermano y un umbral específico de cada grupo: la media de identidades de singleton en su cuartil superior. El denominador cuenta clados, no genes transferidos ni eventos por tiempo.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior modifica cuartil de una distribución de identidades de singleton que define el umbral HIC; no califica progreso del clado."
+        }
+      ]
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "linea": 935,
+      "localizador_logico": "C-2831",
+      "texto": "\"C-2831\",\"Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado.\",\"grupos candidatos a HGT con al menos una secuencia individual sobre el umbral de identidad en Rossoni y colaboradores\",\"tiene_proporcion_publicada*\",\"5 de 96 grupos candidatos a HGT (5,2 %), con alguna identidad individual >70 %\",\"expresa\",\"S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento\",\"no evaluado\",\"media\",\"Ningún grupo superó ese umbral en su identidad media: el resultado se refiere a comparaciones individuales. Los autores lo usan para cuestionar el descarte sistemático por el umbral; no demuestra que cualquier secuencia de alta identidad sea una transferencia real.\",\"sin resolver\",\"vigente\"",
+      "sha256_texto": "91e06e24ecd84a5f0c3f8a1d5159b1328cc15c6c2106c32eb38b2453c03d80d2",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 93,
+          "fin": 101,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «Afirmación»: Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior compara identidad proteica individual con 70 %; la frase distingue individuos, 5 de 96 grupos y media grupal."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "linea": 403,
+      "localizador_logico": "clave = «S414»",
+      "texto": "\"S414\",\"McShea y Brandon\",\"2010\",\"Biology’s First Law: The Tendency for Diversity and Complexity to Increase in Evolutionary Systems\",\"University of Chicago Press\",\"https://press.uchicago.edu/ucp/books/book/chicago/B/bo8642428.html\",\"capítulo o libro\",\"Marco sobre complejidad multidimensional; no provee una escala universal de organismo simple. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.\",\"2026-08-07\"",
+      "sha256_texto": "7e6aa3ccda9c23acf46b488d0cb300b03d9a2feff0012346247ddc87f109fc0c",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 329,
+          "fin": 345,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «notas de calidad»: Marco sobre complejidad multidimensional; no provee una escala universal de organismo simple. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 4 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La nota niega que el libro provea una escala universal para el rótulo organismo simple; es una cautela contra esa generalización."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/A_fuentes.csv",
+      "linea": 524,
+      "localizador_logico": "clave = «S558»",
+      "texto": "\"S558\",\"Hardisty, D. S.; Lu, Z.; Planavsky, N. J.; Bekker, A.; Philippot, P.; Zhou, X.; Lyons, T. W.\",\"2014\",\"An iodine record of Paleoproterozoic surface ocean oxygenation\",\"Geology 42:619–622\",\"https://doi.org/10.1130/G35439.1\",\"investigación primaria\",\"[PASAJE VERIFICADO 2026-08-08] Conclusion, pp. 621–622: durante la excursión Lomagundi, carbonatos con I/(Ca+Mg) no nulo implican estabilidad extendida de IO₃⁻ en el océano superficial relacionada con concentraciones de O₂ superiores a 1 µM. Results/Discussion, fig. 1 y tabla 1 sitúan la señal en aproximadamente 2,22–2,10 Ga. Es un límite inferior de aguas superficiales derivado del umbral de estabilidad del yodato, no una media del océano completo, una concentración profunda ni una trayectoria continua. Metadatos verificados contra el DOI del editor y el registro institucional. [SOPORTE ÚNICO ACTUAL] S558 es la única fuente S directa de C-1944. [USO EN UNA SOLA C] C-1944.\",\"2026-08-08\"",
+      "sha256_texto": "bcd32859dc956418375e3003cbbf5a86654635a6f27c35bc79f2a34dce7b9af3",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 597,
+          "fin": 605,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «notas de calidad»: [PASAJE VERIFICADO 2026-08-08] Conclusion, pp. 621–622: durante la excursión Lomagundi, carbonatos con I/(Ca+Mg) no nulo implican estabilidad extendida de IO₃⁻ en el océano superficial relacionada con concentraciones de O₂ superiores a 1 µM. Results/Discussion, fig. 1 y tabla 1 sitúan la señal en aproximadamente 2,22–2,10 Ga. Es un límite inferior de aguas superficiales derivado del umbral de estabilidad del yodato, no una media del océano completo, una concentración profunda ni una trayectoria continua. Metadatos verificados contra el DOI del editor y el registro institucional. [SOPORTE ÚNICO ACTUAL] S558 es la única fuente S directa de C-1944. [USO EN UNA SOLA C] C-1944.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La nota fija un límite inferior de O₂ superficial desde el umbral del yodato y excluye media global o concentración profunda; el comparativo es numérico."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "linea": 1134,
+      "localizador_logico": "entidad «observación directa en Salpingoeca superior a inventario genómico»; primera aparición «C-1462»",
+      "texto": "\"observación directa en Salpingoeca superior a inventario genómico\",\"concepto o entidad\",\"n/a\",\"n/a\",\"C-1462\"",
+      "sha256_texto": "ea4e57fd5f94bfb4b40075501c1727c102dc80872dbbbbd180b73ed5f1a6e901",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 36,
+          "fin": 44,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «etiqueta preferida»: observación directa en Salpingoeca superior a inventario genómico",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "La etiqueta contrasta dos clases de prueba, observación directa e inventario genómico. La C-1462 enlazada precisa resolución probatoria, no superioridad de Salpingoeca como linaje."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "linea": 1271,
+      "localizador_logico": "entidad «eucariota primitivo»; primera aparición «C-1862»",
+      "texto": "\"eucariota primitivo\",\"término desaconsejado\",\"primitive eukaryote\",\"⚠\",\"C-1862\"",
+      "sha256_texto": "37614a47f1f99a0a85fdab7719cbbb19291ebf00dd78c76cea5ad73a56fdc9e5",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 20,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «etiqueta preferida»: eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La entrada rotula expresamente eucariota primitivo como término desaconsejado y lo enlaza a C-1862, que explica la confusión con el estado ancestral."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "linea": 1273,
+      "localizador_logico": "entidad «organismo simple»; primera aparición «C-1867»",
+      "texto": "\"organismo simple\",\"término no operacional\",\"simple organism\",\"⚠\",\"C-1867\"",
+      "sha256_texto": "b5bf225d3e31acdc18035e775f90b6eec5570a3322d62e7ab159b4f7135d7909",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 17,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «etiqueta preferida»: organismo simple",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La clasificación de la fila es término no operacional, con advertencia y vínculo a C-1867; no caracteriza un organismo real como simple."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "linea": 1276,
+      "localizador_logico": "entidad «fósil viviente»; primera aparición «C-1870»",
+      "texto": "\"fósil viviente\",\"término controvertido\",\"living fossil\",\"⚠\",\"C-1870\"",
+      "sha256_texto": "df9b93d4ca6931b041d033a582e7eef33bff30d6ac0ca71ece884173caaea757",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 15,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «etiqueta preferida»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La entrada se presenta como término controvertido y remite a C-1870 sobre criterios variables, no a un linaje sin cambios."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/B_entidades.csv",
+      "linea": 1278,
+      "localizador_logico": "entidad «eslabón perdido»; primera aparición «C-1875»",
+      "texto": "\"eslabón perdido\",\"metáfora histórica\",\"missing link\",\"⚠\",\"C-1875\"",
+      "sha256_texto": "b0fe12404d94ff9222340483409d633dd1e33fec837f4f953d1674b162a5523e",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 16,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «etiqueta preferida»: eslabón perdido",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "La fila clasifica eslabón perdido como metáfora histórica y da su equivalente missing link; no postula un peldaño biológico faltante."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/E_hipotesis.csv",
+      "linea": 44,
+      "localizador_logico": "clave = «H43»",
+      "texto": "\"H43\",\"La atmósfera mesoproterozoica tuvo menos de 0.1% PAL de O₂ durante los intervalos muestreados.\",\"El fraccionamiento de Cr requiere meteorización oxidativa por encima de un umbral y su ausencia fija un límite superior bajo.\",\"C-798; C-802–C-803\",\"S182 métodos; fig. 3\",\"S183; S184; S185\",\"Incompatible cuantitativamente con reconstrucciones de 4–8% PAL para el mismo tiempo y reservorio si los proxies se interpretan globalmente; puede ser compatible si registran lugares o tiempos distintos.\",\"Un archivo coetáneo y globalmente representativo que demuestre oxidación incompatible con <0.1% PAL bajo un modelo de Cr validado.\"",
+      "sha256_texto": "41d9537e8f44a7d43d254642fe9e52c465e2113771925cc46ba73d85485580b9",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 215,
+          "fin": 223,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «supuestos que da por buenos»: El fraccionamiento de Cr requiere meteorización oxidativa por encima de un umbral y su ausencia fija un límite superior bajo.",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "El supuesto de H43 usa superior como cota de pO₂ bajo un modelo de fraccionamiento de Cr; la fila declara <0,1 % PAL y contrasta 4–8 % PAL."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 184,
+      "localizador_logico": "magnitud «límite inferior estratigráfico del Grupo Chuar»; valor «aproximadamente 782»; C «C-1960»",
+      "texto": "\"límite inferior estratigráfico del Grupo Chuar\",\"aproximadamente 782\",\"Ma\",\"Formación Nankoweap subyacente al Grupo Chuar\",\"U–Pb de circones detríticos\",\"aproximado; no data individualmente cada perforación\",\"observado\",\"S158 §Background and methods\",\"C-1960\"",
+      "sha256_texto": "02914174091436925942eddd3be496e386b6598a1adab049158d22ec98ca4b46",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 8,
+          "fin": 16,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «magnitud»: límite inferior estratigráfico del Grupo Chuar",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Inferior designa la posición estratigráfica basal respecto del Grupo Chuar; la unidad subyacente Nankoweap y la edad en Ma fijan la lectura espacial/estratigráfica."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 185,
+      "localizador_logico": "magnitud «límite superior estratigráfico del Grupo Chuar»; valor «742 ± 6»; C «C-1960»",
+      "texto": "\"límite superior estratigráfico del Grupo Chuar\",\"742 ± 6\",\"Ma\",\"ceniza del techo del Grupo Chuar\",\"U–Pb de circones\",\"±6 Ma; no data individualmente cada perforación\",\"observado\",\"S158 §Background and methods\",\"C-1960\"",
+      "sha256_texto": "645084c6453e44625e6d877c10eaf02777ff64202e2599f0e2e574d54d367508",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 8,
+          "fin": 16,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «magnitud»: límite superior estratigráfico del Grupo Chuar",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Superior designa el techo estratigráfico del Grupo Chuar, con ceniza y edad U–Pb 742 ± 6 Ma; no un estado evolutivo más avanzado."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 193,
+      "localizador_logico": "magnitud «edad de la biota de Weng’an»; valor «609 ± 5»; C «C-732»",
+      "texto": "\"edad de la biota de Weng’an\",\"609 ± 5\",\"Ma\",\"capa tobácea sobre el fosforito superior\",\"SIMS U–Pb\",\"±5 Ma\",\"observado\",\"S169 resumen\",\"C-732\"",
+      "sha256_texto": "9faccfe0a629aac4fe5e9e8c03dde6765a0ec28e8b7d01b52842bace3196b9bf",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 78,
+          "fin": 86,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «organismo, nodo o intervalo al que se aplica»: capa tobácea sobre el fosforito superior",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Superior localiza una unidad de fosforito bajo una capa tobácea; es posición en la sucesión sedimentaria, no comparación de organismos."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 210,
+      "localizador_logico": "magnitud «pO₂ mesoproterozoica»; valor «<0.1»; C «C-798»",
+      "texto": "\"pO₂ mesoproterozoica\",\"<0.1\",\"% PAL O₂\",\"partes del Mesoproterozoico\",\"isótopos de cromo\",\"límite superior inferido\",\"inferido\",\"S182 resumen; fig. 3\",\"C-798\"",
+      "sha256_texto": "14d2bd8dad03734898ff9846716d36d3c08318183154af3c0ee8a233e818bb6f",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 99,
+          "fin": 107,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «incertidumbre publicada»: límite superior inferido",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Límite superior inferido precisa la cota <0,1 % PAL de O₂ reconstruida con isótopos de Cr."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 214,
+      "localizador_logico": "magnitud «pO₂ mesoproterozoica»; valor «superior a 4»; C «C-801»",
+      "texto": "\"pO₂ mesoproterozoica\",\"superior a 4\",\"% PAL O₂\",\"intervalos con Cr altamente fraccionado\",\"isótopos de cromo\",\"límite inferido\",\"inferido\",\"S185 resumen y discusión\",\"C-801\"",
+      "sha256_texto": "88800266060fcc254b99124d4e68ac39a1487290d61a3f8f9483aeaebffdaa68",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 24,
+          "fin": 32,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «valor tal como lo publica la fuente»: superior a 4",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La celda de valor expresa pO₂ mayor de 4 % PAL; superior compara una magnitud atmosférica numérica."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 461,
+      "localizador_logico": "magnitud «masa mínima de la fracción sérica o lipoproteica inductora»; valor «superior a 30»; C «C-1526»",
+      "texto": "\"masa mínima de la fracción sérica o lipoproteica inductora\",\"superior a 30\",\"kDa\",\"fracción inductora de agregación de Capsaspora owczarzaki\",\"fraccionamiento por masa molecular\",\"n/a\",\"observado\",\"S427 resultados\",\"C-1526\"",
+      "sha256_texto": "2ced2db18e3055b591070ce2d2487d6c7074d588c688348b5f4d6b9bb5bbdef3",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 62,
+          "fin": 70,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «valor tal como lo publica la fuente»: superior a 30",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior a 30 es el valor de masa mínima de una fracción inductora, con kDa como unidad y fraccionamiento molecular como método."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 494,
+      "localizador_logico": "magnitud «concentración de O₂ compatible con crecimiento aerobio»; valor «igual o inferior a 3»; C «C-838»",
+      "texto": "\"concentración de O₂ compatible con crecimiento aerobio\",\"igual o inferior a 3\",\"nM O₂\",\"*Escherichia coli* K-12\",\"cultivo continuo y microsensores\",\"límite superior observado; no umbral universal\",\"observado\",\"S461 resumen; resultados\",\"C-838\"",
+      "sha256_texto": "2efedcc81241ac595e125ea0a8ab0c90ac27b80bd071ea90dfc90411b5863362",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 66,
+          "fin": 74,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «valor tal como lo publica la fuente»: igual o inferior a 3",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Inferior expresa concentración de O₂ igual o menor que 3 nM en un experimento de crecimiento aerobio."
+        },
+        {
+          "inicio": 157,
+          "fin": 165,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «incertidumbre publicada»: límite superior observado; no umbral universal",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior califica el límite observado de esa concentración compatible con crecimiento; la misma celda excluye un umbral universal."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 573,
+      "localizador_logico": "magnitud «O₂ disuelto superficial durante Lomagundi»; valor «>1»; C «C-1944»",
+      "texto": "\"O₂ disuelto superficial durante Lomagundi\",\">1\",\"µM O₂\",\"aproximadamente 2,22–2,10 Ga\",\"I/(Ca+Mg) en carbonatos y umbral de estabilidad de IO₃⁻\",\"límite inferior; no media oceánica ni concentración profunda\",\"inferido\",\"S558 Conclusion, pp. 621–622; fig. 1; tabla 1\",\"C-1944\"",
+      "sha256_texto": "dbe44bf75ac5dc965c50d1b047c593f07a44f35e02bb917ad89c294d91658710",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 154,
+          "fin": 162,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «incertidumbre publicada»: límite inferior; no media oceánica ni concentración profunda",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La incertidumbre caracteriza >1 µM O₂ como cota inferior del reservorio superficial y niega que sea media oceánica o concentración profunda."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 602,
+      "localizador_logico": "magnitud «clados procariotas HIC no singleton»; valor «3.1–5.1»; C «C-2825»",
+      "texto": "\"clados procariotas HIC no singleton\",\"3.1–5.1\",\"% de clados\",\"cada grupo procariota comparado por Ku y Martin\",\"clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton\",\"no consta un intervalo de confianza para este porcentaje en el pasaje cotejado\",\"inferido\",\"S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9)\",\"C-2825\"",
+      "sha256_texto": "bf7fad4e00e4fa3094b09aee70890eacbe7ce658b8505c9f1ea6a505a106e464",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 192,
+          "fin": 200,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «método o proxy»: clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Cuartil superior pertenece al cálculo del umbral de identidades de singleton en el método HIC; no ordena clados por progreso."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 603,
+      "localizador_logico": "magnitud «clados eucariotas HIC no singleton»; valor «<1.0»; C «C-2826»",
+      "texto": "\"clados eucariotas HIC no singleton\",\"<1.0\",\"% de clados\",\"todos los clados eucariotas del análisis de Ku y Martin\",\"clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton\",\"no consta un intervalo de confianza para este porcentaje en el pasaje cotejado\",\"inferido\",\"S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)\",\"C-2826\"",
+      "sha256_texto": "f0a0dcdd2cf4467d053fa9ff522e5745d4c6756aee565c8688f0c3bdb98c4395",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 196,
+          "fin": 204,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «método o proxy»: clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Cuartil superior identifica la misma parte de la distribución usada para clasificar clados eucariotas HIC, distinta del porcentaje final <1,0 %."
+        }
+      ]
+    },
+    {
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "linea": 604,
+      "localizador_logico": "magnitud «clados eucariotas HIC no singleton tras retirar origen plastidial»; valor «0.3»; C «C-2827»",
+      "texto": "\"clados eucariotas HIC no singleton tras retirar origen plastidial\",\"0.3\",\"% de clados\",\"clados eucariotas restantes sin origen plastidial en Ku y Martin\",\"clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton\",\"no consta un intervalo de confianza para este porcentaje en el pasaje cotejado\",\"inferido\",\"S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)\",\"C-2827\"",
+      "sha256_texto": "faf8cc0b74b3d48eb2b7ed7595d6a81eb6763669d0352d47caf19c47251a6869",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 235,
+          "fin": 243,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «método o proxy»: clasificación HIC por identidad media clado–grupo hermano y umbral del cuartil superior de singleton",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Cuartil superior refiere al umbral estadístico HIC; la fila separa el recuento de clados tras retirar origen plastidial, sin jerarquía evolutiva."
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "linea": 69,
+      "localizador_logico": "clave = «BN-546»",
+      "texto": "\"BN-546\",\"NO LOCALIZADO EN ESTA SESIÓN\",\"Pasaje que sostenga conjuntamente el valor anterior del campo quién lo introdujo y cuándo para data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 17:quién lo introdujo y cuándo\",\"consulta nominal conjunta exacta identidad=«eucariota primitivo»; campo=«quién lo introdujo y cuándo»; valor=«NO APLICA como acuñación única; es una etiqueta criticada»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-546; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 17:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.\"",
+      "sha256_texto": "95fceddf54f65743e5ec2f1a6c3971df8064b443f351d3b49f7f131386953c60",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 289,
+          "fin": 308,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «términos exactos o fundamento»: consulta nominal conjunta exacta identidad=«eucariota primitivo»; campo=«quién lo introdujo y cuándo»; valor=«NO APLICA como acuñación única; es una etiqueta criticada»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-546; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 17:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "La expresión aparece dentro de identidad=«…», como cadena exacta de una consulta de acuñación; la fila limita explícitamente su resultado literal y no predica primitividad de organismos."
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "linea": 70,
+      "localizador_logico": "clave = «BN-547»",
+      "texto": "\"BN-547\",\"NO LOCALIZADO EN ESTA SESIÓN\",\"Pasaje que sostenga conjuntamente el valor anterior del campo quién lo introdujo y cuándo para data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 18:quién lo introdujo y cuándo\",\"consulta nominal conjunta exacta identidad=«organismo simple»; campo=«quién lo introdujo y cuándo»; valor=«NO APLICA como acuñación única; es un descriptor subespecificado»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-547; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 18:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.\"",
+      "sha256_texto": "3c69b5f82b4c729d6747ee57ceb8be82207d357a421971826e35e6080da305c8",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 289,
+          "fin": 305,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «términos exactos o fundamento»: consulta nominal conjunta exacta identidad=«organismo simple»; campo=«quién lo introdujo y cuándo»; valor=«NO APLICA como acuñación única; es un descriptor subespecificado»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-547; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 18:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "Organismo simple es el texto de identidad de una consulta histórica del término; el resultado se limita a coincidencias y no impone una escala de complejidad."
+        }
+      ]
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "linea": 71,
+      "localizador_logico": "clave = «BN-548»",
+      "texto": "\"BN-548\",\"NO LOCALIZADO EN ESTA SESIÓN\",\"Pasaje que sostenga conjuntamente el valor anterior del campo quién lo introdujo y cuándo para data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo\",\"consulta nominal conjunta exacta identidad=«fósil viviente»; campo=«quién lo introdujo y cuándo»; valor=«NO BUSCADO para acuñación (motivo: las C evalúan criterios contemporáneos)»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-548; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.\"",
+      "sha256_texto": "1322849f0dfd0f6e4f1e5c725282b3d0cbab02e78699aae508977927faf6e53a",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 289,
+          "fin": 303,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «términos exactos o fundamento»: consulta nominal conjunta exacta identidad=«fósil viviente»; campo=«quién lo introdujo y cuándo»; valor=«NO BUSCADO para acuñación (motivo: las C evalúan criterios contemporáneos)»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-548; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica.",
+          "dictamen": "CITA_ATRIBUCION_HISTORICA",
+          "motivo": "Fósil viviente es el término consultado en un campo de acuñación, no una afirmación de estasis. La fila declara que su consulta no demuestra ausencia biológica."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv",
+      "linea": 2,
+      "localizador_logico": "formación o unidad y sitio = «Grupo Chuar; afloramientos sobre unos 15 km² del este del Grand Canyon; S158 indica muestras distribuidas a lo largo del grupo, pero no localiza la formación individual de cada espécimen [C-1960; BN-116]»",
+      "texto": "\"Grupo Chuar; afloramientos sobre unos 15 km² del este del Grand Canyon; S158 indica muestras distribuidas a lo largo del grupo, pero no localiza la formación individual de cada espécimen [C-1960; BN-116]\",\"Grupo acotado por aproximadamente 782 Ma en la Formación Nankoweap subyacente y 742 ± 6 Ma en una ceniza del techo; no es una fecha individual por perforación [C-1960]\",\"U–Pb de circones detríticos para el límite inferior y U–Pb de circones de ceniza para el superior; no hay valor publicado localizado para una datación individual de cada perforación [C-1960; BN-116]\",\"perforaciones circulares en microfósiles orgánicos de siete especies\",\"0.1–3.4 µm; comparación adicional de 15–35 µm en algunos microfósiles con forma de vasija\",\"Porter interpretó depredación por perforación a partir de regularidad, distribución y comparación con vampirélidos [C-716]\",\"diagénesis, daño post mortem y preparación [C-717]\",\"no determinada [C-719]\",\"HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-436]\",\"C-714–C-719; C-1960; S158 §Background and methods, resultados, Supplementary Data Table 1 y discusión; BN-116\"",
+      "sha256_texto": "c8a64c754590e10ba43c0ba0f210a85d7eb5ad9a05717b7886ca937f15d7c37f",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 420,
+          "fin": 428,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «método de datación»: U–Pb de circones detríticos para el límite inferior y U–Pb de circones de ceniza para el superior; no hay valor publicado localizado para una datación individual de cada perforación [C-1960; BN-116]",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Inferior identifica el límite estratigráfico del grupo fechado con circones detríticos, explicado por Nankoweap subyacente en la celda de edad."
+        },
+        {
+          "inicio": 466,
+          "fin": 474,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «método de datación»: U–Pb de circones detríticos para el límite inferior y U–Pb de circones de ceniza para el superior; no hay valor publicado localizado para una datación individual de cada perforación [C-1960; BN-116]",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Superior identifica el techo del grupo fechado con circones de ceniza; no ordena perforadores ni estadios evolutivos."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv",
+      "linea": 8,
+      "localizador_logico": "escenario = «océano superficial durante la excursión Lomagundi (~2,22–2,10 Ga)»",
+      "texto": "\"océano superficial durante la excursión Lomagundi (~2,22–2,10 Ga)\",\"I/(Ca+Mg) en carbonatos y estabilidad de IO₃⁻\",\">1 µM O₂\",\"límite inferior inferido para aguas superficiales\",\"no media global, océano profundo ni todo el Paleoproterozoico\",\"S558 Conclusion, pp. 621–622; fig. 1; tabla 1\",\"C-1944\"",
+      "sha256_texto": "bbc8e8e6f6611a9cd76108d163dcda5f2a39292ac379b5b4bc288ee502b29eee",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 135,
+          "fin": 143,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «qué representa»: límite inferior inferido para aguas superficiales",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La celda define >1 µM O₂ como límite inferior inferido de aguas superficiales durante Lomagundi y restringe el reservorio."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv",
+      "linea": 9,
+      "localizador_logico": "proceso = «multicelularidad eucariota amplia»",
+      "texto": "\"multicelularidad eucariota amplia\",\"rango histórico al menos 20–45 linajes independientes\",\"extremo inferior: revisiones previas resumidas por Lamża; extremo superior: Lamża (2023), con seis tipos y criterios funcionales explícitos\",\"disputado y dependiente de circunscripción\",\"ambos extremos se atribuyen a S458, pero el inferior es una síntesis histórica de revisiones previas, no un segundo recuento nominal independiente; no equivale a partición clonal/cenocítica/agregativa\",\"C-1660–C-1662; S458 resumen, métodos y tablas 1–2\"",
+      "sha256_texto": "5fcb8532b2c772cc6175b542659d2b1bc0ae9956230361eca8b2ceab3d44dc96",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 101,
+          "fin": 109,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «criterio y autor»: extremo inferior: revisiones previas resumidas por Lamża; extremo superior: Lamża (2023), con seis tipos y criterios funcionales explícitos",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Inferior nombra el extremo menor del intervalo publicado de 20–45 linajes, atribuido a revisiones previas resumidas por Lamża."
+        },
+        {
+          "inicio": 159,
+          "fin": 167,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «criterio y autor»: extremo inferior: revisiones previas resumidas por Lamża; extremo superior: Lamża (2023), con seis tipos y criterios funcionales explícitos",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior nombra el extremo mayor, 45, del intervalo de recuentos según criterios de Lamża, no linajes de mayor valor."
+        },
+        {
+          "inicio": 324,
+          "fin": 332,
+          "literal": "inferior",
+          "celda_o_clausula": "CSV, columna «límite principal»: ambos extremos se atribuyen a S458, pero el inferior es una síntesis histórica de revisiones previas, no un segundo recuento nominal independiente; no equivale a partición clonal/cenocítica/agregativa",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Inferior remite al mismo extremo numérico y advierte que es síntesis histórica, no un segundo recuento nominal independiente."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-56-14-8-1-codigos.csv",
+      "linea": 7,
+      "localizador_logico": "código o recurso = «Excepción con rango: nombres de género y especie»",
+      "texto": "\"Excepción con rango: nombres de género y especie\",\"el código depende del tratamiento nomenclatural del organismo\",\"rango, disponibilidad o validez bajo ICZN, ICN o ICNP según corresponda\",\"el rango no decide la filogenia ni convierte el corredor superior en una jerarquía uniforme\",\"C-1718\"",
+      "sha256_texto": "a3bd4fcc4050394721196ac429c0ad68747e5152ebb39c8ebbc37a8152c833f1",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 247,
+          "fin": 255,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «qué no establece»: el rango no decide la filogenia ni convierte el corredor superior en una jerarquía uniforme",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Superior refiere a clados de alto nivel por encima del tratamiento de género/especie. La celda niega una jerarquía uniforme; C-1716 y la fila Clados superiores de esta tabla precisan niveles taxonómicos, no avance evolutivo."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "linea": 8,
+      "localizador_logico": "término = «reino»",
+      "texto": "\"reino\",\"nivel superior variable en sistemas de cinco, seis y siete reinos\",\"HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-538]\",\"rango sin equivalencia filogenética uniforme entre sistemas\",\"los sistemas citados producen circunscripciones y recuentos distintos, no una magnitud natural única\",\"sistema y circunscripción explícitos\",\"uso legítimo si se cita el sistema adoptado; esta regla es glosa derivada\",\"C-1810–C-1815\"",
+      "sha256_texto": "f4b562c8c3ccf69f611722a8c439ba5291eb04fc0e8f51a52188d51d71aa05c9",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 15,
+          "fin": 23,
+          "literal": "superior",
+          "celda_o_clausula": "CSV, columna «qué agrupa o agrupaba»: nivel superior variable en sistemas de cinco, seis y siete reinos",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Nivel superior describe el rango reino dentro de sistemas de cinco, seis y siete reinos; la fila subraya que el rango carece de equivalencia filogenética uniforme."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "linea": 17,
+      "localizador_logico": "término = «eucariota primitivo»",
+      "texto": "\"eucariota primitivo\",\"linaje viviente tratado erróneamente como estado ancestral global\",\"HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-546]\",\"confunde descendencia actual con plesiomorfía para un carácter\",\"un linaje puede ser plesiomórfico para un carácter y derivado para otros\",\"plesiomórfico para el carácter X respecto del nodo Y\",\"solo cita histórica o término explícitamente criticado; glosa derivada\",\"C-1862–C-1865\"",
+      "sha256_texto": "33663e8924926f9778473756c6c32a16b820b4606e019902493d3e11aac3f71d",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 20,
+          "literal": "eucariota primitivo",
+          "celda_o_clausula": "CSV, columna «término»: eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La celda nombra el término cuya misma fila califica como tratamiento erróneo del viviente como estado ancestral y reemplaza por plesiomorfía de carácter/nodo."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "linea": 18,
+      "localizador_logico": "término = «organismo simple»",
+      "texto": "\"organismo simple\",\"organismos comprimidos en una escala no declarada de complejidad\",\"HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-547]\",\"artificial sin variable, método y comparación\",\"complejidad varía entre tipos celulares, redes, genoma y morfología\",\"variable de complejidad explícita\",\"simple solo con variable, método y comparación declarados; fuente citable\",\"C-1866–C-1869\"",
+      "sha256_texto": "2b19dc1373d55741b6aad2d6cb5d4d787250380702cc3e3eced9ec6cd78ef78c",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 17,
+          "literal": "organismo simple",
+          "celda_o_clausula": "CSV, columna «término»: organismo simple",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La fila critica la compresión de organismos en una escala no declarada y exige variable, método y comparación; no aplica el descriptor sin esas condiciones."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "linea": 19,
+      "localizador_logico": "término = «fósil viviente»",
+      "texto": "\"fósil viviente\",\"linajes agrupados por criterios variables de estasis, diversidad, duración o semejanza fósil\",\"HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]\",\"criterios múltiples y confusión entre estasis de un carácter y del organismo completo\",\"revisiones muestran diversidad de criterios y evolución pese a estasis parcial\",\"linaje con estasis documentada del carácter X durante el intervalo Y\",\"rótulo histórico o heurístico si se explicitan criterios y no significa sin cambios; fuente citable\",\"C-1870–C-1874\"",
+      "sha256_texto": "5d36aa87503d8a9aeab80243a0bc55ccb05c3a8157e0e6c6d07c25b8b779ad6f",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 15,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "CSV, columna «término»: fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El término encabeza una fila que denuncia confundir estasis de un carácter con la del organismo y exige carácter e intervalo documentados."
+        }
+      ]
+    },
+    {
+      "ruta": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+      "linea": 20,
+      "localizador_logico": "término = «eslabón perdido»",
+      "texto": "\"eslabón perdido\",\"formas transicionales imaginadas como eslabones de una cadena lineal\",\"uso científico más antiguo verificado: Vestiges, 1844; autoría de acuñación universal NO LOCALIZADA en estas C\",\"metáfora lineal que exige ancestros directos y huecos discretos\",\"topología ramificada: un fósil transicional no necesita ser ancestro directo\",\"fósil transicional o miembro del grupo tronco cuando la topología lo permite\",\"historia cultural o crítica terminológica; glosa derivada\",\"C-1875–C-1879\"",
+      "sha256_texto": "f1303b27830502aab0eea857ebafac8f771729348a60592cc2226bc4530280d3",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 16,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "CSV, columna «término»: eslabón perdido",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El término es la metáfora lineal criticada en la misma fila; se contrapone topología ramificada y se propone fósil transicional o grupo tronco."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
+      "linea": 48,
+      "localizador_logico": "prosa; referencias C-690",
+      "texto": "Brown et al. organizaron el árbol eucariota no en dos, sino en tres ensamblajes de orden superior: Amorphea, Diaphoretickes y Excavata. [C-690; S108 Introduction]",
+      "sha256_texto": "6db18f640742943b80e44e5329406bc4028cffd7b6664562c0d83574bb937d75",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 89,
+          "fin": 97,
+          "literal": "superior",
+          "celda_o_clausula": "Prosa o encabezado: Brown et al. organizaron el árbol eucariota no en dos, sino en tres ensamblajes de orden superior: Amorphea, Diaphoretickes y Excavata. [C-690; S108 Introduction]",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Superior indica el nivel inclusivo de ensamblajes del árbol enumerados por Brown: Amorphea, Diaphoretickes y Excavata; no superioridad adaptativa o evolutiva."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
+      "linea": 147,
+      "localizador_logico": "prosa; referencias C-713; C-723; C-726; C-729; C-785",
+      "texto": "La tabla censa exactamente los 17 nodos desarrollados en las tablas nodales y separa una asignación positiva o candidata de un hueco explícito; un fósil anidado en un subclado no se convierte por ello en diagnóstico ni calibración del nodo superior. [C-713; C-723; C-726; C-729; C-785]",
+      "sha256_texto": "5603f9788cbeac09215be6deb65f5b5f6a2d5cd2d661aa584433ff5c5ffa5e2a",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 240,
+          "fin": 248,
+          "literal": "superior",
+          "celda_o_clausula": "Prosa o encabezado: La tabla censa exactamente los 17 nodos desarrollados en las tablas nodales y separa una asignación positiva o candidata de un hueco explícito; un fósil anidado en un subclado no se convierte por ello en diagnóstico ni calibración del nodo superior. [C-713; C-723; C-726; C-729; C-785]",
+          "dictamen": "USO_TECNICO_NO_TELEOLOGICO",
+          "motivo": "Nodo superior es el nodo más inclusivo respecto del subclado donde se anida un fósil; se advierte que no puede trasladarse una calibración entre esos niveles."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/008-07-7-ambiente.md",
+      "linea": 77,
+      "localizador_logico": "prosa; referencias C-1944",
+      "texto": "Para el Paleoproterozoico, Hardisty y colaboradores infirieron más de 1 µM O₂ en aguas superficiales durante la excursión Lomagundi, aproximadamente 2,22–2,10 Ga, mediante I/(Ca+Mg) y estabilidad de yodato. [C-1944] Es un límite inferior somero: no mide el océano profundo ni todo el volumen oceánico. [C-1944; S558 Conclusion, pp. 621–622; fig. 1; tabla 1]",
+      "sha256_texto": "7421a74996ac69b97fbcaefbca117ebb6df6ba3b18faa0937bacaa4140e62291",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 229,
+          "fin": 237,
+          "literal": "inferior",
+          "celda_o_clausula": "Prosa o encabezado: Para el Paleoproterozoico, Hardisty y colaboradores infirieron más de 1 µM O₂ en aguas superficiales durante la excursión Lomagundi, aproximadamente 2,22–2,10 Ga, mediante I/(Ca+Mg) y estabilidad de yodato. [C-1944] Es un límite inferior somero: no mide el océano profundo ni todo el volumen oceánico. [C-1944; S558 Conclusion, pp. 621–622; fig. 1; tabla 1]",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Inferior califica la cota >1 µM O₂ inferida para aguas someras y excluye expresamente profundidad y volumen oceánico global."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
+      "linea": 569,
+      "localizador_logico": "prosa; referencias C-2831",
+      "texto": "Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado. [C-2831; S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento; expresa]",
+      "sha256_texto": "b7e900db90fcc54b1c9a0d003bbdb13955c7bdce5493f50c3d8faf65212ea043",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 83,
+          "fin": 91,
+          "literal": "superior",
+          "celda_o_clausula": "Prosa o encabezado: Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado. [C-2831; S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento; expresa]",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "La comparación se limita a identidad proteica individual >70 %, con 5/96 grupos candidatos como denominador; no jerarquiza linajes."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
+      "linea": 109,
+      "localizador_logico": "prosa; referencias C-1526",
+      "texto": "La agregación de Capsaspora owczarzaki puede inducirse mediante calcio y una fracción sérica o lipoproteica de masa superior a 30 kDa. [C-1526; S427 resultados; figs. 1–4]",
+      "sha256_texto": "d32e4112df3652f3d1fa62c83c638c5a2359c1774c06455b21d089d4773a6358",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 116,
+          "fin": 124,
+          "literal": "superior",
+          "celda_o_clausula": "Prosa o encabezado: La agregación de Capsaspora owczarzaki puede inducirse mediante calcio y una fracción sérica o lipoproteica de masa superior a 30 kDa. [C-1526; S427 resultados; figs. 1–4]",
+          "dictamen": "USO_CUANTITATIVO",
+          "motivo": "Superior modifica la masa de una fracción sérica/lipoproteica, con umbral explícito de 30 kDa, no a Capsaspora."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 503,
+      "localizador_logico": "epígrafe 14.6.16. Eucariota primitivo",
+      "texto": "### 14.6.16. Eucariota primitivo",
+      "sha256_texto": "946591a52ae380f4bfe45c13efbe34a15fb1e79f3cb2b083d9a28e775aeb90a0",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 13,
+          "fin": 32,
+          "literal": "Eucariota primitivo",
+          "celda_o_clausula": "Prosa o encabezado: ### 14.6.16. Eucariota primitivo",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Es un encabezado que nombra el objeto de crítica. El cuerpo 14.6.16, líneas 505–511, rechaza tratar un viviente como ancestral y propone carácter/nodo explícitos."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 505,
+      "localizador_logico": "prosa; referencias C-1862",
+      "texto": "“Eucariota primitivo” aplicado a un linaje viviente confunde descendencia actual con estado ancestral. [C-1862; S412; S413]",
+      "sha256_texto": "8e12a1806890126fe233a6394b9fcb6c1f1d8f157d07c1ace034cf65e434f4ad",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 20,
+          "literal": "Eucariota primitivo",
+          "celda_o_clausula": "Prosa o encabezado: “Eucariota primitivo” aplicado a un linaje viviente confunde descendencia actual con estado ancestral. [C-1862; S412; S413]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Las comillas y el verbo confunde hacen de la expresión el objeto de una crítica explícita a equiparar viviente y estado ancestral."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 509,
+      "localizador_logico": "prosa; referencias C-1864",
+      "texto": "“Plesiomórfico para el carácter X respecto del nodo Y” sustituye a “primitivo” cuando la reconstrucción lo sostiene. [C-1864; S412; S413]",
+      "sha256_texto": "9a566f5a5673b26d972d5a5ad47a6120081c1357f017380a45ea873dad2a7750",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 68,
+          "fin": 77,
+          "literal": "primitivo",
+          "celda_o_clausula": "Prosa o encabezado: “Plesiomórfico para el carácter X respecto del nodo Y” sustituye a “primitivo” cuando la reconstrucción lo sostiene. [C-1864; S412; S413]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Primitivo se cita como palabra que debe ser sustituida por plesiomorfía para un carácter respecto de un nodo, si la reconstrucción lo sostiene."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 511,
+      "localizador_logico": "prosa; referencias C-1865",
+      "texto": "“Eucariota primitivo” conserva uso legítimo únicamente como cita histórica o como término explícitamente criticado. [C-1865; n/a; derivación documental de S412, S413]",
+      "sha256_texto": "50994ecc9f86dfc5f43b6ef6fda95c1a1aaa34eff39e5ac5020a8c3082b131f6",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 20,
+          "literal": "Eucariota primitivo",
+          "celda_o_clausula": "Prosa o encabezado: “Eucariota primitivo” conserva uso legítimo únicamente como cita histórica o como término explícitamente criticado. [C-1865; n/a; derivación documental de S412, S413]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La frase limita explícitamente la expresión a cita histórica o crítica; no la aplica de manera afirmativa a un linaje."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 514,
+      "localizador_logico": "epígrafe 14.6.17. Organismo simple",
+      "texto": "### 14.6.17. Organismo simple",
+      "sha256_texto": "e994d696c8cd2b001142a0172914bddd3cef924c2bbb9e43180ff1ab21c1ea50",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 13,
+          "fin": 29,
+          "literal": "Organismo simple",
+          "celda_o_clausula": "Prosa o encabezado: ### 14.6.17. Organismo simple",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El encabezado presenta el término examinado. El cuerpo 14.6.17 (líneas 516–522) exige dimensiones medidas y rechaza llamar simple a un unicelular por su sola unicelularidad."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 518,
+      "localizador_logico": "prosa; referencias C-1867",
+      "texto": "“Organismo simple” sin una métrica explícita no produce una comparación auditable. [C-1867; S414]",
+      "sha256_texto": "6459b23f455ec972be195abd1eef0d43a138c4f399df6c99fbf9fe7b8838a0da",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 17,
+          "literal": "Organismo simple",
+          "celda_o_clausula": "Prosa o encabezado: “Organismo simple” sin una métrica explícita no produce una comparación auditable. [C-1867; S414]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La proposición niega que la expresión sin métrica produzca comparación auditable; es crítica de un descriptor no operacional."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 525,
+      "localizador_logico": "epígrafe 14.6.18. Fósil viviente",
+      "texto": "### 14.6.18. Fósil viviente",
+      "sha256_texto": "d41ab9e7c2927a347f4fdc1f3b310561bde1c97039f90eb607e9402bf3ebb79f",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 13,
+          "fin": 27,
+          "literal": "Fósil viviente",
+          "celda_o_clausula": "Prosa o encabezado: ### 14.6.18. Fósil viviente",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El título nombra un rótulo en discusión; el cuerpo 14.6.18 distingue estasis parcial de ausencia de evolución y condiciona su uso a criterios explícitos."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 529,
+      "localizador_logico": "prosa; referencias C-1871",
+      "texto": "“Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo. [C-1871; S415 discusión]",
+      "sha256_texto": "22eb67cf25975bdfeaecf1a71dda9bffe603b1f8be5c3393883c1d82e12317c8",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 15,
+          "literal": "Fósil viviente",
+          "celda_o_clausula": "Prosa o encabezado: “Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo. [C-1871; S415 discusión]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Se advierte expresamente que el rótulo puede ocultar la diferencia entre estasis de un carácter y del organismo completo."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 533,
+      "localizador_logico": "prosa; referencias C-1873",
+      "texto": "“Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente. [C-1873; S415 revisión; S416 §2, §3 y tabla 1]",
+      "sha256_texto": "52afcca7f061cf1188cebe45ce0da86d91e9f10c9c6686d6252aef6142e46733",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 118,
+          "fin": 132,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "Prosa o encabezado: “Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente. [C-1873; S415 revisión; S416 §2, §3 y tabla 1]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Se sustituye la afirmación vaga por linaje, carácter, intervalo y estasis documentados; el rótulo no se adjudica a un taxón."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 535,
+      "localizador_logico": "prosa; referencias C-1874",
+      "texto": "Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”. [C-1874; S415 revisión; S416 conclusión]",
+      "sha256_texto": "3812281c59c4fffc845851d563c94e995009d065d311520c680e313efdc70a8c",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 0,
+          "fin": 14,
+          "literal": "Fósil viviente",
+          "celda_o_clausula": "Prosa o encabezado: Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”. [C-1874; S415 revisión; S416 conclusión]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El uso queda condicionado a criterios y se excluye literalmente sin cambios; no se sostiene inmovilidad evolutiva."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 538,
+      "localizador_logico": "epígrafe 14.6.19. Eslabón perdido",
+      "texto": "### 14.6.19. Eslabón perdido",
+      "sha256_texto": "54648062e8922f18d631a94f1e4e8505a71f2457a2b16924dc933b76359d0421",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 13,
+          "fin": 28,
+          "literal": "Eslabón perdido",
+          "celda_o_clausula": "Prosa o encabezado: ### 14.6.19. Eslabón perdido",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "El encabezado introduce la discusión de la metáfora. El cuerpo 14.6.19 niega que un fósil transicional requiera ancestralidad directa y propone términos filogenéticos."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 540,
+      "localizador_logico": "prosa; referencias C-1875",
+      "texto": "“Eslabón perdido” representa la evolución como una cadena lineal con huecos discretos. [C-1875; S417 tesis general; S423]",
+      "sha256_texto": "48c1e0f6f074073e0ad1fd90a51d2f32614451250d1a7d23891ced5948039d85",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 1,
+          "fin": 16,
+          "literal": "Eslabón perdido",
+          "celda_o_clausula": "Prosa o encabezado: “Eslabón perdido” representa la evolución como una cadena lineal con huecos discretos. [C-1875; S417 tesis general; S423]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La expresión entre comillas es el sujeto metalingüístico de una descripción de la metáfora lineal, no una defensa de ella; el contexto C-1876/C-1877 precisa fósil transicional y reemplazo topológico."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 544,
+      "localizador_logico": "prosa; referencias C-1877",
+      "texto": "“Fósil transicional” o “miembro del grupo tronco” sustituye a “eslabón perdido” cuando la topología lo permite. [C-1877; S385; S417]",
+      "sha256_texto": "2a49b714c71402b8e006f85f974a44592e7f6c6ef3e4670c1e8f044c336869f3",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 63,
+          "fin": 78,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "Prosa o encabezado: “Fósil transicional” o “miembro del grupo tronco” sustituye a “eslabón perdido” cuando la topología lo permite. [C-1877; S385; S417]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La frase propone dos reemplazos condicionados por la topología, evitando adoptar eslabón perdido como categoría biológica."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 548,
+      "localizador_logico": "prosa; referencias C-1879",
+      "texto": "Eslabón perdido conserva uso legítimo únicamente como objeto de historia cultural o crítica terminológica. [C-1879; n/a; derivación documental de S417]",
+      "sha256_texto": "ee57c0c9ef6560b6ac84407e61676c636928b2eb370f1262364889083ec6ea26",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 0,
+          "fin": 15,
+          "literal": "Eslabón perdido",
+          "celda_o_clausula": "Prosa o encabezado: Eslabón perdido conserva uso legítimo únicamente como objeto de historia cultural o crítica terminológica. [C-1879; n/a; derivación documental de S417]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "La proposición restringe el término a objeto de historia cultural o crítica; no declara una cadena de organismos."
+        }
+      ]
+    },
+    {
+      "ruta": "docs/secciones/015-14-14-nombres-y-nomenclatura.md",
+      "linea": 580,
+      "localizador_logico": "prosa; referencias C-1892",
+      "texto": "“Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan. [C-1892; S412, S413, S414, S415, S416, S417; S423]",
+      "sha256_texto": "60c0373620f242ce1bcdaeb2716aa1b08b12092fc72ba1e654f6efd575e9acef",
+      "revisor": "/root/verificacion_fuentes_nuevas",
+      "declaracion_independencia": "REVISION_INDEPENDIENTE_DE_CONTEXTOS_SIN_AUTORIA_DEL_TEXTO",
+      "fecha_revision_utc": "2026-09-27T02:18:27Z",
+      "conflicto_autoria": "NO",
+      "ocurrencias": [
+        {
+          "inicio": 10,
+          "fin": 19,
+          "literal": "primitivo",
+          "celda_o_clausula": "Prosa o encabezado: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan. [C-1892; S412, S413, S414, S415, S416, S417; S423]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Primitivo se menciona como riesgo de lectura escalonada si no se operacionaliza, no como atributo de un taxón."
+        },
+        {
+          "inicio": 33,
+          "fin": 47,
+          "literal": "fósil viviente",
+          "celda_o_clausula": "Prosa o encabezado: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan. [C-1892; S412, S413, S414, S415, S416, S417; S423]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Fósil viviente integra la lista advertida de términos que pueden inducir una escala; el párrafo siguiente pide clado, carácter y topología concretos."
+        },
+        {
+          "inicio": 52,
+          "fin": 67,
+          "literal": "eslabón perdido",
+          "celda_o_clausula": "Prosa o encabezado: “Basal”, “primitivo”, “simple”, “fósil viviente” y “eslabón perdido” pueden introducir una lectura escalonada si no se operacionalizan. [C-1892; S412, S413, S414, S415, S416, S417; S423]",
+          "dictamen": "CRITICA_TERMINOLOGICA",
+          "motivo": "Eslabón perdido se incluye entre rótulos problemáticos y no se presenta como forma biológica necesaria."
+        }
+      ]
+    }
+  ],
+  "fecha_snapshot_utc": "2026-09-27T02:23:36Z",
+  "huellas_rutas": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "15626aee0e032338d9f93b94a1ee852e28e7935ee55e689e7ac1f271a7461e34",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+    "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+    "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+    "data/apendices/F_magnitudes.csv": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e"
+  }
+}

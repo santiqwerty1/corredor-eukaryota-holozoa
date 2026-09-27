@@ -312,7 +312,7 @@ La inclusión de Amorphea en Eukaryota, la incertidumbre sobre la raíz interna 
 
 ### 4.6.2. Amorphea
 
-Sandin et al. compararon 32 árboles con 77 calibraciones y 100 réplicas de TreePL. [C-787; C-788; C-789] Para Amorphea publicaron una mediana de 1.773 Ma y un máximo/mínimo de medianas de 1.934/1.703 Ma. [C-791] Estos valores constituyen un estudio paralelo a S126: no reemplazan su intervalo ni se combinan con él mediante promedios o amplitudes propias. [C-786–C-791; S548 métodos; resultados]
+Sandin et al. compararon 32 árboles con 77 calibraciones en MC01 y 100 réplicas de TreePL por árbol. [C-787; C-788; C-789] Bajo el enraizamiento en Amorphea publicaron para la raíz eucariota una mediana de 1773 Ma y un máximo/mínimo de medianas de 1934/1703 Ma; no son edades de la corona de Amorphea. [C-791; S548 Results, Timetree of Eukaryotes; Fig. 1C] En el artículo publicado y los suplementos inspeccionados no se localizó una cifra nominal transcribible para esta corona, por lo que la tabla conserva el hueco acotado y no estima la posición de un nodo sobre el eje de la figura. [C-2818; BN-558]
 
 <!-- TABLE:table-17-4-6-2-amorphea -->
 
@@ -470,7 +470,13 @@ El orden interno temprano de Obazoa ha cambiado con la incorporación de nuevos 
 
 La raíz interna de Holozoa unicelular permanece sin resolver. [C-680; S126 fig. 5]
 
-Las edades nodales de S126 proceden de MCMCTree con diez calibraciones fósiles, un análisis con raíz de 1,5 Ga y una sensibilidad con raíz de 1,9 Ga. [C-682] Se transcriben los intervalos publicados sin calcular puntos medios. [C-682; C-525; C-526; C-533; C-534; C-541; C-542; C-550; C-558; C-559; C-566; C-574; C-582; C-590; C-591; C-598; C-599; C-614; C-615; C-622; C-623]
+Las edades nodales de S126 proceden de MCMCTree con diez calibraciones fósiles y restricciones alternativas de edad de la raíz. [C-682; S126 Methods, Molecular dating] Los intervalos se conservan en las unidades y con los extremos impresos en cada localizador: no se convierten ni se redondean. [C-525; C-526; C-533; C-534; C-541; C-542; C-550; C-551; C-558; C-559; C-590; C-591; C-598; C-599; C-614; C-615; C-622; C-623; S126 Results, A timescale for Opisthokonta diversification, Table 2; Supporting information, S1 Data, p. 21, árboles izquierdo y derecho; Fig. 3, leyenda de la escala]
+
+La declaración de disponibilidad de Liu et al. remite al repositorio Figshare S545 para las matrices de datos, los árboles filogenéticos y los scripts del estudio. [C-2820; S126 §Data Availability]
+
+El muestreo de ambos árboles temporales incluye Nutomonas longa. [C-2816; S126 Supporting information, S1 Data, p. 21, terminal Nutomonas longa; requiere inspección humana] Adl et al. incluyen Nutomonas en Ancyromonadida. [C-2814; S01 §Ancyromonadida, Table 2, lista de géneros] Los intervalos [8.0305,12.3765] y [8.0734,12.4308], en unidades de 100 millones de años antes del presente, corresponden al nodo Pygsuia–Nutomonas. [C-558; C-559; S126 Supporting information, S1 Data, p. 21, árboles izquierdo y derecho, bifurcación Pygsuia biforma–Nutomonas longa; requiere inspección humana] La inspección de ese suplemento no localizó una edad de corona de Breviatea con muestreo interno. [C-2815; BN-557 términos, ámbito y resultado]
+
+Para Obazoa se conserva la denominación de Table 2 y su intervalo literal, con la advertencia anterior sobre la composición del muestreo. [C-541; C-2816; S126 Results, A timescale for Opisthokonta diversification, Table 2; Supporting information, S1 Data, p. 21; requiere inspección humana] La raíz del árbol temporal se registra como raíz del muestreo de S126. [C-525; C-526; S126 Supporting information, S1 Data, p. 21; requiere inspección humana] En S548, la edad de la raíz eucariota bajo el enraizamiento en Amorphea tampoco se reasigna a la corona de ese grupo. [C-791; S548 Results, Timetree of Eukaryotes; Fig. 1C]
 
 ## 4.10. Registro de afirmaciones de la sección 4
 

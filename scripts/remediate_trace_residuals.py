@@ -6,6 +6,9 @@ NO_CONFORME se repite una consulta literal exacta sobre ``fuentes/``. Solo si la
 consulta da cero coincidencias se sustituye el valor anterior por un hueco de
 trazabilidad acotado a esa consulta. Cero coincidencias nunca se interpreta como
 ausencia biológica ni como prueba de que el dato no exista en la literatura.
+Una corrección semántica posterior puede sustituir ese hueco sólo mediante
+una disposición nominal con revisión ajena ligada a la propuesta. La consulta
+y la BN históricas se conservan; no se añaden positivos literales por esa vía.
 """
 
 from __future__ import annotations
@@ -25,12 +28,29 @@ TARGETS = (
     ROOT / "data/auditoria/celdas_no_conformes_trazabilidad_v2.csv",
 )
 MANIFEST = ROOT / "data/auditoria/mapeo_celdas_afirmaciones.csv"
+CORRECTIONS = ROOT / "data/auditoria/correcciones_celdas_semanticas_v1.csv"
 CLAIMS = ROOT / "data/afirmaciones/15.csv"
 MAGNITUDES = ROOT / "data/apendices/F_magnitudes.csv"
 NARRATIVE = ROOT / "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md"
 GENERATED_MARKER = "Cierre nominal de trazabilidad v3"
 START_BN = 147
 POSITIVE_CLAIMS = {"C-2472", "C-2489"}
+EXPECTED_RESIDUALS = 410
+EXPECTED_V3_NEGATIVES = 408
+# BN-557 y BN-558 son consultas científicas posteriores, ajenas a la remediación v3.
+# BN-120 fue retirada al recuperar genes y densidad en S434 (C-2821/C-2822).
+# Su fila y Q previa se conservan en docs/auditorias/retirada_bn120_2026-09-26.json.
+# BN-132 se retira tras localizar recuentos de genes/familias en S560,
+# C-1163/C-2824; historia en retirada_bn132_2026-09-26.json.
+# BN-133/BN-146 se retiran al recuperar cifras de ambas posiciones HGT con
+# denominadores explícitos (S290/S291/S561, C-2825–C-2832); historia completa
+# en retirada_bn133_bn146_2026-09-27.json. Ninguna retirada convierte una BN
+# en prueba positiva ni altera las 408 consultas v3.
+# BN-144 se retira al recuperar el par recuento–tiempo en S562;
+# la ausencia de resolución de pérdidas individuales se conserva en C-2835.
+# Historia previa íntegra: retirada_bn144_2026-09-27.json.
+EXPECTED_BN_COUNTS = (494, 482, 12)
+RETIRED_BN_KEYS = {"BN-120", "BN-132", "BN-133", "BN-144", "BN-146"}
 
 RESIDUAL_HEADER = [
     "claim_id", "csv_path", "fila", "columna", "contenido_anterior",
@@ -76,6 +96,37 @@ def source_snapshot() -> tuple[list[str], str, int]:
         texts.append(normalized(payload.decode("utf-8", errors="ignore")))
     inventory = "\n".join("\0".join(row) for row in records) + "\n"
     return texts, hashlib.sha256(inventory.encode()).hexdigest(), len(records)
+
+
+class ExactCooccurrenceIndex:
+    """Memoiza pertenencia literal por componente, sin interpretar el texto.
+
+    Los textos y componentes ya tienen exactamente la normalización histórica.
+    Cada conjunto contiene los índices de artefactos que contienen la cadena;
+    su intersección equivale al ``all(component in text ...)`` original. La
+    evaluación es perezosa: solo inspecciona artefactos que superaron los
+    componentes anteriores y reutiliza tanto aciertos como fallos. No hay
+    tokenización, stemming, coincidencia aproximada ni cambio del universo.
+    """
+
+    def __init__(self, texts: list[str]) -> None:
+        self.texts = tuple(texts)
+        self.matches: dict[str, set[int]] = {}
+        self.checked: dict[str, set[int]] = {}
+
+    def count(self, components: list[str]) -> int:
+        common = set(range(len(self.texts)))
+        for component in components:
+            matches = self.matches.setdefault(component, set())
+            checked = self.checked.setdefault(component, set())
+            pending = common - checked
+            matches.update(index for index in pending if component in self.texts[index])
+            checked.update(pending)
+            common &= matches
+            if not common:
+                return 0
+        # Conserva incluso la semántica de all([]) para consultas sin componentes.
+        return len(common)
 
 
 def negative_path(csv_path: str) -> Path:
@@ -166,27 +217,64 @@ def bn_row(
     return row
 
 
+def semantic_dispositions(residuals: list[dict[str, str]] | None = None) -> dict[str, dict]:
+    try:
+        from . import build_atomic_cell_claims as atomic
+        from . import residual_semantic_dispositions as dispositions
+    except ImportError:
+        import build_atomic_cell_claims as atomic
+        import residual_semantic_dispositions as dispositions
+    snapshots = {path: path.read_bytes() for path in (RESIDUALS, *TARGETS, CORRECTIONS)}
+    correction_header, corrections = read_csv(CORRECTIONS)
+    if correction_header != atomic.CORRECTION_HEADER:
+        raise RuntimeError("Cabecera de correcciones semánticas inesperada")
+    targets = [row for path in TARGETS for row in read_csv(path)[1]]
+    found = dispositions.load(
+        ROOT, residuals if residuals is not None else read_csv(RESIDUALS)[1],
+        targets, corrections, start_bn=START_BN, positive_claims=POSITIVE_CLAIMS,
+    )
+    for key, record in found.items():
+        if record["contenido_previo"] != gap_value(record["bn"]):
+            raise RuntimeError(f"La disposición no conserva el hueco histórico exacto: {key}")
+    if any(path.read_bytes() != raw for path, raw in snapshots.items()):
+        raise RuntimeError("Entradas de disposición modificadas durante la validación")
+    return found
+
+
 def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
     header, residuals = read_csv(RESIDUALS)
-    if header != RESIDUAL_HEADER or len(residuals) != 410:
+    if header != RESIDUAL_HEADER or len(residuals) != EXPECTED_RESIDUALS:
         raise RuntimeError("El censo residual debe contener exactamente 410 filas canónicas")
     if any(row["resultado"] != "NO_CONFORME" for row in residuals):
         raise RuntimeError("El censo residual contiene una fila no rechazada")
     ids = [row["claim_id"] for row in residuals]
     if len(ids) != len(set(ids)):
         raise RuntimeError("C residual duplicada")
+    if not POSITIVE_CLAIMS.issubset(ids):
+        raise RuntimeError("El censo residual debe conservar los dos pasajes positivos nominales")
+    if len(ids) - len(POSITIVE_CLAIMS) != EXPECTED_V3_NEGATIVES:
+        raise RuntimeError("El censo residual debe conservar exactamente 408 consultas negativas v3")
 
+    dispositions = semantic_dispositions(residuals)
+    input_paths = {
+        RESIDUALS, CORRECTIONS, *TARGETS, MANIFEST, CLAIMS, MAGNITUDES, NARRATIVE,
+        *(ROOT / row["csv_path"] for row in residuals),
+        *(ROOT / "data/busquedas_negativas").glob("*.csv"),
+    }
+    inputs_before = {path: path.read_bytes() for path in input_paths}
     source_texts, source_hash, source_count = source_snapshot()
+    cooccurrences = ExactCooccurrenceIndex(source_texts)
     probes: dict[str, tuple[str, int]] = {}
     payloads: dict[Path, bytes] = {}
     assigned: dict[str, str] = {}
+    historical: dict[str, str] = {}
     by_table: dict[Path, list[tuple[dict[str, str], str]]] = {}
     for offset, residual in enumerate(residuals):
         bn = f"BN-{START_BN + offset:03d}"
         query = nominal_query(residual)
         residual["_consulta_nominal"] = query
         components = nominal_components(query)
-        count = sum(all(component in text for component in components) for text in source_texts)
+        count = cooccurrences.count(components)
         if residual["claim_id"] not in POSITIVE_CLAIMS:
             probes[bn] = (query, count)
         if count and residual["claim_id"] not in POSITIVE_CLAIMS:
@@ -195,10 +283,13 @@ def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
             )
         if not count and residual["claim_id"] in POSITIVE_CLAIMS:
             raise RuntimeError(f"{residual['claim_id']}: pasaje positivo dejó de resolver")
-        replacement = (
+        historical_value = (
             residual["contenido_anterior"]
             if residual["claim_id"] in POSITIVE_CLAIMS else gap_value(bn)
         )
+        historical[residual["claim_id"]] = historical_value
+        disposition = dispositions.get(residual["claim_id"])
+        replacement = disposition["contenido_nuevo"] if disposition else historical_value
         assigned[residual["claim_id"]] = replacement
         by_table.setdefault(ROOT / residual["csv_path"], []).append((residual, replacement))
 
@@ -218,7 +309,9 @@ def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
     for target_path in TARGETS:
         target_header, target_rows = read_csv(target_path)
         for row in target_rows:
-            replacement = assigned.get(row["claim_id"])
+            # El objetivo conserva el hueco autoral histórico. La corrección
+            # semántica se aplica prospectivamente en su registro separado.
+            replacement = historical.get(row["claim_id"])
             if replacement is None:
                 continue
             row["contenido"] = replacement
@@ -273,10 +366,28 @@ def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
     total = len(active)
     unlocated = sum("NO LOCALIZADO EN ESTA SESIÓN" in row.values() for row in active)
     declared = sum("LA LITERATURA DECLARA QUE NO SE SABE" in row.values() for row in active)
-    if (total, unlocated, declared) != (497, 485, 12):
+    if (total, unlocated, declared) != EXPECTED_BN_COUNTS:
         raise RuntimeError(
             f"Recuento BN inesperado: total={total}, no_localizado={unlocated}, literatura={declared}"
         )
+    if len({row["clave"] for row in active}) != total:
+        raise RuntimeError("El registro activo contiene claves BN duplicadas")
+    retired_active = RETIRED_BN_KEYS & {row["clave"] for row in active}
+    if retired_active:
+        raise RuntimeError(
+            "El registro activo reintroduce BN retiradas por evidencia positiva: "
+            + ", ".join(sorted(retired_active))
+        )
+    expected_v3 = {
+        f"BN-{START_BN + offset:03d}"
+        for offset, residual in enumerate(residuals)
+        if residual["claim_id"] not in POSITIVE_CLAIMS
+    }
+    actual_v3 = {
+        row["clave"] for row in active if GENERATED_MARKER in " ".join(row.values())
+    }
+    if actual_v3 != expected_v3 or len(actual_v3) != EXPECTED_V3_NEGATIVES:
+        raise RuntimeError("Las 408 BN de remediación v3 no coinciden con los residuales nominales")
 
     claims_header, claim_rows = read_csv(CLAIMS)
     for row in claim_rows:
@@ -294,7 +405,7 @@ def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
             )
         elif row["#"] == "C-1933":
             row["Afirmación"] = (
-                f"Cuatrocientas ochenta y cinco búsquedas negativas están marcadas "
+                f"{unlocated} búsquedas negativas están marcadas "
                 "NO LOCALIZADO EN ESTA SESIÓN."
             )
             row["Objeto"] = f"{unlocated} filas"
@@ -328,6 +439,10 @@ def build() -> tuple[dict[Path, bytes], dict[str, tuple[str, int]]]:
         "marcada `NO BUSCADO`.", narrative,
     )
     payloads[NARRATIVE] = narrative.encode("utf-8")
+    if semantic_dispositions() != dispositions:
+        raise RuntimeError("Disposiciones cambiaron durante la remediación")
+    if any(not path.is_file() or path.read_bytes() != raw for path, raw in inputs_before.items()):
+        raise RuntimeError("Entradas cambiaron durante la remediación")
     return payloads, probes
 
 
@@ -346,13 +461,13 @@ def main() -> int:
     if args.write:
         for path, payload in payloads.items():
             path.write_bytes(payload)
-        print("RESIDUALES DE TRAZABILIDAD REMEDIADOS: 408 huecos nominales y 2 pasajes positivos")
+        print("RESIDUALES REMEDIADOS: 408 consultas negativas y 2 positivos literales; disposiciones semánticas verificadas por separado")
         return 0
     stale = [path.relative_to(ROOT).as_posix() for path, payload in payloads.items()
              if path.read_bytes() != payload]
     if stale:
         raise SystemExit("Remediación de trazabilidad desactualizada: " + "; ".join(stale))
-    print("REMEDIACIÓN DE TRAZABILIDAD VERIFICADA: 408 huecos y 2 pasajes positivos")
+    print("REMEDIACIÓN VERIFICADA: 408 consultas negativas y 2 positivos literales; disposiciones semánticas verificadas por separado")
     return 0
 
 

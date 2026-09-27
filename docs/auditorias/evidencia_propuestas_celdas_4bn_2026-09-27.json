@@ -1,0 +1,1247 @@
+{
+  "esquema": "propuestas_documentales_sin_disposicion_canonica_v1",
+  "revisor": "/root/inspeccion_relojes",
+  "captura_utc": "2026-09-27T01:39:21Z",
+  "dictamen": "PROPUESTAS PARCIALES; NO AUTORIZA RESTAURAR HISTORICOS NI CIERRE GLOBAL",
+  "invariante": "Preservar residuales v3 y sus consultas. No añadir a POSITIVE_CLAIMS; cualquier sustitución requiere nueva disposición nominal revisada.",
+  "sha_fila_definicion": "SHA256 UTF8 JSON ensure_ascii=False,sort_keys=True,separators comma colon, seguido de LF",
+  "archivos": [
+    {
+      "ruta": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+      "sha256": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3"
+    },
+    {
+      "ruta": "data/auditoria/residuales_trazabilidad_no_conformes_v3.csv",
+      "sha256": "8a33be0a189a42fe8a6c4b14ae5e36aa8df9da89aa312c045c6fd99de3c3f355"
+    },
+    {
+      "ruta": "docs/auditorias/DIAGNOSTICO_NOMINAL_4BN_2026-09-27.md",
+      "sha256": "d2638faef0f2f7e29139cdf611f9d1d76d35bd92a4463e693a7d4d1aec086d6d"
+    },
+    {
+      "ruta": "docs/auditorias/evidencia_diagnostico_4bn_2026-09-27.json",
+      "sha256": "52665686e4d81e2cfd1a771aa2046cdca894e5df986786be76c1bb82f9cdd37e"
+    },
+    {
+      "ruta": "scripts/remediate_trace_residuals.py",
+      "sha256": "8267892735fc5d85b66160ad3906efba1127c076482c4555e79be517f75d93e8"
+    }
+  ],
+  "mapas": [
+    {
+      "sha256_json_fila": "f53aedcf07b2e5f82ac2dc1819f78e8a0b937cf8483a3ac2896d48a62cb40ae6",
+      "fila": {
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "6",
+        "columna": "genoma del socio comparado con parientes de vida libre",
+        "contenido_sha256": "f67b02f8c3e4e4c6557602b43ac3201c29e76111642e5a191eea817e78105e50",
+        "contenido": "aprox. 0,8 Mb y pérdida de genes bacterianos de división; comparación cuantitativa con pariente libre NO LOCALIZADA",
+        "afirmaciones": "C-1030",
+        "base_semantica": "Afirmación+SPO+Motivo",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Revisión cruzada independiente celda→C: cada C indicada cubre literalmente esta celda completa; no se heredó el campo filas."
+      }
+    },
+    {
+      "sha256_json_fila": "d98f689f697187923bd6bb250ec525fed107d3e45969d3030ccd64462230dd1a",
+      "fila": {
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "7",
+        "columna": "genoma del socio comparado con parientes de vida libre",
+        "contenido_sha256": "7bca140dd364e02c0196303da87f3d8fb79c4e7afcb6e13fe97e3e0272a8df4c",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]",
+        "afirmaciones": "C-2708",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "97d4eb8231ce336e80e1c9a3708728a9302e044b7277f977ad4fa3cf2807bb3a",
+      "fila": {
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "7",
+        "columna": "EGT al núcleo; importación de proteínas de vuelta",
+        "contenido_sha256": "6ddc0890b6d2e2cfa59eb7f534b539f6cf43434d2f02a36d117c01951966d911",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]",
+        "afirmaciones": "C-2709",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "c394b8a69fb07dffa1c8a0a32f8f96f6b86892c324f84969650d7ef3960fe252",
+      "fila": {
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "19",
+        "columna": "antigüedad estimada del inicio",
+        "contenido_sha256": "caaf34691be3bdafc14fb8a3e1b1699894c542cd41eaf90c26edbd3b7553b17d",
+        "contenido": "80–150 Ma para la divergencia de cepas comparadas; no es fecha directa de captura",
+        "afirmaciones": "C-1099",
+        "base_semantica": "Afirmación+SPO+Motivo",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Revisión cruzada independiente celda→C: cada C indicada cubre literalmente esta celda completa; no se heredó el campo filas."
+      }
+    },
+    {
+      "sha256_json_fila": "82800e2fd87c5dae158e3e77cf20385c579233e5ae6cd41eb71345a030693021",
+      "fila": {
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "19",
+        "columna": "genoma del socio comparado con parientes de vida libre",
+        "contenido_sha256": "1ab6cfa738ebfcd0c338b80ac07e09597372f78b18296f335f5c6033f71bbfc5",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-511]",
+        "afirmaciones": "C-2754",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "6955ff2d684be05353ba15c900f934505b87461d96af99adb0bb8af3c2993e21",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "6",
+        "columna": "otros choanoflagelados",
+        "contenido_sha256": "036a1f0f78136ccc82e2a18fd2e0e76887307e107b6bea2dfb3cedd607b6be8c",
+        "contenido": "componentes en distribución mosaico",
+        "afirmaciones": "C-1580",
+        "base_semantica": "cotejo_literal_celda_C",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Cotejo de autor: C-1580 afirma el valor o límite acotado de esta celda; pendiente segunda revisión independiente."
+      }
+    },
+    {
+      "sha256_json_fila": "902192e92c28c0f53fdd02d5a4f26c2eecd6039d473a4ebcd46635f2bf356563",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "7",
+        "columna": "Monosiga",
+        "contenido_sha256": "8e525c6f1357d2a706115d250f5c8363c76836e342d121aa7e095f9fc429b7ee",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]",
+        "afirmaciones": "C-2468",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "6a084d103ca54402491625bc8492311303bd52158aa88fa3c7b493d2a69548b2",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "7",
+        "columna": "Capsaspora",
+        "contenido_sha256": "a35b5b757538eb090246b88e060ba384e1bed68bcf382ae60f2f0868b55bbd3f",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]",
+        "afirmaciones": "C-2469",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "eeb4428d847ab63223b9a2dbfed849825161d30499482c3c5000a084194e02a3",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "8",
+        "columna": "Monosiga",
+        "contenido_sha256": "aa1be1720cd47dfbb2aaea48fedf681ed6c72285356f2db4d00d3c2823461ca5",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]",
+        "afirmaciones": "C-2474",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "0223b6e4058714dad104787c5058c8b0638ba7aafed786732a3b9a88bb4055aa",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "8",
+        "columna": "Capsaspora",
+        "contenido_sha256": "ac11db3bfd278bc3ecc79929e18c19c801795a03957413bb0d59f4a936716c22",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]",
+        "afirmaciones": "C-2475",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "f175c9ad25ea01aa511b23809dd7ce9aa55a31ddf7c3b0879fe783e3542ff787",
+      "fila": {
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "8",
+        "columna": "Metazoa",
+        "contenido_sha256": "e4b37443d8a46f00f83790b3048cf6a137079a56c71574ba298b4fd267461c49",
+        "contenido": "235 dominios como innovaciones de tallo metazoano",
+        "afirmaciones": "C-1583",
+        "base_semantica": "cotejo_literal_celda_C",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Cotejo de autor: C-1583 afirma el valor o límite acotado de esta celda; pendiente segunda revisión independiente."
+      }
+    },
+    {
+      "sha256_json_fila": "08699fd533bd576f739177977d84c87d96928bb208240d2e719287bc972dfd7d",
+      "fila": {
+        "csv_path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+        "fila": "15",
+        "columna": "quién lo introdujo y cuándo",
+        "contenido_sha256": "5f8218b0005c0241485869cc3ec6da66d975562a355e2a66d14c4c5c234d3281",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-545]",
+        "afirmaciones": "C-2801",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    },
+    {
+      "sha256_json_fila": "f71e8e7626a2c497492d222291a75b6d11898c78feb16e11da84f5e138f9ce21",
+      "fila": {
+        "csv_path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+        "fila": "19",
+        "columna": "quién lo introdujo y cuándo",
+        "contenido_sha256": "5b314af3c8d38a13c9a61c01752fb47ae27fdd9bc06f6845818cc0204e6fd8a4",
+        "contenido": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]",
+        "afirmaciones": "C-2804",
+        "base_semantica": "cotejo_literal_C_atomica_por_celda",
+        "estado_revision": "REVISADA",
+        "nota_adjudicacion": "Corrección de autor posterior al dictamen independiente: la C atómica reproduce solo esta celda; pendiente rerevisión ajena."
+      }
+    }
+  ],
+  "residuales_historicos": [
+    {
+      "sha256_json_fila": "46ff2e4d49ef49a73cb56c610eab3c5c367e15afb6ea6a797623cca1a1de4bc1",
+      "fila": {
+        "claim_id": "C-2468",
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "7",
+        "columna": "Monosiga",
+        "contenido_anterior": "no localizado en el genoma comparado por S352",
+        "contenido_sha256": "7fb2f50e824dd3c3ae096d8e0ea268338147814ce95201aa5374b9e4653d4875",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+        "resultado": "NO_CONFORME",
+        "evidencia": "NO CONFORME: la C nueva repite «no localizado en el genoma comparado por S352», pero el hueco depende de una búsqueda agregada que no individualiza esta fila, campo y unidad. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Una BN nueva o corregida tendría que registrar términos, ámbito y resultado nominales para esta combinación exacta; el estado actual no permite deducirla desde “no para todos”.",
+        "localizadores": "C-2468;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga"
+      }
+    },
+    {
+      "sha256_json_fila": "69684b3d4f1ba8112008d419ead48500fa5962e919db2781a3f84983cb94689f",
+      "fila": {
+        "claim_id": "C-2469",
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "7",
+        "columna": "Capsaspora",
+        "contenido_anterior": "no localizado en el genoma comparado por S352",
+        "contenido_sha256": "7fb2f50e824dd3c3ae096d8e0ea268338147814ce95201aa5374b9e4653d4875",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+        "resultado": "NO_CONFORME",
+        "evidencia": "NO CONFORME: la C nueva repite «no localizado en el genoma comparado por S352», pero el hueco depende de una búsqueda agregada que no individualiza esta fila, campo y unidad. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Una BN nueva o corregida tendría que registrar términos, ámbito y resultado nominales para esta combinación exacta; el estado actual no permite deducirla desde “no para todos”.",
+        "localizadores": "C-2469;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora"
+      }
+    },
+    {
+      "sha256_json_fila": "00351ea99837df50c19c969c6e84e23c36f93fc9697851a6934a5669d7c6ea21",
+      "fila": {
+        "claim_id": "C-2474",
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "8",
+        "columna": "Monosiga",
+        "contenido_anterior": "familias antiguas; detalle nominal NO LOCALIZADO",
+        "contenido_sha256": "cb769f0aaeb99123cf2bd2dfefac12ecacf518aa881ad505a51a28e9b8da660b",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+        "resultado": "NO_CONFORME",
+        "evidencia": "NO CONFORME: la C nueva conserva literalmente «familias antiguas; detalle nominal NO LOCALIZADO», pero sus dependencias no sostienen todas sus cláusulas, taxón, dirección, cantidad, modalidad o límite. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Repetir la celda en la C no crea evidencia; hace falta una fuente/C atómica que cubra el valor completo o cambiar/retirar la parte no demostrada.",
+        "localizadores": "C-2474;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga"
+      }
+    },
+    {
+      "sha256_json_fila": "5e839b93cf4c1a54af827c3e7ff97761f6400e85cc5f9517af8d828a420c4d1e",
+      "fila": {
+        "claim_id": "C-2475",
+        "csv_path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
+        "fila": "8",
+        "columna": "Capsaspora",
+        "contenido_anterior": "familias antiguas; detalle nominal NO LOCALIZADO",
+        "contenido_sha256": "cb769f0aaeb99123cf2bd2dfefac12ecacf518aa881ad505a51a28e9b8da660b",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_a.csv sha256=843c680ddac161266d264f6905e67e6175e1924f641b0977902ba41896536586",
+        "resultado": "NO_CONFORME",
+        "evidencia": "NO CONFORME: la C nueva conserva literalmente «familias antiguas; detalle nominal NO LOCALIZADO», pero sus dependencias no sostienen todas sus cláusulas, taxón, dirección, cantidad, modalidad o límite. C-1992 afirma «La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla …» y su Motivo «Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.» Repetir la celda en la C no crea evidencia; hace falta una fuente/C atómica que cubra el valor completo o cambiar/retirar la parte no demostrada.",
+        "localizadores": "C-2475;C-1992;data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora"
+      }
+    },
+    {
+      "sha256_json_fila": "eac7f5f2de554f1b45db9944de7f387627bf12f5f6cc46c37f5aa23268d2620f",
+      "fila": {
+        "claim_id": "C-2708",
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "7",
+        "columna": "genoma del socio comparado con parientes de vida libre",
+        "contenido_anterior": "núcleo aprox. 9,5 Mb; mitocondria conserva 6 genes proteicos; comparación con pariente libre NO LOCALIZADA",
+        "contenido_sha256": "f218425b02ab95ffe108f7e989420cc5cdfd186541dfb9a7ecde75bc4f270657",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+        "resultado": "NO_CONFORME",
+        "evidencia": "Las C positivas describen el sistema, pero no hacen exhaustiva la ausencia escrita. BN-111 solo cubre cronología de integración; no deriva genoma comparado, transmisión, EGT/importación, obligación/reversibilidad o aportes no documentados. Dependencias cotejadas: C-1036: Perkinsela vive como endosimbionte eucariota obligado dentro de Paramoeba. | C-1037: El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb. | C-1038: Perkinsela perdió el flagelo pero conserva transcripción policistrónica, trans-splicing y un orgánulo semejante a glicosoma. | C-1039: Las rutas metabólicas de Perkinsela y Paramoeba son complementarias e interdependientes. | C-1040: Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba. | C-1041: El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas. | C-1042: El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos. | C-1987: La búsqueda BN-134 localizó antigüedad de inicio y tamaño genómico solo para subconjuntos del catálogo de asociaciones de la tabla 43, no para cada asociación bajo un método y comparando homogéneos. Búsquedas declaradas: BN-111: Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente — Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema.",
+        "localizadores": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre; data/afirmaciones/15.csv:C-2708; data/afirmaciones/09.csv:C-1036; data/afirmaciones/09.csv:C-1037; data/afirmaciones/09.csv:C-1038; data/afirmaciones/09.csv:C-1039; data/afirmaciones/09.csv:C-1040; data/afirmaciones/09.csv:C-1041; data/afirmaciones/09.csv:C-1042; data/afirmaciones/15.csv:C-1987; data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv:BN-111; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv|7|genoma del socio comparado con parientes de vida libre"
+      }
+    },
+    {
+      "sha256_json_fila": "504bba04a2e30854c1601eb4b024b66bb558c195b35900727730e4ee8096e134",
+      "fila": {
+        "claim_id": "C-2709",
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "7",
+        "columna": "EGT al núcleo; importación de proteínas de vuelta",
+        "contenido_anterior": "EGT: NO DOCUMENTADA; importación de vuelta: NO DOCUMENTADA; Perkinsela incorpora material citoplasmático del hospedador",
+        "contenido_sha256": "a09f0fb1c5c5bab20467c7dd2299bf0ec0e1917b4da4d9b56c4e82d7e68c2fa0",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+        "resultado": "NO_CONFORME",
+        "evidencia": "Las C positivas describen el sistema, pero no hacen exhaustiva la ausencia escrita. BN-111 solo cubre cronología de integración; no deriva genoma comparado, transmisión, EGT/importación, obligación/reversibilidad o aportes no documentados. Dependencias cotejadas: C-1036: Perkinsela vive como endosimbionte eucariota obligado dentro de Paramoeba. | C-1037: El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb. | C-1038: Perkinsela perdió el flagelo pero conserva transcripción policistrónica, trans-splicing y un orgánulo semejante a glicosoma. | C-1039: Las rutas metabólicas de Perkinsela y Paramoeba son complementarias e interdependientes. | C-1040: Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba. | C-1041: El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas. | C-1042: El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos. Búsquedas declaradas: BN-111: Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente — Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema.",
+        "localizadores": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta; data/afirmaciones/15.csv:C-2709; data/afirmaciones/09.csv:C-1036; data/afirmaciones/09.csv:C-1037; data/afirmaciones/09.csv:C-1038; data/afirmaciones/09.csv:C-1039; data/afirmaciones/09.csv:C-1040; data/afirmaciones/09.csv:C-1041; data/afirmaciones/09.csv:C-1042; data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv:BN-111; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv|7|EGT al núcleo; importación de proteínas de vuelta"
+      }
+    },
+    {
+      "sha256_json_fila": "4ba86777542e59d13fb7d638db15b886374aca37b61cda4da3f1dbb1ce009969",
+      "fila": {
+        "claim_id": "C-2754",
+        "csv_path": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv",
+        "fila": "19",
+        "columna": "genoma del socio comparado con parientes de vida libre",
+        "contenido_anterior": "640.681 bp en APS; rango moderno 412–646 kb; reducción respecto de bacterias libres sostenida cualitativamente, comparación exacta NO TRANSCRITA",
+        "contenido_sha256": "98b2d29406f675865876a236fa3a5fad5bd27fc3d4d36bafdbb5418294c540bd",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+        "resultado": "NO_CONFORME",
+        "evidencia": "Las C positivas describen el sistema, pero no hacen exhaustiva la ausencia escrita. BN-111 solo cubre cronología de integración; no deriva genoma comparado, transmisión, EGT/importación, obligación/reversibilidad o aportes no documentados. Dependencias cotejadas: C-1096: El genoma de Buchnera sp. APS contiene un cromosoma de 640.681 bp y dos plásmidos pequeños. | C-1097: Buchnera suministra aminoácidos esenciales que son escasos en la dieta de savia de los áfidos. | C-1098: Buchnera se transmite maternalmente dentro de bacteriocitos y no se cultiva de forma autónoma. | C-1099: Las cepas de Buchnera comparadas por van Ham y colaboradores divergieron hace 80–150 Ma. | C-1100: El ancestro compartido de Buchnera reconstruido por Chong y colaboradores contenía 616 genes codificantes de proteínas y 39 genes de ARN. | C-1101: Los genomas modernos de Buchnera analizados abarcaron 412–646 kb y 354–587 genes proteicos. | C-1102: Las pérdidas génicas posteriores al ancestro de Buchnera fueron no aleatorias entre loci.",
+        "localizadores": "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 19:genoma del socio comparado con parientes de vida libre; data/afirmaciones/15.csv:C-2754; data/afirmaciones/09.csv:C-1096; data/afirmaciones/09.csv:C-1097; data/afirmaciones/09.csv:C-1098; data/afirmaciones/09.csv:C-1099; data/afirmaciones/09.csv:C-1100; data/afirmaciones/09.csv:C-1101; data/afirmaciones/09.csv:C-1102; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv|19|genoma del socio comparado con parientes de vida libre"
+      }
+    },
+    {
+      "sha256_json_fila": "7f6b0943d2508b99c5b4a2c87b98b49c02b4b3b4435faad1b23c2e54253cf96f",
+      "fila": {
+        "claim_id": "C-2801",
+        "csv_path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+        "fila": "15",
+        "columna": "quién lo introdujo y cuándo",
+        "contenido_anterior": "NO BUSCADO en esta tabla (motivo: las C documentan usos, no una atribución histórica única)",
+        "contenido_sha256": "ea82d928823e0435e3463a0145f96bcce5d54d0119ae6b50b8af7b9327f3b1ca",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+        "resultado": "NO_CONFORME",
+        "evidencia": "Las dependencias describen el término; no derivan NO APLICA como historia de acuñación. Para NO BUSCADO, la glosa es agregada y BN-142 no está declarada en Fuente de la C atómica. Dependencias cotejadas: C-1851: Simbiosis tiene usos históricos amplios que incluyen mutualismo, comensalismo y parasitismo. | C-1852: Simbiosis no es sinónimo necesario de mutualismo. | C-1853: Mutualismo describe una asociación con beneficio neto para ambos participantes bajo las condiciones especificadas. | C-1854: Parasitismo puede ser una forma de simbiosis bajo la definición amplia. | C-1855: Toda aparición de simbiosis en este corpus debe especificar efecto, localización, duración y transmisión cuando se conozcan. | C-1994: La búsqueda BN-142 no localizó autor de acuñación y fecha inequívocos para cada descriptor, abreviatura o conflicto funcional censado en la tabla 58.",
+        "localizadores": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 15:quién lo introdujo y cuándo; data/afirmaciones/15.csv:C-2801; data/afirmaciones/14.csv:C-1851; data/afirmaciones/14.csv:C-1852; data/afirmaciones/14.csv:C-1853; data/afirmaciones/14.csv:C-1854; data/afirmaciones/14.csv:C-1855; data/afirmaciones/15.csv:C-1994; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv|15|quién lo introdujo y cuándo"
+      }
+    },
+    {
+      "sha256_json_fila": "1ed7af3ad7e6ed269828df9565f9b784f1126aec0afee96572120abb6269dedc",
+      "fila": {
+        "claim_id": "C-2804",
+        "csv_path": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv",
+        "fila": "19",
+        "columna": "quién lo introdujo y cuándo",
+        "contenido_anterior": "NO BUSCADO para acuñación (motivo: las C evalúan criterios contemporáneos)",
+        "contenido_sha256": "8702ac0fb4b61fe939769bc0a541ae2fc3cf36291aa7349b1e5daf727914b513",
+        "origen_revision": "/tmp/revision_rereview_trazabilidad_d_v2.csv sha256=dbee7ba2b083c1a033218bec0eef90f35f9e4eb6e34a7343df3e59945287c82a",
+        "resultado": "NO_CONFORME",
+        "evidencia": "Las dependencias describen el término; no derivan NO APLICA como historia de acuñación. Para NO BUSCADO, la glosa es agregada y BN-142 no está declarada en Fuente de la C atómica. Dependencias cotejadas: C-1870: Living fossil se ha aplicado mediante criterios distintos de estasis morfológica, baja diversidad, larga duración o semejanza con fósiles. | C-1871: “Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo. | C-1872: La estasis documentada de uno o más caracteres no implica ausencia total de evolución de un linaje. | C-1873: “Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente. | C-1874: Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”. | C-1994: La búsqueda BN-142 no localizó autor de acuñación y fecha inequívocos para cada descriptor, abreviatura o conflicto funcional censado en la tabla 58.",
+        "localizadores": "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo; data/afirmaciones/15.csv:C-2804; data/afirmaciones/14.csv:C-1870; data/afirmaciones/14.csv:C-1871; data/afirmaciones/14.csv:C-1872; data/afirmaciones/14.csv:C-1873; data/afirmaciones/14.csv:C-1874; data/afirmaciones/15.csv:C-1994; data/auditoria/mapeo_celdas_afirmaciones.csv:data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv|19|quién lo introdujo y cuándo"
+      }
+    }
+  ],
+  "afirmaciones_y_bn_actuales": [
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 173,
+      "sha256_json_fila": "c0575980f3a6e3f078710636949d9c808e584409ca8be30995bdc9e0392a6362",
+      "fila": {
+        "#": "C-1851",
+        "Afirmación": "Simbiosis tiene usos históricos amplios que incluyen mutualismo, comensalismo y parasitismo.",
+        "Sujeto": "simbiosis sensu lato",
+        "Predicado": "clasificado_como_por",
+        "Objeto": "asociación persistente entre organismos de especies distintas",
+        "Atribución": "expresa",
+        "Fuente": "S409 revisión terminológica [sin localizar con mayor precisión]",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La revisión documenta el uso amplio dominante en parte de la literatura.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 174,
+      "sha256_json_fila": "ff0ea9ca3003acf7053c0977c12e0a5892b43d384ec2afb580963e5925929aae",
+      "fila": {
+        "#": "C-1852",
+        "Afirmación": "Simbiosis no es sinónimo necesario de mutualismo.",
+        "Sujeto": "simbiosis",
+        "Predicado": "no_equivale_a*",
+        "Objeto": "mutualismo",
+        "Atribución": "expresa",
+        "Fuente": "S409 resumen y discusión",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El efecto sobre los participantes puede ser positivo, neutro o negativo.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 175,
+      "sha256_json_fila": "c1242418ef6f76b6d3386245dcda92c41e46ce5467168d0e57d91d95cede7984",
+      "fila": {
+        "#": "C-1853",
+        "Afirmación": "Mutualismo describe una asociación con beneficio neto para ambos participantes bajo las condiciones especificadas.",
+        "Sujeto": "mutualismo",
+        "Predicado": "clasificado_como_por",
+        "Objeto": "interacción +/+ condicionada",
+        "Atribución": "expresa",
+        "Fuente": "S409 terminología [sin localizar con mayor precisión]",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Los signos dependen de ambiente y escala temporal.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 176,
+      "sha256_json_fila": "c1ac45122e9ad043313fcb5f7851a9bc183217617d5196fd8602be68363d2129",
+      "fila": {
+        "#": "C-1854",
+        "Afirmación": "Parasitismo puede ser una forma de simbiosis bajo la definición amplia.",
+        "Sujeto": "parasitismo",
+        "Predicado": "miembro_de",
+        "Objeto": "simbiosis sensu lato",
+        "Atribución": "expresa",
+        "Fuente": "S409 revisión terminológica [sin localizar con mayor precisión]",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La inclusión depende de usar symbiosis en sentido amplio.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 177,
+      "sha256_json_fila": "036cf20c4f874582b904cb14e3eaf3ddcc68f81171a12469112dc2b8ea4a7206",
+      "fila": {
+        "#": "C-1855",
+        "Afirmación": "Toda aparición de simbiosis en este corpus debe especificar efecto, localización, duración y transmisión cuando se conozcan.",
+        "Sujeto": "simbiosis en el corpus",
+        "Predicado": "requiere*",
+        "Objeto": "tipo de interacción explícito",
+        "Atribución": "glosa",
+        "Fuente": "n/a",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Evita convertir una categoría amplia en mutualismo implícito.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 192,
+      "sha256_json_fila": "4882d4ceab72178fb0ee3134494d0e0e3deb34ecc5d6f2a4cebfa14b45d02818",
+      "fila": {
+        "#": "C-1870",
+        "Afirmación": "Living fossil se ha aplicado mediante criterios distintos de estasis morfológica, baja diversidad, larga duración o semejanza con fósiles.",
+        "Sujeto": "fósil viviente",
+        "Predicado": "tiene_circunscripcion_variable*",
+        "Objeto": "criterios múltiples",
+        "Atribución": "expresa",
+        "Fuente": "S415 revisión [sin localizar con mayor precisión]; S416 §2, §3 y tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Las revisiones documentan criterios y niveles no equivalentes.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 193,
+      "sha256_json_fila": "7c47d11f30510128ee5cfb23d80d0b1e83886a2cc58d7b80c8f9bc936175db4c",
+      "fila": {
+        "#": "C-1871",
+        "Afirmación": "“Fósil viviente” puede ocultar diferencias entre estasis de un carácter y estasis del organismo completo.",
+        "Sujeto": "fósil viviente",
+        "Predicado": "puede_inducir_error*",
+        "Objeto": "transferencia parte–todo",
+        "Atribución": "expresa",
+        "Fuente": "S415 discusión",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La fuente distingue partes y totalidades; esta premisa queda antes de la síntesis amplia de C-1872.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 194,
+      "sha256_json_fila": "781d5952a3375ff375654e84bc1faa7de20797213fd94895e8766c8d0971fe53",
+      "fila": {
+        "#": "C-1872",
+        "Afirmación": "La estasis documentada de uno o más caracteres no implica ausencia total de evolución de un linaje.",
+        "Sujeto": "estasis documentada de uno o más caracteres",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia total de evolución de un linaje",
+        "Atribución": "sintesis(C-1870, C-1871)",
+        "Fuente": "C-1870; C-1871",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La síntesis combina la pluralidad de criterios de C-1870 con la diferencia parte–todo de C-1871; no presenta la conclusión como cita literal desnuda.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 195,
+      "sha256_json_fila": "a0d9f8895aed4bd0ac85bf131100e55ec025f3619edb65878c1c4972f071dc47",
+      "fila": {
+        "#": "C-1873",
+        "Afirmación": "“Linaje con estasis morfológica documentada en el carácter X durante el intervalo Y” sustituye una afirmación vaga de fósil viviente.",
+        "Sujeto": "fósil viviente",
+        "Predicado": "sustituido_por*",
+        "Objeto": "hipótesis de estasis operacional",
+        "Atribución": "sintesis(C-1870, C-1871, C-1872)",
+        "Fuente": "S415 revisión; S416 §2, §3 y tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una propuesta operacional del corpus apoyada por criterios y estándares explícitos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/14.csv",
+      "fila_csv": 196,
+      "sha256_json_fila": "f13f740e1639993afe5fe5192613ed34022e67b729f56cab5275b1f7babed500",
+      "fila": {
+        "#": "C-1874",
+        "Afirmación": "Fósil viviente conserva uso acotado como rótulo histórico o heurístico si sus criterios se especifican y no significa “sin cambios”.",
+        "Sujeto": "fósil viviente",
+        "Predicado": "tiene_uso_legitimo*",
+        "Objeto": "concepto operacional o histórico",
+        "Atribución": "expresa",
+        "Fuente": "S415 revisión [sin localizar con mayor precisión]; S416 conclusión, “investigative kind”",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La conclusión de S416 defiende un uso investigable condicionado a estándares explícitos.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 60,
+      "sha256_json_fila": "d24e99c99a55cd5af39541037d7ad93c1054985282d40dea522de92492b11b65",
+      "fila": {
+        "#": "C-1030",
+        "Afirmación": "Los genomas de Kinetoplastibacterium estudiados rondan 0,8 Mb y han perdido genes bacterianos de división.",
+        "Sujeto": "Candidatus Kinetoplastibacterium",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "aproximadamente 0,8 Mb",
+        "Atribución": "expresa",
+        "Fuente": "S237 resultados; S239 introducción",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los tamaños y ausencias proceden de genomas completos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 66,
+      "sha256_json_fila": "e8cb75de831e187897bc186cff6e03d539a0d1586aed86f4d8785d3cf1512b06",
+      "fila": {
+        "#": "C-1036",
+        "Afirmación": "Perkinsela vive como endosimbionte eucariota obligado dentro de Paramoeba.",
+        "Sujeto": "Perkinsela",
+        "Predicado": "es_huesped_de",
+        "Objeto": "Paramoeba",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen e introducción",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La asociación intracelular fue observada y no se conoce fase libre.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 67,
+      "sha256_json_fila": "feea6b1cefa4ffa8e0dbc5b6c2a88362a238f792ca318b73cb8fbde949eaa5ad",
+      "fila": {
+        "#": "C-1037",
+        "Afirmación": "El genoma nuclear de Perkinsela secuenciado mide aproximadamente 9,5 Mb.",
+        "Sujeto": "genoma nuclear de Perkinsela",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "aproximadamente 9,5 Mb",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen y resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El tamaño procede del ensamblaje genómico.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 68,
+      "sha256_json_fila": "9812bdf0a6d747fcbc5e2ab074d9854a4146864e644e608a206eb8a6b4d43dc3",
+      "fila": {
+        "#": "C-1038",
+        "Afirmación": "Perkinsela perdió el flagelo pero conserva transcripción policistrónica, trans-splicing y un orgánulo semejante a glicosoma.",
+        "Sujeto": "Perkinsela",
+        "Predicado": "posee_rasgo",
+        "Objeto": "reducción celular con rasgos kinetoplástidos retenidos",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen y resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los rasgos se identificaron por genómica y microscopía.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 69,
+      "sha256_json_fila": "fc20717435647815517486e2241aa73abaff63bc94b9306fa2212a20d7606a3e",
+      "fila": {
+        "#": "C-1039",
+        "Afirmación": "Las rutas metabólicas de Perkinsela y Paramoeba son complementarias e interdependientes.",
+        "Sujeto": "Perkinsela–Paramoeba",
+        "Predicado": "posee_rasgo",
+        "Objeto": "interdependencia metabólica",
+        "Atribución": "expresa",
+        "Fuente": "S240 resultados y discusión",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El mosaico de genes y rutas requiere contribuciones de ambos genomas.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 70,
+      "sha256_json_fila": "28da58c95bbbff7e6abdbe038d84e16dd8a1e65f830b7fb0968835ae3e32694b",
+      "fila": {
+        "#": "C-1040",
+        "Afirmación": "Microscopía mostró invaginaciones por las que Perkinsela incorpora material citoplasmático de Paramoeba.",
+        "Sujeto": "Perkinsela",
+        "Predicado": "depreda_a",
+        "Objeto": "citoplasma de Paramoeba dentro de una asociación obligada",
+        "Atribución": "expresa",
+        "Fuente": "S240 resumen; fig. 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Vesículas e invaginaciones se observaron por TEM y crio-SEM.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 71,
+      "sha256_json_fila": "5b7dadd342ee1f80ea76bb6dc70b212630ddb3eb0ac8bd60a3645a761318ac34",
+      "fila": {
+        "#": "C-1041",
+        "Afirmación": "El genoma mitocondrial de Perkinsela conserva seis genes codificantes de proteínas.",
+        "Sujeto": "genoma mitocondrial de Perkinsela",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "seis genes codificantes de proteínas",
+        "Atribución": "expresa",
+        "Fuente": "S241 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "El genoma fue secuenciado y anotado.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 72,
+      "sha256_json_fila": "9d3ca82dff20d9ea66977b22dec29605739353c0845afd6d02bd06a685c56906",
+      "fila": {
+        "#": "C-1042",
+        "Afirmación": "El caso Perkinsela–Paramoeba documenta una asociación obligada en la que se conservan dos núcleos eucariotas y dos linajes mitocondriales distintos.",
+        "Sujeto": "Perkinsela–Paramoeba",
+        "Predicado": "posee_rasgo",
+        "Objeto": "integración celular sin fusión genómica completa",
+        "Atribución": "sintesis(C-1038, C-1039, C-1041)",
+        "Fuente": "C-1038; C-1039; C-1041",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La síntesis se limita a los rasgos documentados en las tres premisas y no usa «demuestra» para extrapolar una ley general sobre asociaciones obligadas.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 126,
+      "sha256_json_fila": "11d084a79118068c9602800829cf22888f27682ed6ad822ac7eb5be471c372d5",
+      "fila": {
+        "#": "C-1096",
+        "Afirmación": "El genoma de Buchnera sp. APS contiene un cromosoma de 640.681 bp y dos plásmidos pequeños.",
+        "Sujeto": "genoma de Buchnera sp. APS",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "640.681 bp y dos plásmidos",
+        "Atribución": "expresa",
+        "Fuente": "S263 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La secuencia fue completada y anotada.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 127,
+      "sha256_json_fila": "b3f3ff22b4c88ff7b419bda7bbc0696098bce3cdce4488504cc3fa49f1fd1859",
+      "fila": {
+        "#": "C-1097",
+        "Afirmación": "Buchnera suministra aminoácidos esenciales que son escasos en la dieta de savia de los áfidos.",
+        "Sujeto": "Buchnera aphidicola",
+        "Predicado": "intercambia_metabolito_con*",
+        "Objeto": "aminoácidos esenciales hacia áfidos",
+        "Atribución": "expresa",
+        "Fuente": "S263 discusión; S266 tesis general [sin localizar con mayor precisión]",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Genómica, fisiología y dependencia del hospedador convergen.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 128,
+      "sha256_json_fila": "9d6662b7a859bcc044ca3918c5f32956afe9cda98fdece9321e3b7fc91e7ad57",
+      "fila": {
+        "#": "C-1098",
+        "Afirmación": "Buchnera se transmite maternalmente dentro de bacteriocitos y no se cultiva de forma autónoma.",
+        "Sujeto": "Buchnera aphidicola",
+        "Predicado": "posee_rasgo",
+        "Objeto": "transmisión vertical obligada",
+        "Atribución": "expresa",
+        "Fuente": "S266 tesis general [sin localizar con mayor precisión]",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La transmisión y falta de cultivo libre se documentan en múltiples áfidos.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 129,
+      "sha256_json_fila": "315304454aa18888cfe1fd2982cc2cb1612165eae2a021a27a68e117752d87c5",
+      "fila": {
+        "#": "C-1099",
+        "Afirmación": "Las cepas de Buchnera comparadas por van Ham y colaboradores divergieron hace 80–150 Ma.",
+        "Sujeto": "divergencia entre cepas de Buchnera estudiadas",
+        "Predicado": "tiene_edad_estimada",
+        "Objeto": "80–150 Ma",
+        "Atribución": "expresa",
+        "Fuente": "S264 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una estimación filogenética aplicada a las cepas comparadas.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 130,
+      "sha256_json_fila": "b63856d9f2efa8dd043a31fbbff30c1a9c8709c8749f091aef07c9c5a5e0c062",
+      "fila": {
+        "#": "C-1100",
+        "Afirmación": "El ancestro compartido de Buchnera reconstruido por Chong y colaboradores contenía 616 genes codificantes de proteínas y 39 genes de ARN.",
+        "Sujeto": "genoma ancestral de Buchnera reconstruido",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "616 genes proteicos y 39 genes de ARN",
+        "Atribución": "expresa",
+        "Fuente": "S265 resumen y resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una reconstrucción ancestral dependiente de muestreo y modelo.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 131,
+      "sha256_json_fila": "f55e5b28eb30196038979636d74d6bde8e7e58c35993a9c4adc5818f56ece82a",
+      "fila": {
+        "#": "C-1101",
+        "Afirmación": "Los genomas modernos de Buchnera analizados abarcaron 412–646 kb y 354–587 genes proteicos.",
+        "Sujeto": "genomas modernos de Buchnera",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "412–646 kb; 354–587 genes proteicos",
+        "Atribución": "expresa",
+        "Fuente": "S265 resumen",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los valores proceden de genomas comparados.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/09.csv",
+      "fila_csv": 132,
+      "sha256_json_fila": "26978a86f07174263ae5728684b87a9d5b621119f33bb78149aa132ef54581b6",
+      "fila": {
+        "#": "C-1102",
+        "Afirmación": "Las pérdidas génicas posteriores al ancestro de Buchnera fueron no aleatorias entre loci.",
+        "Sujeto": "Buchnera aphidicola",
+        "Predicado": "pierde_rasgo",
+        "Objeto": "genes en trayectorias no aleatorias",
+        "Atribución": "expresa",
+        "Fuente": "S265 resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La reconstrucción identifica sesgos repetidos de retención y pérdida.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila_csv": 100,
+      "sha256_json_fila": "f774eb9e1c875090e0d06f3c66d49671204ba20dd1bca18dc9eef565ed9e5aef",
+      "fila": {
+        "#": "C-1580",
+        "Afirmación": "El muestreo de 19 transcriptomas choanoflagelados reveló componentes de Notch y Delta en distribuciones mosaico.",
+        "Sujeto": "Choanoflagellata",
+        "Predicado": "posee_rasgo",
+        "Objeto": "componentes de Notch y Delta distribuidos de forma parcheada",
+        "Atribución": "expresa",
+        "Fuente": "S435 fig. 2 y suplementos",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "La ausencia en transcriptomas puede reflejar pérdida o falta de expresión; la arquitectura de dominios fue evaluada.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/12.csv",
+      "fila_csv": 103,
+      "sha256_json_fila": "672bf1bb81a45ed082a9ef7ca2a8e950688f0a1db33b426b73ef0c2b50cdd6c4",
+      "fila": {
+        "#": "C-1583",
+        "Afirmación": "Los 235 dominios que Suga y colaboradores clasificaron como innovaciones del tallo metazoano incluyen ligandos y componentes extracelulares ausentes en los unicelulares comparados.",
+        "Sujeto": "tallo de Metazoa",
+        "Predicado": "adquiere_rasgo",
+        "Objeto": "235 dominios clasificados como metazoanos en el análisis",
+        "Atribución": "expresa",
+        "Fuente": "S352 fig. 2; resultados",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El número depende del conjunto de genomas y de Dollo parsimony usado en 2013.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 91,
+      "sha256_json_fila": "6039c7fafeb795c41fc3e7199286c8bea00d9084531c60237089c0407175ecca",
+      "fila": {
+        "#": "C-1987",
+        "Afirmación": "La búsqueda BN-134 localizó antigüedad de inicio y tamaño genómico solo para subconjuntos del catálogo de asociaciones de la tabla 43, no para cada asociación bajo un método y comparando homogéneos.",
+        "Sujeto": "campos cuantitativos del catálogo de asociaciones",
+        "Predicado": "tiene_estado_de_localizacion*",
+        "Objeto": "valores parciales y huecos nominales por asociación",
+        "Atribución": "glosa",
+        "Fuente": "BN-134",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Las cifras positivas se transcriben mediante sus C; las celdas restantes no se completan por analogía ni se convierten en una media editorial.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 96,
+      "sha256_json_fila": "289f1a146e827156e487ef48e5a4330e5ad2884b6267dceb3f1a0334dc5298f1",
+      "fila": {
+        "#": "C-1992",
+        "Afirmación": "La búsqueda BN-140 localizó presencia, ausencia declarada, distribución mosaico o ensayo bioquímico solo para subconjuntos de familias funcionales y linajes de la tabla 54, no una matriz completa bajo un muestreo y criterio únicos.",
+        "Sujeto": "matriz familia funcional por linaje holozoo",
+        "Predicado": "tiene_estado_de_localizacion*",
+        "Objeto": "cobertura positiva parcial y celdas residuales no localizadas",
+        "Atribución": "glosa",
+        "Fuente": "BN-140",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Una celda no localizada no se convierte en ausencia biológica; las presencias y ausencias publicadas conservan sus C específicas.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 98,
+      "sha256_json_fila": "36310bf938841adbbf6af9236aa28f1fcff6363288d9b6b3ce15ff791155a2c3",
+      "fila": {
+        "#": "C-1994",
+        "Afirmación": "La búsqueda BN-142 no localizó autor de acuñación y fecha inequívocos para cada descriptor, abreviatura o conflicto funcional censado en la tabla 58.",
+        "Sujeto": "historia nominal de los términos problemáticos de la tabla 58",
+        "Predicado": "tiene_estado_de_localizacion*",
+        "Objeto": "atribuciones positivas parciales y huecos motivados",
+        "Atribución": "glosa",
+        "Fuente": "BN-142",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "NO BUSCADO y NO APLICA conservan motivos distintos; ninguno se promueve a atribución histórica por semejanza de palabras.",
+        "Resolución": "información insuficiente",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 572,
+      "sha256_json_fila": "e5aa5b3b287edca9fffdd9ce9ce26570f8edc74ebb6e687d5a695de792b72153",
+      "fila": {
+        "#": "C-2468",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Monosiga» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-329]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-329 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 573,
+      "sha256_json_fila": "eb62df50aa13960c00d428ef3f99aa2f6ba5cd41dfe65b5f364bffa212ffcfa5",
+      "fila": {
+        "#": "C-2469",
+        "Afirmación": "Para familia o sistema «Hedgehog», el campo «Capsaspora» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]».",
+        "Sujeto": "familia o sistema «Hedgehog»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-330]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-330 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 578,
+      "sha256_json_fila": "c4d9cd72ca979b0dbc9bea253c3dd681120d445dc4f8dab5af5479e551d8b188",
+      "fila": {
+        "#": "C-2474",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Monosiga» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Monosiga: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-334]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-334 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 579,
+      "sha256_json_fila": "2880295914bf32d3ae50d0ab52d0a656aa4f38930c45cfd4cbdf74be9773f80e",
+      "fila": {
+        "#": "C-2475",
+        "Afirmación": "Para familia o sistema «GPCR y otras señales», el campo «Capsaspora» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]».",
+        "Sujeto": "familia o sistema «GPCR y otras señales»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "Capsaspora: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-335]",
+        "Atribución": "sintesis(C-1992)",
+        "Fuente": "n/a; dependencias canónicas C-1992; BN-335 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 812,
+      "sha256_json_fila": "dfaa41efd866277a321bbd4e1ebeb83c24ffe5c6737d2101422b72511c4d10d0",
+      "fila": {
+        "#": "C-2708",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «genoma del socio comparado con parientes de vida libre» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "genoma del socio comparado con parientes de vida libre: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-473]",
+        "Atribución": "sintesis(C-1036, C-1037, C-1038, C-1039, C-1040, C-1041, C-1042, C-1987)",
+        "Fuente": "n/a; dependencias canónicas C-1036; C-1037; C-1038; C-1039; C-1040; C-1041; C-1042; C-1987; BN-473; BN-111 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 813,
+      "sha256_json_fila": "ee5591342b21f01667e72a159e4d5f5442470dcc831dc236216c5eb98482b39b",
+      "fila": {
+        "#": "C-2709",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*», el campo «EGT al núcleo; importación de proteínas de vuelta» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "EGT al núcleo; importación de proteínas de vuelta: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-474]",
+        "Atribución": "sintesis(C-1036, C-1037, C-1038, C-1039, C-1040, C-1041, C-1042)",
+        "Fuente": "n/a; dependencias canónicas C-1036; C-1037; C-1038; C-1039; C-1040; C-1041; C-1042; BN-474; BN-111 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 858,
+      "sha256_json_fila": "b6c2fbb99038a7e967e4ad08f23bf8a7f1ce15b5555b97dda6bfdb9e062e387a",
+      "fila": {
+        "#": "C-2754",
+        "Afirmación": "Para caso ordenado por grado de integración «Mecanismo: dependencia nutricional con transmisión materna — áfido–*Buchnera aphidicola*», el campo «genoma del socio comparado con parientes de vida libre» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-511]».",
+        "Sujeto": "caso ordenado por grado de integración «Mecanismo: dependencia nutricional con transmisión materna — áfido–*Buchnera aphidicola*»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "genoma del socio comparado con parientes de vida libre: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-511]",
+        "Atribución": "sintesis(C-1096, C-1097, C-1098, C-1099, C-1100, C-1101, C-1102)",
+        "Fuente": "n/a; dependencias canónicas C-1096; C-1097; C-1098; C-1099; C-1100; C-1101; C-1102; BN-511 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 19:genoma del socio comparado con parientes de vida libre. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 905,
+      "sha256_json_fila": "ebf4135f62a2e13dc23304225b518a3096bcef1f192a058a34ad6dd4d3a2c031",
+      "fila": {
+        "#": "C-2801",
+        "Afirmación": "Para término «simbiosis», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-545]».",
+        "Sujeto": "término «simbiosis»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "quién lo introdujo y cuándo: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-545]",
+        "Atribución": "sintesis(C-1851, C-1852, C-1853, C-1854, C-1855, C-1994)",
+        "Fuente": "n/a; dependencias canónicas C-1851; C-1852; C-1853; C-1854; C-1855; C-1994; BN-545 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 15:quién lo introdujo y cuándo. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/afirmaciones/15.csv",
+      "fila_csv": 908,
+      "sha256_json_fila": "f266b12a18cfea9010bc5968a4d20898d4dbe0ade62d0c706b14adda1f1841ea",
+      "fila": {
+        "#": "C-2804",
+        "Afirmación": "Para término «fósil viviente», el campo «quién lo introdujo y cuándo» tiene el valor literal «HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]».",
+        "Sujeto": "término «fósil viviente»",
+        "Predicado": "tiene_valor_literal_de_campo*",
+        "Objeto": "quién lo introdujo y cuándo: HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-548]",
+        "Atribución": "sintesis(C-1870, C-1871, C-1872, C-1873, C-1874, C-1994)",
+        "Fuente": "n/a; dependencias canónicas C-1870; C-1871; C-1872; C-1873; C-1874; C-1994; BN-548 términos exactos y resultado",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Afirmación atómica de celda; cierre de trazabilidad v1: data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo. La proposición conserva una sola celda, su identidad de fila y su modalidad; no hereda valores de otra celda ni convierte un hueco en ausencia.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila_csv": 8,
+      "sha256_json_fila": "06cd62c28c94dad1c075735ab8b9c292141ae66ffe48afaf0fd198e02ba2d574",
+      "fila": {
+        "clave": "BN-140",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Matriz completa familia funcional × linaje para Monosiga, Capsaspora, otros coanoflagelados, otros holozoos unicelulares y Metazoa con el mismo criterio de presencia o ausencia",
+        "términos exactos utilizados": "`rg -n -i \"integrin|cadherin|collagen|phosphotyrosine|Notch|Delta|Hedgehog|GPCR|Brachyury|Runx|p53|Myc|homeodomain\" fuentes data/afirmaciones/12.csv data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv`",
+        "resultado y motivo": "La consulta local recuperó presencias, ausencias declaradas, distribuciones mosaico y ensayos bioquímicos para subconjuntos de familias y linajes. No recuperó una matriz publicada completa con el mismo muestreo y criterio para todas las combinaciones de la tabla 54; las celdas residuales permanecen NO LOCALIZADO y no se transforman en ausencia biológica."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila_csv": 33,
+      "sha256_json_fila": "84d65480c947c4d42496d3d228c398e734ee89eb1ef2f30dc931a710219e9920",
+      "fila": {
+        "clave": "BN-329",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Monosiga para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«Hedgehog»; campo=«Monosiga»; valor=«no localizado en el genoma comparado por S352»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-329",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Monosiga."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila_csv": 34,
+      "sha256_json_fila": "992e7c6472487978b1386bd0df7ef04d4d88ff1bba228d7a7db2697ea73c597b",
+      "fila": {
+        "clave": "BN-330",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Capsaspora para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«Hedgehog»; campo=«Capsaspora»; valor=«no localizado en el genoma comparado por S352»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-330",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 7:Capsaspora."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila_csv": 37,
+      "sha256_json_fila": "33ba7a3a0c82b84b76c502992a870e7b67419cb27926b2926ce8f3868e0116a6",
+      "fila": {
+        "clave": "BN-334",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Monosiga para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«GPCR y otras señales»; campo=«Monosiga»; valor=«familias antiguas; detalle nominal NO LOCALIZADO»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-334",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Monosiga."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
+      "fila_csv": 38,
+      "sha256_json_fila": "7549cb89801f86cad401458a6b6e16f55a74c24a4746b0b870b3ca95194d25f3",
+      "fila": {
+        "clave": "BN-335",
+        "estado": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo Capsaspora para data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora",
+        "términos exactos utilizados": "consulta nominal conjunta exacta identidad=«GPCR y otras señales»; campo=«Capsaspora»; valor=«familias antiguas; detalle nominal NO LOCALIZADO»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-335",
+        "resultado y motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv:fila 8:Capsaspora."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "fila_csv": 4,
+      "sha256_json_fila": "be377b6eda20acef30e97c8af9576985d012c921cb4ad77f9a47697b73a183c4",
+      "fila": {
+        "clave": "BN-142",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "autor de acuñación y fecha publicados para cada término problemático de la tabla 58 bajo una definición histórica inequívoca",
+        "términos exactos o fundamento": "La consulta `rg -n -i \"coined|introduced|acuñ|first use|sensu|terminology|nomenclature\" fuentes data/afirmaciones/14.csv data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv` recuperó autores, fechas y usos históricos para subconjuntos, pero no una acuñación única y verificable para cada descriptor, abreviatura o conflicto funcional. Las celdas NO BUSCADO o NO APLICA mantienen su motivo y no se atribuyen por semejanza léxica."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "fila_csv": 68,
+      "sha256_json_fila": "7e352a08d80e5e0bf5d578ef87f24c57f6912ffc97d41129c5211853d122e0a7",
+      "fila": {
+        "clave": "BN-545",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo quién lo introdujo y cuándo para data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 15:quién lo introdujo y cuándo",
+        "términos exactos o fundamento": "consulta nominal conjunta exacta identidad=«simbiosis»; campo=«quién lo introdujo y cuándo»; valor=«NO BUSCADO en esta tabla (motivo: las C documentan usos, no una atribución histórica única)»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-545; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 15:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
+      "fila_csv": 71,
+      "sha256_json_fila": "38d46d3c9bc8b4beef3bf436c240c67739a36c69fc1c2b8ca24e978a47656431",
+      "fila": {
+        "clave": "BN-548",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo quién lo introdujo y cuándo para data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo",
+        "términos exactos o fundamento": "consulta nominal conjunta exacta identidad=«fósil viviente»; campo=«quién lo introdujo y cuándo»; valor=«NO BUSCADO para acuñación (motivo: las C evalúan criterios contemporáneos)»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-548; resultado: 0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv:fila 19:quién lo introdujo y cuándo. El objeto pertenece a terminología histórica."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 10,
+      "sha256_json_fila": "f2e7d19d4bc348b39709f550e217df07fee6369390cf1f004c6c18fdff42d4f5",
+      "fila": {
+        "clave": "BN-111",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Cronología completa y comparable desde el inicio de cada endosimbiosis del corpus hasta cada etapa de integración presente",
+        "términos exactos": "`time from endosymbiosis origin to organelle integration comparative`; `endosymbiosis age integration timeline mitochondria plastid Paulinella UCYN Epithemia`; `duration organellogenesis endosymbiotic gene transfer`",
+        "resultado o motivo": "Se integraron edades o límites de clado para Paulinella (90–140 Ma), Rhopalodiaceae (~12 Ma o <35 Ma según nodo y muestreo) y una asociación UCYN-A ancestral inferida hacia la divergencia de ~91 Ma; son anclas y estados actuales, no series que daten reducción, EGT, importación y coordinación de división en cada sistema."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 12,
+      "sha256_json_fila": "93ab398640e379c6605447e71dbf09b8f52f2155cad3fc227b9bb4a0a455c857",
+      "fila": {
+        "clave": "BN-134",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Antigüedad de inicio y razón de tamaño genómico publicadas para cada asociación del catálogo de desenlaces con un método homogéneo",
+        "términos exactos": "`rg -n -i \\Ma|Myr|million years|genome size|Mb|kb|bp\\\" data/afirmaciones/09.csv data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv fuentes`; `symbiosis association age symbiont genome free living relative size all cases`\"",
+        "resultado o motivo": "La consulta recuperó edades y tamaños para subconjuntos —Paulinella, Rhopalodiaceae, UCYN-A, kinetoplástidos y otros endosimbiontes—, pero varias asociaciones del catálogo carecen de edad de inicio o de un comparando de vida libre publicado. Las cifras localizadas se transcriben por C; las celdas restantes no se completan por analogía ni se convierten en un promedio."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 31,
+      "sha256_json_fila": "4ce3eaf7718f139c7ddf31c50f70e6adc1c10fda6e7301733df211d5fa2f7c3a",
+      "fila": {
+        "clave": "BN-473",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo genoma del socio comparado con parientes de vida libre para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»; campo=«genoma del socio comparado con parientes de vida libre»; valor=«núcleo aprox. 9,5 Mb; mitocondria conserva 6 genes proteicos; comparación con pariente libre NO LOCALIZADA»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-473",
+        "resultado o motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:genoma del socio comparado con parientes de vida libre."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 32,
+      "sha256_json_fila": "eab11c7bb93d0946fd34ff3fbe7973093b971fde7dfb77147beb66165abb8b3a",
+      "fila": {
+        "clave": "BN-474",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo EGT al núcleo; importación de proteínas de vuelta para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«Mecanismo: endosimbiosis eucariota obligada — *Paramoeba*–*Perkinsela*»; campo=«EGT al núcleo; importación de proteínas de vuelta»; valor=«EGT: NO DOCUMENTADA; importación de vuelta: NO DOCUMENTADA; Perkinsela incorpora material citoplasmático del hospedador»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-474",
+        "resultado o motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 7:EGT al núcleo; importación de proteínas de vuelta."
+      }
+    },
+    {
+      "ruta": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
+      "fila_csv": 69,
+      "sha256_json_fila": "88213cb208f8270746934255cb445071016861f570520c32def2cc983c0eb5ce",
+      "fila": {
+        "clave": "BN-511",
+        "etiqueta": "NO LOCALIZADO EN ESTA SESIÓN",
+        "hueco": "Pasaje que sostenga conjuntamente el valor anterior del campo genoma del socio comparado con parientes de vida libre para data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 19:genoma del socio comparado con parientes de vida libre",
+        "términos exactos": "consulta nominal conjunta exacta identidad=«Mecanismo: dependencia nutricional con transmisión materna — áfido–*Buchnera aphidicola*»; campo=«genoma del socio comparado con parientes de vida libre»; valor=«640.681 bp en APS; rango moderno 412–646 kb; reducción respecto de bacterias libres sostenida cualitativamente, comparación exacta NO TRANSCRITA»; ámbito fuentes/ (451 artefactos); sha256_inventario=62fe8db317f35c6679f79343610a8ebd1e1069944c66769b477742860e2791bc; reproducible: python3 scripts/remediate_trace_residuals.py --probe BN-511",
+        "resultado o motivo": "0 artefactos con coocurrencia literal de los tres componentes exactos tras normalizar mayúsculas y blancos. El resultado se limita a esta consulta y no demuestra inexistencia del dato ni ausencia biológica; por el dictamen independiente se retira el valor no acreditado. Cierre nominal de trazabilidad v3; objeto nominal data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv:fila 19:genoma del socio comparado con parientes de vida libre."
+      }
+    }
+  ]
+}

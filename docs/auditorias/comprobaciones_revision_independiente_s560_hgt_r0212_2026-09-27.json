@@ -1,0 +1,132 @@
+{
+  "observacion_utc": "2026-09-27T01:25:51.784729Z",
+  "instantanea": "docs/auditorias/evidencia_revision_independiente_s560_hgt_r0212_2026-09-27.json",
+  "sha256_instantanea": "0e08aa99429dfc751d92d972331c0fdba47915c7e170a594993aa68ad6794c38",
+  "pasajes_s562": [
+    {
+      "indice_extraccion_independiente": 50,
+      "localizador": "Introducción, último párrafo",
+      "sha256_texto_normalizado": "17651d8649e463491216a7a614e5e725da2be8d91a0af0d86ff695efae0d4b46",
+      "caracteres": 1096
+    },
+    {
+      "indice_extraccion_independiente": 74,
+      "localizador": "Results, Differential gene loss, primer párrafo",
+      "sha256_texto_normalizado": "cd9941fb514d983cb3ca738e8365967146f20dd20ec20425ba6e591c38b9eba5",
+      "caracteres": 779
+    },
+    {
+      "indice_extraccion_independiente": 78,
+      "localizador": "Results, Differential gene loss, párrafo Assuming that the common ancestor",
+      "sha256_texto_normalizado": "6df09660175e07e673d00942b27f4de3b584d22f1c7680dcd9dd851f488ede81",
+      "caracteres": 1199
+    },
+    {
+      "indice_extraccion_independiente": 148,
+      "localizador": "Discussion, penúltimo párrafo",
+      "sha256_texto_normalizado": "613444c4b0fb7abbee5ab58a6c1fc55393113ba60f5df926d0a0af68d56bb587",
+      "caracteres": 1945
+    }
+  ],
+  "normalizacion_s562": "HTMLParser sin script/style; separar p h1 h2 h3 h4 tr section div; join sin espacio de nodos texto y colapsar whitespace con split/join; SHA UTF8 sin LF",
+  "cambios_claims_desde_instantanea": [],
+  "cronologia_8bn": {
+    "ruta": "data/auditoria/fechas_ejecuciones_bn.csv",
+    "filas_observadas": 1657,
+    "sha256_archivo": "d495d305f263596ac444dbc788bd50e6d2ffe2ddae0de751b3e71f16ef2669a4",
+    "prefijo833_sha256": "9d0175a112981fa7a1c56b8231435e3028c0cd6023b70150c06238aedae11e4d",
+    "prefijo841_sha256": "3576e5d5e8ba0bf95d58a9eda0ee9c830791e19b6b56f8709fb663b190edd059",
+    "evidencia_independiente_previa": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+    "sha256_evidencia": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+    "filas_integradas": [
+      {
+        "clave_bn": "BN-132",
+        "huella_fila_bn_sha256": "f959d62895a3206acd331bcee7604117d59af36ab607419aa66ff16060ebb2d5",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:34Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 2; BN-132; ARGV_CORREGIDO_EJECUTADO; dictamen_cientifico=NO_CONFORME_UNIVERSAL_C1163; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-133",
+        "huella_fila_bn_sha256": "85a2e205c015b9226a699a26d0efa16856deb323d8358ef2e0bc02217a6e45eb",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:34Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 3; BN-133; ARGV_CORREGIDO_EJECUCION_PARCIAL_EXIT2; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-134",
+        "huella_fila_bn_sha256": "93ab398640e379c6605447e71dbf09b8f52f2155cad3fc227b9bb4a0a455c857",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:34Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 4; BN-134; ARGV_CORREGIDO_EJECUTADO; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-135",
+        "huella_fila_bn_sha256": "585b3def9bbfab66a7515125b71dadc9e8dc44e8fb993145107be8b8dee372ec",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:35Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 5; BN-135; EJECUCION_PARCIAL_EXIT2; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-140",
+        "huella_fila_bn_sha256": "06cd62c28c94dad1c075735ab8b9c292141ae66ffe48afaf0fd198e02ba2d574",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:35Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 6; BN-140; ARGV_DECLARADO_EJECUTADO; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-142",
+        "huella_fila_bn_sha256": "be377b6eda20acef30e97c8af9576985d012c921cb4ad77f9a47697b73a183c4",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:35Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 7; BN-142; ARGV_DECLARADO_EJECUTADO; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-144",
+        "huella_fila_bn_sha256": "49d875db6a79dc9b507dc35177b6fbdaca27044c2ac484529f318f2d5a029b58",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:36Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 8; BN-144; DOS_ARGV_DECLARADOS_EJECUTADOS; dictamen_cientifico=REVISION_CIENTIFICA_ABIERTA; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      },
+      {
+        "clave_bn": "BN-146",
+        "huella_fila_bn_sha256": "e5c4f0ced6cce3940a1c56e567566040fe0c549bd5658343fede7d3220306e02",
+        "clase_fecha": "REINSPECCION",
+        "fecha_ejecucion": "2026-09-26T22:54:36Z",
+        "evidencia_local": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+        "huella_evidencia_sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e",
+        "localizador_evidencia": "fila CSV 9; BN-146; DOS_ARGV_DECLARADOS_EJECUTADOS; dictamen_cientifico=NO_CONFORME_DESCRIPCION_SALIDA_FILTRO; habilita_cierre=NO; reinspección independiente, no fecha original ni aprobación científica"
+      }
+    ],
+    "limite": "Solo ocho reinspecciones 22:54:34–36, no fechas originales ni aprobaciones científicas; prefijos conservados."
+  },
+  "observaciones_web": [
+    {
+      "fuente": "S291",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168952520302067",
+      "via": "Apertura directa 403; búsqueda web devolvió Abstract y Highlights editoriales, contrastados con Rutgers",
+      "limite": "No se recuperó PDF local ni se leyó cuerpo completo",
+      "url_secundaria_institucional": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Horizontal-Gene-Transfer-in-Eukaryotes-Not/991031665538804646"
+    },
+    {
+      "fuente": "S296",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4983863/",
+      "via": "Búsqueda web devolvió ficha editorial y Results Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini; apertura directa devolvió recaptcha",
+      "limite": "La evidencia pública del resultado no reidentifica el preprint local como PNAS. No se firma revisión completa de S296."
+    }
+  ]
+}

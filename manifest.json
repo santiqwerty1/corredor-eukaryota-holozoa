@@ -8,14 +8,14 @@
   "claim_id_format": "C-001…C-999; C-1000 en adelante",
   "counts": {
     "tablas": 97,
-    "afirmaciones": 2813,
-    "fuentes": 524,
-    "entidades": 1498,
+    "afirmaciones": 2838,
+    "fuentes": 527,
+    "entidades": 1518,
     "eventos": 108,
     "fechas": 216,
     "hipótesis": 82,
-    "magnitudes": 572,
-    "búsquedas_negativas": 497
+    "magnitudes": 620,
+    "búsquedas_negativas": 494
   },
   "files": [
     {
@@ -70,8 +70,8 @@
     },
     {
       "path": "data/afirmaciones/02.csv",
-      "bytes": 66592,
-      "sha256": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6"
+      "bytes": 66698,
+      "sha256": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751"
     },
     {
       "path": "data/afirmaciones/03.csv",
@@ -80,8 +80,8 @@
     },
     {
       "path": "data/afirmaciones/04.csv",
-      "bytes": 107136,
-      "sha256": "a9994872fd82507a437907d9185552bdebc0dad900db210756a233b69afb6e55"
+      "bytes": 119556,
+      "sha256": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70"
     },
     {
       "path": "data/afirmaciones/05.csv",
@@ -90,8 +90,8 @@
     },
     {
       "path": "data/afirmaciones/06.csv",
-      "bytes": 15242,
-      "sha256": "a044ff3eb28145e783b7035b35a37d69749b57f15be3f820e4c25bd558af982f"
+      "bytes": 16467,
+      "sha256": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902"
     },
     {
       "path": "data/afirmaciones/07.csv",
@@ -105,8 +105,8 @@
     },
     {
       "path": "data/afirmaciones/09.csv",
-      "bytes": 97366,
-      "sha256": "da00a5c36659c55331420458bf5e681a342158a0588b3e02df14004182fc702e"
+      "bytes": 100165,
+      "sha256": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf"
     },
     {
       "path": "data/afirmaciones/10.csv",
@@ -135,38 +135,38 @@
     },
     {
       "path": "data/afirmaciones/15.csv",
-      "bytes": 850949,
-      "sha256": "2b3fffda51f8b8e7892ab13027ae5c6112676454ddaa069ced849461fd6245d2"
+      "bytes": 870394,
+      "sha256": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac"
     },
     {
       "path": "data/apendices/A_fuentes.csv",
-      "bytes": 277795,
-      "sha256": "b8d84e7d280de6cd0bbda199a11d583a2b298e1068ea63501d92e667fe2e1c3c"
+      "bytes": 281953,
+      "sha256": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8"
     },
     {
       "path": "data/apendices/B_entidades.csv",
-      "bytes": 128003,
-      "sha256": "da877b19de87f10e7f0e0e436b036ed69520ab1a43087ba10c289a1bad2ceaaa"
+      "bytes": 131003,
+      "sha256": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f"
     },
     {
       "path": "data/apendices/C_eventos.csv",
-      "bytes": 26031,
-      "sha256": "2531662d00f09aa294d6313d17a3b7bf9eee9feded84121deb0aaa9c3617eeef"
+      "bytes": 26265,
+      "sha256": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b"
     },
     {
       "path": "data/apendices/D_fechas.csv",
-      "bytes": 48379,
-      "sha256": "2f4cbf7cc062e2777c387c40b54422920e0c75a071d68dce5710f7dde3c235d8"
+      "bytes": 54902,
+      "sha256": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17"
     },
     {
       "path": "data/apendices/E_hipotesis.csv",
-      "bytes": 46150,
-      "sha256": "dd8b9cde02d1010109866c3de48c02de581d26d05cb400f9f3449d07499ff1bd"
+      "bytes": 46158,
+      "sha256": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1"
     },
     {
       "path": "data/apendices/F_magnitudes.csv",
-      "bytes": 106111,
-      "sha256": "4ccd60e2154a50a5e549ffe3b0eaccd5f6982ed547e586ebb8b436b02664ec25"
+      "bytes": 130485,
+      "sha256": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77"
     },
     {
       "path": "data/apendices/G_material_no_encajado.csv",
@@ -176,7 +176,7 @@
     {
       "path": "data/apendices/H_recuento_control.csv",
       "bytes": 1332,
-      "sha256": "c863624401730018e713f10fe347f0b75256f3e0f4c385aa0f307b0ce32a42e5"
+      "sha256": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e"
     },
     {
       "path": "data/auditoria/celdas_no_conformes_trazabilidad_v1.csv",
@@ -215,13 +215,18 @@
     },
     {
       "path": "data/auditoria/correcciones_celdas_semanticas_v1.csv",
-      "bytes": 8376,
-      "sha256": "f8570ddede6d8c1affdbc8fc4189790c005c4bcbaf3466b79df9d7f211dbcdf5"
+      "bytes": 9336,
+      "sha256": "5cfad5a16210d698f42d5a850e325ec9a441724ee8e9909741ec5928a180a270"
     },
     {
       "path": "data/auditoria/densidad_referencia.csv",
       "bytes": 159,
-      "sha256": "3b7daf53214565d13a41815338bc27d3902c0a6acc13cab8c33b8c8a430bcc7b"
+      "sha256": "c303d5e9c2ea76f38b6cfe7ceaac1d17e52a33b3a04960c9f56b1283e12f0a86"
+    },
+    {
+      "path": "data/auditoria/disposiciones_residuales_semanticas_v1.json",
+      "bytes": 42,
+      "sha256": "3e8c22675e0d075ccf15897066b8e11dd1209b97c455a6bb13dcbabdd7616ed1"
     },
     {
       "path": "data/auditoria/entradas_congeladas_reconstruidas/afirmaciones_iniciales.csv",
@@ -270,8 +275,18 @@
     },
     {
       "path": "data/auditoria/especificacion_magnitudes_por_requisito_v1.csv",
-      "bytes": 15996,
-      "sha256": "7649c7fda04a48365a79405f51c569f1005988d570892e5d2da9ee0a94f82794"
+      "bytes": 15681,
+      "sha256": "b5e8635babacf2da9b7c774c91f2b75a88d91f8dc1119068f450af2c9445fd03"
+    },
+    {
+      "path": "data/auditoria/fechas_ejecuciones_bn.csv",
+      "bytes": 796212,
+      "sha256": "089cd9b1a227238a9574084d649a77070a41a72d48143133835623b391873b57"
+    },
+    {
+      "path": "data/auditoria/fechas_objetos_revision.csv",
+      "bytes": 4621,
+      "sha256": "e1624c83c7e6975d090ebb15b2f931dcb1b78d2d96c820a346ae8957a3d07f94"
     },
     {
       "path": "data/auditoria/integracion_material_g.csv",
@@ -280,28 +295,28 @@
     },
     {
       "path": "data/auditoria/magnitudes_por_requisito_v1.csv",
-      "bytes": 84560,
-      "sha256": "ae16fa3a95541016725499241d65f6ee51045e496384a7320fbc1ffc28d8bee8"
+      "bytes": 85558,
+      "sha256": "f89a31d6ad023e6b6c1097753acf4c1c7f5e92dd6da6ae155d295e0ff1bc0815"
     },
     {
       "path": "data/auditoria/magnitudes_requeridas_v1.csv",
-      "bytes": 218550,
-      "sha256": "da5e9886720783775e0694b393cac4ee4ba87d01c69df6e9277da2146dba2310"
+      "bytes": 252332,
+      "sha256": "bf44dc553c00809d9d9ef80c96606b59a7c334fa1c662c95a89b1be06da02b92"
     },
     {
       "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
-      "bytes": 1119947,
-      "sha256": "ed6f286d0b34cd40bcc6fcdf562044e0a08349019154524e173998f99d0bad6e"
+      "bytes": 1135764,
+      "sha256": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3"
     },
     {
       "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
-      "bytes": 1448335,
-      "sha256": "f0f23338e9cb584f09cdb043122f686abc1f616332ae19ef3b77a57fe0c94bc8"
+      "bytes": 1480503,
+      "sha256": "a9accb5170124cee2980f013d517f88b8fc587f6d8ad9b58d6a2ca0e31a95f45"
     },
     {
       "path": "data/auditoria/requisitos_disposiciones.csv",
-      "bytes": 201703,
-      "sha256": "03b13408627fcefc542e6834ca140909cd1d9ba0199509dd50028ae5c3f7ac26"
+      "bytes": 202435,
+      "sha256": "1a4bb9ecbbd31e1ecf38999a4b0f3c759185767f7777191915084db2a5d19053"
     },
     {
       "path": "data/auditoria/residuales_trazabilidad_no_conformes_v3.csv",
@@ -311,7 +326,7 @@
     {
       "path": "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv",
       "bytes": 94616,
-      "sha256": "9dce0d159b37f834b48679b1d2aeff2695a4ef58a52985546368e65087740abd"
+      "sha256": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10"
     },
     {
       "path": "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv",
@@ -320,23 +335,23 @@
     },
     {
       "path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
-      "bytes": 12760,
-      "sha256": "d0449126896d3ecb3389bcf88b8f58254bb048d477a085643056453f6466a7ef"
+      "bytes": 14795,
+      "sha256": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245"
     },
     {
       "path": "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv",
-      "bytes": 152725,
-      "sha256": "a8c2ac3d23d4541040642a658e2dfd63cc11f108db01cd371d63b3ad4b6c4bb1"
+      "bytes": 152731,
+      "sha256": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee"
     },
     {
       "path": "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv",
-      "bytes": 97151,
-      "sha256": "42b1d3c55873affeeec3c650a6e67319e40e2ed495fbbbc71cead9b0a42c929c"
+      "bytes": 93942,
+      "sha256": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7"
     },
     {
       "path": "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv",
       "bytes": 7585,
-      "sha256": "c9686bf606cc88eef5869b52390f7387080a168931daeba17892670a1d9b4ab3"
+      "sha256": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd"
     },
     {
       "path": "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv",
@@ -346,17 +361,17 @@
     {
       "path": "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv",
       "bytes": 70099,
-      "sha256": "cd71354f5010918213d8dc05b56c0ade0cd869cd1015ca6c22a6cd635ab6bcfc"
+      "sha256": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01"
     },
     {
       "path": "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv",
-      "bytes": 65939,
-      "sha256": "0d99c7229fceac96ef1dbad996518301b827fcf46fa8a0393a61fc8455031e69"
+      "bytes": 65086,
+      "sha256": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4"
     },
     {
       "path": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
-      "bytes": 7101,
-      "sha256": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d"
+      "bytes": 7216,
+      "sha256": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b"
     },
     {
       "path": "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv",
@@ -430,28 +445,28 @@
     },
     {
       "path": "data/tablas/04/table-17-4-6-2-amorphea.csv",
-      "bytes": 1307,
-      "sha256": "c09b040c62289a79b978128c13c5618f2ab940c437b860e9207ddfc2a25ce432"
+      "bytes": 1357,
+      "sha256": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e"
     },
     {
       "path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
-      "bytes": 1090,
-      "sha256": "4377bc8d5390b020d9ada0b5082ef8a0b65285b08e786dce09f54bcd94cc079e"
+      "bytes": 1404,
+      "sha256": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c"
     },
     {
       "path": "data/tablas/04/table-19-4-6-4-obazoa.csv",
-      "bytes": 1107,
-      "sha256": "930e35efc9942610b73f19d1a848beb9fc9bab5bb093348866011b6b60e127dd"
+      "bytes": 1360,
+      "sha256": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220"
     },
     {
       "path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
-      "bytes": 1225,
-      "sha256": "51098562e38ebd5e1544ccdca7753a4d22c678868eecdb05fb79654d5a17f5a7"
+      "bytes": 1571,
+      "sha256": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec"
     },
     {
       "path": "data/tablas/04/table-21-4-6-6-breviatea.csv",
-      "bytes": 1186,
-      "sha256": "edd5dd1a848930427555a38f61ce204f42ad8e583212be4a4ddde053b880921e"
+      "bytes": 1338,
+      "sha256": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8"
     },
     {
       "path": "data/tablas/04/table-22-4-6-7-opisthokonta.csv",
@@ -470,13 +485,13 @@
     },
     {
       "path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
-      "bytes": 1266,
-      "sha256": "cf18fd48ddffd769d5ca2df87493f5b4a459ff50bd1314da6337a326ffbfc6cb"
+      "bytes": 1583,
+      "sha256": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60"
     },
     {
       "path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
-      "bytes": 1283,
-      "sha256": "1dd3970dbdbf2f2792fe4bd75f44f53c03890d5ba7196a9a11d47711447bf1e9"
+      "bytes": 1625,
+      "sha256": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502"
     },
     {
       "path": "data/tablas/04/table-27-4-6-12-corallochytrea.csv",
@@ -485,13 +500,13 @@
     },
     {
       "path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
-      "bytes": 1262,
-      "sha256": "eedd97459b551d6e3246b4a0c35895594825275f341a8248821299e368d6411a"
+      "bytes": 1576,
+      "sha256": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857"
     },
     {
       "path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
-      "bytes": 1197,
-      "sha256": "79977bbaf698c0c2dcca4f6be5bab7d77ce81d8ff5af3e0c5c1f3fc00ad4afe7"
+      "bytes": 1524,
+      "sha256": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7"
     },
     {
       "path": "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv",
@@ -525,8 +540,8 @@
     },
     {
       "path": "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv",
-      "bytes": 10638,
-      "sha256": "39920926d7b59b08b4524c5b8698890ca4194ff157f18e2f3a46df2954db5723"
+      "bytes": 11181,
+      "sha256": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795"
     },
     {
       "path": "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv",
@@ -600,8 +615,8 @@
     },
     {
       "path": "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv",
-      "bytes": 2207,
-      "sha256": "84a7da0903940eabb9fd7767a01f58d9d2869a588775e10e4687a2e777753231"
+      "bytes": 2672,
+      "sha256": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c"
     },
     {
       "path": "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv",
@@ -676,7 +691,7 @@
     {
       "path": "data/table_index.json",
       "bytes": 85187,
-      "sha256": "ca961faab902bd39bd399be6821f8151c42541d21c55d9a0d60dfa9114c2bc8a"
+      "sha256": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665"
     },
     {
       "path": "data/table_lineage.csv",
@@ -695,8 +710,8 @@
     },
     {
       "path": "docs/FUENTES-SIN-ACCESO.md",
-      "bytes": 48698,
-      "sha256": "665497df90d47475fb7e02ba1da89d3f32e047a17f288e5953d73a48bad73ee7"
+      "bytes": 47856,
+      "sha256": "0d7b4c2251a1c29aad976343f0cbf72b236aa8ae4163ed9f49c065aa2e367548"
     },
     {
       "path": "docs/GITHUB_SETUP.md",
@@ -714,9 +729,144 @@
       "sha256": "0472dc2f9a30e372e496038b7a0c9563b1299179cca229f2cadcf08eeef08a22"
     },
     {
+      "path": "docs/auditorias/ADDENDUM_ACCESO_S551_Y_RECUENTOS_2026-09-26.md",
+      "bytes": 3642,
+      "sha256": "ae07a10b97300950d6a77b6844cdedc88125f408e6711b61c1de8b633cdf711f"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_AUTOR_ARTEFACTOS_NOMINALES_2026-09-27.md",
+      "bytes": 4279,
+      "sha256": "db14583856d41c489f0e0b3496c05c3086caead434b19245fd98cabaf1bb41e4"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_AUTOR_ESTADOS_Y_A_VIVA_2026-09-27.md",
+      "bytes": 4934,
+      "sha256": "c6cae9c9113bf0dfa5646597d423b7f188cffa9c4a942ecc78095ef066ef9a8b"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_AUTOR_FAILCLOSED_2026-09-26.md",
+      "bytes": 4055,
+      "sha256": "d3a122d8028ea6b37f8c1de4424764f719eb905eb3c34fb13d803504cc680065"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_IDENTIDAD_S551_S559_2026-09-26.md",
+      "bytes": 3287,
+      "sha256": "56dfcc82861af0bc02a77e575db2614fecbe43a9dffdffd1550d3e7348edd836"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INDEPENDIENTE_CONSUMIDOR_TELEOLOGIA_REPARADO_2026-09-27.md",
+      "bytes": 6199,
+      "sha256": "f7db16ecce1777d2db66cba6ca972496ffa9630a8d52fd9fa82df3b003690717"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INDEPENDIENTE_DISPOSICIONES_REPARADAS_2026-09-27.md",
+      "bytes": 7393,
+      "sha256": "3086d6d76320bb88bf6b41c1267fc1a772b1d614ffe41c35e226b78063ed15fe"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INDEPENDIENTE_FAILCLOSED_REPARADO_2026-09-27.md",
+      "bytes": 6965,
+      "sha256": "026f7c158ae7ac581c706d56dd13b552bdac08737159ebba1ca1e7e8b67474a9"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INDEPENDIENTE_FRAGMENTO_C1196_2026-09-27.md",
+      "bytes": 2243,
+      "sha256": "5f85a7fa808b7ef2c3bc47590af336c20a53f45f73ccc9863b15e35393d8a5e7"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INDEPENDIENTE_REINSPECCION_C1664_C1642_C1121_V3_V4_2026-09-27.md",
+      "bytes": 4392,
+      "sha256": "60633e71cb0043480f3e75b4f6efaff9f6dcbf74bd6a3dd352b1a6ca7ea258c1"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INTEGRACION_CRONOLOGICA_FUENTES_BN558_2026-09-26.md",
+      "bytes": 3774,
+      "sha256": "726c40650d4c9e092db8c053533a5df68df9d598128faccdcf46f5c042270767"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_INTEGRACION_FUENTES_2026-09-26.md",
+      "bytes": 2089,
+      "sha256": "473008df7d3120eb047422f68b246898675ee4e509f300457e4cf7173e652bb8"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_NORMALIZACION_LF_ACCESO_2026-09-26.md",
+      "bytes": 1647,
+      "sha256": "d18f571d58d2f5d2b3fa4cdea86d6e521235d302ec3af94ee4cca58c4e37608d"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_PROPUESTA_C2783_BN120_2026-09-26.md",
+      "bytes": 3959,
+      "sha256": "0b6d6c7d48b5dffee6271be72742df33a1fc934690dc5fd7de9eea0e7a807de2"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_PROSA_S434_2026-09-26.md",
+      "bytes": 1574,
+      "sha256": "5e713134db037a291bdf6597a2382667747a27fbccfa59a1c4f13101a6d44c54"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_S296_ACCESO_INVENTARIO451_2026-09-27.md",
+      "bytes": 3930,
+      "sha256": "1455985b0ef5e76b443734749720f7749ef507a8909fed560e826f78285e59c8"
+    },
+    {
+      "path": "docs/auditorias/ADDENDUM_TESTS_C2783_2026-09-26.md",
+      "bytes": 2048,
+      "sha256": "83b3e98ea4c0e08667ae13ea41f661b0bed58c3b75aeb0169d1d5c1aa1df8867"
+    },
+    {
       "path": "docs/auditorias/AUDITORIA-COMPLETA-2026-08-08.md",
       "bytes": 5935,
       "sha256": "4880ead509c70033c9b630a9489a3a61a8af829342708bc862bccd65fe2fc5bd"
+    },
+    {
+      "path": "docs/auditorias/CONTRATO_AUTOR_CONSUMIDOR_TELEOLOGIA_2026-09-27.md",
+      "bytes": 4618,
+      "sha256": "04a6e404d44e2fadb93288e0d0d85b31d2e9f1f8e385b1a2e5e7f6d25eef460f"
+    },
+    {
+      "path": "docs/auditorias/CONTRATO_CRONOLOGIA_CIERRE.md",
+      "bytes": 6810,
+      "sha256": "e3307c9807f0ed8718b034af8092e2bf030c426f5ebb7012d16e4984797f73a9"
+    },
+    {
+      "path": "docs/auditorias/CONTRATO_DISPOSICIONES_SEMANTICAS_RESIDUALES_2026-09-27.md",
+      "bytes": 8473,
+      "sha256": "4020e414ba44a6e581382fe0b7519e9784e73686c358a7336195c1e8fa08530a"
+    },
+    {
+      "path": "docs/auditorias/DIAGNOSTICO_INDEPENDIENTE_SECCION16_2026-09-27.md",
+      "bytes": 12569,
+      "sha256": "9362091b3cc259b12f1da59f58acd8aa16d9862db451d8e97616758619eee7a4"
+    },
+    {
+      "path": "docs/auditorias/DIAGNOSTICO_NOMINAL_4BN_2026-09-27.md",
+      "bytes": 28509,
+      "sha256": "d2638faef0f2f7e29139cdf611f9d1d76d35bd92a4463e693a7d4d1aec086d6d"
+    },
+    {
+      "path": "docs/auditorias/DIAGNOSTICO_PROPUESTA_R0393_DENSIDAD_2026-09-27.md",
+      "bytes": 11407,
+      "sha256": "dbb40fc00b8d37b9cc886cac5a9e10cd1b7fd647ff720579aeb0d5343db8d5ce"
+    },
+    {
+      "path": "docs/auditorias/ENTREGA_AUTORAL_SEGMENTACION_NCDEN02_2026-09-27.md",
+      "bytes": 7010,
+      "sha256": "d7507a6bb1c723aeab8bb4233ff3e4f54a1dc2072144792e6afdde67965a2aa5"
+    },
+    {
+      "path": "docs/auditorias/EVIDENCIA_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.json",
+      "bytes": 55301,
+      "sha256": "c4e6884813b827149349311002fe1eddc2c7252730c7404ee433dbd744e64f67"
+    },
+    {
+      "path": "docs/auditorias/EVIDENCIA_INDEPENDIENTE_SEGMENTACION_NCDEN02_2026-09-27.json",
+      "bytes": 100112,
+      "sha256": "da9650f37c22c9fc975b0164171b3f5cd14a27e23a8553163e615356e6411483"
+    },
+    {
+      "path": "docs/auditorias/EVIDENCIA_PROPUESTA_S560_WANG_WU_2014_2026-09-26.md",
+      "bytes": 3726,
+      "sha256": "8adffc98cd74b107df6cb01305b9179fd604804b58cd3871b58fb4038490d8d4"
     },
     {
       "path": "docs/auditorias/HANDOFF_CODEX_2026-08-13.md",
@@ -724,14 +874,329 @@
       "sha256": "dd1ff0dc92cd7c9194693e2bb0b325d2e0fef1fcfcfe9b03c4dca119f749bbd3"
     },
     {
+      "path": "docs/auditorias/INFORME_AUTOR_6_CELDAS_S240_S352_2026-09-27.md",
+      "bytes": 7912,
+      "sha256": "03bcd5f94daf6eb95e0394b3cf1a2fe9a8435c3f51b51218a56e8671cc467497"
+    },
+    {
+      "path": "docs/auditorias/INFORME_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.md",
+      "bytes": 6888,
+      "sha256": "67aa30bf084337fefd37273f5e92a9fe587d590f1bb53cde096b8e0f43c15d44"
+    },
+    {
+      "path": "docs/auditorias/INTEGRACION_HGT_R0220_2026-09-27.md",
+      "bytes": 10363,
+      "sha256": "2788331df5deb2d7b0e79cdf50f7cb9d1c7d6a3e28e5ca1a1598ab014af88a32"
+    },
+    {
+      "path": "docs/auditorias/INTEGRACION_PERDIDA_GENICA_R0212_2026-09-27.md",
+      "bytes": 9401,
+      "sha256": "0d1ec2133d1b67aea9d18f605a743e516ffc98fa4f3b299414dfab9809375244"
+    },
+    {
+      "path": "docs/auditorias/INTEGRACION_S560_Y_RETIRADA_BN132_2026-09-27.md",
+      "bytes": 6996,
+      "sha256": "0192de28f5e7d8413d4582e5fc65189e55f3b0f39c9b857fcbacb991b87013bf"
+    },
+    {
+      "path": "docs/auditorias/LECTURA_AUTORAL_C338_C426_C477_2026-09-27.md",
+      "bytes": 5569,
+      "sha256": "5326cf59342290e1327ad81d18073afe84cb4dd0165f699319d80ebd722da770"
+    },
+    {
+      "path": "docs/auditorias/LECTURA_AUTORAL_S352_FIG4_NOTA5_PARA_V2_2026-09-27.json",
+      "bytes": 17647,
+      "sha256": "c677f03057590f7757a2fd8539b3fe3f6e017d690c3e384e0761219a38e54011"
+    },
+    {
+      "path": "docs/auditorias/NOTA_AUTOR_BLANCOS_CONTRAEVIDENCIA_2026-09-27.md",
+      "bytes": 3287,
+      "sha256": "b92fb116ea951d110e10b61befcec09b1b0c17dee7c3d5d379faf3bd64058373"
+    },
+    {
+      "path": "docs/auditorias/NO_CONFORMIDADES_CONTROL_TELEOLOGICO_2026-09-27.md",
+      "bytes": 3532,
+      "sha256": "af0d6e0b8c7e08f54a98c822d61a4649ccd9357083511423ecd5f3bd424b430d"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_2026-09-27.json",
+      "bytes": 90593,
+      "sha256": "20bc4ed7cd09c556044b8f5f99c93337b8a5519d66420b2b8f84ab62165065ca"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_BORRADOR_2026-09-27.json",
+      "bytes": 79950,
+      "sha256": "3fc812472be6573c6fe372e65abe932b859491a8cf31544e9db7fa9edef21b1d"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_AUTOR_6_CELDAS_S240_S352_V2_2026-09-27.json",
+      "bytes": 248642,
+      "sha256": "96d36be9adeed056a5c5f6da54321101b2dc25e7ae1bc28cb9258dae0b3e8bfa"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_BN120_S434_2026-09-26.md",
+      "bytes": 13911,
+      "sha256": "23b48bcf4b3eb96e027df66bf99b093d6fd69a82ec8ad1507930740401b18e5c"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_CONTRATO_CENSO_ORACIONES_DENSIDAD_2026-09-27.md",
+      "bytes": 6768,
+      "sha256": "19c491ed7232c4b6267519a487dc2fe3281d74e3a757ef9dd82efadfd2c48846"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_FRAGMENTO_ORIGINAL_C1196_2026-09-27.json",
+      "bytes": 3240,
+      "sha256": "a49e4a1a147d86965ea651b0ada66cbccae861139e1578309e3871423d326129"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_LOCALIZADORES_C031_F_TABLA_2026-09-27.json",
+      "bytes": 7361,
+      "sha256": "99166dc75d74faf1c6f53bea8e85ea084d39fa400f59667681c6e58cdf5d3fad"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_LOCALIZADORES_C031_F_TABLA_V2_2026-09-27.json",
+      "bytes": 7797,
+      "sha256": "f5a497ba982f247f4bb3e64310b55f45da5758214cefabc0b803232c4691f375"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_2026-09-27.json",
+      "bytes": 23224,
+      "sha256": "4ffc3b7c31c18546c62f0213980eee7a2373a5e94c40c16c3a7d418df20388e3"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V2_2026-09-27.json",
+      "bytes": 37136,
+      "sha256": "9cf84c0123fdcaf9fc25f37f5ad7990891c828c086900c4722ceb0b37075fdbc"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V3_2026-09-27.json",
+      "bytes": 38571,
+      "sha256": "90d4e2b446df1aaa1d53dbe7d1ac4f210d7b1ffe091ecd96c0dc1d61c3632ad3"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_REPARACION_C1664_C1642_C1121_V4_2026-09-27.json",
+      "bytes": 38159,
+      "sha256": "f617976321c0cc1d784812d57d7d08ff533c178e65ddea1877cdfe434126b7d4"
+    },
+    {
+      "path": "docs/auditorias/PROPUESTA_RETIRADA_BN120_2026-09-26.md",
+      "bytes": 12304,
+      "sha256": "1a236fdadb6550b8ec9b45c4017a2fb4d6ab07ed9ded6bdcca62f0fc4271158d"
+    },
+    {
+      "path": "docs/auditorias/QA_TABULAR_EXTERNA_2026-09-26.md",
+      "bytes": 2630,
+      "sha256": "fd7fe4953a90f5b24439cefbce607a96216c6aa432b0016706fb221a84282244"
+    },
+    {
+      "path": "docs/auditorias/QA_TABULAR_EXTERNA_2026-09-26_CORPUS2820.md",
+      "bytes": 1658,
+      "sha256": "d96e1615bc2a96b26f29f8a91367d76790b5e33517af24524542bf1d322f5289"
+    },
+    {
+      "path": "docs/auditorias/REINSPECCION_BN083_DOS_CONSULTAS_2026-09-26.md",
+      "bytes": 2333,
+      "sha256": "bc491ae586b812ed77fe5a3767a829844754a22534be465400343ac962f96a54"
+    },
+    {
+      "path": "docs/auditorias/REINSPECCION_BN_FUENTES_2026-09-26.md",
+      "bytes": 3857,
+      "sha256": "a20ee1434c47a315e965b5339f89eed4ad51684a64fd8dd7ba3094e9dff08cd8"
+    },
+    {
+      "path": "docs/auditorias/REINSPECCION_FAILCLOSED_INDEPENDIENTE_2026-09-27.md",
+      "bytes": 8254,
+      "sha256": "144b17006978dfc2d069b8c33277d006c99daec2c2126a8d16500b9082b7fa4a"
+    },
+    {
+      "path": "docs/auditorias/REINSPECCION_INDEPENDIENTE_DELTA_HGT_2026-09-27.md",
+      "bytes": 3944,
+      "sha256": "c468f8d966dce151fdaff676163cd63766c6ba06602aeacbc1f1bbeb8546d3a1"
+    },
+    {
+      "path": "docs/auditorias/REMEDIACION_S126_2026-09-26.md",
+      "bytes": 5055,
+      "sha256": "41758895230f5a6bb037d3111344e6d057a149e6ff365c4d4c8577cd2cda1dcc"
+    },
+    {
       "path": "docs/auditorias/REVISION-BUSQUEDAS-NEGATIVAS-2026-08-08.md",
-      "bytes": 26691,
-      "sha256": "72e5bd45381b9b42a4ae41bf6a3cd694d0952f1082847563cbb693d369f0806f"
+      "bytes": 27652,
+      "sha256": "47d2c2316dcfa6818e2d1a3948c01b553885071dc32ab31e6004b09d12e8187b"
+    },
+    {
+      "path": "docs/auditorias/REVISION_8BN_INTEGRACION_C1163_2026-09-26.md",
+      "bytes": 7009,
+      "sha256": "6313ad1281629d8a65de263973a08341f17c5af96983b0045a684b7aaba07ce0"
+    },
+    {
+      "path": "docs/auditorias/REVISION_CONSUMIDOR_TELEOLOGIA_INICIAL_2026-09-27.md",
+      "bytes": 6148,
+      "sha256": "fc41f5f6aea3f8ed962365847ea92b65f9a1f03c2a8d6b7230401819b775fa91"
+    },
+    {
+      "path": "docs/auditorias/REVISION_DISPOSICIONES_SEMANTICAS_INICIAL_2026-09-27.md",
+      "bytes": 6910,
+      "sha256": "74a252bb91914ea5a5f8b0edf0db3c2c87b94b87fdf1a6a9fe50f9a4cd3ed615"
+    },
+    {
+      "path": "docs/auditorias/REVISION_FAILCLOSED_INICIAL_2026-09-26.md",
+      "bytes": 4469,
+      "sha256": "c5b6935939787cdd4e7cb5d31f9e278b25e3bf18ae90be770732863827dbba27"
+    },
+    {
+      "path": "docs/auditorias/REVISION_FUENTES_RECIENTES_2026-09-27.md",
+      "bytes": 6112,
+      "sha256": "8e682df2fe7484b789e768959f93ccbba6e76cfa7876b17d27fa3bc24119455f"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_DELTA_TELEOLOGIA_2026-09-27.md",
+      "bytes": 5049,
+      "sha256": "17e7fa0434015af78aa607745becc4ab9a9f39fd0b05aed415c99bf5b2c20422"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_LOCALIZADORES_C031_V2_2026-09-27.json",
+      "bytes": 20034,
+      "sha256": "dc9db3f8504cafca14f26a8c04fe49c89afc81223c14739cab6848b8a71cac29"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_LOCALIZADORES_C031_V2_2026-09-27.md",
+      "bytes": 4015,
+      "sha256": "57e9fe817c69f71279857a7a67880a13d2b2a4f23e41a2c9def2803cecc200b3"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_PROPUESTA_C1664_C1642_C1121_V1_2026-09-27.md",
+      "bytes": 6811,
+      "sha256": "f2b561f25c7f3be3be9a109f26c6ad0396cd001d5f087964ea1b39b2ac767702"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_PROPUESTA_C1664_C1642_C1121_V2_2026-09-27.md",
+      "bytes": 7367,
+      "sha256": "58597c147a6fb1d44adaf9c0c54f6a6b39e22428a7d814f62ac3cd5a0480b702"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_PROPUESTA_S240_S352_V1_2026-09-27.md",
+      "bytes": 11599,
+      "sha256": "15c707729ab590b2d662ad08f2d00d496b8d6308e91166d7e9d2f9445dc86518"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_S560_HGT_R0212_2026-09-27.md",
+      "bytes": 8921,
+      "sha256": "98ad9a3fe0f9289bc8722198f2f4b1611230c0e52bcbe50dd7c84d130b46a218"
+    },
+    {
+      "path": "docs/auditorias/REVISION_INDEPENDIENTE_SEGMENTACION_NCDEN02_2026-09-27.md",
+      "bytes": 8393,
+      "sha256": "694d4cebae68bf0f6cd96a92993e137cdba6d203cca6e3c1f90e562ab8fe930f"
+    },
+    {
+      "path": "docs/auditorias/REVISION_NOMINAL_CONTEXTOS_TELEOLOGIA_2026-09-27.md",
+      "bytes": 4987,
+      "sha256": "d76366725910262d324f578ade57ae9b6c88a9cebcf501a3ec9a5be43eaca942"
+    },
+    {
+      "path": "docs/auditorias/REVISION_REDACCION_6_OCURRENCIAS_TELEOLOGIA_2026-09-27.md",
+      "bytes": 3802,
+      "sha256": "96c3fd561e28e41640376cd735b1cad5a4c5e673bafb57e0af26838dbbf93254"
+    },
+    {
+      "path": "docs/auditorias/REVISION_RETIRADA_BN120_2026-09-26.md",
+      "bytes": 6038,
+      "sha256": "fba8d5946829a99f199adc2f3c28f48e5f09fc5c6fdfc1af8947dba4d847cd74"
+    },
+    {
+      "path": "docs/auditorias/REVISION_S282_C2823_E98_2026-09-26.md",
+      "bytes": 4683,
+      "sha256": "2093eed30cdf9015682ef771ded3fc888ffb10e506e2096b5ac862ff62e0b96c"
+    },
+    {
+      "path": "docs/auditorias/REVISION_S549_PUBLICADO_2026-09-26.md",
+      "bytes": 5599,
+      "sha256": "d17fd3c23cd03cd784f8ef4ee302d0acc78761d73ef475837cdfd745422fbb3a"
+    },
+    {
+      "path": "docs/auditorias/VERIFICACION_FUENTES_NUEVAS_2026-09-26.md",
+      "bytes": 3189,
+      "sha256": "50f7866958fa8e1491ae8b5682b434d39f411fa9defa8c275d12efbc0cc7d0ef"
+    },
+    {
+      "path": "docs/auditorias/actualizacion_acceso_s296_s512_s562_2026-09-27.json",
+      "bytes": 4959,
+      "sha256": "bc8baf225b81e3f7f5d88fa9546ca79d1934f427b7c3379658c24cc0b36a0413"
+    },
+    {
+      "path": "docs/auditorias/addendum_c2817_lote_s126_2026-09-26.csv",
+      "bytes": 1888,
+      "sha256": "540b8d112a399081549779286639219aef416fab26ce246931113bf34d568af0"
+    },
+    {
+      "path": "docs/auditorias/addendum_cientifico_s548_2026-09-26.csv",
+      "bytes": 43705,
+      "sha256": "f508c28dc64d3cbfedd9347233f596cac31be9694679a59ce0583ff9fdf3e64e"
+    },
+    {
+      "path": "docs/auditorias/addendum_glosas_bn_y_disponibilidad_s126_2026-09-26.csv",
+      "bytes": 8022,
+      "sha256": "77a4526720905fe79db8d097bc3df780449b8afae0f570220cc62a60396c4d4c"
+    },
+    {
+      "path": "docs/auditorias/addendum_identidad_s296_2026-09-27.csv",
+      "bytes": 2221,
+      "sha256": "c5aab5065b0c2c8294877fe59e9062a02b5e0b61b46c76670ccf55851590003e"
+    },
+    {
+      "path": "docs/auditorias/addendum_identidad_s551_s559_2026-09-26.csv",
+      "bytes": 1494,
+      "sha256": "0ed2aba3025ce1aed0141e782aa7d3414e8a863cf2137c8e6d212905e30bc928"
+    },
+    {
+      "path": "docs/auditorias/addendum_paginacion_s126_2026-09-26.csv",
+      "bytes": 68228,
+      "sha256": "0833602f6d06296efacda8e4d28911e8d6a751a8f6b5a89755d8c4a20358b272"
+    },
+    {
+      "path": "docs/auditorias/adversarios_failclosed_inicial_2026-09-26.json",
+      "bytes": 6195,
+      "sha256": "b1cd2f5c137f89151d9ef601b7a2006ee42965edc41afed6290fe624bd8ced34"
     },
     {
       "path": "docs/auditorias/auditoria_reproducible_2026-08-08.json",
       "bytes": 7595,
       "sha256": "c20e37c5927be5768c0bff83788c68dfdd7063366cfcdeda91597fb87cb81fb8"
+    },
+    {
+      "path": "docs/auditorias/candidatos_diagnostico_seccion16_2026-09-27.json",
+      "bytes": 99290,
+      "sha256": "a7a80a9f33813f37a72143db463bb1b69f8688bb408b9d4c2fb1585952eb6a00"
+    },
+    {
+      "path": "docs/auditorias/censo_autoral_segmentacion_2026-09-27.json",
+      "bytes": 282503,
+      "sha256": "c916c87bbe703fe22fe73f586f85c2ecb252571153421f1ab4f8ba1a13dc4061"
+    },
+    {
+      "path": "docs/auditorias/censo_contextos_teleologia_v1_2026-09-27.json",
+      "bytes": 119978,
+      "sha256": "b206dc433fba33bb51642ef543ab6027aad9cf571e0271d43d0b46736bb2ab8d"
+    },
+    {
+      "path": "docs/auditorias/censo_contextos_teleologia_v2_contexto_2026-09-27.json",
+      "bytes": 136286,
+      "sha256": "30b0de4813c5c30c54d751f89ab86d359e1c884b3ff9078c0ca74bcb2c2bb029"
+    },
+    {
+      "path": "docs/auditorias/cierre_derivados_lote_s126_2026-09-26.csv",
+      "bytes": 3811,
+      "sha256": "f830e4d9906d021297d40ebad88e2703d0f95c9251a27b30976c4e1f7796d7e0"
+    },
+    {
+      "path": "docs/auditorias/comprobaciones_revision_independiente_s560_hgt_r0212_2026-09-27.json",
+      "bytes": 8566,
+      "sha256": "88f5a7d160847adce0a10f30632cc93ed996ada90d989c76550522433c35653e"
+    },
+    {
+      "path": "docs/auditorias/confirmacion_final_s548_2026-09-26.csv",
+      "bytes": 52660,
+      "sha256": "571551cea1c97534e87e9af85035adda4cf285c6ec25f0440d1cd3508f871f6b"
     },
     {
       "path": "docs/auditorias/controles_requisitos/R-0001.csv",
@@ -1994,14 +2459,434 @@
       "sha256": "a54eab573e309afaf16e9692e9eb8c08ccc9e2cabe087ffb5e435685e6d65d0c"
     },
     {
+      "path": "docs/auditorias/correccion_hgt_tras_revision_2026-09-27.json",
+      "bytes": 11720,
+      "sha256": "97b88cd3186c16a4e377c8dea31455b776f32cc41482e38f18d5ea2e9974876f"
+    },
+    {
+      "path": "docs/auditorias/cotejo_identidad_celdas_s548_2026-09-26.csv",
+      "bytes": 2354,
+      "sha256": "52205e6b4471e4b150de7175d9bc9ef8df9323b32204985b85e43983c54c16bd"
+    },
+    {
+      "path": "docs/auditorias/cotejo_parche_s434_2026-09-26.csv",
+      "bytes": 13176,
+      "sha256": "61f1ed6dd9a61b5e1156847775f76fbc53010c58cda661f1e3d3a8ec6273c433"
+    },
+    {
       "path": "docs/auditorias/delta_apendices_2026-08-08.csv",
       "bytes": 1003535,
       "sha256": "4b2cf35bf798f025ba48433db1b60435b6b2713df13e19461c397daaacec7cd8"
     },
     {
+      "path": "docs/auditorias/dictamenes_diagnostico_seccion16_2026-09-27.csv",
+      "bytes": 13676,
+      "sha256": "20f4332d1ae3ff7483be5cac0dfa9b319e79689467b03a5d00c1e45f14ec98a2"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_independientes_propuesta_c1664_c1642_c1121_v1_2026-09-27.csv",
+      "bytes": 10146,
+      "sha256": "6e203c2010240aa4f233cad6663bc2f954d820628985138d44db67b43f969423"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_independientes_propuesta_c1664_c1642_c1121_v2_2026-09-27.csv",
+      "bytes": 18053,
+      "sha256": "1e567dc67d202720e1ee0e06e7eee26be7dadfcdd34211d0b00538585a4123cb"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_independientes_propuesta_s240_s352_v1_2026-09-27.csv",
+      "bytes": 27360,
+      "sha256": "75515a5baa9220e3dd67cb72ddc751dcb769fc59f2d06d19411fea71c2ecda75"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_independientes_s560_hgt_r0212_2026-09-27.csv",
+      "bytes": 54091,
+      "sha256": "c353f26334b07631dfc10db4ecfd90f35c10af2fc0075eca9c022400922d450d"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_localizadores_c031_v2_2026-09-27.csv",
+      "bytes": 1449,
+      "sha256": "7414e7ef3764b5ecec931be5821a70f4414bbed22ba4857fc77d8bcf130f6713"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_reinspeccion_c1664_c1642_c1121_v3_2026-09-27.csv",
+      "bytes": 28192,
+      "sha256": "7e106a1a9507c029608968c5e72186aee23b6262407a9129146318ed5a2693f0"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_reinspeccion_c1664_c1642_c1121_v4_2026-09-27.csv",
+      "bytes": 27452,
+      "sha256": "be67d41a37f32b022a3a34c33809e628371f6465aa4d9b8149f5f6a139ab60ea"
+    },
+    {
+      "path": "docs/auditorias/dictamenes_reinspeccion_independiente_delta_hgt_2026-09-27.csv",
+      "bytes": 4078,
+      "sha256": "c97eb94ac7dbdc2a835ff619027f9dec328d4590a32799f623ce92b516bdd37b"
+    },
+    {
+      "path": "docs/auditorias/disposiciones_rango_c_adversario_inicial_2026-09-27.json",
+      "bytes": 446,
+      "sha256": "4b72c98c9f2971f383c35beb67ff77bffa4fb0fca98922ae9a346b9a692553a1"
+    },
+    {
+      "path": "docs/auditorias/evidencia_addendum_acceso_s551_impacto_2026-09-26.json",
+      "bytes": 11121,
+      "sha256": "71f8c35d13617a044820b3494388062193b1541025a6d1fc933b3036c8f6782b"
+    },
+    {
+      "path": "docs/auditorias/evidencia_adicional_s513_metodo_ci_2026-09-27.json",
+      "bytes": 1373,
+      "sha256": "8a06e954c479e00b4ebe59866e3ccc101bd06f8889aaa4c60d7cbbae9da4a356"
+    },
+    {
+      "path": "docs/auditorias/evidencia_c006_s559_2026-09-26.md",
+      "bytes": 5397,
+      "sha256": "6295d46d2797bd9ac9c4c6b99359b076a81476ae3b474695a516bd3fe1cbcbdb"
+    },
+    {
+      "path": "docs/auditorias/evidencia_cotejo_parche_s434_2026-09-26.json",
+      "bytes": 28545,
+      "sha256": "f190af24c7cc96e5cfb40b04a63a9fb2c4263d45d0708ed468360ddd63aedda9"
+    },
+    {
+      "path": "docs/auditorias/evidencia_diagnostico_4bn_2026-09-27.json",
+      "bytes": 123249,
+      "sha256": "52665686e4d81e2cfd1a771aa2046cdca894e5df986786be76c1bb82f9cdd37e"
+    },
+    {
+      "path": "docs/auditorias/evidencia_diagnostico_r0393_2026-09-27.json",
+      "bytes": 20109,
+      "sha256": "3fb87f24dbce7b880e5361ca77a098ef0959867a56f9007094733efe9f4fe25a"
+    },
+    {
+      "path": "docs/auditorias/evidencia_diagnostico_seccion16_2026-09-27.json",
+      "bytes": 37907,
+      "sha256": "f5fca9a7b1053153c26ed6fb1d7129d0d450d6927501f1b68a1e6c7357c5ee46"
+    },
+    {
+      "path": "docs/auditorias/evidencia_ejecuciones_internas_bn_fuentes_2026-09-26.json",
+      "bytes": 19532,
+      "sha256": "e56ef19992e5687c7a888fad77031384a07c2ffc2400a619e943b5e49618366b"
+    },
+    {
+      "path": "docs/auditorias/evidencia_ejecuciones_web_bn_fuentes_2026-09-26.json",
+      "bytes": 33704,
+      "sha256": "606f015c5b38aac3493889cde1e9f5efa8da3f8ef638ec732624768fc6bf556f"
+    },
+    {
+      "path": "docs/auditorias/evidencia_fuentes_recientes_inventario450_2026-09-27.json",
+      "bytes": 150774,
+      "sha256": "f63b2adbbffc89eea0c66fc44bcd9664ddd37698eba8233c5e263addd8043252"
+    },
+    {
+      "path": "docs/auditorias/evidencia_identidad_fuentes_nuevas_2026-09-26.json",
+      "bytes": 80103,
+      "sha256": "4e50ba6b291c7e6554e053549432403a761c21396adf602da5cf8a448c14d3da"
+    },
+    {
+      "path": "docs/auditorias/evidencia_integracion_16_fechas_bn_2026-09-26.json",
+      "bytes": 10526,
+      "sha256": "991890ccb631705351245b6638321c609fb8eb371c00c21cfe8ddec4a6c8cae4"
+    },
+    {
+      "path": "docs/auditorias/evidencia_local_bn_integracion_2026-09-26.json",
+      "bytes": 402685,
+      "sha256": "601474f82434f243c005c69fba147025a0dc7e6f653520b8f69be8eb7a118694"
+    },
+    {
+      "path": "docs/auditorias/evidencia_propuesta_bn120_s434_2026-09-26.json",
+      "bytes": 20822,
+      "sha256": "1e739ee11953dcffb923222ebc05104b48ff641d1ed37ea07ec9d23460a0bd21"
+    },
+    {
+      "path": "docs/auditorias/evidencia_propuestas_celdas_4bn_2026-09-27.json",
+      "bytes": 88761,
+      "sha256": "3f11c60968b3eda9313e50ec28076714e7f82937bdd6f08c1ad59dea5cc32616"
+    },
+    {
+      "path": "docs/auditorias/evidencia_rectificacion_paginacion_s126_2026-09-26.json",
+      "bytes": 185047,
+      "sha256": "e08199990037cdeef84d7f052dcee9e4432a95d6f39c080f995fc7100d7699ee"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-26_inventario447.csv",
+      "bytes": 413157,
+      "sha256": "98781bb0c54d32d99deae6a6b333234d7b1775a2c2896b09a1911c4cbaa614e3"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-27_inventario448.csv",
+      "bytes": 413157,
+      "sha256": "379055c23c99120da925a56c178bd78fdef0229338e4e9e93553c2de21b4d6ab"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-27_inventario451.csv",
+      "bytes": 413157,
+      "sha256": "04c0f903bf5669ac54d12f461a5f7f9796c816e525dd3319a9d372971b20307e"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_bn083_dos_consultas_2026-09-26.json",
+      "bytes": 21276,
+      "sha256": "b01142340714b1268e0e6f6d2d74ff47ea93e9eee40663a8feea1d43b6e2df84"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_bn_fuentes_2026-09-26.json",
+      "bytes": 21531,
+      "sha256": "acaaead2d678a1445797785edb95523818193a0c98c78cb70192ee84a950b97b"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_bn_relojes_2026-09-26.json",
+      "bytes": 268879,
+      "sha256": "a801a1f0541639523153ac8729c7f35f04fb649b7e4f933a3cd2d3d16043e2a5"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_bn_v3_2026-09-26.csv",
+      "bytes": 376845,
+      "sha256": "980c5c51189f44f5bbb694006d9ecea6a6df919ce78e473a202fde9207f082b1"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_bn_v3_2026-09-26_inventario442.csv",
+      "bytes": 405405,
+      "sha256": "e9c1e5370a9f1a3e6450929d1ef212a01ff9deca29c80ebcbb290266af6f1036"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_c1664_c1642_c1121_v3_v4_2026-09-27.json",
+      "bytes": 33276,
+      "sha256": "c13b9d768d7f7a0996ca07c69b327977361bf0105ba14b1bab387479d9d80c6e"
+    },
+    {
+      "path": "docs/auditorias/evidencia_reinspeccion_independiente_delta_hgt_2026-09-27.json",
+      "bytes": 11124,
+      "sha256": "bb0a8852369551e55413bdbb74ab98a2e68782b96e72d09751a112b951706173"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_independiente_8bn_integracion_2026-09-26.json",
+      "bytes": 39874,
+      "sha256": "bf0701492203d7ca2c4731c6a728f059867c2ac4afeb2408faad2e27421b3f7e"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_independiente_c1197_s296_2026-09-27.json",
+      "bytes": 1787,
+      "sha256": "de8f2c9dd672fd293a3cef7fa4920711964779d60823c13288dadd020a0da106"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_independiente_c1664_c1642_c1121_v2_2026-09-27.json",
+      "bytes": 58445,
+      "sha256": "44db720ab0a97b2ae85e21c21787c0f15055f35b287a0211e2dbe856ca84388e"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_independiente_propuesta_s240_s352_v1_2026-09-27.json",
+      "bytes": 44672,
+      "sha256": "a6fee5895bd00c1b8b98f7c03ee566ce7b402e74fdfd2b9bbe2ca7fba5babd60"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_independiente_s560_hgt_r0212_2026-09-27.json",
+      "bytes": 85610,
+      "sha256": "0e08aa99429dfc751d92d972331c0fdba47915c7e170a594993aa68ad6794c38"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_integracion_fuentes_2026-09-26.json",
+      "bytes": 12298,
+      "sha256": "744d667dfabfb0053f73e0075eecafd3c36a0dbe93c17cfc70687b4bf6bcd739"
+    },
+    {
+      "path": "docs/auditorias/evidencia_revision_propuesta_c1664_c1642_c1121_v1_2026-09-27.json",
+      "bytes": 21922,
+      "sha256": "c70bf2d8b443c276b97dba16f906bd6fdada4abc55d63271b6b291ee3c9aac7a"
+    },
+    {
+      "path": "docs/auditorias/evidencia_s296_acceso_inventario451_2026-09-27.json",
+      "bytes": 22039,
+      "sha256": "ac2d039a82776be083d62ceb5f43d1e6b45cbadd428bf6ed0afe5c9e61c52794"
+    },
+    {
+      "path": "docs/auditorias/evidencia_web_bn_integracion_2026-09-26.json",
+      "bytes": 25113,
+      "sha256": "8e0ec02cf32e603ab287e44f9adf1dc81738c6dd439a9ece2a12acf2e7037cd9"
+    },
+    {
+      "path": "docs/auditorias/fixtures/censo_autoral_segmentacion_20260927.py",
+      "bytes": 4402,
+      "sha256": "37bd454ca861a6a981f1b3f1ac96de4564d654b7f39e0972dd4b5a83445c4e6c"
+    },
+    {
+      "path": "docs/auditorias/fixtures/diagnostico_r0393_independiente_20260927.py",
+      "bytes": 7408,
+      "sha256": "bc7548ad44a047d28c5daa1bb87330734ea9ef49b8952738b36c7a2af1223837"
+    },
+    {
+      "path": "docs/auditorias/fixtures/integracion_disposiciones_independiente_20260927.py",
+      "bytes": 11224,
+      "sha256": "23f6561f1bdc25e0d2ed8ce3184a4f143c4d0bd7e25592671d021cd47f9288a9"
+    },
+    {
+      "path": "docs/auditorias/fixtures/inventario_teleologia_20260927.py",
+      "bytes": 1979,
+      "sha256": "7e85c49c3a288f49957616d22ad5773060473cbaea9475d80199a0ef0ac7ad57"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_autor_inventario447_20260926.py",
+      "bytes": 6699,
+      "sha256": "3990824ad4df7f17fc347f6a434b636d2c2b19b548e78bfefddf1dbaaff72da0"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_autor_inventario448_20260927.py",
+      "bytes": 6981,
+      "sha256": "c2cf0df329a3e76d5b26d5c3576c198fd971a611ebfc1c7162444b119d24bb80"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_autor_inventario451_20260927.py",
+      "bytes": 7776,
+      "sha256": "07a8621acac8b32c03ddc0e89c0b8ed7d62695f8203a31e175ec92d66c2647db"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_consumidor_teleologia_independiente_20260927.py",
+      "bytes": 19151,
+      "sha256": "86042d9a5fbab2feb65c7d06d2cb4c2ef9afa5501f4912b3515d7c5d26084a1d"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_delta_final_failclosed_20260927.py",
+      "bytes": 6040,
+      "sha256": "e873fe8dbac0eccc3c0c1e2eac1e0836284e47bd31c616182e7cccc218354ea7"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_disposiciones_independiente_20260927.py",
+      "bytes": 4701,
+      "sha256": "1003fb945081f85820cf2fe0221d82436bfbff3e102706481627cdaf44d29543"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_failclosed_independiente_20260927.py",
+      "bytes": 12605,
+      "sha256": "def926033bd47cb00d0546126537758388590212c0c1b0ea5f0b350c143a8467"
+    },
+    {
+      "path": "docs/auditorias/fixtures/reinspeccion_integracion_disposiciones_20260927.py",
+      "bytes": 11658,
+      "sha256": "981cb993dfb2ed8165f5ed77722edf43bbd877d21b1de464c219e71915227306"
+    },
+    {
+      "path": "docs/auditorias/fixtures/revision_consumidor_teleologia_independiente_20260927.py",
+      "bytes": 14441,
+      "sha256": "cbfe431a1abbaed2fa1f6bffef1ff3f046678d191651a746e184f79e164bd759"
+    },
+    {
+      "path": "docs/auditorias/fixtures/revision_disposiciones_independiente_20260927.py",
+      "bytes": 9123,
+      "sha256": "30d09fe5fb7c01d4b512badaf8622acd6c90f8b8ccc425480ef5546aba8c3755"
+    },
+    {
+      "path": "docs/auditorias/fixtures/revision_failclosed_independiente_20260926.py",
+      "bytes": 12811,
+      "sha256": "b94fc19fd17b4533ecfdbaa04fc229dea9c0d4b76229b4589c6f87cad36c37b9"
+    },
+    {
+      "path": "docs/auditorias/fixtures/revision_independiente_segmentacion_ncden02_20260927.py",
+      "bytes": 12586,
+      "sha256": "7c046b65b22b57ac6d15ebfdb74a3fd0eebd7eb9ef6e26500e39dd24be3ac573"
+    },
+    {
+      "path": "docs/auditorias/fixtures/revision_teleologia_cuantitativa_independiente_20260927.py",
+      "bytes": 5753,
+      "sha256": "abd95c6d88c2143ba28ad61312b473302451609ee9613e77842fa5c8de398cc6"
+    },
+    {
+      "path": "docs/auditorias/fixtures/snapshot_contexto_teleologia_20260927.py",
+      "bytes": 2004,
+      "sha256": "b8d94bdebdd710ffa0686d9e5da5f34e4a72c3ca51d7434b54c6cd2bdf29ed4a"
+    },
+    {
+      "path": "docs/auditorias/integracion_artefactos_fuentes_2026-09-26.json",
+      "bytes": 3704,
+      "sha256": "6e2a9120d50b6fa22ab873afc2824ce6cbc3e6fed4461e525cc0b99eff81e048"
+    },
+    {
+      "path": "docs/auditorias/integracion_disposiciones_fixture_inicial_invalida_2026-09-27.json",
+      "bytes": 1499,
+      "sha256": "af96ed9c09ffad3d80d8f6ae8f73cfc96d53ef1dedd28e9490ab277c00f5e57a"
+    },
+    {
+      "path": "docs/auditorias/integracion_disposiciones_independiente_2026-09-27.json",
+      "bytes": 1346,
+      "sha256": "5abb1403a3f6e5886be317333a7537aa156cd7a490d28569c3c542382b1b6062"
+    },
+    {
+      "path": "docs/auditorias/integracion_fragmento_c1196_2026-09-27.json",
+      "bytes": 1875,
+      "sha256": "4fb7535e52fb57f0665316a4040a89a29727142cd9aabef86f066394e9bf9f5c"
+    },
+    {
+      "path": "docs/auditorias/integracion_s296_version_final_2026-09-27.json",
+      "bytes": 2025,
+      "sha256": "1fb726e409c676576b023e8194a99214475b94174d2da5bbf4eb7d5d369f9f11"
+    },
+    {
+      "path": "docs/auditorias/integracion_s434_s560_2026-09-26.json",
+      "bytes": 3992,
+      "sha256": "807aa4e8cf6e01a620243f159585c2a1c554e53e1cc2a3460c520012a675f215"
+    },
+    {
+      "path": "docs/auditorias/integracion_s512_s562_2026-09-27.json",
+      "bytes": 2193,
+      "sha256": "1531fdbfb5ad7aa7c6e1428df2ab35603a30dca283b717b4795e6f22080808b7"
+    },
+    {
+      "path": "docs/auditorias/integracion_s561_2026-09-27.json",
+      "bytes": 1494,
+      "sha256": "7bb8d9ab71c4cdbe1aa2e8261c165e7c9f9a1d81cd4981f5b5d2671f09236398"
+    },
+    {
+      "path": "docs/auditorias/integridad_delta_r0212_s296_2026-09-27.json",
+      "bytes": 20400,
+      "sha256": "6ebc42caba6c300399c51546b690ac93ab437da559fa4542d73624c18b80aa00"
+    },
+    {
+      "path": "docs/auditorias/integridad_delta_s560_bn132_2026-09-27.json",
+      "bytes": 1812,
+      "sha256": "486bfc431656b0f8ec3f4f117ae11e71181dc75ca3e5346d112c005acfd311c8"
+    },
+    {
+      "path": "docs/auditorias/integridad_delta_s561_bn133_bn146_2026-09-27.json",
+      "bytes": 18328,
+      "sha256": "27e180c2d18eb31d093e57a90d6e758f6594910ee960a262460c1e38ff58ac58"
+    },
+    {
+      "path": "docs/auditorias/inventario_requisitos_seccion16_2026-09-27.csv",
+      "bytes": 31150,
+      "sha256": "5b43852664a567bdaff791700eb97a52e217b3df1e82ece882c53365d2171970"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/evidencia_formato_2026-09-26.json",
+      "bytes": 83821,
+      "sha256": "5d8592a32ca9a0755c384d3c55506547c0761ece1f5e50ca647c26bb68446d7c"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/evidencia_formato_2026-09-26.md",
+      "bytes": 15383,
+      "sha256": "e6afc2b1064fcabd7b0bde9628444b3ed0e3d5c3f2e8c2ae0a7f8a493224005c"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/probe_formato_2026-09-26.py",
+      "bytes": 10822,
+      "sha256": "7130c0c2f2dc4d5786da917a36f6a9374c45517664ef0fc0beb22d10536cb9a7"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/probe_parches_formato_2026-09-26.py",
+      "bytes": 6535,
+      "sha256": "dd4f4ac29271f3e9ef648277a042304fc59d641235ac68de3ecccc1a7b015ce5"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/revision_formato_2026-09-26.csv",
+      "bytes": 40522,
+      "sha256": "8b86a84a416af7e72e337f2cc7a47bad7ef3d5e5d9df60d4ea0839ea6b20b15a"
+    },
+    {
+      "path": "docs/auditorias/lotes_manual/revision_formato_2026-09-26_estado_inicial.csv",
+      "bytes": 11638,
+      "sha256": "905ed2bf0505737f3a77a5a2bc722549e65bf66cc2517188c3f5e1a77aec0740"
+    },
+    {
       "path": "docs/auditorias/mapa_claves_inicial_final_2026-08-08.csv",
-      "bytes": 64694,
-      "sha256": "5071524a7522385f2ba8e195638d0fa9e6bcdfa878923d8f0b25649b0add0b33"
+      "bytes": 65269,
+      "sha256": "577cad247f7502949141ec544042d89ce78c7a1b8607d6e3393578e97b66eafd"
     },
     {
       "path": "docs/auditorias/matriz_afirmaciones_2026-08-08.csv",
@@ -2020,13 +2905,73 @@
     },
     {
       "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
-      "bytes": 1728384,
-      "sha256": "e73497fa7be9d700ef050f0d4d08aa0b1774bd8b5afff015e1ac253f3e3907b7"
+      "bytes": 1749431,
+      "sha256": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d"
+    },
+    {
+      "path": "docs/auditorias/normalizacion_etiqueta_acceso_2026-09-27.json",
+      "bytes": 6498,
+      "sha256": "48c78c6d6099c755cca46cc08f80b42d9bee121bf65190bbaaa7586a05a75da5"
+    },
+    {
+      "path": "docs/auditorias/probe_diagnostico_seccion16_2026-09-27.py",
+      "bytes": 4168,
+      "sha256": "5806cf4c7043f10fbdf7619baf5a45b9c39d0abfdb6f4c766659c47486af7a9f"
+    },
+    {
+      "path": "docs/auditorias/probe_revision_c1664_c1642_c1121_v2_2026-09-27.py",
+      "bytes": 4740,
+      "sha256": "2878764198219cba2b73dfa3fe57c83b06def3ebef6552909cd028ca1ae9a2e4"
+    },
+    {
+      "path": "docs/auditorias/propuesta_alcance_manual_integral_2026-09-26.md",
+      "bytes": 10660,
+      "sha256": "e1d26a15abda8051e733bb80c9fb5cffa13fdf0769026a3db79a9961d1181f52"
     },
     {
       "path": "docs/auditorias/protocolo_censo_semantico_2026-08-13.md",
-      "bytes": 7000,
-      "sha256": "0f857cf3613483bcad29c57bef270df2f57a3114ea73d39a2a11a9cf2772890d"
+      "bytes": 9244,
+      "sha256": "d312f22b287f94eac3a402af049977f69d56842c2d1638930d77df6ce3f32e15"
+    },
+    {
+      "path": "docs/auditorias/qa_tabular_externa_2026-09-26.json",
+      "bytes": 49097,
+      "sha256": "3893a94d2ce4155844345d6348740da27c30d2aaa36b28e90ed4aed74258444a"
+    },
+    {
+      "path": "docs/auditorias/qa_tabular_externa_2026-09-26_corpus2820.json",
+      "bytes": 49097,
+      "sha256": "bb8d1b72539e5c64267e8d89d89217385b19cbd842c741fccea43b7bde72fcac"
+    },
+    {
+      "path": "docs/auditorias/qa_tabular_externa_2026-09-27_corpus2824.json",
+      "bytes": 49097,
+      "sha256": "e071a7d7df2ebed75d9acf4fc678326c5efb583331fcd5bfad01e1aded2d9917"
+    },
+    {
+      "path": "docs/auditorias/qa_tabular_externa_2026-09-27_corpus2832.json",
+      "bytes": 49097,
+      "sha256": "6e5d12682b642c0ace34786d97e1c7d24f00dc77c1f3118f0578ec8f5b59acef"
+    },
+    {
+      "path": "docs/auditorias/qa_tabular_externa_2026-09-27_corpus2838.json",
+      "bytes": 49097,
+      "sha256": "8cfe215b6f339beb0a940c5d48e178339d7172aedd91389793570916bd6dd591"
+    },
+    {
+      "path": "docs/auditorias/rectificacion_dictamenes_paginacion_s126_2026-09-26.csv",
+      "bytes": 19105,
+      "sha256": "561dd57e7bf3303b0eb727905994c36d3bdd09fbe2d2d4ad4559748cc7859374"
+    },
+    {
+      "path": "docs/auditorias/reejecucion_autor_failclosed_2026-09-26.json",
+      "bytes": 6584,
+      "sha256": "d7cb53b44086a53e03b3265b5f93def80e02f951298c4fd542ffdab71e69f8fd"
+    },
+    {
+      "path": "docs/auditorias/reejecucion_autor_failclosed_2026-09-27.json",
+      "bytes": 6538,
+      "sha256": "53626b869d5e83be662058db3c27831fba4d351b66a395bbf123f55bf58f497a"
     },
     {
       "path": "docs/auditorias/registro_busquedas_2026-08-08.csv",
@@ -2034,9 +2979,194 @@
       "sha256": "31a4ecf4665bd1a7b96f2cf8e3171d01802dda865441b878c9f7a9e3c60cba94"
     },
     {
+      "path": "docs/auditorias/reinspeccion_acceso_s290_inventario451_2026-09-27.json",
+      "bytes": 9509,
+      "sha256": "81e7913ff47f9bea003f3c83a3974bcde8550eb7d04a3a5ac4fab1e4e09d8238"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_bn083_dos_consultas_2026-09-26.csv",
+      "bytes": 1927,
+      "sha256": "f888c0a7d01b3c7e73ed69e6d7aa2fe20011652a98855ad498ee2acb5f72f45d"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_bn_fuentes_2026-09-26.csv",
+      "bytes": 10993,
+      "sha256": "52c9cff24e1361d1aab1cca7fa08df22ce81a64a331ba37239dbed89b9594fdb"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+      "bytes": 12876,
+      "sha256": "a666658bbe5f1e76899f66d44c391ef26153f91562e266a40b3d6e0616b7294e"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_consumidor_teleologia_reparado_2026-09-27.json",
+      "bytes": 25954,
+      "sha256": "9e7cb673b40d4e7aa4901b4cfdc6789944e3a118cc79403057c08a21093fbbf5"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_disposiciones_reparadas_2026-09-27.json",
+      "bytes": 6423,
+      "sha256": "2e4a50fa9a84717603104b44a97b4b4224d0528048be3c30ba05d45187e15705"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_failclosed_independiente_2026-09-27.json",
+      "bytes": 11094,
+      "sha256": "e28e4cf3a56a21e3c3d2a2e491e39b4025049e434a508864354a32d85cc73e84"
+    },
+    {
+      "path": "docs/auditorias/reinspeccion_failclosed_reparaciones_finales_2026-09-27.json",
+      "bytes": 15912,
+      "sha256": "872e44423d56434b64d3d3d26faa105bcd1b9eb435c96493e56d7ef7268ef7aa"
+    },
+    {
+      "path": "docs/auditorias/retirada_bn120_2026-09-26.json",
+      "bytes": 50935,
+      "sha256": "bdcdbb7e12e3d84ff3b7ac811d44da851b0f1b5a66e506c42b21090b06d895bc"
+    },
+    {
+      "path": "docs/auditorias/retirada_bn132_2026-09-26.json",
+      "bytes": 53543,
+      "sha256": "5a19054d2831607ee30a570eb23b117204ab9e9a195bae4b01818971668d5cd4"
+    },
+    {
+      "path": "docs/auditorias/retirada_bn133_bn146_2026-09-27.json",
+      "bytes": 68525,
+      "sha256": "5a282cd06c145b050240d6aaef8ed46448309089c8d8445e9c3a728e83447cc1"
+    },
+    {
+      "path": "docs/auditorias/retirada_bn144_2026-09-27.json",
+      "bytes": 50899,
+      "sha256": "fd4d62981bf165f2b0246b5738853e1a8c7af2d184c4f12655fa420defac6673"
+    },
+    {
+      "path": "docs/auditorias/revision_alcance_manual_integral_2026-09-26.md",
+      "bytes": 10217,
+      "sha256": "0f3b3928a72b1e0e62f954e58aaa6fcc682514cf40042b674721fbd885b13022"
+    },
+    {
       "path": "docs/auditorias/revision_busquedas_negativas_2026-08-08.csv",
       "bytes": 64421,
       "sha256": "e4feaa93f3791fce394bacf42ee42ce7086d2ba3763de2e23fd6e249820c4347"
+    },
+    {
+      "path": "docs/auditorias/revision_c006_s559_2026-09-26.csv",
+      "bytes": 5017,
+      "sha256": "c3d569bf1611e899fe907ca791acfffaf25bd8a469dc276f49f948ed8ab1ade3"
+    },
+    {
+      "path": "docs/auditorias/revision_cientifica_s548_2026-09-26.csv",
+      "bytes": 25968,
+      "sha256": "0dc1f2b0bf17800d6783fb31486538d6b1b464dea5783cc130e377f67289c9fa"
+    },
+    {
+      "path": "docs/auditorias/revision_consumidor_teleologia_inicial_2026-09-27.json",
+      "bytes": 21233,
+      "sha256": "0eb184977c09758573534798fb57986e392aad7090986236eed991348a345db8"
+    },
+    {
+      "path": "docs/auditorias/revision_cronologia_2026-09-26.md",
+      "bytes": 9389,
+      "sha256": "1597f711e63f0597c17c8400ee56393bc93b1af3bbf2d2b1c018a318c4ee4cd7"
+    },
+    {
+      "path": "docs/auditorias/revision_disposiciones_adversarios_inicial_2026-09-27.json",
+      "bytes": 3375,
+      "sha256": "36dc55fcc94d34832694ae6f1cb162a6e962c8bbdf86471e64acdce862014486"
+    },
+    {
+      "path": "docs/auditorias/revision_fuentes_recientes_inventario450_2026-09-27.csv",
+      "bytes": 12340,
+      "sha256": "7729f6969e726a545f577f8a70425f9a05161588cba2ba2892a7858cf78523e0"
+    },
+    {
+      "path": "docs/auditorias/revision_independiente_8bn_integracion_2026-09-26.csv",
+      "bytes": 5562,
+      "sha256": "6fee7c23e25aa4a84095cd33f3356ca24c769581e4681333a927c2df4439965e"
+    },
+    {
+      "path": "docs/auditorias/revision_independiente_fragmento_c1196_2026-09-27.json",
+      "bytes": 2789,
+      "sha256": "15dd588bb9d0e744558a302aec1c34dc095ea0b8380a28df955951a6f4adebe2"
+    },
+    {
+      "path": "docs/auditorias/revision_infraestructura_2026-09-26.md",
+      "bytes": 8647,
+      "sha256": "0ad926db42cf6193a2bb69401f4c905144b6cc3eb2067f00edd909062ed39500"
+    },
+    {
+      "path": "docs/auditorias/revision_integracion_16_fechas_bn_2026-09-26.md",
+      "bytes": 2053,
+      "sha256": "4bbd3afebdbf4d9370610eaf0f74f0072291d950e241aacc0a25d098d12307f3"
+    },
+    {
+      "path": "docs/auditorias/revision_integracion_cronologica_fuentes_bn558_2026-09-26.csv",
+      "bytes": 9025,
+      "sha256": "0051cf090b50d8feb16bd6d5d1bbd674adb532ddc1c9ba09f9fd24aa32c630a3"
+    },
+    {
+      "path": "docs/auditorias/revision_integracion_fechas_bn_2026-09-26.md",
+      "bytes": 2533,
+      "sha256": "6940e3ac9931a1f8a7dd006d6f01cb42a768551c9b61ff4905c5dc790d16b311"
+    },
+    {
+      "path": "docs/auditorias/revision_integracion_fechas_bn_inventario442_2026-09-26.md",
+      "bytes": 4230,
+      "sha256": "65510fd5450a1beb6ddc162a8a524fcf4d9306df64da247a65665ce476f91340"
+    },
+    {
+      "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+      "bytes": 47568,
+      "sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa"
+    },
+    {
+      "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+      "bytes": 22484,
+      "sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8"
+    },
+    {
+      "path": "docs/auditorias/revision_mapeo_paginacion_s126_2026-09-26.csv",
+      "bytes": 17090,
+      "sha256": "a881624502ff662e57a3c39c6db9f60dc1b88202b653c0413c55b2057ac25b2c"
+    },
+    {
+      "path": "docs/auditorias/revision_mapeo_s548_2026-09-26.csv",
+      "bytes": 16202,
+      "sha256": "278b6fb7aadcba2ba24d9412e70353290e72ed1b69fab78473d1860ee84402ca"
+    },
+    {
+      "path": "docs/auditorias/revision_recuentos_acceso_2026-09-26.csv",
+      "bytes": 72421,
+      "sha256": "dd6adeb05eab4afc8c984eeb9bdb43b6a7997c4e60cecf50b2f4d3d1ab776629"
+    },
+    {
+      "path": "docs/auditorias/revision_redaccion_6_ocurrencias_teleologia_2026-09-27.json",
+      "bytes": 36131,
+      "sha256": "8d1afd15d9dbc7e60908a17598620b00ffee0df152d954d8374b78afdc5aeb34"
+    },
+    {
+      "path": "docs/auditorias/revision_residuales_2026-09-26.md",
+      "bytes": 10162,
+      "sha256": "600ba87366b005e5794d248a004f869f978e96f8323e606cec6fe67377e6d497"
+    },
+    {
+      "path": "docs/auditorias/revision_residuales_inventario442_2026-09-26.md",
+      "bytes": 5943,
+      "sha256": "0d4ebf652715e2279aac3422515e6ea6ddb0d5e6aa55e73929858d4b44e67411"
+    },
+    {
+      "path": "docs/auditorias/revision_s549_publicado_2026-09-26.csv",
+      "bytes": 5219,
+      "sha256": "158bd6985f91866f97ca2e5f58488c7e7a4dc2de7a34bb1f8464cb3169317090"
+    },
+    {
+      "path": "docs/auditorias/revision_supervisor_2026-09-26.md",
+      "bytes": 10540,
+      "sha256": "0ca432ba38e7a72fa12822435b42f27f03bc5cdbaba2ceb781353dcabdf271e3"
+    },
+    {
+      "path": "docs/auditorias/revision_teleologia_cuantitativa_independiente_2026-09-27.json",
+      "bytes": 170865,
+      "sha256": "0846a0993ac526114959215bcd51014bdcd3994e0adb482dd6db8c5799a963b6"
     },
     {
       "path": "docs/auditorias/segunda_revision_2026-08-08.csv",
@@ -2044,19 +3174,24 @@
       "sha256": "b08b551e28dd73db9e81cfb0eb6a56ef1f8ffdbd2d533d27e3298f00625f6698"
     },
     {
+      "path": "docs/auditorias/verificacion_fuentes_nuevas_2026-09-26.csv",
+      "bytes": 18956,
+      "sha256": "d58af17fc98979c452cd7c4196b9c0d4e767553c52ba5e1a9dfee5c24f9a11a8"
+    },
+    {
       "path": "docs/fuentes-por-conseguir.html",
-      "bytes": 81016,
-      "sha256": "7fad8aef89bbe3bbba002eb72a7e20d6e18c3ee531b2abbbe5ea8570a0cb7bac"
+      "bytes": 78960,
+      "sha256": "a0c20a0d237730c36c13498c94f53bb9662c70d810e936488d5740fc79fd2dff"
     },
     {
       "path": "docs/informe.md",
-      "bytes": 1263851,
-      "sha256": "27d04fa6902231366832432ea30201ebc58b7ccfb7600e8a689876b4bb5cba56"
+      "bytes": 1318141,
+      "sha256": "267948ad44ac3203896c5c1816676248a8af3760310dd8c585d1e557da62c46f"
     },
     {
       "path": "docs/informe_completo_autocontenido.md",
-      "bytes": 3461344,
-      "sha256": "490e04a09cee52204b8ede0fcdc2f0a79385e0bf5d092ac97afffc996ee5082b"
+      "bytes": 3549650,
+      "sha256": "e9e707432116c660cf024a015dc8f19d42627c74e5078cdfc33a16b310009faf"
     },
     {
       "path": "docs/order.txt",
@@ -2075,8 +3210,8 @@
     },
     {
       "path": "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md",
-      "bytes": 6718,
-      "sha256": "7530ad74fce170f219dd5f3f99809426f01b609491bd70ba7ff02509b2d7e170"
+      "bytes": 9105,
+      "sha256": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104"
     },
     {
       "path": "docs/secciones/002-01-1-alcance-del-corpus.md",
@@ -2095,8 +3230,8 @@
     },
     {
       "path": "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md",
-      "bytes": 25547,
-      "sha256": "28ab055578da067774c4265fec5c7ef313f1a5e7a55aa2f2286b69cd49bb186f"
+      "bytes": 27556,
+      "sha256": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80"
     },
     {
       "path": "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md",
@@ -2105,8 +3240,8 @@
     },
     {
       "path": "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md",
-      "bytes": 6346,
-      "sha256": "8f090386dd9fcde464bad06721d86768ee5bdeddf5e244802f855a590ebe0259"
+      "bytes": 6659,
+      "sha256": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa"
     },
     {
       "path": "docs/secciones/008-07-7-ambiente.md",
@@ -2120,8 +3255,8 @@
     },
     {
       "path": "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md",
-      "bytes": 47692,
-      "sha256": "9fa6bc84dd36c2bfc2622ef0cf357011456cafd9ffa523354c24c7b1b1f70f23"
+      "bytes": 53995,
+      "sha256": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217"
     },
     {
       "path": "docs/secciones/011-10-10-rasgos-con-costo.md",
@@ -2135,8 +3270,8 @@
     },
     {
       "path": "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md",
-      "bytes": 24629,
-      "sha256": "e6ed4303b39048e3514b4a45eff183c4d47b244f184fa030e6b640799cf61157"
+      "bytes": 25930,
+      "sha256": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749"
     },
     {
       "path": "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md",
@@ -2151,7 +3286,7 @@
     {
       "path": "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md",
       "bytes": 14016,
-      "sha256": "e9580af40328496008b18d95991b4d88cd8a5daec267bfeba84e89b591a36dbe"
+      "sha256": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba"
     },
     {
       "path": "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md",
@@ -2200,23 +3335,23 @@
     },
     {
       "path": "exports/acceso_fuentes.csv",
-      "bytes": 153034,
-      "sha256": "91e3434f6dcfc3be5015c271e3c7689fec66327c12e8b89116240e9792e7a866"
+      "bytes": 156487,
+      "sha256": "8dc16c54c1e44e6b126efec71517c6756246233d0c1c4dd1176d914bc1229959"
     },
     {
       "path": "exports/afirmaciones.csv",
-      "bytes": 1668106,
-      "sha256": "df006d26b7e7e7caff38921242d513e850aca8535684b5b7827efcd2867b3571"
+      "bytes": 1704101,
+      "sha256": "48d5ab7bc94b5c7f32bd244e21f793ae0213bbc4b5f6a61c919154e7ec97cd23"
     },
     {
       "path": "exports/busquedas_negativas.csv",
-      "bytes": 537227,
-      "sha256": "dfd17e4c632a8e518c071a01fd0d4d42964f3f321a2e1b7cd4afd05e64065da3"
+      "bytes": 535032,
+      "sha256": "bad10e631f4b3a0682e63bb7bc0fe05510208c4c8156627f9c69bd5370b5af2e"
     },
     {
       "path": "exports/catalogo_tablas.csv",
       "bytes": 17370,
-      "sha256": "cac90c1bf1f5e14120689c00c6c45de00b72f9d773b6fd9b668b20ee430c8de3"
+      "sha256": "95aded05ab8f9fc24cf6bac49c01fe61dae520e3a5516b50ce540cc69d80d17e"
     },
     {
       "path": "exports/pasajes.csv",
@@ -2225,8 +3360,8 @@
     },
     {
       "path": "exports/tablas_nodales.csv",
-      "bytes": 12288,
-      "sha256": "bee3261ff2244651c793512d071f2682a037a2180172cbcf88be67abd5043e42"
+      "bytes": 14703,
+      "sha256": "8f7768106e2d1c3935f4275b652af3184ab0acfd74d42f3bab577d54eceb4d97"
     },
     {
       "path": "scripts/_repair_attribution_contract.py",
@@ -2235,13 +3370,18 @@
     },
     {
       "path": "scripts/assemble_manual_review_ledger.py",
-      "bytes": 7076,
-      "sha256": "714b916b8ceff5c372661d44c983503e58a52177aada806f19edf3735ec58e0f"
+      "bytes": 7295,
+      "sha256": "d1e68c7834411de19c9d3eb3342b781a294112d8936c6107828631fc343bb4f2"
+    },
+    {
+      "path": "scripts/audit_chronology.py",
+      "bytes": 7203,
+      "sha256": "7d977bae7c206eb61f20bae52035a133f31983fc05ae58c3f890f96b5ec7dba0"
     },
     {
       "path": "scripts/audit_full.py",
-      "bytes": 95627,
-      "sha256": "944bb32e939b5dcd3892e8d2b1f6be41b726bea167d1b705ed585561366bc2c5"
+      "bytes": 98793,
+      "sha256": "a8f1fd10327decc65b6640f510484b9e4cf551f9e6258eb84ad2919f8021275f"
     },
     {
       "path": "scripts/audit_migration.py",
@@ -2250,8 +3390,8 @@
     },
     {
       "path": "scripts/audit_requirement_controls.py",
-      "bytes": 68577,
-      "sha256": "7792c1e5f15349c462907694d9bbe4fcddfb3fae017e453ebc810598a5e0a29a"
+      "bytes": 71948,
+      "sha256": "1b275f110e46c7b7423d218e2f8a513b9670fe415a13e8750c26c3132ce97262"
     },
     {
       "path": "scripts/audit_semantics.py",
@@ -2260,13 +3400,13 @@
     },
     {
       "path": "scripts/build_atomic_cell_claims.py",
-      "bytes": 19410,
-      "sha256": "f3d8ff6b7a03552e500dc735a9ca169d628e86cc87799bddb7689bc74002b6aa"
+      "bytes": 20482,
+      "sha256": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9"
     },
     {
       "path": "scripts/build_audit_deliverables.py",
-      "bytes": 130210,
-      "sha256": "b71c1b391fa60740897851aa1c8025c482e9e8ed512aa5130cd6ce9ab31bcf4b"
+      "bytes": 156785,
+      "sha256": "1bba155d719359d0d1009b8329bd061890725c88cf64a597418c2077c063596f"
     },
     {
       "path": "scripts/build_claim_provenance.py",
@@ -2275,8 +3415,8 @@
     },
     {
       "path": "scripts/build_content_trace.py",
-      "bytes": 33118,
-      "sha256": "665322eef3aa0ffe640173e9463e4b9e3a45687c0af2b26c5270f7764ebb0f54"
+      "bytes": 41975,
+      "sha256": "b5906fe8ed1133fb16a41eb704c1cc135cad8c1b218a3f8943c493a404d35663"
     },
     {
       "path": "scripts/build_magnitude_census.py",
@@ -2309,9 +3449,14 @@
       "sha256": "b920bc87cd80052bd2b2170affaedfabbeb097f8854f6d31897a315894734a74"
     },
     {
+      "path": "scripts/check_external_csv_qa.mjs",
+      "bytes": 1721,
+      "sha256": "9bfb011432c778972f9b27aa53d375d7e50bb9551fcef29eef93ced96adb0192"
+    },
+    {
       "path": "scripts/check_isolated_verify.py",
-      "bytes": 3748,
-      "sha256": "4c00b32b7cf1c24db61708be5722fd29c8c617d13f5996027f9e75cd98b45fda"
+      "bytes": 13410,
+      "sha256": "4064b6ddcde9090a7e762bff40d396662ea46820215fa2185c88b3f8a9d745e9"
     },
     {
       "path": "scripts/check_preserved_rows.py",
@@ -2330,8 +3475,13 @@
     },
     {
       "path": "scripts/check_semantic_claim_census.py",
-      "bytes": 20367,
-      "sha256": "3de090472db674a51486d3372e24271cf0f2bdc119e1d29c37165c512132133f"
+      "bytes": 25296,
+      "sha256": "598dacc8ea3c0d1d3be06763ebc0734988a50c2fc9105095a66274e5c3dc3350"
+    },
+    {
+      "path": "scripts/check_teleology_contexts.py",
+      "bytes": 9543,
+      "sha256": "4aedf83d64ec851d90db80fbc998a7f2f2f17a04ef1c23213e344cbce0b13429"
     },
     {
       "path": "scripts/check_untracked_whitespace.py",
@@ -2340,8 +3490,8 @@
     },
     {
       "path": "scripts/corpus_io.py",
-      "bytes": 20524,
-      "sha256": "e87030394f961580f0ff34972d9ceb68564f139db5728d1639e2f9b408d22af3"
+      "bytes": 20525,
+      "sha256": "4d7d35fb8649d41e4c137da16e1991a1a4117d8c46b68aa5d7fc3ae0c462fef7"
     },
     {
       "path": "scripts/extraer_pasajes.py",
@@ -2350,8 +3500,8 @@
     },
     {
       "path": "scripts/fetch_oa.py",
-      "bytes": 49900,
-      "sha256": "c02f1b02192ff722c21e0bfad9f770398cc0ada43f2485c002c905b170527866"
+      "bytes": 50044,
+      "sha256": "64d20a0e787732e90a5aec273c8680a994afcd86bfb60e11a9921dbce54f3e42"
     },
     {
       "path": "scripts/publish_github.sh",
@@ -2365,8 +3515,8 @@
     },
     {
       "path": "scripts/remediate_trace_residuals.py",
-      "bytes": 16177,
-      "sha256": "3a612b809187b0e8f895cb329bc30a2ece5dda33d88a893fbb2f115e8332cd48"
+      "bytes": 22515,
+      "sha256": "85dfdc2db6e85ee2d4344321e4bfae7059a6f46a490a1d5b9f767e4a244d71c4"
     },
     {
       "path": "scripts/render.py",
@@ -2377,6 +3527,11 @@
       "path": "scripts/renumber.py",
       "bytes": 8804,
       "sha256": "e034b5f4d48492c04d599b3e80c22a49067d320de9a313b7d8a06c96da391209"
+    },
+    {
+      "path": "scripts/residual_semantic_dispositions.py",
+      "bytes": 16948,
+      "sha256": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4"
     },
     {
       "path": "scripts/sync_claim_key_map.py",
@@ -2390,23 +3545,28 @@
     },
     {
       "path": "scripts/validate.py",
-      "bytes": 12183,
-      "sha256": "dcba0200e035f2536a8c037a5df4e0528520748fdb7133fadb366e4d66227791"
+      "bytes": 12980,
+      "sha256": "c5c3af9390158f374edbc78ec90f6379a18a6a88242b8068fc7492b0c2cbf131"
     },
     {
       "path": "tests/test_assemble_manual_review_ledger.py",
-      "bytes": 4989,
-      "sha256": "09ce15adff845d3169ed43cb40b85c2682cd0163279a7828a937f231d44c6a1e"
+      "bytes": 9322,
+      "sha256": "1d99972d8aafa2485072e948387fb01d543b8d5a4c435b0ea4f664ff805610ff"
+    },
+    {
+      "path": "tests/test_audit_chronology.py",
+      "bytes": 14971,
+      "sha256": "d862c4d153858c1cb4d8435a5cdbc3a925899f093bae175729236d6dfb734565"
     },
     {
       "path": "tests/test_audit_full.py",
-      "bytes": 26502,
-      "sha256": "f8a3e11341281568410a52448ad487dd3a5b6227dd36590fd2c595044ee265e0"
+      "bytes": 26769,
+      "sha256": "c842cfabf67c909291c5a40560b2e9abd730adf3b8d99155e44f81cf17abbdc0"
     },
     {
       "path": "tests/test_audit_requirement_controls.py",
-      "bytes": 13299,
-      "sha256": "13317c41c46a9cecbce7e448fb79c14adc7e7c04be9fe73dfc2f342fecf43cc4"
+      "bytes": 18286,
+      "sha256": "10d332e9333dc122951dfe445e8f20bfd5e193d3434210a0ec39352b7d0987a2"
     },
     {
       "path": "tests/test_audit_semantics.py",
@@ -2415,13 +3575,18 @@
     },
     {
       "path": "tests/test_build_atomic_cell_claims.py",
-      "bytes": 3392,
-      "sha256": "1f6a020206e4b73c3dc2327cfd00ebdb5c4cc996f91cee39394f4d2398b228ae"
+      "bytes": 5487,
+      "sha256": "e0d0dd20edd6c2870bc482ea8333e4094e2d6ba0bd232f37e2e9049f9f36d55d"
+    },
+    {
+      "path": "tests/test_build_audit_closure.py",
+      "bytes": 36522,
+      "sha256": "84a1c1bbe1fbf46b2d2b01b05d13b4cbcfbe14928a493596d1b182e30c5080f4"
     },
     {
       "path": "tests/test_build_audit_deliverables.py",
-      "bytes": 2711,
-      "sha256": "e6a5f26bfafa482d9085c2c10fb63535df79013a10a2246422ad3f55b98d27b2"
+      "bytes": 3068,
+      "sha256": "0e25f194fde751b62bb685d7a9386127e7501393ff00938fb26322e5565ae568"
     },
     {
       "path": "tests/test_build_claim_provenance.py",
@@ -2439,19 +3604,54 @@
       "sha256": "f3d0eeb6bd44f426797a442df13593ab7ff58af0fb9ce80aa3ac4e4dd2f8f595"
     },
     {
+      "path": "tests/test_check_isolated_verify.py",
+      "bytes": 24055,
+      "sha256": "59a20f4f5847724052de673c94203d0fd3773e4fc7595c690199fbf2a372298f"
+    },
+    {
       "path": "tests/test_check_semantic_claim_census.py",
-      "bytes": 7219,
-      "sha256": "1005ea9bdbb98d44c5f2c2a8b6c4984293cf6165bd72904f2867efc9d5f90762"
+      "bytes": 17020,
+      "sha256": "5a98f24c0078b8808942e86999e5cee7cad8b4f3e27dc58cc1ea1ddc4b09b509"
+    },
+    {
+      "path": "tests/test_check_teleology_contexts.py",
+      "bytes": 11253,
+      "sha256": "7b80c4fff451f363967364b99ce6e917bd20945b765c373b82fae6f157954f44"
+    },
+    {
+      "path": "tests/test_content_trace_sentence_boundaries.py",
+      "bytes": 9091,
+      "sha256": "f84aa2b911bf375226698ffb511bada20a01bba36df5d94954e3b44bc9881419"
     },
     {
       "path": "tests/test_corpus_io.py",
-      "bytes": 466,
-      "sha256": "18b999bc2f39fb77e12bf548628b21023df7a3e0c32f3b27fa3ffa6c1f588407"
+      "bytes": 1059,
+      "sha256": "3534f0dcbebda29be8cb9d30a1ea512c21e5a7466a3a26233ddabc31c45221d9"
+    },
+    {
+      "path": "tests/test_fetch_oa_impact.py",
+      "bytes": 2243,
+      "sha256": "270d1d1fddf9b39aba853e09dcfcb69f6fe208197590e458e458cbc626083ecb"
+    },
+    {
+      "path": "tests/test_gene_loss_quantification_regression.py",
+      "bytes": 5180,
+      "sha256": "bf510dc9e55b5208e9c56c12c5f010ada5bea23833743a0a6d25e52e8053e6d0"
+    },
+    {
+      "path": "tests/test_hgt_quantification_regression.py",
+      "bytes": 6891,
+      "sha256": "4a62b053cbfe8ad21e756a4cb6f9c6f5e071ce86b27acc0f92c1d6416f2650cd"
+    },
+    {
+      "path": "tests/test_manual_editorial_scope.py",
+      "bytes": 11427,
+      "sha256": "3c3358dd416639d06b2c2c16c0eadbab6965ec7b8c4bb1fc79b42cc9c4996b7d"
     },
     {
       "path": "tests/test_remediate_trace_residuals.py",
-      "bytes": 961,
-      "sha256": "09845652b5257a5c1073be492d99cd56f23bc62e470fee9311df1b100f2a5a38"
+      "bytes": 18928,
+      "sha256": "6cb111575496f01df3f58b297a2f9dcebd00bf963c3af117fbf3922e5e7ad87e"
     },
     {
       "path": "tests/test_renumber.py",
@@ -2459,9 +3659,19 @@
       "sha256": "bbecb2af79e3ae0753568a852ee7784920391af90c8c98ed22267e9edf6eced6"
     },
     {
+      "path": "tests/test_residual_semantic_dispositions.py",
+      "bytes": 16363,
+      "sha256": "47af62c83ed55fb1b1c52ff2d9f4a772354a81cbe911d6dbeac27d332f073b41"
+    },
+    {
       "path": "tests/test_sync_claim_key_map.py",
       "bytes": 1029,
       "sha256": "56a50a0a854214db220d8d41218a90822b9a3609588462cae40f1008a72733bc"
+    },
+    {
+      "path": "tests/test_validate_source_ranges.py",
+      "bytes": 1812,
+      "sha256": "49b4ec0531986349f7285df3958aee6ce5296284d16eaa51f72cd9c8750447cc"
     }
   ]
 }

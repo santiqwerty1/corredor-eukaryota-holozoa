@@ -1,0 +1,334 @@
+{
+  "autor": "/root",
+  "estado_revision_independiente": "PENDIENTE",
+  "observacion_utc": "2026-09-27T00:46:46Z",
+  "alcance": "Integridad del delta S561 y retirada BN-133/BN-146. No adjudica apoyo científico ni cierra R-0220.",
+  "comprobaciones": {
+    "bn_activas": 495,
+    "bn_ajenas_v3_identicas": 87,
+    "bn_v3_solo_cambio_inventario": 408,
+    "retiradas": [
+      "BN-133",
+      "BN-146"
+    ],
+    "qa_csv_vigentes": 97
+  },
+  "metodo": "Rehash de las 495 BN; las 408 v3 recuperan la huella archivada reemplazando exclusivamente cantidad y SHA del inventario, las otras 87 son idénticas. Las 408 nuevas huellas coinciden con la evidencia real de ejecución. Rehash de los 97 CSV cotejados por QA externa.",
+  "cronologia": {
+    "filas_antes": 1249,
+    "filas_despues": 1657,
+    "sha256_prefijo_1249_conservado": "65d8c8e061aa34ed34fe58a612a1d217947f25fe7f5314e24588653306ab42de",
+    "sha256_registro_resultante": "d495d305f263596ac444dbc788bd50e6d2ffe2ddae0de751b3e71f16ef2669a4",
+    "errores_carga": 0
+  },
+  "evidencia_ejecuciones": {
+    "ruta": "docs/auditorias/evidencia_reinspeccion_autor_bn_v3_2026-09-27_inventario448.csv",
+    "sha256": "379055c23c99120da925a56c178bd78fdef0229338e4e9e93553c2de21b4d6ab",
+    "inicio_utc": "2026-09-27T00:39:30Z",
+    "fin_utc": "2026-09-27T00:44:43Z",
+    "consultas_negativas": 408,
+    "consultas_positivas": [
+      [
+        "C-2472",
+        3
+      ],
+      [
+        "C-2489",
+        5
+      ]
+    ],
+    "primera_observacion_individual_utc": "2026-09-27T00:40:48Z",
+    "ultima_observacion_individual_utc": "2026-09-27T00:44:41Z"
+  },
+  "qa_externa": {
+    "ruta": "docs/auditorias/qa_tabular_externa_2026-09-27_corpus2832.json",
+    "sha256": "6e5d12682b642c0ace34786d97e1c7d24f00dc77c1f3118f0578ec8f5b59acef",
+    "csv": 97,
+    "celdas": 63467,
+    "diferencias": 0,
+    "runtime": "Node v24.19.0; @oai/artifact-tool 2.8.59; bundle 26.909.12148"
+  },
+  "filas_finales_integracion": [
+    {
+      "clave": "C-1185",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "979e8aa69459f233baac6c0c66f28764a119f3f3b250b711d4c3e7f896ba9ab7",
+      "fila": {
+        "#": "C-1185",
+        "Afirmación": "Ku y Martin propusieron la regla del 70 %: una identidad aminoacídica procariota-eucariota de al menos 70 % señala posibles contaminaciones, con excepciones de origen endosimbiótico en su muestra.",
+        "Sujeto": "regla del 70 %",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 discusión, The 70 % rule (JATS Sec5); resultados, Deep differences between prokaryotes and eukaryotes (Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es un criterio derivado de los árboles y ensamblajes estudiados, no una prueba universal de contaminación. La discusión conserva excepciones de origen mitocondrial y plastidial.",
+        "Resolución": "parcialmente resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-1186",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "be6172815b58ac68ddfe60003d8c5b4a5824d47f9551b6e034aba492c92b258a",
+      "fila": {
+        "#": "C-1186",
+        "Afirmación": "Ku y Martin interpretaron sus resultados como una barrera natural a la adquisición continua de genes procariotas en eucariotas y consideraron las adquisiciones recientes demasiado raras para tener amplia importancia evolutiva.",
+        "Sujeto": "hipótesis de barrera natural de HGT",
+        "Predicado": "propuesto_por",
+        "Objeto": "Ku y Martin",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes (JATS Sec3); Conclusion (Sec8)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "Se registra la interpretación de estos autores, que distinguen adquisiciones endosimbióticas de transferencia continua; no se presenta como consenso ni como ausencia demostrada de toda HGT.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-1187",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "9a78bf8b6077c528653a0e3941c911d0d61d1cb8ecf6a029b98f8a6757aad0cf",
+      "fila": {
+        "#": "C-1187",
+        "Afirmación": "Van Etten y Bhattacharya defendieron que la HGT tiene un papel pequeño pero significativo en la evolución de los eucariotas microbianos.",
+        "Sujeto": "posición de un papel pequeño pero significativo de HGT en eucariotas microbianos",
+        "Predicado": "propuesto_por",
+        "Objeto": "Van Etten y Bhattacharya",
+        "Atribución": "expresa",
+        "Fuente": "S291 resumen (Abstract), oración final; Highlights, primer punto",
+        "Aceptación": "no evaluado",
+        "Fuerza": "baja",
+        "Motivo": "La formulación se cotejó en el resumen y Highlights editoriales reproducidos por Rutgers; no se afirma haber recuperado el cuerpo completo de la revisión.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-1188",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "d509ea6346db23e90b56637e71389dd8285c2a8659ea8e5ab7ca1ae56089e2ab",
+      "fila": {
+        "#": "C-1188",
+        "Afirmación": "Rossoni y colaboradores atribuyeron candidatos a HGT en Cyanidiales mediante filogenias con homólogos procariotas, filtros para distinguir transferencia endosimbiótica y comprobación del contexto genómico con lecturas largas.",
+        "Sujeto": "atribución de HGT en Cyanidiales por Rossoni y colaboradores",
+        "Predicado": "respaldado_por",
+        "Objeto": "filogenias, filtros de EGT y colocalización con genes nativos en lecturas largas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Materials and methods, Orthogroups and phylogenetic analysis (JATS s4-5) y Detection of HGTs (s4-6); Results, Gene co-localization on raw sequence reads (s2-4)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se describe este protocolo publicado, no una lista universal de condiciones suficientes. La selección filogenética y el control de contaminación son pasos distintos; los autores reconocen posibles falsos negativos por sus filtros.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-1198",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "df988e9519b70839b8b94966cfaf263b461eda9b43c8c1f6999bf91f2fd6d78f",
+      "fila": {
+        "#": "C-1198",
+        "Afirmación": "La existencia de casos falsos positivos no refuta los casos de HGT apoyados por filogenia, función y contexto genómico.",
+        "Sujeto": "contaminación en estudios de HGT",
+        "Predicado": "no_implica*",
+        "Objeto": "ausencia de HGT eucariota real",
+        "Atribución": "sintesis(C-1188, C-1191, C-1192, C-1196)",
+        "Fuente": "S561; S211; S296",
+        "Aceptación": "consenso amplio",
+        "Fuerza": "alta",
+        "Motivo": "Los criterios probatorios discriminan casos, no una respuesta global binaria.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-1199",
+      "ruta": "data/afirmaciones/09.csv",
+      "sha256_fila_json": "52d35867575465397c8fa10be9c8082f515d12aec0cab230a668f2be61ef6b6f",
+      "fila": {
+        "#": "C-1199",
+        "Afirmación": "La controversia sobre HGT eucariota es en parte una disputa sobre denominador, filtros y unidad de recuento.",
+        "Sujeto": "frecuencia de HGT eucariota",
+        "Predicado": "depende_de*",
+        "Objeto": "genes, eventos, familias, linajes y controles utilizados",
+        "Atribución": "sintesis(C-1184, C-1185, C-1186, C-1187, C-1188)",
+        "Fuente": "S290; S291; S561",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los trabajos cuentan objetos distintos y aplican filtros diferentes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2825",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "9e3375c4cb7c239de4c401bf6e04b7fd3d5a9f967376b9eb66ee831b8a712818",
+      "fila": {
+        "#": "C-2825",
+        "Afirmación": "Ku y Martin publicaron que los clados procariotas de alta identidad con más de un taxón representaban entre 3,1 % y 5,1 % de todos los clados de los grupos comparados.",
+        "Sujeto": "clados procariotas de alta identidad no singleton en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "3,1–5,1 % de los clados de cada grupo comparado",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, párrafo que define high-identity clade (HIC), antes de Fig. 2 (JATS Sec2); Methods (Sec9)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "HIC se define por la identidad media clado–grupo hermano y un umbral específico de cada grupo: la media de identidades de singleton en su cuartil superior. El denominador cuenta clados, no genes transferidos ni eventos por tiempo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2826",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "b010f9de1153f26a69b99377d883d596d2e64b5ce802e30d2c9f26e264987ee4",
+      "fila": {
+        "#": "C-2826",
+        "Afirmación": "En el análisis de Ku y Martin, los clados eucariotas de alta identidad con más de un taxón representaban menos del 1,0 % de todos los clados eucariotas analizados.",
+        "Sujeto": "clados eucariotas de alta identidad no singleton en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "<1,0 % de los clados eucariotas analizados",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La cifra es una proporción de clados clasificados por identidad clado–grupo hermano; no mide el porcentaje de genes eucariotas adquirido por HGT. La proposición numérica está en el texto, no depende de leer solo la figura.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2827",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "79b4fe0ad30db96434b35d1e758b5ed5d234436c5b368a2243623909687d21a6",
+      "fila": {
+        "#": "C-2827",
+        "Afirmación": "Al retirar los clados de origen plastidial, Ku y Martin publicaron un 0,3 % de clados eucariotas de alta identidad con más de un taxón entre los clados restantes.",
+        "Sujeto": "clados eucariotas de alta identidad no singleton tras excluir origen plastidial en Ku y Martin",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "0,3 % de los clados restantes sin origen plastidial",
+        "Atribución": "expresa",
+        "Fuente": "S290 Results, Deep differences between prokaryotes and eukaryotes, segundo párrafo y Fig. 3 (JATS Sec3)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se conserva el denominador del análisis filtrado de Fig. 3b, descrito también en el texto. Ni esta cifra ni la de todos los clados es una tasa temporal de adquisición de genes.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2828",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "37178d8ad45423a0bddd37940c5059c4c7fc1b2dddc3b35055137ea5a25cb7ec",
+      "fila": {
+        "#": "C-2828",
+        "Afirmación": "Rossoni y colaboradores clasificaron como candidatos a HGT 96 de los 9075 grupos de ortólogos de sus 13 genomas de Cyanidiales, el 1,06 % publicado.",
+        "Sujeto": "grupos de ortólogos candidatos a HGT en Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "96 de 9075 grupos de ortólogos (1,06 %) en 13 genomas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6); Results, Orthogroups and phylogeny (s2-2)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La unidad es el grupo de ortólogos, no el clado HIC de Ku y Martin. La inferencia usa árboles de máxima verosimilitud, inspección manual y exclusiones por soporte, muestreo insuficiente y posible EGT; el porcentaje no se extrapola a todos los eucariotas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2829",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "724cf0e73153ccefd9a39cbe3207561b0bb8926195cd19d8f17f4932aae6b6cc",
+      "fila": {
+        "#": "C-2829",
+        "Afirmación": "Rossoni y colaboradores identificaron 641 secuencias individuales de Cyanidiales como candidatas a HGT.",
+        "Sujeto": "secuencias de Cyanidiales candidatas a HGT en Rossoni y colaboradores",
+        "Predicado": "tiene_recuento_inferido*",
+        "Objeto": "641 secuencias candidatas",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Analysis of HGTs, primer párrafo (JATS s2-3); Materials and methods, Detection of HGTs (s4-6)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Se cuentan secuencias de la muestra, no 641 eventos independientes de transferencia. Las familias pueden compartir descendientes y copias entre genomas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2830",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "ffda5d7bb8b270c1d9b56a63cfd4d05f829d54b0a983a245e1cfe7d9f4005731",
+      "fila": {
+        "#": "C-2830",
+        "Afirmación": "En el control de lecturas largas de Rossoni y colaboradores, 629 de los 641 candidatos a HGT, el 98,12 % publicado, colocalizaron con genes nativos de alga roja en una misma lectura.",
+        "Sujeto": "candidatos a HGT que colocalizan con genes nativos en lecturas largas de Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "629 de 641 candidatos (98,12 %)",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, Gene co-localization on raw sequence reads (JATS s2-4)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "La colocalización aporta evidencia de integración y control de contaminación para este subconjunto; no prueba por sí sola la dirección ni el mecanismo de la transferencia y no debe atribuirse a todos los candidatos.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2831",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "a525e0c9a47c66c857fbe86c75744a715c77109e567147d5c4cccab7466987cb",
+      "fila": {
+        "#": "C-2831",
+        "Afirmación": "Rossoni y colaboradores encontraron candidatos individuales con identidad proteica superior al 70 % respecto de homólogos no eucariotas en 5 de sus 96 grupos candidatos a HGT, el 5,2 % publicado.",
+        "Sujeto": "grupos candidatos a HGT con al menos una secuencia individual sobre el umbral de identidad en Rossoni y colaboradores",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "5 de 96 grupos candidatos a HGT (5,2 %), con alguna identidad individual >70 %",
+        "Atribución": "expresa",
+        "Fuente": "S561 Results, The seventy percent rule, primer párrafo (JATS s2-9), con Fig. 6A como complemento",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Ningún grupo superó ese umbral en su identidad media: el resultado se refiere a comparaciones individuales. Los autores lo usan para cuestionar el descarte sistemático por el umbral; no demuestra que cualquier secuencia de alta identidad sea una transferencia real.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "clave": "C-2832",
+      "ruta": "data/afirmaciones/15.csv",
+      "sha256_fila_json": "9d95ecd8ffa15e7b52d4b8dc59f634bde8fc6f7f48c0e656375b8cd28e1a1caa",
+      "fila": {
+        "#": "C-2832",
+        "Afirmación": "Van Etten y Bhattacharya resumieron una contribución media de aproximadamente 1 % de HGT en inventarios génicos de protistas, y advirtieron que debía contrastarse con más datos y un procedimiento estandarizado.",
+        "Sujeto": "contribución de HGT a los inventarios génicos de protistas resumida por Van Etten y Bhattacharya",
+        "Predicado": "tiene_proporcion_publicada*",
+        "Objeto": "aproximadamente 1 % como frecuencia relativa media de genes atribuidos a HGT en inventarios de protistas",
+        "Atribución": "expresa",
+        "Fuente": "S291 Highlights, cuarto punto (ficha editorial y resumen institucional de Rutgers)",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es una generalización aproximada de una revisión, no una tasa temporal ni un resultado obtenido con el mismo muestreo, denominador o filtro de S290. Se cotejó el apartado público, sin afirmar acceso al cuerpo completo.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    }
+  ],
+  "q_historico_conservado": {
+    "ruta": "docs/auditorias/registro_busquedas_2026-08-08.csv",
+    "sha256": "31a4ecf4665bd1a7b96f2cf8e3171d01802dda865441b878c9f7a9e3c60cba94"
+  },
+  "make_verify": {
+    "codigo_salida": 2,
+    "resultado": "NO_CERRADO",
+    "puerta": "check_semantic_claim_census.py",
+    "causas": [
+      "fecha_congelacion no es UTC canónico y la congelación no coincide con corpus vivo",
+      "faltan censo_semantico_afirmaciones_v1.csv y primera revisión de 2832 C",
+      "faltan segunda_revision_afirmaciones_v1.csv y segunda revisión de 2832 C"
+    ],
+    "nota": "No se omiten etapas ni se atribuye éxito a la verificación integral, determinista, idempotente y aislada."
+  }
+}

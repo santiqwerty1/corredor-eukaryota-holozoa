@@ -1,0 +1,2735 @@
+{
+  "reviewer": "/root/inspeccion_relojes",
+  "author": "/root/verificacion_fuentes_nuevas",
+  "independence": "El revisor no escribió el segmentador ni sus reparaciones.",
+  "start_utc": "2026-09-27T03:57:22Z",
+  "end_utc": "2026-09-27T03:57:28Z",
+  "hashes_before": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+    "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+    "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+    "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+    "scripts/build_content_trace.py": "f6f808cf1102901616ca8e77984f4c4e5db11493d902169b0e35ca334f1f3854",
+    "tests/test_content_trace_sentence_boundaries.py": "9d1a9545f7f2bd39e436de7c9d451eec4fc3551a65f65a354c015d43f5264296",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r4_20260927.py": "d2df5fb1aca319580204e404d36e8b117d66b5db9a59d1989c6fcd042cadafa6"
+  },
+  "hashes_after": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+    "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+    "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+    "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+    "scripts/build_content_trace.py": "f6f808cf1102901616ca8e77984f4c4e5db11493d902169b0e35ca334f1f3854",
+    "tests/test_content_trace_sentence_boundaries.py": "9d1a9545f7f2bd39e436de7c9d451eec4fc3551a65f65a354c015d43f5264296",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r4_20260927.py": "d2df5fb1aca319580204e404d36e8b117d66b5db9a59d1989c6fcd042cadafa6"
+  },
+  "inputs_stable": true,
+  "historical_rerun": {
+    "sha256_complete_rerun_canonical_json": "a6baddfad0596e10dc09c6110263abdbe5a55443bee1f43e842b5d57c98da4c4",
+    "initial": {
+      "checks": 63,
+      "pass": 63,
+      "fail": 0,
+      "pipelines": 9,
+      "pipeline_pass": 9,
+      "pipeline_fail": 0
+    },
+    "r2": {
+      "checks": 21,
+      "pass": 21,
+      "fail": 0,
+      "pipelines": 8,
+      "pipeline_pass": 8,
+      "pipeline_fail": 0
+    },
+    "r3": {
+      "checks": 40,
+      "pass": 40,
+      "fail": 0,
+      "pipelines": 27,
+      "pipeline_pass": 27,
+      "pipeline_fail": 0
+    },
+    "failures": []
+  },
+  "additional_tests": [
+    {
+      "case": "url_substitution_0_63",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          152
+        ],
+        [
+          154,
+          187
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_0_8230",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          153
+        ],
+        [
+          155,
+          188
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_0_46",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          151
+        ],
+        [
+          153,
+          186
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_1_63",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          121
+        ],
+        [
+          123,
+          156
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_1_8230",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          122
+        ],
+        [
+          124,
+          157
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_1_46",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          120
+        ],
+        [
+          122,
+          155
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_2_63",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          128
+        ],
+        [
+          130,
+          163
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_2_8230",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          129
+        ],
+        [
+          131,
+          164
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_2_46",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          127
+        ],
+        [
+          129,
+          162
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_3_63",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          123
+        ],
+        [
+          125,
+          158
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_3_8230",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          124
+        ],
+        [
+          126,
+          159
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_substitution_3_46",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] \t3.5 células respondieron. [C-002]",
+      "expected": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "actual": [
+        "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+        "3.5 células respondieron. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          122
+        ],
+        [
+          124,
+          157
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "multiple_citations_closers",
+      "text": "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2]. \totro resultado. [C-002]",
+      "expected": [
+        "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2].",
+        "otro resultado. [C-002]"
+      ],
+      "actual": [
+        "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2].",
+        "otro resultado. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          72
+        ],
+        [
+          74,
+          97
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "angle_url_with_trailing_literal_dot",
+      "text": "La evidencia consta en <https://example.org/a.>. [C-001] \tOtro. [C-002]",
+      "expected": [
+        "La evidencia consta en <https://example.org/a.>. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "La evidencia consta en <https://example.org/a.>. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          56
+        ],
+        [
+          58,
+          71
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "two_bare_urls_one_sentence",
+      "text": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001] \tOtro. [C-002]",
+      "expected": [
+        "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ],
+        [
+          76,
+          89
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_encoded_terminators",
+      "text": "Consta en https://example.org/a%2Eb%21%3F. [C-001] \tOtro. [C-002]",
+      "expected": [
+        "Consta en https://example.org/a%2Eb%21%3F. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "Consta en https://example.org/a%2Eb%21%3F. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          50
+        ],
+        [
+          52,
+          65
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "single_quote_inside_url",
+      "text": "Consta en https://example.org/O'Reilly_v2.1/result. [C-001] \tOtro. [C-002]",
+      "expected": [
+        "Consta en https://example.org/O'Reilly_v2.1/result. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "Consta en https://example.org/O'Reilly_v2.1/result. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          59
+        ],
+        [
+          61,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "unicode_apostrophe_inside_url",
+      "text": "Consta en https://example.org/O’Neill_v2.1/result. [C-001] \tOtro. [C-002]",
+      "expected": [
+        "Consta en https://example.org/O’Neill_v2.1/result. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "Consta en https://example.org/O’Neill_v2.1/result. [C-001]",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          58
+        ],
+        [
+          60,
+          73
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "escaped_title_in_link",
+      "text": "Dato. [C-001](url \"Figura \\\"a\\\". Dato\") \tOtro. [C-002]",
+      "expected": [
+        "Dato. [C-001](url \"Figura \\\"a\\\". Dato\")",
+        "Otro. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](url \"Figura \\\"a\\\". Dato\")",
+        "Otro. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          39
+        ],
+        [
+          41,
+          54
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "nobracket_marker_not_postposed_citation",
+      "text": "Dato. [C-001] \t[SIN FUENTE] Otra proposición. [C-002]",
+      "expected": [
+        "Dato. [C-001]",
+        "[SIN FUENTE] Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001]",
+        "[SIN FUENTE] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          53
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    }
+  ],
+  "additional_pipelines": [
+    {
+      "case": "url_substitution_0_63_both",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "805ff71d3c4ebddc82594dbab1a26f34b828b8a2e134c9faef72de0e85abd599",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_63_first_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_63_second_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_8230_both",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "66f3b00a5d4c050d8d733a6a18a6324b714030d1db9ff086f31b62f75177a22f",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_8230_first_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_8230_second_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_46_both",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "e8c6872c5e6bcc756fb40dae82f7e05cb31bb40e5eb58d40ae4a3783f21267b3",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_46_first_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_0_46_second_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_(b)/v1.2?q=O'Reilly&v=4.5#sec-2.3._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_63_both",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "8bf461d2c554b408b3ecd29cb80a6b1ed9ac166910151ce67bf3ef7df51b1dac",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_63_first_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_63_second_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/a_*_?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_8230_both",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "fc56374f3e17dcb5f16bb081adb406370299707e7644d5e30b75a170e5254c74",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_8230_first_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_8230_second_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/a_*_…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_46_both",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "1f69cdac212ce7474eff71fbe5d88ac31a37fee295bb7f3c628a39910d40bdfe",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_46_first_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_1_46_second_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/a_*_._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_63_both",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "92218d52547a8728ea5a76c1454d80f357f55ced839738225485ca87df377530",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_63_first_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_63_second_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_8230_both",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "9f6439f56652b10a4d8783acb52dcc570d2103a12b7b1934f029d32b94b21079",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_8230_first_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_8230_second_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_46_both",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "d37852c9af38d60ab666dc1697c63af3263bb3bd501b8487e6f4c51e89ed17bf",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_46_first_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_2_46_second_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/%27?q=a%2Eb._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_63_both",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "8b366bbf219b28b9cf2790f16a6a43af04ee8431986a069874f0f2d847ef69ac",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_63_first_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_63_second_missing",
+      "text": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "[‘El resultado de _S. rosetta_ consta en https://example.org/#fig.2?!’] [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_8230_both",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "ef19acbd64707e8bef71aa3437867ef4369ab0987aec0401eb593ad2d8504233",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_8230_first_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_8230_second_missing",
+      "text": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "(**El resultado de _S. rosetta_ consta en https://example.org/#fig.2…**) [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_46_both",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "df78497329870c115f07c5941b24b08c265e262b75f7bee077763ce080a7648c",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_46_first_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [S01](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": []
+        },
+        {
+          "content": "3.5 células respondieron. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_substitution_3_46_second_missing",
+      "text": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2] 3.5 células respondieron. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "‹_El resultado de _S. rosetta_ consta en https://example.org/#fig.2._› [C-001](<../fuente con espacio.pdf#p.2>) [S01 p. 2]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "3.5 células respondieron. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "multiple_citations_closers_both",
+      "text": "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2]. otro resultado. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "9d5547f0fb1d39d0ff3f5649b58e84e22e101e7ef3a74a0afc7ec49b1bd94ff6",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2].",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "otro resultado. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "multiple_citations_closers_first_missing",
+      "text": "([‘La evidencia consta en https://example.org/.’]) [S01] [S01 Fig. 2]. otro resultado. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "([‘La evidencia consta en https://example.org/.’]) [S01] [S01 Fig. 2].",
+          "claims": []
+        },
+        {
+          "content": "otro resultado. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "multiple_citations_closers_second_missing",
+      "text": "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2]. otro resultado. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "([‘La evidencia consta en https://example.org/.’]) [C-001] [S01 Fig. 2].",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "otro resultado. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "angle_url_with_trailing_literal_dot_both",
+      "text": "La evidencia consta en <https://example.org/a.>. [C-001] Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "bfb7e6593b7b4335c8e173c520714973812730cffebce282b40ade5389708363",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "La evidencia consta en <https://example.org/a.>. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "angle_url_with_trailing_literal_dot_first_missing",
+      "text": "La evidencia consta en <https://example.org/a.>. [S01] Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "La evidencia consta en <https://example.org/a.>. [S01]",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "angle_url_with_trailing_literal_dot_second_missing",
+      "text": "La evidencia consta en <https://example.org/a.>. [C-001] Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "La evidencia consta en <https://example.org/a.>. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "two_bare_urls_one_sentence_both",
+      "text": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001] Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "c5290e33cab862fc92d5b1cb4d7aee4706eadd1666a33366c2cca703e910612d",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "two_bare_urls_one_sentence_first_missing",
+      "text": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [S01] Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [S01]",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "two_bare_urls_one_sentence_second_missing",
+      "text": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001] Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Se contrastaron https://example.org/a.2 y https://example.net/b.3. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_encoded_terminators_both",
+      "text": "Consta en https://example.org/a%2Eb%21%3F. [C-001] Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "2081bc7273abdd63333a499a1591480e2f6567721cd6f5765a43e35ac557e8f7",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/a%2Eb%21%3F. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "url_encoded_terminators_first_missing",
+      "text": "Consta en https://example.org/a%2Eb%21%3F. [S01] Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/a%2Eb%21%3F. [S01]",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "url_encoded_terminators_second_missing",
+      "text": "Consta en https://example.org/a%2Eb%21%3F. [C-001] Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/a%2Eb%21%3F. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "single_quote_inside_url_both",
+      "text": "Consta en https://example.org/O'Reilly_v2.1/result. [C-001] Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "f3f7ef36da563f7ec3ce43c6ffa03ce6a6b11c2fe936ed5196550a91a7bd2987",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O'Reilly_v2.1/result. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "single_quote_inside_url_first_missing",
+      "text": "Consta en https://example.org/O'Reilly_v2.1/result. [S01] Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O'Reilly_v2.1/result. [S01]",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "single_quote_inside_url_second_missing",
+      "text": "Consta en https://example.org/O'Reilly_v2.1/result. [C-001] Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O'Reilly_v2.1/result. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "unicode_apostrophe_inside_url_both",
+      "text": "Consta en https://example.org/O’Neill_v2.1/result. [C-001] Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "c3d6910bb6c978f733d2e431eaa325983597b5268d0f8749f5ec39564d06bc73",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O’Neill_v2.1/result. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "unicode_apostrophe_inside_url_first_missing",
+      "text": "Consta en https://example.org/O’Neill_v2.1/result. [S01] Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O’Neill_v2.1/result. [S01]",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "unicode_apostrophe_inside_url_second_missing",
+      "text": "Consta en https://example.org/O’Neill_v2.1/result. [C-001] Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Consta en https://example.org/O’Neill_v2.1/result. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "escaped_title_in_link_both",
+      "text": "Dato. [C-001](url \"Figura \\\"a\\\". Dato\") Otro. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "87d3de6cf194ac32a3b539cf108032d997453eddda2dd203f14bec8629ede535",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [C-001](url \"Figura \\\"a\\\". Dato\")",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "escaped_title_in_link_first_missing",
+      "text": "Dato. [S01](url \"Figura \\\"a\\\". Dato\") Otro. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [S01](url \"Figura \\\"a\\\". Dato\")",
+          "claims": []
+        },
+        {
+          "content": "Otro. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "escaped_title_in_link_second_missing",
+      "text": "Dato. [C-001](url \"Figura \\\"a\\\". Dato\") Otro. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [C-001](url \"Figura \\\"a\\\". Dato\")",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "Otro. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "nobracket_marker_not_postposed_citation_both",
+      "text": "Dato. [C-001] [SIN FUENTE] Otra proposición. [C-002]",
+      "expected_accept": true,
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "7eda07bbb5ddc42a58178692b8c29e4e5e9867761868d466676c85b24ad841e9",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "[SIN FUENTE] Otra proposición. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": []
+    },
+    {
+      "case": "nobracket_marker_not_postposed_citation_first_missing",
+      "text": "Dato. [S01] [SIN FUENTE] Otra proposición. [C-002]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [S01]",
+          "claims": []
+        },
+        {
+          "content": "[SIN FUENTE] Otra proposición. [C-002]",
+          "claims": [
+            "C-002"
+          ]
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": []
+    },
+    {
+      "case": "nobracket_marker_not_postposed_citation_second_missing",
+      "text": "Dato. [C-001] [SIN FUENTE] Otra proposición. [S02]",
+      "expected_accept": false,
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "content": "Dato. [C-001]",
+          "claims": [
+            "C-001"
+          ]
+        },
+        {
+          "content": "[SIN FUENTE] Otra proposición. [S02]",
+          "claims": []
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": []
+    }
+  ],
+  "counts": {
+    "checks": 20,
+    "pass": 20,
+    "fail": 0,
+    "pipelines": 60,
+    "pipeline_pass": 60,
+    "pipeline_fail": 0
+  },
+  "seed_runs": [
+    {
+      "seed": "2",
+      "exit": 0,
+      "stdout": "ef03eff9ebe4363b06fdab77e7002f223a631afae006125cdd4358a1f7411982",
+      "stderr": ""
+    },
+    {
+      "seed": "29",
+      "exit": 0,
+      "stdout": "ef03eff9ebe4363b06fdab77e7002f223a631afae006125cdd4358a1f7411982",
+      "stderr": ""
+    },
+    {
+      "seed": "977",
+      "exit": 0,
+      "stdout": "ef03eff9ebe4363b06fdab77e7002f223a631afae006125cdd4358a1f7411982",
+      "stderr": ""
+    }
+  ],
+  "seeds_identical": true,
+  "census_in_memory": {
+    "narrative": 2129,
+    "tables": 2664,
+    "total": 4793,
+    "without_C": 42,
+    "ambiguous_blocks": 186,
+    "ambiguous_frontiers": 192,
+    "reasons": {
+      "AMBIGUA_ABREVIATURA_TERMINAL": 189,
+      "AMBIGUA_INICIAL_EPITETO": 3
+    },
+    "manifest_errors": [],
+    "payload_errors": [
+      "42 segmentos sustantivos carecen de C: docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L63; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L69; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L73; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L99; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L111; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L141; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L147; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L165; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L175; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L183; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L187; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L209; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L221; oración 3:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 1:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 3:prosa; docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md:L43; oración 2:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 4:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 4:prosa"
+    ],
+    "first_sha256": "169f0b302ab4ebcec88865e4de6aee63c376964eeb7bb943405738aec234052d",
+    "second_sha256": "169f0b302ab4ebcec88865e4de6aee63c376964eeb7bb943405738aec234052d",
+    "two_runs_identical": true,
+    "no_adjudication": true
+  },
+  "scope": "Sólo NC-DEN02 técnico; no adjudicación de las192fronteras ni42unidades sinC, NC-DEN01, ciencia o cierre global.",
+  "sha256_complete_fixture_result": "ccd7fa6ea35a84c540f08f6423c11add6e25308236d733eb912800b93234766f",
+  "representation": "Only repetitive console logs and per-fixture segment path/locator/type metadata omitted; content, claims, errors, states and full-result hash retained.",
+  "post_suite": {
+    "mismatches": [],
+    "hashes_after_full_suite": {
+      "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+      "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+      "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+      "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+      "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+      "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+      "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+      "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+      "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+      "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+      "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+      "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+      "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+      "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+      "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+      "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+      "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+      "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+      "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+      "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+      "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+      "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+      "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+      "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+      "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+      "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+      "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+      "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+      "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+      "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+      "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+      "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+      "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+      "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+      "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+      "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+      "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+      "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+      "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+      "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+      "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+      "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+      "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+      "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+      "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+      "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+      "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+      "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+      "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+      "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+      "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+      "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+      "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+      "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+      "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+      "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+      "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+      "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+      "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+      "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+      "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+      "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+      "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+      "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+      "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+      "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+      "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+      "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+      "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+      "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+      "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+      "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+      "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+      "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+      "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+      "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+      "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+      "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+      "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+      "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+      "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+      "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+      "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+      "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+      "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+      "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+      "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+      "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+      "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+      "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+      "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+      "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+      "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+      "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+      "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+      "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+      "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+      "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+      "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+      "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+      "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+      "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+      "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+      "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+      "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+      "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+      "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+      "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+      "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+      "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+      "scripts/build_content_trace.py": "f6f808cf1102901616ca8e77984f4c4e5db11493d902169b0e35ca334f1f3854",
+      "tests/test_content_trace_sentence_boundaries.py": "9d1a9545f7f2bd39e436de7c9d451eec4fc3551a65f65a354c015d43f5264296",
+      "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r4_20260927.py": "d2df5fb1aca319580204e404d36e8b117d66b5db9a59d1989c6fcd042cadafa6"
+    }
+  },
+  "tests_reexecuted": {
+    "focused": {
+      "command": "python3 -m unittest discover -s tests -p test_content_trace_sentence_boundaries.py",
+      "tests": 46,
+      "exit": 0,
+      "seconds": 0.354
+    },
+    "full": {
+      "command": "python3 -m unittest discover -s tests",
+      "tests": 335,
+      "exit": 0,
+      "seconds": 25.796
+    },
+    "diff_check": {
+      "command": "git diff --check -- scripts/build_content_trace.py tests/test_content_trace_sentence_boundaries.py",
+      "exit": 0
+    }
+  },
+  "dictamen": "CONFORME_REPARACION_TECNICA_ACOTADA_VERSION_R4",
+  "no_cierre": [
+    "No adjudica 192 fronteras ni42segmentos sinC.",
+    "No aprueba NC-DEN01 ni puerta completa de densidad, ciencia, controles globales, segundas revisiones o make verify.",
+    "No certifica un parser Markdown universal ni todas las ambigüedades posibles; alcanza los objetos, regresiones y clases adversarias probadas."
+  ],
+  "historicos_preservados": [
+    {
+      "ruta": "docs/auditorias/REVISION_INDEPENDIENTE_SEGMENTACION_NCDEN02_2026-09-27.md",
+      "sha256": "694d4cebae68bf0f6cd96a92993e137cdba6d203cca6e3c1f90e562ab8fe930f",
+      "dictamen": "NO_CONFORME_VERSION_INICIAL"
+    },
+    {
+      "ruta": "docs/auditorias/ADDENDUM_INDEPENDIENTE_SEGMENTACION_NCDEN02_R2_2026-09-27.md",
+      "sha256": "b74fd820776c197db516846e1dedb2c888c2024c5a18d5313cca5ff013afd4f9",
+      "dictamen": "NO_CONFORME_VERSION_R2"
+    },
+    {
+      "ruta": "docs/auditorias/ADDENDUM_INDEPENDIENTE_SEGMENTACION_NCDEN02_R3_2026-09-27.md",
+      "sha256": "d6ce641fb1eebcba6737939be88732543f0a56b94cba92b3b7468d2d8e7bee35",
+      "dictamen": "NO_CONFORME_VERSION_R3"
+    }
+  ]
+}

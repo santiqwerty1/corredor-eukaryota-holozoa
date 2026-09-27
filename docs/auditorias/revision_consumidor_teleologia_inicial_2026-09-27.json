@@ -1,0 +1,749 @@
+{
+  "utc": "2026-09-27T02:29:35Z",
+  "scope": "Consumidor e integración técnica; revisor autor del ledger, no del consumidor. Sin aprobación de ciencia ni controles globales.",
+  "hashes": {
+    "scripts/check_teleology_contexts.py": "dcd4c81135e014909891a3ab066a05c718522ab5e42941c08a032451fd5faceb",
+    "scripts/audit_requirement_controls.py": "a92c9b4a04e23f5a8320d52e0c0b5c47fb99bc8aeb4a8f2a7cd0847c7d0e206a",
+    "tests/test_check_teleology_contexts.py": "5b90a1b1f9e210ffaf3601dd1e7fea6d3b9e2b2acc8d04ab14869ad874bde6db",
+    "tests/test_audit_requirement_controls.py": "f8a8a62f875b4ea30b343334ad412b6641402cf106dabc5122df4dedc9c732ff",
+    "docs/auditorias/censo_contextos_teleologia_v2_contexto_2026-09-27.json": "30b0de4813c5c30c54d751f89ab86d359e1c884b3ff9078c0ca74bcb2c2bb029",
+    "docs/auditorias/fixtures/revision_consumidor_teleologia_independiente_20260927.py": "cbfe431a1abbaed2fa1f6bffef1ff3f046678d191651a746e184f79e164bd759"
+  },
+  "tests": 61,
+  "passed": 57,
+  "results": [
+    {
+      "id": "schema_v2_current_must_accept",
+      "version_1_solo_para_ejercitar_ramas": false,
+      "expected_accepted": true,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "versión de esquema desconocida"
+      ],
+      "result": "FAIL"
+    },
+    {
+      "id": "schema_v1_not_current_must_reject",
+      "version_1_solo_para_ejercitar_ramas": false,
+      "expected_accepted": false,
+      "accepted": true,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [],
+      "result": "FAIL"
+    },
+    {
+      "id": "diagnostic_baseline_v1",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": true,
+      "accepted": true,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "id": "top_extra",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "revisión: esquema cerrado inválido"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "version_boolean",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "versión de esquema desconocida"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "version_string",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "versión de esquema desconocida"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entries_mapping",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidatos no es una lista"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "hashes_list",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "alcance o contexto vivo diferente del revisado"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "scope_blank",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "falta alcance de revisión"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "reviewer_placeholder",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "falta identidad de revisor"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "independence_blank",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "falta declaración independiente"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "utc_nozone",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "fecha de revisión sin UTC exacto"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "utc_badcalendar",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "fecha de revisión imposible"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "utc_badseconds",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "fecha de revisión imposible"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "utc_snapshot_earlier",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "snapshot de contexto anterior a la adjudicación"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "utc_entry_later",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen posterior a su expediente: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_extra",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidato: esquema cerrado inválido"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_path_traversal",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidato ajeno o duplicado: ('docs/../x.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_line_boolean",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "ruta/línea inválidas"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_line_wrong",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidato ajeno o duplicado: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 3)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_text_stale",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "texto/huella de candidato obsoletos: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_hash_stale",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "texto/huella de candidato obsoletos: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_locator_placeholder",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "sin localizador nominal: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_reviewer_other",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "independencia no acreditada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_conflict_yes",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "independencia no acreditada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_conflict_boolean",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "independencia no acreditada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "entry_independence_missing",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "independencia no acreditada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "occurrence_missing",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "censo de ocurrencias incompleto: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "occurrence_mapping",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "censo de ocurrencias incompleto: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "occurrence_extra",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "ocurrencia: esquema cerrado inválido"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "offset_boolean",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "ocurrencia ajena, duplicada o desordenada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "offset_wrong",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "ocurrencia ajena, duplicada o desordenada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "literal_wrong",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "ocurrencia ajena, duplicada o desordenada: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "reason_placeholder",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen sin fundamento nominal: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "clause_blank",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen sin fundamento nominal: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "verdict_unknown",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen desconocido: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "verdict_list",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen desconocido: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "verdict_teleology",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen no conforme: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1): TELEOLOGICO"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "verdict_unverifiable",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen no conforme: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1): NO_VERIFICABLE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "verdict_independence_conflict",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "dictamen no conforme: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1): NO_VERIFICABLE_POR_INDEPENDENCIA"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "missing_candidate",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "faltan candidatos nominales por revisar"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "duplicate_candidate",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidato ajeno o duplicado: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "extra_candidate",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "candidato ajeno o duplicado: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 99)"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "same_candidate_changed_context",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "alcance o contexto vivo diferente del revisado"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "same_heading_changed_body",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "alcance o contexto vivo diferente del revisado"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "new_route",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "alcance o contexto vivo diferente del revisado"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "missing_route",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "alcance o contexto vivo diferente del revisado"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "missing_file",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 0,
+      "occurrences": 0,
+      "errors": [
+        "archivo ausente: docs/secciones/z-contexto.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "outside_route",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 0,
+      "occurrences": 0,
+      "errors": [
+        "ruta fuera del corpus: /tmp/no-autorizado.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "parent_component",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 0,
+      "occurrences": 0,
+      "errors": [
+        "ruta no canónica: /tmp/teleologia-independiente-b2n71100/docs/../no-autorizado.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "symlink_review",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "enlace no permitido: /tmp/teleologia-independiente-m_bglhr7/docs/auditorias/censo_contextos_teleologia_v2_contexto_2026-09-27.json"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "symlink_corpus",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 0,
+      "occurrences": 0,
+      "errors": [
+        "enlace no permitido: /tmp/teleologia-independiente-d38tnxz_/docs/secciones/015-14-14-nombres-y-nomenclatura.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "symlink_parent_directory",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 0,
+      "occurrences": 0,
+      "errors": [
+        "enlace no permitido: /tmp/teleologia-independiente-_jslkjs6/docs/secciones/015-14-14-nombres-y-nomenclatura.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "duplicate_json_key",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "clave JSON duplicada: version"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "NC_TEL_01_empty_ledger",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 1,
+      "occurrences": 2,
+      "errors": [
+        "candidatos no clasificados contra el contexto vivo: ['faltan candidatos nominales por revisar']"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "NC_TEL_01_partial_occurrence",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 1,
+      "occurrences": 2,
+      "errors": [
+        "candidatos no clasificados contra el contexto vivo: [\"censo de ocurrencias incompleto: ('docs/secciones/015-14-14-nombres-y-nomenclatura.md', 1)\"]"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "NC_TEL_02_empty_ledger",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 1,
+      "occurrences": 1,
+      "errors": [
+        "candidatos no clasificados contra el contexto vivo: ['faltan candidatos nominales por revisar']"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "race_context_after_validation",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "contexto cambió durante la revisión: docs/secciones/z-contexto.md"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "race_ledger_after_validation",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": false,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [
+        "expediente cambió durante la revisión"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "race_context_during_final_ledger_read",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": true,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [],
+      "result": "FAIL"
+    },
+    {
+      "id": "integration_changed_context_before_artifact",
+      "version_1_solo_para_ejercitar_ramas": true,
+      "expected_accepted": false,
+      "accepted": true,
+      "candidates": 2,
+      "occurrences": 2,
+      "errors": [],
+      "result": "FAIL"
+    }
+  ],
+  "live": {
+    "metrics": {
+      "candidatos_teleologia": 74,
+      "ocurrencias_teleologia": 95
+    },
+    "errors": [
+      "candidatos no clasificados contra el contexto vivo: ['versión de esquema desconocida']"
+    ]
+  }
+}

@@ -1,0 +1,2386 @@
+{
+  "version": 1,
+  "fecha_emision_utc": "2026-09-27T03:44:57Z",
+  "fecha_captura_utc": "2026-09-27T03:34:59Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "independencia": "LECTURA_PRIMARIA_INDEPENDIENTE_PREVIA_A_PROPUESTA; no he redactado ni modificado los objetos científicos C-028–C-036, F, prosa y seis filas tabulares examinados. Mi intervención anterior sobre C-031 se limitó a comprobar tres localizadores, no a aprobar su contenido científico.",
+  "alcance": "9 afirmaciones C; 11 filas F; seis filas Williams 2020 y sus 54 celdas; tres oraciones de prosa L51 y referencia agregada L55. Lectura del AAM S10 y de su suplemento; inspección visual de Fig1, Fig3 y ST2/ST11. No es censo, segunda revisión global, aprobación de BN ni juicio sobre todas las fuentes.",
+  "dictamen_lote": "NO_CONFORME",
+  "recuentos": {
+    "objetos": 30,
+    "CONFORME": 2,
+    "NO_CONFORME": 28,
+    "celdas": 54,
+    "dictamenes_celdas": {
+      "CONFORME": 28,
+      "NO_CONFORME": 15,
+      "NO_VERIFICABLE": 11
+    }
+  },
+  "hashes_al_final": {
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+    "docs/auditorias/protocolo_censo_semantico_2026-08-13.md": "d312f22b287f94eac3a402af049977f69d56842c2d1638930d77df6ce3f32e15",
+    "docs/auditorias/HANDOFF_CODEX_2026-08-13.md": "dd1ff0dc92cd7c9194693e2bb0b325d2e0fef1fcfcfe9b03c4dca119f749bbd3",
+    "exports/acceso_fuentes.csv": "8dc16c54c1e44e6b126efec71517c6756246233d0c1c4dd1176d914bc1229959",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+    "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768",
+    "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig1-pdf32.png": "7eb73ea80a654ab60e4695928577d53a2a39b0d93dbaab682e1988043f89598b",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3-pdf34.png": "93349aac49e921d12024df694df5a5db269d45c3d29e913a2faa19dba58ebb2f",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3b-detalle.png": "f27ec4aa5ff42931e252270f2dedea711e71fa415d0476860d1671f257698dc7",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p12.png": "9774c442b6e8991ec376f181e82e41c4959ef105a45e25b15212023453094ece",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p13.png": "588e58ff9ef3b094e681e75991bc86139f526af2aa499ce147e2c49ea43acf76",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table2-p3.png": "a1855d32cf66cb06052dad5c04b9c861c5d926b9e00ceb2e3ef5be6917930582"
+  },
+  "entradas_estables_entre_captura_y_emision": true,
+  "limites": [
+    "La fecha es de esta lectura y emisión reales, no la consulta original ni una congelación semántica.",
+    "S10 PDF local es author accepted manuscript / peer-reviewed version; no se ha demostrado identidad con la versión editorial final.",
+    "El suplemento fue descargado por root y cotejado independientemente aquí; aún está en /tmp y requiere integración controlada para una dependencia durable del cierre.",
+    "La corrección de 2020 consignada en A afecta quartet/ASTRAL; no se revisó aquí su texto primario ni se supone que resuelva los AU discrepantes.",
+    "Las BN incluidas en las celdas se conservan sin dictamen integral ni modificación de resultados históricos.",
+    "No se verifican desde S10 estudios posteriores ni el contenido científico íntegro de S09.",
+    "No se completan posiciones alineadas, incertidumbres ni taxones por cálculo; los valores 81, 125 y 92 proceden de ST11 explícita.",
+    "La estabilidad de hashes se limita a la relectura registrada; cambios posteriores invalidarán el cotejo de los objetos afectados."
+  ],
+  "identidad_suplemento": {
+    "ruta_temporal": "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf",
+    "sha256": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+    "paginas": {
+      "3": {
+        "sha256_texto_pdftotext_normalizado_lf": "b679af4389679af100b93e7744a53c1d40bff824c9da096d3eaae392624d416c",
+        "sha256_texto_pdftotext": "bd6331858ce2d5d971778ffa513efb4e4f827d70ed1e22374d721639dceb7419"
+      },
+      "12": {
+        "sha256_texto_pdftotext_normalizado_lf": "bbc887ed692d067efb071e359bd43db6e0343c9f7e930977130fc6b1af60552c",
+        "sha256_texto_pdftotext": "0795a725efb85c46bc19fcf1ddb5bdb82314e31b033351808ef3cfc3b6985b28"
+      },
+      "13": {
+        "sha256_texto_pdftotext_normalizado_lf": "cf2f6039ae71e5bdec64451bc5482abf255e951783670e2eea38d88edee9e847",
+        "sha256_texto_pdftotext": "b10be885c37bc82aa8d60ec575af08382d8c025637874582698ad3e192d173b2"
+      },
+      "18": {
+        "sha256_texto_pdftotext_normalizado_lf": "aae7be9ee66506481309185dd8f362f73a4e0e3ccae5e4523e4a143245e7ab5d",
+        "sha256_texto_pdftotext": "0ecf99df1a9ba34bd30b3f9d8b8d4afb9e7e4e3c1409c29e1b1429cb85fde4ae"
+      },
+      "23": {
+        "sha256_texto_pdftotext_normalizado_lf": "a314778d0f8db357d3c076852d834a6f668823ea971a9bad9585ef194bd95316",
+        "sha256_texto_pdftotext": "bd8f8ef271fd1b4cf373eb0d005e0de66eb947634649d0e56edab30e1c7c3b89"
+      }
+    },
+    "url_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6942926/supplementaryFiles",
+    "recuperador": "root; no atribuido al revisor",
+    "integrado_fuentes": false,
+    "paginas_pdf": 43,
+    "bytes": 10820718
+  },
+  "fragmentos_control": {
+    "P6": "36",
+    "P8": "-684701.2",
+    "P10": "0.036",
+    "P11": "0.98",
+    "P17": "125",
+    "P18": "21",
+    "P19": "LC3",
+    "P30": "92",
+    "P31": "CAT+GTR+G4",
+    "F1": "maximum",
+    "F3": "within",
+    "T1": "3199",
+    "R5": "2013",
+    "SI-p3": "0.233",
+    "SI-p12": "0.0036",
+    "SI-p13": "92"
+  },
+  "normalizacion_pasajes": "Texto completo del elemento XML por itertext, unión de espacios y colapso de whitespace, más LF; para páginas SI, salida pdftotext con normalización de whitespace más LF. Fragmentos mínimos de control, no sustituyen el contexto leído.",
+  "evidencias_pasajes": {
+    "P6": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P6\"]",
+      "sha256_texto_normalizado_lf": "4e8cb50ef0ae8c50e0bdfc39b74bb27586b8b5a7a2d688da29333a528174e99e"
+    },
+    "P8": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P8\"]",
+      "sha256_texto_normalizado_lf": "d21acb03a15235ad15f6120112223baabb8705c05764858b4041f035285933f8"
+    },
+    "P10": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P10\"]",
+      "sha256_texto_normalizado_lf": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87"
+    },
+    "P11": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P11\"]",
+      "sha256_texto_normalizado_lf": "8c7ffcdcd315aa841291ef2911d01febc3c041d4fb7ba15524d4ef18d00bf7c3"
+    },
+    "P17": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P17\"]",
+      "sha256_texto_normalizado_lf": "9834c0c59bef0ccf9f92225ea6257901accdbbfdca9bef3ac82c91b40416ca93"
+    },
+    "P18": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P18\"]",
+      "sha256_texto_normalizado_lf": "d31b89de8a0969c11aee082b175aa13520dd4b0499d37125546a17cc01f8fa66"
+    },
+    "P19": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P19\"]",
+      "sha256_texto_normalizado_lf": "bba06ced61b2824d934f597557bcc0a1bf369acd8412c810c34a0a1398b37203"
+    },
+    "P30": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P30\"]",
+      "sha256_texto_normalizado_lf": "833dae4983b7f185e4fbb9763514ed98a1d17defafaae7cec59f0ec7bcd5febf"
+    },
+    "P31": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"P31\"]",
+      "sha256_texto_normalizado_lf": "b09dce5a96c86240ea0e72cfe5d481bbef2b35a7c873279c3345619891c3d268"
+    },
+    "F1": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"F1\"]",
+      "sha256_texto_normalizado_lf": "d5eda8711cb3b1d28cb2d6e0b3bc1aab2c3253a0c8dda2be3175530e9f75c0de"
+    },
+    "F3": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"F3\"]",
+      "sha256_texto_normalizado_lf": "4c296222944ee435ef50ce13f0bf15482786c51c4388f098a9fbafca7e3baa71"
+    },
+    "T1": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"T1\"]",
+      "sha256_texto_normalizado_lf": "52ff5977ead58ab1bc151c5eced3c9cc6df75d5a729b75345ef956b9de50d6fb"
+    },
+    "R5": {
+      "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+      "xpath": ".//*[@id=\"R5\"]",
+      "sha256_texto_normalizado_lf": "f33a426e19170a76f0d42857d82b3791b19e80a8f93401ec4121572bc6e7ce1c"
+    }
+  },
+  "inspecciones_visuales": {
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig1-pdf32.png": "7eb73ea80a654ab60e4695928577d53a2a39b0d93dbaab682e1988043f89598b",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3-pdf34.png": "93349aac49e921d12024df694df5a5db269d45c3d29e913a2faa19dba58ebb2f",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3b-detalle.png": "f27ec4aa5ff42931e252270f2dedea711e71fa415d0476860d1671f257698dc7",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p12.png": "9774c442b6e8991ec376f181e82e41c4959ef105a45e25b15212023453094ece",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p13.png": "588e58ff9ef3b094e681e75991bc86139f526af2aa499ce147e2c49ea43acf76",
+    "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table2-p3.png": "a1855d32cf66cb06052dad5c04b9c861c5d926b9e00ceb2e3ef5be6917930582"
+  },
+  "resultados_primarios": {
+    "LG_G4_F_P8": {
+      "lnL_2D": "≈−684701.2",
+      "lnL_3D": "≈−684716.1",
+      "AU_2D": "0.771",
+      "AU_3D": "0.229",
+      "diferencia": "no significativa según P8"
+    },
+    "LG_G4_F_ST2": {
+      "AU_2D": "0.767",
+      "AU_3D": "0.233",
+      "lnL_programas": [
+        {
+          "programa": "PhyML 3.1",
+          "dos_D": "−684701.197745",
+          "tres_D_busqueda_restringida": "−684745.835747",
+          "tres_D_topologia_optima_restringida": "−684716.068548"
+        },
+        {
+          "programa": "RAxML 8.2.4",
+          "dos_D": "−684701.197240",
+          "tres_D": "−684716.067999"
+        },
+        {
+          "programa": "IQTree 1.6.2",
+          "dos_D": "−684701.201",
+          "tres_D": "−684716.068"
+        }
+      ]
+    },
+    "LG_C60_G4_F": {
+      "P10_AU_3D": "0.036",
+      "ST11_p12_AU_3D": "0.0036",
+      "dictamen_discrepancia": "CONSERVAR_AMBAS_POSICIONES; no decidir errata ni sustituir una por otra"
+    },
+    "matrices_ST11": [
+      {
+        "genes": 35,
+        "taxones": 81,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "sin SR4",
+        "nodo": "Eukaryota+Asgard muestreados",
+        "PP": "1"
+      },
+      {
+        "genes": 35,
+        "taxones": 81,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota",
+        "PP": "0.98"
+      },
+      {
+        "genes": 21,
+        "taxones": 125,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "sin SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota",
+        "PP": "0.81"
+      },
+      {
+        "genes": 21,
+        "taxones": 125,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota",
+        "PP": "0.79"
+      },
+      {
+        "genes": 43,
+        "taxones": 92,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "sin SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota",
+        "PP": "1"
+      },
+      {
+        "genes": 43,
+        "taxones": 92,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota",
+        "PP": "1"
+      },
+      {
+        "genes": 43,
+        "taxones": 92,
+        "modelo": "CAT+GTR+G4",
+        "recodificacion": "SR4",
+        "nodo": "Eukaryota+Heimdallarchaeota MAG LC3",
+        "PP": "0.95"
+      }
+    ],
+    "discrepancia_muestreo": "P17/P18 declaran un universo de 125; ST11 distingue matrices 21/125 y 43/92, esta última subconjunto explícito. P30 dice 92 genomas e incluye bacterias en su descripción. Se conserva esa discrepancia textual, no se reconcilia mediante 125−33.",
+    "busqueda_posiciones": {
+      "consultas": [
+        "\\balignment length\\b|\\bpositions\\b|\\bcharacters\\b|\\bresidues\\b",
+        "\\b\\d+[\\d,]*\\s+(positions|characters|sites|residues)"
+      ],
+      "ambito": "Párrafos del XML; primera consulta también sobre texto pdftotext del suplemento íntegro. Lectura nominal centrada en pasajes y tablas identificados.",
+      "resultado": "Sin dimensión numérica localizada por estas consultas; 'positions' en SI p36 alude a posiciones de raíz, no a longitud de alineamiento.",
+      "limite": "No prueba ausencia universal/publicación ni adjudica una BN."
+    }
+  },
+  "objetos": [
+    {
+      "id": "C-028",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 13,
+      "sha256_objeto": "f2da877ab7b8b5cc7c0bd887fc0911342d0854f906d5946adc0249ae1779a286",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Una dimensión de matriz: atómica.",
+      "motivo": "35 está documentado para la concatenación reanalizada de Da Cunha; el conjunto original anterior era de 36 genes. Methods no ofrece aquí 35 y tabla 1 trata cuartetos, no esta dimensión. Debe identificarse la concatenación de 35/81 y su procedencia, sin llamarla ambiguamente matriz original.",
+      "evidencias": [
+        "P6",
+        "P8",
+        "P30",
+        "T1",
+        "SI-p12"
+      ],
+      "objeto": {
+        "#": "C-028",
+        "Afirmación": "La matriz original del análisis de Williams et al. contenía 35 genes.",
+        "Sujeto": "matriz original de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "35 genes",
+        "Atribución": "expresa",
+        "Fuente": "S10 §Methods, tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La fila registra una sola dimensión de matriz; las topologías comparadas se documentan en filas separadas.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-029",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 14,
+      "sha256_objeto": "431e7b39ac5c166f312398b73299eb50dafb55e4a9e30c6ca33e968416bbc3f0",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "No atómica: dos log-verosimilitudes de dos topologías; una puede estar bien y otra mal.",
+      "motivo": "P8 publica aproximaciones, no valores exactos; faltan los signos ≈. ST2 distingue valores por programa y búsqueda/restricción. Tabla 1 no contiene estas cifras. No elegir un programa ni redondear sus valores para reemplazar P8.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3"
+      ],
+      "objeto": {
+        "#": "C-029",
+        "Afirmación": "Bajo LG+G4+F, Williams et al. obtuvieron log-verosimilitudes de −684701.2 para dos dominios y −684716.1 para tres dominios.",
+        "Sujeto": "comparación LG+G4+F de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "−684701.2 y −684716.1",
+        "Atribución": "expresa",
+        "Fuente": "S10 tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Los valores se transcriben sin convertirlos a otra medida.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-030",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 15,
+      "sha256_objeto": "371a2ac0d8a20d900f708319c9148bc7bd37eeabe92386eb726137c7e1138d05",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "No atómica: dos valoresAU pueden ser correctos o incorrectos por separado.",
+      "motivo": "P8 contiene 0.771(2D)/0.229(3D), pero ST2 contiene 0.767/0.233. Son p de una prueba AU, no probabilidades posteriores. La transcripción única no declara discrepancia y tabla 1 es localizador incorrecto.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3",
+        "SI-p12"
+      ],
+      "objeto": {
+        "#": "C-030",
+        "Afirmación": "Bajo LG+G4+F, la prueba AU de Williams et al. dio 0.771 para dos dominios y 0.229 para tres dominios.",
+        "Sujeto": "prueba AU bajo LG+G4+F",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "0.771 y 0.229",
+        "Atribución": "expresa",
+        "Fuente": "S10 tabla 1",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Valores publicados de la prueba de topología.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-031",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 16,
+      "sha256_objeto": "71123891b619b3b7be780e7b80cb415a772df7980e3d367dfd950709d6396135",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Atómica: modelo y estadístico condicionan un único rechazo.",
+      "motivo": "El enunciado condicional yAU 0.036 coinciden exactamente con P10; no se cuestiona esa posición publicada. ST11 imprime 0.0036 para el mismo modelo/dataset y el contexto vivo no declara la discrepancia. El protocolo impide conformidad integral sin tratarla. Puede preservarse C031 como posición P10 y enlazarse nominalmente la discrepancia, sin escoger ni declarar errata.",
+      "evidencias": [
+        "P10",
+        "SI-p12"
+      ],
+      "objeto": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10): «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-032",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 17,
+      "sha256_objeto": "6861570d1069f93fcedad1712b94aa93bb32bf999051d155013c651c782af5ca",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Una inferencia condicional; debe precisar su nodo.",
+      "motivo": "CAT+GTR+G4 y máximo son correctos para el clado Eukaryota+Asgard muestreados de 35/81; Fig 1 y ST11 fijan PP 1. El registro asigna el apoyo al árbol 2D sin identificar el nodo. No se extiende PP 1 a todas las ramas.",
+      "evidencias": [
+        "P10",
+        "F1",
+        "SI-p12"
+      ],
+      "objeto": {
+        "#": "C-032",
+        "Afirmación": "Bajo CAT+GTR+G4, Williams et al. recuperaron el árbol de dos dominios con apoyo posterior máximo.",
+        "Sujeto": "árbol de dos dominios bajo CAT+GTR+G4",
+        "Predicado": "respaldado_por",
+        "Objeto": "probabilidad posterior máxima",
+        "Atribución": "expresa",
+        "Fuente": "S10 fig. 1; Supplementary analyses",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo y apoyo son condición y resultado de una única inferencia filogenética publicada.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-033",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 18,
+      "sha256_objeto": "a8a10b8c9a8445b69407f6627993e2b5e688f316421243736f19e6015c2da7c9",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Una inferencia condicional; nodo y modelo incompletos.",
+      "motivo": "PP 0.98 corresponde a Eukaryota+Heimdallarchaeota, no al árbol entero; el modelo publicado es CAT+GTR+G4 con SR4 en 35/81, no CAT sin más. El localizador genérico no identifica ST11/p 12 o P11.",
+      "evidencias": [
+        "P11",
+        "SI-p12"
+      ],
+      "objeto": {
+        "#": "C-033",
+        "Afirmación": "La recodificación SR4 bajo CAT produjo una probabilidad posterior de 0.98 para el árbol de dos dominios.",
+        "Sujeto": "árbol de dos dominios bajo CAT y SR4",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.98",
+        "Atribución": "expresa",
+        "Fuente": "S10 Supplementary analyses",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "La recodificación fue una prueba contra heterogeneidad composicional.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-034",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 19,
+      "sha256_objeto": "3857e921e59fcf33ed5068a1c2b3f4091e3706f09e6986d5e9dc1c0e98afa96b",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "No atómica:21 genes,43 genes y 125 genomas son tres dimensiones separables.",
+      "motivo": "P18 respalda 21 y 43; ST11 distingue 21/125 frente 43/92 y llama a esta última subconjunto de 125. El Motivo afirma mismo muestreo y el Objeto dice muestreo común 125 sin delimitar universo frente matriz. P30 además menciona 92 incluyendo bacterias; esa discrepancia textual no se elimina por resta.",
+      "evidencias": [
+        "P17",
+        "P18",
+        "P30",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "#": "C-034",
+        "Afirmación": "El diseño ampliado de Williams et al. comprendió una matriz de 21 proteínas universales y otra de 43 proteínas arqueano-eucariotas, ambas dentro del muestreo de 125 genomas declarado.",
+        "Sujeto": "diseño ampliado de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "dos matrices emparejadas: 21 y 43 proteínas; muestreo común de 125 genomas",
+        "Atribución": "expresa",
+        "Fuente": "S10 §Methods, figs. 2–3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Se conserva como un único vector de diseño experimental porque las dos matrices se comparan sobre el mismo muestreo; no se usa como tres magnitudes biológicas independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-035",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 20,
+      "sha256_objeto": "d3f9a2f035140e5bb5e40577a9986c46471cf010673f4f5a56163d9c9227524c",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Relación única; el triple debe coincidir con la prosa.",
+      "motivo": "La prosa asocia la afirmación a 43 proteínas/Fig 3b SR4: allí Eukaryota se agrupa con LC3 dentro del conjunto Heimdallarchaeota, no como hermana del conjunto excluyente completo. Fig 3a 21/SR4 distingue otro resultado(PP 0.79). El triple grupo_hermano_de no reproduce inequívocamente el análisis narrado; estudios posteriores del Motivo no se verifican con S10.",
+      "evidencias": [
+        "P18",
+        "P19",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "#": "C-035",
+        "Afirmación": "Williams et al. recuperaron a Eukaryota asociado con Heimdallarchaeia en el análisis citado.",
+        "Sujeto": "Eukaryota en Williams et al. 2020",
+        "Predicado": "grupo_hermano_de",
+        "Objeto": "Heimdallarchaeia",
+        "Atribución": "expresa",
+        "Fuente": "S10 fig. 3",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "El triple registra sólo la relación topológica; el tamaño de matriz y su apoyo se mantienen en afirmaciones cuantitativas separadas. Estudios posteriores con más muestreo recuperaron posiciones distintas.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "C-036",
+      "ruta": "data/afirmaciones/02.csv",
+      "fila": 21,
+      "sha256_objeto": "2480a7b0d2d1963ce0c17a42d1a78458c255fe30a56598b2b22519bc35423882",
+      "algoritmo_huella": "SHA256(columnas_C unidas por U+001F + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valor de soporte, pero sujeto mal identificado.",
+      "motivo": "LC3 es un MAG de Heimdallarchaeota; PP 0.95 sostiene el agrupamiento Eukaryota+LC3 en 43 genes/92 taxones SR4-CAT+GTR+G4, no LC3 aislado. Coinciden texto P19, Fig 3b visual y ST11.",
+      "evidencias": [
+        "P19",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "#": "C-036",
+        "Afirmación": "El clado LC3 del análisis de Williams et al. obtuvo PP = 0.95.",
+        "Sujeto": "clado LC3 de Williams et al. 2020",
+        "Predicado": "tiene_valor_medido",
+        "Objeto": "PP = 0.95",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results, párrafo 4, «LC3) with high (PP = 0.95) support»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "media",
+        "Motivo": "Es soporte cuantitativo de una matriz concreta, no de todas las topologías actuales.",
+        "Resolución": "sin resolver",
+        "Vigencia": "vigente"
+      }
+    },
+    {
+      "id": "F-fila-6",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 6,
+      "sha256_objeto": "e003c7c5a10e9d6f2a9366efb6de8d03e1687b49c35cd32230c3eaf6198d776a",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un recuento.",
+      "motivo": "35 correcto para la concatenación reanalizada; procedencia ambigua y Methods/tabla 1 no localizan esta cifra. ST11 especifica 81 taxones.",
+      "evidencias": [
+        "P6",
+        "P8",
+        "T1",
+        "SI-p12"
+      ],
+      "objeto": {
+        "magnitud": "genes de la matriz original de Williams et al.",
+        "valor tal como lo publica la fuente": "35",
+        "unidad original": "genes",
+        "organismo, nodo o intervalo al que se aplica": "comparación dos frente a tres dominios",
+        "método o proxy": "matriz concatenada",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods; tabla 1",
+        "#": "C-028"
+      }
+    },
+    {
+      "id": "F-fila-7",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 7,
+      "sha256_objeto": "ad8284e2f82d3397063241e01ba7ae6700270f2077f41e5e5507227ad1d0725b",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valor.",
+      "motivo": "La cifra 2D pierde la aproximación explícita de P8; ST2 contiene valores por programa que no deben fundirse. Tabla 1 incorrecta. Aproximación no equivale a intervalo de incertidumbre.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3"
+      ],
+      "objeto": {
+        "magnitud": "log-verosimilitud de dos dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "−684701.2",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-029"
+      }
+    },
+    {
+      "id": "F-fila-8",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 8,
+      "sha256_objeto": "73cc4e2fd980e96d90236b03d8407ba680cfe46e0333eb5e749cd74e5a04e02d",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valor.",
+      "motivo": "La cifra 3D pierde la aproximación explícita de P8; ST2 distingue también búsqueda libre bajo restricción 3D frente topología 3D óptima restringida. Tabla 1 incorrecta.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3"
+      ],
+      "objeto": {
+        "magnitud": "log-verosimilitud de tres dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "−684716.1",
+        "unidad original": "log-verosimilitud",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+G4+F",
+        "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-029"
+      }
+    },
+    {
+      "id": "F-fila-9",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 9,
+      "sha256_objeto": "a89191e4e368112eda24405a3d835305a6fc5a73a8e491809bbcde0453226bf2",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valorAU.",
+      "motivo": "0.771 es la cifra 2D de P8; ST2 publica 0.767. Debe retener procedencia y discrepancia, no escoger. Tabla 1 incorrecta.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3"
+      ],
+      "objeto": {
+        "magnitud": "p de prueba AU para dos dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "0.771",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-030"
+      }
+    },
+    {
+      "id": "F-fila-10",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 10,
+      "sha256_objeto": "76d4e116705c4f2be636943709f71547c820d7996d5877bb8ff686b4d6f993d0",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valorAU.",
+      "motivo": "0.229 es la cifra 3D de P8 y ST11; ST2 publica 0.233. Debe retener procedencia y discrepancia, no escoger. Tabla 1 incorrecta.",
+      "evidencias": [
+        "P8",
+        "T1",
+        "SI-p3",
+        "SI-p12"
+      ],
+      "objeto": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+G4+F",
+        "valor tal como lo publica la fuente": "0.229",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "prueba approximately unbiased",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-030"
+      }
+    },
+    {
+      "id": "F-fila-11",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 11,
+      "sha256_objeto": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un valorAU.",
+      "motivo": "La referencia P10 y 0.036 son exactas como transcripción de ese pasaje; falta advertir ST11=0.0036. No se juzga falso P10 ni se sustituye por el suplemento.",
+      "evidencias": [
+        "P10",
+        "SI-p12"
+      ],
+      "objeto": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+        "#": "C-031"
+      }
+    },
+    {
+      "id": "F-fila-12",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 12,
+      "sha256_objeto": "3288a31b69cbdc52655b9e1c4bf8e5293e35bcbd669c85e012f4a273592c9141",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un soporte de nodo.",
+      "motivo": "El nodo es Eukaryota+Heimdallarchaeota y el modelo CAT+GTR+G4/SR4(35/81); no PP global de 2D ni CAT inespecífico.",
+      "evidencias": [
+        "P11",
+        "SI-p12"
+      ],
+      "objeto": {
+        "magnitud": "probabilidad posterior de dos dominios bajo CAT y SR4",
+        "valor tal como lo publica la fuente": "0.98",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+        "método o proxy": "CAT con recodificación SR4",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Supplementary analyses",
+        "#": "C-033"
+      }
+    },
+    {
+      "id": "F-fila-13",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 13,
+      "sha256_objeto": "824e4a37902347502eb1ed93ee8dbbc7349726ff344a64edaef230ba45585ac9",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "CONFORME",
+      "atomicidad": "Un recuento.",
+      "motivo": "21 proteínas/genes de la concatenación conservada entre tres dominios está documentado en P18/P30/F3. Conformidad de esta magnitud, no del compuesto C034 ni de una universalidad sin pérdidas en cada taxón.",
+      "evidencias": [
+        "P18",
+        "P30",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "magnitud": "proteínas universales en matriz ampliada",
+        "valor tal como lo publica la fuente": "21",
+        "unidad original": "proteínas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      }
+    },
+    {
+      "id": "F-fila-14",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 14,
+      "sha256_objeto": "12b6fc531d8174c30f37b54c7d29fa4eadacb9e0ba7ed15f862fbbd30a0c71d7",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "CONFORME",
+      "atomicidad": "Un recuento.",
+      "motivo": "43 proteínas/genes de la concatenación arqueano-eucariota está documentado en P18/P30/F3. No implica 125 taxones: ST11 identifica 92.",
+      "evidencias": [
+        "P18",
+        "P30",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "magnitud": "proteínas arqueano-eucariotas en matriz ampliada",
+        "valor tal como lo publica la fuente": "43",
+        "unidad original": "proteínas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "concatenación",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      }
+    },
+    {
+      "id": "F-fila-15",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 15,
+      "sha256_objeto": "502c6830cf7f75d8f61e1dfa340e642d4a3558275f486316646870f3980e0924",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un recuento, denominador sin acotar.",
+      "motivo": "125 pertenece al universo ampliado de P17/P18 y a la matriz 21 en ST11; la matriz 43 tiene 92. Methods P30 dice 92, no 125. No atribuir 125 a ambas matrices ni reconciliar el texto por resta.",
+      "evidencias": [
+        "P17",
+        "P18",
+        "P30",
+        "SI-p13"
+      ],
+      "objeto": {
+        "magnitud": "genomas en matrices ampliadas",
+        "valor tal como lo publica la fuente": "125",
+        "unidad original": "genomas",
+        "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+        "método o proxy": "muestreo taxonómico",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "observado",
+        "fuente con localizador": "S10 Methods",
+        "#": "C-034"
+      }
+    },
+    {
+      "id": "F-fila-16",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "fila": 16,
+      "sha256_objeto": "6037fa674be9b13f1f1fdf267e62fa7c29e664793bf903b311ead7a5b1a0ccef",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un soporte, sujeto incorrecto.",
+      "motivo": "PP 0.95 pertenece al clado Eukaryota+MAGLC3 bajo 43/92/SR4-CAT+GTR+G4; LC3 aislado no es el nodo con ese soporte.",
+      "evidencias": [
+        "P19",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": {
+        "magnitud": "probabilidad posterior del clado LC3",
+        "valor tal como lo publica la fuente": "0.95",
+        "unidad original": "probabilidad posterior",
+        "organismo, nodo o intervalo al que se aplica": "LC3 de Williams et al.",
+        "método o proxy": "análisis bayesiano",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 fig. 3",
+        "#": "C-036"
+      }
+    },
+    {
+      "id": "TABLA-fila-7",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "sha256_objeto": "7e14b8553d9850c1eabe681b20cf921790631acd65a57b0ab7a5790d7480a592",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "lnL sin ≈ y fuente S09 (2013) en una fila Williams 2020; reanálisis S10. El hueco BN428 no se certifica ni se cierra en esta revisión.",
+      "evidencias": [
+        "P8",
+        "SI-p3",
+        "SI-p12",
+        "R5"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-428]",
+        "análisis": "comparación de log-verosimilitud",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios tuvo mejor log-verosimilitud que tres dominios",
+        "soporte cuantitativo tal cual": "−684701.2 frente a −684716.1",
+        "límite o campo no publicado/localizado": "Los valores se transcriben sin conversión editorial.",
+        "filas y fuentes": "C-028–C-029; S09 resultados; BN-115"
+      }
+    },
+    {
+      "id": "TABLA-fila-8",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "sha256_objeto": "f8ebe4e23449a9fff95a34dc64fdb0011cb46880e4ec44f7a154be5e7c24e991",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "AU de P8 sin discrepancia ST2; fuente S09 en lugar de S10. BN429 no revisada integralmente.",
+      "evidencias": [
+        "P8",
+        "SI-p3",
+        "SI-p12",
+        "R5"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-429]",
+        "análisis": "prueba AU",
+        "modelo": "LG+G4+F",
+        "resultado publicado": "dos dominios frente a tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.771 frente a 0.229",
+        "límite o campo no publicado/localizado": "Valores publicados de una prueba de topología.",
+        "filas y fuentes": "C-030; S09 resultados; BN-115"
+      }
+    },
+    {
+      "id": "TABLA-fila-9",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "sha256_objeto": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "Modelo/rechazo/localizador P10 correctos;AU 0.036 no acompañado de ST11=0.0036. BN430/BN115 no revisadas integralmente.",
+      "evidencias": [
+        "P10",
+        "SI-p12"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115"
+      }
+    },
+    {
+      "id": "TABLA-fila-10",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "sha256_objeto": "945f63b97e42217496a0e4eb9173bff14cb058a50472bf20ce8e454e56c82c8c",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "Máximo debe referirse a Eukaryota+Asgard; Fig 1/ST11 publican PP 1. Fuente S09 incorrecta. No se convierte este hallazgo en cierre BN431/BN115.",
+      "evidencias": [
+        "P10",
+        "F1",
+        "SI-p12",
+        "R5"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-431]",
+        "análisis": "inferencia bayesiana",
+        "modelo": "CAT+GTR+G4",
+        "resultado publicado": "dos dominios",
+        "soporte cuantitativo tal cual": "apoyo posterior máximo",
+        "límite o campo no publicado/localizado": "No consta un valor numérico adicional en la afirmación recuperada [BN-115].",
+        "filas y fuentes": "C-032; S09 resultados; BN-115"
+      }
+    },
+    {
+      "id": "TABLA-fila-11",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "sha256_objeto": "f594f56feb4ba719fb5b1aeaa3ef55946f2306266edbeceb72c99b9d929b8cc4",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "CAT incompleto; PP 0.98 sin nodo Eukaryota+Heimdallarchaeota; fuente S09 incorrecta. Las consultas BN432–434 se preservan, no se adjudican aquí.",
+      "evidencias": [
+        "P11",
+        "SI-p12",
+        "R5"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes con recodificación SR4",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-432]",
+        "análisis": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-433]",
+        "modelo": "CAT con recodificación SR4",
+        "resultado publicado": "dos dominios",
+        "soporte cuantitativo tal cual": "PP = 0.98",
+        "límite o campo no publicado/localizado": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-434]",
+        "filas y fuentes": "C-033; S09 resultados; BN-115"
+      }
+    },
+    {
+      "id": "TABLA-fila-12",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "sha256_objeto": "c50f9ab1294eeef985d13ab914cf0ddf1cfa8abf1cbaabfd53c56e2890f12402",
+      "algoritmo_huella": "SHA256(JSON fila ordenado por clave, separadores compactos + LF)",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Fila multicolumna: revisión por componente.",
+      "motivo": "Combina matrices 21/125 y 43/92; PP máximo con Heimdall corresponde a 43, mientras 21 SR4 tiene 0.79 para ese clado;LC3 carece del sujeto Eukaryota. Fuente S09 incorrecta. BN435 y estudios posteriores quedan fuera del cotejo primario S10.",
+      "evidencias": [
+        "P17",
+        "P18",
+        "P19",
+        "F3",
+        "SI-p13",
+        "R5"
+      ],
+      "objeto": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "21 proteínas universales y 43 proteínas arqueano-eucariotas",
+        "muestreo taxonómico": "125 genomas",
+        "análisis": "análisis de matrices ampliadas",
+        "modelo": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-435]",
+        "resultado publicado": "Eukaryota dentro de Asgard",
+        "soporte cuantitativo tal cual": "apoyo máximo para la asociación con Heimdallarchaeia; LC3 PP = 0.95",
+        "límite o campo no publicado/localizado": "La división asgard concreta fue modificada por estudios posteriores.",
+        "filas y fuentes": "C-034–C-036; S09 resultados; BN-115"
+      }
+    },
+    {
+      "id": "PROSA-L51-O1",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "fila": 51,
+      "sha256_objeto": "d3c9443ce2aac975f73106bcbac54046f6e7e77ccbce69a74b8d2ea5b7d3f5c9",
+      "algoritmo_huella": "SHA256(línea completa + LF); ordinal y texto exacto fijados en snapshot",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Una dimensión con universo contextual.",
+      "motivo": "43 está dentro del universo 125 según P18/ST11, pero su muestreo efectivo es 92; citar Methods sin advertir que P30 dice 92 e incluye bacterias mezcla denominadores y discrepancia. Debe precisar 21/125 y 43/92 por fuente nominal.",
+      "evidencias": [
+        "P17",
+        "P18",
+        "P30",
+        "SI-p13"
+      ],
+      "objeto": "Williams et al. analizaron una matriz de 43 proteínas arqueano-eucariotas dentro de un muestreo de 125 genomas. [C-034; S10 métodos]"
+    },
+    {
+      "id": "PROSA-L51-O2",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "fila": 51,
+      "sha256_objeto": "d3c9443ce2aac975f73106bcbac54046f6e7e77ccbce69a74b8d2ea5b7d3f5c9",
+      "algoritmo_huella": "SHA256(línea completa + LF); ordinal y texto exacto fijados en snapshot",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Una relación.",
+      "motivo": "Asociación amplia sí está respaldada para 43 SR4, pero su anclaje C035 dice grupo_hermano_de del conjunto completo; Fig 3b/P19 fijan Eukaryota+LC3 dentro de Heimdall. Hace falta concordancia prosa/SPO sin tomar Fig 3a como sustituto.",
+      "evidencias": [
+        "P19",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": "En ese análisis recuperaron a Eukaryota asociado con Heimdallarchaeia. [C-035; S10 fig. 3]"
+    },
+    {
+      "id": "PROSA-L51-O3",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "fila": 51,
+      "sha256_objeto": "d3c9443ce2aac975f73106bcbac54046f6e7e77ccbce69a74b8d2ea5b7d3f5c9",
+      "algoritmo_huella": "SHA256(línea completa + LF); ordinal y texto exacto fijados en snapshot",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Un soporte más limitación temporal.",
+      "motivo": "PP 0.95 corresponde al clado Eukaryota+LC3, no al clado LC3. La cautela sobre futuros muestreos no corrige el nodo equivocado.",
+      "evidencias": [
+        "P19",
+        "F3",
+        "SI-p13"
+      ],
+      "objeto": "El clado LC3 obtuvo PP = 0,95; se conserva como resultado de esa matriz, no como posición inmutable frente a muestreos posteriores. [C-036; S10 fig. 3]"
+    },
+    {
+      "id": "PROSA-L55",
+      "ruta": "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md",
+      "fila": 55,
+      "sha256_objeto": "b9b38ab40f295d3fa931a6763cb29b5f058f86b4812a08a135c730bd61519f61",
+      "algoritmo_huella": "SHA256(línea completa + LF); ordinal y texto exacto fijados en snapshot",
+      "dictamen": "NO_CONFORME",
+      "atomicidad": "Referencia agregada, no proposición científica.",
+      "motivo": "Tabla 1 no prueba las cifras 35/lnL/AU del bloque; remite a distancias de cuartetos. Deben fijarse pasajes P8/P10 y ST2/ST11 sin usar esta referencia colectiva como cierre individual.",
+      "evidencias": [
+        "T1",
+        "P8",
+        "P10",
+        "SI-p3",
+        "SI-p12",
+        "SI-p13"
+      ],
+      "objeto": "[C-028–C-036; S10 tabla 1; figs. 1–3; material suplementario]"
+    }
+  ],
+  "celdas": [
+    {
+      "id": "TABLA-fila-7::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad de Williams 2020/S10; PDFcubierta.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "matriz",
+      "texto": "35 genes",
+      "sha256_texto_lf": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+      "dictamen": "CONFORME",
+      "motivo": "35 genes en P8/ST11; procedenciaDaCunha, no nuevo inventariooriginal.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "muestreo taxonómico",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-428]",
+      "sha256_texto_lf": "3c0bce50203866678f4b44f93a2647f3f7d19073f3350532b975b4c9500c2d9c",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "No adjudico BN428; ST11 aporta 81 taxones como dato positivo distinto.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "análisis",
+      "texto": "comparación de log-verosimilitud",
+      "sha256_texto_lf": "64ce6f9a8ecf78240ff18e112c44c3428cf63302e7ed72e22a4a8e6016fb94b8",
+      "dictamen": "CONFORME",
+      "motivo": "Comparación de log-verosimilitudes: P8/ST2.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "modelo",
+      "texto": "LG+G4+F",
+      "sha256_texto_lf": "e103ae7a326c0b8800e02feb88788542a5ffbbe15566a453d45fa0b6645d68f2",
+      "dictamen": "CONFORME",
+      "motivo": "LG+G4+F: P8/ST2.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "resultado publicado",
+      "texto": "dos dominios tuvo mejor log-verosimilitud que tres dominios",
+      "sha256_texto_lf": "8114587b34f1d1ad0e180082a53d6adc863e95c2a2cbbbff38d7af57d3be0cd2",
+      "dictamen": "CONFORME",
+      "motivo": "La mayor lnL2D está expresamente publicada; no implica diferencia significativa.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "−684701.2 frente a −684716.1",
+      "sha256_texto_lf": "7d1443cb441e11238ccbcf840d64b45c9db596fd1f76980c7752d7b068bb801c",
+      "dictamen": "NO_CONFORME",
+      "motivo": "Faltan≈ respecto P8; ST2 discrimina programas y restricciones.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "Los valores se transcriben sin conversión editorial.",
+      "sha256_texto_lf": "7f1c6f3e8549b4c3260d4d7f43a8cba38cc36c32b21eba826c2c7557972a84e9",
+      "dictamen": "NO_CONFORME",
+      "motivo": "La supresión de≈ impide decir que se transcribe sin alteración de precisión.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-7::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 7,
+      "columna": "filas y fuentes",
+      "texto": "C-028–C-029; S09 resultados; BN-115",
+      "sha256_texto_lf": "88a54aa25cbe1221daf56c0c29e4b5422e422ffe7a151461cdb50281d4ac24d0",
+      "dictamen": "NO_CONFORME",
+      "motivo": "S09 designa 2013; la evidencia leída es S10(2020). BN115 no adjudicada.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad S10, no S09.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "matriz",
+      "texto": "35 genes",
+      "sha256_texto_lf": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+      "dictamen": "CONFORME",
+      "motivo": "35 genes: P8/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "muestreo taxonómico",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-429]",
+      "sha256_texto_lf": "1a03616645acef661ec2e38b9ececba7431216a555301fb6d84a1a0322dc5a35",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN429 no adjudicada;81 taxones publicados ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "análisis",
+      "texto": "prueba AU",
+      "sha256_texto_lf": "b785088e57ba1bba9626c8d23cd99911d927bc829c538e137eecd6b4923889ac",
+      "dictamen": "CONFORME",
+      "motivo": "Prueba AU: P8/ST2.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "modelo",
+      "texto": "LG+G4+F",
+      "sha256_texto_lf": "e103ae7a326c0b8800e02feb88788542a5ffbbe15566a453d45fa0b6645d68f2",
+      "dictamen": "CONFORME",
+      "motivo": "LG+G4+F: P8/ST2.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "resultado publicado",
+      "texto": "dos dominios frente a tres dominios",
+      "sha256_texto_lf": "e14d441d13505ecb0a83d2391a8cbed41e5a4ce12b9e532b539bd509806fff53",
+      "dictamen": "CONFORME",
+      "motivo": "Comparación de las dos topologías explícita.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "AU = 0.771 frente a 0.229",
+      "sha256_texto_lf": "72fa30feb34c0a70f6cb00724a7083eb3b0094ec25a5d20b37b4b6392519c9e5",
+      "dictamen": "NO_CONFORME",
+      "motivo": "No recoge 0.767/0.233 de ST2 junto a 0.771/0.229 de P8.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "Valores publicados de una prueba de topología.",
+      "sha256_texto_lf": "4456ede8b944c8ea53ff07579dc686b31d593c4274b13eb8e8306ae6102dc500",
+      "dictamen": "NO_CONFORME",
+      "motivo": "Valores publicados sí, pero no se declara su discrepancia intrafuente.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-8::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 8,
+      "columna": "filas y fuentes",
+      "texto": "C-030; S09 resultados; BN-115",
+      "sha256_texto_lf": "f033158fbaaad385e4deece8eedf3a245f17e51813b0f81ad0615110b8eaa226",
+      "dictamen": "NO_CONFORME",
+      "motivo": "Atribuye a S09 el análisis S10; BN115 no adjudicada.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "matriz",
+      "texto": "35 genes",
+      "sha256_texto_lf": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+      "dictamen": "CONFORME",
+      "motivo": "35 genes: P10/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "muestreo taxonómico",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+      "sha256_texto_lf": "7446919575074ccb3c46b5ea5d05bb50efdf37fb93fdf5323cfe3c6f5ec436eb",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN430 no adjudicada;81 taxones publicados ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "análisis",
+      "texto": "prueba AU",
+      "sha256_texto_lf": "b785088e57ba1bba9626c8d23cd99911d927bc829c538e137eecd6b4923889ac",
+      "dictamen": "CONFORME",
+      "motivo": "Prueba AU: P10/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "modelo",
+      "texto": "LG+C60+G4+F",
+      "sha256_texto_lf": "98710ca45520c393ed81279b7e3a4f74727732c22598848040a2ea0d324d5095",
+      "dictamen": "CONFORME",
+      "motivo": "LG+C60+G4+F: P10/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "resultado publicado",
+      "texto": "rechazo de tres dominios",
+      "sha256_texto_lf": "0d308323dab172c7a8c12de9f95988b3fb14effc3059bc36c88a059146c7a590",
+      "dictamen": "CONFORME",
+      "motivo": "Ambos pasajes publican rechazo 3D condicionado al modelo.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "AU = 0.036",
+      "sha256_texto_lf": "f63623175e52e90cf2b2eb28538788d823842ffa7abdcfe113f35caee9d4009d",
+      "dictamen": "NO_CONFORME",
+      "motivo": "0.036 es P10; ST11 dice 0.0036 y no se declara.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "La conclusión queda condicionada al modelo indicado.",
+      "sha256_texto_lf": "fd7afc3e4c4582e0650ae3347d7d7707a8092bfe3ad1edc2c74843c705d19f20",
+      "dictamen": "CONFORME",
+      "motivo": "La condición de modelo es legítima; no resuelve la discrepancia.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-9::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 9,
+      "columna": "filas y fuentes",
+      "texto": "C-031; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115",
+      "sha256_texto_lf": "79232397df21d98be7c3c75c0edb8add6e4c9ca542828a9dd32aa28c6f6711f2",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "Componente S10/P10 correctamente enlazado; BN115 queda fuera del cotejo integral.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "matriz",
+      "texto": "35 genes",
+      "sha256_texto_lf": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+      "dictamen": "CONFORME",
+      "motivo": "35 genes: P10/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "muestreo taxonómico",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-431]",
+      "sha256_texto_lf": "e613e87af689bb006a73151d47c1791c60d6bcabc74b1b0ebeef2b97ebab27a2",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN431 no adjudicada;81 taxones publicados ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "análisis",
+      "texto": "inferencia bayesiana",
+      "sha256_texto_lf": "04f93944b137c6a970e2ab460cd3299f970d89df70a20df236599147da8463f4",
+      "dictamen": "CONFORME",
+      "motivo": "Inferencia bayesiana explícita: P10/F1.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "modelo",
+      "texto": "CAT+GTR+G4",
+      "sha256_texto_lf": "d2c307458a8f8e8c34e11ede8f31e6d319b3b664f76343e000e0a33b8355a852",
+      "dictamen": "CONFORME",
+      "motivo": "CAT+GTR+G4: P10/F1.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "resultado publicado",
+      "texto": "dos dominios",
+      "sha256_texto_lf": "4f56390452a2951b0400c920b6baab1069cd7b6961dccd66e20e57792a8e3d04",
+      "dictamen": "CONFORME",
+      "motivo": "Se recupera una topología 2D en el análisis.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "apoyo posterior máximo",
+      "sha256_texto_lf": "2e3e7cf3620267fa39b107d1e0e4dd63243ba0d44b36549b605c5adac7b6d92c",
+      "dictamen": "NO_CONFORME",
+      "motivo": "El máximo pertenece a Eukaryota+Asgard muestreados; no al árbol completo.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "No consta un valor numérico adicional en la afirmación recuperada [BN-115].",
+      "sha256_texto_lf": "668ffdb302c004ee3e02c932ffe8803b22a6c731d8dcc22bb4f95196ec31e65d",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "No adjudico BN115; Fig 1/ST11 sí muestran PP 1 para el nodo concreto.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-10::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 10,
+      "columna": "filas y fuentes",
+      "texto": "C-032; S09 resultados; BN-115",
+      "sha256_texto_lf": "f98cdf690042979077c8facf75384f17840c4fbe6be45c574bdb8fea80316a99",
+      "dictamen": "NO_CONFORME",
+      "motivo": "S09 no identifica este estudio; evidencia S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "matriz",
+      "texto": "35 genes con recodificación SR4",
+      "sha256_texto_lf": "f7503cec443a6d069f018859d7c400b97e8317a59669fb31837072a79eb18801",
+      "dictamen": "CONFORME",
+      "motivo": "35 genes recodificados SR4: P11/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "muestreo taxonómico",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-432]",
+      "sha256_texto_lf": "b96becb05180c3220a786450180dff81d9c053935b0507fcf4743c76450b01d0",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN432 no adjudicada;81 taxones publicados ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "análisis",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-433]",
+      "sha256_texto_lf": "3479e03261041237e9f740870f7a5bed03e0379efb8057809ff8088d9c75b79a",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN433 no adjudicada; P11/ST11 describen el análisis positivo.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "modelo",
+      "texto": "CAT con recodificación SR4",
+      "sha256_texto_lf": "8260344f3b5774a386b30a7691dc0e11129d8b860087b6189e1b94401ae79238",
+      "dictamen": "NO_CONFORME",
+      "motivo": "CAT no conserva la especificación CAT+GTR+G4.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "resultado publicado",
+      "texto": "dos dominios",
+      "sha256_texto_lf": "4f56390452a2951b0400c920b6baab1069cd7b6961dccd66e20e57792a8e3d04",
+      "dictamen": "CONFORME",
+      "motivo": "El análisis recupera 2D: P11/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "PP = 0.98",
+      "sha256_texto_lf": "b849705c5b0fd54bc9f4c2326faca512e0a1b35389c13a909d34447472e2f791",
+      "dictamen": "NO_CONFORME",
+      "motivo": "PP 0.98 corresponde al clado Eukaryota+Heimdallarchaeota.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-434]",
+      "sha256_texto_lf": "1c100508821c786a508a1876f8adcdd277bc85accd2d4d635f5a65642f3e1439",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "No se revisa la consulta histórica BN434 ni se certifica su resultado.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-11::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 11,
+      "columna": "filas y fuentes",
+      "texto": "C-033; S09 resultados; BN-115",
+      "sha256_texto_lf": "e097c45a44e0bc25862d91f1afb3f9595d4082969fbad7fbf46d9bf5ab7b50ed",
+      "dictamen": "NO_CONFORME",
+      "motivo": "S09 no identifica el estudio S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::estudio",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "estudio",
+      "texto": "Williams et al. 2020",
+      "sha256_texto_lf": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+      "dictamen": "CONFORME",
+      "motivo": "Identidad S10.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::matriz",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "matriz",
+      "texto": "21 proteínas universales y 43 proteínas arqueano-eucariotas",
+      "sha256_texto_lf": "b6981a0bb8e0c55c9b6a331faa4b63b73f0b331aba2c04f0975415285a669f82",
+      "dictamen": "CONFORME",
+      "motivo": "21/43 se publican como matrices distintas: P18/P30/ST11.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::muestreo taxonómico",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "muestreo taxonómico",
+      "texto": "125 genomas",
+      "sha256_texto_lf": "f65a997eebec4528d296c36052c317a6d708c946b01da001bc174c3d8617a514",
+      "dictamen": "NO_CONFORME",
+      "motivo": "125 es universo/matriz 21; matriz 43 tiene 92 según ST11. La fila no distingue.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::análisis",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "análisis",
+      "texto": "análisis de matrices ampliadas",
+      "sha256_texto_lf": "b92f8406168697551617a0f60ef15697bb94803b5b17bf8ed772bad5218d82de",
+      "dictamen": "CONFORME",
+      "motivo": "Análisis ampliados publicados, sin adjudicar un único modelo por esta etiqueta.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::modelo",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "modelo",
+      "texto": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-435]",
+      "sha256_texto_lf": "6c9826c9ff3ac0e7e396e06c0fd6e414fc8c62ff3e68f7e397c7a3f811b94be9",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "BN435 no adjudicada; ST11 distingue CAT+GTR+G4 original y SR4.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::resultado publicado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "resultado publicado",
+      "texto": "Eukaryota dentro de Asgard",
+      "sha256_texto_lf": "b15a692cdeb5724a07bdd5a4f7108ee2336ccb042c4dd6059009afc4cbc6328d",
+      "dictamen": "CONFORME",
+      "motivo": "El resultado general de inserción asgard está publicado; no precisa nodo ni soporte.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::soporte cuantitativo tal cual",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "soporte cuantitativo tal cual",
+      "texto": "apoyo máximo para la asociación con Heimdallarchaeia; LC3 PP = 0.95",
+      "sha256_texto_lf": "db8fd71ece23212bb9b4d10ca1aa4356d7d9ffaefd70a66289b8ae04c4248ec0",
+      "dictamen": "NO_CONFORME",
+      "motivo": "MáximoHeimdall es matriz 43;21 SR4 tiene 0.79. El 0.95 es Eukaryota+LC3.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::límite o campo no publicado/localizado",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "límite o campo no publicado/localizado",
+      "texto": "La división asgard concreta fue modificada por estudios posteriores.",
+      "sha256_texto_lf": "9909e9d0761cc10956c26ead7a3c07931fae671ab44754c6df04a4c64e5b1f84",
+      "dictamen": "NO_VERIFICABLE",
+      "motivo": "Los estudios posteriores no se cotejan contra S10(2020) ni se infieren desde él.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    },
+    {
+      "id": "TABLA-fila-12::filas y fuentes",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "fila": 12,
+      "columna": "filas y fuentes",
+      "texto": "C-034–C-036; S09 resultados; BN-115",
+      "sha256_texto_lf": "7d914a5c154fdfa3a4c24cbbf4f1a8845b43c0bd3a3e86e44e47b86bf404f82e",
+      "dictamen": "NO_CONFORME",
+      "motivo": "S09 sustituye erróneamente S10 y los soportes no están asignados a la matriz.",
+      "alcance": "Cotejo primario de esta celda con S10; no firma global ni aprobación de BN"
+    }
+  ],
+  "snapshot_lectura": {
+    "fecha_captura_utc": "2026-09-27T03:34:59Z",
+    "huellas_antes": {
+      "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+      "docs/auditorias/protocolo_censo_semantico_2026-08-13.md": "d312f22b287f94eac3a402af049977f69d56842c2d1638930d77df6ce3f32e15",
+      "docs/auditorias/HANDOFF_CODEX_2026-08-13.md": "dd1ff0dc92cd7c9194693e2bb0b325d2e0fef1fcfcfe9b03c4dca119f749bbd3",
+      "exports/acceso_fuentes.csv": "8dc16c54c1e44e6b126efec71517c6756246233d0c1c4dd1176d914bc1229959",
+      "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+      "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768"
+    },
+    "huellas_despues": {
+      "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/C01-PROMPT-INVESTIGACION.md": "5245393c50c7a1620ef81f42cdfd92c5632b9218a153a0e0ad2d560a3314ffb3",
+      "docs/auditorias/protocolo_censo_semantico_2026-08-13.md": "d312f22b287f94eac3a402af049977f69d56842c2d1638930d77df6ce3f32e15",
+      "docs/auditorias/HANDOFF_CODEX_2026-08-13.md": "dd1ff0dc92cd7c9194693e2bb0b325d2e0fef1fcfcfe9b03c4dca119f749bbd3",
+      "exports/acceso_fuentes.csv": "8dc16c54c1e44e6b126efec71517c6756246233d0c1c4dd1176d914bc1229959",
+      "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+      "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.pdf": "6591a788679345020c30c61533273fa385e72d19f1297d6115f85ec3d3455768"
+    },
+    "entradas_estables": true,
+    "afirmaciones": [
+      {
+        "id": "C-028",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 13,
+        "objeto": {
+          "#": "C-028",
+          "Afirmación": "La matriz original del análisis de Williams et al. contenía 35 genes.",
+          "Sujeto": "matriz original de Williams et al. 2020",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "35 genes",
+          "Atribución": "expresa",
+          "Fuente": "S10 §Methods, tabla 1",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "La fila registra una sola dimensión de matriz; las topologías comparadas se documentan en filas separadas.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "f2da877ab7b8b5cc7c0bd887fc0911342d0854f906d5946adc0249ae1779a286",
+        "huella_fila_json": "b3f6c1753468b42e4ddcec6029892f5c1cb8e9230e6fa0159f66bb2999de2a62"
+      },
+      {
+        "id": "C-029",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 14,
+        "objeto": {
+          "#": "C-029",
+          "Afirmación": "Bajo LG+G4+F, Williams et al. obtuvieron log-verosimilitudes de −684701.2 para dos dominios y −684716.1 para tres dominios.",
+          "Sujeto": "comparación LG+G4+F de Williams et al. 2020",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "−684701.2 y −684716.1",
+          "Atribución": "expresa",
+          "Fuente": "S10 tabla 1",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Los valores se transcriben sin convertirlos a otra medida.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "431e7b39ac5c166f312398b73299eb50dafb55e4a9e30c6ca33e968416bbc3f0",
+        "huella_fila_json": "86458ff1374498cedbaf96b0bde0c5f33d2f55d0fc8b90fef48a51ebaed1076e"
+      },
+      {
+        "id": "C-030",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 15,
+        "objeto": {
+          "#": "C-030",
+          "Afirmación": "Bajo LG+G4+F, la prueba AU de Williams et al. dio 0.771 para dos dominios y 0.229 para tres dominios.",
+          "Sujeto": "prueba AU bajo LG+G4+F",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "0.771 y 0.229",
+          "Atribución": "expresa",
+          "Fuente": "S10 tabla 1",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Valores publicados de la prueba de topología.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "371a2ac0d8a20d900f708319c9148bc7bd37eeabe92386eb726137c7e1138d05",
+        "huella_fila_json": "2b3a39b0e4565d670f9a635773ea757e775ed85cd4bdb73fff27aa6557293095"
+      },
+      {
+        "id": "C-031",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 16,
+        "objeto": {
+          "#": "C-031",
+          "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+          "Sujeto": "C-018",
+          "Predicado": "cuestionado_por",
+          "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+          "Atribución": "expresa",
+          "Fuente": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10): «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "71123891b619b3b7be780e7b80cb415a772df7980e3d367dfd950709d6396135",
+        "huella_fila_json": "d602733bd48a4264d736d216d28750994bd6b9e7d6e616a378176c7e0f5d96c0"
+      },
+      {
+        "id": "C-032",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 17,
+        "objeto": {
+          "#": "C-032",
+          "Afirmación": "Bajo CAT+GTR+G4, Williams et al. recuperaron el árbol de dos dominios con apoyo posterior máximo.",
+          "Sujeto": "árbol de dos dominios bajo CAT+GTR+G4",
+          "Predicado": "respaldado_por",
+          "Objeto": "probabilidad posterior máxima",
+          "Atribución": "expresa",
+          "Fuente": "S10 fig. 1; Supplementary analyses",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Modelo y apoyo son condición y resultado de una única inferencia filogenética publicada.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "6861570d1069f93fcedad1712b94aa93bb32bf999051d155013c651c782af5ca",
+        "huella_fila_json": "1d7d3d1634a8668b35e8bd6e10033372165898e86d9b36608d87626fdf46aab3"
+      },
+      {
+        "id": "C-033",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 18,
+        "objeto": {
+          "#": "C-033",
+          "Afirmación": "La recodificación SR4 bajo CAT produjo una probabilidad posterior de 0.98 para el árbol de dos dominios.",
+          "Sujeto": "árbol de dos dominios bajo CAT y SR4",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "PP = 0.98",
+          "Atribución": "expresa",
+          "Fuente": "S10 Supplementary analyses",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "La recodificación fue una prueba contra heterogeneidad composicional.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "a8a10b8c9a8445b69407f6627993e2b5e688f316421243736f19e6015c2da7c9",
+        "huella_fila_json": "e014842905ebeac80507b7b7f03b5654d4a9b05032ef268616c86f227726a12e"
+      },
+      {
+        "id": "C-034",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 19,
+        "objeto": {
+          "#": "C-034",
+          "Afirmación": "El diseño ampliado de Williams et al. comprendió una matriz de 21 proteínas universales y otra de 43 proteínas arqueano-eucariotas, ambas dentro del muestreo de 125 genomas declarado.",
+          "Sujeto": "diseño ampliado de Williams et al. 2020",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "dos matrices emparejadas: 21 y 43 proteínas; muestreo común de 125 genomas",
+          "Atribución": "expresa",
+          "Fuente": "S10 §Methods, figs. 2–3",
+          "Aceptación": "no evaluado",
+          "Fuerza": "alta",
+          "Motivo": "Se conserva como un único vector de diseño experimental porque las dos matrices se comparan sobre el mismo muestreo; no se usa como tres magnitudes biológicas independientes.",
+          "Resolución": "resuelta",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "3857e921e59fcf33ed5068a1c2b3f4091e3706f09e6986d5e9dc1c0e98afa96b",
+        "huella_fila_json": "38c775230855d8423cf793f8ce6e6a859e741c53d9614a5b4c8c14566fdfc0c8"
+      },
+      {
+        "id": "C-035",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 20,
+        "objeto": {
+          "#": "C-035",
+          "Afirmación": "Williams et al. recuperaron a Eukaryota asociado con Heimdallarchaeia en el análisis citado.",
+          "Sujeto": "Eukaryota en Williams et al. 2020",
+          "Predicado": "grupo_hermano_de",
+          "Objeto": "Heimdallarchaeia",
+          "Atribución": "expresa",
+          "Fuente": "S10 fig. 3",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "El triple registra sólo la relación topológica; el tamaño de matriz y su apoyo se mantienen en afirmaciones cuantitativas separadas. Estudios posteriores con más muestreo recuperaron posiciones distintas.",
+          "Resolución": "sin resolver",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "d3f9a2f035140e5bb5e40577a9986c46471cf010673f4f5a56163d9c9227524c",
+        "huella_fila_json": "dceba51b2ad544f4e9049ad839daba8fa9da3ce3330b804f5430275f52d14230"
+      },
+      {
+        "id": "C-036",
+        "ruta": "data/afirmaciones/02.csv",
+        "fila": 21,
+        "objeto": {
+          "#": "C-036",
+          "Afirmación": "El clado LC3 del análisis de Williams et al. obtuvo PP = 0.95.",
+          "Sujeto": "clado LC3 de Williams et al. 2020",
+          "Predicado": "tiene_valor_medido",
+          "Objeto": "PP = 0.95",
+          "Atribución": "expresa",
+          "Fuente": "S10 Results, párrafo 4, «LC3) with high (PP = 0.95) support»",
+          "Aceptación": "no evaluado",
+          "Fuerza": "media",
+          "Motivo": "Es soporte cuantitativo de una matriz concreta, no de todas las topologías actuales.",
+          "Resolución": "sin resolver",
+          "Vigencia": "vigente"
+        },
+        "huella_C": "2480a7b0d2d1963ce0c17a42d1a78458c255fe30a56598b2b22519bc35423882",
+        "huella_fila_json": "9937c016e6fc0b3d68ac8baef9154a44a024e97dbe37351422a6478313af2da4"
+      }
+    ],
+    "magnitudes": [
+      {
+        "id": "F-fila-6",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 6,
+        "objeto": {
+          "magnitud": "genes de la matriz original de Williams et al.",
+          "valor tal como lo publica la fuente": "35",
+          "unidad original": "genes",
+          "organismo, nodo o intervalo al que se aplica": "comparación dos frente a tres dominios",
+          "método o proxy": "matriz concatenada",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S10 Methods; tabla 1",
+          "#": "C-028"
+        },
+        "huella_fila_json": "e003c7c5a10e9d6f2a9366efb6de8d03e1687b49c35cd32230c3eaf6198d776a"
+      },
+      {
+        "id": "F-fila-7",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 7,
+        "objeto": {
+          "magnitud": "log-verosimilitud de dos dominios bajo LG+G4+F",
+          "valor tal como lo publica la fuente": "−684701.2",
+          "unidad original": "log-verosimilitud",
+          "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+          "método o proxy": "LG+G4+F",
+          "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 tabla 1",
+          "#": "C-029"
+        },
+        "huella_fila_json": "ad8284e2f82d3397063241e01ba7ae6700270f2077f41e5e5507227ad1d0725b"
+      },
+      {
+        "id": "F-fila-8",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 8,
+        "objeto": {
+          "magnitud": "log-verosimilitud de tres dominios bajo LG+G4+F",
+          "valor tal como lo publica la fuente": "−684716.1",
+          "unidad original": "log-verosimilitud",
+          "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+          "método o proxy": "LG+G4+F",
+          "incertidumbre publicada": "no consta en la fuente como incertidumbre",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 tabla 1",
+          "#": "C-029"
+        },
+        "huella_fila_json": "73cc4e2fd980e96d90236b03d8407ba680cfe46e0333eb5e749cd74e5a04e02d"
+      },
+      {
+        "id": "F-fila-9",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 9,
+        "objeto": {
+          "magnitud": "p de prueba AU para dos dominios bajo LG+G4+F",
+          "valor tal como lo publica la fuente": "0.771",
+          "unidad original": "p AU",
+          "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+          "método o proxy": "prueba approximately unbiased",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 tabla 1",
+          "#": "C-030"
+        },
+        "huella_fila_json": "a89191e4e368112eda24405a3d835305a6fc5a73a8e491809bbcde0453226bf2"
+      },
+      {
+        "id": "F-fila-10",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 10,
+        "objeto": {
+          "magnitud": "p de prueba AU para tres dominios bajo LG+G4+F",
+          "valor tal como lo publica la fuente": "0.229",
+          "unidad original": "p AU",
+          "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+          "método o proxy": "prueba approximately unbiased",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 tabla 1",
+          "#": "C-030"
+        },
+        "huella_fila_json": "76d4e116705c4f2be636943709f71547c820d7996d5877bb8ff686b4d6f993d0"
+      },
+      {
+        "id": "F-fila-11",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 11,
+        "objeto": {
+          "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+          "valor tal como lo publica la fuente": "0.036",
+          "unidad original": "p AU",
+          "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+          "método o proxy": "LG+C60+G4+F y prueba AU",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+          "#": "C-031"
+        },
+        "huella_fila_json": "8d9d1c62d5dfec55af5bcece47efc9f3d36d1b9e9e3f500af4758faa4c3d1051"
+      },
+      {
+        "id": "F-fila-12",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 12,
+        "objeto": {
+          "magnitud": "probabilidad posterior de dos dominios bajo CAT y SR4",
+          "valor tal como lo publica la fuente": "0.98",
+          "unidad original": "probabilidad posterior",
+          "organismo, nodo o intervalo al que se aplica": "topología de dos dominios",
+          "método o proxy": "CAT con recodificación SR4",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 Supplementary analyses",
+          "#": "C-033"
+        },
+        "huella_fila_json": "3288a31b69cbdc52655b9e1c4bf8e5293e35bcbd669c85e012f4a273592c9141"
+      },
+      {
+        "id": "F-fila-13",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 13,
+        "objeto": {
+          "magnitud": "proteínas universales en matriz ampliada",
+          "valor tal como lo publica la fuente": "21",
+          "unidad original": "proteínas",
+          "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+          "método o proxy": "concatenación",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S10 Methods",
+          "#": "C-034"
+        },
+        "huella_fila_json": "824e4a37902347502eb1ed93ee8dbbc7349726ff344a64edaef230ba45585ac9"
+      },
+      {
+        "id": "F-fila-14",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 14,
+        "objeto": {
+          "magnitud": "proteínas arqueano-eucariotas en matriz ampliada",
+          "valor tal como lo publica la fuente": "43",
+          "unidad original": "proteínas",
+          "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+          "método o proxy": "concatenación",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S10 Methods",
+          "#": "C-034"
+        },
+        "huella_fila_json": "12b6fc531d8174c30f37b54c7d29fa4eadacb9e0ba7ed15f862fbbd30a0c71d7"
+      },
+      {
+        "id": "F-fila-15",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 15,
+        "objeto": {
+          "magnitud": "genomas en matrices ampliadas",
+          "valor tal como lo publica la fuente": "125",
+          "unidad original": "genomas",
+          "organismo, nodo o intervalo al que se aplica": "Williams et al. 2020",
+          "método o proxy": "muestreo taxonómico",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "observado",
+          "fuente con localizador": "S10 Methods",
+          "#": "C-034"
+        },
+        "huella_fila_json": "502c6830cf7f75d8f61e1dfa340e642d4a3558275f486316646870f3980e0924"
+      },
+      {
+        "id": "F-fila-16",
+        "ruta": "data/apendices/F_magnitudes.csv",
+        "fila": 16,
+        "objeto": {
+          "magnitud": "probabilidad posterior del clado LC3",
+          "valor tal como lo publica la fuente": "0.95",
+          "unidad original": "probabilidad posterior",
+          "organismo, nodo o intervalo al que se aplica": "LC3 de Williams et al.",
+          "método o proxy": "análisis bayesiano",
+          "incertidumbre publicada": "n/a",
+          "observado o inferido": "inferido",
+          "fuente con localizador": "S10 fig. 3",
+          "#": "C-036"
+        },
+        "huella_fila_json": "6037fa674be9b13f1f1fdf267e62fa7c29e664793bf903b311ead7a5b1a0ccef"
+      }
+    ],
+    "filas_tabla": [
+      {
+        "id": "TABLA-fila-7",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 7,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "35 genes",
+          "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-428]",
+          "análisis": "comparación de log-verosimilitud",
+          "modelo": "LG+G4+F",
+          "resultado publicado": "dos dominios tuvo mejor log-verosimilitud que tres dominios",
+          "soporte cuantitativo tal cual": "−684701.2 frente a −684716.1",
+          "límite o campo no publicado/localizado": "Los valores se transcriben sin conversión editorial.",
+          "filas y fuentes": "C-028–C-029; S09 resultados; BN-115"
+        },
+        "huella_fila_json": "7e14b8553d9850c1eabe681b20cf921790631acd65a57b0ab7a5790d7480a592",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+          "muestreo taxonómico": "3c0bce50203866678f4b44f93a2647f3f7d19073f3350532b975b4c9500c2d9c",
+          "análisis": "64ce6f9a8ecf78240ff18e112c44c3428cf63302e7ed72e22a4a8e6016fb94b8",
+          "modelo": "e103ae7a326c0b8800e02feb88788542a5ffbbe15566a453d45fa0b6645d68f2",
+          "resultado publicado": "8114587b34f1d1ad0e180082a53d6adc863e95c2a2cbbbff38d7af57d3be0cd2",
+          "soporte cuantitativo tal cual": "7d1443cb441e11238ccbcf840d64b45c9db596fd1f76980c7752d7b068bb801c",
+          "límite o campo no publicado/localizado": "7f1c6f3e8549b4c3260d4d7f43a8cba38cc36c32b21eba826c2c7557972a84e9",
+          "filas y fuentes": "88a54aa25cbe1221daf56c0c29e4b5422e422ffe7a151461cdb50281d4ac24d0"
+        }
+      },
+      {
+        "id": "TABLA-fila-8",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 8,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "35 genes",
+          "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-429]",
+          "análisis": "prueba AU",
+          "modelo": "LG+G4+F",
+          "resultado publicado": "dos dominios frente a tres dominios",
+          "soporte cuantitativo tal cual": "AU = 0.771 frente a 0.229",
+          "límite o campo no publicado/localizado": "Valores publicados de una prueba de topología.",
+          "filas y fuentes": "C-030; S09 resultados; BN-115"
+        },
+        "huella_fila_json": "f8ebe4e23449a9fff95a34dc64fdb0011cb46880e4ec44f7a154be5e7c24e991",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+          "muestreo taxonómico": "1a03616645acef661ec2e38b9ececba7431216a555301fb6d84a1a0322dc5a35",
+          "análisis": "b785088e57ba1bba9626c8d23cd99911d927bc829c538e137eecd6b4923889ac",
+          "modelo": "e103ae7a326c0b8800e02feb88788542a5ffbbe15566a453d45fa0b6645d68f2",
+          "resultado publicado": "e14d441d13505ecb0a83d2391a8cbed41e5a4ce12b9e532b539bd509806fff53",
+          "soporte cuantitativo tal cual": "72fa30feb34c0a70f6cb00724a7083eb3b0094ec25a5d20b37b4b6392519c9e5",
+          "límite o campo no publicado/localizado": "4456ede8b944c8ea53ff07579dc686b31d593c4274b13eb8e8306ae6102dc500",
+          "filas y fuentes": "f033158fbaaad385e4deece8eedf3a245f17e51813b0f81ad0615110b8eaa226"
+        }
+      },
+      {
+        "id": "TABLA-fila-9",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 9,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "35 genes",
+          "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+          "análisis": "prueba AU",
+          "modelo": "LG+C60+G4+F",
+          "resultado publicado": "rechazo de tres dominios",
+          "soporte cuantitativo tal cual": "AU = 0.036",
+          "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+          "filas y fuentes": "C-031; S10 Results and Discussion → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115"
+        },
+        "huella_fila_json": "a597c1474b8ec44ec90b02709e7809e138ef150a8ad36ee0cb4e1e890e69a824",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+          "muestreo taxonómico": "7446919575074ccb3c46b5ea5d05bb50efdf37fb93fdf5323cfe3c6f5ec436eb",
+          "análisis": "b785088e57ba1bba9626c8d23cd99911d927bc829c538e137eecd6b4923889ac",
+          "modelo": "98710ca45520c393ed81279b7e3a4f74727732c22598848040a2ea0d324d5095",
+          "resultado publicado": "0d308323dab172c7a8c12de9f95988b3fb14effc3059bc36c88a059146c7a590",
+          "soporte cuantitativo tal cual": "f63623175e52e90cf2b2eb28538788d823842ffa7abdcfe113f35caee9d4009d",
+          "límite o campo no publicado/localizado": "fd7afc3e4c4582e0650ae3347d7d7707a8092bfe3ad1edc2c74843c705d19f20",
+          "filas y fuentes": "79232397df21d98be7c3c75c0edb8add6e4c9ca542828a9dd32aa28c6f6711f2"
+        }
+      },
+      {
+        "id": "TABLA-fila-10",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 10,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "35 genes",
+          "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-431]",
+          "análisis": "inferencia bayesiana",
+          "modelo": "CAT+GTR+G4",
+          "resultado publicado": "dos dominios",
+          "soporte cuantitativo tal cual": "apoyo posterior máximo",
+          "límite o campo no publicado/localizado": "No consta un valor numérico adicional en la afirmación recuperada [BN-115].",
+          "filas y fuentes": "C-032; S09 resultados; BN-115"
+        },
+        "huella_fila_json": "945f63b97e42217496a0e4eb9173bff14cb058a50472bf20ce8e454e56c82c8c",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "fafcb7578d93a6ee71632c13a00b7d4a5996cd6cad8ee22389d86d9b183b0ccb",
+          "muestreo taxonómico": "e613e87af689bb006a73151d47c1791c60d6bcabc74b1b0ebeef2b97ebab27a2",
+          "análisis": "04f93944b137c6a970e2ab460cd3299f970d89df70a20df236599147da8463f4",
+          "modelo": "d2c307458a8f8e8c34e11ede8f31e6d319b3b664f76343e000e0a33b8355a852",
+          "resultado publicado": "4f56390452a2951b0400c920b6baab1069cd7b6961dccd66e20e57792a8e3d04",
+          "soporte cuantitativo tal cual": "2e3e7cf3620267fa39b107d1e0e4dd63243ba0d44b36549b605c5adac7b6d92c",
+          "límite o campo no publicado/localizado": "668ffdb302c004ee3e02c932ffe8803b22a6c731d8dcc22bb4f95196ec31e65d",
+          "filas y fuentes": "f98cdf690042979077c8facf75384f17840c4fbe6be45c574bdb8fea80316a99"
+        }
+      },
+      {
+        "id": "TABLA-fila-11",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 11,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "35 genes con recodificación SR4",
+          "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-432]",
+          "análisis": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-433]",
+          "modelo": "CAT con recodificación SR4",
+          "resultado publicado": "dos dominios",
+          "soporte cuantitativo tal cual": "PP = 0.98",
+          "límite o campo no publicado/localizado": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-434]",
+          "filas y fuentes": "C-033; S09 resultados; BN-115"
+        },
+        "huella_fila_json": "f594f56feb4ba719fb5b1aeaa3ef55946f2306266edbeceb72c99b9d929b8cc4",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "f7503cec443a6d069f018859d7c400b97e8317a59669fb31837072a79eb18801",
+          "muestreo taxonómico": "b96becb05180c3220a786450180dff81d9c053935b0507fcf4743c76450b01d0",
+          "análisis": "3479e03261041237e9f740870f7a5bed03e0379efb8057809ff8088d9c75b79a",
+          "modelo": "8260344f3b5774a386b30a7691dc0e11129d8b860087b6189e1b94401ae79238",
+          "resultado publicado": "4f56390452a2951b0400c920b6baab1069cd7b6961dccd66e20e57792a8e3d04",
+          "soporte cuantitativo tal cual": "b849705c5b0fd54bc9f4c2326faca512e0a1b35389c13a909d34447472e2f791",
+          "límite o campo no publicado/localizado": "1c100508821c786a508a1876f8adcdd277bc85accd2d4d635f5a65642f3e1439",
+          "filas y fuentes": "e097c45a44e0bc25862d91f1afb3f9595d4082969fbad7fbf46d9bf5ab7b50ed"
+        }
+      },
+      {
+        "id": "TABLA-fila-12",
+        "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+        "fila": 12,
+        "objeto": {
+          "estudio": "Williams et al. 2020",
+          "matriz": "21 proteínas universales y 43 proteínas arqueano-eucariotas",
+          "muestreo taxonómico": "125 genomas",
+          "análisis": "análisis de matrices ampliadas",
+          "modelo": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-435]",
+          "resultado publicado": "Eukaryota dentro de Asgard",
+          "soporte cuantitativo tal cual": "apoyo máximo para la asociación con Heimdallarchaeia; LC3 PP = 0.95",
+          "límite o campo no publicado/localizado": "La división asgard concreta fue modificada por estudios posteriores.",
+          "filas y fuentes": "C-034–C-036; S09 resultados; BN-115"
+        },
+        "huella_fila_json": "c50f9ab1294eeef985d13ab914cf0ddf1cfa8abf1cbaabfd53c56e2890f12402",
+        "huellas_celdas": {
+          "estudio": "6bf9da368055ab45bddc08659443f56bf4f9c3378c11142ae104fc58d88e7fb9",
+          "matriz": "b6981a0bb8e0c55c9b6a331faa4b63b73f0b331aba2c04f0975415285a669f82",
+          "muestreo taxonómico": "f65a997eebec4528d296c36052c317a6d708c946b01da001bc174c3d8617a514",
+          "análisis": "b92f8406168697551617a0f60ef15697bb94803b5b17bf8ed772bad5218d82de",
+          "modelo": "6c9826c9ff3ac0e7e396e06c0fd6e414fc8c62ff3e68f7e397c7a3f811b94be9",
+          "resultado publicado": "b15a692cdeb5724a07bdd5a4f7108ee2336ccb042c4dd6059009afc4cbc6328d",
+          "soporte cuantitativo tal cual": "db8fd71ece23212bb9b4d10ca1aa4356d7d9ffaefd70a66289b8ae04c4248ec0",
+          "límite o campo no publicado/localizado": "9909e9d0761cc10956c26ead7a3c07931fae671ab44754c6df04a4c64e5b1f84",
+          "filas y fuentes": "7d914a5c154fdfa3a4c24cbbf4f1a8845b43c0bd3a3e86e44e47b86bf404f82e"
+        }
+      }
+    ],
+    "fuentes_bibliograficas": [
+      {
+        "id": "S09",
+        "objeto": {
+          "clave": "S09",
+          "autores": "Williams et al.",
+          "año": "2013",
+          "título": "An archaeal origin of eukaryotes supports only two primary domains of life",
+          "publicación o repositorio": "Nature",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/nature12779",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Filogenómica que recupera Eukaryota dentro de Archaea; una de las fuentes centrales del árbol de dos dominios.",
+          "fecha de consulta": "2026-08-07"
+        },
+        "huella_fila_json": "6ae0ccf2f0e80685ad5b0f8fa031040cca5406fdb41403e545393b33ad713dd0"
+      },
+      {
+        "id": "S10",
+        "objeto": {
+          "clave": "S10",
+          "autores": "Williams et al.",
+          "año": "2020",
+          "título": "Phylogenomics provides robust support for a two-domains tree of life",
+          "publicación o repositorio": "Nature Ecology & Evolution",
+          "DOI en forma https://doi.org/10.xxxx/... o URL resoluble si no hay DOI": "https://doi.org/10.1038/s41559-019-1040-x",
+          "tipo": "investigación primaria",
+          "notas de calidad": "Comparación cuantitativa de topologías y modelos; incluye pruebas AU, CAT-GTR y recodificación SR4. Publicado en línea en 2019 y asignado al volumen 4 de 2020; el campo de año conserva el año del volumen. [CORRECCIÓN VERIFICADA 2026-08-08] La Author Correction https://doi.org/10.1038/s41559-020-01347-2 corrige en la tabla 1 la summed quartet distance de MSC (ASTRAL), de 17213379 a 17145892, y atribuye a ASTRAL, no a SPA, la mejor distancia; declara que los árboles y las conclusiones no cambian. Ninguna C vigente transcribe esa distancia, por lo que C-028–C-036 no requieren cambio por esta corrección. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 9 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez.",
+          "fecha de consulta": "2026-08-08"
+        },
+        "huella_fila_json": "969e145f87bfe49e9fb71027ece1f25f5f020d9c48bc3462d6f395f69b72d553"
+      }
+    ],
+    "prosa": [
+      {
+        "linea": 51,
+        "texto": "Williams et al. analizaron una matriz de 43 proteínas arqueano-eucariotas dentro de un muestreo de 125 genomas. [C-034; S10 métodos] En ese análisis recuperaron a Eukaryota asociado con Heimdallarchaeia. [C-035; S10 fig. 3] El clado LC3 obtuvo PP = 0,95; se conserva como resultado de esa matriz, no como posición inmutable frente a muestreos posteriores. [C-036; S10 fig. 3]",
+        "sha256_texto_lf": "d3c9443ce2aac975f73106bcbac54046f6e7e77ccbce69a74b8d2ea5b7d3f5c9"
+      },
+      {
+        "linea": 55,
+        "texto": "[C-028–C-036; S10 tabla 1; figs. 1–3; material suplementario]",
+        "sha256_texto_lf": "b9b38ab40f295d3fa931a6763cb29b5f058f86b4812a08a135c730bd61519f61"
+      }
+    ],
+    "pasajes_xml": {
+      "P6": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P6\"]",
+        "sha256_texto_normalizado_lf": "4e8cb50ef0ae8c50e0bdfc39b74bb27586b8b5a7a2d688da29333a528174e99e"
+      },
+      "P8": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P8\"]",
+        "sha256_texto_normalizado_lf": "d21acb03a15235ad15f6120112223baabb8705c05764858b4041f035285933f8"
+      },
+      "P10": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P10\"]",
+        "sha256_texto_normalizado_lf": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87"
+      },
+      "P11": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P11\"]",
+        "sha256_texto_normalizado_lf": "8c7ffcdcd315aa841291ef2911d01febc3c041d4fb7ba15524d4ef18d00bf7c3"
+      },
+      "P17": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P17\"]",
+        "sha256_texto_normalizado_lf": "9834c0c59bef0ccf9f92225ea6257901accdbbfdca9bef3ac82c91b40416ca93"
+      },
+      "P18": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P18\"]",
+        "sha256_texto_normalizado_lf": "d31b89de8a0969c11aee082b175aa13520dd4b0499d37125546a17cc01f8fa66"
+      },
+      "P19": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P19\"]",
+        "sha256_texto_normalizado_lf": "bba06ced61b2824d934f597557bcc0a1bf369acd8412c810c34a0a1398b37203"
+      },
+      "P30": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P30\"]",
+        "sha256_texto_normalizado_lf": "833dae4983b7f185e4fbb9763514ed98a1d17defafaae7cec59f0ec7bcd5febf"
+      },
+      "P31": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"P31\"]",
+        "sha256_texto_normalizado_lf": "b09dce5a96c86240ea0e72cfe5d481bbef2b35a7c873279c3345619891c3d268"
+      },
+      "F1": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"F1\"]",
+        "sha256_texto_normalizado_lf": "d5eda8711cb3b1d28cb2d6e0b3bc1aab2c3253a0c8dda2be3175530e9f75c0de"
+      },
+      "F3": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"F3\"]",
+        "sha256_texto_normalizado_lf": "4c296222944ee435ef50ce13f0bf15482786c51c4388f098a9fbafca7e3baa71"
+      },
+      "T1": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"T1\"]",
+        "sha256_texto_normalizado_lf": "52ff5977ead58ab1bc151c5eced3c9cc6df75d5a729b75345ef956b9de50d6fb"
+      },
+      "R5": {
+        "artefacto": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+        "xpath": ".//*[@id=\"R5\"]",
+        "sha256_texto_normalizado_lf": "f33a426e19170a76f0d42857d82b3791b19e80a8f93401ec4121572bc6e7ce1c"
+      }
+    },
+    "suplemento": {
+      "ruta_temporal": "/tmp/s10-figuras-cierre-20260927.pBwbOd/EMS84653-supplement-Supplementary_information.pdf",
+      "sha256": "dfe47e4d3e8a1fb086db29ae6f423cf92d55037ef411f77bc4fa84cb4d01d6c5",
+      "paginas": {
+        "3": {
+          "sha256_texto_pdftotext_normalizado_lf": "b679af4389679af100b93e7744a53c1d40bff824c9da096d3eaae392624d416c",
+          "sha256_texto_pdftotext": "bd6331858ce2d5d971778ffa513efb4e4f827d70ed1e22374d721639dceb7419"
+        },
+        "12": {
+          "sha256_texto_pdftotext_normalizado_lf": "bbc887ed692d067efb071e359bd43db6e0343c9f7e930977130fc6b1af60552c",
+          "sha256_texto_pdftotext": "0795a725efb85c46bc19fcf1ddb5bdb82314e31b033351808ef3cfc3b6985b28"
+        },
+        "13": {
+          "sha256_texto_pdftotext_normalizado_lf": "cf2f6039ae71e5bdec64451bc5482abf255e951783670e2eea38d88edee9e847",
+          "sha256_texto_pdftotext": "b10be885c37bc82aa8d60ec575af08382d8c025637874582698ad3e192d173b2"
+        },
+        "18": {
+          "sha256_texto_pdftotext_normalizado_lf": "aae7be9ee66506481309185dd8f362f73a4e0e3ccae5e4523e4a143245e7ab5d",
+          "sha256_texto_pdftotext": "0ecf99df1a9ba34bd30b3f9d8b8d4afb9e7e4e3c1409c29e1b1429cb85fde4ae"
+        },
+        "23": {
+          "sha256_texto_pdftotext_normalizado_lf": "a314778d0f8db357d3c076852d834a6f668823ea971a9bad9585ef194bd95316",
+          "sha256_texto_pdftotext": "bd8f8ef271fd1b4cf373eb0d005e0de66eb947634649d0e56edab30e1c7c3b89"
+        }
+      }
+    },
+    "inspeccion_visual_png": {
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/fig1-pdf32.png": "7eb73ea80a654ab60e4695928577d53a2a39b0d93dbaab682e1988043f89598b",
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3-pdf34.png": "93349aac49e921d12024df694df5a5db269d45c3d29e913a2faa19dba58ebb2f",
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/fig3b-detalle.png": "f27ec4aa5ff42931e252270f2dedea711e71fa415d0476860d1671f257698dc7",
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p12.png": "9774c442b6e8991ec376f181e82e41c4959ef105a45e25b15212023453094ece",
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table11-p13.png": "588e58ff9ef3b094e681e75991bc86139f526af2aa499ce147e2c49ea43acf76",
+      "/tmp/s10-lectura-independiente-20260927-1om4G9/si-table2-p3.png": "a1855d32cf66cb06052dad5c04b9c861c5d926b9e00ceb2e3ef5be6917930582"
+    }
+  }
+}

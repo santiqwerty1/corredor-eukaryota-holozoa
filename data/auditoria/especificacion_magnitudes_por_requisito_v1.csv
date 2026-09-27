@@ -31,18 +31,18 @@ MREQ-0029,R-0170,cuánto cuesta,costes energéticos directos por cada respuesta 
 MREQ-0030,R-0200,antigüedad estimada del inicio de la asociación,antigüedades publicadas de asociaciones catalogadas,VALOR_PUBLICADO,C-1043; C-1061; C-1099,,,NINGUNA
 MREQ-0031,R-0200,tamaño del genoma del simbionte,tamaños genómicos publicados de simbiontes,VALOR_PUBLICADO,C-1030; C-1037; C-1044; C-1082; C-1084; C-1090; C-1091; C-1096; C-1100; C-1101; C-1207; C-1213,,,NINGUNA
 MREQ-0032,R-0200,Para cada caso,edad y razón genómica para asociaciones sin cifra localizada,HUECO_EXPLICITO,,BN-134,Las edades y comparandos de vida libre existen solo para subconjuntos y no se completan por analogía.,NINGUNA
-MREQ-0033,R-0209,cuántos genes,número de genes mitocondriales transferidos al núcleo ancestral,HUECO_EXPLICITO,,BN-132,La revisión local no ofrece un recuento único directo y no se suman familias para inventarlo.,NINGUNA
-MREQ-0034,R-0212,cuántos,número de genes perdidos y tiempo transcurrido en una trayectoria documentada,HUECO_EXPLICITO,,BN-144,Se localizó la forma bifásica de una trayectoria pero no un número de genes emparejado con tiempo para esa misma trayectoria.,NINGUNA
-MREQ-0035,R-0220,con las cifras de cada una,cifras sustantivas de ambas posiciones sobre la barrera de HGT,HUECO_EXPLICITO,,BN-146,El tamaño de muestreo no es una frecuencia de HGT y la cifra histórica rival usa otro objeto y fue cuestionada; no hay par comparable.,NINGUNA
-MREQ-0036,R-0220,posición contraria,valor rival con el mismo denominador de transferencia,HUECO_EXPLICITO,,BN-133,La posición rival localizada es cualitativa y no contiene una cifra comparable con el muestreo de S290.,NINGUNA
+MREQ-0033,R-0209,cuántos genes,genes nucleares de origen mitocondrial inferido y familias en el muestreo publicado,VALOR_PUBLICADO,C-1163; C-2824,,,NINGUNA
+MREQ-0034,R-0212,cuántos,número de genes perdidos y tiempo transcurrido en una trayectoria documentada,VALOR_PUBLICADO,C-2833; C-2834,,,NINGUNA
+MREQ-0035,R-0220,con las cifras de cada una,"cifras publicadas de ambas posiciones, conservando unidades y denominadores distintos",VALOR_PUBLICADO,C-2825; C-2826; C-2827; C-2828; C-2829; C-2830; C-2831; C-2832,,,NINGUNA
+MREQ-0036,R-0220,posición contraria,cifras publicadas de la posición contraria y sus unidades y métodos,VALOR_PUBLICADO,C-2828; C-2829; C-2830; C-2831; C-2832,,,NINGUNA
 MREQ-0037,R-0234,de dónde sale la cifra,energía por gen y multiplicadores de la posición de barrera energética,VALOR_PUBLICADO,C-1301; C-1302; C-1303; C-1304,,,NINGUNA
 MREQ-0038,R-0235,fracción minúscula del presupuesto celular,fracción publicada del coste relativo de duplicar un gen mediano,VALOR_PUBLICADO,C-1348,,,NINGUNA
 MREQ-0039,R-0238,valores de Ne publicados,valores de Ne publicados por procariotas protistas eucariotas multicelulares,VALOR_PUBLICADO,C-1326; C-1327; C-1328; C-1329,,,NINGUNA
 MREQ-0040,R-0238,magnitudes de coeficiente de selección,umbral efectivo de selección frente a deriva,VALOR_PUBLICADO,C-1325; C-1333,,,NINGUNA
 MREQ-0041,R-0264,en cuántas generaciones,generaciones de evolución experimental de levadura snowflake,VALOR_PUBLICADO,C-1551,,,NINGUNA
 MREQ-0042,R-0264,con qué compensaciones,ventaja y cambios cuantitativos en multicelularidad experimental,VALOR_PUBLICADO,C-1549; C-1552; C-1553,,,NINGUNA
-MREQ-0043,R-0266,"tamaño, número de genes, densidad de intrones",métricas genómicas nominales de ocho taxones del corredor,VALOR_PUBLICADO,C-1516; C-1517; C-1521; C-1522; C-1557; C-1558; C-1559; C-1560; C-1561; C-1562; C-1564; C-1568,,,NINGUNA
-MREQ-0044,R-0266,Sphaeroforma arctica,número de genes y densidad de intrones de Sphaeroforma arctica,HUECO_EXPLICITO,,BN-120,No se localizó una cifra agregada estable de genes e intrones para la misma anotación del ensamblaje publicado.,NINGUNA
+MREQ-0043,R-0266,"tamaño, número de genes, densidad de intrones",métricas genómicas nominales de ocho taxones del corredor,VALOR_PUBLICADO,C-1516; C-1517; C-1521; C-1522; C-1557; C-1558; C-1559; C-1560; C-1561; C-1562; C-1564; C-1568; C-2821; C-2822,,,NINGUNA
+MREQ-0044,R-0266,Sphaeroforma arctica,número de genes y densidad de intrones de Sphaeroforma arctica: anotación y modelo comparativo de S434 sin equiparar versiones con S446,VALOR_PUBLICADO,C-2821; C-2822,,,NINGUNA
 MREQ-0045,R-0273,Duración estimada del tallo eucariota,duración publicada del tallo FECA–LECA,VALOR_PUBLICADO,C-193; C-194; C-195; C-196; C-197,,,NINGUNA
 MREQ-0046,R-0274,Tiempos de generación y tasas de división,tiempos de división publicados en ameba y coanoflagelado,VALOR_PUBLICADO,C-1498; C-1617,,,NINGUNA
 MREQ-0047,R-0274,apusomonádidos,tiempo de generación de Apusomonadida con condiciones,HUECO_EXPLICITO,,BN-108,No se localizó una medición de tiempo generacional para Apusomonadida en las fuentes consultadas.,NINGUNA

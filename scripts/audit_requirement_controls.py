@@ -28,14 +28,19 @@ import sys
 import tempfile
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
-from datetime import date
 from pathlib import Path
 from typing import Iterable, Sequence
 
 try:
     from corpus_io import expand_source_refs
+    from audit_chronology import load_object_dates, review_date_errors
+    from check_teleology_contexts import REVIEW_PATH as TELEOLOGY_REVIEW, check_context_reviews
+    from check_teleology_contexts import safe_file as reviewed_safe_file, stat_signature
 except ModuleNotFoundError:  # Importación como ``scripts.audit_...`` en tests.
     from scripts.corpus_io import expand_source_refs
+    from scripts.audit_chronology import load_object_dates, review_date_errors
+    from scripts.check_teleology_contexts import REVIEW_PATH as TELEOLOGY_REVIEW, check_context_reviews
+    from scripts.check_teleology_contexts import safe_file as reviewed_safe_file, stat_signature
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,7 +50,6 @@ REQUIREMENT_MATRIX = Path("docs/auditorias/matriz_requisitos_2026-08-08.csv")
 MANUAL_LEDGER = Path(
     "docs/auditorias/revision_manual_requisitos_2026-08-08.csv"
 )
-REVIEW_CLOSURE_DATE = date(2026, 8, 13)
 ARTIFACT_HEADER = [
     "id_requisito", "alcance_o_censo", "comando_o_consulta",
     "resultado_control", "evidencia",
@@ -205,6 +209,7 @@ class Result:
     metrics: Counter[str] = field(default_factory=Counter)
     witnesses: list[str] = field(default_factory=list)
     automation_families: set[str] = field(default_factory=set)
+    reviewed_inputs: dict[Path, str] = field(default_factory=dict)
 
     def check(self, condition: bool, label: str, error: str) -> None:
         self.checks.append(label)
@@ -332,17 +337,69 @@ def load_requirement_literals(root: Path) -> dict[str, str]:
 
 
 def manual_scope_paths(corpus: Corpus, result: Result) -> list[Path]:
-    """Separa el corpus revisado del código que valida el ledger.
+    """Liga cada revisión manual al entregable íntegro, sin adjudicarlo.
 
-    El literal tiene su propia huella y el ledger queda ligado a todos los
-    destinos científicos calculados por ``evaluate``. Cambiar el auditor no
-    invalida una lectura humana; cambiar cualquier fichero censado sí.
+    Conserva destinos específicos y añade el corpus y ambas salidas. Un cambio
+    de cualquiera de ellos invalida la firma incluso si no afecta al literal:
+    es una ligadura conservadora, no una prueba de contenido. El literal tiene
+    su propia huella. Ni el ledger ni sus derivados entran en esta base, para
+    no ligar una firma a un artefacto que consume esa misma firma.
     """
     excluded = {
         corpus.root / "scripts/audit_requirement_controls.py",
         corpus.root / "scripts/corpus_io.py",
     }
-    return sorted(set(result.scope_paths) - excluded)
+    paths = set(result.scope_paths) - excluded
+    paths.update(corpus.section_paths)
+    paths.update((corpus.root / "docs/secciones").glob("*.md"))
+    paths.update(corpus.root / entry["csv_path"] for entry in corpus.index["tables"])
+    paths.update(corpus.root / relative for relative in (
+        "data/table_index.json", "docs/order.txt", "docs/informe.md",
+        "docs/informe_completo_autocontenido.md",
+    ))
+    # El renderizador también admite plantillas fuera de docs/secciones.
+    # No basta con ligar el orden: hay que ligar los bytes de esos destinos.
+    for raw in (corpus.root / "docs/order.txt").read_text(encoding="utf-8").splitlines():
+        if raw.strip():
+            paths.add(corpus.root / raw.strip())
+    if result.requirement_id == "R-0399":
+        paths.add(corpus.root / "docs/auditorias/registro_busquedas_2026-08-08.csv")
+    root_resolved = corpus.root.resolve()
+    audits = root_resolved / "docs/auditorias"
+    # Solo Q tiene una excepción nominal auditada: se construye desde BN y
+    # fechas, sin consumir firmas. Una nueva dependencia de auditoría exige
+    # revisar su grafo antes de permitirla, no incluirla por orden/índice/extra.
+    search_register = audits / "registro_busquedas_2026-08-08.csv"
+    consumer_names = {
+        root_resolved / "manifest.json",
+        root_resolved / MANIFEST,
+    }
+    consumers = consumer_names | {path.resolve() for path in consumer_names}
+    audit_roots = {audits, audits.resolve()}
+    for path in paths:
+        resolved = path.resolve()
+        try:
+            relative = path.relative_to(corpus.root)
+            logical = Path(os.path.normpath(root_resolved / relative))
+            logical.relative_to(root_resolved)
+            resolved.relative_to(root_resolved)
+        except ValueError as exc:
+            raise RuntimeError(f"Alcance manual fuera del repositorio: {path}") from exc
+        audit_dependency = any(
+            value.is_relative_to(directory)
+            for value in (logical, resolved) for directory in audit_roots
+        )
+        allowed_search_register = (
+            result.requirement_id == "R-0399"
+            and logical == resolved == search_register
+        )
+        if logical in consumers or resolved in consumers or (
+            audit_dependency and not allowed_search_register
+        ):
+            raise RuntimeError(f"Dependencia circular o de auditoría no autorizada en alcance manual: {path}")
+        if not path.is_file():
+            raise RuntimeError(f"Archivo del alcance manual ausente o no regular: {path}")
+    return sorted(paths)
 
 
 def serialize_manual_scope(corpus: Corpus, paths: Iterable[Path]) -> str:
@@ -435,16 +492,14 @@ def validate_manual_review(
         errors.append(f"{rid}: revisor no identificado")
     if row["declaracion_independencia"] != INDEPENDENCE_DECLARATION:
         errors.append(f"{rid}: independencia no declarada con el valor canónico")
-    try:
-        reviewed = date.fromisoformat(row["fecha_revision"])
-    except ValueError:
-        errors.append(f"{rid}: fecha de revisión no es ISO YYYY-MM-DD")
-    else:
-        if reviewed != REVIEW_CLOSURE_DATE:
-            errors.append(
-                f"{rid}: fecha de revisión distinta del cierre "
-                f"{REVIEW_CLOSURE_DATE}"
-            )
+    chronology = load_object_dates(corpus.root)
+    errors.extend(chronology.errors)
+    errors.extend(
+        f"{rid}: {error}" for error in review_date_errors(
+            row["fecha_revision"],
+            chronology.object_date("CONTROL_MANUAL", rid, expected_digest),
+        )
+    )
     return errors
 
 
@@ -810,58 +865,30 @@ def check_final_questions(
 
 
 def check_teleology_candidates(corpus: Corpus, result: Result) -> None:
-    """Censa usos potenciales y admite solo contextos críticos/comparativos.
-
-    El veredicto no depende de la mera coincidencia: cada candidato se clasifica
-    por contexto estructural. Se permiten la sección terminológica 14.6, su
-    tabla de reemplazos, y comparativos mensurables (``superior/inferior a``).
-    """
-    pattern = re.compile(
-        r"\b(superior|inferior|primitiv[oa]s?|avanzad[oa]s?|más evolucionad[oa]s?|"
-        r"intento fallido|paso obligatorio|fósil viviente|eslabón perdido|"
-        r"eucariota primitivo|organismo simple|versi[oó]n antigua|"
-        r"versi[oó]n detenida)\b|apareci[oó] para|"
-        r"todavía no hab[ií]a desarrollado",
-        re.IGNORECASE,
-    )
-    candidates = []
-    violations = []
+    """Censa todo el alcance y coteja dictámenes independientes por ocurrencia."""
     paths = [*corpus.section_paths, *sorted(set(corpus.claim_paths.values()))]
     paths += [corpus.root / entry["csv_path"] for entry in corpus.index["tables"]]
     paths += list(corpus.appendix_paths.values())
-    for path in sorted(set(paths)):
-        result.scope_paths.add(path)
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-            if not pattern.search(line):
-                continue
-            relative = path.relative_to(corpus.root).as_posix()
-            candidates.append(f"{relative}:{line_number}")
-            critical_context = (
-                "14-nombres-y-nomenclatura" in relative
-                or "table-56-14-8-1" in relative
-                or "table-58-14-8-3" in relative
-                or "B_entidades.csv" in relative
-                or any(token in line.casefold() for token in (
-                    "sustitu", "término", "metáfora", "uso legítimo", "no significa",
-                    "puede inducir error", "puede ocultar", "confunde", "representa la evolución",
-                    "métrica", "criterio", "terminolog", "históric",
-                    "límite superior", "límite inferior", "fosforito superior",
-                    "nodo superior",
-                ))
-            )
-            quantitative_comparison = bool(re.search(
-                r"\b(?:superior(?:es)?|inferior(?:es)?)\s+a\b|\borden superior\b|"
-                r"observación directa.*superior a inventario", line, re.IGNORECASE,
-            ))
-            molecular_targeting = "destinad" in line.casefold() and "mitocond" in line.casefold()
-            if not (critical_context or quantitative_comparison or molecular_targeting):
-                violations.append(f"{relative}:{line_number}")
-    result.metric("candidatos_teleologia", len(candidates))
-    result.check(
-        not violations, "clasificación contextual de candidatos teleológicos",
-        f"candidatos no clasificados: {violations[:30]}",
+    result.scope_paths.update(paths)
+    # El expediente y su consumidor forman parte de la huella del control.
+    # Si falta alguno, el chequeo falla sin romper la materialización del error.
+    for relative in (TELEOLOGY_REVIEW, Path("scripts/check_teleology_contexts.py")):
+        path = corpus.root / relative
+        if path.is_file():
+            result.scope_paths.add(path)
+    count, occurrences, violations = check_context_reviews(
+        corpus.root, paths, verified_hashes=result.reviewed_inputs,
     )
-    result.witnesses.append(f"candidatos clasificados={len(candidates)}")
+    result.metric("candidatos_teleologia", count)
+    result.metric("ocurrencias_teleologia", occurrences)
+    result.check(
+        not violations, "adjudicación independiente exacta de candidatos teleológicos",
+        f"candidatos no clasificados contra el contexto vivo: {violations}",
+    )
+    result.witnesses.append(
+        f"censo={count} líneas/{occurrences} ocurrencias; "
+        f"revisión independiente válida={'NO' if violations else 'SI'}"
+    )
 
 
 def check_teleology_policy_details(
@@ -1196,7 +1223,39 @@ def evaluate(corpus: Corpus, row: dict[str, str]) -> Result:
 
 
 def scope_text(corpus: Corpus, result: Result) -> str:
-    digest = corpus.scoped_digest(result.scope_paths)
+    if result.reviewed_inputs:
+        # Nunca ligar un dictamen antiguo a hashes recién recalculados como si
+        # también esos bytes hubiesen sido revisados. Es comprobación, no firma.
+        records = []
+        errors = []
+        signatures = {}
+        for path in sorted(result.scope_paths):
+            try:
+                if path in result.reviewed_inputs:
+                    reviewed_safe_file(corpus.root, path)
+                    signatures[path] = stat_signature(path)
+                current = sha256_file(path)
+                if path in result.reviewed_inputs and current != result.reviewed_inputs[path]:
+                    errors.append(f"contexto revisado obsoleto: {path.relative_to(corpus.root)}")
+                records.append(f"{path.relative_to(corpus.root).as_posix()}\x1f{current}\n")
+            except (OSError, ValueError) as exc:
+                errors.append(f"insumo revisado ilegible: {exc}")
+        for path, signature in signatures.items():
+            try:
+                reviewed_safe_file(corpus.root, path)
+                if stat_signature(path) != signature:
+                    errors.append(f"insumo cambió al materializar: {path.relative_to(corpus.root)}")
+            except (OSError, ValueError) as exc:
+                errors.append(f"insumo revisado desaparecido: {exc}")
+        if not set(result.reviewed_inputs).issubset(result.scope_paths):
+            errors.append("alcance perdió insumos ligados a revisión independiente")
+        for error in errors:
+            if error not in result.errors:
+                result.errors.append(error)
+        result.metric("fallos", len(result.errors))
+        digest = sha256_bytes("".join(records).encode("utf-8"))
+    else:
+        digest = corpus.scoped_digest(result.scope_paths)
     metrics = ",".join(f"{key}={value}" for key, value in sorted(result.metrics.items()))
     return (
         f"corpus_live; control={result.slug}; clasificacion="

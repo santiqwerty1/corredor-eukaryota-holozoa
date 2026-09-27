@@ -1,0 +1,3665 @@
+{
+  "version": "rectificacion-paginacion-s126-v1",
+  "revisor_independiente": "/root/inspeccion_relojes",
+  "fecha_utc": "2026-09-26T22:24:30Z",
+  "fuente_primaria": {
+    "path": "fuentes/S126 [2024] A taxon-rich and genome-scale phylogeny of Opisthokonta - S1 Data.pdf",
+    "sha256": "e01f0f62c208834b8b67be8fe43692397b39607cbd25d0229beaf82b4d0b5889"
+  },
+  "hallazgo": "Rectifico explícitamente mis referencias anteriores a p.5 para leyendas temporales y p.6 para rótulos taxonómicos. Son p.6 y p.7 físicas del PDF, respectivamente. Los árboles temporales siguen en p.21. No se sustituyen ni eliminan los dictámenes históricos.",
+  "metodo": "Lectura independiente del texto extraído por página y de los renderizados; S01 Table2 para contraste taxonómico. Diff byte exacto de cada archivo del snapshot contra siete sustituciones nominales permitidas, sin cambios adicionales; 60 filas modificadas. Repetición actual de consulta BN557 en páginas6,7,21 y lectura S01.",
+  "snapshot_anterior": "/tmp/s126-paginacion-lihPEo",
+  "alcance": "Sólo corrección de paginación. No nueva revisión completa de números, método o todas las fuentes. Se confirman invariancia de números/nodos y trazabilidad física de los pasajes corregidos. No integra fechas, deriva manifiestos ni cierra controles globales.",
+  "inventario_previo": {
+    "utc": "2026-09-26T22:22:36.250315+00:00",
+    "live": [
+      {
+        "path": "data/apendices/A_fuentes.csv",
+        "line": 125,
+        "id": "S126",
+        "cells": [
+          {
+            "column": "notas de calidad",
+            "matches": [
+              "nte se use una sola vez. Suplemento S1 Data recuperado el 2026-09-26: páginas 6 y 21 del PDF presentan numeración discordante de los árboles temporal",
+              "derecho. El muestreo incluye Nutomonas, rotulado Ancyromonadida en la página 7 del PDF, panel 1, aunque p. 21 lo agrupa bajo Apusomonadida+Breviatea"
+            ]
+          }
+        ],
+        "json_row_sha256": "246d5fab06906b919c0458a213527f65b67183a05f1c419693c885084fd58d72"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 576,
+        "id": "intervalo temporal publicado: raíz del árbol temporal muestreado por S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "81a3473c986598dfa35b8027ab699caa087f3b4cfed1a2abf9470ddba4dbe7d2"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 577,
+        "id": "intervalo temporal publicado: raíz del árbol temporal muestreado por S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "57445a6e3912ea1625549654252e65ca67b6902ee20941e4d85dc96952ced6bd"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 578,
+        "id": "intervalo temporal publicado: Amoebozoa en el muestreo de S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "ca71324eb31d4558895b8cc237df9666c1367e36bc039d5d4f0b768ce1f894b1"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 579,
+        "id": "intervalo temporal publicado: Amoebozoa en el muestreo de S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "d11e5f31ee353416b50ec1b2749a2f3450cea5b3b103beb4767f9c35e7f7a97b"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 581,
+        "id": "intervalo temporal publicado: nodo denominado Obazoa en S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "99217b235f218d4e8de7e9a68ff751924a1b67903036a38ef4c56d9be2356b52"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 582,
+        "id": "intervalo temporal publicado: divergencia Thecamonas–Opisthokonta en S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "1e123468c4bd1e682408c83d11114cdce4d347c807f398f25e3ef311f2649bde"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 583,
+        "id": "intervalo temporal publicado: divergencia Thecamonas–Opisthokonta en S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "6df548ce06911f01a87a34cf82601ca34c7d4608f0c4417e7291423599bea6b0"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 584,
+        "id": "intervalo temporal publicado: nodo Pygsuia biforma–Nutomonas longa en S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "fe39c98f1fd8c80bc49186862c0b82cac4452c56ea9aecfbef706fcc3bdcf530"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 585,
+        "id": "intervalo temporal publicado: nodo Pygsuia biforma–Nutomonas longa en S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "4dab766a373415f535ec69e49d2da21cf0053c7ab9233a3302950c2f2ddebd30"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 586,
+        "id": "intervalo temporal publicado: Ichthyosporea en el muestreo de S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7b1afcc29b4cc5366604858b24dbee79e1393bcbbb77453563bb24e91f89dd64"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 587,
+        "id": "intervalo temporal publicado: Ichthyosporea en el muestreo de S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "244b7143145f28edf979f80a43ae46f8f5cb8129dd10ff0d3e57adb813438a61"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 588,
+        "id": "intervalo temporal publicado: Pluriformea muestreada como Syssomonas+Corallochytrium en S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "5276f38e5a08df01d7789dec4bb12227ac45c59ff62e5d38821918657c501de9"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 589,
+        "id": "intervalo temporal publicado: Pluriformea muestreada como Syssomonas+Corallochytrium en S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "b2e4b295f9dc80fb259c6be0b0861776a88c85cf542335b5755cda75449ddb3f"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 590,
+        "id": "intervalo temporal publicado: Filasterea en el muestreo de S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c3997b78721ed22e6240b61a5e43b302176e973148051ef83293c0eeb19119d3"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 591,
+        "id": "intervalo temporal publicado: Filasterea en el muestreo de S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "8ea96bde21eea0d22cfd36f64115bf2973e76b82aec890092f5cb3865a2da4e6"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 592,
+        "id": "intervalo temporal publicado: Filozoa en el muestreo de S126; raíz 1.5",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "3ff67ffb28fe0ca4e5dbbaf731909ebd18c522af6962c8a006f5f31fc268085d"
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 593,
+        "id": "intervalo temporal publicado: Filozoa en el muestreo de S126; raíz 1.9",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e966dd6af5f79b1c2f2a8ba74c9972f05929f0ec7d56c7167fa8684f2ffe8dee"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 65,
+        "id": "raíz del árbol temporal muestreado por S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "b9dd56163bbba6e97f172c268b8ef9bf950705710fe5c8991a22e3d060dba471"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 66,
+        "id": "Amoebozoa en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "d259b3bf28cd900ee3bf02749507fbb55e1f7f772f372a4e08271a825d47ba88"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 68,
+        "id": "divergencia Thecamonas–Opisthokonta en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "d8965b4d22ed22b27f55630b78827619008c68e7941495feef1543c243cb4375"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 69,
+        "id": "nodo Pygsuia biforma–Nutomonas longa en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "2f482c2df666f5a95fb3f3cc367e5849df6fef45b1e330210ea78a7c919867e4"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 70,
+        "id": "Ichthyosporea en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e718589e0dde38f66b4eb90fed841f82f7124fd2d727096123050a5e7db8139a"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 71,
+        "id": "Pluriformea muestreada como Syssomonas+Corallochytrium en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "d4eb9740b41f39b9ae23af2a7f8192e6f0ab57ef78f3214194b44431b196eb1d"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 72,
+        "id": "Filasterea en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "03ae8d336bfec3e16737cb3f947326a3d65ed53df24b5abd90c41b45629bcc4c"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 73,
+        "id": "Filozoa en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "a2391d4684a32436b0b6141f5b18782684e781228c26eab79637f8d26b78fd94"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 180,
+        "id": "raíz del árbol temporal muestreado por S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e80ce16172fbd83635cdc7b48ecaa133eaa39669083f5034f423d9ddc94c3642"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 181,
+        "id": "Amoebozoa en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "4f6d6b98debbcf1a74588adc04cc5a2389a9a8590a88d9d43a52c7e0f3e0c2ac"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 182,
+        "id": "nodo denominado Obazoa en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "3a35cee7afeb474f8e79b6e1b1830d60c8907d98165eb414d53369decf564b31"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 183,
+        "id": "divergencia Thecamonas–Opisthokonta en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c186058f765d9175208f07c608712d1deae4eacc3e68cb23bdc07c2abb105d16"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 184,
+        "id": "nodo Pygsuia biforma–Nutomonas longa en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "04edd86d8ab88f7633d1b2aa1163763280723e3f2961c8476150d6abcf043ab6"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 185,
+        "id": "Ichthyosporea en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c9f7e12905a53b66111860795efea6c17c9c34e7569043d6b93f7f31d9b58ace"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 186,
+        "id": "Pluriformea muestreada como Syssomonas+Corallochytrium en S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "0ae0b58f02e786089475ce5f42aa7c50f556843df26d302805e106e580844dc5"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 187,
+        "id": "Filasterea en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "9bc35d38f6e52d3195033dd8593334cb468e1ef056849a2e2a9408b446a5500d"
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 188,
+        "id": "Filozoa en el muestreo de S126",
+        "cells": [
+          {
+            "column": "fuente con localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "f8bb431bf1f96a56702782433ab5f536364991fce283564467cfb2f9b872ccf2"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 576,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c10dcfe20081d6b3a90e908b5286a71271b9f8e9d80c145bd8d6d84e19a8488b"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 577,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "611ad56ba70ef25367905aea79b149729bd57e97fb83f866249c5dea30b09b0e"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 578,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7114a8ba5cd8e9cbca7b03671bf5af7f607be57362586b2e53837fcf2981b5af"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 579,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "732b32d6d980bdf63fa2eac7f10f9bac91be854d337963bc54dc12b9f6716a28"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 581,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "6e525663b74eafda1afb8f0798742b3a75ecb0a95a6f7b69da3aa21b593ca4f9"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 582,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "209dfbd6ee79672c4211685c306df0e64f4f9aca31970e16bdc1e49dd8650bd8"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 583,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "2749873abc1aab66a968fc87b1f7e4eb299b626729be2c8465145499bbe4746c"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 584,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "ea6f81cee4f18428c05a0a2c9f4c04ce75478a7aa1b599e741416e8839d1f17d"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 585,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7401c9469899b59cc1f4ce812be0abb0d3ed80be179588875d579433c74dac4b"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 586,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "00249ec2c1b66c00b4aecbbe20577030b3aca552f115fea4297287fddca6d225"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 587,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "a8634b3a87557409f3af0d8f751486fc3b519f9a0576a3395a93b1aca4ae5e43"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 588,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "89c13baa1b59724dd8d02ac695259608f5c209c0cc84ed9df07d3c6bf6d87b91"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 589,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "ff450c54a0d06fca854f7a1cff7b86b1084f287530bf8487913eb0e2c187e7fc"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 590,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "35697bfe49a9a66a18657c0d78e26690ddaa1c5b7039175a7b68fb777c3d53e9"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 591,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c284f4b92f3489a1197ecde5159111867c4f38951ecf841e7220595cef041410"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 592,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "d6d118c5f089106c8f17eb0bf77d9bc7e81252c99ced160aa00e2d0708a43274"
+      },
+      {
+        "path": "data/auditoria/magnitudes_requeridas_v1.csv",
+        "line": 593,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "fb15c9cef1cfcdacbcd3f7fa30b46474b4247fb2f33231309dd54a0da5731743"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 852,
+        "id": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "3819f2140dcf0eaf0fdb49bd401c804a53bd20e846f67a6be523e6eebeb1ca5b"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 868,
+        "id": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "6544710be6fd9b3b912c3368a188f3df5edc7cce22d894db5ed7ab46308c22b9"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 908,
+        "id": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "84e56df4a000097a5ea5caf047b14e3c70299dcd05d0d34fbdee07eafd967559"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 916,
+        "id": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "57d3057f7947d631dab5f8944a770fdef492bbd00cb04c3a4a08623efb8284d6"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 932,
+        "id": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c70bc104f40e139a0bb26ac2669cfae1d3b7f460e9dfcb573460cf0a2e3aadb9"
+      },
+      {
+        "path": "data/auditoria/mapeo_celdas_afirmaciones.csv",
+        "line": 940,
+        "id": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "13515d7ffc24c4997d06d60f661dc1fcf3d909a6987bc0adddb0a6914353b727"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 526,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "90b1eb51c892f9e57d79de2bbefc71c0a6585cfa7c8a091e662e001bc7fffd78"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 527,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "ca0e9a6d3c9eea07e1cfc42238e007fb3e41ae3864c783a2c5b19b05d575ade7"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 534,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e3da3aa90d83c594791519814b4926ee7a03da354000cd3dd2fec1835ad451c8"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 535,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "2487f22a4d8baab5b4eb7faa7a732a34cd9c998b1af16f9fcb024ec1bd018540"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 543,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "da1eee8158e5558962690b8c9a579efe2548200f0414823e3dffc2852403c3c5"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 551,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "41dbe38031d6702f8da60f9719fc3c8bfc9992cc7d54fc90c55304c850fd282f"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 552,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "783a5bb4892a570d8c572f30cb1092661d6efe9638247b829685f85371324bdd"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 559,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "400d8055140eb5e8da6b27deb44610069cbf84524d554b852381eef64d358f03"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 560,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "b7b0b678ee1c0d691bfb80f2c2181cc7142c3dee660a98c366f31b2a44cc5801"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 591,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7afdf9ba9f8397d9fcd6ff688bd15b98cde00a6b0d6e843ab4af48bead8b5a02"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 592,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "b1344afcb5aa19bd3f9a493a5e6f1b47474658f059fababe1a428090ece9569e"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 599,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7753fd5be1a79ffe5f741fa40bb29f08db5a0d79abfc4a6b4ec7f94859f6bbfd"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 600,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e324db182815361aebae27da7e99eb1425d493d7971e7991457299ff3907af32"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 615,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "c5f34fcee6c1b43c1efe182f86cb7bdf80642141f6bb98055289b50d5ebee16a"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 616,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "3f9cfa9f78c48447a242ea0a92ad2adc8177d2139ae72a319a60ef62862c0fb5"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 623,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "37ba56fcc469ab3814b08c7d3302a9e750939ad02822607837a0f0a558aec44f"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 624,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "e87692999f1f296814367c6aef250037411acc7ccb64a738a79eeaa06ff70066"
+      },
+      {
+        "path": "data/auditoria/procedencia_afirmaciones_v1.csv",
+        "line": 2817,
+        "id": "1",
+        "cells": [
+          {
+            "column": "fuente_y_localizador_declarados",
+            "matches": [
+              "rdo y derecho, terminal Nutomonas longa (requiere inspección humana); p. 6, rótulo Ancyromonadida"
+            ]
+          }
+        ],
+        "json_row_sha256": "6dbd61641579a58d129ad270b4bd227a487017e630a12ffbeb37b3aa7e916fe0"
+      },
+      {
+        "path": "data/afirmaciones/15.csv",
+        "line": 920,
+        "id": "C-2816",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "rdo y derecho, terminal Nutomonas longa (requiere inspección humana); página 7 del PDF, panel 1, rótulo Ancyromonadida"
+            ]
+          }
+        ],
+        "json_row_sha256": "d6866e1e33210fde98f158ab56e8f1b822bafa1f1297d069b9625accc6f1ce5c"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 96,
+        "id": "C-525",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "cf1b0af7685b7429148042c630b3ddbbb53c1c723eef2d1361635e3fcd9a1c45"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 97,
+        "id": "C-526",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "2dc0c4f3997d4dbdcb3019e6de86f86f42f6d17be25961494455108737f99a52"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 104,
+        "id": "C-533",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "fe3b500b8c66493e851e39b957cdfb8f8ae27134226eed916f1c4f99722de31e"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 105,
+        "id": "C-534",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "9044dc234f870c83504166da575793a1c45468c5c1c74df85a4d3edbc448e360"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 113,
+        "id": "C-542",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "51f79a9a3697973c69700f0368f935360f94a3fc25e05f77aa8e086b20009fbf"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 121,
+        "id": "C-550",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "b2d7df3110c99d8319fb0977b103ea42381c0225f1acec040b3a0036c72ab3c2"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 122,
+        "id": "C-551",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "776ea79781c48bc2b2664f759c1dc1c556357b185dc968667bfdfd29d143f0e6"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 129,
+        "id": "C-558",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "7497827eaff12c960ddf43f19a69c2cfe9fa8e8c6aed6d3c67ddc97bb1d6176c"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 130,
+        "id": "C-559",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "nga (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "9b56076bf9c587c9c6508d8633a6f3dd1dddccc4d9a348964e54f0ae7e1ab664"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 161,
+        "id": "C-590",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "74687848240171cf1003c0f954424014bf6c663ebd57e111369d48d1c8123419"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 162,
+        "id": "C-591",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "ca61b7411ac1d90432a14de324ef70f626872ee16b9c64023500d42c1d6d8ead"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 169,
+        "id": "C-598",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "302d67d01c24a8a9cf0e23c626532d523c76af8f291c0a1ff1d8776314b4d6ed"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 170,
+        "id": "C-599",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "6e8e122f6e8537d67d1ee16aae481339cf3f5d6d552b5bc149c5482e2b40c48f"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 185,
+        "id": "C-614",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "b0cd2924661f0751fc1e2f72a14b457eafe14f9a784d50aacf86b5701d6565b9"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 186,
+        "id": "C-615",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "a385cb74c3455b3065a0417dfb0b000d2d7a7279f3ddbbab84ec9bad6a431dce"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 193,
+        "id": "C-622",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "700bd67d92e0d995406eb609d0ad923d4b302e7a1bf8ad2d7e50aa7d4382d416"
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 194,
+        "id": "C-623",
+        "cells": [
+          {
+            "column": "Fuente",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "Motivo",
+            "matches": [
+              "n, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el lo"
+            ]
+          }
+        ],
+        "json_row_sha256": "b06171f03be3305b3288e60cd26e0996935551cf3219a4a455ff423109de9e13"
+      },
+      {
+        "path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "line": 2,
+        "id": "Pluriformea sensu Hehenberger et al. 2017",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "rum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "dc60dafc5bbaf256edfe39ded424fc52f0f3bfbbe3f9c592a9273209b292a052"
+      },
+      {
+        "path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "line": 2,
+        "id": "Filozoa",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "oa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "7a8c2273fdb66b107df9a2d07261900fc09add78d5eeb81d56b298f60dd71c9e"
+      },
+      {
+        "path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "line": 2,
+        "id": "Ichthyosporea",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "07bf25c568cc81c51ba1456f78f5a80defec2b679fa0925e89e4c39bea88de10"
+      },
+      {
+        "path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "line": 2,
+        "id": "Amoebozoa",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "44fb49a54b81ba3ead534cfd9587d48fefcaa5025cf3b154bed6d18ced741353"
+      },
+      {
+        "path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "line": 2,
+        "id": "Filasterea",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "ado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "4501ca2f3bd43f834e9ef92feff6151b4fe70288dbdc00505e18a05fa69be531"
+      },
+      {
+        "path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "line": 2,
+        "id": "Apusomonadida",
+        "cells": [
+          {
+            "column": "método de la estimación",
+            "matches": [
+              "nta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ],
+        "json_row_sha256": "06312c4dd0cb7bef6dcbeaa5b46bb084d4d5f0304ec2692f52d7fc16d356590f"
+      },
+      {
+        "path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+        "line": 19,
+        "id": "BN-557",
+        "cells": [
+          {
+            "column": "términos exactos",
+            "matches": [
+              "S126 S1 Data, páginas 6, 7 y 21 del PDF; consulta de texto «Breviatea|Pygsuia|Nutomonas» e in"
+            ]
+          },
+          {
+            "column": "resultado",
+            "matches": [
+              "orma–Nutomonas longa, pero rotula Nutomonas como Ancyromonadida en la página 7 del PDF, panel 1; S01 también incluye Nutomonas en Ancyromonadida. No"
+            ]
+          }
+        ],
+        "json_row_sha256": "8c9424a8aaf0942173b562390172c163a02232ba9784755dc83b6dd7fa72db37"
+      }
+    ],
+    "historical": [
+      {
+        "path": "docs/auditorias/addendum_c2817_lote_s126_2026-09-26.csv",
+        "line": 2,
+        "id": "C-2817",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "s trahens y su bifurcación con Opisthokonta; p. 6, rótulo Apusomonadida."
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 2,
+        "id": "C-525",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "irectamente como corona Amorphea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 3,
+        "id": "C-526",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "sin promoverlo a corona Amorphea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 4,
+        "id": "C-533",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "ghemostelium y dos Dictyostelium. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 5,
+        "id": "C-534",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "or 13.0113, no el 13.01127 de S7. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 7,
+        "id": "C-542",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "identifica como corona Breviatea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 8,
+        "id": "C-550",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "onta, no la corona Apusomonadida. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 9,
+        "id": "C-551",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "ectura impresa exacta y raíz 1.9. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 10,
+        "id": "C-558",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "uia biforma y Nutomonas longa. S01 y S1 Data p. 6 clasifican Nutomonas como Ancyromonadida; la",
+              "a ya no declara corona Breviatea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 11,
+        "id": "C-559",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "a Breviatea con muestreo interno. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 12,
+        "id": "C-590",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "No se confundió con Teretosporea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 13,
+        "id": "C-591",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "ez terminales y límites impresos. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 14,
+        "id": "C-598",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              " independiente de Corallochytrea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 15,
+        "id": "C-599",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              " distintos de la precisión de S7. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 16,
+        "id": "C-614",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "aptor; rótulo lateral Filasterea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 17,
+        "id": "C-615",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "iente de ambos extremos impresos. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 18,
+        "id": "C-622",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "ilozoa y no se tomó como Filozoa. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 19,
+        "id": "C-623",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "as, no por proximidad del rótulo. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raí"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 21,
+        "id": "C-2815",
+        "cells": [
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "Nutomonas está en Ancyromonadida según S01 y p. 6. El negativo no se convierte en ausencia uni"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "line": 22,
+        "id": "C-2816",
+        "cells": [
+          {
+            "column": "localizador_verificado",
+            "matches": [
+              "utomonas longa (requiere inspección humana); p. 6, rótulo Ancyromonadida"
+            ]
+          },
+          {
+            "column": "evidencia_dictamen",
+            "matches": [
+              "ra en ambos árboles temporales de p. 21 y en p. 6 se rotula Ancyromonadida. La afirmación docu"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2653,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2669,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2709,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2717,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2733,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv",
+        "line": 2741,
+        "id": "celda",
+        "cells": [
+          {
+            "column": "contenido",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+        "line": 2,
+        "id": "BN-025",
+        "cells": [
+          {
+            "column": "localizadores_y_pasajes",
+            "matches": [
+              "] del nodo compartido con Opisthokonta. S126 p.7 panel1 clasifica Thecamonas como Apusomonadi"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/reinspeccion_bn_relojes_2026-09-26.csv",
+        "line": 3,
+        "id": "BN-557",
+        "cells": [
+          {
+            "column": "cobertura_consultas_y_lectura",
+            "matches": [
+              "COMPLETA: texto de pp.5/6/21, extensión explícita a p.7 al detectar "
+            ]
+          },
+          {
+            "column": "localizadores_y_pasajes",
+            "matches": [
+              "S126 p.6 física: leyendas72–74, no taxones. S126 p.7 "
+            ]
+          },
+          {
+            "column": "evidencia_y_hallazgos",
+            "matches": [
+              "ento rotula Nutomonas como Ancyromonadida en p.6, pero el rótulo está en p.7. La conclusión d"
+            ]
+          },
+          {
+            "column": "limitaciones",
+            "matches": [
+              "Corregir p.6→p.7 y repetir cotejo de la nueva huella. Se cons"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 5,
+        "id": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 9,
+        "id": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 13,
+        "id": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 15,
+        "id": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 17,
+        "id": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "line": 19,
+        "id": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "cells": [
+          {
+            "column": "contenido_normalizado",
+            "matches": [
+              "humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+            ]
+          }
+        ]
+      }
+    ],
+    "prose": []
+  },
+  "cotejo_posterior": {
+    "utc": "2026-09-26T22:23:51.423895+00:00",
+    "files": [
+      {
+        "path": "data/afirmaciones/04.csv",
+        "old_sha256": "933f60513ae26d46284ecb60efc6c32746e91a735663acd0d5ec6672eaa678f6",
+        "new_sha256": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/afirmaciones/15.csv",
+        "old_sha256": "d036f22d182792e18eaabcc04375f2d2a907b41b670289fc4a63f0787ad7cc8d",
+        "new_sha256": "4717cc4573f86c5fa798fa606342ece86c938c38c956f1e76dbf396a8f375957",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/apendices/A_fuentes.csv",
+        "old_sha256": "bdcd37e0ed85684531cbe81b5bbf32ce18fa49d62390fcb657645548f23c1ca4",
+        "new_sha256": "6158ef22798a71ac103db6b201affb2f719bf041ac7a8cce09ac763baa7b09b1",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "old_sha256": "e39a361e6881492bb29d1c8d5fd3b94e576b3d31c479104c985b096cad003991",
+        "new_sha256": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "old_sha256": "6731d51709ff3e5cd39aa493b933dcd766b46e0181531dfe8171ceccb0df1e0e",
+        "new_sha256": "829c4522712cf39693dcd66883345da879120133a096504f70170d27e0eaea79",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+        "old_sha256": "3bef9fb63a342a167082dd131762d564e59a82e0f3b92a22cc7d75ab62b124e9",
+        "new_sha256": "3f2ea12e127ffa2f181fbc89d1ba0a5b39e79ca83cb61bbf3fbdc3857b115bea",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv",
+        "old_sha256": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+        "new_sha256": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-16-4-6-1-eukaryota.csv",
+        "old_sha256": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+        "new_sha256": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-17-4-6-2-amorphea.csv",
+        "old_sha256": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+        "new_sha256": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "old_sha256": "a6e481dc4f57f426bf199b0c8176b36a09e7112f6a15ee59a30e32e340348b6d",
+        "new_sha256": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-19-4-6-4-obazoa.csv",
+        "old_sha256": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+        "new_sha256": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "old_sha256": "b4693fd1bf3c55a0ad3650ace288c1e5020a243f80c5f1c9dc9c9f5decb485e8",
+        "new_sha256": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-21-4-6-6-breviatea.csv",
+        "old_sha256": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+        "new_sha256": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-22-4-6-7-opisthokonta.csv",
+        "old_sha256": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+        "new_sha256": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-23-4-6-8-holomycota.csv",
+        "old_sha256": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+        "new_sha256": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-24-4-6-9-holozoa.csv",
+        "old_sha256": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+        "new_sha256": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "old_sha256": "b3b5b7180d34e1c97173b1809a50e563c457b62e231cc7ad14095ff2c7a1006b",
+        "new_sha256": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "old_sha256": "7e879b828b2191425efb20ff931f544188284fddb70db4e0edf8f7afb10e5474",
+        "new_sha256": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-27-4-6-12-corallochytrea.csv",
+        "old_sha256": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+        "new_sha256": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "old_sha256": "18362f03c09287796e459011bd3debb5048c934ef56102233a220342729bde99",
+        "new_sha256": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "old_sha256": "04dfdb4647d55b2002072649ca754861aef1bb6e1ac7997e4d1ead7d293a83bd",
+        "new_sha256": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+        "exact_expected_replacements": true,
+        "changed": true
+      },
+      {
+        "path": "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv",
+        "old_sha256": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+        "new_sha256": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-31-4-6-16-choanoflagellata.csv",
+        "old_sha256": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+        "new_sha256": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+        "exact_expected_replacements": true,
+        "changed": false
+      },
+      {
+        "path": "data/tablas/04/table-32-4-6-17-metazoa.csv",
+        "old_sha256": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+        "new_sha256": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+        "exact_expected_replacements": true,
+        "changed": false
+      }
+    ],
+    "changes": [
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 96,
+        "id": "C-525",
+        "old_json_row_sha256": "acbf9eae4df7e15c7de15e1b5298fc88d52b6ea5cd09af39bc9c080b38d35509",
+        "new_json_row_sha256": "cf1b0af7685b7429148042c630b3ddbbb53c1c723eef2d1361635e3fcd9a1c45",
+        "old_csv_row_sha256": "f0e3df4621658d14f90204ec1146f158aa29f2669a292c764494afb1abdc78d2",
+        "new_csv_row_sha256": "fee808c8afe0612c8bca6771bd183b0fc4b0bde400fe61b41939bc4a0a8404a8",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 97,
+        "id": "C-526",
+        "old_json_row_sha256": "71984e0b43165ab275cd8fc4a878342827088ad38c637433019ce37ecd7bf075",
+        "new_json_row_sha256": "2dc0c4f3997d4dbdcb3019e6de86f86f42f6d17be25961494455108737f99a52",
+        "old_csv_row_sha256": "92b784292c1249119e54fe3f46db865ac143c2ba95840345b28671ff975f7be7",
+        "new_csv_row_sha256": "9bb6619dcd6d4dd08716b563cc1955a14be23923bf926b3cedd036b2a2afa53c",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 104,
+        "id": "C-533",
+        "old_json_row_sha256": "14945e90087ae3baed97010c3bf8e5f1550f1aaca2a3a3350c8f10909a3f36fa",
+        "new_json_row_sha256": "fe3b500b8c66493e851e39b957cdfb8f8ae27134226eed916f1c4f99722de31e",
+        "old_csv_row_sha256": "b2f4809cd1ae7c788d123607f5d9802b5026234cef330db14472a8657bbc6e14",
+        "new_csv_row_sha256": "2cbae651835d7f931c241af9e009a7d739aad7ff287d867dd3b1f89e5e8dac85",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 105,
+        "id": "C-534",
+        "old_json_row_sha256": "238125163c5ec2f39ebf67952344a546823758ba3f2f18eccefc5ac5f1458ece",
+        "new_json_row_sha256": "9044dc234f870c83504166da575793a1c45468c5c1c74df85a4d3edbc448e360",
+        "old_csv_row_sha256": "3ea38e88ff92a7e203383400ac84729a48ee6bbfb158d9d31d01db4b7f27dfe9",
+        "new_csv_row_sha256": "76aca4b0396fdcb418abc7e6786aff9f9f9166cff445edd1e6d71d4b135a1534",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 113,
+        "id": "C-542",
+        "old_json_row_sha256": "d277df03a11d2bd9a9d47d7e5ca5d7cc92fa087b6cacbe82b3f8ca244da2b6df",
+        "new_json_row_sha256": "51f79a9a3697973c69700f0368f935360f94a3fc25e05f77aa8e086b20009fbf",
+        "old_csv_row_sha256": "233edbbcc663755e9712400ff3ef72bb88b36eb57e30065ee1e6b1cfee8357c2",
+        "new_csv_row_sha256": "b75c4f1a579f13747262dc6da2f3179dbceb3a525b7fcc6b52104d6dc9463610",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 121,
+        "id": "C-550",
+        "old_json_row_sha256": "b21d7d7f3639d5e4c7e74b0fb0e3317cbd0a9739f4fa25e16ae40911d561dc2f",
+        "new_json_row_sha256": "b2d7df3110c99d8319fb0977b103ea42381c0225f1acec040b3a0036c72ab3c2",
+        "old_csv_row_sha256": "833e3f63a0705c7cda9f4fc088f7a7ccf016154332803c4401f9de05a6fd2321",
+        "new_csv_row_sha256": "08af84d8c6779d52e98278aad7d34d248a8176a100e722d46afe2adc0006e72f",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 122,
+        "id": "C-551",
+        "old_json_row_sha256": "fd02251ebeceafe3d149277e351c6641363a5a59c95bc735ae93bd08fb63b48b",
+        "new_json_row_sha256": "776ea79781c48bc2b2664f759c1dc1c556357b185dc968667bfdfd29d143f0e6",
+        "old_csv_row_sha256": "bf7a9b2a2e0bc38510d6694662f5dea94fff97025a5993e2eb48018d81a960c5",
+        "new_csv_row_sha256": "7c6a4364c937e0c6b56984cb0480c70aadf28a8429648450a835e6793f4511c8",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 129,
+        "id": "C-558",
+        "old_json_row_sha256": "035c1cd3154b5a657de1f19a48cf8b49cd2cbbbddbe14f0723f1deedef2e8487",
+        "new_json_row_sha256": "7497827eaff12c960ddf43f19a69c2cfe9fa8e8c6aed6d3c67ddc97bb1d6176c",
+        "old_csv_row_sha256": "53ae7954fb920a2c80a23fcfadf261789cbc3d7f7dd0f0b2fe23b54806b8aa40",
+        "new_csv_row_sha256": "df8f33fa5f937eaeeeab3814c0768610099fd3b5814755f9c2304b7f1751252e",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 130,
+        "id": "C-559",
+        "old_json_row_sha256": "8710d5f49881d188bc271ebd4c130646f2ecd8220a961c210db51296d20b3f9e",
+        "new_json_row_sha256": "9b56076bf9c587c9c6508d8633a6f3dd1dddccc4d9a348964e54f0ae7e1ab664",
+        "old_csv_row_sha256": "3457adea81b0f68130b92d313e3ee7594ca207e41b95ac41218f09f755f338f4",
+        "new_csv_row_sha256": "8a62c5c3c7c43dd9e8bc7de8a811dbc7fe24b7de68919d89a91a4c9bace54837",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 161,
+        "id": "C-590",
+        "old_json_row_sha256": "db4171bdb156898e3e53035daaceeeb9f018ad29bd7d8e8466f58f496c13199c",
+        "new_json_row_sha256": "74687848240171cf1003c0f954424014bf6c663ebd57e111369d48d1c8123419",
+        "old_csv_row_sha256": "359ab40711dbb25e7509c8121a4ed65681d063aa2bf63d8ca9eeb0207321ff99",
+        "new_csv_row_sha256": "94b70262488d40ba04fffcd7e38875ba8a48f9f3ef2918f7530165ad23ac46d3",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 162,
+        "id": "C-591",
+        "old_json_row_sha256": "02e5e6781f268ee4329431ebf91b9cf927a80fbb3e0794a1b1b64a41608bfc03",
+        "new_json_row_sha256": "ca61b7411ac1d90432a14de324ef70f626872ee16b9c64023500d42c1d6d8ead",
+        "old_csv_row_sha256": "60e34385e02fdd0cdb0c18bfc66a2eee55fd8a8199c2192ab75eafe74784ef5f",
+        "new_csv_row_sha256": "f5b1d4febecf035b572e0fab803548b66b6d4f74b57abf67b49945909a5a06eb",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 169,
+        "id": "C-598",
+        "old_json_row_sha256": "9f3df8eb0ec148a55e10d46dd7959f3af4bb082c3d77d5fea0c763e5433b390e",
+        "new_json_row_sha256": "302d67d01c24a8a9cf0e23c626532d523c76af8f291c0a1ff1d8776314b4d6ed",
+        "old_csv_row_sha256": "411034a7e58826ef8c7ad2ede6cb346bdf34c415012d24bbddaf1feed668fcc9",
+        "new_csv_row_sha256": "ed8eb7aeb6685a2e716c0fbe36cc97f11535f1953eebf8980c119c68a6a8acda",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 170,
+        "id": "C-599",
+        "old_json_row_sha256": "193a020fc5bca51dc556ff592f44f71e02d229a7ab21762f5ae64300ba853b18",
+        "new_json_row_sha256": "6e8e122f6e8537d67d1ee16aae481339cf3f5d6d552b5bc149c5482e2b40c48f",
+        "old_csv_row_sha256": "b25b4aefdfd878d36ce8791e6e896623092de230ea4299f27c6931881068ee93",
+        "new_csv_row_sha256": "b5d1e85967382b1d5936e7c808062a88a7dc5ebff1032c17c9e32cec7517bcd4",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 185,
+        "id": "C-614",
+        "old_json_row_sha256": "369953c1b5e4b30cf9913bc4647eddb44c380e93b3ac0ec658d2e30b8cde2e33",
+        "new_json_row_sha256": "b0cd2924661f0751fc1e2f72a14b457eafe14f9a784d50aacf86b5701d6565b9",
+        "old_csv_row_sha256": "890697ae80390872c1b8a799eb7ad0fde70324c2bc3f6bf3bd8eb31e03279c26",
+        "new_csv_row_sha256": "6020846a24cbdfdffaecf33916b7aed39a185b8f3ded1be722351823bd4d0f0e",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 186,
+        "id": "C-615",
+        "old_json_row_sha256": "3482cd9ee8cf06a1eef2af34b619291c6c40b4236680097eaa8e91830338beec",
+        "new_json_row_sha256": "a385cb74c3455b3065a0417dfb0b000d2d7a7279f3ddbbab84ec9bad6a431dce",
+        "old_csv_row_sha256": "fbbd36f278dc1b105ca7eb8b377cadb1e489938bea70d2540bd43bbf82fafdd9",
+        "new_csv_row_sha256": "413dbf606366baf97f07d7acdf308647c1ced1c2861daf39b14e050dc5395429",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 193,
+        "id": "C-622",
+        "old_json_row_sha256": "795c82dee2469f3abe2ab848db88404bd3eded3810a0b5b976e090bcacab491b",
+        "new_json_row_sha256": "700bd67d92e0d995406eb609d0ad923d4b302e7a1bf8ad2d7e50aa7d4382d416",
+        "old_csv_row_sha256": "576756bb41853305d016961a1e5cedf8b33586e84f72213fc8a5f1826058fa50",
+        "new_csv_row_sha256": "682ae3809ad15d313246d82c3436c0f4e82d7c217be4627fcf1457cae1c02f8f",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/04.csv",
+        "line": 194,
+        "id": "C-623",
+        "old_json_row_sha256": "2d4c580d05d88205e0ba3883dc743e6fc83a38ba08917128f9db137fa4288e81",
+        "new_json_row_sha256": "b06171f03be3305b3288e60cd26e0996935551cf3219a4a455ff423109de9e13",
+        "old_csv_row_sha256": "395388499c1fe04ad022372a995ba3eefafe3a15824c4d76384f9becc810c094",
+        "new_csv_row_sha256": "7f05613eeed1fadb1276d8beeef6157e65b82a8ea73606da1622f25a42bb9753",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          },
+          "Motivo": {
+            "before": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de p. 5 numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores.",
+            "after": "Se transcriben los extremos impresos, sin conversión, redondeo ni reconstrucción de numeración nodal. Las leyendas de la página 6 del PDF numeran los árboles 73/74, pero p. 21 los rotula 72/73; el localizador distingue izquierda y derecha. El alcance queda limitado al nodo muestreado y al análisis de los autores."
+          }
+        }
+      },
+      {
+        "path": "data/afirmaciones/15.csv",
+        "line": 920,
+        "id": "C-2816",
+        "old_json_row_sha256": "a90a5f05acab7f9e1d38f2bf7dfa8f35f5ee73cddcad1c13cc9315fad63c06bf",
+        "new_json_row_sha256": "d6866e1e33210fde98f158ab56e8f1b822bafa1f1297d069b9625accc6f1ce5c",
+        "old_csv_row_sha256": "222ce40922388fc01a594cc288e54dee0253df876dc6dfc58a323b7dd2ba30ef",
+        "new_csv_row_sha256": "f4611d643f05cc4e52c6f4e0f118ae4ea9a9a8185f9cdb1b8c59b5e94b94e4e2",
+        "delta": {
+          "Fuente": {
+            "before": "S126 Supporting information, S1 Data, p. 21, árboles izquierdo y derecho, terminal Nutomonas longa (requiere inspección humana); p. 6, rótulo Ancyromonadida",
+            "after": "S126 Supporting information, S1 Data, p. 21, árboles izquierdo y derecho, terminal Nutomonas longa (requiere inspección humana); página 7 del PDF, panel 1, rótulo Ancyromonadida"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/A_fuentes.csv",
+        "line": 125,
+        "id": "S126",
+        "old_json_row_sha256": "b107689eed722c42d00fd9e7ec379bd8110f90cbbee0520f5aec2468a752f587",
+        "new_json_row_sha256": "246d5fab06906b919c0458a213527f65b67183a05f1c419693c885084fd58d72",
+        "old_csv_row_sha256": "01f620d2590f65859ca1914fd6c307a7fefc0e609c14d1bb49991ba5f6d1f7cf",
+        "new_csv_row_sha256": "b4089b5117b0136155006367ab5f879e0d1572b296a499616754c2e1eddcfab8",
+        "delta": {
+          "notas de calidad": {
+            "before": "348 taxones, tres matrices, 18 árboles, concordancia y reloj relajado; las relaciones de Holozoa unicelular permanecen conflictivas. Usa Pluriformea/Corallochytrea de modo operacional en matrices; no establece sinonimia nomenclatural plena. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 34 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez. Suplemento S1 Data recuperado el 2026-09-26: pp. 5 y 21 presentan numeración discordante de los árboles temporales; se citan paneles izquierdo/derecho. El muestreo incluye Nutomonas, rotulado Ancyromonadida en p. 6, aunque p. 21 lo agrupa bajo Apusomonadida+Breviatea. La denominación Obazoa de Table 2 no elimina esta discrepancia de composición.",
+            "after": "348 taxones, tres matrices, 18 árboles, concordancia y reloj relajado; las relaciones de Holozoa unicelular permanecen conflictivas. Usa Pluriformea/Corallochytrea de modo operacional en matrices; no establece sinonimia nomenclatural plena. [SOPORTE ÚNICO] En el corte inicial es la única fuente citada por 34 afirmaciones; la condición se calcula por afirmación y no significa que la fuente se use una sola vez. Suplemento S1 Data recuperado el 2026-09-26: páginas 6 y 21 del PDF presentan numeración discordante de los árboles temporales; se citan paneles izquierdo/derecho. El muestreo incluye Nutomonas, rotulado Ancyromonadida en la página 7 del PDF, panel 1, aunque p. 21 lo agrupa bajo Apusomonadida+Breviatea. La denominación Obazoa de Table 2 no elimina esta discrepancia de composición."
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 65,
+        "id": "raíz del árbol temporal muestreado por S126",
+        "old_json_row_sha256": "2364457e75490fc70cbf0d8d3f39041ff9c555a7a562a8ef1b9b3005caf59fae",
+        "new_json_row_sha256": "b9dd56163bbba6e97f172c268b8ef9bf950705710fe5c8991a22e3d060dba471",
+        "old_csv_row_sha256": "bef4c7e1cb029face66f34bc529355d918a44356c87b7170b0c72dd1114b040a",
+        "new_csv_row_sha256": "bd9af446a2022889bd788a1aea58b28684219f20bd8c9bd8c3e4c1c564e03965",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 66,
+        "id": "Amoebozoa en el muestreo de S126",
+        "old_json_row_sha256": "829281b18729b894acf0a112cdd495a6695fb4cd63e974641297dae0e706469b",
+        "new_json_row_sha256": "d259b3bf28cd900ee3bf02749507fbb55e1f7f772f372a4e08271a825d47ba88",
+        "old_csv_row_sha256": "2b95596bd27a0912aee8b47c81f0eaa06f8fdd8fb5a7ff2fdfbb9cd5b0d02d8a",
+        "new_csv_row_sha256": "3f71994ddbe0ff7540322f458e15b78ee706bfc8a0d384b3e2797bae07e6999f",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 68,
+        "id": "divergencia Thecamonas–Opisthokonta en S126",
+        "old_json_row_sha256": "55f507e411a86d5ef1ac1ad2723bde9e69a36a672e7ec5118d0c5c461e8e9d0a",
+        "new_json_row_sha256": "d8965b4d22ed22b27f55630b78827619008c68e7941495feef1543c243cb4375",
+        "old_csv_row_sha256": "9aa9288e3060dcab248e0c8c014fc9c3fc8e2777041b4a08047dfe5b1064be71",
+        "new_csv_row_sha256": "55d26fb5f966cf1ec6bbfcb88280e3366f588ac7e1c794a33a02ff84d41f8f16",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 69,
+        "id": "nodo Pygsuia biforma–Nutomonas longa en S126",
+        "old_json_row_sha256": "dc6be003fbc0cef0b3582003da879fbb456c21a717d8f24410d8f9882e28fb2c",
+        "new_json_row_sha256": "2f482c2df666f5a95fb3f3cc367e5849df6fef45b1e330210ea78a7c919867e4",
+        "old_csv_row_sha256": "5bd3580a25db478afd98c5c42ab8e031f388acd551a02a9372ca77a6d99fab4a",
+        "new_csv_row_sha256": "697f168a154dc16eddca0982e433d24d903c0c7ae2fcc2f1ab4684ddd9d201af",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 70,
+        "id": "Ichthyosporea en el muestreo de S126",
+        "old_json_row_sha256": "4c1a7f0a84c29de5f1204114386c7ac5e5e4fd727da142b95564fee0613b4f06",
+        "new_json_row_sha256": "e718589e0dde38f66b4eb90fed841f82f7124fd2d727096123050a5e7db8139a",
+        "old_csv_row_sha256": "3442c8be992d9bd4b9a9039d57cce95beec69f05c1ebd86989195adc9b2e4598",
+        "new_csv_row_sha256": "13ef8711d8ffa292a27438d6d78da4fe742650cdc12d48081f003744a39259b3",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 71,
+        "id": "Pluriformea muestreada como Syssomonas+Corallochytrium en S126",
+        "old_json_row_sha256": "96213e91903e8a02b4625ff9e7506670af4240d12ab986ba5c69392a1777da2e",
+        "new_json_row_sha256": "d4eb9740b41f39b9ae23af2a7f8192e6f0ab57ef78f3214194b44431b196eb1d",
+        "old_csv_row_sha256": "e415dc94a8dd8e4c5aa7c32cffadb4852cd3e0ff8eef2cd77a2d344a7b6fd9ba",
+        "new_csv_row_sha256": "412be53c8f769a3b8f5c67e30b933fbbe6117feb70417787493a31df48170673",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 72,
+        "id": "Filasterea en el muestreo de S126",
+        "old_json_row_sha256": "9b9d2a9681406e694ba132ea52c9ea752876bf8db700df4c099b80c11ed6007e",
+        "new_json_row_sha256": "03ae8d336bfec3e16737cb3f947326a3d65ed53df24b5abd90c41b45629bcc4c",
+        "old_csv_row_sha256": "d0519b5740171f8b12b00343df4f3d29fb6ff842d182135b6e02894eddb66f8b",
+        "new_csv_row_sha256": "c14cffc22ecde4d8faf0bc944669928d1099e3f3f7130cadb0cd140fc898c22b",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 73,
+        "id": "Filozoa en el muestreo de S126",
+        "old_json_row_sha256": "a8277f4e8a502ff23921b474fa92b167688e698736433d121e99cd8541867ed9",
+        "new_json_row_sha256": "a2391d4684a32436b0b6141f5b18782684e781228c26eab79637f8d26b78fd94",
+        "old_csv_row_sha256": "38c6ab2c0e12a7f7a5307190fbed2b3747e5ce8d9f992b7cdfad38f23b0df6ec",
+        "new_csv_row_sha256": "912c3680fdf26fe59df45374aea2275a87511dc09f83b2baecc80ab16a87f5ab",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 180,
+        "id": "raíz del árbol temporal muestreado por S126",
+        "old_json_row_sha256": "2008a182e4b072a3d4b42425465638d2bb202981efe208c224b9e57637ab6cbb",
+        "new_json_row_sha256": "e80ce16172fbd83635cdc7b48ecaa133eaa39669083f5034f423d9ddc94c3642",
+        "old_csv_row_sha256": "86525a1d5bba3110fb71f8c307c1e69a5138def05cb4055d0d1612c0e17a9299",
+        "new_csv_row_sha256": "aea5721ea36f404606aacd338a4ee09d5aea1b4b200548094259faa35bd5599c",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 181,
+        "id": "Amoebozoa en el muestreo de S126",
+        "old_json_row_sha256": "9b0f04ce410901abb74d115fcb85c9a0cacaee8aa17b404e5b811dcb5aaf981d",
+        "new_json_row_sha256": "4f6d6b98debbcf1a74588adc04cc5a2389a9a8590a88d9d43a52c7e0f3e0c2ac",
+        "old_csv_row_sha256": "5f44d843fbb478c7824ee3b89cc2cd049ec17f3c0c091c07c47155a01d456210",
+        "new_csv_row_sha256": "eedb93cb01a1d484c19bda9d649dbb8190c92641339db51877671c6a381fa37e",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 182,
+        "id": "nodo denominado Obazoa en S126",
+        "old_json_row_sha256": "c1b17d8cf1b248186f3261575783787a08c2f69908b2d0fa1c1ac8675f1ba92f",
+        "new_json_row_sha256": "3a35cee7afeb474f8e79b6e1b1830d60c8907d98165eb414d53369decf564b31",
+        "old_csv_row_sha256": "2cef0a84019f5ed9ac76728beca64727031165eea06661b7ca62cd466b582550",
+        "new_csv_row_sha256": "f45d8ebad5ba61e1f6c18b1ceded65bf8a2fdc817ee2ee7d6068d87b32d761c7",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 183,
+        "id": "divergencia Thecamonas–Opisthokonta en S126",
+        "old_json_row_sha256": "ef138e095ffd647f7aac91d232afbecdc2aa1e32c810dcbe245297f42cf42640",
+        "new_json_row_sha256": "c186058f765d9175208f07c608712d1deae4eacc3e68cb23bdc07c2abb105d16",
+        "old_csv_row_sha256": "810e011a9f55cc957bd84c40658188f8848c6a6de9036a0bbec58d09ab31b106",
+        "new_csv_row_sha256": "ed2b70330ba0e7b4da6eb40a227393ff26426189c36edae70efe5d2b3033b82c",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 184,
+        "id": "nodo Pygsuia biforma–Nutomonas longa en S126",
+        "old_json_row_sha256": "94d57cee8df083be511fd73dd0cfb86a34f8fa20e59767903d02ba97d9f2cb43",
+        "new_json_row_sha256": "04edd86d8ab88f7633d1b2aa1163763280723e3f2961c8476150d6abcf043ab6",
+        "old_csv_row_sha256": "ba0f77a300de7cc66a9615792f5a478de222d65ef277b979815191bae013a545",
+        "new_csv_row_sha256": "3a07a666aa88ea4627102a8807261559900f35f35f7d9d03a9a626c4928ac444",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 185,
+        "id": "Ichthyosporea en el muestreo de S126",
+        "old_json_row_sha256": "c5b654445ec549ea4f406a666ba855fa634be2ce8516373207be64a919369fe6",
+        "new_json_row_sha256": "c9f7e12905a53b66111860795efea6c17c9c34e7569043d6b93f7f31d9b58ace",
+        "old_csv_row_sha256": "eaecb4e72ed93674c5042d6c8ac5cffb6ac22b58589674c8b4d49fbca59fc76b",
+        "new_csv_row_sha256": "32403544b350a1b5063716ce5da4145733ee0db7669cf79a02a2790793a209ee",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 186,
+        "id": "Pluriformea muestreada como Syssomonas+Corallochytrium en S126",
+        "old_json_row_sha256": "23e7336999c5b6f148b98d43ed8f9e3fa0ab8a2b977096cefbb8fb7c7ae8303e",
+        "new_json_row_sha256": "0ae0b58f02e786089475ce5f42aa7c50f556843df26d302805e106e580844dc5",
+        "old_csv_row_sha256": "a8af91a9966f0200fd4b181356e857fb027b9989b6df13077ba5ae97cb2644e2",
+        "new_csv_row_sha256": "115070f2503fffc44ac707af57d924186ec69ed8606bd465ee280925ceb21cd3",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 187,
+        "id": "Filasterea en el muestreo de S126",
+        "old_json_row_sha256": "3f0351642bfd6b201616969bf40213e2c0e38eae7bbd42cd6301afccd45ce3b0",
+        "new_json_row_sha256": "9bc35d38f6e52d3195033dd8593334cb468e1ef056849a2e2a9408b446a5500d",
+        "old_csv_row_sha256": "bfae122f840f42a27b83c8cf1d0dc5fd05fe3893648c398c4a5dd9dcf707f232",
+        "new_csv_row_sha256": "0077a8111dbde5029645f43085cdd5bfff88f81c0e7d0f3cf3ab8072f45d6770",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/D_fechas.csv",
+        "line": 188,
+        "id": "Filozoa en el muestreo de S126",
+        "old_json_row_sha256": "432afa9f910b242629c3cc842930e8f70116b4282ff540f9fa9c0e4ead5a5eeb",
+        "new_json_row_sha256": "f8bb431bf1f96a56702782433ab5f536364991fce283564467cfb2f9b872ccf2",
+        "old_csv_row_sha256": "ce9ea0c00f50602db77b7b347c8be01fdebe79b18323c9b738257a50874a9a4b",
+        "new_csv_row_sha256": "7d5cd41b8ac2916a718eee56c9fd0154aff3636af197c5915217879e0a408341",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 576,
+        "id": "intervalo temporal publicado: raíz del árbol temporal muestreado por S126; raíz 1.5",
+        "old_json_row_sha256": "c29055eae6bca1a11d1e20901643f7e422a0f346e0e7a4bcc56aa446a4c7bde9",
+        "new_json_row_sha256": "81a3473c986598dfa35b8027ab699caa087f3b4cfed1a2abf9470ddba4dbe7d2",
+        "old_csv_row_sha256": "618bb0cbd90f9d2a123db30e9ffcfd9aec2d8cf0d33840ae802da8c2ba891f26",
+        "new_csv_row_sha256": "a61d13d4526a4765852db480098872a169008ea356af8263e3134b8ddc57e6ec",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 577,
+        "id": "intervalo temporal publicado: raíz del árbol temporal muestreado por S126; raíz 1.9",
+        "old_json_row_sha256": "51bf5900ad9c5590d181fcb2c5b4752798b34df33c818f2206e985c8f25da59b",
+        "new_json_row_sha256": "57445a6e3912ea1625549654252e65ca67b6902ee20941e4d85dc96952ced6bd",
+        "old_csv_row_sha256": "4b0e1ec0963ae3bab416f58796ecd36b3bacd45007725c792e5ce5616121e847",
+        "new_csv_row_sha256": "ad556c4098eddeec3ca4ec5771630a8c823f3f72699b9e057030e6288c052059",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, raíz del árbol temporal muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 578,
+        "id": "intervalo temporal publicado: Amoebozoa en el muestreo de S126; raíz 1.5",
+        "old_json_row_sha256": "6723d4c283e3f0f39fa4a40ae22fd789d1e1b658a07a8ea028554a18cdfc695c",
+        "new_json_row_sha256": "ca71324eb31d4558895b8cc237df9666c1367e36bc039d5d4f0b768ce1f894b1",
+        "old_csv_row_sha256": "76e44e45890d78357a9726a7b1f5033049877dc47e6b19679fd94e3e24366c41",
+        "new_csv_row_sha256": "140371a86c779ea85456540cf48ba7e6548a8fd4d8d89ef69583a221aa44c0cc",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 579,
+        "id": "intervalo temporal publicado: Amoebozoa en el muestreo de S126; raíz 1.9",
+        "old_json_row_sha256": "8fd5d9293f27cb10931327ce6419802ba230557c72951fcf6fff752394f412f8",
+        "new_json_row_sha256": "d11e5f31ee353416b50ec1b2749a2f3450cea5b3b103beb4767f9c35e7f7a97b",
+        "old_csv_row_sha256": "6abb7ca4cec92fd7854b7a6b92e046f78bcfdbb6cd8a6abf2333999914b73df6",
+        "new_csv_row_sha256": "9092de2862be0d3495f94f925a5b218ec0bb6510453b982ea0b46d11b3291b0e",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 581,
+        "id": "intervalo temporal publicado: nodo denominado Obazoa en S126; raíz 1.9",
+        "old_json_row_sha256": "52d1996a31627a64d6d792a0a75c029977f6cb90bb04356120b0d6a93425ed82",
+        "new_json_row_sha256": "99217b235f218d4e8de7e9a68ff751924a1b67903036a38ef4c56d9be2356b52",
+        "old_csv_row_sha256": "b0d5431f597bc328859cf067f06d868009592556da57a65a989f6e8661b05dba",
+        "new_csv_row_sha256": "e903ddf3d9e0d869c75b176ff9cd4b2333c88281f876065897f21b2853d78372",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo que reúne Pygsuia, Nutomonas, Thecamonas y Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 582,
+        "id": "intervalo temporal publicado: divergencia Thecamonas–Opisthokonta en S126; raíz 1.5",
+        "old_json_row_sha256": "0b430c3076501fa0fd141c3f461441f7c9400c58181fd22e80ff35b129f852fb",
+        "new_json_row_sha256": "1e123468c4bd1e682408c83d11114cdce4d347c807f398f25e3ef311f2649bde",
+        "old_csv_row_sha256": "4578dbf7f677c248d5440a6ce0e3e137551d879cc6662a10370bc602196d531c",
+        "new_csv_row_sha256": "9a2f8f632af562583225d6bbe74985a078ee4b7eac459975b4bdfe22a39150a8",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 583,
+        "id": "intervalo temporal publicado: divergencia Thecamonas–Opisthokonta en S126; raíz 1.9",
+        "old_json_row_sha256": "d07a0201ab573f3cbba09c934b8bed8fe53aefcf2c9ce92d5ed71b9d6034f353",
+        "new_json_row_sha256": "6df548ce06911f01a87a34cf82601ca34c7d4608f0c4417e7291423599bea6b0",
+        "old_csv_row_sha256": "6b13479b807d0591945e8d40e0fc24be3f9f1528a256665ea32a12b39afad7b5",
+        "new_csv_row_sha256": "5f27762b3382d11963422ebcb34faa8d1b93557f5ad0af21dc6a8958529b9f36",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 584,
+        "id": "intervalo temporal publicado: nodo Pygsuia biforma–Nutomonas longa en S126; raíz 1.5",
+        "old_json_row_sha256": "7c33ce0b6a09ab6bfb35427d4a70d6c23e745c9381726d9c96fd99066996d666",
+        "new_json_row_sha256": "fe39c98f1fd8c80bc49186862c0b82cac4452c56ea9aecfbef706fcc3bdcf530",
+        "old_csv_row_sha256": "1538d4ac489170db8a67976ba9ebbac350ce161d03be50c9c57f8c543d51b75a",
+        "new_csv_row_sha256": "e43d8e6fdfa364b8fa85dcea82cc755b7a2dad9866ebda95ade6be779c6f99f7",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 585,
+        "id": "intervalo temporal publicado: nodo Pygsuia biforma–Nutomonas longa en S126; raíz 1.9",
+        "old_json_row_sha256": "b3790e90dde2c48b52cebbb3633c004223e50eaeeafa66aeb4f3e6ab9dbd00e5",
+        "new_json_row_sha256": "4dab766a373415f535ec69e49d2da21cf0053c7ab9233a3302950c2f2ddebd30",
+        "old_csv_row_sha256": "908bd57f58e88aaaf96ac136ebe6ca7a960d2beac743a0d7ad131fb39c6a1a2f",
+        "new_csv_row_sha256": "e6b8c46b78dab565fdd66e39dac7e1aaef40d7473cf3512b6972ca41afed2c6a",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Pygsuia biforma–Nutomonas longa (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 586,
+        "id": "intervalo temporal publicado: Ichthyosporea en el muestreo de S126; raíz 1.5",
+        "old_json_row_sha256": "3494a34d07778dc663f391b8893da162a1d4b76345e82116c26d951fcc057f30",
+        "new_json_row_sha256": "7b1afcc29b4cc5366604858b24dbee79e1393bcbbb77453563bb24e91f89dd64",
+        "old_csv_row_sha256": "dd3c12910aeaedfc4dd630770f29a470285226c2b91f07442e3272e5810edde8",
+        "new_csv_row_sha256": "0c5a0bcf49fa7112483c83e7cf0f895e4d2731eb5b6614787cd5d489d6d9b3a4",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 587,
+        "id": "intervalo temporal publicado: Ichthyosporea en el muestreo de S126; raíz 1.9",
+        "old_json_row_sha256": "198f30c1e5715aab5f6c0e16f45306116dd6218265e93a14489522d5f95f13e1",
+        "new_json_row_sha256": "244b7143145f28edf979f80a43ae46f8f5cb8129dd10ff0d3e57adb813438a61",
+        "old_csv_row_sha256": "ef780e415346e1e72b922f21a7ce66af96f167ab6fbf337316c25335b0b14de1",
+        "new_csv_row_sha256": "fba6cb9b28b1b9850a338d8d355d7c04f25bb14af7d4daf462908e6bab618add",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 588,
+        "id": "intervalo temporal publicado: Pluriformea muestreada como Syssomonas+Corallochytrium en S126; raíz 1.5",
+        "old_json_row_sha256": "1651d060e6b5cc29f82603fc72902d1cceaca5d56f7efc1b8e0914b73aaddcd4",
+        "new_json_row_sha256": "5276f38e5a08df01d7789dec4bb12227ac45c59ff62e5d38821918657c501de9",
+        "old_csv_row_sha256": "6a70cb3c69d52920dd70319f1a8e40f3ee2bb9773935ced398234d798e7e3de0",
+        "new_csv_row_sha256": "00db1e12a18574251e6cf4f2c186bdb152c8442ad2dc5f1a24fb54c1e6268b61",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 589,
+        "id": "intervalo temporal publicado: Pluriformea muestreada como Syssomonas+Corallochytrium en S126; raíz 1.9",
+        "old_json_row_sha256": "4d7bc4fef8f2b918296c26b5ce53537ae4ac39bd3c02a4d2ef57b05a9449185d",
+        "new_json_row_sha256": "b2e4b295f9dc80fb259c6be0b0861776a88c85cf542335b5755cda75449ddb3f",
+        "old_csv_row_sha256": "3a21c38d58f73919cbe2e96914b926803c624d4c8e92304ba9e9f8ee504776bc",
+        "new_csv_row_sha256": "b5d744615e0df638bb3d808fb8a110517a9adefad3489655f31418eb85bfca64",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 590,
+        "id": "intervalo temporal publicado: Filasterea en el muestreo de S126; raíz 1.5",
+        "old_json_row_sha256": "818a64c08443230c38641e6627ca7d44fd2968a0261d4c0ee490724fc4bf574e",
+        "new_json_row_sha256": "c3997b78721ed22e6240b61a5e43b302176e973148051ef83293c0eeb19119d3",
+        "old_csv_row_sha256": "3d3a6c1fceb1525355e9f5e3c5c2102ce102010490bd75071aa028301937c08f",
+        "new_csv_row_sha256": "037d7a864101cb23b1ceedc443e99839911694c8ee195f409805892b01dadeaf",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 591,
+        "id": "intervalo temporal publicado: Filasterea en el muestreo de S126; raíz 1.9",
+        "old_json_row_sha256": "7de04a0ac71980a26f14b41e6496c66748aab129c4b249eeb95da8041ab09914",
+        "new_json_row_sha256": "8ea96bde21eea0d22cfd36f64115bf2973e76b82aec890092f5cb3865a2da4e6",
+        "old_csv_row_sha256": "7d6b7c3ffbd7d671dbc6686b82ddc8603fb7eb101504add9b0ba5854e80228f5",
+        "new_csv_row_sha256": "1d37b4e008f7acc95444c0643c462005e168e39e4337c81c55c8ada160ce6516",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 592,
+        "id": "intervalo temporal publicado: Filozoa en el muestreo de S126; raíz 1.5",
+        "old_json_row_sha256": "dbc16192dbdd7b9cb49cc0d7130536faacc26c4b30ede5ebe17b6a3403482060",
+        "new_json_row_sha256": "3ff67ffb28fe0ca4e5dbbaf731909ebd18c522af6962c8a006f5f31fc268085d",
+        "old_csv_row_sha256": "e460a12be95285425d4ad7f0150d69c174b405cf48bb6c6b9ded82e4e9153b4b",
+        "new_csv_row_sha256": "f023121d15f9db3f214567f69ae15063331a7ce558d3b40b65ad0cecfee60d9f",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/apendices/F_magnitudes.csv",
+        "line": 593,
+        "id": "intervalo temporal publicado: Filozoa en el muestreo de S126; raíz 1.9",
+        "old_json_row_sha256": "889d8d58978389f9967ef071b60e7ae7e397ac58c679c9caf7cf74687c3022c1",
+        "new_json_row_sha256": "e966dd6af5f79b1c2f2a8ba74c9972f05929f0ec7d56c7167fa8684f2ffe8dee",
+        "old_csv_row_sha256": "3c386b88e154df497a5d2dac0681fe72a7194f9b7771b6195ce86ac8356f0d8c",
+        "new_csv_row_sha256": "b1cf7838c174eb47398b6d28ba46b7bbf001f60e42e1724dd817c5a1d9e75d70",
+        "delta": {
+          "fuente con localizador": {
+            "before": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol derecho, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv",
+        "line": 19,
+        "id": "BN-557",
+        "old_json_row_sha256": "8588c985ca804f331446108eb3739aa139d368002689a722cd9334e7d58804cc",
+        "new_json_row_sha256": "8c9424a8aaf0942173b562390172c163a02232ba9784755dc83b6dd7fa72db37",
+        "old_csv_row_sha256": "2f597ec966f8529e81d2fd3b5686e9d6cf594cd78a4c3fd5134c42545ed51467",
+        "new_csv_row_sha256": "0d08cbabba9695e79f3068a92a18ee24ea3488ff1d0ca6603e3c147c8bdfb260",
+        "delta": {
+          "términos exactos": {
+            "before": "S126 S1 Data, pp. 5, 6 y 21; consulta de texto «Breviatea|Pygsuia|Nutomonas» e inspección visual de terminales y bifurcaciones; contraste con S01 Table 2, entrada Ancyromonadida; fecha 2026-09-26",
+            "after": "S126 S1 Data, páginas 6, 7 y 21 del PDF; consulta de texto «Breviatea|Pygsuia|Nutomonas» e inspección visual de terminales y bifurcaciones; contraste con S01 Table 2, entrada Ancyromonadida; fecha 2026-09-26"
+          },
+          "resultado": {
+            "before": "El suplemento presenta el nodo Pygsuia biforma–Nutomonas longa, pero rotula Nutomonas como Ancyromonadida en p. 6; S01 también incluye Nutomonas en Ancyromonadida. No se localizó un intervalo de corona con más de un representante de Breviatea en los árboles temporales de p. 21. La conclusión se limita a estos artefactos y no declara ausencia en toda la literatura.",
+            "after": "El suplemento presenta el nodo Pygsuia biforma–Nutomonas longa, pero rotula Nutomonas como Ancyromonadida en la página 7 del PDF, panel 1; S01 también incluye Nutomonas en Ancyromonadida. No se localizó un intervalo de corona con más de un representante de Breviatea en los árboles temporales de p. 21. La conclusión se limita a estos artefactos y no declara ausencia en toda la literatura."
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "line": 2,
+        "id": "Amoebozoa",
+        "old_json_row_sha256": "bbe8cbe8a7775ed5253c44409a98a59a67893742db8abba6c27e2450bf0657f8",
+        "new_json_row_sha256": "44fb49a54b81ba3ead534cfd9587d48fefcaa5025cf3b154bed6d18ced741353",
+        "old_csv_row_sha256": "7ae6314fff77d4130c823b1a936fab36e0004144bd7cc2a215f2c15911384b71",
+        "new_csv_row_sha256": "74adbb2ba19677f15183ebcb3529f767e119381969269e2ff57fa8f0f5d6eba5",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Amoebozoa muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "line": 2,
+        "id": "Apusomonadida",
+        "old_json_row_sha256": "bc19fabd60dbf5e9da5d56403f42b6646daa68888a56a6b7e6ddbe8f3677b3e9",
+        "new_json_row_sha256": "06312c4dd0cb7bef6dcbeaa5b46bb084d4d5f0304ec2692f52d7fc16d356590f",
+        "old_csv_row_sha256": "2b22d8fefef6ce57c2bc0b99772991cf1ad9bd8ebb9bee2a5222b73a18815605",
+        "new_csv_row_sha256": "1d33034f0a28ac8ecafb344f5d7133270384b792d8a79042c4bc55b56e1be92c",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Thecamonas trahens–Opisthokonta (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "line": 2,
+        "id": "Ichthyosporea",
+        "old_json_row_sha256": "a68a88cc3e94f6c0e73678feeb6d5e8b1f014a721f31272cb248f0951be5bbc0",
+        "new_json_row_sha256": "07bf25c568cc81c51ba1456f78f5a80defec2b679fa0925e89e4c39bea88de10",
+        "old_csv_row_sha256": "36ebab5e3199bb65182362dcbdb3ef43cc02ae69fb58085c0e5f03c2ff5e20bf",
+        "new_csv_row_sha256": "4564f96191d8392c9d8a150f81c9309a6ebca94f0945908300cff56f0611ad82",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Ichthyosporea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "line": 2,
+        "id": "Pluriformea sensu Hehenberger et al. 2017",
+        "old_json_row_sha256": "fa34fc8df7a8426781c1f22fa62f0d8cafb2adbf1654d0cac589872e6e693efa",
+        "new_json_row_sha256": "dc60dafc5bbaf256edfe39ded424fc52f0f3bfbbe3f9c592a9273209b292a052",
+        "old_csv_row_sha256": "71d94a9e2eca9652d52c2dae89a41cca1328858ac718829ac8beeea3f420c3cc",
+        "new_csv_row_sha256": "2f2b8283f5fb5955681af9067552e52920700fae064378ea5a6107fc3e795ea7",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Syssomonas multiformis–Corallochytrium limacisporum (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "line": 2,
+        "id": "Filasterea",
+        "old_json_row_sha256": "27ff39b1d158a746a5c19eab8756916afaaf604845edc7d8621e23bbbb4402d6",
+        "new_json_row_sha256": "4501ca2f3bd43f834e9ef92feff6151b4fe70288dbdc00505e18a05fa69be531",
+        "old_csv_row_sha256": "98c13bd576da7d2ef4cc92d0481df58067df95062193bab8ef3670b53d551ead",
+        "new_csv_row_sha256": "1987c6cf1d7de2e2025c73f4c885a9fbc34001ae0a531f5acfabb836d81c652b",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo de Filasterea muestreado (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      },
+      {
+        "path": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "line": 2,
+        "id": "Filozoa",
+        "old_json_row_sha256": "ca152b508f442b972fdb7a3c9c838ab8998c2ea16bda7147d9830d313edf15f3",
+        "new_json_row_sha256": "7a8c2273fdb66b107df9a2d07261900fc09add78d5eeb81d56b298f60dd71c9e",
+        "old_csv_row_sha256": "60fe3e666724f008d0442c5a4c2e88b65585457148e231fe9a337959a21f93d8",
+        "new_csv_row_sha256": "02b44f4a0c65d8acf80006fcc6090a5576a3b36747aa069dcc53bbe930b7157d",
+        "delta": {
+          "método de la estimación": {
+            "before": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala",
+            "after": "MCMCTree; 10 calibraciones fósiles; raíz restringida a 1.5 mil millones de años; S126 Results, A timescale for Opisthokonta diversification; Supporting information, S1 Data, p. 21, árbol izquierdo, nodo Filasterea+(Choanoflagellatea+Metazoa) (requiere inspección humana); leyendas de los árboles temporales, página 6 del PDF; Fig. 3, leyenda de la escala"
+          }
+        }
+      }
+    ]
+  },
+  "relectura_y_rectificaciones_historicas": {
+    "utc": "2026-09-26T22:24:30.148910+00:00",
+    "historial": [
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 2,
+        "id": "C-525",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "entifica directamente como corona Amorphea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 3,
+        "id": "C-526",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "muestreo, sin promoverlo a corona Amorphea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 4,
+        "id": "C-533",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "deria, Tieghemostelium y dos Dictyostelium. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 5,
+        "id": "C-534",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "emo superior 13.0113, no el 13.01127 de S7. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 7,
+        "id": "C-542",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "ase no lo identifica como corona Breviatea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 8,
+        "id": "C-550",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "y Opisthokonta, no la corona Apusomonadida. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 9,
+        "id": "C-551",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "hokonta; lectura impresa exacta y raíz 1.9. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 10,
+        "id": "C-558",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "do de Pygsuia biforma y Nutomonas longa. S01 y S1 Data p. 6 clasifican Nutomonas como Ancyromonadida; la fila ya no declara ",
+            "corona Breviatea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 11,
+        "id": "C-559",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            " una corona Breviatea con muestreo interno. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 12,
+        "id": "C-590",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "ospóreos. No se confundió con Teretosporea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 13,
+        "id": "C-591",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "con los diez terminales y límites impresos. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 14,
+        "id": "C-598",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "una corona independiente de Corallochytrea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 15,
+        "id": "C-599",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "s impresos distintos de la precisión de S7. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 16,
+        "id": "C-614",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "s de Pigoraptor; rótulo lateral Filasterea. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 17,
+        "id": "C-615",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "a independiente de ambos extremos impresos. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 18,
+        "id": "C-622",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "tosporea+Filozoa y no se tomó como Filozoa. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 19,
+        "id": "C-623",
+        "bad": {
+          "localizador_verificado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ],
+          "evidencia_dictamen": [
+            "uiendo ramas, no por proximidad del rótulo. La leyenda p. 5 y Fig. 3 fundamentan cobertura del 95 %, raíz y unidad; se conse"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 21,
+        "id": "C-2815",
+        "bad": {
+          "evidencia_dictamen": [
+            "breviado; Nutomonas está en Ancyromonadida según S01 y p. 6. El negativo no se convierte en ausencia universal de edad publi"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_lote_s126_2026-09-26.csv",
+        "file_sha256": "79546f1e5470c35531dcba5875894ea7478860f9237c7aab0993bfc7e8dd90aa",
+        "line": 22,
+        "id": "C-2816",
+        "bad": {
+          "localizador_verificado": [
+            "terminal Nutomonas longa (requiere inspección humana); p. 6, rótulo Ancyromonadida"
+          ],
+          "evidencia_dictamen": [
+            "se encuentra en ambos árboles temporales de p. 21 y en p. 6 se rotula Ancyromonadida. La afirmación documenta presencia, no "
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 5,
+        "id": "data/tablas/04/table-18-4-6-3-amoebozoa.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 9,
+        "id": "data/tablas/04/table-20-4-6-5-apusomonadida.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 13,
+        "id": "data/tablas/04/table-25-4-6-10-ichthyosporea.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 15,
+        "id": "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 17,
+        "id": "data/tablas/04/table-28-4-6-13-filasterea.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/revision_mapeo_lote_s126_2026-09-26.csv",
+        "file_sha256": "0acb7e56a7f949e13388755529cf7d45a974e9100e79142482fa26ed616ad0d8",
+        "line": 19,
+        "id": "data/tablas/04/table-29-4-6-14-filozoa.csv",
+        "bad": {
+          "contenido_normalizado": [
+            "nspección humana); leyendas de los árboles temporales, p. 5; Fig. 3, leyenda de la escala"
+          ]
+        }
+      },
+      {
+        "path": "docs/auditorias/addendum_c2817_lote_s126_2026-09-26.csv",
+        "file_sha256": "540b8d112a399081549779286639219aef416fab26ce246931113bf34d568af0",
+        "line": 2,
+        "id": "C-2817",
+        "bad": {
+          "localizador_verificado": [
+            " Thecamonas trahens y su bifurcación con Opisthokonta; p. 6, rótulo Apusomonadida."
+          ]
+        }
+      }
+    ],
+    "consultas_bn557": [
+      {
+        "page": 6,
+        "pattern": "Breviatea|Pygsuia|Nutomonas",
+        "extracted_text_sha256": "f9c15d8a4696c116c69022a83cea81f372c5782487d669f60e22967e4efac46a",
+        "matches": []
+      },
+      {
+        "page": 7,
+        "pattern": "Breviatea|Pygsuia|Nutomonas",
+        "extracted_text_sha256": "532ed7f7f5bbf037da4dc5b721f0cb4c61e0d86f2d815b7b2c09a46788df013d",
+        "matches": [
+          "Ancyromonadida",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Nutomonas longa",
+          "Nutomonas longa",
+          "Ancyromonadida",
+          "Nutomonas longa",
+          "Ancyromonadida",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Pygsuia biforma",
+          "Breviatea",
+          "Nutomonas longa",
+          "Ancyromonadida",
+          "Nutomonas longa",
+          "Ancyromonadida",
+          "Nutomonas longa",
+          "Ancyromonadida"
+        ]
+      },
+      {
+        "page": 21,
+        "pattern": "Breviatea|Pygsuia|Nutomonas",
+        "extracted_text_sha256": "95c24d05850bd69da9d4d0bb483a0217707aadca2f04dba373722ef0e3b7b2c9",
+        "matches": [
+          "Pygsuia_biforma",
+          "Nutomonas_longa",
+          "Breviatea",
+          "Pygsuia_biforma",
+          "Nutomonas_longa",
+          "Breviatea"
+        ]
+      }
+    ],
+    "errores_canonicos_restantes": [],
+    "s01": {
+      "path": "fuentes/S01 [2019] Revisions to the Classification Nomenclature and Diversity of Eukaryot.xml",
+      "localizador": "jeu12691-tbl-0002 Ancyromonadida",
+      "sha256_pasaje": "e0f8fa6840e2088e68bf14ae2554b1dff470f021feb164df1716a01e6e9ed408",
+      "generos": "Ancyromonas, Fabomonas, Nutomonas, Planomonas."
+    }
+  }
+}

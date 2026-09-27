@@ -1,0 +1,162 @@
+{
+  "scope": "Reinspección técnica independiente de disposiciones residuales, sin firmas científicas reales.",
+  "observed_completed_utc": "2026-09-27T02:05:17Z",
+  "nominal": {
+    "utc": "2026-09-27T02:03:53Z",
+    "hashes": {
+      "scripts/residual_semantic_dispositions.py": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4",
+      "scripts/remediate_trace_residuals.py": "85dfdc2db6e85ee2d4344321e4bfae7059a6f46a490a1d5b9f767e4a244d71c4",
+      "scripts/build_atomic_cell_claims.py": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9",
+      "docs/auditorias/fixtures/reinspeccion_disposiciones_independiente_20260927.py": "1003fb945081f85820cf2fe0221d82436bfbff3e102706481627cdaf44d29543"
+    },
+    "tests": 20,
+    "passed": 20,
+    "results": [
+      {
+        "case": "valid_history_determinism",
+        "result": "PASS",
+        "detail": "Fixture íntegra repetible, historia intacta."
+      },
+      {
+        "case": "review_identity_Autor-Ensayo",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: autorrevisión/cronología inválida: C-2708"
+      },
+      {
+        "case": "review_identity_ autor-ensayo ",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: autorrevisión/cronología inválida: C-2708"
+      },
+      {
+        "case": "review_identity_AUTOR-ENSAYO",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: autorrevisión/cronología inválida: C-2708"
+      },
+      {
+        "case": "review_identity_NO_ASIGNADO",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: identidad no asignada en revisor"
+      },
+      {
+        "case": "review_identity_pendiente",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: identidad no asignada en revisor"
+      },
+      {
+        "case": "review_identity_Ａｕｔｏｒ-Ｅｎｓａｙｏ",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: autorrevisión/cronología inválida: C-2708"
+      },
+      {
+        "case": "range_missing_middle_source",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: fuentes/artefactos no coinciden nominalmente: C-2708"
+      },
+      {
+        "case": "range_missing_middle_claim",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: soportes no nominales/circularidad: C-2708"
+      },
+      {
+        "case": "noncanonical_source_in_claim_and_artifact",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: clave S no canónica: S1"
+      },
+      {
+        "case": "supplementary_figure_is_not_source",
+        "result": "PASS",
+        "detail": "La figura suplementaria S02 no requiere un artefacto de una segunda fuente."
+      },
+      {
+        "case": "claim_catalog_external_symlink",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: symlink no permitido: data/afirmaciones/15.csv"
+      },
+      {
+        "case": "independence_",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+      },
+      {
+        "case": "independence_self-certification",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+      },
+      {
+        "case": "independence_revision_independiente_sin_participacion_en_correccion",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+      },
+      {
+        "case": "mutation_source",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: artefacto obsoleto: fuentes/S01 ensayo.txt"
+      },
+      {
+        "case": "mutation_review",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: artefacto obsoleto: docs/revision.json"
+      },
+      {
+        "case": "mutation_registry",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: registro modificado durante la validación"
+      },
+      {
+        "case": "changed_proposal",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+      },
+      {
+        "case": "changed_subject_at_same_coordinates",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: identidad taxonómica/de fila distinta: C-2708"
+      }
+    ]
+  },
+  "integration": {
+    "utc": "2026-09-27T02:04:01Z",
+    "hashes": {
+      "scripts/residual_semantic_dispositions.py": "222a9dd383dc904a08ccb881fd8122abd9b337e24a062e0b5c84cc32b3a593d4",
+      "scripts/remediate_trace_residuals.py": "85dfdc2db6e85ee2d4344321e4bfae7059a6f46a490a1d5b9f767e4a244d71c4",
+      "scripts/build_atomic_cell_claims.py": "7a24993ff2411e0bcc1f534633b6e5c5d5a00b9bff3e2ad820700993b1632cd9",
+      "docs/auditorias/fixtures/reinspeccion_integracion_disposiciones_20260927.py": "981cb993dfb2ed8165f5ed77722edf43bbd877d21b1de464c219e71915227306"
+    },
+    "tests": 3,
+    "passed": 3,
+    "results": [
+      {
+        "case": "six_dispositions_full_build_history_dependencies_idempotence",
+        "result": "PASS",
+        "detail": "6 deltas; 410/408/2, consultas/BN/historia intactas, 816C, solo nuevas dependencias e idempotencia."
+      },
+      {
+        "case": "remediation_source_changed_after_disposition_validation",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: artefacto obsoleto: fuentes/S999 ensayo.txt"
+      },
+      {
+        "case": "atomic_correction_changed_after_disposition_validation",
+        "result": "PASS",
+        "detail": "Rechazo: Disposición semántica residual: corrección no enlazada: C-2708"
+      }
+    ]
+  },
+  "unittests": {
+    "focalized": {
+      "tests": 40,
+      "seconds": 6.542,
+      "result": "OK"
+    },
+    "full": {
+      "tests": 264,
+      "seconds": 24.118,
+      "result": "OK"
+    }
+  },
+  "real_registry": {
+    "sha256": "3e8c22675e0d075ccf15897066b8e11dd1209b97c455a6bb13dcbabdd7616ed1",
+    "dispositions": 0
+  },
+  "prior_nc_report_sha256": "74a252bb91914ea5a5f8b0edf0db3c2c87b94b87fdf1a6a9fe50f9a4cd3ed615"
+}

@@ -14,6 +14,29 @@ fuentes y el inventario de acceso. Si cambia una fila C, una fuente, un
 localizador, una BN, una tabla o una dependencia, su dictamen y los de sus
 síntesis descendientes quedan obsoletos.
 
+La congelación registra `fecha_congelacion` como instante UTC real, con formato
+`YYYY-MM-DDTHH:MM:SSZ`, no como fecha bibliográfica ni fecha nominal de este
+protocolo. Se escribe con `scripts/check_semantic_claim_census.py --write-freeze
+--fecha-congelacion-utc INSTANTE_UTC`, sustituyendo `INSTANTE_UTC` por el momento
+real observado al congelar. La opción es obligatoria: no se conserva una fecha
+antigua al regenerar un corpus modificado ni se reconstruye una hora ausente.
+Una congelación histórica que solo conserva el día debe sustituirse mediante
+una congelación nueva y explícita; no se le inventa retrospectivamente una hora.
+
+El verificador comprueba fechas de calendario válidas y orden cronológico,
+pero no consulta el reloj de ejecución: el mismo corpus congelado debe producir
+el mismo resultado mañana o en una copia aislada. La autenticidad de las fechas
+declaradas requiere la evidencia de ejecución y la revisión independiente; la
+validación sintáctica y cronológica no prueba por sí sola cuándo se trabajó ni
+detecta una fecha falsa futura. El instante de congelación forma parte del JSON
+que se conserva como evidencia. Inventario y huellas deben coincidir con el
+estado vivo; cambiar la fecha no permite reutilizar dictámenes anteriores a ella.
+
+Los catálogos son disjuntos: el Apéndice A se conserva en `archivos_control`,
+no se duplica en `artefactos_revision`. Sigue disponible para el cotejo local
+con su misma huella a través del catálogo conjunto. Cualquier otro solapamiento
+entre catálogos continúa siendo un error.
+
 ## Unidad probatoria
 
 La unidad exterior es una C. La unidad probatoria es cada proposición atómica
@@ -118,7 +141,9 @@ componente. Cada evidencia de la matriz empieza por una fuente, dependencia o
 ruta declarada, seguida opcionalmente por `:` o `#` y su localizador. En una
 `expresa` conforme, cada fuente declarada tiene un artefacto nominal local; un
 archivo `.url`, disponibilidad o metadato no sustituyen el texto probatorio.
-La versión es `1` y `fecha_utc` es un instante UTC del 13 de agosto de 2026.
+La versión es `1` y `fecha_utc` es el instante UTC real de adjudicación en formato
+`YYYY-MM-DDTHH:MM:SSZ`. Debe ser igual o posterior a `fecha_congelacion`;
+el nombre fechado del protocolo no obliga a retrofechar revisiones nuevas.
 
 La revisión independiente se guarda en
 `data/auditoria/segunda_revision_afirmaciones_v1.csv`: fija la huella completa
@@ -126,10 +151,18 @@ del censo primario, reinspecciona localizadores/pasajes, registra evidencia,
 discrepancia, resolución e independencia.
 
 La segunda revisión usa versión `1`, una o más huellas SHA-256 de pasaje
-separadas por `;`, instante UTC del mismo cierre y la declaración literal
+separadas por `;`, instante UTC real y la declaración literal
 `REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CENSO_PRIMARIO`. Con
 `discrepancia=NO`, la resolución literal es `NO_APLICA`; una discrepancia real
 permanece abierta y bloquea el cierre.
+
+Cada instante de segunda revisión debe ser igual o posterior a la congelación
+y a todas las adjudicaciones del censo primario completo, cuya huella fija. No
+basta con que sea posterior a la primera revisión de su propia C: el CSV primario
+completo tiene que existir antes de poder fijarlo. La igualdad se admite porque
+los instantes se registran con resolución de un segundo. Las fechas ausentes,
+imposibles o anteriores al artefacto revisado bloquean el cierre, sin reloj
+variable ni sustitución automática de fechas.
 
 ## Antirregresiones y cierre
 

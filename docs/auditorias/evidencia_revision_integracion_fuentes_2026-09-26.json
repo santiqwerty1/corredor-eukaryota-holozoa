@@ -1,0 +1,237 @@
+{
+  "fecha_revision_utc": "2026-09-26T21:51:56Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "alcance": "Integridad e identidad documental de ocho altas y tres filas export; no nueva aprobación científica.",
+  "registro_autor": "docs/auditorias/integracion_artefactos_fuentes_2026-09-26.json",
+  "registro_autor_sha256": "6e2a9120d50b6fa22ab873afc2824ce6cbc3e6fed4461e525cc0b99eff81e048",
+  "inventario_vivo": {
+    "artefactos": 442,
+    "sha256": "69704030a52076437e131fde0a1b886605b3ed8efc6a8fcf272660df3e4503cd"
+  },
+  "inventario_sin_ocho_altas": {
+    "artefactos": 434,
+    "sha256": "a08bc1a1584b2a31a0da0d84efd1de350abf318b9a2cfa7e0a94e0f34cb0f043",
+    "cotejo": "Coincide exactamente con inventario434 documentado antes de la integración en revision_residuales_2026-09-26.md; ningún archivo previo añadido/eliminado/cambiado dentro de ese conjunto."
+  },
+  "zip_suplementos": {
+    "ruta": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S548-supplementary-complete.zip",
+    "sha256": "af189dc1b81505ced7b766a9cdb4ceaaabd9ac167f880450cf65b0008463f1f9"
+  },
+  "ocho_copias": [
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S548-published.xml",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — versión publicada.xml",
+      "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/fullTextXML",
+      "bytes": 190292,
+      "localizador_identidad": "JATS article-id doi/pmcid; supplementary-material/media: nombres de los tres suplementos.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sapp.pdf",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — SI Appendix publicado.pdf",
+      "sha256": "90df70ce0afb06f33c4b8cc4f553cd29ca9e7474b0c6620f027dd0dc9aba6b83",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles",
+      "bytes": 12009440,
+      "localizador_identidad": "Miembro pnas.2600283123.sapp.pdf del ZIP oficial Europe PMC; nombre enlazado en JATS PMC13389600.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sd01.xlsx",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S1 publicado.xlsx",
+      "sha256": "532004056b6b963a86fdd9634c727c6948cc359ba6d3f56f100ca57cfc2a5077",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles",
+      "bytes": 10956,
+      "localizador_identidad": "Miembro pnas.2600283123.sd01.xlsx del ZIP oficial Europe PMC; nombre enlazado en JATS PMC13389600.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S548",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/pnas.2600283123.sd02.xlsx",
+      "ruta_local": "fuentes/S548 [2026] Environmental phylogenetics — Dataset S2 publicado.xlsx",
+      "sha256": "6e8ef742ce128bf304e7981ec9ce1dc8048449535fb7acf75844883cda04c780",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/supplementaryFiles",
+      "bytes": 10762,
+      "localizador_identidad": "Miembro pnas.2600283123.sd02.xlsx del ZIP oficial Europe PMC; nombre enlazado en JATS PMC13389600.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S549",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S549-aps-published.pdf",
+      "ruta_local": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf",
+      "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+      "url_de_recuperacion": "https://harvest.aps.org/v2/journals/articles/10.1103/vzxt-rpf8/fulltext",
+      "bytes": 1953995,
+      "localizador_identidad": "Cabecera bibliográfica del PDF publicado y DOI; copia idéntica al artefacto recuperado y revisado previamente.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S557",
+      "origen_temporal": "/tmp/verificacion-fuentes-nuevas-2026-09-26/S557-institutional.pdf",
+      "ruta_local": "fuentes/S557 [2016] Extremely low oxygen concentration in mid-Proterozoic shallow seawaters.pdf",
+      "sha256": "22d5d593e97380fd3fa93bee019ad46d0d991fc7ee333fb9f598d2b661083378",
+      "url_de_recuperacion": "https://ganqing.faculty.unlv.edu/Publications/Tang-Shi-Jiang-2016-Precambrian-Research-Mesoproterozoic-REE.pdf",
+      "bytes": 3822857,
+      "localizador_identidad": "Cabecera bibliográfica del PDF publicado y DOI; copia idéntica al artefacto recuperado y revisado previamente.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S559",
+      "origen_temporal": "/tmp/S559-corrigendum-2018-02-06.xml",
+      "ruta_local": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum febrero.xml",
+      "sha256": "9953e3d76199e8512eb1388bca8a26a2327534e9e394f34aff1bb3356be95935",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7609277/fullTextXML",
+      "bytes": 10948,
+      "localizador_identidad": "JATS article-id DOI/PMCID; related-article/ext-link=PMC6436528; reconsulta independiente del endpoint oficial idéntica.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    },
+    {
+      "clave": "S559",
+      "origen_temporal": "/tmp/S559-corrigendum-2018-07-06.xml",
+      "ruta_local": "fuentes/S559 [2018] MISAG MIMAG — Corrigendum julio.xml",
+      "sha256": "7b4f1fe400abccf26be1f4110eaf1e1de4116f622d6fe2e5a79df9834a359bfa",
+      "url_de_recuperacion": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7608355/fullTextXML",
+      "bytes": 11418,
+      "localizador_identidad": "JATS article-id DOI/PMCID; related-article/ext-link=PMC6436528; reconsulta independiente del endpoint oficial idéntica.",
+      "dictamen": "CONFORME",
+      "fecha_revision_utc": "2026-09-26T21:51:56Z",
+      "revisor": "/root/verificacion_fuentes_nuevas"
+    }
+  ],
+  "preprints_preservados": [
+    {
+      "clave": "S548",
+      "ruta": "fuentes/S548 [2026] Environmental phylogenetics supports a steady diversification of crown.pdf",
+      "sha256": "1494dc1fc86c72a8fc800265c1ff2a9d1bdb61e209107f2a0513bb8f67c9c745"
+    },
+    {
+      "clave": "S549",
+      "ruta": "fuentes/S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry.pdf",
+      "sha256": "5d96bee75ff2ff6c52ea0ab0403f8f414181de7772cafdcf949ebc9b1e18dd7c"
+    }
+  ],
+  "exports_actuales": [
+    {
+      "clave": "S548",
+      "año": "2026",
+      "título": "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic",
+      "doi": "10.1073/pnas.2600283123",
+      "acceso": "hybrid",
+      "vía": "Europe PMC",
+      "url_pdf": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13389600/fullTextXML",
+      "fichero": "S548 [2026] Environmental phylogenetics — versión publicada.xml",
+      "resultado": "descargado",
+      "detalle": "JATS publicado y SI Appendix/Datasets S1–S2 recuperados; PDF preprint anterior conservado y distinguido; inventario nominal en integracion_artefactos_fuentes_2026-09-26.json",
+      "sha256": "50543c4571057d3bf2de532c6faffa8c061ee3dc2947c89596b530a8180df04e",
+      "obtenido_el": "2026-09-26",
+      "identidad": "publicación PNAS comprobada; no equivalencia supuesta con preprint",
+      "afirmaciones_que_la_citan": "8",
+      "de_las_cuales_fuente_unica": "8"
+    },
+    {
+      "clave": "S549",
+      "año": "2026",
+      "título": "Hydrodynamics constrain choanoflagellate collar geometry",
+      "doi": "10.1103/vzxt-rpf8",
+      "acceso": "green",
+      "vía": "APS Harvest",
+      "url_pdf": "https://harvest.aps.org/v2/journals/articles/10.1103/vzxt-rpf8/fulltext",
+      "fichero": "S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry — versión publicada.pdf",
+      "resultado": "descargado",
+      "detalle": "PDF publicado de 12 páginas recuperado del editor; preprint arXiv anterior conservado y distinguido",
+      "sha256": "2bfd54bd40f0a39f967bfdd7ad69bfa94c8109286e031f82eb8ab7125aed731b",
+      "obtenido_el": "2026-09-26",
+      "identidad": "coincide con publicación APS y DOI",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "1"
+    },
+    {
+      "clave": "S557",
+      "año": "2016",
+      "título": "Extremely low oxygen concentration in mid-Proterozoic shallow seawaters",
+      "doi": "10.1016/j.precamres.2016.02.005",
+      "acceso": "repositorio institucional",
+      "vía": "UNLV",
+      "url_pdf": "https://ganqing.faculty.unlv.edu/Publications/Tang-Shi-Jiang-2016-Precambrian-Research-Mesoproterozoic-REE.pdf",
+      "fichero": "S557 [2016] Extremely low oxygen concentration in mid-Proterozoic shallow seawaters.pdf",
+      "resultado": "descargado",
+      "detalle": "PDF editorial recuperado del sitio institucional de un coautor; identidad bibliográfica verificada sin adjudicar apoyo científico",
+      "sha256": "22d5d593e97380fd3fa93bee019ad46d0d991fc7ee333fb9f598d2b661083378",
+      "obtenido_el": "2026-09-26",
+      "identidad": "coincide con título autores año y DOI",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "1"
+    }
+  ],
+  "exports_HEAD": [
+    {
+      "clave": "S548",
+      "año": "2026",
+      "título": "Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid-Proterozoic",
+      "doi": "10.1073/pnas.2600283123",
+      "acceso": "hybrid",
+      "vía": "openalex",
+      "url_pdf": "https://doi.org/10.1073/pnas.2600283123",
+      "fichero": "S548 [2026] Environmental phylogenetics supports a steady diversification of crown.pdf",
+      "resultado": "ya estaba",
+      "detalle": "10704 KB",
+      "sha256": "1494dc1fc86c72a8",
+      "obtenido_el": "2026-08-10",
+      "identidad": "sin comprobar (sin metadatos legibles)",
+      "afirmaciones_que_la_citan": "7",
+      "de_las_cuales_fuente_unica": "7"
+    },
+    {
+      "clave": "S549",
+      "año": "2026",
+      "título": "Hydrodynamics constrain choanoflagellate collar geometry",
+      "doi": "10.1103/vzxt-rpf8",
+      "acceso": "green",
+      "vía": "openalex",
+      "url_pdf": "https://arxiv.org/pdf/2605.25337",
+      "fichero": "S549 [2026] Hydrodynamics constrain choanoflagellate collar geometry.pdf",
+      "resultado": "ya estaba",
+      "detalle": "21179 KB",
+      "sha256": "5d96bee75ff2ff6c",
+      "obtenido_el": "2026-08-10",
+      "identidad": "coincide",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "1"
+    },
+    {
+      "clave": "S557",
+      "año": "2016",
+      "título": "Extremely low oxygen concentration in mid-Proterozoic shallow seawaters",
+      "doi": "10.1016/j.precamres.2016.02.005",
+      "acceso": "cerrado",
+      "vía": "openalex",
+      "url_pdf": "",
+      "fichero": "",
+      "resultado": "cerrada",
+      "detalle": "sin versión de acceso abierto declarada",
+      "sha256": "",
+      "obtenido_el": "",
+      "identidad": "",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "1"
+    }
+  ],
+  "limites": "fuentes/ está excluido de Git: HEAD no contiene los PDF. La preservación usa huella del inventario434, evidencias independientes anteriores y prefijos de export HEAD, no mtime. No se cambia acceso, corpus, fuentes/ ni firmas anteriores."
+}

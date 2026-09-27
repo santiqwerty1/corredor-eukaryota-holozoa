@@ -1,0 +1,2333 @@
+{
+  "revisor": "/root/inspeccion_relojes",
+  "autor_implementacion": "/root/verificacion_fuentes_nuevas",
+  "independencia": "Sin participación en esta implementación; autoría científica distinta excluida del dictamen.",
+  "inicio_utc": "2026-09-27T03:38:16Z",
+  "fin_utc": "2026-09-27T03:38:22Z",
+  "hashes_before": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+    "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+    "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+    "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+    "scripts/build_content_trace.py": "ee13ebaafe7b6322975be9dcee846c59575e925126733be5dc2f7f23764e625a",
+    "tests/test_content_trace_sentence_boundaries.py": "f4af0a0cdd179b40e761c0dcbe56095add09462665173d5db67856e3a9eb81b6"
+  },
+  "hashes_after": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+    "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+    "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+    "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+    "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+    "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+    "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+    "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+    "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+    "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+    "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+    "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+    "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+    "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+    "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+    "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+    "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+    "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+    "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+    "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+    "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+    "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+    "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+    "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+    "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+    "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+    "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+    "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+    "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+    "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+    "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+    "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+    "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+    "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+    "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+    "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+    "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+    "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+    "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+    "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+    "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+    "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+    "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+    "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+    "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+    "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+    "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+    "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+    "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+    "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+    "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+    "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+    "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+    "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+    "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+    "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+    "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+    "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+    "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+    "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+    "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+    "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+    "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+    "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+    "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+    "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+    "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+    "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+    "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+    "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+    "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+    "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+    "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+    "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+    "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+    "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+    "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+    "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+    "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+    "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+    "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+    "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+    "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+    "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+    "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+    "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+    "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+    "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+    "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+    "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+    "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+    "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+    "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+    "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+    "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+    "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+    "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+    "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+    "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+    "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+    "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+    "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+    "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+    "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+    "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+    "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+    "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+    "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+    "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+    "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+    "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+    "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+    "scripts/build_content_trace.py": "ee13ebaafe7b6322975be9dcee846c59575e925126733be5dc2f7f23764e625a",
+    "tests/test_content_trace_sentence_boundaries.py": "f4af0a0cdd179b40e761c0dcbe56095add09462665173d5db67856e3a9eb81b6"
+  },
+  "inputs_stable": true,
+  "additional_checks": [
+    {
+      "case": "url_terminal_curly_single",
+      "text": "‘El dato consta en https://example.org.’ [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "‘El dato consta en https://example.org.’ [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "‘El dato consta en https://example.org.’ [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_single_guillemets",
+      "text": "‹El dato consta en https://example.org.› [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "‹El dato consta en https://example.org.› [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "‹El dato consta en https://example.org.› [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_ascii_single",
+      "text": "'El dato consta en https://example.org.' [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "'El dato consta en https://example.org.' [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "'El dato consta en https://example.org.' [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_asterisk",
+      "text": "*El dato consta en https://example.org.* [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "*El dato consta en https://example.org.* [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "*El dato consta en https://example.org.* [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_underscore",
+      "text": "_El dato consta en https://example.org._ [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "_El dato consta en https://example.org._ [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "_El dato consta en https://example.org._ [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_backtick",
+      "text": "`El dato consta en https://example.org.` [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "`El dato consta en https://example.org.` [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "`El dato consta en https://example.org.` [C-001] Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": false,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_double_guillemets_control",
+      "text": "«El dato consta en https://example.org.» [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "«El dato consta en https://example.org.» [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "«El dato consta en https://example.org.» [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          48
+        ],
+        [
+          49,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_ascii_double_control",
+      "text": "\"El dato consta en https://example.org.\" [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "\"El dato consta en https://example.org.\" [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "\"El dato consta en https://example.org.\" [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          48
+        ],
+        [
+          49,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "url_terminal_parentheses_control",
+      "text": "(El dato consta en https://example.org.) [C-001] Otra proposición. [C-002]",
+      "expected": [
+        "(El dato consta en https://example.org.) [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "actual": [
+        "(El dato consta en https://example.org.) [C-001]",
+        "Otra proposición. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          48
+        ],
+        [
+          49,
+          74
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_grammar_empty_destination_title",
+      "text": "Dato. [C-001](<> \"Figura. Dato\") Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](<> \"Figura. Dato\")",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](<> \"Figura. Dato\")",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          32
+        ],
+        [
+          33,
+          51
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_empty_destination_title",
+      "text": "Dato. [C-001](<> \"Figura. Dato\")",
+      "expected": 32,
+      "actual": 32,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_angle_contains_spaces_and_period",
+      "text": "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\") Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\")",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\")",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          50
+        ],
+        [
+          51,
+          69
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_angle_contains_spaces_and_period",
+      "text": "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\")",
+      "expected": 50,
+      "actual": 50,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_escaped_double_backslash_angle",
+      "text": "Dato. [C-001](<ruta\\\\>) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](<ruta\\\\>)",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](<ruta\\\\>)",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          23
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_escaped_double_backslash_angle",
+      "text": "Dato. [C-001](<ruta\\\\>)",
+      "expected": 23,
+      "actual": 23,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_escaped_open_close_bare",
+      "text": "Dato. [C-001](ruta\\(a\\)) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](ruta\\(a\\))",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](ruta\\(a\\))",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          24
+        ],
+        [
+          25,
+          43
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_escaped_open_close_bare",
+      "text": "Dato. [C-001](ruta\\(a\\))",
+      "expected": 24,
+      "actual": 24,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_double_escaped_parenthesis_bare",
+      "text": "Dato. [C-001](ruta\\\\(a)) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](ruta\\\\(a))",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](ruta\\\\(a))",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          24
+        ],
+        [
+          25,
+          43
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_double_escaped_parenthesis_bare",
+      "text": "Dato. [C-001](ruta\\\\(a))",
+      "expected": 24,
+      "actual": 24,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_quoted_paren_and_sentence",
+      "text": "Dato. [C-001](ruta \"Figura (a. Dato\") Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](ruta \"Figura (a. Dato\")",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](ruta \"Figura (a. Dato\")",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          37
+        ],
+        [
+          38,
+          56
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_quoted_paren_and_sentence",
+      "text": "Dato. [C-001](ruta \"Figura (a. Dato\")",
+      "expected": 37,
+      "actual": 37,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_single_quote_title_unbalanced_paren",
+      "text": "Dato. [C-001](ruta 'Figura a). Dato') Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](ruta 'Figura a). Dato')",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](ruta 'Figura a). Dato')",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          37
+        ],
+        [
+          38,
+          56
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_single_quote_title_unbalanced_paren",
+      "text": "Dato. [C-001](ruta 'Figura a). Dato')",
+      "expected": 37,
+      "actual": 37,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_parenthesized_title_escaped_open",
+      "text": "Dato. [C-001](ruta (Figura \\(a. Dato)) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](ruta (Figura \\(a. Dato))",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](ruta (Figura \\(a. Dato))",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          38
+        ],
+        [
+          39,
+          57
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_parenthesized_title_escaped_open",
+      "text": "Dato. [C-001](ruta (Figura \\(a. Dato))",
+      "expected": 38,
+      "actual": 38,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_relative_file_colon_fragment",
+      "text": "Dato. [C-001](../archivo.pdf#fig.2) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](../archivo.pdf#fig.2)",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](../archivo.pdf#fig.2)",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          35
+        ],
+        [
+          36,
+          54
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_relative_file_colon_fragment",
+      "text": "Dato. [C-001](../archivo.pdf#fig.2)",
+      "expected": 35,
+      "actual": 35,
+      "pass": true
+    },
+    {
+      "case": "link_grammar_angle_close_escape_and_real_close",
+      "text": "Dato. [C-001](<ruta\\>dato>) Otro dato. [C-002]",
+      "expected": [
+        "Dato. [C-001](<ruta\\>dato>)",
+        "Otro dato. [C-002]"
+      ],
+      "actual": [
+        "Dato. [C-001](<ruta\\>dato>)",
+        "Otro dato. [C-002]"
+      ],
+      "spans": [
+        [
+          0,
+          27
+        ],
+        [
+          28,
+          46
+        ]
+      ],
+      "diagnostics": [],
+      "pass": true,
+      "slice_roundtrip": true,
+      "nonblank_conservation": true
+    },
+    {
+      "case": "link_end_angle_close_escape_and_real_close",
+      "text": "Dato. [C-001](<ruta\\>dato>)",
+      "expected": 27,
+      "actual": 27,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_bare_unquoted_after_destination",
+      "text": "Dato. [C-001](ruta Otra proposición. Dato)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_text_after_complete_title",
+      "text": "Dato. [C-001](ruta \"Título\" Otra proposición. Dato)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_angle_open_inside_angle",
+      "text": "Dato. [C-001](<ruta<dato>)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_escaped_angle_only_close",
+      "text": "Dato. [C-001](<ruta\\>)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_unclosed_nested_bare",
+      "text": "Dato. [C-001](ruta(a(b))",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_nested_parenthesized_title",
+      "text": "Dato. [C-001](ruta (Título (anidado)))",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_quoted_title_no_closing_quote",
+      "text": "Dato. [C-001](ruta \"Título (a)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "invalid_link_end_empty_destination_bare_prose",
+      "text": "Dato. [C-001](<> Otra proposición. Dato)",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "spp_after_quote",
+      "text": "‘Se analizaron spp.’ otra proposición. [C-001]",
+      "expected": "AMBIGUA_Y_BLOQUEADA",
+      "pass": true,
+      "pipeline": {
+        "main_write_exit": 1,
+        "main_check_exit": 1,
+        "output_written": false,
+        "output_sha256": null,
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1",
+            "column": "n/a",
+            "content": "‘Se analizaron spp.’ otra proposición. [C-001]",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [],
+        "ambiguities": [
+          {
+            "ruta": "docs/secciones/003-02-fixture.md",
+            "localizador": "L1",
+            "texto": "‘Se analizaron spp.’ otra proposición. [C-001]",
+            "sha256_texto_lf": "0899d53548c455b06d3cdd2184e0df17988347904b0d6e4922b552f3e940eeb5",
+            "base_offsets": "Unicode del bloque normalizado, no del archivo",
+            "fronteras": [
+              {
+                "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+                "offset_punto": 18,
+                "literal": "spp.’ otra proposición. [C-001]",
+                "lectura_corte": [
+                  [
+                    0,
+                    20
+                  ],
+                  [
+                    21,
+                    46
+                  ]
+                ],
+                "lectura_abreviatura": [
+                  [
+                    0,
+                    46
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "stdout": "",
+        "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n"
+      }
+    },
+    {
+      "case": "cf_italic_extended_taxon",
+      "text": "Se examinó _B. cf. floridanus_ [C-001].",
+      "expected": "AMBIGUA_Y_BLOQUEADA",
+      "pass": true,
+      "pipeline": {
+        "main_write_exit": 1,
+        "main_check_exit": 1,
+        "output_written": false,
+        "output_sha256": null,
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 1",
+            "column": "n/a",
+            "content": "Se examinó _B.",
+            "claims": [],
+            "method": "SIN_TRAZABILIDAD",
+            "content_sha256": ""
+          },
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 2",
+            "column": "n/a",
+            "content": "cf. floridanus_ [C-001].",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [
+          "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+        ],
+        "ambiguities": [
+          {
+            "ruta": "docs/secciones/003-02-fixture.md",
+            "localizador": "L1",
+            "texto": "Se examinó _B. cf. floridanus_ [C-001].",
+            "sha256_texto_lf": "adbff03060b4b5d255af5ed566228d8565f2c3665a92069838dae37df920dee1",
+            "base_offsets": "Unicode del bloque normalizado, no del archivo",
+            "fronteras": [
+              {
+                "razon": "AMBIGUA_INICIAL_EPITETO",
+                "offset_punto": 13,
+                "literal": "B. cf. floridanus_ [C-001].",
+                "lectura_corte": [
+                  [
+                    0,
+                    14
+                  ],
+                  [
+                    15,
+                    39
+                  ]
+                ],
+                "lectura_abreviatura": [
+                  [
+                    0,
+                    39
+                  ]
+                ]
+              },
+              {
+                "razon": "AMBIGUA_ABREVIATURA_TERMINAL",
+                "offset_punto": 17,
+                "literal": "cf. floridanus_ [C-001].",
+                "lectura_corte": [
+                  [
+                    15,
+                    18
+                  ],
+                  [
+                    19,
+                    39
+                  ]
+                ],
+                "lectura_abreviatura": [
+                  [
+                    15,
+                    39
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "stdout": "",
+        "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (2 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (2 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+      }
+    },
+    {
+      "case": "unmarked_initial",
+      "text": "Se examinó B. floridanus [C-001].",
+      "expected": "AMBIGUA_Y_BLOQUEADA",
+      "pass": true,
+      "pipeline": {
+        "main_write_exit": 1,
+        "main_check_exit": 1,
+        "output_written": false,
+        "output_sha256": null,
+        "output_unchanged_second_run": true,
+        "inputs_unchanged": true,
+        "segments": [
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 1",
+            "column": "n/a",
+            "content": "Se examinó B.",
+            "claims": [],
+            "method": "SIN_TRAZABILIDAD",
+            "content_sha256": ""
+          },
+          {
+            "kind": "prosa",
+            "path": "docs/secciones/003-02-fixture.md",
+            "locator": "L1; oración 2",
+            "column": "n/a",
+            "content": "floridanus [C-001].",
+            "claims": [
+              "C-001"
+            ],
+            "method": "cita_en_segmento",
+            "content_sha256": ""
+          }
+        ],
+        "payload_errors": [
+          "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+        ],
+        "ambiguities": [
+          {
+            "ruta": "docs/secciones/003-02-fixture.md",
+            "localizador": "L1",
+            "texto": "Se examinó B. floridanus [C-001].",
+            "sha256_texto_lf": "56cf63a19c1f50856235d18c737aaa349837edb3624c520a782b5357978376ad",
+            "base_offsets": "Unicode del bloque normalizado, no del archivo",
+            "fronteras": [
+              {
+                "razon": "AMBIGUA_INICIAL_EPITETO",
+                "offset_punto": 12,
+                "literal": "B. floridanus [C-001].",
+                "lectura_corte": [
+                  [
+                    0,
+                    13
+                  ],
+                  [
+                    14,
+                    33
+                  ]
+                ],
+                "lectura_abreviatura": [
+                  [
+                    0,
+                    33
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "stdout": "",
+        "stderr": "Frontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\nFrontera de oración ambigua, requiere adjudicación de spans: docs/secciones/003-02-fixture.md:L1 (1 fronteras)\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+      }
+    }
+  ],
+  "additional_pipelines": [
+    {
+      "case": "url_terminal_missing_curly_single",
+      "text": "‘El dato consta en https://example.org.’ [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "29765867e566275926f6c6e2ad0b9933e28e4f062ac205d9ea218e1cb3fcd85c",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "‘El dato consta en https://example.org.’ [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_single_guillemets",
+      "text": "‹El dato consta en https://example.org.› [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "7da87b039b495da7ece29f259cbaac033f366eee54d0920dd6e141743c2faf1e",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "‹El dato consta en https://example.org.› [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_ascii_single",
+      "text": "'El dato consta en https://example.org.' [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "3a1ae968cde30152f9e721c8cd9c8aaf9a0a82656a80a767cf88a7446482f943",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "'El dato consta en https://example.org.' [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_asterisk",
+      "text": "*El dato consta en https://example.org.* [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "70e63682cbd7d0d48175d5bfc4fe10c441358b9ddbe0520d99e8ef37a66a8dc9",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "*El dato consta en https://example.org.* [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_underscore",
+      "text": "_El dato consta en https://example.org._ [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "822fadc3f75db7fd9314144ea23b7de2925c836327fbfdffcb2a6f5f5e25296e",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "_El dato consta en https://example.org._ [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_backtick",
+      "text": "`El dato consta en https://example.org.` [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": false,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "c1b61f566cc8949a86b6380a81c7a9b390acb830d08cac3efc4e875d990ad04b",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1",
+          "column": "n/a",
+          "content": "`El dato consta en https://example.org.` [C-001] Otra proposición sin cita.",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (1 segmentos).\nTrazabilidad exacta: 1 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "url_terminal_missing_double_guillemets_control",
+      "text": "«El dato consta en https://example.org.» [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "«El dato consta en https://example.org.» [C-001]",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otra proposición sin cita.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+    },
+    {
+      "case": "url_terminal_missing_ascii_double_control",
+      "text": "\"El dato consta en https://example.org.\" [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "\"El dato consta en https://example.org.\" [C-001]",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otra proposición sin cita.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+    },
+    {
+      "case": "url_terminal_missing_parentheses_control",
+      "text": "(El dato consta en https://example.org.) [C-001] Otra proposición sin cita.",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "(El dato consta en https://example.org.) [C-001]",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otra proposición sin cita.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 2:prosa\n"
+    },
+    {
+      "case": "link_pipeline_empty_destination_title",
+      "text": "Dato. [C-001](<> \"Figura. Dato\") Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "7f9325841fbe407282f7ec709b8034c641db8c9c5dc0dcc656b1ecb179a4e8e6",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](<> \"Figura. Dato\")",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_angle_contains_spaces_and_period",
+      "text": "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\") Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "468df5a79ded0a72e9470b5da2b05b29e48f21cc5b78dd78bd75115792926c57",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](<ruta con espacios.a> \"Título. Uno\")",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_escaped_double_backslash_angle",
+      "text": "Dato. [C-001](<ruta\\\\>) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "c7468fbec90729966e0aa99bed9adfb0b416be26d9c5aa79bf052fd623ba4abc",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](<ruta\\\\>)",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_escaped_open_close_bare",
+      "text": "Dato. [C-001](ruta\\(a\\)) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "de2ac522325f9d6d0efe408efba2a6a23d034db0dd1a4da233cf29b637c6f02d",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](ruta\\(a\\))",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_double_escaped_parenthesis_bare",
+      "text": "Dato. [C-001](ruta\\\\(a)) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "aa42d900e17aff7ab7895cd95c839dab5ea1f73f8c4953b34a2cb484166dda37",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](ruta\\\\(a))",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_quoted_paren_and_sentence",
+      "text": "Dato. [C-001](ruta \"Figura (a. Dato\") Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "54a5229e875ef4eac851a6f4b26e6aa5b9e5e22a9dbc40e48b6a01b1dd1effe7",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](ruta \"Figura (a. Dato\")",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_single_quote_title_unbalanced_paren",
+      "text": "Dato. [C-001](ruta 'Figura a). Dato') Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "7bf40a235a4e8c245a4974c820476a35e457d8ea8463300d59fe81182e93b5c0",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](ruta 'Figura a). Dato')",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_parenthesized_title_escaped_open",
+      "text": "Dato. [C-001](ruta (Figura \\(a. Dato)) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "b0c296d2d83264a417b53e6cbdb6a3496d5c668eb27498346cf9c90dcc0d733c",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](ruta (Figura \\(a. Dato))",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_relative_file_colon_fragment",
+      "text": "Dato. [C-001](../archivo.pdf#fig.2) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "58c24864be620ff5e74bdf33d977f62f1d8d79a69e5ab4fed78c647b473306a3",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](../archivo.pdf#fig.2)",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "link_pipeline_angle_close_escape_and_real_close",
+      "text": "Dato. [C-001](<ruta\\>dato>) Otro dato. [C-002]",
+      "expected": "ACEPTAR_DOS_CON_C_PROPIA",
+      "pass": true,
+      "main_write_exit": 0,
+      "main_check_exit": 0,
+      "output_written": true,
+      "output_sha256": "65a11846e7c9267f75f2c0662578d0c4ff22c0adc96307a7b0bf81356edf087b",
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato. [C-001](<ruta\\>dato>)",
+          "claims": [
+            "C-001"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 2",
+          "column": "n/a",
+          "content": "Otro dato. [C-002]",
+          "claims": [
+            "C-002"
+          ],
+          "method": "cita_en_segmento",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [],
+      "ambiguities": [],
+      "stdout": "Trazabilidad escrita: docs/auditorias/traza.csv (2 segmentos).\nTrazabilidad exacta: 2 segmentos.\n",
+      "stderr": ""
+    },
+    {
+      "case": "invalid_link_pipeline_bare_unquoted_after_destination",
+      "text": "Dato. [C-001](ruta Otra proposición. Dato)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 3",
+          "column": "n/a",
+          "content": "Dato)",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_text_after_complete_title",
+      "text": "Dato. [C-001](ruta \"Título\" Otra proposición. Dato)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 3",
+          "column": "n/a",
+          "content": "Dato)",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_angle_open_inside_angle",
+      "text": "Dato. [C-001](<ruta<dato>)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_escaped_angle_only_close",
+      "text": "Dato. [C-001](<ruta\\>)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_unclosed_nested_bare",
+      "text": "Dato. [C-001](ruta(a(b))",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_nested_parenthesized_title",
+      "text": "Dato. [C-001](ruta (Título (anidado)))",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_quoted_title_no_closing_quote",
+      "text": "Dato. [C-001](ruta \"Título (a)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n1 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa\n"
+    },
+    {
+      "case": "invalid_link_pipeline_empty_destination_bare_prose",
+      "text": "Dato. [C-001](<> Otra proposición. Dato)",
+      "expected": "RECHAZAR_SIN_ESCRIBIR",
+      "pass": true,
+      "main_write_exit": 1,
+      "main_check_exit": 1,
+      "output_written": false,
+      "output_sha256": null,
+      "output_unchanged_second_run": true,
+      "inputs_unchanged": true,
+      "segments": [
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 1",
+          "column": "n/a",
+          "content": "Dato.",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        },
+        {
+          "kind": "prosa",
+          "path": "docs/secciones/003-02-fixture.md",
+          "locator": "L1; oración 3",
+          "column": "n/a",
+          "content": "Dato)",
+          "claims": [],
+          "method": "SIN_TRAZABILIDAD",
+          "content_sha256": ""
+        }
+      ],
+      "payload_errors": [
+        "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa"
+      ],
+      "ambiguities": [],
+      "stdout": "",
+      "stderr": "2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n2 segmentos sustantivos carecen de C: docs/secciones/003-02-fixture.md:L1; oración 1:prosa; docs/secciones/003-02-fixture.md:L1; oración 3:prosa\n"
+    }
+  ],
+  "counts": {
+    "checks": 40,
+    "pass": 34,
+    "fail": 6,
+    "pipelines": 27,
+    "pipeline_pass": 21,
+    "pipeline_fail": 6
+  },
+  "hashseed_runs": [
+    {
+      "seed": "1",
+      "exit": 0,
+      "stdout": "95dc6643d52d7051726d1ec1d9046d0dd3bf206d7915bf51c37a7020edcabaff",
+      "stderr": ""
+    },
+    {
+      "seed": "17",
+      "exit": 0,
+      "stdout": "95dc6643d52d7051726d1ec1d9046d0dd3bf206d7915bf51c37a7020edcabaff",
+      "stderr": ""
+    },
+    {
+      "seed": "981",
+      "exit": 0,
+      "stdout": "95dc6643d52d7051726d1ec1d9046d0dd3bf206d7915bf51c37a7020edcabaff",
+      "stderr": ""
+    }
+  ],
+  "hashseed_identical": true,
+  "census_in_memory": {
+    "narrative": 2129,
+    "tables": 2664,
+    "total": 4793,
+    "without_C": 42,
+    "ambiguous_blocks": 186,
+    "ambiguous_frontiers": 192,
+    "reasons": {
+      "AMBIGUA_ABREVIATURA_TERMINAL": 189,
+      "AMBIGUA_INICIAL_EPITETO": 3
+    },
+    "manifest_errors": [],
+    "payload_errors": [
+      "42 segmentos sustantivos carecen de C: docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L63; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L69; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L73; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L99; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L111; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L141; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L147; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L165; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L175; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L183; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L187; oración 2:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L209; oración 3:prosa; docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md:L221; oración 3:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 1:prosa; docs/secciones/004-03-3-eucariogenesis.md:L486; oración 3:prosa; docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md:L43; oración 2:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L153; oración 4:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 1:prosa; docs/secciones/009-08-8-ecologia-y-trofismo.md:L155; oración 4:prosa"
+    ],
+    "first_sha256": "169f0b302ab4ebcec88865e4de6aee63c376964eeb7bb943405738aec234052d",
+    "second_sha256": "169f0b302ab4ebcec88865e4de6aee63c376964eeb7bb943405738aec234052d",
+    "two_runs_identical": true,
+    "no_adjudication": true
+  },
+  "limites": "NC-DEN01, ciencia y cierre global excluidos. Ninguna traza canónica escrita. Los casos sintéticos prueban comportamiento, no un error científico existente en las fuentes.",
+  "historical_rerun_summary": {
+    "sha256_entire_result_json": "ad046e172ebb692fb64dbfeeda81d2388045ce082d652114135a17ea2b1f6f91",
+    "initial_counts": {
+      "checks": 63,
+      "pass": 63,
+      "fail": 0,
+      "pipelines": 9,
+      "pipeline_pass": 9,
+      "pipeline_fail": 0
+    },
+    "r2_counts": {
+      "checks": 21,
+      "pass": 21,
+      "fail": 0,
+      "pipelines": 8,
+      "pipeline_pass": 8,
+      "pipeline_fail": 0
+    },
+    "initial_stable": true,
+    "r2_stable": true,
+    "initial_failures": [],
+    "r2_failures": []
+  },
+  "post_full_suite": {
+    "mismatches": [],
+    "hashes_after_full_suite": {
+      "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+      "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+      "data/afirmaciones/02.csv": "d3cb5e24eb9f17b98e2e9ee2c3f1b2cb01b816fa9eb2568041c342a16b2fb751",
+      "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+      "data/afirmaciones/04.csv": "d7a20a2ef232c72fc8ad30a48b4f32db74d70ffd0c055a4518f9fff5b2a4aa70",
+      "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+      "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+      "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+      "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+      "data/afirmaciones/09.csv": "dc7294444975e529f52bb9142cb13d061c768964ed0525d4a040ecd8538aabbf",
+      "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+      "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+      "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+      "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+      "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+      "data/afirmaciones/15.csv": "e5fa927ad150cec64bb2d49d1d6d32180d2a02f13d97fb324833174a796aceac",
+      "data/apendices/A_fuentes.csv": "3ca7177ccf58befcce10dbcf208da1385c4d53e5af130925e2788f9ecdabb6d8",
+      "data/apendices/B_entidades.csv": "7fd8a5fd97320a5b30d80f9f553d87cf6d3c552bc498c37d4909e947567d4a2f",
+      "data/apendices/C_eventos.csv": "18a99c58b691248347ae5218e74393a736eade54a93b7ee3888f15a643caf34b",
+      "data/apendices/D_fechas.csv": "b665a6731127fa11fde0eec87be6c9285cfd56f35bff8ef18a12be5ba5bfab17",
+      "data/apendices/E_hipotesis.csv": "e27f802bb37e4adafb84d097acbadb78f2de108e8eb1378ee6067777240694b1",
+      "data/apendices/F_magnitudes.csv": "5cd817e3ddda5dfba34b45e8a0ce7ecd1f1202ab1e2eaa9282a01808a54b3c77",
+      "data/apendices/G_material_no_encajado.csv": "069e0291bbd48caefb8cc2d69ca909bf5a3b04540428760037d3694a8e90c26b",
+      "data/apendices/H_recuento_control.csv": "68e589a1a428748780c6269a74146d7fc1edaeefce39fe65afaaf35b4c5f890e",
+      "data/auditoria/mapeo_celdas_afirmaciones.csv": "bb4d26cd4bb6074a8d5cae5a2918cf220dd3bcfc11dddfcd7cf2d8b779ab5dc3",
+      "data/busquedas_negativas/15_1_15-1-punto-de-partida-y-participantes-celulares.csv": "b231cc8c3cce4c78829d23492dd78d45387a807c063b98bccb724435b8427e10",
+      "data/busquedas_negativas/15_2_15-2-eucariogenesis.csv": "cf7afdddb7eb8dda9b88143a3b93c2cfa46fa8f959ed042d2ceb83a448f539be",
+      "data/busquedas_negativas/15_3_15-3-raiz-eucariota-y-corredor-filogenetico.csv": "f990acefac882a05ca20af9122e332d9e8c17956aa61280b30cfd122e4ea7245",
+      "data/busquedas_negativas/15_4_15-4-registro-material-tiempo-ambiente-y-ecologia.csv": "42730121255c5c3d1a373a12ed2325d69b92a7658544f52b87d348ebd23f76ee",
+      "data/busquedas_negativas/15_5_15-5-asociacion-integracion-y-transferencia.csv": "ea3c87cb0214712c7d059fd15e7b79dad9a09f3830ce5bf353c9fb09bb6afff7",
+      "data/busquedas_negativas/15_6_15-6-rasgos-con-costo-y-controversia-energetica.csv": "7b79889035b93066313fb1bd08fa3eb4841e6a7da1fbb353eb9b95c0c8ed73fd",
+      "data/busquedas_negativas/15_7_15-7-sexo-meiosis-y-ciclo-vital.csv": "5f6a4cde193f78fb592603a77c91c6bfc941ccd6ccdfc163b4d6b66d9f265dc4",
+      "data/busquedas_negativas/15_8_15-8-nombres-y-nomenclatura.csv": "7a4237d8f0f3e3fd3e8b4de87ec9f49641e2c46543bd0c43dfb993d2ff7cab01",
+      "data/busquedas_negativas/15_9_15-9-multicelularidad-y-repertorio-preanimal.csv": "e24c74f4e24e57305b60a1206751b5bdd0586203929ec8192f1cd90ca39177d4",
+      "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv": "5937b27066a0afd96d847776740cf7f3baf94604744571208d4d83e24d27524b",
+      "data/tablas/02/table-02-2-2-1-quimica-de-membrana.csv": "f8de46365f433628a8f06549a8eab962d368e74f997bae1b80c02a10c6c5a4fb",
+      "data/tablas/02/table-03-2-2-3-soluciones-propuestas-y-estado-del-problema.csv": "bd4d8019b022666709d3eb3a8b654cb5cd19d01ffb86c641c975bccdff9a6fd5",
+      "data/tablas/02/table-04-2-4-2-divisiones-nombradas-y-clase-de-evidencia-localizada.csv": "81a4d83c70cab7cdb5616effa769195cb90f16c66278b94a92ad697330c276ab",
+      "data/tablas/02/table-05-2-7-proteinas-de-firma-eucariota-deteccion-y-funcion.csv": "40c506d943d956d2e3128f2d1e616154d19912c228b7024c4db8f43dfdde85d4",
+      "data/tablas/02/table-06-2-8-2-el-grupo-vivo-mas-proximo-no-esta-resuelto.csv": "d3122401cde57c55d5c22bc0bff150b41b0475100f5d60c32382fc18912c78ed",
+      "data/tablas/02/table-06a-2-8-2-diversidad-ecologia-metabolismo-posicion-alphaproteobacteria.csv": "ee6e10444e767681add2cce2707ad0bcac6d47c930c331ee55541d313668bab8",
+      "data/tablas/03/table-08-3-1-1-etiquetas-y-alcance.csv": "34a58dd97367f72e3ca9ebeb4d50f3669c8c8bd4ef553f7b678032cbf731beb4",
+      "data/tablas/03/table-09-3-2-7-matriz-de-caracteres-y-metodo-de-inferencia.csv": "98f0fc76f55b3e5d3f04ec57937ee7bdddeed0457a1884c0d0ff45705fffddde",
+      "data/tablas/03/table-10-3-3-orden-de-los-eventos-mitocondria-y-fagotrofia.csv": "6340f011df02bb6cb9cdac97646f92f130befabaf753940e231a910bd65216f3",
+      "data/tablas/03/table-11-3-4-7-comparacion-del-montaje-inicial.csv": "6f8feaeb4b40c41acb45134318cfceae4ca62808661b0932e31409af012ca25f",
+      "data/tablas/03/table-12-3-5-5-comparacion-de-los-modelos-nucleares.csv": "aed22d8643fcce0e8bd8bc84781f35faa351d2d1c6fd0ec2e3fd78cd0e34c4da",
+      "data/tablas/03/table-13-3-7-matriz-de-compatibilidad.csv": "dccfdf8d0bc7bb11ef569a69e3ec2333a34a790e238c740060e80b817a2f3e15",
+      "data/tablas/04/table-15-4-2-8-comparacion-de-las-raices.csv": "c3abb5e5fbd432dbaafd2a611e5a751848b8e87426ed70b38cc26cd9bddedb13",
+      "data/tablas/04/table-16-4-6-1-eukaryota.csv": "519d2f9be2cd548cc8fb50d264841851d99bef109f6ffa760890661ac23190d8",
+      "data/tablas/04/table-17-4-6-2-amorphea.csv": "280795fd5a776f2837c7a175fcd7bac8a82e6562aadb346fc46a9f02ad99470e",
+      "data/tablas/04/table-18-4-6-3-amoebozoa.csv": "983263ff6e951914af0ecebc75aa03c0136e30e230728fd2de22514bca2e286c",
+      "data/tablas/04/table-19-4-6-4-obazoa.csv": "2649ce944deeaf9c0251ce6ca962b1822af788656b1b66d945c4e1a279cba220",
+      "data/tablas/04/table-20-4-6-5-apusomonadida.csv": "72f2e0db1f34a38cfabece0f26e0bfa1cd17fbe4e50ffb92b7d25e476a9e18ec",
+      "data/tablas/04/table-21-4-6-6-breviatea.csv": "e897e771d7aa593e1e4a0cb4c4f826643d7f31905fe40029866e7e5d017c28b8",
+      "data/tablas/04/table-22-4-6-7-opisthokonta.csv": "57cb5cecee509b435e577df22b49b9be11b8d5365d95d2c8e8e9182141436301",
+      "data/tablas/04/table-23-4-6-8-holomycota.csv": "fbe027fed7524e848d9fd19e129fc9f7c81402151e07ab40107c27b1450782eb",
+      "data/tablas/04/table-24-4-6-9-holozoa.csv": "a27ef84fedf4d2cbfe465685708f3a55966e7caf83cf614b9ca7e58a043d0062",
+      "data/tablas/04/table-25-4-6-10-ichthyosporea.csv": "f3c526eecbb29ce33cb3ad9e269880c6f68a7e83c0af89101464d861121daa60",
+      "data/tablas/04/table-26-4-6-11-pluriformea-sensu-hehenberger-et-al-2017.csv": "37fe5de28cb31625c4affa36105bb8cdc072e65d9242afb9664abbf8a1900502",
+      "data/tablas/04/table-27-4-6-12-corallochytrea.csv": "8e491fea4b05f9336726a4e3523dc8e13a82e731636b05ed29d6af8eed03cf08",
+      "data/tablas/04/table-28-4-6-13-filasterea.csv": "e8e52e593fb41c7ca200f8c9940b9b546568f99bb6c0a7a2aca71e390d2ab857",
+      "data/tablas/04/table-29-4-6-14-filozoa.csv": "e38bb0bbe5b6a8743c902dea8135573c5e4b91fb3017a96b341ea148a2204ff7",
+      "data/tablas/04/table-30-4-6-15-choanozoa-sensu-stricto-apoikozoa.csv": "771b7f937be51451f58e3575f3308813d1e5808727730713d4841fdc0e0ba9eb",
+      "data/tablas/04/table-31-4-6-16-choanoflagellata.csv": "6b401c213c81e60c8876e8aa7ade561adc37512c13b911e30716e23601b7f992",
+      "data/tablas/04/table-32-4-6-17-metazoa.csv": "60e7ce0349b1d24527582dd93d01d940f3137642cb3cd2fcdc548962cbc00edb",
+      "data/tablas/05/table-33-5-4-evidencia-de-interaccion-en-perforaciones-del-grupo-chuar.csv": "18741e574bfb9d0be6ac8f37cbc34f5e1fd39d48ab7de0618720054e9f742219",
+      "data/tablas/05/table-34-5-8-asignacion-fosil-mas-antigua-localizada-por-nodo.csv": "4288753b87a9ce1f654e213447ef8fb76a1947225d7140fa2ba967c8f9aaee03",
+      "data/tablas/05/table-34a-5-8-inventario-fosiles-proterozoicos.csv": "360e2346c291c7d0b8819ee1c748fa9319494cede5959ad2d14e7aec126487d6",
+      "data/tablas/06/table-36-6-1-estimaciones-publicadas.csv": "89a45f7dd7c7688b504e25453c834ea02e4e23ae2c800ad72a962c22a6595795",
+      "data/tablas/07/table-38-7-1-oxigeno-cronologia-proxies-y-discrepancias-cuantitativas.csv": "db6778a96b270d70e7f5cc290195c975ed9ae2d9525704fc31324550868175e9",
+      "data/tablas/07/table-38b-7-2-redox-y-aceptores.csv": "1af62b0f3195319c5881b6ef15fa450278c02852c26fa3ca5933ca4bd7ce42c4",
+      "data/tablas/07/table-38c-7-4-episodios-globales.csv": "2449b411827ce0a5edf5843811bd73fc9048f3f3352d1d4547a63913adbdc317",
+      "data/tablas/08/table-40-8-3-depredadores-holozoos-obazoa-holomycota-y-amoebozoa.csv": "31895894afafa7623fe06fb8303e44dc6fc24718a51b9eda453f09575ffcca60",
+      "data/tablas/08/table-40a-8-3-censo-morfologia-genoma-cultivo.csv": "a805209f180ae752f145c9242730c3ad5af2b1b375f3c3ce5eb79ea1f445a7c0",
+      "data/tablas/08/table-40b-8-5-virus-gigantes.csv": "d2cbcb72f735533c198def3daef9500b2c8482a4f45cefdf10b448492fc1b88f",
+      "data/tablas/09/table-42-9-1-1-tipologia-cerrada.csv": "836d2ebcfb6d8006e38cf03415cf670ec7fdd47d5da754237ffe533ca991fedd",
+      "data/tablas/09/table-43-9-4-1-fichas-comparativas-por-grado-de-integracion.csv": "24fa1c7c386343177c0bfdccef64f990ae7c3af0d5172375982d96b4bb3ee2cd",
+      "data/tablas/09/table-44-9-7-1-correlatos-publicados.csv": "d3bc306ceb50f70ca63beeff2d30d35033644ae4843813b76b29ff8850b66071",
+      "data/tablas/09/table-45-9-8-1-gradiente-funcional-comparado.csv": "23fd21bf9f4987425cc942bb8c127eae23364656d8c34a4937a11db38b5439a2",
+      "data/tablas/10/table-47-10-1-tabla-consolidada-de-rasgos-con-coste.csv": "3cf22e32e07885f1b153e6143f774a86e5b28cb4a25994a0aa974423197ffcef",
+      "data/tablas/11/table-49-11-11-vista-comparativa-de-clases-de-evidencia.csv": "bea869a65a6fc72e9da47c4637d71935f51a14204b029d4c6cd21ce52bbe06f3",
+      "data/tablas/12/table-51-12-1-1-vista-comparativa-de-rutas.csv": "a4d8fbd8ef670fd14963b1994f09f9edf6edc38998015739dec009c5d49e4412",
+      "data/tablas/12/table-52-12-6-1-costes-y-compensaciones-cuantificados-o-no-localizado.csv": "e607f0160cb07b0cac9276056fb14a4a5975436bc61eb49fbd152afc4ba6ac1c",
+      "data/tablas/12/table-53-12-7-1-tabla-comparativa-de-genomas.csv": "51a3012e78be89d0a98d747f87f0d5027e55610bf1783266fa7251b177fd961c",
+      "data/tablas/12/table-54-12-10-1-repertorio-funcional-localizado.csv": "24357a3684598fb2597f02fb4859ca1df29f1245b2c3af273b7e35200ea04b61",
+      "data/tablas/13/table-55a-13-3-escalas-de-division-y-ambiente.csv": "8841302d2d5d4998180a388ce7e81065e0a4b359d1b5bf2e70bcc56fe9807407",
+      "data/tablas/13/table-55b-13-4-tasas-de-mutacion-directas.csv": "c1a499776755c4688ec7672447c383d70be868b7ae1902e361d6b707db6b3750",
+      "data/tablas/13/table-55c-13-6-cronologia-de-endosimbiosis-e-integracion.csv": "7b1d4ed68ae4461dee7ce41af67cc5215624963cc219de7bfb47f238645cd34d",
+      "data/tablas/13/table-55d-13-9-recuentos-de-origenes-y-perdidas.csv": "c5f8af110ee16144ab8ba48a385602f2368ba66b8803a817622d1ded6b7aba4f",
+      "data/tablas/14/table-56-14-8-1-codigos.csv": "c3954e74f6c5a7dee6a1c727342daf86d51f739ed1940729a5d29b5e76880cf4",
+      "data/tablas/14/table-56a-14-8-1-codigos-por-nodo.csv": "bee3ce6238fe941da10336fcb676255364c477ae4105553b037f577b4d470d46",
+      "data/tablas/14/table-57-14-8-2-nombres-rivales-o-solapados.csv": "6e0dfbe49a476759fa0c1f12b056552c3856890b330b7ad8849b690b34e747b4",
+      "data/tablas/14/table-58-14-8-3-terminos-problematicos-y-reemplazos.csv": "84df36dca22d35da426856152dc116924463812c4f81602b22fbd75bc7597c71",
+      "data/tablas/15/table-59-15-1-mapa-del-terreno-probatorio.csv": "fa8cd12d1ea5c7df7773889faae326a152e7485da79f31fe312edee1e85ba52c",
+      "data/tablas/15/table-60-15-2-evidencia-retirada-refutada-o-reinterpretada.csv": "d5fca6136f428e0f35258c18a5a1be06d8c98888ad2613036a4cea31b17ef449",
+      "data/tablas/15/table-61-15-3-nodos-fechas-y-relaciones-debiles.csv": "78c0f7f5858e4b8ddf9b1884be615f6d12eaeb7fbdadd4e6ddac7a84132cd47f",
+      "data/tablas/19/claims-19.csv": "f1e741032e83bfdb0e352321216727cb60cc27a61f0439aa60bfca9267c16b51",
+      "data/tablas/19/table-77-19-respuestas-a-las-seis-preguntas-de-cierre.csv": "4bca8cfdf60e2923fd80d3fe92b4766edb7180da8ff881234d897da8edf64743",
+      "data/table_index.json": "c486a13ac38c42f843f6c390739cea21518c6af2e0ef28da260d866e6e337665",
+      "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_20260927.py": "c08afdffe443406a19f1256fea89c9e47c890092fb23c2418b8f526a42e10239",
+      "docs/auditorias/fixtures/reinspeccion_independiente_segmentacion_ncden02_r3_20260927.py": "bcd28ef26a623c33d7e573801e6a5fe1d91a48154fdd2eda0d39053f38ab1983",
+      "docs/auditorias/matriz_trazabilidad_contenido_2026-08-08.csv": "525e1d5efb16c6b1be6e1cf5e2bed53d025d87cd4c2d9b06ab75a75d5c12fe0d",
+      "docs/secciones/000-preambulo.md": "de652a077c8b7a60a9508358087481ce6dcd32a2b0a2944880e0172104ec1e23",
+      "docs/secciones/001-00-0-convenciones-probatorias-y-taxonomicas.md": "d606bac814de1d2693ee877eb0f07304caaa23f77591243a5e83ec037b86c104",
+      "docs/secciones/002-01-1-alcance-del-corpus.md": "c7dcfa9cc880bb81da94198562aa9c18273f9cff3a041912deddfb3d715486be",
+      "docs/secciones/003-02-2-el-punto-de-partida-dos-dominios-o-tres.md": "b1d17ee64fa6685be944ddd3474b2668e6389042355c2672b6595d9695c3deb9",
+      "docs/secciones/004-03-3-eucariogenesis.md": "b11a988f5c960553c980ad3c933db401f48e12571d3ed75988b3408d86ebb2f0",
+      "docs/secciones/005-04-4-la-raiz-eucariota-y-la-forma-de-amorphea.md": "b163d25fb37053de13e998fdcb6947652394bdd90eec6b5b53082bd019439b80",
+      "docs/secciones/006-05-5-el-registro-material-fosiles-y-biomarcadores.md": "c0922a2103a27f47884a95f4c4cd46ddbe322b7ef57142b5bc84ac5c24fbb9b5",
+      "docs/secciones/007-06-6-tiempo-relojes-moleculares-y-desacuerdo-con-las-rocas.md": "61ff4a0596fd692c8c09abab62860543e7cb01bf48a5c27c115c29362fdf3aaa",
+      "docs/secciones/008-07-7-ambiente.md": "75e6df114f5086a8ac6d5a8f0dc8254158ff9f07ea0506617df5b2fe64b497ec",
+      "docs/secciones/009-08-8-ecologia-y-trofismo.md": "189ffb4bf440277d3d50f52a771a0628b46c7b99ddaa9cffda0a7803e9e13bed",
+      "docs/secciones/010-09-9-asociacion-el-catalogo-de-desenlaces.md": "4c3107d34a62d6b64941bd0adb453f841d90e693eb71f5bf7747240252958217",
+      "docs/secciones/011-10-10-rasgos-con-costo.md": "528b41fbb0f5088257460ea7185036d0a2bd57a193b70264eb9ff6fb8c644016",
+      "docs/secciones/012-11-11-sexo-meiosis-y-ciclo-vital.md": "60953a3308492b4afc150ff64080f991a555554b998709937fe962083e74736a",
+      "docs/secciones/013-12-12-multicelularidad-y-el-repertorio-preanimal.md": "78a806f8868d18191775e0a8a36ddb4cc0b281fb7ec11a84d0c4a73308276749",
+      "docs/secciones/014-13-13-escalas-tasas-y-recuentos.md": "a25a781a6b02463eb6d6acf0c257080b6ef218afdfb6025dbd003592927deac9",
+      "docs/secciones/015-14-14-nombres-y-nomenclatura.md": "7f2698f9469093ccb3ab07a7edf78ee575d6a778e79c83955c4dbe7f1977a503",
+      "docs/secciones/016-15-15-lo-que-no-se-sabe-y-como-lo-sabemos.md": "6f9e7b0e063dbe63369c62718081e82a58b9aa0cfc9fe78cc01f05082384baba",
+      "docs/secciones/017-17-apendice-a-apendice-a-fuentes.md": "9588d5060143038815469e6c03fb9c89fc92641628a0161bd15f9a80b767f7ef",
+      "docs/secciones/018-17-apendice-b-apendice-b-entidades.md": "913da3986beb739105122c14352650985fa52a8eeb42a793f06763c73848a1f6",
+      "docs/secciones/019-17-apendice-c-apendice-c-eventos.md": "4d10122f3546947dd82ef38f5655c1c4c99a03457babd2bc5fc7d8ddc570a052",
+      "docs/secciones/020-17-apendice-d-apendice-d-fechas.md": "a3b8976565b1918fd23d116968a6477b3b10d0e57b659e5e7cc760941ffa07ed",
+      "docs/secciones/021-17-apendice-e-apendice-e-hipotesis.md": "13e8477d34ebcbb82e05f2f278cbe317be79fa2e5ed85f68439f0ee32eaebfd6",
+      "docs/secciones/022-17-apendice-f-apendice-f-magnitudes.md": "7388900bc5773e26118e70ecb0b32e39ba4b326afefd80e5bb261d8bef30b34a",
+      "docs/secciones/023-17-apendice-g-apendice-g-material-no-encajado.md": "e56ed0dd2a73a94a835161e1c38ef3d03d31597a31bea9ae82b759f8976f2f7d",
+      "docs/secciones/024-17-apendice-h-apendice-h-recuento-de-control.md": "55bd5965b30980e007044a570aecc4f8a7345c1290cc74670fda0a9d1c9a408b",
+      "docs/secciones/025-19-19-respuestas-a-las-seis-preguntas-de-cierre.md": "29f16a718161c8ac5ee60d2193bad0c16c16a61e9472ad9a3f92afaa88da174e",
+      "scripts/build_content_trace.py": "ee13ebaafe7b6322975be9dcee846c59575e925126733be5dc2f7f23764e625a",
+      "tests/test_content_trace_sentence_boundaries.py": "f4af0a0cdd179b40e761c0dcbe56095add09462665173d5db67856e3a9eb81b6"
+    }
+  },
+  "author_tests_reexecuted": {
+    "command": "python3 -m unittest discover -s tests -p test_content_trace_sentence_boundaries.py",
+    "exit_code": 0,
+    "tests": 42,
+    "seconds": 0.103
+  },
+  "full_suite_reexecuted": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests": 331,
+    "seconds": 32.735
+  },
+  "diff_check": {
+    "command": "git diff --check -- scripts/build_content_trace.py tests/test_content_trace_sentence_boundaries.py",
+    "exit_code": 0
+  },
+  "live_prose_probe": {
+    "scope": "Bloques prosa de SCIENTIFIC_TEMPLATES: URL_TOKEN fuera de rangos CITATION_START/citation_end que contenga punto seguido de ’,›,',*,_,`",
+    "matches": [],
+    "limitation": "Ausencia de la variante exacta en este censo; no demuestra un parser general ni aprueba fronteras/ciencia."
+  },
+  "dictamen": "NO_CONFORME",
+  "hallazgos": [
+    {
+      "id": "R3-URL-CIERRE-01",
+      "result": "NO_CONFORME",
+      "reason": "URL_TOKEN admite cierres ’,›,',*,_,` y su máscara conserva el punto anterior como parte del token; oculta un fin de oración pese al cierre tipográfico/emphasis pareado. Se presta una C a la proposición posterior. Requiere corregir frontera/protección o diagnosticar explícitamente la ambigüedad y bloquear; no eximir por ausencia actual de la variante."
+    }
+  ]
+}

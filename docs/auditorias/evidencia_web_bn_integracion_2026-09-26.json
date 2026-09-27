@@ -1,0 +1,451 @@
+{
+  "autor": "Codex /root",
+  "clase_fecha": "REINSPECCION",
+  "lote": "integración y multicelularidad",
+  "consultas": [
+    {
+      "clave_bn": "BN-132",
+      "termino": "S282 exact count mitochondrial genes transferred nucleus",
+      "inicio_utc": "2026-09-26 22:15:47 UTC",
+      "fin_utc": "2026-09-26 22:15:49 UTC",
+      "motor": "web.search_query",
+      "resultados_devuelto_metadata": [
+        {
+          "cabecera": "Comparative analysis of mitochondrial fragments transferred to the nucleus in vertebrate - PubMed (https://pubmed.ncbi.nlm.nih.gov/18721785/)",
+          "identificador": "turn46search0"
+        },
+        {
+          "cabecera": "Nuclear-embedded mitochondrial DNA sequences in 66,083 human genomes - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC9630118/)",
+          "identificador": "turn46search1"
+        },
+        {
+          "cabecera": "Functional Transfer of Genes From the Mitochondria to the Nucleus: The Effects of Selection, Mutation, Population Size and Rate of Self-Fertilization | Genetics | Oxford Academic (https://doi.org/10.1534/genetics.108.100024)",
+          "identificador": "turn46search2"
+        },
+        {
+          "cabecera": "Why Mitochondrial Genes are Most Often Found in Nuclei | Molecular Biology and Evolution | Oxford Academic (https://academic.oup.com/mbe/article/17/6/951/1037844)",
+          "identificador": "turn46search3"
+        },
+        {
+          "cabecera": "Transfer of mitochondrial DNA into the nuclear gen... (ID 1136522) - BioProject - NCBI (https://www.ncbi.nlm.nih.gov/bioproject/1136522)",
+          "identificador": "turn46search4"
+        },
+        {
+          "cabecera": "Frequent somatic transfer of mitochondrial DNA into the nuclear genome of human cancer cells - PubMed (https://pubmed.ncbi.nlm.nih.gov/25963125/)",
+          "identificador": "turn46search5"
+        },
+        {
+          "cabecera": "The Mitochondrial Genome of Soybean Reveals Complex Genome Structures and Gene Evolution at Intercellular and Phylogenetic Levels - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC3576410/)",
+          "identificador": "turn46search6"
+        },
+        {
+          "cabecera": "Pattern of Organization of Human Mitochondrial Pseudogenes in the Nuclear Genome | Genome Research (https://genome.cshlp.org/highwire_display/entity_view/node/1007404/full)",
+          "identificador": "turn46search7"
+        },
+        {
+          "cabecera": "Frequent somatic transfer of mitochondrial DNA into the nuclear genome of human cancer cells - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC4448678/)",
+          "identificador": "turn46search8"
+        },
+        {
+          "cabecera": "Nuclear-embedded mitochondrial DNA sequences in 66,083 human genomes. (https://www.repository.cam.ac.uk/items/df12bfde-84c6-48b4-8671-b5b58b3a876c)",
+          "identificador": "turn46search9"
+        },
+        {
+          "cabecera": "Molecular Poltergeists: Mitochondrial DNA Copies (numts) in Sequenced Nuclear Genomes | PLOS Genetics (https://journals.plos.org/plosgenetics/article?id=10.1371%2Fjournal.pgen.1000834)",
+          "identificador": "turn46search10"
+        },
+        {
+          "cabecera": "Comparative Analysis of Structural Diversity and Sequence Evolution in Plant Mitochondrial Genes Transferred to the Nucleus | Molecular Biology and Evolution | Oxford Academic (https://doi.org/10.1093/molbev/msp011)",
+          "identificador": "turn46search11"
+        },
+        {
+          "cabecera": "Annual Review of Genomics and Human Genetics (https://www.annualreviews.org/docserver/fulltext/genom/18/1/annurev-genom-091416-035426.pdf?accname=guest&checksum=F85CF021100FC2AD4BD2C5DC62D6B9B6&expires=1778725527&id=id)",
+          "identificador": "turn46search12"
+        },
+        {
+          "cabecera": "SB__PhD__Final_20130416.pdf (https://repository.nwu.ac.za/server/api/core/bitstreams/b92d0131-30f6-4698-9d38-817911add76b/content)",
+          "identificador": "turn46search13"
+        },
+        {
+          "cabecera": "Mitochondrion (https://en.wikipedia.org/wiki/Mitochondrion)",
+          "identificador": "turn46search14"
+        },
+        {
+          "cabecera": "3.2. *Transfer of Mitochondrial Genes to the Nucleus: Irreversible but Lacking Anti-Convergence* (https://www.preprints.org/manuscript/202601.1072/v1/download)",
+          "identificador": "turn46search15"
+        },
+        {
+          "cabecera": "Nuclear mitochondrial DNA segment (https://en.wikipedia.org/wiki/Nuclear_mitochondrial_DNA_segment)",
+          "identificador": "turn46search16"
+        },
+        {
+          "cabecera": "Mitochondrial DNA (https://en.wikipedia.org/wiki/Mitochondrial_DNA)",
+          "identificador": "turn46search17"
+        },
+        {
+          "cabecera": "Human mitochondrial genetics (https://en.wikipedia.org/wiki/Human_mitochondrial_genetics)",
+          "identificador": "turn46search18"
+        },
+        {
+          "cabecera": "Nuclear-embedded mitochondrial DNA sequences in 66,083 human genomes (https://api.repository.cam.ac.uk/server/api/core/bitstreams/6d0fe81b-db43-4df6-8fde-18df304403f0/content)",
+          "identificador": "turn46search19"
+        },
+        {
+          "cabecera": "Symbiogenesis (https://en.wikipedia.org/wiki/Symbiogenesis)",
+          "identificador": "turn46search20"
+        },
+        {
+          "cabecera": "Nuclear gene (https://en.wikipedia.org/wiki/Nuclear_gene)",
+          "identificador": "turn46search21"
+        },
+        {
+          "cabecera": "Report",
+          "identificador": "turn46search22"
+        },
+        {
+          "cabecera": "Comprehensive molecular characterization of mitochondrial genomes in human cancers (https://www.nature.com/articles/s41588-019-0557-x.pdf)",
+          "identificador": "turn46search23"
+        },
+        {
+          "cabecera": "Origin of $α$-satellite repeat arrays from mitochondrial molecular fossils -- sequential insertion, expansion, and evolution in the nuclear genome (https://arxiv.org/abs/2501.02284)",
+          "identificador": "turn46academia24"
+        },
+        {
+          "cabecera": "Mitochondrial percentage in scNuc-seq data (https://www.reddit.com/r/bioinformatics/comments/1rapix2/mitochondrial_percentage_in_scnucseq_data/)",
+          "identificador": "turn46reddit25"
+        }
+      ],
+      "limite": "Metadatos de las respuestas devueltas, sin afirmar lectura íntegra de todos los resultados ni exhaustividad del motor. No son cero coincidencias ni una prueba de inexistencia."
+    },
+    {
+      "clave_bn": "BN-133",
+      "termino": "prokaryote eukaryote gene transfer no barrier quantitative rate",
+      "inicio_utc": "2026-09-26 22:15:49 UTC",
+      "fin_utc": "2026-09-26 22:15:51 UTC",
+      "motor": "web.search_query",
+      "resultados_devuelto_metadata": [
+        {
+          "cabecera": "A natural barrier to lateral gene transfer from prokaryotes to eukaryotes revealed from genomes: the 70 % rule - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC5067920/)",
+          "identificador": "turn47search0"
+        },
+        {
+          "cabecera": "A natural barrier to lateral gene transfer from prokaryotes to eukaryotes revealed from genomes: the 70 % rule | BMC Biology | Springer Nature Link (https://link.springer.com/article/10.1186/s12915-016-0315-9)",
+          "identificador": "turn47search1"
+        },
+        {
+          "cabecera": "Ancestral genome sizes specify the minimum rate of lateral gene transfer during prokaryote evolution - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC1783406/)",
+          "identificador": "turn47search2"
+        },
+        {
+          "cabecera": "Ancestral genome sizes specify the minimum rate of lateral gene transfer during prokaryote evolution - PubMed (https://pubmed.ncbi.nlm.nih.gov/17213324/)",
+          "identificador": "turn47search3"
+        },
+        {
+          "cabecera": "A natural barrier to lateral gene transfer from prokaryotes to eukaryotes revealed from genomes: the 70 % rule - PubMed (https://pubmed.ncbi.nlm.nih.gov/27751184/)",
+          "identificador": "turn47search4"
+        },
+        {
+          "cabecera": "Ancestral genome sizes specify the minimum rate of lateral gene transfer during prokaryote evolution | PNAS (https://doi.org/10.1073/pnas.0606318104)",
+          "identificador": "turn47search5"
+        },
+        {
+          "cabecera": "Directed networks reveal genomic barriers and DNA repair bypasses to lateral gene transfer among prokaryotes - PubMed (https://pubmed.ncbi.nlm.nih.gov/21270172/)",
+          "identificador": "turn47search6"
+        },
+        {
+          "cabecera": "Horizontal Gene Transfer in Prokaryotes: Quantification and Classification1 | Annual Reviews (https://www.annualreviews.org/content/journals/10.1146/annurev.micro.55.1.709)",
+          "identificador": "turn47search7"
+        },
+        {
+          "cabecera": "Directed networks reveal genomic barriers and DNA repair bypasses to lateral gene transfer among prokaryotes | Genome Research (https://genome.cshlp.org/content/21/4/599)",
+          "identificador": "turn47search8"
+        },
+        {
+          "cabecera": "Directed networks reveal genomic barriers and DNA repair bypasses to lateral gene transfer among prokaryotes | Genome Research (https://doi.org/10.1101/gr.115592.110)",
+          "identificador": "turn47search9"
+        },
+        {
+          "cabecera": "Collection - A natural barrier to lateral gene transfer from prokaryotes to eukaryotes revealed from genomes: the 70 % rule - BMC Biology - Figshare (https://doi.org/10.6084/m9.figshare.c.3640889.v1)",
+          "identificador": "turn47search10"
+        },
+        {
+          "cabecera": "Lateral gene transfer in eukaryotes: tip of the iceberg or of the ice cube? - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC5116166/)",
+          "identificador": "turn47search11"
+        },
+        {
+          "cabecera": "Ku and Martin BMC Biology  (2016) 14:89 (https://www.molevol.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/Institute/Molekulare_Evolution/Dokumente/Ku_and_Martin_BMC_Biol_2016.pdf)",
+          "identificador": "turn47search12"
+        },
+        {
+          "cabecera": "Units of genetic transfer in prokaryotes (https://arxiv.org/abs/0709.2027)",
+          "identificador": "turn47academia13"
+        },
+        {
+          "cabecera": "J. Eukaryot. Microbiol., 57(1), 2010 pp. 11–18 (https://www.avelinaespinosa.com/uploads/1/3/2/7/132775905/pazymino_espinosa_hgt_id_jem_2010.pdf)",
+          "identificador": "turn47search14"
+        },
+        {
+          "cabecera": "BioMed Central (https://citeseerx.ist.psu.edu/document?doi=8b58cbc060ce031f4fffa476381b1327dcc17648&repid=rep1&type=pdf)",
+          "identificador": "turn47search15"
+        },
+        {
+          "cabecera": "A global survey of prokaryotic genomes reveals the eco-evolutionary pressures driving horizontal gene transfer (https://www.nature.com/articles/s41559-024-02357-0.pdf)",
+          "identificador": "turn47search16"
+        },
+        {
+          "cabecera": "Evaluating Transmission Barriers to (https://ir.canterbury.ac.nz/bitstreams/341ae55d-e37c-4444-b07f-7368e2719495/download)",
+          "identificador": "turn47search17"
+        },
+        {
+          "cabecera": "Revisiting the hypothesis of an energetic barrier to genome complexity between eukaryotes and prokaryotes (https://kyutech.repo.nii.ac.jp/record/6888/files/rsos.191859.pdf)",
+          "identificador": "turn47search18"
+        },
+        {
+          "cabecera": "Mathematical modeling of evolution of horizontally transferred genes (https://arxiv.org/abs/q-bio/0509010)",
+          "identificador": "turn47academia19"
+        },
+        {
+          "cabecera": "Adaptive evolution of hybrid bacteria by horizontal gene transfer (https://arxiv.org/abs/2004.11115)",
+          "identificador": "turn47academia20"
+        },
+        {
+          "cabecera": "The influence of horizontal gene transfer on the mean fitness of unicellular populations in static environments (https://arxiv.org/abs/0705.3983)",
+          "identificador": "turn47academia21"
+        },
+        {
+          "cabecera": "Plant–fungus horizontal gene transfer (https://en.wikipedia.org/wiki/Plant%E2%80%93fungus_horizontal_gene_transfer)",
+          "identificador": "turn47search22"
+        },
+        {
+          "cabecera": "Horizontal gene transfer in evolution (https://en.wikipedia.org/wiki/Horizontal_gene_transfer_in_evolution)",
+          "identificador": "turn47search23"
+        },
+        {
+          "cabecera": "Prokaryote (https://en.wikipedia.org/wiki/Prokaryote)",
+          "identificador": "turn47search24"
+        },
+        {
+          "cabecera": "Horizontal gene transfer (https://en.wikipedia.org/wiki/Horizontal_gene_transfer)",
+          "identificador": "turn47search25"
+        },
+        {
+          "cabecera": "Population genetics (https://en.wikipedia.org/wiki/Population_genetics)",
+          "identificador": "turn47search26"
+        },
+        {
+          "cabecera": "Genome evolution (https://en.wikipedia.org/wiki/Genome_evolution)",
+          "identificador": "turn47search27"
+        },
+        {
+          "cabecera": "Why is horizontal gene transfer not more common in life? (https://www.reddit.com/r/AskScienceDiscussion/comments/s8vc84)",
+          "identificador": "turn47reddit28"
+        },
+        {
+          "cabecera": "If single celled organisms like bacteria can transfer DNA to each other via horizontal gene transfers, how are there still distinguishable species of bacteria? (https://www.reddit.com/r/askscience/comments/1fyplrp)",
+          "identificador": "turn47reddit29"
+        },
+        {
+          "cabecera": "What two currently-existing species on earth (including plants) have the highest genomic distance? (https://www.reddit.com/r/evolution/comments/wf1vy9)",
+          "identificador": "turn47reddit30"
+        },
+        {
+          "cabecera": "Why there isn't multicellular organisms composed by procaryotes? (https://www.reddit.com/r/biology/comments/1aznsal)",
+          "identificador": "turn47reddit31"
+        },
+        {
+          "cabecera": "Why don't bacteria suffer from lack of genetic diversity due to asexual reproduction? (https://www.reddit.com/r/biology/comments/1lg3gbh)",
+          "identificador": "turn47reddit32"
+        },
+        {
+          "cabecera": "m23 t1 questions 😭 (https://www.reddit.com/r/IB_Biology/comments/1kjraar)",
+          "identificador": "turn47reddit33"
+        },
+        {
+          "cabecera": "Separate Prokaryote and Eukaryote stages, conjugation, and sexual reproduction (https://www.reddit.com/r/thrive/comments/y47dko)",
+          "identificador": "turn47reddit34"
+        }
+      ],
+      "limite": "Metadatos de las respuestas devueltas, sin afirmar lectura íntegra de todos los resultados ni exhaustividad del motor. No son cero coincidencias ni una prueba de inexistencia."
+    },
+    {
+      "clave_bn": "BN-134",
+      "termino": "symbiosis association age symbiont genome free living relative size all cases",
+      "inicio_utc": "2026-09-26 22:15:51 UTC",
+      "fin_utc": "2026-09-26 22:15:53 UTC",
+      "motor": "web.search_query",
+      "resultados_devuelto_metadata": [
+        {
+          "cabecera": "The evolutionary history of symbiotic associations among bacteria and their animal hosts: a model - Moya - 2009 - Clinical Microbiology and Infection - Wiley Online Library (https://onlinelibrary.wiley.com/doi/full/10.1111/j.1469-0691.2008.02689.x)",
+          "identificador": "turn48search0"
+        },
+        {
+          "cabecera": "The evolutionary history of symbiotic associations among bacteria and their animal hosts: a model - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S1198743X14604043)",
+          "identificador": "turn48search1"
+        },
+        {
+          "cabecera": "The evolution of host-symbiont dependence | Nature Communications (https://www.nature.com/articles/ncomms15973)",
+          "identificador": "turn48search2"
+        },
+        {
+          "cabecera": "OPEN ACCESS (https://www.uv.es/symbiosis/pdfs/2012_Gil.pdf)",
+          "identificador": "turn48search12"
+        },
+        {
+          "cabecera": "Massive Genomic Decay in Serratia symbiotica, a Recently Evolved Symbiont of Aphids - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC3056288/)",
+          "identificador": "turn48search3"
+        },
+        {
+          "cabecera": "Settling Down: The Genome of Serratia symbiotica from the Aphid Cinara tujafilina Zooms in on the Process of Accommodation to a Cooperative Intracellular Life - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC4122931/)",
+          "identificador": "turn48search4"
+        },
+        {
+          "cabecera": "Comparative genomics of a vertically transmitted thiotrophic bacterial ectosymbiont and its close free‐living relative - Espada‐Hinojosa - 2024 - Molecular Ecology Resources - Wiley Online Library (https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13889)",
+          "identificador": "turn48search5"
+        },
+        {
+          "cabecera": "Comparative genomics of a vertically transmitted thiotrophic bacterial ectosymbiont and its close free‐living relative - Espada‐Hinojosa - 2024 - Molecular Ecology Resources - Wiley Online Library (https://doi.org/10.1111/1755-0998.13889)",
+          "identificador": "turn48search6"
+        },
+        {
+          "cabecera": "A genomic catalog of Earth’s bacterial and archaeal symbionts | Nature Biotechnology (https://www.nature.com/articles/s41587-026-03213-1)",
+          "identificador": "turn48search7"
+        },
+        {
+          "cabecera": "Multiple concurrent and convergent stages of genome reduction in bacterial symbionts across a stink bug family | Scientific Reports (https://www.nature.com/articles/s41598-021-86574-8)",
+          "identificador": "turn48search8"
+        },
+        {
+          "cabecera": "Paulinella (https://en.wikipedia.org/wiki/Paulinella)",
+          "identificador": "turn48search13"
+        },
+        {
+          "cabecera": "Mixed transmission modes and dynamic genome evolution in an obligate animal–bacterial symbiosis | The ISME Journal | Oxford Academic (https://academic.oup.com/ismej/article/11/6/1359/7538037)",
+          "identificador": "turn48search9"
+        },
+        {
+          "cabecera": "Frontiers | Dynamics of Insect–Microbiome Interaction Influence Host and Microbial Symbiont (https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01357/full)",
+          "identificador": "turn48search10"
+        },
+        {
+          "cabecera": "Symbiosis Microbe - an overview | ScienceDirect Topics (https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/symbiosis-microbe)",
+          "identificador": "turn48search11"
+        },
+        {
+          "cabecera": "This PDF is available from The National Academies Press at http://www.nap.edu/catalog.php?record_id=13223 (https://www.ncbi.nlm.nih.gov/books/n/nap13223/pdf/)",
+          "identificador": "turn48search14"
+        },
+        {
+          "cabecera": "Evolution of Prokaryote-Animal Symbiosis (https://www.uv.es/symbiosis/pdfs/2010-Springer-Gilr.pdf)",
+          "identificador": "turn48search15"
+        },
+        {
+          "cabecera": "Unity Makes Strength: A Review on Mutualistic Symbiosis in Representative Insect Clades (https://www.uv.es/symbiosis/pdfs/gil_latorre2019.pdf)",
+          "identificador": "turn48search16"
+        },
+        {
+          "cabecera": "Acyrthosiphon pisum (https://en.wikipedia.org/wiki/Acyrthosiphon_pisum)",
+          "identificador": "turn48search17"
+        },
+        {
+          "cabecera": "Karelsulcia muelleri (https://en.wikipedia.org/wiki/Karelsulcia_muelleri)",
+          "identificador": "turn48search18"
+        },
+        {
+          "cabecera": "List of sequenced protist genomes (https://en.wikipedia.org/wiki/List_of_sequenced_protist_genomes)",
+          "identificador": "turn48search19"
+        },
+        {
+          "cabecera": "Symbiodinium (https://en.wikipedia.org/wiki/Symbiodinium)",
+          "identificador": "turn48search20"
+        },
+        {
+          "cabecera": "Symbiogenesis (https://en.wikipedia.org/wiki/Symbiogenesis)",
+          "identificador": "turn48search21"
+        },
+        {
+          "cabecera": "Population genomics of the Wolbachia endosymbiont in Drosophila melanogaster (https://arxiv.org/abs/1205.5829)",
+          "identificador": "turn48academia22"
+        },
+        {
+          "cabecera": "Modeling symbiosis by interactions through species carrying capacities (https://arxiv.org/abs/1003.2092)",
+          "identificador": "turn48academia23"
+        },
+        {
+          "cabecera": "Epidemic clones, oceanic gene pools and eco-LD in the free living marine pathogen Vibrio parahaemolyticus (https://arxiv.org/abs/1406.7750)",
+          "identificador": "turn48academia24"
+        },
+        {
+          "cabecera": "A Novel Test for Host-Symbiont Codivergence Indicates Ancient Origin of Fungal Endophytes in Grasses (https://arxiv.org/abs/q-bio/0611084)",
+          "identificador": "turn48academia25"
+        }
+      ],
+      "limite": "Metadatos de las respuestas devueltas, sin afirmar lectura íntegra de todos los resultados ni exhaustividad del motor. No son cero coincidencias ni una prueba de inexistencia."
+    },
+    {
+      "clave_bn": "BN-135",
+      "termino": "three independent origins aggregative multicellularity Filasterea Holomycota Amoebozoa",
+      "inicio_utc": "2026-09-26 22:16:49 UTC",
+      "fin_utc": "2026-09-26 22:16:52 UTC",
+      "motor": "web.search_query",
+      "resultados_devuelto_metadata": [
+        {
+          "cabecera": "A unicellular relative links aggregative multicellularity to animal origins | Nature (https://www.nature.com/articles/s41586-026-10748-5)",
+          "identificador": "turn51search0"
+        },
+        {
+          "cabecera": "The origin of animal multicellularity and cell differentiation - PMC (https://pmc.ncbi.nlm.nih.gov/articles/6089241/)",
+          "identificador": "turn51search1"
+        },
+        {
+          "cabecera": "Multiple Roots of Fruiting Body Formation in Amoebozoa - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC5804921/)",
+          "identificador": "turn51search2"
+        },
+        {
+          "cabecera": "A unicellular relative links aggregative multicellularity to animal origins. (https://pubmed.ncbi.nlm.nih.gov/42265479/)",
+          "identificador": "turn51search3"
+        },
+        {
+          "cabecera": "Regulated aggregative multicellularity in a close unicellular relative of metazoa | eLife (https://doi.org/10.7554/eLife.01287.014)",
+          "identificador": "turn51search4"
+        },
+        {
+          "cabecera": "Origin of animal multicellularity: precursors, causes, consequences—the choanoflagellate/sponge transition, neurogenesis and the Cambrian explosion - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC5182410/)",
+          "identificador": "turn51search5"
+        },
+        {
+          "cabecera": "Origin and evolution of animal multicellularity in the light of phylogenomics and cancer genetics | Medical Oncology | Springer Nature Link (https://link.springer.com/article/10.1007/s12032-022-01740-w)",
+          "identificador": "turn51search6"
+        },
+        {
+          "cabecera": "Regulated aggregative multicellularity in a close unicellular relative of metazoa | eLife (https://elifesciences.org/articles/01287)",
+          "identificador": "turn51search7"
+        },
+        {
+          "cabecera": "Insights into the origin of metazoan multicellularity from predatory unicellular relatives of animals - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC7147346/)",
+          "identificador": "turn51search8"
+        },
+        {
+          "cabecera": "The Amoebozoa - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC4037983/)",
+          "identificador": "turn51search9"
+        },
+        {
+          "cabecera": "The Multiple Origins of Complex Multicellularity | Annual Reviews (https://www.annualreviews.org/content/journals/10.1146/annurev.earth.031208.100209)",
+          "identificador": "turn51search10"
+        },
+        {
+          "cabecera": "Multiple Roots of Fruiting Body Formation in Amoebozoa. (https://pubmed.ncbi.nlm.nih.gov/29378020/)",
+          "identificador": "turn51search11"
+        },
+        {
+          "cabecera": "The origin of multicellularity in animals: a functional (https://files.core.ac.uk/download/196522472.pdf)",
+          "identificador": "turn51search12"
+        },
+        {
+          "cabecera": "Holomycota (https://en.wikipedia.org/wiki/Holomycota)",
+          "identificador": "turn51search13"
+        }
+      ],
+      "limite": "Metadatos de las respuestas devueltas, sin afirmar lectura íntegra de todos los resultados ni exhaustividad del motor. No son cero coincidencias ni una prueba de inexistencia."
+    }
+  ]
+}

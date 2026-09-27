@@ -206,6 +206,14 @@ El ensamblaje de referencia de Sphaeroforma arctica JP610 registra 121.6 Mb. [C-
 
 El linaje ichthyofónido ancestral y sus descendientes muestran densidades de intrones elevadas frente a Corallochytrium en la reconstrucción comparativa publicada. [C-1566; S434 figs. 5–6]
 
+Las estadísticas de Grau-Bové et al. registran 18319 genes para Sphaeroforma arctica (Sarc) en el conjunto procedente de Broad Institute Multicellularity Initiative. [C-2821; S434 Materials and methods, Generation of a species tree and ortholog datasets for comparative analyses; Figure 1—source data 1 v3, Sheet1, C27/E27; Figure 1—source data 2 v3, Full1, A25/B25/E25; requiere inspección humana]
+
+Su análisis probabilístico de intrones con Malin, basado en 342 grupos de ortólogos de 40 genomas, publica para Sphaeroforma arctica una densidad de 4.80483247137073 intrones por kbp de secuencia codificante. [C-2822; S434 Materials and methods, Comparative analysis of intron content; Figure 5—source data 1 v3, Full1, A31/B31/D31/O31; requiere inspección humana]
+
+Es una estimación del modelo comparativo, no un promedio observado sobre todos los genes de la anotación. [C-2822; S434 Materials and methods, Comparative analysis of intron content; Figure 5—source data 1 v3, Full1, A31/B31/D31/O31; requiere inspección humana]
+
+El tamaño de ensamblaje, el recuento de genes y la densidad se atribuyen por separado a sus fuentes: no se afirma que S434 y el registro RefSeq S446 correspondan a la misma versión de anotación. [C-1565; C-2821–C-2822; glosa de alcance documental]
+
 El registro de ensamblaje GCA_000142905.1 confirma que existe un genoma de Thecamonas trahens disponible para comparación. [C-1567; S442 registro de ensamblaje]
 
 Una tabla comparativa publicada informa para Thecamonas trahens 26.68 Mb, 10,544 péptidos predichos, 1.04 intrones por gen y 442.67 bp de longitud media de intrón. [C-1568; S483 tabla 3]

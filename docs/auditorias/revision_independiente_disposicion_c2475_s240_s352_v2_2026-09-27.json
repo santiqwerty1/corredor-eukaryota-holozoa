@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "claim_id": "C-2475",
+  "disposicion_sha256": "ff934a0106273148cd7a1a6fc05a218d6fa12275b85fe62d6bd567e3ea87bab4",
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "fecha_utc": "2026-09-27T03:20:10Z",
+  "dictamen": "CONFORME",
+  "independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "cobertura": {
+    "Rhodopsin_receptores_Capsaspora": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "Rhodopsin_ligandos_posicion_Capsaspora": [
+      1
+    ],
+    "recuento_publicado_seis_de_ocho": [
+      0,
+      2,
+      3
+    ],
+    "familia_Glutamate_Capsaspora": [
+      2,
+      3
+    ],
+    "familia_Adhesion / Secretin_Capsaspora": [
+      2,
+      3
+    ],
+    "familia_cAMP_Capsaspora": [
+      2,
+      3
+    ],
+    "familia_ITR-like_Capsaspora": [
+      0,
+      2,
+      3
+    ],
+    "familia_GPR108-like_Capsaspora": [
+      2,
+      3
+    ],
+    "familia_OA1-like_Capsaspora": [
+      0,
+      2,
+      3
+    ],
+    "Frizzled_Capsaspora": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "limite_funcion_y_otras_senales": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "pasajes": [
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256_artefacto": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "localizador": "Supplementary Information pPDF/impresa94; bloque desde C. owczarzaki has a rich repertoire",
+      "fragmento_control": "C. owczarzaki has six out of these eight families",
+      "sha256_pasaje": "8aff992c0fe578142f732137844ce269122f84d783a6bbf1158744624ead7d92"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Gene repertoire of Capsaspora, párrafo hijo directo 4",
+      "fragmento_control": "Both Capsaspora and M. brevicollis lack receptors and ligands",
+      "sha256_pasaje": "279e4a99511ec9dcd9c7f5ecd03b52391317f5f4e2232a8059cc197d76f31bbb"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256_artefacto": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "localizador": "Supplementary Information pPDF/impresa44; bloque desde Supplementary Figure S26. Conservation; inspección visual adicional FigS26 p43, fila y columna Capsaspora de cada componente cubierto",
+      "fragmento_control": "Presence of a gene is indicated by a dot.",
+      "sha256_pasaje": "b50f8a395e715ce558b50652de772aeeba1d0291aca31ebff0c7eacbe2ebd4f4"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.xml",
+      "sha256_artefacto": "7c62b5db6668fc64d252e5e0621fbb0831be592eda21d90895594c6eb8e23f6c",
+      "localizador": "Gene family analysis, párrafo hijo directo 1",
+      "fragmento_control": "we inferred the presence and absence of the gene or protein domains",
+      "sha256_pasaje": "6559d073d212a695ebcc6dfef94f881c560ef674353ac7a05edbab2b06cd2ce8"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim - Supplementary Information.pdf",
+      "sha256_artefacto": "d0f556e6436a6bb67ac99f65f645fbd0995491e27ebce0eaef9585050c388c23",
+      "localizador": "Supplementary Information pPDF/impresa96; bloque desde Similarly, no receptor",
+      "fragmento_control": "None of the 7TM receptors of C. owczarzaki is closely-related to the Frizzled family",
+      "sha256_pasaje": "552c630e7953b1f35255c3bb35c1f14add7e73d2310344110f90d04655cae93c"
+    },
+    {
+      "artefacto": "fuentes/S352 [2013] The Capsaspora genome reveals a complex unicellular prehistory of anim.pdf",
+      "sha256_artefacto": "4aa789fa55f7df7872eca7df96b7536408ceb5e4a4af315eb1cf98bb158f857d",
+      "localizador": "PDF principal p.6 Fig.4, leyenda completa extraída y símbolos inspeccionados visualmente; bloque Hedgehog/7TM, símbolos y leyenda leídos visualmente",
+      "fragmento_control": "Dotted components are absent in the C. owczarzaki genome",
+      "sha256_pasaje": "ea818905c90e74ce6472a1c5e618c9b4c978229476527e5c3a07d2f629904086"
+    }
+  ],
+  "limitaciones": "La atribución negativa de ligandos es posición textual del párrafo, no deducción de la ausencia de receptores. Seis/ocho se publica en p94. Cada intersección de S26 se inspeccionó visualmente: Glutamate, Adhesion/Secretin,cAMP,ITR-like,GPR108-like,OA1-like con punto; Rhodopsin yFrizzled sin punto en Capsaspora. No se adjudica acoplamiento funcional. Suplemento sólo en/tmp hasta copia idéntica. Revisión de disposición prospectiva exacta, no de integración ejecutada ni de todo el paquete. Fuente, Csoporte, identidad y texto han de coincidir al integrar. No firma global ni censo integral. Evidencia propia: evidencia_independiente_s240_s352_v2_2026-09-27.json; figuras leídas, no aprobación por hashes."
+}

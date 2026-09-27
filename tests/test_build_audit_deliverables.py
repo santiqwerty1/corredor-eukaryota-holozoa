@@ -23,7 +23,8 @@ class SourceEditorialStatusTests(unittest.TestCase):
         status = builder.final_editorial_status({
             "notas de calidad": "Identidad y pasaje verificados.",
         })
-        self.assertIn("sin corrección, retractación ni alerta", status)
+        self.assertIn("no documenta una búsqueda negativa ni su fecha", status)
+        self.assertNotIn("2026-08-08", status)
         self.assertIn("no sustituye", status)
 
 
@@ -37,10 +38,14 @@ class ReconstructedInputTests(unittest.TestCase):
         self.assertEqual(len(inputs["requirements"]), 483)
         self.assertEqual(len(inputs["searches"]), 165)
 
-    def test_second_review_requires_actual_closure_date(self) -> None:
+    def test_second_review_accepts_declared_later_dates_not_a_fixed_day(self) -> None:
         self.assertTrue(builder.valid_review_date("2026-08-13"))
+        self.assertTrue(builder.valid_review_date("2026-09-26T20:00:00Z"))
+        self.assertTrue(builder.valid_review_date("2026-08-14"))
         self.assertFalse(builder.valid_review_date("2026-08-08"))
-        self.assertFalse(builder.valid_review_date("2026-08-14"))
+        self.assertFalse(builder.valid_review_date("2026-09-31"))
+        self.assertFalse(builder.valid_review_date("20260813"))
+        self.assertFalse(builder.valid_review_date("2026-08-13", ("2026-09-26",)))
 
 
 class VerifiedControlResultTests(unittest.TestCase):

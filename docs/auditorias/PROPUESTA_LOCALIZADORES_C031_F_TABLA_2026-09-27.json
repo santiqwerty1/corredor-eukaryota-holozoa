@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "autor": "/root",
+  "fecha_utc": "2026-09-27T03:03:53Z",
+  "estado": "PROPUESTA_PENDIENTE_REVISION_INDEPENDIENTE_NO_INTEGRADA",
+  "alcance": "Rectificación de localizadores erróneos de C-031 y de sus objetos F/tabla, no pasada aplazada para afinar todas las marcas honestas. La proposición y sus ejes permanecen idénticos.",
+  "normalizacion_sha256_fila": "JSON ensure_ascii=False, sort_keys=True, separadores coma/dos puntos, LF final, UTF-8",
+  "objetos": [
+    {
+      "tipo": "C",
+      "ruta": "data/afirmaciones/02.csv",
+      "antes": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results, párrafo 3, «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "despues": {
+        "#": "C-031",
+        "Afirmación": "Bajo LG+C60+G4+F, Williams et al. rechazaron la topología de tres dominios de C-018 con AU = 0.036.",
+        "Sujeto": "C-018",
+        "Predicado": "cuestionado_por",
+        "Objeto": "rechazo AU = 0.036 bajo LG+C60+G4+F",
+        "Atribución": "expresa",
+        "Fuente": "S10 Results → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10): «The 3D tree (AU = 0.036) could also be rejected at P < 0.05»",
+        "Aceptación": "no evaluado",
+        "Fuerza": "alta",
+        "Motivo": "Modelo, resultado y estadístico forman una única prueba condicional, no tres proposiciones independientes.",
+        "Resolución": "resuelta",
+        "Vigencia": "vigente"
+      },
+      "sha256_antes": "6a324a309582445da86ea91df49278a374a049e9b2a5a8a6e63d9211401931af",
+      "sha256_despues": "dac311e99b3f908b4bacee4c36cb6df6e6a014ab5705e39b5b7278e2aae82568",
+      "campos_modificados": [
+        "Fuente"
+      ],
+      "sha256_archivo_base": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6"
+    },
+    {
+      "tipo": "F",
+      "ruta": "data/apendices/F_magnitudes.csv",
+      "antes": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 tabla 1",
+        "#": "C-031"
+      },
+      "despues": {
+        "magnitud": "p de prueba AU para tres dominios bajo LG+C60+G4+F",
+        "valor tal como lo publica la fuente": "0.036",
+        "unidad original": "p AU",
+        "organismo, nodo o intervalo al que se aplica": "topología de tres dominios",
+        "método o proxy": "LG+C60+G4+F y prueba AU",
+        "incertidumbre publicada": "n/a",
+        "observado o inferido": "inferido",
+        "fuente con localizador": "S10 Results → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+        "#": "C-031"
+      },
+      "sha256_antes": "686799a87e2bcc1bea44ee059fd72f3d08e079b78863db43804c676085cf2f6b",
+      "sha256_despues": "f6e8604bb5fbe58254b5f6d1350c976d52ea095b4c807f6e44382f154699ce7f",
+      "campos_modificados": [
+        "fuente con localizador"
+      ],
+      "sha256_archivo_base": "04430032764e8e940abe33a9804a1663e9b7086dcab6c6c2feb7a0f1b9969110"
+    },
+    {
+      "tipo": "tabla",
+      "ruta": "data/tablas/02/table-01-2-1-2-por-que-el-modelo-cambia-el-arbol.csv",
+      "antes": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S09 resultados; BN-115"
+      },
+      "despues": {
+        "estudio": "Williams et al. 2020",
+        "matriz": "35 genes",
+        "muestreo taxonómico": "HUECO DE TRAZABILIDAD: la consulta literal exacta del valor anterior no produjo coincidencias en los artefactos de fuentes/; no se adjudica un valor para este campo [BN-430]",
+        "análisis": "prueba AU",
+        "modelo": "LG+C60+G4+F",
+        "resultado publicado": "rechazo de tres dominios",
+        "soporte cuantitativo tal cual": "AU = 0.036",
+        "límite o campo no publicado/localizado": "La conclusión queda condicionada al modelo indicado.",
+        "filas y fuentes": "C-031; S10 Results → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10); BN-115"
+      },
+      "sha256_antes": "d3e177cede06164cf759d9a56144870ce2f47583a3e408f61d29b90c8bd616b7",
+      "sha256_despues": "1cf76767a0588cb7b98f8d2130df4c85d0de5c803cad4464f37a73b4b7f63cf2",
+      "campos_modificados": [
+        "filas y fuentes"
+      ],
+      "sha256_archivo_base": "d58e433b4a8a20895e081f56ade4d45e8631816ad7c27e0287a43c2aae35098d"
+    }
+  ],
+  "evidencia": {
+    "fuente": "S10",
+    "ruta": "fuentes/S10 [2020] Phylogenomics provides robust support for a two-domains tree of life.xml",
+    "sha256": "7e6d524b255fe17298149e1f0295b5350413ae68b5f6242f44f3014101cb5c98",
+    "doi": "10.1038/s41559-019-1040-x",
+    "localizador": "S10 Results → Analysis of core genes consistently supports two primary domains, not three, párrafo 5 (JATS P10)",
+    "pasaje_id": "P10",
+    "pasaje_sha256": "84cc93e813b02087fee2abec06592f5015abfdd458ee5cacfe67ac6de6faef87",
+    "normalizacion_pasaje": "join(itertext), espacios Unicode colapsados mediante split/join, UTF-8 y LF final",
+    "fragmento_original": "The 3D tree (AU = 0.036) could also be rejected at P < 0.05"
+  },
+  "limites": [
+    "No se aprueba la ciencia completa de C-031 ni toda su matriz de método desde esta propuesta. Se corrigen los localizadores por lectura primaria del pasaje del resultado.",
+    "No se altera la celda residual BN-430 ni se inventa su muestreo taxonómico; se conserva el resultado histórico de búsqueda.",
+    "El XML local tiene Results > Analysis of core genes consistently supports two primary domains, not three, párrafo quinto directo, ID P10; la tabla 1 es sobre distancias de cuartetos de superárboles, no este AU.",
+    "Las otras cinco filas Williams2020 de table-01 aún citan S09; se registra el alcance pendiente y no se adjudican en este lote sus otras cifras. La corrección presente no es conformidad global de tabla-01.",
+    "Requiere revisor distinto de /root y regeneración sólo después de su dictamen."
+  ]
+}

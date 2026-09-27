@@ -1,0 +1,335 @@
+{
+  "fecha_revision_utc": "2026-09-26T22:04:26Z",
+  "revisor": "/root/verificacion_fuentes_nuevas",
+  "dictamen": "CONFORME",
+  "alcance": "S551 año/URL/nota en índice de acceso; cómputo mecánico de referencias para 524 filas. No adjudica apoyo científico, actualidad de acceso ni identidad del resto.",
+  "archivos_inspeccionados_sha256": {
+    "exports/acceso_fuentes.csv": "bda2508d0aa38cb87b260175b99af1047eedbd832ef2014ccbc999554b038f86",
+    "exports/afirmaciones.csv": "b5582ec8fdc409b3035e3d61fbbe0fa0dc9ec38dd234ef906eb6bd34c35b38f5",
+    "data/apendices/A_fuentes.csv": "bdcd37e0ed85684531cbe81b5bbf32ce18fa49d62390fcb657645548f23c1ca4",
+    "scripts/fetch_oa.py": "84274ed5ca952074a15e89c2cc962e05714bca85ebb953cfebfa1040a11b0fce",
+    "scripts/corpus_io.py": "4d7d35fb8649d41e4c137da16e1991a1a4117d8c46b68aa5d7fc3ae0c462fef7",
+    "tests/test_fetch_oa_impact.py": "7d2abc39d167d08c77549a0893ce609d62eac7d322289fdce8b371da4f1ecdd0",
+    "tests/test_validate_source_ranges.py": "49b4ec0531986349f7285df3958aee6ce5296284d16eaa51f72cd9c8750447cc",
+    "docs/auditorias/evidencia_revision_integracion_fuentes_2026-09-26.json": "744d667dfabfb0053f73e0075eecafd3c36a0dbe93c17cfc70687b4bf6bcd739",
+    "docs/auditorias/ADDENDUM_INTEGRACION_FUENTES_2026-09-26.md": "473008df7d3120eb047422f68b246898675ee4e509f300457e4cf7173e652bb8",
+    "docs/auditorias/addendum_identidad_s551_s559_2026-09-26.csv": "0ed2aba3025ce1aed0141e782aa7d3414e8a863cf2137c8e6d212905e30bc928"
+  },
+  "afirmaciones_canonicas_sha256": {
+    "data/afirmaciones/00.csv": "f50b35b608ae2fc64719c64c83a5bac8c07b0ab4e0aed44a69e2aef326f53ebf",
+    "data/afirmaciones/01.csv": "38de749941d4f51521128aeda668bf763cee96cdb513fd3a6636e2c95bc6cd81",
+    "data/afirmaciones/02.csv": "c58ae4b4e5ea0aa1ec7dab73849da39e06a4d3afaef856a4021978804de630b6",
+    "data/afirmaciones/03.csv": "505032b2984240f59946c1c9fdbd1f2e7c73608a6bce1ff9d79d02a25630302a",
+    "data/afirmaciones/04.csv": "933f60513ae26d46284ecb60efc6c32746e91a735663acd0d5ec6672eaa678f6",
+    "data/afirmaciones/05.csv": "9e729fabdb7357cf6af1089b70f0887563d32c44ff3df933aba9fdd5ad91b29d",
+    "data/afirmaciones/06.csv": "864b16d4e79c51d8a9df1d29fb91de585aeb0ae902a0a7faf85582cae065e902",
+    "data/afirmaciones/07.csv": "8c129adcd24e778637936a7f8f7f10f941120ce3a109363b2b071033dc2bdea7",
+    "data/afirmaciones/08.csv": "1a23e72fcc1061e9a7cfe28c68f8d922e8f7d852e220852e882e0e4db064f306",
+    "data/afirmaciones/09.csv": "da00a5c36659c55331420458bf5e681a342158a0588b3e02df14004182fc702e",
+    "data/afirmaciones/10.csv": "2293d4e86dba99c1374537ba31b7579e0b26a2979fc42e11c39a2f0c55202585",
+    "data/afirmaciones/11.csv": "d9c744bd6293f9c5128d5667e79dbc49ff645bcdd78202ba7a9fe2a31aa2ee02",
+    "data/afirmaciones/12.csv": "709d603806f38ef18d909665a1e277bd5c45d88330793f4c33994f3056f575b8",
+    "data/afirmaciones/13.csv": "bd73c68d1a6d8302e952708479b8cc3de6e321f47c59aa89cd6edcb11f18a7e9",
+    "data/afirmaciones/14.csv": "251b70fc87f3a748113c5edef2360e7cad06bef8c34f3ebb0515b4e7d586b207",
+    "data/afirmaciones/15.csv": "d036f22d182792e18eaabcc04375f2d2a907b41b670289fc4a63f0787ad7cc8d"
+  },
+  "afirmaciones_exportadas_iguales_a_canonicas": 2820,
+  "filas_acceso_cotejadas": 524,
+  "fuentes_con_alguna_cita": 513,
+  "relaciones_afirmacion_fuente": 3130,
+  "afirmaciones_con_una_clave": 1513,
+  "metodo_independiente": "Se enumeraron manualmente los conjuntos esperados para los cuatro casos vivos con rangos S de dos/tres dígitos o etiquetas suplementarias de dos/tres dígitos. En las demás filas, tokens S literales deduplicados por afirmación. Se comparó el recuento con dos invocaciones de impacto_por_fuente y las 524 filas del índice.",
+  "casos_nominales_enumerados": [
+    {
+      "clave_c": "C-840",
+      "fuente_viva": "S27 Supplementary Discussion §Oxygen metabolism and ROS tolerance, pp. 24–25; figs. S62–S63; tabla S8",
+      "conjunto_esperado": [
+        "S27"
+      ]
+    },
+    {
+      "clave_c": "C-969",
+      "fuente_viva": "S468–S471; S475; S231–S233",
+      "conjunto_esperado": [
+        "S468",
+        "S469",
+        "S470",
+        "S471",
+        "S475",
+        "S231",
+        "S232",
+        "S233"
+      ]
+    },
+    {
+      "clave_c": "C-1630",
+      "fuente_viva": "S448–S452",
+      "conjunto_esperado": [
+        "S448",
+        "S449",
+        "S450",
+        "S451",
+        "S452"
+      ]
+    },
+    {
+      "clave_c": "C-1646",
+      "fuente_viva": "S447–S459",
+      "conjunto_esperado": [
+        "S447",
+        "S448",
+        "S449",
+        "S450",
+        "S451",
+        "S452",
+        "S453",
+        "S454",
+        "S455",
+        "S456",
+        "S457",
+        "S458",
+        "S459"
+      ]
+    }
+  ],
+  "delta_frente_regex_antiguo_sobre_mismo_export": {
+    "S232": {
+      "anterior": [
+        7,
+        3
+      ],
+      "corregido": [
+        8,
+        3
+      ]
+    },
+    "S27": {
+      "anterior": [
+        9,
+        4
+      ],
+      "corregido": [
+        9,
+        5
+      ]
+    },
+    "S448": {
+      "anterior": [
+        5,
+        4
+      ],
+      "corregido": [
+        6,
+        4
+      ]
+    },
+    "S449": {
+      "anterior": [
+        2,
+        2
+      ],
+      "corregido": [
+        4,
+        2
+      ]
+    },
+    "S450": {
+      "anterior": [
+        3,
+        3
+      ],
+      "corregido": [
+        5,
+        3
+      ]
+    },
+    "S451": {
+      "anterior": [
+        2,
+        2
+      ],
+      "corregido": [
+        4,
+        2
+      ]
+    },
+    "S452": {
+      "anterior": [
+        4,
+        3
+      ],
+      "corregido": [
+        5,
+        3
+      ]
+    },
+    "S453": {
+      "anterior": [
+        2,
+        1
+      ],
+      "corregido": [
+        3,
+        1
+      ]
+    },
+    "S454": {
+      "anterior": [
+        2,
+        1
+      ],
+      "corregido": [
+        3,
+        1
+      ]
+    },
+    "S455": {
+      "anterior": [
+        3,
+        3
+      ],
+      "corregido": [
+        4,
+        3
+      ]
+    },
+    "S456": {
+      "anterior": [
+        4,
+        3
+      ],
+      "corregido": [
+        5,
+        3
+      ]
+    },
+    "S457": {
+      "anterior": [
+        3,
+        2
+      ],
+      "corregido": [
+        4,
+        2
+      ]
+    },
+    "S458": {
+      "anterior": [
+        6,
+        4
+      ],
+      "corregido": [
+        7,
+        4
+      ]
+    },
+    "S469": {
+      "anterior": [
+        1,
+        0
+      ],
+      "corregido": [
+        2,
+        0
+      ]
+    },
+    "S470": {
+      "anterior": [
+        1,
+        1
+      ],
+      "corregido": [
+        2,
+        1
+      ]
+    },
+    "S62": {
+      "anterior": [
+        3,
+        1
+      ],
+      "corregido": [
+        2,
+        1
+      ]
+    },
+    "S63": {
+      "anterior": [
+        2,
+        1
+      ],
+      "corregido": [
+        1,
+        1
+      ]
+    }
+  },
+  "S551": {
+    "campos_cambiados_frente_HEAD": [
+      "año",
+      "url_pdf",
+      "detalle"
+    ],
+    "fila_anterior_HEAD": {
+      "clave": "S551",
+      "año": "2026, consulta",
+      "título": "Goldfuß, Georg August",
+      "doi": "",
+      "acceso": "sin doi",
+      "vía": "",
+      "url_pdf": "https://www.deutsche-biographie.de/gnd100151310.html",
+      "fichero": "S551 [2026, consulta] Goldfuß Georg August.pdf",
+      "resultado": "ya estaba",
+      "detalle": "57 KB",
+      "sha256": "93bddae4824bddfe",
+      "obtenido_el": "2026-08-10",
+      "identidad": "sin comprobar (sin metadatos legibles)",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "0"
+    },
+    "fila_actual": {
+      "clave": "S551",
+      "año": "1964",
+      "título": "Goldfuß, Georg August",
+      "doi": "",
+      "acceso": "sin doi",
+      "vía": "",
+      "url_pdf": "https://www.deutsche-biographie.de/gnd100151310.html#ndbcontent",
+      "fichero": "S551 [2026, consulta] Goldfuß Georg August.pdf",
+      "resultado": "ya estaba",
+      "detalle": "57 KB; año bibliográfico corregido a 1964 sin renombrar ni redatar el artefacto preexistente",
+      "sha256": "93bddae4824bddfe",
+      "obtenido_el": "2026-08-10",
+      "identidad": "sin comprobar (sin metadatos legibles)",
+      "afirmaciones_que_la_citan": "1",
+      "de_las_cuales_fuente_unica": "0"
+    },
+    "fila_A_sha256": "2d465114676e77cccc956888e75ac9e216b7ecc296e3c7eb25399eb309603289",
+    "artefacto_local": "fuentes/S551 [2026, consulta] Goldfuß Georg August.pdf",
+    "artefacto_sha256": "93bddae4824bddfe29fe136faa1916ff8c5a659da717d95955e4a953e8ae08db",
+    "identidad_ya_documentada": "docs/auditorias/addendum_identidad_s551_s559_2026-09-26.csv, fila S551"
+  },
+  "inventario_fuentes_preservado": {
+    "archivos": 442,
+    "sha256": "69704030a52076437e131fde0a1b886605b3ed8efc6a8fcf272660df3e4503cd"
+  },
+  "pruebas": {
+    "comando": [
+      "python3",
+      "-m",
+      "unittest",
+      "tests.test_fetch_oa_impact",
+      "tests.test_validate_source_ranges",
+      "-v"
+    ],
+    "returncode": 0,
+    "salida": "test_expands_ranges_and_counts_each_source_once_per_claim (tests.test_fetch_oa_impact.SourceImpactTests.test_expands_ranges_and_counts_each_source_once_per_claim) ... ok\ntest_negative_and_editorial_entries_do_not_create_source_uses (tests.test_fetch_oa_impact.SourceImpactTests.test_negative_and_editorial_entries_do_not_create_source_uses) ... ok\ntest_short_range_and_supplement_label_are_not_confused (tests.test_fetch_oa_impact.SourceImpactTests.test_short_range_and_supplement_label_are_not_confused) ... ok\ntest_abbreviated_range_cannot_hide_a_missing_interior (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_abbreviated_range_cannot_hide_a_missing_interior) ... ok\ntest_corrected_split_range_passes (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_corrected_split_range_passes) ... ok\ntest_descending_range_fails_even_when_endpoints_exist (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_descending_range_fails_even_when_endpoints_exist) ... ok\ntest_literal_missing_key_still_fails (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_literal_missing_key_still_fails) ... ok\ntest_missing_interior_source_fails (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_missing_interior_source_fails) ... ok\ntest_supplementary_label_does_not_expand_as_bibliography (tests.test_validate_source_ranges.ValidateSourceRangesTests.test_supplementary_label_does_not_expand_as_bibliography) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.011s\n\nOK\n",
+    "modo_script_help_returncode": 0,
+    "dos_recuentos_identicos_sin_escrituras": true
+  },
+  "csv_nominal_recuentos": {
+    "ruta": "docs/auditorias/revision_recuentos_acceso_2026-09-26.csv",
+    "sha256": "dd6adeb05eab4afc8c984eeb9bdb43b6a7997c4e60cecf50b2f4d3d1ab776629"
+  },
+  "limites": "Los deltas frente HEAD también incluyen trabajo del corpus previo a esta revisión; no se atribuyen todos al cambio de regex. S545 y metadatos S548/S549/S557 están fuera de este addendum separado. Conservadas las firmas previas de integración de ocho copias y de identidad; no se reescriben."
+}

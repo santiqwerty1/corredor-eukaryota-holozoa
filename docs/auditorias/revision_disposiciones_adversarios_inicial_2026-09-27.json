@@ -1,0 +1,93 @@
+{
+  "utc": "2026-09-27T01:56:17Z",
+  "hashes": {
+    "scripts/residual_semantic_dispositions.py": "06e18f3aaf43f6053a51599cf819dac520f36a429ff077acca9ee76a2ec99e5b",
+    "scripts/remediate_trace_residuals.py": "c8f2484cffba87c47369187c0818ae8e01efd6999b86546cca988aa2583c437c",
+    "scripts/build_atomic_cell_claims.py": "d075c18d6538f04b5849bb3a43cad01bf9a02d0b5598f5d0e184044eb86d2778",
+    "docs/auditorias/fixtures/revision_disposiciones_independiente_20260927.py": "30d09fe5fb7c01d4b512badaf8622acd6c90f8b8ccc425480ef5546aba8c3755"
+  },
+  "tests": 16,
+  "passed": 9,
+  "results": [
+    {
+      "case": "valid_history_determinism",
+      "result": "PASS",
+      "detail": "Fixture íntegra repetible, historia intacta."
+    },
+    {
+      "case": "review_identity_Autor-Ensayo",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: autorrevisión/cronología inválida: C-2708"
+    },
+    {
+      "case": "review_identity_ autor-ensayo ",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "review_identity_AUTOR-ENSAYO",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "review_identity_NO_ASIGNADO",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "review_identity_pendiente",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "range_missing_middle_source",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "canonical_source_alias",
+      "result": "FAIL",
+      "detail": "RuntimeError: Disposición semántica residual: fuentes/artefactos no coinciden nominalmente: C-2708"
+    },
+    {
+      "case": "claim_catalog_external_symlink",
+      "result": "FAIL",
+      "detail": "AssertionError: Admite la disposición adversaria como vigente"
+    },
+    {
+      "case": "independence_",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+    },
+    {
+      "case": "independence_self-certification",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+    },
+    {
+      "case": "independence_revision_independiente_sin_participacion_en_correccion",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+    },
+    {
+      "case": "mutation_source",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: artefacto obsoleto: fuentes/S01 ensayo.txt"
+    },
+    {
+      "case": "mutation_review",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: artefacto obsoleto: docs/revision.json"
+    },
+    {
+      "case": "mutation_registry",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: registro modificado durante la validación"
+    },
+    {
+      "case": "changed_proposal",
+      "result": "PASS",
+      "detail": "Rechazo: Disposición semántica residual: revisión no conforme/no ligada: C-2708"
+    }
+  ]
+}

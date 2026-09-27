@@ -1,0 +1,35 @@
+{
+  "version_revision": 1,
+  "revisor": "/root/revision_residuales/candidatos_editoriales",
+  "declaracion_independencia": "REVISION_INDEPENDIENTE_SIN_PARTICIPACION_EN_CORRECCION",
+  "fecha_utc": "2026-09-27T02:33:38Z",
+  "propuesta": "docs/auditorias/PROPUESTA_FRAGMENTO_ORIGINAL_C1196_2026-09-27.json",
+  "sha256_propuesta": "a49e4a1a147d86965ea651b0ada66cbccae861139e1578309e3871423d326129",
+  "id_afirmacion": "C-1196",
+  "dictamen": "CONFORME",
+  "alcance": "Únicamente reparación del fragmento epistémico original y localizador en Fuente de la propuesta exacta; no firma global §16 ni segunda revisión del censo.",
+  "sha256_fila_previa_json": "36061e5f5e8f69c0c3453ee36d4a30c6b7480c4806b726cb94cbc2b999e850f1",
+  "sha256_fila_propuesta_json": "5a38581f261c230df10c5a61da3d7eed1d1a0cd06e442e7cacfe770c8a19e8f2",
+  "normalizacion_fila": "JSON sort_keys=True ensure_ascii=False separators comma-colon + LF; distinto del hash CSV del diagnóstico.",
+  "artefacto": "fuentes/S296 [2016] No evidence for extensive horizontal gene transfer in the genome of the tardigrade Hypsibius dujardini - PNAS final.html",
+  "sha256_artefacto": "386809ac25942beaf0f8351ff6c3e2f3dc9de7b11b07210bc75908a915eb2136",
+  "localizador": "Results and Discussion → Claims of Extensive Functional Horizontal Gene Transfer into H. dujardini, párrafo final que empieza The UNC H. dujardini genome is thus poorly assembled",
+  "fragmento_control": "Evidence for extensive fHGT is absent",
+  "sha256_pasaje": "d7cbe27e2d237b978a3a47dc0fdca59280247e7f9dbc89beb08e30580404ed46",
+  "normalizacion_pasaje": "Concatenar nodos de texto HTML sin espacios insertados, resolver entidades, colapsar blancos existentes, UTF8+LF.",
+  "comprobaciones": {
+    "fila_previa_coincide_con_vivo": true,
+    "solo_cambia_Fuente": true,
+    "fragmento_original_exacto": true,
+    "pasaje_y_artefacto_hash_reproducidos": true,
+    "apartado_y_parrafo_final_confirmados": true
+  },
+  "evidencia_semantica": "Leído el párrafo final completo de Claims..., los dos párrafos previos sobre validación de loci/junctions y el inicio de Low Levels...; además Conclusions completo en el diagnóstico. La negación es sobre evidencia de fHGT extensa en el ensamblaje cuestionado. Se conservan candidatos acotados a HGT; no es ausencia universal de HGT.",
+  "limites": [
+    "No altera ni borra el NC previo por falta de fragmento en la fila anterior.",
+    "No se hereda la aprobación científica anterior: la cita y su contexto se reinspeccionaron de nuevo.",
+    "No adjudica C-1197/C-1198, resto de §16, manuscrito preprint mal rotulado ni controles globales.",
+    "A la inspección la propuesta no estaba integrada. No se afirma verificación de derivados posteriores ni make verify."
+  ],
+  "habilita_cierre_global": false
+}
